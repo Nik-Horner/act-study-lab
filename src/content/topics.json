@@ -1,0 +1,160 @@
+{
+  "parts": [
+    { "id": "grammar", "title": "Part 1 — Grammar" },
+    { "id": "style", "title": "Part 2 — Style" },
+    { "id": "paragraph", "title": "Part 3 — Paragraph Modification" },
+    { "id": "final", "title": "Test-Day Patterns" }
+  ],
+  "topics": [
+    {
+      "slug": "sentence-structure",
+      "num": 1,
+      "title": "Sentence Structure",
+      "part": "grammar",
+      "category": "CSE",
+      "source": "book",
+      "blurb": "Clauses, phrases, fragments, the 5 ways to join clauses (FANBOYS), and comma splices.",
+      "subtopics": ["Independent / dependent clauses & phrases", "Sentence fragments", "5 compound-sentence rules", "Comma splices"]
+    },
+    {
+      "slug": "commas",
+      "num": 2,
+      "title": "Commas",
+      "part": "grammar",
+      "category": "CSE",
+      "source": "book",
+      "blurb": "The 4 types of commas, unnecessary-information commas, the Names Rule, and listing commas.",
+      "subtopics": ["Comma + FANBOYS", "Dependent + independent", "Unnecessary information", "The Names Rule", "Listing & adjectives"]
+    },
+    {
+      "slug": "punctuation",
+      "num": 3,
+      "title": "Semicolons, Colons, Dashes & Apostrophes",
+      "part": "grammar",
+      "category": "CSE",
+      "source": "authored",
+      "blurb": "Semicolons, colons, dashes, apostrophes (possession vs. contraction), and quotation marks.",
+      "subtopics": ["Semicolons", "Colons", "Dashes", "Apostrophes", "Quotation marks"]
+    },
+    {
+      "slug": "verbs",
+      "num": 4,
+      "title": "Verbs",
+      "part": "grammar",
+      "category": "CSE",
+      "source": "authored",
+      "blurb": "Subject-verb agreement, verb tense, and tricky irregular verbs.",
+      "subtopics": ["Subject-verb agreement", "Verb tense", "Irregular verbs"]
+    },
+    {
+      "slug": "pronouns",
+      "num": 5,
+      "title": "Pronouns",
+      "part": "grammar",
+      "category": "CSE",
+      "source": "authored",
+      "blurb": "Pronoun case, who vs. whom, pronoun agreement, and ambiguous pronouns.",
+      "subtopics": ["Pronoun case", "Who vs. whom", "Pronoun agreement", "Ambiguous pronouns"]
+    },
+    {
+      "slug": "modifiers",
+      "num": 6,
+      "title": "Misplaced Modifiers",
+      "part": "grammar",
+      "category": "CSE",
+      "source": "authored",
+      "blurb": "Make sure the modifier sits next to the thing it describes.",
+      "subtopics": ["Modifiers with commas", "Modifiers without commas", "How to spot them"]
+    },
+    {
+      "slug": "parallel-structure",
+      "num": 7,
+      "title": "Parallel Structure",
+      "part": "grammar",
+      "category": "CSE",
+      "source": "authored",
+      "blurb": "Lists and comparisons must keep the same grammatical form.",
+      "subtopics": ["Parallelism in lists", "Parallelism in comparisons"]
+    },
+    {
+      "slug": "misc-grammar",
+      "num": 8,
+      "title": "Other Grammar Topics",
+      "part": "grammar",
+      "category": "CSE",
+      "source": "authored",
+      "blurb": "Commonly confused words, than/then, have/of, countable adjectives, active vs. passive, idioms.",
+      "subtopics": ["Commonly confused words", "Than vs. then", "Countable vs. non-countable", "Active vs. passive", "Prepositional idioms"]
+    },
+    {
+      "slug": "redundancy",
+      "num": 9,
+      "title": "Redundancy, Wordiness & Irrelevance",
+      "part": "style",
+      "category": "KLA",
+      "source": "authored",
+      "blurb": "Cut repeated ideas, extra words, and off-topic information. Shortest correct answer usually wins.",
+      "subtopics": ["Redundancy", "Wordiness", "Irrelevance"]
+    },
+    {
+      "slug": "word-choice",
+      "num": 10,
+      "title": "Word Choice",
+      "part": "style",
+      "category": "KLA",
+      "source": "authored",
+      "blurb": "Pick the clearest, most precise word that fits the tone and context.",
+      "subtopics": ["Precision", "Tone", "Idiomatic phrasing"]
+    },
+    {
+      "slug": "transitions",
+      "num": 11,
+      "title": "Transitions",
+      "part": "style",
+      "category": "POW",
+      "source": "authored",
+      "blurb": "Choose the transition word/phrase that matches the logical relationship between ideas.",
+      "subtopics": ["Continue / add", "Contrast", "Cause & effect", "Sequence"]
+    },
+    {
+      "slug": "which-choice",
+      "num": 12,
+      "title": "Which Choice (Specific Goal)",
+      "part": "paragraph",
+      "category": "POW",
+      "source": "authored",
+      "blurb": "Answer the exact question asked — match the choice to the stated goal.",
+      "subtopics": ["Reading the question", "Matching the goal"]
+    },
+    {
+      "slug": "add-delete",
+      "num": 13,
+      "title": "Adding or Deleting Information",
+      "part": "paragraph",
+      "category": "POW",
+      "source": "authored",
+      "blurb": "Decide whether a sentence should be kept or deleted, and why.",
+      "subtopics": ["Keep or delete", "Reason for the choice"]
+    },
+    {
+      "slug": "logical-placement",
+      "num": 14,
+      "title": "Logical Placement",
+      "part": "paragraph",
+      "category": "POW",
+      "source": "authored",
+      "blurb": "Put sentences and paragraphs in the order that makes the passage flow.",
+      "subtopics": ["Sentence order", "Paragraph order"]
+    },
+    {
+      "slug": "test-patterns",
+      "num": 15,
+      "title": "Test-Day Patterns",
+      "part": "final",
+      "category": "CSE",
+      "source": "authored",
+      "blurb": "The five late-game traps: DELETE/reduction, tone cuts, contract reading, placement, and idioms — plus trusting NO CHANGE when it's right.",
+      "subtopics": ["The cut test (DELETE)", "Don't fear NO CHANGE", "Goal = contract", "Point the modifier", "Idioms"]
+    }
+  ]
+}

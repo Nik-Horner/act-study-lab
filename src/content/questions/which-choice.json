@@ -1,0 +1,485 @@
+{
+  "slug": "which-choice",
+  "questions": [
+    {
+      "id": "which-choice-001",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one best emphasizes the height of the redwood tree?",
+      "stem": "A paragraph describes a coastal redwood that the writer wants to present as towering.",
+      "choices": [
+        "The redwood rose more than 300 feet above the forest floor.",
+        "The redwood grew along a misty stretch of the Pacific coast.",
+        "The redwood stood among a tangle of ferns and moss.",
+        "The redwood was wrapped in thick, reddish-brown bark."
+      ],
+      "answer": 0,
+      "explanation": "Only the 300-foot measurement speaks to height, the stated goal. The others are true but describe location, bark, and surroundings."
+    },
+    {
+      "id": "which-choice-002",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one most effectively emphasizes how quiet the library was?",
+      "stem": "A paragraph sets a scene in a reading room, and the writer wants to stress the silence.",
+      "choices": [
+        "Students often gathered there during exam week.",
+        "The library had been renovated the previous summer.",
+        "You could hear a single page turn clear across the room.",
+        "The library held thousands of rare, leather-bound books."
+      ],
+      "answer": 2,
+      "explanation": "Hearing one page turn across the room conveys deep quiet, the stated goal. The others describe renovation, collection size, and use, none of which evoke silence."
+    },
+    {
+      "id": "which-choice-003",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one most clearly emphasizes the chef's long experience?",
+      "stem": "A paragraph introduces a chef, and the writer wants to stress how long she has cooked professionally.",
+      "choices": [
+        "She enjoys experimenting with unusual spice blends.",
+        "She grew up in a fishing village near the coast.",
+        "She had run busy restaurant kitchens for over thirty years.",
+        "She opened a small cafe downtown last spring."
+      ],
+      "answer": 2,
+      "explanation": "Thirty years of running kitchens directly shows long experience, the stated goal. The others speak to creativity, a recent opening, and upbringing."
+    },
+    {
+      "id": "which-choice-004",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one provides the most specific detail about the storm's destructive force?",
+      "stem": "A paragraph describes a powerful coastal storm, and the writer wants a concrete detail about its force.",
+      "choices": [
+        "Winds reached 110 miles per hour and tore roofs from houses.",
+        "The storm became a memorable event for the town.",
+        "The storm was quite severe that night.",
+        "The storm caused trouble for many residents."
+      ],
+      "answer": 0,
+      "explanation": "The wind speed and torn roofs give a specific, concrete measure of destructive force, the stated goal. The other three stay vague about how strong the storm actually was."
+    },
+    {
+      "id": "which-choice-005",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one best emphasizes the speed of the cheetah?",
+      "stem": "A nature paragraph describes a cheetah chasing prey, and the writer wants to highlight how fast it runs.",
+      "choices": [
+        "The cheetah has distinctive black tear marks below its eyes.",
+        "The cheetah sprinted from zero to sixty miles per hour in three seconds.",
+        "The cheetah rested in the shade during the hottest hours.",
+        "The cheetah's spotted coat blended into the dry grass."
+      ],
+      "answer": 1,
+      "explanation": "Going zero to sixty in three seconds directly conveys speed, the stated goal. The others describe markings, rest, and camouflage."
+    },
+    {
+      "id": "which-choice-006",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice most vividly describes the sound of the waterfall?",
+      "stem": "A travel essay reaches a waterfall, and the writer wants the reader to hear it.",
+      "choices": [
+        "The waterfall roared like a freight train, drowning out our voices.",
+        "The waterfall fed a clear pool ringed with mossy stones.",
+        "The waterfall dropped from a granite ledge worn smooth by centuries.",
+        "The waterfall was one of the park's most photographed landmarks."
+      ],
+      "answer": 0,
+      "explanation": "The roar like a freight train that drowns out voices creates a vivid sound image, the stated goal. The others appeal to sight or describe its fame, not its sound."
+    },
+    {
+      "id": "which-choice-007",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best introduces a paragraph that goes on to explain how honeybees communicate the location of food?",
+      "stem": "The next paragraph describes the 'waggle dance' bees use to point hivemates toward flowers.",
+      "choices": [
+        "To share where food can be found, honeybees rely on a remarkable dance.",
+        "Beekeepers have harvested honey for thousands of years.",
+        "Honeybees produce roughly one-twelfth of a teaspoon of honey in a lifetime.",
+        "A single hive may contain tens of thousands of individual bees."
+      ],
+      "answer": 0,
+      "explanation": "The sentence about a dance that shares where food is found sets up the paragraph's topic, the stated goal. The others raise honey output, hive size, and beekeeping history, which the paragraph never develops."
+    },
+    {
+      "id": "which-choice-008",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best concludes the paragraph by restating its main point that practice, not talent, drives improvement?",
+      "stem": "The paragraph argues that musicians improve mainly through disciplined, repeated practice rather than inborn gifts.",
+      "choices": [
+        "In the end, steady practice, far more than raw talent, shapes a skilled musician.",
+        "Many famous musicians began studying their instruments as young children.",
+        "Learning an instrument can be a rewarding lifelong hobby.",
+        "Some concert halls are renowned for their flawless acoustics."
+      ],
+      "answer": 0,
+      "explanation": "Naming steady practice over raw talent restates the paragraph's claim, the stated goal of a closing sentence. The others drift to starting age, acoustics, and the joys of a hobby."
+    },
+    {
+      "id": "which-choice-009",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice sets a lighthearted, humorous tone?",
+      "stem": "A personal essay recalls the writer's first attempt at baking bread, which collapsed in the oven.",
+      "choices": [
+        "The loaf reminded me how much I still had to learn about baking.",
+        "The loaf did not rise the way the recipe had promised it would.",
+        "The loaf sank in the middle, leaving a crater I could have parked a car in.",
+        "The loaf was dense because I had let the dough sit too long."
+      ],
+      "answer": 2,
+      "explanation": "The exaggerated crater big enough to park a car in lands a joke, matching the humorous tone. The others are flat, reflective, or technical."
+    },
+    {
+      "id": "which-choice-010",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best supports the writer's claim that the city's bike-share program reduced car traffic?",
+      "stem": "The paragraph argues that after a bike-share program launched, fewer cars crowded downtown streets.",
+      "choices": [
+        "The program added bright blue bicycles to forty stations across downtown.",
+        "Downtown car trips fell by eighteen percent in the program's first year.",
+        "The city painted new bike lanes along several major avenues.",
+        "Riders praised the bikes for being comfortable and easy to adjust."
+      ],
+      "answer": 1,
+      "explanation": "The eighteen-percent drop in car trips is evidence that traffic fell, directly supporting the claim. The others describe the bikes, rider comfort, and lanes without showing any change in car traffic."
+    },
+    {
+      "id": "which-choice-011",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice most effectively emphasizes the age of the manuscript?",
+      "stem": "A museum paragraph presents an ancient document the curators consider their oldest treasure.",
+      "choices": [
+        "The manuscript had been copied by hand more than a thousand years ago.",
+        "The manuscript drew long lines of curious visitors each weekend.",
+        "The manuscript was displayed under soft, carefully filtered light.",
+        "The manuscript was written in faded brown ink on thin parchment."
+      ],
+      "answer": 0,
+      "explanation": "Copied more than a thousand years ago stresses age, the stated goal. The others describe ink, lighting, and crowds."
+    },
+    {
+      "id": "which-choice-012",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best introduces a paragraph that will explain why sea otters are important to kelp forests?",
+      "stem": "The paragraph that follows describes how otters eat sea urchins, which keeps kelp forests from being destroyed.",
+      "choices": [
+        "Sea otters were once hunted nearly to extinction for their pelts.",
+        "Sea otters often float on their backs while cracking open shellfish.",
+        "Sea otters play a surprising role in keeping kelp forests alive.",
+        "Sea otters have the densest fur of any mammal on Earth."
+      ],
+      "answer": 2,
+      "explanation": "The role in keeping kelp forests alive previews the paragraph's subject, the stated goal. The others note fur, feeding posture, and hunting history, which the paragraph does not pursue."
+    },
+    {
+      "id": "which-choice-013",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice creates the most vivid image of the desert's heat?",
+      "stem": "A paragraph describes a midday crossing of a desert, and the writer wants the reader to feel the heat.",
+      "choices": [
+        "The desert stretched for miles in every direction.",
+        "The desert had once been the floor of an ancient sea.",
+        "The desert air shimmered, and the sand burned through the soles of our boots.",
+        "The desert was home to lizards, scorpions, and hardy shrubs."
+      ],
+      "answer": 2,
+      "explanation": "Shimmering air and sand burning through boot soles make the heat tangible, the stated goal. The others describe size, geologic history, and wildlife."
+    },
+    {
+      "id": "which-choice-014",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice best emphasizes the violinist's nervousness rather than her skill?",
+      "stem": "A paragraph describes a young violinist waiting backstage before her first solo recital. The writer wants to convey her anxiety.",
+      "choices": [
+        "She had practiced the concerto until she could play it from memory.",
+        "Her hands trembled, and she pressed them flat against her dress to still them.",
+        "She wore the deep blue gown her grandmother had sewn by hand.",
+        "Her teacher had once performed the same piece on this very stage."
+      ],
+      "answer": 1,
+      "explanation": "Trembling hands pressed flat to still them shows anxiety, the stated goal. \"She had practiced the concerto until she could play it from memory\" points to her skill, the very thing the goal excludes, while the others describe her teacher and her gown."
+    },
+    {
+      "id": "which-choice-015",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice sets a somber, reflective tone consistent with a passage about an abandoned factory?",
+      "stem": "An essay describes returning to the shuttered mill where the writer's grandparents once worked. The surrounding paragraphs are quiet and mournful.",
+      "choices": [
+        "The factory could probably be converted into trendy loft apartments.",
+        "I snapped a few photos to post online before heading back to the car.",
+        "Weeds had pushed up through the cracked lot where workers once parked.",
+        "The old sign out front would make a great collector's item someday."
+      ],
+      "answer": 2,
+      "explanation": "Weeds pushing through the cracked lot where workers parked carries the quiet, mournful mood, the stated goal. The other choices turn upbeat, casual, or commercial, clashing with the somber tone."
+    },
+    {
+      "id": "which-choice-016",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice best supports the paragraph's claim that the new bridge design saved money without sacrificing strength?",
+      "stem": "The paragraph argues that engineers cut construction costs while keeping the bridge just as strong as older designs.",
+      "choices": [
+        "The design used forty percent less steel yet passed every load-bearing test.",
+        "The bridge's sweeping arches earned praise from architects nationwide.",
+        "The bridge spans one of the widest rivers in the region.",
+        "Construction crews finished the project two months ahead of schedule."
+      ],
+      "answer": 0,
+      "explanation": "Using forty percent less steel addresses the savings while passing every load-bearing test addresses the strength, supporting both halves of the claim. The others speak to beauty, schedule, and span, none of which tie cost to strength."
+    },
+    {
+      "id": "which-choice-017",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one best emphasizes how cold the mountain summit was?",
+      "stem": "A paragraph describes a hiker reaching a high peak, and the writer wants to stress the cold.",
+      "choices": [
+        "The summit was marked by a small pile of stacked gray stones.",
+        "The summit offered a clear view of three neighboring valleys.",
+        "We had climbed for nearly six hours to reach the top.",
+        "Frost coated our eyelashes, and the wind bit through every layer we wore."
+      ],
+      "answer": 3,
+      "explanation": "Frost on eyelashes and wind biting through layers conveys cold, the stated goal. The others describe the view, a stone marker, and the climb's length."
+    },
+    {
+      "id": "which-choice-018",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one most clearly emphasizes the bakery's popularity?",
+      "stem": "A paragraph introduces a neighborhood bakery, and the writer wants to stress how many people love it.",
+      "choices": [
+        "The bakery sells sourdough loaves and almond croissants each morning.",
+        "The owner learned to bake from her father years ago.",
+        "The bakery occupies a narrow storefront on a quiet side street.",
+        "Customers line up around the block before the doors even open."
+      ],
+      "answer": 3,
+      "explanation": "A line around the block before opening shows popularity, the stated goal. The others describe the menu, the location, and the owner's training."
+    },
+    {
+      "id": "which-choice-019",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one best emphasizes the diver's calmness underwater?",
+      "stem": "A paragraph describes a scuba diver exploring a reef, and the writer wants to highlight how calm she stayed.",
+      "choices": [
+        "She wore a bright yellow wetsuit and matching fins.",
+        "She carried an underwater camera to photograph the coral.",
+        "Her breathing stayed slow and even as the current pushed past her.",
+        "She had logged dozens of dives along this stretch of reef."
+      ],
+      "answer": 2,
+      "explanation": "Slow, even breathing amid a pushing current shows calmness, the stated goal. The others describe gear, experience, and a camera."
+    },
+    {
+      "id": "which-choice-020",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one provides the most specific detail about the train's speed?",
+      "stem": "A paragraph describes a high-speed rail line, and the writer wants a concrete detail about how fast the train travels.",
+      "choices": [
+        "The train was known for getting passengers there in a hurry.",
+        "The train made the trip in a surprisingly short amount of time.",
+        "The train was impressively quick on the long straightaways.",
+        "The train reached 185 miles per hour between the two cities."
+      ],
+      "answer": 3,
+      "explanation": "The figure of 185 miles per hour gives a specific, concrete measure of speed, the stated goal. The other three stay vague about how fast the train actually goes."
+    },
+    {
+      "id": "which-choice-021",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Given that all choices are true, which one best emphasizes the painting's enormous size?",
+      "stem": "A gallery paragraph describes a mural the writer wants to present as overwhelming in scale.",
+      "choices": [
+        "The mural stretched forty feet wide and filled the entire wall.",
+        "The mural was painted in deep blues and burning oranges.",
+        "The mural depicted a busy harbor at sunset.",
+        "The mural had taken the artist most of a year to finish."
+      ],
+      "answer": 0,
+      "explanation": "Forty feet wide and filling the whole wall stresses size, the stated goal. The others describe color, subject, and time spent."
+    },
+    {
+      "id": "which-choice-022",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice most vividly describes the smell of the rain-soaked forest?",
+      "stem": "A nature essay pauses after a storm, and the writer wants the reader to smell the woods.",
+      "choices": [
+        "The air hung heavy with the dark, earthy scent of wet soil and pine.",
+        "The forest had survived three centuries of logging and fire.",
+        "The forest sloped gently toward a stream at the bottom of the ridge.",
+        "The forest floor was thick with ferns and fallen needles."
+      ],
+      "answer": 0,
+      "explanation": "The dark, earthy scent of wet soil and pine creates a vivid smell image, the stated goal. The others appeal to sight or describe history, not smell."
+    },
+    {
+      "id": "which-choice-023",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best introduces a paragraph that goes on to explain how the printing press changed who could read books?",
+      "stem": "The next paragraph describes how cheaper printed books reached ordinary people, not just the wealthy.",
+      "choices": [
+        "The printing press put books within reach of readers far beyond the rich.",
+        "Early printed pages still imitated the look of handwritten manuscripts.",
+        "Gutenberg's press first appeared in the German city of Mainz.",
+        "The printing press used movable metal type set into a wooden frame."
+      ],
+      "answer": 0,
+      "explanation": "Putting books within reach of readers beyond the rich previews the paragraph's focus on who could read, the stated goal. The others raise the press's mechanics, its origin city, and page design, which the paragraph does not develop."
+    },
+    {
+      "id": "which-choice-024",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best concludes the paragraph by restating its main point that volunteers, not new equipment, rescued the river cleanup?",
+      "stem": "The paragraph argues that the cleanup succeeded because so many residents showed up to help, despite a shortage of tools and machinery.",
+      "choices": [
+        "Pollution had built up in the river since the nearby mill closed.",
+        "The cleanup was organized over several months by a small local committee.",
+        "The river now supports trout that had vanished from it for decades.",
+        "In the end, it was the crowd of willing hands, not fancy gear, that saved the effort."
+      ],
+      "answer": 3,
+      "explanation": "Crediting the crowd of willing hands over fancy gear restates the paragraph's claim, the stated goal of a closing sentence. The others drift to the river's recovery, the planning, and the source of the pollution."
+    },
+    {
+      "id": "which-choice-025",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice sets a tense, suspenseful tone?",
+      "stem": "A short story follows a character alone in a house at night who hears a noise downstairs.",
+      "choices": [
+        "She remembered she still needed to water the plants in the morning.",
+        "She had lived in the old house for nearly twelve years.",
+        "She froze, her heart pounding, as a floorboard creaked in the dark below.",
+        "She thought the house could use a fresh coat of paint next spring."
+      ],
+      "answer": 2,
+      "explanation": "Freezing with a pounding heart as a floorboard creaks builds suspense, the stated goal. The others are calm, mundane, or forward-looking, draining the tension."
+    },
+    {
+      "id": "which-choice-026",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best supports the writer's claim that the new streetlights made the neighborhood safer at night?",
+      "stem": "The paragraph argues that after brighter streetlights were installed, the area became safer after dark.",
+      "choices": [
+        "The new lights cast a warm glow that residents found attractive.",
+        "The city replaced more than two hundred aging fixtures in a single month.",
+        "Each new light pole was painted a dark forest green to match the parks.",
+        "Nighttime break-ins on those streets dropped by a third within a year."
+      ],
+      "answer": 3,
+      "explanation": "A one-third drop in nighttime break-ins is evidence that the area grew safer, directly supporting the claim. The others describe the lights' glow, the install pace, and the pole color without showing any change in safety."
+    },
+    {
+      "id": "which-choice-027",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice most effectively emphasizes the antique clock's intricate craftsmanship?",
+      "stem": "A paragraph presents a hand-built clock the writer admires for its detailed workmanship.",
+      "choices": [
+        "Tiny hand-carved gears and inlaid silver vines covered its every surface.",
+        "The clock had been passed down through four generations of one family.",
+        "The clock stood nearly as tall as the doorway beside it.",
+        "The clock had kept perfect time for over a hundred years."
+      ],
+      "answer": 0,
+      "explanation": "Hand-carved gears and inlaid silver vines stress detailed craftsmanship, the stated goal. The others note accuracy, family history, and height."
+    },
+    {
+      "id": "which-choice-028",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best introduces a paragraph that will explain why coral reefs depend on tiny algae living inside them?",
+      "stem": "The paragraph that follows describes how algae inside coral tissue feed the coral and give reefs their color.",
+      "choices": [
+        "Coral reefs cover less than one percent of the ocean floor.",
+        "Coral reefs owe their survival to the microscopic algae hidden in their tissue.",
+        "Coral reefs draw millions of snorkelers and divers each year.",
+        "Coral reefs can take thousands of years to grow to full size."
+      ],
+      "answer": 1,
+      "explanation": "Owing their survival to algae hidden in their tissue previews the paragraph's subject, the stated goal. The others note coverage, tourism, and growth rate, which the paragraph does not pursue."
+    },
+    {
+      "id": "which-choice-029",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice creates the most vivid image of the crowded market's energy?",
+      "stem": "A travel paragraph enters a busy outdoor market, and the writer wants the reader to feel its bustle.",
+      "choices": [
+        "The market had operated in the same square for generations.",
+        "The market sold produce, spices, fabric, and household goods.",
+        "The market opened early and ran until the late afternoon.",
+        "Vendors shouted prices, carts rattled past, and the crowd surged in every direction."
+      ],
+      "answer": 3,
+      "explanation": "Shouting vendors, rattling carts, and a surging crowd make the bustle tangible, the stated goal. The others describe hours, history, and merchandise."
+    },
+    {
+      "id": "which-choice-030",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice best emphasizes the runner's exhaustion rather than her determination?",
+      "stem": "A paragraph describes a marathoner in the final mile of a race. The writer wants to convey how worn out she is.",
+      "choices": [
+        "She had trained for this race through every season of the year.",
+        "She refused to slow down even as the finish line came into view.",
+        "She pictured the medal waiting for her just past the final turn.",
+        "Her legs buckled with each step, and she could barely lift her head."
+      ],
+      "answer": 3,
+      "explanation": "Buckling legs and a head she can barely lift show exhaustion, the stated goal. \"She refused to slow down even as the finish line came into view\" points to her determination, the very trait the goal excludes, while the others describe training and motivation."
+    },
+    {
+      "id": "which-choice-031",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice sets a hopeful, uplifting tone consistent with a passage about a town rebuilding after a flood?",
+      "stem": "An essay describes a small town a year after a devastating flood. The surrounding paragraphs are warm and optimistic about its recovery.",
+      "choices": [
+        "The cost of the damage had stunned officials across the county.",
+        "The waterline stain still darkened the brick of several abandoned buildings.",
+        "New shops had opened along Main Street, their windows bright with fresh paint.",
+        "Many families had given up and moved away, never to return."
+      ],
+      "answer": 2,
+      "explanation": "New shops with windows bright with fresh paint carries the warm, optimistic mood, the stated goal. The other choices dwell on damage, loss, and cost, clashing with the hopeful tone."
+    },
+    {
+      "id": "which-choice-032",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice best supports the paragraph's claim that the new irrigation method raised crop yields while using less water?",
+      "stem": "The paragraph argues that a drip-irrigation system let farmers grow more while drawing far less water than flooding the fields.",
+      "choices": [
+        "The equipment had been imported from a supplier overseas.",
+        "Yields climbed nearly a quarter even as water use fell by half.",
+        "Neighboring farms soon asked to tour the upgraded fields.",
+        "The system's thin black tubing snaked between every row of plants."
+      ],
+      "answer": 1,
+      "explanation": "A quarter rise in yields paired with water use cut in half addresses both halves of the claim, more crops and less water. The others speak to the tubing, the farm's reputation, and the supplier, none of which tie yield to water savings."
+    }
+  ]
+}

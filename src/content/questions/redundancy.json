@@ -1,0 +1,485 @@
+{
+  "slug": "redundancy",
+  "questions": [
+    {
+      "id": "redundancy-001",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The twins [[both equally shared the same]] bedroom.",
+      "choices": [
+        "NO CHANGE",
+        "shared a",
+        "both shared the",
+        "equally shared the same"
+      ],
+      "answer": 1,
+      "explanation": "'Shared' already means having in common, so 'both,' 'equally,' and 'same' repeat that idea; 'shared a' carries the full meaning. The other choices each keep at least one redundant word."
+    },
+    {
+      "id": "redundancy-002",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "At 6 [[A.M. in the morning]], the bakery already smelled of fresh bread.",
+      "choices": [
+        "NO CHANGE",
+        "A.M. in the early morning",
+        "o'clock in the morning A.M.",
+        "A.M."
+      ],
+      "answer": 3,
+      "explanation": "'A.M.' already means morning, so 'A.M.' alone is enough. The other choices restate 'morning' that 'A.M.' has already supplied."
+    },
+    {
+      "id": "redundancy-003",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most concise in context?",
+      "stem": "She returned the library books [[to]] the front desk.",
+      "choices": [
+        "NO CHANGE",
+        "back to",
+        "back over to",
+        "back again to"
+      ],
+      "answer": 0,
+      "explanation": "'Returned' already means brought back, so 'to' alone completes the sentence. 'Back to,' 'back over to,' and 'back again to' each repeat the idea of returning that the verb already carries."
+    },
+    {
+      "id": "redundancy-004",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most concise in context?",
+      "stem": "We postponed the trip [[due to the fact that]] the roads were icy.",
+      "choices": [
+        "NO CHANGE",
+        "because",
+        "on account of the fact that",
+        "in light of the fact that"
+      ],
+      "answer": 1,
+      "explanation": "'Because' says in one word what the wordy phrases stretch over five or six; the other choices are inflated versions of the same causal idea."
+    },
+    {
+      "id": "redundancy-005",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "Every guest received a [[free gift that cost nothing]] at the door.",
+      "choices": [
+        "NO CHANGE",
+        "gift",
+        "free gift given at no charge",
+        "free complimentary gift"
+      ],
+      "answer": 1,
+      "explanation": "A gift is by definition free, so 'free,' 'complimentary,' 'cost nothing,' and 'no charge' all repeat that meaning; 'gift' alone suffices. The other choices keep a redundant cost word."
+    },
+    {
+      "id": "redundancy-006",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The committee met to review the [[final outcome that resulted from]] the vote.",
+      "choices": [
+        "NO CHANGE",
+        "ultimate final outcome of",
+        "final end result of",
+        "outcome of"
+      ],
+      "answer": 3,
+      "explanation": "An outcome is already a result, so 'outcome of' says everything needed. 'Final outcome that resulted from,' 'final end result of,' and 'ultimate final outcome of' each stack words that repeat what 'outcome' means."
+    },
+    {
+      "id": "redundancy-007",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most concise in context?",
+      "stem": "The two factories were built [[in close proximity near to]] each other.",
+      "choices": [
+        "NO CHANGE",
+        "in close proximity to",
+        "in proximity close to",
+        "near"
+      ],
+      "answer": 3,
+      "explanation": "'Proximity' already means nearness, so pairing it with 'close' or 'near' is redundant; 'near' alone conveys the full idea. The other choices keep both 'proximity' and a nearness word."
+    },
+    {
+      "id": "redundancy-008",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "Before hiring her, the firm reviewed her [[past work history]].",
+      "choices": [
+        "NO CHANGE",
+        "previous past work history",
+        "work history",
+        "history of past work"
+      ],
+      "answer": 2,
+      "explanation": "A history is a record of the past, so 'work history' needs no time word. 'Past work history,' 'previous past work history,' and 'history of past work' each add a backward-looking modifier that 'history' already implies."
+    },
+    {
+      "id": "redundancy-009",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most concise in context?",
+      "stem": "[[Now,]] the museum is closed for renovations.",
+      "choices": [
+        "NO CHANGE",
+        "At this point in time,",
+        "At the present time right now,",
+        "At this current moment in time,"
+      ],
+      "answer": 0,
+      "explanation": "'Now' marks the present in one word, so the original is already concise. 'At this point in time,' 'at the present time right now,' and 'at this current moment in time' stretch the same idea over wordy filler."
+    },
+    {
+      "id": "redundancy-010",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The instructor told us to [[combine together and mix]] the two solutions.",
+      "choices": [
+        "NO CHANGE",
+        "combine together",
+        "combine",
+        "mix together"
+      ],
+      "answer": 2,
+      "explanation": "'Combine' by itself means to bring together, so 'combine' is enough. 'Combine together and mix,' 'combine together,' and 'mix together' each keep a 'together' that the verb already contains."
+    },
+    {
+      "id": "redundancy-011",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most concise in context?",
+      "stem": "Volunteers planted new trees [[in order to]] shade the playground.",
+      "choices": [
+        "NO CHANGE",
+        "to",
+        "so as to be able to",
+        "for the purpose of being able to"
+      ],
+      "answer": 1,
+      "explanation": "'To' expresses purpose by itself, so the longer phrases add only filler. Each other choice is a wordy way of saying 'to.'"
+    },
+    {
+      "id": "redundancy-012",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The lecture covered the [[basic fundamentals and foundations]] of accounting.",
+      "choices": [
+        "NO CHANGE",
+        "fundamental basics",
+        "fundamentals",
+        "basic fundamentals"
+      ],
+      "answer": 2,
+      "explanation": "Fundamentals are basic by definition, so 'fundamentals' stands alone. 'Basic fundamentals and foundations,' 'basic fundamentals,' and 'fundamental basics' each pair the noun with a modifier that means the same thing."
+    },
+    {
+      "id": "redundancy-013",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The store holds an [[annual sale]] in December.",
+      "choices": [
+        "NO CHANGE",
+        "annual sale each year",
+        "annual yearly sale",
+        "annual sale every year"
+      ],
+      "answer": 0,
+      "explanation": "'Annual' already means once a year, so the original needs nothing more. 'Every year,' 'yearly,' and 'each year' all restate what 'annual' has said."
+    },
+    {
+      "id": "redundancy-014",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "For a [[brief moment lasting only a short time,]] the room fell silent.",
+      "choices": [
+        "NO CHANGE",
+        "brief moment that did not last long,",
+        "brief, short moment,",
+        "moment,"
+      ],
+      "answer": 3,
+      "explanation": "A moment is already a short stretch of time, so 'moment,' alone is cleanest. 'Lasting only a short time,' 'that did not last long,' and 'brief, short' each restate the brevity a moment implies."
+    },
+    {
+      "id": "redundancy-015",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice most effectively concludes the sentence without adding irrelevant detail?",
+      "stem": "Dr. Patel studied how coral reefs recover after storms, publishing her findings in a leading marine-biology journal[[ that her cousin had once subscribed to as a teenager.]]",
+      "choices": [
+        "NO CHANGE",
+        ", which a family member had subscribed to.",
+        ", a journal her cousin once subscribed to.",
+        "."
+      ],
+      "answer": 3,
+      "explanation": "The cousin's old subscription is irrelevant to the reef research and its publication, so ending the sentence after 'journal' is best. ', a journal her cousin once subscribed to' and ', which a family member had subscribed to' keep the off-topic family detail."
+    },
+    {
+      "id": "redundancy-016",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The hikers reached the summit at [[exactly 12 noon in the middle of the day]] and paused to rest.",
+      "choices": [
+        "NO CHANGE",
+        "noon",
+        "12 noon at midday",
+        "exactly noon at 12 o'clock midday"
+      ],
+      "answer": 1,
+      "explanation": "'Noon' already means 12 in the middle of the day, so '12,' 'midday,' and 'middle of the day' all repeat it; 'noon' alone is enough. The other choices keep a redundant time marker."
+    },
+    {
+      "id": "redundancy-017",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The chemist watched the two liquids slowly [[merge]] in the beaker.",
+      "choices": [
+        "NO CHANGE",
+        "merge together as one",
+        "merge together",
+        "merge together into one"
+      ],
+      "answer": 0,
+      "explanation": "'Merge' already means to come together as one, so the original is complete. 'Merge together,' 'merge together as one,' and 'merge together into one' each repeat what the verb says."
+    },
+    {
+      "id": "redundancy-018",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "After the audit, the accountant reported the [[sum total]] of the year's expenses.",
+      "choices": [
+        "NO CHANGE",
+        "total sum amount",
+        "total",
+        "combined sum total"
+      ],
+      "answer": 2,
+      "explanation": "A 'sum' and a 'total' name the same combined figure, so pairing them is redundant; 'total' alone says it. The other choices keep both words or add 'combined.'"
+    },
+    {
+      "id": "redundancy-019",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most concise in context?",
+      "stem": "The new policy will take effect [[in the event that]] enrollment rises.",
+      "choices": [
+        "NO CHANGE",
+        "in the case that",
+        "in the event in which",
+        "if"
+      ],
+      "answer": 3,
+      "explanation": "'If' states the condition in one word. 'In the event that,' 'in the event in which,' and 'in the case that' wrap the same condition in empty filler."
+    },
+    {
+      "id": "redundancy-020",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "Opening the box, she found the [[exact same]] watch she had lost.",
+      "choices": [
+        "NO CHANGE",
+        "identical exact same",
+        "same",
+        "very exact same"
+      ],
+      "answer": 2,
+      "explanation": "'Same' already means identical, so 'exact' adds nothing; 'same' alone is complete. The other choices keep 'exact' or pile on 'identical.'"
+    },
+    {
+      "id": "redundancy-021",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most concise in context?",
+      "stem": "The marathon went on [[although]] it began to rain.",
+      "choices": [
+        "NO CHANGE",
+        "in spite of the fact that",
+        "despite the fact that",
+        "regardless of the fact that"
+      ],
+      "answer": 0,
+      "explanation": "'Although' handles the concession in a single word, so the original stands. 'Despite the fact that,' 'in spite of the fact that,' and 'regardless of the fact that' bury the same idea under 'the fact that.'"
+    },
+    {
+      "id": "redundancy-022",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The startup celebrated its [[new innovation]] at the technology fair.",
+      "choices": [
+        "NO CHANGE",
+        "innovation",
+        "newly created innovation",
+        "brand-new innovation"
+      ],
+      "answer": 1,
+      "explanation": "An innovation is new by definition, so 'innovation' alone works. 'New,' 'brand-new,' and 'newly created' each restate that newness."
+    },
+    {
+      "id": "redundancy-023",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most concise in context?",
+      "stem": "The reviewers praised the design [[for the reason that]] it saved energy.",
+      "choices": [
+        "NO CHANGE",
+        "because",
+        "owing to the reason that",
+        "for the simple reason that"
+      ],
+      "answer": 1,
+      "explanation": "'Because' states the cause in a single word that the phrases spell out as 'reason that.' The other choices keep the wordy causal phrasing."
+    },
+    {
+      "id": "redundancy-024",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "When the totals failed to match, the clerk had to [[revert]] to the original ledger.",
+      "choices": [
+        "NO CHANGE",
+        "revert back",
+        "go back and revert",
+        "revert all the way back"
+      ],
+      "answer": 0,
+      "explanation": "'Revert' means to go back, so the original needs no help. 'Revert back,' 'revert all the way back,' and 'go back and revert' all duplicate the backward motion built into the verb."
+    },
+    {
+      "id": "redundancy-025",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "Months of [[advance planning]] went into the festival's opening night.",
+      "choices": [
+        "NO CHANGE",
+        "planning ahead in advance",
+        "advance planning beforehand",
+        "planning"
+      ],
+      "answer": 3,
+      "explanation": "Planning is by definition done in advance, so 'advance,' 'ahead,' and 'beforehand' repeat it; 'planning' alone is complete. The other choices keep a forward-looking word that 'planning' already implies."
+    },
+    {
+      "id": "redundancy-026",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The treaty was the product of a [[joint collaboration]] between the two nations.",
+      "choices": [
+        "NO CHANGE",
+        "mutual joint collaboration",
+        "joint collaboration together",
+        "collaboration"
+      ],
+      "answer": 3,
+      "explanation": "A collaboration is already joint, so 'joint' repeats that idea; 'collaboration' alone says it. The other choices keep 'joint' or add 'mutual' and 'together.'"
+    },
+    {
+      "id": "redundancy-027",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "By the time the speech ended, the auditorium was [[full]].",
+      "choices": [
+        "NO CHANGE",
+        "full to capacity",
+        "full to its maximum capacity",
+        "completely full to capacity"
+      ],
+      "answer": 0,
+      "explanation": "'Full' already means the room holds no more, so the original is complete. 'Full to capacity,' 'completely full to capacity,' and 'full to its maximum capacity' restate fullness the adjective covers."
+    },
+    {
+      "id": "redundancy-028",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The chef warned us not to [[blend together]] the spices too early.",
+      "choices": [
+        "NO CHANGE",
+        "blend together as one",
+        "blend",
+        "blend and mix together"
+      ],
+      "answer": 2,
+      "explanation": "'Blend' already means to mix together, so 'together' and 'mix' repeat it; 'blend' alone is enough. The other choices keep 'together' or a second verb."
+    },
+    {
+      "id": "redundancy-029",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The teacher asked the chorus to [[repeat the refrain again]] from the top.",
+      "choices": [
+        "NO CHANGE",
+        "repeat the refrain a second time again",
+        "repeat the refrain",
+        "repeat the refrain once again"
+      ],
+      "answer": 2,
+      "explanation": "'Repeat' already means to do again, so 'again' repeats that idea; 'repeat the refrain' alone is complete. The other choices keep 'again' or 'a second time.'"
+    },
+    {
+      "id": "redundancy-030",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "The climbers watched the cable car slowly [[ascend]] toward the summit.",
+      "choices": [
+        "NO CHANGE",
+        "ascend up higher",
+        "ascend upward",
+        "rise and ascend"
+      ],
+      "answer": 0,
+      "explanation": "'Ascend' already means to move upward, so it needs no helper. 'Ascend upward,' 'ascend up higher,' and 'rise and ascend' each duplicate the direction built into the verb."
+    },
+    {
+      "id": "redundancy-031",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the least redundant in context?",
+      "stem": "After two days of deliberation, the jury reached its [[final conclusion]] and notified the judge.",
+      "choices": [
+        "NO CHANGE",
+        "ultimate final conclusion",
+        "conclusion",
+        "final concluding decision"
+      ],
+      "answer": 2,
+      "explanation": "A conclusion is by definition final, so 'final,' 'concluding,' and 'ultimate' repeat it; 'conclusion' alone is complete. The other choices keep a redundant finality word."
+    },
+    {
+      "id": "redundancy-032",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice most effectively concludes the sentence without adding irrelevant detail?",
+      "stem": "The engineer redesigned the bridge's supports to withstand stronger earthquakes[[, and she happened to prefer tea over coffee on her morning commute.]]",
+      "choices": [
+        "NO CHANGE",
+        ".",
+        ", though she usually drank tea instead of coffee.",
+        ", and she drank tea on her commute most mornings."
+      ],
+      "answer": 1,
+      "explanation": "Her beverage habits have nothing to do with the bridge redesign, so the sentence should end after 'earthquakes.' ', though she usually drank tea instead of coffee' and ', and she drank tea on her commute most mornings' keep the off-topic detail."
+    }
+  ]
+}

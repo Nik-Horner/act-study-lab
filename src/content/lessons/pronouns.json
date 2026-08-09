@@ -1,0 +1,90 @@
+{
+  "slug": "pronouns",
+  "title": "Pronouns",
+  "intro": "Pronouns stand in for nouns, and the ACT builds several questions on every English test around them. Every one comes down to a single idea: a pronoun must match the exact noun it replaces — the right case for its job in the sentence, the right number, and a reference so clear that no reader has to guess.",
+  "sections": [
+    {
+      "heading": "Subjective vs. objective case",
+      "body": [
+        "Subjective pronouns do the action: I, he, she, we, they, who. Objective pronouns receive the action or follow a preposition: me, him, her, us, them, whom.",
+        "The ACT hides the error inside a pair, like 'Maria and I.' To find the right case, drop the other name and read the pronoun alone. 'The award went to Maria and I' becomes 'The award went to I,' which sounds wrong, so the answer is 'me.' The drop trick works every time, including after prepositions: 'between you and me,' never 'between you and I.'"
+      ],
+      "examples": [
+        { "text": "She and her brother painted the fence.", "label": "Subjects use subjective case", "good": true },
+        { "text": "The coach thanked her and me after the game.", "label": "Objects use objective case", "good": true },
+        { "text": "The coach thanked she and I after the game.", "label": "Wrong case for objects", "good": false }
+      ],
+      "tip": "Cover the other noun and the conjunction, then read the pronoun by itself. Your ear will catch the error."
+    },
+    {
+      "heading": "Who vs. whom",
+      "body": [
+        "'Who' is the subjective form and 'whom' is the objective form. Use 'who' when the pronoun does the action and 'whom' when it receives the action or follows a preposition.",
+        "Quick test: answer the clause with 'he' or 'him.' If 'he' fits, use 'who'; if 'him' fits, use 'whom.' Both 'whom' and 'him' end in 'm,' which makes them easy to pair. In 'the violinist ___ the conductor chose,' the conductor chose 'him,' so the answer is 'whom.'",
+        "One trap: judge 'whoever' and 'whomever' by the pronoun's job inside its own clause, not by the word in front of it. 'The prize goes to whoever finishes first' is correct even though 'to' comes before it, because 'whoever' is the subject of 'finishes.'"
+      ],
+      "examples": [
+        { "text": "The scientist who discovered the enzyme will speak.", "label": "who = subject (she discovered)", "good": true },
+        { "text": "The violinist whom the conductor chose played first.", "label": "whom = object (chose her)", "good": true },
+        { "text": "The prize goes to whoever finishes first.", "label": "whoever = subject of 'finishes,' even after 'to'", "good": true }
+      ],
+      "tip": "Replace the clause with he/him. He = who, him = whom."
+    },
+    {
+      "heading": "Pronoun-antecedent agreement",
+      "body": [
+        "A pronoun must match the noun it replaces (its antecedent) in number. Singular nouns take singular pronouns, and plural nouns take plural pronouns.",
+        "The ACT loves singular words that feel plural. 'Each,' 'every,' 'either,' 'neither,' 'anyone,' and 'everyone' are grammatically singular, and a prepositional phrase after them ('each OF THE LAPTOPS') never changes that. Collective nouns like 'committee,' 'team,' and 'jury' act as one unit and take 'its.' With 'neither X nor Y,' the pronoun agrees with the nearer noun, Y."
+      ],
+      "examples": [
+        { "text": "Each of the laptops comes with its own charger.", "label": "'Each' is singular — 'of the laptops' doesn't change that", "good": true },
+        { "text": "The committee announced its decision.", "label": "Collective noun = singular", "good": true },
+        { "text": "Each of the laptops comes with their own charger.", "label": "Plural pronoun, singular antecedent", "good": false }
+      ],
+      "tip": "Find the exact noun the pronoun replaces, then make the number match. Cross out the prepositional phrase in between."
+    },
+    {
+      "heading": "Ambiguous pronoun reference",
+      "body": [
+        "A pronoun is wrong when a reader cannot tell which noun it points to. If 'it,' 'they,' 'this,' or 'he' could mean two different nouns, the ACT usually wants you to replace the vague pronoun with the actual noun.",
+        "In 'When Lena set the vase on the shelf, it cracked,' the word 'it' could mean the vase or the shelf. The fix names the noun: 'the shelf cracked.' Watch especially for sentences with two people of the same gender, where 'he' or 'she' becomes unclear."
+      ],
+      "examples": [
+        { "text": "When Lena set the vase on the shelf, the shelf cracked.", "label": "Noun removes ambiguity", "good": true },
+        { "text": "When Lena set the vase on the shelf, it cracked.", "label": "'it' could mean two nouns", "good": false }
+      ],
+      "tip": "If you have to pause and ask 'which one?', pick the choice that names the noun outright."
+    },
+    {
+      "heading": "How to spot these questions",
+      "body": [
+        "The answer choices give pronoun questions away. Choices that rotate through forms of one pronoun ('I,' 'me,' 'my,' 'myself' or 'who,' 'whom,' 'whose') test case. Choices that mix 'its,' 'their,' 'it's,' and 'they're' test agreement plus apostrophes — remember that 'it's' means 'it is' and 'they're' means 'they are,' so neither one can show possession. A specific noun sitting among pronoun choices signals an ambiguity question.",
+        "Work in this order. First, find the antecedent — the exact noun the pronoun replaces — and check number: singular antecedent, singular pronoun. Second, check case: is the pronoun doing the action or receiving it? Third, if two nouns could be the antecedent, pick the choice that names the noun outright, even though it is longer."
+      ],
+      "tip": "On ambiguity questions, the one choice that repeats the noun usually wins. Clarity beats brevity when a pronoun could point two ways."
+    }
+  ],
+  "check": [
+    {
+      "questionText": "Which choice is correct?",
+      "stem": "The director offered the lead role to Carla and [[I]].",
+      "choices": ["NO CHANGE", "me", "myself", "mine"],
+      "answer": 1,
+      "explanation": "The pronoun is the object of the preposition 'to,' so 'me' is correct — drop 'Carla and' and read 'offered the lead role to me.' 'I' is a subject pronoun, 'myself' is reflexive and has no matching subject 'I' in the sentence, and 'mine' is possessive."
+    },
+    {
+      "questionText": "Which choice is correct?",
+      "stem": "The author [[who]] the panel honored thanked her readers.",
+      "choices": ["NO CHANGE", "whom", "which", "that whom"],
+      "answer": 1,
+      "explanation": "Inside the clause, the panel honored her — the pronoun receives the action, so 'whom' is correct. 'Who' is the subject form, 'which' refers to things rather than people, and 'that whom' stacks two relative pronouns into an ungrammatical pair."
+    },
+    {
+      "questionText": "Which choice is correct?",
+      "stem": "Each of the branch offices manages [[their]] own budget.",
+      "choices": ["NO CHANGE", "its", "it's", "they're"],
+      "answer": 1,
+      "explanation": "The antecedent is 'each,' which is singular — 'of the branch offices' is a prepositional phrase that does not change the number — so the singular possessive 'its' agrees. 'Their' is plural, 'it's' means 'it is,' and 'they're' means 'they are'; neither contraction can show possession."
+    }
+  ]
+}

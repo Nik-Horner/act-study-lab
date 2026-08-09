@@ -1,0 +1,485 @@
+{
+  "slug": "add-delete",
+  "questions": [
+    {
+      "id": "add-delete-001",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph gives step-by-step directions for brewing a pot of coffee: measuring grounds, adding water, and starting the machine. Underlined sentence: [[My uncle drinks at least six cups of coffee every single day.]]",
+      "choices": [
+        "Kept, because it explains the final brewing step.",
+        "Kept, because it tells the reader how much coffee to measure.",
+        "Deleted, because the uncle's drinking habit is an irrelevant personal aside that adds nothing to the directions.",
+        "Deleted, because it repeats the sentence about adding water."
+      ],
+      "answer": 2,
+      "explanation": "The paragraph gives brewing directions, and a fact about an uncle's daily coffee habit does not help anyone brew a pot, so it is an irrelevant aside that should be deleted. The two 'Kept' reasons falsely claim it explains a step or a measurement, and the other 'Deleted' reason invents a repetition that is not there."
+    },
+    {
+      "id": "add-delete-002",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains how a plant makes food through photosynthesis. The first sentence states that leaves capture sunlight. Underlined sentence: [[Using that sunlight, the plant turns water and carbon dioxide into sugar.]]",
+      "choices": [
+        "Kept, because it completes the explanation of how photosynthesis produces food.",
+        "Kept, because it lists the names of common houseplants.",
+        "Deleted, because it drifts away from the topic of photosynthesis.",
+        "Deleted, because it merely repeats the point that leaves capture sunlight."
+      ],
+      "answer": 0,
+      "explanation": "The sentence describes how the captured sunlight is used to produce sugar, finishing the photosynthesis explanation, so it is kept for that reason. It names no houseplants, stays on topic, and adds new information rather than repeating the sunlight sentence, so the other three choices fail."
+    },
+    {
+      "id": "add-delete-003",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
+      "stem": "A paragraph argues that recycling at home is easier than most people assume. It mentions that many cities now sort materials automatically. Sentence to add: [[Residents can simply place all recyclables in one bin and let the facility separate them.]]",
+      "choices": [
+        "Yes, because it explains where recycling facilities are usually built.",
+        "Yes, because it gives a concrete example of how recycling has become easier for residents.",
+        "No, because it contradicts the paragraph's claim that recycling is easy.",
+        "No, because it shifts the topic to landfill management."
+      ],
+      "answer": 1,
+      "explanation": "Placing everything in one bin is a concrete illustration of recycling being easy, directly supporting the paragraph's point, so the sentence should be added. It does not say where facilities are built, it reinforces rather than contradicts the 'easy' claim, and it never mentions landfills, so the other choices misdescribe it."
+    },
+    {
+      "id": "add-delete-004",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph describes the training routine of an Olympic swimmer: morning laps, weight sessions, and a strict diet. Underlined sentence: [[Swimming pools were first built in ancient Roman cities for public bathing.]]",
+      "choices": [
+        "Kept, because it describes part of the swimmer's daily routine.",
+        "Kept, because it explains why the swimmer follows a strict diet.",
+        "Deleted, because it word-for-word repeats the sentence about morning laps.",
+        "Deleted, because the history of Roman pools is unrelated to the swimmer's training routine."
+      ],
+      "answer": 3,
+      "explanation": "The paragraph is about one swimmer's training, so an unrelated fact about ancient Roman pools breaks the focus and should be deleted. It is not part of the routine and explains nothing about diet, and it does not repeat the laps sentence, so the other choices are false."
+    },
+    {
+      "id": "add-delete-005",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains why honeybees matter to agriculture. The prior sentence says bees pollinate many crops. Underlined sentence: [[Without this pollination, foods such as apples, almonds, and blueberries would be far harder to grow.]]",
+      "choices": [
+        "Kept, because it gives specific examples that show why bee pollination matters to food crops.",
+        "Kept, because it explains how honeybees build their hives.",
+        "Deleted, because it has nothing to do with agriculture.",
+        "Deleted, because it simply restates that bees pollinate crops without adding anything."
+      ],
+      "answer": 0,
+      "explanation": "Naming apples, almonds, and blueberries gives specific support for the claim that bee pollination matters to crops, so the sentence is kept. It says nothing about hive building, it is clearly about agriculture, and it adds named examples rather than merely restating the prior sentence, so the other choices fail."
+    },
+    {
+      "id": "add-delete-006",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph traces how the telegraph changed long-distance communication in the 1800s, allowing messages to cross continents in minutes. Underlined sentence: [[Today, of course, most people send messages instantly using smartphones.]]",
+      "choices": [
+        "Kept, because it explains how the telegraph operated.",
+        "Kept, because it provides a historical detail about the 1800s.",
+        "Deleted, because the reference to modern smartphones pulls the focus away from the paragraph's subject, the 1800s telegraph.",
+        "Deleted, because it repeats the claim that messages crossed continents in minutes."
+      ],
+      "answer": 2,
+      "explanation": "The paragraph is about the telegraph in the 1800s, so a jump to present-day smartphones drifts off the established time frame and should be deleted. It does not explain how the telegraph worked, it is not a detail about the 1800s, and it introduces a new device rather than repeating the continents claim, so the other choices misdescribe it."
+    },
+    {
+      "id": "add-delete-007",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains that volcanic soil is unusually fertile. The previous sentence states that eruptions deposit minerals across the land. Underlined sentence: [[When a volcano erupts, it spreads minerals over the surrounding land.]]",
+      "choices": [
+        "Kept, because it introduces a new cause of soil fertility not mentioned before.",
+        "Kept, because it supplies a specific statistic about crop yields.",
+        "Deleted, because it changes the subject to earthquakes.",
+        "Deleted, because it restates the previous sentence's point about eruptions depositing minerals, adding nothing new."
+      ],
+      "answer": 3,
+      "explanation": "The underlined sentence repeats the prior sentence's idea that eruptions spread minerals over the land, so it is redundant and should be deleted. It introduces no new cause and no statistic, and it never mentions earthquakes, so the 'Kept' reasons and the other 'Deleted' reason all misdescribe it."
+    },
+    {
+      "id": "add-delete-008",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
+      "stem": "A paragraph explains that night-shift workers often struggle to sleep during the day because of light and noise. The next sentence will discuss solutions. Sentence to add: [[Blackout curtains and earplugs can block much of that daytime light and noise.]]",
+      "choices": [
+        "Yes, because it proves that night-shift work pays more than day work.",
+        "Yes, because it provides a relevant transition to the solutions the paragraph turns to next.",
+        "No, because it repeats the earlier point that workers struggle to sleep.",
+        "No, because it introduces an unrelated topic about diet."
+      ],
+      "answer": 1,
+      "explanation": "The sentence names tools that address the light and noise problem, bridging neatly into the upcoming discussion of solutions, so it should be added. It says nothing about pay or diet, and it offers a fix rather than repeating the struggle, so the other choices are false."
+    },
+    {
+      "id": "add-delete-009",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph describes how a courtroom jury reaches a verdict: hearing evidence, deliberating in private, and voting. Underlined sentence: [[I once visited a courthouse on a school field trip in fourth grade.]]",
+      "choices": [
+        "Kept, because it explains the deliberation step in greater detail.",
+        "Kept, because it defines the term verdict for the reader.",
+        "Deleted, because the writer's childhood field trip is a personal tangent unrelated to how juries reach verdicts.",
+        "Deleted, because it merely repeats the sentence about voting."
+      ],
+      "answer": 2,
+      "explanation": "A memory of a fourth-grade field trip is a personal tangent that does nothing to explain how a jury reaches a verdict, so it should be deleted. It neither details deliberation nor defines 'verdict,' and it does not repeat the voting sentence, so the other choices are inaccurate."
+    },
+    {
+      "id": "add-delete-010",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph claims that reading aloud to young children builds their vocabulary. The opening sentence makes that claim. Underlined sentence: [[Studies show children who are read to daily learn hundreds more words by kindergarten than those who are not.]]",
+      "choices": [
+        "Kept, because it offers evidence that supports the claim about building vocabulary.",
+        "Kept, because it explains how to choose a children's book.",
+        "Deleted, because it is unrelated to the topic of reading aloud.",
+        "Deleted, because it contradicts the opening claim about vocabulary."
+      ],
+      "answer": 0,
+      "explanation": "The research finding about hundreds of extra words supplies evidence for the vocabulary claim, so the sentence is kept. It does not advise how to pick a book, it is squarely on topic, and it supports rather than contradicts the opening claim, so the other choices misstate its content."
+    },
+    {
+      "id": "add-delete-011",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
+      "stem": "A paragraph argues that city bike lanes reduce traffic and pollution. It cites lower car use as a benefit. Sentence to add: [[My cousin recently bought a brand-new red mountain bike for weekend trails.]]",
+      "choices": [
+        "Yes, because it gives data showing how bike lanes cut pollution.",
+        "Yes, because it supports the argument that bike lanes reduce traffic.",
+        "No, because it repeats the point about lower car use.",
+        "No, because the cousin's personal bike purchase is off topic and does not support the argument about bike lanes."
+      ],
+      "answer": 3,
+      "explanation": "A cousin buying a mountain bike for weekend trails says nothing about city bike lanes reducing traffic or pollution, so it is off topic and should not be added. It provides no data and does not support the argument, and it does not repeat the car-use point, so the 'Yes' choices and the other 'No' choice all misdescribe it."
+    },
+    {
+      "id": "add-delete-012",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains how a suspension bridge stays up. The previous sentence says that cables carry the deck's weight to the towers. Underlined sentence: [[From the towers, that weight travels down into the deep anchorages set in the ground.]]",
+      "choices": [
+        "Kept, because it describes the color the bridge is usually painted.",
+        "Kept, because it continues the explanation of how the bridge's load is carried to the ground.",
+        "Deleted, because it abandons the topic of how the bridge stays up.",
+        "Deleted, because it simply restates that cables carry the deck's weight."
+      ],
+      "answer": 1,
+      "explanation": "The sentence follows the load from the towers down to the anchorages, advancing the explanation of how the bridge stays up, so it is kept. It says nothing about paint color, it stays on topic, and it adds the next stage of the load path rather than restating the cable sentence, so the other choices fail."
+    },
+    {
+      "id": "add-delete-013",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph describes the migration of monarch butterflies from Canada to Mexico each fall. The prior sentence states that the journey can exceed two thousand miles. Underlined sentence: [[The trip can be more than two thousand miles long.]]",
+      "choices": [
+        "Kept, because it adds a new fact about the butterflies' diet.",
+        "Kept, because it provides a needed example of a Canadian city.",
+        "Deleted, because it restates the previous sentence's point about the two-thousand-mile distance, adding nothing.",
+        "Deleted, because it switches the subject to a different insect."
+      ],
+      "answer": 2,
+      "explanation": "The underlined sentence repeats the distance already given in the previous sentence, so it is redundant and should be deleted. It adds no diet fact and names no city, and it still discusses the same butterflies, so the 'Kept' reasons and the other 'Deleted' reason are all inaccurate."
+    },
+    {
+      "id": "add-delete-014",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
+      "stem": "A paragraph argues that public murals strengthen neighborhood identity by reflecting local history. It has just described how a mural can depict a town's founding families. Sentence to add: [[Acrylic paint, the medium used in most outdoor murals, resists fading in sunlight better than oil paint does.]]",
+      "choices": [
+        "Yes, because it explains why murals reflect local history.",
+        "Yes, because it strengthens the claim that murals build neighborhood identity.",
+        "No, because it contradicts the idea that murals depict founding families.",
+        "No, because a technical comparison of paint types shifts away from the paragraph's point about identity and local history."
+      ],
+      "answer": 3,
+      "explanation": "The paragraph is about murals expressing identity and history, so a technical aside comparing acrylic and oil paint's fade resistance changes the subject and should not be added. It does not explain why murals reflect history or strengthen the identity claim, and it contradicts nothing about founding families, so the other choices misread its relationship to the paragraph."
+    },
+    {
+      "id": "add-delete-015",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains why coral reefs are dying: warming oceans cause corals to expel the microscopic algae that live inside them. The next sentence will describe the bleached, white appearance that results. Underlined sentence: [[Stripped of these algae, the coral loses both its main food source and its bright color.]]",
+      "choices": [
+        "Kept, because it links the loss of algae to the bleaching the next sentence describes, supporting the paragraph's cause-and-effect explanation.",
+        "Kept, because it provides a statistic on how many reefs have died worldwide.",
+        "Deleted, because it is an irrelevant aside about ocean tourism.",
+        "Deleted, because it merely repeats the earlier sentence about oceans warming."
+      ],
+      "answer": 0,
+      "explanation": "The sentence explains that losing the algae costs the coral its food and color, setting up the bleached look the next sentence covers, so it supports the cause-and-effect chain and is kept. It gives no statistic, it is not about tourism, and it states a new consequence of expelling the algae rather than repeating the warming sentence, so the other choices misdescribe it."
+    },
+    {
+      "id": "add-delete-016",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains how a hybrid car saves fuel: at low speeds it runs on an electric motor, and a gas engine takes over at highway speeds. The surrounding sentences focus on this switching between power sources. Underlined sentence: [[The first mass-produced hybrid went on sale in Japan in 1997.]]",
+      "choices": [
+        "Kept, because it explains how the car switches between electric and gas power.",
+        "Kept, because it describes a step in how the hybrid saves fuel.",
+        "Deleted, because it repeats the sentence about the gas engine taking over at highway speeds.",
+        "Deleted, because a historical sales date interrupts the surrounding explanation of how the two power sources switch."
+      ],
+      "answer": 3,
+      "explanation": "The surrounding sentences explain the mechanics of switching between electric and gas power, so a historical note about a 1997 Japanese release interrupts that explanation and should be deleted. It does not describe the switching or a fuel-saving step, and it does not repeat the highway-speed sentence, so the 'Kept' reasons and the other 'Deleted' reason all misstate its content."
+    },
+    {
+      "id": "add-delete-017",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph gives instructions for planting a tomato seedling: digging a hole, setting the plant, and watering it. Underlined sentence: [[My grandmother grows the most delicious tomatoes I have ever tasted.]]",
+      "choices": [
+        "Kept, because it explains how deep to dig the hole.",
+        "Kept, because it tells the reader how much water to add.",
+        "Deleted, because praising the grandmother's tomatoes is an irrelevant personal aside that does not help anyone plant a seedling.",
+        "Deleted, because it repeats the sentence about setting the plant."
+      ],
+      "answer": 2,
+      "explanation": "The paragraph gives planting instructions, and a remark about how tasty a grandmother's tomatoes are does nothing to help plant a seedling, so it is an irrelevant aside that should be deleted. The two 'Kept' reasons falsely claim it gives a depth or a watering amount, and the other 'Deleted' reason invents a repetition that is not there."
+    },
+    {
+      "id": "add-delete-018",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains how a battery powers a flashlight. The first sentence says the battery stores chemical energy. Underlined sentence: [[When the switch is flipped, that stored energy flows out as electricity and lights the bulb.]]",
+      "choices": [
+        "Kept, because it completes the explanation of how the battery makes the flashlight light up.",
+        "Kept, because it lists the brands of batteries that last longest.",
+        "Deleted, because it wanders away from the topic of the flashlight.",
+        "Deleted, because it merely repeats the point that the battery stores chemical energy."
+      ],
+      "answer": 0,
+      "explanation": "The sentence describes how the stored energy becomes electricity and lights the bulb, finishing the explanation, so it is kept for that reason. It names no brands, stays on topic, and adds new information rather than repeating the stored-energy sentence, so the other three choices fail."
+    },
+    {
+      "id": "add-delete-019",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
+      "stem": "A paragraph argues that walking to school is good for students' health. It notes that daily movement strengthens the heart. Sentence to add: [[A brisk twenty-minute walk each morning gives students much of the exercise doctors recommend.]]",
+      "choices": [
+        "Yes, because it explains where school buses usually pick students up.",
+        "Yes, because it gives a concrete example of how walking provides healthy exercise for students.",
+        "No, because it contradicts the paragraph's claim that walking is healthy.",
+        "No, because it shifts the topic to classroom schedules."
+      ],
+      "answer": 1,
+      "explanation": "A twenty-minute walk supplying recommended exercise is a concrete illustration of walking being healthy, directly supporting the paragraph's point, so the sentence should be added. It says nothing about buses or schedules, and it reinforces rather than contradicts the health claim, so the other choices misdescribe it."
+    },
+    {
+      "id": "add-delete-020",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph describes how a chef prepares a signature soup: chopping vegetables, simmering the broth, and adding spices. Underlined sentence: [[The word 'soup' comes from an old French term for a piece of bread soaked in liquid.]]",
+      "choices": [
+        "Kept, because it describes one of the steps in preparing the soup.",
+        "Kept, because it explains why the chef adds spices.",
+        "Deleted, because the origin of the word 'soup' is unrelated to the steps for preparing the dish.",
+        "Deleted, because it word-for-word repeats the sentence about simmering the broth."
+      ],
+      "answer": 2,
+      "explanation": "The paragraph lists steps for making the soup, so a fact about the word's French origin breaks the focus and should be deleted. It is not a preparation step and explains nothing about the spices, and it does not repeat the broth sentence, so the other choices are false."
+    },
+    {
+      "id": "add-delete-021",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains why wetlands protect coastal towns from storms. The prior sentence says wetlands absorb floodwater. Underlined sentence: [[A single acre of wetland can soak up more than a million gallons of floodwater during a heavy storm.]]",
+      "choices": [
+        "Kept, because it gives a specific figure that shows how much floodwater wetlands can absorb.",
+        "Kept, because it explains how migrating birds use the wetlands.",
+        "Deleted, because it has nothing to do with protecting coastal towns.",
+        "Deleted, because it simply restates that wetlands absorb floodwater without adding anything."
+      ],
+      "answer": 0,
+      "explanation": "The million-gallon figure gives specific support for the claim that wetlands absorb floodwater, so the sentence is kept. It says nothing about birds, it is clearly about flood protection, and it adds a measured amount rather than merely restating the prior sentence, so the other choices fail."
+    },
+    {
+      "id": "add-delete-022",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph traces how the printing press spread books across Europe in the 1400s, making texts far cheaper to produce. Underlined sentence: [[These days, of course, anyone can publish an e-book online in a matter of minutes.]]",
+      "choices": [
+        "Kept, because it explains how the printing press operated.",
+        "Kept, because it provides a historical detail about the 1400s.",
+        "Deleted, because it repeats the claim that the press made texts cheaper to produce.",
+        "Deleted, because the reference to modern e-books pulls the focus away from the paragraph's subject, the 1400s printing press."
+      ],
+      "answer": 3,
+      "explanation": "The paragraph is about the printing press in the 1400s, so a jump to present-day e-books drifts off the established time frame and should be deleted. It does not explain how the press worked, it is not a detail about the 1400s, and it introduces a new medium rather than repeating the cheaper-texts claim, so the other choices misdescribe it."
+    },
+    {
+      "id": "add-delete-023",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains that glaciers shape mountain valleys. The previous sentence states that moving ice grinds away rock as it flows downhill. Underlined sentence: [[As the ice moves down the slope, it scrapes and wears away the rock beneath it.]]",
+      "choices": [
+        "Kept, because it introduces a new force that shapes valleys not mentioned before.",
+        "Kept, because it supplies a specific date when the glacier formed.",
+        "Deleted, because it restates the previous sentence's point about moving ice grinding away rock, adding nothing new.",
+        "Deleted, because it changes the subject to ocean currents."
+      ],
+      "answer": 2,
+      "explanation": "The underlined sentence repeats the prior sentence's idea that moving ice wears away the rock beneath it, so it is redundant and should be deleted. It introduces no new force and no date, and it never mentions ocean currents, so the 'Kept' reasons and the other 'Deleted' reason all misdescribe it."
+    },
+    {
+      "id": "add-delete-024",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
+      "stem": "A paragraph explains that many commuters waste time hunting for parking downtown. The next sentence will discuss possible fixes. Sentence to add: [[Phone apps that show open spaces in real time can steer drivers straight to an empty spot.]]",
+      "choices": [
+        "Yes, because it proves that downtown parking costs more than suburban parking.",
+        "Yes, because it provides a relevant transition to the fixes the paragraph turns to next.",
+        "No, because it repeats the earlier point that commuters waste time hunting for parking.",
+        "No, because it introduces an unrelated topic about fuel prices."
+      ],
+      "answer": 1,
+      "explanation": "The sentence names a tool that addresses the parking-search problem, bridging into the upcoming discussion of fixes, so it should be added. It says nothing about parking costs or fuel prices, and it offers a solution rather than repeating the wasted-time point, so the other choices are false."
+    },
+    {
+      "id": "add-delete-025",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph describes how an air traffic controller guides planes: tracking them on radar, spacing them safely, and clearing them to land. Underlined sentence: [[I get nervous every time my plane hits a patch of turbulence.]]",
+      "choices": [
+        "Kept, because it explains the radar-tracking step in greater detail.",
+        "Kept, because it defines the term 'clearance' for the reader.",
+        "Deleted, because it merely repeats the sentence about clearing planes to land.",
+        "Deleted, because the writer's nervousness about turbulence is a personal tangent unrelated to how controllers guide planes."
+      ],
+      "answer": 3,
+      "explanation": "A confession about getting nervous in turbulence is a personal tangent that does nothing to explain how a controller guides planes, so it should be deleted. It neither details radar tracking nor defines 'clearance,' and it does not repeat the landing sentence, so the other choices are inaccurate."
+    },
+    {
+      "id": "add-delete-026",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph claims that regular sleep improves students' test scores. The opening sentence makes that claim. Underlined sentence: [[In one study, students who slept eight hours scored noticeably higher on math exams than those who slept five.]]",
+      "choices": [
+        "Kept, because it offers evidence that supports the claim about sleep improving test scores.",
+        "Kept, because it explains how to set an alarm clock.",
+        "Deleted, because it is unrelated to the topic of sleep and tests.",
+        "Deleted, because it contradicts the opening claim about better scores."
+      ],
+      "answer": 0,
+      "explanation": "The study comparing eight hours of sleep to five supplies evidence for the test-score claim, so the sentence is kept. It does not explain alarm clocks, it is squarely on topic, and it supports rather than contradicts the opening claim, so the other choices misstate its content."
+    },
+    {
+      "id": "add-delete-027",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
+      "stem": "A paragraph argues that community gardens reduce grocery costs for families. It cites the savings from growing one's own vegetables. Sentence to add: [[My neighbor painted his garden fence a bright shade of blue last summer.]]",
+      "choices": [
+        "Yes, because it gives data showing how community gardens cut grocery bills.",
+        "Yes, because it supports the argument that gardens save families money.",
+        "No, because the neighbor's fence color is off topic and does not support the argument about grocery costs.",
+        "No, because it repeats the point about savings from growing vegetables."
+      ],
+      "answer": 2,
+      "explanation": "A neighbor painting a fence blue says nothing about community gardens reducing grocery costs, so it is off topic and should not be added. It provides no data and does not support the argument, and it does not repeat the savings point, so the 'Yes' choices and the other 'No' choice all misdescribe it."
+    },
+    {
+      "id": "add-delete-028",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains how rainwater reaches a river. The previous sentence says that rain soaks into the soil and trickles downhill underground. Underlined sentence: [[Eventually that underground water seeps into streams that feed the river.]]",
+      "choices": [
+        "Kept, because it describes the color the river water usually appears.",
+        "Kept, because it continues the explanation of how rainwater travels to the river.",
+        "Deleted, because it abandons the topic of how rainwater reaches the river.",
+        "Deleted, because it simply restates that rain soaks into the soil."
+      ],
+      "answer": 1,
+      "explanation": "The sentence follows the water from underground into the streams that feed the river, advancing the explanation of how rainwater gets there, so it is kept. It says nothing about water color, it stays on topic, and it adds the next stage of the path rather than restating the soil sentence, so the other choices fail."
+    },
+    {
+      "id": "add-delete-029",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph describes the yearly migration of Arctic terns between the poles. The prior sentence states that the round trip can cover about forty thousand miles. Underlined sentence: [[The full journey there and back runs roughly forty thousand miles.]]",
+      "choices": [
+        "Kept, because it adds a new fact about the terns' nesting habits.",
+        "Kept, because it provides a needed example of an Arctic island.",
+        "Deleted, because it switches the subject to a different bird.",
+        "Deleted, because it restates the previous sentence's point about the forty-thousand-mile trip, adding nothing."
+      ],
+      "answer": 3,
+      "explanation": "The underlined sentence repeats the distance already given in the previous sentence, so it is redundant and should be deleted. It adds no nesting fact and names no island, and it still discusses the same terns, so the 'Kept' reasons and the other 'Deleted' reason are all inaccurate."
+    },
+    {
+      "id": "add-delete-030",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
+      "stem": "A paragraph argues that farmers markets strengthen local economies by keeping money within the community. It has just described how shoppers pay growers directly. Sentence to add: [[Canvas tote bags, the kind many shoppers carry to such markets, are usually made from cotton grown overseas.]]",
+      "choices": [
+        "Yes, because it explains why money stays within the community.",
+        "Yes, because it strengthens the claim that markets boost the local economy.",
+        "No, because a detail about where tote-bag cotton is grown shifts away from the paragraph's point about keeping money local.",
+        "No, because it contradicts the idea that shoppers pay growers directly."
+      ],
+      "answer": 2,
+      "explanation": "The paragraph is about markets keeping money in the community, so an aside about overseas cotton in tote bags changes the subject and should not be added. It does not explain why money stays local or strengthen the economic claim, and it contradicts nothing about paying growers directly, so the other choices misread its relationship to the paragraph."
+    },
+    {
+      "id": "add-delete-031",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains why desert animals come out at night. The previous sentence states that the intense daytime heat would quickly dehydrate them. The next sentence will describe the prey these animals hunt after dark. Underlined sentence: [[In the cool night air, the animals can move and hunt while losing far less of their bodies' water.]]",
+      "choices": [
+        "Kept, because it provides a statistic on how many desert species exist worldwide.",
+        "Kept, because it explains the advantage of nighttime activity, linking the heat problem to the hunting the next sentence describes.",
+        "Deleted, because it is an irrelevant aside about desert tourism.",
+        "Deleted, because it merely repeats the earlier point that daytime heat dehydrates the animals."
+      ],
+      "answer": 1,
+      "explanation": "Moving and hunting in cool air while losing less water is new information that connects the dehydration problem to the nighttime hunting the next sentence describes, so the sentence is kept. It contains no statistic, says nothing about tourism, and adds the benefit of darkness rather than repeating the point about daytime heat."
+    },
+    {
+      "id": "add-delete-032",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
+      "stem": "A paragraph explains how a thermostat keeps a room comfortable: a sensor reads the temperature, and when the air cools too far, the thermostat signals the heater to switch on. The surrounding sentences focus on this sensing-and-signaling cycle. Underlined sentence: [[The first electric room thermostat was patented in the United States in 1883.]]",
+      "choices": [
+        "Kept, because it explains how the sensor reads the room's temperature.",
+        "Kept, because it describes a step in how the thermostat signals the heater.",
+        "Deleted, because it repeats the sentence about the heater switching on.",
+        "Deleted, because a historical patent date interrupts the surrounding explanation of how the thermostat senses and signals."
+      ],
+      "answer": 3,
+      "explanation": "The surrounding sentences explain the sensing-and-signaling cycle, so a historical note about an 1883 patent interrupts that explanation and should be deleted. It does not describe the sensor's reading or the signaling step, and it does not repeat the heater sentence, so the 'Kept' reasons and the other 'Deleted' reason all misstate its content."
+    }
+  ]
+}

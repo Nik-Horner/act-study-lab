@@ -1,0 +1,485 @@
+{
+  "slug": "parallel-structure",
+  "questions": [
+    {
+      "id": "parallel-structure-001",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "On weekends Maria enjoys hiking, swimming, and [[to ride]] her bike.",
+      "choices": [
+        "NO CHANGE",
+        "a ride on",
+        "she rides",
+        "riding"
+      ],
+      "answer": 3,
+      "explanation": "The series 'hiking, swimming, and ___' is built from gerunds, so 'riding' matches. The infinitive 'to ride,' the clause 'she rides,' and the noun phrase 'a ride on' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-002",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The coach told us to stretch, to hydrate, and [[resting]] before the race.",
+      "choices": [
+        "NO CHANGE",
+        "rest",
+        "to rest",
+        "that we rest"
+      ],
+      "answer": 2,
+      "explanation": "The series uses infinitives 'to stretch, to hydrate, and ___,' so 'to rest' matches. The gerund 'resting,' the bare verb 'rest,' and the clause 'that we rest' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-003",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "A good tutor is patient, knowledgeable, and [[encouraging]].",
+      "choices": [
+        "NO CHANGE",
+        "encourages students",
+        "she encourages",
+        "with encouragement"
+      ],
+      "answer": 0,
+      "explanation": "The list pairs adjectives 'patient, knowledgeable, and encouraging,' so the adjective is parallel and NO CHANGE is correct. 'Encourages students' is a verb phrase, 'she encourages' is a clause, and 'with encouragement' is a prepositional phrase, all breaking the parallel form."
+    },
+    {
+      "id": "parallel-structure-004",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The new intern is responsible for sorting the mail, answering the phones, and [[to greet]] visitors.",
+      "choices": [
+        "NO CHANGE",
+        "greeting",
+        "greets",
+        "a greeter of"
+      ],
+      "answer": 1,
+      "explanation": "The series of gerunds 'sorting, answering, and ___' requires 'greeting.' The infinitive 'to greet,' the verb 'greets,' and the noun phrase 'a greeter of' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-005",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "We spent the afternoon raking leaves, washing the car, and [[the garage was cleaned]].",
+      "choices": [
+        "NO CHANGE",
+        "cleaning the garage",
+        "to clean the garage",
+        "the garage cleaning"
+      ],
+      "answer": 1,
+      "explanation": "The gerund series 'raking, washing, and ___' calls for 'cleaning the garage.' The passive clause, the infinitive 'to clean,' and the awkward noun phrase 'the garage cleaning' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-006",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The committee was looking for a leader who listens carefully, decides fairly, and [[acting]] decisively.",
+      "choices": [
+        "NO CHANGE",
+        "would be acting",
+        "acts",
+        "to act"
+      ],
+      "answer": 2,
+      "explanation": "The relative clause uses present-tense verbs 'listens, decides, and ___,' so 'acts' matches. The gerund 'acting,' the infinitive 'to act,' and the conditional 'would be acting' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-007",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Volunteering at the shelter taught me how to stay calm under pressure and [[being patient]] with frightened animals.",
+      "choices": [
+        "NO CHANGE",
+        "patiently",
+        "for being patient",
+        "to be patient"
+      ],
+      "answer": 3,
+      "explanation": "The two objects of 'how' are infinitives, 'to stay calm and ___,' so 'to be patient' matches. The gerund 'being patient,' the adverb 'patiently,' and the prepositional phrase 'for being patient' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-008",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Critics praised the novel for its vivid characters, its inventive plot, and [[how the prose was lyrical]].",
+      "choices": [
+        "NO CHANGE",
+        "it had lyrical prose",
+        "the prose being lyrical",
+        "its lyrical prose"
+      ],
+      "answer": 3,
+      "explanation": "The series lists 'its ___' noun phrases, so 'its lyrical prose' matches. The clauses 'how the prose was lyrical' and 'it had lyrical prose' and the gerund phrase 'the prose being lyrical' all break the form."
+    },
+    {
+      "id": "parallel-structure-009",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Riding the subway downtown is usually faster than [[driving]] through rush-hour traffic.",
+      "choices": [
+        "NO CHANGE",
+        "to drive",
+        "when you drive",
+        "to be driving"
+      ],
+      "answer": 0,
+      "explanation": "A comparison with 'than' must match its first half, the gerund 'Riding,' so 'driving' is parallel and NO CHANGE is correct. The infinitives 'to drive' and 'to be driving' and the clause 'when you drive' all break the form."
+    },
+    {
+      "id": "parallel-structure-010",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The senator argued that lowering taxes would help families more than [[to increase]] spending.",
+      "choices": [
+        "NO CHANGE",
+        "it increased",
+        "increasing",
+        "an increasing of"
+      ],
+      "answer": 2,
+      "explanation": "The comparison joins 'lowering' and the underlined item with 'than,' so the gerund 'increasing' is parallel. The infinitive 'to increase,' the clause 'it increased,' and the malformed 'an increasing of' all break the form."
+    },
+    {
+      "id": "parallel-structure-011",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The director was known not only for her demanding rehearsals but also [[she inspired loyalty]].",
+      "choices": [
+        "NO CHANGE",
+        "to inspire loyalty",
+        "inspiring loyalty",
+        "for her inspiring loyalty"
+      ],
+      "answer": 3,
+      "explanation": "The correlative 'not only...but also' must join matching structures; 'for her demanding rehearsals' pairs with 'for her inspiring loyalty.' The clause, the bare gerund phrase, and the infinitive all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-012",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "By the end of the trip we had to choose between staying an extra night and [[to catch]] the early flight home.",
+      "choices": [
+        "NO CHANGE",
+        "catching",
+        "we caught",
+        "the catching of"
+      ],
+      "answer": 1,
+      "explanation": "The pair 'between...and' joins the gerund 'staying' with the underlined item, so 'catching' is parallel. The infinitive 'to catch,' the clause 'we caught,' and the noun phrase 'the catching of' all break the form."
+    },
+    {
+      "id": "parallel-structure-013",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Students may either submit the essay online or [[a printed copy can be handed in]].",
+      "choices": [
+        "NO CHANGE",
+        "hand in a printed copy",
+        "to hand in a printed copy",
+        "handing in a printed copy"
+      ],
+      "answer": 1,
+      "explanation": "The correlative 'either...or' must join matching verb phrases; 'submit the essay online' pairs with 'hand in a printed copy.' The passive clause, the gerund, and the infinitive all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-014",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The fellowship rewards scientists who design original experiments, who publish rigorous findings, and [[who mentor younger researchers]].",
+      "choices": [
+        "NO CHANGE",
+        "mentoring younger researchers",
+        "to mentor younger researchers",
+        "mentor younger researchers"
+      ],
+      "answer": 0,
+      "explanation": "The series of relative clauses, 'who design...,' 'who publish...,' and 'who mentor...,' is parallel, so NO CHANGE is correct. The gerund phrase 'mentoring,' the bare verb phrase 'mentor,' and the infinitive 'to mentor' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The report concluded that the city should invest in public transit not because cars are inefficient but because trains [[reducing emissions]].",
+      "choices": [
+        "NO CHANGE",
+        "to reduce emissions",
+        "reduce emissions",
+        "they reduce emissions"
+      ],
+      "answer": 2,
+      "explanation": "The correlative 'not because...but because' joins two clauses; 'cars are inefficient' pairs with 'trains reduce emissions.' The gerund 'reducing emissions,' the double subject in 'they reduce emissions,' and the infinitive 'to reduce emissions' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-016",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Learning to play the cello demands as much daily discipline as [[to train]] for a marathon does.",
+      "choices": [
+        "NO CHANGE",
+        "training",
+        "you train",
+        "to be training"
+      ],
+      "answer": 1,
+      "explanation": "The 'as much...as' comparison matches the gerund 'Learning,' so 'training' is parallel. The infinitives 'to train' and 'to be training' and the clause 'you train' all break the form."
+    },
+    {
+      "id": "parallel-structure-017",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Each morning the baker mixes the dough, shapes the loaves, and [[bakes them]] until golden.",
+      "choices": [
+        "NO CHANGE",
+        "baking them",
+        "the loaves get baked",
+        "to bake them"
+      ],
+      "answer": 0,
+      "explanation": "The series uses present-tense verbs 'mixes, shapes, and bakes,' so 'bakes them' is parallel. The infinitive 'to bake,' the gerund 'baking,' and the passive clause all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-018",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "For the camping trip we packed a tent, a lantern, and [[bringing a cooler]].",
+      "choices": [
+        "NO CHANGE",
+        "we brought a cooler",
+        "a cooler",
+        "to bring a cooler"
+      ],
+      "answer": 2,
+      "explanation": "The series lists nouns 'a tent, a lantern, and a cooler,' so the noun phrase 'a cooler' is parallel. The gerund 'bringing,' the infinitive 'to bring,' and the clause 'we brought' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-019",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "My grandfather likes to fish at dawn, to nap after lunch, and [[to read]] in the evening.",
+      "choices": [
+        "NO CHANGE",
+        "reading",
+        "a reader",
+        "he reads"
+      ],
+      "answer": 0,
+      "explanation": "The series uses infinitives 'to fish, to nap, and to read,' so the infinitive is parallel and NO CHANGE is correct. The gerund 'reading,' the clause 'he reads,' and the noun 'a reader' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-020",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The museum guide was friendly, knowledgeable, and [[she spoke clearly]].",
+      "choices": [
+        "NO CHANGE",
+        "spoke clearly",
+        "articulate",
+        "with clear speech"
+      ],
+      "answer": 2,
+      "explanation": "The list pairs adjectives 'friendly, knowledgeable, and articulate,' so 'articulate' is parallel. The clause 'she spoke clearly,' the prepositional phrase 'with clear speech,' and the verb phrase 'spoke clearly' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-021",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Our science teacher reminded us to label the diagram, to record the data, and [[checking our units]].",
+      "choices": [
+        "NO CHANGE",
+        "that units be checked",
+        "to check our units",
+        "check our units"
+      ],
+      "answer": 2,
+      "explanation": "The series uses infinitives 'to label, to record, and to check,' so 'to check our units' is parallel. The gerund 'checking,' the bare verb 'check,' and the clause 'that units be checked' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-022",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "A skilled negotiator listens to every side, weighs the options carefully, and [[proposes]] a fair compromise.",
+      "choices": [
+        "NO CHANGE",
+        "is proposing",
+        "to propose",
+        "would propose"
+      ],
+      "answer": 0,
+      "explanation": "The series uses simple present-tense verbs 'listens, weighs, and proposes,' so NO CHANGE is correct. The progressive 'is proposing,' the infinitive 'to propose,' and the conditional 'would propose' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-023",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The internship taught her how to manage a budget and [[communicating with clients]].",
+      "choices": [
+        "NO CHANGE",
+        "communicates with clients",
+        "to communicating with clients",
+        "how to communicate with clients"
+      ],
+      "answer": 3,
+      "explanation": "The two objects of 'taught her' are 'how to manage a budget' and the underlined item, so 'how to communicate with clients' is parallel. The gerund 'communicating with clients,' the ungrammatical 'to communicating,' and the finite verb 'communicates' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-024",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Reviewers admired the restaurant for its bold flavors, its warm service, and [[the prices were reasonable]].",
+      "choices": [
+        "NO CHANGE",
+        "having reasonable prices",
+        "its reasonable prices",
+        "that prices were reasonable"
+      ],
+      "answer": 2,
+      "explanation": "The series lists 'its ___' noun phrases, so 'its reasonable prices' is parallel. The clause 'the prices were reasonable,' the gerund phrase 'having reasonable prices,' and the 'that' clause all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-025",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Planting a garden in spring takes more patience than [[harvesting]] it in fall.",
+      "choices": [
+        "NO CHANGE",
+        "a harvest of",
+        "to harvest",
+        "when you harvest"
+      ],
+      "answer": 0,
+      "explanation": "The 'more...than' comparison matches the gerund 'Planting,' so 'harvesting' is parallel and NO CHANGE is correct. The infinitive 'to harvest,' the noun phrase 'a harvest of,' and the clause 'when you harvest' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-026",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The startup succeeded not only by designing a useful product but also [[it marketed cleverly]].",
+      "choices": [
+        "NO CHANGE",
+        "to market cleverly",
+        "by marketing cleverly",
+        "marketing cleverly"
+      ],
+      "answer": 2,
+      "explanation": "The correlative 'not only...but also' must join matching structures; 'by designing a useful product' pairs with 'by marketing cleverly.' The clause 'it marketed cleverly,' the bare gerund 'marketing cleverly,' and the infinitive all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-027",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "On Saturday the volunteers had to choose between repainting the fence and [[to plant]] the flowerbeds.",
+      "choices": [
+        "NO CHANGE",
+        "they planted",
+        "the planting of",
+        "planting"
+      ],
+      "answer": 3,
+      "explanation": "The pair 'between...and' joins the gerund 'repainting' with the underlined item, so 'planting' is parallel. The infinitive 'to plant,' the clause 'they planted,' and the noun phrase 'the planting of' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-028",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Drivers must either renew their registration online or [[a form must be mailed]] to the agency.",
+      "choices": [
+        "NO CHANGE",
+        "mail a form",
+        "mailing a form",
+        "to mail a form"
+      ],
+      "answer": 1,
+      "explanation": "The correlative 'either...or' must join matching verb phrases; 'renew their registration online' pairs with 'mail a form.' The passive clause 'a form must be mailed,' the gerund 'mailing,' and the infinitive 'to mail' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-029",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The trail guide was both experienced in the mountains and [[she knew the weather well]].",
+      "choices": [
+        "NO CHANGE",
+        "with weather knowledge",
+        "knowledgeable about the weather",
+        "knew the weather well"
+      ],
+      "answer": 2,
+      "explanation": "The correlative 'both...and' must join matching adjective phrases; 'experienced in the mountains' pairs with 'knowledgeable about the weather.' The clause 'she knew the weather well,' the verb phrase 'knew the weather well,' and the prepositional phrase 'with weather knowledge' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-030",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The grant supports teachers who develop new curricula, who share their methods openly, and [[who train new colleagues]].",
+      "choices": [
+        "NO CHANGE",
+        "to train new colleagues",
+        "the training of new colleagues",
+        "training new colleagues"
+      ],
+      "answer": 0,
+      "explanation": "The series of relative clauses, 'who develop...,' 'who share...,' and 'who train...,' is parallel, so NO CHANGE is correct. The noun phrase 'the training of new colleagues,' the gerund phrase 'training new colleagues,' and the infinitive all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-031",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The biologist explained that the wetland matters not because tourists enjoy it but because migrating birds [[depending on it]].",
+      "choices": [
+        "NO CHANGE",
+        "depend on it",
+        "they depend on it",
+        "to depend on it"
+      ],
+      "answer": 1,
+      "explanation": "The correlative 'not because...but because' joins two clauses; 'tourists enjoy it' pairs with 'migrating birds depend on it.' The gerund 'depending on it,' the double subject in 'they depend on it,' and the infinitive 'to depend on it' all break the parallel form."
+    },
+    {
+      "id": "parallel-structure-032",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Restoring an antique clock requires as much careful attention as [[to rebuild]] a vintage engine does.",
+      "choices": [
+        "NO CHANGE",
+        "you rebuild",
+        "to be rebuilding",
+        "rebuilding"
+      ],
+      "answer": 3,
+      "explanation": "The 'as much...as' comparison matches the gerund 'Restoring,' so 'rebuilding' is parallel. The infinitives 'to rebuild' and 'to be rebuilding' and the clause 'you rebuild' all break the parallel form."
+    }
+  ]
+}

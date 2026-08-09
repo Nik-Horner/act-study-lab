@@ -1,0 +1,485 @@
+{
+  "slug": "transitions",
+  "questions": [
+    {
+      "id": "transitions-001",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The library advertises that all of its services are free and open to everyone. [[However,]] it lends out laptops only to students who can prove financial need.",
+      "choices": [
+        "NO CHANGE",
+        "For example,",
+        "As a result,",
+        "In addition,"
+      ],
+      "answer": 0,
+      "explanation": "A laptop policy limited to students in financial need contradicts the claim that every service is open to everyone, so the contrast word 'However' fits; 'In addition' would extend the claim rather than reverse it, 'As a result' signals cause and effect, and 'For example' would wrongly offer the restriction as proof of openness."
+    },
+    {
+      "id": "transitions-002",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Heavy rain fell across the valley all night. [[For example,]] the river overflowed its banks by morning.",
+      "choices": [
+        "NO CHANGE",
+        "Likewise,",
+        "Nevertheless,",
+        "As a result,"
+      ],
+      "answer": 3,
+      "explanation": "The overflowing river is the effect of the heavy rain, so the cause/effect word 'As a result' fits; 'For example' introduces an illustration, 'Nevertheless' contrast, and 'Likewise' comparison, none of which match."
+    },
+    {
+      "id": "transitions-003",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "First, spread the glue evenly across the cardboard. [[However,]] press the two pieces firmly together.",
+      "choices": [
+        "NO CHANGE",
+        "In fact,",
+        "For example,",
+        "Then,"
+      ],
+      "answer": 3,
+      "explanation": "The sentences describe steps in order, so the sequence word 'Then' fits; 'However' signals contrast, 'In fact' emphasis, and 'For example' an illustration, none of which suits a step-by-step process."
+    },
+    {
+      "id": "transitions-004",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The forecast promised clear skies for the parade. [[Therefore,]] a sudden downpour soaked the marchers.",
+      "choices": [
+        "NO CHANGE",
+        "Similarly,",
+        "However,",
+        "In addition,"
+      ],
+      "answer": 2,
+      "explanation": "The downpour clashes with the promise of clear skies, so the contrast word 'However' fits; 'Therefore' implies a result, while 'Similarly' and 'In addition' signal agreement, none of which match the reversal."
+    },
+    {
+      "id": "transitions-005",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Earthworms enrich the soil with nutrients from their waste. [[On the other hand,]] their burrowing can speed erosion on steep, bare slopes.",
+      "choices": [
+        "NO CHANGE",
+        "For instance,",
+        "As a result,",
+        "Furthermore,"
+      ],
+      "answer": 0,
+      "explanation": "A drawback set against a benefit calls for a contrast, so 'On the other hand' fits; 'Furthermore' signals addition, 'As a result' cause and effect, and 'For instance' an example, none of which match the trade-off."
+    },
+    {
+      "id": "transitions-006",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Everyone expected the rookie to be nervous in his first game. [[Consequently,]] he played with the calm of a veteran.",
+      "choices": [
+        "NO CHANGE",
+        "For example,",
+        "Instead,",
+        "Likewise,"
+      ],
+      "answer": 2,
+      "explanation": "His calm play reverses the expectation of nervousness, so the contrast word 'Instead' fits; 'Consequently' signals a result, 'For example' an illustration, and 'Likewise' agreement, none of which capture the reversal."
+    },
+    {
+      "id": "transitions-007",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The hard drive had not been backed up in months. [[In other words,]] the crash wiped out years of irreplaceable photos.",
+      "choices": [
+        "NO CHANGE",
+        "Thus,",
+        "For instance,",
+        "Nevertheless,"
+      ],
+      "answer": 1,
+      "explanation": "The missing backups led to the loss of the photos, so the cause/effect word 'Thus' fits; 'In other words' restates an idea, 'Nevertheless' contrasts, and 'For instance' gives an example, none of which match the cause and result."
+    },
+    {
+      "id": "transitions-008",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The brochure described the resort as peaceful and quiet. [[Meanwhile,]] construction crews pounded away outside our window all week.",
+      "choices": [
+        "NO CHANGE",
+        "Yet",
+        "So",
+        "Furthermore,"
+      ],
+      "answer": 1,
+      "explanation": "The noisy construction contradicts the promise of peace and quiet, so the contrast word 'Yet' fits; 'Meanwhile' signals simultaneous time, 'So' a result, and 'Furthermore' addition, none of which signal the contradiction."
+    },
+    {
+      "id": "transitions-009",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Skeptics warned that the new bike lanes would sit empty and waste money. [[Nevertheless,]] the number of daily cyclists has doubled.",
+      "choices": [
+        "NO CHANGE",
+        "As a result,",
+        "For example,",
+        "Likewise,"
+      ],
+      "answer": 0,
+      "explanation": "The doubling of cyclists defies the skeptics' prediction of empty lanes, so the contrast word 'Nevertheless' fits; 'As a result' signals cause and effect, 'Likewise' comparison, and 'For example' an illustration, none of which match the surprise."
+    },
+    {
+      "id": "transitions-010",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "First the chef chopped the onions and set them in a bowl. [[Therefore,]] she rinsed the cutting board and reached for the carrots.",
+      "choices": [
+        "NO CHANGE",
+        "Afterward,",
+        "For example,",
+        "In contrast,"
+      ],
+      "answer": 1,
+      "explanation": "The two actions are simply ordered steps, so the time word 'Afterward' fits. 'Therefore' forces a cause-effect link that rinsing the board does not have with chopping, 'In contrast' signals a clash, and 'For example' signals an illustration, none of which match a plain sequence."
+    },
+    {
+      "id": "transitions-011",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "People often picture sharks as relentless hunters. [[In fact,]] most species are slow-moving and rarely attack humans.",
+      "choices": [
+        "NO CHANGE",
+        "Likewise,",
+        "Therefore,",
+        "Meanwhile,"
+      ],
+      "answer": 0,
+      "explanation": "The second sentence corrects a common misconception, which 'In fact' emphasizes; 'Therefore' implies a result, 'Likewise' agreement, and 'Meanwhile' simultaneous time, none of which fit a correction."
+    },
+    {
+      "id": "transitions-012",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The intern sorted the survey responses by region. [[Still,]] she entered each batch into the database.",
+      "choices": [
+        "NO CHANGE",
+        "In other words,",
+        "Next,",
+        "Likewise,"
+      ],
+      "answer": 2,
+      "explanation": "Entering the responses is the step that follows sorting them, so the sequence word 'Next' fits; 'Still' signals contrast, 'Likewise' comparison, and 'In other words' restatement, none of which suit the second step in a process."
+    },
+    {
+      "id": "transitions-013",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The diner had great food and a prime location on Main Street. [[Similarly,]] it shut its doors after barely a year in business.",
+      "choices": [
+        "NO CHANGE",
+        "Consequently,",
+        "Nevertheless,",
+        "Indeed,"
+      ],
+      "answer": 2,
+      "explanation": "Closing despite clear advantages is a surprise, so the contrast word 'Nevertheless' fits; 'Similarly' and 'Indeed' signal agreement or emphasis, and 'Consequently' a result, none of which match the unexpected failure."
+    },
+    {
+      "id": "transitions-014",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Wetlands filter pollutants out of the water that flows through them. [[For instance,]] they store floodwater that would otherwise swamp nearby towns.",
+      "choices": [
+        "NO CHANGE",
+        "However,",
+        "Moreover,",
+        "As a result,"
+      ],
+      "answer": 2,
+      "explanation": "Storing floodwater is a second benefit added to filtering pollutants, so the addition word 'Moreover' fits; 'For instance' would wrongly make flood storage an example of filtering, while 'However' and 'As a result' misstate the relationship."
+    },
+    {
+      "id": "transitions-015",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "An older bridge nearby had buckled in a single strong storm. [[In contrast,]] the new span held firm in the season's worst gales.",
+      "choices": [
+        "NO CHANGE",
+        "As a result,",
+        "For instance,",
+        "Likewise,"
+      ],
+      "answer": 0,
+      "explanation": "The new span's strength is set against the old bridge's collapse, so the contrast phrase 'In contrast' fits; 'As a result' signals cause and effect, 'Likewise' comparison, and 'For instance' an example, none of which match the opposition between the two bridges."
+    },
+    {
+      "id": "transitions-016",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Conservationists released a dozen beavers into the empty stream bed. [[For instance,]] the dams they built transformed it into a lush marsh.",
+      "choices": [
+        "NO CHANGE",
+        "On the other hand,",
+        "Eventually,",
+        "Likewise,"
+      ],
+      "answer": 2,
+      "explanation": "The marsh forms later, after the release, so the time word 'Eventually' fits; 'For instance' would wrongly make the dams an example of the release, while 'On the other hand' signals contrast and 'Likewise' comparison, neither of which suits a change that develops over time."
+    },
+    {
+      "id": "transitions-017",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The museum stays open late on Fridays. [[Instead,]] it offers guided tours every weekend morning.",
+      "choices": [
+        "NO CHANGE",
+        "Therefore,",
+        "Additionally,",
+        "For example,"
+      ],
+      "answer": 2,
+      "explanation": "The weekend tours are a second offering added to the late Friday hours, so the addition word 'Additionally' fits; 'Instead' signals replacement, 'For example' an illustration, and 'Therefore' a result, none of which match."
+    },
+    {
+      "id": "transitions-018",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "During the blackout, every house on the block sat dark and silent. [[Likewise,]] the traffic lights at each intersection went black.",
+      "choices": [
+        "NO CHANGE",
+        "Therefore,",
+        "For instance,",
+        "However,"
+      ],
+      "answer": 0,
+      "explanation": "The dark traffic lights mirror the dark houses, so the comparison word 'Likewise' fits; 'However' signals contrast, 'Therefore' cause and effect, and 'For instance' an example, none of which capture the parallel between the two scenes."
+    },
+    {
+      "id": "transitions-019",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Preheat the oven to 375 degrees. [[In contrast,]] line the baking sheet with parchment paper.",
+      "choices": [
+        "NO CHANGE",
+        "Therefore,",
+        "For instance,",
+        "Meanwhile,"
+      ],
+      "answer": 3,
+      "explanation": "Lining the sheet happens during the same window as the oven heating up, so the time word 'Meanwhile' fits; 'In contrast' signals a clash, 'Therefore' a result, and 'For instance' an example, none of which suit two simultaneous tasks."
+    },
+    {
+      "id": "transitions-020",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Many people assume cactuses need almost no care. [[Likewise,]] overwatering is the most common reason they die.",
+      "choices": [
+        "NO CHANGE",
+        "Therefore,",
+        "In fact,",
+        "Meanwhile,"
+      ],
+      "answer": 2,
+      "explanation": "The second sentence emphasizes a surprising truth that corrects the assumption, so the emphasis word 'In fact' fits; 'Likewise' signals agreement, 'Therefore' a result, and 'Meanwhile' simultaneous time, none of which match."
+    },
+    {
+      "id": "transitions-021",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Coach Rivera goes out of her way for her players. [[Therefore,]] she shows up early to set out every cone herself.",
+      "choices": [
+        "NO CHANGE",
+        "Nevertheless,",
+        "Likewise,",
+        "For example,"
+      ],
+      "answer": 3,
+      "explanation": "Setting out every cone herself is one concrete illustration of how she goes out of her way, so 'For example' fits; 'Therefore' signals a result, 'Nevertheless' contrast, and 'Likewise' comparison, none of which introduce an example."
+    },
+    {
+      "id": "transitions-022",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The startup poured money into flashy advertising that drew few new users. [[Moreover,]] it ignored the bugs customers kept reporting.",
+      "choices": [
+        "NO CHANGE",
+        "In other words,",
+        "For instance,",
+        "As a result,"
+      ],
+      "answer": 0,
+      "explanation": "Ignoring the bugs is a second, separate misstep added to the wasted ad spending, so the addition word 'Moreover' fits; 'As a result' signals cause and effect, 'In other words' a restatement, and 'For instance' an example, none of which match a second failing."
+    },
+    {
+      "id": "transitions-023",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The trail map warned that the summit route was strenuous. [[Consequently,]] we reached the top without breaking a sweat.",
+      "choices": [
+        "NO CHANGE",
+        "In addition,",
+        "Likewise,",
+        "However,"
+      ],
+      "answer": 3,
+      "explanation": "Reaching the top easily reverses the warning about a strenuous climb, so the contrast word 'However' fits; 'Consequently' signals a result, 'Likewise' agreement, and 'In addition' addition, none of which capture the reversal."
+    },
+    {
+      "id": "transitions-024",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The committee reviewed every grant application twice. [[For example,]] it ranked the finalists by overall impact.",
+      "choices": [
+        "NO CHANGE",
+        "In fact,",
+        "Finally,",
+        "However,"
+      ],
+      "answer": 2,
+      "explanation": "Ranking the finalists is the last step after reviewing the applications, so the sequence word 'Finally' fits; 'For example' signals an illustration, 'However' contrast, and 'In fact' emphasis, none of which suit an ordered process."
+    },
+    {
+      "id": "transitions-025",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Solar panels cut a household's monthly electric bill. [[Nevertheless,]] they raise the resale value of the home.",
+      "choices": [
+        "NO CHANGE",
+        "Otherwise,",
+        "For instance,",
+        "What is more,"
+      ],
+      "answer": 3,
+      "explanation": "Raising resale value is a second advantage added to the lower bills, so the addition phrase 'What is more' fits; 'Nevertheless' signals contrast, 'For instance' an example, and 'Otherwise' a condition, none of which match a second benefit."
+    },
+    {
+      "id": "transitions-026",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Critics dismissed the novel as too long and slow. [[As a result,]] it went on to win the year's top literary prize.",
+      "choices": [
+        "NO CHANGE",
+        "Even so,",
+        "Likewise,",
+        "In other words,"
+      ],
+      "answer": 1,
+      "explanation": "Winning the prize clashes with the harsh dismissal, so the contrast phrase 'Even so' fits; 'As a result' signals a result, 'In other words' restatement, and 'Likewise' agreement, none of which match the surprising outcome."
+    },
+    {
+      "id": "transitions-027",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The volunteers cleared the brush from the riverbank. [[In contrast,]] they planted native grasses to hold the soil in place.",
+      "choices": [
+        "NO CHANGE",
+        "For example,",
+        "Next,",
+        "Therefore,"
+      ],
+      "answer": 2,
+      "explanation": "Planting the grasses is the step that follows clearing the brush, so the sequence word 'Next' fits; 'In contrast' signals a clash, 'Therefore' a result, and 'For example' an illustration, none of which suit an ordered process."
+    },
+    {
+      "id": "transitions-028",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Honeybees do far more than make honey for our tables. [[Therefore,]] they pollinate roughly a third of the crops we eat.",
+      "choices": [
+        "NO CHANGE",
+        "For instance,",
+        "However,",
+        "Meanwhile,"
+      ],
+      "answer": 1,
+      "explanation": "Pollinating crops is a concrete example of the bigger role bees play, so the example word 'For instance' fits; 'Therefore' signals a result, 'However' contrast, and 'Meanwhile' simultaneous time, none of which match an illustration."
+    },
+    {
+      "id": "transitions-029",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Some readers think a thesaurus makes their writing stronger. [[Therefore,]] swapping in fancy synonyms often makes a sentence harder to follow.",
+      "choices": [
+        "NO CHANGE",
+        "Similarly,",
+        "Afterward,",
+        "In reality,"
+      ],
+      "answer": 3,
+      "explanation": "The second sentence emphasizes the true result that undercuts the assumption, so the emphasis phrase 'In reality' fits; 'Therefore' signals a result, 'Similarly' agreement, and 'Afterward' time order, none of which match a correction."
+    },
+    {
+      "id": "transitions-030",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The avenue's makeover changed daily life on the street in visible ways. [[For example,]] foot traffic to the shops along it climbed sharply.",
+      "choices": [
+        "NO CHANGE",
+        "Therefore,",
+        "Nonetheless,",
+        "Beforehand,"
+      ],
+      "answer": 0,
+      "explanation": "The surge in foot traffic is one concrete instance of the visible changes, so the example phrase 'For example' fits; 'Nonetheless' signals contrast, 'Beforehand' earlier time, and 'Therefore' cause and effect, none of which suit an illustration."
+    },
+    {
+      "id": "transitions-031",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "Deep-sea anglerfish dangle a glowing lure to draw in prey. [[As a result,]] some species use the same light to signal potential mates.",
+      "choices": [
+        "NO CHANGE",
+        "Furthermore,",
+        "For instance,",
+        "Even so,"
+      ],
+      "answer": 1,
+      "explanation": "Signaling mates is a second use of the light added to luring prey, so the addition word 'Furthermore' fits; 'As a result' signals a result, 'Even so' contrast, and 'For instance' an example, none of which match a second function."
+    },
+    {
+      "id": "transitions-032",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which transition is the most logical in context?",
+      "stem": "The archivists spent a decade digitizing the fragile manuscripts. [[Otherwise,]] the originals could be sealed away from light and humidity.",
+      "choices": [
+        "NO CHANGE",
+        "At last,",
+        "For example,",
+        "Conversely,"
+      ],
+      "answer": 1,
+      "explanation": "Sealing the originals is the long-awaited step that comes after a decade of work, so the time phrase 'At last' fits; 'Otherwise' signals a condition, 'Conversely' contrast, and 'For example' an illustration, none of which suit the delayed outcome."
+    }
+  ]
+}

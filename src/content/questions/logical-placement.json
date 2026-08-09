@@ -1,0 +1,485 @@
+{
+  "slug": "logical-placement",
+  "questions": [
+    {
+      "id": "logical-placement-001",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] First, gather the flour, sugar, and eggs on the counter. [2] Next, beat the ingredients into a smooth batter. [3] Finally, slide the pan into the oven. Sentence to place: \"Then pour the batter into a greased pan.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "The sequence runs First, Next, Then, Finally. \"Then pour the batter\" must come after the batter is mixed (sentence 2) and before the pan goes in the oven (sentence 3). Placing it before sentence 1 or after sentence 1 pours batter that does not exist yet; placing it after sentence 3 pours batter after baking has already started."
+    },
+    {
+      "id": "logical-placement-002",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] First, Maria filled out the online application. [2] A week later, she received an invitation to interview. [3] On the day itself, she arrived early and answered every question calmly. Sentence to place: \"A few days after that, the manager called to offer her the job.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 3,
+      "explanation": "The timeline moves forward: First, a week later, on the day itself, then a few days after that. The offer call follows the interview, so it belongs after sentence 3. Any earlier slot has the manager offering the job before the interview has happened."
+    },
+    {
+      "id": "logical-placement-003",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The storm knocked a heavy branch onto the power line overnight. [2] Crews worked until noon to clear the debris and restring the cable. [3] By early afternoon, the lights flickered back on across the neighborhood. Sentence to place: \"As a result, the entire block lost electricity before dawn.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 1,
+      "explanation": "\"As a result\" marks an effect, and the cause is the branch hitting the line in sentence 1. The outage must follow that cause and precede the repair, so it belongs after sentence 1. Before sentence 1 states the effect with no cause yet; after sentence 2 or 3 reports the block losing power after crews have already restored it."
+    },
+    {
+      "id": "logical-placement-004",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The hikers studied the trail map before setting out. [2] They climbed steadily through the forest for two hours. [3] At the summit, they stopped to eat lunch and enjoy the view. Sentence to place: \"This careful preparation gave them confidence as they set off.\"",
+      "choices": [
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3",
+        "before sentence 1"
+      ],
+      "answer": 0,
+      "explanation": "\"This careful preparation\" points back to studying the map in sentence 1, and \"as they set off\" must come before the climb begins in sentence 2, so the sentence belongs right after sentence 1. Before sentence 1 there is no preparation for \"this\" to name; after sentences 2 or 3 the hikers are setting off after they have already climbed or reached the summit."
+    },
+    {
+      "id": "logical-placement-005",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] First, the volunteers sorted the donated cans by type. [2] Then they packed the sorted cans into boxes and stacked them along the back wall. [3] Afterward, they swept the floor and locked up for the night. Sentence to place: \"Next, they labeled each box with its contents.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "The order is First, Then, Next, Afterward. \"Next, they labeled each box\" must come after the cans are packed into boxes (sentence 2) and before the cleanup (sentence 3). Earlier slots label boxes that do not exist yet; the final slot labels boxes after the volunteers have locked up."
+    },
+    {
+      "id": "logical-placement-006",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] In 1928, Alexander Fleming noticed mold killing bacteria in a forgotten petri dish. [2] Over the next decade, other scientists struggled to purify the substance in usable amounts. [3] By the 1940s, mass production finally made the drug available to wounded soldiers. Sentence to place: \"This chance observation marked the beginning of penicillin's development.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 1,
+      "explanation": "\"This chance observation\" refers to Fleming noticing the mold in sentence 1, so it must follow that sentence. The dates also climb from 1928 to the 1940s, and placing the back-reference after sentence 2 or 3 separates \"this observation\" from the event it names; before sentence 1 there is no observation yet for \"this\" to point to."
+    },
+    {
+      "id": "logical-placement-007",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The committee proposed cutting the music program to save money. [2] Within days, hundreds of parents flooded the school board with angry emails. [3] Facing the backlash, the board reversed course and restored full funding. Sentence to place: \"Such criticism made the original plan politically impossible.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"Such criticism\" refers to the angry emails in sentence 2, so it must follow them, and it must precede the board's reversal in sentence 3 that the criticism causes. Before sentence 1 or after sentence 1 there is no criticism yet to name; after sentence 3 the criticism is mentioned only after the board has already given in."
+    },
+    {
+      "id": "logical-placement-008",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] Researchers fed one group of mice a high-sugar diet for six weeks. [2] Those mice gained far more weight than a second group fed identical food without the added sugar. [3] The team plans to repeat the experiment with a larger sample next year. Sentence to place: \"These results suggested that sugar alone drove the weight gain.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"These results\" refers to the weight difference between the two groups reported in sentence 2, so the sentence must follow it. Earlier slots cite results before any comparison exists; after sentence 3 the findings appear only after the team has moved on to planning next year's study."
+    },
+    {
+      "id": "logical-placement-009",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] First, the city closed the old bridge for a full safety inspection. [2] Engineers discovered deep cracks in two of the main supports. [3] Finally, after months of work, the rebuilt bridge reopened to traffic. Sentence to place: \"Because of these findings, officials ordered a complete reconstruction.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"These findings\" refers to the cracks engineers discovered in sentence 2, and \"because of\" marks the cause that leads to the rebuild. The sentence must follow sentence 2 and precede the reopening in sentence 3. Earlier slots cite findings that have not been made; after sentence 3 the reconstruction is ordered after the bridge has already reopened."
+    },
+    {
+      "id": "logical-placement-010",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The startup launched its app with almost no marketing budget. [2] Early users loved it and told their friends without being asked. [3] Within a year, word of mouth had pushed downloads past a million. Sentence to place: \"They quickly became the company's most effective advertisers.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "The pronoun \"They\" refers to the early users introduced in sentence 2, so the sentence must follow sentence 2 and explain how that word of mouth fed the growth in sentence 3. Before sentence 1 or after sentence 1 there is no plural antecedent for \"They\"; after sentence 3 the pronoun would point past the million-download milestone rather than back to the users."
+    },
+    {
+      "id": "logical-placement-011",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The chef tasted the soup and frowned at how flat it seemed. [2] She added a pinch of salt and a squeeze of lemon. [3] Satisfied at last, she ladled it into bowls for the guests. Sentence to place: \"This small adjustment brightened the whole dish.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"This small adjustment\" refers to adding salt and lemon in sentence 2, so it must follow that sentence and precede the chef serving the soup in sentence 3. Slots before sentence 2 name an adjustment that has not been made; after sentence 3 the brightening is mentioned only after the soup is already in the bowls."
+    },
+    {
+      "id": "logical-placement-012",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] Heavy rains had soaked the hillside for nearly a week. [2] One night the saturated soil finally gave way in a sudden mudslide. [3] The next morning, neighbors gathered with shovels to dig out the buried road. Sentence to place: \"This slow buildup of water was steadily weakening the slope.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 1,
+      "explanation": "\"This slow buildup of water\" refers to the week of rain in sentence 1, so it must follow that sentence; the past-progressive \"was steadily weakening\" describes an ongoing process leading up to the collapse, so it must come before the mudslide in sentence 2. Before sentence 1 there is no buildup yet to name, and after sentence 2 or 3 the slope has already given way."
+    },
+    {
+      "id": "logical-placement-013",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] To begin, the students brainstormed dozens of possible topics. [2] Next, they narrowed the list to the three strongest ideas. [3] Finally, each group chose one idea and started drafting. Sentence to place: \"After that, they debated the pros and cons of those three options.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "The sequence runs To begin, Next, After that, Finally. \"After that, they debated the pros and cons of those three options\" depends on \"those three\" from sentence 2, so it must follow sentence 2 and precede the final choice in sentence 3. Earlier slots reference three options that have not been selected; the last slot debates options after a group has already chosen one."
+    },
+    {
+      "id": "logical-placement-014",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "Paragraph A: [1] For years, the town's only grocery store sat empty and boarded up. [2] Residents had to drive thirty minutes for fresh food. Paragraph B: [3] A group of neighbors pooled their savings and reopened it as a co-op. [4] Today the shelves are full and the parking lot is busy again. Sentence to place: \"That long absence left the whole community frustrated.\"",
+      "choices": [
+        "before sentence 1 (start of Paragraph A)",
+        "after sentence 2 (end of Paragraph A)",
+        "after sentence 3 (middle of Paragraph B)",
+        "after sentence 4 (end of Paragraph B)"
+      ],
+      "answer": 1,
+      "explanation": "\"That long absence\" refers to the empty store and the long drives described across sentences 1 and 2, so it must close Paragraph A after sentence 2, summarizing the problem before Paragraph B presents the fix. Before sentence 1 there is no absence yet to name; placing it inside Paragraph B drops a back-reference to the old problem after the co-op has already solved it."
+    },
+    {
+      "id": "logical-placement-015",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] In the 1800s, mapmakers still left large blank spaces across the African interior. [2] Explorers gradually filled those gaps with rivers, lakes, and mountain ranges. [3] By 1900, few unmapped regions remained on the continent. [4] Modern satellites now record terrain those explorers could never have reached. Sentence to place: \"Each expedition added a few more confident lines to the page.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 2",
+        "after sentence 3",
+        "after sentence 4"
+      ],
+      "answer": 1,
+      "explanation": "The sentence elaborates on how explorers filled the gaps, so it must follow sentence 2, where the expeditions are introduced, and stay within the historical sequence before the 1900 summary in sentence 3. Before sentence 1 there are no expeditions yet for \"each expedition\" to extend; after sentence 3 it interrupts the jump to modern satellites; after sentence 4 it returns to nineteenth-century explorers after the timeline has already reached today."
+    },
+    {
+      "id": "logical-placement-016",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The factory dumped untreated waste into the river for decades. [2] Fish populations collapsed, and the water turned a murky brown. [3] In 1985, new federal rules forced the plant to install filtration systems. [4] Within ten years, anglers reported clear water and returning trout. Sentence to place: \"These visible signs of damage finally drew the regulators' attention.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 4"
+      ],
+      "answer": 2,
+      "explanation": "\"These visible signs of damage\" refers to the dead fish and brown water in sentence 2, so it must follow sentence 2, and as the cause of the 1985 rules it must precede sentence 3. Before sentence 1 or after sentence 1 there are no visible signs yet to name; after sentence 4 the regulators are drawn in only after the river has already recovered, breaking the cause-before-effect order."
+    },
+    {
+      "id": "logical-placement-017",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] First, plug in the printer and turn it on. [2] Next, connect it to your laptop with the USB cable. [3] Finally, load your document and print the full report. Sentence to place: \"Then send a test page to make sure the connection works.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"The connection\" points back to plugging in the USB cable in sentence 2, so the test page must follow sentence 2 and come before the full report prints in sentence 3. Before sentence 1 or after sentence 1 there is no laptop connection yet to test; after sentence 3 the test runs only after the report has already printed."
+    },
+    {
+      "id": "logical-placement-018",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] First, the gardener turned over the soil with a spade. [2] Then she pressed each seed gently into the row. [3] Afterward, she watered the bed and marked it with a small sign. Sentence to place: \"Next, she covered the seeds with a thin layer of dirt.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "The sequence is First, Then, Next, Afterward. \"Next, she covered the seeds\" must follow planting the seeds (sentence 2) and precede the watering (sentence 3). Earlier slots cover seeds that have not been placed; the final slot covers them after the bed has already been watered and labeled."
+    },
+    {
+      "id": "logical-placement-019",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] First, Devon stretched his legs for ten minutes on the track. [2] Then he jogged an easy warm-up lap around the field. [3] Finally, he cooled down with a slow walk and a long drink of water. Sentence to place: \"Next, he ran three hard sprints across the grass.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "The markers run First, Then, Next, Finally. The hard sprints belong between the warm-up lap (sentence 2) and the cool-down (sentence 3). Placing them before the stretch or warm-up reverses a sensible workout; placing them after the cool-down has Devon sprinting after he has already finished and stopped to drink."
+    },
+    {
+      "id": "logical-placement-020",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] A truck spilled a load of gravel across both lanes of the highway before dawn. [2] Around six, police reopened one lane, and traffic crept past in single file. [3] By noon, a crew had swept away the last of the gravel, and cars moved freely again. Sentence to place: \"As a result, officers closed the entire stretch of road.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 1,
+      "explanation": "\"As a result\" marks the closure as the effect of the gravel spill in sentence 1, and sentence 2's \"reopened one lane\" only makes sense after a closure, so the sentence belongs after sentence 1. Before sentence 1 the effect has no cause; after sentence 2 or sentence 3 officers close a road that has already been reopened and cleared."
+    },
+    {
+      "id": "logical-placement-021",
+      "category": "POW",
+      "difficulty": "easy",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The teacher reviewed every formula with the class the day before. [2] On the morning of the test, the students felt calm and ready. [3] When the scores came back, nearly everyone had earned an A. Sentence to place: \"Those high marks proved the thorough review had paid off.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 3,
+      "explanation": "\"Those high marks\" points back to the A's reported in sentence 3, so the sentence must follow it, tying the result to the review in sentence 1. Earlier slots refer to high marks before any scores exist; before sentence 1 neither the review nor the marks have been mentioned."
+    },
+    {
+      "id": "logical-placement-022",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] In 1969, the Cuyahoga River in Ohio was so polluted that it caught fire. [2] Shocking photographs of the burning water outraged readers across the country. [3] Within three years, Congress had passed the landmark Clean Water Act. Sentence to place: \"This public outrage pushed lawmakers to act quickly.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"This public outrage\" refers to the reaction to the photographs in sentence 2, so it must follow them, and as the cause of the new law it must precede the Clean Water Act in sentence 3. Slots before sentence 2 name outrage that has not arisen; after sentence 3 the outrage is mentioned only after the law has already passed, reversing cause and effect."
+    },
+    {
+      "id": "logical-placement-023",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The biologists tagged forty sea turtles with small satellite trackers. [2] For two years, the devices beamed back the turtles' exact locations. [3] The team hopes the next study will follow the hatchlings as well. Sentence to place: \"These records revealed migration routes no one had charted before.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"These records\" refers to the location data the trackers beamed back in sentence 2, so the sentence must follow sentence 2. Earlier slots cite records before any data has been collected; after sentence 3 the discovery is reported only after the team has moved on to planning a future study, stranding \"these records\" away from the data that produced them."
+    },
+    {
+      "id": "logical-placement-024",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] A small museum announced it would sell off half its collection. [2] Local artists and historians signed a petition to stop the sale. [3] Bowing to the pressure, the board canceled the auction entirely. Sentence to place: \"Such opposition turned a quiet decision into a public fight.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"Such opposition\" refers to the petition signed in sentence 2, so it must follow that sentence, and as the pressure that forces the board's reversal it must precede sentence 3. Before sentence 1 or after sentence 1 there is no opposition yet to name; after sentence 3 the opposition appears only after the board has already backed down."
+    },
+    {
+      "id": "logical-placement-025",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] First, the engineers built a small clay model of the new dam. [2] Tests on the model showed the spillway was far too narrow. [3] Finally, after a year of construction, the full dam held back its first flood. Sentence to place: \"Because of this flaw, they redrew the plans before pouring any concrete.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"This flaw\" refers to the narrow spillway the tests revealed in sentence 2, and \"because of\" marks the cause that leads to the redrawn plans. The sentence must follow sentence 2 and precede the finished dam in sentence 3. Earlier slots cite a flaw not yet found; after sentence 3 the plans are redrawn after the dam already stands."
+    },
+    {
+      "id": "logical-placement-026",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] A retired teacher started a free Saturday coding class in her garage. [2] Word spread, and soon a dozen kids showed up every weekend. [3] Within two years, several of them had built apps of their own. Sentence to place: \"Week after week, she walked them through the basics of writing code.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"Them\" refers to the dozen kids introduced in sentence 2, and the weekly lessons are what lead to the apps in sentence 3, so the sentence belongs after sentence 2. Before sentence 1 or after sentence 1 there is no group of kids for \"them\" to name; after sentence 3 she is teaching the basics after her students have already built apps of their own."
+    },
+    {
+      "id": "logical-placement-027",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] The carpenter sanded the rough tabletop until it felt smooth. [2] She brushed on two coats of dark walnut stain. [3] Once it dried, she set the finished table by the window to admire it. Sentence to place: \"Even before it dried, this rich color brought out the grain of the wood.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "\"This rich color\" refers to the walnut stain applied in sentence 2, and \"even before it dried\" must precede the drying in sentence 3, so the sentence belongs after sentence 2. Slots before sentence 2 name a color that has not been applied; after sentence 3 the stain has already dried, contradicting \"before it dried.\""
+    },
+    {
+      "id": "logical-placement-028",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] A late frost settled over the valley's orchards in early May. [2] Within days, most of the apple blossoms had blackened and fallen. [3] By autumn, the harvest came in at barely a third of the usual crop. Sentence to place: \"This sudden cold snap struck just as the trees were flowering.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 1,
+      "explanation": "\"This sudden cold snap\" refers to the late frost in sentence 1, so it must follow that sentence, and as the cause of the lost blossoms it must precede sentence 2. Before sentence 1 there is no cold snap yet to name; after sentence 2 or 3 the cause is explained only after the blossoms have already died and the harvest has failed."
+    },
+    {
+      "id": "logical-placement-029",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] To begin, the debate team researched both sides of the resolution. [2] Next, they wrote out their strongest opening arguments. [3] Finally, they stood before the judges and delivered their case. Sentence to place: \"After that, they ran timed practice rounds against one another.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 3"
+      ],
+      "answer": 2,
+      "explanation": "The sequence runs To begin, Next, After that, Finally. \"After that, they ran timed practice rounds\" must follow writing the arguments (sentence 2) and precede the real debate in sentence 3. Earlier slots have the team rehearsing arguments they have not yet written; the last slot rehearses after they have already faced the judges."
+    },
+    {
+      "id": "logical-placement-030",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "Paragraph A: [1] For a decade, the old rail line through the hills carried no trains at all. [2] Weeds swallowed the tracks, and the rusted rails crumbled. Paragraph B: [3] Volunteers tore up the rails and laid a smooth paved path in their place. [4] Today cyclists and walkers crowd the trail every weekend. Sentence to place: \"That long neglect had left the corridor an eyesore.\"",
+      "choices": [
+        "before sentence 1 (start of Paragraph A)",
+        "after sentence 2 (end of Paragraph A)",
+        "after sentence 3 (middle of Paragraph B)",
+        "after sentence 4 (end of Paragraph B)"
+      ],
+      "answer": 1,
+      "explanation": "\"That long neglect\" refers to the decade of disuse and decay described across sentences 1 and 2, so it must close Paragraph A after sentence 2, summarizing the problem before Paragraph B presents the rescue. Before sentence 1 there is no neglect yet to name; placing it inside Paragraph B drops a back-reference to the old ruin after volunteers have already transformed the corridor."
+    },
+    {
+      "id": "logical-placement-031",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] In the early 1900s, sailors still navigated the open ocean by the stars. [2] Radio beacons later let ships fix their position from shore signals. [3] By the 1990s, satellite GPS pinpointed a vessel almost anywhere on Earth. [4] Engineers today are testing systems that need no satellites at all. Sentence to place: \"For the first time, captains could find their way without a single star overhead.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 2",
+        "after sentence 3",
+        "after sentence 4"
+      ],
+      "answer": 1,
+      "explanation": "The radio beacons in sentence 2 are the first alternative to the stars, so \"for the first time\" must follow sentence 2. Before sentence 1 no new tool exists yet, and sentence 1 says sailors still relied on the stars; after sentence 3 or sentence 4 the claim of a \"first time\" is false, since shore beacons had already freed captains from the night sky decades earlier."
+    },
+    {
+      "id": "logical-placement-032",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+      "stem": "[1] For years, smoke from the valley's mills hung over the town like a gray ceiling. [2] County health reports showed childhood asthma rates climbing far above the state average. [3] In 1991, a new ordinance forced the mills to install costly scrubbers. [4] A decade later, residents could finally see the mountains from Main Street. Sentence to place: \"These alarming health reports gave city council the votes it needed.\"",
+      "choices": [
+        "before sentence 1",
+        "after sentence 1",
+        "after sentence 2",
+        "after sentence 4"
+      ],
+      "answer": 2,
+      "explanation": "\"These alarming health reports\" refers to the rising childhood asthma cases in sentence 2, so it must follow sentence 2, and as the cause of the 1991 ordinance it must precede sentence 3. Before sentence 1 or after sentence 1 there are no health reports yet to name; after sentence 4 the council acts only after the air has already cleared, breaking the cause-before-effect order."
+    }
+  ]
+}

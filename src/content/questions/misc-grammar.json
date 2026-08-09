@@ -1,0 +1,485 @@
+{
+  "slug": "misc-grammar",
+  "questions": [
+    {
+      "id": "misc-grammar-001",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The hikers left [[there]] backpacks at the trailhead before starting up the path.",
+      "choices": [
+        "NO CHANGE",
+        "there's",
+        "they're",
+        "their"
+      ],
+      "answer": 3,
+      "explanation": "Possessive 'their' shows the backpacks belong to the hikers. 'There' marks a place, 'they're' means 'they are,' and 'there's' means 'there is.'"
+    },
+    {
+      "id": "misc-grammar-002",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "My older brother is two inches taller [[than]] I am.",
+      "choices": [
+        "NO CHANGE",
+        "as",
+        "then",
+        "that"
+      ],
+      "answer": 0,
+      "explanation": "A comparison of two heights needs 'than,' so NO CHANGE is correct. 'Then' marks time or sequence, and 'as' and 'that' do not pair with the comparative 'taller.'"
+    },
+    {
+      "id": "misc-grammar-003",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "If I had studied the map, I [[could of]] found the shortcut.",
+      "choices": [
+        "NO CHANGE",
+        "could have",
+        "could of had",
+        "could had"
+      ],
+      "answer": 1,
+      "explanation": "A modal verb takes 'have,' so 'could have' is correct. 'Could of' only mimics the sound of 'could've,' and the other forms double the verb incorrectly."
+    },
+    {
+      "id": "misc-grammar-004",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "There were [[less]] people at the second show than at the first.",
+      "choices": [
+        "NO CHANGE",
+        "fewer",
+        "lesser",
+        "few"
+      ],
+      "answer": 1,
+      "explanation": "People can be counted, so the comparison needs 'fewer.' 'Less' goes with non-countable nouns, 'lesser' means inferior, and 'few' breaks the 'fewer ... than' comparison."
+    },
+    {
+      "id": "misc-grammar-005",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The coach told me that [[your]] starting in tonight's game.",
+      "choices": [
+        "NO CHANGE",
+        "yours",
+        "you're",
+        "you"
+      ],
+      "answer": 2,
+      "explanation": "The clause means 'you are starting,' which calls for 'you're.' 'Your' and 'yours' show possession, and 'you' leaves the clause without a verb."
+    },
+    {
+      "id": "misc-grammar-006",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Cutting back on sugar can [[effect]] how well you sleep at night.",
+      "choices": [
+        "NO CHANGE",
+        "effected",
+        "affection",
+        "affect"
+      ],
+      "answer": 3,
+      "explanation": "The slot after 'can' needs the base verb 'affect' (to influence). 'Effect' is normally a noun, 'effected' is past tense, and 'affection' is a noun."
+    },
+    {
+      "id": "misc-grammar-007",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Everyone in the band attended the rehearsal [[except]] the drummer.",
+      "choices": [
+        "NO CHANGE",
+        "accepted",
+        "expect",
+        "accept"
+      ],
+      "answer": 0,
+      "explanation": "'Except' means 'other than,' which fits the drummer who did not attend, so NO CHANGE is correct. 'Accept' means to receive, 'expect' means to anticipate, and 'accepted' is a verb where the sentence needs a preposition."
+    },
+    {
+      "id": "misc-grammar-008",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The recipe calls for [[a large number of]] flour.",
+      "choices": [
+        "NO CHANGE",
+        "a large amount of",
+        "many",
+        "much of"
+      ],
+      "answer": 1,
+      "explanation": "Flour is non-countable, so it takes 'a large amount of.' 'A large number of' and 'many' go with countable nouns, and 'much of' would need a definite noun, as in 'much of the flour.'"
+    },
+    {
+      "id": "misc-grammar-009",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The final results were [[different than]] the team's earlier prediction.",
+      "choices": [
+        "NO CHANGE",
+        "different to",
+        "different from",
+        "differently than"
+      ],
+      "answer": 2,
+      "explanation": "Before a noun phrase like 'the team's earlier prediction,' standard written English pairs 'different' with 'from.' 'Different than' and 'different to' are nonstandard, and the adverb 'differently' cannot follow the linking verb 'were.'"
+    },
+    {
+      "id": "misc-grammar-010",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "All employees must [[comply to]] the new safety regulations.",
+      "choices": [
+        "NO CHANGE",
+        "comply for",
+        "comply with",
+        "comply at"
+      ],
+      "answer": 2,
+      "explanation": "The fixed idiom is 'comply with.' The prepositions 'to,' 'for,' and 'at' do not pair with 'comply' in standard English."
+    },
+    {
+      "id": "misc-grammar-011",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The dog wagged [[its]] tail when the front door opened.",
+      "choices": [
+        "NO CHANGE",
+        "their",
+        "its'",
+        "it's"
+      ],
+      "answer": 0,
+      "explanation": "The possessive of 'it' is 'its' with no apostrophe, so NO CHANGE is correct. 'It's' means 'it is,' 'its'' is not a word, and 'their' is plural for one dog."
+    },
+    {
+      "id": "misc-grammar-012",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The new policy will have a real [[affect]] on how the office runs.",
+      "choices": [
+        "NO CHANGE",
+        "affects",
+        "effect",
+        "affecting"
+      ],
+      "answer": 2,
+      "explanation": "After 'a real,' the slot needs the noun 'effect' (a result). 'Affect' is normally a verb, and 'affecting' and 'affects' do not fit a noun slot."
+    },
+    {
+      "id": "misc-grammar-013",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The parade marched [[passed]] the courthouse before turning onto Main Street.",
+      "choices": [
+        "NO CHANGE",
+        "past",
+        "pass",
+        "passes"
+      ],
+      "answer": 1,
+      "explanation": "The sentence needs the preposition 'past,' meaning beyond: the parade marched past the courthouse. 'Passed' is the past-tense verb form, and 'pass' and 'passes' stack a second verb where the sentence needs a preposition."
+    },
+    {
+      "id": "misc-grammar-014",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Honesty is the guiding [[principal]] that shapes every decision she makes.",
+      "choices": [
+        "NO CHANGE",
+        "principals",
+        "principled",
+        "principle"
+      ],
+      "answer": 3,
+      "explanation": "'Principle' means a fundamental rule or truth, which fits a value that guides decisions. 'Principal' means chief or a school's head, 'principled' is an adjective that can't follow 'the guiding,' and 'principals' is a plural noun."
+    },
+    {
+      "id": "misc-grammar-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "I would rather hike the long trail [[than take]] the crowded shuttle.",
+      "choices": [
+        "NO CHANGE",
+        "then take",
+        "than taking",
+        "than to take"
+      ],
+      "answer": 0,
+      "explanation": "'Rather' pairs with 'than,' and parallelism with 'hike' calls for the base form 'take,' so NO CHANGE is correct. 'Than to take' and 'than taking' break the parallel, and 'then' is the wrong word."
+    },
+    {
+      "id": "misc-grammar-016",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "She is more interested in painting [[than to study]] history.",
+      "choices": [
+        "NO CHANGE",
+        "as in studying",
+        "than in studying",
+        "then in studying"
+      ],
+      "answer": 2,
+      "explanation": "'Interested in painting' must balance with 'in studying' after 'than.' 'Than to study' breaks that parallel, 'then' is the wrong word, and 'more' pairs with 'than,' not 'as.'"
+    },
+    {
+      "id": "misc-grammar-017",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The neighbors said that [[their]] planning to repaint the fence this weekend.",
+      "choices": [
+        "NO CHANGE",
+        "there",
+        "they're",
+        "they"
+      ],
+      "answer": 2,
+      "explanation": "The clause means 'they are planning,' so the contraction 'they're' fits. 'Their' is possessive, 'there' marks a place, and 'they' leaves the clause without a verb."
+    },
+    {
+      "id": "misc-grammar-018",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "I trust my own judgment more [[then]] anyone else's.",
+      "choices": [
+        "NO CHANGE",
+        "as",
+        "than",
+        "that"
+      ],
+      "answer": 2,
+      "explanation": "A comparison after 'more' needs 'than.' 'Then' marks time or sequence, and 'as' and 'that' do not pair with 'more' here."
+    },
+    {
+      "id": "misc-grammar-019",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "With a better warm-up, the sprinter [[would of]] avoided the cramp.",
+      "choices": [
+        "NO CHANGE",
+        "would of had",
+        "would had",
+        "would have"
+      ],
+      "answer": 3,
+      "explanation": "A modal verb takes 'have,' so 'would have' is correct. 'Would of' only imitates the sound of 'would've,' and the other forms double or misuse the verb."
+    },
+    {
+      "id": "misc-grammar-020",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Please double-check that [[your]] entering the correct password.",
+      "choices": [
+        "NO CHANGE",
+        "yours",
+        "you're",
+        "you"
+      ],
+      "answer": 2,
+      "explanation": "The clause means 'you are entering,' which calls for 'you're.' 'Your' and 'yours' show possession, and 'you' leaves the clause without a verb."
+    },
+    {
+      "id": "misc-grammar-021",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Our team scored [[fewer]] goals this season than last.",
+      "choices": [
+        "NO CHANGE",
+        "less",
+        "lesser",
+        "fewest"
+      ],
+      "answer": 0,
+      "explanation": "Goals can be counted, so 'fewer' is correct. 'Less' goes with non-countable nouns, 'lesser' means inferior, and 'fewest' is superlative and breaks the comparison."
+    },
+    {
+      "id": "misc-grammar-022",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Loud background noise can [[effect]] a student's concentration during a test.",
+      "choices": [
+        "NO CHANGE",
+        "affectation",
+        "affect",
+        "effected"
+      ],
+      "answer": 2,
+      "explanation": "After 'can,' the slot needs the base verb 'affect' (to influence). 'Effect' is normally a noun, 'effected' is past tense, and 'affectation' is an unrelated noun."
+    },
+    {
+      "id": "misc-grammar-023",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The vaccine produced a noticeable [[affect]] within just a few hours.",
+      "choices": [
+        "NO CHANGE",
+        "affecting",
+        "effect",
+        "affected"
+      ],
+      "answer": 2,
+      "explanation": "After 'a noticeable,' the slot needs the noun 'effect' (a result). 'Affect' is normally a verb, and 'affecting' and 'affected' do not fill a noun slot here."
+    },
+    {
+      "id": "misc-grammar-024",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The whole committee approved the proposal [[accept]] one member.",
+      "choices": [
+        "NO CHANGE",
+        "except",
+        "excepted",
+        "expect"
+      ],
+      "answer": 1,
+      "explanation": "'Except' means 'other than,' which fits the lone member who did not approve. 'Accept' means to receive, 'expect' means to anticipate, and 'excepted' is a verb form where the sentence needs a preposition."
+    },
+    {
+      "id": "misc-grammar-025",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The volunteers collected [[a surprising number of]] donations for the shelter.",
+      "choices": [
+        "NO CHANGE",
+        "surprisingly much",
+        "a surprising amount of",
+        "a surprising amount"
+      ],
+      "answer": 0,
+      "explanation": "Donations can be counted, so 'a surprising number of' is correct. 'Amount' goes with non-countable nouns, 'much' cannot modify the plural 'donations,' and 'a surprising amount' drops the needed 'of.'"
+    },
+    {
+      "id": "misc-grammar-026",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "There was too [[much]] traffic on the highway to make the meeting on time.",
+      "choices": [
+        "NO CHANGE",
+        "few",
+        "much of",
+        "many"
+      ],
+      "answer": 0,
+      "explanation": "Traffic is non-countable, so 'much' is correct and NO CHANGE stands. 'Many' and 'few' go with countable nouns, and 'much of' would need a definite noun, as in 'much of the traffic.'"
+    },
+    {
+      "id": "misc-grammar-027",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "A reliable assistant is [[capable of handling]] several tasks at once.",
+      "choices": [
+        "NO CHANGE",
+        "capable to handle",
+        "capable for handling",
+        "capable in handling"
+      ],
+      "answer": 0,
+      "explanation": "The fixed idiom is 'capable of' followed by a gerund, giving 'capable of handling,' so NO CHANGE is correct. The prepositions 'to,' 'for,' and 'in' do not pair with 'capable.'"
+    },
+    {
+      "id": "misc-grammar-028",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Most critics agreed that the sequel was far better [[then]] the original.",
+      "choices": [
+        "NO CHANGE",
+        "as",
+        "to",
+        "than"
+      ],
+      "answer": 3,
+      "explanation": "A comparison after 'better' needs 'than.' 'Then' marks time, and 'as' and 'to' do not pair with the comparative 'better.'"
+    },
+    {
+      "id": "misc-grammar-029",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The museum divided the rare coins [[amid]] its six display cases.",
+      "choices": [
+        "NO CHANGE",
+        "among",
+        "onto",
+        "toward"
+      ],
+      "answer": 1,
+      "explanation": "'Among' is the standard preposition for distributing items across several recipients: the coins were divided among the cases. 'Amid' means surrounded by rather than distributed across, and 'divided ... onto' and 'divided ... toward' are not standard pairings."
+    },
+    {
+      "id": "misc-grammar-030",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "A quiet morning routine is preferable [[than]] a chaotic one.",
+      "choices": [
+        "NO CHANGE",
+        "for",
+        "to",
+        "from"
+      ],
+      "answer": 2,
+      "explanation": "The fixed idiom is 'preferable to.' 'Than,' 'from,' and 'for' do not pair with 'preferable' in standard English."
+    },
+    {
+      "id": "misc-grammar-031",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The chef chose a side dish that would [[compliment]] the rich flavor of the duck.",
+      "choices": [
+        "NO CHANGE",
+        "complementary",
+        "complement",
+        "compliments"
+      ],
+      "answer": 2,
+      "explanation": "'Complement' means to complete or go well with something, which fits a side dish paired with the duck. 'Compliment' means to praise, 'complementary' is an adjective that can't follow 'would,' and 'compliments' is the wrong verb form after 'would.'"
+    },
+    {
+      "id": "misc-grammar-032",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "This blend of tea tastes noticeably [[different than]] the one we tried last week.",
+      "choices": [
+        "NO CHANGE",
+        "differently from",
+        "different from",
+        "different to"
+      ],
+      "answer": 2,
+      "explanation": "Standard written English pairs 'different' with 'from,' and an adjective is needed after 'tastes.' 'Different than' and 'different to' are nonstandard, and the adverb 'differently' wrongly modifies the linking verb."
+    }
+  ]
+}

@@ -1,0 +1,798 @@
+{
+  "id": "exam-2",
+  "title": "ACT English — Full Practice Exam 2",
+  "passages": [
+    {
+      "id": "p1",
+      "title": "The Self-Taught Inventor",
+      "html": "Garrett Morgan never finished grade school, but he became one of the most inventive minds of his era. Born in Kentucky in 1877, he moved to Cleveland as a teenager and found work repairing sewing machines. [[1|Tinkering with the machines, the mechanics fascinated him,]] and he soon filed his first patent for an improved sewing device.\n\nMorgan's curiosity rarely [[2|stayed]] in one place. In 1914 he patented a breathing hood that let firefighters enter smoke-filled buildings, [[3|a device that would later inspire the modern gas mask.]] Two years later, the invention proved its worth. When an explosion trapped workers in a tunnel beneath Lake Erie, Morgan and his brother strapped on the hoods and [[4|descended]] into the toxic air to pull survivors free.\n\n[[5|]] Morgan is perhaps best remembered for a far more ordinary problem: traffic. After witnessing a collision between a car and a carriage, he designed a signal with a third position that halted traffic in all directions, giving drivers and pedestrians a moment to cross safely. [[6|]]\n\nHe sold the rights to the signal [[7|for forty thousand dollars, a sum]] that few inventors of his background could have imagined. Yet money was never his only aim. Throughout his life Morgan founded newspapers, opened businesses, and [[8|he supported]] causes he believed in.\n\n[[9|In conclusion,]] when he died in 1963, Morgan left behind dozens of patents and a reputation as a problem-solver who refused to accept that a lack of formal schooling [[10|limited what he could achieve.]]",
+      "questions": [
+        {
+          "number": 1,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "modifiers",
+          "questionText": "",
+          "choices": [
+            "Tinkering with the machines, he grew fascinated by their mechanics,",
+            "The mechanics fascinating him by tinkering with the machines,",
+            "Tinkering with the machines, the mechanics fascinated him,",
+            "Tinkering with the machines, fascination with the mechanics grew,"
+          ],
+          "answer": 0,
+          "explanation": "The introductory participial phrase must modify the person tinkering; only \"Tinkering with the machines, he grew fascinated by their mechanics\" places \"he\" right after it."
+        },
+        {
+          "number": 2,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "word-choice",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "rested",
+            "remained seated",
+            "stalled"
+          ],
+          "answer": 0,
+          "explanation": "\"Stayed in one place\" idiomatically fits restless curiosity. \"Rested\" and \"stalled\" carry wrong connotations for an active mind, and \"remained seated\" makes no sense applied to an abstract noun like curiosity. Only \"stayed\" fits."
+        },
+        {
+          "number": 3,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "which-choice",
+          "questionText": "Which choice most effectively emphasizes the lasting influence of Morgan's invention?",
+          "choices": [
+            "which was made of canvas and a long tube.",
+            "a device he had worked on for several months.",
+            "a device that would later inspire the modern gas mask.",
+            "a hood that some people found strange-looking."
+          ],
+          "answer": 2,
+          "explanation": "Only \"a device that would later inspire the modern gas mask\" points to a lasting influence; the others describe minor or incidental details."
+        },
+        {
+          "number": 4,
+          "category": "KLA",
+          "difficulty": "easy",
+          "topic": "word-choice",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "got down",
+            "fell down",
+            "came down"
+          ],
+          "answer": 0,
+          "explanation": "\"Descended\" precisely conveys a deliberate move into the tunnel; the alternatives are vague or imply an accidental fall."
+        },
+        {
+          "number": 5,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which choice provides the most logical transition into the new paragraph?",
+          "choices": [
+            "For example,",
+            "Likewise,",
+            "As a result,",
+            "Still,"
+          ],
+          "answer": 3,
+          "explanation": "The paragraph contrasts dramatic rescues with an \"ordinary problem,\" so the contrast word \"Still\" fits; the others signal example, cause, or similarity."
+        },
+        {
+          "number": 6,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "At this point, the writer is considering adding the following sentence: \"Versions of his three-way design still govern intersections today.\" Should it be added?",
+          "choices": [
+            "Yes, because it links Morgan's invention to the present and reinforces his lasting impact.",
+            "Yes, because it explains how the explosion in the tunnel occurred.",
+            "No, because it repeats the earlier claim that Morgan witnessed a collision.",
+            "No, because it shifts the paragraph's focus away from traffic signals."
+          ],
+          "answer": 0,
+          "explanation": "The sentence ties the signal to present-day intersections, reinforcing Morgan's lasting impact; it stays on topic and adds new information."
+        },
+        {
+          "number": 7,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "punctuation",
+          "questionText": "",
+          "choices": [
+            "for forty thousand dollars a sum",
+            "for forty thousand dollars; a sum",
+            "for forty thousand dollars: a sum,",
+            "for forty thousand dollars, a sum"
+          ],
+          "answer": 3,
+          "explanation": "A comma sets off the appositive \"a sum that...\"; a semicolon needs an independent clause, and the colon version adds a wrong comma."
+        },
+        {
+          "number": 8,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "parallel-structure",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "and supported",
+            "supported",
+            "supporting"
+          ],
+          "answer": 2,
+          "explanation": "The series \"founded... opened... supported\" needs parallel verbs; \"he supported\" breaks the pattern by adding a subject."
+        },
+        {
+          "number": 9,
+          "category": "KLA",
+          "difficulty": "easy",
+          "topic": "redundancy",
+          "questionText": "",
+          "choices": [
+            "When",
+            "To conclude, when",
+            "In conclusion, when",
+            "In the end, when"
+          ],
+          "answer": 0,
+          "explanation": "\"When he died...\" is concise; the wordy openers add nothing and read as filler."
+        },
+        {
+          "number": 10,
+          "category": "POW",
+          "difficulty": "hard",
+          "topic": "which-choice",
+          "questionText": "Which choice best concludes the essay by tying back to its opening detail about Morgan's schooling?",
+          "choices": [
+            "limited what he could achieve.",
+            "kept him from traveling widely.",
+            "was a common situation at the time.",
+            "would bother him very much."
+          ],
+          "answer": 0,
+          "explanation": "The opening notes he never finished grade school; \"limited what he could achieve\" closes the loop by stressing that limited schooling did not limit achievement."
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "Shaping Fire and Sand",
+      "html": "In a glassblower's studio, the heart of the work is a furnace that never cools. Inside it, sand, soda, and lime [[11|melts]] together at temperatures above two thousand degrees, turning a gritty mixture into a glowing, honey-thick liquid.\n\nThe artisan gathers a blob of this molten glass on the end of a hollow steel rod called a blowpipe. [[12|Rotating the pipe constantly, gravity is kept from pulling the glass]] into a shapeless drip. With a steady breath into the pipe, the worker opens a small bubble inside the glob, [[13|that]] becomes the hollow center of a finished vase or cup.\n\nShaping the piece is a [[14|race against the clock that must be won quickly,]] because cooling glass stiffens fast. The blower reheats the work again and again at a second opening in the furnace, [[15|known as the glory hole.]] Between heatings, the artisan rolls the glass on a steel table, presses it with wet wooden paddles, and [[16|stretching it with tongs.]]\n\n[[17|]] When the form is right, the piece must cool slowly. A finished vessel goes into a third oven, the annealer, where the temperature drops over many hours. [[18|Dodging]] this stage would leave hidden stresses in the glass, and the object might shatter days later on a quiet shelf.\n\nModern factories can mold thousands of identical bottles in minutes. [[19|Therefore,]] hand glassblowing survives because each breath, twist, and reheating leaves a mark that no machine can [[20|copy or imitate.]]",
+      "questions": [
+        {
+          "number": 11,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "verbs",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "has melted",
+            "is melting",
+            "melt"
+          ],
+          "answer": 3,
+          "explanation": "The compound subject \"sand, soda, and lime\" is plural and takes the plural verb \"melt.\""
+        },
+        {
+          "number": 12,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "modifiers",
+          "questionText": "",
+          "choices": [
+            "Rotating the pipe constantly, the glass is kept by gravity from pulling",
+            "Rotating the pipe constantly, gravity is kept from pulling the glass",
+            "Rotating the pipe constantly, the worker keeps gravity from pulling the glass",
+            "Rotating the pipe constantly, it keeps gravity from pulling the glass"
+          ],
+          "answer": 2,
+          "explanation": "The introductory phrase must modify the person rotating the pipe; only \"Rotating the pipe constantly, the worker keeps gravity from pulling the glass\" supplies \"the worker\" as the subject."
+        },
+        {
+          "number": 13,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "pronouns",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "what",
+            "it",
+            "which"
+          ],
+          "answer": 3,
+          "explanation": "A nonrestrictive clause set off by a comma takes \"which,\" not \"that\"; \"it\" and \"what\" break the clause."
+        },
+        {
+          "number": 14,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "redundancy",
+          "questionText": "",
+          "choices": [
+            "quick, fast race against the clock,",
+            "race against the clock done in a speedy way,",
+            "race against the clock that must be won quickly,",
+            "race against the clock,"
+          ],
+          "answer": 3,
+          "explanation": "\"Race against the clock\" already implies speed; the added phrases are redundant."
+        },
+        {
+          "number": 15,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "The writer is considering deleting the phrase \"known as the glory hole\" (adjusting punctuation as needed). Should it be kept?",
+          "choices": [
+            "Kept, because it supplies the technical name for a tool the passage refers to.",
+            "Kept, because it explains why glass must be reheated.",
+            "Deleted, because it repeats information given earlier in the paragraph.",
+            "Deleted, because it contradicts the claim that the furnace never cools."
+          ],
+          "answer": 0,
+          "explanation": "The phrase names the \"second opening,\" adding a relevant craft term; it neither repeats nor contradicts anything."
+        },
+        {
+          "number": 16,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "parallel-structure",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "stretches it",
+            "stretch it",
+            "to stretch it"
+          ],
+          "answer": 1,
+          "explanation": "The series needs parallel present-tense verbs: \"rolls... presses... stretches.\""
+        },
+        {
+          "number": 17,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which choice best opens the paragraph by signaling a shift from shaping to cooling?",
+          "choices": [
+            "Finally,",
+            "Meanwhile,",
+            "In contrast,",
+            "For instance,"
+          ],
+          "answer": 0,
+          "explanation": "The paragraph moves to the last stage of the process, so the sequence word \"Finally\" fits better than contrast, example, or simultaneity."
+        },
+        {
+          "number": 18,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "word-choice",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "Missing",
+            "Skipping",
+            "Avoiding"
+          ],
+          "answer": 2,
+          "explanation": "\"Skipping\" precisely means leaving out a step; \"dodging,\" \"avoiding,\" and \"missing\" misstate a deliberate omission in a process."
+        },
+        {
+          "number": 19,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "Yet",
+            "For example,",
+            "In addition,"
+          ],
+          "answer": 1,
+          "explanation": "The sentence contrasts mass production with the survival of handwork, so \"Yet\" fits; \"Therefore\" wrongly signals cause."
+        },
+        {
+          "number": 20,
+          "category": "KLA",
+          "difficulty": "easy",
+          "topic": "redundancy",
+          "questionText": "",
+          "choices": [
+            "copy or imitate.",
+            "copy and imitate exactly.",
+            "copy.",
+            "imitate or copy over again."
+          ],
+          "answer": 2,
+          "explanation": "\"Copy\" and \"imitate\" are synonyms here; \"copy\" alone is concise."
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "The Day Boston Drowned in Syrup",
+      "html": "On a warm January afternoon in 1919, the North End of Boston was struck by a disaster so strange that people still struggle to believe it. A steel tank holding more than two million gallons of molasses [[21|burst, and sent]] a wave of thick syrup surging through the streets.\n\nThe tank had been built [[22|quick]] three years earlier to store molasses bound for a distillery. Residents had long complained that it groaned and leaked, [[23|but the company painted it brown to hide the seeping syrup.]] On the day of the collapse, an unusually mild spell may have weakened the metal further.\n\nWhen the tank failed, the molasses moved with shocking force. [[24|Witnesses, who described]] a wave as tall as fifteen feet, rolling fast enough to snap the steel supports of an elevated railway. [[25|Buildings were knocked from their foundations; horses and people were trapped in the sticky flood.]] Twenty-one people died, and many more [[26|was injured]].\n\nRescuers struggled for days. [[27|Because]] the cooling molasses thickened into a stubborn glue, every step through it took enormous effort. Cleanup crews used salt water and sand for weeks, [[28|and the harbor reportedly ran brown until summer.]]\n\n[[29|]] The flood led to one lasting change. In the lawsuits that followed, the company was found responsible for cutting corners, and the case helped push cities to require [[30|stricter]] engineering reviews for large structures.",
+      "questions": [
+        {
+          "number": 21,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "sentence-structure",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "burst, sending",
+            "burst and it sent",
+            "burst; sending"
+          ],
+          "answer": 1,
+          "explanation": "\"Burst, sending...\" uses a participial phrase correctly; the original wrongly puts a comma before a verb sharing the same subject, and the others misjoin."
+        },
+        {
+          "number": 22,
+          "category": "CSE",
+          "difficulty": "easy",
+          "topic": "modifiers",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "more quick",
+            "quick and fast",
+            "quickly"
+          ],
+          "answer": 3,
+          "explanation": "An adverb is needed to modify the verb \"built,\" so \"quickly\" is correct."
+        },
+        {
+          "number": 23,
+          "category": "POW",
+          "difficulty": "hard",
+          "topic": "which-choice",
+          "questionText": "Which choice best supports the paragraph's point that warning signs were ignored?",
+          "choices": [
+            "since the tank stood close to the busy waterfront.",
+            "but the company painted it brown to hide the seeping syrup.",
+            "and molasses is used to make rum and other products.",
+            "though the weather that winter had been mild."
+          ],
+          "answer": 1,
+          "explanation": "Only \"but the company painted it brown to hide the seeping syrup\" shows the company concealing a known problem, supporting the idea that warnings were ignored."
+        },
+        {
+          "number": 24,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "sentence-structure",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "Witnesses described",
+            "Witnesses, describing",
+            "Witnesses describing"
+          ],
+          "answer": 1,
+          "explanation": "As written, \"Witnesses, who described...\" leaves the sentence without a main verb (a fragment); \"Witnesses described\" supplies one."
+        },
+        {
+          "number": 25,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "punctuation",
+          "questionText": "",
+          "choices": [
+            "Buildings were knocked from their foundations horses and people were trapped in the sticky flood.",
+            "Buildings were knocked from their foundations; horses and people were trapped in the sticky flood.",
+            "Buildings were knocked from their foundations, horses and people were trapped in the sticky flood.",
+            "Buildings were knocked from their foundations: horses, and people were trapped in the sticky flood."
+          ],
+          "answer": 1,
+          "explanation": "Two independent clauses are correctly joined by a semicolon; \"foundations, horses and people were trapped\" is a comma splice and \"foundations: horses, and people\" adds a wrong comma after a colon."
+        },
+        {
+          "number": 26,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "verbs",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "are injured",
+            "were injured",
+            "were injuring"
+          ],
+          "answer": 2,
+          "explanation": "\"Many more\" is plural, so the singular \"was injured\" is wrong; the plural past tense \"were injured\" matches both number and the narrative's past tense."
+        },
+        {
+          "number": 27,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "Although",
+            "While",
+            "Whether"
+          ],
+          "answer": 0,
+          "explanation": "The thickened molasses causes the difficulty, so the causal \"Because\" fits; the others signal contrast or alternatives."
+        },
+        {
+          "number": 28,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "The writer wants to add a vivid detail showing how long the cleanup's effects lasted. Does the underlined clause accomplish this?",
+          "choices": [
+            "Yes, because it shows the molasses still discoloring the harbor months later.",
+            "Yes, because it explains why salt water was used.",
+            "No, because it shifts attention away from the cleanup crews.",
+            "No, because it repeats the number of people who died."
+          ],
+          "answer": 0,
+          "explanation": "The brown harbor lasting until summer is a vivid, lasting effect of the cleanup; the other options misdescribe the clause."
+        },
+        {
+          "number": 29,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which choice best introduces the paragraph's focus on a long-term consequence?",
+          "choices": [
+            "Suddenly,",
+            "In the end,",
+            "For example,",
+            "For instance,"
+          ],
+          "answer": 1,
+          "explanation": "The paragraph describes a lasting outcome, so the concluding transition \"In the end\" fits. \"Suddenly\" signals abruptness, and \"For instance\" and \"For example\" both introduce an illustration of a prior point, a relationship the passage does not support. Only \"In the end\" works."
+        },
+        {
+          "number": 30,
+          "category": "KLA",
+          "difficulty": "easy",
+          "topic": "word-choice",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "meaner",
+            "more strict and tougher",
+            "harsher"
+          ],
+          "answer": 0,
+          "explanation": "\"Stricter\" is the concise, correct comparative; \"more strict and tougher\" is redundant and \"meaner\" carries the wrong tone."
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "title": "From Paper Cranes to Spacecraft",
+      "html": "For centuries, origami was treasured as a quiet pastime, a way to fold a flat square of paper into a crane or a flower. [[31|Today, however, it has become a tool for serious science.]] Researchers now study the ancient art to solve problems that have nothing to do with decoration.\n\nThe link between paper folding and engineering [[32|lies in]] a simple idea: a folded shape can shrink for travel and then unfold into something much larger. Engineers at space agencies [[33|has]] used this principle to pack solar panels and antennas into rockets. [[34|]]\n\nOne famous pattern, the Miura fold, lets a flat sheet collapse along crisscrossing creases [[35|so as]] a single tug spreads it open again. Maps once printed with this fold could be opened with one hand, [[36|and refolded just as easily.]] The same geometry now guides the design of compact stents that surgeons thread into narrow arteries before [[37|expanding it.]]\n\n[[38|]] Origami has even reshaped robotics. Some engineers build machines that fold themselves flat for shipping and then [[39|pop]] into working shapes when heated. Others design grippers that close around an object the way folded paper wraps a gift.\n\nWhat began as a craft for children and monks now [[40|tells]] laboratories around the world, proving that an old idea can keep finding new uses.",
+      "questions": [
+        {
+          "number": 31,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "which-choice",
+          "questionText": "Which choice best previews the essay's main idea that origami now serves science?",
+          "choices": [
+            "Today, many people still fold paper cranes for fun.",
+            "Today, origami remains popular mostly in Japan.",
+            "Today, paper is cheaper than it has ever been.",
+            "Today, however, it has become a tool for serious science."
+          ],
+          "answer": 3,
+          "explanation": "Only \"Today, however, it has become a tool for serious science\" forecasts the essay's focus on origami's scientific uses; the others stay with hobby or trivia."
+        },
+        {
+          "number": 32,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "word-choice",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "lays in",
+            "lays on",
+            "lies on"
+          ],
+          "answer": 0,
+          "explanation": "\"Lies in\" is the correct idiom for where something is located; \"lays\" needs a direct object."
+        },
+        {
+          "number": 33,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "verbs",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "is having",
+            "had",
+            "have"
+          ],
+          "answer": 3,
+          "explanation": "The plural subject \"engineers\" takes \"have,\" not the singular \"has\"; the present perfect also fits the ongoing relevance."
+        },
+        {
+          "number": 34,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "which-choice",
+          "questionText": "Which choice, added here, best emphasizes why folding matters for rockets?",
+          "choices": [
+            "Rockets have fascinated engineers since the early twentieth century.",
+            "Solar panels convert sunlight into usable electric power.",
+            "Origami artists often work with brightly colored paper.",
+            "Inside a rocket, every inch of cargo space is scarce and costly."
+          ],
+          "answer": 3,
+          "explanation": "Only \"Inside a rocket, every inch of cargo space is scarce and costly\" explains why compact folding matters in a rocket by stressing scarce cargo space; the others drift off the point."
+        },
+        {
+          "number": 35,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "sentence-structure",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "so that",
+            "such that",
+            "in order"
+          ],
+          "answer": 1,
+          "explanation": "\"So that\" introduces the result clause correctly; \"so as\" requires an infinitive, and \"such that\" and \"in order\" are unidiomatic here."
+        },
+        {
+          "number": 36,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "punctuation",
+          "questionText": "",
+          "choices": [
+            "and refolded just as easily.",
+            ", and refolded just as easily.",
+            "and refolding just as easily.",
+            "and refolded, just as easily."
+          ],
+          "answer": 0,
+          "explanation": "\"Opened... and refolded\" is a compound verb needing no comma; \", and refolded just as easily\" wrongly separates the pair, and \"and refolding just as easily\" breaks parallelism."
+        },
+        {
+          "number": 37,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "pronouns",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "its expansion.",
+            "they are expanded.",
+            "expanding them."
+          ],
+          "answer": 3,
+          "explanation": "\"Stents\" is plural, so the singular pronoun \"it\" is wrong; \"expanding them\" agrees in number and keeps the parallel verb form."
+        },
+        {
+          "number": 38,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which choice best opens the paragraph, signaling an added field of application?",
+          "choices": [
+            "On the other hand,",
+            "Beyond space and medicine,",
+            "As a result of folding,",
+            "In the meantime,"
+          ],
+          "answer": 1,
+          "explanation": "The paragraph adds robotics to space and medicine, so \"Beyond space and medicine\" links them; the others signal contrast, cause, or timing."
+        },
+        {
+          "number": 39,
+          "category": "KLA",
+          "difficulty": "easy",
+          "topic": "word-choice",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "jump",
+            "spring",
+            "leap"
+          ],
+          "answer": 0,
+          "explanation": "\"Pop into working shapes\" idiomatically describes a quick unfolding; \"spring,\" \"jump,\" and \"leap\" misfit the motion."
+        },
+        {
+          "number": 40,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "word-choice",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "speaks",
+            "talks",
+            "informs"
+          ],
+          "answer": 3,
+          "explanation": "\"Informs laboratories\" means it shapes their work; \"tells,\" \"speaks,\" and \"talks\" do not fit this sense."
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "title": "When the Sea Glows",
+      "html": "On certain dark nights, the ocean seems to catch fire. Each breaking wave glows an electric blue, and footprints in the wet sand shine [[41|like they were lit from below.]] This eerie light comes from tiny organisms called dinoflagellates, [[42|which drift in vast numbers near the surface.]]\n\nWhen the water around them is disturbed, the cells release a burst of light through a chemical reaction. Scientists believe the flash may startle predators or [[43|attracting]] larger animals that hunt those predators. [[44|Whatever its purpose,]] the glow appears only when the water moves, so a still bay stays dark until a wave, a boat, or a swimmer stirs it.\n\nTravelers chase these displays across the world, from Puerto Rico to the Maldives. [[45|Still,]] the brightest shows depend on warm water and calm weather, conditions that no schedule can guarantee.",
+      "questions": [
+        {
+          "number": 41,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "misc-grammar",
+          "questionText": "",
+          "choices": [
+            "as if lit from below.",
+            "like they were lit from below.",
+            "like lit from below.",
+            "as lit from below."
+          ],
+          "answer": 0,
+          "explanation": "Standard usage prefers \"as if\" before a clause of comparison; \"like\" is informal here and the others are ungrammatical."
+        },
+        {
+          "number": 42,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "The writer is considering deleting the underlined clause. Should it be kept?",
+          "choices": [
+            "Kept, because it explains how the organisms produce light.",
+            "Kept, because it clarifies where the organisms are and why they are visible.",
+            "Deleted, because it repeats the word \"organisms.\"",
+            "Deleted, because the number of organisms is irrelevant to the essay."
+          ],
+          "answer": 1,
+          "explanation": "The clause tells readers the organisms drift near the surface in vast numbers, explaining their visibility; it does not merely repeat earlier content."
+        },
+        {
+          "number": 43,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "parallel-structure",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "attracts",
+            "to attract",
+            "attract"
+          ],
+          "answer": 3,
+          "explanation": "The verb must parallel \"startle\" in \"may startle... or attract.\""
+        },
+        {
+          "number": 44,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "For example,",
+            "As a result,",
+            "Similarly,"
+          ],
+          "answer": 0,
+          "explanation": "\"Whatever its purpose\" pivots from speculation about the glow's function to its observable condition; the others wrongly signal cause, similarity, or example."
+        },
+        {
+          "number": 45,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "Therefore,",
+            "Similarly,",
+            "For example,"
+          ],
+          "answer": 0,
+          "explanation": "The sentence qualifies the appeal of the displays with a limitation, so the contrast word \"Still\" fits."
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "title": "The First Weather Forecast",
+      "html": "In 1861, a British newspaper printed something readers had never seen: a forecast of the next day's weather. The man behind it, Robert FitzRoy, [[46|had once captained the ship that carried Charles Darwin around the world.]] Later he turned his attention to storms and the lives they cost at sea.\n\nFitzRoy gathered reports from coastal stations by telegraph, [[47|compares]] the pressure readings, and predicted where dangerous weather would strike. He even coined the word \"forecast\" [[48|, because]] he wanted to stress that his statements were reasoned estimates, not certainties.\n\nHis warnings saved sailors, [[49|but his forecasts were often wrong, and critics mocked them.]] Discouraged, FitzRoy did not live to see his work vindicated. [[50|]] Within decades, however, daily forecasts had become a fixture of newspapers and governments worldwide.",
+      "questions": [
+        {
+          "number": 46,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "The writer is considering deleting the underlined portion. Should it be kept?",
+          "choices": [
+            "Kept, because it gives relevant background that adds interest to FitzRoy's biography.",
+            "Kept, because it explains how telegraphs work.",
+            "Deleted, because Darwin is not mentioned anywhere else in the essay.",
+            "Deleted, because it contradicts the claim that FitzRoy studied storms."
+          ],
+          "answer": 0,
+          "explanation": "The Darwin detail adds interesting, relevant background about FitzRoy; it neither explains telegraphs nor contradicts the essay."
+        },
+        {
+          "number": 47,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "parallel-structure",
+          "questionText": "",
+          "choices": [
+            "NO CHANGE",
+            "comparing",
+            "compared",
+            "had compared"
+          ],
+          "answer": 2,
+          "explanation": "The past-tense series needs \"gathered... compared... predicted\" for parallelism."
+        },
+        {
+          "number": 48,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "punctuation",
+          "questionText": "",
+          "choices": [
+            "because",
+            "; because",
+            ", because",
+            ", he did so because"
+          ],
+          "answer": 0,
+          "explanation": "No comma should separate the verb \"coined\" from its reason clause introduced by \"because\"; the comma and semicolon versions misuse punctuation."
+        },
+        {
+          "number": 49,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "sentence-structure",
+          "questionText": "",
+          "choices": [
+            "but his forecasts were often wrong, critics mocked them.",
+            "but his forecasts were often wrong critics mocked them.",
+            "his forecasts were often wrong, and critics mocked them.",
+            "but his forecasts were often wrong, and critics mocked them."
+          ],
+          "answer": 3,
+          "explanation": "\"but his forecasts were often wrong, and critics mocked them\" correctly joins clauses with coordinating conjunctions; \"wrong, critics mocked them\" is a comma splice, \"wrong critics mocked them\" a run-on, and \"his forecasts were often wrong, and critics mocked them\" drops the needed contrast \"but.\""
+        },
+        {
+          "number": 50,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "Which sentence, if added here, would best set up the essay's hopeful final sentence?",
+          "choices": [
+            "His critics, too, were soon forgotten by the public.",
+            "Storms continued to batter the British coast each winter.",
+            "Public memory of his name faded almost completely.",
+            "He had also designed several types of barometers."
+          ],
+          "answer": 2,
+          "explanation": "The closing sentence contrasts his obscurity with the later triumph of forecasting; noting that his name faded sets up that \"however\" turn."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,798 @@
+{
+  "id": "exam-1",
+  "title": "ACT English — Full Practice Exam 1",
+  "passages": [
+    {
+      "id": "p1",
+      "title": "The Woman Who Mapped the Ocean Floor",
+      "html": "When Marie Tharp was a child, her family moved often, and she [[1|had attended]] nearly two dozen schools before she finished high school. Her father, a soil surveyor, took her along on his fieldwork, and she learned early how a careful map could turn scattered measurements into a picture of the land.\n\nIn the 1940s few universities trained women as scientists. [[2|Therefore,]] Tharp earned degrees in geology and mathematics, and in 1948 she joined a laboratory at Columbia University. There she was assigned to plot data that male researchers gathered at sea, [[3|because]] the institution did not allow women aboard the ships.\n\nDay after day, Tharp converted columns of [[4|depth soundings, into careful profiles]] of the Atlantic seafloor. As the profiles took shape, she noticed a deep notch running down the center of a vast underwater mountain range. [[5|]] The notch, she argued, was a rift valley where the ocean floor was splitting apart.\n\nHer supervisor [[6|dismissed the idea as \"girl talk\"]] and asked her to redo the work. Tharp checked her data again, the valley appeared every time. [[7|Eventually,]] the evidence became impossible to ignore, and her maps helped confirm the theory of plate tectonics, which reshaped how scientists understood the planet.\n\nTharp kept working at the lab for decades, [[8|drawing, painting, and she compiled]] the first complete map of the world's ocean floors. [[9|]] For most of her career, her name appeared in small print, if at all. Today, [[10|her]] maps hang in classrooms around the world, and her quiet persistence is finally recognized as a turning point in earth science.",
+      "questions": [
+        {
+          "number": 1,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "word-choice",
+          "questionText": "Which choice is most precise and consistent with the sentence's matter-of-fact tone?",
+          "choices": [
+            "NO CHANGE",
+            "sat in on",
+            "attended",
+            "bounced through"
+          ],
+          "answer": 2,
+          "explanation": "The sentence reports a completed past action in plain, precise diction, so \"attended\" is the best fit. \"Had attended\" needlessly shifts to past perfect when both actions share one past time frame; \"bounced through\" is too casual, and \"sat in on\" wrongly implies brief visits rather than enrollment."
+        },
+        {
+          "number": 2,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which transition best fits the relationship between these sentences?",
+          "choices": [
+            "NO CHANGE",
+            "Meanwhile,",
+            "Nevertheless,",
+            "For example,"
+          ],
+          "answer": 2,
+          "explanation": "The first sentence says few universities trained women, yet Tharp earned science degrees anyway, a contrast, so \"Nevertheless\" fits. \"Therefore\" wrongly signals that her degrees resulted from the lack of training; \"For example\" implies illustration, and \"Meanwhile\" implies simultaneity, neither of which matches."
+        },
+        {
+          "number": 3,
+          "category": "POW",
+          "difficulty": "easy",
+          "topic": "transitions",
+          "questionText": "Which transition most clearly shows the cause-and-effect relationship?",
+          "choices": [
+            "NO CHANGE",
+            "whether",
+            "until",
+            "although"
+          ],
+          "answer": 0,
+          "explanation": "She plotted others' data because she was barred from the ships, a causal relationship, so \"because\" is correct. \"Although\" signals contrast, \"whether\" sets up alternatives, and \"until\" signals time, none of which fits the cause given."
+        },
+        {
+          "number": 4,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "commas",
+          "questionText": "Which choice is punctuated correctly?",
+          "choices": [
+            "NO CHANGE",
+            "depth soundings into careful profiles,",
+            "depth, soundings into careful profiles",
+            "depth soundings into careful profiles"
+          ],
+          "answer": 3,
+          "explanation": "No comma should separate a verb's object \"soundings\" from the prepositional phrase \"into careful profiles,\" so the unpunctuated version is correct. Each other option inserts a comma that splits closely linked sentence elements."
+        },
+        {
+          "number": 5,
+          "category": "POW",
+          "difficulty": "hard",
+          "topic": "add-delete",
+          "questionText": "At this point the writer is considering adding a sentence. Which choice provides the most relevant supporting detail?",
+          "choices": [
+            "Sonar technology had improved rapidly during World War II.",
+            "Tharp enjoyed sketching landscapes in her spare time.",
+            "The notch ran for thousands of miles, far longer than any mountain range on dry land.",
+            "Columbia University was founded in the eighteenth century."
+          ],
+          "answer": 2,
+          "explanation": "The paragraph centers on the notch Tharp found, so the detail about its enormous length directly supports that focus. The sonar, sketching, and university-founding facts are tangential and do not develop the discovery of the notch."
+        },
+        {
+          "number": 6,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "word-choice",
+          "questionText": "Which choice best maintains the essay's tone while conveying the supervisor's reaction?",
+          "choices": [
+            "NO CHANGE",
+            "was not really feeling it",
+            "totally dissed her whole idea",
+            "kind of brushed her off"
+          ],
+          "answer": 0,
+          "explanation": "The original phrasing is precise and fits the essay's measured, formal tone. The other options use slang or vague casual wording that clashes with the surrounding diction."
+        },
+        {
+          "number": 7,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "sentence-structure",
+          "questionText": "Which choice corrects the comma splice in the preceding sentence (\"Tharp checked her data again, the valley appeared every time\")?",
+          "choices": [
+            "NO CHANGE",
+            "again the valley",
+            "again; the valley",
+            "again, but the valley"
+          ],
+          "answer": 2,
+          "explanation": "\"Tharp checked her data again\" and \"the valley appeared every time\" are independent clauses, so a semicolon correctly joins them. The comma alone is a splice, removing punctuation creates a run-on, and \"but\" wrongly implies contrast where none exists."
+        },
+        {
+          "number": 8,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "parallel-structure",
+          "questionText": "Which choice maintains parallel structure in the list?",
+          "choices": [
+            "NO CHANGE",
+            "drawing, painting, and to compile",
+            "drawing, painting, and compiling",
+            "she drew, painted, and compiled"
+          ],
+          "answer": 2,
+          "explanation": "The series modifies \"Tharp kept working,\" so three parallel -ing participles are needed: \"drawing, painting, and compiling.\" \"Drawing, painting, and she compiled\" mixes participles with a clause, \"she drew, painted, and compiled\" breaks from the participial pattern, and \"drawing, painting, and to compile\" mixes a participle with an infinitive."
+        },
+        {
+          "number": 9,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which choice best introduces the contrast developed in this paragraph?",
+          "choices": [
+            "In addition, recognition came slowly.",
+            "Yet recognition came slowly.",
+            "As a result, recognition came slowly.",
+            "Recognition came slowly, for example."
+          ],
+          "answer": 1,
+          "explanation": "The paragraph contrasts her important work with the lack of credit she received, so \"Yet\" sets up that contrast. \"In addition\" signals continuation, \"As a result\" signals consequence, and \"for example\" signals illustration, none matching the contrast."
+        },
+        {
+          "number": 10,
+          "category": "CSE",
+          "difficulty": "easy",
+          "topic": "pronouns",
+          "questionText": "Which choice is correct?",
+          "choices": [
+            "NO CHANGE",
+            "her's",
+            "their",
+            "hers"
+          ],
+          "answer": 0,
+          "explanation": "The singular antecedent \"Tharp\" requires the possessive \"her\" before \"maps.\" \"Their\" is plural, \"her's\" is not a word, and \"hers\" is a standalone possessive that cannot modify a following noun."
+        }
+      ]
+    },
+    {
+      "id": "p2",
+      "title": "How Fireflies Make Light",
+      "html": "On a warm summer evening, a meadow can flicker with hundreds of tiny lights. These [[11|lights, are produced]] by fireflies, which are not flies at all but beetles. The glow they create is one of nature's most efficient sources of light.\n\nThe light comes from a chemical reaction inside the firefly's [[12|abdomen, when]] a compound called luciferin combines with oxygen, energy is released as light rather than heat. [[13|Because of this,]] almost none of the energy is wasted, which is why scientists call the firefly's glow \"cold light.\" A household bulb, [[14|in contrast,]] loses most of its energy as heat.\n\nFireflies control their flashing with surprising precision. By managing the flow of oxygen to the light-producing cells, a firefly [[15|can blink in steady patterns that are repeated over and over again]]. Each species has its own rhythm, and males and females use these patterns to find each other in the dark.\n\n[[16|]] In some parts of the world, thousands of fireflies flash at the very same instant, lighting up entire riverbanks in unison. Researchers still debate exactly how the insects [[17|synchronize their timing together]] so precisely.\n\nFireflies face growing threats from light pollution, which can drown out their signals and make mating harder. [[18|]] [[19|Conserving]] dark habitats, scientists hope, will help these living lanterns survive. The next time you watch a meadow sparkle, remember that each flash is a small chemical [[20|miracle, and a message]] sent through the night.",
+      "questions": [
+        {
+          "number": 11,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "commas",
+          "questionText": "Which choice is punctuated correctly?",
+          "choices": [
+            "NO CHANGE",
+            "lights are produced",
+            "lights are, produced",
+            "lights: are produced"
+          ],
+          "answer": 1,
+          "explanation": "No punctuation should separate the subject \"lights\" from its verb \"are produced,\" so the comma-free version is correct. A comma, a comma before \"produced,\" or a colon all wrongly break the subject-verb link."
+        },
+        {
+          "number": 12,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "punctuation",
+          "questionText": "Which choice is punctuated correctly?",
+          "choices": [
+            "NO CHANGE",
+            "abdomen; when",
+            "abdomen, when,",
+            "abdomen. When"
+          ],
+          "answer": 3,
+          "explanation": "Starting a new sentence with \"When a compound... combines with oxygen, energy is released\" creates a correct complete sentence with the subordinate clause first. The original creates a fragment-laden run-on, the semicolon must join independent clauses but \"when... oxygen\" is dependent, and the last adds a stray comma."
+        },
+        {
+          "number": 13,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which transition best fits this sentence?",
+          "choices": [
+            "NO CHANGE",
+            "In the meantime,",
+            "For instance,",
+            "However,"
+          ],
+          "answer": 0,
+          "explanation": "Releasing energy as light rather than heat causes almost no energy to be wasted, a cause-effect link, so \"Because of this\" fits. \"However\" signals contrast, \"For instance\" signals example, and \"In the meantime\" signals time, none matching."
+        },
+        {
+          "number": 14,
+          "category": "POW",
+          "difficulty": "easy",
+          "topic": "transitions",
+          "questionText": "Which choice best signals the contrast between the firefly and the bulb?",
+          "choices": [
+            "NO CHANGE",
+            "for example,",
+            "as a result,",
+            "in addition,"
+          ],
+          "answer": 0,
+          "explanation": "The bulb wastes heat unlike the firefly, a contrast, so \"in contrast\" is correct. The other transitions signal example, consequence, and addition, which misrepresent the relationship."
+        },
+        {
+          "number": 15,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "redundancy",
+          "questionText": "Which choice is most concise?",
+          "choices": [
+            "NO CHANGE",
+            "can blink in steady, repeating patterns",
+            "can blink in patterns repeated again and again repeatedly",
+            "can blink in steady patterns"
+          ],
+          "answer": 3,
+          "explanation": "\"In steady patterns\" conveys the idea without redundancy. \"Repeated over and over again,\" \"steady, repeating,\" and \"again and again repeatedly\" all restate the notion of repetition needlessly."
+        },
+        {
+          "number": 16,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which choice best opens this paragraph and connects to the sentence that follows?",
+          "choices": [
+            "Predators sometimes mimic firefly flashes.",
+            "Fireflies are found on every continent except Antarctica.",
+            "Some fireflies take this coordination even further.",
+            "The chemistry of luciferin is complex."
+          ],
+          "answer": 2,
+          "explanation": "The paragraph describes mass synchronized flashing, an extension of the timing precision in the prior paragraph, so the \"take this coordination even further\" opener fits. The other options introduce unrelated facts that the paragraph never develops."
+        },
+        {
+          "number": 17,
+          "category": "KLA",
+          "difficulty": "easy",
+          "topic": "redundancy",
+          "questionText": "Which choice is most concise?",
+          "choices": [
+            "NO CHANGE",
+            "synchronize the timing all together",
+            "synchronize together their timing",
+            "synchronize their timing"
+          ],
+          "answer": 3,
+          "explanation": "\"Synchronize\" already means to coordinate timing together, so \"synchronize their timing\" is concise. \"Together,\" \"together their timing,\" and \"all together\" each repeat the idea of simultaneity already in \"synchronize.\""
+        },
+        {
+          "number": 18,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "At this point, the writer is considering adding the following sentence: \"Many cities are now dimming streetlights during firefly season.\" Should the writer make this addition?",
+          "choices": [
+            "Yes, because it gives a relevant example of how the threat just described is being addressed.",
+            "Yes, because it explains how fireflies produce their light.",
+            "No, because it contradicts the claim that fireflies face threats.",
+            "No, because it repeats information already given earlier in the passage."
+          ],
+          "answer": 0,
+          "explanation": "The prior sentence names light pollution as a threat, so a sentence about cities dimming lights gives a relevant, on-topic example of a response to that threat. It does not explain the light-making chemistry, contradict the threat, or repeat earlier information."
+        },
+        {
+          "number": 19,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "modifiers",
+          "questionText": "Which choice avoids a misplaced or dangling modifier?",
+          "choices": [
+            "Conserved",
+            "Conserving",
+            "By conserving",
+            "To conserve"
+          ],
+          "answer": 1,
+          "explanation": "The sentence's subject is the gerund phrase \"Conserving dark habitats,\" which functions as the noun being discussed, so \"Conserving\" is correct. \"By conserving\" and \"To conserve\" turn the opening into a modifier with no logical subject to attach to, and \"Conserved\" is a past participle that does not fit."
+        },
+        {
+          "number": 20,
+          "category": "CSE",
+          "difficulty": "easy",
+          "topic": "commas",
+          "questionText": "Which choice is punctuated correctly?",
+          "choices": [
+            "NO CHANGE",
+            "miracle and, a message",
+            "miracle and a message",
+            "miracle, and, a message"
+          ],
+          "answer": 2,
+          "explanation": "\"A small chemical miracle and a message\" is a single compound noun phrase, so no comma should precede \"and,\" making \"miracle and a message\" correct. The other options insert commas that wrongly separate the joined nouns."
+        }
+      ]
+    },
+    {
+      "id": "p3",
+      "title": "The Library at Timbuktu",
+      "html": "For centuries the West African city of Timbuktu was [[21|known as a center]] of trade and learning. Caravans crossed the Sahara carrying salt, gold, and books, and scholars gathered there to study astronomy, medicine, law, and poetry. [[22|]]\n\nBy the 1500s, Timbuktu [[23|had become home to]] thousands of handwritten manuscripts. Wealthy families and scholars collected them, [[24|and they were]] passing the volumes down through generations like treasured heirlooms. [[25|]] The manuscripts covered an astonishing range of subjects, from mathematics to music.\n\nWhen the city's fortunes declined, many of these collections were hidden away in private homes. [[26|]] Families wrapped the fragile pages in cloth and stored them in trunks, [[27|protecting them]] from heat, insects, and theft. For generations, outsiders assumed the great library had vanished.\n\n[[28|]] In recent decades, researchers discovered that hundreds of thousands of manuscripts had survived. Local librarians, [[29|whom]] had guarded the texts in secret, slowly began to share them with the world.\n\nIn 2012, conflict in the region put the manuscripts at risk once more. Librarians and ordinary citizens smuggled the documents to safety, [[30|hiding them in metal boxes, packing them onto boats, and moving them]] hundreds of miles down the river. Their courage saved a written record that links the present to a brilliant, often overlooked past.",
+      "questions": [
+        {
+          "number": 21,
+          "category": "KLA",
+          "difficulty": "easy",
+          "topic": "word-choice",
+          "questionText": "Which choice is most precise and appropriate in context?",
+          "choices": [
+            "NO CHANGE",
+            "known to be like a center",
+            "known of as a center",
+            "known like a center"
+          ],
+          "answer": 0,
+          "explanation": "\"Known as a center\" is the idiomatic phrasing. \"Known like,\" \"known to be like,\" and \"known of as\" are nonstandard and awkward."
+        },
+        {
+          "number": 22,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "which-choice",
+          "questionText": "Which choice, added here, best emphasizes the variety of knowledge that drew people to the city?",
+          "choices": [
+            "Visitors came seeking learning in fields as different as the stars overhead and the laws that governed daily life.",
+            "The journey across the desert was long and dangerous.",
+            "Some of the caravans included hundreds of camels.",
+            "Salt was an especially valuable trade good at the time."
+          ],
+          "answer": 0,
+          "explanation": "The paragraph stresses the range of subjects studied, so a sentence highlighting learning across very different fields develops that point. The desert journey, salt value, and camel-count details describe the trade route rather than the variety of knowledge."
+        },
+        {
+          "number": 23,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "word-choice",
+          "questionText": "Which word is most precise in context?",
+          "choices": [
+            "NO CHANGE",
+            "had amassed",
+            "racked up",
+            "got hold of"
+          ],
+          "answer": 1,
+          "explanation": "With the time anchor \"By the 1500s,\" the past perfect \"had amassed\" precisely conveys a large collection gathered over time and fits the formal tone. \"Had become home to\" is vague and wordy, \"got hold of\" is flat and imprecise, and \"racked up\" is too informal."
+        },
+        {
+          "number": 24,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "parallel-structure",
+          "questionText": "Which choice corrects the faulty construction?",
+          "choices": [
+            "NO CHANGE",
+            "and passed",
+            "passing",
+            "while they were"
+          ],
+          "answer": 1,
+          "explanation": "The verb \"collected\" needs a parallel past-tense partner, so \"and passed\" keeps the two actions consistent. \"And they were passing\" and \"while they were\" shift to past progressive, and \"passing\" alone leaves a dangling participle."
+        },
+        {
+          "number": 25,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "Which sentence, if added here, best develops the paragraph's point about the manuscripts' value?",
+          "choices": [
+            "Some volumes were decorated with gold leaf and bound in fine leather.",
+            "Timbuktu lies near the Niger River.",
+            "The Sahara is the largest hot desert in the world.",
+            "Camels can travel for days without water."
+          ],
+          "answer": 0,
+          "explanation": "The paragraph treats the manuscripts as treasured heirlooms, so the detail about gold leaf and fine bindings develops their value. The desert, camel, and river facts are geographic asides that do not advance the point."
+        },
+        {
+          "number": 26,
+          "category": "POW",
+          "difficulty": "easy",
+          "topic": "add-delete",
+          "questionText": "At this point, the writer wants to add a detail showing why the collections needed to be hidden. Which choice best accomplishes that goal?",
+          "choices": [
+            "Paper was sometimes imported from distant regions.",
+            "War and raids made any visible store of valuables a target for looting.",
+            "Timbuktu had once been a thriving commercial hub.",
+            "The manuscripts were written in several different languages."
+          ],
+          "answer": 1,
+          "explanation": "The sentence says the collections were hidden, so a detail about war and looting explains why concealment was necessary. The languages, commercial history, and paper-import facts are true but do not give a reason for hiding the manuscripts."
+        },
+        {
+          "number": 27,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "modifiers",
+          "questionText": "Which choice correctly modifies \"Families\"?",
+          "choices": [
+            "NO CHANGE",
+            "protect them",
+            "in order for protecting them",
+            "they protected them"
+          ],
+          "answer": 0,
+          "explanation": "The participial phrase \"protecting them\" correctly modifies the action of the families who wrapped and stored the pages. \"They protected them\" creates a comma splice, the bare verb \"protect them\" also creates a comma splice in \"...stored them in trunks, protect them from heat...,\" and \"in order for protecting\" is ungrammatical. Only the participle \"protecting them\" attaches cleanly to the preceding clause."
+        },
+        {
+          "number": 28,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which opening sentence best signals the shift in this paragraph?",
+          "choices": [
+            "Astronomy was a popular subject.",
+            "Trade routes shifted over the centuries.",
+            "Manuscripts are made of paper or parchment.",
+            "The story did not end there."
+          ],
+          "answer": 3,
+          "explanation": "The paragraph reveals that the manuscripts survived after all, reversing the prior assumption, so \"The story did not end there\" signals that shift. The other choices state unrelated facts that fail to connect the assumed loss to the rediscovery."
+        },
+        {
+          "number": 29,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "pronouns",
+          "questionText": "Which choice is correct?",
+          "choices": [
+            "NO CHANGE",
+            "which",
+            "whose",
+            "who"
+          ],
+          "answer": 3,
+          "explanation": "The relative pronoun is the subject of \"had guarded,\" so the subjective \"who\" is correct. \"Whom\" is objective, \"which\" refers to things not people, and \"whose\" is possessive."
+        },
+        {
+          "number": 30,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "parallel-structure",
+          "questionText": "Which choice maintains parallel structure?",
+          "choices": [
+            "NO CHANGE",
+            "hiding them in metal boxes, packing them onto boats, and they moved them",
+            "hiding them in metal boxes, to pack them onto boats, and moving them",
+            "to hide them in metal boxes, packing them onto boats, and moving them"
+          ],
+          "answer": 0,
+          "explanation": "The three participial phrases \"hiding,\" \"packing,\" and \"moving\" are parallel, so NO CHANGE is correct. The other options break the pattern by inserting a clause or an infinitive among the participles."
+        }
+      ]
+    },
+    {
+      "id": "p4",
+      "title": "The Art of the Blacksmith",
+      "html": "Long before factories stamped out metal parts by the thousands, the blacksmith was one of the most [[31|important]] workers in any town. With a hammer, an anvil, and a blazing forge, a skilled smith could shape raw iron into tools, hinges, horseshoes, and [[32|making weapons]].\n\nThe work began at the forge, where coal or charcoal heated the iron until it glowed orange. [[33|]] Only then could the metal be shaped. [[34|Therefore,]] the smith worked quickly, hammering the softened iron against the anvil before it cooled and hardened again.\n\n[[35|]] Shaping metal required more than strength. A blacksmith had to read the color of the glowing iron to judge its temperature, [[36|since]] a piece heated too long would crumble, while one too cool would crack. This knowledge came only through years of [[37|practice, and patient observation]].\n\nBlacksmiths were also problem solvers. A farmer might arrive with a broken plow, a cook with a [[38|bent, pot, and a]] traveler with a lame horse. [[39|]] The smith repaired them all, often inventing solutions on the spot.\n\nToday, machines produce most metal goods, [[40|but the craft of the blacksmith has not disappeared completely]]. Artists and hobbyists still gather around glowing forges, drawn to the satisfying ring of hammer on hot iron and to a tradition thousands of years old.",
+      "questions": [
+        {
+          "number": 31,
+          "category": "KLA",
+          "difficulty": "easy",
+          "topic": "word-choice",
+          "questionText": "Which word is most precise and best fits the essay's tone?",
+          "choices": [
+            "NO CHANGE",
+            "indispensable",
+            "neat",
+            "okay"
+          ],
+          "answer": 0,
+          "explanation": "\"Important\" accurately describes the blacksmith's central role and matches the measured tone, so NO CHANGE is correct. \"Indispensable\" overstates the point beyond what the passage supports, while \"okay\" and \"neat\" are vague and too casual."
+        },
+        {
+          "number": 32,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "parallel-structure",
+          "questionText": "Which choice maintains parallel structure in the list?",
+          "choices": [
+            "NO CHANGE",
+            "the making of weapons",
+            "weapons",
+            "weapons too"
+          ],
+          "answer": 2,
+          "explanation": "The list is a series of nouns (\"tools, hinges, horseshoes\"), so \"weapons\" keeps the parallel. \"Making weapons,\" \"weapons too,\" and \"the making of weapons\" break the noun pattern or add clutter."
+        },
+        {
+          "number": 33,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "logical-placement",
+          "questionText": "Which sentence, placed here, best bridges the heating of the iron and the statement that follows about shaping it?",
+          "choices": [
+            "Cold iron is far too stiff to bend or stretch.",
+            "Iron has been used by humans for millennia.",
+            "The forge was usually built of brick or stone.",
+            "Blacksmiths often trained for many years."
+          ],
+          "answer": 0,
+          "explanation": "The next sentence says only the heated metal could be shaped, so a line explaining that cold iron is too stiff to work logically connects the heating to the shaping. The facts about the forge's material, training, and iron's history do not link those two ideas."
+        },
+        {
+          "number": 34,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which transition best fits the relationship between the sentences?",
+          "choices": [
+            "NO CHANGE",
+            "However,",
+            "For example,",
+            "Instead,"
+          ],
+          "answer": 0,
+          "explanation": "The iron must be shaped only while hot, so the smith works quickly as a result, making \"Therefore\" correct. \"However\" and \"Instead\" signal contrast, and \"For example\" signals illustration, none matching the cause-effect link."
+        },
+        {
+          "number": 35,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "Which sentence best introduces the paragraph's main idea?",
+          "choices": [
+            "Iron is one of the most common elements on Earth.",
+            "The forge produced a great deal of smoke.",
+            "Shaping metal required more than strength.",
+            "Many towns had only one blacksmith."
+          ],
+          "answer": 2,
+          "explanation": "The paragraph explains the knowledge and judgment smithing demands, so \"required more than strength\" frames that idea. The facts about iron's abundance, town demographics, and smoke do not set up the paragraph's focus on skill."
+        },
+        {
+          "number": 36,
+          "category": "POW",
+          "difficulty": "easy",
+          "topic": "transitions",
+          "questionText": "Which choice best shows the logical relationship?",
+          "choices": [
+            "NO CHANGE",
+            "although",
+            "unless",
+            "before"
+          ],
+          "answer": 0,
+          "explanation": "Reading the iron's color matters because overheated or cool metal fails, a causal link, so \"since\" is correct. \"Although\" signals contrast, \"unless\" sets a condition, and \"before\" signals time, none fitting the reason given."
+        },
+        {
+          "number": 37,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "commas",
+          "questionText": "Which choice is punctuated correctly?",
+          "choices": [
+            "NO CHANGE",
+            "practice and patient observation",
+            "practice; and patient observation",
+            "practice, and, patient observation"
+          ],
+          "answer": 1,
+          "explanation": "\"Practice and patient observation\" is a two-item compound object, so no comma precedes \"and,\" making this version correct. A comma or semicolon before \"and\" wrongly separates the pair of nouns."
+        },
+        {
+          "number": 38,
+          "category": "CSE",
+          "difficulty": "hard",
+          "topic": "commas",
+          "questionText": "Which choice is punctuated correctly?",
+          "choices": [
+            "NO CHANGE",
+            "bent pot, and a",
+            "bent, pot and a,",
+            "bent pot and a"
+          ],
+          "answer": 1,
+          "explanation": "The items are \"a broken plow,\" \"a bent pot,\" and \"a lame horse,\" so the comma belongs after \"pot,\" not inside it: \"bent pot, and a.\" Putting a comma between \"bent\" and \"pot\" splits the adjective from its noun, and dropping the comma before \"and\" loses the needed serial break."
+        },
+        {
+          "number": 39,
+          "category": "POW",
+          "difficulty": "hard",
+          "topic": "logical-placement",
+          "questionText": "Which choice, placed here, best concludes the list of customers and leads into the next sentence?",
+          "choices": [
+            "Horses were the main form of transportation.",
+            "Cooking pots came in many sizes.",
+            "Plows were made mostly of wood and iron.",
+            "Each one needed the smith's particular skill."
+          ],
+          "answer": 3,
+          "explanation": "The next sentence says the smith repaired them all, so a line noting each customer needed his skill bridges the list and the resolution. The horse, plow, and pot facts are tangents that break the flow into the following sentence."
+        },
+        {
+          "number": 40,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "redundancy",
+          "questionText": "Which choice is most concise?",
+          "choices": [
+            "NO CHANGE",
+            "but the craft of the blacksmith has not completely vanished without a trace",
+            "but the craft of the blacksmith remains and has not gone away",
+            "but the craft of the blacksmith has not disappeared"
+          ],
+          "answer": 3,
+          "explanation": "\"Has not disappeared\" states the idea cleanly. \"Disappeared completely,\" \"vanished without a trace,\" and \"remains and has not gone away\" each pile on redundant phrasing."
+        }
+      ]
+    },
+    {
+      "id": "p5",
+      "title": "Reading the Rings of Trees",
+      "html": "A tree stump may look like nothing more than a circle of dead wood, [[41|but it]] holds a detailed record of the past. Each year a tree adds a new layer of growth, and these layers appear as rings when the trunk is cut. By counting and studying the rings, scientists can [[42|invent]] a tree's age and the conditions it lived through.\n\nThe study of tree rings is called dendrochronology. [[43|]] In a wet year with plenty of sunlight, a tree grows quickly, producing a wide ring. In a dry or cold year, [[44|growth slows, and the ring is narrow]]. A single trunk can therefore reveal decades of weather, recorded in light and dark bands.\n\nRings can also reveal dramatic events. A scar buried in the wood might mark an old [[45|fire, but a]] sudden run of narrow rings might point to years of drought. By comparing patterns from many trees, researchers can reconstruct the climate of a region long before written records began.",
+      "questions": [
+        {
+          "number": 41,
+          "category": "CSE",
+          "difficulty": "easy",
+          "topic": "sentence-structure",
+          "questionText": "Which choice correctly joins the two parts of the sentence?",
+          "choices": [
+            "NO CHANGE",
+            "and it",
+            "but it,",
+            "but, it"
+          ],
+          "answer": 0,
+          "explanation": "The comma before \"but\" joins two independent clauses, and no comma should follow \"but,\" so \"but it\" is correct. Adding a comma after \"but\" or before \"it\" breaks the clause, and \"and\" wrongly drops the contrast between the dull look and the rich record."
+        },
+        {
+          "number": 42,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "word-choice",
+          "questionText": "Which word is most precise in context?",
+          "choices": [
+            "NO CHANGE",
+            "determine",
+            "imagine",
+            "guess"
+          ],
+          "answer": 1,
+          "explanation": "Counting and studying the rings establishes the age from physical evidence, so \"determine\" is the precise word. \"Invent,\" \"guess,\" and \"imagine\" all wrongly suggest the age is made up rather than measured from the data."
+        },
+        {
+          "number": 43,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "transitions",
+          "questionText": "Which sentence best follows the definition and introduces the rest of the paragraph?",
+          "choices": [
+            "Some scientists work outdoors in all seasons.",
+            "The width of each ring depends on the weather that year.",
+            "Many trees live for several hundred years.",
+            "Wood is used to build houses and furniture."
+          ],
+          "answer": 1,
+          "explanation": "The paragraph goes on to explain wide and narrow rings caused by weather, so a sentence linking ring width to weather sets that up. The other choices state unrelated facts that do not lead into the wet-year and dry-year examples."
+        },
+        {
+          "number": 44,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "sentence-structure",
+          "questionText": "Which choice correctly joins the two clauses?",
+          "choices": [
+            "NO CHANGE",
+            "growth slows and the ring is narrow",
+            "growth slows, the ring is narrow",
+            "growth slows; and the ring is narrow"
+          ],
+          "answer": 0,
+          "explanation": "Two independent clauses joined by \"and\" take a comma before the conjunction, so NO CHANGE is correct. Dropping the comma creates a fused compound, dropping \"and\" creates a comma splice, and \"; and\" doubles the punctuation."
+        },
+        {
+          "number": 45,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "punctuation",
+          "questionText": "Which choice is punctuated correctly?",
+          "choices": [
+            "NO CHANGE",
+            "fire, but, a",
+            "fire but a",
+            "fire; but a"
+          ],
+          "answer": 0,
+          "explanation": "Two independent clauses joined by 'but' take a comma before it, so the original is correct: '...mark an old fire, but a sudden run of narrow rings might point to drought.' 'fire but a' drops the comma, 'fire; but a' wrongly pairs a semicolon with the FANBOYS 'but,' and 'fire, but, a' adds a stray comma after 'but.'"
+        }
+      ]
+    },
+    {
+      "id": "p6",
+      "title": "The Inventor of Braille",
+      "html": "Louis Braille [[46|lost his sight at the age of three]], [[47|but, he]] grew determined to read. As a boy at a school for the blind in Paris, he found the few available books frustrating. Their raised letters were [[48|enormous and they were hard to feel]], and each heavy volume held only a little text.\n\n[[49|]] When Braille was twelve, he learned of a military code that used raised dots to send messages in the dark. The system was too complex for everyday use, [[50|so he spent the next several years simplifying it]]. By age fifteen he had created a tidy grid of six dots that could represent every letter, and his alphabet eventually let blind readers around the world read and write with ease.",
+      "questions": [
+        {
+          "number": 46,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "verbs",
+          "questionText": "Which choice is correct?",
+          "choices": [
+            "NO CHANGE",
+            "loses his sight at the age of three",
+            "was losing his sight at the age of three",
+            "had lost his sight at the age of three"
+          ],
+          "answer": 0,
+          "explanation": "The opening of a past narrative calls for the simple past \"lost,\" so NO CHANGE is correct. \"Loses\" shifts to present tense, \"had lost\" is past perfect with no earlier past event to anchor it, and \"was losing\" wrongly stretches a single completed event into an ongoing one."
+        },
+        {
+          "number": 47,
+          "category": "CSE",
+          "difficulty": "easy",
+          "topic": "punctuation",
+          "questionText": "Which choice is punctuated correctly?",
+          "choices": [
+            "NO CHANGE",
+            "but he,",
+            "but; he",
+            "but he"
+          ],
+          "answer": 3,
+          "explanation": "The comma already before \"but\" joins the clauses, and no comma should follow \"but,\" so \"but he\" is correct. A comma after \"but,\" a comma after \"he,\" or a semicolon all misplace punctuation around the conjunction."
+        },
+        {
+          "number": 48,
+          "category": "KLA",
+          "difficulty": "medium",
+          "topic": "redundancy",
+          "questionText": "Which choice is most concise and parallel?",
+          "choices": [
+            "NO CHANGE",
+            "really big and also pretty hard to feel",
+            "enormous, and they were also hard to feel",
+            "enormous and hard to feel"
+          ],
+          "answer": 3,
+          "explanation": "\"Enormous and hard to feel\" pairs two parallel adjectival descriptions concisely. \"Enormous and they were hard to feel\" and \"enormous, and they were also hard to feel\" add an unneeded clause, and \"really big and also pretty hard to feel\" shifts to vague, informal wording."
+        },
+        {
+          "number": 49,
+          "category": "POW",
+          "difficulty": "medium",
+          "topic": "add-delete",
+          "questionText": "Which sentence best opens this paragraph and transitions from the problem to the solution?",
+          "choices": [
+            "Many schools existed across Europe.",
+            "A chance discovery would change everything.",
+            "Paris is the capital of France.",
+            "Braille also enjoyed playing the organ."
+          ],
+          "answer": 1,
+          "explanation": "The paragraph turns from the problem of clumsy books to the discovery of the dot code, so \"A chance discovery would change everything\" bridges the two. The Paris, organ, and schools facts are asides that do not set up the solution."
+        },
+        {
+          "number": 50,
+          "category": "CSE",
+          "difficulty": "medium",
+          "topic": "sentence-structure",
+          "questionText": "Which choice correctly completes the sentence?",
+          "choices": [
+            "NO CHANGE",
+            "spending the next several years simplifying it",
+            "he spent the next several years simplifying it",
+            "so, he spent the next several years simplifying it"
+          ],
+          "answer": 0,
+          "explanation": "The comma plus \"so\" joins two independent clauses showing result, so NO CHANGE is correct. Adding a comma after \"so\" misplaces punctuation, dropping \"so\" creates a comma splice, and \"spending\" leaves the second clause as a fragment."
+        }
+      ]
+    }
+  ]
+}

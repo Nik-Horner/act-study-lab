@@ -1,0 +1,102 @@
+{
+  "slug": "punctuation",
+  "title": "Semicolons, Colons, Dashes & Apostrophes",
+  "intro": "Semicolons, colons, dashes, and apostrophes show up on every ACT English section, a steady handful of questions per test beyond the comma items. The rules are mechanical: each mark is either legal in a spot or it isn't. Label each side of the mark as a complete clause or a fragment, and the right answer follows.",
+  "sections": [
+    {
+      "heading": "Semicolons join two independent clauses",
+      "body": [
+        "A semicolon does one main job on the ACT: it links two independent clauses, each of which could stand alone as a sentence. Read each side. If both sides could end with a period, a semicolon is legal.",
+        "A handy shortcut: a semicolon works in exactly the same spots a period would. If you can swap in a period without creating a fragment, the semicolon is correct. If either side is a fragment, the semicolon is wrong.",
+        "One exception to that shortcut: a semicolon replaces a coordinating conjunction, so it never sits next to one. A period before 'But' or 'And' can be legal style, but '; but' and '; and' are always wrong on the ACT. When a FANBOYS word joins the clauses, a comma goes before it, not a semicolon.",
+        "Semicolons have one rare second job: separating list items that already contain commas, as in 'We visited Austin, Texas; Tulsa, Oklahoma; and Boise, Idaho.' If the items carry internal commas, those semicolons are legal even though no full clause is in sight."
+      ],
+      "examples": [
+        { "text": "The lab closed early; the storm knocked out the power.", "label": "Two independent clauses", "good": true },
+        { "text": "The lab closed early; because of the storm.", "label": "Second part is a fragment", "good": false }
+      ],
+      "tip": "Period test: if a period works there, so does the semicolon. One exception: never put a semicolon next to a FANBOYS conjunction. '; but' is always wrong; use ', but' instead."
+    },
+    {
+      "heading": "Colons introduce after a complete clause",
+      "body": [
+        "A colon announces that something follows: a list, an explanation, or a single word. The catch the ACT tests over and over is that the words before the colon must form a complete sentence.",
+        "What comes after the colon does not need to be a complete sentence. That is the key difference from a semicolon, which demands a full clause on both sides.",
+        "The ACT's favorite colon trap splits a verb or a preposition from what follows. A colon after 'such as' or 'including' is wrong every time, because the words before the colon cannot stand alone."
+      ],
+      "examples": [
+        { "text": "She packed one thing: courage.", "label": "Complete clause, then a colon", "good": true },
+        { "text": "She packed: courage and a map.", "label": "Colon splits the verb from its objects", "good": false }
+      ],
+      "tip": "Cover everything after the colon. If what remains is a full sentence, the colon is legal."
+    },
+    {
+      "heading": "Dashes: pairs and the colon substitute",
+      "body": [
+        "A single dash can replace a colon. After a complete clause, a dash may introduce an explanation or a list just as a colon would. On the ACT, a dash and a colon are often both acceptable in that spot, so the test rarely pits them against each other directly.",
+        "A pair of dashes sets off an interruption, exactly like a pair of commas or a pair of parentheses. The rule the ACT enforces is consistency: you cannot open with a dash and close with a comma. Match the marks."
+      ],
+      "examples": [
+        { "text": "My oldest friend — we met in third grade — moved away last year.", "label": "Matched pair of dashes", "good": true },
+        { "text": "My oldest friend — we met in third grade, moved away last year.", "label": "Dash opens, comma closes: mismatched", "good": false }
+      ],
+      "tip": "Interrupting dashes travel in pairs. A dash must close with a dash, not a comma."
+    },
+    {
+      "heading": "Apostrophes: possession vs. contraction",
+      "body": [
+        "Apostrophes mark possession or stand in for missing letters. For a singular noun, add 's (the dog's leash). For a plural noun already ending in s, add only an apostrophe (the dogs' leashes).",
+        "The traps live in the pronouns. 'Its' is possessive and takes no apostrophe; 'it's' means 'it is.' 'Whose' is possessive; 'who's' means 'who is.' 'Their' is possessive; 'they're' means 'they are.' A noun that is just plural, with no ownership, gets no apostrophe at all."
+      ],
+      "examples": [
+        { "text": "The committee published its report; the senators' votes were unanimous.", "label": "Possessive 'its' takes no apostrophe; plural possessive adds one after the s", "good": true },
+        { "text": "The committee published it's report.", "label": "'It's' means 'it is,' which fails here", "good": false }
+      ],
+      "tip": "Expand the contraction. If 'it is' or 'who is' makes sense, use the apostrophe; if not, use the possessive."
+    },
+    {
+      "heading": "Quotation marks and surrounding punctuation",
+      "body": [
+        "On the ACT, periods and commas go inside the closing quotation mark. This is the American convention the test enforces every time.",
+        "When a quotation is introduced by a full clause, a colon can lead into it; when it is woven into the sentence with a verb like 'said,' a comma does the work. Match the punctuation to how the quote is attached."
+      ],
+      "examples": [
+        { "text": "\"Wait here,\" she said.", "label": "Comma inside the quotation mark", "good": true },
+        { "text": "\"Wait here\", she said.", "label": "Comma outside the mark; the ACT puts it inside", "good": false }
+      ],
+      "tip": "Periods and commas always tuck inside the closing quote."
+    },
+    {
+      "heading": "How to spot these questions",
+      "body": [
+        "Read the answer choices first. When the words barely change and the marks do (a comma, semicolon, colon, and dash shuffled across four choices), you are in a punctuation question, and clause structure decides it.",
+        "Step 1: find the boundary the underline sits on. Step 2: label each side as a complete clause or a fragment. Both sides complete: a period, a semicolon, or a comma plus a FANBOYS conjunction can join them. Complete clause followed by a fragment that explains it: a colon or a single dash. A fragment on either side of a semicolon kills that choice.",
+        "Apostrophe questions look different: the choices shuffle its/it's or whose/who's, or slide an apostrophe around an s. Expand the contraction in your head and check whether the sentence still makes sense."
+      ],
+      "tip": "Two choices that do the same grammatical job (a colon and a single dash, or a period and a semicolon) cancel each other out: the answer is one of the others."
+    }
+  ],
+  "check": [
+    {
+      "stem": "The trail was steep[[; but]] the view at the top was worth the climb.",
+      "questionText": "Which choice is correct?",
+      "choices": ["NO CHANGE", ": but", ", but", ", but,"],
+      "answer": 2,
+      "explanation": "Two independent clauses joined by the conjunction 'but' need a comma before it, so ', but' is correct. The semicolon in '; but' doubles up: the semicolon and the conjunction each try to join the clauses. ': but' fails because a colon must introduce an explanation or a list, not a conjunction. ', but,' wedges a stray comma between 'but' and its clause."
+    },
+    {
+      "stem": "She brought three things to the audition[[; a monologue,]] a headshot, and her nerves.",
+      "questionText": "Which choice is correct?",
+      "choices": ["NO CHANGE", ": a monologue,", ". A monologue,", ", a monologue;"],
+      "answer": 1,
+      "explanation": "'She brought three things to the audition' stands alone, and the list explains 'three things,' so ': a monologue,' is correct. The semicolon in '; a monologue,' demands a complete clause after it and gets a list instead. '. A monologue,' strands the list as a sentence fragment. ', a monologue;' plants a semicolon between 'a monologue' and 'a headshot,' splitting list items that plain commas should separate."
+    },
+    {
+      "stem": "The cat licked [[it's]] paws and curled up by the fire.",
+      "questionText": "Which choice is correct?",
+      "choices": ["NO CHANGE", "it is", "its'", "its"],
+      "answer": 3,
+      "explanation": "The possessive pronoun 'its' takes no apostrophe, so 'its' is correct. 'It's' expands to 'it is,' and 'the cat licked it is paws' is nonsense; spelling out 'it is' fails the same test. 'Its'' is not an English word."
+    }
+  ]
+}

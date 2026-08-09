@@ -1,0 +1,485 @@
+{
+  "slug": "verbs",
+  "questions": [
+    {
+      "id": "verbs-001",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Each of the runners [[have]] a number pinned to her shirt.",
+      "choices": [
+        "NO CHANGE",
+        "are having",
+        "has",
+        "were having"
+      ],
+      "answer": 2,
+      "explanation": "'Each' is the singular subject and takes 'has.' The other choices agree with the plural 'runners' inside the phrase 'of the runners,' which cannot be the subject."
+    },
+    {
+      "id": "verbs-002",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The committee members [[have decided]] to postpone the vote until next month.",
+      "choices": [
+        "NO CHANGE",
+        "deciding",
+        "decides",
+        "has decided"
+      ],
+      "answer": 0,
+      "explanation": "The plural subject 'members' takes the plural 'have decided,' so the original is correct. 'Has decided' and 'decides' are singular and clash with 'members,' and 'deciding' leaves the sentence with no finite verb."
+    },
+    {
+      "id": "verbs-003",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "We arrived at the cabin, unpacked the car, and [[start]] a fire in the stove.",
+      "choices": [
+        "NO CHANGE",
+        "starting",
+        "started",
+        "had started"
+      ],
+      "answer": 2,
+      "explanation": "The series 'arrived,' 'unpacked,' and 'started' must all stay in the simple past. 'Start' is present tense, 'starting' breaks parallelism, and 'had started' wrongly shifts to the past perfect."
+    },
+    {
+      "id": "verbs-004",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "By noon the workers had already [[drank]] all the water in the cooler.",
+      "choices": [
+        "NO CHANGE",
+        "drinking",
+        "drink",
+        "drunk"
+      ],
+      "answer": 3,
+      "explanation": "After the helper 'had,' use the past participle 'drunk.' 'Drank' is the simple past, 'drink' is the base form, and 'drinking' needs a different helping verb."
+    },
+    {
+      "id": "verbs-005",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Every student in the advanced classes [[turns]] in a project at the end of the year.",
+      "choices": [
+        "NO CHANGE",
+        "are turning",
+        "turn",
+        "have turned"
+      ],
+      "answer": 0,
+      "explanation": "'Every student' is the singular subject and takes 'turns,' so the original is correct. 'Turn' wrongly agrees with the plural 'classes' inside the prepositional phrase, 'are turning' is plural and also adds a needless progressive, and 'have turned' is plural and shifts the habitual action into the present perfect."
+    },
+    {
+      "id": "verbs-006",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The stack of overdue library books [[were]] sitting by the front door.",
+      "choices": [
+        "NO CHANGE",
+        "was",
+        "are",
+        "have been"
+      ],
+      "answer": 1,
+      "explanation": "The subject is the singular 'stack,' so 'was' agrees. 'Were,' 'have been,' and 'are' all wrongly agree with the plural 'books' inside the prepositional phrase."
+    },
+    {
+      "id": "verbs-007",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "One of the reasons the experiment failed [[were]] the contaminated samples.",
+      "choices": [
+        "NO CHANGE",
+        "have been",
+        "are",
+        "was"
+      ],
+      "answer": 3,
+      "explanation": "The subject is the singular 'One,' so 'was' agrees. The plural 'reasons' and 'samples' are decoys; 'were,' 'have been,' and 'are' all miss the singular subject."
+    },
+    {
+      "id": "verbs-008",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The teacher, along with her students, [[was]] eager to start the project.",
+      "choices": [
+        "NO CHANGE",
+        "are",
+        "have been",
+        "were"
+      ],
+      "answer": 0,
+      "explanation": "A phrase set off by 'along with' does not change the subject, which is the singular 'teacher,' so 'was' is correct. 'Were' and 'are' wrongly pluralize the verb to match 'students,' and 'have been' is both plural and shifts the tense out of the simple past."
+    },
+    {
+      "id": "verbs-009",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "By the time the bell rang, the students [[wrote]] their names on every page.",
+      "choices": [
+        "NO CHANGE",
+        "write",
+        "had written",
+        "have written"
+      ],
+      "answer": 2,
+      "explanation": "An action completed before another past action ('rang') takes the past perfect 'had written.' Simple past 'wrote' loses the sequence, 'have written' is present perfect, and 'write' breaks the past time frame."
+    },
+    {
+      "id": "verbs-010",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Every spring the swallows [[returned]] to the old barn and build new nests in the rafters.",
+      "choices": [
+        "NO CHANGE",
+        "have returned",
+        "return",
+        "had returned"
+      ],
+      "answer": 2,
+      "explanation": "The habitual cue 'Every spring' and the present-tense partner verb 'build' both require the simple present 'return.' 'Returned' and 'had returned' clash with 'build' and lock the recurring action into the past, and 'have returned' shifts to the present perfect and clashes with the present-tense partner verb 'build.'"
+    },
+    {
+      "id": "verbs-011",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The chorus had [[sung]] the anthem twice before the soloist arrived.",
+      "choices": [
+        "NO CHANGE",
+        "been sang",
+        "sang",
+        "sings"
+      ],
+      "answer": 0,
+      "explanation": "After the helper 'had,' the past participle 'sung' is correct. 'Sang' is the simple past and cannot follow 'had,' 'sings' is present tense and clashes with the past time frame, and 'been sang' wrongly pairs 'been' with the simple-past 'sang' instead of the participle."
+    },
+    {
+      "id": "verbs-012",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Either the manager or the assistants [[is]] going to lock up tonight.",
+      "choices": [
+        "NO CHANGE",
+        "was",
+        "has been",
+        "are"
+      ],
+      "answer": 3,
+      "explanation": "With 'either/or,' the verb agrees with the nearer subject, the plural 'assistants,' so 'are' is correct. 'Is,' 'was,' and 'has been' are all singular and clash with 'assistants.'"
+    },
+    {
+      "id": "verbs-013",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Tired from the long shift, the nurse [[lay]] the chart on the counter and sat down.",
+      "choices": [
+        "NO CHANGE",
+        "laid",
+        "had lain",
+        "lain"
+      ],
+      "answer": 1,
+      "explanation": "The transitive verb 'to lay' (to place something) has the simple past 'laid,' needed here for the object 'chart.' 'Lay' is the past of intransitive 'lie,' 'had lain' is the wrong verb and tense, and 'lain' cannot stand without a helper."
+    },
+    {
+      "id": "verbs-014",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Neither the coach nor the players [[was]] willing to forfeit the game.",
+      "choices": [
+        "NO CHANGE",
+        "is",
+        "has been",
+        "were"
+      ],
+      "answer": 3,
+      "explanation": "With 'neither/nor,' the verb agrees with the nearer subject, the plural 'players,' so 'were' is correct. 'Was,' 'has been,' and 'is' are all singular and clash with 'players.'"
+    },
+    {
+      "id": "verbs-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "After she had [[swam]] the length of the pool, she climbed out exhausted.",
+      "choices": [
+        "NO CHANGE",
+        "swimming",
+        "swim",
+        "swum"
+      ],
+      "answer": 3,
+      "explanation": "After the helper 'had,' use the past participle 'swum.' 'Swam' is the simple past, 'swim' is the base form, and 'swimming' needs a different helping verb."
+    },
+    {
+      "id": "verbs-016",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Scientists now believe that the comet, which passed Earth in 1066, [[returns]] roughly every seventy-six years and will next be visible in 2061.",
+      "choices": [
+        "NO CHANGE",
+        "return",
+        "had returned",
+        "returned"
+      ],
+      "answer": 0,
+      "explanation": "The orbit is an ongoing fact, and the cue 'will next be visible in 2061' confirms the present tense 'returns.' 'Return' fails to agree with the singular 'comet,' while 'returned' and 'had returned' lock a recurring truth into the past."
+    },
+    {
+      "id": "verbs-017",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The box of old photographs [[sits]] on the top shelf of the closet.",
+      "choices": [
+        "NO CHANGE",
+        "are sitting",
+        "have sat",
+        "sit"
+      ],
+      "answer": 0,
+      "explanation": "The subject is the singular 'box,' so 'sits' agrees and the original is correct. 'Sit' wrongly agrees with the plural 'photographs' inside the prepositional phrase, 'are sitting' is plural and adds a needless progressive, and 'have sat' is plural and shifts into the present perfect."
+    },
+    {
+      "id": "verbs-018",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Neither of the answers on the worksheet [[seem]] correct to me.",
+      "choices": [
+        "NO CHANGE",
+        "have seemed",
+        "seems",
+        "are seeming"
+      ],
+      "answer": 2,
+      "explanation": "'Neither' is singular and takes 'seems.' The plural 'answers' sits inside the prepositional phrase, so 'seem,' 'are seeming,' and 'have seemed' all miss the singular subject."
+    },
+    {
+      "id": "verbs-019",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Last summer my cousins [[ride]] their bikes to the lake almost every afternoon.",
+      "choices": [
+        "NO CHANGE",
+        "rode",
+        "ridden",
+        "had ridden"
+      ],
+      "answer": 1,
+      "explanation": "The time cue 'Last summer' calls for the simple past 'rode.' 'Ride' is present tense, 'had ridden' adds an unneeded earlier-past sequence, and 'ridden' cannot stand alone without a helper."
+    },
+    {
+      "id": "verbs-020",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "By the end of the hike, we had [[ate]] every snack in our packs.",
+      "choices": [
+        "NO CHANGE",
+        "eaten",
+        "eating",
+        "eat"
+      ],
+      "answer": 1,
+      "explanation": "After the helper 'had,' use the past participle 'eaten.' 'Ate' is the simple past, 'eat' is the base form, and 'eating' needs a different helping verb."
+    },
+    {
+      "id": "verbs-021",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Everyone on the two debate teams [[want]] a chance to give the closing speech.",
+      "choices": [
+        "NO CHANGE",
+        "wants",
+        "have wanted",
+        "are wanting"
+      ],
+      "answer": 1,
+      "explanation": "'Everyone' is singular and takes 'wants.' The plural 'teams' sits inside the prepositional phrase, so 'want,' 'are wanting,' and 'have wanted' all miss the singular subject."
+    },
+    {
+      "id": "verbs-022",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The director, together with the lead actors, [[were]] reviewing the new script.",
+      "choices": [
+        "NO CHANGE",
+        "are",
+        "have been",
+        "was"
+      ],
+      "answer": 3,
+      "explanation": "A phrase set off by 'together with' does not change the subject, which is the singular 'director,' so 'was' is correct. 'Were,' 'are,' and 'have been' all wrongly pluralize the verb."
+    },
+    {
+      "id": "verbs-023",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Each of the volunteers [[brings]] a covered dish to the monthly potluck.",
+      "choices": [
+        "NO CHANGE",
+        "bring",
+        "are bringing",
+        "have brought"
+      ],
+      "answer": 0,
+      "explanation": "'Each' is the singular subject and takes 'brings,' so the original is correct. 'Bring' wrongly agrees with the plural 'volunteers' inside the prepositional phrase, 'are bringing' is plural and adds a needless progressive, and 'have brought' is plural and shifts the habitual action into the present perfect."
+    },
+    {
+      "id": "verbs-024",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "By the time the campers woke at dawn, the river [[rose]] well over its banks.",
+      "choices": [
+        "NO CHANGE",
+        "has risen",
+        "rises",
+        "had risen"
+      ],
+      "answer": 3,
+      "explanation": "'By the time the campers woke' marks a later past moment, so the earlier flooding takes the past perfect 'had risen.' Simple past 'rose' loses the sequence, while 'has risen' and 'rises' break the past time frame."
+    },
+    {
+      "id": "verbs-025",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "On Sundays my grandfather [[brewed]] a pot of strong coffee and reads the paper on the porch.",
+      "choices": [
+        "NO CHANGE",
+        "brews",
+        "has brewed",
+        "had brewed"
+      ],
+      "answer": 1,
+      "explanation": "The habitual cue 'On Sundays' and the present-tense partner verb 'reads' both call for the simple present 'brews.' 'Brewed' and 'had brewed' clash with 'reads' and lock the habit into the past, and 'has brewed' shifts to the present perfect and clashes with the present-tense partner verb 'reads.'"
+    },
+    {
+      "id": "verbs-026",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "By the time the guide returned, the tourists had [[took]] dozens of photos of the ruins.",
+      "choices": [
+        "NO CHANGE",
+        "take",
+        "taken",
+        "taking"
+      ],
+      "answer": 2,
+      "explanation": "After the helper 'had,' use the past participle 'taken.' 'Took' is the simple past, 'take' is the base form, and 'taking' needs a different helping verb."
+    },
+    {
+      "id": "verbs-027",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Either the editors or the publisher [[decide]] which manuscripts move forward.",
+      "choices": [
+        "NO CHANGE",
+        "decides",
+        "have decided",
+        "are deciding"
+      ],
+      "answer": 1,
+      "explanation": "With 'either/or,' the verb agrees with the nearer subject, the singular 'publisher,' so 'decides' is correct. 'Decide,' 'are deciding,' and 'have decided' are all plural and clash with 'publisher.'"
+    },
+    {
+      "id": "verbs-028",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "After unloading the groceries, my father [[lay]] the heavy bags on the kitchen table.",
+      "choices": [
+        "NO CHANGE",
+        "lain",
+        "had lain",
+        "laid"
+      ],
+      "answer": 3,
+      "explanation": "The transitive verb 'to lay' (to place something) has the simple past 'laid,' needed here for the object 'bags.' 'Lay' is the past of intransitive 'lie,' 'had lain' is the wrong verb and tense, and 'lain' cannot stand without a helper."
+    },
+    {
+      "id": "verbs-029",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The collection of rare coins [[were]] insured for a large sum.",
+      "choices": [
+        "NO CHANGE",
+        "are",
+        "have been",
+        "was"
+      ],
+      "answer": 3,
+      "explanation": "The subject is the singular 'collection,' so 'was' agrees. 'Were,' 'have been,' and 'are' all wrongly agree with the plural 'coins' inside the prepositional phrase."
+    },
+    {
+      "id": "verbs-030",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Neither the violinists nor the conductor [[were]] satisfied with the rehearsal.",
+      "choices": [
+        "NO CHANGE",
+        "have been",
+        "are",
+        "was"
+      ],
+      "answer": 3,
+      "explanation": "With 'neither/nor,' the verb agrees with the nearer subject, the singular 'conductor,' so 'was' is correct. 'Were,' 'have been,' and 'are' are all plural and clash with 'conductor.'"
+    },
+    {
+      "id": "verbs-031",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Before the museum opened, the curator confirmed that a thief had [[stole]] the smallest painting.",
+      "choices": [
+        "NO CHANGE",
+        "stolen",
+        "steal",
+        "stealing"
+      ],
+      "answer": 1,
+      "explanation": "After the helper 'had,' use the past participle 'stolen.' 'Stole' is the simple past, 'steal' is the base form, and 'stealing' needs a different helping verb."
+    },
+    {
+      "id": "verbs-032",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Geologists explain that even today this canyon, which formed millions of years ago, [[deepens]] slightly with each passing century.",
+      "choices": [
+        "NO CHANGE",
+        "deepening",
+        "had deepened",
+        "deepened"
+      ],
+      "answer": 0,
+      "explanation": "The cue 'even today' marks an ongoing fact, so the present tense 'deepens' is correct. 'Deepened' and 'had deepened' contradict 'even today' by placing the action in the past, and 'deepening' leaves the clause without a finite verb."
+    }
+  ]
+}

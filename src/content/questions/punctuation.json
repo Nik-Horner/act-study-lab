@@ -1,0 +1,485 @@
+{
+  "slug": "punctuation",
+  "questions": [
+    {
+      "id": "punctuation-001",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The dog buried [[it's]] bone in the backyard.",
+      "choices": [
+        "NO CHANGE",
+        "its",
+        "it is",
+        "its'"
+      ],
+      "answer": 1,
+      "explanation": "Possessive 'its' takes no apostrophe. 'It's' is the contraction for 'it is,' which is nonsense before 'bone'; 'its'' is not a word; and 'it is' breaks the sentence."
+    },
+    {
+      "id": "punctuation-002",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "[[Their]] going to announce the winners after lunch.",
+      "choices": [
+        "NO CHANGE",
+        "They're",
+        "Theyre",
+        "There"
+      ],
+      "answer": 1,
+      "explanation": "The sentence needs 'they are,' so the contraction 'they're' is correct. 'Their' is possessive, 'there' indicates place, and 'theyre' is missing its apostrophe."
+    },
+    {
+      "id": "punctuation-003",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "[[Whose]] car is blocking the driveway this morning?",
+      "choices": [
+        "NO CHANGE",
+        "Whose'",
+        "Who's",
+        "Whos"
+      ],
+      "answer": 0,
+      "explanation": "Possessive 'whose' correctly asks which person owns the car. 'Who's' means 'who is,' which makes no sense before 'car'; 'whos' is not a word; and 'whose'' adds a stray apostrophe."
+    },
+    {
+      "id": "punctuation-004",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "\"Take your seats[[\",]] the teacher announced.",
+      "choices": [
+        "NO CHANGE",
+        ",\"",
+        ".\"",
+        ";\""
+      ],
+      "answer": 1,
+      "explanation": "A comma belongs inside the closing quotation mark when a dialogue tag follows, so ',\"' is correct. The original '\",' leaves the comma outside the quotation marks, '.\"' ends the quotation with a period that cannot lead into 'the teacher announced,' and ';\"' uses a semicolon, which never attaches a dialogue tag."
+    },
+    {
+      "id": "punctuation-005",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The museum was crowded[[,]] we decided to come back another day.",
+      "choices": [
+        "NO CHANGE",
+        ", so",
+        " so",
+        ", therefore"
+      ],
+      "answer": 1,
+      "explanation": "'So' is a coordinating conjunction, so a comma before it correctly joins the two independent clauses. NO CHANGE leaves a comma splice, ', therefore' still splices the clauses because 'therefore' is an adverb rather than a conjunction, and 'so' without a comma runs the clauses together."
+    },
+    {
+      "id": "punctuation-006",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "She had only one goal[[;]] to finish the marathon.",
+      "choices": [
+        "NO CHANGE",
+        ":",
+        ". Namely,",
+        ", being"
+      ],
+      "answer": 1,
+      "explanation": "A complete clause precedes the mark and 'to finish the marathon' names the goal, so a colon fits. NO CHANGE pairs the semicolon with the fragment 'to finish the marathon' rather than a second independent clause, '. Namely,' strands 'Namely, to finish the marathon' as a sentence fragment, and ', being' attaches an ungrammatical 'being' phrase."
+    },
+    {
+      "id": "punctuation-007",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The recipe calls for three spices[[:]] cumin, coriander, and turmeric.",
+      "choices": [
+        "NO CHANGE",
+        " these being",
+        ";",
+        ", they are"
+      ],
+      "answer": 0,
+      "explanation": "A complete clause precedes the list, so the colon correctly introduces it. A semicolon would need a full clause after it, ', they are' creates a comma splice, and 'these being' is an ungrammatical filler phrase."
+    },
+    {
+      "id": "punctuation-008",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The spices I bought for the stew were[[:]] cumin, coriander, and turmeric.",
+      "choices": [
+        "NO CHANGE",
+        ",",
+        ";",
+        " "
+      ],
+      "answer": 3,
+      "explanation": "'The spices I bought for the stew were' is an incomplete clause, so no mark should separate the verb 'were' from its list of complements. A colon, a semicolon, and a comma all wrongly break a verb from the words it requires."
+    },
+    {
+      "id": "punctuation-009",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The two [[teams']] jerseys looked nearly identical from the stands.",
+      "choices": [
+        "NO CHANGE",
+        "team's",
+        "teams's",
+        "teams"
+      ],
+      "answer": 0,
+      "explanation": "Two teams own the jerseys, so the plural possessive 'teams'' (apostrophe after the s) is correct. 'Team's' is singular possessive, 'teams' shows no possession, and 'teams's' is not standard."
+    },
+    {
+      "id": "punctuation-010",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The [[childrens']] backpacks were piled by the door after the field trip.",
+      "choices": [
+        "NO CHANGE",
+        "childs'",
+        "childrens",
+        "children's"
+      ],
+      "answer": 3,
+      "explanation": "'Children' is already plural, so the possessive is 'children's.' The original treats 'childrens' as the base word, 'childrens' shows no possession, and 'childs'' uses a nonexistent plural."
+    },
+    {
+      "id": "punctuation-011",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Grandma Rosa[[, who immigrated in 1955 —]] kept every letter she received.",
+      "choices": [
+        "NO CHANGE",
+        " who immigrated in 1955",
+        ", who immigrated in 1955,",
+        "; who immigrated in 1955,"
+      ],
+      "answer": 2,
+      "explanation": "A nonessential clause takes matching commas on both sides: 'Grandma Rosa, who immigrated in 1955, kept every letter she received.' NO CHANGE opens with a comma but closes with a dash, dropping the commas wrongly treats the clause as needed to identify Grandma Rosa, and a semicolon cannot introduce a dependent clause."
+    },
+    {
+      "id": "punctuation-012",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The professor made her point clear[[—rote]] memorization rarely produces real understanding.",
+      "choices": [
+        "NO CHANGE",
+        ", however, rote",
+        " and that rote",
+        ", rote"
+      ],
+      "answer": 0,
+      "explanation": "The clause before the dash is complete, so the dash correctly introduces the explanation that follows. ', rote' splices the two independent clauses with only a comma, ' and that rote' has no verb for the 'that' clause to attach to, and ', however, rote' joins the clauses with commas alone, another splice."
+    },
+    {
+      "id": "punctuation-013",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The trail was steep[[,]] the view at the top was worth the climb.",
+      "choices": [
+        "NO CHANGE",
+        ", but",
+        " but,",
+        ", therefore"
+      ],
+      "answer": 1,
+      "explanation": "A comma plus the conjunction 'but' correctly joins two contrasting independent clauses. NO CHANGE is a comma splice, ' but,' places the comma after the conjunction instead of before it, and ', therefore' both splices the clauses and reverses the contrast the sentence needs."
+    },
+    {
+      "id": "punctuation-014",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The actors rehearsed for weeks[[,]] consequently, opening night went off without a hitch.",
+      "choices": [
+        "NO CHANGE",
+        ":",
+        " ",
+        ";"
+      ],
+      "answer": 3,
+      "explanation": "'Consequently' is a conjunctive adverb, so a semicolon must come before it when it links two independent clauses. The original comma is a splice, a colon would need the second clause to explain the first rather than state its result, and deleting the punctuation fuses the clauses into a run-on."
+    },
+    {
+      "id": "punctuation-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The hikers reached the summit at noon[[;]] exhausted but triumphant, they snapped a photo.",
+      "choices": [
+        "NO CHANGE",
+        " when",
+        ",",
+        ":"
+      ],
+      "answer": 0,
+      "explanation": "Both sides are independent clauses ('they snapped a photo' has its own subject and verb), so a semicolon is correct. A comma creates a splice, a colon would need the second clause to explain the first, and 'when' garbles the sentence, stranding 'they snapped a photo' after the comma."
+    },
+    {
+      "id": "punctuation-016",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The novel's first chapter[[, which runs sixty pages]] sets up every later plot twist.",
+      "choices": [
+        "NO CHANGE",
+        " — which runs sixty pages;",
+        ", which runs sixty pages,",
+        " which runs sixty pages"
+      ],
+      "answer": 2,
+      "explanation": "The nonessential clause needs a matching pair of commas around it. The original opens with a comma but never closes it, dropping the marks removes punctuation the interruption needs, and the dash-then-semicolon option mismatches the marks and adds a stray semicolon."
+    },
+    {
+      "id": "punctuation-017",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "[[Your]] going to love the new bakery on Fifth Street.",
+      "choices": [
+        "NO CHANGE",
+        "You're",
+        "Youre",
+        "Yours"
+      ],
+      "explanation": "The sentence needs 'you are,' so the contraction 'You're' is correct. 'Your' is possessive, 'Youre' is missing its apostrophe, and 'Yours' is a possessive pronoun that cannot take a verb here.",
+      "answer": 1
+    },
+    {
+      "id": "punctuation-018",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The cat licked [[it's]] paws after the meal.",
+      "choices": [
+        "NO CHANGE",
+        "it is",
+        "its",
+        "its'"
+      ],
+      "explanation": "Possessive 'its' takes no apostrophe. 'It's' means 'it is,' which is nonsense before 'paws'; 'its'' is not a word; and 'it is' breaks the sentence.",
+      "answer": 2
+    },
+    {
+      "id": "punctuation-019",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Please put the boxes over [[their]] by the loading dock.",
+      "choices": [
+        "NO CHANGE",
+        "they're",
+        "theyre",
+        "there"
+      ],
+      "explanation": "The sentence indicates a place, so 'there' is correct. 'Their' is possessive, 'they're' means 'they are,' and 'theyre' is missing its apostrophe.",
+      "answer": 3
+    },
+    {
+      "id": "punctuation-020",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "\"Watch the last step[[\",]] Marcus warned the visitors.",
+      "choices": [
+        "NO CHANGE",
+        ",\"",
+        ";\"",
+        ".\""
+      ],
+      "explanation": "A comma belongs inside the closing quotation mark when a dialogue tag follows, so ',\"' is correct. The original '\",' leaves the comma outside the quotation marks, '.\"' ends the quotation with a period that cannot lead into 'Marcus warned,' and ';\"' uses a semicolon, which never attaches a dialogue tag.",
+      "answer": 1
+    },
+    {
+      "id": "punctuation-021",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The staff had a training session on Friday afternoon[[,]] the library closed early that day.",
+      "choices": [
+        "NO CHANGE",
+        " so",
+        ", therefore",
+        ", so"
+      ],
+      "explanation": "'So' is a coordinating conjunction, so a comma before it correctly joins the cause to its effect. NO CHANGE leaves a comma splice, ', therefore' still splices the clauses because 'therefore' is an adverb rather than a conjunction, and 'so' without a comma runs the clauses together.",
+      "answer": 3
+    },
+    {
+      "id": "punctuation-022",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The committee needed one thing above all[[;]] a clear budget.",
+      "choices": [
+        "NO CHANGE",
+        ". Namely,",
+        ":",
+        ", being"
+      ],
+      "explanation": "A complete clause precedes the mark and 'a clear budget' names the thing the committee needed, so a colon fits. NO CHANGE pairs the semicolon with the fragment 'a clear budget' rather than a second independent clause, '. Namely,' strands 'Namely, a clear budget' as a sentence fragment, and ', being' attaches an ungrammatical 'being' phrase.",
+      "answer": 2
+    },
+    {
+      "id": "punctuation-023",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The garden produced three vegetables that summer[[:]] tomatoes, peppers, and squash.",
+      "choices": [
+        "NO CHANGE",
+        ", they were",
+        " being",
+        ";"
+      ],
+      "explanation": "A complete clause precedes the list, so the colon correctly introduces it. A semicolon would need a full clause after it, ', they were' creates a comma splice, and 'being' is an ungrammatical filler word.",
+      "answer": 0
+    },
+    {
+      "id": "punctuation-024",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The tools the carpenter packed were[[:]] a hammer, a level, and a saw.",
+      "choices": [
+        "NO CHANGE",
+        ",",
+        ";",
+        " "
+      ],
+      "explanation": "'The tools the carpenter packed were' is an incomplete clause, so no mark should separate the verb 'were' from its list of complements. A colon, a semicolon, and a comma all wrongly break a verb from the words it requires.",
+      "answer": 3
+    },
+    {
+      "id": "punctuation-025",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The three [[senators']] aides drafted the bill over the weekend.",
+      "choices": [
+        "NO CHANGE",
+        "senator's",
+        "senators's",
+        "senators"
+      ],
+      "explanation": "Three senators own the aides, so the plural possessive 'senators'' (apostrophe after the s) is correct. 'Senator's' is singular possessive, 'senators' shows no possession, and 'senators's' is not standard.",
+      "answer": 0
+    },
+    {
+      "id": "punctuation-026",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The [[womens']] locker room was renovated over the summer break.",
+      "choices": [
+        "NO CHANGE",
+        "womens's",
+        "women's",
+        "womens"
+      ],
+      "explanation": "'Women' is already plural, so the possessive is 'women's.' The original 'womens'' treats 'womens' as the base word, 'womens' shows no possession, and 'womens's' is not a standard form.",
+      "answer": 2
+    },
+    {
+      "id": "punctuation-027",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Uncle Pete[[, who restores old cars —]] spends every Saturday in the garage.",
+      "choices": [
+        "NO CHANGE",
+        " who restores old cars",
+        ", who restores old cars,",
+        "; who restores old cars,"
+      ],
+      "explanation": "A nonessential clause takes matching commas on both sides: 'Uncle Pete, who restores old cars, spends every Saturday in the garage.' NO CHANGE opens with a comma but closes with a dash, dropping the commas wrongly treats the clause as needed to identify Uncle Pete, and a semicolon cannot introduce a dependent clause.",
+      "answer": 2
+    },
+    {
+      "id": "punctuation-028",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The coach had one unbreakable rule[[—practice]] always came before games.",
+      "choices": [
+        "NO CHANGE",
+        ", however, practice",
+        ", practice",
+        " and that practice"
+      ],
+      "explanation": "The clause before the dash is complete, so the dash correctly introduces the rule that follows. ', practice' splices the two independent clauses with only a comma, ' and that practice' has no verb for the 'that' clause to attach to, and ', however, practice' joins the clauses with commas alone, another splice.",
+      "answer": 0
+    },
+    {
+      "id": "punctuation-029",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The lecture ran long[[,]] the students stayed until the end.",
+      "choices": [
+        "NO CHANGE",
+        " but,",
+        ", therefore",
+        ", but"
+      ],
+      "explanation": "A comma plus the conjunction 'but' correctly joins two contrasting independent clauses. NO CHANGE is a comma splice, ' but,' places the comma after the conjunction instead of before it, and ', therefore' both splices the clauses and reverses the contrast the sentence needs.",
+      "answer": 3
+    },
+    {
+      "id": "punctuation-030",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The bridge was closed for repairs[[,]] therefore, commuters took the long detour.",
+      "choices": [
+        "NO CHANGE",
+        ":",
+        ";",
+        " "
+      ],
+      "explanation": "'Therefore' is a conjunctive adverb, so a semicolon must come before it when it links two independent clauses. The original comma is a splice, a colon would need the second clause to explain the first rather than state its result, and deleting the punctuation fuses the clauses into a run-on.",
+      "answer": 2
+    },
+    {
+      "id": "punctuation-031",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The orchestra finished the symphony at midnight[[;]] breathless but proud, the musicians took their bows.",
+      "choices": [
+        "NO CHANGE",
+        ":",
+        " as",
+        ","
+      ],
+      "explanation": "Both sides are independent clauses ('the musicians took their bows' has its own subject and verb), so a semicolon is correct. A comma creates a splice, a colon would need the second clause to explain the first, and 'as' garbles the sentence, stranding 'the musicians took their bows' after the comma.",
+      "answer": 0
+    },
+    {
+      "id": "punctuation-032",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The town's oldest diner[[, which opened in 1948]] still serves its original pancake recipe.",
+      "choices": [
+        "NO CHANGE",
+        " — which opened in 1948;",
+        " which opened in 1948",
+        ", which opened in 1948,"
+      ],
+      "explanation": "The nonessential clause needs a matching pair of commas around it. The original opens with a comma but never closes it, dropping the marks removes punctuation the interruption needs, and the dash-then-semicolon option mismatches the marks and adds a stray semicolon.",
+      "answer": 3
+    }
+  ]
+}

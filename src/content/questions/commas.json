@@ -1,0 +1,485 @@
+{
+  "slug": "commas",
+  "questions": [
+    {
+      "id": "commas-001",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "My oldest sister[[ Diana]] teaches chemistry at a high school.",
+      "choices": [
+        "NO CHANGE",
+        " Diana,",
+        ", Diana",
+        ", Diana,"
+      ],
+      "answer": 3,
+      "explanation": "A person has only one oldest sister, so the name is unnecessary and needs commas on both sides. NO CHANGE drops both commas, and the single-comma choices leave the aside open on one end."
+    },
+    {
+      "id": "commas-002",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The chemist[[, Rosalind Franklin,]] worked on the structure of DNA.",
+      "choices": [
+        "NO CHANGE",
+        ", Rosalind Franklin",
+        " Rosalind Franklin",
+        " Rosalind Franklin,"
+      ],
+      "answer": 2,
+      "explanation": "'The chemist' could name many people, so the name is necessary and takes no commas. The comma versions wrongly treat an essential name as removable."
+    },
+    {
+      "id": "commas-003",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Because the elevator was broken[[ we]] climbed six flights of stairs.",
+      "choices": [
+        "NO CHANGE",
+        ", we,",
+        "; we",
+        ", we"
+      ],
+      "answer": 3,
+      "explanation": "An introductory dependent clause is set off from the main clause with a comma, so ', we' is correct. NO CHANGE runs the clause into the main sentence, '; we' puts a semicolon after a clause that cannot stand alone, and ', we,' wrongly splits the subject from its verb."
+    },
+    {
+      "id": "commas-004",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "After the storm passed[[, we]] walked down to inspect the flooded dock.",
+      "choices": [
+        "NO CHANGE",
+        " we",
+        " we,",
+        "; we"
+      ],
+      "answer": 0,
+      "explanation": "An introductory clause is set off from the main clause with a comma. Dropping the comma runs the clause into the subject, a semicolon needs a full clause before it, and the trailing comma misplaces the break."
+    },
+    {
+      "id": "commas-005",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The novelist[[ Jane Austen]] published her first book anonymously.",
+      "choices": [
+        "NO CHANGE",
+        ", Jane Austen",
+        " Jane Austen,",
+        ", Jane Austen,"
+      ],
+      "answer": 0,
+      "explanation": "'The novelist' fits many people, so the name is necessary and takes no commas. The comma versions wrongly set off an essential name as if it were removable."
+    },
+    {
+      "id": "commas-006",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The tallest building in Chicago[[ the Willis Tower]] draws tourists year-round.",
+      "choices": [
+        "NO CHANGE",
+        " the Willis Tower,",
+        ", the Willis Tower,",
+        ", the Willis Tower"
+      ],
+      "answer": 2,
+      "explanation": "Only one building can be the tallest in Chicago, so the name is unnecessary and needs a pair of commas. NO CHANGE uses none, and the single-comma options leave the aside half-open."
+    },
+    {
+      "id": "commas-007",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "My coworker[[, Priya,]] offered to cover my shift on Friday.",
+      "choices": [
+        "NO CHANGE",
+        " Priya,",
+        " Priya",
+        ", Priya"
+      ],
+      "answer": 2,
+      "explanation": "'My coworker' could be any of several people, so the name is necessary and takes no commas. The comma versions incorrectly treat an essential name as removable."
+    },
+    {
+      "id": "commas-008",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The committee reviewed the budget[[, and]] approved the new hires before lunch.",
+      "choices": [
+        "NO CHANGE",
+        " and",
+        "; and",
+        " and,"
+      ],
+      "answer": 1,
+      "explanation": "'Reviewed' and 'approved' share the subject 'committee,' so no comma belongs before 'and' in this compound predicate. NO CHANGE inserts an unnecessary comma, ' and,' places a comma after the conjunction, and '; and' puts a semicolon before a phrase that cannot stand alone."
+    },
+    {
+      "id": "commas-009",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Marcus's tent[[ a hand-me-down from his uncle]] survived the windstorm intact.",
+      "choices": [
+        "NO CHANGE",
+        " a hand-me-down from his uncle,",
+        ", a hand-me-down from his uncle",
+        ", a hand-me-down from his uncle,"
+      ],
+      "answer": 3,
+      "explanation": "The phrase describing the tent is extra information, so it needs commas on both sides. NO CHANGE uses none, and each single-comma choice leaves the appositive unbalanced or splits the subject from its verb."
+    },
+    {
+      "id": "commas-010",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "We waited in a cold[[ cramped]] room for nearly an hour.",
+      "choices": [
+        "NO CHANGE",
+        " cramped,",
+        ", cramped",
+        ", cramped,"
+      ],
+      "answer": 2,
+      "explanation": "'Cold' and 'cramped' are coordinate adjectives, since 'cold and cramped' and 'cramped, cold' both work, so a comma goes between them. No comma belongs between the second adjective and the noun, ruling out the paired and trailing-comma options."
+    },
+    {
+      "id": "commas-011",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "She inherited an antique[[, oak]] desk from her grandmother.",
+      "choices": [
+        "NO CHANGE",
+        " oak",
+        ", oak,",
+        " oak,"
+      ],
+      "answer": 1,
+      "explanation": "'Antique' and 'oak' are cumulative adjectives, since 'oak antique desk' and 'antique and oak desk' both fail, so no comma belongs between them. Each comma option wrongly splits the adjectives or separates an adjective from the noun."
+    },
+    {
+      "id": "commas-012",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The book on the top shelf[[, however,]] belongs to the library, not to me.",
+      "choices": [
+        "NO CHANGE",
+        " however",
+        ", however",
+        " however,"
+      ],
+      "answer": 0,
+      "explanation": "As an interrupting transition, 'however' is unnecessary information and needs commas on both sides. The no-comma choice drops both commas, and the single-comma choices drop one side and leave the aside unbalanced."
+    },
+    {
+      "id": "commas-013",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The reporter who broke the story[[ won]] a national award this year.",
+      "choices": [
+        "NO CHANGE",
+        ", won,",
+        " won,",
+        ", won"
+      ],
+      "answer": 0,
+      "explanation": "No comma belongs between the subject 'reporter who broke the story' and its verb 'won.' Every comma choice wrongly separates the subject from its verb."
+    },
+    {
+      "id": "commas-014",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Her debut novel[[ a coming-of-age story]] earned a national book award.",
+      "choices": [
+        "NO CHANGE",
+        " a coming-of-age story,",
+        ", a coming-of-age story,",
+        ", a coming-of-age story"
+      ],
+      "answer": 2,
+      "explanation": "A person has only one debut novel, so the description is unnecessary and needs commas on both sides. NO CHANGE uses none, and a single comma would split the subject from its verb, which is never allowed."
+    },
+    {
+      "id": "commas-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The judges awarded the prize to a quiet[[, determined]] runner from a small town.",
+      "choices": [
+        "NO CHANGE",
+        ", determined,",
+        " determined",
+        " determined,"
+      ],
+      "answer": 0,
+      "explanation": "'Quiet' and 'determined' are coordinate adjectives, since 'quiet and determined' and 'determined, quiet' both work, so a comma separates them. Removing it joins the adjectives wrongly, and the other options drop a comma between adjectives or add one before the noun."
+    },
+    {
+      "id": "commas-016",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The volunteers spent the morning sorting[[ donated winter]] coats for the shelter.",
+      "choices": [
+        "NO CHANGE",
+        " donated, winter",
+        " donated winter,",
+        " donated, winter,"
+      ],
+      "answer": 0,
+      "explanation": "'Donated' and 'winter' are cumulative adjectives, since 'winter donated coats' and 'donated and winter coats' both fail, so no comma belongs between them or before the noun. Each comma option wrongly splits the adjectives or the adjective from the noun."
+    },
+    {
+      "id": "commas-017",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The waiter brought our food quickly[[ but]] he forgot to refill our drinks.",
+      "choices": [
+        "NO CHANGE",
+        " but,",
+        ", but",
+        ", but,"
+      ],
+      "answer": 2,
+      "explanation": "Two independent clauses joined by 'but' need a comma before the conjunction. NO CHANGE omits that comma, ' but,' puts the comma after the conjunction instead, and ', but,' adds a second comma that splits the conjunction from its clause."
+    },
+    {
+      "id": "commas-018",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "My youngest brother[[ Theo]] just learned to ride a bicycle.",
+      "choices": [
+        "NO CHANGE",
+        " Theo,",
+        ", Theo,",
+        ", Theo"
+      ],
+      "answer": 2,
+      "explanation": "A person has only one youngest brother, so the name is unnecessary and needs commas on both sides. NO CHANGE drops both commas, and the single-comma choices leave the aside open on one end."
+    },
+    {
+      "id": "commas-019",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The poet[[ Langston Hughes]] wrote about everyday life in Harlem.",
+      "choices": [
+        "NO CHANGE",
+        " Langston Hughes,",
+        ", Langston Hughes",
+        ", Langston Hughes,"
+      ],
+      "answer": 0,
+      "explanation": "'The poet' fits many people, so the name is necessary and takes no commas. The comma versions wrongly set off an essential name as if it were removable."
+    },
+    {
+      "id": "commas-020",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The hikers followed a narrow[[ rocky]] trail to the summit.",
+      "choices": [
+        "NO CHANGE",
+        ", rocky",
+        " rocky,",
+        ", rocky,"
+      ],
+      "answer": 1,
+      "explanation": "'Narrow' and 'rocky' are coordinate adjectives, since 'narrow and rocky' and 'rocky, narrow' both work, so a comma goes between them. No comma belongs between the second adjective and the noun, ruling out the paired and trailing-comma options."
+    },
+    {
+      "id": "commas-021",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Once the lights dimmed[[, the]] audience grew quiet.",
+      "choices": [
+        "NO CHANGE",
+        "; the",
+        " the",
+        " the,"
+      ],
+      "answer": 0,
+      "explanation": "An introductory clause is set off from the main clause with a comma. Dropping the comma runs the clause into the subject, a semicolon needs a full clause before it, and the trailing comma misplaces the break."
+    },
+    {
+      "id": "commas-022",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The fastest swimmer on the team[[ Olivia]] qualified for the state finals.",
+      "choices": [
+        "NO CHANGE",
+        ", Olivia",
+        ", Olivia,",
+        " Olivia,"
+      ],
+      "answer": 2,
+      "explanation": "Only one person can be the fastest swimmer on the team, so the name is unnecessary and needs a pair of commas. NO CHANGE uses none, and the single-comma options leave the aside half-open."
+    },
+    {
+      "id": "commas-023",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Our closest neighbor[[, Mrs. Whitfield,]] watered our plants while we were away.",
+      "choices": [
+        "NO CHANGE",
+        ", Mrs. Whitfield",
+        " Mrs. Whitfield",
+        " Mrs. Whitfield,"
+      ],
+      "answer": 0,
+      "explanation": "Only one person can be our closest neighbor, so the name 'Mrs. Whitfield' is unnecessary and needs commas on both sides. The no-comma choice drops both commas, and the single-comma choices leave the aside open on one end."
+    },
+    {
+      "id": "commas-024",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The conference will move to Austin[[ Texas]] next spring.",
+      "choices": [
+        "NO CHANGE",
+        ", Texas",
+        " Texas,",
+        ", Texas,"
+      ],
+      "answer": 3,
+      "explanation": "A state following a city is set off with commas on both sides: 'Austin, Texas, next spring.' NO CHANGE uses no commas, and the single-comma choices leave the state set off on only one end."
+    },
+    {
+      "id": "commas-025",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Grandpa restored an old[[, wooden]] rowboat in his garage.",
+      "choices": [
+        "NO CHANGE",
+        " wooden,",
+        ", wooden,",
+        " wooden"
+      ],
+      "answer": 3,
+      "explanation": "'Old' and 'wooden' are cumulative adjectives, since 'wooden old rowboat' and 'old and wooden rowboat' both fail, so no comma belongs between them. Each comma option wrongly splits the adjectives or separates an adjective from the noun."
+    },
+    {
+      "id": "commas-026",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The package on the porch[[, by the way,]] arrived two days early.",
+      "choices": [
+        "NO CHANGE",
+        ", by the way",
+        " by the way,",
+        " by the way"
+      ],
+      "answer": 0,
+      "explanation": "As an interrupting aside, 'by the way' is unnecessary information and needs commas on both sides. The no-comma choice drops both commas, and the single-comma choices drop one side and leave the aside unbalanced."
+    },
+    {
+      "id": "commas-027",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The students who finished the exam early[[ left]] the room quietly.",
+      "choices": [
+        "NO CHANGE",
+        ", left,",
+        ", left",
+        " left,"
+      ],
+      "answer": 0,
+      "explanation": "No comma belongs between the subject 'students who finished the exam early' and its verb 'left.' Every comma choice wrongly separates the subject from its verb."
+    },
+    {
+      "id": "commas-028",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The museum's oldest artifact[[ a chipped clay pot]] sits in a climate-controlled case.",
+      "choices": [
+        "NO CHANGE",
+        ", a chipped clay pot",
+        " a chipped clay pot,",
+        ", a chipped clay pot,"
+      ],
+      "answer": 3,
+      "explanation": "A museum has only one oldest artifact, so the description is unnecessary and takes commas on both sides. NO CHANGE uses none, and the single-comma choices leave the appositive half-open."
+    },
+    {
+      "id": "commas-029",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The CEO of the company[[ Maria Santos]] addressed the shareholders directly.",
+      "choices": [
+        "NO CHANGE",
+        " Maria Santos,",
+        ", Maria Santos,",
+        ", Maria Santos"
+      ],
+      "answer": 2,
+      "explanation": "A company has only one CEO, so the name is unnecessary and needs commas on both sides. NO CHANGE uses none, and the single-comma options leave the aside half-open."
+    },
+    {
+      "id": "commas-030",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "His latest invention[[ a solar-powered fan]] won first prize at the science fair.",
+      "choices": [
+        "NO CHANGE",
+        ", a solar-powered fan,",
+        ", a solar-powered fan",
+        " a solar-powered fan,"
+      ],
+      "answer": 1,
+      "explanation": "Only one invention can be his latest, so the description is unnecessary and needs commas on both sides. NO CHANGE uses none, and a single comma would split the subject from its verb, which is never allowed."
+    },
+    {
+      "id": "commas-031",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The gallery featured a bold[[, colorful]] mural by a local artist.",
+      "choices": [
+        "NO CHANGE",
+        " colorful,",
+        " colorful",
+        ", colorful,"
+      ],
+      "answer": 0,
+      "explanation": "'Bold' and 'colorful' are coordinate adjectives, since 'bold and colorful' and 'colorful, bold' both work, so a comma separates them. Removing it joins the adjectives wrongly, and the other options drop a comma between adjectives or add one before the noun."
+    },
+    {
+      "id": "commas-032",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The crew loaded several[[ heavy steel]] beams onto the flatbed truck.",
+      "choices": [
+        "NO CHANGE",
+        " heavy steel,",
+        " heavy, steel",
+        " heavy, steel,"
+      ],
+      "answer": 0,
+      "explanation": "'Heavy' and 'steel' are cumulative adjectives, since 'steel heavy beams' and 'heavy and steel beams' both fail, so no comma belongs between them or before the noun. ' heavy, steel' splits the cumulative pair, and the trailing-comma choices wrongly separate an adjective from 'beams.'"
+    }
+  ]
+}

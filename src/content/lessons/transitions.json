@@ -1,0 +1,78 @@
+{
+  "slug": "transitions",
+  "title": "Transitions",
+  "intro": "Transition questions ask which word or phrase best links two ideas, and the ACT tests them heavily: expect four to six per English section. Every choice is usually grammatical, so the question is pure logic. Decide whether the second idea continues the first, contrasts with it, results from it, or follows it in time, and the answer picks itself.",
+  "sections": [
+    {
+      "heading": "Read both sides first",
+      "body": [
+        "A transition is a bridge between two ideas. To pick the right bridge, you have to know what is on each side. Read the full sentence before the underlined transition and the full sentence after it. Then say the relationship out loud in your own words: 'these agree,' 'these clash,' 'the first causes the second,' or 'the second comes after the first.'",
+        "Never pick a transition by how it sounds. 'However' and 'therefore' both sound smart, but they mean opposite things. The choice has to match the actual logic of the two ideas, not the tone of the sentence."
+      ],
+      "examples": [
+        { "text": "The road was icy. Therefore, the bus ran late.", "label": "icy road causes the delay — cause/effect fits", "good": true },
+        { "text": "The road was icy. However, the bus ran late.", "label": "'However' signals a contrast that isn't there — the delay follows from the ice", "good": false }
+      ],
+      "tip": "Cover the transition, read both sentences, name the relationship in plain words, then choose."
+    },
+    {
+      "heading": "Transition words by category",
+      "body": [
+        "Most ACT transitions fall into four groups. ADDITION / CONTINUE means the second idea piles onto the first: also, furthermore, moreover, in addition, similarly, likewise. CONTRAST means the ideas clash or one limits the other: however, but, yet, nevertheless, on the other hand, in contrast, although, still.",
+        "CAUSE / EFFECT means the first idea produces the second: therefore, thus, consequently, as a result, so, hence. SEQUENCE / TIME orders the ideas in steps or time: first, then, next, meanwhile, finally, later, afterward. A smaller group signals EXAMPLE or EMPHASIS: for example, for instance, in fact, indeed, in other words.",
+        "One structural caution: 'but' and 'yet' can join two clauses inside one sentence, and 'although' attaches a dependent clause, but 'however,' 'therefore,' and their cousins cannot glue two complete sentences together with just a comma. Those need a period or a semicolon before them, or you create a comma splice.",
+        "Learn which group each word belongs to. Half the question is just sorting the four choices into these buckets and keeping the one whose bucket matches the relationship you named."
+      ],
+      "examples": [
+        { "text": "Sales rose all spring. Furthermore, online orders doubled.", "label": "addition — a second supporting point", "good": true },
+        { "text": "The plan looked perfect on paper. In practice, however, it failed.", "label": "contrast — reality clashes with the plan, so 'however' fits", "good": true },
+        { "text": "Sales rose all spring. However, online orders doubled.", "label": "'However' promises a clash, but the second idea supports the first", "good": false }
+      ],
+      "tip": "Sort the four choices into addition, contrast, cause/effect, and sequence. The right bucket usually has only one choice in it."
+    },
+    {
+      "heading": "Watch for the contrast trap and 'no transition'",
+      "body": [
+        "The most common trap is offering a contrast word when the ideas actually agree, or an agreement word when they actually clash. If the second sentence surprises you or pushes against the first, you need a contrast word. If it simply adds more of the same, you need an addition word.",
+        "Sometimes the best answer adds no transition at all, or the choices include 'DELETE the underlined portion.' If two ideas flow together without needing a signpost, the cleanest choice is to drop the transition. Test the DELETE option first: when the paragraph reads cleanly without a connector, shorter wins."
+      ],
+      "examples": [
+        { "text": "She studied for weeks. As a result, she passed easily.", "label": "studying causes passing — effect word fits", "good": true },
+        { "text": "She studied for weeks. For example, she passed easily.", "label": "passing is not an example of studying", "good": false }
+      ],
+      "tip": "If the second idea fights the first, pick contrast. If it agrees, pick addition. If neither, consider dropping the transition."
+    },
+    {
+      "heading": "How to spot these questions",
+      "body": [
+        "Spot them from the answer choices: four short connecting words or phrases, each usually followed by a comma, such as 'However,' 'Therefore,' 'For example,' and 'Meanwhile.' Sometimes the last choice is 'DELETE the underlined portion.' The sentence stays grammatical with every choice, which tells you the question tests logic, not grammar.",
+        "Work in this order. First, read the full sentence before the transition and the full sentence after it. Second, name the relationship in plain words: agree, clash, cause, or time order. Third, sort the four choices into those buckets and eliminate every choice in the wrong bucket. Fourth, plug the survivor in and reread both sentences to confirm the link.",
+        "Use the synonym shortcut. If two choices mean the same thing, such as 'however' and 'nevertheless,' neither can be the answer, because the test cannot accept both. When three choices all signal contrast, the lone choice from a different bucket is almost always correct."
+      ],
+      "tip": "Synonyms cancel each other: two choices with the same meaning are both wrong. Eliminate them in one stroke."
+    }
+  ],
+  "check": [
+    {
+      "stem": "The factory cut its energy use in half last year. [[However,]] it reduced its water consumption.",
+      "questionText": "Which transition is most logical?",
+      "choices": ["NO CHANGE", "In addition,", "Nevertheless,", "In contrast,"],
+      "answer": 1,
+      "explanation": "Reducing water consumption is a second improvement that piles onto the energy savings, so the addition phrase 'In addition,' fits. 'However,' 'Nevertheless,' and 'In contrast' all signal a clash, but the two sentences agree."
+    },
+    {
+      "stem": "Heavy rain flooded the trail. [[Meanwhile,]] the hikers had to turn back.",
+      "questionText": "Which transition is most logical?",
+      "choices": ["NO CHANGE", "For instance,", "As a result,", "In other words,"],
+      "answer": 2,
+      "explanation": "The flooding caused the hikers to turn back, so the cause/effect phrase 'As a result,' is correct. 'Meanwhile' signals two separate things happening at the same time, 'For instance' introduces an example, and 'In other words' restates an idea; none of those matches cause and effect."
+    },
+    {
+      "stem": "First, let the dough rest for an hour. [[Therefore,]] roll it into thin sheets.",
+      "questionText": "Which transition is most logical?",
+      "choices": ["NO CHANGE", "Then,", "However,", "For example,"],
+      "answer": 1,
+      "explanation": "The two steps happen in order, so the sequence word 'Then,' is needed. 'Therefore' claims the resting causes the rolling, 'However' signals a clash between the steps, and 'For example' calls the rolling an illustration of the resting; none of those matches a step-by-step process."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "slug": "logical-placement",
+  "title": "Logical Placement",
+  "intro": "Placement questions ask where a sentence (or a whole paragraph) belongs so the passage reads in logical order; expect two to four per ACT English test. The core idea: a sentence must come after whatever it depends on, whether that is an earlier step, a cause, or the noun its pronouns point to. Find the clue inside the movable sentence, then park the sentence next to its anchor.",
+  "sections": [
+    {
+      "heading": "Follow time and sequence cues",
+      "body": [
+        "Events belong in the order they happen. Words like 'first,' 'then,' 'later,' 'before,' 'after,' 'meanwhile,' and 'finally' lock a sentence to one spot in that order. A sentence that begins 'Afterward, they cleaned the equipment' must follow the activity it cleans up after, never precede it.",
+        "In how-to passages, the steps must run in the order a person would perform them: 'Preheat the oven' comes before 'bake for twenty minutes.' Before you commit to a spot, confirm that nothing the sentence depends on shows up later in the passage."
+      ],
+      "examples": [
+        { "text": "[1] Mix the batter. [2] Pour it into the pan. [3] Bake until golden. 'Just before pouring, grease the pan.' goes before [2].", "label": "'just before pouring' anchors greasing to the pour", "good": true },
+        { "text": "'Just before pouring, grease the pan.' placed after [3], the baking step.", "label": "no one greases a pan after the cake has baked", "good": false }
+      ],
+      "tip": "Replay the events in real-world order. The sentence goes where its time word says it belongs."
+    },
+    {
+      "heading": "Let cause come before effect",
+      "body": [
+        "A result must follow its cause. If a sentence says 'As a result, the river flooded,' the cause (heavy rain, a broken dam) has to appear in an earlier sentence, and on the ACT it usually sits just before the result.",
+        "The same goes for sentences that explain or define something: they belong before the sentence that uses the idea, so the reader holds the explanation before needing it. Setup comes before payoff."
+      ],
+      "examples": [
+        { "text": "Cause: 'The dam cracked overnight.' Effect: 'By morning, the valley was underwater.'", "label": "cause sits right before its effect", "good": true },
+        { "text": "'By morning, the valley was underwater. The dam cracked overnight.'", "label": "the result appears before its cause", "good": false }
+      ],
+      "tip": "If a sentence states a result, its cause must already be on the page."
+    },
+    {
+      "heading": "Use pronouns and references as anchors",
+      "body": [
+        "A pronoun needs its noun first. If a sentence says 'She accepted the award,' an earlier sentence must name the woman. The same rule covers phrases like 'this method,' 'these results,' 'such efforts,' and 'the device': whatever they point to must already be on the page.",
+        "Place the sentence so every pronoun and reference has a clear, earlier antecedent. If a move leaves 'it' or 'they' pointing at nothing, the move is wrong. References are the strongest placement clues because they are grammatical facts, not judgment calls."
+      ],
+      "examples": [
+        { "text": "'Dr. Lee tested a new vaccine. It produced strong immunity.' ('It' = the vaccine, named first.)", "label": "the noun appears before the pronoun", "good": true },
+        { "text": "'It produced strong immunity. Dr. Lee tested a new vaccine.'", "label": "'It' has no earlier noun to point to", "good": false }
+      ],
+      "tip": "For every 'it,' 'they,' 'this,' or 'these,' the noun it names must sit in an earlier sentence."
+    },
+    {
+      "heading": "How to spot these questions",
+      "body": [
+        "The question stem gives this type away: 'For the sake of the logic and cohesion of this paragraph, Sentence 3 should be placed...' The choices are positions, not words: 'where it is now,' 'before Sentence 1,' 'after Sentence 4.' One variant asks where a new sentence, if added, would best fit; another moves a whole paragraph within the passage.",
+        "Work the movable sentence, not the whole paragraph. Step 1: read the sentence alone and mark its clues, including time words, transitions like 'however' or 'as a result,' and references like 'it,' 'this,' or 'the device.' Step 2: ask what each clue must follow; that names the anchor. Step 3: test the spot by reading three sentences in a row: the one before, the moved sentence, and the one after. If every link holds, mark it and move on."
+      ],
+      "tip": "The clue lives inside the movable sentence. Find its anchor before you look at the answer choices."
+    }
+  ],
+  "check": [
+    {
+      "stem": "[1] Spread the seeds evenly over the prepared soil. [2] Water them gently each morning. [3] [[First, loosen the top layer of soil with a rake.]] [4] Within two weeks, green shoots will appear.",
+      "questionText": "For the sake of the logic of the paragraph, Sentence 3 should be placed:",
+      "choices": ["where it is now", "before Sentence 1", "after Sentence 1", "after Sentence 4"],
+      "answer": 1,
+      "explanation": "'First' marks raking as the opening step, and Sentence 1's 'the prepared soil' makes sense only after the soil has been loosened, so the sentence belongs before Sentence 1. 'Where it is now' puts raking after the seeds are planted and watered, 'after Sentence 1' loosens soil the seeds already cover, and 'after Sentence 4' puts preparation after the shoots have appeared."
+    },
+    {
+      "stem": "[1] In 1925, the town library occupied a single rented room. [2] Donations poured in after a local newspaper described the cramped conditions. [3] Within a decade, the collection had outgrown the new building as well. [4] [[The money paid for a brick building with space for ten thousand books.]]",
+      "questionText": "For the sake of the logic and cohesion of the paragraph, Sentence 4 should be placed:",
+      "choices": ["where it is now", "before Sentence 1", "after Sentence 1", "after Sentence 2"],
+      "answer": 3,
+      "explanation": "'The money' picks up the donations in Sentence 2, and Sentence 3's 'the new building' needs that brick building introduced first, so the sentence fits after Sentence 2. 'Where it is now' lets Sentence 3 mention 'the new building' before one exists, while 'before Sentence 1' and 'after Sentence 1' place 'the money' before any donations have been mentioned."
+    },
+    {
+      "stem": "[1] She sketched the design on graph paper. [2] She then cut the cedar panels to size. [3] Finally, she bolted the frame together. [4] [[Maria had always loved building things by hand.]]",
+      "questionText": "For the sake of the logic and cohesion of the paragraph, Sentence 4 should be placed:",
+      "choices": ["where it is now", "before Sentence 1", "after Sentence 1", "after Sentence 2"],
+      "answer": 1,
+      "explanation": "Sentence 1's 'She' needs Maria named first, so this background sentence must open the paragraph; before Sentence 1 is the only spot that supplies the name before the pronoun. 'Where it is now,' 'after Sentence 1,' and 'after Sentence 2' each leave at least one earlier 'She' with no named antecedent, and the last two also interrupt the sketch-cut-bolt sequence."
+    }
+  ]
+}

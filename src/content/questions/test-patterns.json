@@ -1,0 +1,365 @@
+{
+  "slug": "test-patterns",
+  "questions": [
+    {
+      "id": "test-patterns-001",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence grammatically complete and correct?",
+      "stem": "A mural [[was]] painted across the gym's back wall celebrates the school's first state championship.",
+      "choices": [
+        "NO CHANGE",
+        "is",
+        "has been",
+        "DELETE the underlined portion."
+      ],
+      "answer": 3,
+      "explanation": "With 'was', 'is', or 'has been', the sentence carries two competing main verbs ('was painted ... celebrates'). Deleting the verb leaves 'A mural painted across the gym's back wall celebrates the school's first state championship', where 'painted' is a clean participial phrase describing the mural."
+    },
+    {
+      "id": "test-patterns-002",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice best completes the sentence?",
+      "stem": "In the lobby stood a marble statue, [[it was]] a gift from the graduating class of 1998.",
+      "choices": [
+        "NO CHANGE",
+        "which it was",
+        "it being",
+        "DELETE the underlined portion."
+      ],
+      "answer": 3,
+      "explanation": "Deleting the words leaves 'a marble statue, a gift from the graduating class of 1998', a clean appositive that needs no extra words. 'it was' splices two complete sentences with only a comma, and 'which it was' stacks the extra subject 'it' inside the relative clause. 'it being' adds two words the appositive does not need; the ACT treats 'being' phrasings as wordy and nonstandard, so the trimmed version wins."
+    },
+    {
+      "id": "test-patterns-003",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence grammatically acceptable?",
+      "stem": "The geologist passed around a chunk of obsidian, [[which it was]] smooth and nearly black, so each student could feel its glassy edge.",
+      "choices": [
+        "NO CHANGE",
+        "it was",
+        "being that it was",
+        "DELETE the underlined portion."
+      ],
+      "answer": 3,
+      "explanation": "With the words deleted, 'a chunk of obsidian, smooth and nearly black,' tucks the description neatly between commas. 'which it was' doubles the subject of the clause, 'it was' creates a comma splice mid-sentence, and 'being that it was' is a nonstandard, wordy construction."
+    },
+    {
+      "id": "test-patterns-004",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice results in a complete, correctly formed sentence?",
+      "stem": "Volunteers [[they]] sorted the donated coats into bins by size before the shelter opened its doors.",
+      "choices": [
+        "NO CHANGE",
+        "who",
+        "having",
+        "DELETE the underlined portion."
+      ],
+      "answer": 3,
+      "explanation": "'Volunteers sorted the donated coats' needs no second subject, so deleting 'they' fixes the doubled subject. 'who' and 'having' both swallow the main verb into a modifying phrase and leave the sentence a fragment."
+    },
+    {
+      "id": "test-patterns-005",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice best completes the sentence?",
+      "stem": "At the center of the exhibit hangs a quilt, [[it is]] stitched from flour-sack cloth by four generations of one family.",
+      "choices": [
+        "NO CHANGE",
+        "which it is",
+        "being",
+        "DELETE the underlined portion."
+      ],
+      "answer": 3,
+      "explanation": "Deleting the words leaves 'a quilt, stitched from flour-sack cloth by four generations of one family', a clean participial phrase. 'it is' splices two sentences with a comma, and 'which it is' doubles the subject of the clause. 'being' adds a word the participle does not need and hints the stitching is still underway, so 'stitched' on its own completes the sentence best."
+    },
+    {
+      "id": "test-patterns-006",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice results in a complete sentence?",
+      "stem": "The expedition's hand-drawn map, sketched in fading ink, [[showing]] the river's original course before the dam changed it.",
+      "choices": [
+        "NO CHANGE",
+        "shows",
+        "having shown",
+        "DELETE the underlined portion."
+      ],
+      "answer": 1,
+      "explanation": "'shows' supplies the missing main verb: 'The expedition's hand-drawn map ... shows the river's original course.' 'showing' and 'having shown' leave the sentence without any main verb, and deleting the word strands 'the river's original course' with no verb at all, so the tempting cut creates a fragment."
+    },
+    {
+      "id": "test-patterns-007",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence grammatically correct?",
+      "stem": "Perched on the cliff above the harbor [[stand]] a stone chapel that fishing families have visited for three centuries.",
+      "choices": [
+        "NO CHANGE",
+        "standing",
+        "stands",
+        "DELETE the underlined portion."
+      ],
+      "answer": 2,
+      "explanation": "The subject of this inverted sentence is the singular 'chapel', so it needs 'stands'. 'stand' breaks subject-verb agreement, 'standing' leaves no main verb, and deleting the verb turns the whole sentence into a fragment, so the shortest answer is a trap here."
+    },
+    {
+      "id": "test-patterns-008",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice best maintains the formal tone of the essay?",
+      "stem": "For three weeks, the array of seismographs recorded tremors too faint for anyone on the surface to [[feel, which is honestly kind of wild.]]",
+      "choices": [
+        "NO CHANGE",
+        "feel — wild, right?",
+        "feel.",
+        "feel, which totally blew the researchers' minds."
+      ],
+      "answer": 2,
+      "explanation": "'feel.' ends the sentence at its last formal word and lets the scientific detail speak for itself. 'which is honestly kind of wild', 'wild, right?', and 'totally blew the researchers' minds' each bolt a chatty aside onto an otherwise formal sentence."
+    },
+    {
+      "id": "test-patterns-009",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice best maintains the formal tone of the essay?",
+      "stem": "The curator restored the tapestry's border with thread dyed to match the original [[indigo, which everyone agreed was a super cool touch.]]",
+      "choices": [
+        "NO CHANGE",
+        "indigo.",
+        "indigo — honestly a pretty awesome detail.",
+        "indigo, and people were totally into it."
+      ],
+      "answer": 1,
+      "explanation": "'indigo.' closes the sentence on the precise, formal detail of the matched dye. 'a super cool touch', 'honestly a pretty awesome detail', and 'people were totally into it' are all casual asides that clash with the essay's museum-catalog tone."
+    },
+    {
+      "id": "test-patterns-010",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice best maintains the formal tone of the essay?",
+      "stem": "In its closing brief, the firm argued that the noncompete clause was [[unenforceable, no ifs, ands, or buts.]]",
+      "choices": [
+        "NO CHANGE",
+        "unenforceable — case closed, obviously.",
+        "unenforceable, full stop, end of story.",
+        "unenforceable."
+      ],
+      "answer": 3,
+      "explanation": "'unenforceable.' ends the sentence at the last word that fits a legal brief's register. 'no ifs, ands, or buts', 'case closed, obviously', and 'full stop, end of story' are equally informal tags that undercut the formal claim."
+    },
+    {
+      "id": "test-patterns-011",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice most clearly identifies which instruments the students built and what they built them from?",
+      "stem": "For the spring showcase, the physics club built [[several instruments out of inexpensive materials]].",
+      "choices": [
+        "a number of instruments that genuinely impressed the audience",
+        "marimbas and slide whistles from scrap lumber and copper pipe",
+        "marimbas and slide whistles that took nearly six weeks to finish",
+        "instruments far more ambitious than last year's entries"
+      ],
+      "answer": 1,
+      "explanation": "'marimbas and slide whistles from scrap lumber and copper pipe' names the instruments and the materials, satisfying both requirements. 'marimbas and slide whistles that took nearly six weeks to finish' names the instruments but swaps the materials for a timeline, and the other two choices identify neither."
+    },
+    {
+      "id": "test-patterns-012",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice most specifically describes where the mural was painted and what it depicts?",
+      "stem": "Over the summer, a team of local artists completed a mural [[in a downtown location with a community theme]].",
+      "choices": [
+        "on the brick side of the old train depot, depicting farmers unloading peaches at harvest",
+        "on the brick side of the old train depot, which residents have admired for decades",
+        "in a spot that hundreds of commuters pass every morning",
+        "that quickly became a favorite backdrop for graduation photos"
+      ],
+      "answer": 0,
+      "explanation": "'on the brick side of the old train depot, depicting farmers unloading peaches at harvest' pins down both the place and the image. 'which residents have admired for decades' gives the place but never says what the mural shows, while the commuter and graduation-photo choices give neither."
+    },
+    {
+      "id": "test-patterns-013",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice most precisely indicates when the bridge closed and why?",
+      "stem": "After eighty years of daily traffic, the county's covered bridge [[closed at a certain point for structural reasons]].",
+      "choices": [
+        "closed recently because of problems engineers had worried about",
+        "closed last March, disappointing commuters on both sides of the river",
+        "closed last March after inspectors found rot in two of its support trusses",
+        "had long been the subject of debate at county meetings"
+      ],
+      "answer": 2,
+      "explanation": "'closed last March after inspectors found rot in two of its support trusses' gives a precise time and a precise cause. 'closed last March, disappointing commuters' nails the time but trades the cause for a reaction, 'recently because of problems' is vague on both counts, and the debate choice answers neither question."
+    },
+    {
+      "id": "test-patterns-014",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice best emphasizes both how long the volunteers worked and how much food they collected?",
+      "stem": "During the winter drive, food-bank volunteers [[worked for quite a while and gathered a large amount of donations]].",
+      "choices": [
+        "gave up much of their free time to help neighbors facing hunger",
+        "spent twelve consecutive weekends gathering donations across the county",
+        "spent twelve consecutive weekends collecting more than four tons of canned goods",
+        "collected what the food bank's director called a remarkable haul"
+      ],
+      "answer": 2,
+      "explanation": "'spent twelve consecutive weekends collecting more than four tons of canned goods' quantifies both the time and the amount. 'spent twelve consecutive weekends gathering donations across the county' covers the time but not the amount, and the other two choices offer praise without a single number."
+    },
+    {
+      "id": "test-patterns-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "The writer wants to make clear that walk-in flu shots are available only on Fridays, not that flu shots are the clinic's only offering. The best placement for the underlined word would be:",
+      "stem": "The clinic [[only]] offers flu shots without an appointment on Fridays.",
+      "choices": [
+        "where it is now",
+        "after the word offers",
+        "after the word shots",
+        "after the word appointment"
+      ],
+      "answer": 3,
+      "explanation": "Placed after 'appointment', the sentence reads 'offers flu shots without an appointment only on Fridays', restricting just the day. Where it is now, 'only offers' suggests offering shots is all the clinic does; after 'offers' it claims flu shots are the only service; after 'shots' it garbles what is being limited."
+    },
+    {
+      "id": "test-patterns-016",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "The writer wants to make clear that the photographs, not the albums, were faded. The best placement for the underlined word would be:",
+      "stem": "From the attic shelf, Marisol pulled down [[faded]] albums of photographs from her grandmother's childhood.",
+      "choices": [
+        "where it is now",
+        "after the word albums",
+        "after the word of",
+        "after the word photographs"
+      ],
+      "answer": 2,
+      "explanation": "After 'of', the sentence reads 'albums of faded photographs', attaching the word to the photographs as intended. Where it is now it describes the albums, after 'albums' it produces the garbled 'albums faded of photographs', and after 'photographs' it claims the photos faded from the childhood itself."
+    },
+    {
+      "id": "test-patterns-017",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "The writer wants to make clear that the canoes, not the cedar planks, were donated. The best placement for the underlined word would be:",
+      "stem": "Every spring, the rowing club restores [[donated]] canoes with cedar planks from a local mill.",
+      "choices": [
+        "where it is now",
+        "after the word canoes",
+        "after the word with",
+        "after the word planks"
+      ],
+      "answer": 0,
+      "explanation": "Where it is now, 'donated canoes' ties the word to the canoes, exactly what the writer wants. After 'canoes' the sentence says the canoes were donated along with the planks, and after 'with' or after 'planks' the word describes the cedar planks instead."
+    },
+    {
+      "id": "test-patterns-018",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "The writer wants to make clear that the students should label the slides quickly, not that the teacher asked quickly. The best placement for the underlined word would be:",
+      "stem": "Before the bell, the biology teacher asked the students [[quickly]] to label their slides.",
+      "choices": [
+        "where it is now",
+        "after the word asked",
+        "after the word label",
+        "after the word slides (ending the sentence with a period)"
+      ],
+      "answer": 3,
+      "explanation": "Ending the sentence with 'to label their slides quickly' ties the adverb to the labeling. Where it is now the adverb could describe the asking, 'asked quickly the students' says the asking was fast, and 'label quickly their slides' wedges the adverb into an unnatural position."
+    },
+    {
+      "id": "test-patterns-019",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence idiomatically correct?",
+      "stem": "The documentary offers rare insight [[on]] the daily routines of a deep-sea research crew.",
+      "choices": [
+        "NO CHANGE",
+        "into",
+        "at",
+        "for"
+      ],
+      "answer": 1,
+      "explanation": "English pairs 'insight' with 'into': the film offers 'insight into the daily routines'. 'insight on', 'insight at', and 'insight for' all break the fixed idiom."
+    },
+    {
+      "id": "test-patterns-020",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice completes the underlined phrase idiomatically?",
+      "stem": "Built for polar seas, the new icebreaker is capable [[to cut]] through ice nearly three meters thick.",
+      "choices": [
+        "NO CHANGE",
+        "in cutting",
+        "of cutting",
+        "at cutting"
+      ],
+      "answer": 2,
+      "explanation": "'capable' takes 'of' plus an -ing form: 'capable of cutting through ice'. 'to cut', 'in cutting', and 'at cutting' do not collocate with 'capable'."
+    },
+    {
+      "id": "test-patterns-021",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence idiomatically correct?",
+      "stem": "All semester, Dario was so preoccupied [[on perfecting]] his robotics entry that he nearly missed the scholarship deadline.",
+      "choices": [
+        "NO CHANGE",
+        "at perfecting",
+        "for perfecting",
+        "with perfecting"
+      ],
+      "answer": 3,
+      "explanation": "The fixed pair is 'preoccupied with': Dario was 'preoccupied with perfecting his robotics entry'. 'on perfecting', 'at perfecting', and 'for perfecting' are not idiomatic after 'preoccupied'."
+    },
+    {
+      "id": "test-patterns-022",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice provides the most logical and grammatically correct connection between the two parts of the sentence?",
+      "stem": "The hike to the fire tower is only two miles long, [[but]] the final half mile climbs nine hundred feet.",
+      "choices": [
+        "NO CHANGE",
+        "nevertheless,",
+        "therefore,",
+        "DELETE the underlined portion."
+      ],
+      "answer": 0,
+      "explanation": "Comma plus 'but' correctly joins the two independent clauses and signals the contrast between a short distance and a brutal finish. 'nevertheless,' and 'therefore,' are conjunctive adverbs that leave a comma splice (and 'therefore,' reverses the logic), while deleting the conjunction splices the clauses with only a comma."
+    },
+    {
+      "id": "test-patterns-023",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice provides the most logical and grammatically correct connection between the two parts of the sentence?",
+      "stem": "The library's only elevator was out for repairs, [[so]] staff moved the week's programs to the ground floor.",
+      "choices": [
+        "NO CHANGE",
+        "regardless,",
+        "however,",
+        "DELETE the underlined portion."
+      ],
+      "answer": 0,
+      "explanation": "'so' correctly signals cause and effect: the broken elevator forced the move downstairs. 'regardless,' and 'however,' claim a contrast that is not there while also creating comma splices, and deleting the word leaves the two clauses spliced by a bare comma."
+    },
+    {
+      "id": "test-patterns-024",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which transition word provides the most logical opening for the second sentence?",
+      "stem": "The team lost its first five matches this spring. [[Still,]] season-ticket sales kept climbing.",
+      "choices": [
+        "NO CHANGE",
+        "Consequently,",
+        "For example,",
+        "Similarly,"
+      ],
+      "answer": 0,
+      "explanation": "'Still,' captures the surprise that sales climbed despite a losing record, so the original is already right. 'Consequently,' claims the losses caused sales to rise, 'For example,' promises an illustration of the losing streak that never comes, and 'Similarly,' asserts a likeness between losing and climbing sales that does not exist."
+    }
+  ]
+}

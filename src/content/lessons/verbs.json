@@ -1,0 +1,87 @@
+{
+  "slug": "verbs",
+  "title": "Verbs",
+  "intro": "Verb questions test two things: does the verb agree with its real subject, and does it match the time frame of the passage? They show up several times on every ACT English section, usually disguised by a phrase wedged between the subject and the verb. The core move: find the true subject first, then match the tense of the surrounding sentences.",
+  "sections": [
+    {
+      "heading": "Find the subject before you check agreement",
+      "body": [
+        "A verb must agree with its subject in number. The ACT hides the subject by wedging a phrase between it and the verb, usually a prepositional phrase starting with 'of,' 'in,' 'with,' or 'along with.' The noun closest to the verb is usually a decoy.",
+        "Cross out the interrupting phrase and the right verb becomes obvious. In 'The box of old letters (is/are) on the shelf,' the subject is 'box,' not 'letters,' so the verb is 'is.'"
+      ],
+      "examples": [
+        { "text": "The list of ingredients was longer than expected.", "label": "Subject 'list' is singular, so 'was' is correct", "good": true },
+        { "text": "The list of ingredients were longer than expected.", "label": "Verb wrongly agrees with 'ingredients,' the object of the preposition", "good": false }
+      ],
+      "tip": "Cross out every 'of ...' phrase between the subject and the verb, then read what remains: 'The list ... was longer.' The subject is what survives the cut."
+    },
+    {
+      "heading": "Collective nouns and indefinite pronouns",
+      "body": [
+        "'Each,' 'every,' 'everyone,' 'everybody,' 'either,' 'neither,' and 'one' are singular, even when a plural phrase follows them. 'Each of the players is ready,' not 'are ready.'",
+        "Collective nouns such as 'team,' 'committee,' 'jury,' and 'family' act as a single unit on the ACT and take a singular verb: 'The committee votes tomorrow.'"
+      ],
+      "examples": [
+        { "text": "Everyone on the committees has signed the form.", "label": "'Everyone' is singular; the plural 'committees' is a decoy", "good": true },
+        { "text": "Everyone on the committees have signed the form.", "label": "'Everyone' wrongly treated as plural", "good": false }
+      ],
+      "tip": "'Each,' 'every,' and 'one' are always singular, no matter what plural noun follows. 'Each of the dogs barks.'"
+    },
+    {
+      "heading": "Keep tense consistent",
+      "body": [
+        "An underlined verb has to match the time frame the rest of the passage establishes. If the surrounding sentences sit in the past tense, a sudden present-tense verb is wrong, and vice versa.",
+        "Hunt for time clues: 'yesterday,' 'last year,' and 'in 1920' force past tense; 'now' and 'today' force present. Reserve the past perfect ('had finished') for an action completed before another past action. Never switch tenses without a time signal in the text."
+      ],
+      "examples": [
+        { "text": "She studied all night and then aced the exam.", "label": "Both verbs stay in the past", "good": true },
+        { "text": "She studied all night and then aces the exam.", "label": "Unjustified shift to present", "good": false }
+      ],
+      "tip": "Read the sentence before and after the underlined verb. Match their tense unless the text signals a real change in time."
+    },
+    {
+      "heading": "Irregular verbs: past vs. past participle",
+      "body": [
+        "Irregular verbs have a simple past form and a separate past-participle form, and the ACT tests the difference. The past participle is the form that follows 'have,' 'has,' or 'had.'",
+        "Common traps: 'ran' is simple past but 'run' is the participle (had run); 'swam' vs. 'swum' (had swum); 'drank' vs. 'drunk' (had drunk); 'began/begun,' 'sang/sung,' 'rang/rung,' 'wrote/written,' and 'broke/broken' follow the same split. The participle alone, with no helping verb, is never a complete verb: 'she sung' is always wrong."
+      ],
+      "examples": [
+        { "text": "By Friday she had run twelve miles.", "label": "Participle 'run' after 'had'", "good": true },
+        { "text": "By Friday she had ran twelve miles.", "label": "Simple past 'ran' wrongly used after 'had'", "good": false }
+      ],
+      "tip": "After 'have/has/had,' use the participle: 'had run,' 'had swum,' 'had begun.' Never 'had ran,' 'had swam,' 'had began.'"
+    },
+    {
+      "heading": "How to spot these questions",
+      "body": [
+        "Scan the answer choices before rereading the sentence. If all four choices are forms of the same verb ('is,' 'are,' 'was,' 'have been'), the question tests agreement, tense, or verb form, not word choice or style.",
+        "Then work in order. First, find the subject: cross out any prepositional phrase between it and the underlined verb. Second, match number: singular subject, singular verb. Third, match time: check the tense of the verbs in the sentences before and after. Fourth, if a choice places a verb after 'have,' 'has,' or 'had,' demand the past participle.",
+        "Most wrong choices fail one of those checks. A choice can agree in number yet still be wrong because it breaks the passage's time frame, so run both tests every time."
+      ],
+      "tip": "If two choices commit the same error, such as two plural verbs for a singular subject, eliminate both at once. The right answer must stand apart from every other choice."
+    }
+  ],
+  "check": [
+    {
+      "stem": "The collection of vintage cars [[are]] displayed in the old warehouse.",
+      "questionText": "Which choice is correct?",
+      "choices": ["NO CHANGE", "is", "were", "have been"],
+      "answer": 1,
+      "explanation": "The subject is 'collection,' which is singular, so 'is' agrees. 'Are,' 'were,' and 'have been' are all plural forms that wrongly agree with 'cars,' a noun trapped inside the prepositional phrase 'of vintage cars.'"
+    },
+    {
+      "stem": "Each of the contestants [[have]] practiced for months.",
+      "questionText": "Which choice is correct?",
+      "choices": ["NO CHANGE", "has", "are", "were"],
+      "answer": 1,
+      "explanation": "'Each' is singular and takes 'has.' 'Have' wrongly treats the plural 'contestants' as the subject, but that noun sits inside the prepositional phrase 'of the contestants.' 'Are' and 'were' are plural, and they turn the sentence into a passive ('are practiced') that makes no sense with 'for months.'"
+    },
+    {
+      "stem": "Last summer we hiked every morning and [[swim]] in the lake each afternoon.",
+      "questionText": "Which choice is correct?",
+      "choices": ["NO CHANGE", "swum", "had swum", "swam"],
+      "answer": 3,
+      "explanation": "The time clue 'last summer' and the parallel past-tense verb 'hiked' require the simple past 'swam.' 'Swim' is present tense, 'swum' is a participle that cannot stand without a helping verb, and 'had swum' wrongly shifts to the past perfect for an action that happened at the same time as the hiking."
+    }
+  ]
+}

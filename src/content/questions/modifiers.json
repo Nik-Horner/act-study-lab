@@ -1,0 +1,485 @@
+{
+  "slug": "modifiers",
+  "questions": [
+    {
+      "id": "modifiers-001",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Exhausted after the long shift, [[a quick nap was taken by Devon]].",
+      "choices": [
+        "NO CHANGE",
+        "the quick nap refreshed Devon",
+        "it was time for a nap",
+        "Devon took a quick nap"
+      ],
+      "answer": 3,
+      "explanation": "The opener 'Exhausted after the long shift' describes a person, so the subject after the comma must be 'Devon'; a nap and 'it' cannot work a shift, and the passive original dangles the modifier."
+    },
+    {
+      "id": "modifiers-002",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Walking through the gallery, [[Elena admired the paintings]].",
+      "choices": [
+        "NO CHANGE",
+        "it amazed Elena to see the paintings",
+        "the paintings amazed Elena",
+        "the paintings were admired by Elena"
+      ],
+      "answer": 0,
+      "explanation": "'Walking through the gallery' modifies the person walking, so 'Elena' must follow the comma, and the original is correct. The other choices put 'the paintings' or 'it' right after the comma, none of which can walk, so each dangles the modifier."
+    },
+    {
+      "id": "modifiers-003",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Ripe and bright red, [[Jordan picked the strawberries from the garden]].",
+      "choices": [
+        "NO CHANGE",
+        "Jordan filled a basket with strawberries",
+        "picking went quickly that morning",
+        "the strawberries were ready to be picked"
+      ],
+      "answer": 3,
+      "explanation": "'Ripe and bright red' describes the strawberries, so 'the strawberries' must follow the comma. 'Jordan' and the gerund 'picking' cannot be ripe and bright red, so 'Jordan picked the strawberries from the garden,' 'Jordan filled a basket with strawberries,' and 'picking went quickly that morning' all dangle the modifier."
+    },
+    {
+      "id": "modifiers-004",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Smiling at the camera, [[the portrait captured the bride perfectly]].",
+      "choices": [
+        "NO CHANGE",
+        "the bride posed for the portrait",
+        "the camera flash lit the studio",
+        "a flawless portrait resulted"
+      ],
+      "answer": 1,
+      "explanation": "'Smiling at the camera' describes the bride, so 'the bride' must follow the comma; a portrait, a camera flash, and an abstract result cannot smile, which dangles the modifier in the other choices."
+    },
+    {
+      "id": "modifiers-005",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Thrilled by the final score, [[the fans let out a loud cheer]].",
+      "choices": [
+        "NO CHANGE",
+        "there was a loud cheer from the fans",
+        "the loud cheer echoed for the fans",
+        "a loud cheer was let out by the fans"
+      ],
+      "answer": 0,
+      "explanation": "'Thrilled by the final score' describes the fans, so 'the fans' must follow the comma, and the original is correct. The other choices put 'a loud cheer,' 'the loud cheer,' or 'there' after the comma, none of which can feel thrilled, so each dangles the modifier."
+    },
+    {
+      "id": "modifiers-006",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "While reviewing the budget, [[an error in the totals was found by the accountant]].",
+      "choices": [
+        "NO CHANGE",
+        "there was an error in the totals",
+        "the totals turned out to contain an error",
+        "the accountant found an error in the totals"
+      ],
+      "answer": 3,
+      "explanation": "'While reviewing the budget' describes the person reviewing, so 'the accountant' must follow the comma; an error, the totals, and 'there' cannot review a budget, so those choices dangle the modifier."
+    },
+    {
+      "id": "modifiers-007",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "To win the science fair, [[a working volcano was built by Priya]].",
+      "choices": [
+        "NO CHANGE",
+        "Priya built a working volcano",
+        "the judges praised Priya's volcano",
+        "the gymnasium hosted the event"
+      ],
+      "answer": 1,
+      "explanation": "The infinitive opener 'To win the science fair' must describe whoever wants to win, so 'Priya' must follow the comma; a volcano, the judges, and the gymnasium are not trying to win, so those choices dangle the modifier."
+    },
+    {
+      "id": "modifiers-008",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Running to catch the bus, [[I felt my backpack slip off my shoulder]].",
+      "choices": [
+        "NO CHANGE",
+        "my backpack slipped off my shoulder",
+        "my shoulder dropped the backpack",
+        "the backpack on my shoulder slipped"
+      ],
+      "answer": 0,
+      "explanation": "'Running to catch the bus' must describe a person, so 'I' must follow the comma, and the original is correct. The other choices put 'my backpack' or 'my shoulder' after the comma, neither of which can run, so each dangles the modifier."
+    },
+    {
+      "id": "modifiers-009",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Eager to begin the experiment, [[the equipment was set up quickly by the students]].",
+      "choices": [
+        "NO CHANGE",
+        "the students set up the equipment quickly",
+        "setup of the equipment went quickly",
+        "the experiment got under way quickly"
+      ],
+      "answer": 1,
+      "explanation": "'Eager to begin the experiment' describes the people who are eager, so 'the students' must follow the comma; equipment, setup, and an experiment cannot feel eager, so those choices dangle the modifier."
+    },
+    {
+      "id": "modifiers-010",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Hidden beneath the floorboards for decades, [[the new owners discovered a box of gold coins]].",
+      "choices": [
+        "NO CHANGE",
+        "a box of gold coins surprised the new owners",
+        "the discovery thrilled everyone",
+        "the curious owners pried up a loose board"
+      ],
+      "answer": 1,
+      "explanation": "'Hidden beneath the floorboards for decades' describes the box, so 'a box of gold coins' must follow the comma. The new owners, the curious owners, and 'the discovery' were not hidden under the floor, so those choices dangle the modifier."
+    },
+    {
+      "id": "modifiers-011",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "She handed the package [[to the courier with the smudged label]].",
+      "choices": [
+        "NO CHANGE",
+        "to the courier, who had a smudged label",
+        "with the smudged label to the courier",
+        "to the smudged-label courier"
+      ],
+      "answer": 2,
+      "explanation": "'With the smudged label' describes the package, so it must sit beside 'package,' giving 'the package with the smudged label to the courier.' 'To the courier with the smudged label,' 'to the courier, who had a smudged label,' and 'to the smudged-label courier' all pin the label on the courier, a person who has no label."
+    },
+    {
+      "id": "modifiers-012",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "A loyal companion for twelve years, [[the family was heartbroken when the dog died]].",
+      "choices": [
+        "NO CHANGE",
+        "the family grieved for weeks afterward",
+        "the dog left the family heartbroken when it died",
+        "the dog's death devastated everyone"
+      ],
+      "answer": 2,
+      "explanation": "'A loyal companion for twelve years' describes the dog, so 'the dog' must be the subject right after the comma. 'The family was heartbroken,' 'the family grieved,' and 'the dog's death devastated everyone' each put something other than the companion there, dangling the modifier."
+    },
+    {
+      "id": "modifiers-013",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "I [[nearly watched the entire series]] over winter break, stopping just two episodes short of the finale.",
+      "choices": [
+        "NO CHANGE",
+        "watched the entire series nearly",
+        "watched nearly the entire series",
+        "the entire series nearly watched"
+      ],
+      "answer": 2,
+      "explanation": "The limiting word 'nearly' belongs next to 'the entire series' to mean I watched almost all of it, which matches stopping two episodes short. 'Nearly watched' wrongly says I almost watched but never did, while 'watched the entire series nearly' and 'the entire series nearly watched' are garbled."
+    },
+    {
+      "id": "modifiers-014",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Designed by a celebrated architect, [[the bridge draws photographers from around the world]].",
+      "choices": [
+        "NO CHANGE",
+        "tourists photograph the bridge constantly",
+        "photographs of the bridge appear everywhere",
+        "tourists with cameras gather at the bridge"
+      ],
+      "answer": 0,
+      "explanation": "'Designed by a celebrated architect' must modify the thing designed, the bridge, so 'the bridge' must follow the comma, and the original is correct. The other choices put 'tourists' or 'photographs' after the comma, none of which were designed by the architect, so each dangles the modifier."
+    },
+    {
+      "id": "modifiers-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The professor explained [[the theory to her students that she had spent decades developing]].",
+      "choices": [
+        "NO CHANGE",
+        "to her students the theory that she had spent decades developing",
+        "the decades-old developing theory to her students",
+        "the theory to her students, who had spent decades developing it"
+      ],
+      "answer": 1,
+      "explanation": "'That she had spent decades developing' describes the theory, so the theory must sit right before that clause, as in 'explained to her students the theory that she had spent decades developing.' The original attaches the clause to 'students,' 'who had spent decades developing it' wrongly credits the students with the work, and 'the decades-old developing theory' is garbled."
+    },
+    {
+      "id": "modifiers-016",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "To qualify for the scholarship, [[a portfolio of essays must be submitted by each applicant]].",
+      "choices": [
+        "NO CHANGE",
+        "each applicant must submit a portfolio of essays",
+        "a portfolio of essays is required for the scholarship",
+        "the committee reviews each applicant's portfolio"
+      ],
+      "answer": 1,
+      "explanation": "The infinitive opener 'To qualify for the scholarship' must describe whoever qualifies, so 'each applicant' must follow the comma; a portfolio and the committee are not the ones qualifying, so those choices dangle the modifier."
+    },
+    {
+      "id": "modifiers-017",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Frozen solid overnight, [[Marcus scraped the windshield before driving]].",
+      "choices": [
+        "NO CHANGE",
+        "the windshield needed scraping before Marcus could drive",
+        "driving required some scraping first",
+        "Marcus had to scrape before driving"
+      ],
+      "answer": 1,
+      "explanation": "'Frozen solid overnight' describes the windshield, so 'the windshield' must follow the comma. 'Marcus scraped the windshield' makes Marcus the frozen thing, while 'Marcus had to scrape' and 'driving required some scraping' leave nothing frozen at all, dangling the modifier."
+    },
+    {
+      "id": "modifiers-018",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Buzzing loudly around the porch light, [[Nadia swatted at the moths]].",
+      "choices": [
+        "NO CHANGE",
+        "swatting did little to stop them",
+        "the moths circled while Nadia swatted at them",
+        "Nadia waved her arms at them"
+      ],
+      "answer": 2,
+      "explanation": "'Buzzing loudly around the porch light' describes the moths, so 'the moths' must follow the comma. 'Nadia swatted at the moths' and 'Nadia waved her arms' make Nadia the one buzzing, and 'swatting did little to stop them' supplies no buzzing noun, dangling the modifier."
+    },
+    {
+      "id": "modifiers-019",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Stacked neatly on the counter, [[the baker boxed the warm muffins]].",
+      "choices": [
+        "NO CHANGE",
+        "the baker reached for the warm muffins",
+        "the warm muffins waited to be boxed",
+        "boxing the warm muffins took a while"
+      ],
+      "answer": 2,
+      "explanation": "'Stacked neatly on the counter' describes the muffins, so 'the warm muffins' must follow the comma. 'The baker boxed the warm muffins' puts the baker on the counter, while 'the baker reached for the warm muffins' and 'boxing the warm muffins took a while' dangle the modifier."
+    },
+    {
+      "id": "modifiers-020",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Soaked from the sudden downpour, [[the hikers wrung out their jackets]].",
+      "choices": [
+        "NO CHANGE",
+        "the storm showed no sign of easing",
+        "the downpour drenched everything",
+        "wringing out the jackets helped a little"
+      ],
+      "answer": 0,
+      "explanation": "'Soaked from the sudden downpour' describes the hikers, and the original already places 'the hikers' right after the comma. 'The storm,' 'the downpour,' and the gerund 'wringing' cannot be soaked by the rain, so those choices dangle the modifier."
+    },
+    {
+      "id": "modifiers-021",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The vendor sold balloons [[to the children filled with helium]].",
+      "choices": [
+        "NO CHANGE",
+        "filled with helium to the children",
+        "to the children, who were filled with helium",
+        "to the helium-filled children"
+      ],
+      "answer": 1,
+      "explanation": "'Filled with helium' describes the balloons, so it must sit beside 'balloons,' giving 'balloons filled with helium to the children.' 'To the children filled with helium,' 'to the children, who were filled with helium,' and 'to the helium-filled children' all claim the children were full of helium."
+    },
+    {
+      "id": "modifiers-022",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "After studying the migration data for months, [[the biologist noticed surprising patterns]].",
+      "choices": [
+        "NO CHANGE",
+        "surprising patterns emerged for the biologist",
+        "surprising patterns became clear",
+        "there were surprising patterns to report"
+      ],
+      "answer": 0,
+      "explanation": "'After studying the migration data for months' describes whoever studied, so 'the biologist' must follow the comma, and the original is correct. The other choices put 'surprising patterns' or 'there' after the comma, none of which can study data, so each dangles the modifier."
+    },
+    {
+      "id": "modifiers-023",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "To avoid the rush-hour traffic, [[an earlier train was taken by Lena]].",
+      "choices": [
+        "NO CHANGE",
+        "Lena took an earlier train",
+        "the earlier train seemed wiser",
+        "an earlier departure made sense"
+      ],
+      "answer": 1,
+      "explanation": "The infinitive opener 'To avoid the rush-hour traffic' must describe whoever avoids it, so 'Lena' must follow the comma. A train and a departure cannot avoid traffic, so 'an earlier train was taken by Lena,' 'the earlier train seemed wiser,' and 'an earlier departure made sense' all dangle the modifier."
+    },
+    {
+      "id": "modifiers-024",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Carved from a single block of marble, [[the statue draws admiring crowds year-round]].",
+      "choices": [
+        "NO CHANGE",
+        "people stand before the statue for hours",
+        "visitors admire the statue for hours",
+        "admiration for the statue runs deep"
+      ],
+      "answer": 0,
+      "explanation": "'Carved from a single block of marble' must modify the thing carved, the statue, so 'the statue' must follow the comma, and the original is correct. The other choices put 'visitors,' 'admiration,' or 'people' after the comma, none of which were carved from marble, so each dangles the modifier."
+    },
+    {
+      "id": "modifiers-025",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The barista handed a muffin [[to the customer wrapped in wax paper]].",
+      "choices": [
+        "NO CHANGE",
+        "to the wax-paper-wrapped customer",
+        "wrapped in wax paper to the customer",
+        "to the customer, who was wrapped in wax paper"
+      ],
+      "answer": 2,
+      "explanation": "'Wrapped in wax paper' describes the muffin, so it must sit beside 'muffin,' giving 'a muffin wrapped in wax paper to the customer.' 'To the customer wrapped in wax paper,' 'to the customer, who was wrapped in wax paper,' and 'to the wax-paper-wrapped customer' all wrap the customer instead of the muffin."
+    },
+    {
+      "id": "modifiers-026",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The volunteers [[only collected canned goods]] at the food drive, not clothing.",
+      "choices": [
+        "NO CHANGE",
+        "only canned goods collected",
+        "collected only canned goods",
+        "collected canned goods only"
+      ],
+      "answer": 2,
+      "explanation": "The limiting word 'only' belongs next to 'canned goods' to mean the volunteers collected nothing but canned goods. 'Only collected' wrongly limits the verb, 'collected canned goods only' shifts the limit onto 'at the food drive,' and 'only canned goods collected' is garbled."
+    },
+    {
+      "id": "modifiers-027",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Painted bright yellow last spring, [[the old fence looked unfamiliar to Theo]].",
+      "choices": [
+        "NO CHANGE",
+        "Theo barely recognized the old fence",
+        "recognizing the old fence proved hard",
+        "Theo walked past the old fence"
+      ],
+      "answer": 0,
+      "explanation": "'Painted bright yellow last spring' describes the fence, so 'the old fence' must follow the comma, and the original is correct. The other choices put 'Theo' or the gerund 'recognizing' after the comma, none of which was painted yellow, so each dangles the modifier."
+    },
+    {
+      "id": "modifiers-028",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Determined to finish the marathon, [[the last few miles tested Priscilla's resolve]].",
+      "choices": [
+        "NO CHANGE",
+        "exhaustion set in near the end",
+        "the finish line stayed in sight",
+        "Priscilla pushed through the last few miles"
+      ],
+      "answer": 3,
+      "explanation": "'Determined to finish the marathon' describes the runner, so 'Priscilla' must follow the comma. Miles, a finish line, and exhaustion cannot feel determined, so 'the last few miles tested Priscilla's resolve,' 'the finish line stayed in sight,' and 'exhaustion set in near the end' all dangle the modifier."
+    },
+    {
+      "id": "modifiers-029",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "She returned the novel [[to the librarian with the torn cover]].",
+      "choices": [
+        "NO CHANGE",
+        "with the torn cover to the librarian",
+        "to the torn-cover librarian",
+        "to the librarian, who had a torn cover"
+      ],
+      "answer": 1,
+      "explanation": "'With the torn cover' describes the novel, so it must sit beside 'novel,' giving 'the novel with the torn cover to the librarian.' 'To the librarian with the torn cover,' 'to the librarian, who had a torn cover,' and 'to the torn-cover librarian' all hand the cover to the librarian, a person who has no cover."
+    },
+    {
+      "id": "modifiers-030",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Wired with hundreds of sensors overnight, [[engineers monitored the bridge during the storm]].",
+      "choices": [
+        "NO CHANGE",
+        "the monitoring continued all night",
+        "the bridge sent data to engineers during the storm",
+        "data flowed in throughout the storm"
+      ],
+      "answer": 2,
+      "explanation": "'Wired with hundreds of sensors overnight' must modify the thing wired, the bridge, so 'the bridge' must follow the comma. Engineers, data, and monitoring were not wired with sensors, so 'engineers monitored the bridge,' 'data flowed in,' and 'the monitoring continued' all dangle the modifier."
+    },
+    {
+      "id": "modifiers-031",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Painted by a teenage apprentice in 1620, [[historians now consider the portrait a masterpiece]].",
+      "choices": [
+        "NO CHANGE",
+        "experts have studied it for years",
+        "the portrait is now considered a masterpiece",
+        "the museum guards it carefully"
+      ],
+      "answer": 2,
+      "explanation": "'Painted by a teenage apprentice in 1620' describes the portrait, so 'the portrait' must follow the comma. Historians, experts, and the museum were not painted in 1620, so those choices dangle the modifier."
+    },
+    {
+      "id": "modifiers-032",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "To be considered for the fellowship, [[a research proposal must accompany each application]].",
+      "choices": [
+        "NO CHANGE",
+        "the panel weighs each research proposal",
+        "each applicant must submit a research proposal",
+        "a research proposal is part of the requirements"
+      ],
+      "answer": 2,
+      "explanation": "The infinitive opener 'To be considered for the fellowship' must describe whoever seeks consideration, so 'each applicant' must follow the comma. A proposal and the panel are not seeking the fellowship, so 'a research proposal must accompany each application,' 'a research proposal is part of the requirements,' and 'the panel weighs each research proposal' all dangle the modifier."
+    }
+  ]
+}

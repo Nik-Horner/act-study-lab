@@ -1,0 +1,485 @@
+{
+  "slug": "word-choice",
+  "questions": [
+    {
+      "id": "word-choice-001",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "Please [[make]] attention to the safety instructions before takeoff.",
+      "choices": [
+        "NO CHANGE",
+        "pay",
+        "take",
+        "do"
+      ],
+      "answer": 1,
+      "explanation": "The idiom is 'pay attention.' 'Make,' 'do,' and 'take' do not collocate with 'attention' in standard English."
+    },
+    {
+      "id": "word-choice-002",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "She [[did]] a promise to call her grandmother every Sunday.",
+      "choices": [
+        "NO CHANGE",
+        "made",
+        "said",
+        "took"
+      ],
+      "answer": 1,
+      "explanation": "The idiom is 'made a promise.' 'Did,' 'took,' and 'said' do not pair with 'a promise' in standard English."
+    },
+    {
+      "id": "word-choice-003",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "Last month's eruption was a [[historical]] event that changed how scientists view the region.",
+      "choices": [
+        "NO CHANGE",
+        "historian",
+        "history",
+        "historic"
+      ],
+      "answer": 3,
+      "explanation": "'Historic' means momentous, which fits a region-changing eruption. 'Historical' means belonging to the past, which cannot describe an eruption from only last month, and 'history' and 'historian' are nouns, not adjectives."
+    },
+    {
+      "id": "word-choice-004",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The students were eager to [[take]] part in the science fair.",
+      "choices": [
+        "NO CHANGE",
+        "make",
+        "have",
+        "do"
+      ],
+      "answer": 0,
+      "explanation": "The idiom is 'take part in.' 'Make part,' 'do part,' and 'have part' are not standard English phrasings."
+    },
+    {
+      "id": "word-choice-005",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The detective tried to [[reach]] a conclusion about who had taken the painting.",
+      "choices": [
+        "NO CHANGE",
+        "make",
+        "build",
+        "do"
+      ],
+      "answer": 0,
+      "explanation": "The idiom is 'reach a conclusion' (or 'draw' one). 'Make,' 'do,' and 'build' do not collocate with 'conclusion' in standard English."
+    },
+    {
+      "id": "word-choice-006",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The report was so thorough that it [[ignored]] every possible objection before the critics could raise it.",
+      "choices": [
+        "NO CHANGE",
+        "neglected",
+        "overlooked",
+        "anticipated"
+      ],
+      "answer": 3,
+      "explanation": "'Anticipated' means addressed in advance, which fits handling objections before critics raise them. 'Ignored,' 'neglected,' and 'overlooked' all mean the report failed to deal with them, contradicting 'thorough.'"
+    },
+    {
+      "id": "word-choice-007",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The scientist's findings were [[diverse]] from what the textbook had predicted.",
+      "choices": [
+        "NO CHANGE",
+        "divisive",
+        "different",
+        "deviant"
+      ],
+      "answer": 2,
+      "explanation": "'Different from' is the precise, idiomatic phrase for a mismatch with a prediction. 'Diverse' means varied and does not take 'from' this way, 'deviant' implies abnormality or wrongdoing, and 'divisive' means causing disagreement — none fits."
+    },
+    {
+      "id": "word-choice-008",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "After hours of debate, the committee reached a [[consensus]], with every member endorsing the original proposal exactly as written.",
+      "choices": [
+        "NO CHANGE",
+        "compromise",
+        "confusion",
+        "verdict"
+      ],
+      "answer": 0,
+      "explanation": "'Consensus' means general agreement, matching every member endorsing the unchanged proposal. A 'compromise' would require concessions that altered the proposal, a 'verdict' is a court's formal judgment, and a committee cannot 'reach a confusion.'"
+    },
+    {
+      "id": "word-choice-009",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "Her argument was [[persistent]], winning over even the skeptics in the room.",
+      "choices": [
+        "NO CHANGE",
+        "persuasive",
+        "permissive",
+        "pervasive"
+      ],
+      "answer": 1,
+      "explanation": "'Persuasive' means able to convince, matching 'winning over the skeptics.' 'Persistent' (continuing without stopping), 'permissive' (lenient), and 'pervasive' (widespread) sound similar but none describe an argument that changes minds."
+    },
+    {
+      "id": "word-choice-010",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "At next month's meeting, the school board will [[rise]] the issue of crowded classrooms.",
+      "choices": [
+        "NO CHANGE",
+        "arise",
+        "raise",
+        "arouse"
+      ],
+      "answer": 2,
+      "explanation": "'Raise' is the transitive verb for bringing up a topic: the board will raise the issue. 'Rise' and 'arise' are intransitive and cannot take 'the issue' as an object, and 'arouse' pairs with feelings like interest or suspicion, not with 'issue.'"
+    },
+    {
+      "id": "word-choice-011",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The new tax law will [[infect]] millions of small businesses next year.",
+      "choices": [
+        "NO CHANGE",
+        "affect",
+        "effect",
+        "inflect"
+      ],
+      "answer": 1,
+      "explanation": "The verb 'affect' means to influence, which fits a law influencing businesses. 'Infect' means to spread disease, 'effect' as a verb means to bring about, and 'inflect' refers to changing a word's form, none of which fit a law's impact."
+    },
+    {
+      "id": "word-choice-012",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "Though easy to miss from the street, the museum's new wing was a [[noticeable]] addition that critics ranked among the year's finest buildings.",
+      "choices": [
+        "NO CHANGE",
+        "notable",
+        "notorious",
+        "noteworthy of"
+      ],
+      "answer": 1,
+      "explanation": "'Notable' means worthy of distinction, fitting a building critics rank among the finest. 'Noticeable' means easy to see, contradicting 'easy to miss'; 'notorious' means famous for something bad; and 'noteworthy of' is ungrammatical before 'addition.'"
+    },
+    {
+      "id": "word-choice-013",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The architects had to [[adopt]] the design to fit the narrow, sloping lot.",
+      "choices": [
+        "NO CHANGE",
+        "amend to",
+        "adept",
+        "adapt"
+      ],
+      "answer": 3,
+      "explanation": "'Adapt' means to modify for a new condition, which fits reshaping a design for a tricky lot. 'Adopt' means to take on as one's own, 'adept' is an adjective meaning skilled, and 'amend to' is not idiomatic here."
+    },
+    {
+      "id": "word-choice-014",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The orchestra [[composes]] sixty musicians, from strings to percussion.",
+      "choices": [
+        "NO CHANGE",
+        "comprises",
+        "is comprised by",
+        "is composing"
+      ],
+      "answer": 1,
+      "explanation": "'Comprises' means consists of, correctly linking the whole to its parts. 'Composes' would wrongly mean the orchestra forms a larger whole, 'is comprised by' is nonstandard, and 'is composing' means writing music."
+    },
+    {
+      "id": "word-choice-015",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The senator gave a [[verbose]] reply that answered the entire question in a single sentence.",
+      "choices": [
+        "NO CHANGE",
+        "lengthy",
+        "succinct",
+        "rambling"
+      ],
+      "answer": 2,
+      "explanation": "'Succinct' means briefly and clearly expressed, fitting an answer of one sentence. 'Verbose,' 'lengthy,' and 'rambling' all describe wordy speech, contradicting 'a single sentence.'"
+    },
+    {
+      "id": "word-choice-016",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The engineer devised an [[ingenuous]] solution that cooled the entire building using only seawater.",
+      "choices": [
+        "NO CHANGE",
+        "ingenuity",
+        "ingenuously",
+        "ingenious"
+      ],
+      "answer": 3,
+      "explanation": "'Ingenious' means cleverly inventive, fitting a solution that cools a building with seawater. 'Ingenuous' means naively innocent, 'ingenuously' is an adverb that cannot modify the noun 'solution,' and 'ingenuity' is a noun, not an adjective."
+    },
+    {
+      "id": "word-choice-017",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The hikers had to [[accept]] the weather forecast and turn back before the storm hit.",
+      "choices": [
+        "NO CHANGE",
+        "access",
+        "expect",
+        "except"
+      ],
+      "answer": 0,
+      "explanation": "'Accept' means to receive or agree to, which fits taking the forecast as true. 'Except' means excluding, 'expect' means to anticipate, and 'access' means to reach or enter, none of which fit acting on a forecast."
+    },
+    {
+      "id": "word-choice-018",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The teacher asked the class to remain [[stationery]] while she fetched more pens and paper.",
+      "choices": [
+        "NO CHANGE",
+        "stationary",
+        "stationaries",
+        "stationeries"
+      ],
+      "answer": 1,
+      "explanation": "'Stationary' means not moving, which fits staying still. 'Stationery' is writing paper, and the plural forms are not standard words for this meaning."
+    },
+    {
+      "id": "word-choice-019",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The coach gave the team some [[advise]] about pacing themselves during the marathon.",
+      "choices": [
+        "NO CHANGE",
+        "advising",
+        "advices",
+        "advice"
+      ],
+      "answer": 3,
+      "explanation": "'Advice' is the noun meaning guidance, which is what the coach gave. 'Advise' is a verb, 'advising' is a gerund that does not fit after 'some' here, and 'advices' is not standard since 'advice' is uncountable."
+    },
+    {
+      "id": "word-choice-020",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "Fewer cars on the road meant the air quality [[improvised]] noticeably over the winter.",
+      "choices": [
+        "NO CHANGE",
+        "improved",
+        "imported",
+        "implored"
+      ],
+      "answer": 1,
+      "explanation": "'Improved' means got better, which fits cleaner air. 'Improvised' means made up on the spot, 'imported' means brought in from abroad, and 'implored' means begged, none of which describe air quality."
+    },
+    {
+      "id": "word-choice-021",
+      "category": "KLA",
+      "difficulty": "easy",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The librarian asked us to [[lessen]] our voices so other readers could concentrate.",
+      "choices": [
+        "NO CHANGE",
+        "lower",
+        "loosen",
+        "diminish"
+      ],
+      "answer": 1,
+      "explanation": "'Lower our voices' is the fixed idiom for speaking more quietly. 'Lessen' and 'diminish' mean reduce in amount but do not collocate with 'voices,' and 'loosen' applies to something tight."
+    },
+    {
+      "id": "word-choice-022",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The novel's vague title was only an [[allusion]] to a poem that few readers would recognize.",
+      "choices": [
+        "NO CHANGE",
+        "elusion",
+        "illusion",
+        "delusion"
+      ],
+      "answer": 0,
+      "explanation": "'Allusion' is an indirect reference, which fits a title that points to a poem. 'Illusion' is a false impression, 'elusion' means an escape, and 'delusion' is a false belief, none of which involve a literary reference."
+    },
+    {
+      "id": "word-choice-023",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The defendant's smug grin seemed to [[flaunt]] the authority of the very court that was deciding his fate.",
+      "choices": [
+        "NO CHANGE",
+        "flout",
+        "flounder",
+        "flounce"
+      ],
+      "answer": 1,
+      "explanation": "'Flout' means to openly disregard or show contempt for, which fits defying the court. 'Flaunt' means to show off, 'flounder' means to struggle clumsily, and 'flounce' means to move in an exaggerated way, none of which mean defiance of authority."
+    },
+    {
+      "id": "word-choice-024",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "From the muddy footprints by the window, the detective could [[imply]] that the thief had climbed in from the garden.",
+      "choices": [
+        "NO CHANGE",
+        "allege",
+        "infer",
+        "insinuate"
+      ],
+      "answer": 2,
+      "explanation": "'Infer' means to draw a conclusion from evidence, which is what the detective does with the footprints. 'Imply' and 'insinuate' mean to suggest something to others, and 'allege' means to assert without proof."
+    },
+    {
+      "id": "word-choice-025",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The school's [[principal]] reason for canceling the trip was the threat of severe weather.",
+      "choices": [
+        "NO CHANGE",
+        "principle",
+        "principality",
+        "principled"
+      ],
+      "answer": 0,
+      "explanation": "'Principal' as an adjective means main or primary, which fits the chief reason. 'Principle' is a noun meaning a rule or belief, 'principled' means having strong morals, and 'principality' is a territory ruled by a prince."
+    },
+    {
+      "id": "word-choice-026",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "A good juror must be [[uninterested]], judging the facts without favoring either side.",
+      "choices": [
+        "NO CHANGE",
+        "unconcerned",
+        "indifferent",
+        "disinterested"
+      ],
+      "answer": 3,
+      "explanation": "'Disinterested' means impartial and unbiased, which fits a juror weighing facts fairly. 'Uninterested,' 'indifferent,' and 'unconcerned' all mean lacking interest or caring, which would disqualify rather than qualify a juror."
+    },
+    {
+      "id": "word-choice-027",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "Before the guest speaker could [[precede]], the moderator quieted the restless crowd.",
+      "choices": [
+        "NO CHANGE",
+        "concede",
+        "recede",
+        "proceed"
+      ],
+      "answer": 3,
+      "explanation": "'Proceed' means to go forward or continue, which fits the speaker resuming. 'Precede' means to come before, 'recede' means to move back, and 'concede' means to admit defeat."
+    },
+    {
+      "id": "word-choice-028",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The mayor warned that a flood was [[eminent]] and ordered the riverside streets evacuated at once.",
+      "choices": [
+        "NO CHANGE",
+        "imminence",
+        "immanent",
+        "imminent"
+      ],
+      "answer": 3,
+      "explanation": "'Imminent' means about to happen, which fits an urgent evacuation order. 'Eminent' means distinguished, 'immanent' means inherent or indwelling, and 'imminence' is a noun that cannot serve as this adjective."
+    },
+    {
+      "id": "word-choice-029",
+      "category": "KLA",
+      "difficulty": "medium",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "Border agents seized the [[illicit]] shipment of untaxed cigarettes hidden in the truck.",
+      "choices": [
+        "NO CHANGE",
+        "explicit",
+        "implicit",
+        "elicit"
+      ],
+      "answer": 0,
+      "explanation": "'Illicit' means illegal or forbidden, which fits smuggled goods. 'Elicit' is a verb meaning to draw out a response, 'explicit' means stated plainly, and 'implicit' means implied, none of which describe contraband."
+    },
+    {
+      "id": "word-choice-030",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The director was [[loathe]] to cut the film's final scene, even though the studio insisted.",
+      "choices": [
+        "NO CHANGE",
+        "loathing",
+        "loath",
+        "loathsome"
+      ],
+      "answer": 2,
+      "explanation": "'Loath' is an adjective meaning reluctant, completing 'was loath to cut.' 'Loathe' is a verb meaning to despise, 'loathing' is a noun for intense hatred, and 'loathsome' means disgusting, which wrongly describes the director."
+    },
+    {
+      "id": "word-choice-031",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "Years of drought had left the soil so [[barren]] that not even hardy weeds would grow.",
+      "choices": [
+        "NO CHANGE",
+        "barer",
+        "bereft",
+        "baron"
+      ],
+      "answer": 0,
+      "explanation": "'Barren' means unable to produce growth, which fits soil where nothing will grow. 'Barer' is a comparative meaning more exposed, 'baron' is a nobleman, and 'bereft' means deprived by loss and is normally followed by 'of.'"
+    },
+    {
+      "id": "word-choice-032",
+      "category": "KLA",
+      "difficulty": "hard",
+      "questionText": "Which choice is the most precise and idiomatic in context?",
+      "stem": "The witness gave a [[credulous]] account, and the jurors found every detail easy to believe.",
+      "choices": [
+        "NO CHANGE",
+        "credible",
+        "incredulous",
+        "credence"
+      ],
+      "answer": 1,
+      "explanation": "'Credible' means believable, which fits an account the jurors believed. 'Credulous' means too ready to believe others, 'credence' is a noun meaning acceptance and cannot modify 'account,' and 'incredulous' means unwilling to believe."
+    }
+  ]
+}

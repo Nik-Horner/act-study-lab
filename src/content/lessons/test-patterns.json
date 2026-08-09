@@ -1,0 +1,116 @@
+{
+  "slug": "test-patterns",
+  "title": "Test-Day Patterns",
+  "intro": "These five patterns are the gap between a 31 and a 36, and none of them are new grammar. Each one is a habit: test the cut, trust a clean original, read the goal as a contract, park the modifier beside its target, and know six fixed idioms cold. Drill the bank until each pattern triggers the right move on sight.",
+  "sections": [
+    {
+      "heading": "The cut test",
+      "body": [
+        "Several of your misses share one shape: the shortest answer, often 'DELETE the underlined portion,' was right, and you talked yourself out of it. When DELETE appears, test it first. Read the sentence with the underlined words gone. If what remains is a complete sentence that says the same thing, the cut wins.",
+        "Two patterns cover most of these. First, a broken clause becomes a clean participial phrase: 'A banner was strung across Main Street announces the festival' has two fighting verbs, but cut 'was' and 'strung across Main Street' simply describes the banner. Second, a comma splice becomes an appositive: 'He pointed to an oak, it was the oldest tree in the county' splices two sentences, but cut 'it was' and 'the oldest tree in the county' renames the oak.",
+        "The same cut fixes tone. When a formal sentence trails off into a chatty aside ('which was honestly pretty wild'), the right answer usually ends the sentence at the last formal word. But DELETE is never automatic: if the cut removes the only main verb or strands the sentence without a subject, you just built a fragment. Read what survives before you commit."
+      ],
+      "examples": [
+        { "text": "A banner strung across Main Street announces the harvest festival. (after cutting 'was')", "label": "the broken clause becomes a participial phrase", "good": true },
+        { "text": "He pointed to an oak, the oldest tree in the county. (after cutting 'it was')", "label": "the comma splice becomes an appositive", "good": true },
+        { "text": "The ledger, kept in the captain's own hand, the cargo of every voyage. (after cutting 'lists')", "label": "this cut removed the only main verb and left a fragment", "good": false }
+      ],
+      "tip": "Read the sentence with the underlined words gone. Complete and cleaner: cut. Missing a subject or verb: trap."
+    },
+    {
+      "heading": "Don't fear NO CHANGE",
+      "body": [
+        "NO CHANGE is correct roughly one time in four, and on your practice test you changed originals that were already right. The fix is a discipline, not a feeling: before you replace the underlined portion, name its error out loud. Comma splice, wrong verb form, broken idiom, false contrast. If you cannot name an error, keep the original.",
+        "Watch one trap in particular: a short conjunction like 'but' or 'so' joining two clauses after a comma. That construction is already correct. The heavier replacements ('nevertheless,' 'regardless,' 'however,') feel more impressive, but a conjunctive adverb set off by commas cannot join two independent clauses; it creates a splice. Fancier is not more correct."
+      ],
+      "examples": [
+        { "text": "The trail is short, but the climb is steep.", "label": "comma + 'but' joins the clauses correctly. Keep it.", "good": true },
+        { "text": "The trail is short, nevertheless, the climb is steep.", "label": "a conjunctive adverb between commas creates a comma splice", "good": false }
+      ],
+      "tip": "No nameable error means NO CHANGE. 'It sounds plain' is not an error."
+    },
+    {
+      "heading": "Read the goal like a contract",
+      "body": [
+        "Which-choice questions state their requirements in the question itself: 'most clearly identifies WHICH instruments the students built AND WHAT they built them from.' That is a contract with two clauses. The right answer satisfies every clause. The test's favorite wrong answer satisfies exactly one and reads beautifully.",
+        "Work it mechanically. Count the requirements before you read a single choice. Then grade each choice against each requirement, like checking boxes. A choice that is vivid, true, and on topic still fails if it leaves one box unchecked. Your misses in this family all came from accepting a one-box answer that sounded specific."
+      ],
+      "examples": [
+        { "text": "Goal: name which trees were planted and where. 'sugar maples and river birches along the south fence line'", "label": "names the trees and the place. Both boxes checked.", "good": true },
+        { "text": "Goal: name which trees were planted and where. 'sugar maples and river birches that arrived as bare-root saplings'", "label": "names the trees, skips the place. One box. Trap.", "good": false }
+      ],
+      "tip": "Count the requirements in the question. The right answer proves every one; the tempting wrong answer proves one."
+    },
+    {
+      "heading": "Point the modifier",
+      "body": [
+        "Placement questions hand you the target: 'the writer wants to make clear that X describes Y, not Z.' The job is mechanical. Put the word next to Y. Readers attach a modifier to the nearest thing it can describe, so distance decides meaning.",
+        "Test each offered slot by reading the entire sentence with the word in that position, then asking what the word touches. The positional choices come in sentence order; walk them in order and reject every slot where the word lands beside Z or splits a phrase unnaturally. With limiters like 'only,' 'almost,' and 'nearly,' be strict: 'only offers flu shots on Fridays' and 'offers flu shots only on Fridays' make different claims."
+      ],
+      "examples": [
+        { "text": "She packed sandwiches wrapped in foil for the hikers.", "label": "'wrapped in foil' sits beside 'sandwiches', the thing actually wrapped", "good": true },
+        { "text": "She packed sandwiches for the hikers wrapped in foil.", "label": "now the foil wraps the hikers", "good": false }
+      ],
+      "tip": "Read the full sentence once per slot. The right slot puts the word against its target; every other slot points it at something else."
+    },
+    {
+      "heading": "The idiom hit-list",
+      "body": [
+        "Some verb-preposition and adjective-preposition pairs are fixed. No comma rule or logic test will rescue you; you either know the pair or you do not. Six to drill until they sound inevitable: make for ('thick walls make for a quiet room'), insight into, capable of, comply with, preoccupied with, different from.",
+        "When a lone preposition is underlined, find the word that owns it, usually the verb or adjective just before it, and recall that word's fixed partner. Distractors offer prepositions that work fine in other phrases ('on,' 'to,' 'about') but never with this owner."
+      ],
+      "examples": [
+        { "text": "Her interviews give insight into the engineers' decisions.", "label": "'insight' takes 'into'", "good": true },
+        { "text": "The drone is capable to fly in high winds.", "label": "'capable' takes 'of' + -ing: 'capable of flying'", "good": false }
+      ],
+      "tip": "Six pairs: make for, insight into, capable of, comply with, preoccupied with, different from. Say them until each sounds like one word."
+    }
+  ],
+  "check": [
+    {
+      "id": "test-patterns-check-001",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence grammatically complete and correct?",
+      "stem": "A telescope [[was]] mounted on the observatory's roof tracks the brightness of a single variable star.",
+      "choices": [
+        "NO CHANGE",
+        "is",
+        "had been",
+        "DELETE the underlined portion."
+      ],
+      "answer": 3,
+      "explanation": "Deleting the verb leaves 'A telescope mounted on the observatory's roof tracks the brightness of a single variable star', where 'mounted' is a participial phrase describing the telescope. 'was', 'is', and 'had been' each give the sentence two competing main verbs ('was mounted ... tracks')."
+    },
+    {
+      "id": "test-patterns-check-002",
+      "category": "POW",
+      "difficulty": "hard",
+      "questionText": "Which choice most clearly identifies which dishes the seniors cooked and who taught them the recipes?",
+      "stem": "At the heritage fair, the seniors cooked [[several traditional dishes they had learned to make]].",
+      "choices": [
+        "dishes that drew one of the longest lines at the fair",
+        "tamales and pozole from recipes their grandmothers taught them",
+        "tamales and pozole that sold out within the first hour",
+        "food far more authentic than the usual fair offerings"
+      ],
+      "answer": 1,
+      "explanation": "'tamales and pozole from recipes their grandmothers taught them' names the dishes and the teachers, meeting both requirements. 'tamales and pozole that sold out within the first hour' names only the dishes, and the other two choices name neither."
+    },
+    {
+      "id": "test-patterns-check-003",
+      "category": "POW",
+      "difficulty": "medium",
+      "questionText": "Which choice provides the most logical and grammatically correct connection between the two parts of the sentence?",
+      "stem": "The greenhouse lost power overnight, [[but]] every seedling survived the cold.",
+      "choices": [
+        "NO CHANGE",
+        "nonetheless,",
+        "as a result,",
+        "DELETE the underlined portion."
+      ],
+      "answer": 0,
+      "explanation": "Comma plus 'but' joins the clauses correctly and signals the surprise that the seedlings survived, so the original stands. 'nonetheless,' creates a comma splice, 'as a result,' splices the clauses and claims the power loss helped the seedlings, and deleting the word leaves a bare comma splice."
+    }
+  ]
+}

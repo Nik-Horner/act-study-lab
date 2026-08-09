@@ -1,0 +1,86 @@
+{
+  "slug": "redundancy",
+  "title": "Redundancy, Wordiness & Irrelevance",
+  "intro": "Redundancy, wordiness, and irrelevance questions ask you to cut words that repeat an idea, pad a sentence, or wander off topic. The ACT tests this on every English section, usually three to six times. One core idea governs them all: the shortest grammatical choice that keeps the full meaning wins.",
+  "sections": [
+    {
+      "heading": "Spotting redundancy",
+      "body": [
+        "Redundancy means saying the same idea twice with different words. 'A.M. in the morning' is redundant because 'A.M.' already means morning. 'Past history,' 'free gift,' 'unexpected surprise,' and 'final outcome' all repeat themselves.",
+        "The repeat is not always side by side. The ACT hides it across a few words or in a prefix: 'returned back,' 'combined together,' 'each and every,' 'first began,' 'reconvene again.' If removing a word changes nothing about the meaning, that word is redundant and should go."
+      ],
+      "examples": [
+        { "text": "At 7 A.M. the runners gathered at the start.", "label": "A.M. already means morning", "good": true },
+        { "text": "At 7 A.M. in the morning the runners gathered at the start.", "label": "'in the morning' repeats A.M.", "good": false }
+      ],
+      "tip": "Ask: does another word in the sentence already say this? If yes, the repeat is redundant. Check prefixes too: re- means again, pre- means before."
+    },
+    {
+      "heading": "Cutting wordiness",
+      "body": [
+        "Wordiness means using many words where a few would do. 'Due to the fact that' is just 'because.' 'In order to' is usually just 'to.' 'At this point in time' is 'now.' 'Has the ability to' is 'can.'",
+        "The ACT loves to offer a long phrase next to a one-word version that means exactly the same thing. Pick the short one. A correct answer never adds words that do no work. If the meaning survives the cut, make the cut."
+      ],
+      "examples": [
+        { "text": "She left early because of the storm.", "label": "'because of' is tight", "good": true },
+        { "text": "She left early due to the fact that there was a storm.", "label": "padded with empty phrasing", "good": false }
+      ],
+      "tip": "Any choice containing 'the fact that' is almost never the answer. 'Due to the fact that,' 'in order to,' and 'at this point in time' are red flags for a shorter choice."
+    },
+    {
+      "heading": "When DELETE is an option",
+      "body": [
+        "Some questions offer 'OMIT the underlined portion' or 'DELETE the underlined portion.' If the underlined words add nothing the sentence needs, deleting them is correct. The ACT will not delete words that carry necessary meaning, but it rewards you for cutting filler.",
+        "Test the deletion first, before weighing the other choices. Read the sentence without the underlined part. If it still says everything it needs to and stays grammatical, delete is the answer. If the cut loses information the passage needs, pick the choice that keeps that information in the fewest words."
+      ],
+      "examples": [
+        { "text": "The museum, which is a building, opened in 1920.", "label": "'which is a building' adds nothing", "good": false },
+        { "text": "The museum opened in 1920.", "label": "deleting the filler is cleaner", "good": true }
+      ],
+      "tip": "When OMIT or DELETE appears, test it first. It is the shortest choice, so it wins unless cutting it breaks the grammar or loses needed information."
+    },
+    {
+      "heading": "Cutting irrelevant detail",
+      "body": [
+        "Irrelevance is information that does not belong in the paragraph, even if it is true and interesting. A paragraph about a chef's training should not pause to tell you the color of the kitchen tiles.",
+        "When a choice drags in an off-topic fact, it is wrong no matter how well written. Ask what the paragraph is about, then keep only what serves that point. The shortest choice that stays on topic usually wins."
+      ],
+      "examples": [
+        { "text": "The chef trained in Lyon for six years before opening her own restaurant.", "label": "every detail serves the topic", "good": true },
+        { "text": "The chef trained in Lyon, a city with many old bridges, for six years.", "label": "the bridges are off topic", "good": false }
+      ],
+      "tip": "If a detail does not push the paragraph's main point forward, it does not belong. Interesting is not the same as relevant."
+    },
+    {
+      "heading": "How to spot these questions",
+      "body": [
+        "The answer choices give these questions away. Watch for: four choices that all mean roughly the same thing but vary in length; one choice much shorter than the rest; 'OMIT the underlined portion' or 'DELETE the underlined portion' as the last choice; or choices where a word repeats an idea already in the sentence.",
+        "Once you recognize the pattern, work in this order. First, if OMIT or DELETE is offered, read the sentence without the underlined words and pick it if nothing breaks. Second, find the shortest remaining choice and test it in the sentence. Third, move up in length only if the shorter choice loses meaning or breaks the grammar. You are hunting for a reason NOT to pick the short answer; if you cannot name one, pick it."
+      ],
+      "tip": "When all four choices mean the same thing, the answer is almost never NO CHANGE on a long underline. Start short and work up."
+    }
+  ],
+  "check": [
+    {
+      "stem": "The committee will [[reconvene again]] next week to finish the budget review.",
+      "questionText": "Which choice makes the sentence most concise without losing meaning?",
+      "choices": ["NO CHANGE", "reconvene once more", "reconvene", "meet again to reconvene"],
+      "answer": 2,
+      "explanation": "The prefix re- in 'reconvene' already means again, so 'reconvene' alone says everything the sentence needs. 'Reconvene again,' 'reconvene once more,' and 'meet again to reconvene' each repeat the idea of meeting another time."
+    },
+    {
+      "stem": "We canceled the picnic [[due to the fact that]] it was raining.",
+      "questionText": "Which choice is correct?",
+      "choices": ["NO CHANGE", "because", "on account of the fact that", "owing to the fact that"],
+      "answer": 1,
+      "explanation": "'Because' delivers the full meaning in one word: 'We canceled the picnic because it was raining.' 'Due to the fact that,' 'on account of the fact that,' and 'owing to the fact that' all bury that one word under empty padding."
+    },
+    {
+      "stem": "The astronomer studied distant galaxies[[, and she also enjoyed gardening,]] for over thirty years.",
+      "questionText": "Which choice best maintains the focus of the sentence?",
+      "choices": ["NO CHANGE", ", along with her gardening hobby,", ", though gardening was her hobby,", "OMIT the underlined portion"],
+      "answer": 3,
+      "explanation": "The sentence is about the astronomer's research, so her gardening is off topic no matter how it is phrased. Omitting the underlined portion leaves a clean, complete sentence: 'The astronomer studied distant galaxies for over thirty years.' The choices mentioning 'gardening' all keep the irrelevant detail."
+    }
+  ]
+}

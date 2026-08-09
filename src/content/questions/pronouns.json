@@ -1,0 +1,485 @@
+{
+  "slug": "pronouns",
+  "questions": [
+    {
+      "id": "pronouns-001",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "My cousin and [[me]] painted the fence on Saturday morning.",
+      "choices": [
+        "NO CHANGE",
+        "myself",
+        "I",
+        "her"
+      ],
+      "answer": 2,
+      "explanation": "The pair is the subject of 'painted,' so the subjective 'I' is correct (drop 'My cousin and' and you hear 'I painted'). 'Me' and 'her' are objective, and 'myself' has no antecedent to reflect back on."
+    },
+    {
+      "id": "pronouns-002",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The coach handed the trophy to Devon and [[I]] after the final whistle.",
+      "choices": [
+        "NO CHANGE",
+        "mine",
+        "myself",
+        "me"
+      ],
+      "answer": 3,
+      "explanation": "As the object of the preposition 'to,' the objective 'me' is correct (drop 'Devon and' and you hear 'to me'). 'I' is subjective, 'myself' lacks an antecedent, and 'mine' is possessive."
+    },
+    {
+      "id": "pronouns-003",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Between you and [[I]], the bakery is closing at the end of the month.",
+      "choices": [
+        "NO CHANGE",
+        "myself",
+        "we",
+        "me"
+      ],
+      "answer": 3,
+      "explanation": "'Between' is a preposition, so its objects must be objective: 'between you and me.' 'I' and 'we' are subjective forms, and 'myself' has no antecedent here."
+    },
+    {
+      "id": "pronouns-004",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "[[Him and his sister]] organized the entire charity drive this year.",
+      "choices": [
+        "NO CHANGE",
+        "Him and her",
+        "He and his sister",
+        "He and her"
+      ],
+      "answer": 2,
+      "explanation": "The pair is the subject of 'organized,' so the personal pronoun must be subjective: 'He and his sister' (you would say 'He organized,' not 'Him organized'). The other options keep an objective pronoun in subject position."
+    },
+    {
+      "id": "pronouns-005",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The librarian reserved the study room for [[us]] students all afternoon.",
+      "choices": [
+        "NO CHANGE",
+        "we",
+        "they",
+        "ourselves"
+      ],
+      "answer": 0,
+      "explanation": "The pronoun is the object of 'for,' so the objective 'us students' is correct (drop 'students' and you hear 'for us'), making NO CHANGE right. 'We' and 'they' are subjective forms that cannot follow a preposition, and 'ourselves' needs an antecedent to reflect back on."
+    },
+    {
+      "id": "pronouns-006",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The director chose Priya and [[I]] to lead the opening scene.",
+      "choices": [
+        "NO CHANGE",
+        "we",
+        "myself",
+        "me"
+      ],
+      "answer": 3,
+      "explanation": "The pronoun is part of the direct object of 'chose,' so it must be objective: 'chose Priya and me' (drop 'Priya and' and you hear 'chose me'). 'I' and 'we' are subjective, and 'myself' has no antecedent."
+    },
+    {
+      "id": "pronouns-007",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Talia is the editor [[who]] the publisher hired for the new series.",
+      "choices": [
+        "NO CHANGE",
+        "which",
+        "whom",
+        "that whom"
+      ],
+      "answer": 2,
+      "explanation": "The publisher hired her, so the pronoun is the object of 'hired': use 'whom.' 'Who' is subjective, 'which' refers to things rather than people, and 'that whom' is redundant."
+    },
+    {
+      "id": "pronouns-008",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The biologist [[whom]] discovered the cave fish will lecture on Friday.",
+      "choices": [
+        "NO CHANGE",
+        "which",
+        "whom she",
+        "who"
+      ],
+      "answer": 3,
+      "explanation": "The pronoun is the subject of 'discovered' (he or she discovered the fish), so the subjective 'who' is correct. 'Whom' is objective, 'which' is for things, and 'whom she' creates a doubled subject."
+    },
+    {
+      "id": "pronouns-009",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Each of the museum's galleries had [[their]] own carefully chosen lighting.",
+      "choices": [
+        "NO CHANGE",
+        "its",
+        "they're",
+        "it's"
+      ],
+      "answer": 1,
+      "explanation": "The subject 'Each' is singular, so the pronoun must be singular: 'its.' 'Their' is plural and disagrees with 'each,' 'it's' means 'it is,' and 'they're' means 'they are.'"
+    },
+    {
+      "id": "pronouns-010",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The jury reached [[their]] verdict after three days of deliberation.",
+      "choices": [
+        "NO CHANGE",
+        "its",
+        "there",
+        "it's"
+      ],
+      "answer": 1,
+      "explanation": "'Jury' is a singular collective noun acting as one unit, so the singular possessive 'its' agrees. 'Their' is plural, 'it's' means 'it is,' and 'there' is not possessive."
+    },
+    {
+      "id": "pronouns-011",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Every cabin at the summer camp has [[their]] own woodstove and a screened porch.",
+      "choices": [
+        "NO CHANGE",
+        "its",
+        "it's",
+        "there"
+      ],
+      "answer": 1,
+      "explanation": "'Every cabin' is singular, so the pronoun must be singular: 'its.' 'Their' is plural and disagrees with 'every,' 'it's' means 'it is,' and 'there' is not a possessive."
+    },
+    {
+      "id": "pronouns-012",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Rosa's old kettle whistled sharply once [[it]] finally came to a boil.",
+      "choices": [
+        "NO CHANGE",
+        "it's",
+        "they",
+        "them"
+      ],
+      "answer": 0,
+      "explanation": "Singular 'it' refers to 'kettle,' the only thing in the sentence, so NO CHANGE is correct. 'They' and 'them' have no plural antecedent ('them' is also objective), and 'it's' means 'it is.'"
+    },
+    {
+      "id": "pronouns-013",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The mural took the artists three months, and the city celebrated [[it]] with a festival.",
+      "choices": [
+        "NO CHANGE",
+        "it's",
+        "they",
+        "their"
+      ],
+      "answer": 0,
+      "explanation": "The singular 'it' refers to 'the mural' and serves as the object of 'celebrated,' so NO CHANGE is correct. 'They' is subjective and cannot be an object, 'it's' means 'it is,' and 'their' is a possessive with no noun to modify."
+    },
+    {
+      "id": "pronouns-014",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Award the scholarship to [[whoever]] writes the strongest application.",
+      "choices": [
+        "NO CHANGE",
+        "whomever",
+        "whoever they",
+        "whom"
+      ],
+      "answer": 0,
+      "explanation": "The pronoun is the subject of 'writes,' so 'whoever' is correct even though the whole clause is the object of 'to.' 'Whomever' and 'whom' are objective, and 'whoever they' adds a needless second subject."
+    },
+    {
+      "id": "pronouns-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The two finalists, Jordan and [[me]], will face off in Saturday's spelling bee.",
+      "choices": [
+        "NO CHANGE",
+        "I",
+        "him",
+        "myself"
+      ],
+      "answer": 1,
+      "explanation": "The appositive renames the subject 'The two finalists,' so it takes the subjective case: 'Jordan and I.' 'Me' and 'him' are objective forms, and 'myself' has no antecedent to reflect back on."
+    },
+    {
+      "id": "pronouns-016",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "After the long season ended, Andre quietly thanked the coach [[who]] had believed in him.",
+      "choices": [
+        "NO CHANGE",
+        "which",
+        "that whom",
+        "whom"
+      ],
+      "answer": 0,
+      "explanation": "The pronoun is the subject of 'had believed,' so the subjective 'who' is correct, making NO CHANGE right. 'Whom' is objective, 'which' refers to things rather than people, and 'that whom' is redundant."
+    },
+    {
+      "id": "pronouns-017",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The neighbors invited my brother and [[I]] to the block party.",
+      "choices": [
+        "NO CHANGE",
+        "we",
+        "me",
+        "myself"
+      ],
+      "answer": 2,
+      "explanation": "The pronoun is part of the direct object of 'invited,' so it must be objective: drop 'my brother and' and you hear 'invited me.' 'I' and 'we' are subjective, and 'myself' has no antecedent to reflect back on."
+    },
+    {
+      "id": "pronouns-018",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The conductor and [[her]] rehearsed the duet until the concert hall closed.",
+      "choices": [
+        "NO CHANGE",
+        "hers",
+        "herself",
+        "she"
+      ],
+      "answer": 3,
+      "explanation": "The pronoun is part of the compound subject of 'rehearsed,' so the subjective 'she' is correct (drop 'The conductor and' and you hear 'she rehearsed'). 'Her' is objective, 'hers' is possessive, and 'herself' has no antecedent to reflect back on."
+    },
+    {
+      "id": "pronouns-019",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "[[Us]] volunteers arrived before sunrise to set up the festival booths.",
+      "choices": [
+        "NO CHANGE",
+        "We",
+        "Ours",
+        "Them"
+      ],
+      "answer": 1,
+      "explanation": "The pronoun is the subject of 'arrived,' so the subjective 'we volunteers' is correct (drop 'volunteers' and you hear 'we arrived'). 'Us' and 'them' are objective forms, and 'ours' is a possessive that cannot modify the noun 'volunteers.'"
+    },
+    {
+      "id": "pronouns-020",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The principal asked [[she and her brother]] to speak at the eighth-grade assembly.",
+      "choices": [
+        "NO CHANGE",
+        "her and her brother",
+        "she and him",
+        "her and he"
+      ],
+      "answer": 1,
+      "explanation": "The pair is the direct object of 'asked,' so the personal pronoun must be objective: 'her and her brother' (you would say 'asked her,' not 'asked she'). The other options each leave a subjective pronoun in object position."
+    },
+    {
+      "id": "pronouns-021",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Working past midnight, [[me and my partner]] finally finished the model bridge for the science fair.",
+      "choices": [
+        "NO CHANGE",
+        "me and him",
+        "my partner and me",
+        "my partner and I"
+      ],
+      "answer": 3,
+      "explanation": "The pair is the subject of 'finished,' so the first-person pronoun must be subjective: 'my partner and I' (you would say 'I finished,' not 'me finished'). 'My partner and me' and 'me and him' keep the objective 'me' in subject position, as does the original."
+    },
+    {
+      "id": "pronouns-022",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The candidate for [[who]] most residents voted promised to repave the flooded streets.",
+      "choices": [
+        "NO CHANGE",
+        "whom",
+        "whose",
+        "which"
+      ],
+      "answer": 1,
+      "explanation": "The pronoun is the object of the preposition 'for' (the residents voted for her), so 'whom' is correct. 'Who' is subjective, 'whose' is possessive, and 'which' refers to things rather than people."
+    },
+    {
+      "id": "pronouns-023",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The festival organizers asked [[whom]] could direct traffic near the north gate.",
+      "choices": [
+        "NO CHANGE",
+        "whose",
+        "which",
+        "who"
+      ],
+      "answer": 3,
+      "explanation": "The pronoun is the subject of 'could direct,' so the subjective 'who' is correct even though the clause follows 'asked.' 'Whom' is objective, 'whose' is possessive, and 'which' refers to things rather than people."
+    },
+    {
+      "id": "pronouns-024",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Neither of the two bridges had [[their]] cables inspected before the storm hit.",
+      "choices": [
+        "NO CHANGE",
+        "there",
+        "it's",
+        "its"
+      ],
+      "answer": 3,
+      "explanation": "The subject 'Neither' is singular, so the pronoun must be singular: 'its.' 'Their' is plural and disagrees with 'neither,' 'it's' means 'it is,' and 'there' is not a possessive."
+    },
+    {
+      "id": "pronouns-025",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The committee announced [[their]] decision at the end of the long meeting.",
+      "choices": [
+        "NO CHANGE",
+        "their's",
+        "it's",
+        "its"
+      ],
+      "answer": 3,
+      "explanation": "'Committee' is a singular collective noun acting as one unit, so the singular possessive 'its' agrees. 'Their' is plural, 'it's' means 'it is,' and 'their's' is not a word."
+    },
+    {
+      "id": "pronouns-026",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Every chapter of the textbook opened with [[their]] own short summary.",
+      "choices": [
+        "NO CHANGE",
+        "its",
+        "their's",
+        "it's"
+      ],
+      "answer": 1,
+      "explanation": "'Every chapter' is singular, so the pronoun must be singular: 'its.' 'Their' is plural and disagrees with 'every,' 'it's' means 'it is,' and 'their's' is not a word."
+    },
+    {
+      "id": "pronouns-027",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice most clearly indicates what grew hot to the touch?",
+      "stem": "After Maya set the lamp on the radiator, [[it]] grew uncomfortably hot to the touch.",
+      "choices": [
+        "NO CHANGE",
+        "the radiator",
+        "them",
+        "it's"
+      ],
+      "answer": 1,
+      "explanation": "'It' could mean the lamp or the radiator, so naming 'the radiator' fixes the unclear reference. 'Them' is objective and cannot be the subject of 'grew,' and 'it's' means 'it is.'"
+    },
+    {
+      "id": "pronouns-028",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Although the engine rattled at first, the mechanic repaired [[them]] in under an hour.",
+      "choices": [
+        "NO CHANGE",
+        "its",
+        "it",
+        "they"
+      ],
+      "answer": 2,
+      "explanation": "The singular 'it' refers to 'the engine,' the only thing being repaired, and serves as the object of 'repaired.' 'Them' and 'they' are plural with no plural antecedent ('they' is also subjective), and 'its' is a possessive with no noun to modify."
+    },
+    {
+      "id": "pronouns-029",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "One of the old clocks had lost [[their]] minute hand sometime over the winter.",
+      "choices": [
+        "NO CHANGE",
+        "they're",
+        "it's",
+        "its"
+      ],
+      "answer": 3,
+      "explanation": "The subject 'One' is singular, so the pronoun must be singular: 'its.' 'Their' is plural and disagrees with 'one,' 'it's' means 'it is,' and 'they're' means 'they are.'"
+    },
+    {
+      "id": "pronouns-030",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The director will cast [[whoever]] the audition panel recommends for the lead role.",
+      "choices": [
+        "NO CHANGE",
+        "whose",
+        "whomever",
+        "who"
+      ],
+      "answer": 2,
+      "explanation": "The panel recommends him or her, so the pronoun is the object of 'recommends': use 'whomever.' 'Whoever' and 'who' are subjective forms, and 'whose' is possessive."
+    },
+    {
+      "id": "pronouns-031",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Ms. Park congratulated the student [[whom]] she believed would win the regional title.",
+      "choices": [
+        "NO CHANGE",
+        "who",
+        "which",
+        "who's"
+      ],
+      "answer": 1,
+      "explanation": "'She believed' is parenthetical, so the pronoun is the subject of 'would win' and must be subjective: 'who.' 'Whom' is objective, 'which' refers to things rather than people, and 'who's' means 'who is.'"
+    },
+    {
+      "id": "pronouns-032",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice most clearly indicates who broke the school record?",
+      "stem": "When Lena trained Priya for the relay, [[she]] broke the school record that spring.",
+      "choices": [
+        "NO CHANGE",
+        "this runner",
+        "her",
+        "Priya"
+      ],
+      "answer": 3,
+      "explanation": "'She' could mean Lena or Priya, so the name 'Priya' removes the ambiguity. 'Her' is objective and cannot be the subject of 'broke,' and 'this runner' stays unclear about which woman is meant."
+    }
+  ]
+}

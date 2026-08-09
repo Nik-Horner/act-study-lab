@@ -1,0 +1,94 @@
+{
+  "slug": "sentence-structure",
+  "title": "Sentence Structure",
+  "intro": "Sentence structure questions — fragments, run-ons, and comma splices — show up on every ACT English test, more often than any other grammar topic. Every one of them comes down to a single skill: label each clause as independent or dependent, then check the connection against the five legal ways to join clauses. Build that label-and-check habit and most punctuation questions solve themselves.",
+  "sections": [
+    {
+      "heading": "Clauses and phrases",
+      "body": [
+        "A clause has both a subject and a verb. An independent clause expresses a complete thought and can stand alone as a sentence. The fastest test: read it aloud and see whether you can stop talking at the end. If stopping feels natural, the clause is independent.",
+        "A dependent clause also has a subject and a verb, but a subordinating conjunction at the front keeps it from standing alone. Common starters: after, although, as, because, before, even though, if, once, since, though, unless, until, when, while, and where.",
+        "A phrase lacks a subject, a verb, or both, so it can never stand alone — it only adds description. The crossing-out trick sorts these fast: cross out the subordinating conjunction (which can be more than one word, like even though) and read what remains. If a complete sentence is left, you had a dependent clause; if not, it was a phrase."
+      ],
+      "examples": [
+        { "text": "The excited child opened his present.", "label": "Independent clause — you can stop here", "good": true },
+        { "text": "When the excited child opened his present…", "label": "Dependent clause — the opening word forces you to keep going", "good": false },
+        { "text": "Excited to open his present…", "label": "Phrase — no subject doing the action", "good": false }
+      ],
+      "tip": "Read it aloud. If you can stop talking, it is an independent clause. If you feel forced to keep going, it is dependent or a phrase."
+    },
+    {
+      "heading": "Sentence fragments",
+      "body": [
+        "A complete sentence needs a subject, a working verb, and a complete thought. A fragment is missing at least one of those. Read the entire sentence from capital letter to period — fragments hide when you read only the underlined chunk.",
+        "Watch for -ing and -ed forms posing as the main verb. \"The student running to class\" has no working verb yet, so it is a fragment until one shows up: \"The student running to class dropped her water bottle.\""
+      ],
+      "examples": [
+        { "text": "My little brother Shaun is excited to go to the beach and surf.", "label": "Complete — has a subject and a working verb", "good": true },
+        { "text": "Excited to go to the beach and surf.", "label": "Fragment — no subject", "good": false }
+      ],
+      "tip": "If an answer choice swaps a real verb for an -ing or -ed form and leaves no other working verb, it creates a fragment."
+    },
+    {
+      "heading": "The 5 ways to join clauses",
+      "body": [
+        "When two clauses (two complete ideas) meet, the ACT accepts exactly five connections. Wrong answers are built to look natural while quietly breaking one of these rules, so memorize the list.",
+        "1. Period: end the first clause and start a new sentence. 2. Semicolon between the two independent clauses. 3. Comma + FANBOYS (for, and, nor, but, or, yet, so). 4. Dependent clause first, then a comma, then the independent clause. 5. Independent clause running straight into a dependent clause with no comma. Note that rules 4 and 5 work by making one of the clauses dependent (the while clause below); only rules 1–3 join two clauses that both stay independent.",
+        "A semicolon works exactly like a period on the ACT: it must have a complete independent clause on both sides."
+      ],
+      "examples": [
+        { "text": "Mary loves dogs. Andrew loves cats.", "label": "Rule 1 — period between two independents", "good": true },
+        { "text": "Mary loves dogs; Andrew loves cats.", "label": "Rule 2 — semicolon between two independents", "good": true },
+        { "text": "Mary loves dogs, and Andrew loves cats.", "label": "Rule 3 — comma + FANBOYS", "good": true },
+        { "text": "While Mary loves dogs, Andrew loves cats.", "label": "Rule 4 — dependent, comma, independent", "good": true },
+        { "text": "Mary loves dogs while Andrew loves cats.", "label": "Rule 5 — independent straight into dependent, no comma", "good": true }
+      ],
+      "tip": "FANBOYS = For, And, Nor, But, Or, Yet, So. A FANBOYS word joins two independent clauses only with a comma in front of it."
+    },
+    {
+      "heading": "Comma splices",
+      "body": [
+        "A comma alone cannot join two independent clauses. That error is a comma splice, and it is always wrong on the ACT.",
+        "\"It is believed that bulls are enraged by the color red, they are actually colorblind\" is a comma splice. Fix it with any of the five rules: split it with a period, add a FANBOYS (\"red, but they\"), use a semicolon, or make one side dependent (\"While it is believed…, they…\").",
+        "Conjunctive adverbs like however, therefore, and thus are NOT FANBOYS. A comma before one of them between two independent clauses is still a comma splice — they need a semicolon or a period in front."
+      ],
+      "examples": [
+        { "text": "Redwoods are among the tallest trees in the world; some have grown 350 feet tall.", "label": "Fixed with a semicolon", "good": true },
+        { "text": "Redwoods are among the tallest trees in the world, some have grown 350 feet tall.", "label": "Comma splice", "good": false }
+      ],
+      "tip": "However, therefore, moreover, and thus are not FANBOYS. When one of these words links two independent clauses, treat it like the start of a new sentence — it needs a semicolon or a period in front of it. (Tucked inside a single clause between commas, however is fine.)"
+    },
+    {
+      "heading": "How to spot these questions",
+      "body": [
+        "The answer choices give this question type away: the same words repeat in every choice, but the punctuation between them changes — a period in one, a semicolon in another, a comma, a comma + FANBOYS. Choices that swap a working verb for an -ing form, or that add and remove words like because or which, are the same question in disguise.",
+        "Step 1: Find the spot where the clauses meet. Step 2: Label each side — independent, dependent, or phrase — using the read-aloud test and the crossing-out trick. Step 3: Apply the five rules and eliminate every choice that breaks one. Two independents need a period, a semicolon, or comma + FANBOYS; anything weaker is a splice or run-on.",
+        "Do not trust your ear alone on these. A comma splice often sounds smooth when read quickly, which is exactly why the ACT loves it as a trap. Label the clauses first; listen second."
+      ],
+      "tip": "A semicolon and a period do the same job, so if two choices differ only in that way, eliminate both — the test cannot have two right answers."
+    }
+  ],
+  "check": [
+    {
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Penguins are clumsy on land[[,]] they are amazingly graceful in water.",
+      "choices": ["NO CHANGE", ", but", ", however", "; while"],
+      "answer": 1,
+      "explanation": "Two independent clauses meet at the underlined spot, and only ', but' supplies the required comma + FANBOYS. NO CHANGE is a comma splice; ', however' is still a comma splice because however is not a FANBOYS word; and '; while' places a semicolon before a dependent clause, but a semicolon needs an independent clause on both sides."
+    },
+    {
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "While the Egyptian pyramids were built over 4,000 years ago[[, still standing]] today.",
+      "choices": ["NO CHANGE", ", they still stand", " they still standing", "; they still stand"],
+      "answer": 1,
+      "explanation": "The sentence opens with the dependent clause 'While the Egyptian pyramids were built over 4,000 years ago,' so a comma plus an independent clause must follow — ', they still stand' supplies the subject and working verb. NO CHANGE leaves a fragment with no subject; ' they still standing' has no working verb; and '; they still stand' puts a semicolon after a dependent clause, which a semicolon cannot do."
+    },
+    {
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Swimming is a great workout[[; it]] works all the major muscle groups.",
+      "choices": ["NO CHANGE", ", it", " it", ", however it"],
+      "answer": 0,
+      "explanation": "Both halves are independent clauses, so the semicolon in NO CHANGE is one of the five legal joins. ', it' creates a comma splice; ' it' fuses the clauses with no punctuation at all; and ', however it' is still a comma splice because however is not a FANBOYS word."
+    }
+  ]
+}

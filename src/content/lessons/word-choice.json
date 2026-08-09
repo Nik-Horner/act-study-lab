@@ -1,0 +1,88 @@
+{
+  "slug": "word-choice",
+  "title": "Word Choice",
+  "intro": "Word-choice questions give you four words that could each sit in the sentence and ask for the one that says exactly what the writer means. The ACT tests this on a handful of questions in every English section as part of its Knowledge of Language category. One core idea governs them all: the best word is the most precise one that matches the passage's tone and forms a standard English pairing.",
+  "sections": [
+    {
+      "heading": "Precision: say exactly what you mean",
+      "body": [
+        "Many words are close cousins, not twins. 'Notable,' 'noticeable,' and 'notorious' all involve being noticed, but each means something different: worthy of attention, easy to perceive, and famous for something bad. The ACT hands you near-synonyms like these and asks which one lands on the sentence's exact idea.",
+        "Ask what the sentence actually means, then pick the word that says that meaning and no other. A 'historic' event is important; a 'historical' event simply happened in the past. The rest of the sentence almost always contains a clue that points to exactly one choice."
+      ],
+      "examples": [
+        { "text": "The bridge collapse was a notorious failure of engineering.", "label": "'notorious' means famous for something bad, which fits a famous disaster", "good": true },
+        { "text": "The bridge collapse was a noticeable failure of engineering.", "label": "'noticeable' only means easy to see; it misses the infamy", "good": false }
+      ],
+      "tip": "Define each choice in your own words first, then match the definitions against the sentence. Exactly one should fit the clue in the sentence."
+    },
+    {
+      "heading": "Tone: match the register of the passage",
+      "body": [
+        "A word can be correct in meaning yet wrong in tone. A formal essay about economics should not call a downturn 'a total bummer,' and a casual personal story should not lurch into stiff legal language.",
+        "The ACT wants the word whose formality matches the surrounding writing. If the passage is measured and academic, pick the measured word. If it is light and personal, the plain word beats the fancy one. Tone is about fitting in, not standing out."
+      ],
+      "examples": [
+        { "text": "The recession reduced household savings across the region.", "label": "'reduced' fits the formal tone", "good": true },
+        { "text": "The recession totally wrecked household savings across the region.", "label": "'totally wrecked' is slang that clashes with the tone", "good": false }
+      ],
+      "tip": "Read the sentences around the underline before judging the choices. Pick the word that sounds like it belongs with them."
+    },
+    {
+      "heading": "Idiomatic phrasing",
+      "body": [
+        "English locks certain words together by habit, not logic. We 'make a decision,' 'take a chance,' and 'pay attention.' Swap the verb and the phrase sounds off even when the meaning is clear: 'do a mistake' is wrong because the idiom is 'make a mistake.'",
+        "Prepositions follow the same rule. You are 'capable of' something, 'prohibited from' doing it, and your research 'focuses on' a topic. When the choices differ only in a small verb or preposition, pick the pairing that fluent formal writing actually uses."
+      ],
+      "examples": [
+        { "text": "Try not to make the same mistake twice.", "label": "'make a mistake' is the standard pairing", "good": true },
+        { "text": "Try not to do the same mistake twice.", "label": "'do a mistake' is not an English idiom", "good": false },
+        { "text": "She is capable of lifting twice her body weight.", "label": "'capable of' + -ing is the idiom", "good": true },
+        { "text": "She is capable to lift twice her body weight.", "label": "'capable to' is not a standard pairing", "good": false }
+      ],
+      "tip": "Trust your ear on pairings: read each choice into the sentence, and if it sounds slightly off, it is. Idiom questions reward fluent reading, not memorized rules."
+    },
+    {
+      "heading": "Watch for words that sound smart but miss",
+      "body": [
+        "A longer or fancier word is not automatically better. The ACT often plants an impressive-sounding word that does not quite mean what the sentence needs. 'Voracious' means having a huge appetite, so 'a voracious reader' works, but 'a voracious explanation' is nonsense.",
+        "Check that the word means the right thing in this exact spot. The clearest word that fits beats the most sophisticated word that almost fits."
+      ],
+      "examples": [
+        { "text": "She gave a thorough explanation of the experiment.", "label": "'thorough' fits cleanly", "good": true },
+        { "text": "She gave a voracious explanation of the experiment.", "label": "'voracious' describes appetite, not an explanation", "good": false }
+      ],
+      "tip": "Never pick a word because it sounds advanced. If you cannot define it and confirm the fit, it is probably the trap."
+    },
+    {
+      "heading": "How to spot these questions",
+      "body": [
+        "Word-choice questions announce themselves in the answer choices: all four options are single words or short phrases of the same part of speech, every one is grammatical in the slot, and the punctuation never changes. When every choice 'works' grammatically, the question is testing meaning, tone, or idiom instead.",
+        "Then work in this order. First, read the full sentence plus the sentence before it to get the context and the register. Second, define each choice in your own words. Third, eliminate in passes: cut any choice with the wrong meaning, then any that clashes with the passage's tone, then any that breaks a standard pairing. Finally, read the survivor back into the sentence; it should sound like the rest of the passage wrote it."
+      ],
+      "tip": "Four interchangeable-looking words and no punctuation differences means word choice. Slow down and read for meaning, not grammar."
+    }
+  ],
+  "check": [
+    {
+      "stem": "After winning the prize, she felt a deep sense of [[pridefulness]] in her work.",
+      "questionText": "Which choice is the most precise in context?",
+      "choices": ["NO CHANGE", "pride", "arrogance", "vanity"],
+      "answer": 1,
+      "explanation": "'Pride' precisely names the earned satisfaction the sentence describes after winning a prize. 'Prideful,' and so 'pridefulness,' connotes excessive or haughty pride, the same negative judgment that rules out 'arrogance' and 'vanity,' and it is needlessly wordy besides. Only 'pride' carries the intended positive meaning."
+    },
+    {
+      "stem": "In its final report, the commission [[criticized]] the city's slow response to the flooding.",
+      "questionText": "Which choice best maintains the formal tone of the sentence?",
+      "choices": ["NO CHANGE", "trashed", "ripped on", "made a stink about"],
+      "answer": 0,
+      "explanation": "'Criticized' matches the formal register of an official report. 'Trashed,' 'ripped on,' and 'made a stink about' all mean roughly the same thing but are slang that clashes with the surrounding formality."
+    },
+    {
+      "stem": "Her research focuses [[at]] the migration patterns of monarch butterflies.",
+      "questionText": "Which choice is correct?",
+      "choices": ["NO CHANGE", "on", "to", "over"],
+      "answer": 1,
+      "explanation": "The standard idiom is 'focuses on.' 'Focuses at,' 'focuses to,' and 'focuses over' are not pairings English uses."
+    }
+  ]
+}

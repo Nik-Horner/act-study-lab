@@ -1,0 +1,575 @@
+{
+  "slug": "sentence-structure",
+  "questions": [
+    {
+      "id": "sentence-structure-001",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Because the bakery sells out of croissants by eight every morning[[, regulars]] arrive before dawn to claim them.",
+      "choices": [
+        "NO CHANGE",
+        "; regulars",
+        ", and regulars",
+        " regulars"
+      ],
+      "answer": 0,
+      "explanation": "The dependent opener 'Because the bakery sells out...' attaches to the main clause with a comma, so the original is correct. Dropping the comma (' regulars') runs the opener straight into the main clause, a semicolon ('; regulars') can't follow a dependent clause, and ', and regulars' adds a FANBOYS that has nothing grammatical to join."
+    },
+    {
+      "id": "sentence-structure-002",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The first violinist tuned her instrument[[, the]] conductor raised his baton.",
+      "choices": [
+        "NO CHANGE",
+        " the",
+        ", then the",
+        "; the"
+      ],
+      "answer": 3,
+      "explanation": "Both halves are independent clauses, so a semicolon joins them: '...her instrument; the conductor raised his baton.' NO CHANGE and ', then the' are comma splices ('then' is not a FANBOYS), and ' the' is a run-on."
+    },
+    {
+      "id": "sentence-structure-003",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Although the recipe came from her grandmother[[ Mia]] added her own twist with smoked paprika.",
+      "choices": [
+        "NO CHANGE",
+        ", Mia",
+        ". Mia",
+        "; Mia"
+      ],
+      "answer": 1,
+      "explanation": "A dependent opener ('Although...') attaches to the main clause with a comma: 'Although the recipe came from her grandmother, Mia added her own twist.' Without the comma it runs together, and a semicolon or period leaves the 'Although' clause as a fragment."
+    },
+    {
+      "id": "sentence-structure-004",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The trail looked flat on the map[[, but it]] climbed steeply for the last two miles.",
+      "choices": [
+        "NO CHANGE",
+        ", it",
+        "; but it,",
+        " but it"
+      ],
+      "answer": 0,
+      "explanation": "Two independent clauses joined by 'but' take a comma before it, so the original is correct: '...on the map, but it climbed steeply...' ', it' drops the conjunction and makes a comma splice, ' but it' drops the comma before the FANBOYS, and '; but it,' misuses the semicolon and adds a stray comma after 'it.'"
+    },
+    {
+      "id": "sentence-structure-005",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The antique clock on the mantel, which my great-grandfather repaired by hand[[, ticking]] softly through the night.",
+      "choices": [
+        "NO CHANGE",
+        ", ticks",
+        " ticking",
+        ", which ticks"
+      ],
+      "answer": 1,
+      "explanation": "The subject 'clock' needs a main verb. 'Ticks' supplies it: 'The antique clock on the mantel, which my great-grandfather repaired by hand, ticks softly through the night.' 'Ticking' and 'which ticks' leave the sentence a fragment with no main verb."
+    },
+    {
+      "id": "sentence-structure-006",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The power went out during the storm[[ we]] lit candles and waited for morning.",
+      "choices": [
+        "NO CHANGE",
+        "; we,",
+        ". We",
+        ", we"
+      ],
+      "answer": 2,
+      "explanation": "As written the two independent clauses are fused into a run-on. A period fixes it: '...during the storm. We lit candles and waited for morning.' A comma alone makes a splice, and '; we,' adds a stray comma after the semicolon."
+    },
+    {
+      "id": "sentence-structure-007",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "When the volcano finally erupted after months of warning tremors[[ scientists]] were already monitoring it around the clock.",
+      "choices": [
+        "NO CHANGE",
+        ", and scientists",
+        "; scientists",
+        ", scientists"
+      ],
+      "answer": 3,
+      "explanation": "The long 'When...' opener is a dependent clause and joins the main clause with a comma: '...warning tremors, scientists were already monitoring it.' A semicolon can't follow a dependent clause, and adding 'and' leaves the sentence with no clean main clause."
+    },
+    {
+      "id": "sentence-structure-008",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Honeybees communicate through movement[[, a]] foraging bee performs a 'waggle dance' to point hivemates toward food.",
+      "choices": [
+        "NO CHANGE",
+        "; a",
+        " a",
+        ", with a"
+      ],
+      "answer": 1,
+      "explanation": "Both halves are independent clauses, so a semicolon joins them: '...through movement; a foraging bee performs a waggle dance...' The original comma makes a comma splice, ' a' fuses the clauses into a run-on, and ', with a' traps the finite verb 'performs' inside a prepositional phrase, which is ungrammatical."
+    },
+    {
+      "id": "sentence-structure-009",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The hikers turned back at noon[[. Because]] a storm was moving in fast over the ridge.",
+      "choices": [
+        "NO CHANGE",
+        " because",
+        "; because",
+        ", and because"
+      ],
+      "answer": 1,
+      "explanation": "A 'because' clause is dependent and cannot stand alone, so it attaches to the main clause: 'The hikers turned back at noon because a storm was moving in fast over the ridge.' Starting a new sentence with 'Because' (NO CHANGE) or putting it after a semicolon strands a fragment, and ', and because' leaves a broken clause."
+    },
+    {
+      "id": "sentence-structure-010",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The store restocked the shelves overnight[[, and the]] morning crowd found everything in place.",
+      "choices": [
+        "NO CHANGE",
+        " and the",
+        ", and, the",
+        "; and the"
+      ],
+      "answer": 0,
+      "explanation": "Two independent clauses joined by 'and' need a comma before it, so the original is correct: '...overnight, and the morning crowd found everything in place.' ' and the' drops the comma and runs the clauses together, '; and the' wrongly pairs a semicolon with a FANBOYS, and ', and, the' adds a stray comma after the conjunction."
+    },
+    {
+      "id": "sentence-structure-011",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Sprinting down the platform with seconds to spare[[, and barely catching]] the last train home.",
+      "choices": [
+        "NO CHANGE",
+        ", she barely caught",
+        ", barely catching",
+        " and barely caught"
+      ],
+      "answer": 1,
+      "explanation": "The opening phrase needs a subject to act on it. 'she barely caught' supplies the missing subject and verb: 'Sprinting down the platform with seconds to spare, she barely caught the last train home.' The other choices never name who is sprinting, leaving a fragment."
+    },
+    {
+      "id": "sentence-structure-012",
+      "category": "CSE",
+      "difficulty": "easy",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The forecast called for heavy snow[[, so the]] school district canceled classes a day early.",
+      "choices": [
+        "NO CHANGE",
+        " so the",
+        "; so, the",
+        ", the"
+      ],
+      "answer": 0,
+      "explanation": "Comma plus the FANBOYS 'so' joins the two independent clauses and shows the result, so the original is correct: '...heavy snow, so the school district canceled classes early.' ', the' drops the conjunction and makes a comma splice, ' so the' drops the comma before 'so,' and '; so, the' misuses the semicolon and adds a stray comma."
+    },
+    {
+      "id": "sentence-structure-013",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "[[Even though the team practiced for months; they]] lost in the opening round.",
+      "choices": [
+        "NO CHANGE",
+        "Even though the team practiced for months. They",
+        "Even though the team practiced for months, they",
+        "Even though the team practiced for months they"
+      ],
+      "answer": 2,
+      "explanation": "A dependent opener ('Even though...') joins the main clause with a comma: 'Even though the team practiced for months, they lost in the opening round.' The semicolon in NO CHANGE and the period in 'months. They' both wrongly cut off the dependent clause as if it could stand alone, and 'Even though the team practiced for months they' runs the introductory dependent clause straight into the main clause, omitting the required comma."
+    },
+    {
+      "id": "sentence-structure-014",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The startup burned through its funding in a year[[ however it]] left behind a technology that competitors still use.",
+      "choices": [
+        "NO CHANGE",
+        ", however it",
+        "; however, it",
+        " however, it"
+      ],
+      "answer": 2,
+      "explanation": "'However' is not a FANBOYS, so it can't join two independent clauses with a comma. Use a semicolon before it and a comma after: '...in a year; however, it left behind a technology...' The other choices leave a run-on or a comma splice."
+    },
+    {
+      "id": "sentence-structure-015",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The film crew spent three years on the documentary[[. Which]] explores Pacific coral reefs in stunning detail.",
+      "choices": [
+        "NO CHANGE",
+        ". Exploring",
+        " which it",
+        ", which"
+      ],
+      "answer": 3,
+      "explanation": "A 'which' clause can't stand alone as a sentence; a comma attaches it to the noun it describes: '...the documentary, which explores Pacific coral reefs in stunning detail.' '. Which' and '. Exploring' each strand a fragment after the period, and ' which it' doubles the subject and breaks the clause."
+    },
+    {
+      "id": "sentence-structure-016",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Venus is the hottest planet in the solar system[[; its]] thick atmosphere traps heat like a greenhouse.",
+      "choices": [
+        "NO CHANGE",
+        ", its",
+        " its",
+        " and its"
+      ],
+      "answer": 0,
+      "explanation": "Both halves are independent clauses, so a semicolon correctly joins them, and the original is right: '...in the solar system; its thick atmosphere traps heat...' ', its' is a comma splice, ' its' fuses the clauses into a run-on, and ' and its' joins two independent clauses with 'and' but omits the required comma before it."
+    },
+    {
+      "id": "sentence-structure-017",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "In the late 1960s, the \"must-have\" toy at the Cincinnati Toy [[Fair]] a new type of diecast toy car that would later become the popular brand Hot Wheels.",
+      "choices": [
+        "NO CHANGE",
+        "Fair was",
+        "Fair,",
+        "Fair;"
+      ],
+      "answer": 1,
+      "explanation": "The sentence has a subject but no main verb, so it is a fragment; 'Fair was' supplies the verb and makes it complete. A comma or semicolon after 'Fair' only adds punctuation without fixing the missing verb."
+    },
+    {
+      "id": "sentence-structure-018",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "[[Spencer, who famously]] noticed that a microwave can melt a chocolate bar.",
+      "choices": [
+        "NO CHANGE",
+        "Spencer famously",
+        "Spencer, who was famous for when he",
+        "Spencer surprised famously"
+      ],
+      "answer": 1,
+      "explanation": "As written, the 'who' clause swallows the only verb, leaving Spencer with no main verb and the sentence a fragment; 'Spencer famously' makes 'noticed' the main verb and completes the clause. 'Spencer surprised famously' jams two verbs together, and 'Spencer, who was famous for when he' keeps the fragment."
+    },
+    {
+      "id": "sentence-structure-019",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "After hummingbirds evolved long, thin beaks to reach pollen in flowers, [[however]] this evolutionary advantage allowed them to survive entirely on flower nectar, tree sap, and pollen.",
+      "choices": [
+        "NO CHANGE",
+        "DELETE the underlined portion",
+        "and",
+        "therefore"
+      ],
+      "answer": 1,
+      "explanation": "The 'After...' opener is already a dependent clause linked to the independent clause, so any connector before 'this' is redundant and breaks the structure; deleting it leaves a clean dependent-then-independent sentence. 'However,' 'therefore,' and 'and' each create a faulty join."
+    },
+    {
+      "id": "sentence-structure-020",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "To clean all the windows on the tallest buildings, window [[cleaners work]] several twelve-hour shifts over the course of a week.",
+      "choices": [
+        "NO CHANGE",
+        "cleaners, working",
+        "cleaners who work",
+        "cleaners, who work"
+      ],
+      "answer": 0,
+      "explanation": "'window cleaners work several...shifts' is the complete independent clause the opening phrase needs, so NO CHANGE is correct. Turning 'work' into 'who work' or 'working' strips the main verb and leaves a fragment."
+    },
+    {
+      "id": "sentence-structure-021",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Her landmark doctoral thesis, published in 2019, [[asserting that,]] unlike the other autoimmune disorders, Crohn's disease has an underlying bacterial component.",
+      "choices": [
+        "NO CHANGE",
+        "asserted,",
+        "an assertion",
+        "asserted that"
+      ],
+      "answer": 3,
+      "explanation": "The subject 'thesis' needs a main verb; 'asserted that' supplies it and completes the sentence. 'Asserting' and 'an assertion' leave the subject with no verb, and 'asserted,' breaks the 'asserted that' construction the clause requires."
+    },
+    {
+      "id": "sentence-structure-022",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "[[While the bakery varies]] its types of bread with the seasons, ranging from tomato basil loafs in the summer to olive rosemary focaccia in the fall, and always has a line around the block.",
+      "choices": [
+        "NO CHANGE",
+        "With the bakery having varied bread types",
+        "Having various types of bread",
+        "The bakery varies"
+      ],
+      "answer": 3,
+      "explanation": "'The bakery varies' supplies the subject and main verb the sentence needs: 'The bakery varies its types of bread with the seasons...and always has a line around the block.' 'While the bakery varies' keeps everything subordinate, so the sentence never reaches a main clause. 'Having various types of bread' and 'With the bakery having varied bread types' collide with the stem's own 'its types of bread,' producing garbled fragments."
+    },
+    {
+      "id": "sentence-structure-023",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The roller coaster is opening next [[week, the]] wait time is expected to be over 4 hours long.",
+      "choices": [
+        "NO CHANGE",
+        "week and the",
+        "week.  The",
+        "week; with the"
+      ],
+      "answer": 2,
+      "explanation": "Two independent clauses can't join with only a comma, so the period in 'week. The wait time' is correct. NO CHANGE is a comma splice, 'week; with the' makes the second half a non-clause, and 'week and the' drops the comma before the FANBOYS."
+    },
+    {
+      "id": "sentence-structure-024",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "In August 2005, Hurricane Katrina hit New [[Orleans; resulting in]] over 1,800 deaths and $125 billion in damage.",
+      "choices": [
+        "NO CHANGE",
+        "Orleans, and the result was",
+        "Orleans.  The result being",
+        "Orleans, the result was"
+      ],
+      "answer": 1,
+      "explanation": "'Orleans, and the result was...' joins two independent clauses with a comma plus FANBOYS, the correct structure. A semicolon before 'resulting' wrongly precedes a non-clause, 'Orleans, the result was' is a comma splice, and 'The result being' is a fragment."
+    },
+    {
+      "id": "sentence-structure-025",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Most people drink coffee in the [[morning, I]] prefer tea instead.",
+      "choices": [
+        "NO CHANGE",
+        "morning, then I",
+        "morning I",
+        "morning; I"
+      ],
+      "answer": 3,
+      "explanation": "Two independent clauses can't be joined by a comma alone — that's a comma splice. A semicolon joins them: '...in the morning; I prefer tea instead.' 'morning I' is a run-on, and 'morning, then I' is still a splice because 'then' is an adverb, not a FANBOYS."
+    },
+    {
+      "id": "sentence-structure-026",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Sea turtles are known for swimming incredible [[distances, but many]] people do not know that female sea turtles journey back to their birthplaces to lay their eggs.",
+      "choices": [
+        "NO CHANGE",
+        "distances many",
+        "distances.  While many",
+        "distances, many"
+      ],
+      "answer": 0,
+      "explanation": "'distances, but many people...' joins two independent clauses with a comma plus the FANBOYS 'but,' so NO CHANGE is correct. 'distances, many' is a comma splice, 'distances many' is a run-on, and 'While many' strands a fragment."
+    },
+    {
+      "id": "sentence-structure-027",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Reorganizing the schedule after Jill called in sick is not just an [[inconvenience, it]] is also a logistical nightmare.",
+      "choices": [
+        "NO CHANGE",
+        "inconvenience.  It",
+        "inconvenience but it",
+        "inconvenience, also it"
+      ],
+      "answer": 1,
+      "explanation": "Two independent clauses need a period (or semicolon), so 'inconvenience.  It is also...' is correct. The original and 'inconvenience, also it' are comma splices, and 'inconvenience but it' joins two independent clauses with 'but' while omitting the required comma before it."
+    },
+    {
+      "id": "sentence-structure-028",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The first warning given to a business violating the new rules will not include a fine[[; while a]] second violation will be a guaranteed $1,000 fine.",
+      "choices": [
+        "NO CHANGE",
+        "; but a",
+        " and a",
+        ", but a"
+      ],
+      "answer": 3,
+      "explanation": "Both halves are independent clauses with a contrast, so a comma plus the FANBOYS 'but' joins them: 'a fine, but a second violation...' NO CHANGE puts a semicolon before the dependent 'while' clause, ' and a' drops the comma before the conjunction, and '; but a' wrongly pairs a semicolon with a coordinating conjunction."
+    },
+    {
+      "id": "sentence-structure-029",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Redwood trees are one of the tallest types of trees in the [[world; some]] have grown as tall as 350 feet.",
+      "choices": [
+        "NO CHANGE",
+        "world some",
+        "world; and some",
+        "world, some"
+      ],
+      "answer": 0,
+      "explanation": "Both halves are independent clauses, so a semicolon correctly joins them, and the original is right: 'world; some have grown...' 'world, some' is a comma splice, 'world; and some' wrongly pairs a semicolon with a FANBOYS, and 'world some' is a run-on."
+    },
+    {
+      "id": "sentence-structure-030",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "While the ancient Egyptian pyramids were built over 4000 years [[ago, still standing]] today and attract millions of tourists to Egypt each year.",
+      "choices": [
+        "NO CHANGE",
+        "ago; they still stand",
+        "ago, they still stand",
+        "ago, they still standing"
+      ],
+      "answer": 2,
+      "explanation": "The 'While...' opener is dependent, so it needs an independent clause with a subject and verb: 'ago, they still stand today and attract...' NO CHANGE and 'they still standing' lack a proper main verb, and a semicolon can't follow the dependent opener."
+    },
+    {
+      "id": "sentence-structure-031",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The pizza was guaranteed to be free if it was not delivered in 30 minutes or less[[; but the]] delivery man still demanded money when he arrived late.",
+      "choices": [
+        "NO CHANGE",
+        ", but the",
+        "; and the",
+        " but the"
+      ],
+      "answer": 1,
+      "explanation": "Both halves are independent clauses with a contrast, so a comma plus the FANBOYS 'but' joins them: 'less, but the delivery man...' NO CHANGE wrongly pairs a semicolon with 'but,' ' but the' drops the comma before the conjunction, and '; and the' both misuses the semicolon and forces the wrong logic."
+    },
+    {
+      "id": "sentence-structure-032",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Bella wanted to make blueberry waffles for [[breakfast, but]] her waffle iron was broken.",
+      "choices": [
+        "NO CHANGE",
+        "breakfast; but",
+        "breakfast, however",
+        "breakfast but"
+      ],
+      "answer": 0,
+      "explanation": "'breakfast, but her waffle iron was broken' joins two independent clauses with a comma plus FANBOYS, so NO CHANGE is correct. 'however' after a comma makes a splice, 'breakfast but' drops the comma, and '; but' wrongly pairs a semicolon with a conjunction."
+    },
+    {
+      "id": "sentence-structure-033",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Most restaurant owners have a security system installed at their [[businesses, because]] it helps protect them from theft.",
+      "choices": [
+        "NO CHANGE",
+        "businesses because",
+        "businesses; since",
+        "businesses, since"
+      ],
+      "answer": 1,
+      "explanation": "An essential dependent clause that follows the main clause attaches with no comma, so 'businesses because it helps protect them from theft' is correct. 'businesses, because' (NO CHANGE) and 'businesses, since' wrongly set off that essential trailing clause with a comma. 'businesses; since' goes further and treats the dependent clause as if it could stand alone."
+    },
+    {
+      "id": "sentence-structure-034",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The eucalyptus tree is [[unique; it]] is known not only for its flowers but also for the health benefits it can produce.",
+      "choices": [
+        "NO CHANGE",
+        "unique and it",
+        "unique it",
+        "unique, it"
+      ],
+      "answer": 0,
+      "explanation": "Two independent clauses need a semicolon, so the original is correct: 'unique; it is known...' 'unique, it' is a comma splice, 'unique and it' needs a comma before the FANBOYS, and 'unique it' is a run-on."
+    },
+    {
+      "id": "sentence-structure-035",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The audience could not believe the incredible performance put on by the ten-year-old [[pianist, they were enthralled,]] once he finished his final flurry of perfectly struck notes, everyone stood together and applauded.",
+      "choices": [
+        "NO CHANGE",
+        "pianist; they were enthralled,",
+        "pianist, enthralled",
+        "pianist.  They were enthralled;"
+      ],
+      "answer": 3,
+      "explanation": "'pianist.  They were enthralled;' separates the first two independent clauses with a period and joins the last pair with a semicolon, fixing every faulty join. The original and 'pianist; they were enthralled,' still leave a comma splice before 'everyone stood,' and 'pianist, enthralled' splices the long opening clause straight onto 'everyone stood together and applauded.'"
+    },
+    {
+      "id": "sentence-structure-036",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Instead, the houses sit on wooden beams that keep them out of the [[water, and ensure]] that no damage will be done if hurricane flooding occurs.",
+      "choices": [
+        "NO CHANGE",
+        "water and these beams ensure",
+        "water to ensure",
+        "water; ensuring"
+      ],
+      "answer": 2,
+      "explanation": "'water to ensure' keeps the sentence as one clause, with the infinitive showing the beams' purpose. The original comma wrongly splits the compound verb 'keep...and ensure,' 'and these beams ensure' starts a second independent clause without the required comma before 'and,' and '; ensuring' leaves a fragment after the semicolon."
+    },
+    {
+      "id": "sentence-structure-037",
+      "category": "CSE",
+      "difficulty": "hard",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "Although pesto, which is made of pine nuts, olive oil, basil leaves, and parmesan cheese, is mostly used in classic Italian [[food; many]] restaurants now serve it on a variety of dishes and even offer different types of pesto featuring ingredients such as kale or cilantro.",
+      "choices": [
+        "NO CHANGE",
+        "food, many restaurants now serve",
+        "food, but many restaurants now serve",
+        "food, many restaurants serving"
+      ],
+      "answer": 1,
+      "explanation": "The 'Although...' opener is dependent, so it joins the independent clause with a comma: 'food, many restaurants now serve...' A semicolon can't follow the dependent opener (NO CHANGE), and 'many restaurants serving' strips out the main verb, leaving a fragment. 'but many restaurants now serve' redundantly pairs 'but' with the opening 'Although,' and that 'but' blocks the clause from serving as the main clause the dependent opener needs."
+    },
+    {
+      "id": "sentence-structure-038",
+      "category": "CSE",
+      "difficulty": "medium",
+      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "stem": "The international commission was ecstatic over the release of the new report[[, although there]] was little press given by major newspapers about the announcement.",
+      "choices": [
+        "NO CHANGE",
+        ", but there",
+        " there",
+        "; but there"
+      ],
+      "answer": 1,
+      "explanation": "The two halves are equal contrasting statements, so a comma plus the FANBOYS 'but' joins them: 'report, but there was little press...' The original ', although there' subordinates the second statement instead of keeping the contrast equal. ' there' fuses the clauses into a run-on, and '; but there' wrongly pairs a semicolon with a coordinating conjunction."
+    }
+  ]
+}
