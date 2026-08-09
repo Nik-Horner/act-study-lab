@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { LogoutButton } from "@/components/LogoutButton";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export async function TopNav() {
   const supabase = await createClient();
@@ -25,11 +26,15 @@ export async function TopNav() {
             <Link href="/exam" className="text-ink-soft hover:text-ink">
               Full exam
             </Link>
-            <span className="hidden text-ink-faint sm:inline">{user.email}</span>
+            <Link href="/account" className="text-ink-soft hover:text-ink">
+              Account
+            </Link>
+            <ThemeToggle />
             <LogoutButton />
           </nav>
         ) : (
           <nav className="flex items-center gap-3 text-sm">
+            <ThemeToggle />
             <Link href="/login" className="text-ink-soft hover:text-ink">
               Log in
             </Link>

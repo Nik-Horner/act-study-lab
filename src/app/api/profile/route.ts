@@ -3,6 +3,7 @@ import { createClient } from "@/lib/supabase/server";
 
 interface ProfilePatchBody {
   display_name?: string | null;
+  current_score?: number | null;
   target_score?: number | null;
   test_date?: string | null;
 }
@@ -29,6 +30,14 @@ export async function PATCH(request: Request) {
       return NextResponse.json({ error: "display_name must be a string or null" }, { status: 400 });
     }
     update.display_name = body.display_name;
+  }
+
+  if ("current_score" in body) {
+    const v = body.current_score;
+    if (v !== null && v !== undefined && (!Number.isInteger(v) || v < 1 || v > 36)) {
+      return NextResponse.json({ error: "current_score must be an integer 1-36" }, { status: 400 });
+    }
+    update.current_score = v ?? null;
   }
 
   if ("target_score" in body) {

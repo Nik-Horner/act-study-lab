@@ -52,6 +52,58 @@
   }
 }
 
+/* Explicit overrides win over the OS-preference media query above, so the
+   manual toggle (ThemeToggle) can force a theme regardless of OS setting. */
+:root[data-theme="light"] {
+  --color-bg: #fbfaf7;
+  --color-bg-soft: #ffffff;
+  --color-bg-raised: #f3f1ea;
+  --color-ink: #1c1b17;
+  --color-ink-soft: #6b6858;
+  --color-ink-faint: #9a9686;
+  --color-border: #e7e3d6;
+
+  --color-brand: #2d3a8c;
+  --color-brand-dark: #1f2a68;
+  --color-brand-soft: #e7e9fb;
+  --color-accent: #d97a34;
+  --color-accent-soft: #fbe8d6;
+
+  --color-good: #2f7a4f;
+  --color-good-soft: #dff1e6;
+  --color-warn: #b8892f;
+  --color-warn-soft: #f7ecd8;
+  --color-bad: #b8433a;
+  --color-bad-soft: #f9e2df;
+
+  --shadow-card: 0 1px 2px rgba(28, 27, 23, 0.04), 0 6px 20px -8px rgba(28, 27, 23, 0.12);
+}
+
+:root[data-theme="dark"] {
+  --color-bg: #15161a;
+  --color-bg-soft: #1c1e24;
+  --color-bg-raised: #23252d;
+  --color-ink: #f1efe7;
+  --color-ink-soft: #b3b0a3;
+  --color-ink-faint: #7c7a70;
+  --color-border: #313340;
+
+  --color-brand: #7c8bf0;
+  --color-brand-dark: #a4b0f5;
+  --color-brand-soft: #262b4d;
+  --color-accent: #eb9c5c;
+  --color-accent-soft: #3a2c1c;
+
+  --color-good: #59c98a;
+  --color-good-soft: #17301f;
+  --color-warn: #e0b45c;
+  --color-warn-soft: #3a2f16;
+  --color-bad: #e2766c;
+  --color-bad-soft: #3a1e1b;
+
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.2), 0 6px 24px -8px rgba(0, 0, 0, 0.5);
+}
+
 @theme inline {
   --color-bg: var(--color-bg);
   --color-bg-soft: var(--color-bg-soft);

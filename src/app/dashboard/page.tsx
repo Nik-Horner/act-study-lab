@@ -8,7 +8,7 @@ import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { ButtonLink } from "@/components/ui/Button";
-import { OnboardingForm } from "./OnboardingForm";
+import { AccountForm } from "@/components/AccountForm";
 import { PlanChecklist, type ChecklistItem } from "./PlanChecklist";
 
 const ITEM_META: Record<Exclude<PlanItem["kind"], "learn">, { title: string; subtitle: string; href: string | null }> = {
@@ -81,7 +81,17 @@ export default async function DashboardPage() {
   ]);
 
   if (!profile || profile.target_score === null || profile.test_date === null) {
-    return <OnboardingForm />;
+    return (
+      <AccountForm
+        variant="onboarding"
+        initial={{
+          display_name: profile?.display_name ?? null,
+          current_score: profile?.current_score ?? null,
+          target_score: profile?.target_score ?? null,
+          test_date: profile?.test_date ?? null,
+        }}
+      />
+    );
   }
 
   const topics = getTopics();
@@ -116,6 +126,12 @@ export default async function DashboardPage() {
             <div className="text-3xl font-bold text-brand">{days}</div>
             <div className="text-xs text-ink-faint">days to test ({testDateNice})</div>
           </div>
+          {profile.current_score !== null && (
+            <div className="text-center">
+              <div className="text-3xl font-bold text-ink-soft">{profile.current_score}</div>
+              <div className="text-xs text-ink-faint">current score</div>
+            </div>
+          )}
           <div className="text-center">
             <div className="text-3xl font-bold">{profile.target_score}</div>
             <div className="text-xs text-ink-faint">target score</div>

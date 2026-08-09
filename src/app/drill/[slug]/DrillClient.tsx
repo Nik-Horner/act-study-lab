@@ -27,8 +27,11 @@ export function DrillClient(props: DrillClientProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [props.mode]);
 
+  // Identity order to start: matches server-rendered HTML exactly, so hydration
+  // doesn't mismatch (shuffle() uses Math.random(), which differs per render).
+  // Shuffled for real in the mount effect below, once we're client-only.
   const [drillState, setDrillState] = useState(() => ({
-    order: shuffle(items.map((_, i) => i)),
+    order: items.map((_, i) => i),
     idx: 0,
   }));
   const [answered, setAnswered] = useState(false);
@@ -53,6 +56,14 @@ export function DrillClient(props: DrillClientProps) {
 
   const { order, idx } = drillState;
   const current = order.length > 0 ? items[order[idx]] : null;
+
+  // Shuffle for real once we're mounted client-side (Math.random() during the
+  // initial render would diverge between the server-rendered HTML and the
+  // client's hydration pass and trigger a hydration mismatch).
+  useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time randomization on mount, not derived state
+    setDrillState((s) => (s.idx === 0 ? { order: shuffle(s.order), idx: 0 } : s));
+  }, []);
 
   // Pace timer chip: freezes once the question is answered, resets on a new question.
   useEffect(() => {

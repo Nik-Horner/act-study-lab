@@ -18,12 +18,31 @@ export const metadata: Metadata = {
   description: "Master every ACT English topic, drill to mastery, and take a full timed exam.",
 };
 
+// Applies a saved theme choice before first paint, so there's no flash of the
+// wrong theme. Runs on every page load, before React hydrates.
+const THEME_INIT_SCRIPT = `
+(function () {
+  try {
+    var stored = localStorage.getItem("theme");
+    if (stored === "light" || stored === "dark") {
+      document.documentElement.setAttribute("data-theme", stored);
+    }
+  } catch (e) {}
+})();
+`;
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
+      // data-theme is set by the inline script below, outside of React's
+      // render — suppress the (expected, harmless) attribute mismatch warning.
+      suppressHydrationWarning
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
       <body className="min-h-full flex flex-col">
         <TopNav />
         <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-8">{children}</main>
