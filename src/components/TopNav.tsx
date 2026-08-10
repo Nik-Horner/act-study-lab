@@ -2,6 +2,7 @@ import Link from "next/link";
 import { createClient } from "@/lib/supabase/server";
 import { LogoutButton } from "@/components/LogoutButton";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { MobileMenu } from "@/components/MobileMenu";
 
 export async function TopNav() {
   const supabase = await createClient();
@@ -19,18 +20,23 @@ export async function TopNav() {
           ACT English Lab
         </Link>
         {user ? (
-          <nav className="flex items-center gap-5 text-sm">
-            <Link href="/dashboard" className="text-ink-soft hover:text-ink">
-              Dashboard
-            </Link>
-            <Link href="/exam" className="text-ink-soft hover:text-ink">
-              Full exam
-            </Link>
-            <Link href="/account" className="text-ink-soft hover:text-ink">
-              Account
-            </Link>
+          <nav className="flex items-center gap-2 text-sm sm:gap-5">
+            <div className="flex items-center gap-5 max-sm:hidden">
+              <Link href="/dashboard" className="text-ink-soft hover:text-ink">
+                Dashboard
+              </Link>
+              <Link href="/exam" className="text-ink-soft hover:text-ink">
+                Full exam
+              </Link>
+              <Link href="/account" className="text-ink-soft hover:text-ink">
+                Account
+              </Link>
+            </div>
             <ThemeToggle />
-            <LogoutButton />
+            <div className="max-sm:hidden">
+              <LogoutButton />
+            </div>
+            <MobileMenu />
           </nav>
         ) : (
           <nav className="flex items-center gap-3 text-sm">
