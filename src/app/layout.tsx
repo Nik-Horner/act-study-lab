@@ -46,6 +46,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="min-h-full flex flex-col">
         <TopNav />
         <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-8">{children}</main>
+        <footer className="border-t border-border py-6 text-center text-xs text-ink-faint">
+          Built by{" "}
+          <a
+            href="https://github.com/Nik-Horner"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-ink-soft"
+          >
+            Nik Horner
+          </a>
+        </footer>
       </body>
     </html>
   );
