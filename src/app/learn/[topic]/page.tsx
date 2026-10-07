@@ -2,7 +2,7 @@ import { getTopic as getActTopic } from "@/lib/act/content";
 import { LessonView } from "@/components/act/StudyClient";
 import { notFound } from "next/navigation";
 import { getTopic, getLesson } from "@/lib/content";
-import { LessonSections } from "@/components/LessonSections";
+import { renderStem } from "@/lib/format";
 import { createClient } from "@/lib/supabase/server";
 import { Badge } from "@/components/ui/Badge";
 import { Card } from "@/components/ui/Card";
@@ -16,8 +16,8 @@ export default async function LearnPage({
   params: Promise<{ topic: string }>;
 }) {
   const { topic: slug } = await params;
-  if (getActTopic(slug)) return <LessonView slug={slug} />;
 
+  if (getActTopic(slug)) return <LessonView slug={slug} />;
   const topic = getTopic(slug);
   if (!topic) notFound();
 
@@ -58,7 +58,48 @@ export default async function LearnPage({
         <p className="mt-2 text-ink-soft">{lesson.intro || topic.blurb}</p>
       </div>
 
-      <LessonSections sections={lesson.sections} />
+      {lesson.sections.map((section, i) => (
+        <section key={i} className="space-y-3">
+          <h2 className="text-lg font-semibold text-ink">{section.heading}</h2>
+          {section.body.map((p, j) => (
+            <p key={j} className="text-ink-soft">
+              {p}
+            </p>
+          ))}
+          {section.examples && section.examples.length > 0 && (
+            <div className="space-y-2">
+              {section.examples.map((ex, k) => (
+                <div
+                  key={k}
+                  className={`rounded-xl border px-4 py-3 text-sm ${
+                    section.heading === "Clauses and phrases"
+                      ? "border-border bg-bg-soft text-ink-soft"
+                      : ex.good
+                        ? "border-good bg-good-soft text-good"
+                        : "border-bad bg-bad-soft text-bad"
+                  }`}
+                >
+                  {ex.label && (
+                    <div className="mb-1 text-xs font-semibold uppercase tracking-wide">
+                      {ex.label}
+                    </div>
+                  )}
+                  <div
+                    className="text-ink"
+                    dangerouslySetInnerHTML={{ __html: renderStem(ex.text) }}
+                  />
+                </div>
+              ))}
+            </div>
+          )}
+          {section.tip && (
+            <div className="rounded-xl border border-brand-soft bg-brand-soft px-4 py-3 text-sm text-brand-dark">
+              <span className="font-semibold">Tip · </span>
+              {section.tip}
+            </div>
+          )}
+        </section>
+      ))}
 
       {lesson.check.length > 0 && (
         <section className="space-y-3">

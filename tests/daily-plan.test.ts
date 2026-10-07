@@ -1,4 +1,5 @@
 import { DAILY_CURRICULUM } from "../src/lib/daily-curriculum";
+import format5Fixtures from "./fixtures/daily-format5.json";
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
@@ -12,6 +13,7 @@ import {
   restoreDailyTeaching,
   refreshDailyContent,
   estimateDailyBlock,
+  type DailyPlan,
 } from "../src/lib/daily-plan";
 import {
   getExamQuestions,
@@ -56,7 +58,7 @@ test("daily program includes substantial lesson content and original practice in
     for (const q of b.questions) assert(!reserved.has(q.id));
   }
   for (const b of plan.blocks) {
-    assert.equal(blockUnits(b).length, 2);
+    assert(blockUnits(b).length >= 1 && blockUnits(b).length <= 2);
     for (const unit of blockUnits(b)) {
       const original =
         b.subject === "english"
@@ -183,7 +185,7 @@ test("upgrading a saved Reading session removes untaught future skills while ret
   assert(
     restoreDailyTeaching(legacy, { [wrong.id]: wrong.answer })
       .blocks.find((b) => b.subject === "reading")!
-      .questions.some((q) => q.id === wrong.id),
+      .historicalQuestions?.some((q) => q.id === wrong.id),
   );
   assert.deepEqual(
     restoreDailyTeaching(legacy, {}).blocks.find(
@@ -310,7 +312,7 @@ test("daily scopes preserve complete curriculum coverage and fit each displayed 
       );
       for (const b of p.blocks) {
         assert(estimateDailyBlock(b) <= b.minutes);
-        assert.equal(blockUnits(b).length, 2);
+        assert(blockUnits(b).length >= 1 && blockUnits(b).length <= 2);
       }
     }
 });
@@ -333,4 +335,273 @@ test("every full lesson section has a scheduled teaching scope", () => {
       assert.equal(new Set(s.practice).size, s.practice.length);
     });
   }
+});
+
+test("clause and fragment drills never introduce untaught joining punctuation", () => {
+  const english = makeDailyPlan("alignment", "2026-10-06", settings, 0)
+    .blocks[0];
+  const units = blockUnits(english);
+  assert.deepEqual(units[0].sectionIndices, [0]);
+  assert.deepEqual(units[1].sectionIndices, [1]);
+  assert(units[0].questions.every((q) => q.id.startsWith("daily-clauses-")));
+  assert(units[1].questions.every((q) => q.id.startsWith("daily-fragments-")));
+  assert(
+    english.reviewQuestions!.every(
+      (q) =>
+        q.id.startsWith("daily-clauses-") ||
+        q.id.startsWith("daily-fragments-"),
+    ),
+  );
+  assert(
+    !english.questions.some((q) =>
+      q.questionText.includes("grammatically acceptable"),
+    ),
+  );
+});
+
+test("original English punctuation banks always follow the complete original lesson", () => {
+  for (let sequence = 1; sequence < 30; sequence++) {
+    const block = makeDailyPlan(
+      "alignment",
+      "2026-10-06",
+      { ...settings, minutesPerDay: 90 },
+      sequence,
+    ).blocks[0];
+    for (const unit of blockUnits(block)) {
+      if (unit.questions.some((q) => !q.id.startsWith("daily-"))) {
+        const original = englishLesson(unit.topic);
+        assert.deepEqual(unit.lesson.sections, original.sections);
+        assert.deepEqual(unit.lesson.check, original.check);
+      }
+    }
+  }
+});
+
+test("English repair preserves non-English work and historical answers in a saved session", () => {
+  const old = makeDailyPlan("upgrade", "2026-10-06", settings, 0);
+  old.formatVersion = 5;
+  const q = old.blocks[0].questions[0];
+  const updated = restoreDailyTeaching(old, { [q.id]: q.answer }, settings);
+  assert.equal(updated.id, old.id);
+  assert.deepEqual(updated.blocks.slice(1), old.blocks.slice(1));
+  assert(updated.blocks[0].questions.some((item) => item.id === q.id));
+  assert.equal(
+    updated.blocks.reduce((n, b) => n + b.minutes, 0),
+    old.minutes,
+  );
+});
+
+test("a deferred whole lesson remains next in the course instead of being skipped", () => {
+  let plan = makeDailyPlan(
+    "cursor",
+    "2026-10-06",
+    { ...settings, minutesPerDay: 60 },
+    0,
+  );
+  const seen = new Set<string>();
+  for (let day = 0; day < 40; day++) {
+    blockUnits(plan.blocks[0]).forEach((u) => seen.add(u.topic));
+    plan = { ...plan, complete: true, completedDate: plan.date };
+    const nextDate = new Date(Date.UTC(2026, 9, 7 + day))
+      .toISOString()
+      .slice(0, 10);
+    plan = selectDailyPlan(plan, "cursor", nextDate, {
+      ...settings,
+      minutesPerDay: 60,
+    });
+    assert.equal(
+      plan.blocks.reduce((n, b) => n + b.minutes, 0),
+      60,
+    );
+  }
+  assert(seen.has("commas"));
+  assert(seen.has("punctuation"));
+  assert(seen.has("logical-placement"));
+  assert.equal(seen.size, 14);
+});
+
+test("actual format-5 saved plans retain their budget, other subjects, answered history and deferred English position", () => {
+  for (const fixture of format5Fixtures.cases) {
+    const old = fixture.plan as unknown as DailyPlan;
+    const updated = restoreDailyTeaching(
+      old,
+      fixture.answers as unknown as Record<string, number>,
+      fixture.settings,
+    );
+    const english = updated.blocks[0];
+    assert(estimateDailyBlock(english) <= english.minutes);
+    assert.deepEqual(updated.blocks.slice(1), old.blocks.slice(1));
+    assert.equal(updated.id, old.id);
+    assert.equal(
+      updated.blocks.reduce((n, b) => n + b.minutes, 0),
+      old.minutes,
+    );
+    for (const id of Object.keys(fixture.answers))
+      assert(
+        [...english.questions, ...(english.historicalQuestions ?? [])].some(
+          (q) => q.id === id,
+        ),
+      );
+    assert.equal(
+      updated.nextCurriculumPositions?.english,
+      updated.curriculumPositions!.english! + blockUnits(english).length,
+    );
+  }
+});
+
+test("a migration-only foundation refresher does not skip an original lesson that cannot fit", () => {
+  const old = structuredClone(
+    format5Fixtures.cases[1].plan,
+  ) as unknown as DailyPlan;
+  old.blocks[0].minutes = 5;
+  old.nextCurriculumPositions = { english: 999, science: 17 };
+  const updated = restoreDailyTeaching(
+    old,
+    {},
+    format5Fixtures.cases[1].settings,
+  );
+  assert.equal(blockUnits(updated.blocks[0])[0].title, "Clauses and phrases");
+  assert(estimateDailyBlock(updated.blocks[0]) <= 5);
+  assert.equal(
+    updated.nextCurriculumPositions?.english,
+    updated.curriculumPositions?.english,
+  );
+  assert.equal(updated.nextCurriculumPositions?.science, 17);
+});
+
+test("saved interpolation prerequisites append without changing prior completion positions", () => {
+  const plan = makeDailyPlan(
+    "prerequisite",
+    "2026-10-07",
+    settings,
+    0,
+    undefined,
+    [],
+    { science: 7 },
+  );
+  const block = plan.blocks.find((b) => b.subject === "science")!;
+  plan.blocks = [block];
+  const unit = blockUnits(block)[0];
+  assert.equal(unit.topic, "science-trends-interpolation");
+  unit.sectionIndices = [5, 6];
+  unit.lesson = {
+    ...unit.lesson,
+    sections: [
+      getLesson(unit.topic).sections[5],
+      getLesson(unit.topic).sections[6],
+    ],
+  };
+  const answers = { [unit.questions[0].id]: unit.questions[0].answer };
+  const completed = [unit.id, `${unit.id}:concept:0`, `${unit.id}:concept:1`];
+  const updated = refreshDailyContent(plan, answers);
+  const repaired = blockUnits(updated.blocks[0])[0];
+  assert.deepEqual(repaired.sectionIndices, [5, 6, 1]);
+  assert.deepEqual(repaired.requiredConceptIndices, [2]);
+  const step = dailyStep(updated, answers, completed);
+  assert.equal(step.kind, "lesson");
+  assert.equal(step.kind === "lesson" && step.unit.id, unit.id);
+  completed.push(`${unit.id}:concept:2`);
+  assert.equal(dailyStep(updated, answers, completed).kind, "drill");
+  assert.deepEqual(
+    refreshDailyContent(updated, answers).blocks[0].units,
+    updated.blocks[0].units,
+  );
+});
+
+test("saved circle drills require the newly added formula even after lesson completion", () => {
+  const plan = makeDailyPlan(
+    "circle",
+    "2026-10-07",
+    settings,
+    0,
+    undefined,
+    [],
+    { math: 10 },
+  );
+  const block = plan.blocks.find((b) => b.subject === "math")!;
+  plan.blocks = [block];
+  const unit = blockUnits(block)[0];
+  assert.equal(unit.topic, "math-geometry");
+  unit.lesson = structuredClone(unit.lesson);
+  unit.lesson.sections[0].body = unit.lesson.sections[0].body.slice(0, 2);
+  const updated = refreshDailyContent(plan);
+  const repaired = blockUnits(updated.blocks[0])[0];
+  assert.deepEqual(repaired.sectionIndices, [3, 3]);
+  assert.deepEqual(repaired.requiredConceptIndices, [1]);
+  assert.equal(
+    dailyStep(updated, {}, [unit.id, `${unit.id}:concept:0`]).kind,
+    "lesson",
+  );
+  assert(
+    repaired.lesson.sections[1].body.some((p) => p.includes("arc length =")),
+  );
+});
+
+test("saved prerequisite repair fits the complete migration path inside the original clock", () => {
+  for (const fixture of format5Fixtures.cases) {
+    const old = fixture.plan as unknown as DailyPlan;
+    const answers = fixture.answers as unknown as Record<string, number>;
+    const repaired = refreshDailyContent(
+      restoreDailyTeaching(old, answers, fixture.settings),
+      answers,
+    );
+    assert.equal(repaired.id, old.id);
+    assert.equal(repaired.minutes, old.minutes);
+    assert.equal(
+      repaired.blocks.reduce((n, b) => n + b.minutes, 0),
+      old.minutes,
+    );
+    for (const block of repaired.blocks)
+      assert(
+        estimateDailyBlock(block) <= block.minutes,
+        `${block.subject} exceeds its allocation`,
+      );
+    for (const id of Object.keys(answers))
+      assert(
+        repaired.blocks.some((block) =>
+          [...block.questions, ...(block.historicalQuestions ?? [])].some(
+            (q) => q.id === id,
+          ),
+        ),
+      );
+    assert.deepEqual(refreshDailyContent(repaired, answers), repaired);
+  }
+});
+
+test("remaining-work budgets preserve partially and fully answered saved sessions", () => {
+  for (const fixture of format5Fixtures.cases)
+    for (const fraction of [0, 0.5, 1]) {
+      const old = fixture.plan as unknown as DailyPlan;
+      const answers = Object.fromEntries(
+        old.blocks.flatMap((b) =>
+          b.questions
+            .slice(0, Math.ceil(b.questions.length * fraction))
+            .map((q) => [q.id, q.answer]),
+        ),
+      );
+      const repaired = refreshDailyContent(
+        restoreDailyTeaching(old, answers, fixture.settings),
+        answers,
+      );
+      for (const block of repaired.blocks) {
+        assert(estimateDailyBlock(block, answers) <= block.minutes);
+        assert.equal(
+          block.estimatedMinutes,
+          estimateDailyBlock(block, answers),
+        );
+      }
+      assert.equal(
+        repaired.blocks.reduce((n, b) => n + b.minutes, 0),
+        old.minutes,
+      );
+      for (const id of Object.keys(answers))
+        assert(
+          repaired.blocks.some((b) =>
+            [...b.questions, ...(b.historicalQuestions ?? [])].some(
+              (q) => q.id === id,
+            ),
+          ),
+        );
+      assert.deepEqual(refreshDailyContent(repaired, answers), repaired);
+    }
 });

@@ -19,7 +19,12 @@ export function dailyStep(
 ) {
   for (const block of plan.blocks) {
     for (const unit of blockUnits(block)) {
-      if (!lessons.includes(unit.id))
+      if (
+        !lessons.includes(unit.id) ||
+        unit.requiredConceptIndices?.some(
+          (i) => !lessons.includes(`${unit.id}:concept:${i}`),
+        )
+      )
         return { kind: "lesson" as const, block, unit };
       const question = unit.questions.find((q) => answers[q.id] === undefined);
       if (question) return { kind: "drill" as const, block, unit, question };

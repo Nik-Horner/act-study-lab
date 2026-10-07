@@ -1,0 +1,206 @@
+[
+  {
+    "id": "daily-clauses-1",
+    "skill": "clauses",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "Although the museum closes at six",
+    "questionText": "What kind of word group is this?",
+    "choices": [
+      "An independent clause",
+      "A dependent clause",
+      "A phrase without a subject",
+      "Two independent clauses"
+    ],
+    "answer": 1,
+    "explanation": "“The museum” is the subject and “closes” is the verb. “Although” makes the thought dependent: we still need the main statement. Without “Although,” “The museum closes at six” can stand alone."
+  },
+  {
+    "id": "daily-clauses-2",
+    "skill": "clauses",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "",
+    "questionText": "Which word group is an independent clause?",
+    "choices": [
+      "After the rehearsal ended",
+      "Carrying the heavy instrument",
+      "The musicians packed their instruments",
+      "Because the musicians were tired"
+    ],
+    "answer": 2,
+    "explanation": "“The musicians” is a subject and “packed” is a working verb. The thought is complete. “After” and “Because” make the other clauses dependent. “Carrying the heavy instrument” lacks a subject doing a working verb."
+  },
+  {
+    "id": "daily-clauses-3",
+    "skill": "clauses",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "",
+    "questionText": "Which word group is a phrase rather than a clause?",
+    "choices": [
+      "The river rose",
+      "While the river rose",
+      "The bridge remained open",
+      "Near the old stone bridge"
+    ],
+    "answer": 3,
+    "explanation": "“Near the old stone bridge” has no subject performing a verb. The other three groups each contain a subject and a verb; “While the river rose” is a dependent clause."
+  },
+  {
+    "id": "daily-clauses-4",
+    "skill": "clauses",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "Even though the trail was muddy",
+    "questionText": "Which change makes this word group an independent clause?",
+    "choices": [
+      "Remove “Even though”",
+      "Remove “the trail”",
+      "Replace “was” with “being”",
+      "Remove “muddy”"
+    ],
+    "answer": 0,
+    "explanation": "Removing the entire two-word starter “Even though” leaves “The trail was muddy,” a complete thought with subject “trail” and verb “was.” Removing the subject or the verb does not create an independent clause."
+  },
+  {
+    "id": "daily-clauses-5",
+    "skill": "clauses",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "",
+    "questionText": "Which word group is a dependent clause?",
+    "choices": [
+      "The crew repaired the roof",
+      "Repairing the damaged roof",
+      "Before the crew repaired the roof",
+      "On the damaged roof"
+    ],
+    "answer": 2,
+    "explanation": "“Before” makes “the crew repaired the roof” dependent. It supplies a subject and working verb but leaves the reader waiting for a main statement. The first choice is independent; the other two are phrases."
+  },
+  {
+    "id": "daily-clauses-6",
+    "skill": "clauses",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "The telescope revealed distant stars.",
+    "questionText": "Why can this word group stand alone?",
+    "choices": [
+      "It begins with a subordinating conjunction",
+      "It has a subject, a working verb, and a complete thought",
+      "It contains no subject",
+      "Every group ending with a period is complete"
+    ],
+    "answer": 1,
+    "explanation": "“The telescope” is the subject and “revealed” is the working verb; the thought is complete. A period alone cannot turn a phrase or dependent clause into a complete sentence."
+  },
+  {
+    "id": "daily-fragments-1",
+    "skill": "fragments",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "The athlete training before sunrise.",
+    "questionText": "Which revision makes a complete sentence?",
+    "choices": [
+      "The athlete training before sunrise",
+      "Training before sunrise",
+      "The athlete trained before sunrise",
+      "The athlete to train before sunrise"
+    ],
+    "answer": 2,
+    "explanation": "“Trained” supplies a working main verb for the subject “athlete.” “Training” and “to train” do not work as the main verb in these choices. The phrase “Training before sunrise” also lacks a subject."
+  },
+  {
+    "id": "daily-fragments-2",
+    "skill": "fragments",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "",
+    "questionText": "Which choice is a complete sentence?",
+    "choices": [
+      "Excited to enter the competition",
+      "The student excited to enter the competition",
+      "Entering the competition after school",
+      "The student was excited to enter the competition"
+    ],
+    "answer": 3,
+    "explanation": "“The student” is the subject and “was” is the working verb. The other choices omit either the subject or a working main verb. Describing someone as “excited” does not supply the missing verb by itself."
+  },
+  {
+    "id": "daily-fragments-3",
+    "skill": "fragments",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "The sculpture standing in the courtyard.",
+    "questionText": "Which revision supplies a working main verb?",
+    "choices": [
+      "The sculpture standing in the courtyard",
+      "Standing in the courtyard",
+      "The sculpture in the courtyard",
+      "The sculpture standing in the courtyard attracts visitors"
+    ],
+    "answer": 3,
+    "explanation": "“The sculpture” is the subject and “attracts” is the working main verb. “Standing in the courtyard” describes the sculpture but does not supply its main verb. The other choices still lack a subject or a working main verb."
+  },
+  {
+    "id": "daily-fragments-4",
+    "skill": "fragments",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "",
+    "questionText": "Which revision supplies the missing subject?",
+    "choices": [
+      "Reached the summit before noon",
+      "Reaching the summit before noon",
+      "The climbers reached the summit before noon",
+      "To reach the summit before noon"
+    ],
+    "answer": 2,
+    "explanation": "“The climbers” supplies the subject for the working verb “reached.” The first choice lacks a subject; “Reaching” and “To reach” are not working main verbs in the other fragments."
+  },
+  {
+    "id": "daily-fragments-5",
+    "skill": "fragments",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "",
+    "questionText": "Which sentence contains a description ending in -ing AND a working main verb?",
+    "choices": [
+      "The scientist examining the sample",
+      "The scientist examining the sample recorded the result",
+      "Examining the sample in the lab",
+      "The scientist to examine the sample"
+    ],
+    "answer": 1,
+    "explanation": "“Examining the sample” describes the scientist, while “recorded” is the working main verb. That makes the second choice complete. The other choices never provide a working main verb for a subject."
+  },
+  {
+    "id": "daily-fragments-6",
+    "skill": "fragments",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "easy",
+    "stem": "My sister practicing the piano every evening.",
+    "questionText": "Which revision supplies a working main verb?",
+    "choices": [
+      "My sister practicing the piano every evening",
+      "My sister to practice the piano every evening",
+      "Practicing the piano every evening",
+      "My sister practices the piano every evening"
+    ],
+    "answer": 3,
+    "explanation": "“Practices” is a working main verb with the subject “My sister.” “Practicing” and “to practice” do not complete these sentences on their own; the third choice has no subject either."
+  }
+]

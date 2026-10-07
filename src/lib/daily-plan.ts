@@ -13,6 +13,7 @@ import {
   getQuestion,
 } from "./act/content";
 import { blockUnits } from "./daily-flow";
+import { englishDailyQuestions } from "./english-daily-content";
 import { DAILY_CURRICULUM } from "./daily-curriculum";
 import { QUESTION_TARGET_SECONDS } from "./question-pacing";
 export { dailyComplete } from "./daily-flow";
@@ -45,10 +46,12 @@ export interface DailyUnit {
   questions: DailyQuestion[];
   sectionIndices?: number[];
   practiceIds?: string[];
+  requiredConceptIndices?: number[];
 }
 export interface DailyBlock {
   units?: DailyUnit[];
   reviewQuestions?: DailyQuestion[];
+  historicalQuestions?: DailyQuestion[];
   subject: AccountSubject;
   topic: string;
   title: string;
@@ -67,6 +70,8 @@ export interface DailyPlan {
   completedDate?: string;
   formatVersion?: number;
   nextFocus?: Partial<Record<AccountSubject, string[]>>;
+  curriculumPositions?: Partial<Record<AccountSubject, number>>;
+  nextCurriculumPositions?: Partial<Record<AccountSubject, number>>;
 }
 export function dailyId(value: string) {
   const hex = createHash("sha256").update(value).digest("hex");
@@ -100,21 +105,30 @@ export function makeDailyPlan(
   sequence: number,
   focus?: DailyPlan["nextFocus"],
   recentQuestions: string[] = [],
+  positions: DailyPlan["curriculumPositions"] = {},
 ): DailyPlan {
+  const curriculumPositions: DailyPlan["curriculumPositions"] = {};
   const draft = DAILY_SUBJECTS.map((subject) => {
     const topics =
       subject === "english"
         ? englishTopics().filter((t) => t.part !== "final")
         : getTopics(subject);
     const scopes = topics.flatMap((topic) =>
-      DAILY_CURRICULUM[topic.slug].map((scope, index) => ({
+      (subject === "english"
+        ? englishScopes(topic.slug)
+        : DAILY_CURRICULUM[topic.slug]
+      ).map((scope, index) => ({
         topic,
         scope,
         index,
-        id: `${subject}:${topic.slug}:scope:${index}`,
+        id:
+          subject === "english"
+            ? `english:${topic.slug}:original:${index}`
+            : `${subject}:${topic.slug}:scope:${index}`,
       })),
     );
-    const start = (sequence * 2) % scopes.length;
+    const start = (positions?.[subject] ?? sequence * 2) % scopes.length;
+    curriculumPositions[subject] = start;
     const preferred = (focus?.[subject] ?? []).flatMap((key) => {
       const exact = scopes.find((s) => s.id === key);
       return exact
@@ -137,7 +151,7 @@ export function makeDailyPlan(
       ) as Lesson;
       const bank =
         subject === "english"
-          ? englishQuestions(topic.slug)
+          ? englishDailyQuestions(topic.slug)
           : getQuestions(topic.slug);
       const pool = scope.practice.map((i) => bank[i]);
       if (pool.some((q) => !q))
@@ -159,7 +173,11 @@ export function makeDailyPlan(
       return {
         id,
         topic: topic.slug,
-        title: lesson.sections[0].heading,
+        title:
+          subject === "english" &&
+          scope.sections.length === full.sections.length
+            ? full.title
+            : lesson.sections[0].heading,
         sectionIndices: scope.sections,
         practiceIds: rotated.map((q) => q.id),
         lesson,
@@ -187,6 +205,24 @@ export function makeDailyPlan(
       questions: [...units.flatMap((u) => u.questions), ...reviewQuestions],
     } as DailyBlock;
   });
+  // Keep a complete lesson and its drill together. If two complete lessons
+  // would exceed the saved budget, defer a whole second unit, never its rules.
+  while (
+    draft.reduce((n, b) => n + Math.ceil(estimateDailyBlock(b)), 0) >
+    settings.minutesPerDay
+  ) {
+    const candidates = draft
+      .filter((b) => b.units!.length > 1)
+      .sort((a, b) => estimateDailyBlock(b) - estimateDailyBlock(a));
+    const block = candidates[0];
+    if (!block) break;
+    block.units!.pop();
+    block.reviewQuestions = makeReviewQuestions(block.subject, block.units!, 0);
+    block.questions = [
+      ...block.units!.flatMap((u) => u.questions),
+      ...block.reviewQuestions,
+    ];
+  }
   const minimum = draft.map((block) => Math.ceil(estimateDailyBlock(block)));
   if (minimum.reduce((a, b) => a + b, 0) > settings.minutesPerDay)
     throw new Error("Curriculum exceeds the daily budget");
@@ -211,7 +247,7 @@ export function makeDailyPlan(
         const q =
           id &&
           (block.subject === "english"
-            ? englishQuestions(unit.topic).find((q) => q.id === id)
+            ? englishDailyQuestions(unit.topic).find((q) => q.id === id)
             : getQuestion(id));
         if (!q) continue;
         const candidate = {
@@ -242,8 +278,42 @@ export function makeDailyPlan(
     sequence,
     blocks: draft,
     complete: false,
-    formatVersion: 5,
+    formatVersion: 6,
+    curriculumPositions,
+    nextCurriculumPositions: Object.fromEntries(
+      draft.map((b) => [
+        b.subject,
+        (curriculumPositions[b.subject] ?? 0) +
+          blockUnits(b).filter(
+            (u) =>
+              !(focus?.[b.subject] ?? []).some(
+                (key) => key === u.id || key === u.topic,
+              ),
+          ).length,
+      ]),
+    ),
   };
+}
+function englishScopes(topic: string) {
+  const full = englishLesson(topic);
+  const bank = englishQuestions(topic);
+  const complete = {
+    sections: full.sections.map((_, i) => i),
+    practice: bank.map((_, i) => i),
+  };
+  return topic === "sentence-structure"
+    ? [
+        {
+          sections: [0],
+          practice: [0, 1, 2, 3, 4, 5].map((i) => bank.length + i),
+        },
+        {
+          sections: [1],
+          practice: [0, 1, 2, 3, 4, 5].map((i) => bank.length + 6 + i),
+        },
+        complete,
+      ]
+    : [complete];
 }
 function sliceLesson(
   full: Lesson,
@@ -260,12 +330,19 @@ function sliceLesson(
         ? { ...section, examples: section.examples?.slice(0, 1) }
         : section;
     }),
-    check: [],
+    check:
+      subject === "english" && indices.length === full.sections.length
+        ? full.check
+        : [],
   };
 }
 const words = (text: string) => text.trim().split(/\s+/).filter(Boolean).length;
-/** Planning estimate, not a speed test: slow teaching + application + corrections. */
-export function estimateDailyBlock(block: DailyBlock) {
+/** Conservative teaching estimate plus unanswered application and corrections. */
+export function estimateDailyBlock(
+  block: DailyBlock,
+  answers: Record<string, number> = {},
+) {
+  const unanswered = block.questions.filter((q) => answers[q.id] === undefined);
   const sections = blockUnits(block).flatMap((u) => u.lesson.sections);
   const teaching =
     sections.reduce(
@@ -284,15 +361,20 @@ export function estimateDailyBlock(block: DailyBlock) {
     sections.reduce((n, s) => n + (s.examples?.length ?? 0) * 10, 0) / 60;
   const passages = new Map<string, string>();
   if (block.subject === "reading")
-    for (const q of block.questions)
+    for (const q of unanswered)
       if (q.passage) passages.set(q.passage.id, q.passage.context ?? "");
   const reading =
     [...passages.values()].reduce((n, t) => n + words(t), 0) / 220;
+  const checkCount = blockUnits(block).reduce(
+    (n, u) => n + u.lesson.check.length,
+    0,
+  );
   const answering =
-    (block.questions.length *
-      (block.subject === "reading"
-        ? 35
-        : QUESTION_TARGET_SECONDS[block.subject])) /
+    (checkCount * QUESTION_TARGET_SECONDS[block.subject] +
+      unanswered.length *
+        (block.subject === "reading"
+          ? 35
+          : QUESTION_TARGET_SECONDS[block.subject])) /
     60;
   return (
     Math.round(
@@ -300,7 +382,7 @@ export function estimateDailyBlock(block: DailyBlock) {
         interaction +
         reading +
         answering +
-        (block.questions.length * 20) / 60 +
+        ((unanswered.length + checkCount) * 20) / 60 +
         0.75) *
         100,
     ) / 100
@@ -316,7 +398,7 @@ function makeReviewQuestions(
   return units.map((unit) => {
     const pool = (
       subject === "english"
-        ? englishQuestions(unit.topic)
+        ? englishDailyQuestions(unit.topic)
         : getQuestions(unit.topic)
     ).filter(
       (q) =>
@@ -359,6 +441,15 @@ export function selectDailyPlan(
         last ? last.sequence + 1 : 0,
         last?.nextFocus,
         last?.blocks.flatMap((b) => b.questions.map((q) => q.id)),
+        last?.nextCurriculumPositions ??
+          (last?.curriculumPositions &&
+            Object.fromEntries(
+              last.blocks.map((b) => [
+                b.subject,
+                (last.curriculumPositions?.[b.subject] ?? 0) +
+                  blockUnits(b).length,
+              ]),
+            )),
       );
 }
 
@@ -368,42 +459,163 @@ export function restoreDailyTeaching(
   answers: Record<string, number>,
   settings?: StudySettings,
 ): DailyPlan {
-  if (plan.formatVersion === 5) return plan;
-  if (plan.complete) return { ...plan, formatVersion: 5 };
+  if (plan.formatVersion === 6) return plan;
+  if (plan.complete) return { ...plan, formatVersion: 6 };
+  const oldEnglish = plan.blocks.find((b) => b.subject === "english");
+  const oldUnit = oldEnglish && blockUnits(oldEnglish)[0];
+  const entries = englishTopics()
+    .filter((t) => t.part !== "final")
+    .flatMap((t) =>
+      englishScopes(t.slug).map((_, index) => ({ topic: t.slug, index })),
+    );
+  const oldScope = Number(oldUnit?.id.match(/:scope:(\d+)$/)?.[1] ?? 0);
+  const start = Math.max(
+    0,
+    entries.findIndex(
+      (entry) =>
+        entry.topic === oldUnit?.topic &&
+        entry.index ===
+          (oldUnit?.topic === "sentence-structure" ? Math.min(oldScope, 2) : 0),
+    ),
+  );
+  const study = settings ?? {
+    minutesPerDay: plan.minutes as StudySettings["minutesPerDay"],
+    scores: { english: null, math: null, reading: null, science: null },
+  };
   const fresh = makeDailyPlan(
     "upgrade",
     plan.date,
-    settings ?? {
-      minutesPerDay: plan.minutes as StudySettings["minutesPerDay"],
-      scores: { english: null, math: null, reading: null, science: null },
-    },
+    study,
     plan.sequence,
     plan.nextFocus,
+    [],
+    { ...plan.curriculumPositions, english: start },
   );
+  let english = fresh.blocks[0];
+  const capacity = oldEnglish?.minutes ?? english.minutes;
+  const rebuild = (units: DailyUnit[]) => {
+    const reviewQuestions = makeReviewQuestions("english", units, 0);
+    return {
+      ...english,
+      units,
+      reviewQuestions,
+      topic: units[0].topic,
+      title: units[0].title,
+      lesson: units[0].lesson,
+      questions: [...units.flatMap((u) => u.questions), ...reviewQuestions],
+    };
+  };
+  // Historical answers stay available for review, but buy no new workload.
+  while (estimateDailyBlock(english) > capacity) {
+    const units = blockUnits(english).map((u) => ({
+      ...u,
+      questions: [...u.questions],
+    }));
+    const longest = [...units].sort(
+      (a, b) => b.questions.length - a.questions.length,
+    )[0];
+    if (longest.questions.length > 1) longest.questions.pop();
+    else if (units.length > 1) units.pop();
+    else break;
+    english = rebuild(units);
+  }
+  let deferred = false;
+  if (estimateDailyBlock(english) > capacity) {
+    // Migration only: keep a complete foundation refresher inside an older
+    // allocation, then resume the deferred original topic on the next day.
+    const foundation = makeDailyPlan(
+      "upgrade",
+      plan.date,
+      study,
+      0,
+      undefined,
+      [],
+      { english: 0 },
+    ).blocks[0];
+    const unit = {
+      ...blockUnits(foundation)[0],
+      questions: [blockUnits(foundation)[0].questions[0]],
+    };
+    english = rebuild([unit]);
+    deferred = true;
+  }
+  const active = new Set(english.questions.map((q) => q.id));
+  const historicalQuestions = [
+    ...(oldEnglish?.questions ?? []),
+    ...(oldEnglish?.historicalQuestions ?? []),
+  ].filter(
+    (q, i, all) =>
+      answers[q.id] !== undefined &&
+      !active.has(q.id) &&
+      all.findIndex((item) => item.id === q.id) === i,
+  );
+  english = {
+    ...english,
+    minutes: capacity,
+    estimatedMinutes: estimateDailyBlock(english),
+    historicalQuestions,
+  };
+  const blocks = fresh.blocks.map((b) => {
+    const old = plan.blocks.find((item) => item.subject === b.subject);
+    if (b.subject === "english") return english;
+    if (old && (plan.formatVersion ?? 0) >= 5) return old;
+    const ids = new Set(b.questions.map((q) => q.id));
+    return {
+      ...b,
+      minutes: old?.minutes ?? b.minutes,
+      historicalQuestions: [
+        ...(old?.questions ?? []),
+        ...(old?.historicalQuestions ?? []),
+      ].filter((q) => answers[q.id] !== undefined && !ids.has(q.id)),
+    };
+  });
+  const nextEnglish = deferred
+    ? start
+    : start +
+      blockUnits(english).filter(
+        (u) =>
+          !(plan.nextFocus?.english ?? []).some(
+            (key) => key === u.id || key === u.topic,
+          ),
+      ).length;
   return {
-    ...fresh,
-    id: plan.id,
-    blocks: fresh.blocks.map((b) => {
-      const ids = new Set(b.questions.map((q) => q.id));
-      const historical =
-        plan.blocks
-          .find((old) => old.subject === b.subject)
-          ?.questions.filter(
-            (q) => answers[q.id] !== undefined && !ids.has(q.id),
-          ) ?? [];
-      return { ...b, questions: [...b.questions, ...historical] };
-    }),
+    ...plan,
+    formatVersion: 6,
+    blocks,
+    curriculumPositions: { ...fresh.curriculumPositions, english: start },
+    nextCurriculumPositions: {
+      ...fresh.nextCurriculumPositions,
+      ...Object.fromEntries(
+        blocks
+          .filter((b) => b.subject !== "english")
+          .map((b) => [
+            b.subject,
+            plan.nextCurriculumPositions?.[b.subject] ??
+              (fresh.curriculumPositions?.[b.subject] ?? 0) +
+                blockUnits(b).filter(
+                  (u) =>
+                    !(plan.nextFocus?.[b.subject] ?? []).some(
+                      (key) => key === u.id || key === u.topic,
+                    ),
+                ).length,
+          ]),
+      ),
+      english: nextEnglish,
+    },
   };
 }
 
 /** Saved sessions use corrected teaching and evidence without resetting progress. */
-export function refreshDailyContent(plan: DailyPlan): DailyPlan {
+export function refreshDailyContent(
+  plan: DailyPlan,
+  answers: Record<string, number> = {},
+): DailyPlan {
   const question = (q: DailyQuestion): DailyQuestion => {
     const lesson =
       q.subject === "english" ? englishLesson(q.topic) : getLesson(q.topic);
     const source =
       q.subject === "english"
-        ? (englishQuestions(q.topic).find((item) => item.id === q.id) ??
+        ? (englishDailyQuestions(q.topic).find((item) => item.id === q.id) ??
           lesson.check.find(
             (item, i) =>
               (item.id ?? `${q.topic}-daily-check-${i + 1}`) === q.id,
@@ -420,31 +632,176 @@ export function refreshDailyContent(plan: DailyPlan): DailyPlan {
         } as DailyQuestion)
       : q;
   };
-  return {
+  const refreshed = {
     ...plan,
     blocks: plan.blocks.map((b) => {
-      const units = blockUnits(b).map((u) => ({
-        ...u,
-        lesson: u.sectionIndices
-          ? sliceLesson(
-              (b.subject === "english"
-                ? englishLesson(u.topic)
-                : getLesson(u.topic)) as Lesson,
-              u.sectionIndices,
-              b.subject,
-            )
-          : ((b.subject === "english"
-              ? englishLesson(u.topic)
-              : getLesson(u.topic)) as Lesson),
-        questions: u.questions.map(question),
-      }));
-      return {
+      const units = blockUnits(b).map((u) => {
+        const full = (
+          b.subject === "english" ? englishLesson(u.topic) : getLesson(u.topic)
+        ) as Lesson;
+        const indices = [
+          ...(u.sectionIndices ?? full.sections.map((_, i) => i)),
+        ];
+        const required = [...(u.requiredConceptIndices ?? [])];
+        if (b.subject !== "english") {
+          const scopes = DAILY_CURRICULUM[u.topic];
+          const scopeIndex = Number(u.id.match(/:scope:(\d+)$/)?.[1]);
+          const own = scopes?.[scopeIndex];
+          const questions = [
+            ...u.questions,
+            ...(b.reviewQuestions ?? []).filter((q) =>
+              u.practiceIds?.includes(q.id),
+            ),
+          ];
+          const needed = new Set(own?.sections ?? []);
+          const bank = getQuestions(u.topic);
+          for (const q of questions) {
+            const poolIndex = bank.findIndex((item) => item.id === q.id);
+            if (own?.practice.includes(poolIndex)) continue;
+            const match = scopes
+              ?.filter((scope) => scope.practice.includes(poolIndex))
+              .sort(
+                (a, c) =>
+                  a.sections.filter((i) => !needed.has(i)).length -
+                  c.sections.filter((i) => !needed.has(i)).length,
+              )[0];
+            match?.sections.forEach((i) => needed.add(i));
+          }
+          const hasWork =
+            !plan.complete &&
+            questions.some((q) => answers[q.id] === undefined);
+          for (const sourceIndex of needed) {
+            const position = indices.indexOf(sourceIndex);
+            const changed =
+              position >= 0 &&
+              JSON.stringify(u.lesson.sections[position]?.body) !==
+                JSON.stringify(full.sections[sourceIndex].body);
+            if (position < 0 || changed) {
+              // Append to preserve saved :concept:i positions. A completed
+              // lesson with unanswered drills must teach new prerequisites.
+              const next = indices.length;
+              indices.push(sourceIndex);
+              if (hasWork) required.push(next);
+            }
+          }
+        }
+        return {
+          ...u,
+          sectionIndices: indices,
+          requiredConceptIndices: [...new Set(required)],
+          lesson: sliceLesson(full, indices, b.subject),
+          questions: u.questions.map(question),
+        };
+      });
+      const refreshed = {
         ...b,
         units,
         lesson: units[0].lesson,
         questions: b.questions.map(question),
+        historicalQuestions: b.historicalQuestions?.map(question),
         reviewQuestions: b.reviewQuestions?.map(question),
       };
+      return { ...refreshed, estimatedMinutes: estimateDailyBlock(refreshed) };
     }),
   };
+  return fitRefreshedBudget(refreshed, answers);
+}
+
+/** Corrected prerequisites use the saved clock, with less new practice if needed. */
+function fitRefreshedBudget(
+  plan: DailyPlan,
+  answers: Record<string, number>,
+): DailyPlan {
+  if (plan.complete) return plan;
+  const blocks = plan.blocks.map((b) => ({
+    ...b,
+    units: blockUnits(b).map((u) => ({ ...u, questions: [...u.questions] })),
+  }));
+  const next = { ...plan.nextCurriculumPositions };
+  const needed = () =>
+    blocks.map((b) => Math.ceil(estimateDailyBlock(b, answers)));
+  const total = () => needed().reduce((n, minutes) => n + minutes, 0);
+  const rebuild = (block: DailyBlock) => {
+    const units = blockUnits(block);
+    block.topic = units[0].topic;
+    block.title = units[0].title;
+    block.lesson = units[0].lesson;
+    block.questions = [
+      ...units.flatMap((u) => u.questions),
+      ...(block.reviewQuestions ?? []),
+    ];
+  };
+  while (total() > plan.minutes) {
+    const candidates = blocks
+      .flatMap((block) =>
+        blockUnits(block)
+          .filter((unit) => unit.questions.length > 1)
+          .map((unit) => ({ block, unit })),
+      )
+      .filter(({ unit }) =>
+        unit.questions.some((q) => answers[q.id] === undefined),
+      )
+      .sort(
+        (a, b) =>
+          estimateDailyBlock(b.block, answers) -
+          estimateDailyBlock(a.block, answers),
+      );
+    const candidate = candidates[0];
+    if (candidate) {
+      const index = candidate.unit.questions.findLastIndex(
+        (q) => answers[q.id] === undefined,
+      );
+      candidate.unit.questions.splice(index, 1);
+      rebuild(candidate.block);
+      continue;
+    }
+    // Defer only an untouched trailing unit. Its saved completion keys and any
+    // answered questions remain valid; no completed work is discarded.
+    const block = [...blocks].reverse().find((b) => {
+      const units = blockUnits(b),
+        last = units.at(-1)!;
+      return (
+        units.length > 1 &&
+        ![
+          ...last.questions,
+          ...(b.reviewQuestions ?? []).filter(
+            (q) => last.practiceIds?.includes(q.id) ?? q.topic === last.topic,
+          ),
+        ].some((q) => answers[q.id] !== undefined)
+      );
+    });
+    if (!block) break;
+    const unit = block.units!.pop()!;
+    block.reviewQuestions = block.reviewQuestions?.filter(
+      (q) => !(unit.practiceIds?.includes(q.id) ?? q.topic === unit.topic),
+    );
+    if (
+      !(plan.nextFocus?.[block.subject] ?? []).some(
+        (key) => key === unit.id || key === unit.topic,
+      )
+    )
+      next[block.subject] = Math.max(
+        plan.curriculumPositions?.[block.subject] ?? 0,
+        (next[block.subject] ?? 0) - 1,
+      );
+    rebuild(block);
+  }
+  const minimum = needed();
+  if (minimum.reduce((n, m) => n + m, 0) <= plan.minutes) {
+    // Use existing spare minutes before changing any subject's allocation.
+    const allocation = blocks.map((b, i) => Math.max(b.minutes, minimum[i]));
+    let excess = allocation.reduce((n, m) => n + m, 0) - plan.minutes;
+    for (let i = 0; i < allocation.length && excess > 0; i++) {
+      const taken = Math.min(excess, allocation[i] - minimum[i]);
+      allocation[i] -= taken;
+      excess -= taken;
+    }
+    blocks.forEach((b, i) => {
+      b.minutes = allocation[i];
+    });
+  }
+  blocks.forEach((b) => {
+    b.estimatedMinutes = estimateDailyBlock(b, answers);
+  });
+  return { ...plan, blocks, nextCurriculumPositions: next };
 }

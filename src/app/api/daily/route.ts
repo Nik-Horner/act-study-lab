@@ -91,7 +91,10 @@ async function load() {
     if (typeof record.event.elapsedMs === "number")
       answerTimes[record.event.questionId] = record.event.elapsedMs;
   }
-  plan = refreshDailyContent(restoreDailyTeaching(plan, answers, settings));
+  plan = refreshDailyContent(
+    restoreDailyTeaching(plan, answers, settings),
+    answers,
+  );
   const lessons = (checks ?? []).flatMap((c) => {
     const prefix = `daily:${plan.id}:step:`;
     if (c.item_key.startsWith(prefix)) return [c.item_key.slice(prefix.length)];
@@ -271,7 +274,7 @@ export async function POST(request: Request) {
     ctx.lessons.push(key);
   } else if (body.action === "answer") {
     const q = plan.blocks
-      .flatMap((b) => b.questions)
+      .flatMap((b) => [...b.questions, ...(b.historicalQuestions ?? [])])
       .find((q) => q.id === body.questionId);
     if (
       !q ||

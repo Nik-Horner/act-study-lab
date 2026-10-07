@@ -1,5 +1,4 @@
 "use client";
-import { AnswerFeedback } from "@/components/AnswerFeedback";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { renderStem, LETTERS, shuffle, fmtTime } from "@/lib/format";
@@ -23,7 +22,7 @@ export type PoolItem = {
   question: Question;
 };
 
-type DrillClientProps =
+type OriginalDrillProps =
   | {
       mode: "topic";
       slug: string;
@@ -34,6 +33,17 @@ type DrillClientProps =
   | { mode: "weak"; pool: PoolItem[] }
   | { mode: "misses"; pool: PoolItem[] };
 
+type DrillClientProps = OriginalDrillProps & {
+  daily?: {
+    savedChoice?: number;
+    savedSeconds?: number;
+    count: number;
+    correct: number;
+    streak: number;
+    onAnswer: (choice: number, seconds: number) => Promise<boolean>;
+    onNext: () => void;
+  };
+};
 export function DrillClient(props: DrillClientProps) {
   const items: PoolItem[] = useMemo(() => {
     if (props.mode === "topic") {
@@ -54,9 +64,15 @@ export function DrillClient(props: DrillClientProps) {
     order: items.map((_, i) => i),
     idx: 0,
   }));
-  const [answered, setAnswered] = useState(false);
-  const [picked, setPicked] = useState<number | null>(null);
-  const [answerSec, setAnswerSec] = useState(0);
+  const [answered, setAnswered] = useState(
+    props.daily?.savedChoice !== undefined,
+  );
+  const [picked, setPicked] = useState<number | null>(
+    props.daily?.savedChoice ?? null,
+  );
+  const [answerSec, setAnswerSec] = useState(props.daily?.savedSeconds ?? 0);
+  const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState(false);
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionCount, setSessionCount] = useState(0);
   const [streak, setStreak] = useState(
@@ -106,7 +122,15 @@ export function DrillClient(props: DrillClientProps) {
       if (answered || !current) return;
       setAnswered(true);
       setPicked(choiceIdx);
-      setAnswerSec(Math.round((Date.now() - qStartRef.current) / 1000));
+      const seconds = Math.round((Date.now() - qStartRef.current) / 1000);
+      setAnswerSec(seconds);
+      if (props.daily) {
+        setSaving(true);
+        const saved = await props.daily.onAnswer(choiceIdx, seconds);
+        setSaveError(!saved);
+        setSaving(false);
+        return;
+      }
 
       const correct = choiceIdx === current.question.answer;
       setSessionCount((c) => c + 1);
@@ -138,11 +162,15 @@ export function DrillClient(props: DrillClientProps) {
         // best-effort; session score above already reflects the answer
       }
     },
-    [answered, current, props.mode],
+    [answered, current, props.mode, props.daily],
   );
 
   const goNext = useCallback(() => {
-    if (!current) return;
+    if (!current || saving || saveError) return;
+    if (props.daily) {
+      props.daily.onNext();
+      return;
+    }
     setJustMastered(false);
     const lastRight = picked === current.question.answer;
 
@@ -167,7 +195,7 @@ export function DrillClient(props: DrillClientProps) {
     });
     setAnswered(false);
     setPicked(null);
-  }, [current, picked, props.mode, items]);
+  }, [current, picked, props.mode, props.daily, items, saving, saveError]);
 
   // Keyboard shortcuts: A-D / 1-4 to answer, Enter / N / Space for next.
   useEffect(() => {
@@ -246,9 +274,9 @@ export function DrillClient(props: DrillClientProps) {
         <div className="flex items-center gap-4">
           <Stat
             label="This session"
-            value={`${sessionCorrect}/${sessionCount}`}
+            value={`${props.daily?.correct ?? sessionCorrect}/${props.daily?.count ?? sessionCount}`}
           />
-          <Stat label="Streak" value={String(streak)} />
+          <Stat label="Streak" value={String(props.daily?.streak ?? streak)} />
           <span
             className={`rounded-full border border-border px-3 py-1 text-sm font-mono ${
               elapsed > TARGET_SEC ? "text-warn" : "text-ink-soft"
@@ -259,7 +287,7 @@ export function DrillClient(props: DrillClientProps) {
         </div>
       </div>
 
-      {props.mode === "topic" && (
+      {props.mode === "topic" && !props.daily && (
         <div>
           <p className="mb-1.5 text-sm text-ink-soft">
             {status === "mastered" ? (
@@ -336,14 +364,16 @@ export function DrillClient(props: DrillClientProps) {
           })}
         </div>
 
-        {answered && (
+        {answered && !saving && !saveError && (
           <div className="mt-4 space-y-2">
-            <AnswerFeedback
-              choices={current.question.choices}
-              answer={current.question.answer}
-              chosen={picked}
-              explanation={current.question.explanation}
-            />
+            <p
+              className={`text-sm font-medium ${picked === current.question.answer ? "text-good" : "text-bad"}`}
+            >
+              {picked === current.question.answer ? "Correct ✓" : "Not quite"}
+            </p>
+            <p className="text-sm text-ink-soft">
+              {current.question.explanation}
+            </p>
             <p
               className={`text-xs ${answerSec <= TARGET_SEC ? "text-good" : "text-warn"}`}
             >
@@ -365,7 +395,27 @@ export function DrillClient(props: DrillClientProps) {
         )}
       </Card>
 
-      {answered && (
+      {saving && (
+        <p role="status" className="text-center text-sm text-ink-soft">
+          Saving answer…
+        </p>
+      )}
+      {saveError && props.daily && (
+        <button
+          type="button"
+          className="min-h-11 text-brand underline"
+          onClick={async () => {
+            if (picked === null) return;
+            setSaving(true);
+            const saved = await props.daily!.onAnswer(picked, answerSec);
+            setSaveError(!saved);
+            setSaving(false);
+          }}
+        >
+          Retry saving answer
+        </button>
+      )}
+      {answered && !saving && !saveError && (
         <div className="flex justify-center">
           <button
             type="button"
