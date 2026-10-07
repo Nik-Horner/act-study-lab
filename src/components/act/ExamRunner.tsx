@@ -17,7 +17,7 @@ import {
 import { fmtTime } from "@/lib/format";
 import { QuestionView } from "./QuestionView";
 import { useQuestionNavigation } from "./useQuestionNavigation";
-import { Calculator } from "./Calculator";
+import { DesmosPanel } from "./DesmosPanel";
 import { Button, ButtonLink } from "../ui/Button";
 import { Card } from "../ui/Card";
 import { Badge } from "../ui/Badge";
@@ -413,7 +413,11 @@ export function ExamRunner({
           </Button>
         )}
       </Card>
-      {showCalculator && exam.subject === "math" && <Calculator />}
+      {exam.subject === "math" && (
+        <div hidden={!showCalculator} className="mb-5">
+          <DesmosPanel subject="math" initiallyOpen />
+        </div>
+      )}
       <Card className="p-5 sm:p-7">
         <QuestionView
           {...navigation}

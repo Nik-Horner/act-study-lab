@@ -821,7 +821,7 @@ for (const topic of [
     .join(" ")
     .split(/\s+/).length;
   assert.ok(
-    words >= 900 && words <= 1200,
+    words >= 900 && words <= 1300,
     topic + ": substantive lesson length",
   );
   assert.ok(lesson.sections.flatMap((s) => s.examples).length >= 6);

@@ -1,18 +1,25 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Card } from "./ui/Card";
 import { Button } from "./ui/Button";
+import { AnswerFeedback } from "./AnswerFeedback";
+import { DailyLesson } from "./DailyLesson";
+import { DailyDrill } from "./DailyDrill";
+import { LessonSections } from "./LessonSections";
+import { answerPacing } from "@/lib/question-pacing";
+import { type DailyPlan, type DailyQuestion } from "@/lib/daily-plan";
+import { DesmosPanel } from "./act/DesmosPanel";
 import { QuestionView } from "./act/QuestionView";
-import { Calculator } from "./act/Calculator";
-import { renderStem } from "@/lib/format";
-import type { DailyPlan, DailyQuestion } from "@/lib/daily-plan";
 import type { Question } from "@/lib/act/types";
+import { renderStem } from "@/lib/format";
+import { dailyStep, blockUnits } from "@/lib/daily-flow";
 interface DailyState {
   plan: DailyPlan;
   saved: boolean;
   answers: Record<string, number>;
+  answerTimes: Record<string, number>;
   lessons: string[];
   deadline: number | null;
   today: string;
@@ -25,12 +32,11 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
   const [data, setData] = useState<DailyState | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
-  const [chosen, setChosen] = useState<number | null>(null);
   const [review, setReview] = useState<DailyQuestion | null>(null);
   const [now, setNow] = useState(Date.now);
   const [started, setStarted] = useState(false);
+  const [revisitLesson, setRevisitLesson] = useState(false);
   const [history, setHistory] = useState(false);
-  const questionStart = useRef(0);
   async function load() {
     try {
       const r = await fetch("/api/daily", { cache: "no-store" });
@@ -71,7 +77,6 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       setData(d);
       if (body.action === "start") {
         setStarted(true);
-        questionStart.current = Date.now();
       }
       return d as DailyState;
     } catch (e) {
@@ -81,6 +86,14 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       setPending(false);
     }
   }
+  const step = data ? dailyStep(data.plan, data.answers, data.lessons) : null;
+  const screenKey = `${started}:${revisitLesson}:${review?.id ?? ""}:${step?.kind}:${step && "unit" in step ? step.unit?.id : ""}:${step && "question" in step ? step.question?.id : ""}`;
+  useEffect(() => {
+    const frame = requestAnimationFrame(() =>
+      window.scrollTo({ top: 0, behavior: "auto" }),
+    );
+    return () => cancelAnimationFrame(frame);
+  }, [screenKey]);
   if (!data)
     return (
       <div className="mx-auto max-w-2xl">
@@ -105,12 +118,8 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       ? data.minutes * 60
       : Math.max(0, Math.ceil((data.deadline - now) / 1000));
   const expired = data.deadline !== null && remaining === 0;
-  const block = plan.blocks.find(
-    (b) =>
-      !lessons.includes(b.subject) ||
-      b.questions.some((q) => answers[q.id] === undefined),
-  );
-  const q = block?.questions.find((q) => answers[q.id] === undefined);
+  const block = step && "block" in step ? step.block : undefined;
+  const q = step?.kind === "drill" ? step.question : undefined;
   const time = `${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, "0")}`;
   const errorView = error && (
     <p
@@ -124,11 +133,9 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     return (
       <div className="mx-auto max-w-2xl space-y-6">
         <Card className="p-6 sm:p-8">
-          <h1 className="text-2xl font-semibold">Your daily study, handled.</h1>
-          <p className="mt-3 leading-relaxed text-ink-soft">
-            One guided session through English, Reading, Math, and Science. We
-            choose the categories and keep everything inside your {data.minutes}
-            -minute study time.
+          <h1 className="text-2xl font-semibold">Daily study</h1>
+          <p className="mt-2 text-sm text-ink-soft">
+            {data.minutes} minutes · 4 subjects
           </p>
           <div className="mt-6">
             {plan.complete ? (
@@ -172,20 +179,21 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
               >
                 <div>
                   <p className="text-sm font-semibold">{label(b.subject)}</p>
-                  <p className="mt-1 text-sm text-ink-soft">{b.title}</p>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    {blockUnits(b).length} lessons · {blockUnits(b).length}{" "}
+                    drills · review
+                  </p>
                 </div>
                 <span className="shrink-0 text-sm text-ink-soft">
-                  {b.questions.every((q) => answers[q.id] !== undefined) &&
-                  lessons.includes(b.subject)
+                  {plan.complete || lessons.includes(`review:${b.subject}`)
                     ? "Done"
                     : `~${b.minutes} min`}
                 </span>
               </li>
             ))}
           </ol>
-          <p className="mt-4 text-xs leading-relaxed text-ink-soft">
-            Question pacing is an estimate. The session clock caps your total
-            time; unfinished work carries forward.
+          <p className="mt-4 text-xs text-ink-soft">
+            Time follows your score needs. Unfinished work carries forward.
           </p>
         </Card>
         {errorView}
@@ -199,7 +207,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         </div>
       </div>
     );
-  if (plan.complete || expired)
+  if ((plan.complete || expired) && !review)
     return (
       <div className="mx-auto max-w-3xl space-y-5">
         <Card className="p-6 sm:p-8">
@@ -234,14 +242,19 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             .filter((q) => answers[q.id] !== undefined)
             .map((q) => (
               <Card className="p-5" key={q.id}>
-                <p className="mb-3 font-semibold">
-                  {label(q.subject)} · {q.questionText}
-                </p>
-                <p className="text-sm text-ink-soft">
-                  {answers[q.id] === q.answer ? "Correct" : "Missed"} · Correct
-                  answer: {q.choices[q.answer]}
-                </p>
-                <p className="mt-3 text-sm leading-relaxed">{q.explanation}</p>
+                <details open={answers[q.id] !== q.answer}>
+                  <summary className="cursor-pointer font-semibold">
+                    {label(q.subject)} ·{" "}
+                    {answers[q.id] === q.answer
+                      ? "Correct"
+                      : "Missed — review this"}
+                  </summary>
+                  <DailyCorrection
+                    q={q}
+                    chosen={answers[q.id]}
+                    elapsedMs={data.answerTimes[q.id]}
+                  />
+                </details>
               </Card>
             ))}
         {errorView}
@@ -251,16 +264,27 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     return (
       <div className="mx-auto max-w-2xl">
         <Card className="p-8">
-          <h1 className="text-2xl font-semibold">
-            Ready for your daily lesson?
-          </h1>
-          <p className="mt-3 leading-relaxed text-ink-soft">
-            We’ll guide you through all four subjects, one category at a time.
-            Your account saves every answer.{" "}
-            {data.deadline === null
-              ? `The ${data.minutes}-minute clock starts when you begin.`
-              : `Your study clock has ${time} remaining; it continues across reloads and devices.`}
+          <h1 className="text-2xl font-semibold">Daily study</h1>
+          <p className="mt-2 text-sm text-ink-soft">
+            {data.minutes} minutes · English, Reading, Math, Science
           </p>
+          <ol className="mt-5 divide-y divide-border">
+            {plan.blocks.map((b) => (
+              <li
+                key={b.subject}
+                className="flex items-center justify-between gap-4 py-3"
+              >
+                <div>
+                  <p className="font-semibold">{label(b.subject)}</p>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    {blockUnits(b).length} lessons · {blockUnits(b).length}{" "}
+                    drills · review
+                  </p>
+                </div>
+                <span className="text-sm text-ink-soft">~{b.minutes} min</span>
+              </li>
+            ))}
+          </ol>
           <Button
             className="mt-6 w-full"
             disabled={pending}
@@ -277,169 +301,248 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       </div>
     );
   const current = review ?? q;
+  const currentBlock = plan.blocks.find(
+    (b) => b.subject === (review?.subject ?? block?.subject),
+  );
+  const currentUnit =
+    currentBlock &&
+    (review
+      ? blockUnits(currentBlock).find(
+          (u) => u.practiceIds?.includes(review.id) ?? u.topic === review.topic,
+        )
+      : step && "unit" in step
+        ? step.unit
+        : undefined);
+  const practiceQuestions =
+    current?.phase === "review"
+      ? (currentBlock?.reviewQuestions ?? [])
+      : (currentUnit?.questions ?? []);
+  const blockAnswers = practiceQuestions.filter(
+    (item) => answers[item.id] !== undefined,
+  );
+  let streak = 0;
+  for (const item of [...blockAnswers].reverse()) {
+    if (answers[item.id] !== item.answer) break;
+    streak++;
+  }
+  function nextQuestion() {
+    setReview(null);
+    setRevisitLesson(false);
+    window.scrollTo({ top: 0, behavior: "auto" });
+  }
+  const showLesson =
+    currentUnit && (!lessons.includes(currentUnit.id) || revisitLesson);
   return (
     <div className="mx-auto max-w-4xl space-y-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="text-sm font-semibold">
-          {label(review?.subject ?? block?.subject ?? "english")} ·{" "}
-          {
-            plan.blocks.find(
-              (b) => b.subject === (review?.subject ?? block?.subject),
-            )?.title
-          }{" "}
-          ·{" "}
-          {plan.blocks.findIndex(
-            (b) => b.subject === (review?.subject ?? block?.subject),
-          ) + 1}{" "}
-          of 4 subjects
+          {label(currentBlock?.subject ?? "english")} ·{" "}
+          {current?.phase === "review" || step?.kind === "review"
+            ? "Review"
+            : `Lesson ${currentUnit ? blockUnits(currentBlock!).findIndex((u) => u.id === currentUnit.id) + 1 : 1}/${currentBlock ? blockUnits(currentBlock).length : 2}`}
         </p>
-        <p className="tabular-nums text-sm text-ink-soft">
-          {time} remaining · {count}/{all.length} answered
-        </p>
+        <p className="tabular-nums text-sm text-ink-soft">{time} left</p>
       </div>
       {errorView}
-      {review ? (
-        <>
-          <DailyQuestionView
-            q={review}
-            chosen={answers[review.id]}
-            onChoose={() => {}}
-            revealed
+      {currentBlock &&
+        (currentBlock.subject === "math" ||
+          currentBlock.subject === "science") && (
+          <DesmosPanel
+            key={currentBlock.subject}
+            subject={currentBlock.subject}
           />
-          <Button
-            disabled={pending}
-            onClick={() => {
-              setReview(null);
-              setChosen(null);
-              questionStart.current = Date.now();
-            }}
-          >
-            Continue
-          </Button>
-        </>
-      ) : block && !lessons.includes(block.subject) ? (
-        <Card className="p-6 sm:p-8">
-          <h1 className="text-2xl font-semibold">{block.title}</h1>
-          <p className="mt-4 leading-relaxed text-ink-soft">
-            {block.lesson.intro}
-          </p>
-          {block.lesson.sections.map((section) => (
-            <section key={section.heading} className="mt-6 space-y-4">
-              <h2 className="text-lg font-semibold">{section.heading}</h2>
-              {section.body.map((p, i) => (
-                <p key={i} className="max-w-prose leading-relaxed">
-                  {p}
-                </p>
-              ))}
-              {section.examples?.map((ex, i) => (
-                <div
-                  className="rounded-xl border border-border bg-bg p-4"
-                  key={i}
-                >
-                  <p>{ex.text}</p>
-                  <p className="mt-2 text-sm text-ink-soft">{ex.label}</p>
+        )}
+      {!review && step?.kind === "review" ? (
+        <div className="space-y-6">
+          <header>
+            <h1 className="text-2xl font-semibold">
+              {label(step.block.subject)} · final review
+            </h1>
+            <p className="mt-3 font-semibold">
+              {
+                step.block.questions.filter((q) => answers[q.id] === q.answer)
+                  .length
+              }
+              /{step.block.questions.length} correct
+            </p>
+          </header>
+          {blockUnits(step.block).map((unit) => (
+            <Card key={unit.id} className="p-6 sm:p-8">
+              <h2 className="text-xl font-semibold">{unit.title}</h2>
+              <details className="mt-5 rounded-xl border border-border p-4">
+                <summary className="cursor-pointer text-sm font-semibold">
+                  Rules and worked examples
+                </summary>
+                <div className="mt-5">
+                  <LessonSections
+                    sections={unit.lesson.sections}
+                    idPrefix={`review-${unit.id}`}
+                  />
                 </div>
-              ))}
-              {section.tip && (
-                <p className="text-sm font-medium">{section.tip}</p>
-              )}
-            </section>
+              </details>
+              <div className="mt-6 divide-y divide-border">
+                {[
+                  ...unit.questions,
+                  ...(step.block.reviewQuestions ?? []).filter((q) =>
+                    unit.practiceIds
+                      ? unit.practiceIds.includes(q.id)
+                      : q.topic === unit.topic,
+                  ),
+                ].map((item, i) => (
+                  <details
+                    key={item.id}
+                    className="py-4"
+                    open={answers[item.id] !== item.answer}
+                  >
+                    <summary className="cursor-pointer text-sm font-semibold">
+                      Question {i + 1} ·{" "}
+                      {answers[item.id] === item.answer
+                        ? "Correct"
+                        : "Missed — review this"}{" "}
+                      ·{" "}
+                      {data.answerTimes[item.id] === undefined
+                        ? "Pacing unavailable"
+                        : `${answerPacing(data.answerTimes[item.id], item.subject).seconds}s / target ${answerPacing(data.answerTimes[item.id], item.subject).target}s`}
+                    </summary>
+                    <DailyCorrection q={item} chosen={answers[item.id]} />
+                  </details>
+                ))}
+              </div>
+            </Card>
           ))}
           <Button
-            className="mt-7"
             disabled={pending}
-            onClick={async () => {
-              if (await action({ action: "lesson", subject: block.subject }))
-                questionStart.current = Date.now();
-            }}
+            className="w-full"
+            onClick={() =>
+              void action({ action: "review", subject: step.block.subject })
+            }
           >
-            {pending ? "Saving…" : "Practice this category"}
+            {pending
+              ? "Saving…"
+              : step.block.subject === "science"
+                ? "Finish daily study"
+                : `Finish ${label(step.block.subject)} review · next subject`}
           </Button>
-          <Link
-            href={`/learn/${block.topic}`}
-            className="ml-4 text-sm text-ink-soft underline"
-          >
-            Full lesson
-          </Link>
-        </Card>
-      ) : current ? (
-        <>
-          <DailyQuestionView q={current} chosen={chosen} onChoose={setChosen} />
-          {current.subject === "math" && <Calculator />}
-          <Button
-            disabled={chosen === null || pending}
-            onClick={async () => {
-              const result = await action({
-                action: "answer",
-                questionId: current.id,
-                chosen,
-                elapsedMs: Date.now() - questionStart.current,
-              });
-              if (result) setReview(current);
-            }}
-          >
-            {pending ? "Saving answer…" : "Check answer"}
-          </Button>
-        </>
+        </div>
+      ) : showLesson && currentUnit ? (
+        <DailyLesson
+          key={`${currentUnit.id}:${revisitLesson}`}
+          unit={currentUnit}
+          completed={lessons}
+          revisiting={revisitLesson}
+          pending={pending}
+          onBack={() => setRevisitLesson(false)}
+          onAdvance={async (index, last) => {
+            if (
+              !(await action({
+                action: "concept",
+                unitId: currentUnit.id,
+                index,
+              }))
+            )
+              return false;
+            if (last)
+              return !!(await action({
+                action: "lesson",
+                unitId: currentUnit.id,
+              }));
+            return true;
+          }}
+        />
+      ) : current && currentBlock ? (
+        <DailyDrill
+          key={current.id}
+          q={current}
+          title={currentUnit?.title ?? currentBlock.title}
+          revealed={!!review}
+          savedChoice={answers[current.id]}
+          savedTime={data.answerTimes[current.id]}
+          count={blockAnswers.length}
+          correct={
+            blockAnswers.filter((item) => answers[item.id] === item.answer)
+              .length
+          }
+          streak={streak}
+          onLesson={() => {
+            setRevisitLesson(true);
+            window.scrollTo({ top: 0, behavior: "auto" });
+          }}
+          onNext={nextQuestion}
+          onSubmit={async (choice, elapsedMs) => {
+            const result = await action({
+              action: "answer",
+              questionId: current.id,
+              chosen: choice,
+              elapsedMs,
+            });
+            if (result) setReview(current);
+            return !!result;
+          }}
+        />
       ) : (
         <p>Saving your completed lesson…</p>
       )}
       <p className="text-xs text-ink-soft">
-        Each answer saves before you move on. Your clock keeps running if you
-        leave; unfinished work carries forward to tomorrow.
+        Progress saves automatically. Unfinished work carries forward.
       </p>
     </div>
   );
 }
-function DailyQuestionView({
+
+function DailyCorrection({
   q,
   chosen,
-  onChoose,
-  revealed = false,
+  elapsedMs,
 }: {
   q: DailyQuestion;
-  chosen: number | null;
-  onChoose: (n: number | null) => void;
-  revealed?: boolean;
+  chosen: number;
+  elapsedMs?: number;
 }) {
-  if (q.subject !== "english")
-    return (
-      <QuestionView
-        q={q as Question}
-        chosen={chosen}
-        onChoose={onChoose}
-        revealed={revealed}
-      />
-    );
   return (
-    <Card className="p-6">
-      <p
-        className="leading-relaxed"
-        dangerouslySetInnerHTML={{ __html: renderStem(q.stem) }}
-      />
-      <h2 className="mt-5 text-lg font-semibold">{q.questionText}</h2>
-      <div className="mt-5 space-y-3">
-        {q.choices.map((choice, i) => (
-          <button
-            key={i}
-            disabled={revealed}
-            aria-pressed={chosen === i}
-            onClick={() => onChoose(i)}
-            className={`min-h-12 w-full rounded-xl border px-4 py-3 text-left ${chosen === i ? "border-brand bg-brand-soft" : "border-border bg-bg"}`}
-          >
-            {String.fromCharCode(65 + i)}. {choice}
-          </button>
-        ))}
-      </div>
-      {revealed && (
-        <div className="mt-6">
-          <p className="font-semibold">
-            {chosen === q.answer ? "Correct" : "Review this answer"}
-          </p>
-          <p className="mt-2 text-sm">Correct answer: {q.choices[q.answer]}</p>
-          <p className="mt-3 leading-relaxed text-ink-soft">{q.explanation}</p>
-        </div>
+    <div className="mt-4 space-y-4">
+      {q.subject === "english" ? (
+        <>
+          <div
+            className="leading-relaxed"
+            dangerouslySetInnerHTML={{ __html: renderStem(q.stem) }}
+          />
+          <p className="font-semibold">{q.questionText}</p>
+          <ol className="space-y-2 text-sm">
+            {q.choices.map((choice, i) => (
+              <li
+                key={i}
+                className={`rounded-lg border p-3 ${i === q.answer ? "border-good bg-good-soft" : i === chosen ? "border-bad bg-bad-soft" : "border-border"}`}
+              >
+                {String.fromCharCode(65 + i)}. {choice}
+                {i === q.answer
+                  ? " (correct)"
+                  : i === chosen
+                    ? " (your answer)"
+                    : ""}
+              </li>
+            ))}
+          </ol>
+          <AnswerFeedback
+            choices={q.choices}
+            answer={q.answer}
+            chosen={chosen}
+            explanation={q.explanation}
+          />
+        </>
+      ) : (
+        <QuestionView
+          q={q as Question}
+          chosen={chosen}
+          onChoose={() => {}}
+          revealed
+        />
       )}
-    </Card>
+      {elapsedMs !== undefined && (
+        <p className="text-sm text-ink-soft">
+          {answerPacing(elapsedMs, q.subject).seconds}s · target{" "}
+          {answerPacing(elapsedMs, q.subject).target}s
+        </p>
+      )}
+    </div>
   );
 }

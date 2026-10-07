@@ -2,7 +2,7 @@
   {
     "slug": "math-functions",
     "title": "Functions",
-    "intro": "Function questions reward careful reading more than long calculations. At a 34 baseline, concentrate on composition order, domain restrictions, inverse branches, and graph features that survive transformations. Every answer should identify an input, an output, or a relationship between them. Label which one the question requests. On digital practice, flag a question when the setup is unclear, keep a short line of scratch work, and return with a definite plan rather than repeatedly trying the same substitution.",
+    "intro": "Function questions reward careful reading more than long calculations. Concentrate on composition order, domain restrictions, inverse branches, and graph features that survive transformations. Every answer should identify an input, an output, or a relationship between them. Label which one the question requests. On digital practice, flag a question when the setup is unclear, keep a short line of scratch work, and return with a definite plan rather than repeatedly trying the same substitution.",
     "sections": [
       {
         "heading": "1. Inputs, outputs, and composition",
@@ -167,7 +167,7 @@
   {
     "slug": "math-geometry",
     "title": "Geometry",
-    "intro": "Geometry becomes reliable when each diagram is translated into a few labeled relationships. Protect the perpendicular height, the corresponding sides, the named arc, and the distinction between radius and diameter. At a 34 baseline, the highest-value repair is choosing the right theorem quickly and refusing assumptions based on a picture’s appearance. Build a small scratch sketch for text-only questions. A diagram supplies relationships that are stated or marked; its apparent proportions are not additional evidence.",
+    "intro": "Geometry becomes reliable when each diagram is translated into a few labeled relationships. Protect the perpendicular height, the corresponding sides, the named arc, and the distinction between radius and diameter. Build accuracy by choosing the right theorem quickly and refusing assumptions based on a picture’s appearance. Build a small scratch sketch for text-only questions. A diagram supplies relationships that are stated or marked; its apparent proportions are not additional evidence.",
     "sections": [
       {
         "heading": "1. Translate the diagram and protect units",
@@ -188,7 +188,8 @@
         "heading": "2. Triangles: heights, angles, and allowed sides",
         "body": [
           "For right triangles, identify the hypotenuse opposite the right angle and use a² + b² = c². Memorize the 3–4–5, 5–12–13, and 8–15–17 patterns, along with their multiples. A 45–45–90 triangle has sides x, x, x√2. A 30–60–90 triangle has sides x, x√3, 2x, with the smallest side opposite 30°. A familiar ratio is useful only after the angles are confirmed.",
-          "The triangle inequality is strict: the sum of any two side lengths must exceed the third. For sides a, b, x, this becomes |a − b| < x < a + b. An angle bisector divides the opposite side in the ratio of the two adjacent sides; it does not usually split it equally."
+          "The triangle inequality is strict: the sum of any two side lengths must exceed the third. For sides a, b, x, this becomes |a − b| < x < a + b. An angle bisector divides the opposite side in the ratio of the two adjacent sides; it does not usually split it equally.",
+          "For a triangle with three known sides a, b, and c, Heron’s formula gives area = √[s(s−a)(s−b)(s−c)], where s = (a+b+c)/2. For sides 13, 14, and 15, s = 21 and area = √(21×8×7×6) = 84. For a regular n-sided polygon, each interior angle is 180(n−2)/n degrees and each exterior angle is 360/n degrees. The exterior angles sum to 360 degrees."
         ],
         "examples": [
           {
@@ -332,7 +333,7 @@
   {
     "slug": "math-trigonometry",
     "title": "Trigonometry",
-    "intro": "Trigonometry becomes manageable when the angle, its units, and the needed relationship are visible before the calculator opens. Protect quadrant signs, the opposite-angle pairing, and the interval used in an equation. At a 34 Math baseline, practice recognizing the setup quickly enough to reserve time for less familiar reasoning. Exact values often beat decimals on ACT questions. Treat the calculator as a verification tool after a correct model, and rehearse the degree or radian mode you intend to use.",
+    "intro": "Trigonometry becomes manageable when the angle, its units, and the needed relationship are visible before the calculator opens. Protect quadrant signs, the opposite-angle pairing, and the interval used in an equation. Practice recognizing the setup quickly enough to reserve time for less familiar reasoning. Exact values often beat decimals on ACT questions. Treat the calculator as a verification tool after a correct model, and rehearse the degree or radian mode you intend to use.",
     "sections": [
       {
         "heading": "1. Build the reference triangle before choosing a ratio",
@@ -497,7 +498,7 @@
   {
     "slug": "math-statistics-probability",
     "title": "Statistics & Probability",
-    "intro": "Statistics and probability questions are usually decided by the correct denominator, the correct count, or the meaning of a word such as exactly or given. At a 34 baseline, make the sample space and the requested summary explicit before computing. Keep totals separate from averages and distinguish shifts from changes in spread. For probability, identify whether order matters and whether a draw changes the next draw’s population. Short organized scratch work is more useful than a long list of unlabeled fractions.",
+    "intro": "Statistics and probability questions are usually decided by the correct denominator, the correct count, or the meaning of a word such as exactly or given. Make the sample space and the requested summary explicit before computing. Keep totals separate from averages and distinguish shifts from changes in spread. For probability, identify whether order matters and whether a draw changes the next draw’s population. Short organized scratch work is more useful than a long list of unlabeled fractions.",
     "sections": [
       {
         "heading": "1. Means are totals divided by counts",

@@ -44,7 +44,19 @@ export function getTopic(slug: string) {
 export function getLesson(slug: string) {
   const lesson = lessons.find((l) => l.slug === slug);
   if (!lesson) throw new Error("Unknown lesson");
-  return lesson;
+  return {
+    ...lesson,
+    sections: lesson.sections.map((section) => ({
+      ...section,
+      evidence: (section.evidenceIds ?? []).map((id) => {
+        const passage = questions.find(
+          (q) => !reserved.has(q.id) && q.passage?.id === id,
+        )?.passage;
+        if (!passage) throw new Error(`Missing lesson evidence: ${id}`);
+        return passage;
+      }),
+    })),
+  };
 }
 export function getAllQuestions() {
   return [...questions, ...lessons.flatMap((l) => l.check)];
