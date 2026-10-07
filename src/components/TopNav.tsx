@@ -13,11 +13,14 @@ export async function TopNav() {
   return (
     <header className="border-b border-border bg-bg-soft/80 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3.5">
-        <Link href={user ? "/dashboard" : "/"} className="flex items-center gap-2 font-semibold">
+        <Link
+          href={user ? "/dashboard" : "/"}
+          className="flex items-center gap-2 font-semibold"
+        >
           <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">
             36
           </span>
-          ACT English Lab
+          ACT Study Lab
         </Link>
         {user ? (
           <nav className="flex items-center gap-2 text-sm sm:gap-5">
@@ -26,7 +29,7 @@ export async function TopNav() {
                 Dashboard
               </Link>
               <Link href="/exam" className="text-ink-soft hover:text-ink">
-                Full exam
+                Digital practice
               </Link>
               <Link href="/account" className="text-ink-soft hover:text-ink">
                 Account

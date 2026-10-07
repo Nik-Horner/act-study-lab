@@ -1,0 +1,4116 @@
+[
+  {
+    "id": "math-algebra-d1",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "3(2x − 5) = 4x + 9.",
+    "questionText": "What is x?",
+    "choices": [
+      "−12",
+      "3",
+      "24",
+      "12"
+    ],
+    "answer": 3,
+    "explanation": "Distribute first: 6x − 15 = 4x + 9. Subtract 4x and add 15 to get 2x = 24, so x = 12. Substitution gives 57 on both sides. The common trap is distributing 3 to 2x but forgetting to multiply −5 by 3."
+  },
+  {
+    "id": "math-algebra-d2",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "2x + 3y = 17 and x − y = 1.",
+    "questionText": "What is x + y?",
+    "choices": [
+      "7",
+      "4",
+      "3",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "The second equation gives x = y + 1. Substitute into the first: 2(y + 1) + 3y = 17, so 5y = 15 and y = 3. Then x = 4 and x + y = 7. A trap is stopping at x or y instead of answering the requested sum."
+  },
+  {
+    "id": "math-algebra-d3",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "(x² − 9)/(x − 3) = 8.",
+    "questionText": "Which value of x satisfies the equation?",
+    "choices": [
+      "11",
+      "5",
+      "3",
+      "−5"
+    ],
+    "answer": 1,
+    "explanation": "The original denominator requires x ≠ 3. Factor the numerator as (x − 3)(x + 3), so the equation becomes x + 3 = 8 on its allowed domain. Thus x = 5; the original fraction is 16/2 = 8. Canceling factors never restores an excluded value such as x = 3."
+  },
+  {
+    "id": "math-algebra-d4",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "|2x − 3| = 7.",
+    "questionText": "What is the sum of all real solutions?",
+    "choices": [
+      "−3",
+      "10",
+      "3",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "An absolute value of 7 means 2x − 3 = 7 or 2x − 3 = −7. The solutions are x = 5 and x = −2, whose sum is 3. Taking only the positive branch misses a valid solution; the expression inside an absolute value may be negative."
+  },
+  {
+    "id": "math-algebra-d5",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "The polynomial x² − (k + 2)x + 2k has 3 as a zero.",
+    "questionText": "What is its other zero?",
+    "choices": [
+      "−2",
+      "3",
+      "6",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Substitute x = 3: 9 − 3(k + 2) + 2k = 0, which simplifies to 3 − k = 0. Thus k = 3 and the polynomial is x² − 5x + 6 = (x − 3)(x − 2). Its other zero is 2. The trap is treating k as the second zero without first finding its value."
+  },
+  {
+    "id": "math-algebra-d6",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "−3(2x − 1) ≤ 15.",
+    "questionText": "Which inequality describes all solutions?",
+    "choices": [
+      "x ≥ −2",
+      "x ≤ −2",
+      "x ≥ 2",
+      "x ≤ 2"
+    ],
+    "answer": 0,
+    "explanation": "Distribute: −6x + 3 ≤ 15, so −6x ≤ 12. Dividing by −6 reverses the inequality and gives x ≥ −2. For example, x = 0 works and x = −3 does not. Forgetting to reverse the sign when dividing by a negative produces the opposite set."
+  },
+  {
+    "id": "math-functions-d1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "f(x) = √(12 − 3x)/(x + 2).",
+    "questionText": "What is the real domain of f?",
+    "choices": [
+      "x ≤ 4",
+      "x < 4 and x ≠ 2",
+      "x ≤ 4 and x ≠ −2",
+      "x ≥ 4 and x ≠ −2"
+    ],
+    "answer": 2,
+    "explanation": "A real square root needs 12 − 3x ≥ 0, so x ≤ 4. The denominator also requires x + 2 ≠ 0, so x ≠ −2. Both conditions apply at once. The endpoint x = 4 is allowed because the numerator can be zero; a denominator of zero is never allowed."
+  },
+  {
+    "id": "math-functions-d2",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "medium",
+    "stem": "f(x) = 2x² − 3.",
+    "questionText": "Which expression equals f(x + h) − f(x)?",
+    "choices": [
+      "2h²",
+      "4xh + 2h² − 3",
+      "2xh + 2h²",
+      "4xh + 2h²"
+    ],
+    "answer": 3,
+    "explanation": "Expand f(x + h) = 2(x² + 2xh + h²) − 3. Subtract the entire expression 2x² − 3, leaving 4xh + 2h². Both constants cancel. The usual trap is replacing (x + h)² with x² + h² and losing the middle term."
+  },
+  {
+    "id": "math-functions-d3",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "f(x) = (3x − 2)/(x + 4).",
+    "questionText": "What is f⁻¹(2)?",
+    "choices": [
+      "10",
+      "2",
+      "−10",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "The notation asks for the input whose output is 2. Solve (3x − 2)/(x + 4) = 2: 3x − 2 = 2x + 8, so x = 10. The denominator is nonzero there, and f(10) = 28/14 = 2. The inverse value is not the reciprocal 1/f(2)."
+  },
+  {
+    "id": "math-functions-d4",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "f(x) = (x − 2)² + 5 and g(x) = f(−2x) + 3.",
+    "questionText": "What is the vertex of the graph of g?",
+    "choices": [
+      "(−1, 2)",
+      "(−1, 8)",
+      "(1, 8)",
+      "(−4, 8)"
+    ],
+    "answer": 1,
+    "explanation": "Substitute −2x into f to get g(x) = (−2x − 2)² + 8 = 4(x + 1)² + 8. The squared term is zero at x = −1, so the vertex is (−1, 8). Horizontal substitutions operate inside the squared term; moving the original vertex by simply multiplying its x-coordinate gives the wrong result."
+  },
+  {
+    "id": "math-functions-d5",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "log₂(x − 1) + log₂(x + 1) = 3.",
+    "questionText": "What is x?",
+    "choices": [
+      "√8",
+      "4",
+      "3",
+      "−3"
+    ],
+    "answer": 2,
+    "explanation": "Both logarithms need positive inputs, giving x > 1. Combine the logs: log₂((x − 1)(x + 1)) = 3, so x² − 1 = 2³ = 8. Then x² = 9. Only x = 3 satisfies the domain; x = −3 is an extraneous candidate. Do not turn a sum of logarithms into the logarithm of a sum."
+  },
+  {
+    "id": "math-functions-d6",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "medium",
+    "stem": "An arithmetic sequence has a₀ = 80 and a₁ = 68.",
+    "questionText": "What is a₆?",
+    "choices": [
+      "−4",
+      "20",
+      "68",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "The common difference is 68 − 80 = −12. Starting at index 0, the formula is aₙ = 80 − 12n. Therefore a₆ = 80 − 72 = 8. The trap is applying only five decreases because many sequence formulas start at index 1; this sequence explicitly starts at 0."
+  },
+  {
+    "id": "math-geometry-d1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A trapezoid has parallel bases of lengths 8 and 14 and height 5.",
+    "questionText": "What is its area?",
+    "choices": [
+      "70 square units",
+      "55 square units",
+      "110 square units",
+      "35 square units"
+    ],
+    "answer": 1,
+    "explanation": "A trapezoid area is one half the sum of the parallel bases times the perpendicular height. Here A = (8 + 14) × 5/2 = 55. Using the full sum without the factor 1/2 doubles the area; using a slanted side in place of the height is another common error."
+  },
+  {
+    "id": "math-geometry-d2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A closed right circular cylinder has radius 3 and height 8.",
+    "questionText": "What is its total surface area?",
+    "choices": [
+      "72π square units",
+      "114π square units",
+      "66π square units",
+      "48π square units"
+    ],
+    "answer": 2,
+    "explanation": "The curved surface contributes 2πrh = 2π(3)(8) = 48π. The two circular ends contribute 2πr² = 18π. Add them to get 66π. The word closed includes both ends. Using πr²h computes volume, and omitting the ends gives only lateral area."
+  },
+  {
+    "id": "math-geometry-d3",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A triangle has side lengths 13, 14, and 15.",
+    "questionText": "What is its area?",
+    "choices": [
+      "91 square units",
+      "105 square units",
+      "42 square units",
+      "84 square units"
+    ],
+    "answer": 3,
+    "explanation": "The semiperimeter is s = (13 + 14 + 15)/2 = 21. Heron’s formula gives A = √(21 × 8 × 7 × 6) = √7056 = 84. As a geometric check, the altitude to the 14-unit base is 12, so A = 14 × 12/2. Treating 13 or 15 as a perpendicular height is the trap."
+  },
+  {
+    "id": "math-geometry-d4",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "Two chords intersect inside a circle. One chord is split into segments of lengths 3 and 8; the other into lengths 4 and x.",
+    "questionText": "What is x?",
+    "choices": [
+      "6",
+      "11",
+      "24",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "For chords intersecting inside a circle, the products of the two segments of each chord are equal. Thus 3 × 8 = 4x, giving x = 6. Match segments that belong to the same chord before multiplying. Adding the segment lengths or pairing one segment from each chord applies the wrong relationship."
+  },
+  {
+    "id": "math-geometry-d5",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A central angle measures 110°. An inscribed angle intercepts the same arc.",
+    "questionText": "What is the measure of the inscribed angle?",
+    "choices": [
+      "70°",
+      "55°",
+      "110°",
+      "220°"
+    ],
+    "answer": 1,
+    "explanation": "A central angle has the same measure as its intercepted arc, so the arc measures 110°. An inscribed angle intercepting that arc measures half as much: 110°/2 = 55°. Be sure the angles intercept the same arc; using the major arc instead would change the answer."
+  },
+  {
+    "id": "math-geometry-d6",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A line has equation 3x + 4y = 20.",
+    "questionText": "What is the perpendicular distance from the origin to the line?",
+    "choices": [
+      "20",
+      "20/3",
+      "4",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Write the line as 3x + 4y − 20 = 0. The distance from (0, 0) is |3(0) + 4(0) − 20|/√(3² + 4²) = 20/5 = 4. The x- and y-intercepts are not perpendicular distances. The denominator normalizes the coefficients of the line."
+  },
+  {
+    "id": "math-trigonometry-d1",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "medium",
+    "stem": "θ is acute and sin θ = 5/13.",
+    "questionText": "What is tan θ?",
+    "choices": [
+      "5/12",
+      "12/5",
+      "5/13",
+      "12/13"
+    ],
+    "answer": 0,
+    "explanation": "Use a right triangle with opposite side 5 and hypotenuse 13. The adjacent side is √(13² − 5²) = 12. Therefore tan θ = opposite/adjacent = 5/12. Sine uses the hypotenuse, but tangent does not; keeping 13 in the denominator confuses the ratios."
+  },
+  {
+    "id": "math-trigonometry-d2",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "medium",
+    "stem": "Two sides of a triangle measure 7 and 8, and their included angle is 60°.",
+    "questionText": "What is the length of the opposite side?",
+    "choices": [
+      "√29",
+      "√57",
+      "√113",
+      "√169"
+    ],
+    "answer": 1,
+    "explanation": "Use the law of cosines: c² = 7² + 8² − 2(7)(8)cos 60°. Since cos 60° = 1/2, c² = 49 + 64 − 56 = 57, so c = √57. The Pythagorean theorem alone applies only when the included angle is 90°."
+  },
+  {
+    "id": "math-trigonometry-d3",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "θ lies in Quadrant III and tan θ = 3/4.",
+    "questionText": "What is sin θ?",
+    "choices": [
+      "−4/5",
+      "3/4",
+      "−3/5",
+      "3/5"
+    ],
+    "answer": 2,
+    "explanation": "The reference triangle has opposite-to-adjacent ratio 3:4, so its hypotenuse is 5. In Quadrant III, both coordinates are negative, while tangent is positive. Thus sin θ = −3/5. A positive tangent does not guarantee a positive sine; the quadrant determines the signs."
+  },
+  {
+    "id": "math-trigonometry-d4",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "y = 3 sin(2x − π/3).",
+    "questionText": "What is the least positive period of this function?",
+    "choices": [
+      "2π",
+      "π/3",
+      "3π",
+      "π"
+    ],
+    "answer": 3,
+    "explanation": "For y = A sin(Bx + C), the period is 2π/|B|. Here B = 2, so the period is π. The amplitude 3 changes vertical size and the phase term shifts the graph, but neither changes the period. Do not use the amplitude as B."
+  },
+  {
+    "id": "math-trigonometry-d5",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "θ is acute and cos θ = 12/13.",
+    "questionText": "What is sin(2θ)?",
+    "choices": [
+      "120/169",
+      "24/13",
+      "60/169",
+      "144/169"
+    ],
+    "answer": 0,
+    "explanation": "The reference triangle has adjacent side 12, hypotenuse 13, and opposite side 5. Thus sin θ = 5/13. Apply sin(2θ) = 2 sin θ cos θ: 2 × (5/13) × (12/13) = 120/169. Doubling the angle does not simply double the sine value."
+  },
+  {
+    "id": "math-trigonometry-d6",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "medium",
+    "stem": "A vertical tower stands on level ground. From a point 40 meters from its base, the angle of elevation to its top is 35°. Ignore eye height.",
+    "questionText": "Approximately how tall is the tower?",
+    "choices": [
+      "57.1 meters",
+      "28.0 meters",
+      "22.9 meters",
+      "32.8 meters"
+    ],
+    "answer": 1,
+    "explanation": "The height is opposite the 35° angle and the 40-meter ground distance is adjacent. Therefore tan 35° = h/40, giving h = 40 tan 35° ≈ 28.0 meters. Make sure the calculator is in degree mode. Using sine incorrectly treats the ground distance as a hypotenuse."
+  },
+  {
+    "id": "math-statistics-probability-d1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "medium",
+    "stem": "Five numbers have a mean of 12. One of the numbers is 8.",
+    "questionText": "What is the mean of the remaining four numbers?",
+    "choices": [
+      "12",
+      "15",
+      "13",
+      "11"
+    ],
+    "answer": 2,
+    "explanation": "The five numbers total 5 × 12 = 60. Removing 8 leaves a total of 52 across four numbers, so the new mean is 52/4 = 13. Removing a value below the mean raises the mean. Subtracting 8 directly from 12 mixes a total with an average."
+  },
+  {
+    "id": "math-statistics-probability-d2",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "medium",
+    "stem": "Two fair six-sided dice are rolled.",
+    "questionText": "What is the probability that their sum is 9?",
+    "choices": [
+      "1/6",
+      "1/12",
+      "2/9",
+      "1/9"
+    ],
+    "answer": 3,
+    "explanation": "There are 36 equally likely ordered outcomes. A sum of 9 occurs for (3, 6), (4, 5), (5, 4), and (6, 3), so the probability is 4/36 = 1/9. Different sums are not equally likely, and switching which die shows each number creates a distinct outcome."
+  },
+  {
+    "id": "math-statistics-probability-d3",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "A group has 5 women and 3 men. A 3-person committee must contain exactly 2 women and 1 man.",
+    "questionText": "How many different committees are possible?",
+    "choices": [
+      "30",
+      "60",
+      "15",
+      "56"
+    ],
+    "answer": 0,
+    "explanation": "Choose 2 of the 5 women in C(5, 2) = 10 ways and 1 of the 3 men in 3 ways. Multiply the independent choices: 10 × 3 = 30. Committee members have no assigned order, so using 5 × 4 counts each pair of women twice. C(8, 3) includes committees that do not meet the condition."
+  },
+  {
+    "id": "math-statistics-probability-d4",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "A bag contains 3 red and 2 blue marbles. Two marbles are drawn without replacement.",
+    "questionText": "What is the probability that the two marbles have different colors?",
+    "choices": [
+      "2/5",
+      "3/5",
+      "6/25",
+      "3/10"
+    ],
+    "answer": 1,
+    "explanation": "Count both orders: P(red then blue) = (3/5)(2/4) = 3/10 and P(blue then red) = (2/5)(3/4) = 3/10. Add them to get 3/5. Without replacement, the second denominator is 4. Counting only one order or keeping a denominator of 5 undercounts or uses the wrong model."
+  },
+  {
+    "id": "math-statistics-probability-d5",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "A random variable X equals 0 with probability 0.20, 1 with probability 0.50, and 2 with probability 0.30.",
+    "questionText": "What is the expected value of X?",
+    "choices": [
+      "0.90",
+      "1.30",
+      "1.10",
+      "1.00"
+    ],
+    "answer": 2,
+    "explanation": "Expected value is the probability-weighted mean: E(X) = 0(0.20) + 1(0.50) + 2(0.30) = 1.10. The probabilities sum to 1, so the distribution is complete. The most likely value is 1, but the expected value need not equal the most likely value or be an attainable single outcome."
+  },
+  {
+    "id": "math-statistics-probability-d6",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "medium",
+    "stem": "A data set has standard deviation 6. Each value x is transformed to 3x + 4.",
+    "questionText": "What is the new standard deviation?",
+    "choices": [
+      "22",
+      "10",
+      "6",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Multiplying every data value by 3 multiplies every distance from the mean by 3, so the standard deviation becomes 3 × 6 = 18. Adding 4 shifts the entire data set and its mean equally, leaving spread unchanged. The trap is adding 4 to the standard deviation as well."
+  },
+  {
+    "id": "math-number-quantity-d1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "i² = −1.",
+    "questionText": "What is (3 + 2i)(1 − 4i)?",
+    "choices": [
+      "11 + 14i",
+      "3 − 8i",
+      "11 − 10i",
+      "−5 − 10i"
+    ],
+    "answer": 2,
+    "explanation": "Distribute: 3 − 12i + 2i − 8i². Since i² = −1, the last term is +8, giving 11 − 10i. Combine real terms and imaginary terms separately. Leaving i² as +1 reverses the sign of the real correction and gives −5 − 10i."
+  },
+  {
+    "id": "math-number-quantity-d2",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "u = (2, −3) and v = (−5, 7).",
+    "questionText": "What is the magnitude of u + v?",
+    "choices": [
+      "√173",
+      "7",
+      "1",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Add corresponding components to get u + v = (−3, 4). Its magnitude is √((−3)² + 4²) = √25 = 5. Add the vectors before taking the magnitude. Adding their individual magnitudes generally gives a different value."
+  },
+  {
+    "id": "math-number-quantity-d3",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A = [[2, 1], [3, −1]] and b = [[4], [−2]].",
+    "questionText": "What is the matrix product Ab?",
+    "choices": [
+      "[[6], [14]]",
+      "[[8], [2]]",
+      "[[10], [10]]",
+      "[[6, 14]]"
+    ],
+    "answer": 0,
+    "explanation": "Multiply each row of A by the column b: the first entry is 2(4) + 1(−2) = 6, and the second is 3(4) + (−1)(−2) = 14. A 2 × 2 matrix times a 2 × 1 matrix produces a 2 × 1 column. Entry-by-entry multiplication and a row-shaped answer are traps."
+  },
+  {
+    "id": "math-number-quantity-d4",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A geometric sequence has first term 3 and common ratio 2/3.",
+    "questionText": "What is the sum of its first four terms?",
+    "choices": [
+      "81/8",
+      "65/9",
+      "8",
+      "19/3"
+    ],
+    "answer": 1,
+    "explanation": "The four terms are 3, 2, 4/3, and 8/9. Their sum is (27 + 18 + 12 + 8)/9 = 65/9. Equivalently, use 3[1 − (2/3)⁴]/[1 − 2/3]. The trap is summing an infinite series or using the common ratio four times before counting the first term."
+  },
+  {
+    "id": "math-number-quantity-d5",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "Evaluate 8^(2/3) + 16^(3/4).",
+    "questionText": "What is the value?",
+    "choices": [
+      "20",
+      "24",
+      "12",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Take the roots first: 8^(1/3) = 2, so 8^(2/3) = 2² = 4. Also, 16^(1/4) = 2, so 16^(3/4) = 2³ = 8. Add to get 12. A fractional exponent applies to the whole base; multiplying the base by the fraction is not exponentiation."
+  },
+  {
+    "id": "math-number-quantity-d6",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "An angle measures 240°.",
+    "questionText": "What is its measure in radians?",
+    "choices": [
+      "3π/4",
+      "2π/3",
+      "4π",
+      "4π/3"
+    ],
+    "answer": 3,
+    "explanation": "Multiply degrees by π/180: 240 × π/180 = 4π/3. A check is that 240° is two thirds of a full turn, and two thirds of 2π is 4π/3. The conversion factor reverses when converting radians back to degrees."
+  },
+  {
+    "id": "math-essential-skills-d1",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "easy",
+    "stem": "The ratio of red beads to blue beads is 2:5. There are 56 beads in total.",
+    "questionText": "How many beads are red?",
+    "choices": [
+      "16",
+      "8",
+      "22.4",
+      "40"
+    ],
+    "answer": 0,
+    "explanation": "There are 2 + 5 = 7 equal ratio parts. Each part contains 56/7 = 8 beads, so the red group has 2 × 8 = 16. The red fraction of the total is 2/7, not 2/5. The 5 counts blue parts, not all parts."
+  },
+  {
+    "id": "math-essential-skills-d2",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A price of $250 increases by 20%, then the increased price decreases by 20%.",
+    "questionText": "What is the final price?",
+    "choices": [
+      "$260",
+      "$240",
+      "$250",
+      "$200"
+    ],
+    "answer": 1,
+    "explanation": "Apply each percentage to its current base: 250 × 1.20 = 300, then 300 × 0.80 = 240. The 20% decrease is $60, whereas the original increase was $50. Equal percentage increases and decreases do not cancel because their bases differ."
+  },
+  {
+    "id": "math-essential-skills-d3",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A vehicle travels at 72 kilometers per hour.",
+    "questionText": "What is this speed in meters per second?",
+    "choices": [
+      "25.92",
+      "200",
+      "20",
+      "2"
+    ],
+    "answer": 2,
+    "explanation": "Convert kilometers to meters and hours to seconds: 72 × 1000/3600 = 20 meters per second. The units cancel as km/h × m/km × h/s. Multiplying by 3.6 converts the other way; to change km/h to m/s, divide by 3.6."
+  },
+  {
+    "id": "math-essential-skills-d4",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "Eight pounds of a 30% copper alloy are mixed with x pounds of a 60% copper alloy. The resulting mixture is 45% copper by weight.",
+    "questionText": "What is x?",
+    "choices": [
+      "4",
+      "12",
+      "16",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "Track copper weight: 0.30(8) + 0.60x = 0.45(8 + x). Thus 2.4 + 0.60x = 3.6 + 0.45x, so 0.15x = 1.2 and x = 8. The final percentage uses the total mixture weight. Adding percentages without weighting them by mass is the trap."
+  },
+  {
+    "id": "math-essential-skills-d5",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A driver travels 60 miles at 30 mph, then returns over the same 60-mile route at 60 mph.",
+    "questionText": "What is the average speed for the entire trip?",
+    "choices": [
+      "40 mph",
+      "45 mph",
+      "30 mph",
+      "50 mph"
+    ],
+    "answer": 0,
+    "explanation": "The total distance is 120 miles. The outbound trip takes 60/30 = 2 hours and the return takes 60/60 = 1 hour. Average speed is total distance/total time = 120/3 = 40 mph. Taking the arithmetic mean of 30 and 60 ignores the different amounts of time spent at each speed."
+  },
+  {
+    "id": "math-essential-skills-d6",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "Pump A fills a tank in 6 hours, and pump B fills it in 9 hours. Both operate at constant rates.",
+    "questionText": "How long do they take to fill the tank together?",
+    "choices": [
+      "15 hours",
+      "3.6 hours",
+      "7.5 hours",
+      "3 hours"
+    ],
+    "answer": 1,
+    "explanation": "Their rates are 1/6 and 1/9 tank per hour. Together they fill 1/6 + 1/9 = 5/18 tank per hour, so one tank takes 18/5 = 3.6 hours. Add rates, then invert. Adding the completion times or averaging them does not model simultaneous work."
+  },
+  {
+    "id": "math-modeling-d1",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A taxi charges a $4 starting fee plus $2.50 per mile. A trip costs $24, with no other charges.",
+    "questionText": "How many miles is the trip?",
+    "choices": [
+      "8",
+      "9.6",
+      "11.2",
+      "10"
+    ],
+    "answer": 0,
+    "explanation": "Let m be the number of miles. The cost model is 4 + 2.50m = 24. Subtract the fixed fee to get 2.50m = 20, then divide to get m = 8. Dividing the total fare by the per-mile rate before removing the starting fee overestimates the distance."
+  },
+  {
+    "id": "math-modeling-d2",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A machine is worth $12,000 initially and loses 15% of its value each year.",
+    "questionText": "What is its value after 3 years?",
+    "choices": [
+      "$7,200.00",
+      "$7,369.50",
+      "$6,600.00",
+      "$10,200.00"
+    ],
+    "answer": 1,
+    "explanation": "Each year the machine retains 85% of the preceding year’s value. The model is V = 12000(0.85)ᵗ, so V(3) = 12000(0.85)³ = 7369.50. Subtracting 15% of the original value three times models a fixed-dollar loss, which is not the stated percentage depreciation."
+  },
+  {
+    "id": "math-modeling-d3",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A rectangle has perimeter 40 units.",
+    "questionText": "What is its greatest possible area?",
+    "choices": [
+      "96 square units",
+      "400 square units",
+      "100 square units",
+      "200 square units"
+    ],
+    "answer": 2,
+    "explanation": "If its sides are x and y, then x + y = 20. Its area is x(20 − x) = −(x − 10)² + 100, which is at most 100. Equality occurs for a 10-by-10 square. The perimeter includes both copies of each side, so using x + y = 40 doubles the available side sum."
+  },
+  {
+    "id": "math-modeling-d4",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A company’s profit from selling q items is P(q) = −2q² + 120q − 1000 dollars.",
+    "questionText": "What is the maximum profit predicted by this model?",
+    "choices": [
+      "$30",
+      "$1,800",
+      "$600",
+      "$800"
+    ],
+    "answer": 3,
+    "explanation": "The parabola opens downward. Its vertex occurs at q = −120/[2(−2)] = 30. Evaluate the model: P(30) = −1800 + 3600 − 1000 = 800. The question asks for profit, not the number of items; $1,800 results from forgetting the constant cost."
+  },
+  {
+    "id": "math-modeling-d5",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A theater sells adult tickets for $12 and child tickets for $7. It sells 120 tickets for a total of $1,120.",
+    "questionText": "How many adult tickets were sold?",
+    "choices": [
+      "56",
+      "64",
+      "40",
+      "80"
+    ],
+    "answer": 0,
+    "explanation": "Let a be adult tickets and c be child tickets. Then a + c = 120 and 12a + 7c = 1120. Substituting c = 120 − a gives 5a + 840 = 1120, so a = 56. A check is 56(12) + 64(7) = 1120. The trap is reporting the child count instead."
+  },
+  {
+    "id": "math-modeling-d6",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A savings account starts with $50. Exactly $25 is added at the end of every week; there is no interest or spending.",
+    "questionText": "What is the least number of whole weeks needed to have at least $300?",
+    "choices": [
+      "11",
+      "10",
+      "8",
+      "12"
+    ],
+    "answer": 1,
+    "explanation": "After w whole weeks, the balance is 50 + 25w. Set 50 + 25w ≥ 300, giving w ≥ 10. Ten weeks gives exactly $300, so it meets “at least.” Ignoring the initial $50 gives 12 weeks; treating “at least” as “greater than” gives 11."
+  },
+  {
+    "id": "math-exam-1-q01",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "easy",
+    "stem": "A warehouse ships 64 identical boxes. Three fourths go to Store A.",
+    "questionText": "How many boxes go to Store A?",
+    "choices": [
+      "16",
+      "32",
+      "52",
+      "48"
+    ],
+    "answer": 3,
+    "explanation": "Multiply the total by the stated fraction: 64 × 3/4 = 48. Store B would receive the remaining 16 if the rest went there. The trap is answering the leftover amount instead of the requested three-fourths share."
+  },
+  {
+    "id": "math-exam-1-q02",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "easy",
+    "stem": "5x + 7 = 32.",
+    "questionText": "What is x?",
+    "choices": [
+      "5",
+      "7.8",
+      "25",
+      "−5"
+    ],
+    "answer": 0,
+    "explanation": "Subtract 7 from both sides to get 5x = 25, then divide by 5 to get x = 5. Substitution gives 5(5) + 7 = 32. Dividing 32 by 5 before removing the constant does not isolate x."
+  },
+  {
+    "id": "math-exam-1-q03",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "easy",
+    "stem": "A club has a boys-to-girls ratio of 3:4 and has 20 girls.",
+    "questionText": "How many boys are in the club?",
+    "choices": [
+      "35",
+      "15",
+      "12",
+      "26"
+    ],
+    "answer": 1,
+    "explanation": "The 4 girl-parts represent 20 girls, so each part is 5 people. The 3 boy-parts represent 3 × 5 = 15 boys. The 20 is one group’s size, not the combined total; dividing it by 7 uses the wrong reference quantity."
+  },
+  {
+    "id": "math-exam-1-q04",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "easy",
+    "stem": "A data set consists of 11, 2, 15, 8, and 9.",
+    "questionText": "What is its median?",
+    "choices": [
+      "11",
+      "9.5",
+      "9",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "Sort the values: 2, 8, 9, 11, 15. With five values, the median is the third value, 9. The middle entry in the original unsorted list is not necessarily the median. An average of two middle values is needed only when the number of values is even."
+  },
+  {
+    "id": "math-exam-1-q05",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "easy",
+    "stem": "A rectangle has a diagonal of length 13 and one side of length 5.",
+    "questionText": "What is its area?",
+    "choices": [
+      "65 square units",
+      "30 square units",
+      "144 square units",
+      "60 square units"
+    ],
+    "answer": 3,
+    "explanation": "The diagonal and the two sides form a right triangle. The missing side is √(13² − 5²) = 12. The rectangle’s area is 5 × 12 = 60. Multiplying the given side by the diagonal gives 65, but a diagonal is not a rectangle side."
+  },
+  {
+    "id": "math-exam-1-q06",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "easy",
+    "stem": "f(x) = 3x − 4.",
+    "questionText": "What is f(6)?",
+    "choices": [
+      "14",
+      "18",
+      "2",
+      "−10"
+    ],
+    "answer": 0,
+    "explanation": "Replace x with 6: f(6) = 3(6) − 4 = 18 − 4 = 14. Function notation specifies an input, not multiplication by a separate variable f. Apply the multiplication before subtracting."
+  },
+  {
+    "id": "math-exam-1-q07",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "easy",
+    "stem": "Evaluate (4 × 10⁵)(3 × 10⁻²).",
+    "questionText": "Which expression is the result in scientific notation?",
+    "choices": [
+      "7 × 10³",
+      "1.2 × 10⁴",
+      "1.2 × 10³",
+      "12 × 10⁷"
+    ],
+    "answer": 1,
+    "explanation": "Multiply the coefficients to get 12 and add the exponents to get 10³. Then normalize 12 × 10³ as 1.2 × 10⁴. The leading coefficient in scientific notation must be at least 1 and less than 10. Multiplication adds exponents; it does not multiply them."
+  },
+  {
+    "id": "math-exam-1-q08",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "x + y = 9 and 3x − y = 7.",
+    "questionText": "What is y?",
+    "choices": [
+      "8",
+      "2",
+      "5",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Add the equations to eliminate y: 4x = 16, so x = 4. Substitute into x + y = 9 to get y = 5. The trap is stopping at the first variable found. Always match the requested variable after solving the system."
+  },
+  {
+    "id": "math-exam-1-q09",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "Thirty-five percent of a number is 84.",
+    "questionText": "What is the number?",
+    "choices": [
+      "29.4",
+      "120",
+      "294",
+      "240"
+    ],
+    "answer": 3,
+    "explanation": "Let n be the number. Then 0.35n = 84, so n = 84/0.35 = 240. A check is 0.35 × 240 = 84. Multiplying 84 by 0.35 finds 35% of 84; it does not recover the original number."
+  },
+  {
+    "id": "math-exam-1-q10",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A circle has circumference 18π units.",
+    "questionText": "What is its area?",
+    "choices": [
+      "324π square units",
+      "18π square units",
+      "36π square units",
+      "81π square units"
+    ],
+    "answer": 3,
+    "explanation": "Since circumference is 2πr, 2πr = 18π gives r = 9. The area is πr² = 81π. The 18 is the diameter, so squaring it would produce an area four times too large."
+  },
+  {
+    "id": "math-exam-1-q11",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "medium",
+    "stem": "A student’s first four test scores are 88, 92, 75, and 85. Each of five tests has equal weight.",
+    "questionText": "What fifth score gives an overall mean of 86?",
+    "choices": [
+      "90",
+      "86",
+      "84",
+      "88"
+    ],
+    "answer": 0,
+    "explanation": "Five scores with mean 86 must total 430. The first four total 340, so the fifth must be 430 − 340 = 90. Averaging the existing scores gives 85, but adding 86 would not bring the final mean to 86."
+  },
+  {
+    "id": "math-exam-1-q12",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "2x² − 5x − 3 = 0.",
+    "questionText": "What is its positive solution?",
+    "choices": [
+      "−3",
+      "3",
+      "1/2",
+      "−1/2"
+    ],
+    "answer": 1,
+    "explanation": "Factor the quadratic as (2x + 1)(x − 3) = 0. The solutions are −1/2 and 3, so the positive solution is 3. Check: 2(3²) − 5(3) − 3 = 18 − 15 − 3 = 0. Sign errors in factoring can swap the signs of both candidate roots."
+  },
+  {
+    "id": "math-exam-1-q13",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "medium",
+    "stem": "The graph of a linear function passes through (−2, 5) and (4, −7).",
+    "questionText": "What is the function’s value at x = 1?",
+    "choices": [
+      "−2",
+      "3",
+      "−1",
+      "1"
+    ],
+    "answer": 2,
+    "explanation": "The slope is (−7 − 5)/(4 − (−2)) = −12/6 = −2. Starting at (−2, 5), increasing x by 3 decreases y by 6, so f(1) = −1. Equivalently, the line is y = −2x + 1. A slope requires differences in both coordinates."
+  },
+  {
+    "id": "math-exam-1-q14",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Two triangles are similar. A side of the smaller triangle is 6, and the corresponding side of the larger is 9. The smaller triangle’s area is 24.",
+    "questionText": "What is the larger triangle’s area?",
+    "choices": [
+      "36",
+      "48",
+      "81",
+      "54"
+    ],
+    "answer": 3,
+    "explanation": "The side-length scale factor is 9/6 = 3/2. Areas scale by the square of the length factor, so the larger area is 24(3/2)² = 54. Multiplying area by only 3/2 gives 36 and forgets that two dimensions scale."
+  },
+  {
+    "id": "math-exam-1-q15",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "medium",
+    "stem": "In a right triangle, the hypotenuse is 10 and an acute angle is 30°.",
+    "questionText": "What is the length of the side opposite the 30° angle?",
+    "choices": [
+      "5",
+      "5√3",
+      "10√3",
+      "20"
+    ],
+    "answer": 0,
+    "explanation": "Sine is opposite/hypotenuse, so the opposite side equals 10 sin 30° = 10(1/2) = 5. In a 30–60–90 triangle, this is the short leg. Using cosine would find the adjacent leg, 5√3."
+  },
+  {
+    "id": "math-exam-1-q16",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "z = 2 − 3i.",
+    "questionText": "What is |z|²?",
+    "choices": [
+      "5",
+      "13",
+      "−5",
+      "√13"
+    ],
+    "answer": 1,
+    "explanation": "The square of a complex number’s magnitude is the sum of the squares of its real and imaginary coordinates: |z|² = 2² + (−3)² = 13. The magnitude itself is √13. Squaring z algebraically is a different operation and would produce a complex result."
+  },
+  {
+    "id": "math-exam-1-q17",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A car gets 31 miles per gallon on a 186-mile trip. Fuel costs $3.50 per gallon.",
+    "questionText": "How much does the fuel used on the trip cost?",
+    "choices": [
+      "$651.00",
+      "$16.50",
+      "$21.00",
+      "$18.60"
+    ],
+    "answer": 2,
+    "explanation": "The trip uses 186/31 = 6 gallons. Multiply gallons by cost per gallon: 6 × 3.50 = 21 dollars. Track units: miles ÷ (miles/gallon) gives gallons. Multiplying miles directly by dollars per gallon skips the fuel-efficiency conversion."
+  },
+  {
+    "id": "math-exam-1-q18",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "medium",
+    "stem": "A box contains 8 blue tokens and 12 yellow tokens. Three tokens are drawn independently, replacing the token after every draw.",
+    "questionText": "What is the probability that all three tokens are blue?",
+    "choices": [
+      "2/5",
+      "8/57",
+      "6/25",
+      "8/125"
+    ],
+    "answer": 3,
+    "explanation": "Each draw has blue probability 8/20 = 2/5. Replacement keeps the probabilities the same and the draws independent, so multiply: (2/5)³ = 8/125. Without replacement, the counts would change after each draw, but that is not this experiment."
+  },
+  {
+    "id": "math-exam-1-q19",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A culture begins with 80 cells and doubles every 3 hours.",
+    "questionText": "How many cells does the model predict after 9 hours?",
+    "choices": [
+      "640",
+      "240",
+      "720",
+      "1,280"
+    ],
+    "answer": 0,
+    "explanation": "Nine hours contains 9/3 = 3 doubling periods. The count is 80 × 2³ = 640. Count periods, not hours, in the exponent. Adding 80 cells per period would model a constant increase instead of doubling."
+  },
+  {
+    "id": "math-exam-1-q20",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "2/(x − 1) = 3/(x + 2).",
+    "questionText": "What is x?",
+    "choices": [
+      "7",
+      "−7",
+      "1",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "The denominators require x ≠ 1 and x ≠ −2. Cross-multiply to get 2(x + 2) = 3(x − 1), so 2x + 4 = 3x − 3 and x = 7. It is allowed and makes both sides 1/3. Keep each numerator paired with the opposite denominator."
+  },
+  {
+    "id": "math-exam-1-q21",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A tangent segment from point P to a circle has length 12. The circle’s radius is 5.",
+    "questionText": "What is the distance from P to the center of the circle?",
+    "choices": [
+      "√119",
+      "13",
+      "17",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "The radius to the point of tangency is perpendicular to the tangent segment. Together with the segment from P to the center, they form a right triangle with legs 5 and 12. The desired distance is √(5² + 12²) = 13. Adding the two legs treats a bent path as a straight segment."
+  },
+  {
+    "id": "math-exam-1-q22",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "medium",
+    "stem": "f(x) = x² − 1 and g(x) = x + 2.",
+    "questionText": "What is f(g(3))?",
+    "choices": [
+      "36",
+      "8",
+      "24",
+      "10"
+    ],
+    "answer": 2,
+    "explanation": "Evaluate the inner function first: g(3) = 5. Then f(5) = 5² − 1 = 24. The order matters; g(f(3)) would equal 10. Function composition is not the product of f(3) and g(3)."
+  },
+  {
+    "id": "math-exam-1-q23",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "A = [[4, −2], [3, 5]].",
+    "questionText": "What is the determinant of A?",
+    "choices": [
+      "14",
+      "20",
+      "−26",
+      "26"
+    ],
+    "answer": 3,
+    "explanation": "For a 2 × 2 matrix [[a, b], [c, d]], the determinant is ad − bc. Here it is 4(5) − (−2)(3) = 20 + 6 = 26. The negative entry makes bc negative, and subtracting that product adds 6. Adding the diagonal products instead gives 14."
+  },
+  {
+    "id": "math-exam-1-q24",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "medium",
+    "stem": "A code uses exactly 3 distinct letters chosen from A, B, C, D, E, and F. Letter order matters.",
+    "questionText": "How many codes are possible?",
+    "choices": [
+      "120",
+      "20",
+      "216",
+      "18"
+    ],
+    "answer": 0,
+    "explanation": "There are 6 choices for the first letter, 5 for the second, and 4 for the third. Multiply to get 6 × 5 × 4 = 120. Using C(6, 3) = 20 ignores order; using 6³ allows repeated letters, which the problem forbids."
+  },
+  {
+    "id": "math-exam-1-q25",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A business has fixed costs of $4,800. Each item sells for $45 and has a variable cost of $25.",
+    "questionText": "How many items must it sell to break even?",
+    "choices": [
+      "96",
+      "240",
+      "107",
+      "192"
+    ],
+    "answer": 1,
+    "explanation": "Each item contributes 45 − 25 = 20 dollars toward fixed costs. Break-even means 20q − 4800 = 0, so q = 240. Using the full $45 selling price ignores the per-item cost; revenue and profit are different quantities."
+  },
+  {
+    "id": "math-exam-1-q26",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "(x − 2)(x + 3) < 0.",
+    "questionText": "Which interval is the solution set?",
+    "choices": [
+      "−3 ≤ x ≤ 2",
+      "x < 2",
+      "−3 < x < 2",
+      "x < −3 or x > 2"
+    ],
+    "answer": 2,
+    "explanation": "The zeros are −3 and 2. Between them, x − 2 is negative and x + 3 is positive, so their product is negative. Outside them, the factors have the same sign, so the product is positive. The strict inequality excludes both zeros. Testing one point in each interval prevents sign mistakes."
+  },
+  {
+    "id": "math-exam-1-q27",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "f(x) = x² − 6x + 1.",
+    "questionText": "What is its minimum value over all real x?",
+    "choices": [
+      "3",
+      "1",
+      "−9",
+      "−8"
+    ],
+    "answer": 3,
+    "explanation": "Complete the square: f(x) = (x − 3)² − 8. The squared term is at least zero, with equality at x = 3, so the minimum value is −8. The x-coordinate 3 locates the minimum; it is not the minimum output."
+  },
+  {
+    "id": "math-exam-1-q28",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A triangle’s vertices are (1, 1), (7, 1), and (4, 5).",
+    "questionText": "What is its area?",
+    "choices": [
+      "12 square units",
+      "24 square units",
+      "9 square units",
+      "18 square units"
+    ],
+    "answer": 0,
+    "explanation": "The first two vertices form a horizontal base of length 7 − 1 = 6. The third vertex lies 5 − 1 = 4 units above that base, so the perpendicular height is 4. Thus A = 6 × 4/2 = 12. A slanted side is not the height, and the factor 1/2 is essential for a triangle."
+  },
+  {
+    "id": "math-exam-1-q29",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "θ lies in Quadrant II and cos θ = −4/5.",
+    "questionText": "What is tan θ?",
+    "choices": [
+      "−3/5",
+      "−3/4",
+      "3/4",
+      "−4/3"
+    ],
+    "answer": 1,
+    "explanation": "The reference triangle is 3–4–5, so sin θ = 3/5 in Quadrant II. Then tan θ = sin θ/cos θ = (3/5)/(−4/5) = −3/4. Quadrant II has positive sine and negative cosine, hence negative tangent. Reversing the ratio gives cotangent."
+  },
+  {
+    "id": "math-exam-1-q30",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "Four fair coins are flipped independently.",
+    "questionText": "What is the probability of getting at least 3 heads?",
+    "choices": [
+      "1/16",
+      "5/16",
+      "1/4",
+      "3/4"
+    ],
+    "answer": 1,
+    "explanation": "There are 2⁴ = 16 equally likely sequences. Exactly 3 heads occurs in C(4, 3) = 4 sequences, and exactly 4 heads occurs in 1 sequence. Thus P(at least 3) = (4 + 1)/16 = 5/16. “At least” includes four heads, so counting only exactly three is incomplete."
+  },
+  {
+    "id": "math-exam-1-q31",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "i² = −1.",
+    "questionText": "What is i²⁰²⁶?",
+    "choices": [
+      "i",
+      "−i",
+      "−1",
+      "1"
+    ],
+    "answer": 2,
+    "explanation": "Powers of i cycle every four: i, −1, −i, 1. Since 2026 leaves remainder 2 when divided by 4, i²⁰²⁶ = i² = −1. A large exponent does not change the cycle. Reducing modulo 2 rather than modulo 4 loses the sign distinction."
+  },
+  {
+    "id": "math-exam-1-q32",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "Car A passes a mile marker at 60 mph. Car B passes the same marker 30 minutes later at 72 mph. Both continue at constant speeds in the same direction.",
+    "questionText": "How many hours after Car B passes the marker will it catch Car A?",
+    "choices": [
+      "0.5",
+      "2",
+      "3",
+      "2.5"
+    ],
+    "answer": 3,
+    "explanation": "Car A’s head start is 60 × 0.5 = 30 miles. Car B closes the gap at 72 − 60 = 12 mph, so catch-up time is 30/12 = 2.5 hours after B starts. A total of 3 hours elapses from A’s start, but the question measures from B’s start."
+  },
+  {
+    "id": "math-exam-1-q33",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "x + y = 10 and x² + y² = 58.",
+    "questionText": "What is xy?",
+    "choices": [
+      "21",
+      "42",
+      "29",
+      "−21"
+    ],
+    "answer": 0,
+    "explanation": "Square the sum: (x + y)² = x² + 2xy + y². Substitute to get 100 = 58 + 2xy, so 2xy = 42 and xy = 21. The common trap is treating (x + y)² as x² + y² and dropping the cross term."
+  },
+  {
+    "id": "math-exam-1-q34",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A circle has radius 6. A sector of the circle has central angle 150°.",
+    "questionText": "What is the sector’s area?",
+    "choices": [
+      "36π square units",
+      "15π square units",
+      "30π square units",
+      "5π square units"
+    ],
+    "answer": 1,
+    "explanation": "The sector occupies 150/360 = 5/12 of the circle. The circle’s area is π(6²) = 36π, so the sector’s area is (5/12)(36π) = 15π. Using circumference computes arc length; the question asks for an area."
+  },
+  {
+    "id": "math-exam-1-q35",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "f(x) = (x − 2)² + 1 has domain x ≥ 2.",
+    "questionText": "What is f⁻¹(4)?",
+    "choices": [
+      "√3",
+      "3",
+      "2 + √3",
+      "2 − √3"
+    ],
+    "answer": 2,
+    "explanation": "Solve (x − 2)² + 1 = 4 to get x − 2 = ±√3. The domain x ≥ 2 allows only the positive branch, so the input is 2 + √3. The domain restriction makes the function one-to-one and determines which inverse branch to use."
+  },
+  {
+    "id": "math-exam-1-q36",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "In a triangle, angle A is 30°, angle B is 45°, and the side opposite A has length 8.",
+    "questionText": "What is the length of the side opposite B?",
+    "choices": [
+      "4√2",
+      "8/√2",
+      "16",
+      "8√2"
+    ],
+    "answer": 3,
+    "explanation": "The law of sines gives b/sin 45° = 8/sin 30°. Therefore b = 8(√2/2)/(1/2) = 8√2. Each side must be paired with its opposite angle. Reversing the sine ratio would produce 8/√2."
+  },
+  {
+    "id": "math-exam-1-q37",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "Four independent trials each have a success probability of 0.30.",
+    "questionText": "What is the probability of exactly 2 successes?",
+    "choices": [
+      "0.2646",
+      "0.0900",
+      "0.4116",
+      "0.0081"
+    ],
+    "answer": 0,
+    "explanation": "Each specific ordering of two successes and two failures has probability (0.30)²(0.70)² = 0.0441. There are C(4, 2) = 6 orderings, so the total probability is 6 × 0.0441 = 0.2646. Multiplying only the two success probabilities ignores both failures and the possible orderings."
+  },
+  {
+    "id": "math-exam-1-q38",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "u = (3, 4) and v = (−4, 3).",
+    "questionText": "What is the angle between u and v?",
+    "choices": [
+      "180°",
+      "90°",
+      "0°",
+      "45°"
+    ],
+    "answer": 1,
+    "explanation": "The dot product is 3(−4) + 4(3) = 0. Both vectors are nonzero, and u · v = |u||v| cos θ. Thus cos θ = 0 and the angle between them is 90°. Opposite signs in some components do not by themselves imply opposite directions."
+  },
+  {
+    "id": "math-exam-1-q39",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A population follows P(t) = P₀bᵗ, where t is hours and b > 0. P(2) = 400 and P(5) = 3,200.",
+    "questionText": "What is P₀?",
+    "choices": [
+      "50",
+      "800",
+      "100",
+      "200"
+    ],
+    "answer": 2,
+    "explanation": "Divide the observations: P(5)/P(2) = b³ = 3200/400 = 8, so b = 2. Then 400 = P₀(2²), giving P₀ = 100. There are three hours between the observations, not five; using the wrong time interval changes the growth factor."
+  },
+  {
+    "id": "math-exam-1-q40",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "x is nonzero and x + 1/x = 5.",
+    "questionText": "What is x² + 1/x²?",
+    "choices": [
+      "27",
+      "10",
+      "23",
+      "25"
+    ],
+    "answer": 2,
+    "explanation": "Square the given expression: (x + 1/x)² = x² + 2 + 1/x² = 25. Subtract the cross term 2 to obtain 23. Solving for x is unnecessary. Squaring each term separately without the cross term gives the tempting answer 25."
+  },
+  {
+    "id": "math-exam-1-q41",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A regular hexagon has side length 4.",
+    "questionText": "What is its area?",
+    "choices": [
+      "12√3 square units",
+      "48√3 square units",
+      "16√3 square units",
+      "24√3 square units"
+    ],
+    "answer": 3,
+    "explanation": "Connect the center to the vertices to make six equilateral triangles with side 4. Each has area (√3/4)(4²) = 4√3, so the hexagon has area 6(4√3) = 24√3. The side length is not the apothem; using it as the height inflates the area."
+  },
+  {
+    "id": "math-exam-1-q42",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "2sin²θ − sin θ − 1 = 0, with 0 ≤ θ < 2π.",
+    "questionText": "How many values of θ satisfy the equation?",
+    "choices": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ],
+    "answer": 0,
+    "explanation": "Factor as (2sin θ + 1)(sin θ − 1) = 0. Thus sin θ = 1 or sin θ = −1/2. In the interval, the solutions are π/2, 7π/6, and 11π/6: three values. The equation sin θ = 1 gives only one value in a full turn, unlike most sine levels."
+  },
+  {
+    "id": "math-exam-1-q43",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "h(x) = (x² − 4)/(x − 2), defined wherever its denominator is nonzero.",
+    "questionText": "At what point does the graph have a removable hole?",
+    "choices": [
+      "(0, 2)",
+      "(2, 4)",
+      "(2, 0)",
+      "(−2, 0)"
+    ],
+    "answer": 1,
+    "explanation": "Factor the numerator: (x − 2)(x + 2). For x ≠ 2, the function equals x + 2, but the original formula is undefined at x = 2. The missing point on that line is (2, 4). Canceling the factor describes nearby points; it does not fill the hole."
+  },
+  {
+    "id": "math-exam-1-q44",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "In one play of a game, the net gain is $10 with probability 0.15 and a net loss of $2 with probability 0.85.",
+    "questionText": "What is the expected net gain per play?",
+    "choices": [
+      "$0.20",
+      "−$1.70",
+      "−$0.20",
+      "$1.50"
+    ],
+    "answer": 2,
+    "explanation": "Treat a loss as a negative gain. The expected net gain is 10(0.15) + (−2)(0.85) = 1.50 − 1.70 = −0.20 dollars. The amounts are already net gains, so no additional entry fee should be subtracted. Ignoring the losing outcome gives $1.50."
+  },
+  {
+    "id": "math-exam-1-q45",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A workshop makes x units of Product A and y units of Product B, where x and y are nonnegative whole numbers. Resource limits are x + 2y ≤ 14 and 3x + y ≤ 17. Profit is 5x + 4y dollars.",
+    "questionText": "What is the greatest possible profit?",
+    "choices": [
+      "$28",
+      "$34",
+      "$42",
+      "$40"
+    ],
+    "answer": 3,
+    "explanation": "The resource boundaries intersect at x = 4 and y = 5, giving profit 5(4) + 4(5) = 40. To prove no feasible pair exceeds 40, multiply the first constraint by 7/5 and the second by 6/5, then add: 5x + 4y ≤ (7/5)(14) + (6/5)(17) = 40. The pair (4, 5) attains the bound. Maximizing only one product misses the best mix."
+  },
+  {
+    "id": "math-algebra-d7",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "(x + 3)/4 − (x − 1)/6 = 2.",
+    "questionText": "What is x?",
+    "choices": [
+      "5",
+      "13",
+      "7",
+      "−13"
+    ],
+    "answer": 1,
+    "explanation": "Multiply every term by 12: 3(x + 3) − 2(x − 1) = 24. Distribute the subtraction to get 3x + 9 − 2x + 2 = 24, so x = 13. Substitution gives 4 − 2 = 2. The common trap is changing −2(x − 1) to −2x − 2."
+  },
+  {
+    "id": "math-algebra-d8",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "3x + 2y = 19 and 2x − y = 1.",
+    "questionText": "What is xy?",
+    "choices": [
+      "3",
+      "5",
+      "15",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "From the second equation, y = 2x − 1. Substitute: 3x + 2(2x − 1) = 19, so 7x = 21 and x = 3. Then y = 5 and xy = 15. The question requests the product, not either variable or their sum."
+  },
+  {
+    "id": "math-algebra-d9",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "x² − 6x + c = 0 has exactly one real solution.",
+    "questionText": "What is c?",
+    "choices": [
+      "6",
+      "−9",
+      "36",
+      "9"
+    ],
+    "answer": 3,
+    "explanation": "A quadratic has one real solution when its discriminant is zero. Here (−6)² − 4(1)c = 0, so 36 = 4c and c = 9. The equation then becomes (x − 3)² = 0. Setting the constant to zero gives two distinct roots, not one."
+  },
+  {
+    "id": "math-algebra-d10",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "The equation 3x² − 12x + 7 = 0 has roots r and s.",
+    "questionText": "What is r + s?",
+    "choices": [
+      "−4",
+      "7/3",
+      "12",
+      "4"
+    ],
+    "answer": 3,
+    "explanation": "For ax² + bx + c, the sum of the roots is −b/a. Thus r + s = −(−12)/3 = 4. No root calculation is needed. The product instead equals c/a = 7/3; mixing the sum and product formulas leads to a distractor."
+  },
+  {
+    "id": "math-algebra-d11",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "Expand (2x − 1)(x + 3).",
+    "questionText": "What is the coefficient of x?",
+    "choices": [
+      "5",
+      "6",
+      "−1",
+      "−3"
+    ],
+    "answer": 0,
+    "explanation": "Distribute: 2x² + 6x − x − 3 = 2x² + 5x − 3. The coefficient of x is 5. Both cross-products contribute to the linear term; keeping only 2x(3) would give 6. The constant term −3 is not the requested coefficient."
+  },
+  {
+    "id": "math-algebra-d12",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "p(x) = x³ − 3x² − 4x + 12.",
+    "questionText": "What is the largest real zero of p?",
+    "choices": [
+      "6",
+      "3",
+      "2",
+      "4"
+    ],
+    "answer": 1,
+    "explanation": "Group terms: x²(x − 3) − 4(x − 3) = (x − 3)(x² − 4) = (x − 3)(x − 2)(x + 2). The zeros are 3, 2, and −2, so the largest is 3. Factoring only x² − 4 misses the zero contributed by x − 3."
+  },
+  {
+    "id": "math-algebra-d13",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "p(x) = x³ − 2x + 4 is divided by x + 1.",
+    "questionText": "What is the remainder?",
+    "choices": [
+      "7",
+      "−5",
+      "5",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "The remainder theorem says division by x − a leaves remainder p(a). Here x + 1 = x − (−1), so evaluate p(−1) = −1 + 2 + 4 = 5. Evaluating p(1) uses the wrong sign and yields 3. Long division is unnecessary."
+  },
+  {
+    "id": "math-algebra-d14",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "a and b are nonzero real numbers, with a ≠ b.",
+    "questionText": "Which expression equals (1/a + 1/b)/(1/a − 1/b)?",
+    "choices": [
+      "(a + b)/(a − b)",
+      "1",
+      "(a − b)/(a + b)",
+      "(a + b)/(b − a)"
+    ],
+    "answer": 3,
+    "explanation": "Put each part over the common denominator ab. The numerator becomes (a + b)/ab and the denominator becomes (b − a)/ab. Dividing cancels ab and gives (a + b)/(b − a). The order b − a comes from 1/a − 1/b; reversing it changes the sign."
+  },
+  {
+    "id": "math-algebra-d15",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "1/(x − 2) > 0.",
+    "questionText": "Which condition describes all solutions?",
+    "choices": [
+      "x > 2",
+      "x < 2",
+      "x ≥ 2",
+      "x > 0"
+    ],
+    "answer": 0,
+    "explanation": "The numerator is positive, so the fraction is positive exactly when its denominator is positive. Thus x − 2 > 0, giving x > 2. The boundary x = 2 is undefined and must be excluded. Multiplying by x − 2 without considering its sign can reverse or lose a case."
+  },
+  {
+    "id": "math-algebra-d16",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "√(2x + 3) = x.",
+    "questionText": "Which value satisfies the equation?",
+    "choices": [
+      "−3",
+      "3",
+      "−1",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "A square root is nonnegative, so x ≥ 0. Squaring gives 2x + 3 = x², or (x − 3)(x + 1) = 0. The candidates are 3 and −1, but only 3 is nonnegative and satisfies the original equation. Squaring introduces the extraneous candidate −1."
+  },
+  {
+    "id": "math-algebra-d17",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "A student squares √(x + 6) = x and obtains candidates 3 and −2.",
+    "questionText": "Which candidate is extraneous?",
+    "choices": [
+      "Both candidates",
+      "Neither candidate",
+      "−2",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "At x = 3, √9 = 3, so it works. At x = −2, the left side is √4 = 2 while the right side is −2, so it fails. Squaring removes sign information. The original equation’s nonnegative left side already tells you x cannot be negative."
+  },
+  {
+    "id": "math-algebra-d18",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "|x − 4| < 3.",
+    "questionText": "Which interval is the solution set?",
+    "choices": [
+      "x < 1 or x > 7",
+      "1 ≤ x ≤ 7",
+      "−3 < x < 3",
+      "1 < x < 7"
+    ],
+    "answer": 3,
+    "explanation": "The expression says x is less than 3 units from 4. Write −3 < x − 4 < 3 and add 4 throughout: 1 < x < 7. Strict inequality excludes both endpoints. Using the outside intervals would describe an absolute value greater than 3."
+  },
+  {
+    "id": "math-algebra-d19",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "x + y = 7 and xy = 10.",
+    "questionText": "What is x² + y²?",
+    "choices": [
+      "29",
+      "49",
+      "39",
+      "59"
+    ],
+    "answer": 0,
+    "explanation": "Use (x + y)² = x² + 2xy + y². Therefore x² + y² = 7² − 2(10) = 29. You do not need to solve for x and y, though they are 2 and 5. The trap is subtracting xy only once rather than subtracting 2xy."
+  },
+  {
+    "id": "math-algebra-d20",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "2^(x + 1) = 32.",
+    "questionText": "What is x?",
+    "choices": [
+      "4",
+      "5",
+      "16",
+      "3"
+    ],
+    "answer": 0,
+    "explanation": "Rewrite 32 as 2⁵. With the same positive base, the exponents are equal: x + 1 = 5, so x = 4. Check that 2^(4 + 1) = 32. The exponent is x + 1 as a whole; x itself is not 5."
+  },
+  {
+    "id": "math-algebra-d21",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "A quadratic p(x) has zeros −1 and 4, and p(0) = −8.",
+    "questionText": "Which expression equals p(x)?",
+    "choices": [
+      "2x² + 6x − 8",
+      "2x² − 6x − 8",
+      "x² − 3x − 4",
+      "−2x² + 6x + 8"
+    ],
+    "answer": 1,
+    "explanation": "The zeros give p(x) = a(x + 1)(x − 4). At x = 0, −4a = −8, so a = 2. Expand to get 2(x² − 3x − 4) = 2x² − 6x − 8. The zeros alone do not determine the leading coefficient; use the provided point."
+  },
+  {
+    "id": "math-algebra-d22",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "x ≠ −1 and x ≠ 1.",
+    "questionText": "Which expression equals 2/(x + 1) + 3/(x − 1)?",
+    "choices": [
+      "(5x − 1)/(x² − 1)",
+      "(5x + 5)/(x² − 1)",
+      "(5x + 1)/(x² − 1)",
+      "5/(2x)"
+    ],
+    "answer": 2,
+    "explanation": "Use denominator (x + 1)(x − 1) = x² − 1. The numerator is 2(x − 1) + 3(x + 1) = 2x − 2 + 3x + 3 = 5x + 1. You cannot add denominators directly. Keep the original excluded values after combining the fractions."
+  },
+  {
+    "id": "math-algebra-d23",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "The equation (2k − 1)x = 3 has no solution for x.",
+    "questionText": "What is k?",
+    "choices": [
+      "0",
+      "1",
+      "3/2",
+      "1/2"
+    ],
+    "answer": 3,
+    "explanation": "A linear equation Ax = 3 has no solution only when A = 0, because then it says 0 = 3. Thus 2k − 1 = 0 and k = 1/2. Any nonzero coefficient yields the unique solution x = 3/A. Confusing no solution with x = 0 is the trap."
+  },
+  {
+    "id": "math-algebra-d24",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "The identity ax² + bx + 1 = (x + 1)² + x² holds for every real x.",
+    "questionText": "What is a + b?",
+    "choices": [
+      "4",
+      "3",
+      "2",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "Expand the right side to x² + 2x + 1 + x² = 2x² + 2x + 1. Match coefficients to get a = 2 and b = 2, so a + b = 4. An identity must match each power’s coefficient; testing just x = 0 gives no information about a or b."
+  },
+  {
+    "id": "math-algebra-d25",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "x² + 2x − 8 ≥ 0.",
+    "questionText": "Which set contains exactly the solutions?",
+    "choices": [
+      "x ≥ −4",
+      "x ≤ −4 or x ≥ 2",
+      "−4 ≤ x ≤ 2",
+      "x < −4 or x > 2"
+    ],
+    "answer": 1,
+    "explanation": "Factor as (x + 4)(x − 2). The product is positive outside the two zeros and negative between them. Because the inequality includes equality, both zeros are included: x ≤ −4 or x ≥ 2. Using the middle interval gives the negative-product region."
+  },
+  {
+    "id": "math-algebra-d26",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "x and y are nonzero.",
+    "questionText": "Which expression equals (x⁻²y³)²?",
+    "choices": [
+      "x⁴y⁶",
+      "y⁶/x²",
+      "y⁶/x⁴",
+      "y⁵/x⁴"
+    ],
+    "answer": 2,
+    "explanation": "A power of a product distributes to both factors, and a power of a power multiplies exponents. Thus (x⁻²y³)² = x⁻⁴y⁶ = y⁶/x⁴. Negative exponents mean reciprocals, not negative values. Adding exponents here uses the wrong exponent rule."
+  },
+  {
+    "id": "math-algebra-d27",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "x⁴ − 16 = 0.",
+    "questionText": "How many real solutions does the equation have?",
+    "choices": [
+      "1",
+      "3",
+      "4",
+      "2"
+    ],
+    "answer": 3,
+    "explanation": "Factor x⁴ − 16 = (x² − 4)(x² + 4). The first factor gives x = ±2. The second gives x² = −4 and has no real solutions. Thus there are two real solutions. A fourth-degree polynomial may have four complex roots without having four real roots."
+  },
+  {
+    "id": "math-algebra-d28",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "x + y + z = 12, x − y = 2, and z = 4.",
+    "questionText": "What is x?",
+    "choices": [
+      "5",
+      "3",
+      "4",
+      "7"
+    ],
+    "answer": 0,
+    "explanation": "Using z = 4 gives x + y = 8. Add x − y = 2 to obtain 2x = 10, so x = 5. Then y = 3. Substitution into all three equations verifies the solution. Forgetting to subtract z from the total changes the two-variable system."
+  },
+  {
+    "id": "math-algebra-d29",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "1/(x − 1) + 1/(x + 1) = 1.",
+    "questionText": "What is the sum of all real solutions?",
+    "choices": [
+      "2√2",
+      "2",
+      "0",
+      "1"
+    ],
+    "answer": 1,
+    "explanation": "Exclude x = ±1. Combine the fractions to get 2x/(x² − 1) = 1, so x² − 2x − 1 = 0. The roots are 1 + √2 and 1 − √2, neither excluded; their sum is 2. The roots’ sum can also be read as −b/a."
+  },
+  {
+    "id": "math-algebra-d30",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "|x + 2| = |2x − 1|.",
+    "questionText": "What is the sum of all real solutions?",
+    "choices": [
+      "10/3",
+      "8/3",
+      "3",
+      "−1/3"
+    ],
+    "answer": 1,
+    "explanation": "Equal absolute values mean x + 2 = 2x − 1 or x + 2 = −(2x − 1). The first gives x = 3; the second gives 3x = −1, so x = −1/3. The sum is 8/3. Keeping only the equal-sign branch misses one valid solution."
+  },
+  {
+    "id": "math-algebra-d31",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "3a + 2b = 10 and 6a + 4b = 20.",
+    "questionText": "How many ordered pairs (a, b) of real numbers satisfy both equations?",
+    "choices": [
+      "Exactly one",
+      "Exactly two",
+      "Infinitely many",
+      "None"
+    ],
+    "answer": 2,
+    "explanation": "The second equation is twice the first, so they describe the same line. Every point on that line satisfies both, giving infinitely many ordered pairs. Proportional coefficients alone are not enough: their constants must have the same proportion too."
+  },
+  {
+    "id": "math-algebra-d32",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "2 < 3x − 1 ≤ 11.",
+    "questionText": "Which inequality is equivalent?",
+    "choices": [
+      "1 ≤ x < 4",
+      "1 < x < 4",
+      "−1 < x ≤ 10/3",
+      "1 < x ≤ 4"
+    ],
+    "answer": 3,
+    "explanation": "Add 1 to all three parts to get 3 < 3x ≤ 12. Divide all three parts by positive 3 to get 1 < x ≤ 4. Preserve the strict lower sign and inclusive upper sign. Dividing only one side of a compound inequality does not keep an equivalent statement."
+  },
+  {
+    "id": "math-number-quantity-d7",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "Evaluate √72 − √8.",
+    "questionText": "Which expression is the result?",
+    "choices": [
+      "4√2",
+      "√64",
+      "2√2",
+      "8√2"
+    ],
+    "answer": 0,
+    "explanation": "Extract perfect squares: √72 = 6√2 and √8 = 2√2. Subtract like radical terms to get 4√2. In general, √a − √b does not equal √(a − b), so √64 is a trap. The radicals combine only after their remaining radicands match."
+  },
+  {
+    "id": "math-number-quantity-d8",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "i² = −1.",
+    "questionText": "What is (1 + i)/(1 − i)?",
+    "choices": [
+      "0",
+      "i",
+      "1",
+      "−i"
+    ],
+    "answer": 1,
+    "explanation": "Multiply numerator and denominator by the denominator’s conjugate 1 + i. The numerator is (1 + i)² = 2i, and the denominator is (1 − i)(1 + i) = 2. The quotient is i. Multiplying by the conjugate must affect both numerator and denominator."
+  },
+  {
+    "id": "math-number-quantity-d9",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "z = −5 + 12i.",
+    "questionText": "What is |z|?",
+    "choices": [
+      "17",
+      "169",
+      "13",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "The magnitude is √((−5)² + 12²) = √169 = 13. The real component’s negative sign disappears when squared. Adding absolute components gives 17, which measures a path along axes rather than the straight distance from the origin."
+  },
+  {
+    "id": "math-number-quantity-d10",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "An arithmetic sequence has a₁ = 7 and common difference −3.",
+    "questionText": "What is a₁₀?",
+    "choices": [
+      "34",
+      "−27",
+      "−20",
+      "−23"
+    ],
+    "answer": 2,
+    "explanation": "For an arithmetic sequence, aₙ = a₁ + (n − 1)d. Thus a₁₀ = 7 + 9(−3) = −20. There are nine changes between the first and tenth terms. Using ten changes creates the off-by-one distractor −23."
+  },
+  {
+    "id": "math-number-quantity-d11",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "The first and fifth terms of an arithmetic sequence are 4 and 20.",
+    "questionText": "What is the sum of its first five terms?",
+    "choices": [
+      "50",
+      "100",
+      "80",
+      "60"
+    ],
+    "answer": 3,
+    "explanation": "The five terms run evenly from 4 to 20, so their average is (4 + 20)/2 = 12. Multiply by five terms to get 60. Equivalently, the common difference is 4 and the terms are 4, 8, 12, 16, 20. Multiplying the last term by five ignores the progression."
+  },
+  {
+    "id": "math-number-quantity-d12",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A geometric sequence has a₁ = 5, a₄ = 40, and positive common ratio.",
+    "questionText": "What is a₆?",
+    "choices": [
+      "160",
+      "80",
+      "320",
+      "120"
+    ],
+    "answer": 0,
+    "explanation": "Since a₄ = a₁r³, 40 = 5r³ and r³ = 8, giving r = 2. Then a₆ = 5r⁵ = 5(32) = 160. The first-to-fourth interval contains three ratio multiplications, not four."
+  },
+  {
+    "id": "math-number-quantity-d13",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A geometric series has first term 6 and common ratio 1/2.",
+    "questionText": "What is the sum of infinitely many terms?",
+    "choices": [
+      "6",
+      "12",
+      "9",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "Because |r| < 1, the infinite series converges to a₁/(1 − r) = 6/(1 − 1/2) = 12. The first few sums 6, 9, 10.5 approach 12. Using the finite-sum formula with an arbitrary number of terms would answer a different question."
+  },
+  {
+    "id": "math-number-quantity-d14",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "Evaluate (6 × 10⁻³)/(2 × 10²).",
+    "questionText": "Which is the result in scientific notation?",
+    "choices": [
+      "12 × 10⁻¹",
+      "3 × 10⁵",
+      "3 × 10⁻⁵",
+      "3 × 10⁻¹"
+    ],
+    "answer": 2,
+    "explanation": "Divide coefficients: 6/2 = 3. Subtract exponents: −3 − 2 = −5. Thus the result is 3 × 10⁻⁵. The denominator’s exponent is subtracted even when the numerator’s exponent is negative. Adding −3 and 2 incorrectly gives −1."
+  },
+  {
+    "id": "math-number-quantity-d15",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "a and b are positive, and a³ = 64b⁶.",
+    "questionText": "Which expression equals a?",
+    "choices": [
+      "4b³",
+      "16b²",
+      "8b²",
+      "4b²"
+    ],
+    "answer": 3,
+    "explanation": "Take the cube root of both sides: a = ³√64 · ³√b⁶ = 4b². Positive variables avoid sign ambiguity. Divide the exponent 6 by 3, not subtract 3 from it; the cube root of 64 is 4, not 8."
+  },
+  {
+    "id": "math-number-quantity-d16",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "u = (−2, 5).",
+    "questionText": "What is the vector 3u?",
+    "choices": [
+      "(−6, 15)",
+      "(1, 8)",
+      "(−6, 5)",
+      "(−2, 15)"
+    ],
+    "answer": 0,
+    "explanation": "A scalar multiplies every vector component: 3(−2, 5) = (−6, 15). Adding 3 to each component is a translation, not scalar multiplication. Multiplying just one component changes the direction in a different way."
+  },
+  {
+    "id": "math-number-quantity-d17",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "u = (1, 2) and v = (3, −4).",
+    "questionText": "What is u · v?",
+    "choices": [
+      "(3, −8)",
+      "−5",
+      "11",
+      "−8"
+    ],
+    "answer": 1,
+    "explanation": "The dot product is a scalar: 1(3) + 2(−4) = 3 − 8 = −5. Componentwise products (3, −8) are not the dot product because they have not been added. A negative dot product corresponds to an angle greater than 90° between the nonzero vectors."
+  },
+  {
+    "id": "math-number-quantity-d18",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A nonzero vector v = (k, 6) is perpendicular to u = (3, −2).",
+    "questionText": "What is k?",
+    "choices": [
+      "9",
+      "−9",
+      "4",
+      "−4"
+    ],
+    "answer": 2,
+    "explanation": "Perpendicular nonzero vectors have dot product zero. Thus 3k + (−2)(6) = 0, so 3k = 12 and k = 4. Checking gives 12 − 12 = 0. Equating component ratios would test parallel directions instead of perpendicularity."
+  },
+  {
+    "id": "math-number-quantity-d19",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A = [[1, 2], [3, 4]] and B = [[0, 1], [−1, 2]].",
+    "questionText": "What is the entry in row 2, column 1 of AB?",
+    "choices": [
+      "3",
+      "−3",
+      "2",
+      "−4"
+    ],
+    "answer": 3,
+    "explanation": "Use row 2 of A, (3, 4), and column 1 of B, (0, −1). Their dot product is 3(0) + 4(−1) = −4. The named entry does not require the entire product. Using a row of B instead of its column is the standard matrix-multiplication trap."
+  },
+  {
+    "id": "math-number-quantity-d20",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "A is a 3 × 2 matrix and B is a 2 × 4 matrix.",
+    "questionText": "What are the dimensions of AB?",
+    "choices": [
+      "2 × 2",
+      "4 × 3",
+      "The product is undefined",
+      "3 × 4"
+    ],
+    "answer": 3,
+    "explanation": "The inner dimensions 2 and 2 match, so the product is defined. The output uses the outer dimensions, 3 rows from A and 4 columns from B, giving 3 × 4. Matrix multiplication is order-sensitive; BA would have inner dimensions 4 and 3 and would be undefined."
+  },
+  {
+    "id": "math-number-quantity-d21",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A = [[2, 1], [4, 2]].",
+    "questionText": "Which statement about A is true?",
+    "choices": [
+      "A has no inverse",
+      "Its determinant is 8",
+      "Its inverse equals A",
+      "Its determinant is −8"
+    ],
+    "answer": 0,
+    "explanation": "The determinant is 2(2) − 1(4) = 0. A square matrix with determinant zero has no inverse; its second row is twice its first. A positive determinant is not required for an inverse, but a nonzero determinant is."
+  },
+  {
+    "id": "math-number-quantity-d22",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A = [[3, 0], [0, 2]].",
+    "questionText": "Which matrix is A⁻¹?",
+    "choices": [
+      "[[1/2, 0], [0, 1/3]]",
+      "[[1/3, 0], [0, 1/2]]",
+      "[[2, 0], [0, 3]]",
+      "[[−3, 0], [0, −2]]"
+    ],
+    "answer": 1,
+    "explanation": "For a diagonal matrix with nonzero entries, invert each diagonal entry. The proposed matrix gives AA⁻¹ = [[1, 0], [0, 1]], so it is the inverse. Taking a negative is an additive inverse, not a multiplicative matrix inverse."
+  },
+  {
+    "id": "math-number-quantity-d23",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "Evaluate |−7| − (−2)³.",
+    "questionText": "What is the value?",
+    "choices": [
+      "−15",
+      "1",
+      "15",
+      "−1"
+    ],
+    "answer": 2,
+    "explanation": "The absolute value is 7, and (−2)³ = −8 because an odd power keeps the negative sign. Thus 7 − (−8) = 15. Keep parentheses around the negative base and recognize that subtracting a negative adds."
+  },
+  {
+    "id": "math-number-quantity-d24",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "n is a positive integer and 2ⁿ · 4³ = 2¹¹.",
+    "questionText": "What is n?",
+    "choices": [
+      "8",
+      "6",
+      "14",
+      "5"
+    ],
+    "answer": 3,
+    "explanation": "Rewrite 4³ as (2²)³ = 2⁶. The left side is 2ⁿ⁺⁶, so n + 6 = 11 and n = 5. Product rules add exponents only after expressing both factors with the same base. Treating 4³ as 2³ loses a factor of 2 in its exponent."
+  },
+  {
+    "id": "math-number-quantity-d25",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "An integer N leaves remainder 3 when divided by 7.",
+    "questionText": "What remainder does 2N + 5 leave when divided by 7?",
+    "choices": [
+      "4",
+      "1",
+      "3",
+      "6"
+    ],
+    "answer": 0,
+    "explanation": "Write N = 7k + 3. Then 2N + 5 = 14k + 11 = 7(2k + 1) + 4, so the remainder is 4. The raw remainder expression 2(3) + 5 = 11 must be reduced again modulo 7."
+  },
+  {
+    "id": "math-number-quantity-d26",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "The integers 12 and 18 both divide a positive integer M.",
+    "questionText": "What is the least possible M?",
+    "choices": [
+      "216",
+      "36",
+      "6",
+      "72"
+    ],
+    "answer": 1,
+    "explanation": "Find the least common multiple. The prime factorizations are 12 = 2² · 3 and 18 = 2 · 3², so use the larger exponent of each prime: M = 2² · 3² = 36. The greatest common factor 6 is not divisible by either original number."
+  },
+  {
+    "id": "math-number-quantity-d27",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A point (2, −1) is rotated 90° counterclockwise about the origin.",
+    "questionText": "What are its new coordinates?",
+    "choices": [
+      "(−2, 1)",
+      "(−1, 2)",
+      "(1, 2)",
+      "(−1, −2)"
+    ],
+    "answer": 2,
+    "explanation": "A 90° counterclockwise rotation maps (x, y) to (−y, x). Applying it to (2, −1) gives (1, 2). The point moves from Quadrant IV to Quadrant I. The clockwise rule (y, −x) would give (−1, −2)."
+  },
+  {
+    "id": "math-number-quantity-d28",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "i² = −1.",
+    "questionText": "What is (2 − i)²?",
+    "choices": [
+      "5",
+      "3 + 4i",
+      "5 − 4i",
+      "3 − 4i"
+    ],
+    "answer": 3,
+    "explanation": "Expand the square: 4 − 4i + i² = 3 − 4i. The middle term is twice the product of the two terms, and i² = −1. The value 5 is |2 − i|², which is different from the algebraic square."
+  },
+  {
+    "id": "math-number-quantity-d29",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "The geometric sequence 81, 27, 9, ... continues with the same ratio.",
+    "questionText": "What is its fifth term?",
+    "choices": [
+      "1",
+      "3",
+      "1/3",
+      "27"
+    ],
+    "answer": 0,
+    "explanation": "The common ratio is 27/81 = 1/3. The fifth term is 81(1/3)⁴ = 1. Listing the five terms gives 81, 27, 9, 3, 1. Applying the ratio five times after the first term would incorrectly give 1/3."
+  },
+  {
+    "id": "math-number-quantity-d30",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "x is positive and x^(3/2) = 125.",
+    "questionText": "What is x?",
+    "choices": [
+      "25",
+      "5",
+      "125/3",
+      "625"
+    ],
+    "answer": 0,
+    "explanation": "Raise both sides to the reciprocal exponent 2/3: x = 125^(2/3) = (³√125)² = 5² = 25. Check: 25^(3/2) = (√25)³ = 125. Multiplying the right side by 2/3 does not undo an exponent."
+  },
+  {
+    "id": "math-number-quantity-d31",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "u = (6, 8).",
+    "questionText": "Which vector is a unit vector in the same direction as u?",
+    "choices": [
+      "(3, 4)",
+      "(3/5, 4/5)",
+      "(6, 8)",
+      "(4/5, 3/5)"
+    ],
+    "answer": 1,
+    "explanation": "The magnitude of u is √(36 + 64) = 10. Divide both components by 10 to get (3/5, 4/5). Its magnitude is 1 and its component ratio matches u. Swapping the components preserves unit length but changes direction."
+  },
+  {
+    "id": "math-number-quantity-d32",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "√(x²) = 7 for real x.",
+    "questionText": "What is the sum of all possible x values?",
+    "choices": [
+      "14",
+      "49",
+      "0",
+      "7"
+    ],
+    "answer": 2,
+    "explanation": "For real x, √(x²) = |x|, not always x. Thus |x| = 7 gives x = 7 and x = −7, whose sum is 0. Dropping the absolute value loses the negative solution. Both values have square 49 and principal square root 7."
+  },
+  {
+    "id": "math-essential-skills-d7",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "easy",
+    "stem": "A class has 48 students. Three eighths of them choose a lab elective.",
+    "questionText": "How many students choose the lab elective?",
+    "choices": [
+      "30",
+      "24",
+      "18",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Multiply 48 by 3/8: first 48/8 = 6, then 6 × 3 = 18. The fraction names a share of the full class. The remaining 30 students do not choose the elective, so 30 answers the opposite question."
+  },
+  {
+    "id": "math-essential-skills-d8",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A membership fee rises from $64 to $80.",
+    "questionText": "What is the percent increase?",
+    "choices": [
+      "20%",
+      "16%",
+      "125%",
+      "25%"
+    ],
+    "answer": 3,
+    "explanation": "The increase is 80 − 64 = 16 dollars. Divide by the original fee: 16/64 = 0.25, or 25%. Dividing by the new fee gives 20%, which is the change as a share of the wrong base. The percent increase uses the starting value."
+  },
+  {
+    "id": "math-essential-skills-d9",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A 20% discount brings an item’s price to $96.",
+    "questionText": "What was its original price?",
+    "choices": [
+      "$120",
+      "$115.20",
+      "$76.80",
+      "$480"
+    ],
+    "answer": 0,
+    "explanation": "After a 20% discount, the buyer pays 80% of the original price P. Thus 0.80P = 96, so P = 120. Adding 20% of the discounted price gives 115.20, but that uses a different base and does not undo the discount."
+  },
+  {
+    "id": "math-essential-skills-d10",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A merchant buys an item for $80 and sells it for $100.",
+    "questionText": "The $20 profit is what percent of the selling price?",
+    "choices": [
+      "20%",
+      "25%",
+      "80%",
+      "125%"
+    ],
+    "answer": 0,
+    "explanation": "The requested base is the selling price, so divide profit by 100: 20/100 = 20%. The 25% figure uses the $80 purchase cost and is the markup relative to cost. Both describe meaningful percentages, but only 20% answers the stated question."
+  },
+  {
+    "id": "math-essential-skills-d11",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A map uses a scale of 1 centimeter to 2.5 kilometers. Two towns are 7.2 centimeters apart on the map.",
+    "questionText": "What distance does the map represent?",
+    "choices": [
+      "180 kilometers",
+      "18 kilometers",
+      "2.88 kilometers",
+      "9.7 kilometers"
+    ],
+    "answer": 1,
+    "explanation": "Multiply map distance by the scale: 7.2 cm × 2.5 km/cm = 18 km. Centimeters cancel. Dividing by 2.5 converts an actual distance back to map centimeters, which reverses the requested conversion."
+  },
+  {
+    "id": "math-essential-skills-d12",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A metal has density 7,800 kilograms per cubic meter. A sample has volume 0.0025 cubic meter.",
+    "questionText": "What is the sample’s mass?",
+    "choices": [
+      "195 kilograms",
+      "0.00000032 kilogram",
+      "19.5 kilograms",
+      "3.12 kilograms"
+    ],
+    "answer": 2,
+    "explanation": "Density = mass/volume, so mass = density × volume. Here 7800 × 0.0025 = 19.5 kilograms. The cubic meters cancel. Dividing density by volume produces the wrong units; a small fraction of a cubic meter should have a much smaller mass than 7,800 kilograms."
+  },
+  {
+    "id": "math-essential-skills-d13",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A faucet fills an empty tank in 10 hours. An open drain empties a full tank in 15 hours. Both rates are constant and both operate together.",
+    "questionText": "How long does filling the initially empty tank take?",
+    "choices": [
+      "6 hours",
+      "12.5 hours",
+      "25 hours",
+      "30 hours"
+    ],
+    "answer": 3,
+    "explanation": "The faucet adds 1/10 tank per hour and the drain removes 1/15 tank per hour. Net rate is 1/10 − 1/15 = 1/30, so filling takes 30 hours. Subtract an opposing rate; adding rates would model two faucets, not a drain."
+  },
+  {
+    "id": "math-essential-skills-d14",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "In Group A, 60% of 40 people attended an event. In Group B, 75% of 60 people attended.",
+    "questionText": "What percent of the combined groups attended?",
+    "choices": [
+      "69%",
+      "67.5%",
+      "70%",
+      "135%"
+    ],
+    "answer": 0,
+    "explanation": "Group A contributes 0.60(40) = 24 attendees and Group B contributes 0.75(60) = 45. The total is 69 attendees out of 100 people, or 69%. An unweighted average of 60% and 75% gives 67.5%, but the larger group deserves more weight."
+  },
+  {
+    "id": "math-essential-skills-d15",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "Four equally productive workers complete a job in 6 hours. Eight workers work together at that same individual rate.",
+    "questionText": "How long does the job take?",
+    "choices": [
+      "2 hours",
+      "3 hours",
+      "12 hours",
+      "4 hours"
+    ],
+    "answer": 1,
+    "explanation": "The job requires 4 × 6 = 24 worker-hours. Divide by 8 workers to get 3 hours. Doubling workers halves the time when their rates add without interference. Increasing both worker count and time would model a larger job."
+  },
+  {
+    "id": "math-essential-skills-d16",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A vehicle covers 100 miles in 2 hours and then 50 miles in 1.5 hours.",
+    "questionText": "What is its average speed for the combined trip?",
+    "choices": [
+      "50 mph",
+      "75 mph",
+      "300/7 mph",
+      "125/3 mph"
+    ],
+    "answer": 2,
+    "explanation": "Total distance is 150 miles and total time is 3.5 hours. Divide to get 150/3.5 = 300/7 mph, about 42.86 mph. Averaging the leg speeds 50 and 100/3 equally gives 125/3, but the legs have different time lengths."
+  },
+  {
+    "id": "math-essential-skills-d17",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A spice costs $2.40 for 100 grams. The same price per gram applies to a 1-kilogram purchase.",
+    "questionText": "What is the cost of 1 kilogram?",
+    "choices": [
+      "$2.40",
+      "$240.00",
+      "$0.24",
+      "$24.00"
+    ],
+    "answer": 3,
+    "explanation": "One kilogram is 1,000 grams, which is ten 100-gram portions. The cost is 10 × $2.40 = $24. Convert mass units before applying the price. Treating 1 kilogram as 100 grams misses a factor of 10."
+  },
+  {
+    "id": "math-essential-skills-d18",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A vehicle uses 9 liters of fuel per 100 kilometers.",
+    "questionText": "How many liters does it use over 350 kilometers at that rate?",
+    "choices": [
+      "31.5",
+      "38.9",
+      "3.15",
+      "315"
+    ],
+    "answer": 0,
+    "explanation": "The trip contains 350/100 = 3.5 groups of 100 kilometers. Multiply 3.5 × 9 = 31.5 liters. The given rate is fuel per distance, so multiply it by distance rather than treating it as distance per fuel."
+  },
+  {
+    "id": "math-essential-skills-d19",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "Ten liters of a 20% salt solution are diluted with pure water to make an 8% salt solution. Volumes add.",
+    "questionText": "How many liters of water are added?",
+    "choices": [
+      "6",
+      "15",
+      "25",
+      "10"
+    ],
+    "answer": 1,
+    "explanation": "The solution contains 10(0.20) = 2 liters of salt, which stays constant. For 8% concentration, total volume must be 2/0.08 = 25 liters. Subtract the original 10 liters to get 15 liters added. Reporting 25 gives final volume instead of added water."
+  },
+  {
+    "id": "math-essential-skills-d20",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A price increases by 20%. It is then discounted enough to return exactly to its original price.",
+    "questionText": "What discount percentage is needed?",
+    "choices": [
+      "18%",
+      "16⅔%",
+      "20%",
+      "25%"
+    ],
+    "answer": 1,
+    "explanation": "Represent the original price as 100, so the increased price is 120. Restoring 100 requires a 20-unit decrease measured against 120: 20/120 = 1/6 = 16⅔%. A 20% discount would subtract 24 and leave 96. The second percentage has a larger base."
+  },
+  {
+    "id": "math-essential-skills-d21",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "a:b = 2:3 and b:c = 4:5, with positive a, b, and c.",
+    "questionText": "What is a:c?",
+    "choices": [
+      "3:4",
+      "5:8",
+      "8:15",
+      "2:5"
+    ],
+    "answer": 2,
+    "explanation": "Give b the same number of ratio parts in both relationships. Scale 2:3 by 4 to get a:b = 8:12, and scale 4:5 by 3 to get b:c = 12:15. Thus a:c = 8:15. Directly pairing the outer numbers 2 and 5 ignores the inconsistent b scale."
+  },
+  {
+    "id": "math-essential-skills-d22",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "y varies inversely with positive x. When x = 5, y = 12.",
+    "questionText": "What is y when x = 8?",
+    "choices": [
+      "19.2",
+      "9",
+      "15",
+      "7.5"
+    ],
+    "answer": 3,
+    "explanation": "Inverse variation means xy = k. The given pair sets k = 5(12) = 60, so at x = 8, y = 60/8 = 7.5. Increasing x should decrease y. The 19.2 answer uses direct variation and increases both quantities together."
+  },
+  {
+    "id": "math-essential-skills-d23",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "For this problem, 1 U.S. dollar exchanges for 0.92 euro, with no fees.",
+    "questionText": "Approximately how many U.S. dollars equal 60 euros, to the nearest cent?",
+    "choices": [
+      "$65.22",
+      "$55.20",
+      "$60.92",
+      "$652.17"
+    ],
+    "answer": 0,
+    "explanation": "Use dollars × 0.92 euro/dollar = 60 euros. Thus dollars = 60/0.92 ≈ 65.2174, which rounds to $65.22. The rate gives less than one euro per dollar, so 60 euros should require more than 60 dollars. Multiplying by 0.92 converts in the other direction."
+  },
+  {
+    "id": "math-essential-skills-d24",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A measured length is 48 cm, while the actual length is 50 cm. Percent error is absolute error divided by actual value, times 100.",
+    "questionText": "What is the percent error?",
+    "choices": [
+      "96%",
+      "4%",
+      "2%",
+      "4⅙%"
+    ],
+    "answer": 1,
+    "explanation": "Absolute error is |48 − 50| = 2 cm. Divide by the actual 50 cm and multiply by 100: 2/50 × 100 = 4%. Using the measured value as the denominator gives approximately 4.17%, but the definition explicitly uses the actual value."
+  },
+  {
+    "id": "math-essential-skills-d25",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A train is 150 meters long and travels at 20 meters per second. A bridge is 450 meters long.",
+    "questionText": "How many seconds pass from the front of the train entering the bridge until the rear leaves it?",
+    "choices": [
+      "7.5",
+      "15",
+      "30",
+      "22.5"
+    ],
+    "answer": 2,
+    "explanation": "The front of the train must travel the bridge length plus the train’s length: 450 + 150 = 600 meters. Divide by 20 m/s to get 30 seconds. Using only 450 meters measures when the front leaves the bridge, while the rear is still on it."
+  },
+  {
+    "id": "math-essential-skills-d26",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "Two people’s current ages are in the ratio 2:5. In 6 years, their ages will be in the ratio 1:2.",
+    "questionText": "How old is the younger person now?",
+    "choices": [
+      "6 years",
+      "18 years",
+      "30 years",
+      "12 years"
+    ],
+    "answer": 3,
+    "explanation": "Write current ages as 2k and 5k. In six years, (2k + 6)/(5k + 6) = 1/2, so 4k + 12 = 5k + 6 and k = 6. The younger age is 2k = 12. Adding 6 to each ratio number directly treats a ratio part as a year."
+  },
+  {
+    "id": "math-essential-skills-d27",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "Five pounds of nuts cost $4 per pound, and 3 pounds of a second kind cost $8 per pound. They are mixed.",
+    "questionText": "What is the ingredient cost per pound of the mixture?",
+    "choices": [
+      "$5.50",
+      "$6.00",
+      "$4.40",
+      "$44.00"
+    ],
+    "answer": 0,
+    "explanation": "Total ingredient cost is 5(4) + 3(8) = 44 dollars, and total weight is 8 pounds. Cost per pound is 44/8 = $5.50. Averaging the two prices gives $6.00 but ignores the different amounts purchased. The total $44 is not a unit cost."
+  },
+  {
+    "id": "math-essential-skills-d28",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A salesperson earns $220 per week plus an 8% commission on weekly sales. This week’s sales are $1,600.",
+    "questionText": "What are the total weekly earnings?",
+    "choices": [
+      "$396",
+      "$348",
+      "$128",
+      "$1,820"
+    ],
+    "answer": 1,
+    "explanation": "Commission is 0.08(1600) = 128 dollars. Add the base pay of 220 to get total earnings of $348. Reporting only the commission omits fixed pay. Commission applies to the sales amount, not to the sum of sales and base pay."
+  },
+  {
+    "id": "math-essential-skills-d29",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "easy",
+    "stem": "A purchase requires a $50 down payment followed by 3 payments of $75 each, with no additional charges.",
+    "questionText": "What is the total payment?",
+    "choices": [
+      "$125",
+      "$375",
+      "$275",
+      "$225"
+    ],
+    "answer": 2,
+    "explanation": "Add the down payment to all installment payments: 50 + 3(75) = 275. The $225 option omits the down payment. The number 3 counts payments, so multiply it by the per-payment amount before adding the fixed initial amount."
+  },
+  {
+    "id": "math-essential-skills-d30",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A sheet has area 2,500 square centimeters.",
+    "questionText": "What is its area in square meters?",
+    "choices": [
+      "2.5",
+      "0.025",
+      "0.25",
+      "25"
+    ],
+    "answer": 2,
+    "explanation": "One meter is 100 centimeters, so one square meter is 100² = 10,000 square centimeters. Divide 2500 by 10,000 to get 0.25 m². Area conversions square the length conversion factor; dividing by 100 instead gives 25 and misses a dimension."
+  },
+  {
+    "id": "math-essential-skills-d31",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "Two cyclists start 135 miles apart and ride toward each other at constant speeds of 40 mph and 50 mph.",
+    "questionText": "How many hours until they meet?",
+    "choices": [
+      "13.5",
+      "2.7",
+      "3.375",
+      "1.5"
+    ],
+    "answer": 3,
+    "explanation": "Because they move toward each other, the separation decreases at 40 + 50 = 90 mph. Time is 135/90 = 1.5 hours. A difference of speeds is used for catch-up in the same direction, not for two travelers approaching each other."
+  },
+  {
+    "id": "math-essential-skills-d32",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "Each of 3 identical machines produces 80 parts in 50 minutes at a constant rate.",
+    "questionText": "How many parts do all 3 machines produce in 15 minutes?",
+    "choices": [
+      "72",
+      "24",
+      "240",
+      "90"
+    ],
+    "answer": 0,
+    "explanation": "One machine’s rate is 80/50 = 1.6 parts per minute. Three machines produce 4.8 parts per minute, so in 15 minutes they produce 4.8(15) = 72 parts. The 24 choice is the production of only one machine; 240 ignores the shorter running time."
+  },
+  {
+    "id": "math-modeling-d7",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "Phone Plan A costs $20 plus $0.08 per minute. Plan B costs $35 plus $0.03 per minute.",
+    "questionText": "At how many minutes do the two plans cost the same?",
+    "choices": [
+      "15",
+      "500",
+      "300",
+      "187.5"
+    ],
+    "answer": 2,
+    "explanation": "Equate costs: 20 + 0.08m = 35 + 0.03m. Subtract 0.03m and 20 to get 0.05m = 15, so m = 300. At that usage, both plans cost $44. Using one plan’s rate without subtracting the other ignores how their costs change relative to each other."
+  },
+  {
+    "id": "math-modeling-d8",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "An internet plan costs $18 plus $2 per extra unit. Another costs $30 plus $1 per extra unit.",
+    "questionText": "For which usage x is the second plan strictly cheaper?",
+    "choices": [
+      "x < 12",
+      "x ≥ 12",
+      "x > 30",
+      "x > 12"
+    ],
+    "answer": 3,
+    "explanation": "Set 30 + x < 18 + 2x. Subtract x and 18 to get 12 < x, or x > 12. At x = 12 the costs are equal, so the word strictly excludes the boundary. The higher fixed fee is offset by the lower variable rate only beyond the break-even usage."
+  },
+  {
+    "id": "math-modeling-d9",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "An object’s height in meters is h(t) = −5t² + 20t + 1 for t ≥ 0, where t is seconds.",
+    "questionText": "What maximum height does the model predict?",
+    "choices": [
+      "21 meters",
+      "2 meters",
+      "20 meters",
+      "41 meters"
+    ],
+    "answer": 0,
+    "explanation": "The downward parabola peaks at t = −20/[2(−5)] = 2 seconds. Evaluate h(2) = −20 + 40 + 1 = 21 meters. Completing the square gives h(t) = −5(t − 2)² + 21. The vertex’s time 2 is not the requested height."
+  },
+  {
+    "id": "math-modeling-d10",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A ball’s height in feet is h(t) = −16t² + 64t, where t is seconds after launch.",
+    "questionText": "How many seconds after launch does it first return to ground level?",
+    "choices": [
+      "4",
+      "2",
+      "8",
+      "64"
+    ],
+    "answer": 0,
+    "explanation": "Set h(t) = 0 and factor: −16t(t − 4) = 0. The zeros are t = 0, the launch, and t = 4, the return. The first return occurs at 4 seconds. The time 2 is the height maximum halfway through the flight, not ground contact."
+  },
+  {
+    "id": "math-modeling-d11",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A demand model predicts q = 120 − 2p items sold when the price is p dollars, with 0 ≤ p ≤ 60.",
+    "questionText": "Which price maximizes revenue pq?",
+    "choices": [
+      "$40",
+      "$30",
+      "$60",
+      "$120"
+    ],
+    "answer": 1,
+    "explanation": "Revenue is R(p) = p(120 − 2p) = −2p² + 120p. Its vertex is at p = −120/[2(−2)] = 30, within the allowed range. At $60 the model predicts zero sales and zero revenue. Maximizing the number sold is different from maximizing price times quantity."
+  },
+  {
+    "id": "math-modeling-d12",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "Producing q items costs C(q) = 120 + 8q dollars.",
+    "questionText": "What is the average cost per item when q = 30?",
+    "choices": [
+      "$360",
+      "$4",
+      "$12",
+      "$8"
+    ],
+    "answer": 2,
+    "explanation": "Total cost at 30 items is 120 + 8(30) = 360 dollars. Divide by 30 items to get $12 per item. The $8 variable cost does not include a share of fixed cost, and the $360 total does not have the requested per-item units."
+  },
+  {
+    "id": "math-modeling-d13",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "Sixty feet of fence enclose three sides of a rectangular yard; a wall forms the fourth side. Let the two fenced widths be x and the fenced length be y.",
+    "questionText": "What is the greatest possible enclosed area?",
+    "choices": [
+      "225 square feet",
+      "900 square feet",
+      "300 square feet",
+      "450 square feet"
+    ],
+    "answer": 3,
+    "explanation": "The fence limit is 2x + y = 60, so y = 60 − 2x. Area is A(x) = x(60 − 2x), a downward parabola with vertex x = 15 and y = 30. The maximum area is 450. A four-side perimeter equation would incorrectly fence the wall side as well."
+  },
+  {
+    "id": "math-modeling-d14",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A rectangle’s longer side is 3 units longer than its shorter side. Its perimeter is 34.",
+    "questionText": "What is its area?",
+    "choices": [
+      "70 square units",
+      "49 square units",
+      "85 square units",
+      "140 square units"
+    ],
+    "answer": 0,
+    "explanation": "If the shorter side is x, then 2x + 2(x + 3) = 34. Thus 4x + 6 = 34 and x = 7; the longer side is 10. Area is 7 × 10 = 70. The perimeter counts each side twice; the area uses one copy of each dimension."
+  },
+  {
+    "id": "math-modeling-d15",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A quantity starts at 100 and decreases by 20% after every completed hour.",
+    "questionText": "After how many whole hours is its value first at most 50?",
+    "choices": [
+      "5",
+      "4",
+      "2",
+      "3"
+    ],
+    "answer": 1,
+    "explanation": "The model is 100(0.8)ⁿ. After three hours the value is 51.2, still above 50; after four it is 40.96, meeting the condition. The first qualifying whole hour is 4. Subtracting 20 each hour would model a fixed-amount decrease and yield the wrong threshold."
+  },
+  {
+    "id": "math-modeling-d16",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A town’s population is 2,000 at t = 0 and grows by 3% each year.",
+    "questionText": "Which model gives its population P(t) after t years?",
+    "choices": [
+      "P(t) = 2000(0.03)ᵗ",
+      "P(t) = 2000(1.30)ᵗ",
+      "P(t) = 2000(1.03)ᵗ",
+      "P(t) = 2000 + 3t"
+    ],
+    "answer": 2,
+    "explanation": "A 3% annual increase multiplies the current amount by 1 + 0.03 = 1.03. Repeating that factor t times gives 2000(1.03)ᵗ. The 0.03 factor would retain only 3% each year; 1.30 describes 30% growth rather than 3%."
+  },
+  {
+    "id": "math-modeling-d17",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A substance has initial mass 96 grams and a half-life of 4 days.",
+    "questionText": "How many grams remain after 12 days?",
+    "choices": [
+      "24",
+      "48",
+      "8",
+      "12"
+    ],
+    "answer": 3,
+    "explanation": "Twelve days contain 12/4 = 3 half-lives. Remaining mass is 96(1/2)³ = 12 grams. List the successive masses as 96, 48, 24, 12. The exponent counts half-life periods, not the raw number of days."
+  },
+  {
+    "id": "math-modeling-d18",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A library has 300 books and adds 50 books at the end of each month. No books leave.",
+    "questionText": "After how many whole months does it first have at least 1,000 books?",
+    "choices": [
+      "14",
+      "20",
+      "13",
+      "15"
+    ],
+    "answer": 0,
+    "explanation": "The count after m months is 300 + 50m. Solve 300 + 50m ≥ 1000 to get m ≥ 14. Fourteen months reaches exactly 1,000, which qualifies. Ignoring the starting collection gives 20 months; adding another month unnecessarily misreads “at least.”"
+  },
+  {
+    "id": "math-modeling-d19",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "easy",
+    "stem": "Water depth in a tank starts at 5 feet and increases at 2 feet per hour.",
+    "questionText": "How long does it take to reach 17 feet?",
+    "choices": [
+      "12 hours",
+      "6 hours",
+      "8.5 hours",
+      "11 hours"
+    ],
+    "answer": 1,
+    "explanation": "Depth follows d(t) = 5 + 2t. Set it equal to 17: 2t = 12, so t = 6 hours. Only 12 additional feet are needed. Dividing the final depth by the rate ignores the initial 5 feet already in the tank."
+  },
+  {
+    "id": "math-modeling-d20",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "Increasing the side of a square by 5 units increases its area by 65 square units.",
+    "questionText": "What was the original side length?",
+    "choices": [
+      "6",
+      "4",
+      "8",
+      "13"
+    ],
+    "answer": 1,
+    "explanation": "Let the original side be x. Then (x + 5)² − x² = 65, so 10x + 25 = 65 and x = 4. Verify that 9² − 4² = 81 − 16 = 65. The area change includes both the cross term 10x and the added corner 25."
+  },
+  {
+    "id": "math-modeling-d21",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A rental’s total cost is linear in hours. It costs $26 for 2 hours and $44 for 5 hours.",
+    "questionText": "What is the fixed starting charge?",
+    "choices": [
+      "$18",
+      "$20",
+      "$14",
+      "$6"
+    ],
+    "answer": 2,
+    "explanation": "The hourly rate is (44 − 26)/(5 − 2) = $6. Using 26 = F + 6(2) gives F = $14. The rate is a change in cost divided by a change in hours; dividing a total cost by hours folds the fixed charge into the rate."
+  },
+  {
+    "id": "math-modeling-d22",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "Shipping costs $5 for a package of up to 2 kilograms, plus $1.50 per kilogram beyond 2. A package weighs exactly 5 kilograms.",
+    "questionText": "What is its shipping cost?",
+    "choices": [
+      "$12.50",
+      "$7.50",
+      "$8.00",
+      "$9.50"
+    ],
+    "answer": 3,
+    "explanation": "Only 5 − 2 = 3 kilograms receive the additional charge. Total cost is 5 + 1.50(3) = $9.50. Charging $1.50 for all 5 kilograms double-counts the portion already covered by the base fee. The threshold determines where the variable charge begins."
+  },
+  {
+    "id": "math-modeling-d23",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A carton holds at most 12 items. An order contains 137 items.",
+    "questionText": "What is the least number of cartons needed?",
+    "choices": [
+      "12",
+      "11",
+      "13",
+      "11.42"
+    ],
+    "answer": 0,
+    "explanation": "Divide 137 by 12 to get 11 remainder 5. Eleven cartons hold only 132 items, so one additional carton is needed: 12 total. Cartons are whole objects, so round the quotient upward instead of to the nearest integer."
+  },
+  {
+    "id": "math-modeling-d24",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "Production quantities x and y are nonnegative whole numbers satisfying x + 3y ≤ 18 and 2x + y ≤ 16. Profit is 4x + 3y dollars.",
+    "questionText": "What is the maximum profit?",
+    "choices": [
+      "$40",
+      "$36",
+      "$32",
+      "$18"
+    ],
+    "answer": 1,
+    "explanation": "The boundaries intersect at x = 6 and y = 4, giving profit 36. An upper bound follows from 0.4(x + 3y) + 1.8(2x + y) = 4x + 3y ≤ 0.4(18) + 1.8(16) = 36. The pair (6, 4) is feasible and attains it. A high-profit pair that exceeds a resource limit is invalid."
+  },
+  {
+    "id": "math-modeling-d25",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A rectangle has width x and length x + 3, with positive dimensions and area 54.",
+    "questionText": "What is its width?",
+    "choices": [
+      "−9",
+      "3",
+      "6",
+      "9"
+    ],
+    "answer": 2,
+    "explanation": "The area equation is x(x + 3) = 54, so x² + 3x − 54 = (x + 9)(x − 6) = 0. The algebraic candidates are −9 and 6. Only the positive dimension x = 6 is allowed, giving length 9. The trap is accepting a negative root or reporting the length instead of the width."
+  },
+  {
+    "id": "math-modeling-d26",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A $500 deposit earns simple interest at 6% per year for 3 years. There are no fees or additional deposits.",
+    "questionText": "What is its final balance?",
+    "choices": [
+      "$595.51",
+      "$90",
+      "$530",
+      "$590"
+    ],
+    "answer": 3,
+    "explanation": "Simple interest is principal × rate × time: 500(0.06)(3) = $90. Add it to the principal for a $590 balance. Compounding would produce a different amount; the word simple means interest is always calculated on the original principal."
+  },
+  {
+    "id": "math-modeling-d27",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A $1,000 balance earns 5% interest compounded once per year. There are no fees or transactions.",
+    "questionText": "What is the balance after 2 years?",
+    "choices": [
+      "$1,102.50",
+      "$1,100.00",
+      "$1,050.00",
+      "$1,025.00"
+    ],
+    "answer": 0,
+    "explanation": "Each year multiplies the current balance by 1.05. After two years, the balance is 1000(1.05)² = $1102.50. The extra $2.50 compared with simple interest comes from interest on the first year’s interest. Adding $50 twice models simple interest."
+  },
+  {
+    "id": "math-modeling-d28",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A weekly income is $180. Exactly 20% is saved, and $27 is spent on transportation.",
+    "questionText": "How much remains for other spending?",
+    "choices": [
+      "$126",
+      "$117",
+      "$153",
+      "$144"
+    ],
+    "answer": 1,
+    "explanation": "Savings are 0.20(180) = $36. Subtract both savings and transportation: 180 − 36 − 27 = $117. The savings percentage uses income as its base, so subtracting transportation before taking 20% would model a different budget rule."
+  },
+  {
+    "id": "math-modeling-d29",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "An exponential model has values P(0) = 6, P(1) = 18, and P(2) = 54.",
+    "questionText": "What is P(4)?",
+    "choices": [
+      "216",
+      "1,458",
+      "486",
+      "162"
+    ],
+    "answer": 2,
+    "explanation": "Each one-step ratio is 3, so P(t) = 6(3)ᵗ. Then P(4) = 6(81) = 486. The t = 0 observation is the starting value, not the first multiplied term. A constant-difference model does not match the given ratios."
+  },
+  {
+    "id": "math-modeling-d30",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A workshop’s total cost is $600 plus $15 per item. Its budget is $1,050.",
+    "questionText": "What is the greatest number of items it can produce?",
+    "choices": [
+      "40",
+      "29",
+      "30",
+      "70"
+    ],
+    "answer": 2,
+    "explanation": "Set 600 + 15q ≤ 1050. Subtract fixed cost to get 15q ≤ 450, so q ≤ 30. Thirty items exactly use the budget and are allowed. Dividing the entire budget by 15 ignores the fixed $600; using a strict inequality wrongly excludes 30."
+  },
+  {
+    "id": "math-modeling-d31",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A quadratic has maximum value 3 at x = 2 and leading coefficient −4.",
+    "questionText": "What is its value at x = 0?",
+    "choices": [
+      "3",
+      "−5",
+      "19",
+      "−13"
+    ],
+    "answer": 3,
+    "explanation": "Vertex form is f(x) = −4(x − 2)² + 3. Evaluate f(0) = −4(4) + 3 = −13. The leading coefficient determines the vertical scale and downward opening; using −(x − 2)² + 3 would not match it."
+  },
+  {
+    "id": "math-modeling-d32",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A group pays $6 each for its first 10 tickets and $4 each for any additional tickets. It buys 18 tickets.",
+    "questionText": "What is the total cost?",
+    "choices": [
+      "$92",
+      "$108",
+      "$72",
+      "$84"
+    ],
+    "answer": 0,
+    "explanation": "The first 10 tickets cost 10(6) = $60. The remaining 18 − 10 = 8 cost 8(4) = $32. Add to get $92. The lower price applies only to additional tickets, so charging $4 for all 18 or $6 for all 18 uses the wrong piecewise model."
+  },
+  {
+    "id": "math-exam-2-q01",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "easy",
+    "stem": "A data set contains 6, 10, and 14.",
+    "questionText": "What is its mean?",
+    "choices": [
+      "10",
+      "9",
+      "14",
+      "30"
+    ],
+    "answer": 0,
+    "explanation": "Add the values and divide by their count: (6 + 10 + 14)/3 = 30/3 = 10. The total 30 is not an average. These equally spaced values also have median 10, but the mean calculation is still total divided by count."
+  },
+  {
+    "id": "math-exam-2-q02",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "easy",
+    "stem": "A shipment contains 90 packages. Seven tenths of them arrive on Monday.",
+    "questionText": "How many arrive on Monday?",
+    "choices": [
+      "70",
+      "63",
+      "27",
+      "9"
+    ],
+    "answer": 1,
+    "explanation": "Multiply the total by 7/10: 90 × 7/10 = 63. The remainder is 27 packages. Answer the requested arriving share rather than the share that arrives later. Taking a fraction of a whole means multiplication, not division by that fraction."
+  },
+  {
+    "id": "math-exam-2-q03",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "easy",
+    "stem": "2x − 9 = 17.",
+    "questionText": "What is x?",
+    "choices": [
+      "26",
+      "−13",
+      "13",
+      "4"
+    ],
+    "answer": 2,
+    "explanation": "Add 9 to both sides to get 2x = 26, then divide by 2 to get x = 13. A check gives 2(13) − 9 = 17. Subtracting 9 again moves the constant in the wrong direction."
+  },
+  {
+    "id": "math-exam-2-q04",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "easy",
+    "stem": "A triangle has base 9 cm and perpendicular height 8 cm.",
+    "questionText": "What is its area?",
+    "choices": [
+      "72 cm²",
+      "17 cm²",
+      "34 cm²",
+      "36 cm²"
+    ],
+    "answer": 3,
+    "explanation": "Use area = base × perpendicular height/2. Here A = 9(8)/2 = 36 cm². Multiplying without the factor 1/2 gives the area of a parallelogram with the same base and height. Adding the dimensions does not compute area."
+  },
+  {
+    "id": "math-exam-2-q05",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "easy",
+    "stem": "f(x) = 4 − x.",
+    "questionText": "What is f(−3)?",
+    "choices": [
+      "7",
+      "1",
+      "−7",
+      "−1"
+    ],
+    "answer": 0,
+    "explanation": "Replace x by −3: f(−3) = 4 − (−3) = 7. The function subtracts its input, and subtracting a negative adds. Dropping the parentheses around the substituted negative number commonly produces 1."
+  },
+  {
+    "id": "math-exam-2-q06",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "easy",
+    "stem": "Evaluate 2³ × 2⁴.",
+    "questionText": "What is the value?",
+    "choices": [
+      "64",
+      "128",
+      "4,096",
+      "24"
+    ],
+    "answer": 1,
+    "explanation": "With the same base, multiply powers by adding exponents: 2³ × 2⁴ = 2⁷ = 128. Multiplying the exponents would give 2¹², which applies to a power of a power only when the grouping calls for it."
+  },
+  {
+    "id": "math-exam-2-q07",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "easy",
+    "stem": "An angle measures 60°.",
+    "questionText": "What is its cosine?",
+    "choices": [
+      "√3",
+      "1",
+      "1/2",
+      "√3/2"
+    ],
+    "answer": 2,
+    "explanation": "In a 30–60–90 triangle, the side adjacent to the 60° angle is the short leg and the hypotenuse is twice that leg. Thus cos 60° = 1/2. The value √3/2 is sin 60°, which uses the opposite leg instead."
+  },
+  {
+    "id": "math-exam-2-q08",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "easy",
+    "stem": "A delivery service charges $12 plus $3.50 per package.",
+    "questionText": "What does delivery of 4 packages cost?",
+    "choices": [
+      "$14",
+      "$48",
+      "$62",
+      "$26"
+    ],
+    "answer": 3,
+    "explanation": "Model the cost as 12 + 3.50q. For q = 4, the per-package portion is 14, so total cost is 12 + 14 = $26. The fixed $12 is charged once, not once for every package."
+  },
+  {
+    "id": "math-exam-2-q09",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "x/3 + x/4 = 14.",
+    "questionText": "What is x?",
+    "choices": [
+      "24",
+      "49",
+      "8",
+      "12"
+    ],
+    "answer": 0,
+    "explanation": "Use a common denominator: x/3 + x/4 = 7x/12. Set 7x/12 = 14, giving x = 14(12)/7 = 24. A check is 24/3 + 24/4 = 8 + 6 = 14. Adding denominators directly would give x/7, which is not equivalent."
+  },
+  {
+    "id": "math-exam-2-q10",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "medium",
+    "stem": "Five values have mean 18. A sixth value, 30, is added.",
+    "questionText": "What is the new mean?",
+    "choices": [
+      "20",
+      "24",
+      "18",
+      "21"
+    ],
+    "answer": 0,
+    "explanation": "The original total is 5(18) = 90. Adding 30 makes total 120 across six values, so the new mean is 20. Averaging the old mean 18 and new value 30 equally gives 24, but the old mean represents five values, not one."
+  },
+  {
+    "id": "math-exam-2-q11",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A parallelogram has base 11 and perpendicular height 6. Its slanted side has length 7.",
+    "questionText": "What is its area?",
+    "choices": [
+      "42 square units",
+      "66 square units",
+      "77 square units",
+      "33 square units"
+    ],
+    "answer": 1,
+    "explanation": "A parallelogram’s area is base times perpendicular height: 11 × 6 = 66. The slanted side length 7 is not the height, so 11 × 7 is a trap. Unlike a triangle, a parallelogram does not require dividing this product by 2."
+  },
+  {
+    "id": "math-exam-2-q12",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A $150 item is discounted by 30%, then receives another 20% discount on the reduced price.",
+    "questionText": "What is its final price?",
+    "choices": [
+      "$105",
+      "$96",
+      "$84",
+      "$75"
+    ],
+    "answer": 2,
+    "explanation": "After the first discount, the price is 150(0.70) = 105. Apply the second discount to 105: 105(0.80) = 84. The two discounts are sequential, so they do not combine into a 50% discount off the original price."
+  },
+  {
+    "id": "math-exam-2-q13",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "i² = −1.",
+    "questionText": "What is (4 − i) + (−2 + 5i)?",
+    "choices": [
+      "6 + 4i",
+      "2 − 6i",
+      "−2 + 4i",
+      "2 + 4i"
+    ],
+    "answer": 3,
+    "explanation": "Combine the real parts, 4 + (−2) = 2, and the imaginary coefficients, −1 + 5 = 4. The sum is 2 + 4i. The imaginary unit is a like-term marker here; addition does not multiply it or introduce an i² term."
+  },
+  {
+    "id": "math-exam-2-q14",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "medium",
+    "stem": "f(x) = 3x if x < 2, and f(x) = x² if x ≥ 2.",
+    "questionText": "What is f(2)?",
+    "choices": [
+      "4",
+      "6",
+      "2",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "The input 2 belongs to the x ≥ 2 branch, so use x² and obtain f(2) = 4. The other branch requires x strictly less than 2 and cannot be used at the boundary. The equality sign identifies which branch includes the endpoint."
+  },
+  {
+    "id": "math-exam-2-q15",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "medium",
+    "stem": "In a right triangle, the side opposite acute angle θ is 9 and the side adjacent to θ is 12.",
+    "questionText": "What is tan θ?",
+    "choices": [
+      "4/5",
+      "3/4",
+      "3/5",
+      "4/3"
+    ],
+    "answer": 1,
+    "explanation": "Tangent is opposite/adjacent, so tan θ = 9/12 = 3/4. The hypotenuse is 15, but it is not needed for tangent. Using 9/15 gives sine; reversing 9 and 12 gives cotangent."
+  },
+  {
+    "id": "math-exam-2-q16",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A fundraiser has fixed costs of $360. Each item sells for $18 and costs $6 to make.",
+    "questionText": "How many items must be sold to break even?",
+    "choices": [
+      "60",
+      "15",
+      "30",
+      "20"
+    ],
+    "answer": 2,
+    "explanation": "Each item contributes 18 − 6 = $12 toward fixed costs. At break-even, 12q = 360, so q = 30. The $18 selling price is revenue per item; subtract the production cost before determining how quickly fixed costs are covered."
+  },
+  {
+    "id": "math-exam-2-q17",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "x² − 2x − 15 = 0.",
+    "questionText": "What is the negative solution?",
+    "choices": [
+      "3",
+      "−5",
+      "5",
+      "−3"
+    ],
+    "answer": 3,
+    "explanation": "Factor the quadratic as (x − 5)(x + 3) = 0. Its solutions are 5 and −3, so the negative solution is −3. Check: 9 + 6 − 15 = 0. The signs inside factors are opposite to the corresponding roots."
+  },
+  {
+    "id": "math-exam-2-q18",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "medium",
+    "stem": "A bag contains 5 white and 4 black marbles. Two are drawn without replacement.",
+    "questionText": "What is the probability that both are white?",
+    "choices": [
+      "5/18",
+      "25/81",
+      "5/9",
+      "4/9"
+    ],
+    "answer": 0,
+    "explanation": "The first white probability is 5/9. After a white marble is removed, the second is 4/8. Multiply: (5/9)(4/8) = 20/72 = 5/18. The replacement calculation (5/9)² keeps counts unchanged and does not apply."
+  },
+  {
+    "id": "math-exam-2-q19",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A regular pentagon has five equal interior angles.",
+    "questionText": "What is one interior angle?",
+    "choices": [
+      "120°",
+      "108°",
+      "72°",
+      "540°"
+    ],
+    "answer": 1,
+    "explanation": "An n-sided polygon has interior angle sum (n − 2)180°. For n = 5, the sum is 540°, so each equal angle is 540°/5 = 108°. The 72° value is the exterior angle, 360°/5, not the interior angle."
+  },
+  {
+    "id": "math-exam-2-q20",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A commuter drives 45 kilometers at 45 km/h, then 15 kilometers at 30 km/h.",
+    "questionText": "What is the average speed over the entire trip?",
+    "choices": [
+      "60 km/h",
+      "40 km/h",
+      "37.5 km/h",
+      "45 km/h"
+    ],
+    "answer": 1,
+    "explanation": "The legs take 45/45 = 1 hour and 15/30 = 0.5 hour. Total distance is 60 kilometers in 1.5 hours, so average speed is 40 km/h. The arithmetic mean 37.5 ignores the unequal amounts of time at each speed."
+  },
+  {
+    "id": "math-exam-2-q21",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "medium",
+    "stem": "A = [[2, −3], [1, 4]].",
+    "questionText": "What is det(A)?",
+    "choices": [
+      "−11",
+      "8",
+      "11",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "For a 2 × 2 matrix, determinant = ad − bc. Here det(A) = 2(4) − (−3)(1) = 8 + 3 = 11. Keep the negative entry in parentheses; subtracting the negative cross-product adds 3."
+  },
+  {
+    "id": "math-exam-2-q22",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "medium",
+    "stem": "f(x) = x² − 2.",
+    "questionText": "What is the average rate of change from x = −1 to x = 2?",
+    "choices": [
+      "3",
+      "−1",
+      "2",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Compute outputs: f(−1) = −1 and f(2) = 2. Average rate of change is [2 − (−1)]/[2 − (−1)] = 3/3 = 1. Dividing just the output change by 1 or forgetting the negative starting x gives an incorrect interval length."
+  },
+  {
+    "id": "math-exam-2-q23",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "medium",
+    "stem": "A show sells adult tickets for $9 and student tickets for $5. It sells 40 tickets for $280.",
+    "questionText": "How many adult tickets are sold?",
+    "choices": [
+      "20",
+      "24",
+      "28",
+      "16"
+    ],
+    "answer": 0,
+    "explanation": "If a is adult tickets, student tickets total 40 − a. Revenue is 9a + 5(40 − a) = 280, so 4a = 80 and a = 20. Check: 20(9) + 20(5) = 280. Using average ticket price as either individual price does not determine the count correctly."
+  },
+  {
+    "id": "math-exam-2-q24",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "medium",
+    "stem": "An angle measures 210°.",
+    "questionText": "What is its sine?",
+    "choices": [
+      "√3/2",
+      "−1/2",
+      "1/2",
+      "−√3/2"
+    ],
+    "answer": 1,
+    "explanation": "The angle is in Quadrant III with reference angle 30°. Sine is negative there, so sin 210° = −sin 30° = −1/2. The reference angle determines the magnitude; the quadrant determines the sign. The cosine magnitude would be √3/2."
+  },
+  {
+    "id": "math-exam-2-q25",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "medium",
+    "stem": "x ≠ −2.",
+    "questionText": "Which expression equals (x² + 5x + 6)/(x + 2)?",
+    "choices": [
+      "x + 5",
+      "x² + 3",
+      "x + 3",
+      "x + 2"
+    ],
+    "answer": 2,
+    "explanation": "Factor the numerator: x² + 5x + 6 = (x + 2)(x + 3). Cancel x + 2 on the allowed domain to obtain x + 3. Canceling terms separately across addition is invalid; cancellation must involve a common factor of the whole numerator and denominator."
+  },
+  {
+    "id": "math-exam-2-q26",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "A team must contain 2 analysts chosen from 4 and 1 designer chosen from 6. No roles are assigned within the analyst pair.",
+    "questionText": "How many teams are possible?",
+    "choices": [
+      "72",
+      "24",
+      "120",
+      "36"
+    ],
+    "answer": 3,
+    "explanation": "The analyst pair can be chosen in C(4, 2) = 6 ways. Each pair can be combined with any of 6 designers, giving 6 × 6 = 36 teams. Using 4 × 3 counts each analyst pair twice because their order has no meaning."
+  },
+  {
+    "id": "math-exam-2-q27",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "f(x) = x³ − 1 and g(x) = f(x − 2) + 5.",
+    "questionText": "What is g(0)?",
+    "choices": [
+      "−4",
+      "4",
+      "12",
+      "−9"
+    ],
+    "answer": 0,
+    "explanation": "Substitute the transformed input first: g(0) = f(−2) + 5 = (−2)³ − 1 + 5 = −8 − 1 + 5 = −4. A negative number cubed stays negative. Applying the shift outside f or changing x − 2 to x + 2 changes the transformation."
+  },
+  {
+    "id": "math-exam-2-q28",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A quadrilateral has all four vertices on a circle. One interior angle measures 83°.",
+    "questionText": "What is the opposite interior angle?",
+    "choices": [
+      "277°",
+      "97°",
+      "83°",
+      "166°"
+    ],
+    "answer": 1,
+    "explanation": "Opposite angles of a cyclic quadrilateral are supplementary, so they sum to 180°. The opposite angle is 180° − 83° = 97°. This relationship uses opposite angles, not arbitrary adjacent angles. Equal chords or equal angles are not given."
+  },
+  {
+    "id": "math-exam-2-q29",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "A geometric sequence has a₁ = 2, a₆ = 64, and positive common ratio.",
+    "questionText": "What is a₄?",
+    "choices": [
+      "32",
+      "12",
+      "16",
+      "8"
+    ],
+    "answer": 2,
+    "explanation": "The sixth term is 2r⁵ = 64, so r⁵ = 32 and r = 2. Then the fourth term is 2r³ = 16. The exponent counts the jumps after the first term: first-to-sixth is five jumps, not six."
+  },
+  {
+    "id": "math-exam-2-q30",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "medium",
+    "stem": "A container holds 0.075 liter of liquid.",
+    "questionText": "How many milliliters is that?",
+    "choices": [
+      "750",
+      "0.000075",
+      "75",
+      "7.5"
+    ],
+    "answer": 2,
+    "explanation": "One liter is 1,000 milliliters, so 0.075 × 1000 = 75 milliliters. Converting to a smaller unit increases the numerical value. Dividing by 1,000 would convert milliliters to liters, the reverse direction."
+  },
+  {
+    "id": "math-exam-2-q31",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A population begins at 1,200 and grows by 10% per year.",
+    "questionText": "What is its modeled population after 2 years?",
+    "choices": [
+      "1,440",
+      "1,320",
+      "2,400",
+      "1,452"
+    ],
+    "answer": 3,
+    "explanation": "Each year multiplies the current population by 1.10. Thus after two years P = 1200(1.10)² = 1452. Adding 120 twice gives 1440 but assumes a fixed increase based on the original population instead of 10% of each current population."
+  },
+  {
+    "id": "math-exam-2-q32",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "2x² + 4x + k = 0 has no real solutions.",
+    "questionText": "Which condition must k satisfy?",
+    "choices": [
+      "k > 2",
+      "k < 2",
+      "k ≥ 2",
+      "k > −2"
+    ],
+    "answer": 0,
+    "explanation": "No real solutions requires a negative discriminant: 4² − 4(2)k < 0. Thus 16 − 8k < 0 and k > 2. Equality k = 2 gives a repeated real root, so the boundary is excluded. Completing the square also gives 2(x + 1)² + k − 2 = 0."
+  },
+  {
+    "id": "math-exam-2-q33",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "Three independent trials each have a 0.20 probability of success.",
+    "questionText": "What is the probability of exactly one success?",
+    "choices": [
+      "0.008",
+      "0.384",
+      "0.128",
+      "0.600"
+    ],
+    "answer": 1,
+    "explanation": "Choose which one of the three trials succeeds in 3 ways. Each ordering has probability 0.20(0.80)² = 0.128. Multiply by 3 to get 0.384. Adding three success probabilities ignores failures and overlaps; the experiment requires exactly one success."
+  },
+  {
+    "id": "math-exam-2-q34",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "Two sides of a triangle have lengths 5 and 5, with included angle 120°.",
+    "questionText": "What is the third side’s length?",
+    "choices": [
+      "5√2",
+      "10",
+      "5√3",
+      "5"
+    ],
+    "answer": 2,
+    "explanation": "Apply the law of cosines: c² = 25 + 25 − 2(5)(5)cos120°. Since cos120° = −1/2, c² = 50 + 25 = 75, so c = 5√3. An obtuse included angle makes the third side larger than it would be for a right angle."
+  },
+  {
+    "id": "math-exam-2-q35",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A triangle has a median of length 12, measured from a vertex to the midpoint of the opposite side.",
+    "questionText": "What is the distance from that vertex to the centroid along the median?",
+    "choices": [
+      "6",
+      "4",
+      "18",
+      "8"
+    ],
+    "answer": 3,
+    "explanation": "The centroid divides a median in a 2:1 ratio, with the longer part next to the vertex. Therefore the vertex-to-centroid distance is (2/3)(12) = 8. The remaining 4 is the centroid-to-midpoint segment. A median’s midpoint is not generally the centroid."
+  },
+  {
+    "id": "math-exam-2-q36",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "log₃(2x − 1) = 2.",
+    "questionText": "What is x?",
+    "choices": [
+      "5",
+      "3.5",
+      "4",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Convert the logarithmic equation to 2x − 1 = 3² = 9, so 2x = 10 and x = 5. The argument is then 9, which is positive and valid. Multiplying the base by the exponent instead of raising the base gives the trap 3.5."
+  },
+  {
+    "id": "math-exam-2-q37",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "z = (3 + 4i)/(1 − i).",
+    "questionText": "What is |z|?",
+    "choices": [
+      "√13/2",
+      "5√2/2",
+      "5√2",
+      "5/2"
+    ],
+    "answer": 1,
+    "explanation": "The magnitude of a quotient is the quotient of magnitudes. The numerator has magnitude √(3² + 4²) = 5, and the denominator has magnitude √(1² + (−1)²) = √2. Thus |z| = 5/√2 = 5√2/2. Dividing by the denominator’s real part alone ignores its imaginary component."
+  },
+  {
+    "id": "math-exam-2-q38",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "A tank initially holds 24 liters. Water enters at 3 liters per minute and leaves at 5 liters per minute, at constant rates until empty.",
+    "questionText": "How many minutes until it is empty?",
+    "choices": [
+      "8",
+      "4.8",
+      "12",
+      "3"
+    ],
+    "answer": 2,
+    "explanation": "Net change is 3 − 5 = −2 liters per minute. The tank loses 2 liters each minute, so 24/2 = 12 minutes are needed. Adding the two flow rates ignores that one adds water while the other removes it. Using only the outlet rate ignores the inflow."
+  },
+  {
+    "id": "math-exam-2-q39",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "x is nonzero and x − 1/x = 4.",
+    "questionText": "What is x² + 1/x²?",
+    "choices": [
+      "14",
+      "16",
+      "20",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "Square the given relation: (x − 1/x)² = x² − 2 + 1/x² = 16. Add 2 to get x² + 1/x² = 18. The cross term is negative because of subtraction. Using the sum identity’s sign would give 14."
+  },
+  {
+    "id": "math-exam-2-q40",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "A data set has standard deviation 7. Every value becomes −2x + 10.",
+    "questionText": "What is the new standard deviation?",
+    "choices": [
+      "−4",
+      "24",
+      "−14",
+      "14"
+    ],
+    "answer": 3,
+    "explanation": "Multiplication by −2 reflects and scales the data, multiplying spread by |−2| = 2. Adding 10 shifts the data without changing spread. Thus the new standard deviation is 2(7) = 14. A standard deviation is never negative."
+  },
+  {
+    "id": "math-exam-2-q41",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A right triangle has vertices (0, 0), (8, 0), and (0, 6).",
+    "questionText": "What is the radius of its inscribed circle?",
+    "choices": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "answer": 0,
+    "explanation": "The legs are 8 and 6, and the hypotenuse is 10. For a right triangle, inradius r = (a + b − c)/2 = (8 + 6 − 10)/2 = 2. Alternatively, area is 24 and semiperimeter is 12, so r = A/s = 2. The circumradius would be half the hypotenuse, 5."
+  },
+  {
+    "id": "math-exam-2-q42",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "f(x) = (2x + 5)/(x − 3).",
+    "questionText": "What is the horizontal asymptote of its graph?",
+    "choices": [
+      "y = 0",
+      "y = 2",
+      "x = 3",
+      "y = 5"
+    ],
+    "answer": 1,
+    "explanation": "The numerator and denominator have the same degree, so the horizontal asymptote is the ratio of leading coefficients, 2/1 = 2. Rewriting f(x) = 2 + 11/(x − 3) makes the approaching value clear. The vertical asymptote is x = 3, which is a different kind of line."
+  },
+  {
+    "id": "math-exam-2-q43",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "[[1, 2], [3, 1]] times [[x], [y]] equals [[8], [9]].",
+    "questionText": "What is y?",
+    "choices": [
+      "5",
+      "1",
+      "3",
+      "2"
+    ],
+    "answer": 2,
+    "explanation": "The matrix equation represents x + 2y = 8 and 3x + y = 9. Substitute x = 8 − 2y into the second: 24 − 6y + y = 9, so y = 3 and x = 2. Row-by-column multiplication gives the equations; treating entries independently does not."
+  },
+  {
+    "id": "math-exam-2-q44",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "θ is acute and sin θ = 3/5.",
+    "questionText": "What is cos(2θ)?",
+    "choices": [
+      "9/25",
+      "16/25",
+      "−7/25",
+      "7/25"
+    ],
+    "answer": 3,
+    "explanation": "Use cos(2θ) = 1 − 2sin²θ. Thus cos(2θ) = 1 − 2(9/25) = 7/25. Equivalently, cos²θ − sin²θ = 16/25 − 9/25. Doubling the angle does not double the cosine, and using only cos²θ misses the subtraction."
+  },
+  {
+    "id": "math-exam-2-q45",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "Nonnegative whole-number quantities x and y satisfy 2x + y ≤ 20 and x + 2y ≤ 16. Total profit is 3x + 4y dollars.",
+    "questionText": "What is the greatest possible profit?",
+    "choices": [
+      "$40",
+      "$32",
+      "$30",
+      "$44"
+    ],
+    "answer": 0,
+    "explanation": "The boundaries intersect at x = 8, y = 4, giving 3(8) + 4(4) = 40. For an upper bound, add 2/3 times the first limit and 5/3 times the second: 3x + 4y ≤ (2/3)(20) + (5/3)(16) = 40. The feasible pair (8, 4) attains it. Checking profit without checking both limits can suggest impossible choices."
+  }
+]

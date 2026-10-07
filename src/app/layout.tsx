@@ -14,8 +14,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ACT English Lab",
-  description: "Master every ACT English topic, drill to mastery, and take a full timed exam.",
+  title: "ACT Study Lab",
+  description:
+    "Digital ACT English, Math, Reading, and Science lessons, drills, timed sections, and account-saved progress.",
 };
 
 // Applies a saved theme choice before first paint, so there's no flash of the
@@ -45,7 +46,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body className="min-h-full flex flex-col">
         <TopNav />
-        <main className="mx-auto w-full max-w-5xl flex-1 px-5 py-8">{children}</main>
+        <main className="mx-auto w-full max-w-6xl flex-1 px-5 py-8">
+          {children}
+        </main>
         <footer className="border-t border-border py-6 text-center text-xs text-ink-faint">
           Built by{" "}
           <a

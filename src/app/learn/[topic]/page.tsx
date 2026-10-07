@@ -1,3 +1,5 @@
+import { getTopic as getActTopic } from "@/lib/act/content";
+import { LessonView } from "@/components/act/StudyClient";
 import { notFound } from "next/navigation";
 import { getTopic, getLesson } from "@/lib/content";
 import { renderStem } from "@/lib/format";
@@ -14,6 +16,7 @@ export default async function LearnPage({
   params: Promise<{ topic: string }>;
 }) {
   const { topic: slug } = await params;
+  if (getActTopic(slug)) return <LessonView slug={slug} />;
 
   const topic = getTopic(slug);
   if (!topic) notFound();
@@ -69,13 +72,20 @@ export default async function LearnPage({
                 <div
                   key={k}
                   className={`rounded-xl border px-4 py-3 text-sm ${
-                    ex.good ? "border-good bg-good-soft text-good" : "border-bad bg-bad-soft text-bad"
+                    ex.good
+                      ? "border-good bg-good-soft text-good"
+                      : "border-bad bg-bad-soft text-bad"
                   }`}
                 >
                   {ex.label && (
-                    <div className="mb-1 text-xs font-semibold uppercase tracking-wide">{ex.label}</div>
+                    <div className="mb-1 text-xs font-semibold uppercase tracking-wide">
+                      {ex.label}
+                    </div>
                   )}
-                  <div className="text-ink" dangerouslySetInnerHTML={{ __html: renderStem(ex.text) }} />
+                  <div
+                    className="text-ink"
+                    dangerouslySetInnerHTML={{ __html: renderStem(ex.text) }}
+                  />
                 </div>
               ))}
             </div>
@@ -99,7 +109,9 @@ export default async function LearnPage({
       <Card className="flex flex-wrap items-center justify-between gap-4 p-6">
         <div>
           <p className="font-semibold text-ink">Ready to drill?</p>
-          <p className="text-sm text-ink-soft">Practice {lesson.title} questions until it&apos;s automatic.</p>
+          <p className="text-sm text-ink-soft">
+            Practice {lesson.title} questions until it&apos;s automatic.
+          </p>
         </div>
         <ButtonLink href={`/drill/${slug}`}>Start drill →</ButtonLink>
       </Card>

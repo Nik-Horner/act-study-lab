@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "science-data-reading",
+    "num": 1,
+    "title": "Read tables and graphs",
+    "subject": "science",
+    "category": "Data interpretation",
+    "blurb": "Locate the right row, column, axis, and unit before calculating."
+  },
+  {
+    "slug": "science-trends-interpolation",
+    "num": 2,
+    "title": "Trends and interpolation",
+    "subject": "science",
+    "category": "Data interpretation",
+    "blurb": "Describe patterns, estimate between measured points, and respect limits."
+  },
+  {
+    "slug": "science-experimental-design",
+    "num": 3,
+    "title": "Experiments and controls",
+    "subject": "science",
+    "category": "Scientific investigation",
+    "blurb": "Separate the changed factor, measured outcome, controls, and confounds."
+  },
+  {
+    "slug": "science-conflicting-viewpoints",
+    "num": 4,
+    "title": "Compare scientific viewpoints",
+    "subject": "science",
+    "category": "Evaluation of models",
+    "blurb": "Track each scientist’s mechanism and test what separates the explanations."
+  },
+  {
+    "slug": "science-models-evidence",
+    "num": 5,
+    "title": "Models and evidence",
+    "subject": "science",
+    "category": "Evaluation of models",
+    "blurb": "Connect predictions to measurements and distinguish support from proof."
+  },
+  {
+    "slug": "science-scientific-foundations",
+    "num": 6,
+    "title": "Science in context",
+    "subject": "science",
+    "category": "Scientific knowledge",
+    "blurb": "Apply basic biology, chemistry, and physics to the supplied evidence."
+  }
+]

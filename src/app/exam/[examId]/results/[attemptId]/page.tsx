@@ -1,3 +1,6 @@
+import { getExams as getActExams } from "@/lib/act/content";
+import { ExamRunner } from "@/components/act/ExamRunner";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -21,6 +24,12 @@ export default async function ExamResultsPage({
   params: Promise<{ examId: string; attemptId: string }>;
 }) {
   const { examId, attemptId } = await params;
+  if (getActExams().some((exam) => exam.id === examId))
+    return (
+      <Suspense>
+        <ExamRunner examId={examId} attemptId={attemptId} />
+      </Suspense>
+    );
 
   const supabase = await createClient();
   const {
@@ -34,7 +43,8 @@ export default async function ExamResultsPage({
     .eq("id", attemptId)
     .single();
 
-  if (!attempt || attempt.user_id !== user.id || attempt.exam_id !== examId) notFound();
+  if (!attempt || attempt.user_id !== user.id || attempt.exam_id !== examId)
+    notFound();
 
   const exam = getExam(examId);
   const answersByNumber = new Map(
@@ -58,8 +68,12 @@ export default async function ExamResultsPage({
     <div className="space-y-8">
       <section className="flex flex-wrap items-center gap-8 rounded-2xl border border-border bg-bg-soft p-6">
         <div className="text-center">
-          <div className="text-5xl font-bold text-brand-dark">{attempt.scale_score}</div>
-          <div className="text-xs uppercase tracking-wide text-ink-soft">Estimated scale score</div>
+          <div className="text-5xl font-bold text-brand-dark">
+            {attempt.scale_score}
+          </div>
+          <div className="text-xs uppercase tracking-wide text-ink-soft">
+            Estimated scale score
+          </div>
         </div>
         <div className="flex flex-1 flex-wrap gap-8 text-sm">
           <div>
@@ -116,10 +130,16 @@ export default async function ExamResultsPage({
                           Underlined: <span className="ul">{underline}</span>
                         </p>
                       ) : null}
-                      <p className="text-sm font-medium">{questionTextByNumber.get(q.number)}</p>
-                      <p className={`text-sm ${a.correct ? "text-good" : "text-bad"}`}>
+                      <p className="text-sm font-medium">
+                        {questionTextByNumber.get(q.number)}
+                      </p>
+                      <p
+                        className={`text-sm ${a.correct ? "text-good" : "text-bad"}`}
+                      >
                         Your answer:{" "}
-                        {a.picked === null ? "blank" : `${LETTERS[a.picked]}. ${choices[a.picked]}`}
+                        {a.picked === null
+                          ? "blank"
+                          : `${LETTERS[a.picked]}. ${choices[a.picked]}`}
                       </p>
                       {!a.correct && (
                         <p className="text-sm text-good">

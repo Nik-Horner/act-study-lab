@@ -25,7 +25,11 @@ export interface Schedule {
 }
 
 function fmtDay(date: Date): string {
-  return date.toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
+  return date.toLocaleDateString(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+  });
 }
 
 export function itemKey(item: PlanItem, dayNum: number, idx: number): string {
@@ -49,7 +53,9 @@ export function buildSchedule(topics: Topic[], testDateStr: string): Schedule {
   const planStart = new Date(examDate);
   planStart.setDate(planStart.getDate() - (total - 1)); // last day (index total-1) = test_date
 
-  const rawIndex = Math.round((today.getTime() - planStart.getTime()) / 86400000);
+  const rawIndex = Math.round(
+    (today.getTime() - planStart.getTime()) / 86400000,
+  );
 
   // Test day has come and gone (or the whole plan already elapsed) — nothing left to show.
   if (rawIndex >= total) {
@@ -73,7 +79,11 @@ export function buildSchedule(topics: Topic[], testDateStr: string): Schedule {
   for (let i = 0; i < topicDayCount; i++) {
     const count = base + (i < extra ? 1 : 0);
     for (let k = 0; k < count && ti < scheduledTopics.length; k++) {
-      items[i].push({ kind: "learn", slug: scheduledTopics[ti].slug, title: scheduledTopics[ti].title });
+      items[i].push({
+        kind: "learn",
+        slug: scheduledTopics[ti].slug,
+        title: scheduledTopics[ti].title,
+      });
       ti++;
     }
   }
@@ -86,7 +96,7 @@ export function buildSchedule(topics: Topic[], testDateStr: string): Schedule {
     date,
     label: fmtDay(date),
     dayNum: i + 1,
-    isToday: i === todayIndex,
+    isToday: rawIndex >= 0 && i === todayIndex,
     isPast: i < todayIndex,
     items: items[i],
   }));

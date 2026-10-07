@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-07T00:46:09.689012+00:00",
+  "title": "Design System: ACT Study Lab",
+  "extensions": {
+    "colorMeta": {
+      "bg": {
+        "displayName": "Bg",
+        "role": "neutral"
+      },
+      "bg-soft": {
+        "displayName": "Bg Soft",
+        "role": "neutral"
+      },
+      "bg-raised": {
+        "displayName": "Bg Raised",
+        "role": "neutral"
+      },
+      "ink": {
+        "displayName": "Ink",
+        "role": "neutral"
+      },
+      "ink-soft": {
+        "displayName": "Ink Soft",
+        "role": "neutral"
+      },
+      "ink-faint": {
+        "displayName": "Ink Faint",
+        "role": "neutral"
+      },
+      "border": {
+        "displayName": "Border",
+        "role": "neutral"
+      },
+      "brand": {
+        "displayName": "Brand",
+        "role": "primary"
+      },
+      "brand-dark": {
+        "displayName": "Brand Dark",
+        "role": "primary"
+      },
+      "brand-soft": {
+        "displayName": "Brand Soft",
+        "role": "primary"
+      },
+      "accent": {
+        "displayName": "Accent",
+        "role": "secondary"
+      },
+      "accent-soft": {
+        "displayName": "Accent Soft",
+        "role": "secondary"
+      },
+      "good": {
+        "displayName": "Good",
+        "role": "secondary"
+      },
+      "good-soft": {
+        "displayName": "Good Soft",
+        "role": "secondary"
+      },
+      "warn": {
+        "displayName": "Warn",
+        "role": "secondary"
+      },
+      "warn-soft": {
+        "displayName": "Warn Soft",
+        "role": "secondary"
+      },
+      "bad": {
+        "displayName": "Bad",
+        "role": "secondary"
+      },
+      "bad-soft": {
+        "displayName": "Bad Soft",
+        "role": "secondary"
+      },
+      "on-brand": {
+        "displayName": "On Brand",
+        "role": "primary"
+      },
+      "data-accent": {
+        "displayName": "Data Accent",
+        "role": "secondary"
+      },
+      "dark-bg": {
+        "displayName": "Dark Bg",
+        "role": "neutral"
+      },
+      "dark-bg-soft": {
+        "displayName": "Dark Bg Soft",
+        "role": "neutral"
+      },
+      "dark-bg-raised": {
+        "displayName": "Dark Bg Raised",
+        "role": "neutral"
+      },
+      "dark-ink": {
+        "displayName": "Dark Ink",
+        "role": "neutral"
+      },
+      "dark-ink-soft": {
+        "displayName": "Dark Ink Soft",
+        "role": "neutral"
+      },
+      "dark-ink-faint": {
+        "displayName": "Dark Ink Faint",
+        "role": "neutral"
+      },
+      "dark-border": {
+        "displayName": "Dark Border",
+        "role": "neutral"
+      },
+      "dark-brand": {
+        "displayName": "Dark Brand",
+        "role": "primary"
+      },
+      "dark-brand-dark": {
+        "displayName": "Dark Brand Dark",
+        "role": "primary"
+      },
+      "dark-brand-soft": {
+        "displayName": "Dark Brand Soft",
+        "role": "primary"
+      },
+      "dark-accent": {
+        "displayName": "Dark Accent",
+        "role": "secondary"
+      },
+      "dark-accent-soft": {
+        "displayName": "Dark Accent Soft",
+        "role": "secondary"
+      },
+      "dark-good": {
+        "displayName": "Dark Good",
+        "role": "secondary"
+      },
+      "dark-good-soft": {
+        "displayName": "Dark Good Soft",
+        "role": "secondary"
+      },
+      "dark-warn": {
+        "displayName": "Dark Warn",
+        "role": "secondary"
+      },
+      "dark-warn-soft": {
+        "displayName": "Dark Warn Soft",
+        "role": "secondary"
+      },
+      "dark-bad": {
+        "displayName": "Dark Bad",
+        "role": "secondary"
+      },
+      "dark-bad-soft": {
+        "displayName": "Dark Bad Soft",
+        "role": "secondary"
+      },
+      "dark-on-brand": {
+        "displayName": "Dark On Brand",
+        "role": "primary"
+      },
+      "dark-data-accent": {
+        "displayName": "Dark Data Accent",
+        "role": "secondary"
+      }
+    },
+    "shadows": [
+      {
+        "name": "card-light",
+        "value": "0 1px 2px rgba(28, 27, 23, 0.04), 0 6px 20px -8px rgba(28, 27, 23, 0.12)",
+        "purpose": "Light card depth"
+      },
+      {
+        "name": "card-dark",
+        "value": "0 1px 2px rgba(0, 0, 0, 0.2), 0 6px 24px -8px rgba(0, 0, 0, 0.5)",
+        "purpose": "Dark card depth"
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      }
+    ],
+    "motion": [
+      {
+        "name": "choice-and-back-link",
+        "value": "160ms ease-out",
+        "purpose": "Answer/background and back-link transitions"
+      }
+    ],
+    "evidenceNote": "Source extraction only. No synthetic tonal ramps: the source provides semantic theme pairs, not a tonal scale. Incumbent preservation is authorized; no new creative metaphor is assigned."
+  },
+  "components": [
+    {
+      "name": "Primary button",
+      "kind": "button",
+      "html": "<button class=\"ds-button-primary\">Continue</button>",
+      "css": ".ds-button-primary{font-family:var(--font-geist-sans),Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;border:0;border-radius:9999px;padding:.625rem 1.25rem;font-size:.875rem;font-weight:500;background:var(--color-brand);color:var(--color-on-brand);transition:color 150ms,background-color 150ms;}.ds-button-primary:hover{background:var(--color-brand-dark)}.ds-button-primary:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-button-primary:disabled{opacity:.5;pointer-events:none;}@media(min-width:640px){.ds-button-primary{min-height:0;}}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none;}}"
+    },
+    {
+      "name": "Ghost button",
+      "kind": "button",
+      "html": "<button class=\"ds-button-ghost\">Continue</button>",
+      "css": ".ds-button-ghost{font-family:var(--font-geist-sans),Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;border:0;border-radius:9999px;padding:.625rem 1.25rem;font-size:.875rem;font-weight:500;background:var(--color-bg-raised);color:var(--color-ink);transition:color 150ms,background-color 150ms;}.ds-button-ghost:hover{background:var(--color-border)}.ds-button-ghost:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-button-ghost:disabled{opacity:.5;pointer-events:none;}@media(min-width:640px){.ds-button-ghost{min-height:0;}}@media(prefers-reduced-motion:reduce){.ds-button-ghost{transition:none;}}"
+    },
+    {
+      "name": "Danger button",
+      "kind": "button",
+      "html": "<button class=\"ds-button-danger\">Continue</button>",
+      "css": ".ds-button-danger{font-family:var(--font-geist-sans),Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;border:0;border-radius:9999px;padding:.625rem 1.25rem;font-size:.875rem;font-weight:500;background:var(--color-bad);color:var(--color-on-brand);transition:color 150ms,background-color 150ms;}.ds-button-danger:hover{opacity:.9}.ds-button-danger:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-button-danger:disabled{opacity:.5;pointer-events:none;}@media(min-width:640px){.ds-button-danger{min-height:0;}}@media(prefers-reduced-motion:reduce){.ds-button-danger{transition:none;}}"
+    },
+    {
+      "name": "Account input",
+      "kind": "input",
+      "html": "<input class=\"ds-input\" aria-label=\"Name\" placeholder=\"Name\">",
+      "css": ".ds-input{font-family:var(--font-geist-sans),Arial,sans-serif;width:100%;border:1px solid var(--color-border);border-radius:.5rem;background:var(--color-bg);color:var(--color-ink);padding:.5rem .75rem;font-size:.875rem;outline:none;}.ds-input:focus{border-color:var(--color-brand);}"
+    },
+    {
+      "name": "Card",
+      "kind": "card",
+      "refersTo": "card",
+      "html": "<div class=\"ds-card\">Study card</div>",
+      "css": ".ds-card{font-family:var(--font-geist-sans),Arial,sans-serif;border-radius:1rem;border:1px solid var(--color-border);background:var(--color-bg-soft);color:var(--color-ink);box-shadow:var(--shadow-card);}"
+    },
+    {
+      "name": "Neutral badge",
+      "kind": "chip",
+      "html": "<span class=\"ds-badge\">Practice</span>",
+      "css": ".ds-badge{font-family:var(--font-geist-sans),Arial,sans-serif;display:inline-flex;border-radius:9999px;padding:.125rem .625rem;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.025em;background:var(--color-bg-raised);color:var(--color-ink-soft);}"
+    },
+    {
+      "name": "Subject navigation",
+      "kind": "nav",
+      "html": "<nav class=\"ds-nav\" aria-label=\"ACT subjects\"><a aria-current=\"page\" href=\"#english\">English</a><a href=\"#math\">Math</a><a href=\"#reading\">Reading</a><a href=\"#science\">Science</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-geist-sans),Arial,sans-serif;display:flex;flex-wrap:wrap;gap:.25rem;border-radius:1rem;border:1px solid var(--color-border);background:var(--color-bg-raised);padding:.25rem;}.ds-nav a{display:flex;flex:1;min-height:44px;align-items:center;justify-content:center;border-radius:9999px;padding:0 1rem;font-size:.875rem;font-weight:600;color:var(--color-ink-soft);text-decoration:none;}.ds-nav a:hover{color:var(--color-ink);}.ds-nav a[aria-current]{background:var(--color-bg-soft);color:var(--color-brand);box-shadow:0 1px 3px 0 rgb(0 0 0 / .1),0 1px 2px -1px rgb(0 0 0 / .1);}.ds-nav a:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}@media(min-width:640px){.ds-nav{width:fit-content;border-radius:9999px;}.ds-nav a{flex:none;}}"
+    }
+  ],
+  "narrative": {
+    "overview": "The incumbent English Lab system is the visual authority. This document records implemented styles, not a new creative identity. Calm neutral surfaces, indigo actions, Geist type, pill controls, and understated cards carry across subjects.\n\nThe interface supports compact study sessions with a clear heading, next action, readable lesson content, and visible answer states. Preserve the existing account and lesson \u2192 drill \u2192 results flow when adding screens.",
+    "keyCharacteristics": [
+      "Quiet neutral surfaces and selective indigo emphasis.",
+      "Rounded controls and restrained card depth.",
+      "Readable passages and persistent digital-test controls.",
+      "Explicit light and dark theme support."
+    ],
+    "rules": [
+      {
+        "name": "The Theme Rule",
+        "body": "Use the existing CSS custom properties. OS preference sets the default; an explicit data-theme attribute takes precedence. Dark-prefixed tokens document the matching overrides, not separate component color choices.",
+        "section": "colors"
+      }
+    ],
+    "dos": [
+      "Do reuse the existing palette, Geist typography, rounded controls, and theme variables.",
+      "Do preserve readable passage measure, keyboard focus, and visible answer states.",
+      "Do keep component padding and layout appropriate to the existing study flow."
+    ],
+    "donts": [
+      "Don't replace the English Lab visual identity when extending subjects.",
+      "Don't hard-code light-theme colors into shared themed components.",
+      "Don't introduce a new decorative identity or Canvas artifact for this extension."
+    ]
+  }
+}

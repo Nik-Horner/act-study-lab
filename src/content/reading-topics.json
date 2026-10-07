@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "reading-main-idea",
+    "num": 1,
+    "title": "Main ideas and summaries",
+    "subject": "reading",
+    "category": "Key Ideas and Details",
+    "blurb": "Find the controlling idea without mistaking a vivid detail for the whole passage."
+  },
+  {
+    "slug": "reading-details",
+    "num": 2,
+    "title": "Details, sequence, and cause",
+    "subject": "reading",
+    "category": "Key Ideas and Details",
+    "blurb": "Locate exact evidence and distinguish a sequence from a causal explanation."
+  },
+  {
+    "slug": "reading-inference",
+    "num": 3,
+    "title": "Evidence-based inference",
+    "subject": "reading",
+    "category": "Key Ideas and Details",
+    "blurb": "Make the smallest inference the text supports; control scope and certainty."
+  },
+  {
+    "slug": "reading-vocabulary",
+    "num": 4,
+    "title": "Words in context",
+    "subject": "reading",
+    "category": "Craft and Structure",
+    "blurb": "Use the surrounding sentence to select the meaning actually intended."
+  },
+  {
+    "slug": "reading-craft",
+    "num": 5,
+    "title": "Purpose, tone, and structure",
+    "subject": "reading",
+    "category": "Craft and Structure",
+    "blurb": "Track what each paragraph does and distinguish the author from quoted speakers."
+  },
+  {
+    "slug": "reading-integration",
+    "num": 6,
+    "title": "Paired texts and visual evidence",
+    "subject": "reading",
+    "category": "Integration of Knowledge and Ideas",
+    "blurb": "Compare claims and combine passage evidence with another text or graphic."
+  }
+]

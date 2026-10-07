@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "math-algebra",
+    "num": 1,
+    "title": "Algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "blurb": "Solve efficiently, keep restrictions, and catch sign or extraneous-root traps."
+  },
+  {
+    "slug": "math-functions",
+    "num": 2,
+    "title": "Functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "blurb": "Read domains, transformations, inverses, and exponential or logarithmic relationships."
+  },
+  {
+    "slug": "math-geometry",
+    "num": 3,
+    "title": "Geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "blurb": "Connect diagrams to area, distance, similarity, and circle relationships."
+  },
+  {
+    "slug": "math-trigonometry",
+    "num": 4,
+    "title": "Trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "blurb": "Use right-triangle ratios, quadrants, identities, and laws of sines and cosines."
+  },
+  {
+    "slug": "math-statistics-probability",
+    "num": 5,
+    "title": "Statistics & Probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "blurb": "Distinguish averages, spread, counting, and independent versus dependent events."
+  },
+  {
+    "slug": "math-number-quantity",
+    "num": 6,
+    "title": "Number & Quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "blurb": "Handle complex numbers, vectors, matrices, exponents, and sequences."
+  },
+  {
+    "slug": "math-essential-skills",
+    "num": 7,
+    "title": "Essential Skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "blurb": "Make ratios, percentages, units, rates, and work problems reliable under time pressure."
+  },
+  {
+    "slug": "math-modeling",
+    "num": 8,
+    "title": "Modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "blurb": "Translate a situation into a model, interpret its variables, and optimize within constraints."
+  }
+]

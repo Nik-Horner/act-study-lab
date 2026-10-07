@@ -1,0 +1,992 @@
+[
+  {
+    "slug": "reading-main-idea",
+    "title": "Main ideas and summaries",
+    "intro": "Find the controlling idea without mistaking a vivid detail for the whole passage. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "sections": [
+      {
+        "heading": "Use the screen to build a passage map",
+        "body": [
+          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
+          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
+          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+        ]
+      },
+      {
+        "heading": "Find the controlling idea, not just the subject",
+        "body": [
+          "A passage’s subject is the thing it discusses: a bus pilot, a family desk, a research method, or a renovation. Its controlling idea is what the passage develops about that subject. Saying this passage is about buses will not distinguish a report that proves profitability from one that gathers promising evidence while limiting its claims. Start with a subject-and-movement sentence: the town uses a limited trial to decide what it still needs to learn. That sentence captures both the topic and the direction of the discussion.",
+          "Look at the opening problem and the closing resolution, but do not assume the last sentence alone contains the answer. The middle paragraphs explain how the passage reaches its ending. A narrative can move from an expectation to a changed understanding without announcing a moral. An informational passage may qualify an initial interpretation rather than replace it completely. Notice contrasts such as at first, yet, instead, and still. They often mark the relationship that a correct main-idea answer must preserve."
+        ],
+        "examples": [
+          {
+            "text": "Mara had expected her grandmother’s desk to contain something impressive: the letters of a celebrated traveler, perhaps, or the plans for a house never built. Instead she found grocery lists. Dates ran across the tops in an increasingly uneven hand. Beside “pears,” on one list, her grandmother had written “Mara likes the green ones.”\n\nHer brother suggested recycling the papers. The desk was going to a neighbor, and neither of them wanted another box in an already crowded apartment. Mara agreed that they could not preserve everything. She set aside the advertisements, the duplicate receipts, and three envelopes that held nothing. But she slipped the pear list into her coat pocket.\n\nOn the way home she stopped at the corner shop. For years she had bought whichever fruit cost least, making purchases as efficiently as possible. That evening she stood before the pears longer than she needed to. The green ones were not on sale. She chose two anyway, then laughed at herself for expecting them to taste different. When she reached home, she placed the list beside the fruit rather than filing it away.\n\nQuestion: The passage primarily traces Mara’s discovery that:\n\nSupported answer: an ordinary object can preserve a personal connection\n\nReason: The list’s small note about Mara changes her attitude toward an ordinary purchase, and she displays it beside the pears. The supported answer is “an ordinary object can preserve a personal connection.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 1: The Last Drawer",
+            "good": true
+          },
+          {
+            "text": "A local museum displayed a map assembled from residents’ childhood recollections. Volunteers asked participants to mark places they remembered visiting before age twelve. The completed map included a dense cluster of swimming spots along the eastern riverbank and only two marks in the west of town.\n\nAt first the curator thought this distribution reflected where children had played. Then she examined the interview list. Most participants had grown up in the eastern neighborhoods. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The map had not been designed to sample the town evenly: volunteers had recruited acquaintances and people who attended the museum’s weekend events.\n\nThe curator kept the map on display but changed its caption. Instead of “Where our town’s children played,” it now read “Places remembered by this group of residents.” She invited people from the west to add recollections to a second map, preserving the first map and its interview list as a record of the original project. The western blank areas were not evidence that children had never played there. They were, she wrote, an invitation to ask whose memories had yet to be included.\n\nQuestion: The passage mainly describes a curator’s effort to:\n\nSupported answer: make a memory map’s claim match the people actually represented\n\nReason: She revises the caption and seeks additional memories after noticing the uneven participant pool. The supported answer is “make a memory map’s claim match the people actually represented.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 5: A Map with Empty Spaces",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Match a summary to the passage’s full movement",
+        "body": [
+          "A strong summary includes the major stages in proportion to their importance. For the map passage, the curator first treats the distribution as a town-wide picture, discovers an uneven participant pool, revises the claim, and invites additional residents. The controlling movement is making the display’s claim fit the evidence while broadening participation. A choice about swimming locations repeats a detail but does not summarize that movement. A choice about discarding memories reverses the actual solution, which preserves the original project and documents its limits.",
+          "Test your proposed summary against each paragraph. It should explain why the major paragraphs belong together without listing every object or name. If one paragraph challenges the result, a summary that presents the result as settled is incomplete. If the passage retains a useful method while acknowledging limitations, a summary claiming total rejection goes too far. Compress the passage into a relationship, not a catalogue. Words such as evaluates, revises, distinguishes, and comes to recognize often express movement more accurately than celebrates or proves when the passage is cautious."
+        ],
+        "examples": [
+          {
+            "text": "Passage A — Theater director\nOur theater’s facade is intact, but the stage rigging is unsafe. Preserving the room exactly as it stood in 1930 would make it impossible to use. I want to retain the painted ceiling and the worn foyer steps while replacing the cables above the stage. A public building survives through repeated encounters. A locked theater is a photograph of itself.\n\nPassage B — Architectural historian\nUse can help preserve a theater, but “modernization” is sometimes a generous word for erasure. The original stage equipment reveals how productions were mounted; removing all of it would sever that record. I support new safety systems, provided representative old mechanisms remain visible and the alterations are documented. Preservation need not mean freezing a building. It means knowing what changes cost.\n\nBoth writers are responding to a proposed renovation. Neither disputes that the existing rigging is unsafe. The debate concerns how to change the theater while retaining what makes its past legible.\n\nQuestion: Taken together, the passages chiefly examine:\n\nSupported answer: how a theater can remain usable while preserving evidence of its history\n\nReason: Both writers accept safety changes and debate what should remain during renovation. The supported answer is “how a theater can remain usable while preserving evidence of its history.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 2: Two Ways to Keep a Theater",
+            "good": true
+          },
+          {
+            "text": "Researchers placed sticky collection cards at three distances from a stand of trees to learn where its seeds traveled. Each card remained outdoors for the same week. Cards nearest the trees caught the most seeds; cards farthest away caught fewer. A student proposed using the pattern to estimate the distance traveled by a typical seed.\n\nThe lead researcher urged caution. A card could catch only seeds that struck its surface. A seed crossing the area above a card would not be counted. Heavy rain midway through the week had also washed material from two cards, which the team marked as damaged. The remaining cards offered evidence about the collected seeds, but not a complete inventory of every seed dispersed.\n\nThe team planned a second collection period with protected cards and observations of wind direction. It would compare patterns across the two weeks instead of treating the first week as a final answer. One researcher described the cards as “windows onto a moving process.” A window could reveal something real, she said, without showing the whole landscape.\n\nQuestion: The passage’s main purpose is to explain:\n\nSupported answer: why seed collection results must be interpreted in light of what the method can capture\n\nReason: The researcher distinguishes collected seeds from all dispersed seeds and proposes additional observation. The supported answer is “why seed collection results must be interpreted in light of what the method can capture.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 6: Seeds on the Wind",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Reject narrow, inflated, and imported choices",
+        "body": [
+          "Three recurring main-idea traps deserve separate tests. A narrow choice describes one vivid example and cannot account for the rest of the text. An inflated choice changes a local event into a universal lesson or turns a tentative result into proof. An imported choice makes a plausible claim about the subject that the passage never develops. The correct answer must be supported by the particular passage, even when another choice sounds wiser, more scientific, or more inspirational in ordinary conversation.",
+          "For each remaining option, identify its scope and attitude. Does it refer to the interviewed residents or all children in town? Does it say the service is promising or permanently successful? Does it say the narrator changes a belief or abandons the activity entirely? These are not cosmetic differences. They determine whether the choice can survive the passage’s explicit qualifications. A correct summary can sound modest because the evidence is modest. Do not reward a dramatic answer merely because the passage contains an emotionally memorable final image."
+        ],
+        "examples": [
+          {
+            "text": "A town introduced a Saturday bus between the library and three neighborhoods. Before the pilot, residents at public meetings had asked for daily service. The transport office could initially fund only eight Saturdays. It counted riders and invited anonymous comments after each trip.\n\nThe first Saturday drew twelve passengers. By the eighth, twenty-nine people rode. Several comments praised the library stop; others asked for an earlier departure. One resident wrote that the trip was useful but too infrequent for a weekday job. A council member called the growing attendance encouraging. The office’s report used a more guarded phrase: the figures supported continuing the trial, not yet expanding it to every day.\n\nThe report noted two limits. The trial took place during a summer reading program, and it did not measure how many riders would pay a fare. The office proposed another eight weeks after the program ended, with an optional fare question on the comment card. The council approved the additional trial without promising a permanent route.\n\nQuestion: The passage’s main point is that the town:\n\nSupported answer: is using a promising bus pilot to gather evidence before making a larger commitment\n\nReason: Rider numbers rise, but the report proposes further testing because demand under different conditions remains uncertain. The supported answer is “is using a promising bus pilot to gather evidence before making a larger commitment.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 3: The Bus Pilot",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Treat narrative change as evidence, not a slogan",
+        "body": [
+          "In literary narrative, track the starting belief, the complicating event, and the final action. Mara initially expects impressive documents, discovers a small note showing personal attention, and later displays that note beside the fruit. The ending supports a connection through an ordinary object. It does not prove she will preserve every family possession or stop comparing prices forever. The final action matters because it differs from her initial expectations; the meaning emerges through that contrast.",
+          "A narrator’s attitude can be mixed. Enjoying an interruption while worrying about rehearsal time does not mean the narrator dislikes music or resents the aunt completely. A main-idea choice should preserve the development across those mixed responses. Distinguish what a character learns from what an author claims about everyone. Before choosing a broad lesson, point to at least two moments in the narrative that support it. Then remove any universal language that those moments cannot justify. This keeps interpretation anchored in change actually shown on the page."
+        ],
+        "examples": [
+          {
+            "text": "Nico spent the first morning of the sound workshop recording traffic. The instructor asked him to choose a location and listen there for ten minutes before touching the recorder. He picked the bridge because he knew what he would hear: engines, tires, horns. He pressed the recording button after less than a minute.\n\nWhen the instructor played his clip, the traffic filled every second. “You found what you expected,” she said. She sent him back without suggesting a different location. This time Nico stayed under the bridge. He noticed water striking a loose piece of timber, a bicycle chain clicking above him, and pauses in which the river seemed louder than the road. He began recording only after the ten minutes had passed.\n\nThat afternoon he compared the clips. The second still contained engines; listening had not removed them. But it also held the soft intervals he had missed. He labeled the first file “Bridge” and hesitated over the second. Finally he gave both files the same name and added only the dates. The place had not changed enough to explain the difference.\n\nQuestion: The passage chiefly illustrates how Nico:\n\nSupported answer: learns that patient attention can change his experience of a familiar place\n\nReason: The same location produces a richer second recording after he follows the listening instruction. The supported answer is “learns that patient attention can change his experience of a familiar place.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 4: Listening Beneath the Bridge",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Pace a decision instead of rereading everything",
+        "body": [
+          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
+          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
+          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+        ]
+      },
+      {
+        "heading": "Review the reason for the miss and test the repair",
+        "body": [
+          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
+          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
+          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+        ]
+      }
+    ],
+    "check": [
+      {
+        "id": "RC-1-1",
+        "topic": "reading-main-idea",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "The passage’s main idea is that the restoration:",
+        "choices": [
+          "refuses every change to the original building",
+          "proves photographs make all demolition harmless",
+          "focuses exclusively on increasing ticket prices",
+          "combines practical safety changes with attention to historical evidence"
+        ],
+        "answer": 3,
+        "explanation": "Both safe access and preserved or documented history are emphasized; neither aim displaces the other. The supported answer is “combines practical safety changes with attention to historical evidence.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-1-1",
+          "title": "Quick check passage",
+          "context": "During a restoration, the town replaced unsafe stairs but preserved the old doorway and photographed each change. The project’s report described the building as usable again without treating its history as an obstacle."
+        }
+      },
+      {
+        "id": "RC-1-2",
+        "topic": "reading-main-idea",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "The passage primarily traces Ravi’s discovery that:",
+        "choices": [
+          "questions prevent anyone from repairing objects",
+          "radios are simpler than every other device",
+          "learning repair can involve shared uncertainty and experimentation",
+          "experts never make mistakes"
+        ],
+        "answer": 2,
+        "explanation": "His initial image changes after seeing collaborative trial and error, and he returns ready to participate. The supported answer is “learning repair can involve shared uncertainty and experimentation.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-1-2",
+          "title": "Quick check passage",
+          "context": "Ravi expected the repair club to be a place where experts worked silently. Instead, members asked one another questions, tried solutions that failed, and laughed about familiar mistakes. He returned the following week with a broken radio and a list of questions."
+        }
+      },
+      {
+        "id": "RC-1-3",
+        "topic": "reading-main-idea",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "The best summary is that organizers:",
+        "choices": [
+          "cancel the park because outdoor festivals are unpopular",
+          "use an initial survey while seeking evidence from a broader group",
+          "discard every response as dishonest",
+          "have established every resident’s preferences"
+        ],
+        "answer": 1,
+        "explanation": "The group retains useful limited evidence and expands the inquiry rather than claiming complete representation. The supported answer is “use an initial survey while seeking evidence from a broader group.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-1-3",
+          "title": "Quick check passage",
+          "context": "A survey showed interest in a new park, but responses came mainly from people attending an outdoor festival. Organizers kept the results, labeled the respondent group, and sought additional views before choosing facilities."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "reading-details",
+    "title": "Details, sequence, and cause",
+    "intro": "Locate exact evidence and distinguish a sequence from a causal explanation. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "sections": [
+      {
+        "heading": "Use the screen to build a passage map",
+        "body": [
+          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
+          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
+          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+        ]
+      },
+      {
+        "heading": "Turn the stem into a precise search",
+        "body": [
+          "An explicit-detail question asks what the passage states, but the answer may use a paraphrase rather than identical words. First identify the requested fact: who acted, what happened, when it happened, why the text says it happened, or what a named measurement counts. Use the question’s distinctive noun or event to find the relevant paragraph. Read the surrounding sentence too; a phrase quoted correctly can still be attached to the wrong person or stage of the story.",
+          "In the bus passage, asking why the report mentions the summer program requires the sentence naming the limits of the trial. The program may have affected demand. It is not evidence that every future route is funded, because the passage never makes that financial claim. Paraphrase the located evidence in your own words before checking the options. This small step keeps a familiar-looking choice from displacing the actual relationship you just found. Exact evidence takes priority over a plausible general explanation."
+        ],
+        "examples": [
+          {
+            "text": "Mara had expected her grandmother’s desk to contain something impressive: the letters of a celebrated traveler, perhaps, or the plans for a house never built. Instead she found grocery lists. Dates ran across the tops in an increasingly uneven hand. Beside “pears,” on one list, her grandmother had written “Mara likes the green ones.”\n\nHer brother suggested recycling the papers. The desk was going to a neighbor, and neither of them wanted another box in an already crowded apartment. Mara agreed that they could not preserve everything. She set aside the advertisements, the duplicate receipts, and three envelopes that held nothing. But she slipped the pear list into her coat pocket.\n\nOn the way home she stopped at the corner shop. For years she had bought whichever fruit cost least, making purchases as efficiently as possible. That evening she stood before the pears longer than she needed to. The green ones were not on sale. She chose two anyway, then laughed at herself for expecting them to taste different. When she reached home, she placed the list beside the fruit rather than filing it away.\n\nQuestion: Which item does Mara keep?\n\nSupported answer: a grocery list mentioning the green pears she likes\n\nReason: She discards other papers but puts the pear list in her coat pocket. The supported answer is “a grocery list mentioning the green pears she likes.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 1: The Last Drawer",
+            "good": true
+          },
+          {
+            "text": "A local museum displayed a map assembled from residents’ childhood recollections. Volunteers asked participants to mark places they remembered visiting before age twelve. The completed map included a dense cluster of swimming spots along the eastern riverbank and only two marks in the west of town.\n\nAt first the curator thought this distribution reflected where children had played. Then she examined the interview list. Most participants had grown up in the eastern neighborhoods. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The map had not been designed to sample the town evenly: volunteers had recruited acquaintances and people who attended the museum’s weekend events.\n\nThe curator kept the map on display but changed its caption. Instead of “Where our town’s children played,” it now read “Places remembered by this group of residents.” She invited people from the west to add recollections to a second map, preserving the first map and its interview list as a record of the original project. The western blank areas were not evidence that children had never played there. They were, she wrote, an invitation to ask whose memories had yet to be included.\n\nQuestion: How were most participants recruited?\n\nSupported answer: through volunteers’ acquaintances and museum events\n\nReason: The third paragraph explains recruitment through personal contacts and weekend events. The supported answer is “through volunteers’ acquaintances and museum events.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 5: A Map with Empty Spaces",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Separate sequence from cause",
+        "body": [
+          "An event occurring after another event does not automatically mean the first caused the second. Detail questions sometimes ask for the order of events, while other questions ask for a cause explicitly supplied by the passage. Keep those tasks separate. In a pilot that adds an evening return window and reminder messages at the same time, improved returns follow both changes. The passage can report that sequence without assigning the entire improvement to either change alone.",
+          "Build a quick sequence when dates or stages matter: initial expectation, trial, observation, revised report, further test. Then examine causal language. Because, led to, and attributed to can establish a stated explanation; coincided with marks a weaker relationship. A choice may preserve the right events but reverse their order or strengthen coincidence into proof. When the stem asks according to the passage, report the text’s claim faithfully even if you personally think another explanation is likely. Your outside knowledge cannot supply a causal statement the writer did not make."
+        ],
+        "examples": [
+          {
+            "text": "Passage A — Theater director\nOur theater’s facade is intact, but the stage rigging is unsafe. Preserving the room exactly as it stood in 1930 would make it impossible to use. I want to retain the painted ceiling and the worn foyer steps while replacing the cables above the stage. A public building survives through repeated encounters. A locked theater is a photograph of itself.\n\nPassage B — Architectural historian\nUse can help preserve a theater, but “modernization” is sometimes a generous word for erasure. The original stage equipment reveals how productions were mounted; removing all of it would sever that record. I support new safety systems, provided representative old mechanisms remain visible and the alterations are documented. Preservation need not mean freezing a building. It means knowing what changes cost.\n\nBoth writers are responding to a proposed renovation. Neither disputes that the existing rigging is unsafe. The debate concerns how to change the theater while retaining what makes its past legible.\n\nQuestion: Which feature does the director specifically want to retain?\n\nSupported answer: the painted ceiling\n\nReason: Passage A pairs retaining the painted ceiling with replacing unsafe cables. The supported answer is “the painted ceiling.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 2: Two Ways to Keep a Theater",
+            "good": true
+          },
+          {
+            "text": "Researchers placed sticky collection cards at three distances from a stand of trees to learn where its seeds traveled. Each card remained outdoors for the same week. Cards nearest the trees caught the most seeds; cards farthest away caught fewer. A student proposed using the pattern to estimate the distance traveled by a typical seed.\n\nThe lead researcher urged caution. A card could catch only seeds that struck its surface. A seed crossing the area above a card would not be counted. Heavy rain midway through the week had also washed material from two cards, which the team marked as damaged. The remaining cards offered evidence about the collected seeds, but not a complete inventory of every seed dispersed.\n\nThe team planned a second collection period with protected cards and observations of wind direction. It would compare patterns across the two weeks instead of treating the first week as a final answer. One researcher described the cards as “windows onto a moving process.” A window could reveal something real, she said, without showing the whole landscape.\n\nQuestion: Why did the team mark two cards as damaged?\n\nSupported answer: Rain had washed material from them\n\nReason: The passage directly states that heavy rain washed material from two cards. The supported answer is “Rain had washed material from them.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 6: Seeds on the Wind",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Control the unit, speaker, and condition",
+        "body": [
+          "A detail’s unit is part of the fact. A tool-return count measures tools, not borrowers. Occupied seats at two times do not count distinct visitors over the whole afternoon. A map assembled from volunteer participants reflects that group, not automatically every resident. Before accepting a number or comparison, identify what is counted, over which period, and under what conditions. These qualifiers often do more work than the number itself.",
+          "Also track speakers. A visitor may propose a strong interpretation that the researchers immediately qualify; the passage does not thereby endorse the visitor’s claim. A director and a historian can agree about unsafe rigging while disagreeing about retained machinery. When an option says the report, the historian, or the narrator believes something, check that speaker specifically. An accurate sentence from Passage A is not necessarily an accurate description of Passage B. Underline the attribution mentally and reread the sentence where the opinion appears."
+        ],
+        "examples": [
+          {
+            "text": "A town introduced a Saturday bus between the library and three neighborhoods. Before the pilot, residents at public meetings had asked for daily service. The transport office could initially fund only eight Saturdays. It counted riders and invited anonymous comments after each trip.\n\nThe first Saturday drew twelve passengers. By the eighth, twenty-nine people rode. Several comments praised the library stop; others asked for an earlier departure. One resident wrote that the trip was useful but too infrequent for a weekday job. A council member called the growing attendance encouraging. The office’s report used a more guarded phrase: the figures supported continuing the trial, not yet expanding it to every day.\n\nThe report noted two limits. The trial took place during a summer reading program, and it did not measure how many riders would pay a fare. The office proposed another eight weeks after the program ended, with an optional fare question on the comment card. The council approved the additional trial without promising a permanent route.\n\nQuestion: Why does the report mention the summer reading program?\n\nSupported answer: It may have affected demand during the pilot\n\nReason: The program is listed as a limit on how confidently summer ridership can predict later demand. The supported answer is “It may have affected demand during the pilot.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 3: The Bus Pilot",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Check a paraphrase without demanding identical wording",
+        "body": [
+          "The right answer may translate a stated phrase into simpler language. A report’s guarded wording can mean that evidence supports continuing a trial without justifying daily expansion. The passage need not use the exact word cautious for that paraphrase to be correct. Match the relationship and strength of the claim, not merely repeated vocabulary. Conversely, an option can borrow several words from the passage and connect them in a way the text never does.",
+          "After finding the evidence, compare each option’s actor, action, object, and qualifier. A choice saying the curator changes the caption is supported; one saying she removes the first map reverses the preserved-project detail. Reject an option for a concrete mismatch rather than for sounding unfamiliar. If the fact appears in two places, use both when necessary to resolve a pronoun or chronology. This evidence-first habit makes explicit-detail questions efficient while preventing careless substitutions that can be costly near the top of the score range."
+        ],
+        "examples": [
+          {
+            "text": "Nico spent the first morning of the sound workshop recording traffic. The instructor asked him to choose a location and listen there for ten minutes before touching the recorder. He picked the bridge because he knew what he would hear: engines, tires, horns. He pressed the recording button after less than a minute.\n\nWhen the instructor played his clip, the traffic filled every second. “You found what you expected,” she said. She sent him back without suggesting a different location. This time Nico stayed under the bridge. He noticed water striking a loose piece of timber, a bicycle chain clicking above him, and pauses in which the river seemed louder than the road. He began recording only after the ten minutes had passed.\n\nThat afternoon he compared the clips. The second still contained engines; listening had not removed them. But it also held the soft intervals he had missed. He labeled the first file “Bridge” and hesitated over the second. Finally he gave both files the same name and added only the dates. The place had not changed enough to explain the difference.\n\nQuestion: What instruction does Nico initially fail to follow?\n\nSupported answer: listening for ten minutes before recording\n\nReason: He presses the button after less than a minute despite the explicit ten-minute instruction. The supported answer is “listening for ten minutes before recording.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 4: Listening Beneath the Bridge",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Pace a decision instead of rereading everything",
+        "body": [
+          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
+          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
+          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+        ]
+      },
+      {
+        "heading": "Review the reason for the miss and test the repair",
+        "body": [
+          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
+          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
+          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+        ]
+      }
+    ],
+    "check": [
+      {
+        "id": "RC-2-1",
+        "topic": "reading-details",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "When was the handout revised?",
+        "choices": [
+          "Only after the June meeting ended",
+          "Before participants submitted any questions",
+          "After questions were submitted and before the June meeting",
+          "Before the April workshop was announced"
+        ],
+        "answer": 2,
+        "explanation": "The stated sequence is April workshop, submitted questions, revised handout, June meeting. The supported answer is “After questions were submitted and before the June meeting.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-2-1",
+          "title": "Quick check passage",
+          "context": "The first workshop met in April. Participants submitted questions before a second workshop in June, and the organizers revised the handout for the June meeting using those questions."
+        }
+      },
+      {
+        "id": "RC-2-2",
+        "topic": "reading-details",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "What did the remaining cards directly count?",
+        "choices": [
+          "All seeds passing above the cards",
+          "Seeds that struck their surfaces",
+          "Every seed leaving the trees",
+          "Only seeds later growing into plants"
+        ],
+        "answer": 1,
+        "explanation": "The first sentence defines the measured event, and the second explicitly excludes seeds passing above. The supported answer is “Seeds that struck their surfaces.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-2-2",
+          "title": "Quick check passage",
+          "context": "The collection cards counted seeds that struck their surfaces. Seeds passing above them were not counted, and two damaged cards were excluded from the report."
+        }
+      },
+      {
+        "id": "RC-2-3",
+        "topic": "reading-details",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "Which condition did the historian state?",
+        "choices": [
+          "Retaining representative fixtures and recording alterations",
+          "Keeping dangerous wiring in active use",
+          "Removing every old fixture without notes",
+          "Closing the building to all visitors forever"
+        ],
+        "answer": 0,
+        "explanation": "The stated support is conditional on retained representative evidence and documentation. The supported answer is “Retaining representative fixtures and recording alterations.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-2-3",
+          "title": "Quick check passage",
+          "context": "The historian supported replacing dangerous wiring provided that representative old fixtures remained visible and the changes were recorded."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "reading-inference",
+    "title": "Evidence-based inference",
+    "intro": "Make the smallest inference the text supports; control scope and certainty. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "sections": [
+      {
+        "heading": "Use the screen to build a passage map",
+        "body": [
+          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
+          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
+          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+        ]
+      },
+      {
+        "heading": "Make the smallest supported bridge",
+        "body": [
+          "An inference is a conclusion not stated in exactly the answer’s wording but supported by the text. It is not an invitation to invent a motive or complete a story. Identify the stated facts and ask what modest connection follows from them. Mara buys the pears named in her grandmother’s note and displays the note beside them. This supports a wish to act on the reminder of care. It does not establish that she will never buy another kind of fruit.",
+          "Treat the answer as a bridge whose ends must both touch textual evidence. One end is the observed action or claim; the other is the proposed meaning. If the bridge requires an unstated biography, a future event, or knowledge the passage never provides, it is too long. Prefer a conclusion that explains the available details without adding a new obligation. Inference answers often use most reasonably, likely, or suggests because the task concerns support rather than direct quotation or certainty about every possible interpretation."
+        ],
+        "examples": [
+          {
+            "text": "Mara had expected her grandmother’s desk to contain something impressive: the letters of a celebrated traveler, perhaps, or the plans for a house never built. Instead she found grocery lists. Dates ran across the tops in an increasingly uneven hand. Beside “pears,” on one list, her grandmother had written “Mara likes the green ones.”\n\nHer brother suggested recycling the papers. The desk was going to a neighbor, and neither of them wanted another box in an already crowded apartment. Mara agreed that they could not preserve everything. She set aside the advertisements, the duplicate receipts, and three envelopes that held nothing. But she slipped the pear list into her coat pocket.\n\nOn the way home she stopped at the corner shop. For years she had bought whichever fruit cost least, making purchases as efficiently as possible. That evening she stood before the pears longer than she needed to. The green ones were not on sale. She chose two anyway, then laughed at herself for expecting them to taste different. When she reached home, she placed the list beside the fruit rather than filing it away.\n\nQuestion: Mara’s decision to buy green pears most reasonably suggests that she:\n\nSupported answer: wants to act on a small reminder of her grandmother’s care\n\nReason: She buys the remembered variety despite its price, but laughs at the idea that it should taste different. The supported answer is “wants to act on a small reminder of her grandmother’s care.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 1: The Last Drawer",
+            "good": true
+          },
+          {
+            "text": "A local museum displayed a map assembled from residents’ childhood recollections. Volunteers asked participants to mark places they remembered visiting before age twelve. The completed map included a dense cluster of swimming spots along the eastern riverbank and only two marks in the west of town.\n\nAt first the curator thought this distribution reflected where children had played. Then she examined the interview list. Most participants had grown up in the eastern neighborhoods. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The map had not been designed to sample the town evenly: volunteers had recruited acquaintances and people who attended the museum’s weekend events.\n\nThe curator kept the map on display but changed its caption. Instead of “Where our town’s children played,” it now read “Places remembered by this group of residents.” She invited people from the west to add recollections to a second map, preserving the first map and its interview list as a record of the original project. The western blank areas were not evidence that children had never played there. They were, she wrote, an invitation to ask whose memories had yet to be included.\n\nQuestion: Keeping the first map alongside a second one suggests that the curator:\n\nSupported answer: values documenting the initial project as well as broadening participation\n\nReason: She retains the first map and interview list while inviting underrepresented residents to contribute to a new map. The supported answer is “values documenting the initial project as well as broadening participation.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 5: A Map with Empty Spaces",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Distinguish reasonable uncertainty from unsupported possibility",
+        "body": [
+          "Many things are possible in real life, but an ACT Reading inference must be more than possible. The theater historian could own a collection of old cables, yet nothing in the passage supports that claim. The historian’s conditions for renovation do support approval of safety upgrades that preserve representative mechanisms and documentation. Evidence narrows the choice among possible worlds. Ask why this passage, rather than any passage on the same subject, makes the inference reasonable.",
+          "Qualifiers matter on both sides. A researcher’s plan to gather further evidence suggests caution about an early conclusion; it does not show certainty that the early trend is false. Continued use of a method alongside documented limitations suggests qualified trust, not total rejection. Avoid opposite extremes when the passage describes a conditional position. To test a choice, point to the sentence supporting its certainty level. If the text says some, a choice saying all needs additional evidence. If it says may, a choice saying guarantees usually outruns the claim."
+        ],
+        "examples": [
+          {
+            "text": "Passage A — Theater director\nOur theater’s facade is intact, but the stage rigging is unsafe. Preserving the room exactly as it stood in 1930 would make it impossible to use. I want to retain the painted ceiling and the worn foyer steps while replacing the cables above the stage. A public building survives through repeated encounters. A locked theater is a photograph of itself.\n\nPassage B — Architectural historian\nUse can help preserve a theater, but “modernization” is sometimes a generous word for erasure. The original stage equipment reveals how productions were mounted; removing all of it would sever that record. I support new safety systems, provided representative old mechanisms remain visible and the alterations are documented. Preservation need not mean freezing a building. It means knowing what changes cost.\n\nBoth writers are responding to a proposed renovation. Neither disputes that the existing rigging is unsafe. The debate concerns how to change the theater while retaining what makes its past legible.\n\nQuestion: The historian would most likely approve a renovation that:\n\nSupported answer: adds safe equipment and preserves selected old mechanisms with documentation\n\nReason: Passage B supports safety systems but conditions that support on preserving representative mechanisms and documenting changes. The supported answer is “adds safe equipment and preserves selected old mechanisms with documentation.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 2: Two Ways to Keep a Theater",
+            "good": true
+          },
+          {
+            "text": "Researchers placed sticky collection cards at three distances from a stand of trees to learn where its seeds traveled. Each card remained outdoors for the same week. Cards nearest the trees caught the most seeds; cards farthest away caught fewer. A student proposed using the pattern to estimate the distance traveled by a typical seed.\n\nThe lead researcher urged caution. A card could catch only seeds that struck its surface. A seed crossing the area above a card would not be counted. Heavy rain midway through the week had also washed material from two cards, which the team marked as damaged. The remaining cards offered evidence about the collected seeds, but not a complete inventory of every seed dispersed.\n\nThe team planned a second collection period with protected cards and observations of wind direction. It would compare patterns across the two weeks instead of treating the first week as a final answer. One researcher described the cards as “windows onto a moving process.” A window could reveal something real, she said, without showing the whole landscape.\n\nQuestion: The plan to record wind direction suggests the researchers think:\n\nSupported answer: additional environmental information may help explain collection patterns\n\nReason: The new observations are meant to complement, not simply repeat, the collection counts. The supported answer is “additional environmental information may help explain collection patterns.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 6: Seeds on the Wind",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Infer attitudes from choices and contrasts",
+        "body": [
+          "Characters and authors reveal attitudes through actions, concessions, and comparisons. Nico returns to the same location and hears more after following the listening instruction. Giving both recordings the same place name suggests that his attention, rather than a new location, explains the contrast. The passage supports this inference with the final observation that the place has barely changed. An inference about attitude is strongest when an action and an explicit contrast point in the same direction.",
+          "Do not flatten mixed attitudes into a single extreme. A narrator can value family history while discarding most papers, or enjoy an unplanned musical exchange while worrying about time. An informational writer can welcome a new camera method and examine its distortions. Look for the position the writer retains after acknowledging the difficulty. A choice saying rejects all measurement is not supported by a passage that improves definitions and keeps collecting data. Read concessions as part of the attitude rather than as proof of a complete reversal."
+        ],
+        "examples": [
+          {
+            "text": "A town introduced a Saturday bus between the library and three neighborhoods. Before the pilot, residents at public meetings had asked for daily service. The transport office could initially fund only eight Saturdays. It counted riders and invited anonymous comments after each trip.\n\nThe first Saturday drew twelve passengers. By the eighth, twenty-nine people rode. Several comments praised the library stop; others asked for an earlier departure. One resident wrote that the trip was useful but too infrequent for a weekday job. A council member called the growing attendance encouraging. The office’s report used a more guarded phrase: the figures supported continuing the trial, not yet expanding it to every day.\n\nThe report noted two limits. The trial took place during a summer reading program, and it did not measure how many riders would pay a fare. The office proposed another eight weeks after the program ended, with an optional fare question on the comment card. The council approved the additional trial without promising a permanent route.\n\nQuestion: The office’s proposed next step suggests it believes that:\n\nSupported answer: a useful initial trend still needs testing under additional conditions\n\nReason: The office retains the trial while changing the context and collecting information about fares. The supported answer is “a useful initial trend still needs testing under additional conditions.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 3: The Bus Pilot",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Use the contradiction test on tempting options",
+        "body": [
+          "When two inference choices remain, ask what would have to be true for each to hold. Then compare those requirements with the text. A choice saying a council promised permanent daily service requires an actual commitment; the passage explicitly approves another trial without promising permanence. A choice saying the office wants to test a promising trend under additional conditions fits both the continued service and the unresolved seasonality question. This test makes the inferential gap visible instead of relying on which option feels more confident.",
+          "A contradiction is stronger grounds for elimination than a personal preference. Wrong answers may reverse the evidence, introduce an unsupported motive, generalize beyond the sample, or remove an explicit condition. Name that defect. For a supported inference, name the two pieces of evidence that combine to justify it. Practicing this short explanation on untimed drills builds a habit you can compress during a timed section. The goal is disciplined inference: enough interpretation to answer the question, without adding facts the passage does not supply."
+        ],
+        "examples": [
+          {
+            "text": "Nico spent the first morning of the sound workshop recording traffic. The instructor asked him to choose a location and listen there for ten minutes before touching the recorder. He picked the bridge because he knew what he would hear: engines, tires, horns. He pressed the recording button after less than a minute.\n\nWhen the instructor played his clip, the traffic filled every second. “You found what you expected,” she said. She sent him back without suggesting a different location. This time Nico stayed under the bridge. He noticed water striking a loose piece of timber, a bicycle chain clicking above him, and pauses in which the river seemed louder than the road. He began recording only after the ten minutes had passed.\n\nThat afternoon he compared the clips. The second still contained engines; listening had not removed them. But it also held the soft intervals he had missed. He labeled the first file “Bridge” and hesitated over the second. Finally he gave both files the same name and added only the dates. The place had not changed enough to explain the difference.\n\nQuestion: Why does Nico give both files the same place name?\n\nSupported answer: He recognizes that his attention, rather than a different location, explains the contrast\n\nReason: The last sentence states that the place had not changed enough to explain the difference. The supported answer is “He recognizes that his attention, rather than a different location, explains the contrast.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 4: Listening Beneath the Bridge",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Pace a decision instead of rereading everything",
+        "body": [
+          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
+          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
+          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+        ]
+      },
+      {
+        "heading": "Review the reason for the miss and test the repair",
+        "body": [
+          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
+          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
+          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+        ]
+      }
+    ],
+    "check": [
+      {
+        "id": "RC-3-1",
+        "topic": "reading-inference",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "Jules’s actions most reasonably suggest a wish to:",
+        "choices": [
+          "end the museum’s use of maps altogether",
+          "preserve the original project while broadening the evidence",
+          "prove the first interviewees invented their memories",
+          "make the second map identical to the first"
+        ],
+        "answer": 1,
+        "explanation": "Keeping and relabeling the first map documents it; inviting absent groups expands participation. The supported answer is “preserve the original project while broadening the evidence.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-3-1",
+          "title": "Quick check passage",
+          "context": "Jules left the original map on display, added a caption naming its interview group, and invited previously absent neighborhoods to contribute to a second map."
+        }
+      },
+      {
+        "id": "RC-3-2",
+        "topic": "reading-inference",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "The office most likely believes that:",
+        "choices": [
+          "the promising trend still needs testing under different conditions",
+          "the trial has proved year-round demand beyond doubt",
+          "summer programs never affect attendance",
+          "further observations are unnecessary"
+        ],
+        "answer": 0,
+        "explanation": "Extending the trial while changing the seasonal context shows qualified interest rather than certainty. The supported answer is “the promising trend still needs testing under different conditions.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-3-2",
+          "title": "Quick check passage",
+          "context": "After seeing a rise in attendance, the office extended the trial into another season and asked whether riders would use the service when the summer program ended."
+        }
+      },
+      {
+        "id": "RC-3-3",
+        "topic": "reading-inference",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "Amira’s response is best described as:",
+        "choices": [
+          "entirely hostile from beginning to end",
+          "proof she no longer wants to rehearse",
+          "certain that every interruption is beneficial",
+          "mixed initially, with later recognition of a useful result"
+        ],
+        "answer": 3,
+        "explanation": "The text combines enjoyment and concern, then supplies one specific benefit without a universal claim. The supported answer is “mixed initially, with later recognition of a useful result.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-3-3",
+          "title": "Quick check passage",
+          "context": "Amira enjoyed the group’s spontaneous song but worried about the rehearsal time it used. Later she tried a phrase suggested during that exchange and found it helped."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "reading-vocabulary",
+    "title": "Words in context",
+    "intro": "Use the surrounding sentence to select the meaning actually intended. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "sections": [
+      {
+        "heading": "Use the screen to build a passage map",
+        "body": [
+          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
+          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
+          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+        ]
+      },
+      {
+        "heading": "Read the local meaning before recalling the dictionary",
+        "body": [
+          "A familiar word can have several correct dictionary meanings, but a words-in-context question asks which meaning fits this use. Locate the word in its sentence and read the sentence before and after it. Identify whether it names an action, attitude, relationship, or technical idea. Then replace it mentally with a plain phrase. Guarded wording in a report means cautious wording, not wording watched by security officers. The surrounding claim about limited evidence selects the sense.",
+          "Keep the original grammar intact when testing a substitute. If the word describes a model as provisional, the sentence may explain that new observations can revise it. Open to revision fits that function; temporary in the sense of disposable after a fixed date may not. The right answer must preserve meaning in this particular sentence rather than list every association you have with the word. A common meaning is not automatically the contextual meaning, and a technical-looking option can be wrong if the passage is using an ordinary figurative sense."
+        ],
+        "examples": [
+          {
+            "text": "Mara had expected her grandmother’s desk to contain something impressive: the letters of a celebrated traveler, perhaps, or the plans for a house never built. Instead she found grocery lists. Dates ran across the tops in an increasingly uneven hand. Beside “pears,” on one list, her grandmother had written “Mara likes the green ones.”\n\nHer brother suggested recycling the papers. The desk was going to a neighbor, and neither of them wanted another box in an already crowded apartment. Mara agreed that they could not preserve everything. She set aside the advertisements, the duplicate receipts, and three envelopes that held nothing. But she slipped the pear list into her coat pocket.\n\nOn the way home she stopped at the corner shop. For years she had bought whichever fruit cost least, making purchases as efficiently as possible. That evening she stood before the pears longer than she needed to. The green ones were not on sale. She chose two anyway, then laughed at herself for expecting them to taste different. When she reached home, she placed the list beside the fruit rather than filing it away.\n\nQuestion: As used in “filing it away,” “filing” most nearly means:\n\nSupported answer: putting it into organized storage\n\nReason: The contrast is between leaving the list visible and storing it among papers. The supported answer is “putting it into organized storage.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 1: The Last Drawer",
+            "good": true
+          },
+          {
+            "text": "A local museum displayed a map assembled from residents’ childhood recollections. Volunteers asked participants to mark places they remembered visiting before age twelve. The completed map included a dense cluster of swimming spots along the eastern riverbank and only two marks in the west of town.\n\nAt first the curator thought this distribution reflected where children had played. Then she examined the interview list. Most participants had grown up in the eastern neighborhoods. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The map had not been designed to sample the town evenly: volunteers had recruited acquaintances and people who attended the museum’s weekend events.\n\nThe curator kept the map on display but changed its caption. Instead of “Where our town’s children played,” it now read “Places remembered by this group of residents.” She invited people from the west to add recollections to a second map, preserving the first map and its interview list as a record of the original project. The western blank areas were not evidence that children had never played there. They were, she wrote, an invitation to ask whose memories had yet to be included.\n\nQuestion: In context, “represented” most nearly means:\n\nSupported answer: included or reflected in the account\n\nReason: The issue is which residents’ memories appear in the museum’s display. The supported answer is “included or reflected in the account.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 5: A Map with Empty Spaces",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Use nearby contrasts and examples as definitions",
+        "body": [
+          "Writers often explain a word indirectly through contrast. The historian contrasts erased evidence with a past that remains legible, so legible means understandable from the surviving evidence rather than written in neat handwriting. Nico notices pauses between traffic sounds, so intervals refers to periods between louder sounds. Look for the example or contrast that constrains the word. A colon, dash, appositive, or following explanation can provide the necessary definition without a formal dictionary statement.",
+          "If the word appears in a quotation, determine who uses it and why. A speaker may use modernization skeptically, while another treats it as a practical upgrade. The quotation marks can indicate a disputed label rather than the author’s unqualified endorsement. Context includes rhetoric as well as neighboring nouns. The best substitute should preserve that attitude when the stem asks for the word’s meaning, but do not turn a vocabulary question into a broad judgment about the whole speaker. Answer the local semantic task first."
+        ],
+        "examples": [
+          {
+            "text": "Passage A — Theater director\nOur theater’s facade is intact, but the stage rigging is unsafe. Preserving the room exactly as it stood in 1930 would make it impossible to use. I want to retain the painted ceiling and the worn foyer steps while replacing the cables above the stage. A public building survives through repeated encounters. A locked theater is a photograph of itself.\n\nPassage B — Architectural historian\nUse can help preserve a theater, but “modernization” is sometimes a generous word for erasure. The original stage equipment reveals how productions were mounted; removing all of it would sever that record. I support new safety systems, provided representative old mechanisms remain visible and the alterations are documented. Preservation need not mean freezing a building. It means knowing what changes cost.\n\nBoth writers are responding to a proposed renovation. Neither disputes that the existing rigging is unsafe. The debate concerns how to change the theater while retaining what makes its past legible.\n\nQuestion: In Passage B, “legible” most nearly means:\n\nSupported answer: understandable from the surviving evidence\n\nReason: What must remain understandable is the theater’s past, not handwriting or ownership. The supported answer is “understandable from the surviving evidence.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 2: Two Ways to Keep a Theater",
+            "good": true
+          },
+          {
+            "text": "Researchers placed sticky collection cards at three distances from a stand of trees to learn where its seeds traveled. Each card remained outdoors for the same week. Cards nearest the trees caught the most seeds; cards farthest away caught fewer. A student proposed using the pattern to estimate the distance traveled by a typical seed.\n\nThe lead researcher urged caution. A card could catch only seeds that struck its surface. A seed crossing the area above a card would not be counted. Heavy rain midway through the week had also washed material from two cards, which the team marked as damaged. The remaining cards offered evidence about the collected seeds, but not a complete inventory of every seed dispersed.\n\nThe team planned a second collection period with protected cards and observations of wind direction. It would compare patterns across the two weeks instead of treating the first week as a final answer. One researcher described the cards as “windows onto a moving process.” A window could reveal something real, she said, without showing the whole landscape.\n\nQuestion: As used here, “inventory” most nearly means:\n\nSupported answer: a complete count or record\n\nReason: The phrase contrasts the limited collected sample with every dispersed seed. The supported answer is “a complete count or record.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 6: Seeds on the Wind",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Avoid literal answers to a figurative use",
+        "body": [
+          "Reading questions frequently exploit a literal sense that is valid elsewhere. Filing a list away means putting it into organized storage; it does not mean smoothing the paper with a metal file. A narrator’s conviction loosening means becoming less rigid, not being physically untied. A measurement method shaping a result can influence the result without forming it with a mold. Establish the object of the verb or adjective, since that object often reveals whether the sense is literal or figurative.",
+          "You do not need to label a figure of speech to answer correctly. You need a substitute that makes the sentence retain its meaning. Read the resulting sentence aloud in your head. Does it describe the same action and carry the same degree of certainty? An option may sound sophisticated while shifting from a belief becoming less rigid to a belief being completely forgotten. Those are different changes. The passage may show the narrator still wants to play well while abandoning only an exclusive image of rehearsal, so the narrower substitute is necessary."
+        ],
+        "examples": [
+          {
+            "text": "A town introduced a Saturday bus between the library and three neighborhoods. Before the pilot, residents at public meetings had asked for daily service. The transport office could initially fund only eight Saturdays. It counted riders and invited anonymous comments after each trip.\n\nThe first Saturday drew twelve passengers. By the eighth, twenty-nine people rode. Several comments praised the library stop; others asked for an earlier departure. One resident wrote that the trip was useful but too infrequent for a weekday job. A council member called the growing attendance encouraging. The office’s report used a more guarded phrase: the figures supported continuing the trial, not yet expanding it to every day.\n\nThe report noted two limits. The trial took place during a summer reading program, and it did not measure how many riders would pay a fare. The office proposed another eight weeks after the program ended, with an optional fare question on the comment card. The council approved the additional trial without promising a permanent route.\n\nQuestion: In context, “guarded” most nearly means:\n\nSupported answer: cautious\n\nReason: The report limits its claim to continuation rather than treating rising attendance as proof of readiness for expansion. The supported answer is “cautious.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 3: The Bus Pilot",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Verify a substitute against the paragraph’s claim",
+        "body": [
+          "After a candidate fits the sentence, check it against the paragraph. Pertinent in the paired recording passages means relevant to an inquiry because the writer contrasts details that matter to different research questions. It does not mean especially loud, even though the passage concerns sound. Neutral in the root-camera passage describes a boundary that does not influence what is observed, not soil acidity. The paragraph’s argument prevents subject-related distractors from gaining support merely by sounding appropriate to music or science.",
+          "When all choices seem unfamiliar, predict a simple phrase from the context before selecting the nearest option. If you cannot predict it, read the explanatory clause again rather than guessing from the word’s appearance. Avoid relying on a remembered synonym that has a different intensity or grammatical role. Review a miss by writing the full substituted sentence and identifying which nearby words establish the sense. This turns vocabulary review into a reusable context-reading process rather than a list of definitions disconnected from actual passages."
+        ],
+        "examples": [
+          {
+            "text": "Nico spent the first morning of the sound workshop recording traffic. The instructor asked him to choose a location and listen there for ten minutes before touching the recorder. He picked the bridge because he knew what he would hear: engines, tires, horns. He pressed the recording button after less than a minute.\n\nWhen the instructor played his clip, the traffic filled every second. “You found what you expected,” she said. She sent him back without suggesting a different location. This time Nico stayed under the bridge. He noticed water striking a loose piece of timber, a bicycle chain clicking above him, and pauses in which the river seemed louder than the road. He began recording only after the ten minutes had passed.\n\nThat afternoon he compared the clips. The second still contained engines; listening had not removed them. But it also held the soft intervals he had missed. He labeled the first file “Bridge” and hesitated over the second. Finally he gave both files the same name and added only the dates. The place had not changed enough to explain the difference.\n\nQuestion: In “the soft intervals he had missed,” “intervals” means:\n\nSupported answer: periods between louder sounds\n\nReason: The preceding description identifies pauses when the river becomes more audible. The supported answer is “periods between louder sounds.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 4: Listening Beneath the Bridge",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Pace a decision instead of rereading everything",
+        "body": [
+          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
+          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
+          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+        ]
+      },
+      {
+        "heading": "Review the reason for the miss and test the repair",
+        "body": [
+          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
+          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
+          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+        ]
+      }
+    ],
+    "check": [
+      {
+        "id": "RC-4-1",
+        "topic": "reading-vocabulary",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "In context, “provisional” means:",
+        "choices": [
+          "open to revision",
+          "guaranteed to be exact",
+          "kept secret permanently",
+          "unrelated to evidence"
+        ],
+        "answer": 0,
+        "explanation": "The explanation after the colon directly establishes that the estimate can change with measurements. The supported answer is “open to revision.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-4-1",
+          "title": "Quick check passage",
+          "context": "The report called the first estimate provisional: the team would revise it as new measurements arrived."
+        }
+      },
+      {
+        "id": "RC-4-2",
+        "topic": "reading-vocabulary",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "In context, “pertinent” means:",
+        "choices": [
+          "inaudible",
+          "recently invented",
+          "deliberately false",
+          "relevant"
+        ],
+        "answer": 3,
+        "explanation": "The contrast links usefulness to the particular research question. The supported answer is “relevant.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-4-2",
+          "title": "Quick check passage",
+          "context": "The chair movement was distracting to a listener studying pitch, but pertinent to a historian studying the audience’s behavior."
+        }
+      },
+      {
+        "id": "RC-4-3",
+        "topic": "reading-vocabulary",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "In context, “loosened” means:",
+        "choices": [
+          "was entirely forgotten",
+          "became physically larger",
+          "became less strict",
+          "was tied more tightly"
+        ],
+        "answer": 2,
+        "explanation": "The change affects a rigid belief, and the continuing careful work rules out total abandonment. The supported answer is “became less strict.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-4-3",
+          "title": "Quick check passage",
+          "context": "Her rigid idea of rehearsal loosened after she saw that careful work could include questions and laughter."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "reading-craft",
+    "title": "Purpose, tone, and structure",
+    "intro": "Track what each paragraph does and distinguish the author from quoted speakers. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "sections": [
+      {
+        "heading": "Use the screen to build a passage map",
+        "body": [
+          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
+          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
+          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+        ]
+      },
+      {
+        "heading": "Ask what a paragraph does, not only what it says",
+        "body": [
+          "A function question concerns the role of a detail or paragraph in the passage’s development. The resident’s complaint about weekday employment says the Saturday bus is useful but too infrequent for that need. Its function is to show a need the current pilot does not fully address. Repeating the sentence’s topic is not enough. Connect the detail to the surrounding argument: does it introduce a problem, illustrate a claim, qualify a result, present an objection, or explain a change?",
+          "Try a because sentence: the author includes this example because it shows a limitation in the current service. Then test that statement against what comes before and after. If the preceding paragraph praises rising attendance and the following one lists unresolved questions, the complaint helps complicate simple success. A function choice should describe the actual contribution without inventing a new argument. It does not prove the route benefits nobody, because the resident explicitly calls it useful. Function and factual accuracy must agree."
+        ],
+        "examples": [
+          {
+            "text": "Mara had expected her grandmother’s desk to contain something impressive: the letters of a celebrated traveler, perhaps, or the plans for a house never built. Instead she found grocery lists. Dates ran across the tops in an increasingly uneven hand. Beside “pears,” on one list, her grandmother had written “Mara likes the green ones.”\n\nHer brother suggested recycling the papers. The desk was going to a neighbor, and neither of them wanted another box in an already crowded apartment. Mara agreed that they could not preserve everything. She set aside the advertisements, the duplicate receipts, and three envelopes that held nothing. But she slipped the pear list into her coat pocket.\n\nOn the way home she stopped at the corner shop. For years she had bought whichever fruit cost least, making purchases as efficiently as possible. That evening she stood before the pears longer than she needed to. The green ones were not on sale. She chose two anyway, then laughed at herself for expecting them to taste different. When she reached home, she placed the list beside the fruit rather than filing it away.\n\nQuestion: The opening speculation about impressive documents mainly serves to:\n\nSupported answer: contrast Mara’s initial expectations with the modest discovery that matters\n\nReason: The imagined grand discoveries prepare the contrast with the emotionally important grocery list. The supported answer is “contrast Mara’s initial expectations with the modest discovery that matters.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 1: The Last Drawer",
+            "good": true
+          },
+          {
+            "text": "A local museum displayed a map assembled from residents’ childhood recollections. Volunteers asked participants to mark places they remembered visiting before age twelve. The completed map included a dense cluster of swimming spots along the eastern riverbank and only two marks in the west of town.\n\nAt first the curator thought this distribution reflected where children had played. Then she examined the interview list. Most participants had grown up in the eastern neighborhoods. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The map had not been designed to sample the town evenly: volunteers had recruited acquaintances and people who attended the museum’s weekend events.\n\nThe curator kept the map on display but changed its caption. Instead of “Where our town’s children played,” it now read “Places remembered by this group of residents.” She invited people from the west to add recollections to a second map, preserving the first map and its interview list as a record of the original project. The western blank areas were not evidence that children had never played there. They were, she wrote, an invitation to ask whose memories had yet to be included.\n\nQuestion: The contrast between the two captions chiefly emphasizes:\n\nSupported answer: a move from a town-wide claim to a claim limited to the interviewed group\n\nReason: The revised caption explicitly limits the map to this group of residents. The supported answer is “a move from a town-wide claim to a claim limited to the interviewed group.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 5: A Map with Empty Spaces",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Separate tone from topic and intensity",
+        "body": [
+          "Tone describes the writer’s attitude expressed through diction and treatment of evidence, not merely the emotional associations of the subject. A passage about storm damage can be measured rather than alarmed. A family-memory narrative can be affectionate without claiming every object is sacred. Identify patterns: qualified verbs, acknowledged limitations, amused self-correction, or sharp criticism. One dramatic noun cannot outweigh the broader way the writer handles the material.",
+          "Compare neighboring tone choices by intensity. Cautious is different from hostile; appreciative is different from worshipful; skeptical is different from dismissive. A researcher who extends a promising trial while gathering more evidence is cautious, not contemptuous of the project. A narrator who laughs at an expectation can be gently self-aware rather than bitter. Find a sentence that directly supports the attitude and another that limits its strength. This double check helps reject extreme labels that latch onto one phrase while ignoring the rest of the passage."
+        ],
+        "examples": [
+          {
+            "text": "Passage A — Theater director\nOur theater’s facade is intact, but the stage rigging is unsafe. Preserving the room exactly as it stood in 1930 would make it impossible to use. I want to retain the painted ceiling and the worn foyer steps while replacing the cables above the stage. A public building survives through repeated encounters. A locked theater is a photograph of itself.\n\nPassage B — Architectural historian\nUse can help preserve a theater, but “modernization” is sometimes a generous word for erasure. The original stage equipment reveals how productions were mounted; removing all of it would sever that record. I support new safety systems, provided representative old mechanisms remain visible and the alterations are documented. Preservation need not mean freezing a building. It means knowing what changes cost.\n\nBoth writers are responding to a proposed renovation. Neither disputes that the existing rigging is unsafe. The debate concerns how to change the theater while retaining what makes its past legible.\n\nQuestion: The director’s comparison of a locked theater to a photograph emphasizes:\n\nSupported answer: the difference between a static record and a place experienced through use\n\nReason: The image supports the director’s argument that public encounters help a building survive. The supported answer is “the difference between a static record and a place experienced through use.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 2: Two Ways to Keep a Theater",
+            "good": true
+          },
+          {
+            "text": "Researchers placed sticky collection cards at three distances from a stand of trees to learn where its seeds traveled. Each card remained outdoors for the same week. Cards nearest the trees caught the most seeds; cards farthest away caught fewer. A student proposed using the pattern to estimate the distance traveled by a typical seed.\n\nThe lead researcher urged caution. A card could catch only seeds that struck its surface. A seed crossing the area above a card would not be counted. Heavy rain midway through the week had also washed material from two cards, which the team marked as damaged. The remaining cards offered evidence about the collected seeds, but not a complete inventory of every seed dispersed.\n\nThe team planned a second collection period with protected cards and observations of wind direction. It would compare patterns across the two weeks instead of treating the first week as a final answer. One researcher described the cards as “windows onto a moving process.” A window could reveal something real, she said, without showing the whole landscape.\n\nQuestion: The “windows” metaphor chiefly conveys that the cards:\n\nSupported answer: provide genuine but partial views of seed movement\n\nReason: The researcher explicitly says a window can show something real without showing the entire landscape. The supported answer is “provide genuine but partial views of seed movement.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 6: Seeds on the Wind",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Track perspective, quotation, and structural shifts",
+        "body": [
+          "The narrator, the author, and a quoted speaker are different sources of perspective. In the root passage, a visitor offers a broad interpretation and the researchers narrow it. A question about the author’s reason for including the visitor therefore concerns a contrast between an appealing claim and supported evidence, not endorsement of that claim. Follow the attribution before assigning an attitude. In paired texts, label each writer’s purpose independently before inferring agreement or disagreement.",
+          "Structural shifts often reveal purpose. A paragraph beginning with another complication may add a limitation; one beginning after the trial can move from observation to response. In narrative, a repeated object may gain a different meaning by the end. The rehearsal-room chairs begin as part of an impressive arrangement and end as furniture willingly returned for other uses. The object itself has not changed, but its role in the narrator’s understanding has. A correct structure answer connects those stages rather than merely noticing that chairs appear twice."
+        ],
+        "examples": [
+          {
+            "text": "A town introduced a Saturday bus between the library and three neighborhoods. Before the pilot, residents at public meetings had asked for daily service. The transport office could initially fund only eight Saturdays. It counted riders and invited anonymous comments after each trip.\n\nThe first Saturday drew twelve passengers. By the eighth, twenty-nine people rode. Several comments praised the library stop; others asked for an earlier departure. One resident wrote that the trip was useful but too infrequent for a weekday job. A council member called the growing attendance encouraging. The office’s report used a more guarded phrase: the figures supported continuing the trial, not yet expanding it to every day.\n\nThe report noted two limits. The trial took place during a summer reading program, and it did not measure how many riders would pay a fare. The office proposed another eight weeks after the program ended, with an optional fare question on the comment card. The council approved the additional trial without promising a permanent route.\n\nQuestion: The resident’s comment about weekday employment serves primarily to:\n\nSupported answer: show a need that the current Saturday service does not fully address\n\nReason: The resident calls the service useful but insufficiently frequent for a weekday job. The supported answer is “show a need that the current Saturday service does not fully address.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 3: The Bus Pilot",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Explain the effect of imagery without overreading it",
+        "body": [
+          "A comparison or image directs attention to a relationship. Calling a locked theater a photograph of itself contrasts a static record with repeated public use. It does not establish the writer’s experience with cameras or the financial superiority of exhibitions. In the music-room narrative, old carpet dents make previous arrangements tangible. Their function is to remind the narrator that the room already has other uses, not to prove a particular piece of furniture is damaged.",
+          "To analyze an image, identify the two things compared and the quality they share in context. Then connect that quality to the nearby claim. Resist assigning a symbolic meaning that depends on outside assumptions. The bell, pears, map, or window can carry meaning because the passage develops a contrast around it; the same object could function differently in another text. Review by finishing the sentence this image helps the reader understand that, using evidence from the paragraph. If your explanation floats free of that paragraph, return to the text and narrow it."
+        ],
+        "examples": [
+          {
+            "text": "Nico spent the first morning of the sound workshop recording traffic. The instructor asked him to choose a location and listen there for ten minutes before touching the recorder. He picked the bridge because he knew what he would hear: engines, tires, horns. He pressed the recording button after less than a minute.\n\nWhen the instructor played his clip, the traffic filled every second. “You found what you expected,” she said. She sent him back without suggesting a different location. This time Nico stayed under the bridge. He noticed water striking a loose piece of timber, a bicycle chain clicking above him, and pauses in which the river seemed louder than the road. He began recording only after the ten minutes had passed.\n\nThat afternoon he compared the clips. The second still contained engines; listening had not removed them. But it also held the soft intervals he had missed. He labeled the first file “Bridge” and hesitated over the second. Finally he gave both files the same name and added only the dates. The place had not changed enough to explain the difference.\n\nQuestion: The sentence “listening had not removed them” mainly clarifies that:\n\nSupported answer: the richer experience does not require the traffic to disappear\n\nReason: Engines remain in both clips; Nico notices additional quieter details rather than replacing the original sounds. The supported answer is “the richer experience does not require the traffic to disappear.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 4: Listening Beneath the Bridge",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Pace a decision instead of rereading everything",
+        "body": [
+          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
+          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
+          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+        ]
+      },
+      {
+        "heading": "Review the reason for the miss and test the repair",
+        "body": [
+          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
+          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
+          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+        ]
+      }
+    ],
+    "check": [
+      {
+        "id": "RC-5-1",
+        "topic": "reading-craft",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "The festival detail mainly serves to:",
+        "choices": [
+          "prove the attendance count was fabricated",
+          "explain why every resident opposes the route",
+          "show that further trials are impossible",
+          "qualify what the attendance increase can establish"
+        ],
+        "answer": 3,
+        "explanation": "The detail introduces a simultaneous influence that limits interpretation of the increase. The supported answer is “qualify what the attendance increase can establish.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-5-1",
+          "title": "Quick check passage",
+          "context": "Attendance increased during the trial. Yet the report noted that a festival took place at the same time and recommended another trial after the festival ended."
+        }
+      },
+      {
+        "id": "RC-5-2",
+        "topic": "reading-craft",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "The comparison mainly illustrates:",
+        "choices": [
+          "why the singer never performed live",
+          "why all digital copies must be identical",
+          "why different sounds require different processing judgments",
+          "why every rough sound should be removed"
+        ],
+        "answer": 2,
+        "explanation": "The contrast concerns confidence about each sound’s source and the resulting restoration choice. The supported answer is “why different sounds require different processing judgments.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-5-2",
+          "title": "Quick check passage",
+          "context": "The engineer compared a surface click with the singer’s rough vocal edge. One could confidently be attributed to the recording medium; the other might belong to the performance."
+        }
+      },
+      {
+        "id": "RC-5-3",
+        "topic": "reading-craft",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "The changing chair arrangements primarily reveal:",
+        "choices": [
+          "an unchanged preference for appearances above use",
+          "a shift toward practical needs and shared use",
+          "a decision to end all musical work",
+          "evidence that every chair is damaged"
+        ],
+        "answer": 1,
+        "explanation": "The three arrangements trace a movement from image to function and acceptance of other room purposes. The supported answer is “a shift toward practical needs and shared use.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-5-3",
+          "title": "Quick check passage",
+          "context": "At first the narrator arranged chairs symmetrically to make the room look serious. Later the narrator moved them to help the players see one another, then returned them for a family visit."
+        }
+      }
+    ]
+  },
+  {
+    "slug": "reading-integration",
+    "title": "Paired texts and visual evidence",
+    "intro": "Compare claims and combine passage evidence with another text or graphic. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "sections": [
+      {
+        "heading": "Use the screen to build a passage map",
+        "body": [
+          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
+          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
+          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+        ]
+      },
+      {
+        "heading": "Map each source before comparing them",
+        "body": [
+          "In paired texts, write a short mental claim for A and a separate claim for B. The theater director wants safe equipment and a building used by the public. The historian supports safety changes while preserving representative old mechanisms and documentation. Both reject an unsafe frozen building, but the historian adds a condition about retained evidence. If you merge the sources before naming their positions, you can confuse a condition stated by one writer with a shared demand.",
+          "For agreement questions, find support in both texts. For difference questions, name the contrast without exaggerating it into total opposition. The recording engineer focuses on making processing choices inspectable; the historian extends that concern to future research questions. Neither prohibits all processing. A difference answer can describe emphasis rather than disagreement. Read the stem carefully: what both would accept, how B responds to A, and what distinguishes their approaches are separate tasks with separate proof obligations."
+        ],
+        "examples": [
+          {
+            "text": "Mara had expected her grandmother’s desk to contain something impressive: the letters of a celebrated traveler, perhaps, or the plans for a house never built. Instead she found grocery lists. Dates ran across the tops in an increasingly uneven hand. Beside “pears,” on one list, her grandmother had written “Mara likes the green ones.”\n\nHer brother suggested recycling the papers. The desk was going to a neighbor, and neither of them wanted another box in an already crowded apartment. Mara agreed that they could not preserve everything. She set aside the advertisements, the duplicate receipts, and three envelopes that held nothing. But she slipped the pear list into her coat pocket.\n\nOn the way home she stopped at the corner shop. For years she had bought whichever fruit cost least, making purchases as efficiently as possible. That evening she stood before the pears longer than she needed to. The green ones were not on sale. She chose two anyway, then laughed at herself for expecting them to taste different. When she reached home, she placed the list beside the fruit rather than filing it away.\n\nQuestion: How does the final action connect to Mara’s earlier sorting?\n\nSupported answer: She preserves one meaningful reminder while still letting other papers go\n\nReason: The final display of one list complements, rather than reverses, her practical decision to discard other papers. The supported answer is “She preserves one meaningful reminder while still letting other papers go.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 1: The Last Drawer",
+            "good": true
+          },
+          {
+            "text": "A local museum displayed a map assembled from residents’ childhood recollections. Volunteers asked participants to mark places they remembered visiting before age twelve. The completed map included a dense cluster of swimming spots along the eastern riverbank and only two marks in the west of town.\n\nAt first the curator thought this distribution reflected where children had played. Then she examined the interview list. Most participants had grown up in the eastern neighborhoods. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The memories represented this particular group rather than the town as a whole. The map had not been designed to sample the town evenly: volunteers had recruited acquaintances and people who attended the museum’s weekend events.\n\nThe curator kept the map on display but changed its caption. Instead of “Where our town’s children played,” it now read “Places remembered by this group of residents.” She invited people from the west to add recollections to a second map, preserving the first map and its interview list as a record of the original project. The western blank areas were not evidence that children had never played there. They were, she wrote, an invitation to ask whose memories had yet to be included.\n\nQuestion: Which conclusion connects the recruitment information to the western blank areas?\n\nSupported answer: Missing marks may reflect missing participants rather than missing childhood activity\n\nReason: The participant pool is predominantly eastern, so the blank areas cannot establish that western children had nowhere to play. The supported answer is “Missing marks may reflect missing participants rather than missing childhood activity.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 5: A Map with Empty Spaces",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Combine evidence without inventing a compromise",
+        "body": [
+          "A synthesis answer must follow from the sources supplied, not from a compromise you wish the writers would adopt. One writer may value use and another documentary evidence; a supported shared claim can be that preservation allows safe changes. It cannot become documentation makes every removal harmless, because the historian still values retained mechanisms. Preserve each writer’s conditions when building the combined statement. Shared ground is the overlap of their actual claims, not the average of two imagined extremes.",
+          "Cross-reference the relevant paragraph in each text. If an option relies entirely on Passage A, it cannot establish agreement unless Passage B also supports it. If the stem asks how one passage extends another, identify the new consideration and the common starting point. Future researchers valuing currently distracting sounds extends the engineer’s concern about visible choices because it explains why alternatives must remain available. This relationship is more specific than both discuss recordings, which names a subject without showing how the arguments connect."
+        ],
+        "examples": [
+          {
+            "text": "Passage A — Theater director\nOur theater’s facade is intact, but the stage rigging is unsafe. Preserving the room exactly as it stood in 1930 would make it impossible to use. I want to retain the painted ceiling and the worn foyer steps while replacing the cables above the stage. A public building survives through repeated encounters. A locked theater is a photograph of itself.\n\nPassage B — Architectural historian\nUse can help preserve a theater, but “modernization” is sometimes a generous word for erasure. The original stage equipment reveals how productions were mounted; removing all of it would sever that record. I support new safety systems, provided representative old mechanisms remain visible and the alterations are documented. Preservation need not mean freezing a building. It means knowing what changes cost.\n\nBoth writers are responding to a proposed renovation. Neither disputes that the existing rigging is unsafe. The debate concerns how to change the theater while retaining what makes its past legible.\n\nQuestion: Which claim would both writers most likely accept?\n\nSupported answer: Preservation can allow changes that make the theater safe to use\n\nReason: The director wants cable replacement; the historian explicitly supports new safety systems. They differ about retained evidence, not the need for safe use. The supported answer is “Preservation can allow changes that make the theater safe to use.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 2: Two Ways to Keep a Theater",
+            "good": true
+          },
+          {
+            "text": "Researchers placed sticky collection cards at three distances from a stand of trees to learn where its seeds traveled. Each card remained outdoors for the same week. Cards nearest the trees caught the most seeds; cards farthest away caught fewer. A student proposed using the pattern to estimate the distance traveled by a typical seed.\n\nThe lead researcher urged caution. A card could catch only seeds that struck its surface. A seed crossing the area above a card would not be counted. Heavy rain midway through the week had also washed material from two cards, which the team marked as damaged. The remaining cards offered evidence about the collected seeds, but not a complete inventory of every seed dispersed.\n\nThe team planned a second collection period with protected cards and observations of wind direction. It would compare patterns across the two weeks instead of treating the first week as a final answer. One researcher described the cards as “windows onto a moving process.” A window could reveal something real, she said, without showing the whole landscape.\n\nQuestion: Taken together, the near/far counts and the methodological limits support which statement?\n\nSupported answer: The collected sample varies with distance, but it cannot establish every seed’s travel distance\n\nReason: The observed distance pattern concerns collected seeds; missed trajectories and damaged cards prevent a census of total dispersal. The supported answer is “The collected sample varies with distance, but it cannot establish every seed’s travel distance.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 6: Seeds on the Wind",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Read the graphic’s labels before its pattern",
+        "body": [
+          "A visual-information item requires the passage and graphic together. Start with the title, axes or column labels, units, time period, and category definitions. An occupied-seat count is not a unique-visitor count. A tool-return percentage uses scheduled returns as the denominator, not the number of volunteers. When a row shows eighty-one on-time returns out of ninety scheduled returns, the proportion is ninety percent. Eighty-one is a count; it becomes a percent only after division by the stated total.",
+          "Before comparing periods, ask whether denominators or measurement conditions changed. A raw increase can coexist with a smaller rate, and a rate increase need not isolate a cause. The passage may identify reminders, weather, or seasonality as simultaneous changes. Use the graphic to establish the numerical pattern and the prose to establish what that pattern can reasonably mean. If the chart cannot count distinct people, no clever calculation creates that missing measure. Reject answers that change the unit or treat an association as experimental proof."
+        ],
+        "examples": [
+          {
+            "text": "A town introduced a Saturday bus between the library and three neighborhoods. Before the pilot, residents at public meetings had asked for daily service. The transport office could initially fund only eight Saturdays. It counted riders and invited anonymous comments after each trip.\n\nThe first Saturday drew twelve passengers. By the eighth, twenty-nine people rode. Several comments praised the library stop; others asked for an earlier departure. One resident wrote that the trip was useful but too infrequent for a weekday job. A council member called the growing attendance encouraging. The office’s report used a more guarded phrase: the figures supported continuing the trial, not yet expanding it to every day.\n\nThe report noted two limits. The trial took place during a summer reading program, and it did not measure how many riders would pay a fare. The office proposed another eight weeks after the program ended, with an optional fare question on the comment card. The council approved the additional trial without promising a permanent route.\n\nQuestion: How do the rider counts and the report’s qualifications work together?\n\nSupported answer: They provide a positive signal while identifying questions the counts alone cannot answer\n\nReason: The numbers support further trial service; the qualifications concern seasonality and willingness to pay, which the counts do not measure. The supported answer is “They provide a positive signal while identifying questions the counts alone cannot answer.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 3: The Bus Pilot",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Keep a combined conclusion within all supplied limits",
+        "body": [
+          "Integration questions often tempt you with a true-looking sentence that ignores a qualification elsewhere. A table may show fewer unfilled requests, while the text explains that it counts only requests blocked by tools still out. You can conclude that this type of request decreased during the trial. You cannot conclude that every requested tool was available or that the library should stop purchasing tools. The combined answer must satisfy the graphic’s definitions and the passage’s scope simultaneously.",
+          "For a final check, make a two-column mental audit: what the source shows, and what it does not show. A clear image can illustrate root growth without representing all plots; two library seat observations can show occupancy at those times without measuring an afternoon’s unique visitors. In paired texts, apply the same discipline to authors’ positions. Mark the evidence supporting the shared claim and the condition that limits it. A careful synthesis usually retains those conditions, even if a broader answer sounds more decisive."
+        ],
+        "examples": [
+          {
+            "text": "Nico spent the first morning of the sound workshop recording traffic. The instructor asked him to choose a location and listen there for ten minutes before touching the recorder. He picked the bridge because he knew what he would hear: engines, tires, horns. He pressed the recording button after less than a minute.\n\nWhen the instructor played his clip, the traffic filled every second. “You found what you expected,” she said. She sent him back without suggesting a different location. This time Nico stayed under the bridge. He noticed water striking a loose piece of timber, a bicycle chain clicking above him, and pauses in which the river seemed louder than the road. He began recording only after the ten minutes had passed.\n\nThat afternoon he compared the clips. The second still contained engines; listening had not removed them. But it also held the soft intervals he had missed. He labeled the first file “Bridge” and hesitated over the second. Finally he gave both files the same name and added only the dates. The place had not changed enough to explain the difference.\n\nQuestion: What is the relationship between the instructor’s first comment and Nico’s final reflection?\n\nSupported answer: Both connect the recordings to the listener’s expectations and attention\n\nReason: “You found what you expected” and the final observation that the place had barely changed point toward the listener’s role. The supported answer is “Both connect the recordings to the listener’s expectations and attention.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+            "label": "Worked example 4: Listening Beneath the Bridge",
+            "good": true
+          }
+        ]
+      },
+      {
+        "heading": "Pace a decision instead of rereading everything",
+        "body": [
+          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
+          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
+          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+        ]
+      },
+      {
+        "heading": "Review the reason for the miss and test the repair",
+        "body": [
+          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
+          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
+          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+        ]
+      }
+    ],
+    "check": [
+      {
+        "id": "RC-6-1",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "Which claim would both writers most likely accept?",
+        "choices": [
+          "Only the smoothest version should survive",
+          "Future listeners must ask today’s exact questions",
+          "A useful listening copy should be accompanied by access to evidence about its production",
+          "All processing is inherently unacceptable"
+        ],
+        "answer": 2,
+        "explanation": "A asks for inspectable changes; B asks for retained copies and notes. Both support usable presentations with evidence preserved. The supported answer is “A useful listening copy should be accompanied by access to evidence about its production.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-6-1",
+          "title": "Quick check passage",
+          "context": "Passage A: A restored recording should be easier to hear, but listeners should be able to inspect changes.\n\nPassage B: Public listening copies are useful, but institutions should retain original copies and notes so later researchers can ask different questions."
+        }
+      },
+      {
+        "id": "RC-6-2",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "Which conclusion is supported?",
+        "choices": [
+          "The number of scheduled returns stayed the same",
+          "The on-time proportion increased, but the reminder’s separate effect is not isolated",
+          "The increase proves reminders alone caused every change",
+          "The later on-time proportion was 45 percent"
+        ],
+        "answer": 1,
+        "explanation": "The proportions are60percent and75percent; the simultaneous hours change limits causal attribution. The supported answer is “The on-time proportion increased, but the reminder’s separate effect is not isolated.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-6-2",
+          "title": "Quick check passage",
+          "context": "Before a reminder trial, 30 of 50 scheduled returns were on time. During the trial, 45 of 60 were on time. The report notes that opening hours also changed."
+        }
+      },
+      {
+        "id": "RC-6-3",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "How does B’s position relate to A’s?",
+        "choices": [
+          "It shares support for use while adding conditions about historical evidence",
+          "It denies that anyone should enter the theater",
+          "It proves that every old mechanism is safe",
+          "It treats documentation as a replacement for all surviving features"
+        ],
+        "answer": 0,
+        "explanation": "B agrees about continued use and adds retained mechanisms plus documentation; that is a qualification, not total opposition. The supported answer is “It shares support for use while adding conditions about historical evidence.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+        "passage": {
+          "id": "reading-check-6-3",
+          "title": "Quick check passage",
+          "context": "Passage A argues that public use helps a theater survive. Passage B supports continued use but asks that representative old stage mechanisms remain visible and alterations be documented."
+        }
+      }
+    ]
+  }
+]
