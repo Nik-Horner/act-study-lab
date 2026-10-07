@@ -160,15 +160,6 @@ export function createCloudProgressStore(
         return;
       }
       state = restorePending(data.userId, state);
-      try {
-        const preference = storage().getItem(
-          `act-daily-minutes:${data.userId}`,
-        );
-        if (preference && [60, 75, 90].includes(Number(preference)))
-          state.profile.minutesPerDay = Number(preference);
-      } catch {
-        /* A blocked local preference must not prevent account progress from loading. */
-      }
       shouldFlush = Boolean(pending.size);
       publish({
         state,

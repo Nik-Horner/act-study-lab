@@ -176,3 +176,11 @@ test("malformed recovery and blocked storage do not prevent loading cloud histor
   assert.equal(blocked.getSnapshot().userId, first);
   assert.equal(blocked.getSnapshot().storageError, null);
 });
+
+test("account budget is authoritative over the retired browser preference", async () => {
+  const f = fixture();
+  f.values.set(`act-daily-minutes:${first}`, "90");
+  const store = f.make();
+  await store.refresh();
+  assert.equal(store.getSnapshot().state.profile.minutesPerDay, 75);
+});

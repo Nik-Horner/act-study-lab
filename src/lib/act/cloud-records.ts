@@ -1,3 +1,4 @@
+import { readStudySettings } from "@/lib/account-settings";
 import { getExam, getExamQuestions, getQuestion } from "./content";
 import {
   createDefaultState,
@@ -117,13 +118,17 @@ export function hydrateCloudState(
   profile: Tables<"profiles"> | null,
   checks: Tables<"plan_checks">[],
   timeZone = "America/Chicago",
+  metadata: Record<string, unknown> = {},
 ): StudyState {
   let state = createDefaultState();
+  const settings = readStudySettings(metadata, profile?.current_score ?? null);
   state.profile = {
     ...state.profile,
     testDate: profile?.test_date ?? state.profile.testDate,
-    mathBaseline: null,
-    scienceBaseline: null,
+    mathBaseline: settings.scores.math,
+    scienceBaseline: settings.scores.science,
+    readingBaseline: settings.scores.reading,
+    minutesPerDay: settings.minutesPerDay,
     targetScore: profile?.target_score ?? 36,
   };
   // Preserve the twelve-day preparation sequence, including its diagnostic,

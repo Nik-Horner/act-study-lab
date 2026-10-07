@@ -5,6 +5,7 @@ export interface StudyProfile {
   targetScore?: number;
   mathBaseline: number | null;
   scienceBaseline: number | null;
+  readingBaseline?: number | null;
   minutesPerDay: number;
 }
 
@@ -17,7 +18,7 @@ export function subjectBaseline(
     ? profile.mathBaseline
     : subject === "science"
       ? profile.scienceBaseline
-      : null;
+      : (profile.readingBaseline ?? null);
 }
 
 export interface AnswerRecord {
@@ -196,6 +197,8 @@ export function validateState(value: unknown): StudyState | null {
       !baseline(value.profile.targetScore)) ||
     !baseline(value.profile.mathBaseline) ||
     !baseline(value.profile.scienceBaseline) ||
+    (value.profile.readingBaseline !== undefined &&
+      !baseline(value.profile.readingBaseline)) ||
     !finiteRange(value.profile.minutesPerDay, 15, 240) ||
     !Number.isInteger(value.profile.minutesPerDay) ||
     !Array.isArray(value.answers) ||
@@ -260,6 +263,9 @@ export function validateState(value: unknown): StudyState | null {
         : { targetScore: value.profile.targetScore as number }),
       mathBaseline: value.profile.mathBaseline,
       scienceBaseline: value.profile.scienceBaseline,
+      ...(value.profile.readingBaseline !== undefined
+        ? { readingBaseline: value.profile.readingBaseline as number | null }
+        : {}),
       minutesPerDay: value.profile.minutesPerDay,
     },
     answers: validAnswers,

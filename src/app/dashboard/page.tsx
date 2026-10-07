@@ -1,3 +1,4 @@
+import { readStudySettings } from "@/lib/account-settings";
 import Link from "next/link";
 import { SubjectNav } from "@/components/SubjectNav";
 import { createClient } from "@/lib/supabase/server";
@@ -106,6 +107,10 @@ export default async function DashboardPage() {
           current_score: profile?.current_score ?? null,
           target_score: profile?.target_score ?? null,
           test_date: profile?.test_date ?? null,
+          study_settings: readStudySettings(
+            user.user_metadata,
+            profile?.current_score ?? null,
+          ),
         }}
       />
     );

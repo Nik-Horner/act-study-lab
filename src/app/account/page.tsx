@@ -1,5 +1,5 @@
+import { readStudySettings } from "@/lib/account-settings";
 import { createClient } from "@/lib/supabase/server";
-import { StudyTimePreference } from "@/components/StudyTimePreference";
 import { AccountForm } from "@/components/AccountForm";
 
 export default async function AccountPage() {
@@ -28,9 +28,12 @@ export default async function AccountPage() {
           current_score: profile?.current_score ?? null,
           target_score: profile?.target_score ?? null,
           test_date: profile?.test_date ?? null,
+          study_settings: readStudySettings(
+            user.user_metadata,
+            profile?.current_score ?? null,
+          ),
         }}
       />
-      <StudyTimePreference userId={user.id} />
     </div>
   );
 }

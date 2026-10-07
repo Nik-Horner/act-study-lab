@@ -64,7 +64,13 @@ export async function GET(request: Request) {
   return Response.json(
     {
       userId: user.id,
-      state: hydrateCloudState(rows, profile.data, checks.data ?? [], timeZone),
+      state: hydrateCloudState(
+        rows,
+        profile.data,
+        checks.data ?? [],
+        timeZone,
+        user.user_metadata,
+      ),
     },
     { headers: { "Cache-Control": "private, no-store" } },
   );
