@@ -133,8 +133,9 @@ Cards have softly rounded corners. Buttons and badges use pill shapes; inputs us
 - Cards provide surface, border, rounding, and shadow; padding belongs to the caller.
 - Inputs use page background, thin borders, text-sm, and brand-colored focus borders. The account form explicitly suppresses the browser outline; document that exception rather than assuming it shares the global focus ring.
 - Badges pair semantic foreground and soft background colors; neutral is the default.
-- Subject navigation marks the current subject with a soft surface, brand text, and subtle shadow. Main navigation collapses to its existing mobile menu.
+- Subject navigation marks the current subject with a soft surface, brand text, and subtle shadow. Main navigation exposes Daily study, Extra practice, and Account, collapsing to its existing mobile menu. Subject dashboards remain under Extra practice.
 - Answer choices use soft card backgrounds, brand borders on hover, and selected/correct/wrong attributes for the respective brand/good/bad fills and borders.
+- Daily study uses one primary Start daily lesson or Continue daily lesson action and four compact category rows. The runner shows only the active subject and category alongside subject progress, answered count, and the shared countdown; lesson and practice content reuse existing cards and answer controls. Budget, saved answers, and lesson completion belong to the account. The clock continues across reloads and devices, and unfinished work resumes within the next daily budget. Optional full lessons and extra practice remain secondary links.
 - Global focus-visible uses a 3px brand outline with 3px offset except where component styles override it. Choices and back links use 160ms ease-out transitions. Reduced-motion preference disables transitions and animations.
 
 ## Do's and Don'ts

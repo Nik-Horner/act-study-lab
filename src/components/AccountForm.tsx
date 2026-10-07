@@ -197,7 +197,7 @@ export function AccountForm({
               className="mb-1 block text-sm font-medium"
               htmlFor="studyMinutes"
             >
-              Daily focus-session budget
+              Daily study time
             </label>
             <select
               id="studyMinutes"
@@ -212,9 +212,8 @@ export function AccountForm({
               ))}
             </select>
             <p className="mt-1 text-sm text-ink-soft">
-              Math + Science share a focus plan; Reading has its own. This caps
-              each focus session, not four daily assignments. English keeps its
-              topic schedule.
+              One guided session covers English, Reading, Math, and Science
+              within this total time. Unfinished work carries forward.
             </p>
           </div>
           <div>

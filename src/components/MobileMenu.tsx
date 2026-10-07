@@ -36,14 +36,14 @@ export function MobileMenu() {
             onClick={() => setOpen(false)}
             className="block rounded-lg px-3 py-2 text-sm text-ink-soft hover:bg-bg-raised hover:text-ink"
           >
-            Dashboard
+            Daily study
           </Link>
           <Link
-            href="/exam"
+            href="/practice"
             onClick={() => setOpen(false)}
             className="block rounded-lg px-3 py-2 text-sm text-ink-soft hover:bg-bg-raised hover:text-ink"
           >
-            Digital practice
+            Extra practice
           </Link>
           <Link
             href="/account"

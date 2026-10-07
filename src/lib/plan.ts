@@ -7,6 +7,7 @@ export interface PlanItem {
   kind: "learn" | "exam" | "review" | "weak" | "rest";
   slug?: string;
   title?: string;
+  savedKey?: string;
 }
 
 export interface PlanDay {
@@ -33,25 +34,37 @@ function fmtDay(date: Date): string {
 }
 
 export function itemKey(item: PlanItem, dayNum: number, idx: number): string {
-  return `d${dayNum}-${idx}-${item.kind}`;
+  return item.savedKey ?? `d${dayNum}-${idx}-${item.kind}`;
 }
 
-/* Build a fixed schedule anchored so the last day lands on test_date.
+/* Build a fixed schedule anchored so the last study day lands the day before test_date.
    Topics from the "final" part (bonus/test-day-patterns content) are shown
    in the topic grid but not force-scheduled into a day. */
-export function buildSchedule(topics: Topic[], testDateStr: string): Schedule {
+export function buildSchedule(
+  topics: Topic[],
+  testDateStr: string,
+  now = new Date(),
+  timeZone = "America/Chicago",
+): Schedule {
   const scheduledTopics = topics.filter((t) => t.part !== "final");
 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const examDate = new Date(testDateStr + "T00:00:00");
+  const date = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now);
+  const today = new Date(date + "T12:00:00");
+  const examDate = new Date(testDateStr + "T12:00:00");
 
   const reserve = 2; // exam+review day, then weak-topics+rest day
-  const topicDayCount = Math.max(1, Math.ceil(scheduledTopics.length / 2.5)); // ~2-3 topics/day
-  const total = topicDayCount + reserve;
+  const legacyTotal =
+    Math.max(1, Math.ceil(scheduledTopics.length / 2.5)) + reserve;
+  const total = Math.max(12, legacyTotal);
+  const topicDayCount = total - reserve;
 
   const planStart = new Date(examDate);
-  planStart.setDate(planStart.getDate() - (total - 1)); // last day (index total-1) = test_date
+  planStart.setDate(planStart.getDate() - total); // Keep the final light day before the ACT.
 
   const rawIndex = Math.round(
     (today.getTime() - planStart.getTime()) / 86400000,
@@ -87,10 +100,16 @@ export function buildSchedule(topics: Topic[], testDateStr: string): Schedule {
       ti++;
     }
   }
-  items[total - 2].push({ kind: "exam" });
-  items[total - 2].push({ kind: "review" });
-  items[total - 1].push({ kind: "weak" });
-  items[total - 1].push({ kind: "rest" });
+  items[total - 2].push({
+    kind: "exam",
+    savedKey: `d${legacyTotal - 1}-0-exam`,
+  });
+  items[total - 2].push({
+    kind: "review",
+    savedKey: `d${legacyTotal - 1}-1-review`,
+  });
+  items[total - 1].push({ kind: "weak", savedKey: `d${legacyTotal}-0-weak` });
+  items[total - 1].push({ kind: "rest", savedKey: `d${legacyTotal}-1-rest` });
 
   const days: PlanDay[] = dates.map((date, i) => ({
     date,

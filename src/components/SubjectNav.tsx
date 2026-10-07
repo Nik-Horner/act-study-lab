@@ -12,7 +12,7 @@ export function SubjectNav({
       {(["english", "math", "reading", "science"] as const).map((value) => (
         <Link
           key={value}
-          href={value === "english" ? "/dashboard" : `/study/${value}`}
+          href={`/study/${value}`}
           aria-current={subject === value ? "page" : undefined}
           className={`flex min-h-11 flex-1 items-center justify-center rounded-full px-4 text-sm font-semibold capitalize sm:flex-none ${subject === value ? "bg-bg-soft text-brand shadow-sm" : "text-ink-soft hover:text-ink"}`}
         >
