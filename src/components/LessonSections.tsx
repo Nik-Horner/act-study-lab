@@ -8,9 +8,11 @@ import { Button } from "./ui/Button";
 export function LessonSections({
   sections,
   idPrefix = "lesson-section",
+  hideHeading = false,
 }: {
   sections: Lesson["sections"];
   idPrefix?: string;
+  hideHeading?: boolean;
 }) {
   return (
     <div className="space-y-8">
@@ -18,6 +20,7 @@ export function LessonSections({
         <LessonSection
           key={`${idPrefix}-${section.heading}`}
           section={section}
+          hideHeading={hideHeading}
           id={`${idPrefix}-${i}`}
         />
       ))}
@@ -27,15 +30,19 @@ export function LessonSections({
 function LessonSection({
   section,
   id,
+  hideHeading,
 }: {
   section: Lesson["sections"][number];
   id: string;
+  hideHeading: boolean;
 }) {
   const [recalling, setRecalling] = useState(false);
   const [note, setNote] = useState("");
   return (
     <section id={id} className="scroll-mt-8 space-y-3">
-      <h2 className="text-lg font-semibold text-ink">{section.heading}</h2>
+      {!hideHeading && (
+        <h2 className="text-lg font-semibold text-ink">{section.heading}</h2>
+      )}
       {recalling ? (
         <div className="rounded-xl border border-brand-soft bg-bg-soft p-5">
           <label htmlFor={`${id}-recall`} className="block font-semibold">

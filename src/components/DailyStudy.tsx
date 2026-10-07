@@ -5,6 +5,10 @@ import { useRouter } from "next/navigation";
 import { Card } from "./ui/Card";
 import { Button } from "./ui/Button";
 import { AnswerFeedback } from "./AnswerFeedback";
+import { DailyEnglishLesson } from "./DailyEnglishLesson";
+import { EnglishLessonSections } from "./EnglishLessonSections";
+import { DrillClient as EnglishDrill } from "@/app/drill/[slug]/DrillClient";
+import type { Question as EnglishQuestion } from "@/lib/content";
 import { DailyLesson } from "./DailyLesson";
 import { DailyDrill } from "./DailyDrill";
 import { LessonSections } from "./LessonSections";
@@ -66,6 +70,19 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     setPending(true);
     setError(null);
     try {
+      // A session crossing local midnight gets today's durable clock before
+      // saving its next step. It does not reset an existing daily deadline.
+      if (body.action !== "start" && data.deadline === null) {
+        const start = await fetch("/api/daily", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ planId: data.plan.id, action: "start" }),
+        });
+        const clock = await start.json();
+        if (!start.ok)
+          throw new Error(clock.error ?? "Couldn’t start today’s study timer.");
+        setData(clock);
+      }
       const r = await fetch("/api/daily", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -111,8 +128,11 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       </div>
     );
   const { plan, answers, lessons } = data;
-  const all = plan.blocks.flatMap((b) => b.questions);
-  const count = Object.keys(answers).length;
+  const all = plan.blocks.flatMap((b) => [
+    ...b.questions,
+    ...(b.historicalQuestions ?? []),
+  ]);
+  const count = all.filter((q) => answers[q.id] !== undefined).length;
   const remaining =
     data.deadline === null
       ? data.minutes * 60
@@ -330,8 +350,15 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     setRevisitLesson(false);
     window.scrollTo({ top: 0, behavior: "auto" });
   }
+  const LessonComponent =
+    currentBlock?.subject === "english" ? DailyEnglishLesson : DailyLesson;
   const showLesson =
-    currentUnit && (!lessons.includes(currentUnit.id) || revisitLesson);
+    currentUnit &&
+    (!lessons.includes(currentUnit.id) ||
+      revisitLesson ||
+      currentUnit.requiredConceptIndices?.some(
+        (i) => !lessons.includes(`${currentUnit.id}:concept:${i}`),
+      ));
   return (
     <div className="mx-auto max-w-4xl space-y-5">
       <div className="flex flex-wrap items-center justify-between gap-3">
@@ -374,10 +401,14 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                   Rules and worked examples
                 </summary>
                 <div className="mt-5">
-                  <LessonSections
-                    sections={unit.lesson.sections}
-                    idPrefix={`review-${unit.id}`}
-                  />
+                  {step.block.subject === "english" ? (
+                    <EnglishLessonSections sections={unit.lesson.sections} />
+                  ) : (
+                    <LessonSections
+                      sections={unit.lesson.sections}
+                      idPrefix={`review-${unit.id}`}
+                    />
+                  )}
                 </div>
               </details>
               <div className="mt-6 divide-y divide-border">
@@ -425,7 +456,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
           </Button>
         </div>
       ) : showLesson && currentUnit ? (
-        <DailyLesson
+        <LessonComponent
           key={`${currentUnit.id}:${revisitLesson}`}
           unit={currentUnit}
           completed={lessons}
@@ -447,6 +478,38 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                 unitId: currentUnit.id,
               }));
             return true;
+          }}
+        />
+      ) : current && currentBlock?.subject === "english" ? (
+        <EnglishDrill
+          key={current.id}
+          mode="topic"
+          slug={current.topic}
+          title={currentUnit?.title ?? currentBlock.title}
+          questions={[current as EnglishQuestion]}
+          initialProgress={undefined}
+          daily={{
+            savedChoice: review ? answers[current.id] : undefined,
+            savedSeconds:
+              data.answerTimes[current.id] === undefined
+                ? undefined
+                : Math.round(data.answerTimes[current.id] / 1000),
+            count: blockAnswers.length,
+            correct: blockAnswers.filter(
+              (item) => answers[item.id] === item.answer,
+            ).length,
+            streak,
+            onNext: nextQuestion,
+            onAnswer: async (choice, seconds) => {
+              const result = await action({
+                action: "answer",
+                questionId: current.id,
+                chosen: choice,
+                elapsedMs: seconds * 1000,
+              });
+              if (result) setReview(current);
+              return !!result;
+            },
           }}
         />
       ) : current && currentBlock ? (

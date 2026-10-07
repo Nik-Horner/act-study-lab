@@ -37,6 +37,7 @@ export function DailyLesson({
       <LessonSections
         key={index}
         sections={[unit.lesson.sections[index]]}
+        hideHeading={unit.lesson.sections[index].heading === unit.title}
         idPrefix={`daily-${unit.id}-${index}`}
       />
       <div className="flex items-center justify-between gap-4 border-t border-border pt-5">

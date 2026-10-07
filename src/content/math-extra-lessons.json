@@ -218,8 +218,10 @@
       {
         "heading": "4. Circle angles, chords, tangents, and secants",
         "body": [
-          "A central angle equals its intercepted arc measure. An inscribed angle measures half its intercepted arc, so first identify which arc is intercepted. The radius to a tangent point is perpendicular to the tangent. A perpendicular from the center to a chord bisects the chord.",
-          "Power-of-a-point relationships use products, with different segments depending on the location. Intersecting interior chords give segment × segment on each chord. Two exterior secants give external × whole on each secant. A tangent and a secant give tangent² = external × whole. Label the whole secant by adding its outside and inside portions if necessary."
+          "A central angle equals its intercepted arc measure; an inscribed angle is half that measure. Identify the intercepted arc. A radius is perpendicular to its tangent. A perpendicular from the center bisects a chord.",
+          "Power-of-a-point relationships use products, with different segments depending on the location. Intersecting interior chords give segment × segment on each chord. Two exterior secants give external × whole on each secant. A tangent and a secant give tangent² = external × whole. Label the whole secant by adding its outside and inside portions if necessary.",
+          "For a central angle θ in degrees, arc length = (θ/360) × 2πr. Radius 9 and angle 80° give (80/360) × 18π = 4π units. Arc measure is angular; length is linear.",
+          "Tangents and perpendicular half-chords form right triangles: leg² = hypotenuse² − other leg². Radius 5 and center-to-external-point distance 13 give tangent √(13²−5²) = 12. Radius 13 and center-to-chord distance 5 give half-chord 12, so chord length is 24."
         ],
         "examples": [
           {
@@ -414,7 +416,8 @@
         "heading": "6. Nonright triangles and the ambiguous sine case",
         "body": [
           "The law of cosines c² = a² + b² − 2ab cos C uses the angle C included between known sides a and b. For an obtuse included angle, cosine is negative, so subtracting the cosine term increases c². The law of sines is a/sin A = b/sin B = c/sin C; pair each side with its opposite angle.",
-          "Two sides with their included angle suggest cosine. A known opposite side-angle pair plus another angle suggests sine. With side-side-angle data, sine can give an acute and an obtuse angle sharing the same sine. Test both candidates against the 180° triangle sum and positive third angle. Some data allow zero, one, or two triangles."
+          "Two sides with their included angle suggest cosine. A known opposite side-angle pair plus another angle suggests sine. With side-side-angle data, sine can give an acute and an obtuse angle sharing the same sine. Test both candidates against the 180° triangle sum and positive third angle. Some data allow zero, one, or two triangles.",
+          "When two sides a and b and their included angle C are known, triangle area = ab sin C/2. Drop a perpendicular to side a: its height is b sin C, so the usual base × height/2 becomes ab sin C/2. The angle must be the one between the two known sides. With sides 8 and 10 enclosing 30°, area = (8×10×sin 30°)/2 = 20 square units."
         ],
         "examples": [
           {
