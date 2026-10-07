@@ -5,7 +5,7 @@ type Variant = "primary" | "ghost" | "danger";
 type Size = "sm" | "md";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors disabled:opacity-50 disabled:pointer-events-none";
+  "inline-flex min-h-11 items-center justify-center gap-2 rounded-full font-medium transition-colors disabled:opacity-50 disabled:pointer-events-none sm:min-h-0";
 
 const variants: Record<Variant, string> = {
   primary: "bg-brand text-white hover:bg-brand-dark",
@@ -33,7 +33,10 @@ export function Button({
   ...rest
 }: CommonProps & ButtonHTMLAttributes<HTMLButtonElement>) {
   return (
-    <button className={`${base} ${variants[variant]} ${sizes[size]} ${className}`} {...rest}>
+    <button
+      className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
+      {...rest}
+    >
       {children}
     </button>
   );
@@ -47,7 +50,10 @@ export function ButtonLink({
   children,
 }: CommonProps & { href: string }) {
   return (
-    <Link href={href} className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}>
+    <Link
+      href={href}
+      className={`${base} ${variants[variant]} ${sizes[size]} ${className}`}
+    >
       {children}
     </Link>
   );

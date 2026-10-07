@@ -4,6 +4,7 @@ import { createClient } from "@/lib/supabase/server";
 interface PlanCheckBody {
   itemKey?: string;
   checked?: boolean;
+  ownerId?: string;
 }
 
 export async function POST(request: Request) {
@@ -16,15 +17,37 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Not authenticated" }, { status: 401 });
   }
 
-  const body = (await request.json()) as PlanCheckBody;
+  let body: PlanCheckBody;
+  try {
+    body = await request.json();
+  } catch {
+    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
+  }
+  if (!body || typeof body !== "object" || Array.isArray(body))
+    return NextResponse.json({ error: "Invalid body" }, { status: 400 });
+  if (body?.ownerId !== undefined && body.ownerId !== user.id)
+    return NextResponse.json(
+      { error: "The signed-in account changed. Reload before continuing." },
+      { status: 409 },
+    );
   const { itemKey, checked } = body;
 
-  if (typeof itemKey !== "string" || !itemKey || typeof checked !== "boolean") {
+  if (
+    typeof itemKey !== "string" ||
+    !itemKey ||
+    itemKey.length > 200 ||
+    typeof checked !== "boolean"
+  ) {
     return NextResponse.json({ error: "Invalid body" }, { status: 400 });
   }
 
   if (checked) {
-    const { error } = await supabase.from("plan_checks").upsert({ user_id: user.id, item_key: itemKey });
+    const { error } = await supabase
+      .from("plan_checks")
+      .upsert(
+        { user_id: user.id, item_key: itemKey },
+        { onConflict: "user_id,item_key", ignoreDuplicates: true },
+      );
     if (error) {
       return NextResponse.json({ error: error.message }, { status: 500 });
     }

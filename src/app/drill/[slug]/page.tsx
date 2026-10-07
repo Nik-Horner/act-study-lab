@@ -1,14 +1,35 @@
+import { getTopic as getActTopic } from "@/lib/act/content";
+import { DrillView } from "@/components/act/StudyClient";
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
-import { getTopic, getTopics, getQuestions, type Question } from "@/lib/content";
+import {
+  getTopic,
+  getTopics,
+  getQuestions,
+  type Question,
+} from "@/lib/content";
 import { createClient } from "@/lib/supabase/server";
 import { DrillClient, type PoolItem } from "./DrillClient";
 
 export default async function DrillPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string }>;
+  searchParams: Promise<{ subject?: string }>;
 }) {
   const { slug } = await params;
+  const { subject } = await searchParams;
+  if (
+    getActTopic(slug) ||
+    (["math", "science", "reading"].includes(subject ?? "") &&
+      ["mixed", "hard", "weak", "misses"].includes(slug))
+  )
+    return (
+      <Suspense>
+        <DrillView slug={slug} />
+      </Suspense>
+    );
 
   const supabase = await createClient();
   const {
@@ -51,7 +72,7 @@ export default async function DrillPage({
         .select("topic_slug, attempts, correct")
         .eq("user_id", user.id);
       weakSlugs = (rows ?? [])
-        .filter((r) => r.attempts > 0)
+        .filter((r) => titleBySlug.has(r.topic_slug) && r.attempts > 0)
         .map((r) => ({ slug: r.topic_slug, accuracy: r.correct / r.attempts }))
         .sort((a, b) => a.accuracy - b.accuracy)
         .slice(0, 3)
@@ -62,7 +83,11 @@ export default async function DrillPage({
     }
 
     const pool: PoolItem[] = weakSlugs.flatMap((s) =>
-      getQuestions(s).map((q) => ({ topicSlug: s, topicTitle: titleBySlug.get(s) ?? s, question: q })),
+      getQuestions(s).map((q) => ({
+        topicSlug: s,
+        topicTitle: titleBySlug.get(s) ?? s,
+        question: q,
+      })),
     );
     return <DrillClient mode="weak" pool={pool} />;
   }
@@ -80,6 +105,7 @@ export default async function DrillPage({
       const questionCache = new Map<string, Question[]>();
 
       for (const miss of misses ?? []) {
+        if (!titleBySlug.has(miss.topic_slug)) continue;
         let bank = questionCache.get(miss.topic_slug);
         if (!bank) {
           bank = getQuestions(miss.topic_slug);

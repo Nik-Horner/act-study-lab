@@ -1,4 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
+import { StudyTimePreference } from "@/components/StudyTimePreference";
 import { AccountForm } from "@/components/AccountForm";
 
 export default async function AccountPage() {
@@ -11,7 +12,11 @@ export default async function AccountPage() {
     return null; // the proxy already gates this route to logged-in users
   }
 
-  const { data: profile } = await supabase.from("profiles").select("*").eq("id", user.id).single();
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("*")
+    .eq("id", user.id)
+    .single();
 
   return (
     <div className="space-y-4">
@@ -25,6 +30,7 @@ export default async function AccountPage() {
           test_date: profile?.test_date ?? null,
         }}
       />
+      <StudyTimePreference userId={user.id} />
     </div>
   );
 }

@@ -21,8 +21,12 @@ export function AccountForm({
 }) {
   const router = useRouter();
   const [displayName, setDisplayName] = useState(initial.display_name ?? "");
-  const [currentScore, setCurrentScore] = useState(initial.current_score?.toString() ?? "");
-  const [targetScore, setTargetScore] = useState(initial.target_score?.toString() ?? "");
+  const [currentScore, setCurrentScore] = useState(
+    initial.current_score?.toString() ?? "",
+  );
+  const [targetScore, setTargetScore] = useState(
+    initial.target_score?.toString() ?? "",
+  );
   const [testDate, setTestDate] = useState(initial.test_date ?? "");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
@@ -83,13 +87,16 @@ export function AccountForm({
         </h1>
         <p className="mt-1 text-sm text-ink-soft">
           {variant === "onboarding"
-            ? "Your current and target scores drive your day-by-day study plan."
-            : "Update your scores or test date any time — your plan adjusts automatically."}
+            ? "Set your shared goal and test date. Your existing English score helps its study plan."
+            : "Your goal and test date apply across subjects. Your English progress and score stay intact."}
         </p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div>
-            <label className="mb-1 block text-sm font-medium" htmlFor="displayName">
+            <label
+              className="mb-1 block text-sm font-medium"
+              htmlFor="displayName"
+            >
               Name
             </label>
             <input
@@ -103,8 +110,11 @@ export function AccountForm({
           </div>
           <div className="grid grid-cols-2 gap-4">
             <div>
-              <label className="mb-1 block text-sm font-medium" htmlFor="currentScore">
-                Current score
+              <label
+                className="mb-1 block text-sm font-medium"
+                htmlFor="currentScore"
+              >
+                English score
               </label>
               <input
                 id="currentScore"
@@ -118,7 +128,10 @@ export function AccountForm({
               />
             </div>
             <div>
-              <label className="mb-1 block text-sm font-medium" htmlFor="targetScore">
+              <label
+                className="mb-1 block text-sm font-medium"
+                htmlFor="targetScore"
+              >
                 Target score
               </label>
               <input
@@ -134,7 +147,10 @@ export function AccountForm({
             </div>
           </div>
           <div>
-            <label className="mb-1 block text-sm font-medium" htmlFor="testDate">
+            <label
+              className="mb-1 block text-sm font-medium"
+              htmlFor="testDate"
+            >
               Test date
             </label>
             <input
@@ -149,7 +165,11 @@ export function AccountForm({
           {error && <p className="text-sm text-bad">{error}</p>}
           {saved && !error && <p className="text-sm text-good">Saved.</p>}
           <Button type="submit" disabled={loading} className="w-full">
-            {loading ? "Saving…" : variant === "onboarding" ? "Start my plan" : "Save changes"}
+            {loading
+              ? "Saving…"
+              : variant === "onboarding"
+                ? "Start my plan"
+                : "Save changes"}
           </Button>
         </form>
       </Card>

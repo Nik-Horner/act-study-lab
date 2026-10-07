@@ -20,7 +20,10 @@ function LoginForm() {
     setError(null);
     setLoading(true);
     const supabase = createClient();
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
     setLoading(false);
 
     if (error) {
@@ -31,7 +34,12 @@ function LoginForm() {
       );
       return;
     }
-    router.push(searchParams.get("next") || "/dashboard");
+    const next = searchParams.get("next");
+    router.push(
+      next?.startsWith("/") && !next.startsWith("//") && !next.includes("\\")
+        ? next
+        : "/dashboard",
+    );
     router.refresh();
   }
 
@@ -55,7 +63,10 @@ function LoginForm() {
             />
           </div>
           <div>
-            <label className="mb-1 block text-sm font-medium" htmlFor="password">
+            <label
+              className="mb-1 block text-sm font-medium"
+              htmlFor="password"
+            >
               Password
             </label>
             <input
@@ -74,7 +85,10 @@ function LoginForm() {
         </form>
         <p className="mt-5 text-center text-sm text-ink-soft">
           Don&apos;t have an account?{" "}
-          <Link href="/signup" className="font-medium text-brand hover:underline">
+          <Link
+            href="/signup"
+            className="font-medium text-brand hover:underline"
+          >
             Sign up
           </Link>
         </p>
