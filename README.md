@@ -2,6 +2,12 @@
 
 English, Math, Reading, and Science on the existing English Lab website, with the same Supabase sign-in, accounts, database, and English history.
 
+## Daily study
+
+The dashboard has one primary action: Start daily lesson. English → Reading → Math → Science each teaches a category and gives practice with explanations. All four share the account's 60/75/90-minute daily budget, with more time allocated to lower baseline scores. Answers, completed lessons, and an absolute daily deadline save to the existing account database. Reloading or switching devices does not restart the timer. Unfinished work resumes on the next day without doubling the workload; categories advance after completion. Extra practice preserves the full subject dashboards, libraries, and timed forms.
+
+English's detailed plan uses the Chicago calendar, starts preparation at least 12 days before the test, and ends before test day while preserving existing manual completion keys.
+
 ## Run locally
 
 Create an ignored `.env.local` with the existing project's `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Install with `npm ci`, then run `npm run dev`. `npm run check` runs lint, content audits, unit tests, and a production build.

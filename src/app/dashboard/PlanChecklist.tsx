@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 export interface ChecklistItem {
@@ -14,13 +15,16 @@ export interface ChecklistItem {
 }
 
 export function PlanChecklist({ items }: { items: ChecklistItem[] }) {
-  const [checkedMap, setCheckedMap] = useState<Record<string, boolean>>(() =>
-    Object.fromEntries(items.map((it) => [it.key, it.checked])),
+  const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
+  const [checkedMap, setCheckedMap] = useState<Record<string, boolean>>(
+    () => ({}),
   );
   const [pending, setPending] = useState<Record<string, boolean>>({});
 
   async function toggle(item: ChecklistItem) {
-    const next = !checkedMap[item.key];
+    setError(null);
+    const next = !(checkedMap[item.key] ?? item.checked);
     setCheckedMap((m) => ({ ...m, [item.key]: next }));
     setPending((p) => ({ ...p, [item.key]: true }));
     try {
@@ -30,23 +34,34 @@ export function PlanChecklist({ items }: { items: ChecklistItem[] }) {
         body: JSON.stringify({ itemKey: item.key, checked: next }),
       });
       if (!res.ok) throw new Error("request failed");
+      router.refresh();
     } catch {
+      setError("Couldn’t save this task. Please retry.");
       setCheckedMap((m) => ({ ...m, [item.key]: !next })); // revert on failure
     } finally {
       setPending((p) => ({ ...p, [item.key]: false }));
     }
   }
 
-  const doneCount = items.filter((it) => (it.auto ? it.checked : checkedMap[it.key])).length;
+  const doneCount = items.filter((it) =>
+    it.auto ? it.checked : (checkedMap[it.key] ?? it.checked),
+  ).length;
 
   return (
     <div className="space-y-3">
       <p className="text-sm text-ink-soft">
         {doneCount}/{items.length} done
       </p>
+      {error && (
+        <p role="alert" className="text-sm text-bad">
+          {error}
+        </p>
+      )}
       <ul className="space-y-2">
         {items.map((item) => {
-          const isChecked = item.auto ? item.checked : checkedMap[item.key];
+          const isChecked = item.auto
+            ? item.checked
+            : (checkedMap[item.key] ?? item.checked);
           return (
             <li
               key={item.key}
@@ -55,7 +70,9 @@ export function PlanChecklist({ items }: { items: ChecklistItem[] }) {
               {item.auto ? (
                 <span
                   className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full text-xs ${
-                    isChecked ? "bg-good text-white" : "bg-bg-raised text-ink-faint"
+                    isChecked
+                      ? "bg-good text-white"
+                      : "bg-bg-raised text-ink-faint"
                   }`}
                 >
                   {isChecked ? "✓" : ""}
@@ -66,12 +83,16 @@ export function PlanChecklist({ items }: { items: ChecklistItem[] }) {
                   checked={isChecked}
                   disabled={pending[item.key]}
                   onChange={() => toggle(item)}
+                  aria-label={`Mark complete: ${item.title}`}
                   className="h-5 w-5 shrink-0 rounded border-border"
                 />
               )}
               <div className="flex-1">
                 {item.href ? (
-                  <Link href={item.href} className="text-sm font-medium hover:underline">
+                  <Link
+                    href={item.href}
+                    className="text-sm font-medium hover:underline"
+                  >
                     {item.title}
                   </Link>
                 ) : (

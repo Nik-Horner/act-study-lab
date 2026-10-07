@@ -2,11 +2,19 @@
 
 /* Turn "text [[underlined]] more" into HTML with the underlined span. */
 export function renderStem(stem: string): string {
-  return escapeHTML(stem).replace(/\[\[(.+?)\]\]/g, '<span class="ul">$1</span>');
+  return escapeHTML(stem).replace(
+    /\[\[(.+?)\]\]/g,
+    '<span class="ul">$1</span>',
+  );
 }
 
 export function escapeHTML(s: string): string {
-  const map: Record<string, string> = { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" };
+  const map: Record<string, string> = {
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+  };
   return String(s).replace(/[&<>"]/g, (c) => map[c]);
 }
 
@@ -27,9 +35,21 @@ export function fmtTime(sec: number): string {
   return `${m}:${String(s).padStart(2, "0")}`;
 }
 
-export function daysUntil(dateStr: string): number {
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  const target = new Date(dateStr + "T00:00:00");
-  return Math.max(0, Math.round((target.getTime() - today.getTime()) / 86400000));
+export function daysUntil(
+  dateStr: string,
+  now = new Date(),
+  timeZone = "America/Chicago",
+): number {
+  const date = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(now);
+  const today = new Date(date + "T12:00:00");
+  const target = new Date(dateStr + "T12:00:00");
+  return Math.max(
+    0,
+    Math.round((target.getTime() - today.getTime()) / 86400000),
+  );
 }

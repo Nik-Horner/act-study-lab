@@ -26,10 +26,10 @@ export async function TopNav() {
           <nav className="flex items-center gap-2 text-sm sm:gap-5">
             <div className="flex items-center gap-5 max-sm:hidden">
               <Link href="/dashboard" className="text-ink-soft hover:text-ink">
-                Dashboard
+                Daily study
               </Link>
-              <Link href="/exam" className="text-ink-soft hover:text-ink">
-                Digital practice
+              <Link href="/practice" className="text-ink-soft hover:text-ink">
+                Extra practice
               </Link>
               <Link href="/account" className="text-ink-soft hover:text-ink">
                 Account

@@ -1,3 +1,4 @@
+import EnglishDashboard from "@/components/EnglishDashboard";
 import { createClient } from "@/lib/supabase/server";
 import { redirect } from "next/navigation";
 import { notFound } from "next/navigation";
@@ -9,7 +10,8 @@ export default async function SubjectStudyPage({
   params: Promise<{ subject: string }>;
 }) {
   const { subject } = await params;
-  if (!["math", "science", "reading"].includes(subject)) notFound();
+  if (!["english", "math", "science", "reading"].includes(subject)) notFound();
+  if (subject === "english") return <EnglishDashboard />;
   const supabase = await createClient();
   const {
     data: { user },
