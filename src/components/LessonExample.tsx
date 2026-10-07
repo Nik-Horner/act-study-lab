@@ -17,9 +17,11 @@ export function LessonExample({
   const prompt = marker >= 0 ? example.text.slice(0, marker) : example.text;
   const solution = marker >= 0 ? example.text.slice(marker + 2) : null;
   const show = revealed || prediction !== null;
+  const correct = prediction === example.good;
+  const tone = classify && prediction !== null ? correct : example.good;
   return (
     <div
-      className={`rounded-xl border px-4 py-4 text-sm ${show ? (example.good ? "border-good bg-good-soft" : "border-bad bg-bad-soft") : "border-border bg-bg-soft"}`}
+      className={`rounded-xl border px-4 py-4 text-sm ${show ? (tone ? "border-good bg-good-soft" : "border-bad bg-bad-soft") : "border-border bg-bg-soft"}`}
     >
       <p className="mb-3 font-semibold">
         {classify
@@ -58,10 +60,12 @@ export function LessonExample({
         </div>
       )}
       {show && classify && (
-        <p role="status" className="mt-3 font-semibold">
-          {prediction === example.good ? "Correct." : "Look again."}{" "}
-          {example.label}
-        </p>
+        <div role="status" className="mt-3 space-y-2">
+          <p className="font-semibold">
+            {correct ? "Correct" : "Not quite"} — this is {example.good ? "a complete sentence" : "a fragment"}.
+          </p>
+          <p className="leading-relaxed">{example.label}</p>
+        </div>
       )}
       {show && solution && (
         <div
