@@ -25,9 +25,9 @@ No schema migration or new service credentials are required. English continues u
 
 All reads and writes use the signed-in user's session and the existing owner-only RLS policies. Retries are idempotent. Answer choices cannot be replaced after submission; a mistake's classification can be updated. Signed-out API requests return JSON 401 responses. Cloud hydration paginates history and surfaces failures rather than silently presenting incomplete progress.
 
-An active timed section is saved on its current device with an absolute deadline and an account-scoped key; completed results sync to the account. Unsaved events are queued with a device recovery copy, retried on return, and shown with a visible save error. A blocked local-storage preference does not prevent cloud progress loading. Pending work from another account is never displayed or sent as the current account's work.
+An active timed section is saved on its current device with an absolute deadline and an account-scoped key; completed results sync to the account. Unsaved events are queued with a device recovery copy, retried on return, and shown with a visible save error. Blocked local storage does not prevent cloud progress loading. Pending work from another account is never displayed or sent as the current account's work.
 
-The account's target and test date apply across subjects. Math + Science share one focused preparation plan; Reading has its own focus plan. Daily 60/75/90-minute budgets are browser preferences, not additional database columns. Unfinished tasks retain IDs and completion dates, carry forward within the focus budget, and show overflow separately. The day before the test remains light.
+The account's target and test date apply across subjects. Math + Science share one focused preparation plan; Reading has its own focus plan. All four previous section scores and daily 60/75/90-minute focus budgets are account preferences saved in Supabase Auth user metadata; the legacy English score remains in profiles for compatibility. Unfinished tasks retain IDs and completion dates, carry forward within the focus budget, and show overflow separately. The day before the test remains light.
 
 ## Verification and deployment
 
