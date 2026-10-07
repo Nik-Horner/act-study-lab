@@ -1,9 +1,15 @@
 "use client";
+import { AnswerFeedback } from "@/components/AnswerFeedback";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { renderStem, LETTERS, shuffle, fmtTime } from "@/lib/format";
 import type { Question } from "@/lib/content";
-import { MASTERY_STREAK, topicStatus, masteryProgress, type TopicProgressRow } from "@/lib/mastery";
+import {
+  MASTERY_STREAK,
+  topicStatus,
+  masteryProgress,
+  type TopicProgressRow,
+} from "@/lib/mastery";
 import { ButtonLink } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
@@ -11,17 +17,31 @@ import { Card } from "@/components/ui/Card";
 
 const TARGET_SEC = 42;
 
-export type PoolItem = { topicSlug: string; topicTitle: string; question: Question };
+export type PoolItem = {
+  topicSlug: string;
+  topicTitle: string;
+  question: Question;
+};
 
 type DrillClientProps =
-  | { mode: "topic"; slug: string; title: string; questions: Question[]; initialProgress: TopicProgressRow | undefined }
+  | {
+      mode: "topic";
+      slug: string;
+      title: string;
+      questions: Question[];
+      initialProgress: TopicProgressRow | undefined;
+    }
   | { mode: "weak"; pool: PoolItem[] }
   | { mode: "misses"; pool: PoolItem[] };
 
 export function DrillClient(props: DrillClientProps) {
   const items: PoolItem[] = useMemo(() => {
     if (props.mode === "topic") {
-      return props.questions.map((q) => ({ topicSlug: props.slug, topicTitle: props.title, question: q }));
+      return props.questions.map((q) => ({
+        topicSlug: props.slug,
+        topicTitle: props.title,
+        question: q,
+      }));
     }
     return props.pool;
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -62,7 +82,9 @@ export function DrillClient(props: DrillClientProps) {
   // client's hydration pass and trigger a hydration mismatch).
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time randomization on mount, not derived state
-    setDrillState((s) => (s.idx === 0 ? { order: shuffle(s.order), idx: 0 } : s));
+    setDrillState((s) =>
+      s.idx === 0 ? { order: shuffle(s.order), idx: 0 } : s,
+    );
   }, []);
 
   // Pace timer chip: freezes once the question is answered, resets on a new question.
@@ -105,7 +127,10 @@ export function DrillClient(props: DrillClientProps) {
         setStreak(updated.current_streak);
         if (props.mode === "topic") {
           setProgress(updated);
-          if (updated.current_streak === MASTERY_STREAK && topicStatus(updated) === "mastered") {
+          if (
+            updated.current_streak === MASTERY_STREAK &&
+            topicStatus(updated) === "mastered"
+          ) {
             setJustMastered(true);
           }
         }
@@ -149,7 +174,11 @@ export function DrillClient(props: DrillClientProps) {
     function onKeyDown(e: KeyboardEvent) {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const target = e.target as HTMLElement | null;
-      if (target && (target.tagName === "INPUT" || target.tagName === "TEXTAREA")) return;
+      if (
+        target &&
+        (target.tagName === "INPUT" || target.tagName === "TEXTAREA")
+      )
+        return;
 
       const key = e.key.toLowerCase();
       if (!answeredRef.current) {
@@ -170,8 +199,13 @@ export function DrillClient(props: DrillClientProps) {
   }, [current, submitAnswer, goNext]);
 
   const headerTitle =
-    props.mode === "topic" ? `${props.title} — Drill` : props.mode === "weak" ? "Weak-Topics Drill" : "Review Your Misses";
-  const backHref = props.mode === "topic" ? `/learn/${props.slug}` : "/dashboard";
+    props.mode === "topic"
+      ? `${props.title} — Drill`
+      : props.mode === "weak"
+        ? "Weak-Topics Drill"
+        : "Review Your Misses";
+  const backHref =
+    props.mode === "topic" ? `/learn/${props.slug}` : "/dashboard";
 
   if (items.length === 0) {
     return <EmptyState mode={props.mode} backHref={backHref} />;
@@ -182,26 +216,38 @@ export function DrillClient(props: DrillClientProps) {
   if (!current) return null;
 
   const status = props.mode === "topic" ? topicStatus(progress) : "none";
-  const accuracyPct = progress && progress.attempts > 0 ? Math.round((progress.correct / progress.attempts) * 100) : 0;
+  const accuracyPct =
+    progress && progress.attempts > 0
+      ? Math.round((progress.correct / progress.attempts) * 100)
+      : 0;
   const missTotal = items.length;
   const missesLeft = order.length;
   const missesCleared = missTotal - missesLeft;
   const weakSubtitle =
     props.mode === "weak"
-      ? "Mixing: " + Array.from(new Set(props.pool.map((p) => p.topicTitle))).join(" · ")
+      ? "Mixing: " +
+        Array.from(new Set(props.pool.map((p) => p.topicTitle))).join(" · ")
       : "";
 
   return (
     <div className="space-y-5">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <ButtonLink href={backHref} variant="ghost" size="sm" className="mb-2">
+          <ButtonLink
+            href={backHref}
+            variant="ghost"
+            size="sm"
+            className="mb-2"
+          >
             ← Back
           </ButtonLink>
           <h1 className="text-2xl font-semibold text-ink">{headerTitle}</h1>
         </div>
         <div className="flex items-center gap-4">
-          <Stat label="This session" value={`${sessionCorrect}/${sessionCount}`} />
+          <Stat
+            label="This session"
+            value={`${sessionCorrect}/${sessionCount}`}
+          />
           <Stat label="Streak" value={String(streak)} />
           <span
             className={`rounded-full border border-border px-3 py-1 text-sm font-mono ${
@@ -218,46 +264,61 @@ export function DrillClient(props: DrillClientProps) {
           <p className="mb-1.5 text-sm text-ink-soft">
             {status === "mastered" ? (
               <>
-                <b className="text-good">Mastered ✓</b> — best streak {progress?.best_streak ?? 0}. Keep sharp.
+                <b className="text-good">Mastered ✓</b> — best streak{" "}
+                {progress?.best_streak ?? 0}. Keep sharp.
               </>
             ) : (
               <>
-                Streak {streak} · <b>{Math.max(0, MASTERY_STREAK - streak)} in a row</b> to master ({accuracyPct}%
-                all-time)
+                Streak {streak} ·{" "}
+                <b>{Math.max(0, MASTERY_STREAK - streak)} in a row</b> to master
+                ({accuracyPct}% all-time)
               </>
             )}
           </p>
-          <ProgressBar percent={masteryProgress(progress) * 100} tone={status === "mastered" ? "good" : "brand"} />
+          <ProgressBar
+            percent={masteryProgress(progress) * 100}
+            tone={status === "mastered" ? "good" : "brand"}
+          />
         </div>
       )}
-      {props.mode === "weak" && <p className="text-sm text-ink-soft">{weakSubtitle}</p>}
+      {props.mode === "weak" && (
+        <p className="text-sm text-ink-soft">{weakSubtitle}</p>
+      )}
       {props.mode === "misses" && (
         <p className="text-sm text-ink-soft">
-          <b>{missesLeft}</b> miss{missesLeft === 1 ? "" : "es"} left — answer correctly to clear ({missesCleared}/
-          {missTotal} cleared)
+          <b>{missesLeft}</b> miss{missesLeft === 1 ? "" : "es"} left — answer
+          correctly to clear ({missesCleared}/{missTotal} cleared)
         </p>
       )}
 
       <Card className="p-6">
         <div className="mb-3 flex flex-wrap gap-2">
           <Badge tone="neutral">{current.question.difficulty}</Badge>
-          {props.mode !== "topic" && <Badge tone="brand">{current.topicTitle}</Badge>}
+          {props.mode !== "topic" && (
+            <Badge tone="brand">{current.topicTitle}</Badge>
+          )}
         </div>
         {current.question.stem && (
           <div
             className="mb-3 text-lg text-ink"
-            dangerouslySetInnerHTML={{ __html: renderStem(current.question.stem) }}
+            dangerouslySetInnerHTML={{
+              __html: renderStem(current.question.stem),
+            }}
           />
         )}
-        <p className="mb-4 text-sm text-ink-soft">{current.question.questionText}</p>
+        <p className="mb-4 text-sm text-ink-soft">
+          {current.question.questionText}
+        </p>
 
         <div className="grid gap-2 sm:grid-cols-2">
           {current.question.choices.map((choice, i) => {
             const isCorrect = i === current.question.answer;
             const isPicked = i === picked;
             let tone = "border-border bg-bg-raised hover:bg-border";
-            if (answered && isCorrect) tone = "border-good bg-good-soft text-good";
-            else if (answered && isPicked) tone = "border-bad bg-bad-soft text-bad";
+            if (answered && isCorrect)
+              tone = "border-good bg-good-soft text-good";
+            else if (answered && isPicked)
+              tone = "border-bad bg-bad-soft text-bad";
             else if (answered) tone = "border-border bg-bg-raised opacity-60";
 
             return (
@@ -277,12 +338,18 @@ export function DrillClient(props: DrillClientProps) {
 
         {answered && (
           <div className="mt-4 space-y-2">
-            <p className={`text-sm font-medium ${picked === current.question.answer ? "text-good" : "text-bad"}`}>
-              {picked === current.question.answer ? "Correct ✓" : "Not quite"}
-            </p>
-            <p className="text-sm text-ink-soft">{current.question.explanation}</p>
-            <p className={`text-xs ${answerSec <= TARGET_SEC ? "text-good" : "text-warn"}`}>
-              {answerSec}s — {answerSec <= TARGET_SEC ? "on pace" : "a little slow"} (target {TARGET_SEC}s)
+            <AnswerFeedback
+              choices={current.question.choices}
+              answer={current.question.answer}
+              chosen={picked}
+              explanation={current.question.explanation}
+            />
+            <p
+              className={`text-xs ${answerSec <= TARGET_SEC ? "text-good" : "text-warn"}`}
+            >
+              {answerSec}s —{" "}
+              {answerSec <= TARGET_SEC ? "on pace" : "a little slow"} (target{" "}
+              {TARGET_SEC}s)
             </p>
           </div>
         )}
@@ -290,10 +357,12 @@ export function DrillClient(props: DrillClientProps) {
         {justMastered && (
           <div className="mt-4 rounded-xl border border-good bg-good-soft px-4 py-3 text-sm text-good">
             <p className="font-semibold">🎉 Topic mastered!</p>
-            <p>You hit an {MASTERY_STREAK}-question streak. Move to the next topic or keep drilling.</p>
+            <p>
+              You hit an {MASTERY_STREAK}-question streak. Move to the next
+              topic or keep drilling.
+            </p>
           </div>
         )}
-
       </Card>
 
       {answered && (
@@ -324,14 +393,23 @@ function Stat({ label, value }: { label: string; value: string }) {
   );
 }
 
-function EmptyState({ mode, backHref }: { mode: "weak" | "misses" | "topic"; backHref: string }) {
+function EmptyState({
+  mode,
+  backHref,
+}: {
+  mode: "weak" | "misses" | "topic";
+  backHref: string;
+}) {
   if (mode === "misses") {
     return (
       <Card className="p-10 text-center">
         <div className="text-4xl">🎉</div>
-        <h2 className="mt-2 text-xl font-semibold text-ink">All misses cleared!</h2>
+        <h2 className="mt-2 text-xl font-semibold text-ink">
+          All misses cleared!
+        </h2>
         <p className="mt-2 text-ink-soft">
-          You&apos;ve re-drilled every question you got wrong. That&apos;s the habit that gets you to 36.
+          You&apos;ve re-drilled every question you got wrong. That&apos;s the
+          habit that gets you to 36.
         </p>
         <ButtonLink href="/dashboard" className="mt-4">
           Back to dashboard

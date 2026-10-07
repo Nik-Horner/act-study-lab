@@ -44,6 +44,8 @@ export interface Lesson {
   intro: string;
   sections: {
     heading: string;
+    evidenceIds?: string[];
+    evidence?: Passage[];
     body: string[];
     tip?: string;
     examples?: { text: string; label: string; good: boolean }[];

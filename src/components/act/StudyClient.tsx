@@ -1,4 +1,7 @@
 "use client";
+import { DesmosPanel } from "./DesmosPanel";
+import { QuestionPacing } from "../QuestionPacing";
+import { LessonSections } from "../LessonSections";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
@@ -508,13 +511,16 @@ export function LessonView({ slug }: { slug: string }) {
         Back to {SUBJECT_LABELS[topic.subject]}
       </Link>
       <header className="max-w-3xl">
-        <div className="mb-3 flex flex-wrap gap-2">
+        <h1 className="text-3xl font-bold tracking-tight">{lesson.title}</h1>
+        <div className="mt-3 flex flex-wrap gap-2">
           <Badge tone="brand">{topic.category}</Badge>
           <Badge>{SUBJECT_LABELS[topic.subject]}</Badge>
         </div>
-        <h1 className="text-3xl font-bold tracking-tight">{lesson.title}</h1>
         <p className="prose-study mt-3 text-ink-soft">{lesson.intro}</p>
       </header>
+      {(topic.subject === "math" || topic.subject === "science") && (
+        <DesmosPanel subject={topic.subject} />
+      )}
       <details className="rounded-xl border border-border bg-bg-soft px-4 py-3 lg:hidden">
         <summary className="cursor-pointer text-sm font-semibold">
           In this lesson
@@ -525,39 +531,7 @@ export function LessonView({ slug }: { slug: string }) {
       </details>
       <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_14rem]">
         <article className="min-w-0 space-y-10">
-          {lesson.sections.map((s, i) => (
-            <section key={i} id={`lesson-section-${i}`} className="scroll-mt-8">
-              <h2 className="mb-4 text-xl font-semibold tracking-tight">
-                {s.heading}
-              </h2>
-              <div className="space-y-4">
-                {s.body.map((p, j) => (
-                  <p key={j} className="prose-study text-ink-soft">
-                    {p}
-                  </p>
-                ))}
-              </div>
-              {s.examples?.map((e, j) => (
-                <div
-                  key={j}
-                  className={`mt-5 rounded-xl border px-5 py-4 ${e.good ? "border-good/30 bg-good-soft" : "border-bad/30 bg-bad-soft"}`}
-                >
-                  <p
-                    className={`text-xs font-semibold uppercase tracking-wide ${e.good ? "text-good" : "text-bad"}`}
-                  >
-                    {e.label}
-                  </p>
-                  <p className="prose-study mt-2 text-sm text-ink">{e.text}</p>
-                </div>
-              ))}
-              {s.tip && (
-                <p className="mt-4 w-full whitespace-pre-line rounded-xl border border-brand-soft bg-brand-soft px-5 py-4 text-sm leading-relaxed text-brand-dark">
-                  <strong>Test-day move · </strong>
-                  {s.tip}
-                </p>
-              )}
-            </section>
-          ))}
+          <LessonSections sections={lesson.sections} />
         </article>
         <aside className="hidden lg:block">
           <div className="sticky top-8 border-l border-border pl-5">
@@ -707,13 +681,13 @@ function PracticeSet({
       </Card>
     );
   const q = initialQuestions[index];
-  function submit() {
+  function submit(choice: number | null = chosen) {
     if (revealed) return;
     const id = crypto.randomUUID();
     const record: AnswerRecord = {
       id,
       questionId: q.id,
-      chosen,
+      chosen: choice,
       elapsedMs: timer.current === null ? 0 : Date.now() - timer.current,
       confidence,
       cause: null,
@@ -724,7 +698,7 @@ function PracticeSet({
     setLastRecordId(id);
     setSessionRecords((records) => [...records, record]);
     setRevealed(true);
-    if (chosen === q.answer) setCorrect((n) => n + 1);
+    if (choice === q.answer) setCorrect((n) => n + 1);
   }
   return (
     <Card
@@ -749,6 +723,16 @@ function PracticeSet({
           className="mt-4"
         />
       </div>
+      {(q.subject === "math" || q.subject === "science") && (
+        <div className="mb-5">
+          <DesmosPanel subject={q.subject} />
+        </div>
+      )}
+      <QuestionPacing
+        key={q.id}
+        subject={q.subject}
+        savedTime={revealed ? sessionRecords.at(-1)?.elapsedMs : undefined}
+      />
       <QuestionView
         {...navigation}
         q={q}
@@ -756,6 +740,7 @@ function PracticeSet({
         onChoose={(i) => {
           if (timer.current === null) timer.current = Date.now();
           setChosen(i);
+          if (i !== null) submit(i);
         }}
         revealed={revealed}
       />
@@ -775,8 +760,8 @@ function PracticeSet({
               <option value="high">High</option>
             </select>
           </label>
-          <Button onClick={submit}>
-            {chosen === null ? "Skip and show explanation" : "Check answer"}
+          <Button onClick={() => submit(null)}>
+            Skip and show explanation
           </Button>
         </div>
       ) : (

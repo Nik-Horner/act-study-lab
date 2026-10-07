@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "tsx --test tests/*.test.ts",
-    "validate:content": "node scripts/validate-content.mjs && node scripts/validate-math.mjs && node scripts/validate-math-extra.mjs && node scripts/validate-science.mjs && node scripts/validate-reading.mjs",
+    "validate:content": "node scripts/validate-content.mjs && node scripts/validate-math.mjs && node scripts/validate-math-extra.mjs && node scripts/validate-science.mjs && node scripts/validate-reading.mjs && node scripts/validate-quality.mjs",
     "check": "npm run lint && npm run validate:content && npm test && npm run build"
   },
   "dependencies": {

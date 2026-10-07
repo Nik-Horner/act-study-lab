@@ -18,6 +18,9 @@
             "text": "Filter Q: After = 4 mg/L; Flow = 70 mL/min. For lowest remaining solids, compare 4 with P’s 8 and R’s 12, so choose Q.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-reservoir"
         ]
       },
       {
@@ -33,6 +36,9 @@
             "text": "Filter P: 40−8 = 32 mg/L removed. Removed fraction = 32/40 = 80%; remaining fraction = 8/40 = 20%.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-reservoir"
         ]
       },
       {
@@ -49,6 +55,9 @@
             "text": "Require flow ≥100 mL/min and remaining solids ≤10 mg/L. P passes (120, 8); Q fails flow (70); R fails solids (12).",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-reservoir"
         ]
       },
       {
@@ -63,6 +72,9 @@
             "text": "N: 48/10 = 4.8 insects/m². O: 60/20 = 3.0. P: 40/25 = 1.6. Highest count is O; highest density is N.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-transects"
         ]
       },
       {
@@ -77,6 +89,9 @@
             "text": "Lamp B is 8 cm on Day 4. Lamp A rises from 7 to 11 cm over Days 4–6: change = 4 cm; average rate = 4/2 = 2 cm/day.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-seed-light"
         ]
       },
       {
@@ -91,6 +106,9 @@
             "text": "Incoming pollutant = 30×4 + 10×12 = 240 mg/s. Incoming water = 40 L/s. Mixed concentration = 240/40 = 6 mg/L, not the unweighted 8 mg/L.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-confluence"
         ]
       },
       {
@@ -289,6 +307,9 @@
             "text": "Container B drops 24°C over the first 5 min and 5°C over the final 5 min. Average rates are −4.8 and −1°C/min: cooling continues but slows.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-cooling"
         ]
       },
       {
@@ -305,6 +326,9 @@
             "text": "At 11 min, A is one-fifth from 10 min (58°C) to 15 min (50°C). Estimate = 58−(1/5)×8 = 56.4°C.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-cooling"
         ]
       },
       {
@@ -320,6 +344,9 @@
             "text": "The enzyme’s highest tested rate is 12 µmol/min at 40°C; 50°C gives 6. This locates the tested maximum but does not prove the exact optimum is precisely 40°C.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-enzyme-temp"
         ]
       },
       {
@@ -334,6 +361,9 @@
             "text": "Pressure rises 20 kPa per 2 m, so slope = 10 kPa/m. Surface pressure = 100 kPa. At 5 m, P = 100+10×5 = 150 kPa.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-pressure-depth"
         ]
       },
       {
@@ -348,6 +378,9 @@
             "text": "Dye model: x² = 4t. At 6.25 min, x² = 25, so x = 5 mm. A straight-segment estimate gives 5 mm at a different time, 6.5 min.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-diffusion"
         ]
       },
       {
@@ -362,6 +395,9 @@
             "text": "Capacity rises to 2.1 Ah at 40°C, then falls to 1.8 Ah at 60°C. “Always rises with temperature” fails on that last interval.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-exposure"
         ]
       },
       {
@@ -584,6 +620,9 @@
             "text": "Nitrogen experiment: change dose (0, 5, 10 mg/day); measure final dry mass (1.2, 1.8, 1.9 g); keep water, light, soil, seed lot, and day fixed.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-plants-design"
         ]
       },
       {
@@ -600,6 +639,9 @@
             "text": "Lake L = edge water at 15°C; M = center water at 25°C. Source and temperature both differ, so 240 versus 430 cells/mL cannot isolate temperature.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-lake-design"
         ]
       },
       {
@@ -615,6 +657,9 @@
             "text": "Large versus crushed catalyst: same catalyst mass, different surface area, mean times 80 versus 40 s. That pair targets surface area.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-catalyst-design"
         ]
       },
       {
@@ -629,6 +674,9 @@
             "text": "Solar panels: four cleaned and four uncleaned panels = four units per treatment. Before/after readings on each panel do not double the number of treated units.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-panels"
         ]
       },
       {
@@ -643,6 +691,9 @@
             "text": "Random assignment decides which insects enter 15, 25, or 35°C. Blinding hides temperature labels during video scoring. One addresses starting differences; the other expectation bias.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-insect-temperature"
         ]
       },
       {
@@ -664,6 +715,9 @@
         "body": [
           "An operational definition says exactly how the response is observed. Flight-stop response means no wing movement for at least 0.5 s within 1 s after a tone. Erosion means dry sediment mass in runoff after a fixed rainfall procedure. Drying filters removes retained water as a source of mass variation. A researcher can collect a precise response without measuring every possible consequence. CO₂ output is a decomposition indicator, but it is not the exact fraction of litter mass lost unless an additional valid conversion is supplied.",
           "For a conclusion, match the population and conditions actually studied. Cleaning raises average output for same-model panels under a steady lamp, without guaranteeing identical benefits for all panels or weather. A valid experimental improvement addresses the stated weakness: standardize source water for a temperature confound, add replicates for consistency, or shorten sampling intervals for timing resolution. More equipment or a bigger experiment is not automatically the best answer. During review, write “changed factor → measured response; other changed factor = confound” for any missed design item."
+        ],
+        "evidenceIds": [
+          "science-drill-erosion"
         ]
       }
     ],
@@ -828,6 +882,9 @@
             "text": "Both scientists allow methane. A requires microbes to make most new methane; B releases methane already dissolved. Methane detection alone fits both.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-bubble-views"
         ]
       },
       {
@@ -844,6 +901,9 @@
             "text": "Gas = 6 mL/h untreated, 0.3 with microbes removed, 5.7 after restoration. With dissolved methane and chemistry controlled, the linked changes support a microbial contribution.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-bubble-views"
         ]
       },
       {
@@ -859,6 +919,9 @@
             "text": "Airborne seeds: 90/100 viable. Mud-attached seeds: 85/100 viable. Both proposed routes preserve viability; these tests do not identify the historical island route.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-dispersal-views"
         ]
       },
       {
@@ -873,6 +936,9 @@
             "text": "At 30°C, both light and dark backgrounds give darkness score 3. This tests C’s background prediction without changing temperature, and shows no observed background effect.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-color-views"
         ]
       },
       {
@@ -887,6 +953,9 @@
             "text": "Magnetic north rotated east while star north stays north: M predicts east, S predicts north. Observed east favors M; rotating both east would not separate them.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-navigation-views"
         ]
       },
       {
@@ -901,6 +970,9 @@
             "text": "L requires temperature above −20°C. New streaks at −28 and −30°C challenge that requirement. No water absorption is additional evidence because detection sensitivity is explicitly adequate.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-plume-views"
         ]
       },
       {
@@ -1066,6 +1138,9 @@
             "text": "At 1 N, L predicts 2 cm and C predicts 4 cm; measured = 2. At 2 N both predict 4, so that single matching point does not distinguish them.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-spring-model"
         ]
       },
       {
@@ -1082,6 +1157,9 @@
             "text": "Doubling from 100 cells: after 1, 2, 3, 4 h predictions are 200, 400, 800, 1600. Observed 1500 at 4 h is 100 below the prediction.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-microbe-model"
         ]
       },
       {
@@ -1097,6 +1175,9 @@
             "text": "L applies over 0–5 N. Repeated 9 cm at 3 N contradicts predicted 6. Deformation at 8 N concerns behavior outside the stated force range.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-spring-model"
         ]
       },
       {
@@ -1125,6 +1206,9 @@
             "text": "Decay: at 9 h total 120−background 20 = 100 sample counts/min. At 12 h, sample halves to 50. Restore background: total prediction = 70.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-decay"
         ]
       },
       {
@@ -1139,6 +1223,9 @@
             "text": "At C = 9, S gives q = 4×9/(1+9) = 3.6 mg/g; L gives 4×9 = 36. The much larger prediction gap makes this a separating model test.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-adsorption"
         ]
       },
       {
@@ -1146,6 +1233,9 @@
         "body": [
           "An informative new test targets where competing predictions differ. Measuring the pendulum again at 1 m could improve precision but would still not distinguish the two candidate models. Measuring at 4 m creates a 4 s gap. A control manipulation can probe mechanism: extra nutrients in both separate and mixed algae cultures can test whether the mixed-culture density reduction weakens when the shared resource is more available. Change the proposed causal factor while retaining the relevant comparison groups.",
           "A model can be consistent with data without being the only explanation. Mixed algae finish below their separate-culture densities, supporting an interaction consistent with competition, but the counts do not show that one species eats the other. A test about support asks whether observations agree with predictions; a test about proof requires ruling out alternatives, which these small studies seldom do. In review, write the model’s actual predicted value and the observed value side by side. That makes a missed inference concrete and auditable."
+        ],
+        "evidenceIds": [
+          "science-drill-pendulum"
         ]
       }
     ],
@@ -1316,6 +1406,9 @@
             "text": "pH 4 is two units below pH 6. Hydrogen-ion concentration is 10×10 = 100 times greater, even though enzyme product is lower at pH 4.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-ph"
         ]
       },
       {
@@ -1331,6 +1424,9 @@
             "text": "8 H₂ + 3 O₂ → 6 H₂O + 2 leftover H₂. Hydrogen: 16 atoms before and 12+4 after. Oxygen: 6 atoms before and 6 after.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-matter"
         ]
       },
       {
@@ -1347,6 +1443,9 @@
             "text": "Trial 2 cart: net force = 5−1 = 4 N. At 2 kg, a = 2 m/s²; at 4 kg, a = 1 m/s². Same force does not imply same acceleration.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-circuit"
         ]
       },
       {
@@ -1361,6 +1460,9 @@
             "text": "Leaves gain 2.5 mg/L oxygen while consuming 1.5 by respiration. Gross photosynthetic production = net+consumption = 4.0 mg/L.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-leaf-oxygen"
         ]
       },
       {
@@ -1375,6 +1477,9 @@
             "text": "Melting lasts from 2 to 6 min at constant heater power: 4 min. Double power supplies the same phase-change energy in about 2 min under the stated assumptions.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-phase-change"
         ]
       },
       {
@@ -1389,6 +1494,9 @@
             "text": "Purple = AA (1/4) + Aa (1/2) = 3/4 expected. Among 80 offspring, expected purple = 60 and white = 20; random actual counts can vary.",
             "good": true
           }
+        ],
+        "evidenceIds": [
+          "science-drill-genetics"
         ]
       },
       {
@@ -1396,6 +1504,9 @@
         "body": [
           "Frequency is the number of oscillations per second. A 40 kHz tone has twice the frequency of a 20 kHz tone, but its duration or intensity need not double. The insect sound experiment controls those variables separately. For a constant-temperature resistor, V = IR gives 20 Ω from 6 V and 0.3 A. Two identical resistors in series give 40 Ω, so at 8 V current becomes 0.2 A. Keep the equation’s quantities and units aligned before choosing an answer.",
           "Some questions supply the needed principle explicitly, such as greater salinity increasing density or lower temperature increasing density at fixed salinity. Treat those as conditions for interpreting the table. At 50 and 100 m, ocean salinity is identical while temperature falls and density rises, making a cleaner temperature comparison than depths where salinity also changes. In review, identify the one scientific principle needed, state it plainly, and connect it to the exact cells or curve values. Learning that compact connection is more useful than memorizing unrelated facts."
+        ],
+        "evidenceIds": [
+          "science-drill-circuit"
         ]
       }
     ],

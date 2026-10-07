@@ -2,7 +2,7 @@
   {
     "slug": "math-algebra",
     "title": "Algebra",
-    "intro": "At a 34 baseline, the goal is to make algebra automatic while keeping every restriction and sign. Write the one step most likely to go wrong; then verify the candidate in the original statement.",
+    "intro": "Make algebra automatic while keeping every restriction and sign. Write the one step most likely to go wrong; then verify the candidate in the original statement.",
     "sections": [
       {
         "heading": "Equations: isolate, then verify",

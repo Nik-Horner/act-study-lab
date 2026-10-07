@@ -1,0 +1,29 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { explanationSteps } from "../src/lib/answer-explanation";
+test("corrections keep specific evidence and remove answer-key boilerplate", () => {
+  assert.deepEqual(
+    explanationSteps(
+      "She changes the caption after finding an uneven sample. The supported answer is “limits the claim to this group.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    ),
+    ["She changes the caption after finding an uneven sample."],
+  );
+});
+test("corrections preserve decimal calculations, punctuation rules and all authored reasoning", () => {
+  assert.deepEqual(
+    explanationSteps(
+      "The rate is 2.5 mg/L. Divide 10 by 4 to get 2.5. Check both constraints.",
+    ),
+    [
+      "The rate is 2.5 mg/L.",
+      "Divide 10 by 4 to get 2.5.",
+      "Check both constraints.",
+    ],
+  );
+  assert.equal(
+    explanationSteps(
+      "A semicolon needs independent clauses on both sides; '; while' leaves a dependent clause.",
+    ).length,
+    1,
+  );
+});

@@ -1,4 +1,5 @@
 "use client";
+import { AnswerFeedback } from "../AnswerFeedback";
 import { useId, type Ref } from "react";
 import type { Question, Passage, Graph } from "@/lib/act/types";
 import { MathDiagram } from "./MathDiagram";
@@ -199,6 +200,7 @@ export function QuestionView({
   chosen,
   onChoose,
   revealed = false,
+  disabled = false,
   eliminated = [],
   onEliminate,
   zoom = 1,
@@ -209,6 +211,7 @@ export function QuestionView({
   chosen: number | null;
   onChoose: (i: number | null) => void;
   revealed?: boolean;
+  disabled?: boolean;
   eliminated?: number[];
   onEliminate?: (i: number) => void;
   zoom?: number;
@@ -274,7 +277,7 @@ export function QuestionView({
                 data-correct={revealed && i === q.answer}
                 data-wrong={revealed && chosen === i && i !== q.answer}
                 onClick={() => onChoose(chosen === i ? null : i)}
-                disabled={revealed || eliminated.includes(i)}
+                disabled={disabled || revealed || eliminated.includes(i)}
               >
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-current/25 text-xs font-semibold">
                   {letters[i]}
@@ -316,21 +319,12 @@ export function QuestionView({
           ))}
         </div>
         {revealed && (
-          <div
-            role="status"
-            className="mt-5 rounded-xl border border-border bg-bg-raised p-4"
-          >
-            <h3
-              className={`font-semibold ${chosen === q.answer ? "text-good" : "text-bad"}`}
-            >
-              {chosen === q.answer
-                ? "Correct"
-                : chosen === null
-                  ? "Skipped"
-                  : `Correct answer: ${letters[q.answer]}`}
-            </h3>
-            <p className="prose-study mt-2 text-sm">{q.explanation}</p>
-          </div>
+          <AnswerFeedback
+            choices={q.choices}
+            answer={q.answer}
+            chosen={chosen}
+            explanation={q.explanation}
+          />
         )}
       </section>
     </div>
