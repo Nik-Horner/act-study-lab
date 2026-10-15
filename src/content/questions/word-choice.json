@@ -261,7 +261,7 @@
       "category": "KLA",
       "difficulty": "easy",
       "questionText": "Which choice is the most precise and idiomatic in context?",
-      "stem": "The teacher asked the class to remain [[stationery]] while she fetched more pens and paper.",
+      "stem": "The telescope must remain [[stationery]] while the camera records each exposure.",
       "choices": [
         "NO CHANGE",
         "stationary",
@@ -269,7 +269,7 @@
         "stationeries"
       ],
       "answer": 1,
-      "explanation": "'Stationary' means not moving, which fits staying still. 'Stationery' is writing paper, and the plural forms are not standard words for this meaning."
+      "explanation": "Stationary means not moving, which is required during the exposure. Stationery means writing materials; the other choices do not supply the adjective needed after remain."
     },
     {
       "id": "word-choice-019",

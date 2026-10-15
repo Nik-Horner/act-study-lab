@@ -426,15 +426,15 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice most clearly indicates that the astrolabe, rather than the portrait, was made of brass?",
-      "stem": "The museum displayed the astrolabe [[beside a portrait that was made of brass]].",
+      "stem": "The museum displayed [[the astrolabe beside a portrait made of brass]].",
       "choices": [
         "NO CHANGE",
-        "that was made of brass beside a portrait",
-        "beside the brass-made portrait",
-        "beside a portrait, which was made of brass"
+        "the brass astrolabe beside a portrait",
+        "the astrolabe beside the brass portrait",
+        "the astrolabe beside a portrait, which was made of brass"
       ],
       "answer": 1,
-      "explanation": "That was made of brass must directly follow astrolabe to identify the material of the instrument. Each other choice attaches brass to portrait. The correct position follows the intended referent specified by the question, not an assumption that only one object could ever be made of brass."
+      "explanation": "“The brass astrolabe beside a portrait” places brass directly before astrolabe, so the material clearly belongs to the instrument. The other choices describe the portrait as made of brass. The task specifies the intended meaning; it does not require guessing what either object could be made from."
     },
     {
       "id": "modifiers-030",

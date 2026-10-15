@@ -476,7 +476,7 @@
     {
       "id": "p4",
       "title": "From Paper Cranes to Spacecraft",
-      "html": "For centuries, origami was treasured as a quiet pastime, a way to fold a flat square of paper into a crane or a flower. [[31|Today, however, it has become a tool for serious science.]] Researchers now study the ancient art to solve problems that have nothing to do with decoration.\n\nThe link between paper folding and engineering [[32|lies in]] a simple idea: a folded shape can shrink for travel and then unfold into something much larger. Engineers at space agencies [[33|has]] used this principle to pack solar panels and antennas into rockets. [[34|]]\n\nOne famous pattern, the Miura fold, lets a flat sheet collapse along crisscrossing creases [[35|so as]] a single tug spreads it open again. Maps once printed with this fold could be opened with one [[36|hand, and refolded just as easily.]] The same geometry now guides the design of compact stents that surgeons thread into narrow arteries before [[37|expanding it.]]\n\n[[38|]] origami has even reshaped robotics. Some engineers build machines that fold themselves flat for shipping and then [[39|pop]] into working shapes when heated. Others design grippers that close around an object the way folded paper wraps a gift.\n\nWhat began as a craft for children and monks now [[40|tells]] laboratories around the world, proving that an old idea can keep finding new uses.",
+      "html": "For centuries, origami was treasured as a quiet pastime, a way to fold a flat square of paper into a crane or a flower. [[31|Today, however, it has become a tool for serious science.]] Researchers now study the ancient art to solve problems that have nothing to do with decoration.\n\nThe link between paper folding and engineering [[32|lies in]] a simple idea: a folded shape can shrink for travel and then unfold into something much larger. Engineers at space agencies [[33|has]] used this principle to pack solar panels and antennas into rockets. [[34|]]\n\nOne famous pattern, the Miura fold, lets a flat sheet collapse along crisscrossing creases [[35|so as]] a single tug spreads it open again. Maps once printed with this fold could be opened with one [[36|hand, and refolded just as easily.]] The same geometry now guides the design of compact stents that surgeons thread into narrow arteries before [[37|expanding it.]]\n\n[[38|]] origami has even reshaped robotics. Some engineers build machines that fold themselves flat for shipping and then [[39|pop]] into working shapes when heated. Others design grippers that close around an object the way folded paper wraps a gift.\n\nWhat began as a craft for children and monks now [[40|tells]] research in laboratories around the world, proving that an old idea can keep finding new uses.",
       "questions": [
         {
           "number": 31,
@@ -626,7 +626,7 @@
             "informs"
           ],
           "answer": 3,
-          "explanation": "\"Informs laboratories\" means it shapes their work; \"tells,\" \"speaks,\" and \"talks\" do not fit this sense."
+          "explanation": "Informs research means guides or shapes what researchers do. Tells, speaks, and talks refer to speaking and do not fit the object research in this sentence."
         }
       ]
     },

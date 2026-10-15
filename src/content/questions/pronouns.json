@@ -396,7 +396,7 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice most clearly indicates what grew hot to the touch?",
-      "stem": "After Maya set the lamp on the radiator, [[it]] grew uncomfortably hot to the touch.",
+      "stem": "Maya moved the lamp away from the radiator before turning up the heat. Soon [[it]] grew uncomfortably hot to the touch.",
       "choices": [
         "NO CHANGE",
         "the radiator",
@@ -404,7 +404,7 @@
         "it's"
       ],
       "answer": 1,
-      "explanation": "'It' could mean the lamp or the radiator, so naming 'the radiator' fixes the unclear reference. 'Them' is objective and cannot be the subject of 'grew,' and 'it's' means 'it is.'"
+      "explanation": "It could refer to the lamp or the radiator. Naming “the radiator” makes the intended meaning explicit. Them cannot be the subject of grew, and it’s means it is, which would not fit before grew."
     },
     {
       "id": "pronouns-028",
@@ -482,7 +482,7 @@
       "explanation": "'She' could mean Lena or Priya, so the name 'Priya' removes the ambiguity. 'Her' is objective and cannot be the subject of 'broke,' and 'this runner' stays unclear about which woman is meant."
     },
     {
-      "stem": "The analyst [[whom]] the review panel concluded had identified the error was invited to explain her method.",
+      "stem": "The analyst, [[whom]] the review panel believed had identified the error, was invited to explain her method.",
       "questionText": "Which choice gives the relative pronoun the case required by its own clause?",
       "choices": [
         "NO CHANGE",
@@ -491,7 +491,7 @@
         "her"
       ],
       "answer": 1,
-      "explanation": "Who is the subject of had identified: she had identified the error. The panel concluded is embedded reporting language and does not make the relative pronoun an object. Whom is an object form; whose is possessive; her cannot introduce this relative clause.",
+      "explanation": "The main sentence is “The analyst was invited to explain her method.” Within the relative clause, who is the subject of had identified: “she had identified the error.” The review panel believed reports that judgment; it does not make the relative pronoun an object. Whom is an object form, whose is possessive, and her cannot introduce the relative clause.",
       "id": "pronouns-transfer-01",
       "category": "CSE",
       "difficulty": "hard"

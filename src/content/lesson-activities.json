@@ -1195,13 +1195,13 @@
       "evidence": {
         "id": "lesson-reading-main-idea-6",
         "title": "A Family Recipe",
-        "context": "When her cousin asked for a copy, Sofia kept that instruction. The number was useful as a starting point, she explained, but the beans and lemons would not always be identical. Her card had grown more precise, not by removing judgment, but by saying where judgment belonged."
+        "context": "Sofia asked her uncle for the soup recipe he made each winter. He dictated precise quantities for beans and broth, then told her to add “enough” lemon. She wanted a number. He tasted the pot and handed her a spoon, asking her to describe the difference before and after he added another squeeze.\n\nThe next week she made the soup alone. Following the written quantities gave her a familiar texture, but the taste remained flat. She began with a small amount of lemon, tasted again, and stopped when the flavor seemed clearer without becoming sour. On the recipe card she wrote the amount she used that day, followed by “taste first.”\n\nWhen her cousin asked for a copy, Sofia kept that instruction. The number was useful as a starting point, she explained, but the beans and lemons would not always be identical. Her card had grown more precise, not by removing judgment, but by saying where judgment belonged."
       }
     }
   ],
   "reading-details": [
     {
-      "prompt": "To answer what the coordinator requested before judging the counter, which detail should you locate?",
+      "prompt": "Which detail tells you what the coordinator requested before judging the counter?",
       "choices": [
         "The fact that volunteers counted on two evenings",
         "The comparison between volunteers’ notes and the time-stamped log",
@@ -1303,11 +1303,11 @@
       "evidence": {
         "id": "lesson-reading-inference-0",
         "title": "The Borrowed Violin",
-        "context": "When his own violin came back, Jae returned the school instrument with a note describing the softly started notes. He put the note beneath the list of names. It was not a recommendation that everyone should prefer the old violin. It was something the next borrower might try before deciding what the instrument could do."
+        "context": "When Jae borrowed the school’s oldest violin, he expected a temporary instrument until his repaired one returned. The old case smelled faintly of cedar. A faded label inside listed six former borrowers. During rehearsal he kept checking the tuning, irritated by a bridge that seemed unfamiliar under his hand.\n\nHis teacher asked him to play one phrase slowly rather than testing the violin with scales. He noticed that a softly started note carried farther than he expected. He still missed the easy response of his own instrument, but he stopped treating each difference as a defect. At the end of the week he played the borrowed violin at a small recital.\n\nWhen his own violin came back, Jae returned the school instrument with a note describing the softly started notes. He put the note beneath the list of names. It was not a recommendation that everyone should prefer the old violin. It was something the next borrower might try before deciding what the instrument could do."
       }
     },
     {
-      "prompt": "Which inference requires the smallest supported bridge?",
+      "prompt": "Which purpose is best supported by this action?",
       "choices": [
         "She wanted to prevent recordings from being confused",
         "She wanted to revise earlier answers before recording new ones",
@@ -1315,7 +1315,7 @@
       ],
       "answer": 0,
       "explanation": "Labeling each file before making another most directly supports avoiding confusion among recordings. Revising interview answers and selecting material for publication are possible later tasks, but neither is indicated by the action. Prefer the motive requiring the least added information.",
-      "evidenceText": "Leena stopped the interview to label each recording before beginning another."
+      "evidenceText": "Between interviews, Leena labeled the recording she had just made before starting the next one."
     },
     {
       "prompt": "Which inference is justified?",
@@ -1361,7 +1361,7 @@
       "evidence": {
         "id": "lesson-reading-inference-5",
         "title": "The Unfinished Portrait",
-        "context": "Leah asked him instead to keep working while she made several sketches. He told her about a student who had returned years later to say that the team had been the first place she felt useful. He mentioned championships only when Leah asked. Her sketches showed his hands above the tile, one hand steadying it while the other tested the corner.\n\nIn the finished portrait, the trophy cabinet appeared at the far edge. The coach objected mildly that anyone looking for the championship would have to search. Leah said that anyone looking for him would not. The coach considered the canvas, then asked whether she could leave the pencil lines around the unfinished tile visible. She had planned to cover them. She agreed to let them remain."
+        "context": "Leah’s commission was to paint the retired coach in the gym where he had worked for thirty years. She brought a photograph of him holding a trophy and expected to use it as her model. When she arrived, he was repairing the edge of a loose floor tile. He put down the tools and offered to recreate the trophy pose.\n\nLeah asked him instead to keep working while she made several sketches. He told her about a student who had returned years later to say that the team had been the first place she felt useful. He mentioned championships only when Leah asked. Her sketches showed his hands above the tile, one hand steadying it while the other tested the corner.\n\nIn the finished portrait, the trophy cabinet appeared at the far edge. The coach objected mildly that anyone looking for the championship would have to search. Leah said that anyone looking for him would not. The coach considered the canvas, then asked whether she could leave the pencil lines around the unfinished tile visible. She had planned to cover them. She agreed to let them remain."
       }
     },
     {

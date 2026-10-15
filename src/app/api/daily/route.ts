@@ -2,7 +2,6 @@ import { createClient } from "@/lib/supabase/server";
 import { readStudySettings } from "@/lib/account-settings";
 import {
   dailyDate,
-  makeDailyPlan,
   dailyCoverage,
   dailyId,
   selectDailyPlan,

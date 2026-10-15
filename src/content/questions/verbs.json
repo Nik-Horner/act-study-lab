@@ -96,7 +96,7 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "One of the reasons the experiment failed [[were]] the contaminated samples.",
+      "stem": "One of the unwashed sample jars [[were]] the source of the contamination.",
       "choices": [
         "NO CHANGE",
         "have been",
@@ -104,7 +104,7 @@
         "was"
       ],
       "answer": 3,
-      "explanation": "The subject is the singular 'One,' so 'was' agrees. The plural 'reasons' and 'samples' are decoys; 'were,' 'have been,' and 'are' all miss the singular subject."
+      "explanation": "The subject is One, not the plural noun jars inside the of-phrase. Read the core sentence: “One ... was the source of the contamination.” Was agrees with that singular subject; were, have been, and are are plural forms."
     },
     {
       "id": "verbs-008",
