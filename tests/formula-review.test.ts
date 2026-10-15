@@ -20,7 +20,7 @@ test("formula ratings require a reveal, repeat missed cards, and finish only aft
 });
 
 test("formula deck has unique cards and valid accessible math", () => {
-  assert.equal(cards.length, 36);
+  assert.equal(cards.length, 80);
   assert.equal(new Set(cards.map((card) => card.id)).size, cards.length);
   for (const card of cards) {
     assert(card.category && card.title && card.note);

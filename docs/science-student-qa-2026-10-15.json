@@ -1,0 +1,459 @@
+{
+  "date": "2026-10-15",
+  "scope": "One bounded content-transfer pass through all 52 focused Science Daily methods, their worked examples, independent formative tasks, 216 assigned drills, and 80 reserved exam questions. This follows the initial Science lesson repair and does not claim a browser review of every lesson.",
+  "rubric": {
+    "A": "Clear and correct; the method, evidence, and worked example teach the assigned task.",
+    "B": "Correct and usable, but condensed, multi-step, or requiring transfer across several variants.",
+    "C": "A material prerequisite or evidence-reading step required by an assigned question is missing.",
+    "D": "Substantial misleading instruction or ambiguous evidence prevents reliable independent use.",
+    "F": "Unusable or incorrect for its assigned task."
+  },
+  "gradesAre": "Editorial learning-quality judgments, not ACT score predictions or measured student outcomes.",
+  "summary": {
+    "A": 40,
+    "B": 12,
+    "C": 0,
+    "D": 0,
+    "F": 0,
+    "drillBankGrade": "B",
+    "reservedExamGrade": "B",
+    "bankReason": "The questions and answer conditions were read and the keyed numerical deductions validated. Authored passage practice is useful but not psychometrically calibrated; 18 skills still have only two fresh practice questions. No new question expansion was attempted during this deadline-bound pass."
+  },
+  "priorCGapsAndFixes": [
+    {
+      "skillId": "science-data-reading-calibration",
+      "failedExamples": [
+        "science-data-reading-transfer-v2-33",
+        "science-data-calibration-v3-34"
+      ],
+      "gap": "A simple scalar example did not teach selecting two offset calibration curves and combining their differently diluted samples.",
+      "fix": "Replaced the worked evidence with two named calibration lines, a two-stream table, changed flow, and explicit graph-to-concentration steps."
+    },
+    {
+      "skillId": "science-trends-interpolation-nonlinear",
+      "failedExamples": [
+        "science-trends-interpolation-19",
+        "science-trends-interpolation-22"
+      ],
+      "gap": "The card supplied a coefficient but drills required deriving it and identifying a linearized plot.",
+      "fix": "Worked k=x²/t from a measured point, then predicted the new distance; explicitly identified x² versus time as the straight-line plot."
+    },
+    {
+      "skillId": "science-models-evidence-combined-experiments",
+      "failedExamples": [
+        "science-models-evidence-transfer-v2-33",
+        "science-models-evidence-31"
+      ],
+      "gap": "The worked table did not demonstrate verifying a model condition in a separate graph or designing the matched follow-up.",
+      "fix": "Added the living-cell-density graph, checked it before the growth table, and specified matched control/treatment conditions for the new test."
+    },
+    {
+      "skillId": "science-data-reading-supplied-model",
+      "failedExamples": [
+        "science-data-reading-27",
+        "science-data-reading-28",
+        "science-exam-1-26"
+      ],
+      "gap": "Multiplication of voltage and current did not model solving for a denominator quantity or comparing fixed-energy heating.",
+      "fix": "Replaced the worked example with Q=mcΔT rearrangement and two water masses; kept explicit multiplication and capacity/current time rules."
+    },
+    {
+      "skillId": "science-experimental-design-interaction",
+      "failedExamples": [
+        "science-experimental-design-26",
+        "science-exam-1-18",
+        "science-exam-2-17"
+      ],
+      "gap": "Subtracting treatment means did not explicitly teach the missing matched comparison needed by follow-up questions.",
+      "fix": "Added the rule to repeat both control and treatment at the new condition or population; do not add only a new treated group."
+    },
+    {
+      "skillId": "science-models-evidence-substitution",
+      "failedExamples": [
+        "science-exam-1-12"
+      ],
+      "gap": "The assigned density-and-direction question used a verbal model absent from an equation-only lesson.",
+      "fix": "Explicitly included verbal rules and the denser-than-liquid sink / less-dense rise comparison."
+    }
+  ],
+  "additionalRepairs": [
+    "Made part/whole and percent-to-count operations explicit.",
+    "Defined complete dominance before genotype practice.",
+    "Explained an unbroken layer sealing an earlier fault.",
+    "Added concise acclimation, no-leaf control, intermediate-mechanism, and detector-position guidance.",
+    "Narrowed science-scientific-foundations-12 to the light-exposed control and L’s increase, preserving its original answer key."
+  ],
+  "preserved": "All original skill IDs, question IDs, practice assignments, section indices, choices, answer indices, and stored account records. No account records were read or changed in this audit.",
+  "verification": {
+    "focusedTests": "36/36 passed after transfer repair.",
+    "scienceValidator": "Passed 332 active and historical IDs, numerical deductions, shared passages, and original section contracts.",
+    "visualReview": "Owned by the parent task; no claim that this content pass inspected all browser views.",
+    "lastTypeCheck": "Generated .next/types route imports failed during concurrent route generation; no source-level TypeScript error was reported. Earlier full source check passed."
+  },
+  "lessons": [
+    {
+      "skillId": "science-data-reading-locate",
+      "title": "Find the right row or line",
+      "grade": "A",
+      "reason": "The first action identifies the requested label; the worked graph distinguishes the two lines, and drills use the same lookup.",
+      "assignedDrillCount": 7
+    },
+    {
+      "skillId": "science-data-reading-changes",
+      "title": "Amount, change, or percent?",
+      "grade": "B",
+      "reason": "Correct formulas now cover change, part/whole, percentage points, and percent-to-count; several variants share one short card.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-data-reading-constraints",
+      "title": "Check both requirements",
+      "grade": "A",
+      "reason": "The worked example checks both thresholds, demonstrates equality, and explains eliminating a row that fails one requirement.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-data-reading-normalize",
+      "title": "Compare amounts per equal size",
+      "grade": "A",
+      "reason": "The method names each numerator and denominator, compares unequal sample sizes, and covers recovering an amount from its ratio.",
+      "assignedDrillCount": 8
+    },
+    {
+      "skillId": "science-data-reading-rates",
+      "title": "Read a change or a repeating period",
+      "grade": "A",
+      "reason": "The plotted endpoints support the change/time calculation; the method explicitly distinguishes a repeat interval from one event’s duration.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-data-reading-supplied-model",
+      "title": "Use the equation the passage gives",
+      "grade": "B",
+      "reason": "The repaired heat example teaches rearrangement and inverse mass effects; power and capacity rules still require transfer to a different supplied equation.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-data-reading-mixing",
+      "title": "Combine two streams",
+      "grade": "A",
+      "reason": "Both flows and concentrations are visible; multiplication, addition, and division are demonstrated with consistent units.",
+      "assignedDrillCount": 3
+    },
+    {
+      "skillId": "science-data-reading-calibration",
+      "title": "Turn a sensor reading into an amount",
+      "grade": "B",
+      "reason": "The revised worked graph now teaches choosing either calibration line, keeping the offset, undoing dilution, and applying changed flow; the chain remains demanding.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-trends-interpolation-interpolate",
+      "title": "Estimate between two points",
+      "grade": "A",
+      "reason": "The graph shows nearest bounding points and a non-midpoint worked estimate; the new midpoint try uses different values.",
+      "assignedDrillCount": 10
+    },
+    {
+      "skillId": "science-trends-interpolation-interval-rates",
+      "title": "Compare how fast values change",
+      "grade": "B",
+      "reason": "Unequal intervals and rate magnitude are taught correctly; students must distinguish several closely related change and duration questions.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-trends-interpolation-tested-range",
+      "title": "Stay within what was measured",
+      "grade": "A",
+      "reason": "The visible tested peak supports a narrow conclusion and explicitly rejects claims about unmeasured values.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-trends-interpolation-equation",
+      "title": "Separate starting value from rate",
+      "grade": "B",
+      "reason": "Starting value, slope, direct proportion, and excess above a limit are now explicit, but several related operations share one card.",
+      "assignedDrillCount": 4
+    },
+    {
+      "skillId": "science-trends-interpolation-nonlinear",
+      "title": "Use squares and roots carefully",
+      "grade": "B",
+      "reason": "The revision demonstrates deriving k from x²/t and taking the root, and names the straight-line x² plot; this is still a multi-step model task.",
+      "assignedDrillCount": 3
+    },
+    {
+      "skillId": "science-trends-interpolation-turning-plateau",
+      "title": "Rising, flattening, or turning?",
+      "grade": "A",
+      "reason": "Successive graph changes show slowing growth without reversal, and the independent choices distinguish turning from flattening.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-experimental-design-variables-control",
+      "title": "Changed, measured, or kept the same?",
+      "grade": "A",
+      "reason": "Changed, measured, and fixed quantities are named in plain language, with an explicit carrier-only control example.",
+      "assignedDrillCount": 9
+    },
+    {
+      "skillId": "science-experimental-design-confounds",
+      "title": "Change one cause at a time",
+      "grade": "A",
+      "reason": "The two changing factors are visible in a small table; the fix holds the unintended factor constant.",
+      "assignedDrillCount": 6
+    },
+    {
+      "skillId": "science-experimental-design-matched-comparison",
+      "title": "Choose a fair comparison",
+      "grade": "B",
+      "reason": "Fair comparisons are demonstrated and the tip now covers measuring an intermediate mechanism; mechanism questions still require broader transfer.",
+      "assignedDrillCount": 4
+    },
+    {
+      "skillId": "science-experimental-design-replication",
+      "title": "Count the separately treated units",
+      "grade": "A",
+      "reason": "The example counts independently treated tanks rather than fish and directly explains the distinction used in the assigned drills.",
+      "assignedDrillCount": 4
+    },
+    {
+      "skillId": "science-experimental-design-bias-order",
+      "title": "Match the fix to the problem",
+      "grade": "A",
+      "reason": "The table separates order from hidden labels; the tip now explains equal acclimation time for the assigned setup question.",
+      "assignedDrillCount": 3
+    },
+    {
+      "skillId": "science-experimental-design-interaction",
+      "title": "Compare the treatment effects",
+      "grade": "A",
+      "reason": "Matched treatment-minus-control calculations are shown; the revision explicitly teaches repeating both groups under a new condition.",
+      "assignedDrillCount": 4
+    },
+    {
+      "skillId": "science-experimental-design-measurement",
+      "title": "Check what the instrument can measure",
+      "grade": "A",
+      "reason": "The reference reading separates precision from accuracy, and the new ruler task plus tip covers resolution and the actual measured quantity.",
+      "assignedDrillCount": 3
+    },
+    {
+      "skillId": "science-experimental-design-scope",
+      "title": "Say only what the study shows",
+      "grade": "A",
+      "reason": "The group mean and tested conditions remain visible, and the worked conclusion avoids individual or universal claims.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-prediction",
+      "title": "Translate each scientist’s claim",
+      "grade": "A",
+      "reason": "Each cause is paired with its prediction; the lesson distinguishes shared observations from evidence that separates accounts.",
+      "assignedDrillCount": 7
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-causal-control",
+      "title": "Test one proposed cause",
+      "grade": "A",
+      "reason": "The removal-and-restoration table demonstrates the causal comparison and warns when the competing cause changes too.",
+      "assignedDrillCount": 9
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-feasibility",
+      "title": "Possible does not mean proven",
+      "grade": "A",
+      "reason": "Survival by two transport routes makes possibility versus actual history concrete without overstating the result.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-matched-condition",
+      "title": "Hold the competing cause still",
+      "grade": "A",
+      "reason": "The two-factor table shows exactly which column remains fixed while the other factor changes.",
+      "assignedDrillCount": 4
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-separating-test",
+      "title": "Make the predictions disagree",
+      "grade": "A",
+      "reason": "Opposing cues give different predictions in one test, and the independent setting table preserves that reasoning.",
+      "assignedDrillCount": 3
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-joint-evidence",
+      "title": "Check every part of a claim",
+      "grade": "B",
+      "reason": "The worked counterexample tests a necessary condition; removal-effect comparisons are covered briefly in the tip, so the task family remains broad.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-models-evidence-substitution",
+      "title": "Make a prediction from the rule",
+      "grade": "B",
+      "reason": "Equation substitution is explicit; the new tip supplies the verbal density rule needed by an assigned exam item, but equations and verbal models remain different variants.",
+      "assignedDrillCount": 8
+    },
+    {
+      "skillId": "science-models-evidence-multiplicative",
+      "title": "Add the same amount or multiply?",
+      "grade": "A",
+      "reason": "The arrow sequence counts growth intervals correctly, and the tip now explains why equal multiplication preserves group shares.",
+      "assignedDrillCount": 4
+    },
+    {
+      "skillId": "science-models-evidence-domain",
+      "title": "Test a model where it applies",
+      "grade": "A",
+      "reason": "The allowed range is visible and an in-range mismatch is compared with an out-of-range observation.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-models-evidence-factor",
+      "title": "Combine changes in a formula",
+      "grade": "A",
+      "reason": "The example handles a squared numerator and inverse denominator separately, with a root-rule comparison stated explicitly.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-models-evidence-separate-predictions",
+      "title": "Choose the best input to test",
+      "grade": "A",
+      "reason": "The table includes both an agreement point and a separating point; the method compares predictions at the same input.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-models-evidence-saturation",
+      "title": "Recognize a model’s upper limit",
+      "grade": "A",
+      "reason": "The ratio below one explains the upper bound and the table shows approach to the limit before the independent task.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-models-evidence-background",
+      "title": "Subtract the background first",
+      "grade": "A",
+      "reason": "Raw and corrected amounts are separated before halving and recombined afterward; the tip covers detector geometry as a confound.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-models-evidence-combined-experiments",
+      "title": "Use both sets of evidence",
+      "grade": "B",
+      "reason": "The repaired example checks the required density graph before the growth table and explains a matched follow-up; coordinating both displays still takes several steps.",
+      "assignedDrillCount": 6
+    },
+    {
+      "skillId": "science-scientific-foundations-acidity",
+      "title": "Read pH without reversing it",
+      "grade": "A",
+      "reason": "The displayed pH and product values now match the explanation, which distinguishes acidity from enzyme output.",
+      "assignedDrillCount": 3
+    },
+    {
+      "skillId": "science-scientific-foundations-matter",
+      "title": "Keep track of atoms and leftovers",
+      "grade": "A",
+      "reason": "Reaction ratios, product count, leftover molecules, and the conserved atom inventory are demonstrated with supplied conditions.",
+      "assignedDrillCount": 7
+    },
+    {
+      "skillId": "science-scientific-foundations-ohms-law",
+      "title": "Use voltage, current, and resistance",
+      "grade": "A",
+      "reason": "The original resistance, doubled series resistance, and new current are calculated with their units before a different try.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-scientific-foundations-net-force",
+      "title": "Combine forces, then divide by mass",
+      "grade": "A",
+      "reason": "Opposing forces are combined before division by mass, and zero net force is distinguished from zero velocity.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-scientific-foundations-net-oxygen",
+      "title": "Separate oxygen made from oxygen left",
+      "grade": "A",
+      "reason": "Net, production, and consumption are defined and calculated; the tip explains why a no-leaf control matters.",
+      "assignedDrillCount": 6
+    },
+    {
+      "skillId": "science-scientific-foundations-heat-phase",
+      "title": "Read a melting plateau",
+      "grade": "A",
+      "reason": "The plateau is visible and its duration is measured before changing power; the tip rejects identifying a material from melting point alone.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-scientific-foundations-inheritance",
+      "title": "Find the chance of a trait",
+      "grade": "A",
+      "reason": "The missing dominance prerequisite is now explicit; possible allele pairs and expected-versus-actual counts support the assigned questions.",
+      "assignedDrillCount": 5
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-group-response",
+      "title": "Most common is not always a majority",
+      "grade": "A",
+      "reason": "The example calculates the total and compares the largest category with half, separating mode, majority, and unanimity.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-sample-proportion",
+      "title": "Compare fractions, not just counts",
+      "grade": "A",
+      "reason": "Each sample’s numerator and denominator are visible, and unequal-sample comparison is distinguished from a significance claim.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-scientific-foundations-waves-transfer",
+      "title": "Use wave speed, frequency, and wavelength",
+      "grade": "A",
+      "reason": "The speed-frequency-wavelength equation and units are explicit, with the constant-medium condition retained.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-detection",
+      "title": "Can the sensor see the predicted signal?",
+      "grade": "A",
+      "reason": "Two detector thresholds demonstrate when nondetection can and cannot test a required signal.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-scientific-foundations-seasons",
+      "title": "Explain opposite seasons",
+      "grade": "B",
+      "reason": "The opposite-daylight table and axial-tilt explanation are correct; the physical geometry is explained in words rather than a spatial diagram.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-scientific-foundations-relative-order",
+      "title": "Put rock events in order",
+      "grade": "B",
+      "reason": "The rules now include a layer sealing an earlier fault, but the learner still translates a relationship table into a spatial rock sequence.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-scientific-foundations-water-processes",
+      "title": "Name what actually happened",
+      "grade": "A",
+      "reason": "Breakdown, movement, settling, evaporation, and condensation are named by the actual observed change in short sequences.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-scientific-foundations-atomic-identity",
+      "title": "Keep protons, neutrons, and electrons separate",
+      "grade": "A",
+      "reason": "The visible particle counts support element, isotope, and charge separately, with an independent electron-loss task.",
+      "assignedDrillCount": 2
+    },
+    {
+      "skillId": "science-models-evidence-reciprocal",
+      "title": "Solve the reciprocal, then flip it",
+      "grade": "A",
+      "reason": "The worked common-denominator subtraction and final inversion are explicit, including the no-finite-distance boundary case.",
+      "assignedDrillCount": 5
+    }
+  ]
+}

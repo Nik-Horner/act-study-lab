@@ -176,7 +176,7 @@
       "10 cm"
     ],
     "answer": 0,
-    "explanation": "At x = Day 4, the Lamp B point has y = 8 cm. The 7 cm point at that day belongs to Lamp A.",
+    "explanation": "Find Day 4 on the bottom axis. Follow it to Lamp B, then read 8 cm on the height axis. The 7 cm point is Lamp A; choosing the right day is not enough without choosing the right line.",
     "passage": {
       "id": "science-drill-seed-light",
       "title": "Seedling growth under two lamps",
@@ -386,7 +386,7 @@
       "L"
     ],
     "answer": 0,
-    "explanation": "Divide current by area: J = 12/10 = 1.2 mA/cm²; K ≈ 0.67; L = 1.0; M = 0.32. J has the largest ratio even though L has the largest current.",
+    "explanation": "“Current per area” means current ÷ area. J: 12/10 = 1.2; K: 10/15 ≈ 0.67; L: 20/20 = 1; M: 8/25 = 0.32 mA/cm². J wins. L has the largest current alone, but also a larger area.",
     "passage": {
       "id": "science-drill-solar",
       "title": "Solar cell measurements",
@@ -1419,7 +1419,7 @@
       "Pond oxygen and water temperature both decreased across the measured night."
     ],
     "answer": 0,
-    "explanation": "S makes a claim about equilibrium capacity, so compare the independent equilibrium measurements: cooling from 25°C to 20°C raises that capacity from 8.3 to 9.1 mg/L, the opposite of S’s mechanism. The actual pond oxygen decline is what S tries to explain; observing that decline alongside cooling does not itself test the claimed equilibrium direction.",
+    "explanation": "S makes a claim about how much oxygen water can hold at equilibrium. Use the separate equilibrium values: cooling 25→20°C raises capacity 8.3→9.1 mg/L. S predicts the opposite. The pond’s falling oxygen is the event being explained, not proof of S’s proposed cause.",
     "passage": {
       "id": "science-drill-pond-views",
       "title": "Why a pond’s oxygen falls",
@@ -5911,7 +5911,7 @@
       "85%"
     ],
     "answer": 2,
-    "explanation": "The mixed culture would have 50 S and 850 R survivors, or 900 total. R’s share is 850/900 × 100 ≈ 94%. The 85% value is R’s survival fraction within its own initial population.",
+    "explanation": "The question asks R’s share of all survivors, so the denominator is 850 R + 50 S = 900. Compute 850/900 ≈ 94%. The 85% value uses the original 1,000 R cells as the denominator and answers R’s survival rate instead.",
     "passage": {
       "id": "science-exam-bacteria",
       "title": "Passage 7: Comparing bacterial strains",
@@ -6172,7 +6172,7 @@
       "2.00"
     ],
     "answer": 2,
-    "explanation": "Rf = 36/60 = 0.60. Rf is a ratio of two lengths and has no length unit.",
+    "explanation": "Use the passage’s ratio: band distance ÷ solvent-front distance. For D, that is 36/60 = 0.60. Reversing it gives 1.67. Both distances are in mm, so the ratio has no unit.",
     "passage": {
       "id": "science-drill-chromatography",
       "title": "Separating dissolved pigments",
@@ -6292,7 +6292,7 @@
       "60 mm"
     ],
     "answer": 0,
-    "explanation": "Band distance = Rf × front distance = 0.60 × 80 = 48 mm. The old 36 mm position applies to a 60 mm front.",
+    "explanation": "D’s ratio must stay 0.60: band distance/80 = 0.60. Multiply 0.60 × 80 = 48 mm. The old 36 mm belongs to a run whose front traveled only 60 mm.",
     "passage": {
       "id": "science-drill-chromatography",
       "title": "Separating dissolved pigments",
@@ -6784,7 +6784,7 @@
       "3"
     ],
     "answer": 3,
-    "explanation": "At 3 h, H is 98% and J is 95%. Their difference is 3 percentage points, not the 5-point reduction of J from baseline.",
+    "explanation": "At 3 h, first read each named line: H = 98%, J = 95%. Subtract 98−95 = 3 percentage points. The 5-point drop measures J from its own 100% baseline, which is a different comparison.",
     "passage": {
       "id": "science-drill-transit",
       "title": "Changes in starlight",
@@ -6860,6 +6860,10 @@
               ]
             ]
           }
+        ],
+        "yRange": [
+          94,
+          100
         ]
       }
     },
@@ -6959,6 +6963,10 @@
               ]
             ]
           }
+        ],
+        "yRange": [
+          94,
+          100
         ]
       }
     },
@@ -7058,6 +7066,10 @@
               ]
             ]
           }
+        ],
+        "yRange": [
+          94,
+          100
         ]
       }
     },
@@ -7157,6 +7169,10 @@
               ]
             ]
           }
+        ],
+        "yRange": [
+          94,
+          100
         ]
       }
     },
@@ -7180,7 +7196,7 @@
       "Yes, 2 h for H and 5 h for J"
     ],
     "answer": 1,
-    "explanation": "A repeat period requires timing successive events. The 0–6 h graph contains only one decrease event for each star, so the separation of repeating events is unavailable.",
+    "explanation": "Find two matching events before measuring a repeat time. Each star shows only one dip in this 0–6 h record. The width of that dip is its duration, not the time until the next dip, so no repeat period is established.",
     "passage": {
       "id": "science-drill-transit",
       "title": "Changes in starlight",
@@ -7256,6 +7272,10 @@
               ]
             ]
           }
+        ],
+        "yRange": [
+          94,
+          100
         ]
       }
     },
@@ -7429,7 +7449,7 @@
       "0.75°C"
     ],
     "answer": 1,
-    "explanation": "ΔT = Q/(mc) = 1,200/(100×4) = 3°C. Doubling energy at fixed mass and specific heat doubles the original 1.5°C increase.",
+    "explanation": "The question wants a temperature increase, so rearrange Q = mcΔT to ΔT = Q/(mc). For B, 1,200/(100×4) = 3°C. The 20°C starting temperature is not added because the question asks for the increase, not the final temperature.",
     "passage": {
       "id": "science-drill-calorimeter",
       "title": "Heating different water masses",
@@ -7629,7 +7649,7 @@
       "A and B have equal water flows."
     ],
     "answer": 1,
-    "explanation": "A supplies 30 L/s while B supplies 10 L/s, so the mixed concentration is weighted toward A: (30×4+10×12)/40 = 6 mg/L.",
+    "explanation": "A supplies 30 L/s and B supplies 10 L/s. More of the mixture comes from A, so its concentration has more weight. Calculate (30×4 + 10×12)/(30+10) = 6 mg/L. Averaging 4 and 12 equally ignores the unequal water amounts.",
     "passage": {
       "id": "science-drill-confluence",
       "title": "Two streams merge",
@@ -8496,7 +8516,7 @@
       "2.5 mm"
     ],
     "answer": 2,
-    "explanation": "The data give x²/t = 4 mm²/min, for example 4²/4 = 4. Thus x² = 4×6.25 = 25 and x = 5 mm.",
+    "explanation": "First find the model constant from a point: at t = 4, x = 4, so x²/t = 16/4 = 4. Thus x² = 4t. At 6.25 min, x² = 25, so x = 5 mm. The square root is the final step.",
     "passage": {
       "id": "science-drill-diffusion",
       "title": "A dye front spreads through gel",
@@ -8620,7 +8640,7 @@
       "4 min"
     ],
     "answer": 1,
-    "explanation": "The 8-to-10 mm segment takes 25−16 = 9 min; 2-to-4 mm takes 4−1 = 3 min. The difference is 6 min.",
+    "explanation": "Read the times for each distance interval. From 8 to 10 mm: 25−16 = 9 min. From 2 to 4 mm: 4−1 = 3 min. “How much longer” asks you to subtract those durations: 9−3 = 6 min.",
     "passage": {
       "id": "science-drill-diffusion",
       "title": "A dye front spreads through gel",
@@ -8852,7 +8872,7 @@
       "Yes, because every 10°C increase adds the same mass."
     ],
     "answer": 0,
-    "explanation": "For direct proportionality, mass/temperature would be constant. It is 20/10 = 2 at 10°C and 50/40 = 1.25 at 40°C; the 10°C increments also differ.",
+    "explanation": "Increasing together is not enough for direct proportion. Divide dissolved mass by temperature at two points: 20/10 = 2 but 50/40 = 1.25. The ratios differ, so the measured relation is not directly proportional.",
     "passage": {
       "id": "science-drill-solubility",
       "title": "Dissolving a crystalline salt",
@@ -9574,7 +9594,7 @@
       "Compare only final watts."
     ],
     "answer": 0,
-    "explanation": "Cleaned panels change by +12 W and uncleaned by −1 W. Comparing changes uses the measured starting outputs of 80 and 81 W rather than treating them as identical.",
+    "explanation": "Compare changes because the starting values differ. Cleaned: 92−80 = +12 W. Uncleaned: 80−81 = −1 W. Looking only at 92 versus 80 skips the unequal starting outputs; keep each before-and-after pair together.",
     "passage": {
       "id": "science-drill-panels",
       "title": "Cleaning solar panels",
@@ -9980,7 +10000,7 @@
       "It states a measurable outcome with a defined 20 min collection period."
     ],
     "answer": 3,
-    "explanation": "The response is specifically CO₂ volume collected over 20 min: 2, 28, 22, or 5 mL. Defining the quantity and interval makes the outcome repeatable.",
+    "explanation": "An operational measure says exactly what is recorded. Here it is CO₂ volume collected in 20 min. The same quantity and time make the measurement repeatable; gas volume does not directly measure which carbohydrate was added.",
     "passage": {
       "id": "science-drill-yeast",
       "title": "Sugar types and gas production",
@@ -11457,8 +11477,8 @@
     "subject": "science",
     "category": "Evaluation of models",
     "difficulty": "medium",
-    "stem": "What feature makes the scar percentages comparable across layers?",
-    "questionText": "What feature makes the scar percentages comparable across layers?",
+    "stem": "According to the study, what was true of the sample used to calculate each scar percentage?",
+    "questionText": "According to the study, what was true of the sample used to calculate each scar percentage?",
     "choices": [
       "Each percentage was based on 100 sampled T fossils.",
       "Only the youngest layer was scored.",
@@ -11466,7 +11486,7 @@
       "All dry indicators were identical."
     ],
     "answer": 0,
-    "explanation": "All layers had 100 T fossils scored for scars. The abundance per kilogram differs, but the scar proportions use the same sample size.",
+    "explanation": "Each scar percentage uses scarred T fossils divided by 100 T fossils scored in that layer. The fossils-per-kilogram column uses a different denominator. Equal sample sizes make these counts easy to compare, but percentages can also compare unequal sample sizes when each uses its own total.",
     "passage": {
       "id": "science-drill-fossil-views",
       "title": "A population disappears from sediments",
@@ -11946,7 +11966,7 @@
       "2.4 s"
     ],
     "answer": 3,
-    "explanation": "√1.44 = 1.2, so S predicts T = 2×1.2 = 2.4 s. Model D would predict 2.88 s.",
+    "explanation": "Model S is T = 2√L. Insert L = 1.44: √1.44 = 1.2 because 1.2×1.2 = 1.44. Then T = 2×1.2 = 2.4 s. Multiplying 2×1.44 uses Model D instead.",
     "passage": {
       "id": "science-drill-pendulum",
       "title": "A pendulum timing model",
@@ -12148,7 +12168,7 @@
       "Both exactly"
     ],
     "answer": 1,
-    "explanation": "S predicts 2/1.5 = 1.33, 4/2 = 2, 12/4 = 3, and 28/8 = 3.5. L predicts 2, 4, 12, and 28 mg/g.",
+    "explanation": "Test the actual formula, not just whether the values rise. S gives 4×0.5/1.5 ≈ 1.33; 4×1/2 = 2; 4×3/4 = 3; and 4×7/8 = 3.5. These match the table. L gives 2, 4, 12, and 28, which do not.",
     "passage": {
       "id": "science-drill-adsorption",
       "title": "A pollutant binds to porous beads",
@@ -12298,7 +12318,7 @@
       "q must equal C."
     ],
     "answer": 1,
-    "explanation": "As C becomes large, C/(1+C) approaches 1, so q approaches 4 mg/g. The decreasing increments toward 3.5 in the table agree with saturation.",
+    "explanation": "Rewrite S as 4 × C/(1+C). For positive C, the bottom is a little larger than the top, so the fraction stays below 1. As C grows, the fraction gets closer to 1, and q approaches 4 mg/g from below. It does not grow without limit.",
     "passage": {
       "id": "science-drill-adsorption",
       "title": "A pollutant binds to porous beads",
@@ -12398,7 +12418,7 @@
       "20 cm"
     ],
     "answer": 0,
-    "explanation": "1/f = 1/20+1/20 = 1/10, so f = 10 cm. The sum is of reciprocals, not the distances themselves.",
+    "explanation": "Add reciprocals: 1/f = 1/20 + 1/20 = 2/20 = 1/10. Flip the result to find f = 10 cm. Adding the distances as 20+20 = 40 skips what the equation actually says.",
     "passage": {
       "id": "science-drill-lens",
       "title": "Testing a thin-lens equation",
@@ -12498,7 +12518,7 @@
       "About 13.3 cm"
     ],
     "answer": 3,
-    "explanation": "1/v = 1/10−1/40 = 3/40, so v = 40/3 ≈ 13.3 cm. This lies between 15 cm at u = 30 and 12 cm at u = 60.",
+    "explanation": "Isolate the unknown reciprocal: 1/v = 1/10−1/40 = 4/40−1/40 = 3/40. Flip 3/40 to get v = 40/3 ≈ 13.3 cm. Do not subtract the distances themselves.",
     "passage": {
       "id": "science-drill-lens",
       "title": "Testing a thin-lens equation",
@@ -12598,7 +12618,7 @@
       "v = 0 cm"
     ],
     "answer": 0,
-    "explanation": "Setting u = f makes 1/v = 1/f−1/u = 0. A finite positive distance cannot have reciprocal zero; the listed real-screen positions therefore do not include this condition.",
+    "explanation": "Put u = f = 10 into 1/v = 1/f−1/u. Then 1/v = 0. No finite distance has reciprocal zero; this does not mean v = 0. The model therefore gives no finite screen position for the image.",
     "passage": {
       "id": "science-drill-lens",
       "title": "Testing a thin-lens equation",
@@ -12748,7 +12768,7 @@
       "25 counts/min"
     ],
     "answer": 1,
-    "explanation": "After 9 h the sample contributes 100; one more half-life gives 50 at 12 h. Adding background 20 predicts a total of 70 counts/min.",
+    "explanation": "Remove background first. At 9 h, raw 120−20 = 100 counts/min from the sample. One more 3 h interval halves that to 50. The question asks for total reading, so add the unchanged background: 50+20 = 70 counts/min.",
     "passage": {
       "id": "science-drill-decay",
       "title": "Counts from a radioactive sample",
@@ -13310,7 +13330,7 @@
       "10.5 mg/L"
     ],
     "answer": 1,
-    "explanation": "Net gain = production − consumption. With gain 2.5 and consumption 1.5, production = 2.5+1.5 = 4.0 mg/L. This uses the stated equal-respiration assumption.",
+    "explanation": "L starts at 8.0 and ends at 10.5, a net gain of 2.5 mg/L. Photosynthesis must replace the 1.5 used by respiration and leave that gain: 2.5+1.5 = 4.0 mg/L. Using the final 10.5 also counts oxygen present before the trial.",
     "passage": {
       "id": "science-drill-leaf-oxygen",
       "title": "Leaves, light, and oxygen",
@@ -13355,8 +13375,8 @@
     "subject": "science",
     "category": "Scientific knowledge",
     "difficulty": "medium",
-    "stem": "What does the unchanged no-leaf control help show?",
-    "questionText": "What does the unchanged no-leaf control help show?",
+    "stem": "What does the unchanged light-exposed no-leaf control help show about L’s oxygen increase?",
+    "questionText": "What does the unchanged light-exposed no-leaf control help show about L’s oxygen increase?",
     "choices": [
       "The measured oxygen change requires leaves under these conditions.",
       "Light by itself produced the same oxygen increase seen with leaves.",
@@ -13494,7 +13514,7 @@
       "20"
     ],
     "answer": 2,
-    "explanation": "Initially eight H₂ contain 16 hydrogen atoms. Products contain 6×2 = 12 and leftover two H₂ contain 4, totaling 16 by conservation.",
+    "explanation": "Start with 8 H₂ molecules: each contains 2 hydrogen atoms, so 16 atoms total. After reaction, 6 H₂O contain 12 hydrogen atoms and 2 leftover H₂ contain 4 more. Total = 16; count the leftovers.",
     "passage": {
       "id": "science-drill-molecule-balance",
       "title": "Combining two gases",
@@ -14974,7 +14994,7 @@
       "20–50 m"
     ],
     "answer": 3,
-    "explanation": "The decrease rates are 2/20 = 0.10, 7/30 ≈ 0.23, 7/50 = 0.14, and 2/100 = 0.02°C/m. The largest is 20–50 m.",
+    "explanation": "The depth gaps differ, so divide each temperature drop by its own gap: 2/20 = 0.10; 7/30 ≈ 0.23; 7/50 = 0.14; 2/100 = 0.02°C/m. The largest average drop per meter occurs over 20–50 m.",
     "passage": {
       "id": "science-exam-ocean",
       "title": "Passage 2: Layers of seawater",
@@ -16640,7 +16660,7 @@
       "4 mm"
     ],
     "answer": 1,
-    "explanation": "The unloading curve has 1 mm extension at zero force, compared with the original 0 mm. The remaining 1 mm is unrecovered, permanent deformation.",
+    "explanation": "Use the unloading line because the force has been removed. At 0 N that line still shows 1 mm, compared with the original 0 mm before loading. The 4 mm at 60 N includes stretch while the wire is still pulled.",
     "passage": {
       "id": "science-exam-wire-strain",
       "title": "Passage 6: Stretching a metal wire",
@@ -17152,7 +17172,7 @@
       "U is three times V"
     ],
     "answer": 0,
-    "explanation": "U: signal 28 on Fresh means diluted concentration 12; undo twofold dilution to get 24 mg/L. Halved flow = 1.5 L/s, so U carries 36 mg/s. V: signal 28 on Saline means 6; undo threefold dilution to get 18 mg/L; 18×2 = 36 mg/s.",
+    "explanation": "Read each water type’s own calibration line. Signal 28 gives U 12 mg/L diluted; ×2 = 24 mg/L original. Its new flow is 3/2 = 1.5 L/s, so 36 mg/s. V gives 6 mg/L diluted; ×3 ×2 L/s = 36 mg/s. They are equal.",
     "passage": {
       "id": "science-transfer-v2-dual-calibration",
       "title": "Two sensor calibrations and two streams",
@@ -17257,7 +17277,7 @@
       "Use Meter B because one reference reading was exactly 8.0"
     ],
     "answer": 1,
-    "explanation": "A is tightly clustered but approximately 0.40 mg/L high: precise yet biased. An accepted standard permits calibration; repeated uncorrected readings retain the bias. B’s coarse reporting cannot resolve the claimed 0.03 mg/L difference.",
+    "explanation": "Compare A with the known 8.00 mg/L value. Its readings cluster near 8.40: precise, but too high by about 0.40. Calibrate, then recheck. More uncorrected readings keep the offset; B’s 0.1 increments are too coarse for a 0.03 difference.",
     "passage": {
       "id": "science-transfer-v2-standard-check",
       "title": "Two dissolved-oxygen meters",
@@ -17310,7 +17330,7 @@
       "8 mg/day, isolating water"
     ],
     "answer": 2,
-    "explanation": "The new treated condition is wet with additive (31), while control remains dry without additive (12): difference 19. It combines water and additive changes and therefore does not isolate either effect. The isolated additive effects are 4 in dry soil and 11 in wet soil.",
+    "explanation": "Locate the new treated condition: wet with additive = 31. Locate its stated control: dry without additive = 12. Difference = 31−12 = 19 mg/day. This compares two changes together, so it cannot isolate the additive alone.",
     "passage": {
       "id": "science-transfer-v2-factorial-moisture",
       "title": "Moisture changes a treatment effect",

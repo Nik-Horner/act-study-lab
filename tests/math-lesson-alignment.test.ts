@@ -21,6 +21,87 @@ const settings = {
   minutesPerDay: 75,
 };
 
+test("corrected Math teaching reopens only the pending method while preserving saved answers", () => {
+  for (const skillId of [
+    "math-functions-model-patterns",
+    "math-geometry-sphere-surface",
+    "math-statistics-probability-independence",
+    "math-number-quantity-complex-products",
+    "math-number-quantity-origin-rotations",
+    "math-number-quantity-integer-parity",
+  ]) {
+    const scopes = dailyScopes("math", settings);
+    const index = scopes.findIndex((entry) => entry.scope.skillId === skillId);
+    const plan = makeDailyPlan(
+      "math-correction",
+      "2026-10-15",
+      settings,
+      0,
+      undefined,
+      [],
+      { math: index },
+    );
+    const math = plan.blocks.find((block) => block.subject === "math")!;
+    const unit = blockUnits(math)[0];
+    assert.equal(unit.skillId, skillId);
+    const skill = getLearningSkill(unit.topic, skillId)!;
+    unit.questions = skill.questionIds
+      .slice(0, 2)
+      .map((id) => ({ ...getQuestion(id)!, phase: "drill" as const }));
+    unit.lesson.sections[0] = {
+      ...unit.lesson.sections[0],
+      teachingRevision: 3,
+      body: ["Earlier saved teaching"],
+    };
+    math.units = [unit];
+    math.questions = [...unit.questions];
+    math.reviewQuestions = [];
+    plan.blocks = [math];
+    const original = structuredClone(plan);
+    const answered = { [unit.questions[0].id]: unit.questions[0].answer };
+    const completeKeys = [unit.id, `${unit.id}:concept:0`];
+    const refreshed = refreshDailyContent(plan, answered);
+    const updated = blockUnits(refreshed.blocks[0])[0];
+    assert.deepEqual(
+      plan,
+      original,
+      "refresh must not mutate the saved session",
+    );
+    assert.equal(refreshed.id, plan.id);
+    assert.equal(updated.id, unit.id);
+    assert.deepEqual(
+      updated.questions.map((q) => q.id),
+      unit.questions.map((q) => q.id),
+    );
+    assert.equal(updated.sectionIndices![0], unit.sectionIndices![0]);
+    assert.equal(
+      dailyStep(refreshed, answered, completeKeys).kind,
+      "lesson",
+      skillId,
+    );
+    assert(
+      updated.requiredConceptIndices!.some(
+        (i) => updated.lesson.sections[i].teachingRevision === 4,
+      ),
+    );
+    assert.deepEqual(
+      refreshDailyContent(refreshed, answered),
+      refreshed,
+      "refresh must be idempotent",
+    );
+    const next = dailyStep(refreshed, answered, [
+      ...completeKeys,
+      ...dailyConcepts(updated).map((i) => `${updated.id}:concept:${i}`),
+    ]);
+    assert.equal(next.kind, "drill");
+    assert(next.kind === "drill");
+    assert.equal(next.question.id, unit.questions[1].id);
+    assert.deepEqual(answered, {
+      [unit.questions[0].id]: unit.questions[0].answer,
+    });
+  }
+});
+
 test("math unit titles describe the exact taught method after a saved-content refresh", () => {
   const plan = makeDailyPlan(
     "titles",

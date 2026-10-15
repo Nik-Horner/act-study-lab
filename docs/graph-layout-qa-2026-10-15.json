@@ -1,0 +1,226 @@
+{
+  "desktop": [
+    {
+      "clipped": [],
+      "id": "science-drill-seed-light",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-cooling",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-enzyme-temp",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-pond-views",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-spring-model",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-absorption-model",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-circuit",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-salinity",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-beads",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-algae",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-battery",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-stream",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-transit",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-pressure-depth",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-food-growth",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-diffusion",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-exposure",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-phase-change",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-ocean",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-wire-strain",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-transfer-v2-dual-calibration",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-transfer-v2-joint-model",
+      "overflow": false
+    }
+  ],
+  "mobile": [
+    {
+      "clipped": [],
+      "id": "science-drill-seed-light",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-cooling",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-enzyme-temp",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-pond-views",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-spring-model",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-absorption-model",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-circuit",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-salinity",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-beads",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-algae",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-battery",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-stream",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-transit",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-pressure-depth",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-food-growth",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-diffusion",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-exposure",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-drill-phase-change",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-ocean",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-exam-wire-strain",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-transfer-v2-dual-calibration",
+      "overflow": false
+    },
+    {
+      "clipped": [],
+      "id": "science-transfer-v2-joint-model",
+      "overflow": false
+    }
+  ]
+}

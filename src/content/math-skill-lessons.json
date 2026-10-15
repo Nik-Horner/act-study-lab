@@ -886,7 +886,7 @@
     "section": {
       "heading": "Tell additive, quadratic, and exponential patterns apart",
       "body": [
-        "At equal input steps, linear outputs have constant first differences, quadratic outputs have constant second differences, and exponential outputs have constant ratios. For \\(f \\left(t\\right)=ab^{t}\\) with a, \\(b>0\\), \\(\\frac{f \\left(v\\right)}{f} \\left(u\\right)=b^{v-u}\\); use the input gap before finding b. Half-life h gives \\(a \\left(\\frac{1}{2}\\right)^{\\frac{t}{h}}\\). A pattern explicitly stated to be quadratic or exponential fixes how it continues."
+        "At equal input steps, linear outputs have constant first differences, quadratic outputs have constant second differences, and exponential outputs have constant ratios. For \\(f \\left(t\\right)=ab^{t}\\) with a, \\(b>0\\), \\(\\frac{f(v)}{f(u)}=b^{v-u}\\); use the input gap before finding b. Half-life h gives \\(a \\left(\\frac{1}{2}\\right)^{\\frac{t}{h}}\\). A pattern explicitly stated to be quadratic or exponential fixes how it continues."
       ],
       "examples": [
         {
@@ -905,7 +905,7 @@
         "answer": 0,
         "explanation": "Nine hours contain 3 half-life periods, giving \\(160 \\left(\\frac{1}{2}\\right)^{3}=20\\). Counting only two halvings gives 40. The exponent counts periods, not the raw hours."
       },
-      "teachingRevision": 3
+      "teachingRevision": 4
     }
   },
   {
@@ -1438,7 +1438,7 @@
     "section": {
       "heading": "Square the radius for a sphere’s surface area",
       "body": [
-        "A sphere’s surface area is \\(4 \\pi  r^{2}\\) and its volume is \\(\\frac{4 \\pi  r^{3}}{3}\\). Surface area measures its exposed two-dimensional boundary; volume measures the three-dimensional space inside. If a diameter is given, halve it before squaring. A circular cross-section has area \\(\\pi  r^{2}\\), which is one fourth of the sphere’s surface area."
+        "A sphere’s surface area is \\(4 \\pi  r^{2}\\) and its volume is \\(\\frac{4 \\pi  r^{3}}{3}\\). Surface area measures its exposed two-dimensional boundary; volume measures the three-dimensional space inside. If a diameter is given, halve it before squaring. A cross-section through the center (a great circle) has area \\(\\pi  r^{2}\\), which is one fourth of the sphere’s surface area."
       ],
       "examples": [
         {
@@ -1457,7 +1457,7 @@
         "answer": 2,
         "explanation": "The radius is 3, so surface area is \\(4 \\pi \\cdot 3^{2}=36 \\pi\\). The \\(144 \\pi\\) choice uses the diameter as the radius; \\(12 \\pi\\) does not square the radius correctly."
       },
-      "teachingRevision": 3
+      "teachingRevision": 4
     }
   },
   {
@@ -2599,7 +2599,7 @@
       "examples": [
         {
           "label": "Worked example",
-          "text": "If \\(P \\left(A\\right)=0.5\\), \\(P \\left(B\\right)=0.6\\) and intersection 0.3, the product matches 0.3, so the events are independent. Their intersection is positive, so they are not disjoint. If the intersection were 0 instead, they would be disjoint but dependent because \\(0\\ne 0.5\\cdot 0.6\\).",
+          "text": "If \\(P \\left(A\\right)=0.5\\), \\(P \\left(B\\right)=0.6\\) and intersection 0.3, the product matches 0.3, so the events are independent. Their intersection is positive, so they are not disjoint. For a separate example, let \\(P(A)=0.2\\), \\(P(B)=0.5\\), and \\(P(A\\cap B)=0\\). These events are disjoint but dependent because \\(0\\ne 0.2\\cdot 0.5\\). Their union is 0.7, a valid probability.",
           "good": true
         }
       ],
@@ -2613,7 +2613,7 @@
         "answer": 1,
         "explanation": "The product \\(0.2\\cdot 0.5=0.1\\) matches the stated intersection, establishing independence. Since that intersection is nonzero, the events can occur together and are not disjoint."
       },
-      "teachingRevision": 3
+      "teachingRevision": 4
     }
   },
   {
@@ -2953,9 +2953,9 @@
           "\\(5+5 i\\)"
         ],
         "answer": 2,
-        "explanation": "Distribute to obtain \\(3-i+6 i-2 i^{2}\\). Since \\(-2 i^{2}=2\\), the result is \\(5+5 i\\). The \\(1+5 i\\) choice treats \\(i^{2}\\) as+1, while the last choice reverses the imaginary sign."
+        "explanation": "Distribute to obtain \\(3-i+6 i-2 i^{2}\\). Since \\(-2 i^{2}=2\\), the result is \\(5+5 i\\). The \\(1+5 i\\) choice treats \\(i^{2}\\) as+1, while \\(5-5i\\) reverses the imaginary sign."
       },
-      "teachingRevision": 3
+      "teachingRevision": 4
     }
   },
   {
@@ -3540,9 +3540,9 @@
           "(7, 4)"
         ],
         "answer": 2,
-        "explanation": "The clockwise rule sends(x, y)to(y, −x), giving(7, 4). The first choice is counterclockwise and the third reverses both signs, \\(a 180^\\circ\\) turn."
+        "explanation": "The clockwise rule sends(x, y)to(y, −x), giving(7, 4). The point (−7, −4) is the counterclockwise image. The point (4, −7) reverses both signs, a \\(180^\\circ\\) turn."
       },
-      "teachingRevision": 3
+      "teachingRevision": 4
     }
   },
   {
@@ -4686,9 +4686,9 @@
           "\\(n^{2}+1\\)"
         ],
         "answer": 1,
-        "explanation": "The expression \\(n^{2}+n\\) factors as n(n+1), and one of consecutive integers is even. At \\(n=0\\), the second expression is 1, and 2 n+1 is always odd."
+        "explanation": "The expression \\(n^{2}+n\\) factors as n(n+1), and one of consecutive integers is even. At \\(n=0\\), \\(n^2+1=1\\), so that expression is not always even. The expression \\(2n+1\\) is always odd."
       },
-      "teachingRevision": 3
+      "teachingRevision": 4
     }
   },
   {

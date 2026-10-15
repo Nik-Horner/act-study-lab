@@ -17,9 +17,9 @@ Create an ignored `.env.local` with the existing project's `NEXT_PUBLIC_SUPABASE
 | Subject | Full digital practice            | Additional study material                  |
 | ------- | -------------------------------- | ------------------------------------------ |
 | English | Two 50-question, 35-minute forms | Existing 15-topic lesson and drill library |
-| Math    | Two 45-question, 50-minute forms | Eight lessons, 288 drills, 24 checks       |
-| Reading | Two 36-question, 40-minute forms | Six lessons, 144 drills, 18 checks         |
-| Science | Two 40-question, 40-minute forms | Six lessons, 203 drills, 18 checks         |
+| Math    | Two 45-question, 50-minute forms | Eight lessons, 384 drills, 24 checks       |
+| Reading | Two 36-question, 40-minute forms | Six lessons, 292 drills, 18 checks         |
+| Science | Two 40-question, 40-minute forms | Six lessons, 216 drills, 18 checks         |
 
 Reading forms have four nine-question units, including a literary narrative, informational passages, a paired-text unit, and a table. Three passages are approximately 750 words and the paired unit approximately 650, totaling about 2,900 words per form. Lessons include seven sections, six worked examples, and three independent checks. Timed questions and passages are held out of topic drill pools. The lab reports raw accuracy on original questions; it does not claim an official scaled-score prediction. English results also show raw accuracy; historical estimate fields remain stored for compatibility.
 
@@ -60,3 +60,5 @@ Every section teaches the rule, conditions and a worked example before applicati
 Daily questions respond to each subject baseline and the account target, date, budget, weaknesses and optional Science choice. Higher targets require more independent, paced, high-confidence hard-question evidence. Retrying a demonstrated or previously missed question does not turn it into new evidence. Formative/retired items remain in saved history; unanswered legacy Reading items migrate deterministically to the new pool. Coverage counts lessons, not a score guarantee. Two different official timed forms are the independent goal check.
 
 The repair ledger and verification limits are in `docs/quality-repair-2026-10-14.md`.
+
+The October 15 Daily teaching repair restores matching visual evidence to all 52 Science skills, simplifies all 24 Reading skills, adds short practical tips, and preserves English teaching and all 80 formula-recall cards. Reading learning time is recorded without a per-question speed penalty; full-section timing is unchanged. See `docs/teaching-repair-2026-10-15.md` for the review scope, study sources, account-preservation checks, and limits.

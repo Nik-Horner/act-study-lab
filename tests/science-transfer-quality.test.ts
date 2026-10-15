@@ -192,7 +192,7 @@ test("foundations teach and assess Earth/space, matter identity, and respiration
     lesson.sections[7].body.join(" "),
     /rotation.*day-night.*revolution.*year/,
   );
-  assert.match(lesson.sections[7].body.join(" "), /axial tilt/);
+  assert.match(lesson.sections[7].body.join(" "), /axial tilt/i);
   assert.match(
     lesson.sections[7].body.join(" "),
     /lower layers are older.*cutting a rock formed later/,

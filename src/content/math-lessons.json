@@ -730,7 +730,7 @@
         "heading": "Units and average rates",
         "body": [
           "To change units, multiply by a fraction whose top and bottom mean the same amount. Place the old unit on the bottom so it cancels. Average speed is total distance divided by total time. Average the speeds directly only when time spent at each speed is equal.",
-          "Worked example: \\(\\frac{90 \\text{km}}{h}\\times \\left(\\frac{1000 m}{1} \\text{km}\\right)\\times \\left(\\frac{1 h}{3600} s\\right)=\\frac{25 m}{s}\\). Traveling 40 miles at 20 mph and 40 miles at 40 mph takes \\(2+1=3\\) hours, so the trip average is \\(\\frac{80}{3}\\) mph."
+          "Worked example: \\(\\frac{90 \\text{km}}{h}\\times \\left(\\frac{1000\\text{ m}}{1\\text{ km}}\\right)\\times \\left(\\frac{1\\text{ h}}{3600\\text{ s}}\\right)=\\frac{25 m}{s}\\). Traveling 40 miles at 20 mph and 40 miles at 40 mph takes \\(2+1=3\\) hours, so the trip average is \\(\\frac{80}{3}\\) mph."
         ],
         "tip": "Choose one system of units before combining values; minutes and hours are different units.",
         "examples": [
@@ -739,7 +739,8 @@
             "text": "A rate of gallons per minute multiplied by minutes gives gallons. Dividing gallons by that rate gives minutes.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 1
       },
       {
         "heading": "Work, mixtures, and weighted averages",
@@ -767,10 +768,11 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "A price rises from $40 to $50: increase is \\(\\frac{10}{40}=25\\%\\). Returning from $50 to $40 is \\(\\frac{a 10}{50}=20\\%\\) decrease.",
+            "text": "A price rises from $40 to $50: increase is \\(\\frac{10}{40}=25\\%\\). Returning from $50 to $40 is \\(\\frac{10}{50}=20\\%\\) decrease.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 1
       },
       {
         "heading": "Units: cancel factors and square the conversion when needed",
@@ -899,7 +901,7 @@
         "heading": "Linear versus exponential change",
         "body": [
           "Adding the same amount each step gives a straight-line, or linear, pattern. Multiplying by the same factor each step gives an exponential pattern, as with repeated percentage changes. In \\(P_0b^t\\), use \\(b=1+\\text{rate}\\) for growth and \\(b=1-\\text{rate}\\) for decay.",
-          "Worked example: 500 growing by 8% per year becomes 500(1.08)ᵗ. If a quantity changes from 120 at \\(t=1\\) to 960 at \\(t=4\\), dividing gives \\(b^{3}=8\\), so \\(b=2\\) and \\(P_{0}=60\\). A doubling time of d units gives \\(P \\left(t\\right)=P_{0} 2^{t}\\)⁄ᵈ.",
+          "Worked example: 500 growing by 8% per year becomes 500(1.08)ᵗ. If a quantity changes from 120 at \\(t=1\\) to 960 at \\(t=4\\), dividing gives \\(b^{3}=8\\), so \\(b=2\\) and \\(P_{0}=60\\). A doubling time of d units gives \\(P(t)=P_{0}2^{t/d}\\).",
           "Simple interest uses \\(A=P(1+rt)\\). Compounding n times per year uses \\(A=P(1+r/n)^{nt}\\), with annual decimal rate r and time t in years. A $500 balance at 6% compounded twice a year for 3 years is \\(500(1.03)^6\\), assuming no deposits or withdrawals. Half-life h gives \\(P(t)=P_0(1/2)^{t/h}\\), counting the number of half-lives.",
           "To compare two exponential models, divide them before solving a threshold. For \\(A \\left(t\\right)=200 \\left(1.3\\right)^{t}\\) and \\(B \\left(t\\right)=300 \\left(1.1\\right)^{t}\\), \\(A>B\\) means \\(\\left(\\frac{13}{11}\\right)^{t}>\\frac{3}{2}\\). Taking logarithms gives \\(t>\\frac{\\ln \\left(\\frac{3}{2}\\right)}{\\ln \\left(\\frac{13}{11}\\right)}\\approx 2.43\\), so the first whole period is 3. Check both adjacent periods in the original models; a strictly greater threshold can exclude equality."
         ],
@@ -911,7 +913,7 @@
             "good": true
           }
         ],
-        "teachingRevision": 2
+        "teachingRevision": 3
       },
       {
         "heading": "Optimize under limits",

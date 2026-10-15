@@ -63,6 +63,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
   const [review, setReview] = useState<DailyQuestion | null>(null);
   const [now, setNow] = useState(Date.now);
   const [started, setStarted] = useState(false);
+  const [formulasLater, setFormulasLater] = useState(false);
   const [revisitLesson, setRevisitLesson] = useState(false);
   const [history, setHistory] = useState(false);
   const [uncertainQuestions, setUncertainQuestions] = useState<string[]>([]);
@@ -70,6 +71,19 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     null,
   );
   const answerUncertainty = useRef<Record<string, boolean>>({});
+  function chooseFormulaReview(later: boolean) {
+    if (!data) return;
+    setFormulasLater(later);
+    setReview(null);
+    setRevisitLesson(false);
+    try {
+      const key = `act-study-formulas-later:${data.userId}:${data.today}`;
+      if (later) localStorage.setItem(key, "1");
+      else localStorage.removeItem(key);
+    } catch {
+      // The choice still works for this visit when browser storage is unavailable.
+    }
+  }
   async function load() {
     try {
       const r = await fetch("/api/daily", { cache: "no-store" });
@@ -80,6 +94,15 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       }
       if (!r.ok)
         throw new Error(d.error ?? "Couldn’t load your daily lesson. Retry.");
+      try {
+        setFormulasLater(
+          localStorage.getItem(
+            `act-study-formulas-later:${d.userId}:${d.today}`,
+          ) === "1",
+        );
+      } catch {
+        setFormulasLater(false);
+      }
       setError(null);
       setData((previous) => ({ ...previous, ...d }));
       if (
@@ -173,7 +196,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     }
   }
   const step = data ? dailyStep(data.plan, data.answers, data.lessons) : null;
-  const screenKey = `${started}:${revisitLesson}:${review ? "drill" : step?.kind}:${review?.id ?? (step && "question" in step ? step.question?.id : step && "unit" in step ? step.unit?.id : "")}`;
+  const screenKey = `${started}:${formulasLater}:${revisitLesson}:${review ? "drill" : step?.kind}:${review?.id ?? (step && "question" in step ? step.question?.id : step && "unit" in step ? step.unit?.id : "")}`;
   useEffect(() => {
     const frame = requestAnimationFrame(() =>
       window.scrollTo({ top: 0, behavior: "auto" }),
@@ -328,7 +351,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
               {data.formulas.daysLeft < 2 &&
               data.formulas.recalled < data.formulas.total
                 ? " · Keep reviewing; fewer than two study days remain."
-                : " · Goal: all 36 by test day."}
+                : ` · Goal: all ${data.formulas.total} by test day.`}
             </p>
           )}
           <div className="mt-6">
@@ -351,6 +374,11 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             ) : (
               <Link
                 href="/daily"
+                onClick={
+                  plan.complete && formulaPending
+                    ? () => chooseFormulaReview(false)
+                    : undefined
+                }
                 className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-brand px-6 font-semibold text-white hover:bg-brand-dark"
               >
                 {plan.complete && formulaPending
@@ -430,7 +458,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         </div>
       </div>
     );
-  if (started && formulaPending && data.formulas && !review)
+  if (started && formulaPending && data.formulas && !review && !formulasLater)
     return (
       <div className="mx-auto max-w-3xl space-y-6">
         <header className="space-y-3">
@@ -441,8 +469,15 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
               : "Recall these formulas, then continue your lessons."}
           </p>
           <p className="text-sm text-ink-soft">
-            {data.formulas.recalled}/36 recalled on two days · Goal: 36 by{" "}
-            {testDate}
+            {data.formulas.recalled}/{data.formulas.total} recalled on two days
+            · Goal: {data.formulas.total} by {testDate}
+          </p>
+          <Button variant="ghost" onClick={() => chooseFormulaReview(true)}>
+            {plan.complete ? "Review today’s lessons" : "Continue to lessons"}
+          </Button>
+          <p className="text-sm text-ink-soft">
+            {data.formulas.remaining.length} cards remain. Your formula progress
+            stays saved for later.
           </p>
         </header>
         <FormulaCards
@@ -493,16 +528,34 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             {all.filter((q) => answers[q.id] === q.answer).length} correct
           </p>
           {data.formulas && (
-            <p className="mt-3 text-sm text-good">
-              {data.formulas.ids.length} formulas reviewed today ·{" "}
-              {data.formulas.recalled}/36 recalled on two days
+            <p className="mt-3 text-sm text-ink-soft">
+              {data.formulas.ids.length - data.formulas.remaining.length}/
+              {data.formulas.ids.length} formulas recalled today ·{" "}
+              {data.formulas.recalled}/{data.formulas.total} recalled on two
+              days
             </p>
+          )}
+          {formulaPending && (
+            <Button className="mt-4" onClick={() => chooseFormulaReview(false)}>
+              Review formulas · {data.formulas!.remaining.length} left
+            </Button>
           )}
           <p className="mt-3 text-sm text-ink-soft">
             {weakCount
               ? `${weakCount} skills need another look. They return in upcoming practice.`
               : "No new weak skills flagged in this session. Keep checking your progress with fresh, timed practice."}{" "}
             Your next lesson is ready tomorrow.
+          </p>
+          <p className="mt-4 text-sm text-ink-soft">
+            <a
+              href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/free-act-test-prep.html"
+              target="_blank"
+              rel="noreferrer"
+              className="text-brand underline"
+            >
+              Try an official timed section
+            </a>
+            . Use a fresh form and its scoring key.
           </p>
           <Link
             href="/dashboard"
@@ -575,8 +628,8 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
           </ol>
           {data.formulas && (
             <p className="mt-4 text-sm text-ink-soft">
-              Start with {data.formulas.ids.length} formula flashcards. Recall,
-              reveal, and review anything you miss.
+              {data.formulas.ids.length} formula flashcards are ready. Review
+              them before or after your lessons.
             </p>
           )}
           <Button
@@ -636,6 +689,21 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     currentUnit && (revisitLesson || (!review && step?.kind === "lesson"));
   return (
     <div className="daily-workbench mx-auto max-w-6xl space-y-6">
+      {formulaPending && (
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-border bg-bg-soft px-4 py-3">
+          <p className="text-sm text-ink-soft">
+            {data.formulas!.remaining.length} formula cards still to review
+          </p>
+          <Button
+            size="sm"
+            variant="ghost"
+            disabled={pending}
+            onClick={() => chooseFormulaReview(false)}
+          >
+            Review formulas
+          </Button>
+        </div>
+      )}
       <ol
         className="daily-subject-rail"
         aria-label="Daily subjects"
@@ -771,7 +839,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                         ·{" "}
                         {data.answerTimes[item.id] === undefined
                           ? "Pacing unavailable"
-                          : `${answerPacing(data.answerTimes[item.id], item.subject).seconds}s / target ${answerPacing(data.answerTimes[item.id], item.subject).target}s`}
+                          : `${answerPacing(data.answerTimes[item.id], item.subject).seconds}s${item.subject === "reading" ? " · learning time" : ` / target ${answerPacing(data.answerTimes[item.id], item.subject).target}s`}`}
                       </summary>
                       <DailyCorrection q={item} chosen={answers[item.id]} />
                     </details>
@@ -791,7 +859,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
               ? "Saving…"
               : step.block.subject === plan.blocks.at(-1)?.subject
                 ? formulaPending
-                  ? "Continue to daily formulas"
+                  ? "Finish lessons"
                   : "Finish daily study"
                 : `Finish ${label(step.block.subject)} review · next subject`}
           </Button>
@@ -932,8 +1000,10 @@ function DailyCorrection({
       )}
       {elapsedMs !== undefined && (
         <p className="text-sm text-ink-soft">
-          {answerPacing(elapsedMs, q.subject).seconds}s · target{" "}
-          {answerPacing(elapsedMs, q.subject).target}s
+          {answerPacing(elapsedMs, q.subject).seconds}s
+          {q.subject === "reading"
+            ? " · learning time"
+            : ` · target ${answerPacing(elapsedMs, q.subject).target}s`}
         </p>
       )}
     </div>

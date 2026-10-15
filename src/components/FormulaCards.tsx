@@ -106,7 +106,7 @@ export function FormulaCards({
                   disabled={saving}
                   onClick={() => void next("remembered")}
                 >
-                  {saving ? "Saving…" : "Got it"}
+                  {saving ? "Saving…" : "I recalled it"}
                 </Button>
               </div>
             ) : (

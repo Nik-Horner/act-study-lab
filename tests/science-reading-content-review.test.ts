@@ -193,11 +193,11 @@ test("formative Science keeps quantitative denominators and the newly explicit c
   );
   assert.equal(answer("science-scientific-foundations", 3), String(9 + 4));
   assert.match(
-    activities["science-data-reading"][6].evidenceText,
+    activities["science-data-reading"][6].evidence.context,
     /final diluted-mixture volume divided by the sample volume/,
   );
   assert.match(
-    activities["science-experimental-design"][2].evidenceText,
+    activities["science-experimental-design"][2].evidence.context,
     /equal water volumes/,
   );
   assert.match(

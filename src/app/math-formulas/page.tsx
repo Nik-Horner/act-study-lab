@@ -1,7 +1,15 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 import { FormulaCards } from "@/components/FormulaCards";
+import cards from "@/content/math-formula-cards.json";
 
 export default function MathFormulasPage() {
+  const [category, setCategory] = useState("All formulas");
+  const selected = cards.filter(
+    (card) => category === "All formulas" || card.category === category,
+  );
   return (
     <div className="mx-auto max-w-3xl space-y-8">
       <header className="space-y-3">
@@ -9,10 +17,25 @@ export default function MathFormulasPage() {
           Math Formulas
         </h1>
         <p className="text-ink-soft">
-          Say or write the formula from memory. Then reveal it.
+          {cards.length} formula cards. Say or write each formula from memory,
+          then reveal it.
         </p>
       </header>
-      <FormulaCards />
+      <label className="flex flex-wrap items-center gap-3 text-sm font-medium">
+        Practice topic
+        <select
+          value={category}
+          onChange={(event) => setCategory(event.target.value)}
+          className="min-h-11 max-w-full rounded-lg border border-border bg-bg-soft px-3 py-2 text-ink"
+        >
+          {["All formulas", ...new Set(cards.map((card) => card.category))].map(
+            (name) => (
+              <option key={name}>{name}</option>
+            ),
+          )}
+        </select>
+      </label>
+      <FormulaCards key={category} ids={selected.map((card) => card.id)} />
       <footer className="flex flex-wrap justify-between gap-x-6 gap-y-3 border-t border-border pt-5 text-sm">
         <Link href="/learn/math-formulas" className="text-brand underline">
           Full formula reference
@@ -24,6 +47,22 @@ export default function MathFormulasPage() {
           className="text-ink-soft underline"
         >
           PrepScholar formula guide
+        </a>
+        <a
+          href="https://openstax.org/books/algebra-and-trigonometry-2e/pages/9-3-double-angle-half-angle-and-reduction-formulas"
+          target="_blank"
+          rel="noreferrer"
+          className="text-ink-soft underline"
+        >
+          Trig identities
+        </a>
+        <a
+          href="https://openstax.org/books/prealgebra-2e/pages/c-geometric-formulas"
+          target="_blank"
+          rel="noreferrer"
+          className="text-ink-soft underline"
+        >
+          Geometry formulas
         </a>
       </footer>
     </div>

@@ -422,9 +422,13 @@ export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
             )}
             % accuracy, and{" "}
             {masteryRequirements(state.profile.targetScore ?? 36).hard} hard
-            questions correct at section pace. Worked examples, quick checks,
-            and corrected repeats do not supply fresh evidence. Use two
-            different official timed forms to check your score goal.
+            questions correct
+            {subject === "reading"
+              ? ". Reading speed is checked in timed sections."
+              : " at section pace."}{" "}
+            Worked examples, quick checks, and corrected repeats do not supply
+            fresh evidence. Use two different official timed forms to check your
+            score goal.
           </p>
         </details>
       </section>

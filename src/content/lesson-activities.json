@@ -593,7 +593,27 @@
       ],
       "answer": 0,
       "explanation": "The question asks for temperature at a specified time. Time selects the row; temperature is the requested output.",
-      "evidenceText": "Trial 1: at 4 min the sample is 32°C and has volume 50 mL."
+      "evidence": {
+        "id": "try-science-data-reading-locate",
+        "title": "A new temperature record",
+        "context": "Find the requested quantity after selecting the time.",
+        "table": {
+          "columns": [
+            "Trial",
+            "Elapsed time (min)",
+            "Temperature (°C)",
+            "Sample volume (mL)"
+          ],
+          "rows": [
+            [
+              1,
+              4,
+              32,
+              50
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A sample falls from 50 to 20 mg/L. What percentage of its initial concentration was removed?",
@@ -605,7 +625,27 @@
       ],
       "answer": 2,
       "explanation": "Removal is 50−20 = 30 mg/L. Divide by the initial 50, not the remaining 20: 30/50 = 60%.",
-      "evidenceText": "Concentration: initial 50 mg/L; final 20 mg/L; volume unchanged."
+      "evidence": {
+        "id": "try-science-data-reading-changes",
+        "title": "A different sample",
+        "context": "The volume stays the same.",
+        "table": {
+          "columns": [
+            "Stage",
+            "Concentration (mg/L)"
+          ],
+          "rows": [
+            [
+              "Start",
+              50
+            ],
+            [
+              "Final",
+              20
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Which water sample meets BOTH temperature below 25°C and oxygen at least 6 mg/L?",
@@ -617,7 +657,35 @@
       ],
       "answer": 3,
       "explanation": "M has 24°C and 6 mg/L and passes both. N fails the strict temperature limit; O fails the oxygen minimum.",
-      "evidenceText": "M: 24°C, 6 mg/L. N: 25°C, 8 mg/L. O: 22°C, 5 mg/L."
+      "evidence": {
+        "id": "try-science-data-reading-constraints",
+        "title": "Choosing a water sample",
+        "context": "Temperature must be below 25°C; oxygen must be at least 6 mg/L.",
+        "table": {
+          "columns": [
+            "Sample",
+            "Temperature (°C)",
+            "Oxygen (mg/L)"
+          ],
+          "rows": [
+            [
+              "M",
+              24,
+              6
+            ],
+            [
+              "N",
+              25,
+              8
+            ],
+            [
+              "O",
+              22,
+              5
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Which pool has the greater insect density?",
@@ -629,7 +697,30 @@
       ],
       "answer": 0,
       "explanation": "U has 24/3 = 8 insects/L; V has 30/6 = 5 insects/L. Dividing by volume makes the samples comparable.",
-      "evidenceText": "U: 24 insects in 3 L. V: 30 insects in 6 L."
+      "evidence": {
+        "id": "try-science-data-reading-normalize",
+        "title": "Two insect pools",
+        "context": "Density means insects per liter.",
+        "table": {
+          "columns": [
+            "Pool",
+            "Insects",
+            "Water (L)"
+          ],
+          "rows": [
+            [
+              "U",
+              24,
+              3
+            ],
+            [
+              "V",
+              30,
+              6
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A population rises from 120 at hour 2 to 180 at hour 5. What is its average increase per hour?",
@@ -641,7 +732,31 @@
       ],
       "answer": 1,
       "explanation": "Use change divided by elapsed time: (180−120)/(5−2) = 60/3 = 20 organisms/h.",
-      "evidenceText": "Population: hour 2 = 120; hour 5 = 180."
+      "evidence": {
+        "id": "try-science-data-reading-rates",
+        "title": "A new population",
+        "context": "The graph shows the population at two times.",
+        "graph": {
+          "title": "A new population",
+          "xLabel": "Time (h)",
+          "yLabel": "Organisms",
+          "series": [
+            {
+              "label": "Population",
+              "points": [
+                [
+                  2,
+                  120
+                ],
+                [
+                  5,
+                  180
+                ]
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "prompt": "A supplies 12 L/s at 2 mg/L and B supplies 4 L/s at 10 mg/L. What concentration follows complete mixing?",
@@ -653,7 +768,30 @@
       ],
       "answer": 2,
       "explanation": "Mass flow is 12×2+4×10 = 64 mg/s. Water flow is 16 L/s. The flow-weighted concentration is 64/16 = 4 mg/L.",
-      "evidenceText": "The solute is conserved and both streams are completely mixed."
+      "evidence": {
+        "id": "try-science-data-reading-mixing",
+        "title": "A different confluence",
+        "context": "The solute is conserved and the streams mix completely.",
+        "table": {
+          "columns": [
+            "Stream",
+            "Flow (L/s)",
+            "Concentration (mg/L)"
+          ],
+          "rows": [
+            [
+              "A",
+              12,
+              2
+            ],
+            [
+              "B",
+              4,
+              10
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A diluted sample measures 8 mg/L after a fivefold dilution. What is its original concentration?",
@@ -665,7 +803,23 @@
       ],
       "answer": 3,
       "explanation": "A fivefold dilution leaves one-fifth of the original concentration, so undo it with 8×5 = 40 mg/L. Dividing by 5 gives 1.6 and dilutes again; adding 5 gives 13 and treats a factor as an amount; leaving 8 unchanged ignores the dilution.",
-      "evidenceText": "The dilution factor is final diluted-mixture volume divided by the sample volume used to prepare it; no solute is lost."
+      "evidence": {
+        "id": "try-reference-science-data-reading-6",
+        "title": "A diluted liquid",
+        "context": "The dilution factor is final diluted-mixture volume divided by the sample volume used to prepare it; no solute is lost.",
+        "table": {
+          "columns": [
+            "Measured concentration (mg/L)",
+            "Dilution factor"
+          ],
+          "rows": [
+            [
+              8,
+              5
+            ]
+          ]
+        }
+      }
     }
   ],
   "science-trends-interpolation": [
@@ -679,7 +833,35 @@
       ],
       "answer": 1,
       "explanation": "Compare temperature change divided by interval length: the first magnitude is 16/2 = 8°C/min and the second is 18/6 = 3°C/min. The second total drop is larger, but it takes three times as long. Falling in both intervals does not make the rates equal, and average rates can be compared without instantaneous measurements.",
-      "evidenceText": "At 0, 2, and 8 min, a sample is 70, 54, and 36°C."
+      "evidence": {
+        "id": "try-science-trends-interpolation-interval-rates",
+        "title": "Another cooling trial",
+        "context": "Compare average cooling, not just total drops.",
+        "graph": {
+          "title": "Another cooling trial",
+          "xLabel": "Time (min)",
+          "yLabel": "Temperature (°C)",
+          "series": [
+            {
+              "label": "Sample",
+              "points": [
+                [
+                  0,
+                  70
+                ],
+                [
+                  2,
+                  54
+                ],
+                [
+                  8,
+                  36
+                ]
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "prompt": "Using straight-line interpolation, estimate the temperature at 7 min.",
@@ -691,7 +873,31 @@
       ],
       "answer": 3,
       "explanation": "Seven minutes is halfway from 5 to 9 min, so use the midpoint of 46 and 34: (46+34)/2 = 40°C.",
-      "evidenceText": "A different sample is 46°C at 5 min and 34°C at 9 min."
+      "evidence": {
+        "id": "try-science-trends-interpolation-interpolate",
+        "title": "A different cooling sample",
+        "context": "Use a straight line between the measured points.",
+        "graph": {
+          "title": "A different cooling sample",
+          "xLabel": "Time (min)",
+          "yLabel": "Temperature (°C)",
+          "series": [
+            {
+              "label": "Sample",
+              "points": [
+                [
+                  5,
+                  46
+                ],
+                [
+                  9,
+                  34
+                ]
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "prompt": "A response is 4, 11, and 8 at doses 1, 3, and 5. Which claim is supported?",
@@ -703,7 +909,35 @@
       ],
       "answer": 0,
       "explanation": "Among the three measured outputs, 11 at dose 3 is largest. The fall to 8 at dose 5 contradicts a continuously increasing claim. No measurements locate an exact overall optimum or establish a straight-line value of 9.5 at dose 4; those add claims beyond the observations.",
-      "evidenceText": "All three doses are measured in the same units under the same conditions."
+      "evidence": {
+        "id": "try-science-trends-interpolation-tested-range",
+        "title": "Three doses",
+        "context": "Only the shown doses were measured; no rule between points is supplied.",
+        "graph": {
+          "title": "Three doses",
+          "xLabel": "Dose",
+          "yLabel": "Response",
+          "series": [
+            {
+              "label": "Measured",
+              "points": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  3,
+                  11
+                ],
+                [
+                  5,
+                  8
+                ]
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "prompt": "For T = 18−3d, what is the temperature change per meter?",
@@ -715,7 +949,35 @@
       ],
       "answer": 1,
       "explanation": "The coefficient of d is the slope: each additional meter lowers temperature by 3°C. The 18°C intercept is the value at zero depth.",
-      "evidenceText": "Temperature T is in °C and depth d is in meters."
+      "evidence": {
+        "id": "try-science-trends-interpolation-equation",
+        "title": "Temperature with depth",
+        "context": "Use T = 18 − 3d. T is in °C and d is in meters.",
+        "graph": {
+          "title": "Temperature with depth",
+          "xLabel": "Depth (m)",
+          "yLabel": "Temperature (°C)",
+          "series": [
+            {
+              "label": "Temperature",
+              "points": [
+                [
+                  0,
+                  18
+                ],
+                [
+                  2,
+                  12
+                ],
+                [
+                  4,
+                  6
+                ]
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "prompt": "For x² = 9t, what distance is predicted at 16 min?",
@@ -727,7 +989,39 @@
       ],
       "answer": 2,
       "explanation": "Substitute t = 16: x² = 144. The nonnegative distance is √144 = 12 mm; 144 is squared distance.",
-      "evidenceText": "The supplied model uses x in mm and t in minutes."
+      "evidence": {
+        "id": "try-science-trends-interpolation-nonlinear",
+        "title": "A new spreading model",
+        "context": "Use x² = 9t; x is a nonnegative distance in mm and t is minutes.",
+        "graph": {
+          "title": "A new spreading model",
+          "xLabel": "Time (min)",
+          "yLabel": "Distance (mm)",
+          "series": [
+            {
+              "label": "Front",
+              "points": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  4,
+                  6
+                ],
+                [
+                  9,
+                  9
+                ]
+              ]
+            }
+          ]
+        }
+      }
     },
     {
       "prompt": "Which series has a turning point rather than only slowing growth?",
@@ -739,7 +1033,50 @@
       ],
       "answer": 3,
       "explanation": "The selected series rises to 10 and then falls to 6, so its direction reverses. Smaller positive increases alone do not create a turning point.",
-      "evidenceText": "All series have equal input spacing."
+      "evidence": {
+        "id": "try-science-trends-interpolation-turning-plateau",
+        "title": "Four possible patterns",
+        "context": "Each column is one equal input step.",
+        "table": {
+          "columns": [
+            "Series",
+            "Step 1",
+            "Step 2",
+            "Step 3",
+            "Step 4"
+          ],
+          "rows": [
+            [
+              "A",
+              2,
+              7,
+              10,
+              11
+            ],
+            [
+              "B",
+              2,
+              4,
+              6,
+              8
+            ],
+            [
+              "C",
+              8,
+              6,
+              4,
+              2
+            ],
+            [
+              "D",
+              2,
+              7,
+              10,
+              6
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A model validated from 2 to 12 mg/L is used at 18 mg/L. What extra assumption is required?",
@@ -751,7 +1088,27 @@
       ],
       "answer": 0,
       "explanation": "Eighteen lies outside the validated 2–12 mg/L range, so the existing model is being extrapolated. Its use requires assuming the modeled relationship remains applicable there. The data do not instead require a new linear rule, a constant boundary value, or an output restricted to the observed range.",
-      "evidenceText": "Only the input concentration is changed; the model was tested from 2 to 12 mg/L."
+      "evidence": {
+        "id": "try-reference-science-trends-interpolation-6",
+        "title": "Beyond the tested range",
+        "context": "Only the input concentration changes.",
+        "table": {
+          "columns": [
+            "Condition",
+            "Concentration (mg/L)"
+          ],
+          "rows": [
+            [
+              "Tested range",
+              "2–12"
+            ],
+            [
+              "New input",
+              18
+            ]
+          ]
+        }
+      }
     }
   ],
   "science-experimental-design": [
@@ -765,7 +1122,30 @@
       ],
       "answer": 2,
       "explanation": "An oil-only control holds the carrier constant. Comparing against no oil changes both drug presence and carrier presence.",
-      "evidenceText": "The outcome is measured after equal times, with otherwise matched groups."
+      "evidence": {
+        "id": "try-science-experimental-design-variables-control",
+        "title": "Testing a drug carried in oil",
+        "context": "To test the drug alone, hold the oil amount and all other conditions fixed.",
+        "table": {
+          "columns": [
+            "Group",
+            "Drug",
+            "Oil"
+          ],
+          "rows": [
+            [
+              "Treatment",
+              "Present",
+              "10 mL"
+            ],
+            [
+              "Needed control",
+              "Absent",
+              "?"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Heated pots receive more water than cool pots. Which change most directly isolates heating?",
@@ -777,7 +1157,30 @@
       ],
       "answer": 0,
       "explanation": "Heating and water amount currently vary together. Giving both groups the same water isolates heating. More measurements, more heated pots, or a more precise thermometer can improve sampling or precision while leaving the water confound intact.",
-      "evidenceText": "All other conditions are already held constant."
+      "evidence": {
+        "id": "try-science-experimental-design-confounds",
+        "title": "Another mixed comparison",
+        "context": "All conditions except those shown are matched.",
+        "table": {
+          "columns": [
+            "Pots",
+            "Temperature",
+            "Daily water"
+          ],
+          "rows": [
+            [
+              "Cool",
+              "Low",
+              "Less"
+            ],
+            [
+              "Heated",
+              "High",
+              "More"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "To test whether stirring changes dissolving time, which pair is best?",
@@ -789,7 +1192,40 @@
       ],
       "answer": 1,
       "explanation": "Compare stirred and unstirred cups at the same solid mass and water temperature. Equal water volumes and a shared endpoint complete the control. Changing temperature or mass with stirring mixes causes, while two stirred cups do not test stirring at all.",
-      "evidenceText": "All cups contain equal water volumes, and dissolving time uses the same endpoint in every cup."
+      "evidence": {
+        "id": "try-science-experimental-design-matched-comparison",
+        "title": "Testing stirring",
+        "context": "All cups have equal water volumes and use the same dissolving endpoint.",
+        "table": {
+          "columns": [
+            "Candidate pair",
+            "Stirring",
+            "Other differences"
+          ],
+          "rows": [
+            [
+              "A",
+              "Different",
+              "Water temperature"
+            ],
+            [
+              "B",
+              "Different",
+              "None: equal mass and temperature"
+            ],
+            [
+              "C",
+              "Different",
+              "Solid mass"
+            ],
+            [
+              "D",
+              "Both stirred",
+              "Water temperature"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Three independently treated trays each contain 12 seedlings. How many experimental units received treatment independently?",
@@ -801,7 +1237,27 @@
       ],
       "answer": 2,
       "explanation": "Treatment was assigned to trays, so the independent units are the three trays. More seedlings improve sampling within a tray but do not create more treatment assignments.",
-      "evidenceText": "One treatment is applied to an entire tray; individual seedlings are not assigned separate treatments."
+      "evidence": {
+        "id": "try-science-experimental-design-replication",
+        "title": "Seedlings in trays",
+        "context": "Each entire tray receives its own treatment; seedlings are not separately assigned.",
+        "table": {
+          "columns": [
+            "Quantity",
+            "Count"
+          ],
+          "rows": [
+            [
+              "Separately treated trays",
+              3
+            ],
+            [
+              "Seedlings in each tray",
+              12
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "The same animals always receive A before B. Which design change best tests for a simple order effect?",
@@ -813,7 +1269,23 @@
       ],
       "answer": 3,
       "explanation": "Counterbalancing A→B and B→A makes treatment order vary rather than remain tied to treatment identity. Repeating or measuring the same fixed sequence more closely does not test the alternative order. Persistent carryover can still require fresh groups even after a simple order effect is tested.",
-      "evidenceText": "Both sequences use the same treatment durations and measurement method."
+      "evidence": {
+        "id": "try-reference-science-experimental-design-4",
+        "title": "Checking order",
+        "context": "Both sequences would use the same durations and measurement method.",
+        "table": {
+          "columns": [
+            "Current order",
+            "Possible second order"
+          ],
+          "rows": [
+            [
+              "A then B",
+              "B then A"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "At 10°C a treatment adds 2 units; at 30°C it adds 8. Which conclusion is supported?",
@@ -825,7 +1297,27 @@
       ],
       "answer": 0,
       "explanation": "The treatment-minus-control effect is 2 units at 10°C and 8 at 30°C, so it depends on the tested temperature. Those effects do not state how untreated values change. The effect is positive at both temperatures and becomes four times, not three times, as large; a mechanism or untested pattern is not established.",
-      "evidenceText": "Both effects are measured over the same duration against matched untreated groups."
+      "evidence": {
+        "id": "try-reference-science-experimental-design-5",
+        "title": "Two treatment effects",
+        "context": "Each effect is treatment minus a matched control over the same time.",
+        "table": {
+          "columns": [
+            "Temperature (°C)",
+            "Treatment effect (units)"
+          ],
+          "rows": [
+            [
+              10,
+              2
+            ],
+            [
+              30,
+              8
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A ruler marked only every 1 cm is used to compare lengths expected to differ by 0.2 cm. What is the most direct improvement?",
@@ -837,7 +1329,27 @@
       ],
       "answer": 1,
       "explanation": "Finer graduations directly improve resolution of the expected 0.2 cm difference. Repetition or more samples does not give an individual reading finer marks. Calibration addresses systematic accuracy, but a calibrated ruler with the same coarse graduations still has the stated resolution limit.",
-      "evidenceText": "The study otherwise uses independent replicates and consistent measurement endpoints."
+      "evidence": {
+        "id": "try-science-experimental-design-measurement",
+        "title": "Measuring a small length difference",
+        "context": "The study uses independent samples and the same measurement endpoint.",
+        "table": {
+          "columns": [
+            "Quantity",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Expected difference",
+              "0.2 cm"
+            ],
+            [
+              "Ruler markings",
+              "Every 1 cm"
+            ]
+          ]
+        }
+      }
     }
   ],
   "science-conflicting-viewpoints": [
@@ -851,7 +1363,27 @@
       ],
       "answer": 3,
       "explanation": "Both mechanisms can produce visible bubbles. Their chemical source, not the presence of bubbles, is the disagreement.",
-      "evidenceText": "Both accounts explicitly predict visible bubbles, but propose different gas sources."
+      "evidence": {
+        "id": "try-science-conflicting-viewpoints-prediction",
+        "title": "Two sources of bubbles",
+        "context": "Both accounts allow visible bubbles; they disagree about where the gas comes from.",
+        "table": {
+          "columns": [
+            "Account",
+            "Gas source"
+          ],
+          "rows": [
+            [
+              "F",
+              "Trapped air"
+            ],
+            [
+              "G",
+              "New oxygen from a light-driven reaction"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "An inhibitor lowers light output, but also blocks oxygen supply. Why is a chemical-only conclusion uncertain?",
@@ -863,7 +1395,31 @@
       ],
       "answer": 1,
       "explanation": "The manipulation changes both a chemical process and oxygen delivery, each relevant to a competing explanation. The fall in light output therefore cannot be assigned uniquely to either. Repeating that confounded manipulation does not separate them; a control preserving oxygen delivery while inhibiting the chemical would be more informative.",
-      "evidenceText": "One hypothesis requires the inhibited chemical; the competing hypothesis requires oxygen delivery."
+      "evidence": {
+        "id": "try-science-conflicting-viewpoints-causal-control",
+        "title": "An inhibitor with two effects",
+        "context": "One account requires a chemical process; the competing account requires oxygen delivery.",
+        "table": {
+          "columns": [
+            "After inhibitor",
+            "Change"
+          ],
+          "rows": [
+            [
+              "Chemical process",
+              "Blocked"
+            ],
+            [
+              "Oxygen delivery",
+              "Blocked"
+            ],
+            [
+              "Light output",
+              "Lower"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Rock fragments survive both river transport and glacier transport. What follows about a particular deposit?",
@@ -875,7 +1431,27 @@
       ],
       "answer": 2,
       "explanation": "Survival demonstrates that either process could deliver fragments. Evidence about the particular deposit is still required to choose its actual history.",
-      "evidenceText": "No transport traces or historical observations are supplied."
+      "evidence": {
+        "id": "try-science-conflicting-viewpoints-feasibility",
+        "title": "Rock transport trials",
+        "context": "No route traces or historical observations from the deposit are supplied.",
+        "table": {
+          "columns": [
+            "Route",
+            "Fragments survive?"
+          ],
+          "rows": [
+            [
+              "River",
+              "Yes"
+            ],
+            [
+              "Glacier",
+              "Yes"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "To test a humidity-driven explanation against a light-driven one, which comparison isolates humidity?",
@@ -887,7 +1463,40 @@
       ],
       "answer": 3,
       "explanation": "Hold light fixed and change humidity so that a response difference targets humidity. Changing both factors mixes the predictions.",
-      "evidenceText": "Other relevant conditions and measurement time remain constant."
+      "evidence": {
+        "id": "try-science-conflicting-viewpoints-matched-condition",
+        "title": "Humidity or light?",
+        "context": "Other conditions and measurement time are fixed. Pick the pair that tests humidity.",
+        "table": {
+          "columns": [
+            "Pair",
+            "Humidity",
+            "Light"
+          ],
+          "rows": [
+            [
+              "A",
+              "Different",
+              "Different"
+            ],
+            [
+              "B",
+              "Same",
+              "Different"
+            ],
+            [
+              "C",
+              "Same",
+              "Same"
+            ],
+            [
+              "D",
+              "Different",
+              "Same"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Both models predict 6 at setting A but predict 9 and 15 at B. Which setting is more informative?",
@@ -899,7 +1508,30 @@
       ],
       "answer": 0,
       "explanation": "At B the models make different predictions, 9 and 15, so an adequate measurement can distinguish them. Both predict 6 at A; measuring that shared prediction more precisely does not separate them. A model need not first be shown correct at all settings before an informative test is possible.",
-      "evidenceText": "The two settings are equally measurable and within both models’ stated ranges."
+      "evidence": {
+        "id": "try-science-conflicting-viewpoints-separating-test",
+        "title": "Two settings",
+        "context": "Both settings are within both models’ stated ranges and can be measured well.",
+        "table": {
+          "columns": [
+            "Setting",
+            "Model 1 prediction",
+            "Model 2 prediction"
+          ],
+          "rows": [
+            [
+              "A",
+              6,
+              6
+            ],
+            [
+              "B",
+              9,
+              15
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A model predicts a 0.4-unit signal; the detector only detects signals ≥1 unit. The signal is not detected. What follows?",
@@ -911,7 +1543,27 @@
       ],
       "answer": 1,
       "explanation": "The predicted 0.4 is below the 1-unit detection limit. Both zero and 0.4 would be undetected, so this result cannot distinguish those possibilities. It neither contradicts the subthreshold prediction nor confirms its exact magnitude.",
-      "evidenceText": "The detector’s 1-unit threshold is reliable."
+      "evidence": {
+        "id": "try-reference-science-conflicting-viewpoints-5",
+        "title": "An unseen signal",
+        "context": "The detector threshold is reliable.",
+        "table": {
+          "columns": [
+            "Quantity",
+            "Signal (units)"
+          ],
+          "rows": [
+            [
+              "Model prediction",
+              0.4
+            ],
+            [
+              "Detection threshold",
+              1
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A model claims germination needs both dry soil and warmth. Germination occurs in warm wet soil. Which claim is contradicted by this observation?",
@@ -923,7 +1575,25 @@
       ],
       "answer": 2,
       "explanation": "Germination in wet soil is a counterexample to dry soil being necessary. Warmth is present, so its necessity is not contradicted. A result under a different set of conditions also does not disprove that dry soil alone, or warm dry soil, could be sufficient; necessity and sufficiency are distinct claims.",
-      "evidenceText": "The germination observation and soil moisture measurement are reliable."
+      "evidence": {
+        "id": "try-science-conflicting-viewpoints-joint-evidence",
+        "title": "A two-part germination claim",
+        "context": "A model says both dry soil and warmth are required. Measurements are reliable.",
+        "table": {
+          "columns": [
+            "Temperature",
+            "Soil",
+            "Germination"
+          ],
+          "rows": [
+            [
+              "Warm",
+              "Wet",
+              "Yes"
+            ]
+          ]
+        }
+      }
     }
   ],
   "science-models-evidence": [
@@ -937,7 +1607,23 @@
       ],
       "answer": 0,
       "explanation": "Substitute into the complete expression: 4×3+2 = 14. Omitting the intercept gives 12, which is a different model.",
-      "evidenceText": "x and y are dimensionless measured quantities."
+      "evidence": {
+        "id": "try-science-models-evidence-substitution",
+        "title": "Model R",
+        "context": "Use y = 4x + 2. Both variables are dimensionless.",
+        "table": {
+          "columns": [
+            "Quantity",
+            "Value"
+          ],
+          "rows": [
+            [
+              "Input x",
+              3
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A substance retains one third each hour. Starting at 81 mg, how much remains after 3 h?",
@@ -949,7 +1635,23 @@
       ],
       "answer": 2,
       "explanation": "Apply the factor three times: 81→27→9→3 mg. Subtracting 3 mg per hour would model a different process.",
-      "evidenceText": "The same one-hour retention factor applies in each interval."
+      "evidence": {
+        "id": "try-science-models-evidence-multiplicative",
+        "title": "A shrinking substance",
+        "context": "Each hour, one-third of the previous amount remains.",
+        "table": {
+          "columns": [
+            "Time (h)",
+            "Starting amount (mg)"
+          ],
+          "rows": [
+            [
+              0,
+              81
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A model applies at 10–30°C. Which observation tests its claim most directly?",
@@ -961,7 +1663,31 @@
       ],
       "answer": 3,
       "explanation": "Twenty-two degrees lies within the stated domain and holds the modeled material fixed. The other choices test an unsupported extension.",
-      "evidenceText": "All other model conditions are met for the 22°C trial."
+      "evidence": {
+        "id": "try-science-models-evidence-domain",
+        "title": "A temperature-limited model",
+        "context": "The model applies at 10–30°C for one material. Other conditions match in the 22°C trial.",
+        "table": {
+          "columns": [
+            "Trial",
+            "Observation"
+          ],
+          "rows": [
+            [
+              "22°C",
+              "Repeatable mismatch"
+            ],
+            [
+              "50°C",
+              "Mismatch"
+            ],
+            [
+              "0°C",
+              "Not measured"
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "For R = kL/A, length doubles and area quadruples. What happens to resistance R?",
@@ -973,7 +1699,27 @@
       ],
       "answer": 0,
       "explanation": "The length change gives ×2 and the area change gives ÷4. Together, 2/4 = 1/2, with k held constant.",
-      "evidenceText": "The same material and temperature keep k constant."
+      "evidence": {
+        "id": "try-science-models-evidence-factor",
+        "title": "A resistance rule",
+        "context": "Use R = kL/A. Same material and temperature keep k fixed.",
+        "table": {
+          "columns": [
+            "Input",
+            "Multiplier"
+          ],
+          "rows": [
+            [
+              "Length L",
+              2
+            ],
+            [
+              "Area A",
+              4
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Raw readings are 255 then 130 with constant background 5. What happens to the corrected signal?",
@@ -985,7 +1731,27 @@
       ],
       "answer": 1,
       "explanation": "Subtract background from each reading: 255−5 = 250 and 130−5 = 125. The corrected signal halves. Halving the initial raw reading gives 127.5 rather than the observed corrected value; adding background gives 260 and 135; leaving both raw values unchanged omits the correction.",
-      "evidenceText": "The detector background remains 5 counts/min throughout."
+      "evidence": {
+        "id": "try-science-models-evidence-background",
+        "title": "A different detector",
+        "context": "Background stays at 5 counts/min.",
+        "table": {
+          "columns": [
+            "Time",
+            "Raw total (counts/min)"
+          ],
+          "rows": [
+            [
+              "First",
+              255
+            ],
+            [
+              "Next",
+              130
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "For q = 8C/(3+C), what value is approached as positive C becomes very large?",
@@ -997,7 +1763,35 @@
       ],
       "answer": 2,
       "explanation": "Divide by C: q = 8/(3/C+1). The 3/C term approaches zero, so q approaches 8 from below.",
-      "evidenceText": "C is positive; the model is assumed applicable at large C for this question."
+      "evidence": {
+        "id": "try-science-models-evidence-saturation",
+        "title": "Another saturating rule",
+        "context": "Use q = 8C/(3+C) for positive C, including very large C.",
+        "table": {
+          "columns": [
+            "C",
+            "Predicted q"
+          ],
+          "rows": [
+            [
+              3,
+              4
+            ],
+            [
+              9,
+              6
+            ],
+            [
+              21,
+              7
+            ],
+            [
+              237,
+              7.9
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Model A fits Experiment 1 but contradicts reliable Experiment 2 under its own stated conditions. What is justified?",
@@ -1009,7 +1803,27 @@
       ],
       "answer": 3,
       "explanation": "Both experiments are reliable and satisfy the stated conditions, so the second contradiction requires revision despite the first success. Omitting a contradictory in-scope test does not repair the claim. A competing model must also face both datasets; fitting one does not automatically establish a fit to the other.",
-      "evidenceText": "Both experiments satisfy the model’s stated conditions and use adequate measurements."
+      "evidence": {
+        "id": "try-science-models-evidence-combined-experiments",
+        "title": "Testing one claim twice",
+        "context": "Both experiments meet the model’s stated conditions and use reliable measurements.",
+        "table": {
+          "columns": [
+            "Experiment",
+            "Comparison with model"
+          ],
+          "rows": [
+            [
+              "1",
+              "Fits"
+            ],
+            [
+              "2",
+              "Contradicts"
+            ]
+          ]
+        }
+      }
     }
   ],
   "science-scientific-foundations": [
@@ -1023,7 +1837,27 @@
       ],
       "answer": 1,
       "explanation": "A one-unit rise in pH means one tenth the hydrogen-ion concentration. The logarithmic direction reverses the change in acidity.",
-      "evidenceText": "Assume the usual aqueous pH interpretation at the same temperature."
+      "evidence": {
+        "id": "try-science-scientific-foundations-acidity",
+        "title": "A change in pH",
+        "context": "Compare aqueous solutions at the same temperature.",
+        "table": {
+          "columns": [
+            "Stage",
+            "pH"
+          ],
+          "rows": [
+            [
+              "Start",
+              5
+            ],
+            [
+              "Final",
+              6
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "An atom loses one electron without a nuclear change. What changes?",
@@ -1035,7 +1869,30 @@
       ],
       "answer": 3,
       "explanation": "Electron loss makes the atom more positive. Element identity depends on proton number, which has not changed.",
-      "evidenceText": "The nucleus remains unchanged during this process."
+      "evidence": {
+        "id": "try-reference-science-scientific-foundations-1",
+        "title": "One electron leaves",
+        "context": "The nucleus does not change.",
+        "table": {
+          "columns": [
+            "Stage",
+            "Protons",
+            "Electrons"
+          ],
+          "rows": [
+            [
+              "Before",
+              6,
+              6
+            ],
+            [
+              "After",
+              6,
+              5
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A sample has mass 54 g and volume 9 cm³. What is its density?",
@@ -1047,7 +1904,23 @@
       ],
       "answer": 0,
       "explanation": "Density is mass divided by volume: 54/9 = 6 g/cm³. The unit order confirms which value belongs in the numerator.",
-      "evidenceText": "The measured volume includes the entire sample."
+      "evidence": {
+        "id": "try-reference-science-scientific-foundations-2",
+        "title": "A sample’s density",
+        "context": "The volume includes the entire sample.",
+        "table": {
+          "columns": [
+            "Mass (g)",
+            "Volume (cm³)"
+          ],
+          "rows": [
+            [
+              54,
+              9
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Leaves use 4 units of oxygen per hour and show a net gain of 9 in light. With unchanged respiration, what is gross production?",
@@ -1059,7 +1932,27 @@
       ],
       "answer": 1,
       "explanation": "Net production equals gross minus consumption. Add back the 4 consumed: gross = 9+4 = 13 units per hour.",
-      "evidenceText": "The comparison assumes equal time, sample amount, and respiration rate."
+      "evidence": {
+        "id": "try-science-scientific-foundations-net-oxygen",
+        "title": "Another leaf sample",
+        "context": "Both measurements cover 1 h. Respiration stays unchanged.",
+        "table": {
+          "columns": [
+            "Quantity",
+            "Oxygen (units/h)"
+          ],
+          "rows": [
+            [
+              "Used by respiration",
+              4
+            ],
+            [
+              "Net gain in light",
+              9
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Equal heat is supplied to 100 g and 200 g of the same liquid, with no phase change or losses. Which warms more?",
@@ -1071,7 +1964,27 @@
       ],
       "answer": 2,
       "explanation": "With Q and c fixed, ΔT = Q/(mc), so the 100 g sample warms twice as much as the 200 g sample. Equal supplied heat is not equal temperature rise, and equal specific heat does not mean equal heat capacity: total heat per degree also depends on mass.",
-      "evidenceText": "Both liquids begin at the same temperature and remain in the same phase."
+      "evidence": {
+        "id": "try-reference-science-scientific-foundations-4",
+        "title": "Equal heat, different mass",
+        "context": "Same liquid, starting temperature, and heat input. No phase change or heat loss.",
+        "table": {
+          "columns": [
+            "Sample",
+            "Mass (g)"
+          ],
+          "rows": [
+            [
+              "A",
+              100
+            ],
+            [
+              "B",
+              200
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "If both strains double equally from counts 30 and 70, what happens to the first strain’s fraction?",
@@ -1083,7 +1996,30 @@
       ],
       "answer": 3,
       "explanation": "Counts become 60 and 140. The fraction remains 60/200 = 30%; equal multiplication preserves proportions.",
-      "evidenceText": "No migration, mutation, or differential survival occurs in this interval."
+      "evidence": {
+        "id": "try-reference-science-scientific-foundations-5",
+        "title": "Two strains double",
+        "context": "No migration, mutation, or unequal survival occurs.",
+        "table": {
+          "columns": [
+            "Strain",
+            "Starting count",
+            "Multiplier"
+          ],
+          "rows": [
+            [
+              "First",
+              30,
+              2
+            ],
+            [
+              "Second",
+              70,
+              2
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "A wave has frequency 5 Hz and wavelength 6 m. What is its speed?",
@@ -1095,7 +2031,23 @@
       ],
       "answer": 0,
       "explanation": "Multiply frequency by wavelength: 5 cycles/s × 6 m/cycle = 30 m/s. The cycle unit cancels.",
-      "evidenceText": "The supplied relation is v = fλ."
+      "evidence": {
+        "id": "try-reference-science-scientific-foundations-6",
+        "title": "A wave",
+        "context": "Use v = fλ.",
+        "table": {
+          "columns": [
+            "Frequency (Hz)",
+            "Wavelength (m)"
+          ],
+          "rows": [
+            [
+              5,
+              6
+            ]
+          ]
+        }
+      }
     },
     {
       "prompt": "Which process transports already loosened rock fragments downstream?",
@@ -1107,7 +2059,23 @@
       ],
       "answer": 1,
       "explanation": "The fragments are already loose and are moving downstream, so erosion is the relevant process. Weathering breaks material down in place; deposition settles transported sediment; dissolution produces dissolved material rather than describing transport of the existing solid fragments.",
-      "evidenceText": "A flowing stream carries fragments from one location to another."
+      "evidence": {
+        "id": "try-reference-science-scientific-foundations-7",
+        "title": "Loose rock fragments",
+        "context": "A flowing stream carries already-loosened fragments from one location to another.",
+        "table": {
+          "columns": [
+            "Before",
+            "During observation"
+          ],
+          "rows": [
+            [
+              "Fragments already loose",
+              "Fragments moving downstream"
+            ]
+          ]
+        }
+      }
     }
   ],
   "reading-main-idea": [

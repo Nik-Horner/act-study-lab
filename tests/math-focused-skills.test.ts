@@ -59,7 +59,7 @@ test("every active Math item has an explicit owned primary skill and exact indep
       `${skill.id}: never a one-answer memorization pool`,
     );
     for (const id of skill.questionIds) assert.equal(map[id][0], skill.id, id);
-    assert.equal(skill.section.teachingRevision, 3);
+    assert(skill.section.teachingRevision >= 3);
     assert(skill.section.body.length);
     assert(skill.section.examples.length);
     assert.equal(skill.section.activity.choices.length, 3);
