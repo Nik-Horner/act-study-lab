@@ -4316,23 +4316,25 @@
   {
     "id": "math-modeling-resource-optima",
     "topic": "math-modeling",
-    "title": "Prove a feasible integer objective cannot be improved",
+    "title": "Find the best whole-number combination",
     "reportingCategory": "Algebra",
     "questionIds": [
       "math-modeling-d24",
       "math-modeling-m5"
     ],
     "section": {
-      "heading": "Prove a feasible integer objective cannot be improved",
+      "heading": "Find the best whole-number combination",
       "body": [
-        "A proposed optimum must satisfy every resource limit and the nonnegative whole-number restrictions. For linear constraints, intersections and axis endpoints identify continuous candidates, but independently rounding coordinates can break a limit. Combine nonnegative multiples of constraints to bound the objective; then find a feasible integer pair attaining that bound or a valid tighter integer bound. A maximum needs both feasibility and an upper-bound argument.",
-        "If an integer upper bound M could be reached only at a noninteger intersection, it is unattainable for whole-number decisions; integer profit is then at most M−1. Verify the best nearby feasible pair rather than assuming this tighter bound must be attained.",
-        "To choose constraint weights u, v for two linear limits, match the coefficients of u·(first left side)+v·(second left side)to the objective. This is a two-equation linear system for u, v. Only nonnegative weights preserve an upper bound when the original inequalities are added."
+        "Use whole counts: 0, 1, 2, and so on. A proposed pair must stay within every resource limit.",
+        "To prove a maximum, first find a value no allowed pair can beat. Multiply each limit by zero or a positive number, then add. Choose multipliers that make the left side equal the profit formula.",
+        "Find the multipliers by matching the numbers in front of x and y. This gives two equations. Negative multipliers cannot safely keep an upper bound.",
+        "If profit must be a whole number, round a fractional upper bound down. Then find an allowed pair that reaches it. A bound alone does not prove the best pair exists.",
+        "If only a nonwhole intersection reaches a whole bound M, no whole pair reaches M. Try M−1 and check an actual pair; do not just round each coordinate."
       ],
       "examples": [
         {
           "label": "Worked example",
-          "text": "If \\(2 x+y\\le 13\\) and \\(x+2 y\\le 13\\), the objective 3 x+2 y is at most \\(\\left(\\frac{4}{3}\\right) 13+\\left(\\frac{1}{3}\\right) 13=\\frac{65}{3}\\). Since the profit is an integer, it is at most 21. The pair(5, 3)satisfies both limits and earns 21, proving optimality. A fractional intersection is not itself an allowed production count.",
+          "text": "Find the largest \\(3x+2y\\) for whole counts \\(x,y\\ge0\\), with \\(2x+y\\le13\\) and \\(x+2y\\le13\\). Choose multipliers u and v to match the profit: \\(2u+v=3\\) and \\(u+2v=2\\). Double the second equation and subtract the first: \\(3v=1\\), so \\(v=\\frac13\\) and \\(u=\\frac43\\). Multiply the first limit by \\(\\frac43\\) and the second by \\(\\frac13\\), then add: profit is at most \\(\\frac{65}{3}=21\\frac23\\). Since profit is whole, it is at most 21. Try \\(x=5,y=3\\): the limits give 13 and 11, both allowed, and profit is 21. An allowed pair reaches the upper bound, so 21 is the maximum.",
           "good": true
         }
       ],

@@ -267,7 +267,8 @@ export function AccountForm({
             </select>
             <p className="mt-1 text-sm text-ink-soft">
               Lessons share this time. Formula review is extra and can wait
-              until after lessons. Unfinished work carries forward.
+              until after lessons. New plans adjust lesson time to keep the full
+              session within two hours. Unfinished work carries forward.
             </p>
           </div>
           <div>

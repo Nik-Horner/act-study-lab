@@ -931,6 +931,9 @@ export function estimateDailyBlock(
             ...s.body,
             ...(s.evidence ?? []).map((passage) => passage.context),
             ...(s.examples ?? []).map((e) => e.text),
+            ...(s.workedCases ?? []).map(
+              (e) => `${e.text} ${e.evidence?.context ?? ""}`,
+            ),
             s.tip ?? "",
             s.activity
               ? [
@@ -950,7 +953,8 @@ export function estimateDailyBlock(
       (n, s) =>
         n +
         (s.activity ? 45 : (s.examples?.length ?? 0) * 10) +
-        (s.evidence?.length ?? 0) * 15,
+        (s.evidence?.length ?? 0) * 15 +
+        (s.workedCases?.length ?? 0) * 15,
       0,
     ) / 60;
   const passages = new Map<string, string>();

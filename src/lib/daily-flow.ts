@@ -199,7 +199,9 @@ export function dailyFocus(
           ...(block.reviewUnits ?? []),
         ]) {
           const workedExamples = unit.lesson.sections.flatMap((section) =>
-            (section.examples ?? []).map((example) => example.text),
+            [...(section.examples ?? []), ...(section.workedCases ?? [])].map(
+              (example) => example.text,
+            ),
           );
           const review = (block.reviewQuestions ?? []).filter((question) =>
             question.reviewUnitId

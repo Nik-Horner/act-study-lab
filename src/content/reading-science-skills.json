@@ -52,7 +52,19 @@
       ],
       "answer": 1,
       "explanation": "The short signs remain, and the links add detail. The answer needs both parts of that solution. “A place with signs” names only the subject."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: keep a quiet main point",
+        "text": "Question: What is the passage mainly showing?\n\n1. The watch no longer supplies useful time. Winding it still gives Nora a familiar ritual.\n2. Combine those facts instead of choosing only “a broken watch.”\n\nSupported answer: An old object can keep personal value after its practical use ends.\n\nWatch for: Nothing says Nora cannot accept the loss or expects the watch to become reliable.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-main-idea-thesis",
+          "title": "Read the evidence",
+          "context": "Nora kept her father’s broken watch after replacing it with a reliable one. On busy mornings she no longer checked its hands, but she still wound it each Sunday. The act took less than a minute; it gave the day a familiar beginning."
+        }
+      }
+    ]
   },
   {
     "id": "reading-main-idea-movement",
@@ -90,7 +102,19 @@
       ],
       "answer": 2,
       "explanation": "“Added their memories” shows the change; “kept the central tree” shows what remains. Neither quitting nor replacing everything matches both details."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: follow an argument",
+        "text": "Question: How does the argument develop?\n\n1. It starts with one measure of value: ticket sales.\n2. It adds another measure without discarding the first.\n\nSupported answer: The route is judged by a wider set of benefits.\n\nWatch for: Adding a measure does not mean money stopped mattering.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-main-idea-movement",
+          "title": "Read the evidence",
+          "context": "The town first judged the bus route by ticket sales. A report then counted trips to jobs and clinics that had no other transport. The council kept ticket sales in its review but added access to essential services."
+        }
+      }
+    ]
   },
   {
     "id": "reading-main-idea-scope",
@@ -274,7 +298,19 @@
       ],
       "answer": 2,
       "explanation": "The shoe is already tied, and she bends down just when readers are requested. Those linked clues support avoiding that invitation. Nothing mentions a damaged shoe or a knot lesson."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: separate order from cause",
+        "text": "Question: What happens just before the crack is cleaned, and why?\n\n1. Follow the sequence: photograph → remove handle → clean crack → reattach.\n2. The text gives the reason for removal: reach the crack.\n\nSupported answer: The handle is removed to expose the crack.\n\nWatch for: The earlier photograph did not cause the crack, and removal was not the final step.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-details-sequence-cause",
+          "title": "Read the evidence",
+          "context": "First the conservator photographed the vase. She then removed its loose handle so she could reach a crack beneath it. After cleaning that crack, she reattached the handle."
+        }
+      }
+    ]
   },
   {
     "id": "reading-details-unit-condition",
@@ -324,7 +360,19 @@
       ],
       "answer": 1,
       "explanation": "The noun is appointments. Repeat visits mean one person can account for more than one appointment, so 60 is not a count of different patients."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: keep the changing denominator",
+        "text": "Question: Can both descriptions be true?\n\n1. Compare counts: 30 is more than 24.\n2. Compare shares: 24/40 = 60%; 30/60 = 50%.\n\nSupported answer: Yes: the voter count rose while the participation share fell.\n\nWatch for: Do not carry May’s total of 40 into June’s fraction.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-details-unit-condition",
+          "title": "Read the evidence",
+          "context": "In May, 24 of 40 eligible members voted. In June, 30 of 60 eligible members voted. The report calls June a larger turnout by number, while warning that a smaller share of eligible members participated."
+        }
+      }
+    ]
   },
   {
     "id": "reading-details-paraphrase",
@@ -360,7 +408,19 @@
       ],
       "answer": 2,
       "explanation": "The indoor room is a backup condition. The sentence neither requires an indoor concert nor refuses the plan outright."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: keep who believes the claim",
+        "text": "Question: What is the historian questioning?\n\n1. Keep “authentic” separate from “firsthand.”\n2. She accepts that the diary is genuine but questions its source of information.\n\nSupported answer: Whether the diary records an eyewitness account.\n\nWatch for: Do not turn doubt about firsthand knowledge into a claim that the diary is forged.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-details-paraphrase",
+          "title": "Read the evidence",
+          "context": "The historian does not deny that the diary is authentic. She questions whether its writer saw the event firsthand. A genuine document, she argues, can still repeat a rumor."
+        }
+      }
+    ]
   },
   {
     "id": "reading-inference-evidence-link",
@@ -414,7 +474,19 @@
       ],
       "answer": 0,
       "explanation": "The times, ticket, bag, and alarm work together as travel preparations. None gives Ben a job on the train or shows a cancellation."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: connect two clues",
+        "text": "Question: What does her final action most likely suggest?\n\n1. The hinge repair held, but scraping returned.\n2. Reaching for height notes suggests she is checking another possible source of the problem.\n\nSupported answer: She is investigating a cause beyond the loose hinge.\n\nWatch for: The notes do not yet prove which cause is responsible.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-inference-evidence-link",
+          "title": "Read the evidence",
+          "context": "A technician marked the loose hinge, then recorded the door’s height before tightening it. On her next visit, the hinge held firm but the door again scraped the floor. She reached for her height notes rather than another screw."
+        }
+      }
+    ]
   },
   {
     "id": "reading-inference-limits",
@@ -501,7 +573,19 @@
       ],
       "answer": 2,
       "explanation": "His praise and Saturday offer show support. “Cannot help on weekdays” gives the limit; it does not cancel his support."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: trust the action as well as the words",
+        "text": "Question: What attitude best fits Luis before dinner?\n\n1. His words sound confident, but keeping the bracket shows a backup plan.\n2. Watching the shelf and later putting the bracket away show that his confidence develops.\n\nSupported answer: Outward support mixed with private doubt.\n\nWatch for: Neither total trust nor outright opposition fits both his words and actions.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-inference-attitude",
+          "title": "Read the evidence",
+          "context": "“Of course your way will work,” Luis told his sister. Still, he kept the old bracket in his coat pocket and watched the new shelf through dinner. When it stayed level, he finally put the bracket away."
+        }
+      }
+    ]
   },
   {
     "id": "reading-inference-counterexample",
@@ -540,7 +624,19 @@
       ],
       "answer": 0,
       "explanation": "Her later actions show continued effort. A complaint about one rehearsal does not establish that she quit the whole project."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: challenge a theory with new evidence",
+        "text": "Question: What does the new result challenge?\n\n1. “Only because the feeder remains” makes its presence necessary.\n2. The birds return when it is absent, contradicting that requirement.\n\nSupported answer: The claim that the feeder must be present.\n\nWatch for: The result does not identify the true cause or show that food never matters.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-inference-counterexample",
+          "title": "Read the evidence",
+          "context": "A researcher claims the birds return only because the old feeder remains. During one week the feeder is removed, yet marked birds return to the same place at the usual hour."
+        }
+      }
+    ]
   },
   {
     "id": "reading-vocabulary-local-sense",
@@ -676,7 +772,19 @@
       ],
       "answer": 0,
       "explanation": "The permit delay prevents work from starting, like a brake slows movement. No vehicle part appears in this situation."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: keep a subtle comparison",
+        "text": "Question: What does the bridge image suggest?\n\n1. A bridge allows movement across a gap. “Thin” and the weight warning make this one fragile.\n2. Together, the words describe limited progress rather than a complete solution.\n\nSupported answer: A fragile agreement makes initial talks possible.\n\nWatch for: The passage describes no actual bridge and does not say the dispute is fully settled.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-vocabulary-figurative",
+          "title": "Read the evidence",
+          "context": "The committee’s agreement was a thin bridge across the dispute. Both sides could use it to begin talks, but neither trusted it with the weight of a final settlement."
+        }
+      }
+    ]
   },
   {
     "id": "reading-vocabulary-paragraph-fit",
@@ -720,7 +828,19 @@
       ],
       "answer": 1,
       "explanation": "The estimate is useful for planning but may change after another count. “Not yet final” keeps both facts; false and unrelated do not."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: let context choose the sense",
+        "text": "Question: What does “exacting” mean here?\n\n1. The final sentence explains the effect: a stricter standard.\n2. A demanding standard fits both better color visibility and exposed repairs.\n\nSupported answer: Demanding close accuracy or care.\n\nWatch for: “Exact copy” shares part of the word but does not fit what the lighting does.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-vocabulary-paragraph-fit",
+          "title": "Read the evidence",
+          "context": "The curator called the new lighting exacting. It revealed color differences that the old lamps hid, but it also made tiny repairs stand out. Under it, the staff had to work to a stricter standard."
+        }
+      }
+    ]
   },
   {
     "id": "reading-craft-function",
@@ -789,7 +909,19 @@
       ],
       "answer": 2,
       "explanation": "The canceled order shows a delay causing a practical problem. It supports the claim about businesses; it is not a claim about every business."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: an example can limit a claim",
+        "text": "Question: What is the family’s role in the argument?\n\n1. Place it between the praise and the recommendation.\n2. The case exposes a limit in the original approach and explains why broader testing is needed.\n\nSupported answer: To qualify the praise and support the proposed improvement.\n\nWatch for: A limiting example need not reject labels altogether or represent every family.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-craft-function",
+          "title": "Read the evidence",
+          "context": "The essay praises standardized library labels for making shelves easier to use. It then describes a bilingual family whose questions were absent from those labels. The final paragraph recommends testing labels with varied visitors."
+        }
+      }
+    ]
   },
   {
     "id": "reading-craft-tone",
@@ -825,7 +957,19 @@
       ],
       "answer": 0,
       "explanation": "“Useful,” “easy to follow,” and “recommend” establish approval. Wanting larger maps adds a specific criticism without reversing it."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: notice dry humor",
+        "text": "Question: What tone does the last sentence create?\n\n1. Compare the efficiency promise with the needless meetings and repeated forms.\n2. The restrained wording points out that mismatch through irony.\n\nSupported answer: Dryly skeptical about the promised efficiency.\n\nWatch for: This is neither literal praise nor proof that Mira rejects every new system.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-craft-tone",
+          "title": "Read the evidence",
+          "context": "The new notice system was said to save everyone time. By noon, Mira had attended two meetings about it and filled out a form requesting the right form. Efficiency, she wrote in her notebook, appeared to require a patient audience."
+        }
+      }
+    ]
   },
   {
     "id": "reading-craft-perspective",
@@ -864,7 +1008,19 @@
       ],
       "answer": 1,
       "explanation": "Six children using the path contradict nobody. The observation challenges the quote without proving a claim about every resident."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: a viewpoint changes without reversing",
+        "text": "Question: How does her view change?\n\n1. At first she treats the problem as visitor error. Later she gathers their perspective and changes the sign.\n2. The courtyard stays, so she revises the approach without rejecting the whole design.\n\nSupported answer: She begins taking visitors’ experience into account.\n\nWatch for: Keeping part of the design does not mean her outlook stayed unchanged.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-craft-perspective",
+          "title": "Read the evidence",
+          "context": "At first, the designer blamed visitors for missing the entrance. She watched a family circle the building twice and asked where they expected a door. She kept the design’s courtyard but moved its main sign to face the street."
+        }
+      }
+    ]
   },
   {
     "id": "reading-craft-imagery",
@@ -903,7 +1059,19 @@
       ],
       "answer": 2,
       "explanation": "The line of lights curving one after another supplies the shared feature. A necklace’s cost and use as clothing are not part of this image."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: follow a repeated object",
+        "text": "Question: What does the key’s repeated appearance help show?\n\n1. First it is a tightly held backup; later she sets it down while considering the offer.\n2. Taking it back preserves caution, while the looser grip suggests greater openness.\n\nSupported answer: Her cautious movement toward accepting a new possibility.\n\nWatch for: The key alone does not establish a literal move, a final promise, or complete confidence.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-craft-imagery",
+          "title": "Read the evidence",
+          "context": "At the interview, Ana gripped the spare key until its teeth marked her palm. Later she placed it on the table while proposing a trial month. Before leaving, she took it back but no longer held it tightly."
+        }
+      }
+    ]
   },
   {
     "id": "reading-integration-positions",
@@ -1033,7 +1201,19 @@
       ],
       "answer": 1,
       "explanation": "The report supplies the family count, and the note limits the funding. This month’s result is real without a promise about later months."
-    }
+    },
+    "workedCases": [
+      {
+        "label": "Another case: connect the beginning and ending",
+        "text": "Question: Does the ending reverse the opening advice?\n\n1. The opening concerns long storage. The ending concerns brief preparation just before planting.\n2. Keep those different stages attached to the advice; the two instructions can both apply.\n\nSupported answer: No. The advice applies at different stages.\n\nWatch for: Dropping “during storage” or “planting immediately” creates a contradiction the article does not make.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-integration-combine",
+          "title": "Read the evidence",
+          "context": "The article opens by warning gardeners to keep seeds dry during storage. Near the end, it recommends soaking certain seeds briefly before planting them immediately. It explains that long storage and preparation for planting have different goals."
+        }
+      }
+    ]
   },
   {
     "id": "reading-integration-graphic",
@@ -1121,6 +1301,37 @@
               "30 ÷ 100 = 30%"
             ]
           ]
+        }
+      }
+    ],
+    "workedCases": [
+      {
+        "label": "Another case: combine groups before taking a rate",
+        "text": "Question: What is the combined success rate across both groups?\n\n1. Combine successful results: 18 + 8 = 26. Combine all attempts: 20 + 40 = 60.\n2. Divide once: 26/60 ≈ 43%. The larger group contributes more attempts.\n\nSupported answer: About 43%.\n\nWatch for: Averaging 90% and 20% gives 55%, which wrongly treats unequal group sizes as equal.",
+        "good": true,
+        "evidence": {
+          "id": "case-reading-pooled-rate",
+          "title": "Two unequal groups",
+          "context": "The passage reports all attempts; no attempt is in both groups.",
+          "table": {
+            "columns": [
+              "Group",
+              "Successful",
+              "Attempts"
+            ],
+            "rows": [
+              [
+                "A",
+                18,
+                20
+              ],
+              [
+                "B",
+                8,
+                40
+              ]
+            ]
+          }
         }
       }
     ]
@@ -1355,7 +1566,53 @@
         }
       }
     ],
-    "tip": "Circle “removed” or “remaining”; those words choose different numerators."
+    "tip": "Circle “removed” or “remaining”; those words choose different numerators.",
+    "workedCases": [
+      {
+        "label": "Another case: choose the whole",
+        "text": "Question: What fraction are young, and how many young would the same share give in a group of 45?\n\n1. The whole is 12 + 18 = 30. Young share = 12 ÷ 30 = 40%.\n2. Keep that share: 0.40 × 45 = 18.\n\nSupported answer: 2/5 young; 18 in the larger group.\n\nWatch for: 12 ÷ 18 compares young with adults; it is not the young share of everyone.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-share",
+          "title": "One group, two parts",
+          "context": "Every animal is counted once. The larger group has the same young share.",
+          "table": {
+            "columns": [
+              "Young",
+              "Adults"
+            ],
+            "rows": [
+              [
+                12,
+                18
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "label": "Another case: percentage points",
+        "text": "Question: The share rises from 40% to 60%. How many percentage points is that?\n\n1. Subtract the percentages: 60 − 40 = 20 points.\n2. For percent increase instead, divide that 20 by the starting 40: 50%.\n\nSupported answer: 20 percentage points.\n\nWatch for: “Percentage points” and “percent increase” name different calculations.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-points",
+          "title": "Share before and after",
+          "context": "Both numbers are percentages of their own groups.",
+          "table": {
+            "columns": [
+              "Before",
+              "After"
+            ],
+            "rows": [
+              [
+                "40%",
+                "60%"
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-data-reading-constraints",
@@ -1723,7 +1980,31 @@
         }
       }
     ],
-    "tip": "Write the requested output beside your answer so you do not stop halfway."
+    "tip": "Write the requested output beside your answer so you do not stop halfway.",
+    "workedCases": [
+      {
+        "label": "Another case: find time",
+        "text": "Question: How long does the charge last at the stated current?\n\n1. From capacity = current × time, divide capacity by current.\n2. 6 Ah ÷ 0.4 A = 15 h.\n\nSupported answer: 15 hours.\n\nWatch for: Keep the requested letter alone first; do not multiply just because two values are given.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-battery",
+          "title": "A supplied rule",
+          "context": "Capacity = current × time. The current stays constant.",
+          "table": {
+            "columns": [
+              "Capacity (Ah)",
+              "Current (A)"
+            ],
+            "rows": [
+              [
+                6,
+                0.4
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-data-reading-mixing",
@@ -1946,7 +2227,33 @@
         }
       }
     ],
-    "tip": "Label intermediate values “diluted” and “original” to avoid mixing the two."
+    "tip": "Label intermediate values “diluted” and “original” to avoid mixing the two.",
+    "workedCases": [
+      {
+        "label": "Another case: follow the value through",
+        "text": "Question: How much pollutant flows each second after flow is divided by three?\n\n1. Diluted concentration = (10 − 1) ÷ 3 = 3 mg/L.\n2. Undo dilution: 3 × 4 = 12 mg/L. New flow = 6 ÷ 3 = 2 L/s.\n3. Amount per second = 12 × 2 = 24 mg/s.\n\nSupported answer: 24 mg/s.\n\nWatch for: Subtract the blank once. A graph that already includes the blank needs no second subtraction.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-calibration",
+          "title": "Signal → concentration → amount",
+          "context": "Use C = (S − 1) ÷ 3. Dilution loses no pollutant; only flow changes.",
+          "table": {
+            "columns": [
+              "Signal S",
+              "Dilution factor",
+              "Original flow (L/s)"
+            ],
+            "rows": [
+              [
+                10,
+                4,
+                6
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-trends-interpolation-interpolate",
@@ -2141,7 +2448,43 @@
         }
       }
     ],
-    "tip": "A steeper downward line means faster cooling, not a colder final temperature."
+    "tip": "A steeper downward line means faster cooling, not a colder final temperature.",
+    "workedCases": [
+      {
+        "label": "Another case: distance takes time",
+        "text": "Question: How much longer does 6→8 mm take than 2→4 mm?\n\n1. 2→4 mm takes 3 − 1 = 2 minutes.\n2. 6→8 mm takes 15 − 8 = 7 minutes. Compare durations: 7 − 2 = 5.\n\nSupported answer: 5 minutes longer.\n\nWatch for: For “how much longer,” subtract times at the named distances; do not subtract the distances.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-travel",
+          "title": "A moving front",
+          "context": "Use the time for each named position.",
+          "table": {
+            "columns": [
+              "Distance (mm)",
+              "Time (min)"
+            ],
+            "rows": [
+              [
+                2,
+                1
+              ],
+              [
+                4,
+                3
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                8,
+                15
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-trends-interpolation-tested-range",
@@ -2338,7 +2681,43 @@
         }
       }
     ],
-    "tip": "Read the value at input zero before calling a relationship directly proportional."
+    "tip": "Read the value at input zero before calling a relationship directly proportional.",
+    "workedCases": [
+      {
+        "label": "Another case: direct proportion",
+        "text": "Question: Which output is directly proportional to x?\n\n1. P starts at zero and P/x stays 4 for positive x.\n2. T starts at 5. When x doubles from 2 to 4, T goes 13→21, not 13→26.\n\nSupported answer: P only.\n\nWatch for: A constant slope is not enough. Direct proportion also needs a zero start.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-proportion",
+          "title": "Same slope, different start",
+          "context": "P = 4x; T = 5 + 4x.",
+          "table": {
+            "columns": [
+              "x",
+              "P",
+              "T"
+            ],
+            "rows": [
+              [
+                0,
+                0,
+                5
+              ],
+              [
+                2,
+                8,
+                13
+              ],
+              [
+                4,
+                16,
+                21
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-trends-interpolation-nonlinear",
@@ -2439,7 +2818,76 @@
         }
       }
     ],
-    "tip": "Keep the square on the unknown until you take the square root."
+    "tip": "Keep the square on the unknown until you take the square root.",
+    "workedCases": [
+      {
+        "label": "Another case: make the curved rule straight",
+        "text": "Question: Which graph gives a straight line?\n\n1. Square each distance: 2² = 4, 4² = 16, 6² = 36.\n2. Squared distance ÷ time stays 4, so x² versus time is straight.\n\nSupported answer: Squared distance against time.\n\nWatch for: Ordinary distance against time is curved; squaring the vertical quantity changes the graph.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-linearized",
+          "title": "Squared distance",
+          "context": "The model is x² = 4t. Distance is nonnegative.",
+          "table": {
+            "columns": [
+              "Time t (min)",
+              "Distance x (mm)",
+              "x² (mm²)"
+            ],
+            "rows": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                1,
+                2,
+                4
+              ],
+              [
+                4,
+                4,
+                16
+              ],
+              [
+                9,
+                6,
+                36
+              ]
+            ]
+          },
+          "graph": {
+            "title": "The straightened graph",
+            "xLabel": "Time (min)",
+            "yLabel": "Squared distance (mm²)",
+            "series": [
+              {
+                "label": "x²",
+                "points": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    1,
+                    4
+                  ],
+                  [
+                    4,
+                    16
+                  ],
+                  [
+                    9,
+                    36
+                  ]
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-trends-interpolation-turning-plateau",
@@ -2843,7 +3291,35 @@
         }
       }
     ],
-    "tip": "To test a cause→effect explanation, measure its proposed middle step, not just the final result."
+    "tip": "To test a cause→effect explanation, measure its proposed middle step, not just the final result.",
+    "workedCases": [
+      {
+        "label": "Another case: test the middle step",
+        "text": "Question: The model says light opens leaf pores, increasing water loss. What extra measurement tests the first step?\n\n1. Water loss measures the final result, not whether pores opened.\n2. Count open pores per equal leaf area in both matched groups.\n\nSupported answer: Open pores per equal area in light and dark.\n\nWatch for: Measuring only more water loss cannot show which proposed step caused it.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-mechanism",
+          "title": "A proposed two-step cause",
+          "context": "Same plant type, leaf area, temperature, humidity and duration. Only light differs.",
+          "table": {
+            "columns": [
+              "Group",
+              "Water loss (mg/min)"
+            ],
+            "rows": [
+              [
+                "Dark",
+                2
+              ],
+              [
+                "Light",
+                6
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-experimental-design-replication",
@@ -3727,9 +4203,9 @@
       "science-conflicting-viewpoints-32"
     ],
     "body": [
-      "1. Split “needs A and B” into two requirements.",
-      "2. Look for a result that happens without one required condition.",
-      "3. Reject only the part contradicted. A match to one part does not rescue a broken requirement."
+      "1. Split a prediction into its parts, then check each part against the data.",
+      "2. A match to one part does not rescue a failed part. A result without a required condition disproves that requirement.",
+      "3. For removal tests, compare each change with the same baseline. More than one cause can matter."
     ],
     "workedExamples": [
       {
@@ -3798,7 +4274,68 @@
         }
       }
     ],
-    "tip": "For removal tests, subtract the untreated value from each result before comparing effects."
+    "tip": "For removal tests, subtract the untreated value from each result before comparing effects.",
+    "workedCases": [
+      {
+        "label": "Another case: check both trends",
+        "text": "Question: A model predicts fewer fossils as the dryness indicator rises. Does the table agree?\n\n1. Fossils fall from 30 to 12.\n2. The dryness indicator rises from 2 to 6. Both predicted directions match.\n\nSupported answer: Yes, both trends agree.\n\nWatch for: Agreement supports this prediction; it does not prove a unique cause.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-joint-trends",
+          "title": "Two parts of one prediction",
+          "context": "The same counting method was used in both layers.",
+          "table": {
+            "columns": [
+              "Layer",
+              "Fossil count",
+              "Dryness indicator"
+            ],
+            "rows": [
+              [
+                "Earlier",
+                30,
+                2
+              ],
+              [
+                "Later",
+                12,
+                6
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "label": "Another case: compare removal effects",
+        "text": "Question: Which removed material has the larger measured effect on transmission?\n\n1. Removing solids changes transmission by 35 − 10 = 25 points.\n2. Removing droplets changes it by 20 − 10 = 10 points. Both changes matter.\n\nSupported answer: Solids have the larger removal effect; both affect transmission.\n\nWatch for: A larger effect does not make that material the only cause.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-removal",
+          "title": "Matched removal tests",
+          "context": "Only the named material was removed; everything else was kept the same.",
+          "table": {
+            "columns": [
+              "Condition",
+              "Transmission (%)"
+            ],
+            "rows": [
+              [
+                "Unchanged",
+                10
+              ],
+              [
+                "Solids removed",
+                35
+              ],
+              [
+                "Droplets removed",
+                20
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-models-evidence-substitution",
@@ -3884,7 +4421,69 @@
         }
       }
     ],
-    "tip": "For a density rule, denser-than-liquid objects sink; less-dense objects rise. Compare densities first."
+    "tip": "For a density rule, denser-than-liquid objects sink; less-dense objects rise. Compare densities first.",
+    "workedCases": [
+      {
+        "label": "Another case: compare every row",
+        "text": "Question: Which model matches all three measurements?\n\n1. At x = 1, both models give 2, so that row cannot separate them.\n2. At x = 2 and 3, L gives 4 and 6; S gives 4 and 8. Only S matches every row.\n\nSupported answer: S only.\n\nWatch for: One matching row cannot prove a model. Keep substituting into the whole rule.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-model-rows",
+          "title": "Two model rules",
+          "context": "L predicts \\(y = 2x\\). S predicts \\(y = 2^x\\), so its output doubles each time x rises by 1.",
+          "table": {
+            "columns": [
+              "Input x",
+              "Measured y"
+            ],
+            "rows": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                4
+              ],
+              [
+                3,
+                8
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "label": "Another case: a rule in words",
+        "text": "Question: Which object rises and which sinks?\n\n1. Compare each object with the liquid, not with the other object.\n2. 0.8 is below 1.2; 1.5 is above 1.2.\n\nSupported answer: The ball rises; the bead sinks.\n\nWatch for: Both are in the same liquid. The rule works without inventing an equation.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-verbal-density",
+          "title": "A verbal model",
+          "context": "Ignoring flow and surface effects: an object less dense than the liquid rises; one denser sinks.",
+          "table": {
+            "columns": [
+              "Material",
+              "Density (g/cm³)"
+            ],
+            "rows": [
+              [
+                "Liquid",
+                1.2
+              ],
+              [
+                "Ball",
+                0.8
+              ],
+              [
+                "Bead",
+                1.5
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-models-evidence-multiplicative",
@@ -4520,7 +5119,43 @@
         }
       }
     ],
-    "tip": "A model must survive the inconvenient row as well as the row that fits."
+    "tip": "A model must survive the inconvenient row as well as the row that fits.",
+    "workedCases": [
+      {
+        "label": "Another case: count first, then test a cause",
+        "text": "Question: How much smaller is the mixed total, and how could you test nutrient shortage?\n\n1. Separate total = 500 + 400 = 900. Mixed total = 200 + 300 = 500; the difference is 400.\n2. Add nutrients to matched separate AND mixed cultures, keeping the other conditions fixed.\n\nSupported answer: 400 fewer cells/mL; compare matched low- and high-nutrient cultures.\n\nWatch for: Changing nutrients only in the mixed culture would mix treatment with culture type.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-followup",
+          "title": "Separate versus mixed cultures",
+          "context": "Counts are final densities under the same starting conditions. Nutrient shortage is a proposed cause, not an established fact.",
+          "table": {
+            "columns": [
+              "Culture",
+              "A (cells/mL)",
+              "B (cells/mL)"
+            ],
+            "rows": [
+              [
+                "A alone",
+                500,
+                0
+              ],
+              [
+                "B alone",
+                0,
+                400
+              ],
+              [
+                "Mixed",
+                200,
+                300
+              ]
+            ]
+          }
+        }
+      }
+    ]
   },
   {
     "id": "science-scientific-foundations-acidity",
@@ -5484,7 +6119,7 @@
     ],
     "body": [
       "1. Earth’s rotation gives day and night. Its orbit gives the yearly cycle.",
-      "2. Axial tilt changes sunlight angle and day length in opposite hemispheres.",
+      "2. The axis keeps the same tilt direction as Earth orbits. Each hemisphere takes a turn leaning toward the Sun.",
       "3. A shared Earth–Sun distance cannot by itself explain longer days in one hemisphere and shorter days in the other."
     ],
     "workedExamples": [
@@ -5509,8 +6144,8 @@
         "table": {
           "columns": [
             "Location",
-            "First date (h)",
-            "Six months later (h)"
+            "June daylight (h)",
+            "December daylight (h)"
           ],
           "rows": [
             [
@@ -5524,7 +6159,8 @@
               16
             ]
           ]
-        }
+        },
+        "diagram": "seasons"
       }
     },
     "evidence": [
@@ -5550,7 +6186,8 @@
               15
             ]
           ]
-        }
+        },
+        "diagram": "seasons"
       }
     ],
     "tip": "Opposite daylight changes point to tilt, not a distance change shared by Earth."
@@ -5610,7 +6247,8 @@
               "Cuts intrusion"
             ]
           ]
-        }
+        },
+        "diagram": "rock-intrusion"
       }
     },
     "evidence": [
@@ -5637,10 +6275,44 @@
               "Cuts both A and B"
             ]
           ]
-        }
+        },
+        "diagram": "rock-fault"
       }
     ],
-    "tip": "An event cannot cut a rock that has not formed yet."
+    "tip": "An event cannot cut a rock that has not formed yet.",
+    "workedCases": [
+      {
+        "label": "Another case: a layer seals an old fault",
+        "text": "Question: What is the order from oldest to youngest?\n\n1. A is below B, so A formed first. The fault cuts both, so that movement came later.\n2. C covers the fault without being cut, so C came after that movement.\n\nSupported answer: A → B → fault movement → C.\n\nWatch for: The fault is younger than the rocks it cuts, but older than the unbroken rock that covers it.",
+        "good": true,
+        "evidence": {
+          "id": "case-science-sealed-fault",
+          "title": "An unbroken top layer",
+          "context": "The layers are upright and have not been overturned.",
+          "table": {
+            "columns": [
+              "Feature",
+              "Observation"
+            ],
+            "rows": [
+              [
+                "A",
+                "Below B"
+              ],
+              [
+                "Fault",
+                "Cuts A and B; ends below C"
+              ],
+              [
+                "C",
+                "Unbroken above the fault"
+              ]
+            ]
+          },
+          "diagram": "sealed-fault"
+        }
+      }
+    ]
   },
   {
     "id": "science-scientific-foundations-water-processes",

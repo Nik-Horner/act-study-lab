@@ -1283,7 +1283,7 @@
       "expected": 20,
       "workedSolution": "If \\(2 x+y\\le 13\\) and \\(x+2 y\\le 13\\), the objective 3 x+2 y is at most \\(\\left(\\frac{4}{3}\\right) 13+\\left(\\frac{1}{3}\\right) 13=\\frac{65}{3}\\). Since the profit is an integer, it is at most 21. The pair(5, 3)satisfies both limits and earns 21, proving optimality. A fractional intersection is not itself an allowed production count.",
       "activityAnswerIndex": 0,
-      "sourceSha256": "4df62ed9203a99e34e4aca29009a8fcbbb80b2f516e19a3fa8de4ae526215c84",
+      "sourceSha256": "eaf5037923671c38a45e20c69b3a53305a5e55aeb37ac8bdc3c82691736d9946",
       "proofType": "calculation"
     },
     {

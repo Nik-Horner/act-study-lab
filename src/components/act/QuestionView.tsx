@@ -7,6 +7,7 @@ import { MathText } from "../MathText";
 import Link from "next/link";
 import { questionMethod } from "@/lib/act/question-method";
 import { displayChoiceOrder } from "@/lib/act/choice-order";
+import { ScienceDiagram } from "./ScienceDiagram";
 const letters = ["A", "B", "C", "D"];
 const colors = [
   "var(--color-brand)",
@@ -180,6 +181,7 @@ export function PassageView({
           </p>
         ))}
       </div>
+      {passage.diagram && <ScienceDiagram kind={passage.diagram} />}
       {passage.table && (
         <div className="mt-5">
           <p id={tableHelpId} className="mb-3 text-xs text-ink-soft sm:sr-only">
