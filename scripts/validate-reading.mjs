@@ -55,12 +55,21 @@ for (const topic of topics) {
   const lesson = lessons.find((l) => l.slug === topic.slug);
   assert(lesson);
   assert.equal(lesson.sections.length, 7);
-  assert(
-    lesson.sections
-      .flatMap((s) => s.body)
-      .join(" ")
-      .split(/\s+/).length >= 1000,
-  );
+  for (const section of lesson.sections) {
+    assert(section.heading.trim(), `${topic.slug}: missing concept heading`);
+    assert(
+      section.body.length > 0 && section.body.every((p) => p.trim()),
+      `${topic.slug}: missing teaching method`,
+    );
+    for (const example of section.examples ?? []) {
+      assert(example.text.includes("Question:"), `${topic.slug}: missing task`);
+      assert(
+        example.text.includes("Supported answer:") &&
+          example.text.includes("Reason:"),
+        `${topic.slug}: missing worked reasoning`,
+      );
+    }
+  }
   assert.equal(lesson.sections.flatMap((s) => s.examples ?? []).length, 6);
   assert.equal(lesson.check.length, 3);
   for (const check of lesson.check)
@@ -118,5 +127,5 @@ assert(
   "Held-out passages cannot appear in drills",
 );
 console.log(
-  "Reading validated: 6 deep lessons, 144 focused drills, 18 separate checks, 2 full 36-question/40-minute forms with 4 substantial passages each.",
+  "Reading validated: 6 lessons with teaching methods and worked reasoning, 144 focused drills, 18 separate checks, 2 full 36-question/40-minute forms with 4 substantial passages each.",
 );

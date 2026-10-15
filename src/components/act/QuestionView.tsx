@@ -3,6 +3,7 @@ import { AnswerFeedback } from "../AnswerFeedback";
 import { useId, type Ref } from "react";
 import type { Question, Passage, Graph } from "@/lib/act/types";
 import { MathDiagram } from "./MathDiagram";
+import { MathText } from "../MathText";
 const letters = ["A", "B", "C", "D"];
 const colors = [
   "var(--color-brand)",
@@ -151,7 +152,9 @@ export function PassageView({
       )}
       <div className="prose-study mt-3 space-y-4 text-sm">
         {passage.context.split(/\n\s*\n/).map((paragraph, index) => (
-          <p key={index}>{paragraph}</p>
+          <p key={index}>
+            <MathText>{paragraph}</MathText>
+          </p>
         ))}
       </div>
       {passage.table && (
@@ -256,10 +259,12 @@ export function QuestionView({
         aria-label="Current question"
       >
         {q.stem && q.stem.trim() !== q.questionText.trim() && (
-          <p className="prose-study mb-4">{q.stem}</p>
+          <p className="prose-study mb-4">
+            <MathText>{q.stem}</MathText>
+          </p>
         )}
         <h2 className="mb-5 whitespace-pre-line text-lg font-semibold">
-          {q.questionText}
+          <MathText>{q.questionText}</MathText>
         </h2>
         <MathDiagram id={q.id} />
         <div
@@ -272,7 +277,6 @@ export function QuestionView({
               <button
                 className="choice"
                 aria-pressed={chosen === i}
-                aria-label={`${letters[i]}. ${choice}`}
                 data-selected={chosen === i}
                 data-correct={revealed && i === q.answer}
                 data-wrong={revealed && chosen === i && i !== q.answer}
@@ -287,7 +291,7 @@ export function QuestionView({
                     eliminated.includes(i) ? "line-through opacity-60" : ""
                   }
                 >
-                  {choice}
+                  <MathText>{choice}</MathText>
                   {revealed && i === q.answer && (
                     <span className="ml-2 font-semibold">(correct)</span>
                   )}

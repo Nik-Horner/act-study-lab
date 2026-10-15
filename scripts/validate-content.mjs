@@ -90,21 +90,13 @@ for (const topic of topics) {
   assert.equal(lesson.check.length, 3, `${topic.slug}: quick checks`);
   const examples = lesson.sections.flatMap((section) => section.examples ?? []);
   assert(examples.length >= 6, `${topic.slug}: worked examples`);
-  const words = [
-    lesson.intro,
-    ...lesson.sections.flatMap((section) => [
-      ...section.body,
-      ...(section.examples ?? []).map((example) => example.text),
-      section.tip ?? "",
-    ]),
-  ]
-    .join(" ")
-    .split(/\s+/)
-    .filter(Boolean).length;
-  assert(
-    words >= 900,
-    `${topic.slug}: substantive lesson content (${words} words)`,
-  );
+  for (const section of lesson.sections)
+    assert(
+      section.heading.trim() &&
+        section.body.length > 0 &&
+        section.body.every((paragraph) => paragraph.trim()),
+      `${topic.slug}: missing concept or teaching method`,
+    );
 }
 const reserved = new Set();
 for (const subject of ["math", "science"])

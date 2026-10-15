@@ -1,9 +1,10 @@
 import { getExams as getActExams } from "@/lib/act/content";
 import { ExamRunner } from "@/components/act/ExamRunner";
 import { Suspense } from "react";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { getExam } from "@/lib/content";
 import ExamClient from "./ExamClient";
+import { createClient } from "@/lib/supabase/server";
 
 export default async function ExamRunnerPage({
   params,
@@ -18,7 +19,14 @@ export default async function ExamRunnerPage({
       </Suspense>
     );
   const exam = getExamOrNotFound(examId);
-  return <ExamClient exam={exam} />;
+  const db = await createClient();
+  const {
+    data: { user },
+  } = await db.auth.getUser();
+  if (!user) redirect(`/login?next=${encodeURIComponent(`/exam/${examId}`)}`);
+  return (
+    <ExamClient key={`${user.id}:${exam.id}`} exam={exam} userId={user.id} />
+  );
 }
 
 function getExamOrNotFound(examId: string) {

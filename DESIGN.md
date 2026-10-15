@@ -14,11 +14,11 @@ colors:
   brand-soft: "#e7e9fb"
   accent: "#d97a34"
   accent-soft: "#fbe8d6"
-  good: "#2f7a4f"
+  good: "#286d45"
   good-soft: "#dff1e6"
-  warn: "#b8892f"
+  warn: "#80601f"
   warn-soft: "#f7ecd8"
-  bad: "#b8433a"
+  bad: "#a63730"
   bad-soft: "#f9e2df"
   on-brand: "#fff"
   data-accent: "#9a4e19"
@@ -117,6 +117,8 @@ The shared main area is centered at max-w-6xl (72rem), with the documented page 
 
 Subject navigation wraps and fills available width on small screens, becoming width-fit at the 640px small breakpoint. Reading passage and answers are arranged side by side on desktop and stacked on phones; the passage has its own focusable scroll pane. Consult the surface brief for route-specific composition rather than imposing one grid on every screen.
 
+Daily prediction activities stack evidence above the task on phones and use adjacent evidence/task columns from 768px. Original English teaching remains within a rounded surface, with paired example columns from the same breakpoint. The daily runner gives evidence a wider main area while preserving the shared page container.
+
 Below 640px, buttons, selects, answer choices, back links, and main-navigation links receive 44px minimum heights. Theme controls also receive a 44px minimum width.
 
 ## Elevation & Depth
@@ -135,7 +137,7 @@ Cards have softly rounded corners. Buttons and badges use pill shapes; inputs us
 - Badges pair semantic foreground and soft background colors; neutral is the default.
 - Subject navigation marks the current subject with a soft surface, brand text, and subtle shadow. Main navigation exposes Daily study, Extra practice, and Account, collapsing to its existing mobile menu. Subject dashboards remain under Extra practice.
 - Answer choices use soft card backgrounds, brand borders on hover, and selected/correct/wrong attributes for the respective brand/good/bad fills and borders.
-- Daily study uses one primary Start daily lesson or Continue daily lesson action and four compact category rows. The runner shows only the active subject and category alongside subject progress, answered count, and the shared countdown; lesson and practice content reuse existing cards and answer controls. Budget, saved answers, and lesson completion belong to the account. The clock continues across reloads and devices, and unfinished work resumes within the next daily budget. Optional full lessons and extra practice remain secondary links.
+- Daily study uses one primary Start daily lesson or Continue daily lesson action and four compact category rows. The runner shows a four-subject progress rail, the active subject and lesson, and the shared countdown. Concept segments mark current and preceding teaching; daily choices use larger text and a 60px minimum height. Prediction activities pair evidence with a decision, reveal semantic answer states and feedback, and retain original teaching in an expandable rulebook. English paginates original teaching inside the established rounded surface. Budget, saved answers, and lesson completion belong to the account. The clock continues across reloads and devices, and unfinished work resumes within the next daily budget. Optional full lessons and extra practice remain secondary links.
 - Global focus-visible uses a 3px brand outline with 3px offset except where component styles override it. Choices and back links use 160ms ease-out transitions. Reduced-motion preference disables transitions and animations.
 
 ## Do's and Don'ts
@@ -150,4 +152,8 @@ Cards have softly rounded corners. Buttons and badges use pill shapes; inputs us
 - Don't hard-code light-theme colors into shared themed components.
 - Don't introduce a new decorative identity or Canvas artifact for this extension.
 
-Source evidence: src/app/globals.css, src/app/layout.tsx, shared ui components, TopNav, SubjectNav, AccountForm, and ExamRunner. Existing review captures are described in .impeccable/surfaces/act-study.md; this documentation pass did not independently inspect or recapture them. Styles are extracted from source, not computed-style measurements.
+Source evidence: src/app/globals.css, src/app/layout.tsx, shared ui components, TopNav, SubjectNav, AccountForm, ExamRunner, and the daily lesson/activity/drill components. Existing review captures are described in .impeccable/surfaces/act-study.md; this documentation pass did not independently inspect or recapture them. Styles are extracted from source, not computed-style measurements.
+
+October 11 refinement: non-English methods and worked examples are visible before the existing interactive activity; the diagrams, choices, feedback, palette, and workbench remain. Returning students see the saved subject, lesson, and answer count on the hub and enter the next unfinished step directly in the daily runner. The alternative to begin another session is disclosed behind a secondary control.
+
+October 12 refinement: daily non-English teaching has Learn and Try it panes, short plain-language methods, preserved worked examples, and shared navigation. English uses the same method/example layout without replacing its original teaching with activities. KaTeX renders explicitly authored math with MathML. Score checks and detailed account preferences are secondary disclosures. The Science setting changes future plans while preserving active work. Light-theme success, warning and error text colors were darkened for readable contrast.

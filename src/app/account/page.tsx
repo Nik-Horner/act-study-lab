@@ -12,11 +12,26 @@ export default async function AccountPage() {
     return null; // the proxy already gates this route to logged-in users
   }
 
-  const { data: profile } = await supabase
+  const { data: profile, error } = await supabase
     .from("profiles")
     .select("*")
     .eq("id", user.id)
-    .single();
+    .maybeSingle();
+  if (error)
+    return (
+      <div className="mx-auto max-w-md space-y-4">
+        <h1 className="text-xl font-semibold">Account unavailable</h1>
+        <p role="alert">
+          Your settings couldn’t load. Reload before making changes.
+        </p>
+        <a
+          href="/account"
+          className="inline-flex min-h-11 items-center text-brand underline"
+        >
+          Reload account
+        </a>
+      </div>
+    );
 
   return (
     <div className="space-y-4">

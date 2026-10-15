@@ -14,6 +14,35 @@ export function MathDiagram({ id }: { id: string }) {
     </text>
   );
   switch (id) {
+    case "inscribed-angle":
+      description =
+        "Circle with an inscribed angle at the left intercepting an 80-degree arc on the right. Find the inscribed angle.";
+      content = (
+        <>
+          <circle cx="150" cy="125" r="80" />
+          <path d="M211 74L70 125L211 176" />
+          <path
+            d="M211 74A80 80 0 0 1 211 176"
+            stroke="var(--color-brand)"
+            strokeWidth="4"
+          />
+          {label(253, 130, "80°")}
+          {label(99, 130, "?")}
+        </>
+      );
+      break;
+    case "similar-solids":
+      description =
+        "Two similar cubes. The larger cube has three times the side length; find how volume scales.";
+      content = (
+        <>
+          <path d="M20 132h36v36H20ZM20 132l12-12h36v36l-12 12M56 132l12-12" />
+          <path d="M115 90h108v108H115ZM115 90l36-36h108v108l-36 36M223 90l36-36" />
+          {label(44, 194, "Volume 10")}
+          {label(177, 224, "Length ×3 · volume ?")}
+        </>
+      );
+      break;
     case "math-geometry-d1":
       description =
         "Trapezoid with parallel bases 8 and 14 and perpendicular height 5.";
@@ -24,7 +53,7 @@ export function MathDiagram({ id }: { id: string }) {
           <path d="M90 140h10v10" />
           {label(138, 77, "8")}
           {label(138, 176, "14")}
-          {label(78, 123, "5")}
+          {label(108, 123, "5")}
         </>
       );
       break;

@@ -1,49 +1,73 @@
 {
   "slug": "add-delete",
   "title": "Adding or Deleting Information",
-  "intro": "Add/delete questions ask whether a sentence belongs in the passage and which reason justifies that call. Expect two to four of them per ACT English test, spread across the passages. The core idea: every choice has two halves, a verdict (keep or delete) and a reason, and both halves must be true for the choice to be right.",
+  "intro": "Decide whether a sentence helps the paragraph’s purpose.",
   "sections": [
     {
       "heading": "Keep what serves the paragraph; cut what doesn't",
       "body": [
-        "First name what the paragraph is trying to do. A sentence earns its place if it advances that purpose: it explains a step, supports the main claim, gives a needed example, or sets up what comes next. If it does one of those jobs, keep it.",
-        "Delete a sentence when it wanders off topic, repeats a point already made, or interrupts the flow with an aside the paragraph does not need. 'True and interesting' is not enough. The sentence has to do this paragraph's job. A fact about the writer's vacation does not belong in a paragraph explaining how engines work, no matter how charming it is."
+        "Name the paragraph’s purpose. Keep a sentence that explains a needed step, supports the claim, gives a useful example, or prepares the next idea.",
+        "Delete a sentence that repeats information, wanders off topic, or interrupts that purpose. Being true or interesting is not enough."
       ],
       "examples": [
-        { "text": "Paragraph on how vaccines work; sentence: 'The immune system then remembers the invader and responds faster next time.'", "label": "explains the mechanism — keep", "good": true },
-        { "text": "Paragraph on how vaccines work; sentence: 'My brother is afraid of needles.'", "label": "irrelevant personal aside — delete", "good": false }
+        {
+          "text": "Paragraph on how vaccines work; sentence: 'The immune system then remembers the invader and responds faster next time.'",
+          "label": "explains the mechanism — keep",
+          "good": true
+        },
+        {
+          "text": "Paragraph on how vaccines work; sentence: 'My brother is afraid of needles.'",
+          "label": "irrelevant personal aside — delete",
+          "good": false
+        }
       ],
       "tip": "Name the paragraph's job in one phrase before you judge the sentence. Keep sentences that do that job; cut the ones that don't."
     },
     {
       "heading": "The reason has to be true",
       "body": [
-        "Every answer pairs a verdict with a reason: 'Kept, because it provides an example that supports the main point' or 'Deleted, because it repeats information already given.' The verdict can be right while the reason is wrong, and that makes the whole choice wrong.",
-        "Read each reason as a factual claim about the sentence and check it against the passage. If a choice says 'Kept, because it adds a relevant statistic' but the sentence contains no statistic, reject it even if keeping is correct. The reason must describe what the sentence actually does in this paragraph."
+        "Check both halves of a choice: keep/delete and the reason. A correct verdict with a false reason is still wrong.",
+        "Treat the reason as a claim about the text. “Adds a statistic” fails if the sentence contains no statistic, even when keeping it is appropriate."
       ],
       "examples": [
-        { "text": "Deleted, because the detail is irrelevant to the paragraph's focus on training.", "label": "reason matches an off-topic sentence", "good": true },
-        { "text": "Deleted, because it contradicts the previous sentence.", "label": "wrong if the sentence doesn't contradict anything", "good": false }
+        {
+          "text": "Deleted, because the detail is irrelevant to the paragraph's focus on training.",
+          "label": "reason matches an off-topic sentence",
+          "good": true
+        },
+        {
+          "text": "Deleted, because it contradicts the previous sentence.",
+          "label": "wrong if the sentence doesn't contradict anything",
+          "good": false
+        }
       ],
       "tip": "Check the reason like a fact. A true verdict bolted to a false reason is still the wrong answer."
     },
     {
       "heading": "Common right reasons and common traps",
       "body": [
-        "Good reasons to KEEP: it provides a specific example, it gives needed background, it supports the main claim with evidence, it sets up the next sentence. Good reasons to DELETE: it strays off topic, it repeats an earlier point, it is an irrelevant aside, it interrupts the logical flow.",
-        "Watch the trap reasons. A delete choice may say 'because the information is stated elsewhere' when it never was. A keep choice may say 'because it explains how the process works' when the sentence explains nothing. The sneakiest trap pairs the wrong verdict with a true description: 'Kept, because it adds a vivid detail' can describe the sentence accurately and still be wrong, because vividness alone is no reason to keep an off-topic sentence. Verify both halves, then verify them against the paragraph's purpose."
+        "Reasons to keep: needed background, evidence, a relevant example, or a link to what follows. Reasons to delete: repetition, irrelevance, or a disruptive aside.",
+        "Verify that the reason actually applies. A vivid detail may still be off topic; a claim that information is repeated fails if it never appears elsewhere."
       ],
       "examples": [
-        { "text": "Kept, because it offers a concrete example of the cost savings just mentioned.", "label": "verdict and reason both fit", "good": true },
-        { "text": "Kept, because it introduces the essay's main argument.", "label": "wrong if the sentence is a minor detail, not the thesis", "good": false }
+        {
+          "text": "Kept, because it offers a concrete example of the cost savings just mentioned.",
+          "label": "verdict and reason both fit",
+          "good": true
+        },
+        {
+          "text": "Kept, because it introduces the essay's main argument.",
+          "label": "wrong if the sentence is a minor detail, not the thesis",
+          "good": false
+        }
       ],
       "tip": "Split every choice into verdict and reason, and confirm both before you pick it."
     },
     {
       "heading": "How to spot these questions",
       "body": [
-        "The wording gives these questions away: 'The writer is considering adding the following sentence' or 'The writer is considering deleting the underlined sentence.' The four choices split two and two: 'Yes/Kept, because...' twice and 'No/Deleted, because...' twice. A cousin question asks what the essay 'would primarily lose' if a sentence were deleted; that one tests the same skill of naming what the sentence contributes.",
-        "Work in this order. First, name the paragraph's purpose in one phrase. Second, decide keep or delete on your own, before reading any reasons, and cross off the two choices with the wrong verdict. Third, read the two surviving reasons as factual claims and check each against the passage. Pick the one that accurately describes what the sentence does."
+        "Look for “considering adding,” “considering deleting,” or what the essay “would lose.” These ask what a sentence contributes.",
+        "Name the paragraph’s purpose, decide whether the sentence serves it, then compare the reasons. Choose a verdict and explanation that are both supported."
       ],
       "tip": "Decide the verdict before you read the reasons. Choosing between two reasons is far easier than juggling four full choices."
     }
@@ -52,21 +76,36 @@
     {
       "stem": "Context: A paragraph explains how photosynthesis turns sunlight into sugar. Underlined sentence: [[Chlorophyll in the leaves captures light energy to start the process.]]",
       "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
-      "choices": ["Kept, because it explains a key step in how photosynthesis works.", "Kept, because it introduces the essay's central argument.", "Deleted, because it repeats information stated earlier in the paragraph.", "Deleted, because it strays from the paragraph's topic."],
+      "choices": [
+        "Kept, because it explains a key step in how photosynthesis works.",
+        "Kept, because it introduces the essay's central argument.",
+        "Deleted, because it repeats information stated earlier in the paragraph.",
+        "Deleted, because it strays from the paragraph's topic."
+      ],
       "answer": 0,
       "explanation": "The sentence describes how chlorophyll begins the process, which advances the paragraph's explanation, so 'Kept, because it explains a key step' pairs the right verdict with a true reason. It is a supporting step, not a central argument, and the delete reasons are false: nothing is repeated, and the sentence is squarely on topic."
     },
     {
       "stem": "Context: A paragraph describes the steps of building an adobe wall. Underlined sentence: [[The desert sky that evening was a beautiful shade of pink.]]",
       "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
-      "choices": ["Kept, because it adds a vivid sensory detail to the paragraph.", "Kept, because it explains a necessary building step.", "Deleted, because it is an irrelevant detail that interrupts the step-by-step instructions.", "Deleted, because it repeats an earlier step."],
+      "choices": [
+        "Kept, because it adds a vivid sensory detail to the paragraph.",
+        "Kept, because it explains a necessary building step.",
+        "Deleted, because it is an irrelevant detail that interrupts the step-by-step instructions.",
+        "Deleted, because it repeats an earlier step."
+      ],
       "answer": 2,
       "explanation": "The pink sky has nothing to do with building the wall, so 'Deleted, because it is an irrelevant detail that interrupts the step-by-step instructions' is right. The sentence really is a vivid sensory detail, but vividness is no reason to keep an off-topic sentence in a how-to paragraph; it explains no building step and repeats nothing."
     },
     {
       "stem": "Context: A paragraph argues that recycling aluminum saves energy. The writer is considering adding the following sentence: [[Recycling one aluminum can saves enough energy to power a television for three hours.]]",
       "questionText": "Should the writer make this addition?",
-      "choices": ["Yes, because it provides a specific statistic that supports the energy-saving claim.", "Yes, because it defines a technical term readers need to understand.", "No, because it repeats a statistic given earlier in the paragraph.", "No, because it contradicts the paragraph's main point."],
+      "choices": [
+        "Yes, because it provides a specific statistic that supports the energy-saving claim.",
+        "Yes, because it defines a technical term readers need to understand.",
+        "No, because it repeats a statistic given earlier in the paragraph.",
+        "No, because it contradicts the paragraph's main point."
+      ],
       "answer": 0,
       "explanation": "The paragraph argues that recycling aluminum saves energy, and the proposed sentence backs that claim with a concrete number: one can, three hours of television. 'Yes, because it provides a specific statistic that supports the energy-saving claim' pairs the right verdict with a true reason. The sentence defines no technical term, the paragraph contains no earlier statistic for it to repeat, and the statistic supports rather than contradicts the main point."
     }

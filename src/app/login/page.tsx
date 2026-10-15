@@ -1,14 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 import { Suspense, useState, type FormEvent } from "react";
 import { createClient } from "@/lib/supabase/client";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { authReturnPath } from "@/lib/auth-redirect";
 
 function LoginForm() {
-  const router = useRouter();
   const searchParams = useSearchParams();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -35,12 +35,8 @@ function LoginForm() {
       return;
     }
     const next = searchParams.get("next");
-    router.push(
-      next?.startsWith("/") && !next.startsWith("//") && !next.includes("\\")
-        ? next
-        : "/dashboard",
-    );
-    router.refresh();
+    // Reload the server layout after the authentication cookie changes.
+    window.location.assign(authReturnPath(next));
   }
 
   return (

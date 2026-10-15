@@ -1,0 +1,2497 @@
+{
+  "math-geometry": [
+    {
+      "prompt": "The trapezoid has bases 8 and 14, perpendicular height 5, and a slanted side 6. Which setup gives its area?",
+      "choices": [
+        "\\(\\frac{(8+14)\\times5}2\\)",
+        "\\(\\frac{(8+14)\\times6}2\\)",
+        "14 × 5"
+      ],
+      "answer": 0,
+      "explanation": "Use the perpendicular height, not the slanted side. Average the parallel bases: 11 × 5 = 55 square units.",
+      "diagram": "math-geometry-d1"
+    },
+    {
+      "prompt": "A triangle has sides 4 and 9. Which third side is possible?",
+      "choices": [
+        "5",
+        "10",
+        "13"
+      ],
+      "answer": 1,
+      "explanation": "The third side must be strictly between 9 − 4 = 5 and 9 + 4 = 13. Equality makes a flat, degenerate triangle."
+    },
+    {
+      "prompt": "The length scale factor between two similar solids is 3. The smaller volume is 10. Predict the larger volume before calculating.",
+      "choices": [
+        "30",
+        "90",
+        "270"
+      ],
+      "answer": 2,
+      "explanation": "Lengths scale by 3, areas by 3², and volumes by 3³. The larger volume is 10 × 27 = 270.",
+      "diagram": "similar-solids"
+    },
+    {
+      "prompt": "An inscribed angle intercepts an 80° arc. What is the angle?",
+      "choices": [
+        "40°",
+        "80°",
+        "160°"
+      ],
+      "answer": 0,
+      "explanation": "An inscribed angle is half its intercepted arc. A central angle intercepting the same arc would be 80°.",
+      "diagram": "inscribed-angle"
+    },
+    {
+      "prompt": "A segment has endpoints (−2, 3) and (4, 11). Which calculation gives its length?",
+      "choices": [
+        "\\(\\sqrt{6^2+8^2}\\)",
+        "\\(\\sqrt{2^2+11^2}\\)",
+        "6 + 8"
+      ],
+      "answer": 0,
+      "explanation": "Subtract corresponding coordinates first: Δx = 6 and Δy = 8. Distance is the hypotenuse of that reference triangle, so the length is 10."
+    },
+    {
+      "prompt": "The closed cylinder has radius 3 and height 8. Which setup includes every exposed surface?",
+      "choices": [
+        "2π(3)(8)",
+        "\\(2\\pi(3^2)+2\\pi(3)(8)\\)",
+        "\\(\\pi(3^2)(8)\\)"
+      ],
+      "answer": 1,
+      "explanation": "Include two circular ends plus the curved side: \\(18\\pi+48\\pi=66\\pi\\) square units. The last expression is volume.",
+      "diagram": "math-geometry-d2"
+    },
+    {
+      "prompt": "From point P, a tangent to a circle is 12 and the radius to the tangent point is 5. What must you recognize before using Desmos?",
+      "choices": [
+        "The radius and tangent form a right angle",
+        "The radius and tangent are parallel",
+        "The center-to-P distance equals 12 + 5"
+      ],
+      "answer": 0,
+      "explanation": "A radius is perpendicular to a tangent at the point of tangency. That creates the 5–12–13 right triangle; OP = 13.",
+      "diagram": "math-exam-1-q21"
+    }
+  ],
+  "math-trigonometry": [
+    {
+      "prompt": "In the pictured right triangle, which equation finds the side opposite 30°?",
+      "choices": [
+        "\\(x=10\\sin30^\\circ\\)",
+        "\\(x=10\\cos30^\\circ\\)",
+        "\\(x=10\\tan30^\\circ\\)"
+      ],
+      "answer": 0,
+      "explanation": "Opposite/hypotenuse is sine. Thus \\(\\frac{x}{10}=\\sin30^\\circ\\), so x = 5. The setup is the part the calculator cannot choose for you.",
+      "diagram": "math-exam-1-q15"
+    },
+    {
+      "prompt": "On the unit circle, what is \\(\\sin\\left(\\frac{5\\pi}6\\right)\\)?",
+      "choices": [
+        "\\(\\frac12\\)",
+        "\\(-\\frac12\\)",
+        "\\(\\frac{\\sqrt3}2\\)"
+      ],
+      "answer": 0,
+      "explanation": "\\(\\frac{5\\pi}6=150^\\circ\\), in Quadrant II, with reference angle \\(\\frac\\pi6\\). Sine is the positive y-coordinate: \\(\\frac12\\).",
+      "diagram": "unit-circle"
+    },
+    {
+      "prompt": "\\(\\cos\\theta=-\\frac35\\) and θ is in Quadrant III. Choose sin θ.",
+      "choices": [
+        "\\(\\frac45\\)",
+        "\\(-\\frac45\\)",
+        "\\(-\\frac34\\)"
+      ],
+      "answer": 1,
+      "explanation": "The missing magnitude is \\(\\sqrt{1-\\frac9{25}}=\\frac45\\). Quadrant III makes sine negative. The sign needs the quadrant, not just a square root."
+    },
+    {
+      "prompt": "Solve \\(\\sin\\theta=\\frac12\\) for \\(0\\le\\theta<2\\pi\\). Which list is complete?",
+      "choices": [
+        "\\(\\frac\\pi6\\) only",
+        "\\(\\frac\\pi6\\) and \\(\\frac{5\\pi}6\\)",
+        "\\(\\frac\\pi6\\) and \\(\\frac{7\\pi}6\\)"
+      ],
+      "answer": 1,
+      "explanation": "Sine is positive in Quadrants I and II. The reference angle is \\(\\frac\\pi6\\); the second solution is \\(\\pi-\\frac\\pi6=\\frac{5\\pi}6\\)."
+    },
+    {
+      "prompt": "For \\(y=-3\\sin(2x)+4\\), identify the amplitude and period in radians.",
+      "choices": [
+        "Amplitude −3; period 2π",
+        "Amplitude 3; period π",
+        "Amplitude 4; period π"
+      ],
+      "answer": 1,
+      "explanation": "Amplitude is |−3| = 3. Period is \\(\\frac{2\\pi}{|2|}=\\pi\\). The vertical shift 4 changes the midline and range, not the amplitude."
+    },
+    {
+      "prompt": "Two known sides of a nonright triangle are 7 and 9, and the angle between them is 60°. What should you enter to find the third side?",
+      "choices": [
+        "c² = 7² + 9² − 2(7)(9)cos(60°)",
+        "c² = 7² + 9²",
+        "sin(60°)/7 = sin(C)/9"
+      ],
+      "answer": 0,
+      "explanation": "Two sides and their included angle call for the law of cosines. c² = 49 + 81 − 63 = 67. The Pythagorean theorem needs a right angle."
+    },
+    {
+      "prompt": "You stand 20 m from a vertical tower. The angle of elevation is 35°, and your eye level is 1.6 m. Which setup gives the tower height?",
+      "choices": [
+        "20 tan(35°) + 1.6",
+        "20 sin(35°) + 1.6",
+        "20/tan(35°)"
+      ],
+      "answer": 0,
+      "explanation": "The ground distance is adjacent and the rise above your eyes is opposite. Rise = 20 tan(35°); then add eye height. Check degree mode."
+    }
+  ],
+  "math-algebra": [
+    {
+      "prompt": "4(x − 2) = 2x + 10. Before solving, what is the left side after distribution?",
+      "choices": [
+        "4x − 2",
+        "4x − 8",
+        "4x + 8"
+      ],
+      "answer": 1,
+      "explanation": "Multiply both terms inside the parentheses by 4. Then 4x − 8 = 2x + 10 gives x = 9; verify in the original equation."
+    },
+    {
+      "prompt": "x² = 25. A calculator returns 5. Is that a complete solution set?",
+      "choices": [
+        "Yes",
+        "No: include −5",
+        "No: include 0"
+      ],
+      "answer": 1,
+      "explanation": "Both 5 and −5 square to 25. A single displayed root is not proof that all branches were found."
+    },
+    {
+      "prompt": "(x − 2)(x + 3) > 0. Which intervals work?",
+      "choices": [
+        "−3 < x < 2",
+        "x < −3 or x > 2",
+        "x ≥ 2"
+      ],
+      "answer": 1,
+      "explanation": "The factors have the same sign outside the two roots. Strict inequality excludes the roots."
+    },
+    {
+      "prompt": "Which is the useful first rewrite of x² − 49?",
+      "choices": [
+        "(x − 7)²",
+        "(x − 7)(x + 7)",
+        "x(x − 49)"
+      ],
+      "answer": 1,
+      "explanation": "Recognize a difference of squares: a² − b² = (a − b)(a + b). Squaring x − 7 would introduce a −14x term."
+    },
+    {
+      "prompt": "(x² − 1)/(x − 1) = 3 simplifies to x + 1 = 3. What restriction survives cancellation?",
+      "choices": [
+        "x ≠ 1",
+        "x ≠ −1",
+        "No restriction survives"
+      ],
+      "answer": 0,
+      "explanation": "The original denominator cannot be zero. Cancellation does not put the excluded input back into the domain."
+    },
+    {
+      "prompt": "For which value of a does ax + 6 = 3x + 6 have infinitely many solutions?",
+      "choices": [
+        "0",
+        "3",
+        "6"
+      ],
+      "answer": 1,
+      "explanation": "The coefficients and constants must match on both sides. With a = 3, the equation is an identity."
+    },
+    {
+      "prompt": "A squared radical equation gives candidates x = 0 and x = 3. What finishes the solution?",
+      "choices": [
+        "Keep both automatically",
+        "Substitute each into the original equation",
+        "Keep only the positive candidate"
+      ],
+      "answer": 1,
+      "explanation": "Squaring can introduce extraneous solutions. Check the original signs, restrictions, and equation before accepting either candidate."
+    }
+  ],
+  "math-functions": [
+    {
+      "prompt": "f(x) = x² and g(x) = x + 3. What is f(g(2))?",
+      "choices": [
+        "7",
+        "25",
+        "11"
+      ],
+      "answer": 1,
+      "explanation": "Work from the inside out: g(2) = 5, then f(5) = 25. Function composition is not multiplication."
+    },
+    {
+      "prompt": "f(x) = √(x − 2)/(x − 5). Which domain restrictions must both hold?",
+      "choices": [
+        "x ≥ 2 and x ≠ 5",
+        "x > 5 only",
+        "x ≠ 2 and x ≥ 5"
+      ],
+      "answer": 0,
+      "explanation": "The radicand must be nonnegative, and the denominator must be nonzero. Their intersection is x ≥ 2 except x = 5."
+    },
+    {
+      "prompt": "How does y = f(x − 4) + 2 move the graph of f?",
+      "choices": [
+        "Left 4, up 2",
+        "Right 4, up 2",
+        "Right 2, down 4"
+      ],
+      "answer": 1,
+      "explanation": "The inside change x − 4 shifts inputs right by 4. The outside +2 shifts outputs up by 2."
+    },
+    {
+      "prompt": "f(x) = x² with domain x ≥ 0. Which inverse respects that branch?",
+      "choices": [
+        "f⁻¹(x) = √x",
+        "f⁻¹(x) = ±√x",
+        "f⁻¹(x) = −√x"
+      ],
+      "answer": 0,
+      "explanation": "The original outputs come from nonnegative inputs, so the inverse must return the nonnegative square root."
+    },
+    {
+      "prompt": "y = (x² − 4)/(x − 2). At x = 2, is the original graph continuous?",
+      "choices": [
+        "Yes: cancellation fills the point",
+        "No: there is a hole at (2, 4)",
+        "No: there is a vertical asymptote"
+      ],
+      "answer": 1,
+      "explanation": "The simplified expression x + 2 agrees only when x ≠ 2. The excluded original input leaves a hole, not an asymptote."
+    },
+    {
+      "prompt": "At equal time steps, a population is 3, 6, 12, 24. Which structure fits?",
+      "choices": [
+        "Linear: add 3",
+        "Exponential: multiply by 2",
+        "Quadratic: add increasing odd numbers"
+      ],
+      "answer": 1,
+      "explanation": "Constant ratios indicate exponential change. The differences 3, 6, 12 are not constant."
+    },
+    {
+      "prompt": "A graphing tool shows one intersection in the current window. What should you check before declaring a complete answer?",
+      "choices": [
+        "Whether the domain or another window allows more intersections",
+        "Only the color of the curves",
+        "Nothing: visible means complete"
+      ],
+      "answer": 0,
+      "explanation": "Use the stated domain and function behavior. A viewing window can hide valid intersections or show ones outside the permitted interval."
+    }
+  ],
+  "math-statistics-probability": [
+    {
+      "prompt": "Ten students average 80; twenty students average 95. Which setup gives the combined mean?",
+      "choices": [
+        "(80 + 95)/2",
+        "(10×80 + 20×95)/30",
+        "(10 + 20)/(80 + 95)"
+      ],
+      "answer": 1,
+      "explanation": "Weight by group counts. The total is 800 + 1900 = 2700; divide by 30 to get 90."
+    },
+    {
+      "prompt": "The sorted data are 2, 3, 4, 5, 100. Which measure changes least if 100 becomes 1000?",
+      "choices": [
+        "Mean",
+        "Median",
+        "Range"
+      ],
+      "answer": 1,
+      "explanation": "The middle observation remains 4. The mean and range change substantially with the outlier."
+    },
+    {
+      "prompt": "Every data value is multiplied by 3 and then increased by 7. What happens to standard deviation?",
+      "choices": [
+        "It becomes 3 times as large",
+        "It increases by 7",
+        "It becomes 3 times as large plus 7"
+      ],
+      "answer": 0,
+      "explanation": "Multiplication stretches distances from the mean by |3|. Adding a constant moves the whole set without changing spread."
+    },
+    {
+      "prompt": "Among 12 red cards, 3 are marked. You know a selected card is red. What is the probability it is marked?",
+      "choices": [
+        "3 divided by all cards",
+        "3/12",
+        "12/3"
+      ],
+      "answer": 1,
+      "explanation": "Conditioning changes the eligible sample space to the 12 red cards. Of those, 3 are marked, so probability = 1/4."
+    },
+    {
+      "prompt": "A and B are independent with probabilities 0.3 and 0.4. What is P(A or B)?",
+      "choices": [
+        "0.7",
+        "0.12",
+        "0.58"
+      ],
+      "answer": 2,
+      "explanation": "Add the two probabilities and subtract their overlap: 0.3 + 0.4 − (0.3×0.4) = 0.58. Independent events can still overlap."
+    },
+    {
+      "prompt": "Three distinct prizes go to three of five people, with nobody winning twice. Does order matter?",
+      "choices": [
+        "Yes: 5×4×3",
+        "No: choose any group of three",
+        "Allow repeats: 5³"
+      ],
+      "answer": 0,
+      "explanation": "The prizes distinguish positions. There are 5 choices for the first prize, 4 for the second, and 3 for the third."
+    },
+    {
+      "prompt": "Students volunteer for a survey; half are randomly assigned a treatment. What does random assignment establish?",
+      "choices": [
+        "The volunteers represent all students",
+        "Treatment groups can support a causal comparison",
+        "Both population representation and causality automatically"
+      ],
+      "answer": 1,
+      "explanation": "Random assignment addresses differences between treatment groups. It does not repair the volunteer sample’s population-selection bias."
+    }
+  ],
+  "math-number-quantity": [
+    {
+      "prompt": "What is √((-5)²)?",
+      "choices": [
+        "−5",
+        "5",
+        "±5"
+      ],
+      "answer": 1,
+      "explanation": "The square-root symbol gives the principal, nonnegative root. \\(\\sqrt{x^2}=|x|\\), so the answer is 5."
+    },
+    {
+      "prompt": "Can a 2×3 matrix multiply a 3×4 matrix, and what size is the result?",
+      "choices": [
+        "Yes: 2×4",
+        "Yes: 3×3",
+        "No"
+      ],
+      "answer": 0,
+      "explanation": "The inner dimensions match. The outer dimensions determine the product size: 2×4."
+    },
+    {
+      "prompt": "A geometric sequence begins 3, 6, 12. Which expression is its nth term?",
+      "choices": [
+        "3 + 2(n − 1)",
+        "3×2^(n − 1)",
+        "3×2^n"
+      ],
+      "answer": 1,
+      "explanation": "The ratio is 2, and the first term has exponent zero. Check n = 1 before accepting a formula."
+    },
+    {
+      "prompt": "√(x − 4) = x − 6. Before squaring, which restriction is strongest?",
+      "choices": [
+        "x ≥ 4",
+        "x ≥ 6",
+        "x ≠ 6"
+      ],
+      "answer": 1,
+      "explanation": "The square root is nonnegative, so x − 6 must also be nonnegative. This includes the radicand restriction."
+    },
+    {
+      "prompt": "To simplify 1/(2 + i), what should multiply numerator and denominator?",
+      "choices": [
+        "2 + i",
+        "2 − i",
+        "i"
+      ],
+      "answer": 1,
+      "explanation": "Use the complex conjugate. (2 + i)(2 − i) = 4 − i² = 5, giving (2 − i)/5."
+    },
+    {
+      "prompt": "A 2×2 matrix has determinant 0. What must you conclude about its inverse?",
+      "choices": [
+        "It has no inverse",
+        "Its inverse is the zero matrix",
+        "Switch rows to find its inverse"
+      ],
+      "answer": 0,
+      "explanation": "A zero determinant makes the matrix singular. Do not apply an inverse formula that divides by zero."
+    },
+    {
+      "prompt": "Which value equals i^2026?",
+      "choices": [
+        "1",
+        "−1",
+        "i"
+      ],
+      "answer": 1,
+      "explanation": "Powers repeat every 4. Since 2026 leaves remainder 2 on division by 4, i^2026 = i² = −1."
+    }
+  ],
+  "math-essential-skills": [
+    {
+      "prompt": "A price rises 20% and then falls 20%. Does it return to its starting value?",
+      "choices": [
+        "Yes",
+        "No: it ends at 96% of the original",
+        "No: it ends at 104%"
+      ],
+      "answer": 1,
+      "explanation": "The percentages use different bases. Multiply 1.20 × 0.80 = 0.96 instead of adding signed percentages."
+    },
+    {
+      "prompt": "A trip covers equal distances at 30 mph and 60 mph. Is its average speed 45 mph?",
+      "choices": [
+        "Yes",
+        "No: 40 mph",
+        "No: 50 mph"
+      ],
+      "answer": 1,
+      "explanation": "Average speed is total distance divided by total time. For 60 miles each way, 120 miles/3 hours = 40 mph."
+    },
+    {
+      "prompt": "Combine 2 L of 10% solution with 3 L of 20% solution. Which concentration is correct?",
+      "choices": [
+        "15%",
+        "16%",
+        "30%"
+      ],
+      "answer": 1,
+      "explanation": "Solute totals are 0.2 + 0.6 = 0.8 L. Divide by the total 5 L: 16%. Weight by volumes."
+    },
+    {
+      "prompt": "After a 25% discount, a jacket costs $60. How do you recover the original price?",
+      "choices": [
+        "$60×1.25",
+        "$60/0.75",
+        "$60/1.25"
+      ],
+      "answer": 1,
+      "explanation": "The sale price is 75% of the original. Divide 60 by 0.75 to get $80."
+    },
+    {
+      "prompt": "1 foot = 12 inches. How many square inches are in 2 square feet?",
+      "choices": [
+        "24",
+        "144",
+        "288"
+      ],
+      "answer": 2,
+      "explanation": "Area requires squaring the linear conversion: 2 × 12² = 288 square inches."
+    },
+    {
+      "prompt": "One pipe fills a tank in 6 hours; a drain empties it in 12 hours. Which net rate applies while both run?",
+      "choices": [
+        "1/6 + 1/12 tank per hour",
+        "1/6 − 1/12 tank per hour",
+        "6 − 12 hours"
+      ],
+      "answer": 1,
+      "explanation": "Work with rates and subtract the opposing flow. Net rate = 1/12 tank per hour, so filling takes 12 hours."
+    },
+    {
+      "prompt": "A result says 0.8 meters equals 800 centimeters. What quick check catches the error?",
+      "choices": [
+        "Check that multiplying by 100 gives 80 centimeters",
+        "Round both numbers to 1",
+        "Use more decimal places"
+      ],
+      "answer": 0,
+      "explanation": "A unit conversion needs both magnitude and units. 0.8 × 100 = 80 cm; the proposed result is ten times too large."
+    }
+  ],
+  "math-modeling": [
+    {
+      "prompt": "A ride costs $4 plus $2 per mile. Which expression is the total cost for m miles?",
+      "choices": [
+        "4m + 2",
+        "4 + 2m",
+        "6m"
+      ],
+      "answer": 1,
+      "explanation": "The $4 fee occurs once. The $2 charge repeats per mile, so cost = 4 + 2m."
+    },
+    {
+      "prompt": "A value increases by 8% each year. Which model uses the correct repeated change?",
+      "choices": [
+        "P + 0.08t",
+        "P(1.08)^t",
+        "P(0.08)^t"
+      ],
+      "answer": 1,
+      "explanation": "Each year multiplies the previous value by 1.08. The base includes the original 100% plus the 8% increase."
+    },
+    {
+      "prompt": "A job pays $15/hour and you need at least $100. Hours must be whole numbers. What is the least number of hours?",
+      "choices": [
+        "6",
+        "7",
+        "6.67"
+      ],
+      "answer": 1,
+      "explanation": "15h ≥ 100 gives h ≥ 6.67, but whole-number feasibility requires rounding up to 7."
+    },
+    {
+      "prompt": "Shipping costs $5 for up to 2 kg, then $2 for each additional kilogram or part of one. What is the cost for 2.2 kg?",
+      "choices": [
+        "$5.40",
+        "$7",
+        "$9"
+      ],
+      "answer": 1,
+      "explanation": "A partial additional kilogram counts as one full increment. The piecewise rule gives $5 + $2, not a continuous per-kilogram charge."
+    },
+    {
+      "prompt": "A projectile model is h(t) = −5t² + 20t + 1. Which question asks for the maximum height?",
+      "choices": [
+        "Find the vertex’s output",
+        "Find a zero",
+        "Evaluate at t = 0"
+      ],
+      "answer": 0,
+      "explanation": "The parabola opens downward. Its vertex gives the maximum output; the vertex input tells when it occurs. Respect the physical time domain."
+    },
+    {
+      "prompt": "A line passes through (2, 7) and (5, 16). Which model fits?",
+      "choices": [
+        "y = 3x + 1",
+        "y = 3x + 7",
+        "y = 9x − 11"
+      ],
+      "answer": 0,
+      "explanation": "Slope = (16 − 7)/(5 − 2) = 3. Substituting (2,7) gives intercept 1. Check the second point too."
+    },
+    {
+      "prompt": "Desmos returns an optimum at 4.5 tables, but tables must be whole and resources are limited. What finishes the task?",
+      "choices": [
+        "Submit 4.5",
+        "Round to 5 without checking",
+        "Check nearby whole-number choices against every constraint"
+      ],
+      "answer": 2,
+      "explanation": "A continuous optimum is a candidate, not a feasible answer. Compare allowable integers and verify resource limits."
+    }
+  ],
+  "science-data-reading": [
+    {
+      "prompt": "You need the filter with the smallest remaining solids. Which column decides?",
+      "choices": [
+        "Flow rate",
+        "Remaining solids",
+        "Filter name"
+      ],
+      "answer": 1,
+      "explanation": "Match the requested quantity to its column and unit before comparing numbers.",
+      "evidence": {
+        "id": "lesson-filter-measurements",
+        "title": "Filter measurements",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Filter",
+            "Flow (mL/min)",
+            "Remaining solids (mg/L)"
+          ],
+          "rows": [
+            [
+              "P",
+              120,
+              8
+            ],
+            [
+              "Q",
+              70,
+              5
+            ],
+            [
+              "R",
+              150,
+              18
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A sample starts at 40 mg/L and finishes at 8 mg/L. What fraction was removed?",
+      "choices": [
+        "8/40 = 20%",
+        "32/40 = 80%",
+        "40/8 = 500%"
+      ],
+      "answer": 1,
+      "explanation": "The question asks for removal, not what remains. Removed = 40 − 8 = 32; divide by the starting amount.",
+      "evidence": {
+        "id": "lesson-before-and-after",
+        "title": "Before and after",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Stage",
+            "Solids (mg/L)"
+          ],
+          "rows": [
+            [
+              "Before",
+              40
+            ],
+            [
+              "After",
+              8
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Which filter satisfies BOTH at least 100 mL/min flow and at most 10 mg/L remaining solids?",
+      "choices": [
+        "P",
+        "Q",
+        "R"
+      ],
+      "answer": 0,
+      "explanation": "P passes both checks. Q has cleaner output but is too slow; R is fast but leaves too much.",
+      "evidence": {
+        "id": "lesson-two-simultaneous-limits",
+        "title": "Two simultaneous limits",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Filter",
+            "Flow (mL/min)",
+            "Remaining solids (mg/L)"
+          ],
+          "rows": [
+            [
+              "P",
+              120,
+              8
+            ],
+            [
+              "Q",
+              70,
+              5
+            ],
+            [
+              "R",
+              150,
+              18
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Which site has the highest insect density?",
+      "choices": [
+        "N",
+        "O",
+        "P"
+      ],
+      "answer": 0,
+      "explanation": "Normalize by area: N = 48/10 = 4.8, O = 60/20 = 3, P = 40/25 = 1.6 insects/m². Raw counts rank a different quantity.",
+      "evidence": {
+        "id": "lesson-meadow-counts",
+        "title": "Meadow counts",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Site",
+            "Insects",
+            "Area (m²)"
+          ],
+          "rows": [
+            [
+              "N",
+              48,
+              10
+            ],
+            [
+              "O",
+              60,
+              20
+            ],
+            [
+              "P",
+              40,
+              25
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Between 0 and 5 min, the temperature falls from 80°C to 60°C. Which statement describes a change rather than a point?",
+      "choices": [
+        "At 5 min, it is 60°C",
+        "It falls 20°C over 5 min",
+        "At 0 min, it is 80°C"
+      ],
+      "answer": 1,
+      "explanation": "A change compares two measurements. A slope would divide this −20°C change by 5 min to get −4°C/min.",
+      "evidence": {
+        "id": "lesson-two-readings",
+        "title": "Two readings",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Time (min)",
+            "Temperature (°C)"
+          ],
+          "rows": [
+            [
+              0,
+              80
+            ],
+            [
+              5,
+              60
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Stream A supplies 30 L/s at 4 mg/L; B supplies 10 L/s at 12 mg/L. What is the mixed concentration?",
+      "choices": [
+        "8 mg/L",
+        "6 mg/L",
+        "16 mg/L"
+      ],
+      "answer": 1,
+      "explanation": "Use flow-weighted concentration: (30×4 + 10×12)/(30+10) = 240/40 = 6. Both products use mass per second.",
+      "evidence": {
+        "id": "lesson-streams-at-the-junction",
+        "title": "Streams at the junction",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Stream",
+            "Flow (L/s)",
+            "Concentration (mg/L)"
+          ],
+          "rows": [
+            [
+              "A",
+              30,
+              4
+            ],
+            [
+              "B",
+              10,
+              12
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "You chose the highest flow rate when the question asked for lowest solids. What should the next check target?",
+      "choices": [
+        "Reread every paragraph",
+        "Match the asked quantity and unit to the exact column",
+        "Memorize the filter names"
+      ],
+      "answer": 1,
+      "explanation": "Diagnose the actual error: wrong quantity. A brief column-and-unit check fixes this more directly than rereading everything.",
+      "evidence": {
+        "id": "lesson-quantity-check",
+        "title": "Quantity check",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Question asks for",
+            "You compared"
+          ],
+          "rows": [
+            [
+              "Lowest remaining solids",
+              "Highest flow"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "science-trends-interpolation": [
+    {
+      "prompt": "The cooling measurements use equal time steps. During which interval is cooling fastest?",
+      "choices": [
+        "0–5 min",
+        "5–10 min",
+        "10–15 min"
+      ],
+      "answer": 0,
+      "explanation": "Compare changes over equal intervals: drops are 24, 16, and 10°C. The largest drop is in the first interval.",
+      "evidence": {
+        "id": "lesson-cooling-series",
+        "title": "Cooling series",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Time (min)",
+            "Temperature (°C)"
+          ],
+          "rows": [
+            [
+              0,
+              80
+            ],
+            [
+              5,
+              56
+            ],
+            [
+              10,
+              40
+            ],
+            [
+              15,
+              30
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Using straight-line interpolation, estimate the temperature at 12.5 min.",
+      "choices": [
+        "50°C",
+        "54°C",
+        "58°C"
+      ],
+      "answer": 1,
+      "explanation": "12.5 min is halfway between 10 and 15 min. The halfway temperature between 58 and 50 is 54°C.",
+      "evidence": {
+        "id": "lesson-neighboring-measurements",
+        "title": "Neighboring measurements",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Time (min)",
+            "Temperature (°C)"
+          ],
+          "rows": [
+            [
+              10,
+              58
+            ],
+            [
+              15,
+              50
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Which claim is supported across the full measured range?",
+      "choices": [
+        "Enzyme rate always increases with temperature",
+        "Rate peaks at 40°C among the tested temperatures",
+        "Rate is zero above 60°C"
+      ],
+      "answer": 1,
+      "explanation": "The data rise and then fall. The tested maximum is 40°C; no data establish every untested temperature.",
+      "evidence": {
+        "id": "lesson-enzyme-response",
+        "title": "Enzyme response",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Temperature (°C)",
+            "Rate (µmol/min)"
+          ],
+          "rows": [
+            [
+              10,
+              2
+            ],
+            [
+              40,
+              12
+            ],
+            [
+              60,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "From depth 2 m to 6 m, temperature falls from 18°C to 10°C. What is the average slope?",
+      "choices": [
+        "−2°C/m",
+        "−8°C/m",
+        "2 m/°C"
+      ],
+      "answer": 0,
+      "explanation": "Slope = Δtemperature/Δdepth = (10−18)/(6−2) = −8/4 = −2°C per meter. Preserve the sign and units.",
+      "evidence": {
+        "id": "lesson-lake-profile",
+        "title": "Lake profile",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Depth (m)",
+            "Temperature (°C)"
+          ],
+          "rows": [
+            [
+              2,
+              18
+            ],
+            [
+              6,
+              10
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A stated model says distance = 2√time. At 6.25 min, should you average the nearest measured distances or use the model?",
+      "choices": [
+        "Use the stated model: 5 mm",
+        "Always average neighboring values",
+        "Use 2×6.25"
+      ],
+      "answer": 0,
+      "explanation": "When the question specifies the model, apply that rule. 2√6.25 = 5. Straight-line interpolation is a different assumption.",
+      "evidence": {
+        "id": "lesson-model-input",
+        "title": "Model input",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Rule",
+            "Requested time (min)"
+          ],
+          "rows": [
+            [
+              "Distance = 2√time",
+              6.25
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The signal rises 0, 20, 50, 80, 95, 100 at equal intervals. What pattern appears late?",
+      "choices": [
+        "Accelerating growth",
+        "A plateau is approached",
+        "The signal decreases"
+      ],
+      "answer": 1,
+      "explanation": "The late increments shrink from 30 to 15 to 5. The signal still rises, but more slowly; do not confuse leveling off with decreasing.",
+      "evidence": {
+        "id": "lesson-signal-measurements",
+        "title": "Signal measurements",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Step",
+            "Signal"
+          ],
+          "rows": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              20
+            ],
+            [
+              2,
+              50
+            ],
+            [
+              3,
+              80
+            ],
+            [
+              4,
+              95
+            ],
+            [
+              5,
+              100
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Measurements cover 10°C through 60°C. Which proposed value is an extrapolation?",
+      "choices": [
+        "25°C",
+        "50°C",
+        "75°C"
+      ],
+      "answer": 2,
+      "explanation": "75°C lies outside the tested interval. Predicting there assumes the observed pattern continues; it is less secure than interpolation.",
+      "evidence": {
+        "id": "lesson-tested-range",
+        "title": "Tested range",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Minimum (°C)",
+            "Maximum (°C)"
+          ],
+          "rows": [
+            [
+              10,
+              60
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "science-experimental-design": [
+    {
+      "prompt": "Which variable is manipulated, and which is measured?",
+      "choices": [
+        "Manipulated: nitrogen dose; measured: dry mass",
+        "Manipulated: dry mass; measured: dose",
+        "Both are controlled variables"
+      ],
+      "answer": 0,
+      "explanation": "Treatment levels are the independent variable. The observed response is the dependent variable.",
+      "evidence": {
+        "id": "lesson-seedling-experiment",
+        "title": "Seedling experiment",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Dose (mg/day)",
+            "Dry mass (g)"
+          ],
+          "rows": [
+            [
+              0,
+              1.2
+            ],
+            [
+              5,
+              1.8
+            ],
+            [
+              10,
+              1.9
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Flask L uses shaded water at 15°C; M uses center water at 25°C. M grows faster. Can temperature alone explain the difference?",
+      "choices": [
+        "Yes",
+        "No: water source also changed",
+        "No: growth can never be measured"
+      ],
+      "answer": 1,
+      "explanation": "Two variables changed together. Use the same water source at both temperatures to isolate temperature.",
+      "evidence": {
+        "id": "lesson-two-factors-changed",
+        "title": "Two factors changed",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Flask",
+            "Water source",
+            "Temperature (°C)"
+          ],
+          "rows": [
+            [
+              "L",
+              "Shaded edge",
+              15
+            ],
+            [
+              "M",
+              "Center",
+              25
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "To test whether catalyst surface area changes reaction time, which comparison is cleanest?",
+      "choices": [
+        "Same mass, large versus crushed pieces",
+        "Different mass and different piece size",
+        "Same piece size at two temperatures"
+      ],
+      "answer": 0,
+      "explanation": "Change surface area while holding catalyst mass and other settings constant. The other choices test different or mixed factors.",
+      "evidence": {
+        "id": "lesson-isolate-one-variable",
+        "title": "Isolate one variable",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Hold fixed",
+            "Change",
+            "Measure"
+          ],
+          "rows": [
+            [
+              "Catalyst mass",
+              "Piece size",
+              "Reaction time"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Two panels each receive a treatment. Each is measured ten times. How many independently treated experimental units are there?",
+      "choices": [
+        "2",
+        "10",
+        "20"
+      ],
+      "answer": 0,
+      "explanation": "The panel receives the treatment, so it is the unit. Repeated readings improve measurement but do not create 20 independent panels.",
+      "evidence": {
+        "id": "lesson-units-versus-readings",
+        "title": "Units versus readings",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Treated panels",
+            "Readings per panel"
+          ],
+          "rows": [
+            [
+              2,
+              10
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "An observer knows which plants were treated and rates their health. Which change directly reduces observer bias?",
+      "choices": [
+        "Measure only the tallest plants",
+        "Hide treatment labels from the observer",
+        "Use fewer plants"
+      ],
+      "answer": 1,
+      "explanation": "Blinding keeps expected treatment effects from influencing subjective ratings. Random assignment addresses a different source of bias.",
+      "evidence": {
+        "id": "lesson-observation-setup",
+        "title": "Observation setup",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Observer knows",
+            "Observer measures"
+          ],
+          "rows": [
+            [
+              "Treatment labels",
+              "Plant health rating"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Which pair isolates temperature at 20 mL water?",
+      "choices": [
+        "15°C/20 mL versus 30°C/20 mL",
+        "15°C/20 mL versus 30°C/50 mL",
+        "15°C/20 mL versus 15°C/50 mL"
+      ],
+      "answer": 0,
+      "explanation": "Hold water fixed while changing temperature. The second pair changes both factors; the third isolates water.",
+      "evidence": {
+        "id": "lesson-two-factor-design",
+        "title": "Two-factor design",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Temperature (°C)",
+            "Water (mL)"
+          ],
+          "rows": [
+            [
+              15,
+              20
+            ],
+            [
+              15,
+              50
+            ],
+            [
+              30,
+              20
+            ],
+            [
+              30,
+              50
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A trial defines a stop as no wing movement for at least 0.5 s. What is this definition doing?",
+      "choices": [
+        "Specifying exactly how the response is measured",
+        "Proving the insect is permanently unable to fly",
+        "Defining the treatment dose"
+      ],
+      "answer": 0,
+      "explanation": "An operational definition makes observations repeatable. It does not establish a broader biological conclusion.",
+      "evidence": {
+        "id": "lesson-operational-definition",
+        "title": "Operational definition",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Response",
+            "Criterion"
+          ],
+          "rows": [
+            [
+              "Stop",
+              "No wing movement for at least 0.5 s"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "science-conflicting-viewpoints": [
+    {
+      "prompt": "A says microbes create new methane. B says warming releases dissolved methane. Which note best separates the claims?",
+      "choices": [
+        "Both mention gas",
+        "A: new gas production; B: release of existing gas",
+        "A is right because it sounds biological"
+      ],
+      "answer": 1,
+      "explanation": "Map cause → prediction for each account. Shared subject matter does not distinguish their mechanisms.",
+      "evidence": {
+        "id": "lesson-competing-explanations",
+        "title": "Competing explanations",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Account",
+            "Cause",
+            "Predicted mechanism"
+          ],
+          "rows": [
+            [
+              "A",
+              "Microbes",
+              "New methane produced"
+            ],
+            [
+              "B",
+              "Warming",
+              "Dissolved methane released"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Temperature and dissolved methane are held constant. What do the observations favor?",
+      "choices": [
+        "Microbes matter to gas production",
+        "Warming alone explains the change",
+        "Microbes prevent gas production"
+      ],
+      "answer": 0,
+      "explanation": "Removing and restoring microbes changes the rate while the competing factors stay fixed. That favors a microbial role without proving every detail.",
+      "evidence": {
+        "id": "lesson-microbe-manipulation",
+        "title": "Microbe manipulation",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Condition",
+            "Gas (mL/h)"
+          ],
+          "rows": [
+            [
+              "Present",
+              6
+            ],
+            [
+              "Removed",
+              0.3
+            ],
+            [
+              "Restored",
+              5.7
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Seeds remain viable after travel in air and in dried mud. What conclusion follows?",
+      "choices": [
+        "Both transport routes are possible",
+        "Air was the actual historical route",
+        "Mud was the actual historical route"
+      ],
+      "answer": 0,
+      "explanation": "Survival shows feasibility. It does not identify which route happened historically.",
+      "evidence": {
+        "id": "lesson-viability-after-transport",
+        "title": "Viability after transport",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Route",
+            "Viable seeds / 100"
+          ],
+          "rows": [
+            [
+              "Air",
+              90
+            ],
+            [
+              "Dried mud",
+              85
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "P predicts temperature-driven darkening; C predicts background-driven darkening. Which comparison isolates the background prediction?",
+      "choices": [
+        "Same temperature, different backgrounds",
+        "Different temperature and different backgrounds",
+        "Same background, different temperatures"
+      ],
+      "answer": 0,
+      "explanation": "Change only background to test its predicted effect. Separate the manipulated factor from competing explanations.",
+      "evidence": {
+        "id": "lesson-competing-predictions",
+        "title": "Competing predictions",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Account",
+            "Darkening follows"
+          ],
+          "rows": [
+            [
+              "P",
+              "Temperature"
+            ],
+            [
+              "C",
+              "Background"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Magnetic cues point north and star cues point east. Which outcome favors the star-cue explanation?",
+      "choices": [
+        "Birds orient east",
+        "Birds orient north",
+        "Birds scatter randomly"
+      ],
+      "answer": 0,
+      "explanation": "Competing cues create different predictions. If both cues pointed north, a northward result would not distinguish the accounts.",
+      "evidence": {
+        "id": "lesson-cues-disagree",
+        "title": "Cues disagree",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Cue",
+            "Direction"
+          ],
+          "rows": [
+            [
+              "Magnetic",
+              "North"
+            ],
+            [
+              "Stars",
+              "East"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A model requires temperature above −20°C. Reliable events occur at −28°C. What is the strongest warranted conclusion?",
+      "choices": [
+        "The stated threshold is challenged",
+        "Every alternative model is proven",
+        "The measurements must be ignored"
+      ],
+      "answer": 0,
+      "explanation": "An event outside a required condition contradicts that requirement, assuming the measurements and model conditions apply. It does not prove an alternative.",
+      "evidence": {
+        "id": "lesson-required-condition",
+        "title": "Required condition",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Model requirement",
+            "Observed temperature"
+          ],
+          "rows": [
+            [
+              "Above −20°C",
+              "−28°C"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "For a viewpoints question, what should you read for first?",
+      "choices": [
+        "Every unfamiliar scientific term",
+        "The shared phenomenon, then each proposed cause and prediction",
+        "The longest answer choice"
+      ],
+      "answer": 1,
+      "explanation": "Read the competing accounts deliberately. A cause-and-prediction map lets you locate agreement, disagreement, and distinguishing tests.",
+      "evidence": {
+        "id": "lesson-viewpoint-map",
+        "title": "Viewpoint map",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Shared question",
+            "Account A",
+            "Account B"
+          ],
+          "rows": [
+            [
+              "What causes the phenomenon?",
+              "Cause → prediction",
+              "Cause → prediction"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "science-models-evidence": [
+    {
+      "prompt": "Model L says extension x = 2F. What does it predict at F = 3.5 N?",
+      "choices": [
+        "5.5 cm",
+        "7 cm",
+        "1.75 cm"
+      ],
+      "answer": 1,
+      "explanation": "Substitute the requested input into the stated rule: 2×3.5 = 7. Match model output units.",
+      "evidence": {
+        "id": "lesson-spring-model",
+        "title": "Spring model",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Rule",
+            "Force (N)"
+          ],
+          "rows": [
+            [
+              "x = 2F",
+              3.5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A culture doubles hourly from 100 cells. What does the model predict after 4 h?",
+      "choices": [
+        "500",
+        "800",
+        "1600"
+      ],
+      "answer": 2,
+      "explanation": "Four doublings give 100×2⁴ = 1600. Do not replace multiplicative growth with adding 100 each hour.",
+      "evidence": {
+        "id": "lesson-doubling-model",
+        "title": "Doubling model",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Time (h)",
+            "Predicted cells"
+          ],
+          "rows": [
+            [
+              0,
+              100
+            ],
+            [
+              1,
+              200
+            ],
+            [
+              2,
+              400
+            ],
+            [
+              3,
+              800
+            ],
+            [
+              4,
+              "?"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A spring model applies only from 0 to 5 N. Which observation directly challenges it within that domain?",
+      "choices": [
+        "A mismatch at 3 N",
+        "Deformation at 8 N",
+        "A measurement at 0 N that matches"
+      ],
+      "answer": 0,
+      "explanation": "Test the model where it claims to apply. Behavior at 8 N may reveal a domain limit rather than contradict the stated rule.",
+      "evidence": {
+        "id": "lesson-model-boundary",
+        "title": "Model boundary",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Applies from",
+            "Applies through"
+          ],
+          "rows": [
+            [
+              "0 N",
+              "5 N"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "The model is v = kr²/η. With r fixed, viscosity η quadruples. What happens to speed?",
+      "choices": [
+        "It quadruples",
+        "It is divided by 4",
+        "It is divided by 16"
+      ],
+      "answer": 1,
+      "explanation": "Viscosity is in the denominator. Keep the unchanged factors fixed and apply the multiplicative change to that factor.",
+      "evidence": {
+        "id": "lesson-change-one-factor",
+        "title": "Change one factor",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Rule",
+            "Radius",
+            "Viscosity"
+          ],
+          "rows": [
+            [
+              "v = kr²/η",
+              "Fixed",
+              "×4"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A detector records 420, then 220 counts/min. Background is 20 counts/min. What happens to the corrected signal?",
+      "choices": [
+        "It falls from 400 to 200: halves",
+        "It falls from 420 to 220: exactly halves",
+        "It falls from 440 to 240"
+      ],
+      "answer": 0,
+      "explanation": "Subtract the background before comparing the signal. Raw totals obscure the clean halving pattern.",
+      "evidence": {
+        "id": "lesson-background-correction",
+        "title": "Background correction",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Reading",
+            "Total (counts/min)",
+            "Background"
+          ],
+          "rows": [
+            [
+              "Earlier",
+              420,
+              20
+            ],
+            [
+              "Later",
+              220,
+              20
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "For q = 4C/(1+C), what does q approach as C becomes very large?",
+      "choices": [
+        "0",
+        "4",
+        "Infinity"
+      ],
+      "answer": 1,
+      "explanation": "Divide numerator and denominator by C: q = 4/(1+1/C). As 1/C tends to 0, q approaches 4 from below.",
+      "evidence": {
+        "id": "lesson-saturation-model",
+        "title": "Saturation model",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Concentration C",
+            "Predicted q"
+          ],
+          "rows": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              7,
+              3.5
+            ],
+            [
+              15,
+              3.75
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Models A and B both predict 10 at input 1 but predict 20 and 30 at input 2. Which next test separates them better?",
+      "choices": [
+        "Input 1 again",
+        "Input 2",
+        "Either: they are equally informative"
+      ],
+      "answer": 1,
+      "explanation": "Test where predictions disagree. Repeating input 1 can improve precision but does little to distinguish these models.",
+      "evidence": {
+        "id": "lesson-find-a-separating-test",
+        "title": "Find a separating test",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Input",
+            "Model A",
+            "Model B"
+          ],
+          "rows": [
+            [
+              1,
+              10,
+              10
+            ],
+            [
+              2,
+              20,
+              30
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "science-scientific-foundations": [
+    {
+      "prompt": "A solution moves from pH 6 to pH 4. What happens to hydrogen-ion concentration?",
+      "choices": [
+        "It doubles",
+        "It increases 100-fold",
+        "It decreases 100-fold"
+      ],
+      "answer": 1,
+      "explanation": "Each one-unit drop in pH corresponds to ten times more hydrogen ions. Two units give 10² = 100 times.",
+      "evidence": {
+        "id": "lesson-two-acidity-readings",
+        "title": "Two acidity readings",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Before pH",
+            "After pH"
+          ],
+          "rows": [
+            [
+              6,
+              4
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Gas forms inside a sealed vessel and pressure rises. What happens to total mass if nothing enters or leaves?",
+      "choices": [
+        "It increases",
+        "It decreases",
+        "It stays the same"
+      ],
+      "answer": 2,
+      "explanation": "Matter is conserved in the closed system. Gas formation changes state and pressure, not total mass.",
+      "evidence": {
+        "id": "lesson-closed-vessel",
+        "title": "Closed vessel",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Mass initially",
+            "Matter enters or leaves?",
+            "Observation"
+          ],
+          "rows": [
+            [
+              "250 g",
+              "No",
+              "Gas forms; pressure rises"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A fixed resistor follows V = IR. At the same voltage, doubling resistance does what to current?",
+      "choices": [
+        "Doubles it",
+        "Halves it",
+        "Leaves it unchanged"
+      ],
+      "answer": 1,
+      "explanation": "Rewrite I = V/R. With voltage fixed, current is inversely proportional to resistance.",
+      "evidence": {
+        "id": "lesson-ohm’s-law",
+        "title": "Ohm’s law",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Voltage",
+            "Resistance",
+            "Current rule"
+          ],
+          "rows": [
+            [
+              "Fixed",
+              "×2",
+              "I = V/R"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Leaves consume 2 units of oxygen per hour in darkness and show a net gain of 5 in light. If respiration is unchanged, what is gross photosynthesis?",
+      "choices": [
+        "3",
+        "5",
+        "7"
+      ],
+      "answer": 2,
+      "explanation": "Net change = production − consumption. Add back the 2 consumed: gross production = 5 + 2 = 7.",
+      "evidence": {
+        "id": "lesson-net-oxygen",
+        "title": "Net oxygen",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Condition",
+            "Oxygen change per hour"
+          ],
+          "rows": [
+            [
+              "Dark",
+              -2
+            ],
+            [
+              "Light",
+              5
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "Heating continues while temperature stays at 0°C during melting. Where does the energy go?",
+      "choices": [
+        "Into the phase change",
+        "Nowhere: the heater stopped",
+        "Into increasing temperature"
+      ],
+      "answer": 0,
+      "explanation": "Energy changes solid to liquid during the plateau. Constant temperature does not mean no energy is entering.",
+      "evidence": {
+        "id": "lesson-heating-plateau",
+        "title": "Heating plateau",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Heater",
+            "Temperature",
+            "State"
+          ],
+          "rows": [
+            [
+              "On",
+              "0°C",
+              "Solid becoming liquid"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A is dominant for purple flowers. In Aa × Aa, which fraction is predicted to be white (aa)?",
+      "choices": [
+        "1/4",
+        "1/2",
+        "3/4"
+      ],
+      "answer": 0,
+      "explanation": "The four equally likely allele combinations are AA, Aa, aA, aa. Only aa lacks a dominant A allele.",
+      "evidence": {
+        "id": "lesson-allele-combinations",
+        "title": "Allele combinations",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Parent 1 allele",
+            "Parent 2 allele",
+            "Offspring"
+          ],
+          "rows": [
+            [
+              "A",
+              "A",
+              "AA"
+            ],
+            [
+              "A",
+              "a",
+              "Aa"
+            ],
+            [
+              "a",
+              "A",
+              "aA"
+            ],
+            [
+              "a",
+              "a",
+              "aa"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "prompt": "A supplied relation says v = fλ. Wave speed is fixed and frequency doubles. What must happen to wavelength?",
+      "choices": [
+        "It doubles",
+        "It halves",
+        "It stays fixed"
+      ],
+      "answer": 1,
+      "explanation": "At fixed v, the product fλ stays constant. Doubling f requires halving λ; avoid importing assumptions about loudness or duration.",
+      "evidence": {
+        "id": "lesson-wave-relation",
+        "title": "Wave relation",
+        "context": "Use the displayed measurements.",
+        "table": {
+          "columns": [
+            "Rule",
+            "Speed",
+            "Frequency"
+          ],
+          "rows": [
+            [
+              "v = fλ",
+              "Fixed",
+              "×2"
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "reading-main-idea": [
+    {
+      "prompt": "Which map best captures the movement of this passage?",
+      "choices": [
+        "A storage label is replaced by a different account of the basket’s use",
+        "An accurate but limited label is expanded and reorganized to show another kind of value",
+        "A consultation settles the complete history of baskets used during harvest"
+      ],
+      "answer": 1,
+      "explanation": "The storage description remains because it is accurate. The curator adds relationship and exchange, then moves that material higher while retaining limits on the account.",
+      "evidence": {
+        "id": "lesson-reading-main-idea-0",
+        "title": "The Museum Label",
+        "context": "A museum’s label described a woven basket as a storage vessel. During a community consultation, a maker explained that baskets of this type were also exchanged when families helped one another during harvest. Its value involved relationships as well as its capacity to hold grain.\n\nThe curator did not remove the storage description. It was accurate, but incomplete. She added a paragraph about exchange, named the consultation, and asked permission to quote the maker’s account. The revised label kept the object’s material and date at the top and placed the new account directly below them.\n\nSome visitors read only the first lines. The curator therefore shortened a technical description of the weave and moved the exchange information higher. She wanted visitors to see function and relationship together, without presenting one person’s account as the complete history of every basket. Future labels would include additional voices when available."
+      }
+    },
+    {
+      "prompt": "Which controlling idea fits?",
+      "choices": [
+        "Longer hours show promise but require financial review",
+        "Longer hours solve every access problem",
+        "Weekend attendance alone determines library policy"
+      ],
+      "answer": 0,
+      "explanation": "Include both the benefit and the qualification. The final caution limits the main claim.",
+      "evidenceText": "The new library extended hours. Attendance rose on weekends, but staffing costs exceeded estimates. The director called the pilot promising, pending a budget review."
+    },
+    {
+      "prompt": "A curator first calls a map inaccurate, then learns that it records local memories rather than measured distances. Which summary follows that movement?",
+      "choices": [
+        "The curator discovers a different purpose for the map",
+        "The map becomes geographically accurate",
+        "The curator proves local memories are useless"
+      ],
+      "answer": 0,
+      "explanation": "Preserve the change in understanding. The map’s geographic precision never changes; the curator’s interpretation does."
+    },
+    {
+      "prompt": "A passage argues that a transit pilot improved access while revealing unresolved cost problems. Which choice is too narrow?",
+      "choices": [
+        "The pilot produced benefits and exposed limits",
+        "Weekend trips increased",
+        "The pilot requires further evaluation"
+      ],
+      "answer": 1,
+      "explanation": "A single detail cannot represent the full argument. Test a main-idea answer against all major sections, not one memorable fact."
+    },
+    {
+      "prompt": "Mara initially dismisses an old desk, finds unfinished drafts in it, and ends by writing at it herself. What change is supported?",
+      "choices": [
+        "Dismissal becomes engagement",
+        "She becomes a famous author",
+        "She decides old objects are always superior"
+      ],
+      "answer": 0,
+      "explanation": "The final action supports a specific change in attitude. Fame and a universal belief about old objects are not stated."
+    },
+    {
+      "prompt": "Which detail best decides between “Ivo rejects schedules” and “Ivo learns that time alone does not measure craftsmanship”?",
+      "choices": [
+        "The clock is repaired the next morning",
+        "The repaired clock ticks loudly",
+        "Ivo still checks time for his bus, but watches his work more closely"
+      ],
+      "answer": 2,
+      "explanation": "The bus detail rules out rejecting schedules. The contrast between bus time and workshop attention supports using different measures for different tasks.",
+      "evidence": {
+        "id": "lesson-reading-main-idea-5",
+        "title": "The Stopped Clock",
+        "context": "The clock was repaired the next morning. Ivo was surprised at how loudly it ticked. He still checked the time when catching his bus, but in the workshop he began looking more often at the piece in his hands. The repaired clock gave accurate hours; it did not tell him whether a joint was ready."
+      }
+    },
+    {
+      "prompt": "A summary says Sofia replaces written measurements with intuition. Which revision best fixes it?",
+      "choices": [
+        "Sofia keeps measurements while specifying where tasting and judgment are needed",
+        "Sofia discovers that precise quantities prevent a recipe from succeeding",
+        "Sofia preserves her uncle’s recipe by keeping its instructions unchanged"
+      ],
+      "answer": 0,
+      "explanation": "The number remains a useful starting point, and “taste first” becomes part of the written instruction. The passage combines measurement and judgment rather than replacing either.",
+      "evidence": {
+        "id": "lesson-reading-main-idea-6",
+        "title": "A Family Recipe",
+        "context": "When her cousin asked for a copy, Sofia kept that instruction. The number was useful as a starting point, she explained, but the beans and lemons would not always be identical. Her card had grown more precise, not by removing judgment, but by saying where judgment belonged."
+      }
+    }
+  ],
+  "reading-details": [
+    {
+      "prompt": "To answer what the coordinator requested before judging the counter, which detail should you locate?",
+      "choices": [
+        "The fact that volunteers counted on two evenings",
+        "The comparison between volunteers’ notes and the time-stamped log",
+        "The location of the counter on the main trail"
+      ],
+      "answer": 1,
+      "explanation": "The question asks for a requested action. The final sentence names that action; the other details describe the study but do not answer what was requested.",
+      "evidence": {
+        "id": "lesson-reading-details-0",
+        "title": "Counting Evening Visitors",
+        "context": "A nature center installed a people counter on its main trail. On two evenings volunteers also counted visitors by hand. The electronic totals were higher. Before concluding that the device was inaccurate, the coordinator asked the volunteers to compare their notes with the counter’s time-stamped log."
+      }
+    },
+    {
+      "prompt": "Which search target would locate when the survey happened?",
+      "choices": [
+        "The word team",
+        "The time phrase attached to surveyed",
+        "Any sentence about ridership"
+      ],
+      "answer": 1,
+      "explanation": "Use the actor, action, and requested condition. The relevant detail is the phrase “after the evening service ended.”",
+      "evidenceText": "The team surveyed riders only after the evening service ended."
+    },
+    {
+      "prompt": "What does the text establish?",
+      "choices": [
+        "The fence caused the increase",
+        "The increase followed the repair",
+        "The repair had no effect"
+      ],
+      "answer": 1,
+      "explanation": "Sequence is stated; cause is not isolated. The changed counting route is another possible explanation.",
+      "evidenceText": "The fence was repaired in May. In June, bird counts rose; researchers had also changed the counting route."
+    },
+    {
+      "prompt": "Which paraphrase preserves the measured quantity?",
+      "choices": [
+        "Ninety people used the library",
+        "Forty tools were returned",
+        "Ninety tools were returned"
+      ],
+      "answer": 2,
+      "explanation": "Returns count tools, not unique borrowers. Keep the number attached to its unit.",
+      "evidenceText": "The tool library recorded 90 returns by 40 borrowers."
+    },
+    {
+      "prompt": "Which paraphrase matches?",
+      "choices": [
+        "The result offers tentative support",
+        "The result proves the claim",
+        "The result refutes the claim"
+      ],
+      "answer": 0,
+      "explanation": "Suggestive evidence supports a possibility with limited certainty. Neither proof nor refutation preserves that qualification.",
+      "evidenceText": "The evidence was suggestive, although the small sample prevented a firm conclusion."
+    },
+    {
+      "prompt": "A choice says the office added afternoon observations after seeing teenagers there. Which sequence does the passage actually give?",
+      "choices": [
+        "Afternoon observations revealed older children, prompting the librarian’s question",
+        "The initial observers counted older children, then recommended keeping the structure",
+        "The librarian asked about after-school use, so the office added sessions that recorded older children"
+      ],
+      "answer": 2,
+      "explanation": "The librarian’s question comes before the new observations. The choice reverses the order and turns the later result into the reason for collecting it.",
+      "evidence": {
+        "id": "lesson-reading-details-5",
+        "title": "Who Uses the Playground?",
+        "context": "A planning office studied playground use on four weekday mornings. Its observers counted many preschool children and few teenagers. A draft report recommended removing a climbing structure designed for older children because it appeared rarely used.\n\nBefore the recommendation was finalized, a librarian asked whether observations had occurred after school. They had not. The office added afternoon and Saturday sessions. Those visits recorded older children using the structure, although morning use remained low."
+      }
+    },
+    {
+      "prompt": "An answer treats completed repairs and teaching sessions as mutually exclusive totals. Which phrase directly corrects that reading?",
+      "choices": [
+        "“the figures could overlap”",
+        "“the chart needed clearer labels”",
+        "“the visitor now understood how the lamp functioned”"
+      ],
+      "answer": 0,
+      "explanation": "“Could overlap” explicitly means the same visit can contribute to both figures. Clearer labels and understanding explain context but do not state the counting relationship as directly.",
+      "evidence": {
+        "id": "lesson-reading-details-6",
+        "title": "Returning the Ledger",
+        "context": "The coordinator worried that the repeat visits inflated the total. The volunteer agreed that the chart needed clearer labels but argued that the repeated work had another value: the visitor now understood how the lamp functioned. The café began recording both completed repairs and teaching sessions, explaining that the figures could overlap."
+      }
+    }
+  ],
+  "reading-inference": [
+    {
+      "prompt": "Which inference about Jae’s purpose needs the fewest added assumptions?",
+      "choices": [
+        "He wants the school to replace the instrument’s bridge",
+        "He wants to give the next borrower a useful technique to try",
+        "He wants every borrower to choose this violin over their own"
+      ],
+      "answer": 1,
+      "explanation": "The note describes softly started notes and suggests trying them. Replacement is unstated, and the passage expressly limits the note’s recommendation.",
+      "evidence": {
+        "id": "lesson-reading-inference-0",
+        "title": "The Borrowed Violin",
+        "context": "When his own violin came back, Jae returned the school instrument with a note describing the softly started notes. He put the note beneath the list of names. It was not a recommendation that everyone should prefer the old violin. It was something the next borrower might try before deciding what the instrument could do."
+      }
+    },
+    {
+      "prompt": "Which inference requires the smallest supported bridge?",
+      "choices": [
+        "She wanted to prevent recordings from being confused",
+        "She distrusted every interviewee",
+        "She planned to publish immediately"
+      ],
+      "answer": 0,
+      "explanation": "Her action directly supports careful organization. The other motives require information beyond the text.",
+      "evidenceText": "Leena stopped the interview to label each recording before beginning another."
+    },
+    {
+      "prompt": "Which inference is justified?",
+      "choices": [
+        "The historian owns the archive",
+        "The historian wanted to confirm access",
+        "The historian had never visited any archive"
+      ],
+      "answer": 1,
+      "explanation": "Checking hours supports planning access. Ownership and lifetime experience are merely possible, not evidenced.",
+      "evidenceText": "The historian checked an archive’s opening hours before making the trip."
+    },
+    {
+      "prompt": "What attitude is supported?",
+      "choices": [
+        "Unqualified enthusiasm",
+        "Interest with concern about sustainability",
+        "Total rejection"
+      ],
+      "answer": 1,
+      "explanation": "The praise and the practical concern both matter. One clause alone would overstate or reverse the attitude.",
+      "evidenceText": "He called the proposal clever, but asked who would maintain it after the grant expired."
+    },
+    {
+      "prompt": "The text says, “Some residents welcomed the change; others remained skeptical.” Which inference fails the contradiction test?",
+      "choices": [
+        "Residents had mixed reactions",
+        "Every resident supported the change",
+        "At least some were unconvinced"
+      ],
+      "answer": 1,
+      "explanation": "“Others remained skeptical” directly conflicts with universal support. Use explicit counterevidence to eliminate an attractive overstatement."
+    },
+    {
+      "prompt": "Which detail most directly supports the inference that the coach accepts Leah’s different portrayal of him?",
+      "choices": [
+        "He mentions championships when Leah asks",
+        "The trophy cabinet appears at the far edge",
+        "He asks to keep the pencil lines around the unfinished tile"
+      ],
+      "answer": 2,
+      "explanation": "His request retains the portrait’s focus on work rather than trophies. It is an action supporting acceptance; his earlier comment about the cabinet expresses a reservation.",
+      "evidence": {
+        "id": "lesson-reading-inference-5",
+        "title": "The Unfinished Portrait",
+        "context": "Leah asked him instead to keep working while she made several sketches. He told her about a student who had returned years later to say that the team had been the first place she felt useful. He mentioned championships only when Leah asked. Her sketches showed his hands above the tile, one hand steadying it while the other tested the corner.\n\nIn the finished portrait, the trophy cabinet appeared at the far edge. The coach objected mildly that anyone looking for the championship would have to search. Leah said that anyone looking for him would not. The coach considered the canvas, then asked whether she could leave the pencil lines around the unfinished tile visible. She had planned to cover them. She agreed to let them remain."
+      }
+    },
+    {
+      "prompt": "An inference says Luis now finds the front entrance useless. What is the smallest supported correction?",
+      "choices": [
+        "He values the side path’s encounters while still using the front steps for quick errands",
+        "He chooses the side path because it has become the quicker route",
+        "He uses the side path only when his father needs a route without steps"
+      ],
+      "answer": 0,
+      "explanation": "The paragraph explicitly keeps the front entrance useful and the side path longer. Luis sometimes chooses the side path alone because his experience of it has changed.",
+      "evidence": {
+        "id": "lesson-reading-inference-6",
+        "title": "The Second Entrance",
+        "context": "When his father recovered, Luis used the front steps again for quick errands. But he sometimes chose the side path alone. It had not become shorter, and the front entrance had not become less useful. The route he had called inconvenient now held encounters he would otherwise have missed. He stopped referring to the doors as the usual entrance and the other one."
+      }
+    }
+  ],
+  "reading-vocabulary": [
+    {
+      "prompt": "As used here, “clues” most nearly means:",
+      "choices": [
+        "findings that already establish the long-term pattern",
+        "indications that can guide further investigation",
+        "records that cannot provide useful evidence"
+      ],
+      "answer": 1,
+      "explanation": "The researchers retain the photographs but seek consistent observations. “Clues” preserves their limited value without treating them as either proof or useless records.",
+      "evidence": {
+        "id": "lesson-reading-vocabulary-0",
+        "title": "A Lake’s Early Ice",
+        "context": "The group retained the photographs as clues but turned to daily temperature records and a consistent series of shoreline observations. It wanted to understand a pattern across winters, rather than treating one striking comparison as the pattern itself. Photographs could direct an investigation without completing it."
+      }
+    },
+    {
+      "prompt": "What does weighing mean here?",
+      "choices": [
+        "Measuring physical weight",
+        "Carefully considering",
+        "Ignoring"
+      ],
+      "answer": 1,
+      "explanation": "The object is “costs,” and the action leads to a decision. Substitute “considering” to preserve the local meaning.",
+      "evidenceText": "After weighing the costs, the committee chose a modest trial."
+    },
+    {
+      "prompt": "What does spare mean?",
+      "choices": [
+        "Minimal",
+        "Extra",
+        "Broken"
+      ],
+      "answer": 0,
+      "explanation": "The contrast with ornate and the concrete example of two lines define the word’s local sense.",
+      "evidenceText": "Unlike the ornate first design, the revision was spare, using only two lines."
+    },
+    {
+      "prompt": "Which meaning fits?",
+      "choices": [
+        "A ghost entered the building",
+        "The uncertainty persistently troubled the work",
+        "The question was forgotten"
+      ],
+      "answer": 1,
+      "explanation": "The subject is an unresolved question. The figurative verb conveys persistent concern, not a literal supernatural event.",
+      "evidenceText": "The unanswered question haunted the project."
+    },
+    {
+      "prompt": "Replace guarded.",
+      "choices": [
+        "Cautious",
+        "Protected by a fence",
+        "Angry"
+      ],
+      "answer": 0,
+      "explanation": "A cautious conclusion preserves the report’s limited certainty. The other senses break the paragraph’s claim.",
+      "evidenceText": "The report’s guarded conclusion acknowledged both the improvement and the remaining uncertainty."
+    },
+    {
+      "prompt": "Which nearby detail best supports interpreting “unmoored” as insufficiently anchored in a concrete setting?",
+      "choices": [
+        "Anika tries the revision aloud",
+        "The final line gathers images into one place",
+        "She restores the specific image of a stone bridge"
+      ],
+      "answer": 2,
+      "explanation": "The specific bridge image is the stated remedy for becoming “unmoored.” That contrast points to a lack of concrete grounding, rather than a literal detached boat.",
+      "evidence": {
+        "id": "lesson-reading-vocabulary-5",
+        "title": "A Poet’s Revision",
+        "context": "She tried the revision aloud. The delayed naming changed how the final line sounded: it gathered the preceding images into a single place. She restored one specific image—a stone bridge—to keep the opening from becoming unmoored, but left the river’s name at the end."
+      }
+    },
+    {
+      "prompt": "A reader takes “the greeting’s work” to mean the translator’s labor. Which substitute fits the phrase in context?",
+      "choices": [
+        "the greeting’s role in this story",
+        "the time needed to translate the greeting",
+        "the greeting’s grammatical construction"
+      ],
+      "answer": 0,
+      "explanation": "The translator wants to preserve what the greeting accomplishes between characters. The phrase concerns its function in the story, not hours of labor or grammar alone.",
+      "evidence": {
+        "id": "lesson-reading-vocabulary-6",
+        "title": "A Translator’s Margins",
+        "context": "An early reader complained that the note broke the story’s flow. Another said it helped make sense of a later conversation. The translator trimmed the note but kept it. She did not claim that the new version reproduced every association of the original. Her goal was to preserve the greeting’s work within this particular story, while making the unavoidable tradeoff visible."
+      }
+    }
+  ],
+  "reading-craft": [
+    {
+      "prompt": "What does Ben’s statement that shadows are dark do in this opening?",
+      "choices": [
+        "It establishes the instructor’s agreement with Ben’s method",
+        "It introduces an assumption that the comparison exercise will test",
+        "It explains why the room’s lighting prevents color comparison"
+      ],
+      "answer": 1,
+      "explanation": "The instructor responds to Ben’s assumption by asking him to compare the actual shadow with black paint. The sentence sets up a belief for examination.",
+      "evidence": {
+        "id": "lesson-reading-craft-0",
+        "title": "The Color of a Shadow",
+        "context": "A painting instructor asked the class to mix a shadow color without using black paint. Ben resisted: shadows, he said, were dark. The instructor placed a blue cup on a pale table beside a warm-colored wall and asked him to compare the cup’s shadow with a patch of black paint."
+      }
+    },
+    {
+      "prompt": "A paragraph follows a broad claim about access with one resident’s account of a difficult commute. What is its likely function?",
+      "choices": [
+        "Provide a concrete illustration of the claim",
+        "Introduce an unrelated topic",
+        "Prove every resident has the same commute"
+      ],
+      "answer": 0,
+      "explanation": "Ask what the paragraph contributes to the argument. An example makes the claim concrete without proving a universal case."
+    },
+    {
+      "prompt": "Which tone fits?",
+      "choices": [
+        "Furious",
+        "Cautiously favorable",
+        "Completely indifferent"
+      ],
+      "answer": 1,
+      "explanation": "The language combines approval with a qualification. Match the intensity and direction to both parts of the sentence.",
+      "evidenceText": "The proposal offers useful relief, though its long-term costs remain uncertain."
+    },
+    {
+      "prompt": "A writer quotes an opponent’s objection and then answers it with data. Why include the quotation?",
+      "choices": [
+        "To endorse the objection",
+        "To introduce a concern the writer addresses",
+        "To abandon the argument"
+      ],
+      "answer": 1,
+      "explanation": "Read the quotation’s relationship to what follows. Quoting a position does not automatically adopt it."
+    },
+    {
+      "prompt": "What effect is best supported?",
+      "choices": [
+        "A feeling of warmth and shelter",
+        "Proof that fireplaces are inside",
+        "A claim that the station is on fire"
+      ],
+      "answer": 0,
+      "explanation": "The image suggests an atmosphere. Keep the effect near the comparison instead of turning figurative imagery into a factual claim.",
+      "evidenceText": "The station’s windows glowed like small hearths in the rain."
+    },
+    {
+      "prompt": "What role does “Neatness is a result, not the first instruction” play in the grower’s account?",
+      "choices": [
+        "It rejects the claim that the orchard has an orderly appearance",
+        "It recommends arranging trees without a plan",
+        "It distinguishes the visible pattern from the practical reasons that produce it"
+      ],
+      "answer": 2,
+      "explanation": "The grower acknowledges tidy rows, then explains equipment, slopes, and frost. The sentence clarifies the relation between the appearance and its causes.",
+      "evidence": {
+        "id": "lesson-reading-craft-5",
+        "title": "Two Accounts of an Orchard",
+        "context": "Passage A — Grower\nVisitors notice the straight rows before they notice anything else. I understand why: the trees make a tidy pattern. But that pattern represents decisions about equipment width, slopes, and where frost settles. Each new planting is an attempt to fit a living crop to a particular site. Neatness is a result, not the first instruction.\n\nPassage B — Landscape painter\nI once painted orchards as grids. Then I spent a week beside one and watched light divide a row differently each hour. Straight trunks did not produce a static scene. The grower saw practical choices in the arrangement; I was learning to see changing relationships within it. My later paintings kept the rows but abandoned the idea that order required sameness."
+      }
+    },
+    {
+      "prompt": "A tone answer calls the teacher dismissive of the garden. Which replacement fits both sentences about her response?",
+      "choices": [
+        "Hopeful about its promise but careful about the claim’s scope",
+        "Certain that the garden solved the flooding problem",
+        "Neutral because she offers no view about the measurements"
+      ],
+      "answer": 0,
+      "explanation": "The teacher retains the garden’s promise and asks for claims proportionate to observations. Both the support and the caution are explicit.",
+      "evidence": {
+        "id": "lesson-reading-craft-6",
+        "title": "Reading the Rain Garden",
+        "context": "They kept measuring, noting storm size and drain maintenance as well as puddle duration. The teacher did not dismiss the garden’s promise. She asked the class to keep the size of its claim proportionate to the conditions it had observed. The next newsletter included a table of observations instead of declaring the question settled."
+      }
+    }
+  ],
+  "reading-integration": [
+    {
+      "prompt": "Which comparison keeps the two writers’ positions separate?",
+      "choices": [
+        "The ranger supports access; the advocate rejects protecting sensitive ground",
+        "Both support protecting the ground, while the advocate also insists that access be an explicit study goal",
+        "Both favor widening immediately, but disagree about who should conduct the work"
+      ],
+      "answer": 1,
+      "explanation": "Both accept environmental protection. The advocate adds a condition about the study’s aim; neither writer calls for immediate widening without investigation.",
+      "evidence": {
+        "id": "lesson-reading-integration-0",
+        "title": "Two Uses of a Trail",
+        "context": "Passage A — Ranger\nA trail should help visitors reach a place without damaging it. Widening a muddy section may seem considerate, but it can encourage walkers to spread into sensitive ground. Before adding width, we need to understand where water flows and why people leave the path. An apparently convenient repair can move a problem rather than solve it.\n\nPassage B — Accessibility advocate\nPeople who cannot negotiate the muddy section are excluded before they can appreciate the landscape. Protecting the ground is essential, but the existing path should not be treated as neutral: it already determines who can enter. I support studying drainage and visitor movement, provided that accessible passage is a goal of the study rather than an afterthought.\n\nBoth writers respond to a proposal to widen the trail. Neither argues that damage to sensitive ground is acceptable."
+      }
+    },
+    {
+      "prompt": "Source A favors longer library hours for access. Source B supports them only if staffing is funded. What relationship fits?",
+      "choices": [
+        "They disagree about whether libraries should exist",
+        "They share an aim but differ over a condition",
+        "They make identical claims"
+      ],
+      "answer": 1,
+      "explanation": "Map each claim separately. B’s funding condition distinguishes its position without erasing their shared support for access."
+    },
+    {
+      "prompt": "A says a pilot improved access. B says the pilot’s costs remain uncertain. Which combined claim is supported?",
+      "choices": [
+        "The pilot is definitely worth any cost",
+        "It improved access, while its costs need evaluation",
+        "The pilot failed to improve access"
+      ],
+      "answer": 1,
+      "explanation": "Both statements can be true. Combine them without inventing a tradeoff neither source resolved."
+    },
+    {
+      "prompt": "A graphic reports “occupied seats,” and a passage discusses “individual visitors.” Can you treat 80 occupied seats as 80 unique visitors?",
+      "choices": [
+        "Yes",
+        "No: the units measure different things",
+        "Only if the bars look equal"
+      ],
+      "answer": 1,
+      "explanation": "Check labels before combining sources. The same person could occupy a seat at different observation times."
+    },
+    {
+      "prompt": "Source A’s trial covers adults; Source B’s trial covers teenagers. Both find improvement. Which conclusion keeps the limits?",
+      "choices": [
+        "Every age group will improve",
+        "Improvement occurred in the two tested groups",
+        "The treatment works equally well at every age"
+      ],
+      "answer": 1,
+      "explanation": "The two studies extend evidence to their tested groups. They do not establish all ages or equal effects."
+    },
+    {
+      "prompt": "Which combined conclusion follows from the device’s measure and the coordinator’s response?",
+      "choices": [
+        "Manual counts show that every electronic reading is an error",
+        "Every trail-crossing total should be halved to estimate visitors",
+        "Crossings can exceed unique visitors, but a correction needs observed travel patterns"
+      ],
+      "answer": 2,
+      "explanation": "Some people cross twice while others exit elsewhere. That supports the distinction between measures and rejects an automatic divide-by-two adjustment.",
+      "evidence": {
+        "id": "lesson-reading-integration-5",
+        "title": "Counting Evening Visitors",
+        "context": "They noticed clusters of electronic counts near closing. One volunteer remembered a group of hikers turning back and passing the counter a second time. The device measured passages across a line, while volunteers had attempted to count different people. These were distinct measures, not necessarily contradictory ones.\n\nThe center relabeled its electronic chart “Trail crossings” and continued occasional manual counts to estimate the number of individual visitors. The coordinator rejected a proposal to divide every electronic total by two. Some visitors retraced their steps, but others left by a different trail. She wanted a correction based on observations rather than an assumption that every person behaved in the same way."
+      }
+    },
+    {
+      "prompt": "A combined answer says lower average sound proves the traffic rule made every observation quieter. Which correction respects all the evidence?",
+      "choices": [
+        "Some measures improved, but averages, disruptive peaks, and the cause of change remain distinct questions",
+        "Residents’ reports override the sound readings, proving every time period improved",
+        "Because one reading rose, neither the interviews nor the other readings can show improvement"
+      ],
+      "answer": 0,
+      "explanation": "One average rose, interviews describe disruptive peaks, and nearby construction changed routes. The combined claim must retain differences among measures and uncertainty about cause.",
+      "evidence": {
+        "id": "lesson-reading-integration-6",
+        "title": "Measuring a Quiet Street",
+        "context": "Residents said that a traffic change made their street quieter. A student team measured sound at the same corner before and after the change, at three fixed times of day. The average reading fell at two times and rose slightly at the third. The team also counted heavy vehicles and interviewed residents.\n\nThe interviews described fewer sudden truck noises, even when the overall reading was similar. One resident said a steady hum was easier to ignore than an unexpected engine roar. The team’s report separated average sound level from the frequency of disruptive peaks. It did not treat either measure as a complete description of how people experienced the street.\n\nBecause construction on a nearby road temporarily altered vehicle routes, the team recommended repeating the observations after construction ended. It reported the initial changes and the residents’ comments, but avoided attributing every change to the new traffic rule. The street’s experience could improve in a way an average alone missed, while the cause of that improvement still required investigation."
+      }
+    }
+  ]
+}

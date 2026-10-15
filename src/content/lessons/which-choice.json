@@ -1,49 +1,73 @@
 {
   "slug": "which-choice",
   "title": "Which Choice (Specific Goal)",
-  "intro": "On 'which choice' questions, the prompt names a specific goal — emphasize a quality, supply a supporting detail, introduce or conclude a paragraph — and asks for the option that accomplishes it. Expect a handful of these on every English test, and expect all four choices to be grammatical and true-sounding. One idea decides every one of them: the stated goal picks the answer, not the sentence that sounds best.",
+  "intro": "Choose the answer that does exactly what the question asks.",
   "sections": [
     {
       "heading": "Answer the question that is actually asked",
       "body": [
-        "These questions hide the real task inside the prompt: 'which choice best emphasizes the danger of the storm,' 'which choice provides a specific detail,' 'which choice best concludes the paragraph.' Underline or repeat the goal to yourself before you look at the choices. The goal is the only thing that decides the answer.",
-        "A choice that is true, vivid, and well written is still wrong if it does not hit the stated goal. The ACT builds traps out of attractive sentences that answer a different question. Hold the goal in your head and test each choice against it, one at a time."
+        "Restate the question’s goal before reading choices: emphasize danger, supply a specific detail, or conclude the paragraph.",
+        "A choice can be true and well written yet fail the goal. Check every requirement and then reread the choice in context."
       ],
       "examples": [
-        { "text": "Goal: emphasize speed. 'The sprinter crossed the line in under ten seconds.'", "label": "names the speed — meets the goal", "good": true },
-        { "text": "Goal: emphasize speed. 'The sprinter wore bright blue running shoes.'", "label": "true but says nothing about speed", "good": false }
+        {
+          "text": "Goal: emphasize speed. 'The sprinter crossed the line in under ten seconds.'",
+          "label": "names the speed — meets the goal",
+          "good": true
+        },
+        {
+          "text": "Goal: emphasize speed. 'The sprinter wore bright blue running shoes.'",
+          "label": "true but says nothing about speed",
+          "good": false
+        }
       ],
       "tip": "Restate the goal in your own words first. Then ask of each choice: does this do that exact thing?"
     },
     {
       "heading": "Match concrete goals to concrete details",
       "body": [
-        "When the goal asks for emphasis on a quality (speed, size, danger, joy), the right choice contains a detail that shows that quality. Numbers, sensory details, and strong specific verbs usually win because they show rather than tell.",
-        "When the goal asks for a detail that 'supports' or 'illustrates' a point, find the choice whose detail connects directly to that point. A choice can be on the right topic and still miss if its detail supports a different idea. Trace the link from the choice back to the goal before committing."
+        "For a quality such as speed or danger, look for a concrete detail that demonstrates it: a number, sensory observation, or specific action.",
+        "For support or illustration, connect the detail directly to the stated claim. Being on the same general topic is not enough."
       ],
       "examples": [
-        { "text": "Goal: show the cave is huge. 'The cavern could swallow a ten-story building whole.'", "label": "a concrete image of huge size", "good": true },
-        { "text": "Goal: show the cave is huge. 'The cavern was discovered by two local teenagers.'", "label": "on topic but says nothing about size", "good": false }
+        {
+          "text": "Goal: show the cave is huge. 'The cavern could swallow a ten-story building whole.'",
+          "label": "a concrete image of huge size",
+          "good": true
+        },
+        {
+          "text": "Goal: show the cave is huge. 'The cavern was discovered by two local teenagers.'",
+          "label": "on topic but says nothing about size",
+          "good": false
+        }
       ],
       "tip": "For emphasis goals, hunt for the choice with a number, a measurement, or a vivid concrete image."
     },
     {
       "heading": "Conclusions, introductions, and tone",
       "body": [
-        "Some prompts ask for the choice that best introduces a paragraph, concludes it, or sets up the next idea. An introduction should preview what follows; a conclusion should tie back to the paragraph's main point; a transition sentence should bridge to the new topic. Read the surrounding sentences so you know what the choice has to connect to.",
-        "Other prompts mention tone or style: 'which choice keeps the lighthearted tone' or 'maintains the formal style.' Here the meaning is similar across choices, but the wording differs. Pick the one whose word choice matches the passage's voice, and reject choices that turn too casual or too stiff."
+        "An introduction previews what follows; a conclusion returns to the main point; a transition connects adjacent ideas. Read the surrounding sentences before choosing.",
+        "For tone, match the passage’s voice. Reject wording that becomes too casual, too formal, or more intense than the surrounding text."
       ],
       "examples": [
-        { "text": "Goal: conclude a paragraph on teamwork. 'In the end, no single player won the game; the team did.'", "label": "ties back to the teamwork point", "good": true },
-        { "text": "Goal: conclude a paragraph on teamwork. 'The stadium was built in 1962.'", "label": "a fact that ignores the paragraph's point", "good": false }
+        {
+          "text": "Goal: conclude a paragraph on teamwork. 'In the end, no single player won the game; the team did.'",
+          "label": "ties back to the teamwork point",
+          "good": true
+        },
+        {
+          "text": "Goal: conclude a paragraph on teamwork. 'The stadium was built in 1962.'",
+          "label": "a fact that ignores the paragraph's point",
+          "good": false
+        }
       ],
       "tip": "For intro and conclusion goals, reread the neighboring sentences so you know exactly what the choice must connect to."
     },
     {
       "heading": "How to spot these questions",
       "body": [
-        "The question stem gives this type away before you read a single choice: it contains a goal phrase such as 'most effectively emphasizes,' 'best illustrates,' 'best introduces,' or 'best concludes.' The choices confirm it — all four are grammatical, and the options differ in content rather than in punctuation or verb form. When NO CHANGE appears, it competes on the same terms: test it against the goal like any other choice.",
-        "Work them the same way every time. First, underline the goal words in the question. Second, restate the goal in your own words. Third, test each choice against that goal alone, eliminating anything that ignores it no matter how well written it is. Last, reread your pick in context to confirm it actually performs the goal."
+        "Look for goal phrases such as “most effectively emphasizes” or “best concludes.” Content often changes while the choices remain grammatically plausible.",
+        "State the goal, test each option against it, then read your choice in context. NO CHANGE competes on the same terms."
       ],
       "tip": "If two choices both sound good, reread the goal. Exactly one of them does the stated job, and the goal words break the tie."
     }
@@ -52,21 +76,36 @@
     {
       "stem": "By mile twenty-five, [[the runner was still moving forward]].",
       "questionText": "The writer wants to emphasize the runner's exhaustion late in the race. Which choice best accomplishes this goal?",
-      "choices": ["the crowd's cheers echoed down the tree-lined streets", "the runner could see several of the city's historic landmarks", "the runner's legs burned and her vision swam with every stride", "the course turned north to follow the river"],
+      "choices": [
+        "the crowd's cheers echoed down the tree-lined streets",
+        "the runner could see several of the city's historic landmarks",
+        "the runner's legs burned and her vision swam with every stride",
+        "the course turned north to follow the river"
+      ],
       "answer": 2,
       "explanation": "Only 'the runner's legs burned and her vision swam with every stride' shows exhaustion through physical detail; the cheering crowd, the visible landmarks, and the course turning north all describe the scene without saying anything about how tired she is."
     },
     {
       "stem": "Crews this month are pouring the final sections of the new dam, [[a major addition to the river valley]].",
       "questionText": "The writer wants to emphasize the dam's enormous scale. Which choice best accomplishes this goal?",
-      "choices": ["a structure that will rise 600 feet and stretch nearly a mile across the canyon", "a project designed by a team of regional engineers", "a replacement for an aging dam on the same river", "a project funded largely by a local energy company"],
+      "choices": [
+        "a structure that will rise 600 feet and stretch nearly a mile across the canyon",
+        "a project designed by a team of regional engineers",
+        "a replacement for an aging dam on the same river",
+        "a project funded largely by a local energy company"
+      ],
       "answer": 0,
       "explanation": "'Rise 600 feet and stretch nearly a mile' gives measurements that show size directly; the engineering team, the aging dam being replaced, and the funding source are facts about the project's history and backing, not its scale."
     },
     {
       "stem": "A paragraph describes how a community garden turned a vacant lot into a gathering place where neighbors who had never spoken now swap seeds and recipes. The writer wants to add a final sentence.",
       "questionText": "Which choice best concludes the paragraph by reinforcing its main idea?",
-      "choices": ["Tomatoes and peppers, the garden's most popular crops, need at least six hours of full sun.", "The garden occupies a half-acre lot two blocks from the elementary school.", "Several local businesses donated the seeds for the first planting.", "What was once an empty lot is now the place where strangers become neighbors."],
+      "choices": [
+        "Tomatoes and peppers, the garden's most popular crops, need at least six hours of full sun.",
+        "The garden occupies a half-acre lot two blocks from the elementary school.",
+        "Several local businesses donated the seeds for the first planting.",
+        "What was once an empty lot is now the place where strangers become neighbors."
+      ],
       "answer": 3,
       "explanation": "'What was once an empty lot is now the place where strangers become neighbors' restates the paragraph's point that the garden brings people together; the crops' sunlight needs, the lot's location, and the seed donors are stray facts that reinforce nothing."
     }

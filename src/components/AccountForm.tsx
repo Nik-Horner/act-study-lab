@@ -3,7 +3,12 @@
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
 import { Card } from "@/components/ui/Card";
-import { SUBJECTS, type StudySettings } from "@/lib/account-settings";
+import {
+  SUBJECTS,
+  DESMOS_TOPICS,
+  geometryFirst,
+  type StudySettings,
+} from "@/lib/account-settings";
 import { Button } from "@/components/ui/Button";
 
 export interface AccountFormInitial {
@@ -32,6 +37,18 @@ export function AccountForm({
     ),
   );
   const [minutes, setMinutes] = useState(initial.study_settings.minutesPerDay);
+  const [mathFocus, setMathFocus] = useState(
+    initial.study_settings.mathFocus ?? "auto",
+  );
+  const [coveredTopics, setCoveredTopics] = useState(
+    initial.study_settings.mathCoveredTopics ?? [],
+  );
+  const [scienceRepresentative, setScienceRepresentative] = useState(
+    initial.study_settings.scienceScoreRepresentative !== false,
+  );
+  const [includeScience, setIncludeScience] = useState(
+    initial.study_settings.includeScience !== false,
+  );
   const [targetScore, setTargetScore] = useState(
     initial.target_score?.toString() ?? "",
   );
@@ -85,6 +102,10 @@ export function AccountForm({
               ]),
             ),
             minutesPerDay: minutes,
+            ...(mathFocus === "auto" ? {} : { mathFocus }),
+            mathCoveredTopics: coveredTopics,
+            scienceScoreRepresentative: scienceRepresentative,
+            includeScience,
           },
           target_score: target,
           test_date: testDate,
@@ -113,7 +134,7 @@ export function AccountForm({
 
   return (
     <div className="mx-auto max-w-xl">
-      <Card className="p-8">
+      <Card className="p-5 sm:p-8">
         <h1 className="text-xl font-semibold">
           {variant === "onboarding" ? "Set up your account" : "Account"}
         </h1>
@@ -124,6 +145,35 @@ export function AccountForm({
         </p>
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
+          <fieldset
+            id="daily-subjects"
+            className="min-w-0 scroll-mt-5 space-y-2 border-b border-border pb-5"
+          >
+            <legend className="mb-2 text-sm font-semibold">
+              Daily subjects
+            </legend>
+            <p className="text-sm text-ink-soft">
+              English, Math, and Reading are included.
+            </p>
+            <label className="flex min-h-11 items-center gap-3 text-sm font-medium">
+              <input
+                type="checkbox"
+                className="h-5 w-5 shrink-0"
+                checked={includeScience}
+                onChange={(e) => setIncludeScience(e.target.checked)}
+                aria-describedby="science-setting-help"
+              />
+              <span>Include Science in daily study (optional)</span>
+            </label>
+            <p
+              id="science-setting-help"
+              className="text-sm leading-relaxed text-ink-soft"
+            >
+              Turn off Science to use your daily time for the other three
+              subjects. This applies to your next session; a saved session stays
+              intact. Science history and extra practice remain available.
+            </p>
+          </fieldset>
           <div>
             <label
               className="mb-1 block text-sm font-medium"
@@ -174,6 +224,7 @@ export function AccountForm({
               ))}
             </div>
           </fieldset>
+
           <div>
             <label
               className="mb-1 block text-sm font-medium"
@@ -212,7 +263,10 @@ export function AccountForm({
               ))}
             </select>
             <p className="mt-1 text-sm text-ink-soft">
-              One guided session covers English, Reading, Math, and Science
+              One guided session covers{" "}
+              {includeScience
+                ? "English, Reading, Math, and Science"
+                : "English, Reading, and Math"}
               within this total time. Unfinished work carries forward.
             </p>
           </div>
@@ -232,6 +286,91 @@ export function AccountForm({
               className="w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
             />
           </div>
+          <details className="border-t border-border pt-2">
+            <summary className="min-h-11 cursor-pointer py-3 text-sm font-semibold">
+              More study preferences
+            </summary>
+            <fieldset className="space-y-3 pt-4">
+              <legend className="text-sm font-semibold">
+                Focus your review
+              </legend>
+              <label htmlFor="mathFocus" className="block text-sm font-medium">
+                Math priorities
+              </label>
+              <select
+                id="mathFocus"
+                value={mathFocus}
+                onChange={(e) => setMathFocus(e.target.value)}
+                className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm"
+              >
+                <option value="auto">
+                  Use my score · geometry and trig first at 32+
+                </option>
+                <option value="geometry-trig">Geometry and trig first</option>
+                <option value="all">All math topics in order</option>
+              </select>
+              <p className="text-sm text-ink-soft">
+                {geometryFirst({
+                  ...initial.study_settings,
+                  scores: {
+                    ...initial.study_settings.scores,
+                    math: scores.math ? Number(scores.math) : null,
+                  },
+                  mathFocus:
+                    mathFocus === "auto"
+                      ? undefined
+                      : (mathFocus as StudySettings["mathFocus"]),
+                })
+                  ? "Prioritize diagrams, circle rules, similarity, exact trig, and choosing the right setup."
+                  : "Work through every topic, with missed concepts returning for review."}
+              </p>
+              <p className="text-sm font-medium">Already covered with Desmos</p>
+              <p className="text-sm text-ink-soft">
+                Check only topics you can reliably set up and solve. These leave
+                upcoming daily plans; lessons, extra drills, and full tests stay
+                available.
+              </p>
+              {DESMOS_TOPICS.map((topic) => (
+                <label
+                  key={topic}
+                  className="flex min-h-11 items-center gap-3 text-sm"
+                >
+                  <input
+                    type="checkbox"
+                    checked={coveredTopics.includes(topic)}
+                    onChange={(e) =>
+                      setCoveredTopics(
+                        e.target.checked
+                          ? [...coveredTopics, topic]
+                          : coveredTopics.filter((item) => item !== topic),
+                      )
+                    }
+                  />
+                  {
+                    {
+                      "math-algebra": "Algebra",
+                      "math-functions": "Functions",
+                      "math-essential-skills": "Ratios, units, and rates",
+                      "math-modeling": "Word problems and modeling",
+                    }[topic]
+                  }
+                </label>
+              ))}
+              <label className="flex min-h-11 items-center gap-3 text-sm">
+                <input
+                  type="checkbox"
+                  checked={scienceRepresentative}
+                  onChange={(e) => setScienceRepresentative(e.target.checked)}
+                />
+                My Science score reflects a serious attempt
+              </label>
+              <p className="text-sm text-ink-soft">
+                If unchecked, keep the score on record but don’t use it to
+                assign extra remedial work. Start with evidence, test strategy,
+                and your actual practice mistakes.
+              </p>
+            </fieldset>
+          </details>
           {error && (
             <p role="alert" className="text-sm text-bad">
               {error}
@@ -239,7 +378,7 @@ export function AccountForm({
           )}
           {saved && !error && (
             <p role="status" className="text-sm text-good">
-              Saved.
+              Saved. Subject changes apply to your next daily session.
             </p>
           )}
           <Button type="submit" disabled={loading} className="w-full">
