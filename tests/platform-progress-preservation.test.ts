@@ -47,7 +47,10 @@ test("all historical subject drills hydrate with answer identity, timing and con
       },
     }));
   for (const row of rows)
-    assert(validateCloudRecord(row.answers), row.answers.event.questionId);
+    assert(
+      validateCloudRecord(row.answers),
+      String(row.answers.event.questionId),
+    );
   const state = hydrateCloudState(rows as never, null, []);
   assert.equal(state.answers.length, rows.length);
   for (const row of rows)
