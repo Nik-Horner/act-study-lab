@@ -64,7 +64,7 @@
         "title": "Radical equations and extraneous roots",
         "formula": "\\(\\sqrt{u}=v\\Rightarrow u=v^2,\\;u\\ge0,\\;v\\ge0\\)",
         "when": "Squaring can create false solutions. Check each candidate in the original equation, including its sign restrictions.",
-        "example": "\\(\\sqrt{x+6}=x\\) gives x²−x−6=0. Only x=3 works; candidate −2 is negative."
+        "example": "\\(\\sqrt{x+20}=x\\) gives x²−x−20=0. Candidate 5 works, while candidate −4 fails because a principal square root is nonnegative."
       },
       {
         "id": "inequality",
@@ -126,7 +126,7 @@
         "title": "Zeros, holes, and asymptotes",
         "formula": "\\(\\frac{(x-r)P(x)}{(x-r)Q(x)}=\\frac{P(x)}{Q(x)},\\quad x\\ne r\\)",
         "when": "Cancel common factors first, retaining restrictions. A finite missing value is a hole; a remaining denominator zero typically gives a vertical asymptote. Leading terms describe end behavior.",
-        "example": "\\(\\frac{x^2-4}{x-2}\\) has a hole at (2,4). For 1/(x−5), the vertical asymptote is x=5."
+        "example": "\\(\\frac{x^2-36}{x-6}\\) has a hole at (6,12). For 1/(x−7), the vertical asymptote is x=7; the numerator is nonzero at that denominator zero."
       },
       {
         "id": "variation",
@@ -148,6 +148,13 @@
         "formula": "\\(\\log_b u=v\\iff b^v=u;\\quad\\log_b(uv)=\\log_bu+\\log_bv;\\quad\\log_b(u/v)=\\log_bu-\\log_bv;\\quad\\log_b(u^p)=p\\log_bu\\)",
         "when": "For real logarithms b>0, b≠1, and original arguments must be positive. Use u,v>0 for these rules. Change of base is log_b(u)=ln(u)/ln(b). No logarithm rule splits a sum.",
         "example": "\\(\\log_2(x+3)-\\log_2(x-1)=1\\) requires x>1 and gives (x+3)/(x−1)=2, so x=5."
+      },
+      {
+        "id": "recursive",
+        "title": "Two-input functions and recursion",
+        "formula": "\\(F(x,y);\\quad a_{n+1}=F(a_n,n+1)\\)",
+        "when": "Substitute each argument into its named slot. A recurrence needs an initial term; compute each term before using it to obtain the next. Preserve the index and all parentheses.",
+        "example": "If b₀=2 and bₙ₊₁=2bₙ−n, then b₁=4, b₂=7, b₃=12. For F(x,y)=x²+3y, F(−2,5)=19."
       }
     ]
   },
@@ -209,7 +216,7 @@
         "title": "Circle angles and intersecting segments",
         "formula": "\\(\\text{inscribed angle}=\\tfrac12\\text{intercepted arc};\\quad AP\\cdot PB=CP\\cdot PD;\\quad t^2=e(e+i)\\)",
         "when": "The chord-product relation uses two chords crossing at interior P. The tangent-secant relation uses outside length e and inside length i from one exterior point. A tangent is perpendicular to its radius.",
-        "example": "Chord parts 3,8 and 4,x give x=6. A secant with outside part 4 and inside part 5 gives tangent length 6."
+        "example": "Chord parts 2,15 and 5,x give 30=5x, hence x=6. A secant with outside part 5 and inside part 4 gives tangent length √45=3√5."
       },
       {
         "id": "lineforms",
@@ -252,6 +259,20 @@
         "formula": "\\(A_{\\rm parallelogram}=|u_xv_y-u_yv_x|;\\quad d_{\\rm point,line}=\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}\\)",
         "when": "For a triangle using two adjacent vectors, halve the determinant area. The distance formula assumes Ax+By+C=0 and A,B not both zero. A box diagonal is √(l²+w²+h²).",
         "example": "Vectors (3,1) and (−2,4) span a triangle of area |12+2|/2=7. Distance from (1,2) to 3x+4y−1=0 is 10/5=2."
+      },
+      {
+        "id": "centers",
+        "title": "Triangle centers and circle radii",
+        "formula": "\\(G=(\\tfrac{x_1+x_2+x_3}3,\\tfrac{y_1+y_2+y_3}3);\\quad r=A/s;\\quad R=c/2\\text{ (right triangle)}\\)",
+        "when": "The centroid divides each median 2:1 from the vertex. The incenter meets angle bisectors; its radius is area divided by semiperimeter. A right triangle’s circumcenter is its hypotenuse midpoint.",
+        "example": "Legs 5 and 12 give hypotenuse 13, area 30 and semiperimeter 15; thus inradius 2 and circumradius 13/2. A 15-unit median has vertex-to-centroid distance 10."
+      },
+      {
+        "id": "angleconditions",
+        "title": "Angle conditions, congruence, and symmetry",
+        "formula": "\\(\\alpha+\\beta+\\gamma=180^\\circ;\\quad\\alpha+\\alpha_{\\rm opposite}=180^\\circ\\text{ (cyclic quadrilateral)}\\)",
+        "when": "Parallel-line angle equalities require parallel lines. Equal triangle angles prove similarity; SSS, SAS, ASA/AAS or right-triangle hypotenuse-leg can prove congruence. Locate a circle angle’s vertex before choosing sum, difference or half-arc.",
+        "example": "In a cyclic quadrilateral, an angle of 112° makes its opposite 68°. An isosceles triangle with vertex angle 40° has equal base angles 70°, regardless of its size."
       }
     ]
   },
@@ -445,6 +466,13 @@
         "formula": "\\(N=dq+r,\\;0\\le r<d;\\quad\\gcd(a,b)\\operatorname{lcm}(a,b)=ab\\)",
         "when": "For the GCF/LCM identity use positive integers. Prime factors with smaller exponents give the GCF; larger exponents give the LCM. An even plus an odd integer is odd; the product is even.",
         "example": "60=2²·3·5 and 84=2²·3·7 have GCF 12 and LCM 420. Since N=7q+4, 2N+1 leaves remainder 2 on division by 7."
+      },
+      {
+        "id": "numbersystems",
+        "title": "Rational, irrational, and perfect-square reasoning",
+        "formula": "\\(\\mathbb Q=\\{p/q:p,q\\in\\mathbb Z,q\\ne0\\};\\quad N=\\prod p_i^{e_i}\\text{ is a square iff every }e_i\\text{ is even}\\)",
+        "when": "A rational decimal terminates or repeats. A square root of a positive integer is rational exactly when that integer is a square. Rational plus irrational is irrational; sums or products of two irrationals may be rational.",
+        "example": "72=2³·3² needs one more factor 2 to become a square: √144=12. Also √2·√2=2 is rational, so “irrational times irrational is always irrational” is false."
       }
     ]
   },
@@ -478,7 +506,7 @@
         "title": "Work rates and relative motion",
         "formula": "\\(R_{\\rm together}=1/t_1+1/t_2;\\quad T=1/R;\\quad\\text{closing speed}=v_1+v_2\\text{ or }|v_1-v_2|\\)",
         "when": "Solo times are positive. Add filling rates and subtract draining rates. Add speeds toward each other; subtract for a same-direction chase. A zero or negative net filling rate cannot fill an empty tank.",
-        "example": "Machines needing 6 and 9 hours alone work at rate 5/18, so together need 18/5 hours."
+        "example": "Machines needing 8 and 24 hours alone have combined rate 1/8+1/24=1/6 job/hour, so together take 6 hours. Rates, not completion times, add."
       },
       {
         "id": "mixture",

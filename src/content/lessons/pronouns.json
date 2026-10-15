@@ -105,6 +105,27 @@
         "Find the noun being replaced, check the pronoun’s job, and make sure its reference is clear. Expand a contraction into its full words before deciding it shows ownership."
       ],
       "tip": "On ambiguity questions, the one choice that repeats the noun usually wins. Clarity beats brevity when a pronoun could point two ways."
+    },
+    {
+      "heading": "Advanced transfer: embedded clauses and precise reference",
+      "body": [
+        "For who/whom, isolate the clause containing the pronoun's job. An insertion such as the curator believes does not turn the subject of restored into an object.",
+        "Case, number, and reference are separate checks. A grammatically shaped pronoun can still point to two plausible antecedents; replace it with a specific noun when the writer's intended referent must be explicit."
+      ],
+      "examples": [
+        {
+          "text": "The conservator who the curator believes restored the frame will speak.",
+          "label": "The conservator restored it: who is the subject of restored, despite the intervening the curator believes.",
+          "good": true
+        },
+        {
+          "text": "The conservator whom the curator believes restored the frame will speak.",
+          "label": "Whom cannot be the subject of restored; the intervening words do not change its job.",
+          "good": false
+        }
+      ],
+      "tip": "Locate the pronoun’s own verb before looking at the closest verb or preposition.",
+      "teachingRevision": 2
     }
   ],
   "check": [

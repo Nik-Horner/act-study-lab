@@ -42,8 +42,19 @@ export default async function DrillPage({
   if (!topic && slug !== "weak" && slug !== "misses") notFound();
   if (!user) return null;
   let history;
+  let profile;
   try {
-    history = await loadEnglishProgress(supabase, user.id);
+    const [progress, settings] = await Promise.all([
+      loadEnglishProgress(supabase, user.id),
+      supabase
+        .from("profiles")
+        .select("current_score, target_score")
+        .eq("id", user.id)
+        .maybeSingle(),
+    ]);
+    if (settings.error) throw new Error("Settings unavailable");
+    history = progress;
+    profile = settings.data;
   } catch {
     return <EnglishProgressError href={`/drill/${slug}`} />;
   }
@@ -55,8 +66,11 @@ export default async function DrillPage({
     );
     return (
       <DrillClient
-        key={user.id}
+        key={`${user.id}:${slug}`}
         ownerId={user.id}
+        answeredQuestionIds={history.answeredQuestionIds}
+        currentScore={profile?.current_score ?? null}
+        targetScore={profile?.target_score ?? null}
         mode="topic"
         slug={slug}
         title={topic.title}
@@ -91,7 +105,15 @@ export default async function DrillPage({
       })),
     );
     return (
-      <DrillClient key={user.id} ownerId={user.id} mode="weak" pool={pool} />
+      <DrillClient
+        key={`${user.id}:${slug}`}
+        ownerId={user.id}
+        mode="weak"
+        pool={pool}
+        answeredQuestionIds={history.answeredQuestionIds}
+        currentScore={profile?.current_score ?? null}
+        targetScore={profile?.target_score ?? null}
+      />
     );
   }
 
@@ -120,7 +142,12 @@ export default async function DrillPage({
       }
     }
     return (
-      <DrillClient key={user.id} ownerId={user.id} mode="misses" pool={pool} />
+      <DrillClient
+        key={`${user.id}:${slug}`}
+        ownerId={user.id}
+        mode="misses"
+        pool={pool}
+      />
     );
   }
 

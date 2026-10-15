@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { renderStem, LETTERS, shuffle, fmtTime } from "@/lib/format";
+import { renderStem, LETTERS, fmtTime } from "@/lib/format";
 import type { Question } from "@/lib/content";
 import {
   MASTERY_STREAK,
@@ -9,6 +9,10 @@ import {
   masteryProgress,
   type TopicProgressRow,
 } from "@/lib/mastery";
+import {
+  englishDrillLevel,
+  englishDrillOrder,
+} from "@/lib/english-drill-order";
 import { ButtonLink } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
@@ -35,6 +39,9 @@ type OriginalDrillProps =
 
 type DrillClientProps = OriginalDrillProps & {
   ownerId?: string;
+  answeredQuestionIds?: string[];
+  currentScore?: number | null;
+  targetScore?: number | null;
   daily?: {
     savedChoice?: number;
     savedSeconds?: number;
@@ -56,14 +63,18 @@ export function DrillClient(props: DrillClientProps) {
       }));
     }
     return props.pool;
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [props.mode]);
+  }, [props]);
 
-  // Identity order to start: matches server-rendered HTML exactly, so hydration
-  // doesn't mismatch (shuffle() uses Math.random(), which differs per render).
-  // Shuffled for real in the mount effect below, once we're client-only.
   const [drillState, setDrillState] = useState(() => ({
-    order: items.map((_, i) => i),
+    order:
+      props.daily || props.mode === "misses"
+        ? items.map((_, i) => i)
+        : englishDrillOrder(
+            items.map((item) => item.question),
+            props.answeredQuestionIds,
+            props.currentScore,
+            props.targetScore,
+          ),
     idx: 0,
   }));
   const [answered, setAnswered] = useState(
@@ -97,16 +108,6 @@ export function DrillClient(props: DrillClientProps) {
 
   const { order, idx } = drillState;
   const current = order.length > 0 ? items[order[idx]] : null;
-
-  // Shuffle for real once we're mounted client-side (Math.random() during the
-  // initial render would diverge between the server-rendered HTML and the
-  // client's hydration pass and trigger a hydration mismatch).
-  useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- one-time randomization on mount, not derived state
-    setDrillState((s) =>
-      s.idx === 0 ? { order: shuffle(s.order), idx: 0 } : s,
-    );
-  }, []);
 
   // Pace timer chip: freezes once the question is answered, resets on a new question.
   useEffect(() => {
@@ -229,18 +230,14 @@ export function DrillClient(props: DrillClientProps) {
         if (i >= o.length) i = 0;
         return { order: o, idx: i };
       }
-      const nextIdx = s.idx + 1;
-      if (nextIdx >= s.order.length) {
-        return { order: shuffle(items.map((_, i) => i)), idx: 0 };
-      }
-      return { order: s.order, idx: nextIdx };
+      return { order: s.order, idx: s.idx + 1 };
     });
     answeredRef.current = false;
     savedRef.current = false;
     answerIdRef.current = null;
     setAnswered(false);
     setPicked(null);
-  }, [current, picked, props.mode, props.daily, items, saving, saveError]);
+  }, [current, picked, props.mode, props.daily, saving, saveError]);
 
   // Keyboard shortcuts: A-D / 1-4 to answer, Enter / N / Space for next.
   useEffect(() => {
@@ -286,7 +283,21 @@ export function DrillClient(props: DrillClientProps) {
   if (props.mode === "misses" && order.length === 0) {
     return <EmptyState mode="misses" backHref={backHref} />;
   }
-  if (!current) return null;
+  if (!current)
+    return (
+      <Card className="p-10 text-center">
+        <h2 className="text-xl font-semibold text-ink">
+          Practice set complete
+        </h2>
+        <p className="mt-2 text-ink-soft">
+          You answered every question in this set. Apply the skills in a timed
+          section, or revisit the lesson before practicing again.
+        </p>
+        <ButtonLink href="/exam" className="mt-4">
+          Try a timed section
+        </ButtonLink>
+      </Card>
+    );
 
   const status = props.mode === "topic" ? topicStatus(progress) : "none";
   const accuracyPct =
@@ -337,14 +348,15 @@ export function DrillClient(props: DrillClientProps) {
           <p className="mb-1.5 text-sm text-ink-soft">
             {status === "mastered" ? (
               <>
-                <b className="text-good">Mastered ✓</b> — best streak{" "}
-                {progress?.best_streak ?? 0}. Keep sharp.
+                <b className="text-good">Practice milestone reached</b> — best
+                streak {progress?.best_streak ?? 0}. Keep building independent
+                practice evidence.
               </>
             ) : (
               <>
                 Streak {streak} ·{" "}
-                <b>{Math.max(0, MASTERY_STREAK - streak)} in a row</b> to master
-                ({accuracyPct}% all-time)
+                <b>{Math.max(0, MASTERY_STREAK - streak)} in a row</b> to reach
+                the practice milestone ({accuracyPct}% all-time)
               </>
             )}
           </p>
@@ -353,6 +365,26 @@ export function DrillClient(props: DrillClientProps) {
             tone={status === "mastered" ? "good" : "brand"}
           />
         </div>
+      )}
+      {!props.daily && props.mode !== "misses" && (
+        <p className="text-sm text-ink-soft">
+          {props.targetScore ? `Goal ${props.targetScore} · ` : ""}
+          {
+            {
+              foundation: "Foundation practice",
+              challenge: "Challenge practice",
+              balanced: "Mixed difficulty",
+            }[
+              englishDrillLevel(
+                props.currentScore ?? null,
+                props.targetScore ?? null,
+              )
+            ]
+          }
+          {
+            " · New questions first. Previously answered questions are labeled for review."
+          }
+        </p>
       )}
       {props.mode === "weak" && (
         <p className="text-sm text-ink-soft">{weakSubtitle}</p>
@@ -369,6 +401,13 @@ export function DrillClient(props: DrillClientProps) {
       >
         <div className="mb-3 flex flex-wrap gap-2">
           <Badge tone="neutral">{current.question.difficulty}</Badge>
+          {!props.daily && props.mode !== "misses" && (
+            <Badge tone="neutral">
+              {props.answeredQuestionIds?.includes(current.question.id)
+                ? "Review question"
+                : "New question"}
+            </Badge>
+          )}
           {props.mode !== "topic" && (
             <Badge tone="brand">{current.topicTitle}</Badge>
           )}
@@ -433,10 +472,11 @@ export function DrillClient(props: DrillClientProps) {
 
         {justMastered && (
           <div className="mt-4 rounded-xl border border-good bg-good-soft px-4 py-3 text-sm text-good">
-            <p className="font-semibold">🎉 Topic mastered!</p>
+            <p className="font-semibold">Practice milestone reached</p>
             <p>
               You hit an {MASTERY_STREAK}-question streak. Move to the next
-              topic or keep drilling.
+              topic and test these skills on fresh questions. This streak does
+              not estimate an ACT score.
             </p>
           </div>
         )}
@@ -541,8 +581,8 @@ function EmptyState({
           All misses cleared!
         </h2>
         <p className="mt-2 text-ink-soft">
-          You&apos;ve re-drilled every question you got wrong. That&apos;s the
-          habit that gets you to 36.
+          You&apos;ve re-drilled the questions in your miss list. Try fresh
+          questions next to check whether the skills transfer.
         </p>
         <ButtonLink href="/dashboard" className="mt-4">
           Back to dashboard

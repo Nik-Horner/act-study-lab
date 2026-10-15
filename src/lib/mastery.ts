@@ -1,7 +1,8 @@
-/* Streak-based mastery rules, ported from the old js/progress.js. */
+/* Legacy English practice-streak milestone; this does not estimate score readiness. */
 import type { Database } from "@/lib/supabase/database.types";
 
-export type TopicProgressRow = Database["public"]["Tables"]["topic_progress"]["Row"];
+export type TopicProgressRow =
+  Database["public"]["Tables"]["topic_progress"]["Row"];
 
 export const MASTERY_STREAK = 8;
 const MASTERY_MIN_ANSWERED = 8;
@@ -10,7 +11,8 @@ export type TopicStatus = "none" | "practicing" | "mastered";
 
 export function topicStatus(row: TopicProgressRow | undefined): TopicStatus {
   if (!row || row.attempts === 0) return "none";
-  if (row.best_streak >= MASTERY_STREAK && row.attempts >= MASTERY_MIN_ANSWERED) return "mastered";
+  if (row.best_streak >= MASTERY_STREAK && row.attempts >= MASTERY_MIN_ANSWERED)
+    return "mastered";
   return "practicing";
 }
 

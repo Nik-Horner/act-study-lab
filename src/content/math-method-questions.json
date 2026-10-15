@@ -4,7 +4,7 @@
     "topic": "math-algebra",
     "subject": "math",
     "category": "Equations and expressions",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "\\(x^2+2x-6=0\\).",
     "questionText": "What is the complete solution set?",
     "choices": [
@@ -15,33 +15,49 @@
     ],
     "answer": 0,
     "explanation": "The quadratic formula gives \\(x=\\frac{-2\\pm\\sqrt{4+24}}2=-1\\pm\\sqrt7\\). Completing the square independently gives \\((x+1)^2=7\\), confirming both roots. The sign of −b and the factor 2a must both be preserved; neither root may be dropped.",
-    "lessonSections": [2]
+    "lessonSections": [
+      2
+    ]
   },
   {
     "id": "math-algebra-m2",
     "topic": "math-algebra",
     "subject": "math",
     "category": "Equations and expressions",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "\\(2x^2+kx+8=0\\), where k is positive.",
     "questionText": "For what value of k does the equation have exactly one real solution?",
-    "choices": ["4", "8", "16", "32"],
+    "choices": [
+      "4",
+      "8",
+      "16",
+      "32"
+    ],
     "answer": 1,
     "explanation": "A repeated real root requires discriminant zero: \\(k^2-4(2)(8)=0\\), so k²=64. The condition k>0 selects k=8. Substituting produces \\(2x^2+8x+8=2(x+2)^2\\), which has just one real root x=−2. The other sign of k is excluded by the given condition.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-algebra-m3",
     "topic": "math-algebra",
     "subject": "math",
     "category": "Equations and expressions",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "\\(P(x)=2x^3-3x^2+5\\).",
     "questionText": "What is the remainder when P(x) is divided by x+2?",
-    "choices": ["9", "−3", "−23", "23"],
+    "choices": [
+      "9",
+      "−3",
+      "−23",
+      "23"
+    ],
     "answer": 2,
     "explanation": "Because the divisor is x−(−2), the remainder theorem uses P(−2), not P(2). Evaluate \\(2(-2)^3-3(-2)^2+5=-16-12+5=-23\\). This calculation finds the remainder directly without a polynomial long division or a claim that x+2 must be a factor.",
-    "lessonSections": [3]
+    "lessonSections": [
+      3
+    ]
   },
   {
     "id": "math-algebra-m4",
@@ -59,20 +75,30 @@
     ],
     "answer": 3,
     "explanation": "The expression changes sign at numerator zero 3 and denominator zero −2. Testing x=−3, 0, and 4 gives positive, negative, and positive values. Include x=3 because the expression equals zero, but exclude x=−2 because the original denominator is zero. Thus x<−2 or x≥3.",
-    "lessonSections": [1, 4]
+    "lessonSections": [
+      1,
+      4
+    ]
   },
   {
     "id": "math-functions-m1",
     "topic": "math-functions",
     "subject": "math",
     "category": "Functions and graphs",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "\\(f(x)=2x^2-12x+11\\).",
     "questionText": "What is the vertex of the graph of f?",
-    "choices": ["(−3, 11)", "(3, 11)", "(3, −7)", "(6, 11)"],
+    "choices": [
+      "(−3, 11)",
+      "(3, 11)",
+      "(3, −7)",
+      "(6, 11)"
+    ],
     "answer": 2,
     "explanation": "The vertex input is \\(-b/(2a)=12/4=3\\). Its output is f(3)=18−36+11=−7. Completing the square gives \\(2(x-3)^2-7\\), which independently confirms the point (3,−7). The coefficient −12 is not the vertex input or the minimum output.",
-    "lessonSections": [2]
+    "lessonSections": [
+      2
+    ]
   },
   {
     "id": "math-functions-m2",
@@ -90,7 +116,9 @@
     ],
     "answer": 0,
     "explanation": "Both original log arguments must be positive, so x>2. Combine the logs to get \\((2x-1)/(x-2)=3^2=9\\). Thus 2x−1=9x−18, giving x=17/7, which satisfies x>2. The logarithm difference represents a quotient, not a difference of its two arguments.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-functions-m3",
@@ -108,7 +136,9 @@
     ],
     "answer": 3,
     "explanation": "An inverse value asks for the input whose output is 10. Solve (x+4)²−2=10 to obtain x=−4±√12=−4±2√3. The original domain x≥−4 selects the plus branch. Substituting it gives (2√3)²−2=10, so the restricted inverse value is valid.",
-    "lessonSections": [3]
+    "lessonSections": [
+      3
+    ]
   },
   {
     "id": "math-functions-m4",
@@ -118,10 +148,17 @@
     "difficulty": "medium",
     "stem": "The function f varies inversely with its input. f(2)=15.",
     "questionText": "What is f(10)?",
-    "choices": ["75", "3", "5", "23"],
+    "choices": [
+      "75",
+      "3",
+      "5",
+      "23"
+    ],
     "answer": 1,
     "explanation": "Inverse variation has f(x)=k/x, so the product x·f(x) is constant. The given point yields k=2(15)=30, making f(10)=30/10=3. Multiplying the input by five divides the output by five; the input cannot be zero. Direct variation would incorrectly produce 75.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-geometry-m1",
@@ -139,7 +176,9 @@
     ],
     "answer": 1,
     "explanation": "Complete both squares: x²−6x=(x−3)²−9 and y²+8y=(y+4)²−16. The equation becomes (x−3)²+(y+4)²=25. Hence center is (3,−4) and radius √25=5. The signs inside the squared factors are opposite the center coordinates, and 25 is radius squared.",
-    "lessonSections": [4]
+    "lessonSections": [
+      4
+    ]
   },
   {
     "id": "math-geometry-m2",
@@ -149,10 +188,17 @@
     "difficulty": "hard",
     "stem": "Point P=(4,0) is rotated 90° counterclockwise about C=(1,−2).",
     "questionText": "What are the coordinates of its image?",
-    "choices": ["(1,−5)", "(−2,4)", "(3,−5)", "(−1,1)"],
+    "choices": [
+      "(1,−5)",
+      "(−2,4)",
+      "(3,−5)",
+      "(−1,1)"
+    ],
     "answer": 3,
     "explanation": "Translate to the rotation center: P−C=(3,2). A 90° counterclockwise turn maps (x,y) to (−y,x), giving (−2,3). Translate back by adding C to obtain (−1,1). Rotating the original point about the origin would give (0,4), which uses the wrong center.",
-    "lessonSections": [4]
+    "lessonSections": [
+      4
+    ]
   },
   {
     "id": "math-geometry-m3",
@@ -170,7 +216,9 @@
     ],
     "answer": 2,
     "explanation": "The cone slant height is √(5²+12²)=13. Lateral area is πrℓ=65π; the circular base adds πr²=25π. Total surface area is 90π square units. Using the vertical height instead of the slant height gives the incorrect lateral area 60π, and omitting the base gives only 65π.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-geometry-m4",
@@ -180,10 +228,17 @@
     "difficulty": "medium",
     "stem": "A closed rectangular box has side lengths 2, 3, and 6.",
     "questionText": "What is the total surface area?",
-    "choices": ["72", "36", "44", "66"],
+    "choices": [
+      "72",
+      "36",
+      "44",
+      "66"
+    ],
     "answer": 0,
     "explanation": "The three distinct face areas are 2·3=6, 2·6=12, and 3·6=18. Each appears twice, giving surface area 2(6+12+18)=72 square units. Multiplying all three dimensions gives volume 36 cubic units, which answers a different question. Include both faces in every opposite pair.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-trigonometry-m1",
@@ -201,7 +256,9 @@
     ],
     "answer": 3,
     "explanation": "The angle 5π/3 equals 300°, in Quadrant IV. Its reference angle is π/3=60°, whose sine magnitude is √3/2. Sine is negative in Quadrant IV, so sin(5π/3)=−√3/2. The value 1/2 corresponds to the cosine magnitude, not this requested sine.",
-    "lessonSections": [1]
+    "lessonSections": [
+      1
+    ]
   },
   {
     "id": "math-trigonometry-m2",
@@ -209,12 +266,19 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "\\(\\sin\\theta=3/5\\), and θ is in Quadrant II.",
+    "stem": "\\(\\tan\\theta=-3/4\\), and θ is in Quadrant II.",
     "questionText": "What is \\(\\cos(2\\theta)\\)?",
-    "choices": ["\\(-7/25\\)", "\\(7/25\\)", "\\(-24/25\\)", "\\(24/25\\)"],
+    "choices": [
+      "\\(-7/25\\)",
+      "\\(7/25\\)",
+      "\\(-24/25\\)",
+      "\\(24/25\\)"
+    ],
     "answer": 1,
-    "explanation": "Use cos(2θ)=1−2sin²θ=1−2(9/25)=7/25. Independently, the Quadrant-II cosine is −4/5, so cos²θ−sin²θ=16/25−9/25=7/25. The original cosine is negative, but the doubled angle need not have the same sign. Do not confuse the cosine double-angle formula with 2sinθcosθ.",
-    "lessonSections": [3]
+    "explanation": "Use a 3–4–5 reference triangle. Quadrant II gives sin θ=3/5 and cos θ=−4/5, so cos(2θ)=cos²θ−sin²θ=16/25−9/25=7/25. The given tangent fixes a ratio between the legs, not a hypotenuse ratio. Determine both sine and cosine before applying the double-angle identity.",
+    "lessonSections": [
+      3
+    ]
   },
   {
     "id": "math-trigonometry-m3",
@@ -224,36 +288,58 @@
     "difficulty": "hard",
     "stem": "\\(\\sin(2x)=\\sqrt3/2\\), with \\(0\\le x<2\\pi\\).",
     "questionText": "What is the sum of all solutions for x?",
-    "choices": ["\\(2\\pi\\)", "\\(4\\pi\\)", "\\(3\\pi\\)", "\\(6\\pi\\)"],
+    "choices": [
+      "\\(2\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(3\\pi\\)",
+      "\\(6\\pi\\)"
+    ],
     "answer": 2,
     "explanation": "The inner angle 2x ranges over [0,4π). Its solutions are π/3, 2π/3, 7π/3, and 8π/3. Dividing each by two gives x=π/6, π/3, 7π/6, 4π/3. Their sum is 18π/6=3π. A single inverse-sine result would miss three valid solutions in the required interval.",
-    "lessonSections": [1, 3]
+    "lessonSections": [
+      1,
+      3
+    ]
   },
   {
     "id": "math-trigonometry-m4",
     "topic": "math-trigonometry",
     "subject": "math",
     "category": "Trigonometry",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "Two sides of a triangle have lengths 4 and 7, and their included angle is 120°.",
     "questionText": "What is the length of the third side?",
-    "choices": ["\\(\\sqrt{93}\\)", "\\(\\sqrt{37}\\)", "11", "3"],
+    "choices": [
+      "\\(\\sqrt{93}\\)",
+      "\\(\\sqrt{37}\\)",
+      "11",
+      "3"
+    ],
     "answer": 0,
     "explanation": "Use the law of cosines because the known angle lies between the two known sides: c²=4²+7²−2(4)(7)cos120°. Since cos120°=−1/2, c²=16+49+28=93, so c=√93. Subtracting 28 uses the wrong cosine sign; the obtuse included angle makes this side larger than √65.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-statistics-probability-m1",
     "topic": "math-statistics-probability",
     "subject": "math",
     "category": "Statistics and probability",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "A club has 40 members. Of these, 24 swim, 18 row, and 10 both swim and row.",
     "questionText": "If a member is selected from the rowers, what is the probability that member also swims?",
-    "choices": ["1/4", "3/5", "5/9", "5/12"],
+    "choices": [
+      "1/4",
+      "3/5",
+      "5/9",
+      "5/12"
+    ],
     "answer": 2,
     "explanation": "The selection is restricted to the 18 rowers, so the denominator is 18 rather than all 40 members or all 24 swimmers. The favorable group is the 10 members who do both. Thus P(swims | rows)=10/18=5/9. The count of swimmers outside the rowing group is irrelevant to this conditional selection.",
-    "lessonSections": [3]
+    "lessonSections": [
+      3
+    ]
   },
   {
     "id": "math-statistics-probability-m2",
@@ -263,36 +349,57 @@
     "difficulty": "hard",
     "stem": "The letters in LEVEL are rearranged, using each letter exactly once.",
     "questionText": "How many distinct arrangements are possible?",
-    "choices": ["120", "60", "20", "30"],
+    "choices": [
+      "120",
+      "60",
+      "20",
+      "30"
+    ],
     "answer": 3,
     "explanation": "There are five letter positions, with two indistinguishable Ls, two indistinguishable Es, and one V. Count 5! labeled arrangements, then divide out the 2! orderings of each repeated pair: 5!/(2!2!)=120/4=30. Using 5! alone counts swaps of identical letters as new arrangements.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-statistics-probability-m3",
     "topic": "math-statistics-probability",
     "subject": "math",
     "category": "Statistics and probability",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "The population data are 2, 2, 8, and 8. Each value x is replaced by y=−3x+4.",
     "questionText": "What is the population standard deviation of the transformed data?",
-    "choices": ["9", "81", "−9", "3"],
+    "choices": [
+      "9",
+      "81",
+      "−9",
+      "3"
+    ],
     "answer": 0,
     "explanation": "The original population mean is 5. All four squared deviations equal 9, so population variance is 9 and standard deviation is 3. Multiplication by −3 scales standard deviation by its absolute value 3, giving 9. Adding 4 does not change spread. The value 81 would be the new variance, not standard deviation.",
-    "lessonSections": [2]
+    "lessonSections": [
+      2
+    ]
   },
   {
     "id": "math-statistics-probability-m4",
     "topic": "math-statistics-probability",
     "subject": "math",
     "category": "Statistics and probability",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "A game charges $3 to enter. It pays $12 with probability 0.2 and $0 otherwise.",
     "questionText": "What is the expected net gain per play?",
-    "choices": ["$2.40", "−$0.60", "$0.60", "−$3.00"],
+    "choices": [
+      "$2.40",
+      "−$0.60",
+      "$0.60",
+      "−$3.00"
+    ],
     "answer": 1,
     "explanation": "Expected payout is 12(0.2)+0(0.8)=$2.40. Subtract the certain $3 entry cost to get expected net gain −$0.60. Equivalently, net outcomes are +$9 and −$3, giving 9(0.2)−3(0.8)=−0.60. Expected payout and expected profit are different quantities.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-number-quantity-m1",
@@ -302,17 +409,24 @@
     "difficulty": "hard",
     "stem": "\\(A=\\begin{bmatrix}3&1\\\\2&1\\end{bmatrix}\\).",
     "questionText": "What is the entry in row 2, column 1 of \\(A^{-1}\\)?",
-    "choices": ["2", "−1", "3", "−2"],
+    "choices": [
+      "2",
+      "−1",
+      "3",
+      "−2"
+    ],
     "answer": 3,
     "explanation": "The determinant is 3(1)−1(2)=1, so the inverse exists. Swap the diagonal entries and negate the off-diagonal entries to obtain A⁻¹=\\(\\begin{bmatrix}1 & -1\\\\-2 & 3\\end{bmatrix}\\). The second-row, first-column entry is −2. Multiplying A by this inverse gives the identity matrix, confirming both the signs and the order.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
   },
   {
     "id": "math-number-quantity-m2",
     "topic": "math-number-quantity",
     "subject": "math",
     "category": "Number and quantity",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "\\(\\mathbf u=(2,-1)\\) and \\(\\mathbf v=(3,4)\\).",
     "questionText": "What is \\(|2\\mathbf u-\\mathbf v|\\)?",
     "choices": [
@@ -323,20 +437,30 @@
     ],
     "answer": 1,
     "explanation": "First perform the component operations: 2u−v=(4,−2)−(3,4)=(1,−6). Its magnitude is √(1²+(−6)²)=√37. Magnitude is taken after forming the requested vector. Subtracting magnitudes instead, or forgetting to multiply both components of u by 2, gives a different result.",
-    "lessonSections": [1]
+    "lessonSections": [
+      1
+    ]
   },
   {
     "id": "math-number-quantity-m3",
     "topic": "math-number-quantity",
     "subject": "math",
     "category": "Number and quantity",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "An arithmetic sequence has first term 7 and common difference 3.",
     "questionText": "What is the sum of its first 12 terms?",
-    "choices": ["282", "276", "240", "564"],
+    "choices": [
+      "282",
+      "276",
+      "240",
+      "564"
+    ],
     "answer": 0,
     "explanation": "The twelfth term is a₁₂=7+(12−1)3=40 because reaching it takes eleven jumps. The first-twelve sum is 12(7+40)/2=282. Listing matched end pairs gives the same result: six pairs each total 47. Using twelve jumps instead of eleven would incorrectly make the last term 43.",
-    "lessonSections": [2, 6]
+    "lessonSections": [
+      2,
+      6
+    ]
   },
   {
     "id": "math-number-quantity-m4",
@@ -346,10 +470,17 @@
     "difficulty": "medium",
     "stem": "Consider the positive integers 84 and 126.",
     "questionText": "What is their least common multiple?",
-    "choices": ["42", "210", "252", "10584"],
+    "choices": [
+      "42",
+      "210",
+      "252",
+      "10584"
+    ],
     "answer": 2,
     "explanation": "Prime factorizations are 84=2²·3·7 and 126=2·3²·7. The least common multiple uses each largest prime power: 2²·3²·7=252. Independently their GCF is 42, and 84·126/42=252. The GCF itself is a common divisor, not a multiple of both numbers.",
-    "lessonSections": [6]
+    "lessonSections": [
+      6
+    ]
   },
   {
     "id": "math-essential-skills-m1",
@@ -359,10 +490,18 @@
     "difficulty": "hard",
     "stem": "A price is raised by 20%, then the new price is discounted by 15%. The final price is $204.",
     "questionText": "What was the original price?",
-    "choices": ["$173.40", "$200", "$194.29", "$240"],
+    "choices": [
+      "$173.40",
+      "$200",
+      "$194.29",
+      "$240"
+    ],
     "answer": 1,
     "explanation": "Let P be the original price. Successive factors give P(1.20)(0.85)=204, or 1.02P=204. Thus P=$200; checking gives $240 after the increase and $204 after the discount. Subtracting the percentages would incorrectly treat the two changes as having the same dollar base.",
-    "lessonSections": [0, 3]
+    "lessonSections": [
+      0,
+      3
+    ]
   },
   {
     "id": "math-essential-skills-m2",
@@ -372,10 +511,17 @@
     "difficulty": "hard",
     "stem": "A trip covers 60 miles at 30 mph, then 90 miles at 60 mph, without stopping.",
     "questionText": "What is the average speed for the whole trip?",
-    "choices": ["45 mph", "40 mph", "50 mph", "300/7 mph"],
+    "choices": [
+      "45 mph",
+      "40 mph",
+      "50 mph",
+      "300/7 mph"
+    ],
     "answer": 3,
     "explanation": "The first leg takes 60/30=2 hours and the second 90/60=1.5 hours. Total distance is 150 miles over 3.5 hours, so average speed is 150/3.5=300/7 mph. The two leg speeds cannot simply be averaged because the amounts of time at those speeds differ.",
-    "lessonSections": [1]
+    "lessonSections": [
+      1
+    ]
   },
   {
     "id": "math-essential-skills-m3",
@@ -385,10 +531,17 @@
     "difficulty": "hard",
     "stem": "Machine A can finish a job alone in 12 hours; machine B alone needs 18 hours. A works alone for 3 hours, then B joins.",
     "questionText": "How many additional hours are needed after B joins?",
-    "choices": ["36/5", "27/5", "42/5", "9"],
+    "choices": [
+      "36/5",
+      "27/5",
+      "42/5",
+      "9"
+    ],
     "answer": 1,
     "explanation": "In the first three hours, A completes 3/12=1/4 of the job, leaving 3/4. Their combined rate is 1/12+1/18=5/36 job per hour. Remaining time is (3/4)/(5/36)=27/5 hours. Adding the initial three hours would answer total elapsed time instead of the requested additional time.",
-    "lessonSections": [2]
+    "lessonSections": [
+      2
+    ]
   },
   {
     "id": "math-essential-skills-m4",
@@ -398,17 +551,24 @@
     "difficulty": "hard",
     "stem": "A container has 12 liters of a 25% salt solution. Only pure water is added.",
     "questionText": "How many liters of water must be added to make a 15% salt solution?",
-    "choices": ["5", "6", "7", "8"],
+    "choices": [
+      "5",
+      "6",
+      "7",
+      "8"
+    ],
     "answer": 3,
     "explanation": "The salt amount stays 12(0.25)=3 liters. If w liters of pure water are added, concentration becomes 3/(12+w). Setting it equal to 0.15 gives total volume 20 liters, so w=8. The final concentration decreases, as expected when adding water, but the salt amount does not change.",
-    "lessonSections": [2]
+    "lessonSections": [
+      2
+    ]
   },
   {
     "id": "math-modeling-m1",
     "topic": "math-modeling",
     "subject": "math",
     "category": "Modeling",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "A $1,000 deposit earns 10% annual interest compounded quarterly for two years, with no deposits or withdrawals.",
     "questionText": "Which expression gives the account balance after the two years?",
     "choices": [
@@ -419,7 +579,9 @@
     ],
     "answer": 2,
     "explanation": "Quarterly compounding means four periods per year. The rate per period is 0.10/4=0.025 and the number of periods over two years is 4(2)=8. The correct amount is 1000(1.025)⁸. Using the annual rate in every quarter or counting just two compounding periods changes the stated model.",
-    "lessonSections": [1]
+    "lessonSections": [
+      1
+    ]
   },
   {
     "id": "math-modeling-m2",
@@ -429,23 +591,39 @@
     "difficulty": "hard",
     "stem": "\\(P(q)=-2q^2+36q-100\\), with \\(0\\le q\\le6\\).",
     "questionText": "What is the maximum possible value of P(q)?",
-    "choices": ["62", "44", "9", "116"],
+    "choices": [
+      "62",
+      "44",
+      "9",
+      "116"
+    ],
     "answer": 1,
     "explanation": "The unrestricted vertex is q=−36/(2·−2)=9, which is outside the allowed interval. This downward-opening parabola is increasing throughout 0≤q≤6, so the constrained maximum is at q=6. Its value is −2(36)+36(6)−100=44. The unrestricted peak 62 is infeasible here.",
-    "lessonSections": [2, 4]
+    "lessonSections": [
+      2,
+      4
+    ]
   },
   {
     "id": "math-modeling-m3",
     "topic": "math-modeling",
     "subject": "math",
     "category": "Modeling",
-    "difficulty": "hard",
+    "difficulty": "medium",
     "stem": "Plan A costs $18 plus $4 per visit. Plan B costs $42 plus $2 per visit. Visits are whole numbers.",
     "questionText": "At what smallest number of visits does A cost strictly more than B?",
-    "choices": ["11", "12", "13", "14"],
+    "choices": [
+      "11",
+      "12",
+      "13",
+      "14"
+    ],
     "answer": 2,
     "explanation": "Compare the full costs: 18+4n>42+2n. Subtract 18 and 2n to obtain 2n>24, so n>12. The least allowed whole number is 13. At n=12 both plans cost $66, which satisfies equality but not the question’s strict-more-than condition.",
-    "lessonSections": [0, 3]
+    "lessonSections": [
+      0,
+      3
+    ]
   },
   {
     "id": "math-modeling-m4",
@@ -455,9 +633,353 @@
     "difficulty": "medium",
     "stem": "A model predicts \\(\\hat y=2+4x\\). Observed outputs at x=1, 2, 3 are 5, 9, 14, respectively.",
     "questionText": "What is the sum of the three residuals, using observed minus predicted?",
-    "choices": ["−2", "0", "2", "−4"],
+    "choices": [
+      "−2",
+      "0",
+      "2",
+      "−4"
+    ],
     "answer": 0,
     "explanation": "Predictions at the three inputs are 6, 10, and 14. Subtract each from the matching observation to obtain residuals −1, −1, and 0. Their sum is −2. Using predicted minus observed would reverse every sign and give +2; a residual of zero occurs only for the final observation.",
-    "lessonSections": [5]
+    "lessonSections": [
+      5
+    ]
+  },
+  {
+    "id": "math-algebra-m5",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "The equation \\(x^2-kx+12=0\\) has two distinct positive integer roots.",
+    "questionText": "What is the sum of all possible values of k?",
+    "choices": [
+      "21",
+      "26",
+      "28",
+      "36"
+    ],
+    "answer": 2,
+    "explanation": "The roots multiply to 12 and add to k. The unordered positive factor pairs are (1,12), (2,6), and (3,4), all with distinct roots. They give k=13,8,7; their sum is 28. Negative factor pairs are excluded by the positive-root condition. Listing factor pairs avoids solving a separate quadratic for each proposed k.",
+    "lessonSections": [
+      3,
+      5
+    ]
+  },
+  {
+    "id": "math-algebra-m6",
+    "topic": "math-algebra",
+    "subject": "math",
+    "category": "Equations and expressions",
+    "difficulty": "hard",
+    "stem": "\\(\\frac{x^2-9}{x^2-x-6}\\le0\\).",
+    "questionText": "Which set contains exactly the real solutions?",
+    "choices": [
+      "\\(-3<x<-2\\)",
+      "\\(-3\\le x\\le-2\\)",
+      "\\(x\\le-3\\text{ or }x>-2\\)",
+      "\\(-3\\le x<-2\\)"
+    ],
+    "answer": 3,
+    "explanation": "The denominator factors as (x−3)(x+2), excluding 3 and −2. On that domain, cancel x−3 to obtain (x+3)/(x+2). Its sign is positive below −3, zero at −3, negative between −3 and −2, and positive above −2. Include −3 but exclude −2. The other excluded input 3 is outside the resulting interval.",
+    "lessonSections": [
+      2,
+      4
+    ]
+  },
+  {
+    "id": "math-functions-m5",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "A quadratic function f has real zeros 1 and 7 and minimum value −3. Define g(x)=f(2x−1)+5.",
+    "questionText": "What is the vertex of the graph of g?",
+    "choices": [
+      "(2,2)",
+      "(5/2,−3)",
+      "(3,2)",
+      "(5/2,2)"
+    ],
+    "answer": 3,
+    "explanation": "The axis of symmetry lies halfway between the zeros, at input (1+7)/2=4. Therefore f has vertex (4,−3). In g, the original vertex is reached when 2x−1=4, so x=5/2. The output increases by 5 to −3+5=2. Transform both the input and output; the original zeros are not the new vertex coordinates.",
+    "lessonSections": [
+      2,
+      4
+    ]
+  },
+  {
+    "id": "math-functions-m6",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions and graphs",
+    "difficulty": "hard",
+    "stem": "Define F(x,y)=x²−2y. A sequence starts with a₀=1 and satisfies aₙ₊₁=F(aₙ,n+1) for every integer n≥0.",
+    "questionText": "What is a₃?",
+    "choices": [
+      "−3",
+      "3",
+      "7",
+      "−5"
+    ],
+    "answer": 1,
+    "explanation": "Use the previous term as the first input and the new index as the second. At n=0, a₁=F(1,1)=−1. At n=1, a₂=F(−1,2)=1−4=−3. At n=2, a₃=F(−3,3)=9−6=3. Squaring the negative term produces a positive square. Holding the second input fixed or substituting the index as the first input changes the recurrence.",
+    "lessonSections": [
+      0
+    ]
+  },
+  {
+    "id": "math-geometry-m5",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A circle has center O and radius 10. Chord AB has length 16 and midpoint M. Point P lies on the ray from O through M, beyond the circle, with OP=26.",
+    "questionText": "What is the area of triangle PAB?",
+    "choices": [
+      "80",
+      "160",
+      "208",
+      "256"
+    ],
+    "answer": 1,
+    "explanation": "OM is perpendicular to AB and bisects it, so AM=8 and OM=√(10²−8²)=6. Because P lies beyond M on the named ray, its perpendicular distance to line AB is PM=26−6=20. Triangle PAB has base 16 and height 20, giving area 16(20)/2=160. Using OP=26 as the height measures from the center instead of the chord.",
+    "lessonSections": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "math-geometry-m6",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A triangle has vertices (0,0), (12,0), and (0,9). Let r be its inradius and R its circumradius.",
+    "questionText": "What is r/R?",
+    "choices": [
+      "1/5",
+      "2/5",
+      "3/5",
+      "4/5"
+    ],
+    "answer": 1,
+    "explanation": "The right triangle has legs 12 and 9, so its hypotenuse is 15 and area is 54. Its semiperimeter is (12+9+15)/2=18, giving inradius r=54/18=3. The circumcircle of a right triangle has the hypotenuse as diameter, so R=15/2. Their ratio is 3/(15/2)=2/5. Interchanging the two centers or radii changes the requested ratio.",
+    "lessonSections": [
+      1,
+      4
+    ]
+  },
+  {
+    "id": "math-trigonometry-m5",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "The function y=A cos(Bx)+D has maximum 8, minimum −4, and least positive period 2π/3, where A>0 and B>0.",
+    "questionText": "What is the least positive x at which y=−1?",
+    "choices": [
+      "\\(\\pi/9\\)",
+      "\\(2\\pi/3\\)",
+      "\\(2\\pi/9\\)",
+      "\\(4\\pi/9\\)"
+    ],
+    "answer": 2,
+    "explanation": "The midline is D=(8−4)/2=2 and amplitude is A=(8−(−4))/2=6. The period 2π/B=2π/3 gives B=3. Thus y=−1 requires 6cos(3x)+2=−1, or cos(3x)=−1/2. The first positive matching input is 3x=2π/3, so x=2π/9. The input must still be divided by B after finding the reference-circle angle.",
+    "lessonSections": [
+      1,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "math-trigonometry-m6",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Trigonometry",
+    "difficulty": "hard",
+    "stem": "For a real angle θ, sin θ−cos θ=1/3.",
+    "questionText": "What is (sin θ+cos θ)²?",
+    "choices": [
+      "1/9",
+      "8/9",
+      "10/9",
+      "17/9"
+    ],
+    "answer": 3,
+    "explanation": "Expand both squared expressions. Their sum is 2sin²θ+2cos²θ=2 because their cross terms cancel. The given squared difference is 1/9, so the squared sum is 2−1/9=17/9. Equivalently, the given equation implies sin(2θ)=8/9. There is no need to solve for θ or assume a quadrant.",
+    "lessonSections": [
+      3
+    ]
+  },
+  {
+    "id": "math-statistics-probability-m5",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "A score table has k students scoring 2, three students scoring 4, and two students scoring 8. The overall mean score is 4. Two different students are selected uniformly without replacement.",
+    "questionText": "What is the probability their scores are equal?",
+    "choices": [
+      "1/3",
+      "5/18",
+      "4/9",
+      "1/6"
+    ],
+    "answer": 1,
+    "explanation": "Recover k from the mean: (2k+3·4+2·8)/(k+5)=4, giving 2k+28=4k+20 and k=4. There are nine students. Equal-score unordered pairs number C(4,2)+C(3,2)+C(2,2)=6+3+1=10, out of C(9,2)=36 total pairs. The probability is 10/36=5/18. Use frequency counts, not the three distinct score labels, as the sample space.",
+    "lessonSections": [
+      0,
+      3,
+      5
+    ]
+  },
+  {
+    "id": "math-statistics-probability-m6",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics and probability",
+    "difficulty": "hard",
+    "stem": "A bag contains 3 red and 2 blue tokens. Two tokens are drawn uniformly without replacement. A game pays $6 if their colors match and $1 otherwise. Entry costs $3 per game.",
+    "questionText": "What is the expected net gain per game?",
+    "choices": [
+      "−$0.60",
+      "$0.00",
+      "$0.60",
+      "$3.00"
+    ],
+    "answer": 1,
+    "explanation": "There are C(5,2)=10 equally likely unordered token pairs. Matching colors occur in C(3,2)+C(2,2)=4 pairs, so match probability is 0.4 and different-color probability is 0.6. Expected payout is 6(0.4)+1(0.6)=3 dollars. Subtract the 3-dollar entry cost once to get expected net gain $0. The stated payouts are before the entry cost.",
+    "lessonSections": [
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "math-number-quantity-m5",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "Let \\(A=\\begin{bmatrix}1&1\\\\0&1\\end{bmatrix}\\). For a positive integer n, \\(A^n=\\begin{bmatrix}1&37\\\\0&1\\end{bmatrix}\\).",
+    "questionText": "What is the sum of all four entries of Aⁿ⁺²?",
+    "choices": [
+      "39",
+      "40",
+      "41",
+      "43"
+    ],
+    "answer": 2,
+    "explanation": "Multiplying a matrix with first row (1,t) and second row (0,1) by A changes its upper-right entry to t+1 and keeps its other entries 1,0,1. Two additional multiplications therefore change 37 to 39. The four entries of Aⁿ⁺² sum to 1+39+0+1=41. Matrix powers mean repeated matrix multiplication; raising each entry to the power would not produce Aⁿ.",
+    "lessonSections": [
+      5
+    ]
+  },
+  {
+    "id": "math-number-quantity-m6",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number and quantity",
+    "difficulty": "hard",
+    "stem": "n is a positive integer.",
+    "questionText": "What is the least n for which both √(12n) and √(18n) are integers?",
+    "choices": [
+      "6",
+      "18",
+      "54",
+      "No such positive integer exists"
+    ],
+    "answer": 3,
+    "explanation": "For 12n to be a square, the exponent of prime 2 in n must be even, because 12 contributes 2². For 18n to be a square, that same exponent must be odd, because 18 contributes 2¹. These conditions cannot both hold. Equivalently, the ratio of the proposed positive integers would be √(12/18)=√(2/3), which is irrational. Testing a few small n values cannot prove impossibility.",
+    "lessonSections": [
+      3,
+      6
+    ]
+  },
+  {
+    "id": "math-essential-skills-m5",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A collection initially has red and blue beads in the ratio 2:3. After 12 red beads are added and 6 blue beads are removed, the ratio becomes 4:3.",
+    "questionText": "How many beads were in the original collection?",
+    "choices": [
+      "30",
+      "40",
+      "50",
+      "60"
+    ],
+    "answer": 2,
+    "explanation": "Write original counts as 2k and 3k. The new ratio requires (2k+12)/(3k−6)=4/3. Cross-multiplying gives 6k+36=12k−24, so k=10. Original total is 5k=50. Check: red becomes 32 and blue becomes 24, giving 4:3. Adding or removing beads changes actual counts, not the abstract ratio numbers.",
+    "lessonSections": [
+      0,
+      3
+    ]
+  },
+  {
+    "id": "math-essential-skills-m6",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Essential skills",
+    "difficulty": "hard",
+    "stem": "A 6-meter by 15-meter rectangular floor uses square tiles of side 30 centimeters. The buyer must purchase at least 8% more tiles than the number covering the floor. Tiles come only in packs of 25, costing $18 per pack.",
+    "questionText": "What is the least purchase cost?",
+    "choices": [
+      "$720.00",
+      "$777.60",
+      "$792.00",
+      "$810.00"
+    ],
+    "answer": 2,
+    "explanation": "Each tile has area (0.30)²=0.09 square meter, so the 90-square-meter floor needs 90/0.09=1000 tiles. Including at least 8% extra requires 1080 tiles. That is 43.2 packs, so buy 44 whole packs at cost 44(18)=$792. Computing 43.2·18 assumes partial packs can be bought; converting 30 cm as 0.03 m introduces a unit error.",
+    "lessonSections": [
+      0,
+      4,
+      6
+    ]
+  },
+  {
+    "id": "math-modeling-m5",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "Nonnegative whole numbers x,y satisfy \\(2x+y\\le17\\) and \\(x+2y\\le17\\). Profit is \\(5x+4y\\) dollars.",
+    "questionText": "What is the greatest possible profit?",
+    "choices": [
+      "$49",
+      "$50",
+      "$51",
+      "$54"
+    ],
+    "answer": 1,
+    "explanation": "Twice the first limit plus the second gives 5x+4y≤51. Equality would require both resource limits tight, whose intersection is x=y=17/3, not whole numbers. Since profit is an integer, every feasible whole-number pair has profit at most 50. The pair (6,5) satisfies both limits and earns 30+20=50, proving the maximum. Rounding the fractional intersection independently can break a resource limit.",
+    "lessonSections": [
+      2,
+      6
+    ]
+  },
+  {
+    "id": "math-modeling-m6",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Modeling",
+    "difficulty": "hard",
+    "stem": "Two populations follow A(t)=400(1.2)ᵗ and B(t)=600(1.1)ᵗ, where t is a nonnegative whole number of years.",
+    "questionText": "At what t is A(t) first greater than B(t)?",
+    "choices": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "answer": 2,
+    "explanation": "Dividing positive quantities gives A/B=(2/3)(12/11)ᵗ. The inequality A>B requires (12/11)ᵗ>3/2, so t>ln(3/2)/ln(12/11)≈4.66. The first whole year is 5. At year 4, A=829.44<B=878.46; at year 5, A≈995.33>B≈966.31. Compare the relative growth factors rather than subtracting the annual percentages from the starting gap.",
+    "lessonSections": [
+      1,
+      5
+    ]
   }
 ]

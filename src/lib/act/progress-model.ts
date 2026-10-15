@@ -444,6 +444,7 @@ export function getTopicStats(
     const question = topicQuestions.get(answer.questionId)!;
     return (
       answer.chosen === question.answer &&
+      latest.get(answer.questionId)?.chosen === question.answer &&
       answer.confidence !== "low" &&
       answer.elapsedMs > 0 &&
       answer.elapsedMs <= QUESTION_TARGET_SECONDS[question.subject] * 1000
@@ -451,8 +452,6 @@ export function getTopicStats(
   });
   const mastered =
     fresh.length >= required.questions &&
-    accuracy !== null &&
-    accuracy >= required.accuracy &&
     verified.length / fresh.length >= required.accuracy &&
     verified.filter(
       (answer) => topicQuestions.get(answer.questionId)!.difficulty === "hard",
@@ -481,18 +480,4 @@ export function masteryRequirements(targetScore: number) {
     : targetScore >= 28
       ? { questions: 6, accuracy: 0.9, hard: 2 }
       : { questions: 6, accuracy: 0.85, hard: 1 };
-}
-
-export function practiceForMisses(
-  active: Question[],
-  all: Question[],
-  missed: ReadonlySet<string>,
-) {
-  const activeIds = new Set(active.map((q) => q.id));
-  const topics = new Set(
-    all
-      .filter((q) => missed.has(q.id) && !activeIds.has(q.id))
-      .map((q) => q.topic),
-  );
-  return active.filter((q) => missed.has(q.id) || topics.has(q.topic));
 }

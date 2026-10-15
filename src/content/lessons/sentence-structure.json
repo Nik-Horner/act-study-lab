@@ -82,7 +82,7 @@
           "good": true
         }
       ],
-      "tip": "FANBOYS = For, And, Nor, But, Or, Yet, So. A FANBOYS word joins two independent clauses only with a comma in front of it."
+      "tip": "For two ordinary independent clauses joined by FANBOYS, use a comma before the conjunction. A semicolon may help separate unusually complex clauses with internal commas."
     },
     {
       "heading": "Comma splices",
@@ -110,7 +110,28 @@
         "When choices change punctuation or add words such as because or which, label each side: independent clause, dependent clause, or phrase.",
         "Check the connection and meaning. Two independent clauses cannot use a comma alone. Colons and dashes can introduce explanations; semicolons joining clauses need complete clauses on both sides. Confirm the structure before relying on your ear."
       ],
-      "tip": "A semicolon and a period do the same job, so if two choices differ only in that way, eliminate both — the test cannot have two right answers."
+      "tip": "A period and semicolon can both join complete thoughts. Check capitalization, dependent words, punctuation outside the underline, and the intended relationship before deciding."
+    },
+    {
+      "heading": "Advanced transfer: find the main clause inside layered sentences",
+      "body": [
+        "Strip away relative clauses and interruptions to locate the sentence's subject and finite main verb. A relative clause may contain several verbs without supplying the main predicate.",
+        "Then restore the layers and check the connection: a dependent opening needs a main clause; two independent clauses need a valid boundary. Choose the connection that preserves the writer's actual reason or contrast."
+      ],
+      "examples": [
+        {
+          "text": "The catalogue, which the interns revised after the originals arrived, lists every damaged page.",
+          "label": "Catalogue is the main subject; lists is its verb. Revised and arrived belong to embedded clauses.",
+          "good": true
+        },
+        {
+          "text": "The catalogue, which the interns revised after the originals arrived, listing every damaged page.",
+          "label": "Listing supplies no finite main verb for catalogue; the embedded verbs do not complete the sentence.",
+          "good": false
+        }
+      ],
+      "tip": "Bracket each inserted clause, read the main sentence, then restore the clauses and test the meaning.",
+      "teachingRevision": 2
     }
   ],
   "check": [

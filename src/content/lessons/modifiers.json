@@ -21,7 +21,7 @@
           "good": false
         }
       ],
-      "tip": "Name the noun the phrase describes, then make sure they touch."
+      "tip": "Place the description close to its intended noun and remove competing attachments. Real meaning, not simply the nearest word, determines the target."
     },
     {
       "heading": "Opening phrases with a comma",
@@ -41,7 +41,7 @@
           "good": false
         }
       ],
-      "tip": "Read the opening phrase, then check the first noun after the comma. They must match."
+      "tip": "Identify the main clause’s subject, even when an article or adjective comes first, and check that it can logically perform the opening action."
     },
     {
       "heading": "Modifiers without commas",
@@ -52,16 +52,16 @@
       "examples": [
         {
           "text": "I watched nearly the entire series in one weekend.",
-          "label": "Watched almost all of it",
+          "label": "Clearly limits the amount watched",
           "good": true
         },
         {
           "text": "I nearly watched the entire series in one weekend.",
-          "label": "Almost watched it, but didn't",
+          "label": "Can blur whether the limit concerns the act or the amount watched",
           "good": false
         }
       ],
-      "tip": "Limiting words (only, nearly, almost, just) go directly before what they limit."
+      "tip": "Put a limiting word close to its target to make scope clear. Some positions are grammatical but create a different or ambiguous emphasis."
     },
     {
       "heading": "How to spot these questions",
@@ -82,11 +82,32 @@
         }
       ],
       "tip": "Same words, shuffled order? It's a modifier question. Put the doer right after the comma."
+    },
+    {
+      "heading": "Advanced transfer: scope and the actual main subject",
+      "body": [
+        "Descriptions can stay correct in passive voice: After being catalogued, the letters were stored. The subject letters receives both actions, so passive voice does not itself create a dangling modifier.",
+        "A limiter's placement controls its scope: only after inspection limits the timing, while only the inspector limits the person. Use the question's intended meaning rather than a universal rule about the first noun or shortest wording."
+      ],
+      "examples": [
+        {
+          "text": "After being catalogued by two volunteers, the letters were stored in acid-free folders.",
+          "label": "Letters were catalogued and stored; the opening description fits the passive subject.",
+          "good": true
+        },
+        {
+          "text": "After being catalogued by two volunteers, the folders protected the letters.",
+          "label": "The opener wrongly makes folders the things catalogued.",
+          "good": false
+        }
+      ],
+      "tip": "Name what happened to the main subject and what the limiting word is intended to restrict.",
+      "teachingRevision": 2
     }
   ],
   "check": [
     {
-      "stem": "Soaring above the canyon, [[the photographer captured the eagle]].",
+      "stem": "Soaring above the canyon, [[the photographer on the ground captured the eagle]].",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "choices": [
         "NO CHANGE",
@@ -95,19 +116,19 @@
         "capturing the eagle was the photographer's goal"
       ],
       "answer": 2,
-      "explanation": "'Soaring above the canyon' must describe the first noun after the comma, and only 'the eagle glided into the photographer's frame' puts a soaring creature there. 'The photographer,' 'the photographer's camera,' and 'capturing the eagle' were not soaring above the canyon."
+      "explanation": "The opening description belongs to the main clause's subject. Only the keyed choice makes eagle the subject and the thing soaring. The original places the photographer on the ground, the camera is not flying, and capturing is an activity rather than the bird. A description must match the actual subject, not merely the nearest word."
     },
     {
       "stem": "Frozen solid overnight, [[we could skate across the pond]].",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "choices": [
         "NO CHANGE",
-        "the pond was safe for us to skate across",
+        "the pond gleamed in the morning light",
         "skating across the pond was finally possible",
         "we found the pond thick enough for skating"
       ],
       "answer": 1,
-      "explanation": "'Frozen solid overnight' describes the pond, so 'the pond was safe for us to skate across' must follow the comma. In the choices that begin 'we could skate,' 'we found the pond,' and 'skating across the pond,' people and an activity become the things frozen solid."
+      "explanation": "'Frozen solid overnight' describes the pond, so the keyed choice makes pond the main-clause subject. The other choices make people or the activity the subject, leaving the opening description without its intended noun."
     },
     {
       "stem": "She [[only needs]] two more points to win the match.",

@@ -7,7 +7,8 @@
       "heading": "Parallelism in lists",
       "body": [
         "Give list items the same kind of wording: hiking, swimming, and biking; or to run, to jump, and to swim.",
-        "Compare the underlined item with the unchanged items. Keep an -ing pattern or a to + verb pattern, called an infinitive. Do not switch between them when the list needs matching forms."
+        "Compare the underlined item with the unchanged items. Keep an -ing pattern or a to + verb pattern, called an infinitive. Do not switch between them when the list needs matching forms.",
+        "A shared to can govern several verbs: to run, jump, and swim. Repeating to is also valid. Do not reject an option solely because it omits an optional repeated word."
       ],
       "examples": [
         {
@@ -41,7 +42,7 @@
           "good": false
         }
       ],
-      "tip": "Cover everything except the two compared items. If they do not start with the same kind of word, the sentence fails."
+      "tip": "Compare the grammatical roles and the actual things being compared. Similar first words help, but shared words can be omitted."
     },
     {
       "heading": "Watch the paired connectors",
@@ -61,7 +62,7 @@
           "good": false
         }
       ],
-      "tip": "After the second connector, repeat the exact structure you used after the first. 'Not only for X' demands 'but also for Y.'"
+      "tip": "Bracket the full material joined by each connector. Match its grammatical role and preserve the intended meaning."
     },
     {
       "heading": "Keep prepositions consistent",
@@ -81,7 +82,7 @@
           "good": false
         }
       ],
-      "tip": "All or one: repeat the preposition before every item, or say it once before the first. Never some but not all."
+      "tip": "A preposition may govern coordinated objects without repeating before each. Test the complete construction rather than counting repeated words."
     },
     {
       "heading": "How to spot these questions",
@@ -90,6 +91,27 @@
         "Choose the matching construction, then reread the complete sentence. A phrase that sounds smooth alone can still fail the surrounding pattern."
       ],
       "tip": "The non-underlined items are the answer key. The ACT can only change the underlined part, so the rest of the list dictates the form you need."
+    },
+    {
+      "heading": "Advanced transfer: compare logical roles, not repeated words",
+      "body": [
+        "A word may govern a whole coordinated series: to collect, label, and store. Repeating to before each verb is also grammatical. An omitted optional word is not automatically a failure of parallelism.",
+        "In complex pairs, bracket the entire structures following not only/but also or either/or. Each must perform the same grammatical job, and a comparison must compare corresponding things rather than an object with an unrelated activity."
+      ],
+      "examples": [
+        {
+          "text": "The protocol requires staff not only to record the temperature but also to explain any sudden change.",
+          "label": "The paired connectors join two infinitive phrases with the same logical subject.",
+          "good": true
+        },
+        {
+          "text": "The protocol requires staff not only to record the temperature but also an explanation of any sudden change.",
+          "label": "The second half is a noun phrase where the first half establishes the staff’s required action.",
+          "good": false
+        }
+      ],
+      "tip": "Read beyond the first word of each option; shared words are allowed, mismatched grammatical jobs are not.",
+      "teachingRevision": 2
     }
   ],
   "check": [

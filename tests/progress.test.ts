@@ -437,6 +437,23 @@ test("correcting an already exposed answer does not turn it into fresh mastery e
   assert.equal(stats.accuracy, 1);
   assert.equal(stats.mastered, false);
 });
+test("later independent success can establish mastery without repeating an old missed item", () => {
+  const qs = Array.from({ length: 11 }, (_, i) =>
+    question(`growth${i}`, i >= 1 && i <= 3 ? "hard" : "medium"),
+  );
+  const records = qs.map((q, i) =>
+    answer(
+      `growth-answer${i}`,
+      q.id,
+      i === 0 ? 0 : 1,
+      `2026-10-${String(i + 1).padStart(2, "0")}T12:00:00Z`,
+    ),
+  );
+  const stats = getTopicStats("math-algebra", qs, records, 36);
+  assert.equal(stats.accuracy, 10 / 11);
+  assert.equal(stats.mastered, true);
+  assert.deepEqual(stats.unresolvedIds, ["growth0"]);
+});
 test("loading defaults never borrow a particular student score or test calendar", () => {
   const state = createDefaultState(new Date("2027-03-11T12:00:00Z"));
   assert.equal(state.profile.testDate, "2027-03-11");

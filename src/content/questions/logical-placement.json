@@ -111,7 +111,7 @@
       "category": "POW",
       "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
-      "stem": "[1] Researchers fed one group of mice a high-sugar diet for six weeks. [2] Those mice gained far more weight than a second group fed identical food without the added sugar. [3] The team plans to repeat the experiment with a larger sample next year. Sentence to place: \"These results suggested that sugar alone drove the weight gain.\"",
+      "stem": "[1] Researchers fed one group of mice a high-sugar diet for six weeks. [2] Those mice gained far more weight than a second group fed identical food without the added sugar. [3] The team plans to repeat the experiment with a larger sample next year. Sentence to place: \"These results suggested that the added sugar contributed to the weight gain.\"",
       "choices": [
         "before sentence 1",
         "after sentence 1",
@@ -199,7 +199,7 @@
     {
       "id": "logical-placement-014",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
       "stem": "Paragraph A: [1] For years, the town's only grocery store sat empty and boarded up. [2] Residents had to drive thirty minutes for fresh food. Paragraph B: [3] A group of neighbors pooled their savings and reopened it as a co-op. [4] Today the shelves are full and the parking lot is busy again. Sentence to place: \"That long absence left the whole community frustrated.\"",
       "choices": [
@@ -214,9 +214,9 @@
     {
       "id": "logical-placement-015",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
-      "stem": "[1] In the 1800s, mapmakers still left large blank spaces across the African interior. [2] Explorers gradually filled those gaps with rivers, lakes, and mountain ranges. [3] By 1900, few unmapped regions remained on the continent. [4] Modern satellites now record terrain those explorers could never have reached. Sentence to place: \"Each expedition added a few more confident lines to the page.\"",
+      "stem": "[1] In the 1800s, European mapmakers still left large blank spaces on their published maps of the African interior. [2] Survey expeditions gradually added rivers, lakes, and mountain ranges to those maps. [3] By 1900, the published maps included far more geographic detail. [4] Modern satellites now record terrain far beyond the routes those expeditions traveled. Sentence to place: \"Each expedition added a few more confident lines to the page.\"",
       "choices": [
         "before sentence 1",
         "after sentence 2",
@@ -224,12 +224,12 @@
         "after sentence 4"
       ],
       "answer": 1,
-      "explanation": "The sentence elaborates on how explorers filled the gaps, so it must follow sentence 2, where the expeditions are introduced, and stay within the historical sequence before the 1900 summary in sentence 3. Before sentence 1 there are no expeditions yet for \"each expedition\" to extend; after sentence 3 it interrupts the jump to modern satellites; after sentence 4 it returns to nineteenth-century explorers after the timeline has already reached today."
+      "explanation": "The sentence develops the work of the survey expeditions introduced in sentence 2 and explains how the maps accumulated the detail summarized in sentence 3. Before sentence 1, each expedition has no introduced activity to develop; after sentence 3 or 4, the elaboration interrupts the transition from the historical summary to satellite mapping. The passage concerns the published maps, not whether local communities knew the land."
     },
     {
       "id": "logical-placement-016",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
       "stem": "[1] The factory dumped untreated waste into the river for decades. [2] Fish populations collapsed, and the water turned a murky brown. [3] In 1985, new federal rules forced the plant to install filtration systems. [4] Within ten years, anglers reported clear water and returning trout. Sentence to place: \"These visible signs of damage finally drew the regulators' attention.\"",
       "choices": [
@@ -439,7 +439,7 @@
     {
       "id": "logical-placement-030",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
       "stem": "Paragraph A: [1] For a decade, the old rail line through the hills carried no trains at all. [2] Weeds swallowed the tracks, and the rusted rails crumbled. Paragraph B: [3] Volunteers tore up the rails and laid a smooth paved path in their place. [4] Today cyclists and walkers crowd the trail every weekend. Sentence to place: \"That long neglect had left the corridor an eyesore.\"",
       "choices": [
@@ -454,9 +454,9 @@
     {
       "id": "logical-placement-031",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
-      "stem": "[1] In the early 1900s, sailors still navigated the open ocean by the stars. [2] Radio beacons later let ships fix their position from shore signals. [3] By the 1990s, satellite GPS pinpointed a vessel almost anywhere on Earth. [4] Engineers today are testing systems that need no satellites at all. Sentence to place: \"For the first time, captains could find their way without a single star overhead.\"",
+      "stem": "[1] In the early 1900s, sailors used tools such as compasses and observations of the stars to navigate. [2] Radio beacons later let ships check their position from shore signals. [3] By the 1990s, satellite GPS pinpointed a vessel almost anywhere on Earth. [4] Engineers today are testing systems that need no satellites at all. Sentence to place: \"For the first time in this sequence of developments, a broadcast from a shore station could guide the crew.\"",
       "choices": [
         "before sentence 1",
         "after sentence 2",
@@ -464,12 +464,12 @@
         "after sentence 4"
       ],
       "answer": 1,
-      "explanation": "The radio beacons in sentence 2 are the first alternative to the stars, so \"for the first time\" must follow sentence 2. Before sentence 1 no new tool exists yet, and sentence 1 says sailors still relied on the stars; after sentence 3 or sentence 4 the claim of a \"first time\" is false, since shore beacons had already freed captains from the night sky decades earlier."
+      "explanation": "The reference to a shore broadcast elaborates on radio beacons, introduced in sentence 2. After sentence 2 it develops that new technique before the paragraph shifts to satellite GPS. Before sentence 1 it has no introduced radio technique to explain; after sentence 3 or 4 it interrupts a later technology with a return to an earlier one. Navigation without visible stars existed before radio, so that false first-time claim is not used."
     },
     {
       "id": "logical-placement-032",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
       "stem": "[1] For years, smoke from the valley's mills hung over the town like a gray ceiling. [2] County health reports showed childhood asthma rates climbing far above the state average. [3] In 1991, a new ordinance forced the mills to install costly scrubbers. [4] A decade later, residents could finally see the mountains from Main Street. Sentence to place: \"These alarming health reports gave city council the votes it needed.\"",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 2,
       "explanation": "\"These alarming health reports\" refers to the rising childhood asthma cases in sentence 2, so it must follow sentence 2, and as the cause of the 1991 ordinance it must precede sentence 3. Before sentence 1 or after sentence 1 there are no health reports yet to name; after sentence 4 the council acts only after the air has already cleared, breaking the cause-before-effect order."
+    },
+    {
+      "stem": "[1] Volunteers cleaned each map before scanning it. [2] They photographed both sides under even light. [3] Each digital file was checked against the original for missing details. [4] Providing access to those files required a different kind of work. [5] Staff organized sessions at local libraries for residents without home internet. [6] They also supplied printed catalogues so visitors could locate relevant images.",
+      "questionText": "Where should the writer begin a new paragraph to distinguish production of the files from making them accessible?",
+      "choices": [
+        "Before sentence 2",
+        "Before sentence 3",
+        "Before sentence 4",
+        "Before sentence 6"
+      ],
+      "answer": 2,
+      "explanation": "Sentences 1–3 describe producing and checking files. Sentence 4 announces the new access problem, which sentences 5–6 develop. Earlier breaks divide the production process; the last separates one access response from the others instead of marking the requested change in purpose.",
+      "id": "logical-placement-transfer-01",
+      "category": "POW",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "Paragraph A: The restoration team first used a strong solvent. It removed the dark varnish quickly, but it also dissolved flecks of original paint. Paragraph B: The team switched to a weaker solution and worked in smaller areas. Progress slowed, but the original surface remained intact. Sentence to place: [[Speed, the team realized, was a poor measure of success if it cost the painting itself.]]",
+      "questionText": "Where does the sentence most effectively explain the reasoning behind the change in method?",
+      "choices": [
+        "At the start of Paragraph A, before the first method is introduced",
+        "At the end of Paragraph A, after the damage and before the switch",
+        "After the first sentence of Paragraph B, separating the switch from its outcome",
+        "At the end of Paragraph B, after the outcome has been reported"
+      ],
+      "answer": 1,
+      "explanation": "After the damage in A, the sentence interprets that tradeoff and establishes the priority that motivates the switch in B. The opening position states a lesson before the problem; the middle of B interrupts the method/outcome link; the ending works as a reflection but no longer prepares the change as the question requests.",
+      "id": "logical-placement-transfer-02",
+      "category": "POW",
+      "difficulty": "hard"
     }
   ]
 }

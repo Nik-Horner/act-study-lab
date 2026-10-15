@@ -199,7 +199,7 @@
     {
       "id": "transitions-014",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which transition is the most logical in context?",
       "stem": "Wetlands filter pollutants out of the water that flows through them. [[For instance,]] they store floodwater that would otherwise swamp nearby towns.",
       "choices": [
@@ -214,7 +214,7 @@
     {
       "id": "transitions-015",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which transition is the most logical in context?",
       "stem": "An older bridge nearby had buckled in a single strong storm. [[In contrast,]] the new span held firm in the season's worst gales.",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "transitions-016",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which transition is the most logical in context?",
       "stem": "Conservationists released a dozen beavers into the empty stream bed. [[For instance,]] the dams they built transformed it into a lush marsh.",
       "choices": [
@@ -291,7 +291,7 @@
       "category": "POW",
       "difficulty": "easy",
       "questionText": "Which transition is the most logical in context?",
-      "stem": "Many people assume cactuses need almost no care. [[Likewise,]] overwatering is the most common reason they die.",
+      "stem": "Many people assume cactuses need daily watering. [[Likewise,]] overwatering is the most common reason they die.",
       "choices": [
         "NO CHANGE",
         "Therefore,",
@@ -299,7 +299,7 @@
         "Meanwhile,"
       ],
       "answer": 2,
-      "explanation": "The second sentence emphasizes a surprising truth that corrects the assumption, so the emphasis word 'In fact' fits; 'Likewise' signals agreement, 'Therefore' a result, and 'Meanwhile' simultaneous time, none of which match."
+      "explanation": "'In fact' introduces evidence that corrects the assumption that daily watering is needed. 'Likewise' would suggest agreement, 'Therefore' would make overwatering a consequence of the assumption rather than a correction, and 'Meanwhile' would emphasize simultaneous timing. The correction, rather than the time order, is the relevant relationship."
     },
     {
       "id": "transitions-021",
@@ -439,7 +439,7 @@
     {
       "id": "transitions-030",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which transition is the most logical in context?",
       "stem": "The avenue's makeover changed daily life on the street in visible ways. [[For example,]] foot traffic to the shops along it climbed sharply.",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "transitions-031",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which transition is the most logical in context?",
       "stem": "Deep-sea anglerfish dangle a glowing lure to draw in prey. [[As a result,]] some species use the same light to signal potential mates.",
       "choices": [
@@ -469,7 +469,7 @@
     {
       "id": "transitions-032",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which transition is the most logical in context?",
       "stem": "The archivists spent a decade digitizing the fragile manuscripts. [[Otherwise,]] the originals could be sealed away from light and humidity.",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 1,
       "explanation": "Sealing the originals is the long-awaited step that comes after a decade of work, so the time phrase 'At last' fits; 'Otherwise' signals a condition, 'Conversely' contrast, and 'For example' an illustration, none of which suit the delayed outcome."
+    },
+    {
+      "stem": "The pilot route attracted twice as many riders as planners expected, and surveys showed strong public support. [[Consequently,]] the council postponed expansion: the operating grant would expire before the new route could begin.",
+      "questionText": "Which transition best marks the funding limitation despite the encouraging evidence?",
+      "choices": [
+        "NO CHANGE",
+        "For example,",
+        "Even so,",
+        "In other words,"
+      ],
+      "answer": 2,
+      "explanation": "Even so concedes that strong ridership and support favor expansion, then introduces the obstacle that delayed it. Consequently wrongly makes the encouraging results cause postponement. For example treats postponement as an example of public support; in other words treats the delay as a restatement of the survey evidence.",
+      "id": "transitions-transfer-01",
+      "category": "POW",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "One paragraph explains that a museum's new labels use shorter sentences so younger visitors can follow them. The next begins: [[In other words,]] the labels include audio descriptions for visitors who cannot read the printed text.",
+      "questionText": "Which transition best indicates that the second paragraph introduces an additional way to improve access?",
+      "choices": [
+        "NO CHANGE",
+        "Moreover,",
+        "Conversely,",
+        "As a result,"
+      ],
+      "answer": 1,
+      "explanation": "Moreover adds a separate accessibility measure: audio descriptions, alongside shorter printed sentences. In other words would restate the same measure; conversely would reverse it; as a result would claim that shortening sentences caused audio to be added. The paragraph purposes are complementary rather than equivalent.",
+      "id": "transitions-transfer-02",
+      "category": "POW",
+      "difficulty": "hard"
     }
   ]
 }

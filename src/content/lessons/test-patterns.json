@@ -107,6 +107,27 @@
         }
       ],
       "tip": "Six pairs: make for, insight into, capable of, comply with, preoccupied with, different from. Say them until each sounds like one word."
+    },
+    {
+      "heading": "Advanced transfer: prove meaning before using a shortcut",
+      "body": [
+        "A strong final check names why the chosen option works and what specifically disqualifies the closest alternative. Length, sophistication, and answer patterns are clues, not proofs.",
+        "Read beyond the underline. A correct replacement can still duplicate an unchanged subject, lose a needed qualification, or fail a second requirement in the question. Test the exact span the interface will replace, including punctuation already outside it."
+      ],
+      "examples": [
+        {
+          "text": "Stem: 'The plan will help [[residents; it]] will cut fares.' Replacing the span with 'residents because it' makes one complete causal sentence.",
+          "label": "Only the marked words change; the following will is already supplied.",
+          "good": true
+        },
+        {
+          "text": "Replacing the same span with 'residents because it will'.",
+          "label": "The complete sentence would say it will will cut fares; a correct phrase alone can still fail its context.",
+          "good": false
+        }
+      ],
+      "tip": "Insert the exact words, reread the whole sentence, and explain the closest distractor’s error.",
+      "teachingRevision": 2
     }
   ],
   "check": [

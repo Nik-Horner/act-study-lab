@@ -160,7 +160,7 @@
         "topic": "math-algebra",
         "subject": "math",
         "category": "Equations and expressions",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "stem": "x² − 4x + c = 0 has exactly one real root.",
         "questionText": "What is c?",
         "choices": [
@@ -576,7 +576,7 @@
         "examples": [
           {
             "label": "Normalization",
-            "text": "A scientific-notation coefficient must be at least 1 and less than 10; changing it by a factor of 10 changes the exponent in the opposite direction.",
+            "text": "A scientific-notation coefficient must be at least 1 and less than 10 in absolute value; changing it by a factor of 10 changes the exponent in the opposite direction.",
             "good": true
           }
         ],
@@ -587,7 +587,8 @@
         "body": [
           "For a and b that are zero or positive, \\(\\sqrt a\\sqrt b=\\sqrt{ab}\\); with positive b, \\(\\frac{\\sqrt a}{\\sqrt b}=\\sqrt{\\frac ab}\\). Do not split a square root across addition or subtraction. Pull out square factors such as 4, 9, or 25 before combining matching roots. A square-root sign asks for the zero-or-positive answer: \\(\\sqrt{x^2}=|x|\\).",
           "Worked example: \\(\\sqrt{50}+\\sqrt{18}=5\\sqrt2+3\\sqrt2=8\\sqrt2\\). For \\(\\sqrt{9x^2}\\), the result is 3|x|, which becomes 3x only if x is known to be nonnegative. If x = −4, \\(\\sqrt{9x^2}=12\\), so writing 3x would incorrectly give −12. An even root of a negative real number is not real, while an odd root can be negative.",
-          "A fractional exponent uses its bottom number for the root and its top number for the power. For positive x, \\(x^{5/2}=(\\sqrt x)^5\\). If \\(x^{5/2}=32\\), raise both sides to \\(\\frac25\\), giving \\(x=4\\). Keep any rule that says x must be positive."
+          "A fractional exponent uses its bottom number for the root and its top number for the power. For positive x, \\(x^{5/2}=(\\sqrt x)^5\\). If \\(x^{5/2}=32\\), raise both sides to \\(\\frac25\\), giving \\(x=4\\). Keep any rule that says x must be positive.",
+          "A rational number can be written p/q for integers p,q with q≠0; its decimal terminates or repeats. Irrational numbers have nonrepeating, nonterminating decimals. Rational + irrational is irrational, but two irrationals can sum or multiply to a rational: √2+(−√2)=0 and √2·√2=2. For a positive integer to be a perfect square, every prime exponent must be even: 72=2³·3² is not a square, while 144=2⁴·3² is. These facts help prove a statement for every allowed number instead of relying on a decimal approximation."
         ],
         "tip": "Choose simple test values, including a negative one when allowed, to audit sign-sensitive radical identities.",
         "examples": [
@@ -609,7 +610,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "(1 − i)² = 1 − 2i + i² = −2i, while |1 − i|² = 2; these are different quantities.",
+            "text": "(2+i)²=4+4i+i²=3+4i, while |2+i|²=5. Squaring the complex number preserves an imaginary part; squaring its magnitude gives a nonnegative real number.",
             "good": true
           }
         ]
@@ -619,7 +620,8 @@
         "body": [
           "A matrix is a grid of numbers. Keep the multiplication order. If A is \\(m\\times n\\) and B is \\(n\\times p\\), AB is \\(m\\times p\\). For each answer entry, multiply matching numbers from a row of A and a column of B, then add. BA may differ or not exist. If asked for one entry, calculate only that row-column sum.",
           "Worked example: \\(\\begin{bmatrix}2 & 1\\\\0 & 3\\end{bmatrix}\\) times \\(\\begin{bmatrix}1 & 4\\\\2 & -1\\end{bmatrix}\\) has first row [2(1) + 1(2), 2(4) + 1(−1)] = [4, 7] and second row [0(1) + 3(2), 0(4) + 3(−1)] = [6, −3]. The result is \\(\\begin{bmatrix}4 & 7\\\\6 & -3\\end{bmatrix}\\). Entry-by-entry multiplication would give a different matrix.",
-          "An inverse undoes a matrix multiplication. A 2 × 2 matrix has one only when \\(ad-bc\\ne0\\). Its inverse is \\(\\frac1{ad-bc}\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}\\). For \\(\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}\\), determinant −2 gives inverse \\(\\begin{bmatrix}-2&1\\\\\\frac32&-\\frac12\\end{bmatrix}\\). Multiply to check that you get the identity matrix: 1s on its diagonal, 0s elsewhere. A zero determinant means one row carries no new information."
+          "An inverse undoes a matrix multiplication. A 2 × 2 matrix has one only when \\(ad-bc\\ne0\\). Its inverse is \\(\\frac1{ad-bc}\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}\\). For \\(\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}\\), determinant −2 gives inverse \\(\\begin{bmatrix}-2&1\\\\\\frac32&-\\frac12\\end{bmatrix}\\). Multiply to check that you get the identity matrix: 1s on its diagonal, 0s elsewhere. A zero determinant means one row carries no new information.",
+          "Matrix multiplication distributes over addition, but generally AB≠BA. Powers of a structured matrix can reveal a recurrence: if \\(C=\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}\\), then \\(C^2=\\begin{bmatrix}1&4\\\\0&1\\end{bmatrix}\\) and multiplying by C adds 2 to the upper-right entry each time. Thus \\(C^n=\\begin{bmatrix}1&2n\\\\0&1\\end{bmatrix}\\) for positive integer n. Verify the pattern by one more multiplication rather than powering each entry separately."
         ],
         "tip": "Check dimensions first; then keep minus signs inside parentheses when finding a determinant.",
         "examples": [
@@ -635,7 +637,7 @@
         "body": [
           "A term is one number in a sequence; a sum adds several numbers. The first-n arithmetic sum is \\(\\frac{n(a_1+a_n)}2\\). Multiply by the geometric ratio once for each jump between terms; adding forever gives a finite sum only when \\(|r|<1\\). List a few terms to check indexing.",
           "Worked example: an arithmetic sequence with first term 8 and ninth term 40 has average term 24, so its first-nine sum is 9(24) = 216. For geometric terms 12, 6, 3, the fourth is 1.5 and the infinite sum is \\(\\frac{12}{1-\\frac12}=24\\). A finite third-term value and an infinite-sum value use different formulas and answer different requests.",
-          "A remainder is what is left after whole-number division. Write \\(N=dk+r\\). If \\(N=5k+2\\), then \\(3N+4=15k+10\\), with remainder zero on division by 5. In scientific notation, handle the powers of 10 first. Then adjust the front number to be at least 1 and less than 10. Label the result’s units or type: scalar, vector, matrix, or magnitude.",
+          "A remainder is what is left after whole-number division. Write \\(N=dk+r\\). If \\(N=5k+2\\), then \\(3N+4=15k+10\\), with remainder zero on division by 5. In scientific notation, handle the powers of 10 first. Then adjust the front number to be at least 1 and less than 10 in absolute value. Label the result’s units or type: scalar, vector, matrix, or magnitude.",
           "For positive integers, prime factorization gives the greatest common factor by taking the smaller power of each shared prime, and the least common multiple by taking the larger power of every prime. Also \\(\\gcd(a,b)\\operatorname{lcm}(a,b)=ab\\). For 60 and 84 the GCF is 12 and LCM is 420. These identities require integer inputs; do not apply them as formulas for arbitrary real numbers."
         ],
         "tip": "A quick scale check can reject a misplaced power of 10 or an impossible negative magnitude.",
@@ -672,7 +674,7 @@
         "topic": "math-number-quantity",
         "subject": "math",
         "category": "Number and quantity",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "stem": "A = \\(\\begin{bmatrix}1 & 2\\\\0 & -1\\end{bmatrix}\\) and B = \\(\\begin{bmatrix}3 & 4\\\\5 & 6\\end{bmatrix}\\).",
         "questionText": "What is AB?",
         "choices": [
@@ -689,7 +691,7 @@
         "topic": "math-number-quantity",
         "subject": "math",
         "category": "Number and quantity",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "stem": "i² = −1.",
         "questionText": "What is (1 − i)⁴?",
         "choices": [
@@ -712,7 +714,8 @@
         "heading": "Ratios and percent bases",
         "body": [
           "A ratio a:b divides the total into a+b parts. A p% increase multiplies by \\(1+\\frac p{100}\\); a decrease by \\(1-\\frac p{100}\\). Name the starting amount the percentage applies to; this is the percent base.",
-          "Worked example: a 3:5 split of 72 gives 27 and 45. A $100 price increased by 10% and then decreased by 10% becomes 100(1.10)(0.90) = $99. The two percentages have different dollar bases and do not cancel."
+          "Worked example: a 3:5 split of 72 gives 27 and 45. A $100 price increased by 10% and then decreased by 10% becomes 100(1.10)(0.90) = $99. The two percentages have different dollar bases and do not cancel.",
+          "When a ratio changes after additions or removals, use a common multiplier for the original quantities. Original red:blue=3:4 means (3k,4k), not (3,4). Adding 6 reds and removing 4 blues to obtain ratio 1:1 gives 3k+6=4k−4, so k=10 and the original total is 70. Check the final counts 36 and 36; the common multiplier represents people or objects per ratio part."
         ],
         "tip": "When recovering an original price, divide by the retained fraction rather than subtracting the percent from the final price.",
         "examples": [
@@ -858,7 +861,7 @@
         "topic": "math-essential-skills",
         "subject": "math",
         "category": "Essential skills",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "stem": "A price rises from $60 to $75.",
         "questionText": "What is the percent increase?",
         "choices": [
@@ -897,7 +900,8 @@
         "body": [
           "Adding the same amount each step gives a straight-line, or linear, pattern. Multiplying by the same factor each step gives an exponential pattern, as with repeated percentage changes. In \\(P_0b^t\\), use \\(b=1+\\text{rate}\\) for growth and \\(b=1-\\text{rate}\\) for decay.",
           "Worked example: 500 growing by 8% per year becomes 500(1.08)ᵗ. If a quantity changes from 120 at t = 1 to 960 at t = 4, dividing gives b³ = 8, so b = 2 and P₀ = 60. A doubling time of d units gives P(t) = P₀2ᵗ⁄ᵈ.",
-          "Simple interest uses \\(A=P(1+rt)\\). Compounding n times per year uses \\(A=P(1+r/n)^{nt}\\), with annual decimal rate r and time t in years. A $500 balance at 6% compounded twice a year for 3 years is \\(500(1.03)^6\\), assuming no deposits or withdrawals. Half-life h gives \\(P(t)=P_0(1/2)^{t/h}\\), counting the number of half-lives."
+          "Simple interest uses \\(A=P(1+rt)\\). Compounding n times per year uses \\(A=P(1+r/n)^{nt}\\), with annual decimal rate r and time t in years. A $500 balance at 6% compounded twice a year for 3 years is \\(500(1.03)^6\\), assuming no deposits or withdrawals. Half-life h gives \\(P(t)=P_0(1/2)^{t/h}\\), counting the number of half-lives.",
+          "To compare two exponential models, divide them before solving a threshold. For A(t)=200(1.3)ᵗ and B(t)=300(1.1)ᵗ, A>B means (13/11)ᵗ>3/2. Taking logarithms gives t>ln(3/2)/ln(13/11)≈2.43, so the first whole period is 3. Check both adjacent periods in the original models; a strictly greater threshold can exclude equality."
         ],
         "tip": "The exponent counts periods. Make the time unit match the period named in the problem.",
         "examples": [
@@ -913,7 +917,8 @@
         "heading": "Optimize under limits",
         "body": [
           "A quadratic graph is a U-shaped curve. If it opens downward, its highest point occurs at \\(x=-\\frac b{2a}\\). When the goal and limits are straight-line equations, compare the corners of the allowed region and any endpoints. Use whole numbers when the objects cannot be split.",
-          "Worked example: profit P(q) = −q² + 16q − 20 = −(q − 8)² + 44 has maximum $44 at q = 8. If x + y ≤ 10 with x, y ≥ 0 and profit 3x + 2y, then 3x + 2y ≤ 3(x + y) ≤ 30, attained at x = 10, y = 0."
+          "Worked example: profit P(q) = −q² + 16q − 20 = −(q − 8)² + 44 has maximum $44 at q = 8. If x + y ≤ 10 with x, y ≥ 0 and profit 3x + 2y, then 3x + 2y ≤ 3(x + y) ≤ 30, attained at x = 10, y = 0.",
+          "For whole-number quantities, a fractional corner cannot be used directly. A rigorous shortcut is an upper bound on the objective, followed by an attainable integer pair. With x+y≤7, x,y≥0 and integer profit 2x+3y, the bound 3(x+y)≤21 is attained by (0,7). With multiple limits, combine nonnegative multiples of them to bound profit; never round coordinates independently without rechecking every limit."
         ],
         "tip": "An optimum must be feasible. Check every constraint and distinguish the maximizing input from the maximum output.",
         "examples": [
@@ -1031,7 +1036,7 @@
         "topic": "math-modeling",
         "subject": "math",
         "category": "Modeling",
-        "difficulty": "hard",
+        "difficulty": "medium",
         "stem": "A service charges $24 plus $7 per item. A customer has a $100 budget.",
         "questionText": "What is the greatest whole number of items affordable?",
         "choices": [

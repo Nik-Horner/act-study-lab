@@ -171,7 +171,7 @@
       "category": "POW",
       "difficulty": "medium",
       "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
-      "stem": "A paragraph explains how a suspension bridge stays up. The previous sentence says that cables carry the deck's weight to the towers. Underlined sentence: [[From the towers, that weight travels down into the deep anchorages set in the ground.]]",
+      "stem": "A paragraph explains how a suspension bridge stays up. The previous sentence says that cables carry the deck's weight to the towers. Underlined sentence: [[From the towers, that weight travels down through the tower supports into their foundations.]]",
       "choices": [
         "Kept, because it describes the color the bridge is usually painted.",
         "Kept, because it continues the explanation of how the bridge's load is carried to the ground.",
@@ -179,7 +179,7 @@
         "Deleted, because it simply restates that cables carry the deck's weight."
       ],
       "answer": 1,
-      "explanation": "The sentence follows the load from the towers down to the anchorages, advancing the explanation of how the bridge stays up, so it is kept. It says nothing about paint color, it stays on topic, and it adds the next stage of the load path rather than restating the cable sentence, so the other choices fail."
+      "explanation": "The sentence follows the load from the towers down through the supports to the foundations, advancing the explanation of how the bridge stays up, so it is kept. It says nothing about paint color, it stays on topic, and it adds the next stage of the load path rather than restating the cable sentence, so the other choices fail."
     },
     {
       "id": "add-delete-013",
@@ -199,7 +199,7 @@
     {
       "id": "add-delete-014",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
       "stem": "A paragraph argues that public murals strengthen neighborhood identity by reflecting local history. It has just described how a mural can depict a town's founding families. Sentence to add: [[Acrylic paint, the medium used in most outdoor murals, resists fading in sunlight better than oil paint does.]]",
       "choices": [
@@ -214,7 +214,7 @@
     {
       "id": "add-delete-015",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
       "stem": "A paragraph explains why coral reefs are dying: warming oceans cause corals to expel the microscopic algae that live inside them. The next sentence will describe the bleached, white appearance that results. Underlined sentence: [[Stripped of these algae, the coral loses both its main food source and its bright color.]]",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "add-delete-016",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
       "stem": "A paragraph explains how a hybrid car saves fuel: at low speeds it runs on an electric motor, and a gas engine takes over at highway speeds. The surrounding sentences focus on this switching between power sources. Underlined sentence: [[The first mass-produced hybrid went on sale in Japan in 1997.]]",
       "choices": [
@@ -439,7 +439,7 @@
     {
       "id": "add-delete-030",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "The writer is considering adding the following sentence to the paragraph. Should it be added?",
       "stem": "A paragraph argues that farmers markets strengthen local economies by keeping money within the community. It has just described how shoppers pay growers directly. Sentence to add: [[Canvas tote bags, the kind many shoppers carry to such markets, are usually made from cotton grown overseas.]]",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "add-delete-031",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
       "stem": "A paragraph explains why desert animals come out at night. The previous sentence states that the intense daytime heat would quickly dehydrate them. The next sentence will describe the prey these animals hunt after dark. Underlined sentence: [[In the cool night air, the animals can move and hunt while losing far less of their bodies' water.]]",
       "choices": [
@@ -469,7 +469,7 @@
     {
       "id": "add-delete-032",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
       "stem": "A paragraph explains how a thermostat keeps a room comfortable: a sensor reads the temperature, and when the air cools too far, the thermostat signals the heater to switch on. The surrounding sentences focus on this sensing-and-signaling cycle. Underlined sentence: [[The first electric room thermostat was patented in the United States in 1883.]]",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 3,
       "explanation": "The surrounding sentences explain the sensing-and-signaling cycle, so a historical note about an 1883 patent interrupts that explanation and should be deleted. It does not describe the sensor's reading or the signaling step, and it does not repeat the heater sentence, so the 'Kept' reasons and the other 'Deleted' reason all misstate its content."
+    },
+    {
+      "stem": "A paragraph explains why a town restored a footbridge rather than demolish it. The bridge is the only pedestrian route between a housing complex and a clinic. The paragraph later notes that many residents of the complex do not drive. Proposed addition after the route description: [[The next nearest crossing is four miles upstream.]]",
+      "questionText": "Should the writer add the sentence?",
+      "choices": [
+        "Yes, because it provides needed context for why losing this crossing would particularly burden the nondriving residents.",
+        "Yes, because it establishes that rebuilding the bridge cost less than demolition.",
+        "No, because any distance measurement interrupts an argument about public access.",
+        "No, because the sentence repeats the fact that residents do not drive."
+      ],
+      "answer": 0,
+      "explanation": "The four-mile alternative explains the practical cost of losing pedestrian access and anticipates why the later nondriving detail matters. It gives no construction-cost comparison and does not repeat the residents' transport habits. A distance is relevant when it helps explain the argument, not automatically a distraction.",
+      "id": "add-delete-transfer-01",
+      "category": "POW",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "A paragraph explains how a new archival enclosure slows damage by blocking ultraviolet light while allowing visible light through. It then reports less fading in stored fabric samples. Proposed insertion between the mechanism and the result: [[The enclosure was designed by a firm whose headquarters occupies a restored nineteenth-century mill.]]",
+      "questionText": "Should the writer add the sentence at this point?",
+      "choices": [
+        "Yes, because the reused mill provides evidence that the enclosure reduces fading.",
+        "Yes, because naming the designer's building explains the distinction between ultraviolet and visible light.",
+        "No, because the headquarters detail interrupts the mechanism-to-result explanation without helping readers understand either.",
+        "No, because any information about the enclosure's designer would contradict the reported result."
+      ],
+      "answer": 2,
+      "explanation": "The headquarters is related to the designer but does not explain the light-filtering mechanism or the fading result. The first two choices assign it evidentiary or definitional work it does not do. The final choice is too broad: a relevant designer detail could fit elsewhere and would not inherently contradict the finding.",
+      "id": "add-delete-transfer-02",
+      "category": "POW",
+      "difficulty": "hard"
     }
   ]
 }

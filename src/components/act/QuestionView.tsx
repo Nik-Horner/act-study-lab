@@ -4,6 +4,9 @@ import { useId, type Ref } from "react";
 import type { Question, Passage, Graph } from "@/lib/act/types";
 import { MathDiagram } from "./MathDiagram";
 import { MathText } from "../MathText";
+import Link from "next/link";
+import { questionMethod } from "@/lib/act/question-method";
+import { displayChoiceOrder } from "@/lib/act/choice-order";
 const letters = ["A", "B", "C", "D"];
 const colors = [
   "var(--color-brand)",
@@ -221,6 +224,8 @@ export function QuestionView({
   evidenceRef?: Ref<HTMLDivElement>;
   questionRef?: Ref<HTMLElement>;
 }) {
+  const method = revealed ? questionMethod(q) : null;
+  const choiceOrder = displayChoiceOrder(q);
   return (
     <div
       ref={evidenceRef}
@@ -272,7 +277,7 @@ export function QuestionView({
           role="group"
           aria-label="Answer choices"
         >
-          {q.choices.map((choice, i) => (
+          {choiceOrder.map((i, displayIndex) => (
             <div key={i} className="flex items-stretch gap-2">
               <button
                 className="choice"
@@ -284,14 +289,14 @@ export function QuestionView({
                 disabled={disabled || revealed || eliminated.includes(i)}
               >
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-current/25 text-xs font-semibold">
-                  {letters[i]}
+                  {letters[displayIndex]}
                 </span>
                 <span
                   className={
                     eliminated.includes(i) ? "line-through opacity-60" : ""
                   }
                 >
-                  <MathText>{choice}</MathText>
+                  <MathText>{q.choices[i]}</MathText>
                   {revealed && i === q.answer && (
                     <span className="ml-2 font-semibold">(correct)</span>
                   )}
@@ -304,7 +309,7 @@ export function QuestionView({
                 <button
                   className="min-h-11 min-w-11 rounded-lg border border-border px-2 py-3 text-sm hover:bg-bg-raised"
                   onClick={() => onEliminate(i)}
-                  aria-label={`${eliminated.includes(i) ? "Restore" : "Eliminate"} choice ${letters[i]}`}
+                  aria-label={`${eliminated.includes(i) ? "Restore" : "Eliminate"} choice ${letters[displayIndex]}`}
                   aria-pressed={eliminated.includes(i)}
                 >
                   <svg
@@ -324,11 +329,20 @@ export function QuestionView({
         </div>
         {revealed && (
           <AnswerFeedback
-            choices={q.choices}
-            answer={q.answer}
-            chosen={chosen}
+            choices={choiceOrder.map((i) => q.choices[i])}
+            answer={choiceOrder.indexOf(q.answer)}
+            chosen={chosen === null ? null : choiceOrder.indexOf(chosen)}
             explanation={q.explanation}
           />
+        )}
+        {method && (
+          <Link
+            href={method.href}
+            target="_blank"
+            className="mt-4 inline-flex min-h-11 items-center text-sm text-brand underline"
+          >
+            Review the method: {method.label}
+          </Link>
         )}
       </section>
     </div>

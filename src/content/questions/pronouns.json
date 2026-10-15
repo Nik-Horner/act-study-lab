@@ -214,7 +214,7 @@
     {
       "id": "pronouns-015",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The two finalists, Jordan and [[me]], will face off in Saturday's spelling bee.",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "pronouns-016",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "After the long season ended, Andre quietly thanked the coach [[who]] had believed in him.",
       "choices": [
@@ -469,7 +469,7 @@
     {
       "id": "pronouns-032",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice most clearly indicates who broke the school record?",
       "stem": "When Lena trained Priya for the relay, [[she]] broke the school record that spring.",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 3,
       "explanation": "'She' could mean Lena or Priya, so the name 'Priya' removes the ambiguity. 'Her' is objective and cannot be the subject of 'broke,' and 'this runner' stays unclear about which woman is meant."
+    },
+    {
+      "stem": "The analyst [[whom]] the review panel concluded had identified the error was invited to explain her method.",
+      "questionText": "Which choice gives the relative pronoun the case required by its own clause?",
+      "choices": [
+        "NO CHANGE",
+        "who",
+        "whose",
+        "her"
+      ],
+      "answer": 1,
+      "explanation": "Who is the subject of had identified: she had identified the error. The panel concluded is embedded reporting language and does not make the relative pronoun an object. Whom is an object form; whose is possessive; her cannot introduce this relative clause.",
+      "id": "pronouns-transfer-01",
+      "category": "CSE",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "A shipping label accompanies every crate of glass slides. Although several technicians inspect the slides before packing, each crate must retain [[their]] original label until the shipment arrives.",
+      "questionText": "Which choice agrees with the noun that owns the label?",
+      "choices": [
+        "NO CHANGE",
+        "it's",
+        "its",
+        "theirs"
+      ],
+      "answer": 2,
+      "explanation": "The label belongs to each crate, so the singular possessive its is needed. Technicians and slides are nearby plural nouns but do not own the crate's label. It's expands to it is or it has; theirs is a standalone possessive rather than a modifier before original label.",
+      "id": "pronouns-transfer-02",
+      "category": "CSE",
+      "difficulty": "hard"
     }
   ]
 }

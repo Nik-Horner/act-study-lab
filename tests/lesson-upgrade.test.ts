@@ -61,8 +61,8 @@ test("every non-English concept has an authored prediction, valid feedback, and 
 test("worked predictions use correct geometry, trig, weighting, and interpolation", () => {
   const answer = (slug: keyof typeof activities, i: number) =>
     activities[slug][i].choices[activities[slug][i].answer];
-  assert.equal(answer("math-geometry", 2), String(10 * 3 ** 3));
-  assert.equal(answer("math-geometry", 3), `${80 / 2}°`);
+  assert.equal(answer("math-geometry", 2), String(16 * 1.5 ** 3));
+  assert.equal(answer("math-geometry", 3), `${96 / 2}°`);
   assert.equal(answer("math-trigonometry", 2), String.raw`\(-\frac45\)`);
   assert.equal(
     answer("science-data-reading", 5),

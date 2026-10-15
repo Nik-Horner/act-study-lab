@@ -74,7 +74,28 @@
         "Compare the ideas, name their relationship, and eliminate choices with the wrong meaning. Then insert the remaining choice and check punctuation.",
         "Do not guess from answer patterns. Similar transitions may differ in nuance or syntax; confirm which one fits the whole passage."
       ],
-      "tip": "Synonyms cancel each other: two choices with the same meaning are both wrong. Eliminate them in one stroke."
+      "tip": "Similar transitions can differ in syntax, scope, and emphasis. Explain the relationship between the full ideas and test each candidate in context."
+    },
+    {
+      "heading": "Advanced transfer: identify the scope of the connection",
+      "body": [
+        "A transition can connect whole paragraph purposes rather than just neighboring nouns. Track whether the writer is extending evidence, conceding a limitation, or correcting an earlier inference.",
+        "Separate addition from restatement, and qualification from contradiction. In other words expresses the same idea again; moreover adds another point. Nevertheless concedes an obstacle without claiming that it caused the outcome."
+      ],
+      "examples": [
+        {
+          "text": "The scanner reduced handling of fragile pages. Nevertheless, librarians kept supervised access to the originals because some ink features were not visible digitally.",
+          "label": "Nevertheless introduces a limit to what scanning replaced while preserving its benefit.",
+          "good": true
+        },
+        {
+          "text": "The scanner reduced handling of fragile pages. In other words, librarians kept supervised access to the originals.",
+          "label": "The access policy is a new qualified consequence, not a restatement of reduced handling.",
+          "good": false
+        }
+      ],
+      "tip": "Summarize the larger claim on each side and decide whether the second extends, reformulates, limits, or reverses it.",
+      "teachingRevision": 2
     }
   ],
   "check": [

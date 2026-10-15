@@ -82,12 +82,7 @@ test("daily math drills include the specific method their questions require", ()
       /concentric circles/,
       /\\pi R\^2-\\pi r\^2/,
     ],
-    [
-      "math-algebra",
-      "math-algebra-d18",
-      /absolute-value inequality/,
-      /-a<u<a/,
-    ],
+    ["math-algebra", "math-algebra-d18", /absolute-value inequality/, /-a<u<a/],
     [
       "math-algebra",
       "math-algebra-d14",
@@ -187,10 +182,17 @@ test("returning after several days resumes saved math without replacing answers 
     answers,
     lessons,
   );
-  assert.equal(resumed.kind, "drill");
-  assert(resumed.kind === "drill");
-  assert.notEqual(resumed.question.id, question.id);
-  assert.equal(resumed.block.subject, "math");
+  if (unit.questions.length > 1) {
+    assert.equal(resumed.kind, "drill");
+    assert(resumed.kind === "drill");
+    assert.notEqual(resumed.question.id, question.id);
+    assert.equal(resumed.block.subject, "math");
+  } else {
+    // Longer corrected teaching can leave room for one application in this unit.
+    assert.equal(resumed.kind, "lesson");
+    assert(resumed.kind === "lesson");
+    assert.notEqual(resumed.unit.id, unit.id);
+  }
 });
 
 test("old trig and probability drills teach missing prerequisites without changing saved question IDs", () => {

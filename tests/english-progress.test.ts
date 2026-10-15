@@ -98,3 +98,57 @@ test("unreadable English history cannot become successful empty progress", () =>
       /could not be read/,
     );
 });
+
+test("English remembers unique practiced IDs from immutable answers and legacy misses", () => {
+  const result = englishProgress(
+    userId,
+    [baseline],
+    [legacyMiss],
+    [answer(second), answer(second, true, 2)],
+  );
+  assert.deepEqual(result.answeredQuestionIds, [question.id, second.id]);
+  assert.equal(
+    result.progress[0].attempts,
+    12,
+    "Duplicate question practice still preserves historical totals",
+  );
+});
+
+test("daily English answers deprioritize repeats without changing standalone progress or targeted misses", () => {
+  const id = randomUUID();
+  const daily = {
+    id,
+    completed_at: "2026-10-14T12:00:00.000Z",
+    answers: {
+      kind: "answer",
+      event: { id, questionId: second.id, chosen: second.answer },
+    },
+  };
+  const result = englishProgress(userId, [baseline], [legacyMiss], [], [daily]);
+  assert.deepEqual(result.answeredQuestionIds, [question.id, second.id]);
+  assert.equal(result.progress[0].attempts, 10);
+  assert.deepEqual(result.misses, [legacyMiss]);
+  assert.throws(
+    () =>
+      englishProgress(
+        userId,
+        [],
+        [],
+        [],
+        [
+          {
+            ...daily,
+            answers: {
+              kind: "answer",
+              event: {
+                id: randomUUID(),
+                questionId: second.id,
+                chosen: second.answer,
+              },
+            },
+          },
+        ],
+      ),
+    /daily English answer history could not be read/,
+  );
+});

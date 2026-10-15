@@ -44,7 +44,7 @@
         "historic"
       ],
       "answer": 3,
-      "explanation": "'Historic' means momentous, which fits a region-changing eruption. 'Historical' means belonging to the past, which cannot describe an eruption from only last month, and 'history' and 'historian' are nouns, not adjectives."
+      "explanation": "'Historic' specifically emphasizes importance, matching an eruption that changed scientific understanding. 'Historical' can describe a past event, including a recent one, but does not itself convey the importance requested here. 'History' and 'historian' are nouns that cannot fill this adjective slot."
     },
     {
       "id": "word-choice-004",
@@ -214,7 +214,7 @@
     {
       "id": "word-choice-015",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice is the most precise and idiomatic in context?",
       "stem": "The senator gave a [[verbose]] reply that answered the entire question in a single sentence.",
       "choices": [
@@ -224,12 +224,12 @@
         "rambling"
       ],
       "answer": 2,
-      "explanation": "'Succinct' means briefly and clearly expressed, fitting an answer of one sentence. 'Verbose,' 'lengthy,' and 'rambling' all describe wordy speech, contradicting 'a single sentence.'"
+      "explanation": "'Succinct' expresses a brief, clear reply, which matches a complete answer delivered in one sentence. 'Verbose,' 'lengthy,' and 'rambling' emphasize excess words and do not fit the intended compact response. A single sentence can itself be long, so sentence count alone is a clue rather than a definition of concision."
     },
     {
       "id": "word-choice-016",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice is the most precise and idiomatic in context?",
       "stem": "The engineer devised an [[ingenuous]] solution that cooled the entire building using only seawater.",
       "choices": [
@@ -246,15 +246,15 @@
       "category": "KLA",
       "difficulty": "easy",
       "questionText": "Which choice is the most precise and idiomatic in context?",
-      "stem": "The hikers had to [[accept]] the weather forecast and turn back before the storm hit.",
+      "stem": "The hikers had to [[accept]] the forecast as reliable and turn back before the storm hit.",
       "choices": [
         "NO CHANGE",
-        "access",
-        "expect",
+        "accepting",
+        "accepted",
         "except"
       ],
       "answer": 0,
-      "explanation": "'Accept' means to receive or agree to, which fits taking the forecast as true. 'Except' means excluding, 'expect' means to anticipate, and 'access' means to reach or enter, none of which fit acting on a forecast."
+      "explanation": "'Accept the forecast as reliable' means take its warning as true. After 'had to,' the base verb 'accept' is required; 'accepting' and 'accepted' do not fit. 'Except' means exclude, which conflicts with trusting the forecast and acting on its warning."
     },
     {
       "id": "word-choice-018",
@@ -454,7 +454,7 @@
     {
       "id": "word-choice-031",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice is the most precise and idiomatic in context?",
       "stem": "Years of drought had left the soil so [[barren]] that not even hardy weeds would grow.",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 1,
       "explanation": "'Credible' means believable, which fits an account the jurors believed. 'Credulous' means too ready to believe others, 'credence' is a noun meaning acceptance and cannot modify 'account,' and 'incredulous' means unwilling to believe."
+    },
+    {
+      "stem": "Only twelve participants completed the pilot study, and no comparison group was used. The researchers therefore called their conclusions [[definitive]] and planned a larger controlled trial.",
+      "questionText": "Which word best preserves the limitation expressed in the paragraph?",
+      "choices": [
+        "NO CHANGE",
+        "tentative",
+        "irrelevant",
+        "fabricated"
+      ],
+      "answer": 1,
+      "explanation": "Tentative means provisional and fits conclusions awaiting a larger controlled trial. Definitive removes the uncertainty; irrelevant says the findings do not concern the question; fabricated accuses researchers of inventing results. The design limits certainty without proving either irrelevance or dishonesty.",
+      "id": "word-choice-transfer-01",
+      "category": "KLA",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "The agreement allowed the archive to keep the collection only if it maintained specified humidity levels. The donation was therefore [[contingent on]] meeting those conditions.",
+      "questionText": "Which choice most precisely expresses the relationship established by the first sentence?",
+      "choices": [
+        "NO CHANGE",
+        "indifferent to",
+        "evidence against",
+        "a substitute for"
+      ],
+      "answer": 0,
+      "explanation": "Contingent on means dependent on a condition, matching only if. Indifferent to removes the requirement; evidence against turns the condition into a counterargument; a substitute for suggests that the donation replaces the maintenance duty. None preserves the stated conditional agreement.",
+      "id": "word-choice-transfer-02",
+      "category": "KLA",
+      "difficulty": "hard"
     }
   ]
 }

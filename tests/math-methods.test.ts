@@ -26,7 +26,7 @@ test("all eight math topics have formula, condition, and worked-example referenc
     group.items.map((item) => `${group.topic}:${item.id}`),
   );
   assert.equal(new Set(ids).size, ids.length);
-  assert.equal(ids.length, 71);
+  assert.equal(ids.length, 75);
   for (const group of reference) {
     assert(activeLessons.has(group.topic));
     for (const item of group.items) {
@@ -78,7 +78,7 @@ test("all eight math topics have formula, condition, and worked-example referenc
 });
 
 test("added practice is independent, has plausible distinct choices, and names its taught sections", () => {
-  assert.equal(methods.length, 32);
+  assert.equal(methods.length, 48);
   assert.equal(new Set(methods.map((q) => q.id)).size, methods.length);
   const originalIds = new Set(allOriginal.map((q) => q.id));
   const task = (q: { stem: string; questionText: string }) =>
@@ -86,7 +86,7 @@ test("added practice is independent, has plausible distinct choices, and names i
   const existing = new Set(allOriginal.map(task));
   const tasks = new Set<string>();
   for (const group of reference)
-    assert.equal(methods.filter((q) => q.topic === group.topic).length, 4);
+    assert.equal(methods.filter((q) => q.topic === group.topic).length, 6);
   for (const q of methods) {
     assert(!originalIds.has(q.id));
     assert(!existing.has(task(q)), `${q.id}: do not copy an existing task`);
@@ -108,7 +108,7 @@ test("added practice is independent, has plausible distinct choices, and names i
   }
 });
 
-test("all 32 new answer keys have independent arithmetic or solution-set checks", () => {
+test("all 48 method answer keys have independent arithmetic or solution-set checks", () => {
   const proofs: Record<string, [string, () => void]> = {
     "math-algebra-m1": [
       String.raw`\(-1\pm\sqrt7\)`,
@@ -348,6 +348,216 @@ test("all 32 new answer keys have independent arithmetic or solution-set checks"
           ),
           -2,
         ),
+    ],
+    "math-algebra-m5": [
+      "28",
+      () => {
+        const sums = [];
+        for (let a = 1; a * a < 12; a++)
+          if (12 % a === 0) sums.push(a + 12 / a);
+        assert.deepEqual(sums, [13, 8, 7]);
+        assert.equal(
+          sums.reduce((a, b) => a + b),
+          28,
+        );
+      },
+    ],
+    "math-algebra-m6": [
+      String.raw`\(-3\le x<-2\)`,
+      () => {
+        for (const x of [-9, -3.01, -3, -2.5, -2.01, -2, 0, 2.99, 3, 3.01, 10])
+          assert.equal(
+            x !== -2 && x !== 3 && (x * x - 9) / (x * x - x - 6) <= 0,
+            x >= -3 && x < -2,
+          );
+      },
+    ],
+    "math-functions-m5": [
+      "(5/2,2)",
+      () => {
+        const f = (x: number) => ((x - 1) * (x - 7)) / 3;
+        close(f(4), -3);
+        close(f(2 * (5 / 2) - 1) + 5, 2);
+        for (const x of [-10, 0, 2, 3, 8]) assert(f(2 * x - 1) + 5 >= 2);
+      },
+    ],
+    "math-functions-m6": [
+      "3",
+      () => {
+        let term = 1;
+        const terms = [];
+        for (let next = 1; next <= 3; next++) {
+          term = term ** 2 - 2 * next;
+          terms.push(term);
+        }
+        assert.deepEqual(terms, [-1, -3, 3]);
+      },
+    ],
+    "math-geometry-m5": [
+      "160",
+      () => {
+        const halfChord = 8;
+        const chordOffset = Math.sqrt(10 ** 2 - halfChord ** 2);
+        // Coordinates A=(6,8), B=(6,-8), P=(26,0); use a determinant.
+        close(Math.abs((6 - 26) * (-8 - 0) - (6 - 26) * (8 - 0)) / 2, 160);
+        close(chordOffset, 6);
+      },
+    ],
+    "math-geometry-m6": [
+      "2/5",
+      () => {
+        const c = Math.hypot(12, 9);
+        const area = (12 * 9) / 2;
+        const r = area / ((12 + 9 + c) / 2);
+        close(r / (c / 2), 2 / 5);
+      },
+    ],
+    "math-trigonometry-m5": [
+      String.raw`\(2\pi/9\)`,
+      () => {
+        const amplitude = (8 - -4) / 2;
+        const midline = (8 + -4) / 2;
+        const inputScale = (2 * Math.PI) / ((2 * Math.PI) / 3);
+        close(
+          Math.acos((-1 - midline) / amplitude) / inputScale,
+          (2 * Math.PI) / 9,
+        );
+        close(
+          amplitude * Math.cos(inputScale * ((2 * Math.PI) / 9)) + midline,
+          -1,
+        );
+      },
+    ],
+    "math-trigonometry-m6": [
+      "17/9",
+      () => {
+        const angles = [
+          Math.PI / 4 + Math.asin(1 / (3 * Math.SQRT2)),
+          Math.PI / 4 + Math.PI - Math.asin(1 / (3 * Math.SQRT2)),
+        ];
+        for (const theta of angles) {
+          close(Math.sin(theta) - Math.cos(theta), 1 / 3);
+          close((Math.sin(theta) + Math.cos(theta)) ** 2, 17 / 9);
+        }
+      },
+    ],
+    "math-statistics-probability-m5": [
+      "5/18",
+      () => {
+        const k = (4 * 5 - (3 * 4 + 2 * 8)) / (2 - 4);
+        assert.equal(k, 4);
+        const values = [2, 2, 2, 2, 4, 4, 4, 8, 8];
+        let same = 0,
+          count = 0;
+        values.forEach((a, i) =>
+          values.slice(i + 1).forEach((b) => {
+            count++;
+            if (a === b) same++;
+          }),
+        );
+        close(same / count, 5 / 18);
+      },
+    ],
+    "math-statistics-probability-m6": [
+      "$0.00",
+      () => {
+        const colors = ["r", "r", "r", "b", "b"];
+        const payouts = colors.flatMap((a, i) =>
+          colors.slice(i + 1).map((b) => (a === b ? 6 : 1) - 3),
+        );
+        close(payouts.reduce((a, b) => a + b) / payouts.length, 0);
+      },
+    ],
+    "math-number-quantity-m5": [
+      "41",
+      () => {
+        let matrix = [
+          [1, 0],
+          [0, 1],
+        ];
+        for (let exponent = 1; exponent <= 39; exponent++) {
+          const [[a, b], [c, d]] = matrix;
+          matrix = [
+            [a, a + b],
+            [c, c + d],
+          ];
+          if (exponent === 37)
+            assert.deepEqual(matrix, [
+              [1, 37],
+              [0, 1],
+            ]);
+        }
+        assert.equal(
+          matrix.flat().reduce((a, b) => a + b),
+          41,
+        );
+      },
+    ],
+    "math-number-quantity-m6": [
+      "No such positive integer exists",
+      () => {
+        const exponentOfTwo = (n: number) => {
+          let power = 0;
+          while (n % 2 === 0) {
+            n /= 2;
+            power++;
+          }
+          return power;
+        };
+        assert.equal(exponentOfTwo(12) % 2, 0);
+        assert.equal(exponentOfTwo(18) % 2, 1);
+        // Every positive integer n has either an even or odd 2-adic exponent.
+        for (const parity of [0, 1])
+          assert(
+            !(
+              (exponentOfTwo(12) + parity) % 2 === 0 &&
+              (exponentOfTwo(18) + parity) % 2 === 0
+            ),
+          );
+      },
+    ],
+    "math-essential-skills-m5": [
+      "50",
+      () => {
+        const k = (3 * 12 + 4 * 6) / (4 * 3 - 3 * 2);
+        close(k, 10);
+        close((2 * k + 12) / (3 * k - 6), 4 / 3);
+        close(5 * k, 50);
+      },
+    ],
+    "math-essential-skills-m6": [
+      "$792.00",
+      () => {
+        const needed = (6 * 15) / (30 / 100) ** 2;
+        const packs = Math.ceil((needed * 1.08) / 25);
+        assert.equal(packs, 44);
+        assert(43 * 25 < needed * 1.08);
+        close(18 * packs, 792);
+      },
+    ],
+    "math-modeling-m5": [
+      "$50",
+      () => {
+        let best = 0;
+        for (let x = 0; x <= 17; x++)
+          for (let y = 0; y <= 17; y++)
+            if (2 * x + y <= 17 && x + 2 * y <= 17)
+              best = Math.max(best, 5 * x + 4 * y);
+        assert.equal(best, 50);
+      },
+    ],
+    "math-modeling-m6": [
+      "5",
+      () => {
+        assert.equal(
+          Array.from({ length: 21 }, (_, t) => t).find(
+            (t) => 400 * 1.2 ** t > 600 * 1.1 ** t,
+          ),
+          5,
+        );
+        const crossing = Math.log(1.5) / Math.log(12 / 11);
+        assert(crossing > 4 && crossing < 5);
+      },
     ],
   };
   assert.equal(Object.keys(proofs).length, methods.length);
