@@ -1,6 +1,6 @@
 import type { Question, Subject } from "./types";
 import { subjectBaseline, type StudyState } from "./progress-model";
-import { QUESTION_TARGET_SECONDS } from "../question-pacing";
+import { answerPacing } from "../question-pacing";
 import { exposureRank, seenPassages } from "./question-exposure";
 
 export function practiceStage(
@@ -26,7 +26,7 @@ export function practiceStage(
       latest.get(a.questionId)?.chosen === bank.get(a.questionId)!.answer &&
       a.confidence !== "low" &&
       a.elapsedMs > 0 &&
-      a.elapsedMs <= QUESTION_TARGET_SECONDS[subject] * 1000,
+      answerPacing(a.elapsedMs, subject).onPace,
   ).length;
   const baseline = subjectBaseline(state.profile, subject);
   if (baseline === null && recent.length < 6) return "Diagnostic";

@@ -9,6 +9,10 @@ import baseLessons from "../src/content/math-lessons.json";
 import replacements from "../src/content/math-extra-lessons.json";
 import reference from "../src/content/math-reference.json";
 import activities from "../src/content/lesson-activities.json";
+import skills from "../src/content/math-skill-lessons.json";
+import skillQuestions from "../src/content/math-skill-questions.json";
+import formulaCards from "../src/content/math-formula-cards.json";
+import { renderMathText } from "../src/lib/math-text";
 import { MathDiagram } from "../src/components/act/MathDiagram";
 
 const lessons = new Map(
@@ -142,4 +146,75 @@ test("Math formative activities have current solution reviews and usable diagram
       if (2 * x + y <= 11 && x + 2 * y <= 11)
         best = Math.max(best, 3 * x + 2 * y);
   assert.equal(best, 18);
+});
+
+test("Math feedback names expressions instead of positions that can be shuffled", () => {
+  const feedback = [
+    ...questions,
+    ...skillQuestions,
+    ...skills.map((skill) => ({
+      id: skill.id,
+      explanation: skill.section.activity.explanation,
+    })),
+  ];
+  for (const item of feedback)
+    assert.doesNotMatch(
+      item.explanation,
+      /\b(first|second|third|fourth|last|final)(?: and (?:first|second|third|fourth))? (?:choice|option|expression)s?\b/i,
+      item.id,
+    );
+});
+
+test("reviewed formulas keep whole denominators and time ratios inside the exponent", () => {
+  const units = lessons
+    .get("math-essential-skills")!
+    .sections[1].body.join(" ");
+  assert(units.includes(String.raw`\frac{1000\text{ m}}{1\text{ km}}`));
+  assert(units.includes(String.raw`\frac{1\text{ h}}{3600\text{ s}}`));
+  assert.equal((90 * 1000) / 3600, 25);
+  const doubling = lessons.get("math-modeling")!.sections[1].body.join(" ");
+  assert(doubling.includes(String.raw`2^{t/d}`));
+  assert.equal(80 * 2 ** (9 / 3), 640);
+  const pattern = skills.find(
+    (skill) => skill.id === "math-functions-model-patterns",
+  )!;
+  assert(
+    pattern.section.body.join(" ").includes(String.raw`\frac{f(v)}{f(u)}`),
+  );
+  const slope = reference
+    .find((group) => group.topic === "math-geometry")!
+    .items.find((item) => item.id === "lineforms")!;
+  assert(slope.when.includes(String.raw`\frac{\Delta y}{\Delta x}`));
+  for (const card of formulaCards) {
+    assert.doesNotMatch(
+      renderMathText(`\\(${card.formula}\\)`),
+      /katex-error/,
+      card.id,
+    );
+    assert.doesNotMatch(renderMathText(card.note), /katex-error/, card.id);
+  }
+});
+
+test("worked probability and angle-bisector examples describe possible situations", () => {
+  const example = reference
+    .find((group) => group.topic === "math-geometry")!
+    .items.find((item) => item.id === "heron")!.example;
+  const [, ...values] = example.match(
+    /bisector between sides (\d+) and (\d+) splits an opposite side of (\d+) into (\d+) and (\d+)/,
+  )!;
+  const [a, b, base, left, right] = values.map(Number);
+  assert(Math.abs(a - b) < base && base < a + b);
+  assert.equal(left + right, base);
+  assert.equal(left / right, a / b);
+  const probability = skills.find(
+    (skill) => skill.id === "math-statistics-probability-independence",
+  )!.section.examples[0].text;
+  const [, pA, pB, intersection] = probability.match(
+    /let \\\(P\(A\)=([\d.]+)\\\), \\\(P\(B\)=([\d.]+)\\\), and \\\(P\(A\\cap B\)=([\d.]+)\\\)/,
+  )!;
+  const [aChance, bChance, overlap] = [pA, pB, intersection].map(Number);
+  assert(overlap >= Math.max(0, aChance + bChance - 1));
+  assert(overlap <= Math.min(aChance, bChance));
+  assert.equal(overlap, 0);
+  assert.notEqual(overlap, aChance * bChance);
 });

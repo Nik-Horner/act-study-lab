@@ -25,5 +25,9 @@ test("feedback preserves the saved duration and marks answers above target as sl
   });
   assert.equal(answerPacing(68000, "math").onPace, false);
   assert.equal(answerPacing(60000, "science").onPace, true);
-  assert.equal(answerPacing(68000, "reading").onPace, false);
+  assert.deepEqual(answerPacing(90000, "reading"), {
+    seconds: 90,
+    target: null,
+    onPace: true,
+  });
 });

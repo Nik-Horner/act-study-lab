@@ -269,7 +269,7 @@
       "\\(3x^{4} - 2x^{2} + 7\\)"
     ],
     "answer": 3,
-    "explanation": "An even function satisfies \\(f(-x)=f(x)\\). The final choice, \\(3x^4-2x^2+7\\), has only even powers and a constant, so each term is unchanged under \\(x\\to -x\\). The third choice, \\(x^3-x\\), is odd: its entire output changes sign. The first and second choices are neither even nor odd; their mixed terms break both symmetry conditions."
+    "explanation": "An even function satisfies \\(f(-x)=f(x)\\). The expression \\(3x^4-2x^2+7\\) has only even powers and a constant, so each term is unchanged under \\(x\\to -x\\). The expression \\(x^3-x\\) is odd: its entire output changes sign. The expressions \\(3x^3-2x+7\\) and \\(x^2+x\\) are neither even nor odd; their mixed terms break both symmetry conditions."
   },
   {
     "id": "math-functions-d23",

@@ -3,7 +3,7 @@ import { AnswerFeedback } from "./AnswerFeedback";
 import { useEffect, useRef, useState } from "react";
 import type { DailyQuestion } from "@/lib/daily-plan";
 import type { Question } from "@/lib/act/types";
-import { QUESTION_TARGET_SECONDS, answerPacing } from "@/lib/question-pacing";
+import { answerPacing } from "@/lib/question-pacing";
 import { renderStem, fmtTime } from "@/lib/format";
 import { QuestionView } from "./act/QuestionView";
 import { displayChoiceOrder } from "@/lib/act/choice-order";
@@ -43,7 +43,7 @@ export function DailyDrill({
     [failed, setFailed] = useState(false);
   const guard = useRef(false);
   const navigation = useQuestionNavigation(q as Question);
-  const target = QUESTION_TARGET_SECONDS[q.subject];
+  const target = answerPacing(0, q.subject).target;
   const elapsedMs = revealed
     ? savedTime
     : (selection?.elapsedMs ?? now - start);
@@ -118,12 +118,12 @@ export function DailyDrill({
         </div>
         <div className="flex flex-wrap items-center gap-4 text-sm">
           <span
-            className={`rounded-full border border-border px-3 py-2 tabular-nums ${(pace?.seconds ?? 0) > target ? "text-warn" : "text-ink-soft"}`}
+            className={`rounded-full border border-border px-3 py-2 tabular-nums ${pace && !pace.onPace ? "text-warn" : "text-ink-soft"}`}
           >
             {elapsedMs === undefined
               ? "Time unavailable"
               : fmtTime(Math.floor(elapsedMs / 1000))}{" "}
-            · target {target}s
+            {target === null ? "· learning time" : `· target ${target}s`}
           </span>
         </div>
       </div>
@@ -181,7 +181,7 @@ export function DailyDrill({
           />
         </Card>
       )}
-      {revealed && pace && (
+      {revealed && pace && pace.target !== null && (
         <p className={`text-sm ${pace.onPace ? "text-good" : "text-warn"}`}>
           {pace.seconds}s — {pace.onPace ? "on pace" : "a little slow"} (target{" "}
           {pace.target}s)
@@ -189,8 +189,7 @@ export function DailyDrill({
       )}
       {q.subject === "reading" && (
         <p className="text-xs text-ink-soft">
-          Reading’s target includes time spent reading the passage. Learn
-          accurately first; use pacing to guide timed practice.
+          Find the proof first. Practice speed in a timed Reading section.
         </p>
       )}
       {saving && (

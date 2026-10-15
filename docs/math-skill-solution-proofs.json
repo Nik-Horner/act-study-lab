@@ -270,7 +270,7 @@
       "expected": 20,
       "workedSolution": "An exponential function has \\(f \\left(1\\right)=21\\) and \\(f \\left(3\\right)=189\\). The ratio 9 spans two steps, so \\(b^{2}=9\\) and \\(b=3\\); the initial coefficient is \\(a=7\\). In a quadratic table 1, 5, 13, 25 at inputs 0, 1, 2, 3, differences 4, 8, 12 have constant difference 4, so the next output is \\(25+16=41\\).",
       "activityAnswerIndex": 0,
-      "sourceSha256": "5f897754451c1f091bf87d8c9e9c78a0103a3ddf3dc664341c7c012e3a3c26de",
+      "sourceSha256": "3d7cf0968b1ee7ea655aed50725a96bb8188eb1e0535d32040eaeb7d519c8b95",
       "proofType": "calculation"
     },
     {
@@ -439,7 +439,7 @@
       "expected": 36,
       "workedSolution": "For a sphere with diameter 10, the radius is 5. Surface area is \\(4 \\pi \\cdot 25=100 \\pi\\) square units, while volume is \\(\\frac{500 \\pi }{3}\\) cubic units. Using 10 as the radius would quadruple the surface area because radius is squared.",
       "activityAnswerIndex": 2,
-      "sourceSha256": "6e28f270724e9dce3badfa0e878910589157c788989934f3ad2171ee6ccc67ea",
+      "sourceSha256": "81dbe2beb723d3e3f3df27a18192167cfc87b9d23811462e6fa8bfce559aa8a3",
       "proofType": "calculation"
     },
     {
@@ -773,9 +773,9 @@
       "activityAnswer": "Independent, not disjoint",
       "calculation": ".2*.5",
       "expected": 0.1,
-      "workedSolution": "If \\(P \\left(A\\right)=0.5\\), \\(P \\left(B\\right)=0.6\\) and intersection 0.3, the product matches 0.3, so the events are independent. Their intersection is positive, so they are not disjoint. If the intersection were 0 instead, they would be disjoint but dependent because \\(0\\ne 0.5\\cdot 0.6\\).",
+      "workedSolution": "If \\(P \\left(A\\right)=0.5\\), \\(P \\left(B\\right)=0.6\\) and intersection 0.3, the product matches 0.3, so the events are independent. Their intersection is positive, so they are not disjoint. For a separate example, let \\(P(A)=0.2\\), \\(P(B)=0.5\\), and \\(P(A\\cap B)=0\\). These events are disjoint but dependent because \\(0\\ne 0.2\\cdot 0.5\\). Their union is 0.7, a valid probability.",
       "activityAnswerIndex": 1,
-      "sourceSha256": "0a52235e65afb3282f541b96b11a4249667a5d1b57f6ccd3f7619e4443534f32",
+      "sourceSha256": "492b23112b9ea85059df66cec4293737a667839871ce37e5aa7ae18724a3294b",
       "proofType": "calculation"
     },
     {
@@ -878,7 +878,7 @@
       ],
       "workedSolution": "\\(\\left(2+3 i\\right) \\left(4-i\\right)=8-2 i+12 i-3 i^{2}=11+10 i\\). Also, \\(\\left(3-2 i\\right)^{2}=9-12 i+4 i^{2}=5-12 i\\). The real correction has a minus sign because \\(i^{2}=-1\\); an algebraic square can remain complex even though a magnitude is real.",
       "activityAnswerIndex": 2,
-      "sourceSha256": "39541d5efbe5ab2f9e9e62e3ebd7d362815d8766c1de9e6774047ab41251660d",
+      "sourceSha256": "5ae48d18bbb40876bb211d3622155f2fd98e65e7061b60072430418251a6b053",
       "proofType": "calculation"
     },
     {
@@ -1060,7 +1060,7 @@
       ],
       "workedSolution": "Rotating \\(\\left(3,-5\\right) 90^\\circ\\) counterclockwise gives(5, 3). Both points have squared radius 34. A clockwise turn would give(−5, −3), while changing both signs produces \\(a 180^\\circ\\) turn to(−3, 5). These operations are distinct despite all preserving distance from the origin.",
       "activityAnswerIndex": 2,
-      "sourceSha256": "1cccb1235362f6af05dc9585cd3977600970e9fdb12d7e7bd93594ced7bf9543",
+      "sourceSha256": "079f3be1c7098fdc7fb33bf8c1312609f00ba65efe484a6f5f350022e01a7390",
       "proofType": "calculation"
     },
     {
@@ -1393,7 +1393,7 @@
       ],
       "workedSolution": "For odd \\(a=2 u+1\\) and odd \\(b=2 v+1\\), their sum is 2(u+v+1), which is even. Their product is 2(2 uv+u+v)+1, which is odd. Also \\(n^{2}+n=n \\left(n+1\\right)\\) is always even because one consecutive factor is divisible by 2.",
       "activityAnswerIndex": 1,
-      "sourceSha256": "7308c06232040d4132ca58b04598af22aced6800824ba4f954ba43ab5bbeec37",
+      "sourceSha256": "cf83accea8a8ab767d1803c8d1bb5857356670e1f6dd945270231c5201356327",
       "proofType": "calculation"
     },
     {

@@ -19,9 +19,10 @@ import { getQuestionTeaching, mathSkills } from "../learning-skills";
 import scienceQuestions from "@/content/science-questions.json";
 import mathExams from "@/content/math-exams.json";
 import scienceExams from "@/content/science-exams.json";
-import type { Subject, Topic, Lesson, Question, Exam } from "./types";
+import type { Subject, Topic, Lesson, Question, Exam, Passage } from "./types";
 export type * from "./types";
 const topics = [...mathTopics, ...scienceTopics, ...readingTopics] as Topic[];
+const teachingPassages = scienceTeaching as Passage[];
 const replacementSlugs = new Set(mathExtraLessons.map((lesson) => lesson.slug));
 const lessons = [
   ...mathLessons.filter((lesson) => !replacementSlugs.has(lesson.slug)),
@@ -67,7 +68,7 @@ export function getTopics(subject?: Subject) {
 export function getTopic(slug: string) {
   return topics.find((t) => t.slug === slug);
 }
-export function getLesson(slug: string) {
+export function getLesson(slug: string): Lesson {
   const lesson = lessons.find((l) => l.slug === slug);
   if (!lesson) throw new Error("Unknown lesson");
   return {
@@ -83,7 +84,7 @@ export function getLesson(slug: string) {
         )[slug]?.[index],
         evidence: (section.evidenceIds ?? []).map((id) => {
           const passage =
-            scienceTeaching.find((p) => p.id === id) ??
+            teachingPassages.find((p) => p.id === id) ??
             questions.find((q) => !reserved.has(q.id) && q.passage?.id === id)
               ?.passage;
           if (!passage) throw new Error(`Missing lesson evidence: ${id}`);

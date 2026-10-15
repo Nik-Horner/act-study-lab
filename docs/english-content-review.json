@@ -6057,8 +6057,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "if",
-      "rationale": "If states the condition directly and preserves the subject and finite verb of the following clause.",
-      "contentSha256": "a61a52d62c751f0466a3abb9648c4d397bab7346b1c52f9552eb0637364cadf1"
+      "rationale": "The question explicitly asks for concision: if is the shortest equivalent condition. The other offered phrasings are grammatical but needlessly long.",
+      "contentSha256": "de38718bf4e051e831073f7d1027afd4ff54a8630c0ba20d6ebffb8192538340"
     },
     {
       "id": "lesson:redundancy:check:2",
@@ -9506,7 +9506,7 @@
         "activityAnswer": "compliment; complement",
         "activityRationale": "A compliment is praise, while complement means suit or complete something. The sentence says the reviewer praised a color scheme that would go well with the exhibits, so the second pair fits both roles.",
         "activitySha256": "1fe291b8d07c4ba90a207948412927bb548a69a5e5daebda5d0dfb058211f423",
-        "teachingSha256": "6ca6b27e8e41ff9bb2864aa7f4d8066b36ee9ea6023a41d8604793774e1a15b8",
+        "teachingSha256": "19e5b081f9a178054efd48b3daa1b30923f94e2e7ed70593534ac7738cd8d970",
         "workedSha256": "387e288746e6ba123384be29bf7e2c72cf15f592b6e14c329c38348f5beb4e45",
         "questionIds": [
           "misc-grammar-001",

@@ -250,5 +250,313 @@
     "title": "Tangent in terms of sine and cosine",
     "formula": "\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}",
     "note": "\\(\\cos\\theta\\ne0\\)."
+  },
+  {
+    "id": "sin-double",
+    "category": "Trigonometry",
+    "title": "Sine double-angle identity",
+    "formula": "\\sin(2\\theta)=2\\sin\\theta\\cos\\theta",
+    "note": "Doubling the angle is different from squaring sine: \\(\\sin(2\\theta)\\ne\\sin^2\\theta\\) in general."
+  },
+  {
+    "id": "cos-double",
+    "category": "Trigonometry",
+    "title": "Cosine double-angle identities",
+    "formula": "\\begin{aligned}\\cos(2\\theta)&=\\cos^2\\theta-\\sin^2\\theta\\\\&=2\\cos^2\\theta-1\\\\&=1-2\\sin^2\\theta\\end{aligned}",
+    "note": "Choose the version using the trig value you know."
+  },
+  {
+    "id": "tan-double",
+    "category": "Trigonometry",
+    "title": "Tangent double-angle identity",
+    "formula": "\\tan(2\\theta)=\\frac{2\\tan\\theta}{1-\\tan^2\\theta}",
+    "note": "Use where \\(\\tan\\theta\\) is defined and \\(1-\\tan^2\\theta\\ne0\\)."
+  },
+  {
+    "id": "sin-sum-difference",
+    "category": "Trigonometry",
+    "title": "Sine of an angle sum or difference",
+    "formula": "\\begin{aligned}\\sin(u\\pm v)&=\\sin u\\cos v\\\\&\\quad\\pm\\cos u\\sin v\\end{aligned}",
+    "note": "Sine keeps the chosen sign. Expand a sum or a difference, not the product of two angles."
+  },
+  {
+    "id": "cos-sum-difference",
+    "category": "Trigonometry",
+    "title": "Cosine of an angle sum or difference",
+    "formula": "\\begin{aligned}\\cos(u\\pm v)&=\\cos u\\cos v\\\\&\\quad\\mp\\sin u\\sin v\\end{aligned}",
+    "note": "Cosine uses the opposite sign: plus inside means minus outside."
+  },
+  {
+    "id": "tan-sum-difference",
+    "category": "Trigonometry",
+    "title": "Tangent of an angle sum or difference",
+    "formula": "\\tan(u\\pm v)=\\frac{\\tan u\\pm\\tan v}{1\\mp\\tan u\\tan v}",
+    "note": "The denominator uses the opposite sign. Both tangents and the result must be defined; the denominator cannot be zero."
+  },
+  {
+    "id": "sin-half",
+    "category": "Trigonometry",
+    "title": "Sine half-angle identity",
+    "formula": "\\sin\\frac{\\theta}{2}=\\pm\\sqrt{\\frac{1-\\cos\\theta}{2}}",
+    "note": "Choose the sign using the quadrant of \\(\\theta/2\\), not the quadrant of \\(\\theta\\)."
+  },
+  {
+    "id": "cos-half",
+    "category": "Trigonometry",
+    "title": "Cosine half-angle identity",
+    "formula": "\\cos\\frac{\\theta}{2}=\\pm\\sqrt{\\frac{1+\\cos\\theta}{2}}",
+    "note": "Choose the sign using the quadrant of \\(\\theta/2\\)."
+  },
+  {
+    "id": "tan-half",
+    "category": "Trigonometry",
+    "title": "Tangent half-angle identity",
+    "formula": "\\begin{aligned}\\tan\\frac{\\theta}{2}&=\\frac{\\sin\\theta}{1+\\cos\\theta}\\\\&=\\frac{1-\\cos\\theta}{\\sin\\theta}\\end{aligned}",
+    "note": "Each fraction is usable only where its own denominator is nonzero and tangent is defined."
+  },
+  {
+    "id": "power-reduction",
+    "category": "Trigonometry",
+    "title": "Squared sine and cosine identities",
+    "formula": "\\begin{aligned}\\sin^2\\theta&=\\frac{1-\\cos(2\\theta)}{2}\\\\\\cos^2\\theta&=\\frac{1+\\cos(2\\theta)}{2}\\end{aligned}",
+    "note": "These rewrite a squared trig value using a double angle."
+  },
+  {
+    "id": "reciprocal-pythagorean",
+    "category": "Trigonometry",
+    "title": "Pythagorean identities with secant and cosecant",
+    "formula": "\\begin{aligned}1+\\tan^2\\theta&=\\sec^2\\theta\\\\1+\\cot^2\\theta&=\\csc^2\\theta\\end{aligned}",
+    "note": "First line requires \\(\\cos\\theta\\ne0\\); second requires \\(\\sin\\theta\\ne0\\)."
+  },
+  {
+    "id": "cofunction",
+    "category": "Trigonometry",
+    "title": "Complementary-angle identities",
+    "formula": "\\begin{aligned}\\sin(90^\\circ-\\theta)&=\\cos\\theta\\\\\\cos(90^\\circ-\\theta)&=\\sin\\theta\\\\\\tan(90^\\circ-\\theta)&=\\cot\\theta\\end{aligned}",
+    "note": "In radians, replace \\(90^\\circ\\) with \\(\\pi/2\\). Use each identity where both sides are defined."
+  },
+  {
+    "id": "negative-angle",
+    "category": "Trigonometry",
+    "title": "Negative-angle identities",
+    "formula": "\\begin{aligned}\\sin(-\\theta)&=-\\sin\\theta\\\\\\cos(-\\theta)&=\\cos\\theta\\\\\\tan(-\\theta)&=-\\tan\\theta\\end{aligned}",
+    "note": "Cosine is even. Sine and tangent are odd; tangent must be defined."
+  },
+  {
+    "id": "unit-circle",
+    "category": "Trigonometry",
+    "title": "Unit-circle coordinates",
+    "formula": "(x,y)=(\\cos\\theta,\\sin\\theta)",
+    "note": "On the circle of radius 1 centered at the origin. Tangent is \\(y/x\\) when \\(x\\ne0\\)."
+  },
+  {
+    "id": "exact-30",
+    "category": "Trigonometry",
+    "title": "Exact values at 30°",
+    "formula": "\\begin{aligned}\\sin30^\\circ&=\\tfrac12\\\\\\cos30^\\circ&=\\tfrac{\\sqrt3}{2}\\\\\\tan30^\\circ&=\\tfrac{\\sqrt3}{3}\\end{aligned}",
+    "note": "\\(30^\\circ=\\pi/6\\) radians."
+  },
+  {
+    "id": "exact-45",
+    "category": "Trigonometry",
+    "title": "Exact values at 45°",
+    "formula": "\\begin{aligned}\\sin45^\\circ&=\\tfrac{\\sqrt2}{2}\\\\\\cos45^\\circ&=\\tfrac{\\sqrt2}{2}\\\\\\tan45^\\circ&=1\\end{aligned}",
+    "note": "\\(45^\\circ=\\pi/4\\) radians."
+  },
+  {
+    "id": "exact-60",
+    "category": "Trigonometry",
+    "title": "Exact values at 60°",
+    "formula": "\\begin{aligned}\\sin60^\\circ&=\\tfrac{\\sqrt3}{2}\\\\\\cos60^\\circ&=\\tfrac12\\\\\\tan60^\\circ&=\\sqrt3\\end{aligned}",
+    "note": "\\(60^\\circ=\\pi/3\\) radians."
+  },
+  {
+    "id": "quadrant-signs",
+    "category": "Trigonometry",
+    "title": "Trig signs by quadrant",
+    "formula": "\\begin{array}{c|ccc}&\\sin&\\cos&\\tan\\\\\\mathrm{I}&+&+&+\\\\\\mathrm{II}&+&-&-\\\\\\mathrm{III}&-&-&+\\\\\\mathrm{IV}&-&+&-\\end{array}",
+    "note": "Use the reference angle for the size and the quadrant for the sign. Axis angles need separate evaluation."
+  },
+  {
+    "id": "radian-conversion",
+    "category": "Trigonometry",
+    "title": "Degrees and radians",
+    "formula": "\\begin{aligned}\\theta_{\\rm rad}&=\\theta_{\\rm deg}\\frac{\\pi}{180}\\\\\\theta_{\\rm deg}&=\\theta_{\\rm rad}\\frac{180}{\\pi}\\end{aligned}",
+    "note": "One full turn is \\(360^\\circ=2\\pi\\) radians. Match your calculator’s angle mode."
+  },
+  {
+    "id": "sine-cosine-graphs",
+    "category": "Trigonometry",
+    "title": "Sine and cosine graph formulas",
+    "formula": "\\begin{gathered}y=A\\sin(Bx+C)+D\\\\\\text{amplitude}=|A|\\\\\\text{period}=\\frac{2\\pi}{|B|}\\\\\\text{phase shift}=-\\frac{C}{B}\\end{gathered}",
+    "note": "Also applies to cosine, with \\(A,B\\ne0\\) and radians. Midline is \\(y=D\\); range is \\([D-|A|,D+|A|]\\)."
+  },
+  {
+    "id": "tangent-period",
+    "category": "Trigonometry",
+    "title": "Tangent graph period",
+    "formula": "\\begin{gathered}y=A\\tan(Bx+C)+D\\\\T=\\frac{\\pi}{|B|}\\end{gathered}",
+    "note": "\\(A,B\\ne0\\), x in radians. Tangent has no finite amplitude. Its undefined inputs produce vertical asymptotes."
+  },
+  {
+    "id": "law-sines",
+    "category": "Trigonometry",
+    "title": "Law of sines",
+    "formula": "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}",
+    "note": "In a nondegenerate triangle, side a is opposite angle A, and likewise for b and c. SSA information can give two possible triangles."
+  },
+  {
+    "id": "law-cosines",
+    "category": "Trigonometry",
+    "title": "Law of cosines",
+    "formula": "c^2=a^2+b^2-2ab\\cos C",
+    "note": "C is the included angle between sides a and b, opposite side c. Works for non-right triangles too."
+  },
+  {
+    "id": "triangle-sine-area",
+    "category": "Trigonometry",
+    "title": "Triangle area using an included angle",
+    "formula": "K=\\frac12 ab\\sin C",
+    "note": "a and b are the two given sides; C is the angle between them."
+  },
+  {
+    "id": "triangle-angle-sum",
+    "category": "Geometry",
+    "title": "Triangle angle sum",
+    "formula": "A+B+C=180^\\circ",
+    "note": "Interior angles of any plane triangle. An exterior angle equals the sum of the two remote interior angles."
+  },
+  {
+    "id": "triangle-inequality",
+    "category": "Geometry",
+    "title": "Triangle side inequality",
+    "formula": "|a-b|<c<a+b",
+    "note": "Positive side lengths of a nondegenerate triangle. Equality would flatten the triangle."
+  },
+  {
+    "id": "equilateral-area",
+    "category": "Geometry",
+    "title": "Equilateral triangle area and height",
+    "formula": "\\begin{aligned}K&=\\frac{\\sqrt3}{4}s^2\\\\h&=\\frac{\\sqrt3}{2}s\\end{aligned}",
+    "note": "All three sides have length s. Height h is perpendicular to the base."
+  },
+  {
+    "id": "heron",
+    "category": "Geometry",
+    "title": "Heron’s formula",
+    "formula": "\\begin{aligned}s&=\\frac{a+b+c}{2}\\\\K&=\\sqrt{s(s-a)(s-b)(s-c)}\\end{aligned}",
+    "note": "a, b, c must form a valid triangle. Here s is the semiperimeter, not a side."
+  },
+  {
+    "id": "polygon-angles",
+    "category": "Geometry",
+    "title": "Polygon angle formulas",
+    "formula": "\\begin{aligned}\\text{interior sum}&=(n-2)180^\\circ\\\\\\text{regular interior}&=\\frac{(n-2)180^\\circ}{n}\\\\\\text{regular exterior}&=\\frac{360^\\circ}{n}\\end{aligned}",
+    "note": "n ≥ 3 sides. Interior sum assumes a simple polygon; per-angle formulas assume a regular convex polygon."
+  },
+  {
+    "id": "similarity-ratios",
+    "category": "Geometry",
+    "title": "Similar-figure scale factors",
+    "formula": "\\begin{aligned}\\frac{L_2}{L_1}&=k\\\\\\frac{K_2}{K_1}&=k^2\\\\\\frac{V_2}{V_1}&=k^3\\end{aligned}",
+    "note": "k > 0 is a corresponding length scale factor. K is area; V is volume. The whole figures must be similar."
+  },
+  {
+    "id": "regular-polygon-area",
+    "category": "Geometry",
+    "title": "Regular polygon area",
+    "formula": "K=\\frac12 ap",
+    "note": "a = apothem (center-to-side perpendicular distance); p = perimeter. The polygon must be regular."
+  },
+  {
+    "id": "box-surface",
+    "category": "Geometry",
+    "title": "Rectangular prism surface area",
+    "formula": "SA=2(lw+lh+wh)",
+    "note": "l = length, w = width, h = height. Includes all six faces of a closed box."
+  },
+  {
+    "id": "cylinder-surface",
+    "category": "Geometry",
+    "title": "Cylinder surface area",
+    "formula": "SA=2\\pi r^2+2\\pi rh",
+    "note": "Closed right circular cylinder: r = radius; h = perpendicular height. Two bases plus the curved side."
+  },
+  {
+    "id": "cone-volume",
+    "category": "Geometry",
+    "title": "Cone volume",
+    "formula": "V=\\frac13\\pi r^2h",
+    "note": "r = base radius; h = perpendicular height. Do not use slant height for volume."
+  },
+  {
+    "id": "cone-surface",
+    "category": "Geometry",
+    "title": "Cone surface area",
+    "formula": "\\begin{aligned}SA&=\\pi r^2+\\pi r\\ell\\\\\\ell&=\\sqrt{r^2+h^2}\\end{aligned}",
+    "note": "Closed right circular cone. ℓ = slant height; h = perpendicular height; r = radius. Lateral area alone is πrℓ."
+  },
+  {
+    "id": "pyramid-volume",
+    "category": "Geometry",
+    "title": "Pyramid volume",
+    "formula": "V=\\frac13 Bh",
+    "note": "B = base area, not base side length; h = perpendicular height."
+  },
+  {
+    "id": "sphere-volume",
+    "category": "Geometry",
+    "title": "Sphere volume",
+    "formula": "V=\\frac43\\pi r^3",
+    "note": "r = radius. A hemisphere has half this volume."
+  },
+  {
+    "id": "sphere-surface",
+    "category": "Geometry",
+    "title": "Sphere surface area",
+    "formula": "SA=4\\pi r^2",
+    "note": "r = radius. A hemisphere’s curved area is half; add its circular base if the solid is closed."
+  },
+  {
+    "id": "radian-circle",
+    "category": "Circles",
+    "title": "Arc length and sector area in radians",
+    "formula": "\\begin{aligned}s&=r\\theta\\\\K&=\\frac12 r^2\\theta\\end{aligned}",
+    "note": "θ is the nonnegative central angle in radians; r = radius; s = arc length; K = sector area."
+  },
+  {
+    "id": "inscribed-angle",
+    "category": "Circles",
+    "title": "Inscribed angle and intercepted arc",
+    "formula": "\\alpha=\\frac12\\beta",
+    "note": "α is an inscribed angle; β is the measure of its intercepted arc in the same angle units. An angle subtending a diameter is 90°."
+  },
+  {
+    "id": "chord-products",
+    "category": "Circles",
+    "title": "Intersecting chord lengths",
+    "formula": "PA\\cdot PB=PC\\cdot PD",
+    "note": "Chords AB and CD intersect inside the circle at P. Multiply the two parts of each chord."
+  },
+  {
+    "id": "tangent-secant",
+    "category": "Circles",
+    "title": "Tangent and secant lengths",
+    "formula": "t^2=e(e+i)",
+    "note": "From the same exterior point: t = tangent length; e = outside secant part; i = inside secant part."
+  },
+  {
+    "id": "coordinate-rotations",
+    "category": "Coordinate geometry",
+    "title": "Rotations about the origin",
+    "formula": "\\begin{aligned}90^\\circ\\text{ CCW}:&(x,y)\\to(-y,x)\\\\180^\\circ:&(x,y)\\to(-x,-y)\\\\90^\\circ\\text{ CW}:&(x,y)\\to(y,-x)\\end{aligned}",
+    "note": "CW = clockwise; CCW = counterclockwise. These rules assume the origin is the center."
+  },
+  {
+    "id": "coordinate-reflections",
+    "category": "Coordinate geometry",
+    "title": "Coordinate reflections",
+    "formula": "\\begin{aligned}x\\text{-axis}:&(x,y)\\to(x,-y)\\\\y\\text{-axis}:&(x,y)\\to(-x,y)\\\\y=x:&(x,y)\\to(y,x)\\end{aligned}",
+    "note": "Reflection flips a point across the named line. Distances and angle sizes stay the same."
   }
 ]

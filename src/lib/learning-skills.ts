@@ -18,7 +18,9 @@ export interface LearningSkill {
   questionIds: string[];
   modeling?: boolean;
   activity?: Section["activity"];
+  evidence?: Section["evidence"];
   body?: string[];
+  tip?: string;
   workedExamples?: { section: number; example: number }[];
 }
 export interface MathSkill {
@@ -210,11 +212,18 @@ export function focusLesson(full: Lesson, skill: LearningSkill): Lesson {
             ? skill.body
             : []
           : section.body,
-        tip: skill.body ? undefined : section.tip,
-        evidence:
-          skill.subject === "science" && skill.workedExamples
+        tip: skill.tip
+          ? position === sections.length - 1
+            ? skill.tip
+            : undefined
+          : skill.body
             ? undefined
-            : section.evidence,
+            : section.tip,
+        evidence: skill.evidence
+          ? position === sections.length - 1
+            ? skill.evidence
+            : undefined
+          : section.evidence,
         examples: examples
           ? section.examples?.filter((_, example) =>
               examples.some(

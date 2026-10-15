@@ -13,22 +13,39 @@ const colors = [
   "var(--color-data-accent)",
   "var(--color-good)",
 ];
-function Plot({ graph }: { graph: Graph }) {
+function Plot({ graph, passageTitle }: { graph: Graph; passageTitle: string }) {
   const helpId = useId();
   const all = graph.series.flatMap((s) => s.points),
     xs = all.map((p) => p[0]),
     ys = all.map((p) => p[1]);
   const minX = Math.min(...xs),
     maxX = Math.max(...xs),
-    minY = Math.min(0, ...ys),
-    maxY = Math.max(0, ...ys);
+    minY = graph.yRange?.[0] ?? Math.min(0, ...ys),
+    maxY = graph.yRange?.[1] ?? Math.max(0, ...ys);
   const x = (n: number) => 65 + ((n - minX) / (maxX - minX || 1)) * 470,
     y = (n: number) => 250 - ((n - minY) / (maxY - minY || 1)) * 195;
   const label = (n: number) => Number(n.toFixed(2));
+  const ticks = (values: number[], min: number, max: number) => {
+    const measured = [...new Set([min, ...values, max])].sort((a, b) => a - b);
+    return measured.length <= 8 &&
+      measured.every(
+        (value, i) =>
+          i === 0 || (value - measured[i - 1]) / (max - min || 1) >= 0.1,
+      )
+      ? measured
+      : [0, 1, 2, 3, 4].map((i) => min + (i * (max - min)) / 4);
+  };
   return (
     <figure className="my-5">
-      <figcaption className="mb-2 font-semibold">{graph.title}</figcaption>
-      <p id={helpId} className="mb-3 text-xs text-ink-soft">
+      {graph.title !== passageTitle && (
+        <figcaption className="mb-2 font-semibold">{graph.title}</figcaption>
+      )}
+      {minY !== 0 && (
+        <p className="mb-2 text-sm text-ink-soft">
+          The vertical axis starts at {minY}, not zero.
+        </p>
+      )}
+      <p id={helpId} className="mb-3 text-xs text-ink-soft sm:sr-only">
         Scroll sideways if graph labels are hidden. Arrow keys work when the
         graph is focused.
       </p>
@@ -46,34 +63,37 @@ function Plot({ graph }: { graph: Graph }) {
           className="w-full min-w-[520px]"
         >
           <path d="M65 55V250H535" fill="none" stroke="currentColor" />
-          {[0, 1, 2, 3, 4].map((i) => (
-            <g key={i}>
+          {ticks(ys, minY, maxY).map((value) => (
+            <g key={value}>
               <line
                 x1="65"
-                y1={55 + (i * 195) / 4}
+                y1={y(value)}
                 x2="535"
-                y2={55 + (i * 195) / 4}
+                y2={y(value)}
                 stroke="var(--color-border)"
               />
               <text
                 x="54"
-                y={60 + (i * 195) / 4}
+                y={y(value) + 5}
                 textAnchor="end"
                 fontSize="16"
                 fill="currentColor"
               >
-                {label(maxY - (i * (maxY - minY)) / 4)}
-              </text>
-              <text
-                x={65 + (i * 470) / 4}
-                y="270"
-                textAnchor="middle"
-                fontSize="16"
-                fill="currentColor"
-              >
-                {label(minX + (i * (maxX - minX)) / 4)}
+                {label(value)}
               </text>
             </g>
+          ))}
+          {ticks(xs, minX, maxX).map((value) => (
+            <text
+              key={value}
+              x={x(value)}
+              y="270"
+              textAnchor="middle"
+              fontSize="16"
+              fill="currentColor"
+            >
+              {label(value)}
+            </text>
           ))}
           {graph.series.map((s, i) => (
             <g key={s.label}>
@@ -162,7 +182,7 @@ export function PassageView({
       </div>
       {passage.table && (
         <div className="mt-5">
-          <p id={tableHelpId} className="mb-3 text-xs text-ink-soft">
+          <p id={tableHelpId} className="mb-3 text-xs text-ink-soft sm:sr-only">
             Scroll sideways if a column is hidden. Arrow keys work when the
             table is focused.
           </p>
@@ -197,7 +217,9 @@ export function PassageView({
           </div>
         </div>
       )}
-      {passage.graph && <Plot graph={passage.graph} />}
+      {passage.graph && (
+        <Plot graph={passage.graph} passageTitle={passage.title} />
+      )}
     </section>
   );
 }

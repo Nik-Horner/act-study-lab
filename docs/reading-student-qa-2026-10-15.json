@@ -1,0 +1,643 @@
+{
+  "date": "2026-10-15",
+  "scope": "Student-perspective content review of Reading Daily lessons, their assigned drills, and the two held-out Reading sections. English received a focused tip-validity check, not a fresh full-bank review in this pass.",
+  "rubric": {
+    "A": "Clear and correct for the stated purpose, with visible evidence and no material ambiguity found. This is not a score guarantee.",
+    "B": "Useful and correct, with a limited teaching or practice breadth gap the student must bridge.",
+    "C": "Limited fit for the stated purpose; useful only alongside a different practice format or source.",
+    "D": "A major gap or repeated error materially interferes with learning.",
+    "F": "Unusable or materially incorrect for the stated purpose.",
+    "practiceRealism": "Does the skill task retain ACT-like reasoning, plausible choices, and evidence use?",
+    "fullSectionSimulation": "Does this Daily activity reproduce sustained passage reading, mixed questions, and section timing? A short skill drill is not expected to do all three.",
+    "feedback": "Does the explanation show the actual evidence and reject competing interpretations? B reflects that some advanced explanations remain dense.",
+    "answerAmbiguity": "Does the supplied text support one best offered answer? A means no remaining material alternate key found in this editorial pass."
+  },
+  "coverage": {
+    "focusedReadingSkills": 24,
+    "topicLessons": 6,
+    "workedExamples": 42,
+    "focusedTryItTasks": 24,
+    "activeDrillItems": 292,
+    "activeDrillPassages": 48,
+    "heldOutExamItems": 72,
+    "heldOutExamPassages": 8,
+    "heldOutSections": 2,
+    "manualAssessmentReview": "Every full passage, prompt, choice, keyed answer, and explanation in the292 active drills and72 held-out items was read. All24 skill mappings were traced.",
+    "historicalPracticeRecordsRetained": 144,
+    "historicalLessonChecksRetained": 18,
+    "historicalChecksFreshlyReviewedInThisPass": false,
+    "readingActivePassageWords": {
+      "minimum": 195,
+      "median": 234.5,
+      "maximum": 287
+    },
+    "readingExamPassageWords": {
+      "minimum": 660,
+      "median": 754.5,
+      "maximum": 776
+    }
+  },
+  "subjectSummary": {
+    "overallContentGrade": "B",
+    "clarity": "B",
+    "skillTransfer": "B",
+    "practiceRealism": "B",
+    "dailyAsFullSectionSimulation": "C",
+    "heldOutSectionRealism": "B",
+    "feedback": "B",
+    "answerAmbiguity": "A",
+    "finding": "The revised Daily course gives useful, simpler methods while retaining harder independent texts. No wrong assessed answer key was found in the364-item review. Daily alone does not test sustained full-section pacing.",
+    "highScoreChallenge": "The98 hard-labeled drill items remain. They include subtle narrative motives, source disagreements, qualified conclusions, changing denominators, and weighted group rates. These are meaningful reasoning demands; the difficulty labels are editorial and are not calibrated to an ACT score range.",
+    "whyNotAnAOverall": [
+      "Daily passages are short and often sampled one question per new passage; full sections share a longer passage among multiple questions.",
+      "Many texts revisit evidence limits, practical use, and preservation; topic and voice variety are narrower than the full range of official ACT reading.",
+      "Several focused methods have only three independent questions, and some advanced feedback still requires careful reading."
+    ],
+    "neededValidation": "A fresh official enhanced ACT Reading section under its full40-minute limit is the evidence needed for real pacing and score readiness. Daily practice accuracy cannot substitute for that result."
+  },
+  "concreteFixes": [
+    {
+      "items": [
+        "RP-V3-01-2"
+      ],
+      "problem": "Feedback referred to an alternative no longer offered and did not explain the foot-on-rope distractor.",
+      "repair": "Tie feedback to the actual broad cap, foot, later loop, and coach alternatives."
+    },
+    {
+      "items": [
+        "RP-V3-06-1",
+        "RP-V3-06-2",
+        "RP-V3-06-3",
+        "RP-V3-06-4",
+        "RP-V3-06-5",
+        "RP-V3-06-6"
+      ],
+      "problem": "Mechanically connected indoor machinery coasted after the waterwheel stopped without a stated disconnection.",
+      "repair": "State that the guide disengages the drive; keep all six passage copies identical and update the two relevant explanations."
+    },
+    {
+      "items": [
+        "RP-V3-08-5",
+        "RP-V3-22-5"
+      ],
+      "problem": "Only the keyed choice fit the lead-in grammatically, allowing a shortcut without reading.",
+      "repair": "Make every distractor fit the lead-in while preserving its wrong meaning, the answer position, and the correct wording."
+    },
+    {
+      "skills": [
+        "reading-details-sequence-cause"
+      ],
+      "problem": "A correlation-only lesson did not cover its assigned timeline and narrative-reason questions.",
+      "repair": "Add order, stated-reason, and action-plus-clue steps; supply a concrete narrative worked example and independent try-it."
+    },
+    {
+      "skills": [
+        "reading-craft-perspective"
+      ],
+      "problem": "Quoted-speaker separation did not cover assigned changes or extensions in viewpoint.",
+      "repair": "Add an explicit before/after viewpoint comparison and identify what is added, challenged, or retained."
+    },
+    {
+      "skills": [
+        "reading-integration-combine"
+      ],
+      "problem": "Separate-source teaching omitted the many assigned comparisons within one passage.",
+      "repair": "Add the specific two-moment comparison step without changing assigned questions."
+    },
+    {
+      "items": [
+        "reading-integration-combine:try-it",
+        "reading-inference:4:worked"
+      ],
+      "problem": "A teaching answer added an unstated month, and another question overclaimed what could be known about a private desire.",
+      "repair": "State the month in the source and ask about observable abandonment rather than an earlier private wish."
+    },
+    {
+      "items": [
+        "English redundancy check2",
+        "English misc-grammar section0 tip"
+      ],
+      "problem": "The concision check asked only what was correct; the contraction tip omitted has and treated every noncontraction as possessive.",
+      "repair": "State the concision goal and include it has, who has, and plain there. English teaching approach remains intact."
+    }
+  ],
+  "preservation": {
+    "assessedAnswerKeysChanged": false,
+    "assessedIdsChanged": false,
+    "assessedCorrectAnswerTextChanged": false,
+    "skillAssignmentsChanged": false,
+    "heldOutExamContentChanged": false,
+    "userProgressModified": false
+  },
+  "checks": {
+    "targetedTestsPassed": 45,
+    "readingContentValidator": "passed",
+    "targetedESLint": "passed",
+    "diffWhitespaceCheck": "passed",
+    "visualAndLiveAccountReview": "Handled by root; this file does not claim those checks."
+  },
+  "lessons": [
+    {
+      "skillId": "reading-main-idea-thesis",
+      "topic": "reading-main-idea",
+      "title": "Name the subject, then the point",
+      "reviewedAssignedDrills": 22,
+      "difficultyCounts": {
+        "easy": 6,
+        "medium": 7,
+        "hard": 9
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The subject-plus-point method is clear. The22 assigned questions include technical arguments and paired texts; those demand more sustained reading than the simple shelf example.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-main-idea-movement",
+      "topic": "reading-main-idea",
+      "title": "Keep the beginning, turn, and ending",
+      "reviewedAssignedDrills": 5,
+      "difficultyCounts": {
+        "medium": 3,
+        "easy": 2
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The beginning–turn–ending map fits the five assigned accounts of revised ideas. The short restoration example shows a real change without claiming every story has a complete reversal.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-main-idea-scope",
+      "topic": "reading-main-idea",
+      "title": "Keep the answer within the evidence",
+      "reviewedAssignedDrills": 11,
+      "difficultyCounts": {
+        "hard": 5,
+        "medium": 3,
+        "easy": 3
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "A",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The method explicitly keeps the group, setting, and certainty. The11 assigned drills test those same limits in surveys, models, and historical evidence.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-main-idea-narrative-change",
+      "topic": "reading-main-idea",
+      "title": "Show a character’s actual change",
+      "reviewedAssignedDrills": 10,
+      "difficultyCounts": {
+        "easy": 5,
+        "medium": 3,
+        "hard": 2
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "A",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The example preserves continuing nervousness after one brave action. This transfers well to10 narratives where a character changes partly while retaining an earlier concern.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-details-locate",
+      "topic": "reading-details",
+      "title": "Match the exact person or event",
+      "reviewedAssignedDrills": 16,
+      "difficultyCounts": {
+        "easy": 9,
+        "medium": 3,
+        "hard": 4
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "A",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The actor-plus-action search is concrete, with a distinct try-it. The16 drills vary the requested fact; longer exam passages still require locating that fact efficiently.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-details-sequence-cause",
+      "topic": "reading-details",
+      "title": "Track what happened, when, and why",
+      "reviewedAssignedDrills": 14,
+      "difficultyCounts": {
+        "easy": 4,
+        "medium": 8,
+        "hard": 2
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The repaired method now distinguishes order, stated reasons, and reasons inferred from nearby actions. The worked and try-it narratives directly teach the hidden-reason tasks that the earlier correlation-only lesson missed.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-details-unit-condition",
+      "topic": "reading-details",
+      "title": "Keep the number attached to what it counts",
+      "reviewedAssignedDrills": 17,
+      "difficultyCounts": {
+        "hard": 9,
+        "medium": 5,
+        "easy": 3
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The entries-versus-people example makes units clear. The17 drills also ask about conditions, speaker identity, and what a source cannot establish, so transfer requires using more than the number-check alone.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-details-paraphrase",
+      "topic": "reading-details",
+      "title": "Change the words, keep the meaning",
+      "reviewedAssignedDrills": 3,
+      "difficultyCounts": {
+        "hard": 1,
+        "medium": 2
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The lesson preserves a condition when wording changes. All three drills retain precise source limits, but the small pool provides limited independent repetition before examples become familiar.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-inference-evidence-link",
+      "topic": "reading-inference",
+      "title": "Build one small link from the clue",
+      "reviewedAssignedDrills": 21,
+      "difficultyCounts": {
+        "medium": 6,
+        "easy": 9,
+        "hard": 6
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "A clue-to-small-conclusion link is modeled explicitly. The21 drills include motives, analogies, and hypothetical changes; the strongest ones require more reasoning than the short archive example.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-inference-limits",
+      "topic": "reading-inference",
+      "title": "Choose what the text supports",
+      "reviewedAssignedDrills": 16,
+      "difficultyCounts": {
+        "hard": 7,
+        "easy": 5,
+        "medium": 4
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "A",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The trial-versus-permanent-decision example separates supported interest from certainty. Its16 drills consistently require retaining uncertainty while still using useful evidence.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-inference-attitude",
+      "topic": "reading-inference",
+      "title": "Read feelings from words and actions",
+      "reviewedAssignedDrills": 5,
+      "difficultyCounts": {
+        "easy": 1,
+        "medium": 4
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The lesson keeps both support and concern. Five drills include mixed feelings, a director’s interpretation, and quiet actions; students must connect multiple clues rather than just find a feeling word.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-inference-counterexample",
+      "topic": "reading-inference",
+      "title": "Try to disprove the tempting answer",
+      "reviewedAssignedDrills": 6,
+      "difficultyCounts": {
+        "hard": 3,
+        "easy": 1,
+        "medium": 2
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The repaired question challenges an observable claim about abandoning work rather than claiming to disprove a private desire. Six drills extend the method to new evidence and competing historical interpretations.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-vocabulary-local-sense",
+      "topic": "reading-vocabulary",
+      "title": "Make a plain-word replacement",
+      "reviewedAssignedDrills": 25,
+      "difficultyCounts": {
+        "easy": 10,
+        "medium": 9,
+        "hard": 6
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "A",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The plain-word substitution method fits all25 context-word questions. Correct explanations distinguish the local meaning from other possible meanings without requiring isolated vocabulary memorization.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-vocabulary-contrast-clue",
+      "topic": "reading-vocabulary",
+      "title": "Use the clue beside the word",
+      "reviewedAssignedDrills": 7,
+      "difficultyCounts": {
+        "hard": 2,
+        "easy": 4,
+        "medium": 1
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "A",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The nearby contrast supplies a visible clue. Seven drills require reading an actual local relationship, including contrasts between counts, proportions, movement, and fixed states.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-vocabulary-figurative",
+      "topic": "reading-vocabulary",
+      "title": "Notice when a word makes a picture",
+      "reviewedAssignedDrills": 5,
+      "difficultyCounts": {
+        "easy": 1,
+        "hard": 4
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The belief-that-loosens example teaches how an idea can take a physical verb. Five drills involve subtler everyday metaphors; the passage remains necessary to choose the precise sense.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-vocabulary-paragraph-fit",
+      "topic": "reading-vocabulary",
+      "title": "Check the word against the whole point",
+      "reviewedAssignedDrills": 11,
+      "difficultyCounts": {
+        "medium": 6,
+        "hard": 4,
+        "easy": 1
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The substitute must preserve the whole claim, not merely fit the topic. Eleven drills include abstract meanings such as authority, prescribed, and exacting, retaining meaningful difficulty.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-craft-function",
+      "topic": "reading-craft",
+      "title": "Name the paragraph’s job",
+      "reviewedAssignedDrills": 36,
+      "difficultyCounts": {
+        "easy": 15,
+        "hard": 8,
+        "medium": 13
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "Actual paragraphs show why an example belongs between a claim and a recommendation. The36-question pool covers many rhetorical jobs; one example cannot demonstrate every kind, but the question about purpose transfers.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-craft-tone",
+      "topic": "reading-craft",
+      "title": "Match the feeling and its strength",
+      "reviewedAssignedDrills": 3,
+      "difficultyCounts": {
+        "hard": 3
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The worked review supplies actual approving and critical wording. The three assigned drills retain dry humor and mixed self-awareness; their difficulty is not reduced to obvious happy-versus-sad choices.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-craft-perspective",
+      "topic": "reading-craft",
+      "title": "Track a speaker’s view and how it changes",
+      "reviewedAssignedDrills": 5,
+      "difficultyCounts": {
+        "easy": 1,
+        "medium": 1,
+        "hard": 3
+      },
+      "grades": {
+        "clarity": "B",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The repaired method covers both separate speakers and a changed viewpoint. The protected manufacturer/worker excerpt supplies real counterevidence; five drills also ask about extensions, reframing, and movement through a scene.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-craft-imagery",
+      "topic": "reading-craft",
+      "title": "Explain what an image helps us notice",
+      "reviewedAssignedDrills": 6,
+      "difficultyCounts": {
+        "medium": 2,
+        "hard": 4
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The shared-feature check prevents literal overreading of an image. Six drills include more abstract images and recurring objects, so students still have to explain what the image does in its passage.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-integration-positions",
+      "topic": "reading-integration",
+      "title": "Find the agreement and the difference",
+      "reviewedAssignedDrills": 10,
+      "difficultyCounts": {
+        "medium": 3,
+        "easy": 3,
+        "hard": 4
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "A",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "Separate A/B voices and a comparison table make agreement plus an added condition visible. Ten paired-text drills require that same distinction without inventing agreement from silence.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-integration-combine",
+      "topic": "reading-integration",
+      "title": "Keep only what both sources support",
+      "reviewedAssignedDrills": 27,
+      "difficultyCounts": {
+        "easy": 11,
+        "medium": 8,
+        "hard": 8
+      },
+      "grades": {
+        "clarity": "B",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The revised method explicitly covers two moments within one passage as well as separate sources. The worked example retains both source limits; the27 drills include narrative contrasts and technical relationships beyond that first example.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-integration-graphic",
+      "topic": "reading-integration",
+      "title": "Read the table’s labels, then compare",
+      "reviewedAssignedDrills": 5,
+      "difficultyCounts": {
+        "hard": 3,
+        "easy": 1,
+        "medium": 1
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "B",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "Worked and independent tables show why a larger count can be a smaller share. The five drills retain harder denominator changes, pooled rates, and endpoint comparisons; reading the actual labels remains essential.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    },
+    {
+      "skillId": "reading-integration-limits",
+      "topic": "reading-integration",
+      "title": "Keep every source’s limits",
+      "reviewedAssignedDrills": 6,
+      "difficultyCounts": {
+        "medium": 4,
+        "easy": 1,
+        "hard": 1
+      },
+      "grades": {
+        "clarity": "A",
+        "skillTransfer": "A",
+        "practiceRealism": "B",
+        "fullSectionSimulation": "C",
+        "feedback": "B",
+        "answerAmbiguity": "A"
+      },
+      "reasoning": "The lesson keeps the measured group, setting, and outcome from every source. Its six drills ask students to combine useful evidence without claiming a complete causal or universal result.",
+      "scopeNote": "Content grade for the focused Daily method, worked example, independent activity, and every assigned drill. Visual rendering is graded separately by the root review."
+    }
+  ],
+  "limits": [
+    "The grades are editorial judgments, not psychometric validation or a prediction of a36.",
+    "Historical inactive practice was preserved but not reread in full during the final364-item pass.",
+    "These24 rows grade lesson content and transfer; root owns screenshot and real-account journey results."
+  ]
+}

@@ -1,568 +1,1201 @@
 [
   {
     "id": "science-teaching-data-reading-1",
-    "title": "Locate the quantity and unit",
-    "context": "Three air filters were tested under the same inlet dust concentration. The table separates outlet dust from airflow.",
-    "table": {
-      "columns": ["Vent", "Outlet dust (mg/m³)", "Airflow (m³/min)"],
-      "rows": [
-        ["X", 6, 80],
-        ["Y", 3, 45],
-        ["Z", 9, 120]
+    "title": "Two seedling groups",
+    "context": "Heights are measured on the same days. Solid = U; dashed = V.",
+    "graph": {
+      "title": "Two seedling groups",
+      "xLabel": "Day",
+      "yLabel": "Height (cm)",
+      "series": [
+        {
+          "label": "U",
+          "points": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              5,
+              14
+            ]
+          ]
+        },
+        {
+          "label": "V",
+          "points": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              7
+            ],
+            [
+              5,
+              12
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-data-reading-2",
-    "title": "Distinguish totals, changes, and fractions",
-    "context": "A treatment starts with 60 mg/L solute and finishes with 15 mg/L; water volume is unchanged.",
+    "title": "Water treatment",
+    "context": "The water volume stays the same.",
     "table": {
-      "columns": ["Stage", "Solute (mg/L)"],
+      "columns": [
+        "Stage",
+        "Concentration (mg/L)"
+      ],
       "rows": [
-        ["Initial", 60],
-        ["Final", 15]
+        [
+          "Start",
+          60
+        ],
+        [
+          "Final",
+          15
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-data-reading-3",
-    "title": "Check simultaneous constraints",
-    "context": "Use the same three air filters; the specification requires both sufficient airflow and sufficiently low outlet dust.",
+    "title": "Choosing an air filter",
+    "context": "A filter must have airflow at least 70 m³/min and dust at most 7 mg/m³.",
     "table": {
-      "columns": ["Vent", "Outlet dust (mg/m³)", "Airflow (m³/min)"],
+      "columns": [
+        "Filter",
+        "Airflow (m³/min)",
+        "Outlet dust (mg/m³)"
+      ],
       "rows": [
-        ["X", 6, 80],
-        ["Y", 3, 45],
-        ["Z", 9, 120]
+        [
+          "X",
+          80,
+          6
+        ],
+        [
+          "Y",
+          45,
+          3
+        ],
+        [
+          "Z",
+          120,
+          9
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-data-reading-4",
-    "title": "Normalize unequal sample sizes",
-    "context": "Two differently sized quadrats were surveyed using the same counting method.",
+    "title": "Two plant plots",
+    "context": "The plots have different areas.",
     "table": {
-      "columns": ["Quadrat", "Plant count", "Area (m²)"],
+      "columns": [
+        "Plot",
+        "Plants",
+        "Area (m²)"
+      ],
       "rows": [
-        ["A", 36, 6],
-        ["B", 45, 15]
+        [
+          "A",
+          36,
+          6
+        ],
+        [
+          "B",
+          45,
+          15
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-data-reading-5",
-    "title": "Read points, changes, and slopes",
-    "context": "Two seedling groups are measured on the same days. These are heights, not growth rates.",
-    "table": {
-      "columns": ["Day", "Group U height (cm)", "Group V height (cm)"],
-      "rows": [
-        [0, 2, 2],
-        [2, 5, 7],
-        [5, 14, 12]
+    "title": "Plant height",
+    "context": "Each point gives height, not growth per day.",
+    "graph": {
+      "title": "Plant height",
+      "xLabel": "Day",
+      "yLabel": "Height (cm)",
+      "series": [
+        {
+          "label": "Group U",
+          "points": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              5,
+              14
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-data-reading-6",
-    "title": "Combine data with matched units and weights",
-    "context": "Two steady streams combine without pollutant gain or loss and mix uniformly.",
+    "title": "Two streams mix",
+    "context": "No pollutant is lost. Water mixes completely.",
     "table": {
-      "columns": ["Stream", "Flow (L/s)", "Concentration (mg/L)"],
+      "columns": [
+        "Stream",
+        "Flow (L/s)",
+        "Concentration (mg/L)"
+      ],
       "rows": [
-        ["A", 20, 3],
-        ["B", 5, 13]
+        [
+          "A",
+          20,
+          3
+        ],
+        [
+          "B",
+          5,
+          13
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-data-reading-7",
-    "title": "Link calibrations, dilution, and a new condition",
-    "context": "A sensor reports a linear signal of 3 units per mg/L for the diluted sample. Dilution factor = 4; original-stream water flow = 2 L/s.",
+    "title": "Two calibrations and a changed flow",
+    "context": "Each calibration line includes its 2-unit blank signal. Read the diluted liquid’s concentration from its own line. Multiply by the dilution factor to recover the original concentration. Only A’s original flow is halved.",
     "table": {
-      "columns": ["Quantity", "Value"],
+      "columns": [
+        "Stream",
+        "Water type",
+        "Diluted signal",
+        "Dilution factor",
+        "Original flow (L/s)"
+      ],
       "rows": [
-        ["Diluted signal (units)", 18],
-        ["Signal per mg/L", 3],
-        ["Dilution factor", 4],
-        ["Flow (L/s)", 2]
+        [
+          "A",
+          "Fresh",
+          14,
+          2,
+          4
+        ],
+        [
+          "B",
+          "Saline",
+          14,
+          4,
+          2
+        ]
+      ]
+    },
+    "graph": {
+      "title": "Signal versus concentration",
+      "xLabel": "Concentration (mg/L)",
+      "yLabel": "Total signal (units)",
+      "series": [
+        {
+          "label": "Fresh",
+          "points": [
+            [
+              0,
+              2
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              4,
+              10
+            ],
+            [
+              6,
+              14
+            ]
+          ]
+        },
+        {
+          "label": "Saline",
+          "points": [
+            [
+              0,
+              2
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              2,
+              10
+            ],
+            [
+              3,
+              14
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-trends-interpolation-1",
-    "title": "Compare rates over the actual intervals",
-    "context": "A sealed vial cools in a room maintained below all listed vial temperatures.",
-    "table": {
-      "columns": ["Time (min)", "Temperature (°C)"],
-      "rows": [
-        [0, 72],
-        [3, 54],
-        [9, 42]
+    "title": "Cooling over unequal times",
+    "context": "The sample keeps cooling, but the time gaps differ.",
+    "graph": {
+      "title": "Cooling over unequal times",
+      "xLabel": "Time (min)",
+      "yLabel": "Temperature (°C)",
+      "series": [
+        {
+          "label": "Vial",
+          "points": [
+            [
+              0,
+              72
+            ],
+            [
+              3,
+              54
+            ],
+            [
+              9,
+              42
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-trends-interpolation-2",
-    "title": "Interpolate with the nearest bounding values",
-    "context": "Assume the temperature varies linearly between the two measured points for this estimate.",
-    "table": {
-      "columns": ["Time (min)", "Temperature (°C)"],
-      "rows": [
-        [4, 44],
-        [10, 26]
+    "title": "Cooling between measurements",
+    "context": "Use a straight-line estimate between these points.",
+    "graph": {
+      "title": "Cooling between measurements",
+      "xLabel": "Time (min)",
+      "yLabel": "Temperature (°C)",
+      "series": [
+        {
+          "label": "Sample",
+          "points": [
+            [
+              4,
+              44
+            ],
+            [
+              10,
+              26
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-trends-interpolation-3",
-    "title": "Limit peaks and trends to tested conditions",
-    "context": "An enzyme is measured under identical conditions except for temperature.",
-    "table": {
-      "columns": ["Temperature (°C)", "Activity (units)"],
-      "rows": [
-        [15, 3],
-        [30, 9],
-        [45, 5]
+    "title": "Temperature and activity",
+    "context": "Only the three shown temperatures were tested.",
+    "graph": {
+      "title": "Temperature and activity",
+      "xLabel": "Temperature (°C)",
+      "yLabel": "Activity (units)",
+      "series": [
+        {
+          "label": "Enzyme",
+          "points": [
+            [
+              15,
+              3
+            ],
+            [
+              30,
+              9
+            ],
+            [
+              45,
+              5
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-trends-interpolation-4",
-    "title": "Keep slope, intercept, and units separate",
-    "context": "A pressure model applies over the listed depth range.",
-    "table": {
-      "columns": ["Depth (m)", "Absolute pressure (kPa)"],
-      "rows": [
-        [0, 90],
-        [2, 114],
-        [4, 138]
+    "title": "Pressure at depth",
+    "context": "The supplied rule is P = 90 + 12d, with d in meters and P in kPa.",
+    "graph": {
+      "title": "Pressure at depth",
+      "xLabel": "Depth (m)",
+      "yLabel": "Pressure (kPa)",
+      "series": [
+        {
+          "label": "Pressure",
+          "points": [
+            [
+              0,
+              90
+            ],
+            [
+              2,
+              114
+            ],
+            [
+              4,
+              138
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-trends-interpolation-5",
-    "title": "Use nonlinear models when requested",
-    "context": "The model x = 3√t describes a spreading front during the tested interval.",
-    "table": {
-      "columns": ["Time (min)", "Distance (mm)"],
-      "rows": [
-        [1, 3],
-        [4, 6],
-        [9, 9]
+    "title": "A spreading front",
+    "context": "The model says squared distance x² is directly proportional to time t: x² = kt. The constant k must be found from a measured point.",
+    "graph": {
+      "title": "A spreading front",
+      "xLabel": "Time (min)",
+      "yLabel": "Distance (mm)",
+      "series": [
+        {
+          "label": "Front",
+          "points": [
+            [
+              1,
+              3
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              9,
+              9
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-trends-interpolation-6",
-    "title": "Read turning points and limits separately",
-    "context": "Measurements were taken at equal exposure intervals below the detector limit of 100 units.",
-    "table": {
-      "columns": ["Exposure step", "Signal"],
-      "rows": [
-        [0, 0],
-        [1, 24],
-        [2, 40],
-        [3, 48],
-        [4, 51]
+    "title": "Signal over equal time steps",
+    "context": "The detector can read up to 100 units. These are the only measured steps.",
+    "graph": {
+      "title": "Signal over equal time steps",
+      "xLabel": "Exposure step",
+      "yLabel": "Signal (units)",
+      "series": [
+        {
+          "label": "Signal",
+          "points": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              24
+            ],
+            [
+              2,
+              40
+            ],
+            [
+              3,
+              48
+            ],
+            [
+              4,
+              51
+            ]
+          ]
+        }
       ]
     }
   },
   {
-    "id": "science-teaching-trends-interpolation-7",
-    "title": "Carry new information through the whole model",
-    "context": "Daily growth is additive; a temporary treatment changes only Day 3.",
+    "title": "Growth over three days",
+    "context": "Only Day 3 has half the usual growth rate.",
     "table": {
       "columns": [
         "Day",
-        "Untreated increase (units)",
-        "Treated increase (units)"
+        "Usual gain (units)",
+        "New gain (units)"
       ],
       "rows": [
-        [1, 8, 8],
-        [2, 8, 8],
-        [3, 8, 4]
+        [
+          1,
+          8,
+          8
+        ],
+        [
+          2,
+          8,
+          8
+        ],
+        [
+          3,
+          8,
+          4
+        ]
       ]
-    }
+    },
+    "id": "science-teaching-trends-interpolation-7"
   },
   {
     "id": "science-teaching-experimental-design-1",
-    "title": "Name variables and controls precisely",
-    "context": "Separate matched plants receive one fertilizer dose each; all plants are measured on Day 12.",
+    "title": "Fertilizer and leaves",
+    "context": "Same species, water, light, and 12-day duration. Fertilizer dose is assigned to separate plants.",
     "table": {
-      "columns": ["Dose (mg/day)", "Mean leaf area (cm²)"],
+      "columns": [
+        "Fertilizer (mg/day)",
+        "Mean leaf area (cm²)"
+      ],
       "rows": [
-        [0, 18],
-        [4, 25],
-        [8, 27]
+        [
+          0,
+          18
+        ],
+        [
+          4,
+          25
+        ],
+        [
+          8,
+          27
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-experimental-design-2",
-    "title": "Detect confounds and isolate the treatment",
-    "context": "The comparison is intended to test temperature, but the initial water source differs.",
+    "title": "A temperature test with a problem",
+    "context": "The investigators want to test temperature alone.",
     "table": {
-      "columns": ["Flask", "Water source", "Temperature (°C)"],
+      "columns": [
+        "Sample",
+        "Water source",
+        "Temperature (°C)"
+      ],
       "rows": [
-        ["A", "River", 18],
-        ["B", "Pond", 28]
+        [
+          "A",
+          "River",
+          18
+        ],
+        [
+          "B",
+          "Pond",
+          28
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-experimental-design-3",
-    "title": "Match the comparison to the hypothesis",
-    "context": "Time is recorded until 30 mL of gas has formed under identical reaction conditions.",
+    "title": "Catalyst shape",
+    "context": "Use the same solution and temperature. Stop timing when 30 mL gas forms.",
     "table": {
-      "columns": ["Catalyst form", "Catalyst mass (g)", "Mean time (s)"],
+      "columns": [
+        "Catalyst",
+        "Mass (g)",
+        "Mean time (s)"
+      ],
       "rows": [
-        ["Intact", 2, 96],
-        ["Powdered", 2, 48]
+        [
+          "One piece",
+          2,
+          96
+        ],
+        [
+          "Powder",
+          2,
+          48
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-experimental-design-4",
-    "title": "Count independent experimental units",
-    "context": "Salinity is assigned to whole tanks; fish within each tank share the same water.",
+    "title": "Fish in treated tanks",
+    "context": "Salinity is assigned separately to each whole tank; fish in a tank share its water.",
     "table": {
-      "columns": ["Quantity", "Count"],
+      "columns": [
+        "Quantity",
+        "Count"
+      ],
       "rows": [
-        ["Independently treated tanks", 5],
-        ["Fish measured per tank", 6]
+        [
+          "Separately treated tanks",
+          5
+        ],
+        [
+          "Fish measured per tank",
+          6
+        ]
       ]
     }
   },
   {
-    "id": "science-teaching-experimental-design-5",
-    "title": "Separate randomization, blinding, and carryover",
-    "context": "A behavior trial assigns insects to one tone exposure and records each response.",
+    "title": "A behavior trial",
+    "context": "Insects receive one tone each; the scorer receives unlabeled videos.",
     "table": {
-      "columns": ["Safeguard", "Direct purpose"],
+      "columns": [
+        "Design choice",
+        "What it changes"
+      ],
       "rows": [
-        ["Random assignment", "Balance starting differences on average"],
-        ["Blinded scoring", "Reduce expectation bias"],
-        ["Fresh insects", "Avoid prior-tone carryover"]
+        [
+          "Random assignment",
+          "Which insects receive each tone"
+        ],
+        [
+          "Hidden video labels",
+          "What the scorer knows"
+        ],
+        [
+          "Fresh insects",
+          "Whether an earlier tone was heard"
+        ]
       ]
-    }
+    },
+    "id": "science-teaching-experimental-design-5"
   },
   {
-    "id": "science-teaching-experimental-design-6",
-    "title": "Use a two-factor comparison and test interactions",
-    "context": "A factorial study uses separate matched organisms at each combination of light and feeding.",
+    "title": "Feeding at two light levels",
+    "context": "Separate matched groups are measured for the same time.",
     "table": {
-      "columns": ["Light", "Unfed growth (mm)", "Fed growth (mm)"],
+      "columns": [
+        "Light",
+        "Unfed growth (mm)",
+        "Fed growth (mm)"
+      ],
       "rows": [
-        ["Low", 2, 5],
-        ["High", 4, 11]
+        [
+          "Low",
+          2,
+          5
+        ],
+        [
+          "High",
+          4,
+          11
+        ]
       ]
-    }
+    },
+    "id": "science-teaching-experimental-design-6"
   },
   {
     "id": "science-teaching-experimental-design-7",
-    "title": "Check measurement definitions, precision, and accuracy",
-    "context": "A reference bath has accepted temperature 50.0°C; the same thermometer takes three readings.",
+    "title": "Checking a thermometer",
+    "context": "The certified reference temperature is 50.0°C.",
     "table": {
-      "columns": ["Reading", "Temperature (°C)"],
+      "columns": [
+        "Reading",
+        "Temperature (°C)"
+      ],
       "rows": [
-        [1, 52.1],
-        [2, 52.0],
-        [3, 52.1]
+        [
+          1,
+          52.1
+        ],
+        [
+          2,
+          52.0
+        ],
+        [
+          3,
+          52.1
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-conflicting-viewpoints-1",
-    "title": "Map each proposed cause to its prediction",
-    "context": "Two researchers explain the same pale appearance; the filter removes clay particles but does not remove dissolved salt.",
+    "title": "Why is lake water cloudy?",
+    "context": "The filter removes clay but leaves dissolved salt unchanged.",
     "table": {
       "columns": [
-        "Viewpoint",
+        "Scientist",
         "Proposed cause",
-        "Prediction after filtering solids"
+        "After filtering clay"
       ],
       "rows": [
-        ["D", "Suspended clay", "Water becomes clearer"],
-        ["E", "Dissolved salt alone", "Appearance stays similar"]
+        [
+          "D",
+          "Clay particles",
+          "Clearer water"
+        ],
+        [
+          "E",
+          "Dissolved salt alone",
+          "Similar cloudiness"
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-conflicting-viewpoints-2",
-    "title": "Control the competing explanation",
-    "context": "Cloudiness is measured under matched lighting and constant salt concentration.",
+    "title": "Removing and restoring clay",
+    "context": "Salt, temperature, and lighting stay fixed.",
     "table": {
-      "columns": ["Condition", "Cloudiness (units)"],
+      "columns": [
+        "Condition",
+        "Cloudiness (units)"
+      ],
       "rows": [
-        ["Untreated", 90],
-        ["Clay removed", 15],
-        ["Clay restored", 86]
+        [
+          "Untreated",
+          90
+        ],
+        [
+          "Clay removed",
+          15
+        ],
+        [
+          "Clay restored",
+          86
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-conflicting-viewpoints-3",
-    "title": "Distinguish feasibility, necessity, and history",
-    "context": "The study tests survival during transport, not which route happened during the original colonization.",
+    "title": "Spores survive two routes",
+    "context": "The trials test survival during transport, not the valley’s actual history.",
     "table": {
-      "columns": ["Route", "Spores tested", "Viable afterward"],
+      "columns": [
+        "Route",
+        "Tested",
+        "Survived"
+      ],
       "rows": [
-        ["Wind", 80, 72],
-        ["Animal", 80, 68]
+        [
+          "Wind",
+          80,
+          72
+        ],
+        [
+          "Animal",
+          80,
+          68
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-conflicting-viewpoints-4",
-    "title": "Use the same condition for competing predictions",
-    "context": "Both viewpoints predict a higher color score under their proposed driving condition.",
+    "title": "Salt or temperature?",
+    "context": "Account A predicts a salt effect; B predicts a temperature effect on color score.",
     "table": {
       "columns": [
         "Temperature (°C)",
-        "Low-salt color score",
-        "High-salt color score"
+        "Low-salt score",
+        "High-salt score"
       ],
       "rows": [
-        [20, 4, 4],
-        [35, 9, 9]
+        [
+          20,
+          4,
+          4
+        ],
+        [
+          35,
+          9,
+          9
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-conflicting-viewpoints-5",
-    "title": "Choose tests where predictions diverge",
-    "context": "Organisms are tested in a chamber in which the two proposed cues can be positioned independently.",
+    "title": "Which cue do organisms follow?",
+    "context": "Heat is placed west and moisture east. All other conditions are matched.",
     "table": {
       "columns": [
         "Account",
-        "Driving cue",
-        "Prediction in separated-cue trial"
+        "Cue it follows",
+        "Predicted direction"
       ],
       "rows": [
-        ["H", "Heat", "West"],
-        ["J", "Moisture", "East"]
+        [
+          "H",
+          "Heat",
+          "West"
+        ],
+        [
+          "J",
+          "Moisture",
+          "East"
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-conflicting-viewpoints-6",
-    "title": "Test required conditions and detection limits",
-    "context": "All relevant conditions other than salt meet the model’s stated conditions.",
+    "title": "Testing a vapor requirement",
+    "context": "An event is confirmed. The model requires at least 12 mg/L vapor; all other conditions hold.",
     "table": {
-      "columns": ["Trial", "Salt (mg/L)", "Event occurred"],
+      "columns": [
+        "Sensor",
+        "Smallest reliably detected signal (mg/L)"
+      ],
       "rows": [
-        [1, 5, "Yes"],
-        [2, 5, "Yes"],
-        [3, 15, "Yes"]
+        [
+          "Coarse",
+          20
+        ],
+        [
+          "Fine",
+          2
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-conflicting-viewpoints-7",
-    "title": "Test a complex claim one requirement at a time",
-    "context": "Matched growth trials independently vary light and iron.",
+    "title": "Does growth need light and iron?",
+    "context": "Model K says both sunlight and iron are required.",
     "table": {
-      "columns": ["Condition", "Iron present", "Growth"],
+      "columns": [
+        "Light",
+        "Iron",
+        "Growth"
+      ],
       "rows": [
-        ["Light", "Yes", "Yes"],
-        ["Dark", "Yes", "Yes"],
-        ["Dark", "No", "No"]
+        [
+          "Light",
+          "Present",
+          "Yes"
+        ],
+        [
+          "Dark",
+          "Present",
+          "Yes"
+        ],
+        [
+          "Dark",
+          "Absent",
+          "No"
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-models-evidence-1",
-    "title": "Compute predictions from the exact rule",
-    "context": "The models describe extension x in cm for force F in N, within 0–4 N.",
+    "title": "Model G",
+    "context": "G predicts y = 5t − 2, with time t in seconds and length y in cm.",
     "table": {
-      "columns": ["Force (N)", "L prediction (cm)", "M prediction (cm)"],
+      "columns": [
+        "Time (s)",
+        "Measured length (cm)"
+      ],
       "rows": [
-        [1, 3, 5],
-        [2, 6, 6],
-        [4, 12, 8]
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          4,
+          20
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-models-evidence-2",
-    "title": "Separate additive and multiplicative change",
-    "context": "A model assumes unlimited resources over the measured 0–6 h interval.",
+    "title": "A tripling population",
+    "context": "The population triples every 2 h while nutrients remain sufficient.",
     "table": {
-      "columns": ["Time (h)", "Predicted population"],
+      "columns": [
+        "Time (h)",
+        "Population"
+      ],
       "rows": [
-        [0, 60],
-        [2, 180],
-        [4, 540],
-        [6, 1620]
+        [
+          0,
+          60
+        ],
+        [
+          2,
+          180
+        ],
+        [
+          4,
+          540
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-models-evidence-3",
-    "title": "Respect the model’s domain",
-    "context": "The model applies to one material and only the listed input interval.",
+    "title": "A limited model",
+    "context": "The rule y = 4x applies to this material only for 1 ≤ x ≤ 6.",
     "table": {
-      "columns": ["Input", "Prediction", "Measured"],
+      "columns": [
+        "Input x",
+        "Measured y"
+      ],
       "rows": [
-        [2, 8, 8],
-        [5, 20, 31],
-        [10, "Outside domain", 55]
+        [
+          2,
+          8
+        ],
+        [
+          5,
+          31
+        ],
+        [
+          10,
+          55
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-models-evidence-4",
-    "title": "Apply simultaneous factor changes with units",
-    "context": "The model applies over the proposed changes; k is constant.",
+    "title": "The rule u = ka²/b",
+    "context": "k stays fixed throughout the changes.",
     "table": {
-      "columns": ["Change", "Multiplier on u"],
+      "columns": [
+        "Input",
+        "Change"
+      ],
       "rows": [
-        ["a multiplied by 3", 9],
-        ["b divided by 2", 2],
-        ["Both changes", 18]
+        [
+          "a",
+          "Multiplied by 3"
+        ],
+        [
+          "b",
+          "Divided by 2"
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-models-evidence-5",
-    "title": "Correct the baseline before testing the pattern",
-    "context": "Measurements are equally spaced and the corrected signal halves each interval.",
+    "title": "Detector counts",
+    "context": "Background stays at 10 counts/min. The sample signal halves each equal interval.",
     "table": {
       "columns": [
         "Interval",
-        "Raw total (counts/min)",
-        "Background (counts/min)"
+        "Raw total (counts/min)"
       ],
       "rows": [
-        [0, 310, 10],
-        [1, 160, 10],
-        [2, 85, 10]
+        [
+          0,
+          310
+        ],
+        [
+          1,
+          160
+        ],
+        [
+          2,
+          85
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-models-evidence-6",
-    "title": "Separate saturation from unlimited growth",
-    "context": "Both models apply for positive C in the proposed test range.",
+    "title": "A model that levels off",
+    "context": "Use q = 6C/(2 + C) for positive C.",
     "table": {
-      "columns": ["C", "S prediction", "L prediction"],
+      "columns": [
+        "C",
+        "Predicted q"
+      ],
       "rows": [
-        [1, 2, 3],
-        [2, 3, 6],
-        [4, 4, 12]
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          100,
+          5.88
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-models-evidence-7",
-    "title": "Combine evidence and choose an informative follow-up",
-    "context": "Independent matched groups are measured for the same duration at both light and nutrient levels.",
+    "title": "Does extra light always help?",
+    "context": "Model A says more light always increases growth, provided living-cell density stays constant. Each treatment is measured for the same time. The graph checks the required density condition; the table gives growth.",
     "table": {
-      "columns": ["Nutrients", "Low-light growth", "High-light growth"],
+      "columns": [
+        "Nutrients",
+        "Low-light growth",
+        "High-light growth"
+      ],
       "rows": [
-        ["High", 4, 10],
-        ["Low", 3, 3]
+        [
+          "High",
+          4,
+          10
+        ],
+        [
+          "Low",
+          3,
+          3
+        ]
+      ]
+    },
+    "graph": {
+      "title": "Living-cell density in every treatment",
+      "xLabel": "Time (days)",
+      "yLabel": "Living cells (thousands/mL)",
+      "series": [
+        {
+          "label": "All four treatment groups",
+          "points": [
+            [
+              0,
+              10
+            ],
+            [
+              1,
+              10
+            ],
+            [
+              2,
+              10
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-scientific-foundations-1",
-    "title": "Acidity, enzymes, and concentration",
-    "context": "The enzyme is tested at a constant temperature while solution pH is varied.",
+    "title": "Acidity and enzyme activity",
+    "context": "Solutions are at the same temperature.",
     "table": {
-      "columns": ["pH", "Product formed (units)"],
+      "columns": [
+        "pH",
+        "Product formed (units)"
+      ],
       "rows": [
-        [5, 4],
-        [6, 9],
-        [8, 2]
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          2
+        ]
       ]
     }
   },
   {
-    "id": "science-teaching-scientific-foundations-2",
-    "title": "Atoms, ions, reactions, and conserved matter",
-    "context": "The reaction occurs in a sealed vessel; all matter, including leftover gas, remains inside.",
+    "title": "A sealed reaction",
+    "context": "2 H₂ + O₂ → 2 H₂O. All matter stays inside.",
     "table": {
-      "columns": ["Stage", "H₂ molecules", "O₂ molecules", "H₂O molecules"],
+      "columns": [
+        "Stage",
+        "H₂ molecules",
+        "O₂ molecules",
+        "H₂O molecules"
+      ],
       "rows": [
-        ["Before", 4, 3, 0],
-        ["After", 0, 1, 4]
+        [
+          "Before",
+          4,
+          3,
+          0
+        ],
+        [
+          "After",
+          0,
+          1,
+          4
+        ]
       ]
-    }
+    },
+    "id": "science-teaching-scientific-foundations-2"
   },
   {
     "id": "science-teaching-scientific-foundations-3",
-    "title": "Force, density, and electrical relationships",
-    "context": "Both forces act along one horizontal line; other horizontal forces are negligible.",
+    "title": "Forces on a cart",
+    "context": "Only the two shown horizontal forces act.",
     "table": {
-      "columns": ["Quantity", "Value"],
+      "columns": [
+        "Mass (kg)",
+        "Forward force (N)",
+        "Backward force (N)"
+      ],
       "rows": [
-        ["Mass (kg)", 3],
-        ["Forward force (N)", 12],
-        ["Backward force (N)", 3]
+        [
+          3,
+          12,
+          3
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-scientific-foundations-4",
-    "title": "Cells, photosynthesis, and net measurements",
-    "context": "Equal leaf samples are measured for one hour; assume respiration has the same rate in light and dark.",
+    "title": "Leaves in light and dark",
+    "context": "Equal leaf samples are measured for 1 h. Assume respiration uses oxygen at the same rate in both conditions.",
     "table": {
-      "columns": ["Condition", "Oxygen change (mg/L per h)"],
+      "columns": [
+        "Condition",
+        "Net oxygen change (mg/L per h)"
+      ],
       "rows": [
-        ["Dark", -3],
-        ["Light", 8]
+        [
+          "Dark",
+          -3
+        ],
+        [
+          "Light",
+          8
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-scientific-foundations-5",
-    "title": "Heat, phase changes, and energy",
-    "context": "Heater power is constant and losses are negligible for the comparison.",
-    "table": {
-      "columns": ["Time (min)", "Temperature (°C)", "State"],
-      "rows": [
-        [0, -12, "Solid"],
-        [3, 0, "Starts melting"],
-        [9, 0, "Finishes melting"]
+    "title": "Heating a solid",
+    "context": "Constant power; heat loss is negligible. Melting starts at minute 3 and finishes at minute 9.",
+    "graph": {
+      "title": "Heating a solid",
+      "xLabel": "Time (min)",
+      "yLabel": "Temperature (°C)",
+      "series": [
+        {
+          "label": "Sample",
+          "points": [
+            [
+              0,
+              -12
+            ],
+            [
+              3,
+              0
+            ],
+            [
+              6,
+              0
+            ],
+            [
+              9,
+              0
+            ],
+            [
+              12,
+              12
+            ]
+          ]
+        }
       ]
     }
   },
   {
     "id": "science-teaching-scientific-foundations-6",
-    "title": "Inheritance and population proportions",
-    "context": "The trait follows one-gene complete dominance and equal gamete probabilities.",
+    "title": "Cross: Bb × bb",
+    "context": "B is dominant. Each parent passes either of its alleles with equal chance.",
     "table": {
-      "columns": ["Parent 1 allele", "Parent 2 allele", "Offspring"],
+      "columns": [
+        "First parent gives",
+        "Second parent gives",
+        "Offspring"
+      ],
       "rows": [
-        ["B", "b", "Bb"],
-        ["b", "b", "bb"]
+        [
+          "B",
+          "b",
+          "Bb"
+        ],
+        [
+          "b",
+          "b",
+          "bb"
+        ]
       ]
     }
   },
   {
     "id": "science-teaching-scientific-foundations-7",
-    "title": "Waves and supplied physical models",
-    "context": "Both waves travel through the same unchanged medium with speed 24 m/s.",
+    "title": "Waves in one medium",
+    "context": "Wave speed stays at 24 m/s. Use v = fλ.",
     "table": {
-      "columns": ["Frequency (Hz)", "Wavelength (m)"],
+      "columns": [
+        "Frequency (Hz)",
+        "Speed (m/s)"
+      ],
       "rows": [
-        [6, 4],
-        [12, 2]
+        [
+          6,
+          24
+        ],
+        [
+          12,
+          24
+        ]
       ]
     }
   },
   {
-    "id": "science-teaching-scientific-foundations-8",
-    "title": "Earth, space, and relative evidence",
-    "context": "The layers are undisturbed and upright before the stated fault forms.",
+    "title": "Layers U and V",
+    "context": "Upright layers formed before a fault cut them.",
     "table": {
-      "columns": ["Feature", "Observation"],
+      "columns": [
+        "Feature",
+        "Relation"
+      ],
       "rows": [
-        ["U", "Below V"],
-        ["V", "Above U"],
-        ["Fault", "Cuts U and V"]
+        [
+          "U",
+          "Below V"
+        ],
+        [
+          "V",
+          "Above U"
+        ],
+        [
+          "Fault",
+          "Cuts U and V"
+        ]
       ]
-    }
+    },
+    "id": "science-teaching-scientific-foundations-8"
   }
 ]

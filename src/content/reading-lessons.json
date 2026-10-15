@@ -2,108 +2,108 @@
   {
     "slug": "reading-main-idea",
     "title": "Main ideas and summaries",
-    "intro": "Find the main point of the whole passage.",
+    "intro": "Find the whole point, not just an interesting detail.",
     "sections": [
       {
-        "heading": "Use the screen to build a passage map",
+        "heading": "Make a three-part map",
         "body": [
-          "Give each paragraph a short job: introduce a problem, give evidence, explain a limit to a claim, or show a change. For a main-idea question, connect those jobs into one sentence about the whole passage.",
-          "Use the opening and ending as anchors, then check that your summary accounts for the middle. A topic such as “buses” is not yet a main idea."
+          "Read once for the big change. Give the beginning, middle, and ending a few words each.",
+          "Join those notes. The main idea must cover the whole passage."
         ],
         "examples": [
           {
-            "label": "Worked method: Map paragraph jobs",
-            "text": "The instrument maker placed a row of finished flutes in her window. Passersby saw smooth tubes; the apprentice saw the shavings swept away before opening.\n\nHe proposed displaying the shavings too. The maker asked what a heap would explain. He sorted pieces by the operations that had produced them and laid an unfinished flute beside the rows.\n\nA visitor followed the sequence with one finger. The apprentice moved his name card away from the center so it would not interrupt the path.\n\nQuestion:  Which paragraph map best captures the movement?\nA. A finished product → an apprentice’s attempt to make it more decorative → a change in the shop’s prices\nB. Different views of a product → a display that reveals the process → attention redirected toward that process\nC. A maker’s objection → removal of the apprentice’s display → a visitor’s misunderstanding\n\nSupported answer: Different views of a product → a display that reveals the process → attention redirected toward that process\n\nReason: The opening contrasts a finished object with its making; the middle organizes scraps into an explanation; the ending lets the visitor follow that sequence. The display does not change prices or disappear. Map the change in each paragraph’s role rather than treating an objection as the final outcome.",
+            "label": "Point to the proof",
+            "text": "The school garden first sold all its vegetables. Students then noticed that some neighbors could not afford them. They kept the Saturday sales but set aside a free basket each morning. Sales now paid for seeds, while the baskets helped nearby families.\n\nQuestion: Which map follows the whole passage?\nA. Sell vegetables → notice a need → keep sales and add free food\nB. Grow vegetables → lose every customer → close the garden\nC. Give away seeds → start a shop → stop helping neighbors\n\nSupported answer: Sell vegetables → notice a need → keep sales and add free food\n\nReason: “Kept the Saturday sales” and “set aside a free basket” show the two parts of the new plan.\nTrap: The garden changes how it shares food; it does not close or stop selling.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Find the controlling idea, not just the subject",
+        "heading": "Name the subject, then the point",
         "body": [
-          "Name the subject and what the passage develops about it. “A coating must keep its reflective surface to maintain performance” is a controlling claim; “roof coatings” is only a subject.",
-          "Test the claim against the opening, the major turn, and the ending. Preserve conditions and degree of certainty rather than assuming the strongest wording is the best summary."
+          "Ask: What is this about? Then: What does the writer say about it?",
+          "A topic names the subject. A main idea explains the point."
         ],
         "examples": [
           {
-            "label": "Worked method: Separate topic from controlling claim",
-            "text": "Dark-colored roofs absorb much of the sunlight that strikes them. A reflective coating can reduce that absorbed energy, but its performance depends partly on what remains on the surface. Dust can cover the coating and alter its reflectance.\n\nAn engineer therefore compares both freshly coated and weathered panels. Her report treats reflectance as a property to maintain, not simply a number printed on a new product’s package.\n\nQuestion: Which statement gives the controlling idea rather than only the subject?\nA. The passage discusses reflective roof coatings.\nB. Roof coatings should be selected entirely by the amount of dust nearby.\nC. A coating’s cooling value depends on its continuing surface condition as well as its initial reflectance.\n\nSupported answer: A coating’s cooling value depends on its continuing surface condition as well as its initial reflectance.\n\nReason: “Reflective roof coatings” names the subject but omits the development. The contrast between fresh and weathered panels supports a claim about maintained performance. Dust matters, but “entirely” discards the initial reflectance the passage also discusses. Build subject + what the writer establishes about it.",
+            "label": "Point to the proof",
+            "text": "A library put its most borrowed books near the front door. Readers found them faster, but the narrow entrance became crowded. Staff moved the shelf beside the help desk. The books remained easy to find, and the doorway was clear again.\n\nQuestion: Which choice gives the main idea?\nA. The passage is about library shelves.\nB. Moving a popular shelf solved an access problem while keeping books easy to find.\nC. Putting every book near the door makes a library easier to use.\n\nSupported answer: Moving a popular shelf solved an access problem while keeping books easy to find.\n\nReason: The first move helps readers but crowds the door. The second keeps the benefit and fixes the problem.\nTrap: “Library shelves” is only the topic. “Every book” claims more than this one shelf shows.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Match a summary to the passage’s full movement",
+        "heading": "Keep the beginning, turn, and ending",
         "body": [
-          "Mark the argumentative turn: what did the writer or character expect, what complicated it, and what changed afterward? A summary should preserve that sequence without becoming a list of events.",
-          "Check the outcome against the middle. If the ending qualifies an earlier position, a choice that simply repeats the opening is incomplete."
+          "Look for a change: At first __. Then __. In the end __.",
+          "A good summary keeps that change. It does not stop at the first idea."
         ],
         "examples": [
           {
-            "label": "Worked method: Keep the argumentative turn",
-            "text": "A school orchestra planned to perform an unfamiliar piece without an introduction, hoping listeners would encounter it without instructions about what to hear. During rehearsal, players disagreed about whether an abrupt silence was a joke or an interruption.\n\nThey recorded both versions and listened without the score. Neither sounded accidental. The conductor kept the silence but added a short spoken invitation to notice how the same pause might feel different on its return.\n\nQuestion:  Which summary keeps the full movement?\nA. The orchestra moves from avoiding an introduction to briefly inviting listeners to notice the pause’s possible meanings.\nB. The orchestra resolves the disagreement by removing the ambiguous pause from the piece.\nC. A conductor replaces the players’ experiment with a detailed explanation of the correct interpretation.\n\nSupported answer: The orchestra moves from avoiding an introduction to briefly inviting listeners to notice the pause’s possible meanings.\n\nReason: The passage moves from no introduction through two workable readings to a selective prompt. The pause remains and no single correct reading is imposed. A summary should carry the starting position, the complication, and the limited revision rather than invent resolution by removal or instruction.",
+            "label": "Point to the proof",
+            "text": "Jon thought restoring the old boat meant making it look new. While sanding, he found marks showing where earlier owners had repaired it. He left some marks visible and added a label explaining them. The boat could sail again, and visitors could see part of its history.\n\nQuestion: Which summary follows Jon’s change?\nA. He starts a repair but leaves the boat unable to sail.\nB. He learns that old repairs should always be removed.\nC. He begins by seeking a new appearance, then preserves useful signs of the past.\n\nSupported answer: He begins by seeking a new appearance, then preserves useful signs of the past.\n\nReason: Jon starts with “making it look new” but later “left some marks visible.” Both parts belong in the summary.\nTrap: Leaving marks does not mean abandoning the repair: the ending says the boat can sail.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Reject narrow, inflated, and imported choices",
+        "heading": "Keep the answer within the evidence",
         "body": [
-          "Test three traps: a narrow choice covers only one detail; an inflated choice claims more than the passage; an imported choice adds an idea the text never develops.",
-          "Check who the answer includes and how sure it sounds. “The interviewed residents” is narrower than “everyone,” and “promising” is weaker than “proven.” Point to the words that support the choice."
+          "Check who, where, and how sure. Keep the passage’s limits.",
+          "Watch words such as all, always, and proves. They need strong support."
         ],
         "examples": [
           {
-            "label": "Worked method: Distinguish a true detail from the main idea",
-            "text": "A city greenhouse opened early on two weekdays so gardeners could collect seedlings before work. The early visitors came in small numbers, but many said they could not attend the usual afternoon hours. Some used the service repeatedly.\n\nThe manager recommended keeping one early morning rather than two. That schedule preserved an option for the gardeners while concentrating the limited staff time.\n\nQuestion: Which accurate-sounding summary is too narrow?\nA. The manager adjusts an access service to balance a particular need with limited staffing.\nB. Some gardeners collected seedlings before work.\nC. A small early-morning program is retained in a form that requires less staff time.\n\nSupported answer: Some gardeners collected seedlings before work.\n\nReason: The middle statement is a true event, but it omits both the access problem and the scheduling decision. The other summaries account for the need and the adjustment. A detail does not become the main idea merely because it is stated explicitly. Ask what important part of the passage would remain unexplained if your choice were the title.",
+            "label": "Point to the proof",
+            "text": "Twenty volunteers tried a new bus route for one week. Most said it shortened their trip to work. The planner called the result encouraging but asked for a winter trial before changing the route permanently. No other riders had been surveyed.\n\nQuestion: Which summary stays within the passage?\nA. A short volunteer trial looks promising, but more testing is needed.\nB. The new route will shorten every rider’s trip throughout the year.\nC. The planner found no useful information in the trial.\n\nSupported answer: A short volunteer trial looks promising, but more testing is needed.\n\nReason: “Twenty volunteers,” “one week,” and “before changing ... permanently” keep the result small and unfinished.\nTrap: Encouraging does not mean proven for everyone. Asking for more testing does not mean the first trial was useless.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Treat narrative change as evidence, not a slogan",
+        "heading": "Show a character’s actual change",
         "body": [
-          "Track an initial preference, a revealing action, and the final choice. Describe the change those actions support without inventing a permanent personality transformation.",
-          "Keep the remaining tension. A character can accept an inconvenience or revise one judgment while retaining earlier goals."
+          "Compare what the person does at the start and end.",
+          "Name only the change those actions show. One brave act does not erase every fear."
         ],
         "examples": [
           {
-            "label": "Worked method: Infer narrative movement without inventing a moral",
-            "text": "Tess always took the highest path above the beach. From there she could reach home without sand in her shoes. When her younger cousin visited, she agreed to walk beside the pools and carried his shoes along with her own.\n\nHe stopped at each patch of water. Tess first watched the time, then crouched to see what held him. At the steps home she brushed both pairs of feet clean. The next morning she asked him whether the pools would still be full after breakfast.\n\nQuestion:  What change does the ending support?\nA. Tess discovers that her cousin’s route is more efficient for reaching home.\nB. Tess continues using the pools mainly to avoid disappointing her cousin.\nC. Tess has developed an interest in a route she had previously avoided.\n\nSupported answer: Tess has developed an interest in a route she had previously avoided.\n\nReason: The opening values the high path for avoiding sand. Crouching and asking about the next morning support a new interest, while cleaning feet preserves the inconvenience. The lower route is not established as more efficient, and the final invitation goes beyond merely accommodating a visitor.",
+            "label": "Point to the proof",
+            "text": "At her first rehearsal, Eva hid her drawing behind a folder when the director asked for costume ideas. A week later, she still felt nervous, but she put the drawing on the table and explained one part. Her hands shook while she spoke.\n\nQuestion: What change does the passage show?\nA. Eva stops caring about the costumes.\nB. Eva shares an idea despite still feeling nervous.\nC. Eva becomes completely confident in every situation.\n\nSupported answer: Eva shares an idea despite still feeling nervous.\n\nReason: She first hides the drawing, then puts it on the table. Her shaking hands show that the nerves remain.\nTrap: The ending supports a brave action, not the disappearance of all fear.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Pace a decision instead of rereading everything",
+        "heading": "Settle the difference between two choices",
         "body": [
-          "For a main-idea choice, check one sentence from the beginning and one from the ending. Then ask whether the middle supports the same movement.",
-          "If two choices remain, name their difference: who they include, how the writer feels, or what happens. Return to the part of the passage that settles that difference."
+          "When two answers seem close, name their difference.",
+          "Return to the line that settles that difference instead of rereading everything."
         ],
         "examples": [
           {
-            "label": "Worked method: Settle two close summaries with a pivot",
-            "text": "The curator’s draft called the restored dial “as its first owner saw it.” The conservator crossed out that phrase. The metal was original, but the hands had been replaced, and the lost glass was represented by a clear modern cover.\n\nThey kept the dial on display. The new caption named the surviving parts and distinguished them from the additions that made the object readable.\n\nQuestion: Which detail separates “the restoration is rejected as inauthentic” from “the restoration is presented with its interventions made clear”?\nA. The dial remains on display with additions identified.\nB. The curator writes a first draft.\nC. The dial once had an owner.\n\nSupported answer: The dial remains on display with additions identified.\n\nReason: The two choices disagree about rejection versus qualified presentation. Keeping the object and identifying additions directly resolves that difference. Drafting and former ownership occur under either interpretation. When two summaries remain, locate the sentence on which their claims diverge instead of rereading every sentence equally.",
+            "label": "Point to the proof",
+            "text": "The museum offered a free evening opening. More visitors came, but only during the school holiday. Staff kept the evening for another month to see whether attendance stayed high after classes resumed. They had not yet decided on a permanent schedule.\n\nQuestion: Which detail rules out “The evening opening is a proven year-round success”?\nA. The opening was free.\nB. The building was a museum.\nC. The trial had only run during a school holiday.\n\nSupported answer: The trial had only run during a school holiday.\n\nReason: “Only during the school holiday” leaves other parts of the year untested. That is the difference the answer must preserve.\nTrap: A free opening may help attendance, but its price does not prove what will happen all year.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Review the reason for the miss and test the repair",
+        "heading": "Repair a main-idea mistake",
         "body": [
-          "After a miss, label its cause: chose a detail, ignored the ending, exaggerated the conclusion, or imported an outside idea.",
-          "Rewrite the main idea in one sentence using two passage anchors. Then try a new passage; recognizing an answer you have already seen is not evidence of transfer."
+          "Name your mistake: too small, too broad, or missing the change.",
+          "Write a one-sentence summary with a detail from the start and end. Then try new text."
         ],
         "examples": [
           {
-            "label": "Worked method: Repair an overextended summary",
-            "text": "A botanist’s notebook described a hillside in spring. Her later essay used those notes to explain how she learned the names of flowers along one route. She wrote that naming made some differences easier to notice, though she continued to encounter forms she could not identify.\n\nA student summarized the essay as proof that learning names gives a complete understanding of nature.\n\nQuestion: Which repair matches the stated experience?\nA. Naming replaces the need to keep observing the hillside.\nB. Learning names changes the botanist’s attention without ending what she has yet to learn.\nC. The essay shows that unidentified flowers are less important than named ones.\n\nSupported answer: Learning names changes the botanist’s attention without ending what she has yet to learn.\n\nReason: “Complete understanding” conflicts with the continuing unidentified forms. A repaired summary retains the positive change—easier noticing—while removing the unsupported completion claim. Neither replacing observation nor ranking flowers is supported. The useful repair names the exact overreach and keeps the evidence the mistaken answer began with.",
+            "label": "Point to the proof",
+            "text": "Lena expected the repair club to have an expert who knew every answer. Instead, members tested ideas together and sometimes failed. She returned the next week with a broken lamp and a notebook. She wanted to help test the next idea.\n\nQuestion: Why is “Lena finds an expert who knows every repair” a poor summary?\nA. It gives too much detail about the lamp.\nB. It keeps her first expectation and ignores what she learns.\nC. It correctly describes how the club works.\n\nSupported answer: It keeps her first expectation and ignores what she learns.\n\nReason: “Instead” marks the turn: members test ideas and sometimes fail. Her return shows that she accepts that way of learning.\nTrap: Do not summarize an early belief as if the rest of the passage confirmed it.",
             "good": true
           }
         ],
@@ -182,108 +182,109 @@
   {
     "slug": "reading-details",
     "title": "Details, sequence, and cause",
-    "intro": "Find the exact detail that answers the question.",
+    "intro": "Find the exact fact and keep its meaning.",
     "sections": [
       {
-        "heading": "Use the screen to build a passage map",
+        "heading": "Find where the fact lives",
         "body": [
-          "Map where each fact lives: people, events, dates, measurements, and explanations. You need locations, not a memorized list of details.",
-          "Use the question’s distinctive noun or action to return to the right paragraph. Read the neighboring sentence before choosing."
+          "Use a name, place, or action from the question to find the right part.",
+          "Read that sentence and its neighbor. You do not need to memorize every detail."
         ],
         "examples": [
           {
-            "label": "Worked method: Map where a requested fact lives",
-            "text": "The island clinic sends supply orders on Mondays. A coastal office checks the orders on Tuesdays and combines them into one shipment. The ferry carries the boxes on Thursday unless weather closes the harbor.\n\nUrgent medicine travels by a different arrangement; it does not wait for the weekly supply shipment.\n\nQuestion: To find when routine supplies are physically transported, which part should you use?\nA. The sentence about Monday orders\nB. The exception for urgent medicine\nC. The Thursday ferry sentence and its weather condition\n\nSupported answer: The Thursday ferry sentence and its weather condition\n\nReason: The requested action is transport, not ordering or checking. Thursday supplies the time and the harbor exception qualifies it. Monday belongs to a different action, and urgent medicine is outside “routine supplies.” A location map connects each date to its own event before matching an answer.",
+            "label": "Point to the proof",
+            "text": "The class visited the river in April to collect water. In May, students tested the samples at school. They wrote their report in June and showed it to families in July. The teacher kept a copy beside the laboratory sink.\n\nQuestion: Where should you look to find when the samples were tested?\nA. The sentence about the May work at school\nB. The sentence about the April river visit\nC. The sentence about showing families the report\n\nSupported answer: The sentence about the May work at school\n\nReason: “In May, students tested the samples” matches the exact action in the question.\nTrap: Collecting and testing are different steps. A nearby date is not enough unless it belongs to the requested action.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Turn the stem into a precise search",
+        "heading": "Match the exact person or event",
         "body": [
-          "Turn the question into a search target: who did what, when, or under which condition? Find that event, then match the requested detail.",
-          "A correct quotation can still answer the wrong question. Check the actor, time, and unit before accepting a choice."
+          "Turn the question into a small search: Who did what, and when?",
+          "Match all of those parts before choosing. A true detail can answer the wrong question."
         ],
         "examples": [
           {
-            "label": "Worked method: Locate actor, action, and condition",
-            "text": "Before opening the workshop, Ada tested the repaired lamp using a new bulb. The bulb lit, but the switch jammed on its second use. She set the lamp on a marked shelf and recorded the fault. Only after replacing the switch did she call its owner.\n\nQuestion: When did Ada contact the owner?\nA. After replacing the faulty switch\nB. Immediately after the new bulb lit\nC. When she first placed the lamp on the marked shelf\n\nSupported answer: After replacing the faulty switch\n\nReason: The phrase “Only after replacing the switch” attaches directly to calling the owner. The bulb test and marked shelf are earlier real events, which makes them tempting. Match the question’s action—contacting—not simply the first successful test.",
+            "label": "Point to the proof",
+            "text": "On Monday, Amir measured the stage. On Tuesday, Bea ordered boards using his measurements. Chen painted the boards on Friday, after the team had built the frame. The teacher checked the finished frame before the students carried it outside.\n\nQuestion: Who ordered the boards?\nA. Amir\nB. Bea\nC. Chen\n\nSupported answer: Bea\n\nReason: “Bea ordered boards” supplies both the person and the action. The timing is Tuesday.\nTrap: Amir measured; Chen painted. Both names are in the passage, but neither did the requested job.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Separate sequence from cause",
+        "heading": "Track what happened, when, and why",
         "body": [
-          "Separate what happened next from what caused it. “Returns improved after reminders began” states sequence; it does not isolate reminders as the cause.",
-          "If the question asks why, find the explanation the text supplies. Do not replace it with a plausible explanation of your own."
+          "For order, follow before, after, and the named events.",
+          "For why, find the stated reason or connect the person’s action to a nearby clue.",
+          "After alone does not prove because. Keep the explanation within the text."
         ],
         "examples": [
           {
-            "label": "Worked method: Read a stated cause without promoting sequence",
-            "text": "A hall’s new entrance opened in September. Concert attendance rose in October, when the orchestra also began offering cheaper afternoon tickets. The hall manager attributed the rise to the ticket offer, based on answers collected from returning patrons. She said the entrance had made arrivals smoother but had not been the reason those patrons booked.\n\nQuestion: Which explanation does the passage attribute to the manager?\nA. The entrance caused the rise because it opened first.\nB. The ticket offer prompted the reported patrons to book.\nC. The entrance and tickets had equal effects on booking.\n\nSupported answer: The ticket offer prompted the reported patrons to book.\n\nReason: The manager’s stated explanation concerns the ticket offer and the surveyed patrons. The entrance opening is earlier, but sequence alone does not make it her asserted cause. No equal division of effects is reported. A detail question can ask what a speaker says even when the passage is not proving that speaker’s account universally.",
+            "label": "Point to the proof",
+            "text": "On Monday, the club invited members to read a poem aloud. When his name was called, Nico studied the noticeboard instead of stepping forward. The next week, he practiced with one friend before joining the group reading.\n\nQuestion: Why does Nico most likely study the noticeboard when called?\nA. He is looking for the date of the next meeting.\nB. He is avoiding the invitation to read aloud.\nC. The club has asked him to repair the board.\n\nSupported answer: He is avoiding the invitation to read aloud.\n\nReason: His name is called, but he looks away instead of stepping forward. Later practice with one friend supports difficulty joining the reading.\nTrap: The passage never gives him a date-search or repair task. Use the action and its timing, not an invented reason.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Control the unit, speaker, and condition",
+        "heading": "Keep the number attached to what it counts",
         "body": [
-          "Keep the number attached to what it counts. Tool returns are not unique borrowers; occupied seats are not distinct visitors.",
-          "Check speaker and condition too. A volunteer’s claim is not automatically the author’s conclusion, and results for one group do not describe everyone."
+          "Read the noun beside the number: visits, people, items, or days.",
+          "Keep the group and time period too. Visits are not always different people."
         ],
         "examples": [
           {
-            "label": "Worked method: Keep a number attached to its denominator",
-            "text": "The repair desk logged 36 visits involving 24 customers in one week. Nine visits were follow-ups on earlier work. The coordinator reported visits and customers in separate columns because one customer could return more than once.\n\nQuestion: Which statement preserves the recorded quantity?\nA. Thirty-six customers had items repaired.\nB. Nine of the customers visited only for follow-up work.\nC. The desk recorded thirty-six visits, some made by returning customers.\n\nSupported answer: The desk recorded thirty-six visits, some made by returning customers.\n\nReason: Thirty-six counts visits, not unique customers. Nine also counts visits; it does not identify nine distinct people or establish their only reason for attending. The separate customer count is 24. Keep each value paired with its unit before paraphrasing it.",
+            "label": "Point to the proof",
+            "text": "The pool recorded 90 entries on Saturday. Some swimmers left for lunch and entered again, so each person could appear more than once in the count. Staff did not record names and could not tell how many different swimmers had attended.\n\nQuestion: What does 90 count?\nA. Entries into the pool\nB. Different swimmers\nC. Swimmers who stayed all day\n\nSupported answer: Entries into the pool\n\nReason: The passage calls the number “90 entries” and says the same person could enter more than once.\nTrap: Do not replace entries with people. The missing names prevent a count of different swimmers.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Check a paraphrase without demanding identical wording",
+        "heading": "Change the words, keep the meaning",
         "body": [
-          "A correct paraphrase keeps the fact and its strength while changing the wording. “Guarded support” can become “cautious approval”; it cannot become “proof.”",
-          "Substitute the choice into the passage’s claim. Reject a choice that copies familiar words but changes their relationship."
+          "A paraphrase says the same thing in new words.",
+          "Check the actor, action, and limit. Similar words can still change the claim."
         ],
         "examples": [
           {
-            "label": "Worked method: Preserve the strength of a paraphrase",
-            "text": "The astronomer called the dimming pattern “compatible with a passing object” but noted that a change in the star itself had not been excluded. The report recommended observing another event before favoring either explanation.\n\nQuestion: Which paraphrase is faithful?\nA. A passing object remains a possible explanation, while an alternative still needs testing.\nB. The pattern establishes that a passing object caused the dimming.\nC. The report favors a change in the star over a passing object.\n\nSupported answer: A passing object remains a possible explanation, while an alternative still needs testing.\n\nReason: “Compatible with” allows a passing object without selecting it as the cause. “Had not been excluded” preserves a stellar alternative, and the next observation is meant to help decide. Establishing one cause or favoring the other changes the report’s stated certainty.",
+            "label": "Point to the proof",
+            "text": "The coach supported adding one extra practice if players could still finish their schoolwork. She did not approve a daily increase. Before setting a date, she asked the team about homework deadlines and the hours they already spent traveling.\n\nQuestion: Which choice restates the coach’s view?\nA. She wants more practice every day.\nB. She supports one extra practice only if schoolwork can still be completed.\nC. She opposes any change to the schedule.\n\nSupported answer: She supports one extra practice only if schoolwork can still be completed.\n\nReason: “If players could still finish their schoolwork” is a condition, so the restatement must keep it.\nTrap: Support with a condition is neither full rejection nor approval of a daily increase.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Pace a decision instead of rereading everything",
+        "heading": "Check the one detail that differs",
         "body": [
-          "Find the requested fact before weighing all the choices. Mark the sentence that answers the precise question.",
-          "When two options differ by a date, person, or condition, compare that feature directly with the source. Avoid rereading unrelated paragraphs."
+          "If two choices differ by a name, date, or unit, compare that detail with the text.",
+          "Skip unrelated parts of the passage while settling this question."
         ],
         "examples": [
           {
-            "label": "Worked method: Discriminate between adjacent dates",
-            "text": "The committee approved the design in March and sent it for a safety review. Inspectors returned comments in April. The builder revised the railing in May, and the committee approved that revision in June. Work on the site began in July.\n\nQuestion: Which date answers when the revised railing received approval?\nA. May\nB. June\nC. July\n\nSupported answer: June\n\nReason: May is when the builder changed the railing; June is when the committee approved that change; July is the start of construction. All are relevant to the project, but only June matches both “revised railing” and “approval.” Checking those two features is faster and safer than choosing the nearest remembered date.",
+            "label": "Point to the proof",
+            "text": "The club collected coats in October and sorted them in November. The first delivery reached the shelter in December. A second delivery followed in January because several donors brought more coats after the original collection had ended.\n\nQuestion: Which date answers “When did the first delivery arrive?”\nA. October\nB. January\nC. December\n\nSupported answer: December\n\nReason: “The first delivery reached the shelter in December” directly settles both first and arrived.\nTrap: October belongs to collection. January belongs to the second delivery. Keep the requested event attached to its date.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Review the reason for the miss and test the repair",
+        "heading": "Fix the exact mismatch",
         "body": [
-          "Identify the exact mismatch in a missed detail: wrong speaker, unit, date, condition, or cause.",
-          "Write the corrected fact with its limits intact: who, when, how many, or under what conditions. Then try that same check on a fresh passage."
+          "After a miss, name the part you changed: person, event, date, number, or condition.",
+          "Write the correct fact in one short sentence. Use that same check on the next passage."
         ],
         "examples": [
           {
-            "label": "Worked method: Repair a speaker-and-scope error",
-            "text": "The organizer predicted that the evening session would help all participants. After the first session, three attendees said its timing suited them; two other attendees did not submit comments. The report quoted the favorable comments but made no statement about the two who had not responded.\n\nQuestion: How should “the report confirms that everyone preferred the evening” be corrected?\nA. The organizer’s prediction is proved because favorable comments were received.\nB. The two silent attendees opposed the timing.\nC. Three attendees reported favorable timing; the other attendees’ views were not recorded.\n\nSupported answer: Three attendees reported favorable timing; the other attendees’ views were not recorded.\n\nReason: The original prediction belongs to the organizer, while the report contains three comments and two unknown responses. Neither support nor opposition can be assigned to silent attendees. Repairing the error requires keeping speaker and sample scope separate, not merely weakening “everyone” to an equally invented count.",
+            "label": "Point to the proof",
+            "text": "A theater counted 40 occupied seats before the interval and 35 afterward. The report did not record who sat in each seat. Sam summarized the report as “Only 35 different people attended the whole show,” but the counts cannot establish that.\n\nQuestion: What did Sam change?\nA. He changed occupied seats at one time into different people across the whole show.\nB. He changed 35 into 40.\nC. He changed a theater into a cinema.\n\nSupported answer: He changed occupied seats at one time into different people across the whole show.\n\nReason: The report measures seats at two moments. It does not track each person across the show.\nTrap: The number 35 is copied correctly, but copying a number does not preserve what it counts.",
             "good": true
           }
         ],
@@ -362,108 +363,108 @@
   {
     "slug": "reading-inference",
     "title": "Evidence-based inference",
-    "intro": "Use clues in the passage to reach a supported conclusion.",
+    "intro": "Use a clue to make one small, supported conclusion.",
     "sections": [
       {
-        "heading": "Use the screen to build a passage map",
+        "heading": "Use clues, not a new story",
         "body": [
-          "An inference is a conclusion you draw from clues rather than a statement you copy from the text. Look for actions, differences, and limits that support the conclusion.",
-          "Keep track of who believes what and what changes. An answer that could happen is not enough; this passage must give reasons to believe it."
+          "An inference is an idea the text supports without saying it directly.",
+          "Point to a clue. Then choose the answer that needs the fewest extra assumptions."
         ],
         "examples": [
           {
-            "label": "Worked method: Separate observation from conclusion",
-            "text": "When the audience began clapping, Noor remained beside the wings with her program folded in her hand. A loose page lay beneath the last violinist’s chair. While other visitors moved toward the exit, she kept looking at the page.\n\nAfter the players had left, she crossed the stage and picked it up. Outside, she caught up with the violinist and handed it over without introducing herself or mentioning the applause.\n\nQuestion: Which inference about Noor’s reason for remaining has the clearest evidentiary link?\nA. She wants the audience to recognize her role in the performance.\nB. She remains at least partly so she can return the fallen page.\nC. She and the violinist had arranged beforehand for her to collect the page.\n\nSupported answer: She remains at least partly so she can return the fallen page.\n\nReason: Watching the page while others leave, then retrieving and returning it, supports a practical purpose for staying. The purpose is inferred from linked actions rather than stated directly. Public recognition and a prior arrangement add motives or events without a corresponding clue; at least partly avoids claiming this was her only reason.",
+            "label": "Point to the proof",
+            "text": "When the audience began clapping, Noor remained beside the wings with her program folded in her hand. A loose page lay beneath the last violinist’s chair. While other visitors moved toward the exit, she kept looking at the page.\n\nAfter the players had left, she crossed the stage and picked it up. Outside, she caught up with the violinist and handed it over without introducing herself or mentioning the applause.\n\nQuestion: Which inference about Noor’s reason for remaining has the clearest evidentiary link?\nA. She wants the audience to recognize her role in the performance.\nB. She remains at least partly so she can return the fallen page.\nC. She and the violinist had arranged beforehand for her to collect the page.\n\nSupported answer: She remains at least partly so she can return the fallen page.\n\nReason: Noor keeps looking at the page, then picks it up and returns it. Those linked actions support a reason for waiting.\nTrap: We do not know her only motive. The text gives no clue of a plan made earlier or a wish for applause.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Make the smallest supported bridge",
+        "heading": "Build one small link from the clue",
         "body": [
-          "Connect a specific action or statement to the smallest conclusion it supports. Write the link explicitly: the text says __, so __ follows without an added event or motive.",
-          "Ask what the choice would require beyond that link. A moment of interest does not establish a career plan; preserving a useful trial does not prove it will succeed permanently."
+          "Use this sentence: The text says __, so __ is likely.",
+          "Stop there. Do not add a motive, event, or future success the text does not support."
         ],
         "examples": [
           {
-            "label": "Worked method: Build a minimal motive from action",
-            "text": "The potter packed the cracked trial pieces beside the finished bowls. When her student asked why, she placed the pieces in the order they had come from the kiln and pointed out where each firing had changed. She kept the finished bowls on the other side of the table.\n\nQuestion:  Her arrangement most reasonably suggests that she wants the student to:\nA. follow how the process was adjusted across attempts\nB. identify the finished bowl most likely to reproduce an early firing defect\nC. decide that the final bowls should be displayed without the discarded trials\n\nSupported answer: follow how the process was adjusted across attempts\n\nReason: Ordering trials and pointing to changes supports following the process across attempts. Predicting a future defect or separating finished work from its developmental record would require another purpose that is not stated. The inference rests on the organized sequence the potter makes visible.",
+            "label": "Point to the proof",
+            "text": "The town’s archive normally closed at four. Ravi arrived at five, found the door locked, and photographed the opening-hours sign. He walked away without trying another entrance. The sign listed a Saturday opening that would fit around his weekday work.\n\nQuestion: What is the best supported inference?\nA. Ravi may return when the archive is open.\nB. Ravi owns the archive.\nC. Ravi has decided to stop researching.\n\nSupported answer: Ravi may return when the archive is open.\n\nReason: Photographing useful opening hours gives him information for a later visit. That is a small link from his action.\nTrap: Ownership and quitting are extra stories. The locked door alone does not prove either one.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Distinguish reasonable uncertainty from unsupported possibility",
+        "heading": "Choose what the text supports",
         "body": [
-          "Separate “could be true” from “supported here.” Checking an archive’s hours supports planning a visit; it does not establish ownership of the archive.",
-          "Ask which specific detail makes the inference reasonable. If the same claim could fit almost any passage on the subject, it needs stronger support."
+          "“Could happen” is weaker than “this text gives a reason to expect it.”",
+          "Ask which detail supports the answer. A possible story without a clue is not enough."
         ],
         "examples": [
           {
-            "label": "Worked method: Distinguish a supported possibility from an invented one",
-            "text": "The archivist requested photographs of the bindings before asking to borrow the books. A note on the loan form said that volumes with loose sewing would need supports during transport.\n\nQuestion: Which inference needs the least extra information?\nA. The archivist already knew every book had loose sewing.\nB. The owners had refused an earlier loan request.\nC. The archivist was checking what protection the books might need in transit.\n\nSupported answer: The archivist was checking what protection the books might need in transit.\n\nReason: The request for binding photographs is linked to the stated transport condition. It supports checking possible protection needs, not certainty that every binding is loose. A prior refusal is possible but has no clue here. A good inference has a passage-specific reason, not merely a story that could explain the action.",
+            "label": "Point to the proof",
+            "text": "A pilot ferry ran for two summer weekends. Most seats were filled. The council paid for an autumn trial before deciding whether to run it all year. No winter trips had taken place, and the council had made no permanent funding decision.\n\nQuestion: Which conclusion has evidence behind it?\nA. The ferry will certainly run all winter.\nB. The council thinks more testing is worthwhile.\nC. The council believes the summer trial failed completely.\n\nSupported answer: The council thinks more testing is worthwhile.\n\nReason: Paying for another trial shows interest in learning more. “Before deciding” keeps the permanent decision open.\nTrap: Full summer boats do not prove winter demand. Continuing the test also does not show total rejection.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Infer attitudes from choices and contrasts",
+        "heading": "Read feelings from words and actions",
         "body": [
-          "Combine a person’s words with their choices. Positive language can coexist with a practical reservation; an action can settle which concern matters.",
-          "Match direction and strength. Concern about a bridge is neither rejection of a route nor confidence that it is usable. Keep unresolved conditions unresolved."
+          "Look at what the person says and does. Both are clues.",
+          "Match how strong the feeling is. A worry is not always a refusal."
         ],
         "examples": [
           {
-            "label": "Worked method: Keep both halves of a mixed response",
-            "text": "“That route would get us there before sunset,” Amari said. She drew her finger along the thin dotted path, then asked whether the footbridge had reopened after the storm. She put the map back on the table instead of folding it into her bag.\n\nQuestion: Which attitude is best supported?\nA. Determination to reject the route\nB. Unreserved confidence that the route is ready\nC. Interest in its advantage combined with concern about whether it is usable\n\nSupported answer: Interest in its advantage combined with concern about whether it is usable\n\nReason: Arriving before sunset is a recognized advantage. Asking about the bridge and leaving the map open show an unresolved condition. Total rejection loses the benefit; unreserved confidence loses the practical concern. An attitude answer must explain the action as well as the positive or negative remark.",
+            "label": "Point to the proof",
+            "text": "“The new trail could be wonderful,” Jo said, studying the map. She then asked whether its steep bridge would be repaired before opening day. She offered to help mark the route once the bridge was safe enough for the walking group.\n\nQuestion: How does Jo feel about the trail?\nA. She rejects the whole project.\nB. She has no concerns about it.\nC. She is interested but concerned about one condition.\n\nSupported answer: She is interested but concerned about one condition.\n\nReason: “Could be wonderful” and the offer to help show interest. The bridge question supplies the concern.\nTrap: One worry does not cancel all support, and praise does not erase the safety condition.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Use the contradiction test on tempting options",
+        "heading": "Try to disprove the tempting answer",
         "body": [
-          "For each remaining choice, ask what would have to be true. Then look for a passage detail that supports or contradicts that requirement.",
-          "Approving another trial does not promise permanent service. A choice that preserves uncertainty can fit better than one that sounds decisive."
+          "Ask: If this answer were true, what else would have to be true?",
+          "Check that claim against the passage. One clear contradiction can eliminate it."
         ],
         "examples": [
           {
-            "label": "Worked method: Use an explicit counterexample",
-            "text": "A critic wrote that Ren’s new exhibition abandoned drawing for sculpture. The catalog listed four sculptures and twelve ink drawings. In an interview Ren said the sculptures began as a way to investigate spaces she had left blank on paper.\n\nQuestion: Which claim is contradicted?\nA. Ren has stopped exhibiting drawings.\nB. Ren sees a connection between the two media.\nC. The exhibition includes fewer sculptures than drawings.\n\nSupported answer: Ren has stopped exhibiting drawings.\n\nReason: The twelve cataloged ink drawings directly contradict abandonment of exhibited drawing. The interview supports a connection between media, and four is fewer than twelve. A counterexample defeats a universal or exclusive claim without requiring you to settle every aspect of the artist’s intention.",
+            "label": "Point to the proof",
+            "text": "Leah disliked the first draft of the group’s poster because its lettering was hard to read. She kept the drawing, enlarged the title, and asked to display the new draft at lunch. She made no request to leave the group.\n\nQuestion: What most challenges the claim that Leah abandoned the project?\nA. She disliked the first draft.\nB. She improved the poster and asked to display it.\nC. The first title was small.\n\nSupported answer: She improved the poster and asked to display it.\n\nReason: Improving and displaying the poster show continued work on the project. Those actions conflict with abandoning it.\nTrap: Disliking one draft is not the same as rejecting the whole project.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Pace a decision instead of rereading everything",
+        "heading": "Find the clue that settles the choice",
         "body": [
-          "Link a clue to your conclusion: “The text says __, so I can reasonably conclude __.” The better answer should require fewer details you have to invent.",
-          "If neither choice has a clear link, return to the relevant action or contrast instead of inventing an explanation."
+          "For two close answers, say what each would require.",
+          "Return to one useful action or sentence. Do not fill a gap with your own guess."
         ],
         "examples": [
           {
-            "label": "Worked method: Choose the clue that separates rival motives",
-            "text": "Before releasing the family recording, Inez sent a copy to her cousin and asked him to mark any passage he did not want shared. She did not ask him to correct dates or identify voices.\n\nQuestion: Which clue favors concern about consent over concern about factual accuracy?\nA. She makes a copy of the recording.\nB. She asks which passages he does not want shared.\nC. The recording contains more than one voice.\n\nSupported answer: She asks which passages he does not want shared.\n\nReason: Marking what may be shared is an action directed at permission. Copying and multiple voices could occur in either a consent check or an accuracy check. The explicit absence of date and identity questions reinforces the distinction. For two plausible motives, choose the clue that predicts one more specifically.",
+            "label": "Point to the proof",
+            "text": "When the borrowed violin made a faint sound, Jae first blamed the instrument. His teacher played one clear note on it. Jae then changed the way he held the bow and tried again, listening carefully before making another adjustment.\n\nQuestion: What most strongly supports “Jae is willing to change his approach”?\nA. He borrowed a violin.\nB. He initially blamed the instrument.\nC. He changed his bow hold and tried again.\n\nSupported answer: He changed his bow hold and tried again.\n\nReason: The changed bow hold is an action that directly supports a changed approach.\nTrap: Borrowing says nothing about flexibility. His first complaint describes the earlier attitude, before he tried a different method.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Review the reason for the miss and test the repair",
+        "heading": "Remove the unsupported leap",
         "body": [
-          "After a miss, name the unsupported leap: motive, certainty, future outcome, or a claim about everyone.",
-          "Replace it with a smaller conclusion and cite the action or statement that supports it. Try the same process on new text."
+          "After a miss, name what you added: a motive, a certainty, or a future event.",
+          "Replace it with a smaller claim and point to the clue that supports it."
         ],
         "examples": [
           {
-            "label": "Worked method: Repair the unsupported leap",
-            "text": "After the demonstration, Eli asked to try the loom with a slower shuttle. The instructor brought one out, and Eli stayed after the scheduled finish to make another strip. A classmate concluded that he had decided to become a professional weaver.\n\nQuestion:  Which smaller conclusion is supported?\nA. Eli has concluded that the demonstration method was ineffective.\nB. Eli now intends to replace the instructor’s tools with his own.\nC. Eli wanted another opportunity to work with an adjusted tool.\n\nSupported answer: Eli wanted another opportunity to work with an adjusted tool.\n\nReason: Requesting a slower shuttle and continuing supports another attempt under adjusted conditions. It does not establish that the demonstrated method failed or a plan to replace the tools. The career claim in the prompt adds a future commitment beyond those observed actions.",
+            "label": "Point to the proof",
+            "text": "After tasting the soup, Nia asked for the recipe and wrote down the ingredients. She said she wanted to try it at home on Sunday. Her friend concluded that she planned to open a restaurant, although Nia had said nothing about selling food.\n\nQuestion: Which conclusion repairs the unsupported leap?\nA. Nia wants to make the soup at home.\nB. Nia has already opened a restaurant.\nC. Nia dislikes all other recipes.\n\nSupported answer: Nia wants to make the soup at home.\n\nReason: “Try it at home on Sunday” supports cooking the soup at home. It does not establish a business plan.\nTrap: Keep the stated plan. Asking for ingredients does not by itself show a career decision or a dislike of other food.",
             "good": true
           }
         ],
@@ -542,108 +543,108 @@
   {
     "slug": "reading-vocabulary",
     "title": "Words in context",
-    "intro": "Use the surrounding sentence to work out a word’s meaning.",
+    "intro": "Let the surrounding words tell you the meaning.",
     "sections": [
       {
-        "heading": "Use the screen to build a passage map",
+        "heading": "Read around the word",
         "body": [
-          "Locate the target word, then read its sentence and the sentences around it. Note what the word describes or acts on.",
-          "Your task is its meaning here. A familiar dictionary meaning can be wrong in this context."
+          "Find the word in the passage. Read its sentence and the sentence beside it.",
+          "Ask what it means here, not what it usually means elsewhere."
         ],
         "examples": [
           {
-            "label": "Worked method: Find the local object of the word",
-            "text": "The geographer described the boundary as “porous.” Workers crossed it daily, families maintained homes on both sides, and merchants followed older routes that did not stop at the official markers. The line remained on the map.\n\nQuestion: What does “porous” mean here?\nA. Drawn with gaps in the printed ink\nB. Able to admit movement across it\nC. Made of material containing small physical holes\n\nSupported answer: Able to admit movement across it\n\nReason: The following examples concern people and trade crossing a political line, while the mapped line remains. They support permeability to movement, not damaged printing or physical material. Locate what the adjective describes and use the nearby actions to choose its local sense.",
+            "label": "Point to the proof",
+            "text": "The review called the set spare. The stage held one chair and a small lamp; no curtains, painted scenery, or other furniture surrounded them. The reviewer said this simple arrangement kept attention on the actor’s words.\n\nQuestion: Which meaning of “spare” fits this set?\nA. An extra one kept for later\nB. Simple, with little decoration\nC. To save someone from harm\n\nSupported answer: Simple, with little decoration\n\nReason: “One chair and a small lamp” plus the missing scenery show a simple set with few objects.\nTrap: An extra supply is a familiar meaning of spare, but no backup set is described here.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Read the local meaning before recalling the dictionary",
+        "heading": "Make a plain-word replacement",
         "body": [
-          "Before looking at choices, replace the word with a plain phrase. “Guarded wording” in a cautious report means wording that avoids a strong claim.",
-          "Substitute each candidate into the sentence. Keep the grammar, meaning, and tone of the original."
+          "Cover the choices and replace the word with a simple phrase.",
+          "Then choose the answer closest to your phrase. Read it back in the sentence."
         ],
         "examples": [
           {
-            "label": "Worked method: Substitute before accepting a familiar sense",
-            "text": "“The evidence will bear that interpretation,” the editor wrote, “but not the stronger claim that the author intended the ending to be comic.” She kept the interpretation and removed the claim about intention.\n\nQuestion: Which substitute for “bear” preserves the sentence?\nA. Support\nB. Endure with discomfort\nC. Produce as offspring\n\nSupported answer: Support\n\nReason: The editor permits one interpretation because the evidence can support it, then rejects a stronger inference. “Endure” and “produce” are real senses of bear but do not connect evidence to a justified interpretation. Test the candidate in the actual sentence, including its contrast.",
+            "label": "Point to the proof",
+            "text": "The board’s support was guarded. Members agreed to fund one trial, but they wanted to see the results before paying for a larger project. Their letter welcomed the idea while making clear that future funding was still undecided.\n\nQuestion: What does “guarded” mean here?\nA. Cautious\nB. Protected by a security officer\nC. Completely opposed\n\nSupported answer: Cautious\n\nReason: The board funds a trial but waits before making a larger promise. Replace guarded with cautious.\nTrap: The topic is support, not physical security. Funding a trial also rules out complete opposition.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Use nearby contrasts and examples as definitions",
+        "heading": "Use the clue beside the word",
         "body": [
-          "Look for a contrast, example, or explanation near the word. “Spare rather than ornate” points toward minimal decoration.",
-          "Use those clues to narrow the meaning before relying on a remembered definition. Then reread the sentence with your substitute."
+          "Look for a contrast, example, or explanation nearby.",
+          "Words such as but, rather than, and unlike often show which meaning fits."
         ],
         "examples": [
           {
-            "label": "Worked method: Let the contrast define the word",
-            "text": "The first sketch spread ornament over every available edge. In the second, the border was “austere”: one dark line surrounded a wide blank margin. The artist had removed detail without changing the central scene.\n\nQuestion: Which meaning does the contrast establish?\nA. Carelessly unfinished\nB. Severely simple\nC. Old-fashioned in subject matter\n\nSupported answer: Severely simple\n\nReason: The change from ornamented edges to a single line and blank margin defines a severe simplicity. The second sketch is deliberate, so unfinished carelessness is unsupported. The central scene does not change, so subject matter does not explain the adjective.",
+            "label": "Point to the proof",
+            "text": "Unlike the first speaker’s long, winding answer, Tessa’s reply was succinct. She named the problem in one sentence and suggested a solution in the next. The chair thanked her for making the point easy to follow.\n\nQuestion: What does “succinct” mean?\nA. Hard to understand\nB. Brief and clear\nC. Quiet enough to be missed\n\nSupported answer: Brief and clear\n\nReason: The contrast with “long, winding” and the two-sentence reply point to brief and clear.\nTrap: The passage discusses length and clarity. It gives no evidence that Tessa spoke softly.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Avoid literal answers to a figurative use",
+        "heading": "Notice when a word makes a picture",
         "body": [
-          "Ask whether the word describes a real action or creates a comparison. Filing a list away means storing it. A belief “loosening” means becoming less fixed, not being physically untied.",
-          "Identify the object of the action. An unresolved question can “haunt” a project without anything supernatural occurring."
+          "Some words describe an idea as if it were a physical thing.",
+          "Ask what is actually changing. Keep the comparison’s meaning without taking it literally."
         ],
         "examples": [
           {
-            "label": "Worked method: Read figurative action through its target",
-            "text": "The old disagreement “shadowed” the committee’s later meetings. Even when a new proposal concerned another building, members returned to who had been trusted with the earlier plans. The room itself was brighter after renovation.\n\nQuestion: Which meaning of “shadowed” fits?\nA. Blocked light from reaching\nB. Followed quietly without being noticed\nC. Continued to influence in an unsettling way\n\nSupported answer: Continued to influence in an unsettling way\n\nReason: The subject is an old disagreement and the result is repeated distrust, so the action is figurative influence. The brightened room explicitly makes literal light a poor fit; open returns to the dispute also exclude unnoticed following. Keep the emotional effect as well as the basic sense of continuing presence.",
+            "label": "Point to the proof",
+            "text": "For years, Owen believed every repair had one perfect method. After watching three skilled builders solve the same problem differently, his certainty began to loosen. He still worked carefully, but he was more willing to try another approach.\n\nQuestion: What does “loosen” mean here?\nA. Come untied like a rope\nB. Disappear completely\nC. Become less fixed\n\nSupported answer: Become less fixed\n\nReason: Owen becomes more willing to try another approach, so his belief is less fixed.\nTrap: No rope is involved, and he does not lose every belief or stop working carefully.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Verify a substitute against the paragraph’s claim",
+        "heading": "Check the word against the whole point",
         "body": [
-          "After a substitute fits the sentence, test it against the paragraph’s claim. A “neutral” observation method does not influence the result; the word need not refer to soil acidity.",
-          "Reject choices that fit the passage’s general subject but change the local argument."
+          "A replacement must fit both the sentence and the point around it.",
+          "Reject a meaning that fits the general topic but changes this particular claim."
         ],
         "examples": [
           {
-            "label": "Worked method: Check a meaning against the paragraph",
-            "text": "The report called the bridge “sound.” It then described bolts that held their load, joints without visible movement, and a surface needing only a new finish. The engineers recommended painting rather than structural replacement.\n\nQuestion: Which substitute fits the whole paragraph?\nA. Structurally reliable\nB. Producing a clear noise\nC. Based on a persuasive argument\n\nSupported answer: Structurally reliable\n\nReason: Bolts, joints, and the painting recommendation all concern physical condition. Structurally reliable fits every part. A noise or an argument can also be sound in another sense, but neither explains why replacement is unnecessary here. A local substitute must survive the paragraph, not just the word in isolation.",
+            "label": "Point to the proof",
+            "text": "The scientist called the estimate provisional. It used the measurements available that morning, and the team expected to revise it after a second visit. The report showed the current figure clearly but warned readers against treating it as a final total.\n\nQuestion: Which replacement keeps the writer’s point?\nA. Open to revision\nB. Kept secret\nC. Known to be false\n\nSupported answer: Open to revision\n\nReason: “Expected to revise it” directly explains provisional. The estimate may change as more evidence arrives.\nTrap: A possible revision does not mean the current estimate is deliberately hidden or already disproved.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Pace a decision instead of rereading everything",
+        "heading": "Test only the useful meanings",
         "body": [
-          "Use a two-step check: substitute the candidate, then reread the surrounding claim. Eliminate any choice that changes the writer’s attitude or degree of certainty.",
-          "Do not spend time listing every dictionary sense. The sentence and paragraph decide which one applies."
+          "When a word has several meanings, test the ones that fit its job in this sentence.",
+          "Substitute one at a time. Keep the meaning that preserves the writer’s point."
         ],
         "examples": [
           {
-            "label": "Worked method: Settle two plausible neighboring senses",
-            "text": "The critic called the new ending “restrained.” The central argument remained sharp, but the actor lowered her voice and let the final gesture finish without a speech. The critic praised the force of what was left unsaid.\n\nQuestion: Which nearby evidence favors “controlled in expression” over “prevented from acting”?\nA. The argument remains central.\nB. The actor chooses a quieter delivery and ends without an added speech.\nC. The review is published after the performance.\n\nSupported answer: The actor chooses a quieter delivery and ends without an added speech.\n\nReason: The described delivery is a deliberate limit on expression that the critic praises, not an inability to act. A central argument could occur in either kind of performance, and publication timing does not define the word. Identify the feature on which the two possible senses differ.",
+            "label": "Point to the proof",
+            "text": "The notice said the path was closed. A fallen tree blocked the narrow bridge, and workers had placed a barrier at each end. Walkers were directed to the road until the trunk could be removed safely.\n\nQuestion: Which meaning of “closed” fits the notice?\nA. Finished for the day, like a meeting\nB. Not available for passage\nC. Drawn close together, like curtains\n\nSupported answer: Not available for passage\n\nReason: The barriers and directions to another route show that people cannot use the path.\nTrap: Other meanings of closed are real, but only one describes access to this blocked route.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Review the reason for the miss and test the repair",
+        "heading": "Save the clue, not just a definition",
         "body": [
-          "After a vocabulary miss, record the contextual clue you overlooked: contrast, example, object, or tone.",
-          "Write a new sentence using that meaning. Then test the method with a different word in a fresh passage."
+          "After a miss, write down the nearby words that decided the meaning.",
+          "Use the word in a new sentence with the same meaning. Then try a different word in context."
         ],
         "examples": [
           {
-            "label": "Worked method: Repair a subject-based dictionary guess",
-            "text": "A student reading about a river chose “deposit of money” for “bank.” The sentence read: “The surveyors followed the bank until the reeds hid the water, then returned along a higher ridge.”\n\nQuestion: Which repair uses the contextual clue?\nA. The river must run beside a financial business.\nB. Bank means the bordering land, as shown by the route beside reeds and water.\nC. Bank means a stored supply of reeds.\n\nSupported answer: Bank means the bordering land, as shown by the route beside reeds and water.\n\nReason: The route runs beside water and is contrasted with a higher ridge, so the word names bordering land. Financial deposit is familiar but unsupported; a stored supply does not fit a route to follow. Repair the guess by naming the clue that rules in the local meaning rather than memorizing another isolated definition.",
+            "label": "Point to the proof",
+            "text": "The curator said the note was pertinent to the date of the painting. It named the exhibition where the artist first showed it. Other letters described the artist’s meals but gave no information about when the work was made.\n\nQuestion: Which clue shows that “pertinent” means relevant?\nA. The note helps answer the question about the painting’s date.\nB. The note is older than every other letter.\nC. The artist enjoyed the meals described.\n\nSupported answer: The note helps answer the question about the painting’s date.\n\nReason: Naming the first exhibition helps with the date question. That useful connection is what makes the note pertinent.\nTrap: The passage does not rank the letters by age. Meal details are contrasted with evidence useful to the question.",
             "good": true
           }
         ],
@@ -722,108 +723,109 @@
   {
     "slug": "reading-craft",
     "title": "Purpose, tone, and structure",
-    "intro": "Notice how the writer’s choices shape the passage.",
+    "intro": "Notice why the writer chose a detail, voice, or image.",
     "sections": [
       {
-        "heading": "Use the screen to build a passage map",
+        "heading": "Ask why this detail is here",
         "body": [
-          "Map what each paragraph does, not just its topic: introduces a claim, illustrates it, raises an objection, or limits a conclusion.",
-          "Track changes in speaker and perspective. A quoted opinion may be included so the author can challenge it."
+          "First say what the detail tells you. Then ask what job it does.",
+          "Does it give an example, explain a cause, challenge an idea, or show a change?"
         ],
         "examples": [
           {
-            "label": "Worked method: Map structure before naming a function",
-            "text": "The new mountain road appears as one continuous line joining the coastal town to the villages above it. At the opening, a council speaker called that line a connection for every home.\n\nRafi could drive his empty cart along the road, but with a full load of grain he stopped at its steepest turn. He carried several sacks around the bend before bringing the cart through.\n\nA map can record a connection without showing the effort it demands from particular users. For Rafi, the road’s usefulness still depends on the cart’s load and the slope beneath its wheels.\n\nQuestion:  Which structural map fits?\nA. Claim about connection → concrete difficulty → qualification of what connection means\nB. General claim about travel → proof that the road has no useful purpose → a replacement route\nC. A farmer’s difficulty → an account of why he caused it → confirmation of the opening claim\n\nSupported answer: Claim about connection → concrete difficulty → qualification of what connection means\n\nReason: The farmer’s difficulty links a broad connection claim to the final qualification about usable access. The passage does not reject all usefulness or blame the farmer. Name how the middle changes the opening rather than restating its topic.",
+            "label": "Point to the proof",
+            "text": "The new mountain road appears as one continuous line joining the coastal town to the villages above it. At the opening, a council speaker called that line a connection for every home.\n\nRafi could drive his empty cart along the road, but with a full load of grain he stopped at its steepest turn. He carried several sacks around the bend before bringing the cart through.\n\nA map can record a connection without showing the effort it demands from particular users. For Rafi, the road’s usefulness still depends on the cart’s load and the slope beneath its wheels.\n\nQuestion:  Which structural map fits?\nA. Claim about connection → concrete difficulty → qualification of what connection means\nB. General claim about travel → proof that the road has no useful purpose → a replacement route\nC. A farmer’s difficulty → an account of why he caused it → confirmation of the opening claim\n\nSupported answer: Claim about connection → concrete difficulty → qualification of what connection means\n\nReason: Rafi must unload sacks at the turn. That real difficulty limits the speaker’s claim that the road connects every home equally.\nTrap: The road is usable. The point is that its value depends on the load and slope.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Ask what a paragraph does, not only what it says",
+        "heading": "Name the paragraph’s job",
         "body": [
-          "Ask what the detail contributes to the surrounding argument. A commuter’s account can illustrate an access problem without proving that every resident has it.",
-          "Connect the paragraph to what comes before and after. A function answer describes that relationship, not merely the detail’s subject."
+          "Read the paragraph with the one before and after it.",
+          "Finish this sentence: The writer includes this to __. A job is more than a topic."
         ],
         "examples": [
           {
-            "label": "Worked method: Explain why this detail is here",
-            "text": "The miniature ship rewards a close look. Its maker carved not only the railings and rigging but also a latch inside a cupboard that visitors cannot open. That hidden fitting extends the precision of the model beyond anything the display ordinarily allows its audience to see.\n\nQuestion: What is the latch detail’s main function?\nA. To show why the cupboard should be opened for visitors\nB. To give a concrete instance of workmanship extending beyond visible display\nC. To identify a defect that weakens the claim of precision\n\nSupported answer: To give a concrete instance of workmanship extending beyond visible display\n\nReason: The surrounding claim concerns precision beyond public sight, and the hidden latch exemplifies it. The essay neither requests access nor identifies a defect. Function connects a detail to the argument it supports; it is different from describing the object the detail mentions.",
+            "label": "Point to the proof",
+            "text": "Museum labels should help visitors learn about what they see. A clear label can answer a question without a guide standing nearby.\n\nAt one exhibit, however, a label used terms that a school group did not understand. Students left with the same questions they had brought.\n\nBefore printing a full set, staff should ask visitors to read sample labels and explain what they learned.\n\nQuestion: What is the middle paragraph’s job?\nA. Show why labels that aim to help still need testing\nB. Give a complete history of the museum\nC. Prove that every museum label is useless\n\nSupported answer: Show why labels that aim to help still need testing\n\nReason: Students leave with unanswered questions. That problem explains why the last paragraph recommends testing labels with visitors.\nTrap: One confusing label limits the opening claim; it does not prove that all labels fail.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Separate tone from topic and intensity",
+        "heading": "Match the feeling and its strength",
         "body": [
-          "Identify tone from the writer’s wording and treatment of evidence. Approval plus a stated limit supports a cautiously favorable tone.",
-          "Match both direction and intensity. A passage about damage can still be measured; one dramatic word does not make the entire passage alarmed."
+          "Tone means the writer’s attitude. Find words that show it.",
+          "Match both the feeling and how strong it is: worried is different from furious."
         ],
         "examples": [
           {
-            "label": "Worked method: Match tone by direction and intensity",
-            "text": "This translation is an inviting beginning. Its clear opening gives a new reader room to follow the speaker without losing the abruptness of her questions.\n\nSome later images, however, have become flatter. The small, sharp thing in the original sometimes becomes a broad word for brightness or movement. Those choices smooth the voice where its particularity matters.\n\nI hope a later edition returns to these images. Because this edition makes the poem so approachable, I would welcome a revision that restores the sharper images.\n\nQuestion: Which tone fits the treatment as a whole?\nA. Dismissive of the translation’s usefulness\nB. Confident that no revision is needed\nC. Appreciative but constructively dissatisfied with some choices\n\nSupported answer: Appreciative but constructively dissatisfied with some choices\n\nReason: “Inviting” and praise establish appreciation; the criticism and requested return establish dissatisfaction with specific choices. Dismissal ignores the praise, while complete satisfaction ignores a full paragraph and the closing wish. Tone must match both the evaluation’s direction and its measured intensity.",
+            "label": "Point to the proof",
+            "text": "The play’s lively dialogue and strong lead performance make it worth seeing. The slow ending could still use another revision, but it does not spoil the evening. I recommend this production and look forward to the group’s next one.\n\nQuestion: Which tone fits the whole review?\nA. Angry and dismissive\nB. Positive, with a small reservation\nC. Unsure whether anything worked\n\nSupported answer: Positive, with a small reservation\n\nReason: “Worth seeing” and “I recommend” show approval. The slow ending adds one criticism without reversing that approval.\nTrap: Do not let one criticism erase the positive judgment across the rest of the review.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Track perspective, quotation, and structural shifts",
+        "heading": "Track a speaker’s view and how it changes",
         "body": [
-          "The author writes the piece; the narrator tells the story; a quoted speaker gives their own words. Check who is speaking before deciding whose belief a sentence expresses.",
-          "Read what follows a quotation. The author may answer an objection, explain a limit, or compare it with evidence instead of agreeing with it."
+          "Keep each speaker’s view separate from the author’s. Check the response after a quote.",
+          "For a change in viewpoint, compare the opening view with the later one.",
+          "Name what is added, challenged, or kept. A new view may extend an old one instead of rejecting it."
         ],
         "examples": [
           {
-            "label": "Worked method: Separate the quoted claim from the author’s response",
-            "text": "“Machines have made the hand unnecessary,” a manufacturer announced at the fair. His advertisement showed the finished product sliding from a bright metal opening.\n\nBehind the display, a worker paused the machine when its printed guide failed. She adjusted the feed wheel by touch, ran a test, and adjusted it again before allowing the product to continue.\n\nThe hand had not disappeared from this process. Which kinds of handwork, then, had the advertisement taught its visitors not to notice?\n\nQuestion: Why does the essay include the manufacturer’s claim?\nA. To introduce a position that the following observations complicate\nB. To certify the claim as the essay’s own conclusion\nC. To establish that the workers refused to use the machine\n\nSupported answer: To introduce a position that the following observations complicate\n\nReason: The quoted assertion is followed by counterevidence: workers still use touch. The final question directly examines the advertisement’s framing. Quotation does not equal endorsement, and adjustment is not refusal to use the machine. Follow what the author does after another speaker’s words.",
+            "label": "Point to the proof",
+            "text": "“Machines have made the hand unnecessary,” a manufacturer announced at the fair. His advertisement showed the finished product sliding from a bright metal opening.\n\nBehind the display, a worker paused the machine when its printed guide failed. She adjusted the feed wheel by touch, ran a test, and adjusted it again before allowing the product to continue.\n\nThe hand had not disappeared from this process. Which kinds of handwork, then, had the advertisement taught its visitors not to notice?\n\nQuestion: Why does the essay include the manufacturer’s claim?\nA. To introduce a position that the following observations complicate\nB. To certify the claim as the essay’s own conclusion\nC. To establish that the workers refused to use the machine\n\nSupported answer: To introduce a position that the following observations complicate\n\nReason: The worker “adjusted the feed wheel by touch.” Her action shows that handwork is still needed after the manufacturer claims it is not.\nTrap: A quote is not automatically the author’s view. Read what the author puts after it.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Explain the effect of imagery without overreading it",
+        "heading": "Explain what an image helps us notice",
         "body": [
-          "Name the feature an image carries across: light against darkness, stillness against movement, or closeness against distance. Then connect that feature to the surrounding scene or argument.",
-          "Do not import every property of the comparison object. A greenhouse compared with moons can evoke pale light without making an astronomical claim."
+          "For a comparison, name the feature the two things share.",
+          "Connect that feature to the scene. Do not bring in every fact about the comparison."
         ],
         "examples": [
           {
-            "label": "Worked method: Explain an image’s selected relationship",
-            "text": "At dusk the greenhouse panes became “a row of small moons” above the dark garden. Inside, workers moved seedlings from tray to tray; outside, the path had disappeared into shadow.\n\nQuestion:  What does the image chiefly emphasize?\nA. The reflection of actual moonlight onto the workers\nB. A separated line of pale light against surrounding darkness\nC. A match between the workers’ movements and the regular spacing of the panes\n\nSupported answer: A separated line of pale light against surrounding darkness\n\nReason: The shared feature is a row of pale lights against darkness, reinforced by the shadowed path. The image does not identify the physical source as moonlight or align the workers’ movements with the panes. Explain the selected visual relationship rather than adding another part of the scene.",
+            "label": "Point to the proof",
+            "text": "At dusk, the greenhouse windows glowed like small lanterns along the dark field. Mara slowed her walk to look at the rows of warm light. Inside, the gardeners were covering the youngest plants before the temperature dropped.\n\nQuestion: What does the lantern comparison emphasize?\nA. The windows’ warm light against the darkness\nB. The greenhouse’s ability to fly\nC. The exact temperature of each plant\n\nSupported answer: The windows’ warm light against the darkness\n\nReason: The passage sets “glowed” and “warm light” against the “dark field.” That is the shared feature of windows and lanterns.\nTrap: A comparison highlights a useful likeness. It does not give the greenhouse every property of another object.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Pace a decision instead of rereading everything",
+        "heading": "Use two clues for tone",
         "body": [
-          "For a purpose question, read the sentence with its neighbors. Name what it does: gives an example, questions a claim, adds a limit, or shows a difference.",
-          "For tone, compare two pieces of wording. Reject choices that overstate the emotion or confuse the topic with the attitude."
+          "Check at least two words or actions before naming an attitude.",
+          "A sad subject does not automatically make the writer’s tone sad or angry."
         ],
         "examples": [
           {
-            "label": "Worked method: Distinguish example, concession, and reversal",
-            "text": "I want the old stairway to remain available. It is narrow, and carrying boxes up it is awkward. But the new side entrance can handle deliveries while the stair stays open for ordinary use. Preserving it need not require pretending that every task belongs on it.\n\nQuestion: What does the admission do?\nA. It withdraws the argument for keeping the stairs.\nB. It supplies the main benefit of the old design.\nC. It acknowledges a practical objection that the proposed arrangement addresses.\n\nSupported answer: It acknowledges a practical objection that the proposed arrangement addresses.\n\nReason: The inconvenience is a concession, not the author’s reason for preservation. The next sentence offers an answer without reversing the position. Use the neighboring sentences to distinguish an acknowledged problem from abandonment of the claim.",
+            "label": "Point to the proof",
+            "text": "Inspectors found loose joints on the town bridge. The east lane is closed while those joints are repaired. Work is scheduled to finish on Friday. Until then, drivers should follow the marked route through Mill Street and allow extra travel time.\n\nQuestion: Which description fits the report’s tone?\nA. Panicked because any damage is frightening\nB. Calm and practical\nC. Mocking the people who use the bridge\n\nSupported answer: Calm and practical\n\nReason: The list of damage, repair schedule, and directions focus on facts and actions. They support a calm, practical tone.\nTrap: Choose from the wording and treatment, not from how the damaged bridge makes you feel.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Review the reason for the miss and test the repair",
+        "heading": "Separate what it says from what it does",
         "body": [
-          "After a miss, name what you mixed up: what a detail says versus why it is there, a quoted speaker versus the author, an actual fact versus an image, or a mild feeling versus an extreme one.",
-          "Explain why the writer placed the detail there, then apply the same distinction to a new passage."
+          "After a purpose miss, write two notes: This says __. It helps the writer __.",
+          "Keep a speaker’s words separate from the author’s response."
         ],
         "examples": [
           {
-            "label": "Worked method: Repair a purpose answer that only retells",
-            "text": "Before leaving, I checked the forecast three times. The same chance of showers remained on the screen; I wanted a more cooperative answer. I finally put the phone away and hurried toward the club.\n\nWhen rain began, I kept going. By the time I arrived, my sleeves were wet, my shoes made a noise on the floor, and I was laughing.\n\nA student labels the first paragraph’s purpose “to tell us that the narrator checks the weather.”\n\nQuestion: Which revision explains its role rather than repeating its content?\nA. It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\nB. It establishes the checks as evidence that the later rain was forecast accurately.\nC. It shows why reaching the club depends on obtaining a different forecast.\n\nSupported answer: It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\n\nReason: Wanting a more cooperative forecast supplies evidence of a wish for a manageable outcome; later laughter in the rain changes that response. The task is not to establish forecast accuracy or a condition for reaching the club. Connecting the first paragraph to the later response explains its role rather than merely repeating the weather-checking action.",
+            "label": "Point to the proof",
+            "text": "Before leaving, I checked the forecast three times. The same chance of showers remained on the screen; I wanted a more cooperative answer. I finally put the phone away and hurried toward the club.\n\nWhen rain began, I kept going. By the time I arrived, my sleeves were wet, my shoes made a noise on the floor, and I was laughing.\n\nA student labels the first paragraph’s purpose “to tell us that the narrator checks the weather.”\n\nQuestion: Which revision explains its role rather than repeating its content?\nA. It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\nB. It establishes the checks as evidence that the later rain was forecast accurately.\nC. It shows why reaching the club depends on obtaining a different forecast.\n\nSupported answer: It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\n\nReason: “I wanted a more cooperative answer” shows a wish to avoid rain. “I was laughing” shows a different response after getting wet.\nTrap: Saying “checks the weather” names the action. The question asks how that action connects to the ending.",
             "good": true
           }
         ],
@@ -902,108 +904,109 @@
   {
     "slug": "reading-integration",
     "title": "Paired texts and visual evidence",
-    "intro": "Connect ideas across passages and compare their evidence.",
+    "intro": "Compare sources without changing what either one says.",
     "sections": [
       {
-        "heading": "Use the screen to build a passage map",
+        "heading": "Read each source on its own first",
         "body": [
-          "Map each source separately before combining them. Write a short claim for A and a separate claim for B, including each condition or limit.",
-          "For a graphic, read its title, labels, units, and time period. Similar-looking numbers may measure different things."
+          "Write one short note for A and one for B. Keep any conditions.",
+          "Then compare them. Do not combine the views before you know what each says."
         ],
         "examples": [
           {
-            "label": "Worked method: Map each claim before finding overlap",
-            "text": "Source A: The new route shortens the walk from the station to the clinic. Its value is the direct connection it creates.\n\nSource B: A shorter walk helps only if people can use the surface throughout the year. I support the route, but its drainage must be funded as part of construction.\n\nQuestion:  Which two-column map is faithful?\nA. A: a direct route matters; B: drainage must be funded as part of building it\nB. A: a direct route matters only after drainage is funded; B: a shorter walk is sufficient by itself\nC. A: the clinic’s distance is irrelevant; B: the drainage question should be postponed until after construction\n\nSupported answer: A: a direct route matters; B: drainage must be funded as part of building it\n\nReason: A emphasizes a shorter connection. B accepts its benefit but requires drainage to be part of the construction plan. The wrong maps transfer a condition to the wrong writer, reverse its force, or remove the benefit A actually stresses.",
+            "label": "Point to the proof",
+            "text": "Writer A: Open the school garden on weekends so families can visit. Pupils can still grow food there during the week.\n\nWriter B: I welcome weekend visitors too, but the youngest beds should be fenced first. Families could enjoy the paths while leaving those beds for the pupils to tend.\n\nQuestion: Which pair of notes is accurate?\nA. A: welcome visitors. B: welcome visitors after protecting the young beds.\nB. A: close the garden. B: remove every bed.\nC. A: stop growing food. B: keep families out forever.\n\nSupported answer: A: welcome visitors. B: welcome visitors after protecting the young beds.\n\nReason: A supports weekend access. B agrees but adds “fenced first,” a condition on that access.\nTrap: A condition is not total opposition. Both still support growing food during the week.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Map each source before comparing them",
+        "heading": "Find the agreement and the difference",
         "body": [
-          "Compare each writer’s claim and conditions. A director may support safe renovation while a historian supports it only if representative evidence survives.",
-          "Name both the shared aim and the difference. Do not turn a condition from one writer into a demand made by both."
+          "Ask what both writers support. Then ask what one adds or changes.",
+          "A condition such as “only if” can be the main difference."
         ],
         "examples": [
           {
-            "label": "Worked method: Retain the precise difference between supporters",
-            "text": "Writer A supports publishing the letters so readers can encounter the correspondence directly. Writer B also supports publication, provided the edition identifies missing pages and distinguishes uncertain dates from confirmed ones. Neither argues for rewriting the letters.\n\nQuestion:  Where do the positions differ?\nA. Whether publishing the letters is useful without any new research about their authors\nB. Whether a complete-looking edition is preferable to one that marks its gaps\nC. B explicitly requires documentation of gaps and uncertain dates.\n\nSupported answer: B explicitly requires documentation of gaps and uncertain dates.\n\nReason: Both support publication. B explicitly adds documentation of missing pages and uncertain dates; the text does not establish an opposing preference by A for concealment. The distinction is a stated condition, not an invented disagreement inferred from A’s silence.",
+            "label": "Point to the proof",
+            "text": "Writer A: The old hall should host community events again. A building that once brought neighbors together can do so once more if we reopen its doors.\n\nWriter B: I support reopening only if the original painted ceiling is protected during repairs. We can welcome people back while keeping that part of the hall’s history.\n\nQuestion: How does B’s view relate to A’s?\nA. B opposes all public events.\nB. B shares the goal and adds a condition about protecting the ceiling.\nC. B proves that A wants the ceiling destroyed.\n\nSupported answer: B shares the goal and adds a condition about protecting the ceiling.\n\nReason: Both support reopening. B’s “only if” adds a protection requirement that A does not mention.\nTrap: Silence about the ceiling does not prove that A wants it damaged. Do not invent a disagreement.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Combine evidence without inventing a compromise",
+        "heading": "Keep only what both sources support",
         "body": [
-          "A combined conclusion must be supported by the supplied sources. Put their claims together without inventing a compromise.",
-          "“The pilot improved access” and “its costs remain uncertain” can both be true. Neither statement proves that any cost is worthwhile."
+          "Check each part of the answer against its evidence.",
+          "Within one passage, compare the two named moments: what stays, changes, or connects?",
+          "Across sources, keep both claims and their limits. Do not add a cause or promise neither source establishes."
         ],
         "examples": [
           {
-            "label": "Worked method: Combine compatible claims without inventing a verdict",
-            "text": "A landscape study reports that the planted strip reduced wind speed at the field edge. A second report finds that the strip occupies land previously used for crops, but does not calculate the value of either the lost crop area or the wind protection.\n\nQuestion: Which joint conclusion follows?\nA. The protection is worth more than the lost crop area.\nB. The strip provides measured wind protection while the overall economic tradeoff remains uncalculated.\nC. The loss of crop area cancels the measured wind reduction.\n\nSupported answer: The strip provides measured wind protection while the overall economic tradeoff remains uncalculated.\n\nReason: The sources establish a physical benefit and a cost in land use, not their relative economic values. They can both be true without canceling one another. A combined answer may retain an unresolved tradeoff; it must not create a cost-benefit verdict absent from either source.",
+            "label": "Point to the proof",
+            "text": "The library report says the evening opening brought in 30 visitors during its first week. The budget note says staff covered that week without extra pay, but future staffing costs are undecided. Neither source describes attendance after the first week.\n\nQuestion: Which combined statement is supported?\nA. Evening hours are guaranteed to stay free forever.\nB. The opening failed because future costs are unknown.\nC. The first week attracted visitors without extra pay, while later costs remain unsettled.\n\nSupported answer: The first week attracted visitors without extra pay, while later costs remain unsettled.\n\nReason: The report supplies the visitors; the budget note supplies first-week pay and the limit on future costs.\nTrap: Do not turn a successful first week into a permanent guarantee or an unknown cost into proof of failure.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Read the graphic’s labels before its pattern",
+        "heading": "Read the table’s labels, then compare",
         "body": [
-          "Keep quantities and denominators consistent. Eighty-one on-time returns out of ninety scheduled returns is 90%; eighty-one alone is a count.",
-          "Occupied seats and unique visitors measure different things. Check definitions before treating a graph as evidence for the passage’s claim."
+          "Read what each number counts. For a share, divide the part by the whole.",
+          "Then connect that result to the passage. A higher count can still be a smaller share."
         ],
         "examples": [
           {
-            "label": "Worked method: Read the table’s unit before making the claim",
-            "text": "The gallery records each doorway entry, including a person returning after leaving.\n\nDay — Doorway entries\nFriday — 120\nSaturday — 150\n\nA companion note explains that workshop participants often left for lunch and returned through the same doors. The table therefore counts entry events rather than assigning a new identity to each event.\n\nQuestion: Which claim uses both the table and definition correctly?\nA. The gallery had thirty more distinct visitors on Saturday.\nB. Twenty-five percent of Saturday visitors attended the workshop.\nC. Saturday had thirty more entries, but the figures do not identify the change in distinct visitors.\n\nSupported answer: Saturday had thirty more entries, but the figures do not identify the change in distinct visitors.\n\nReason: Subtract like units: 150 − 120 = 30 entries. Repeat entry means that difference is not automatically thirty new people. Workshop behavior explains a possible difference between measures but gives no percentage of visitors. Both the numeric operation and the unit definition must survive the combined claim.",
+            "label": "Point to the proof",
+            "text": "A club wants a larger share of members to attend. Before changing meeting time, 20 of its 40 members came. After the change, 30 of 100 members came. Membership also grew, so comparing only 20 and 30 would miss part of the picture.\n\nQuestion: What happened to attendance?\nA. The number rose, but the share fell from 50% to 30%.\nB. Both the number and the share rose.\nC. The share stayed the same because both counts are positive.\n\nSupported answer: The number rose, but the share fell from 50% to 30%.\n\nReason: Before: 20 ÷ 40 = 50%. After: 30 ÷ 100 = 30%. More people came, but they were a smaller share of members.\nTrap: Compare part ÷ whole. The raw counts 20 and 30 cannot answer a question about share.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Keep a combined conclusion within all supplied limits",
+        "heading": "Keep every source’s limits",
         "body": [
-          "Check a proposed conclusion against every source’s limits. Fewer requests blocked by overdue tools does not mean every requested tool was available.",
-          "A conclusion about two tested groups does not establish all groups or equal effects. Preserve who was measured and under which conditions."
+          "Check who was measured and under which conditions.",
+          "A combined answer must keep the limits from all sources, even if a broader answer sounds useful."
         ],
         "examples": [
           {
-            "label": "Worked method: Respect the intersection of study limits",
-            "text": "Study A found improved recall for adults learning short lists aloud. Study B found improved recall for teenagers practicing pictures silently. Neither study compared the two methods in the same participants, and neither measured retention after a week.\n\nQuestion: Which combined conclusion stays inside both studies?\nA. A benefit occurred under each tested method and group, without establishing which method lasts longer.\nB. Speaking is equally effective for adults and teenagers.\nC. The two studies prove that both methods preserve learning for a week.\n\nSupported answer: A benefit occurred under each tested method and group, without establishing which method lasts longer.\n\nReason: A and B each support a benefit in their own tested conditions. Different groups and materials prevent assigning their difference solely to method, and neither measures week-long retention. Combining positive results does not erase limits, create an age comparison, or supply an unmeasured time period.",
+            "label": "Point to the proof",
+            "text": "A survey reports that most of 15 volunteer cyclists liked a new sign. A separate report says the sign was tested on one route during daylight. Neither report counted accidents or included nighttime riders, and no other route was studied.\n\nQuestion: Which conclusion stays within both reports?\nA. The sign prevents accidents on every route.\nB. The volunteers generally liked the sign in the limited setting tested.\nC. Night riders disliked the sign.\n\nSupported answer: The volunteers generally liked the sign in the limited setting tested.\n\nReason: The survey gives the volunteers’ opinion; the second report limits the setting to one daylight route.\nTrap: Neither source measures accident prevention or night riders’ views. Do not fill in those missing results.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Pace a decision instead of rereading everything",
+        "heading": "Check the exact overlap",
         "body": [
-          "Build a two-column comparison in your head: A claims __; B claims __. Locate the exact overlap or disagreement the question asks about.",
-          "For a graph or table, read the needed row or point and connect it to the passage. Do not assume two things are related just because they look similar."
+          "When asked what both writers accept, find a line from each.",
+          "If only one source supports a choice, it cannot be the shared answer."
         ],
         "examples": [
           {
-            "label": "Worked method: Use the exact point of disagreement",
-            "text": "Historian A treats a merchant’s list as a record of goods intended for shipment. Historian B agrees about that purpose but warns that the list alone does not establish which goods arrived; she asks to compare a receiving ledger.\n\nQuestion:  Which evidence would most directly address B’s additional question?\nA. A second copy confirming which goods the merchant intended to send\nB. A ledger identifying the goods received at the destination\nC. A ledger showing what similar merchants sent to other destinations\n\nSupported answer: A ledger identifying the goods received at the destination\n\nReason: B asks which goods arrived in this shipment. Another plan confirms intention, and other merchants’ records provide a comparison without documenting this delivery. The receiving ledger addresses the precise step B wants checked.",
+            "label": "Point to the proof",
+            "text": "Writer A: We should copy the old recordings so more people can hear them. A copy can travel to listeners who cannot visit our archive.\n\nWriter B: Copies do improve access. But we should also keep the originals available for future study. A researcher may someday need a detail that today’s copies do not preserve.\n\nQuestion: What do both writers explicitly support?\nA. Discarding every original\nB. Replacing all future research with copies\nC. Using copies to let more people hear the recordings\n\nSupported answer: Using copies to let more people hear the recordings\n\nReason: A wants more people to hear the recordings. B agrees that copies improve access. Those two statements overlap.\nTrap: Keeping originals is B’s added point. A’s silence does not make that point an explicit shared claim.",
             "good": true
           }
         ],
         "teachingRevision": 3
       },
       {
-        "heading": "Review the reason for the miss and test the repair",
+        "heading": "Find which source your answer changed",
         "body": [
-          "After a miss, identify whether you merged speakers, ignored a condition, changed units, or claimed more than both sources support.",
-          "Repair the combined claim in one sentence and verify it against each source separately. Then try a fresh pair of sources."
+          "After a miss, check the answer against A, B, and any table separately.",
+          "Name the change: mixed up speakers, dropped a condition, or changed a number’s meaning."
         ],
         "examples": [
           {
-            "label": "Worked method: Repair a merged-speaker conclusion",
-            "text": "A designer says the square should retain its old benches because people recognize them as meeting places. A wheelchair user supports retaining some, but asks for spaces beside them wide enough for different seating needs. A summary says both oppose changing the bench area.\n\nQuestion: Which repair preserves both positions?\nA. Both think recognition is the only important consideration.\nB. The wheelchair user rejects retaining any old benches.\nC. Both allow old benches to remain, while the wheelchair user also calls for changes around them.\n\nSupported answer: Both allow old benches to remain, while the wheelchair user also calls for changes around them.\n\nReason: Retaining benches is the overlap; changing adjacent space is the added condition. The mistaken summary turns agreement about an object into agreement against every alteration. Repair by naming each speaker’s actual scope instead of treating all support for preservation as opposition to change.",
+            "label": "Point to the proof",
+            "text": "Writer A: Let us try later bus service for one month. People leaving evening shifts could have another way home, and we could find out how many use it.\n\nWriter B: I support that trial if the council checks its cost after the month. We need that information before deciding what comes next.\n\nA student summarizes them as “Both promise that later service will be permanent.”\n\nQuestion: What is wrong with the student’s summary?\nA. It turns support for a trial into a promise of permanent service.\nB. It correctly keeps B’s cost condition.\nC. It shows that A opposes the trial.\n\nSupported answer: It turns support for a trial into a promise of permanent service.\n\nReason: Both discuss a trial. B also requires a cost check, so permanent service is not an agreed promise.\nTrap: Keep the type of commitment: trying an idea and committing to it forever are different claims.",
             "good": true
           }
         ],

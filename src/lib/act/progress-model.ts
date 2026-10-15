@@ -1,5 +1,5 @@
 import type { Question } from "./types";
-import { QUESTION_TARGET_SECONDS } from "../question-pacing";
+import { answerPacing } from "../question-pacing";
 
 export interface StudyProfile {
   testDate: string;
@@ -448,7 +448,7 @@ export function getTopicStats(
       latest.get(answer.questionId)?.chosen === question.answer &&
       answer.confidence !== "low" &&
       answer.elapsedMs > 0 &&
-      answer.elapsedMs <= QUESTION_TARGET_SECONDS[question.subject] * 1000
+      answerPacing(answer.elapsedMs, question.subject).onPace
     );
   });
   const mastered =
@@ -472,7 +472,7 @@ export function getTopicStats(
           latest.get(answer.questionId)?.chosen === question.answer &&
           answer.confidence !== "low" &&
           answer.elapsedMs > 0 &&
-          answer.elapsedMs <= QUESTION_TARGET_SECONDS[question.subject] * 1000
+          answerPacing(answer.elapsedMs, question.subject).onPace
         );
       }),
     );

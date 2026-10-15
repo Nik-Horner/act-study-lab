@@ -89,18 +89,29 @@ function LessonSection({
           </div>
         ) : (
           <>
-            {section.evidence?.map((passage) => (
-              <div key={passage.id}>
-                <PassageView passage={passage} />
-              </div>
-            ))}
-            <div className="lesson-method-grid">
-              <div className="lesson-method-text">
+            {!!section.evidence?.length && (
+              <div className="space-y-3">
                 {section.body.map((p, j) => (
                   <p key={j} className="leading-relaxed text-ink">
                     <MathText>{p}</MathText>
                   </p>
                 ))}
+              </div>
+            )}
+            <div
+              className="lesson-method-grid"
+              data-evidence={!!section.evidence?.length}
+            >
+              <div className="lesson-method-text">
+                {section.evidence?.length
+                  ? section.evidence.map((passage) => (
+                      <PassageView key={passage.id} passage={passage} />
+                    ))
+                  : section.body.map((p, j) => (
+                      <p key={j} className="leading-relaxed text-ink">
+                        <MathText>{p}</MathText>
+                      </p>
+                    ))}
               </div>
               <div className="lesson-method-examples">
                 {section.examples?.map((ex, j) => (

@@ -3538,653 +3538,1212 @@
   "readingWorkedEvidence": [
     {
       "id": "reading-main-idea:0",
-      "title": "Worked method: Map paragraph jobs",
-      "passage": "The instrument maker placed a row of finished flutes in her window. Passersby saw smooth tubes; the apprentice saw the shavings swept away before opening.\n\nHe proposed displaying the shavings too. The maker asked what a heap would explain. He sorted pieces by the operations that had produced them and laid an unfinished flute beside the rows.\n\nA visitor followed the sequence with one finger. The apprentice moved his name card away from the center so it would not interrupt the path.",
-      "task": "  Which paragraph map best captures the movement?\nA. A finished product → an apprentice’s attempt to make it more decorative → a change in the shop’s prices\nB. Different views of a product → a display that reveals the process → attention redirected toward that process\nC. A maker’s objection → removal of the apprentice’s display → a visitor’s misunderstanding",
-      "solution": "Supported answer: Different views of a product → a display that reveals the process → attention redirected toward that process\n\nReason: The opening contrasts a finished object with its making; the middle organizes scraps into an explanation; the ending lets the visitor follow that sequence. The display does not change prices or disappear. Map the change in each paragraph’s role rather than treating an objection as the final outcome.",
-      "hash": "74a4d027845d4cd6a1607db71d1743c1ac8acf3c9aee21b7b37bbdba156e36a1"
+      "passage": "The school garden first sold all its vegetables. Students then noticed that some neighbors could not afford them. They kept the Saturday sales but set aside a free basket each morning. Sales now paid for seeds, while the baskets helped nearby families.",
+      "task": "Which map follows the whole passage?\nA. Sell vegetables → notice a need → keep sales and add free food\nB. Grow vegetables → lose every customer → close the garden\nC. Give away seeds → start a shop → stop helping neighbors",
+      "solution": "Supported answer: Sell vegetables → notice a need → keep sales and add free food\n\nReason: “Kept the Saturday sales” and “set aside a free basket” show the two parts of the new plan.\nTrap: The garden changes how it shares food; it does not close or stop selling.",
+      "title": "Make a three-part map",
+      "hash": "318aa05e6c227c23df2099e7eecab9e207b0310c2edd1935c36634037425f1fe"
     },
     {
       "id": "reading-main-idea:1",
-      "title": "Worked method: Separate topic from controlling claim",
-      "passage": "Dark-colored roofs absorb much of the sunlight that strikes them. A reflective coating can reduce that absorbed energy, but its performance depends partly on what remains on the surface. Dust can cover the coating and alter its reflectance.\n\nAn engineer therefore compares both freshly coated and weathered panels. Her report treats reflectance as a property to maintain, not simply a number printed on a new product’s package.",
-      "task": " Which statement gives the controlling idea rather than only the subject?\nA. The passage discusses reflective roof coatings.\nB. Roof coatings should be selected entirely by the amount of dust nearby.\nC. A coating’s cooling value depends on its continuing surface condition as well as its initial reflectance.",
-      "solution": "Supported answer: A coating’s cooling value depends on its continuing surface condition as well as its initial reflectance.\n\nReason: “Reflective roof coatings” names the subject but omits the development. The contrast between fresh and weathered panels supports a claim about maintained performance. Dust matters, but “entirely” discards the initial reflectance the passage also discusses. Build subject + what the writer establishes about it.",
-      "hash": "de79f6b8b290e8fb5f38888c137f0b76ddb374d348b9543c13b5b2cb57b8dc49"
+      "passage": "A library put its most borrowed books near the front door. Readers found them faster, but the narrow entrance became crowded. Staff moved the shelf beside the help desk. The books remained easy to find, and the doorway was clear again.",
+      "task": "Which choice gives the main idea?\nA. The passage is about library shelves.\nB. Moving a popular shelf solved an access problem while keeping books easy to find.\nC. Putting every book near the door makes a library easier to use.",
+      "solution": "Supported answer: Moving a popular shelf solved an access problem while keeping books easy to find.\n\nReason: The first move helps readers but crowds the door. The second keeps the benefit and fixes the problem.\nTrap: “Library shelves” is only the topic. “Every book” claims more than this one shelf shows.",
+      "title": "Name the subject, then the point",
+      "hash": "6168e770eb33a0aadbbe38731b8fb7d9db6ed0f73199949686a6da3f42539e74"
     },
     {
       "id": "reading-main-idea:2",
-      "title": "Worked method: Keep the argumentative turn",
-      "passage": "A school orchestra planned to perform an unfamiliar piece without an introduction, hoping listeners would encounter it without instructions about what to hear. During rehearsal, players disagreed about whether an abrupt silence was a joke or an interruption.\n\nThey recorded both versions and listened without the score. Neither sounded accidental. The conductor kept the silence but added a short spoken invitation to notice how the same pause might feel different on its return.",
-      "task": "  Which summary keeps the full movement?\nA. The orchestra moves from avoiding an introduction to briefly inviting listeners to notice the pause’s possible meanings.\nB. The orchestra resolves the disagreement by removing the ambiguous pause from the piece.\nC. A conductor replaces the players’ experiment with a detailed explanation of the correct interpretation.",
-      "solution": "Supported answer: The orchestra moves from avoiding an introduction to briefly inviting listeners to notice the pause’s possible meanings.\n\nReason: The passage moves from no introduction through two workable readings to a selective prompt. The pause remains and no single correct reading is imposed. A summary should carry the starting position, the complication, and the limited revision rather than invent resolution by removal or instruction.",
-      "hash": "3b23bfa3ad12b1dbc2bb02d4fbf538904fe39357d8ce7cf0c83f0feff8a3ec28"
+      "passage": "Jon thought restoring the old boat meant making it look new. While sanding, he found marks showing where earlier owners had repaired it. He left some marks visible and added a label explaining them. The boat could sail again, and visitors could see part of its history.",
+      "task": "Which summary follows Jon’s change?\nA. He starts a repair but leaves the boat unable to sail.\nB. He learns that old repairs should always be removed.\nC. He begins by seeking a new appearance, then preserves useful signs of the past.",
+      "solution": "Supported answer: He begins by seeking a new appearance, then preserves useful signs of the past.\n\nReason: Jon starts with “making it look new” but later “left some marks visible.” Both parts belong in the summary.\nTrap: Leaving marks does not mean abandoning the repair: the ending says the boat can sail.",
+      "title": "Keep the beginning, turn, and ending",
+      "hash": "780f9566bbdec73b5b1ba1b4715679d6e05f0d756318b48e9bb6f884bddd1808"
     },
     {
       "id": "reading-main-idea:3",
-      "title": "Worked method: Distinguish a true detail from the main idea",
-      "passage": "A city greenhouse opened early on two weekdays so gardeners could collect seedlings before work. The early visitors came in small numbers, but many said they could not attend the usual afternoon hours. Some used the service repeatedly.\n\nThe manager recommended keeping one early morning rather than two. That schedule preserved an option for the gardeners while concentrating the limited staff time.",
-      "task": " Which accurate-sounding summary is too narrow?\nA. The manager adjusts an access service to balance a particular need with limited staffing.\nB. Some gardeners collected seedlings before work.\nC. A small early-morning program is retained in a form that requires less staff time.",
-      "solution": "Supported answer: Some gardeners collected seedlings before work.\n\nReason: The middle statement is a true event, but it omits both the access problem and the scheduling decision. The other summaries account for the need and the adjustment. A detail does not become the main idea merely because it is stated explicitly. Ask what important part of the passage would remain unexplained if your choice were the title.",
-      "hash": "14f1d1060e81a387e986a5efed59511d5b849a4255e645ddda08934aa8993072"
+      "passage": "Twenty volunteers tried a new bus route for one week. Most said it shortened their trip to work. The planner called the result encouraging but asked for a winter trial before changing the route permanently. No other riders had been surveyed.",
+      "task": "Which summary stays within the passage?\nA. A short volunteer trial looks promising, but more testing is needed.\nB. The new route will shorten every rider’s trip throughout the year.\nC. The planner found no useful information in the trial.",
+      "solution": "Supported answer: A short volunteer trial looks promising, but more testing is needed.\n\nReason: “Twenty volunteers,” “one week,” and “before changing ... permanently” keep the result small and unfinished.\nTrap: Encouraging does not mean proven for everyone. Asking for more testing does not mean the first trial was useless.",
+      "title": "Keep the answer within the evidence",
+      "hash": "448ac86b534f58b01984cfda6e23e293985d9fadfdffe616d2c9833fbdf41eab"
     },
     {
       "id": "reading-main-idea:4",
-      "title": "Worked method: Infer narrative movement without inventing a moral",
-      "passage": "Tess always took the highest path above the beach. From there she could reach home without sand in her shoes. When her younger cousin visited, she agreed to walk beside the pools and carried his shoes along with her own.\n\nHe stopped at each patch of water. Tess first watched the time, then crouched to see what held him. At the steps home she brushed both pairs of feet clean. The next morning she asked him whether the pools would still be full after breakfast.",
-      "task": "  What change does the ending support?\nA. Tess discovers that her cousin’s route is more efficient for reaching home.\nB. Tess continues using the pools mainly to avoid disappointing her cousin.\nC. Tess has developed an interest in a route she had previously avoided.",
-      "solution": "Supported answer: Tess has developed an interest in a route she had previously avoided.\n\nReason: The opening values the high path for avoiding sand. Crouching and asking about the next morning support a new interest, while cleaning feet preserves the inconvenience. The lower route is not established as more efficient, and the final invitation goes beyond merely accommodating a visitor.",
-      "hash": "4049c94a2cb7a40f1ef156dd2f23c0ff3b017c6c42f07b90b4937a568f5a8e61"
+      "passage": "At her first rehearsal, Eva hid her drawing behind a folder when the director asked for costume ideas. A week later, she still felt nervous, but she put the drawing on the table and explained one part. Her hands shook while she spoke.",
+      "task": "What change does the passage show?\nA. Eva stops caring about the costumes.\nB. Eva shares an idea despite still feeling nervous.\nC. Eva becomes completely confident in every situation.",
+      "solution": "Supported answer: Eva shares an idea despite still feeling nervous.\n\nReason: She first hides the drawing, then puts it on the table. Her shaking hands show that the nerves remain.\nTrap: The ending supports a brave action, not the disappearance of all fear.",
+      "title": "Show a character’s actual change",
+      "hash": "2ba04395001ae8432781d2dd7a048224a529ad2fe0aa6fefa7068ef7a93021a3"
     },
     {
       "id": "reading-main-idea:5",
-      "title": "Worked method: Settle two close summaries with a pivot",
-      "passage": "The curator’s draft called the restored dial “as its first owner saw it.” The conservator crossed out that phrase. The metal was original, but the hands had been replaced, and the lost glass was represented by a clear modern cover.\n\nThey kept the dial on display. The new caption named the surviving parts and distinguished them from the additions that made the object readable.",
-      "task": " Which detail separates “the restoration is rejected as inauthentic” from “the restoration is presented with its interventions made clear”?\nA. The dial remains on display with additions identified.\nB. The curator writes a first draft.\nC. The dial once had an owner.",
-      "solution": "Supported answer: The dial remains on display with additions identified.\n\nReason: The two choices disagree about rejection versus qualified presentation. Keeping the object and identifying additions directly resolves that difference. Drafting and former ownership occur under either interpretation. When two summaries remain, locate the sentence on which their claims diverge instead of rereading every sentence equally.",
-      "hash": "536769afd6fc31989b6b53380b9829ee8fe099fdab75cdd2f939a241546dc69e"
+      "passage": "The museum offered a free evening opening. More visitors came, but only during the school holiday. Staff kept the evening for another month to see whether attendance stayed high after classes resumed. They had not yet decided on a permanent schedule.",
+      "task": "Which detail rules out “The evening opening is a proven year-round success”?\nA. The opening was free.\nB. The building was a museum.\nC. The trial had only run during a school holiday.",
+      "solution": "Supported answer: The trial had only run during a school holiday.\n\nReason: “Only during the school holiday” leaves other parts of the year untested. That is the difference the answer must preserve.\nTrap: A free opening may help attendance, but its price does not prove what will happen all year.",
+      "title": "Settle the difference between two choices",
+      "hash": "21dfbc140cf8bffd34cb517b329a22901442422013372bb0582b04af79014c31"
     },
     {
       "id": "reading-main-idea:6",
-      "title": "Worked method: Repair an overextended summary",
-      "passage": "A botanist’s notebook described a hillside in spring. Her later essay used those notes to explain how she learned the names of flowers along one route. She wrote that naming made some differences easier to notice, though she continued to encounter forms she could not identify.\n\nA student summarized the essay as proof that learning names gives a complete understanding of nature.",
-      "task": " Which repair matches the stated experience?\nA. Naming replaces the need to keep observing the hillside.\nB. Learning names changes the botanist’s attention without ending what she has yet to learn.\nC. The essay shows that unidentified flowers are less important than named ones.",
-      "solution": "Supported answer: Learning names changes the botanist’s attention without ending what she has yet to learn.\n\nReason: “Complete understanding” conflicts with the continuing unidentified forms. A repaired summary retains the positive change—easier noticing—while removing the unsupported completion claim. Neither replacing observation nor ranking flowers is supported. The useful repair names the exact overreach and keeps the evidence the mistaken answer began with.",
-      "hash": "1963132117f4a55ebc43a3ef7a1a8d6f73b7ba999800dcfbcf54c8cbf5dd8e42"
+      "passage": "Lena expected the repair club to have an expert who knew every answer. Instead, members tested ideas together and sometimes failed. She returned the next week with a broken lamp and a notebook. She wanted to help test the next idea.",
+      "task": "Why is “Lena finds an expert who knows every repair” a poor summary?\nA. It gives too much detail about the lamp.\nB. It keeps her first expectation and ignores what she learns.\nC. It correctly describes how the club works.",
+      "solution": "Supported answer: It keeps her first expectation and ignores what she learns.\n\nReason: “Instead” marks the turn: members test ideas and sometimes fail. Her return shows that she accepts that way of learning.\nTrap: Do not summarize an early belief as if the rest of the passage confirmed it.",
+      "title": "Repair a main-idea mistake",
+      "hash": "0f1c3769c9506178ee8c948634b1b6026a41c050e065ab53d1185fdf3890ac66"
     },
     {
       "id": "reading-details:0",
-      "title": "Worked method: Map where a requested fact lives",
-      "passage": "The island clinic sends supply orders on Mondays. A coastal office checks the orders on Tuesdays and combines them into one shipment. The ferry carries the boxes on Thursday unless weather closes the harbor.\n\nUrgent medicine travels by a different arrangement; it does not wait for the weekly supply shipment.",
-      "task": " To find when routine supplies are physically transported, which part should you use?\nA. The sentence about Monday orders\nB. The exception for urgent medicine\nC. The Thursday ferry sentence and its weather condition",
-      "solution": "Supported answer: The Thursday ferry sentence and its weather condition\n\nReason: The requested action is transport, not ordering or checking. Thursday supplies the time and the harbor exception qualifies it. Monday belongs to a different action, and urgent medicine is outside “routine supplies.” A location map connects each date to its own event before matching an answer.",
-      "hash": "d830449c18d8c200c8b9664b4519336235c4319ccbc0a89eab3b8d913ac3d72b"
+      "passage": "The class visited the river in April to collect water. In May, students tested the samples at school. They wrote their report in June and showed it to families in July. The teacher kept a copy beside the laboratory sink.",
+      "task": "Where should you look to find when the samples were tested?\nA. The sentence about the May work at school\nB. The sentence about the April river visit\nC. The sentence about showing families the report",
+      "solution": "Supported answer: The sentence about the May work at school\n\nReason: “In May, students tested the samples” matches the exact action in the question.\nTrap: Collecting and testing are different steps. A nearby date is not enough unless it belongs to the requested action.",
+      "title": "Find where the fact lives",
+      "hash": "0576ac44b0b601e100cf2f40d0c4ff6497d14a0cdee6fab40255f5f510a67253"
     },
     {
       "id": "reading-details:1",
-      "title": "Worked method: Locate actor, action, and condition",
-      "passage": "Before opening the workshop, Ada tested the repaired lamp using a new bulb. The bulb lit, but the switch jammed on its second use. She set the lamp on a marked shelf and recorded the fault. Only after replacing the switch did she call its owner.",
-      "task": " When did Ada contact the owner?\nA. After replacing the faulty switch\nB. Immediately after the new bulb lit\nC. When she first placed the lamp on the marked shelf",
-      "solution": "Supported answer: After replacing the faulty switch\n\nReason: The phrase “Only after replacing the switch” attaches directly to calling the owner. The bulb test and marked shelf are earlier real events, which makes them tempting. Match the question’s action—contacting—not simply the first successful test.",
-      "hash": "f2f13eccfb733b2b3db1b3a0fa0b3dd4b8ee6068a6a6c9ea5c2de61ac5ea1d76"
+      "passage": "On Monday, Amir measured the stage. On Tuesday, Bea ordered boards using his measurements. Chen painted the boards on Friday, after the team had built the frame. The teacher checked the finished frame before the students carried it outside.",
+      "task": "Who ordered the boards?\nA. Amir\nB. Bea\nC. Chen",
+      "solution": "Supported answer: Bea\n\nReason: “Bea ordered boards” supplies both the person and the action. The timing is Tuesday.\nTrap: Amir measured; Chen painted. Both names are in the passage, but neither did the requested job.",
+      "title": "Match the exact person or event",
+      "hash": "558bbb0dd0a6ac285dc06e4a11f9121c06a348837438b98868640f56185ecc60"
     },
     {
       "id": "reading-details:2",
-      "title": "Worked method: Read a stated cause without promoting sequence",
-      "passage": "A hall’s new entrance opened in September. Concert attendance rose in October, when the orchestra also began offering cheaper afternoon tickets. The hall manager attributed the rise to the ticket offer, based on answers collected from returning patrons. She said the entrance had made arrivals smoother but had not been the reason those patrons booked.",
-      "task": " Which explanation does the passage attribute to the manager?\nA. The entrance caused the rise because it opened first.\nB. The ticket offer prompted the reported patrons to book.\nC. The entrance and tickets had equal effects on booking.",
-      "solution": "Supported answer: The ticket offer prompted the reported patrons to book.\n\nReason: The manager’s stated explanation concerns the ticket offer and the surveyed patrons. The entrance opening is earlier, but sequence alone does not make it her asserted cause. No equal division of effects is reported. A detail question can ask what a speaker says even when the passage is not proving that speaker’s account universally.",
-      "hash": "de97bd251eea3fbedf0da1516ee0262abab6c016020b304ac39dbc6e7291b72b"
+      "passage": "On Monday, the club invited members to read a poem aloud. When his name was called, Nico studied the noticeboard instead of stepping forward. The next week, he practiced with one friend before joining the group reading.",
+      "task": "Why does Nico most likely study the noticeboard when called?\nA. He is looking for the date of the next meeting.\nB. He is avoiding the invitation to read aloud.\nC. The club has asked him to repair the board.",
+      "solution": "Supported answer: He is avoiding the invitation to read aloud.\n\nReason: His name is called, but he looks away instead of stepping forward. Later practice with one friend supports difficulty joining the reading.\nTrap: The passage never gives him a date-search or repair task. Use the action and its timing, not an invented reason.",
+      "title": "Track what happened, when, and why",
+      "hash": "9c7ba992c5420a715ffd27daf9df98b97e5a3f839881b9b1523bac9ca03c2f2f"
     },
     {
       "id": "reading-details:3",
-      "title": "Worked method: Keep a number attached to its denominator",
-      "passage": "The repair desk logged 36 visits involving 24 customers in one week. Nine visits were follow-ups on earlier work. The coordinator reported visits and customers in separate columns because one customer could return more than once.",
-      "task": " Which statement preserves the recorded quantity?\nA. Thirty-six customers had items repaired.\nB. Nine of the customers visited only for follow-up work.\nC. The desk recorded thirty-six visits, some made by returning customers.",
-      "solution": "Supported answer: The desk recorded thirty-six visits, some made by returning customers.\n\nReason: Thirty-six counts visits, not unique customers. Nine also counts visits; it does not identify nine distinct people or establish their only reason for attending. The separate customer count is 24. Keep each value paired with its unit before paraphrasing it.",
-      "hash": "07e4d0554f7a7ffe62b2a3b611b3225f95e4e20fdb7e24cbeda94daf70654d39"
+      "passage": "The pool recorded 90 entries on Saturday. Some swimmers left for lunch and entered again, so each person could appear more than once in the count. Staff did not record names and could not tell how many different swimmers had attended.",
+      "task": "What does 90 count?\nA. Entries into the pool\nB. Different swimmers\nC. Swimmers who stayed all day",
+      "solution": "Supported answer: Entries into the pool\n\nReason: The passage calls the number “90 entries” and says the same person could enter more than once.\nTrap: Do not replace entries with people. The missing names prevent a count of different swimmers.",
+      "title": "Keep the number attached to what it counts",
+      "hash": "7f0a5b0d6398844aab3ade20d1bf4af7d1b5c37885d7a3f29b8a76c85dce140b"
     },
     {
       "id": "reading-details:4",
-      "title": "Worked method: Preserve the strength of a paraphrase",
-      "passage": "The astronomer called the dimming pattern “compatible with a passing object” but noted that a change in the star itself had not been excluded. The report recommended observing another event before favoring either explanation.",
-      "task": " Which paraphrase is faithful?\nA. A passing object remains a possible explanation, while an alternative still needs testing.\nB. The pattern establishes that a passing object caused the dimming.\nC. The report favors a change in the star over a passing object.",
-      "solution": "Supported answer: A passing object remains a possible explanation, while an alternative still needs testing.\n\nReason: “Compatible with” allows a passing object without selecting it as the cause. “Had not been excluded” preserves a stellar alternative, and the next observation is meant to help decide. Establishing one cause or favoring the other changes the report’s stated certainty.",
-      "hash": "ed79254eb4acc4a184210dac28f8fbc1f04ae92302002d1d565e48a6a726ed81"
+      "passage": "The coach supported adding one extra practice if players could still finish their schoolwork. She did not approve a daily increase. Before setting a date, she asked the team about homework deadlines and the hours they already spent traveling.",
+      "task": "Which choice restates the coach’s view?\nA. She wants more practice every day.\nB. She supports one extra practice only if schoolwork can still be completed.\nC. She opposes any change to the schedule.",
+      "solution": "Supported answer: She supports one extra practice only if schoolwork can still be completed.\n\nReason: “If players could still finish their schoolwork” is a condition, so the restatement must keep it.\nTrap: Support with a condition is neither full rejection nor approval of a daily increase.",
+      "title": "Change the words, keep the meaning",
+      "hash": "78a64ad6b38175c983527360ceb54b675fb1f97bdfcba593f0511a6c054ae236"
     },
     {
       "id": "reading-details:5",
-      "title": "Worked method: Discriminate between adjacent dates",
-      "passage": "The committee approved the design in March and sent it for a safety review. Inspectors returned comments in April. The builder revised the railing in May, and the committee approved that revision in June. Work on the site began in July.",
-      "task": " Which date answers when the revised railing received approval?\nA. May\nB. June\nC. July",
-      "solution": "Supported answer: June\n\nReason: May is when the builder changed the railing; June is when the committee approved that change; July is the start of construction. All are relevant to the project, but only June matches both “revised railing” and “approval.” Checking those two features is faster and safer than choosing the nearest remembered date.",
-      "hash": "fa5146c1bb04044b5eaebecd23cdc03a19a318a9642925df5bcd17ab1c52c03a"
+      "passage": "The club collected coats in October and sorted them in November. The first delivery reached the shelter in December. A second delivery followed in January because several donors brought more coats after the original collection had ended.",
+      "task": "Which date answers “When did the first delivery arrive?”\nA. October\nB. January\nC. December",
+      "solution": "Supported answer: December\n\nReason: “The first delivery reached the shelter in December” directly settles both first and arrived.\nTrap: October belongs to collection. January belongs to the second delivery. Keep the requested event attached to its date.",
+      "title": "Check the one detail that differs",
+      "hash": "09db1fb380a94b6e9cd63d98769e84f215226f7a24027d243e68882d71fd40ec"
     },
     {
       "id": "reading-details:6",
-      "title": "Worked method: Repair a speaker-and-scope error",
-      "passage": "The organizer predicted that the evening session would help all participants. After the first session, three attendees said its timing suited them; two other attendees did not submit comments. The report quoted the favorable comments but made no statement about the two who had not responded.",
-      "task": " How should “the report confirms that everyone preferred the evening” be corrected?\nA. The organizer’s prediction is proved because favorable comments were received.\nB. The two silent attendees opposed the timing.\nC. Three attendees reported favorable timing; the other attendees’ views were not recorded.",
-      "solution": "Supported answer: Three attendees reported favorable timing; the other attendees’ views were not recorded.\n\nReason: The original prediction belongs to the organizer, while the report contains three comments and two unknown responses. Neither support nor opposition can be assigned to silent attendees. Repairing the error requires keeping speaker and sample scope separate, not merely weakening “everyone” to an equally invented count.",
-      "hash": "e6b1aee70e3a14138900bdcd3a75041161799a53001cc29dc4cf6b70a91eb7cd"
+      "passage": "A theater counted 40 occupied seats before the interval and 35 afterward. The report did not record who sat in each seat. Sam summarized the report as “Only 35 different people attended the whole show,” but the counts cannot establish that.",
+      "task": "What did Sam change?\nA. He changed occupied seats at one time into different people across the whole show.\nB. He changed 35 into 40.\nC. He changed a theater into a cinema.",
+      "solution": "Supported answer: He changed occupied seats at one time into different people across the whole show.\n\nReason: The report measures seats at two moments. It does not track each person across the show.\nTrap: The number 35 is copied correctly, but copying a number does not preserve what it counts.",
+      "title": "Fix the exact mismatch",
+      "hash": "6656014df596e6131ed3aef9061b83ee3fe79247e784d2cf8641c6a143a84487"
     },
     {
       "id": "reading-inference:0",
-      "title": "Worked method: Separate observation from conclusion",
       "passage": "When the audience began clapping, Noor remained beside the wings with her program folded in her hand. A loose page lay beneath the last violinist’s chair. While other visitors moved toward the exit, she kept looking at the page.\n\nAfter the players had left, she crossed the stage and picked it up. Outside, she caught up with the violinist and handed it over without introducing herself or mentioning the applause.",
-      "task": " Which inference about Noor’s reason for remaining has the clearest evidentiary link?\nA. She wants the audience to recognize her role in the performance.\nB. She remains at least partly so she can return the fallen page.\nC. She and the violinist had arranged beforehand for her to collect the page.",
-      "solution": "Supported answer: She remains at least partly so she can return the fallen page.\n\nReason: Watching the page while others leave, then retrieving and returning it, supports a practical purpose for staying. The purpose is inferred from linked actions rather than stated directly. Public recognition and a prior arrangement add motives or events without a corresponding clue; at least partly avoids claiming this was her only reason.",
-      "hash": "14bcf7bb5930930e2d4a73138a6973dc6244c9ca3d5b5ce9c0874aecd8b961c6"
+      "task": "Which inference about Noor’s reason for remaining has the clearest evidentiary link?\nA. She wants the audience to recognize her role in the performance.\nB. She remains at least partly so she can return the fallen page.\nC. She and the violinist had arranged beforehand for her to collect the page.",
+      "solution": "Supported answer: She remains at least partly so she can return the fallen page.\n\nReason: Noor keeps looking at the page, then picks it up and returns it. Those linked actions support a reason for waiting.\nTrap: We do not know her only motive. The text gives no clue of a plan made earlier or a wish for applause.",
+      "title": "Use clues, not a new story",
+      "hash": "8b27cf9d43c822935c530ba3e0fe591c3a3b7a3216b4f156857d438943237097"
     },
     {
       "id": "reading-inference:1",
-      "title": "Worked method: Build a minimal motive from action",
-      "passage": "The potter packed the cracked trial pieces beside the finished bowls. When her student asked why, she placed the pieces in the order they had come from the kiln and pointed out where each firing had changed. She kept the finished bowls on the other side of the table.",
-      "task": "  Her arrangement most reasonably suggests that she wants the student to:\nA. follow how the process was adjusted across attempts\nB. identify the finished bowl most likely to reproduce an early firing defect\nC. decide that the final bowls should be displayed without the discarded trials",
-      "solution": "Supported answer: follow how the process was adjusted across attempts\n\nReason: Ordering trials and pointing to changes supports following the process across attempts. Predicting a future defect or separating finished work from its developmental record would require another purpose that is not stated. The inference rests on the organized sequence the potter makes visible.",
-      "hash": "f45174e865536eada75b0c2e4db49be552b094335bdf1d44c57d125368564211"
+      "passage": "The town’s archive normally closed at four. Ravi arrived at five, found the door locked, and photographed the opening-hours sign. He walked away without trying another entrance. The sign listed a Saturday opening that would fit around his weekday work.",
+      "task": "What is the best supported inference?\nA. Ravi may return when the archive is open.\nB. Ravi owns the archive.\nC. Ravi has decided to stop researching.",
+      "solution": "Supported answer: Ravi may return when the archive is open.\n\nReason: Photographing useful opening hours gives him information for a later visit. That is a small link from his action.\nTrap: Ownership and quitting are extra stories. The locked door alone does not prove either one.",
+      "title": "Build one small link from the clue",
+      "hash": "5975ecd0166412a9f94f1588159f88f2957de5d638187acf24a109a2216f8b1a"
     },
     {
       "id": "reading-inference:2",
-      "title": "Worked method: Distinguish a supported possibility from an invented one",
-      "passage": "The archivist requested photographs of the bindings before asking to borrow the books. A note on the loan form said that volumes with loose sewing would need supports during transport.",
-      "task": " Which inference needs the least extra information?\nA. The archivist already knew every book had loose sewing.\nB. The owners had refused an earlier loan request.\nC. The archivist was checking what protection the books might need in transit.",
-      "solution": "Supported answer: The archivist was checking what protection the books might need in transit.\n\nReason: The request for binding photographs is linked to the stated transport condition. It supports checking possible protection needs, not certainty that every binding is loose. A prior refusal is possible but has no clue here. A good inference has a passage-specific reason, not merely a story that could explain the action.",
-      "hash": "4066273b01427f7f16a46f2aaa4a188f8f8f95a09f3efdb793f4f2525ec24d69"
+      "passage": "A pilot ferry ran for two summer weekends. Most seats were filled. The council paid for an autumn trial before deciding whether to run it all year. No winter trips had taken place, and the council had made no permanent funding decision.",
+      "task": "Which conclusion has evidence behind it?\nA. The ferry will certainly run all winter.\nB. The council thinks more testing is worthwhile.\nC. The council believes the summer trial failed completely.",
+      "solution": "Supported answer: The council thinks more testing is worthwhile.\n\nReason: Paying for another trial shows interest in learning more. “Before deciding” keeps the permanent decision open.\nTrap: Full summer boats do not prove winter demand. Continuing the test also does not show total rejection.",
+      "title": "Choose what the text supports",
+      "hash": "a4734eb39a85eba82e86b9c5b72e639a7008ed79606a665906c1e0d107fbc5de"
     },
     {
       "id": "reading-inference:3",
-      "title": "Worked method: Keep both halves of a mixed response",
-      "passage": "“That route would get us there before sunset,” Amari said. She drew her finger along the thin dotted path, then asked whether the footbridge had reopened after the storm. She put the map back on the table instead of folding it into her bag.",
-      "task": " Which attitude is best supported?\nA. Determination to reject the route\nB. Unreserved confidence that the route is ready\nC. Interest in its advantage combined with concern about whether it is usable",
-      "solution": "Supported answer: Interest in its advantage combined with concern about whether it is usable\n\nReason: Arriving before sunset is a recognized advantage. Asking about the bridge and leaving the map open show an unresolved condition. Total rejection loses the benefit; unreserved confidence loses the practical concern. An attitude answer must explain the action as well as the positive or negative remark.",
-      "hash": "8a9bb814eb0dd530b8a3dfb6bde6923d149950cb768257f59187eb44517b6570"
+      "passage": "“The new trail could be wonderful,” Jo said, studying the map. She then asked whether its steep bridge would be repaired before opening day. She offered to help mark the route once the bridge was safe enough for the walking group.",
+      "task": "How does Jo feel about the trail?\nA. She rejects the whole project.\nB. She has no concerns about it.\nC. She is interested but concerned about one condition.",
+      "solution": "Supported answer: She is interested but concerned about one condition.\n\nReason: “Could be wonderful” and the offer to help show interest. The bridge question supplies the concern.\nTrap: One worry does not cancel all support, and praise does not erase the safety condition.",
+      "title": "Read feelings from words and actions",
+      "hash": "1422f323eafa3cce7b42cbfa013dd6a305810200f16d42345b7b19f0464ac8a5"
     },
     {
       "id": "reading-inference:4",
-      "title": "Worked method: Use an explicit counterexample",
-      "passage": "A critic wrote that Ren’s new exhibition abandoned drawing for sculpture. The catalog listed four sculptures and twelve ink drawings. In an interview Ren said the sculptures began as a way to investigate spaces she had left blank on paper.",
-      "task": " Which claim is contradicted?\nA. Ren has stopped exhibiting drawings.\nB. Ren sees a connection between the two media.\nC. The exhibition includes fewer sculptures than drawings.",
-      "solution": "Supported answer: Ren has stopped exhibiting drawings.\n\nReason: The twelve cataloged ink drawings directly contradict abandonment of exhibited drawing. The interview supports a connection between media, and four is fewer than twelve. A counterexample defeats a universal or exclusive claim without requiring you to settle every aspect of the artist’s intention.",
-      "hash": "33988f4c6faab041e574249fcfb0c9750148a9414afb44f5924ec6230286fa52"
+      "passage": "Leah disliked the first draft of the group’s poster because its lettering was hard to read. She kept the drawing, enlarged the title, and asked to display the new draft at lunch. She made no request to leave the group.",
+      "task": "What most challenges the claim that Leah abandoned the project?\nA. She disliked the first draft.\nB. She improved the poster and asked to display it.\nC. The first title was small.",
+      "solution": "Supported answer: She improved the poster and asked to display it.\n\nReason: Improving and displaying the poster show continued work on the project. Those actions conflict with abandoning it.\nTrap: Disliking one draft is not the same as rejecting the whole project.",
+      "title": "Try to disprove the tempting answer",
+      "hash": "e1c2fd50396809d9aa382588201d8fbf02ced84bf157e876db5699c08013613c"
     },
     {
       "id": "reading-inference:5",
-      "title": "Worked method: Choose the clue that separates rival motives",
-      "passage": "Before releasing the family recording, Inez sent a copy to her cousin and asked him to mark any passage he did not want shared. She did not ask him to correct dates or identify voices.",
-      "task": " Which clue favors concern about consent over concern about factual accuracy?\nA. She makes a copy of the recording.\nB. She asks which passages he does not want shared.\nC. The recording contains more than one voice.",
-      "solution": "Supported answer: She asks which passages he does not want shared.\n\nReason: Marking what may be shared is an action directed at permission. Copying and multiple voices could occur in either a consent check or an accuracy check. The explicit absence of date and identity questions reinforces the distinction. For two plausible motives, choose the clue that predicts one more specifically.",
-      "hash": "f5a609b18c8371db97b4753468055e9140c06af1ab3f884b52e6e2f415fd4fd3"
+      "passage": "When the borrowed violin made a faint sound, Jae first blamed the instrument. His teacher played one clear note on it. Jae then changed the way he held the bow and tried again, listening carefully before making another adjustment.",
+      "task": "What most strongly supports “Jae is willing to change his approach”?\nA. He borrowed a violin.\nB. He initially blamed the instrument.\nC. He changed his bow hold and tried again.",
+      "solution": "Supported answer: He changed his bow hold and tried again.\n\nReason: The changed bow hold is an action that directly supports a changed approach.\nTrap: Borrowing says nothing about flexibility. His first complaint describes the earlier attitude, before he tried a different method.",
+      "title": "Find the clue that settles the choice",
+      "hash": "6e6f6989140ec4165fc1888456eb98077e13bd43b27633e879443b9d9b2d6933"
     },
     {
       "id": "reading-inference:6",
-      "title": "Worked method: Repair the unsupported leap",
-      "passage": "After the demonstration, Eli asked to try the loom with a slower shuttle. The instructor brought one out, and Eli stayed after the scheduled finish to make another strip. A classmate concluded that he had decided to become a professional weaver.",
-      "task": "  Which smaller conclusion is supported?\nA. Eli has concluded that the demonstration method was ineffective.\nB. Eli now intends to replace the instructor’s tools with his own.\nC. Eli wanted another opportunity to work with an adjusted tool.",
-      "solution": "Supported answer: Eli wanted another opportunity to work with an adjusted tool.\n\nReason: Requesting a slower shuttle and continuing supports another attempt under adjusted conditions. It does not establish that the demonstrated method failed or a plan to replace the tools. The career claim in the prompt adds a future commitment beyond those observed actions.",
-      "hash": "363fa3aab59e2512908e024c92b663c265a167d2a777a1636a1021392ed88980"
+      "passage": "After tasting the soup, Nia asked for the recipe and wrote down the ingredients. She said she wanted to try it at home on Sunday. Her friend concluded that she planned to open a restaurant, although Nia had said nothing about selling food.",
+      "task": "Which conclusion repairs the unsupported leap?\nA. Nia wants to make the soup at home.\nB. Nia has already opened a restaurant.\nC. Nia dislikes all other recipes.",
+      "solution": "Supported answer: Nia wants to make the soup at home.\n\nReason: “Try it at home on Sunday” supports cooking the soup at home. It does not establish a business plan.\nTrap: Keep the stated plan. Asking for ingredients does not by itself show a career decision or a dislike of other food.",
+      "title": "Remove the unsupported leap",
+      "hash": "80a3993ae003208e6d8e57a9bf8764016271c619f4174cc7c673bdcdbd193ab8"
     },
     {
       "id": "reading-vocabulary:0",
-      "title": "Worked method: Find the local object of the word",
-      "passage": "The geographer described the boundary as “porous.” Workers crossed it daily, families maintained homes on both sides, and merchants followed older routes that did not stop at the official markers. The line remained on the map.",
-      "task": " What does “porous” mean here?\nA. Drawn with gaps in the printed ink\nB. Able to admit movement across it\nC. Made of material containing small physical holes",
-      "solution": "Supported answer: Able to admit movement across it\n\nReason: The following examples concern people and trade crossing a political line, while the mapped line remains. They support permeability to movement, not damaged printing or physical material. Locate what the adjective describes and use the nearby actions to choose its local sense.",
-      "hash": "a4a750dd24a5cf6b7de15121a91b7b114f2e8068cfa8cfd6bb65b9da206492c0"
+      "passage": "The review called the set spare. The stage held one chair and a small lamp; no curtains, painted scenery, or other furniture surrounded them. The reviewer said this simple arrangement kept attention on the actor’s words.",
+      "task": "Which meaning of “spare” fits this set?\nA. An extra one kept for later\nB. Simple, with little decoration\nC. To save someone from harm",
+      "solution": "Supported answer: Simple, with little decoration\n\nReason: “One chair and a small lamp” plus the missing scenery show a simple set with few objects.\nTrap: An extra supply is a familiar meaning of spare, but no backup set is described here.",
+      "title": "Read around the word",
+      "hash": "1ed195dcd0dce7f62ee6e0e86f4802109fc2b8be965efce4027e7dd989212b43"
     },
     {
       "id": "reading-vocabulary:1",
-      "title": "Worked method: Substitute before accepting a familiar sense",
-      "passage": "“The evidence will bear that interpretation,” the editor wrote, “but not the stronger claim that the author intended the ending to be comic.” She kept the interpretation and removed the claim about intention.",
-      "task": " Which substitute for “bear” preserves the sentence?\nA. Support\nB. Endure with discomfort\nC. Produce as offspring",
-      "solution": "Supported answer: Support\n\nReason: The editor permits one interpretation because the evidence can support it, then rejects a stronger inference. “Endure” and “produce” are real senses of bear but do not connect evidence to a justified interpretation. Test the candidate in the actual sentence, including its contrast.",
-      "hash": "e5730bdc35fbfb968746ca1a2f35f6e9f32ddc82eafc72a1cb26673024678e04"
+      "passage": "The board’s support was guarded. Members agreed to fund one trial, but they wanted to see the results before paying for a larger project. Their letter welcomed the idea while making clear that future funding was still undecided.",
+      "task": "What does “guarded” mean here?\nA. Cautious\nB. Protected by a security officer\nC. Completely opposed",
+      "solution": "Supported answer: Cautious\n\nReason: The board funds a trial but waits before making a larger promise. Replace guarded with cautious.\nTrap: The topic is support, not physical security. Funding a trial also rules out complete opposition.",
+      "title": "Make a plain-word replacement",
+      "hash": "4dc7644d7c5d1c67390223cdeb0d841012f681aabbec197eead6bbe21085012c"
     },
     {
       "id": "reading-vocabulary:2",
-      "title": "Worked method: Let the contrast define the word",
-      "passage": "The first sketch spread ornament over every available edge. In the second, the border was “austere”: one dark line surrounded a wide blank margin. The artist had removed detail without changing the central scene.",
-      "task": " Which meaning does the contrast establish?\nA. Carelessly unfinished\nB. Severely simple\nC. Old-fashioned in subject matter",
-      "solution": "Supported answer: Severely simple\n\nReason: The change from ornamented edges to a single line and blank margin defines a severe simplicity. The second sketch is deliberate, so unfinished carelessness is unsupported. The central scene does not change, so subject matter does not explain the adjective.",
-      "hash": "a8fff03473d3d6c9243822e3444213a04ef910a3ca0745264a3d7c5b2e746b64"
+      "passage": "Unlike the first speaker’s long, winding answer, Tessa’s reply was succinct. She named the problem in one sentence and suggested a solution in the next. The chair thanked her for making the point easy to follow.",
+      "task": "What does “succinct” mean?\nA. Hard to understand\nB. Brief and clear\nC. Quiet enough to be missed",
+      "solution": "Supported answer: Brief and clear\n\nReason: The contrast with “long, winding” and the two-sentence reply point to brief and clear.\nTrap: The passage discusses length and clarity. It gives no evidence that Tessa spoke softly.",
+      "title": "Use the clue beside the word",
+      "hash": "3509f9cbab6e95e05ac4ef9dbed3c165b36261f500693760e34f3ee8ad5b2e7f"
     },
     {
       "id": "reading-vocabulary:3",
-      "title": "Worked method: Read figurative action through its target",
-      "passage": "The old disagreement “shadowed” the committee’s later meetings. Even when a new proposal concerned another building, members returned to who had been trusted with the earlier plans. The room itself was brighter after renovation.",
-      "task": " Which meaning of “shadowed” fits?\nA. Blocked light from reaching\nB. Followed quietly without being noticed\nC. Continued to influence in an unsettling way",
-      "solution": "Supported answer: Continued to influence in an unsettling way\n\nReason: The subject is an old disagreement and the result is repeated distrust, so the action is figurative influence. The brightened room explicitly makes literal light a poor fit; open returns to the dispute also exclude unnoticed following. Keep the emotional effect as well as the basic sense of continuing presence.",
-      "hash": "a5f6b7e4e95412da062ef0ec4afaa34798cd25c3dd836eae06cc924f361ebf77"
+      "passage": "For years, Owen believed every repair had one perfect method. After watching three skilled builders solve the same problem differently, his certainty began to loosen. He still worked carefully, but he was more willing to try another approach.",
+      "task": "What does “loosen” mean here?\nA. Come untied like a rope\nB. Disappear completely\nC. Become less fixed",
+      "solution": "Supported answer: Become less fixed\n\nReason: Owen becomes more willing to try another approach, so his belief is less fixed.\nTrap: No rope is involved, and he does not lose every belief or stop working carefully.",
+      "title": "Notice when a word makes a picture",
+      "hash": "f6e44c2be8e451eacebe9cd982fb7a5597adf095706a6df7afb2d242241944bd"
     },
     {
       "id": "reading-vocabulary:4",
-      "title": "Worked method: Check a meaning against the paragraph",
-      "passage": "The report called the bridge “sound.” It then described bolts that held their load, joints without visible movement, and a surface needing only a new finish. The engineers recommended painting rather than structural replacement.",
-      "task": " Which substitute fits the whole paragraph?\nA. Structurally reliable\nB. Producing a clear noise\nC. Based on a persuasive argument",
-      "solution": "Supported answer: Structurally reliable\n\nReason: Bolts, joints, and the painting recommendation all concern physical condition. Structurally reliable fits every part. A noise or an argument can also be sound in another sense, but neither explains why replacement is unnecessary here. A local substitute must survive the paragraph, not just the word in isolation.",
-      "hash": "14a622affe22ec44ec7fa73601a1dbfbc42f8c4f06d0d5d6e40a046c96fa66b5"
+      "passage": "The scientist called the estimate provisional. It used the measurements available that morning, and the team expected to revise it after a second visit. The report showed the current figure clearly but warned readers against treating it as a final total.",
+      "task": "Which replacement keeps the writer’s point?\nA. Open to revision\nB. Kept secret\nC. Known to be false",
+      "solution": "Supported answer: Open to revision\n\nReason: “Expected to revise it” directly explains provisional. The estimate may change as more evidence arrives.\nTrap: A possible revision does not mean the current estimate is deliberately hidden or already disproved.",
+      "title": "Check the word against the whole point",
+      "hash": "5b2bf7e2e1a6475a62f6d1bd2d7d80345940e04aa426c179a9489b2e79a1c4ee"
     },
     {
       "id": "reading-vocabulary:5",
-      "title": "Worked method: Settle two plausible neighboring senses",
-      "passage": "The critic called the new ending “restrained.” The central argument remained sharp, but the actor lowered her voice and let the final gesture finish without a speech. The critic praised the force of what was left unsaid.",
-      "task": " Which nearby evidence favors “controlled in expression” over “prevented from acting”?\nA. The argument remains central.\nB. The actor chooses a quieter delivery and ends without an added speech.\nC. The review is published after the performance.",
-      "solution": "Supported answer: The actor chooses a quieter delivery and ends without an added speech.\n\nReason: The described delivery is a deliberate limit on expression that the critic praises, not an inability to act. A central argument could occur in either kind of performance, and publication timing does not define the word. Identify the feature on which the two possible senses differ.",
-      "hash": "6c79a3fbe6e902b2f66db5e9b6ca5a48f1d77c189ae8a6b7ddcff3766bac6a58"
+      "passage": "The notice said the path was closed. A fallen tree blocked the narrow bridge, and workers had placed a barrier at each end. Walkers were directed to the road until the trunk could be removed safely.",
+      "task": "Which meaning of “closed” fits the notice?\nA. Finished for the day, like a meeting\nB. Not available for passage\nC. Drawn close together, like curtains",
+      "solution": "Supported answer: Not available for passage\n\nReason: The barriers and directions to another route show that people cannot use the path.\nTrap: Other meanings of closed are real, but only one describes access to this blocked route.",
+      "title": "Test only the useful meanings",
+      "hash": "abeb06d15edbb6531213f2dd74eaeec0d293b0e1ce1ceabe50eec924d002e1e7"
     },
     {
       "id": "reading-vocabulary:6",
-      "title": "Worked method: Repair a subject-based dictionary guess",
-      "passage": "A student reading about a river chose “deposit of money” for “bank.” The sentence read: “The surveyors followed the bank until the reeds hid the water, then returned along a higher ridge.”",
-      "task": " Which repair uses the contextual clue?\nA. The river must run beside a financial business.\nB. Bank means the bordering land, as shown by the route beside reeds and water.\nC. Bank means a stored supply of reeds.",
-      "solution": "Supported answer: Bank means the bordering land, as shown by the route beside reeds and water.\n\nReason: The route runs beside water and is contrasted with a higher ridge, so the word names bordering land. Financial deposit is familiar but unsupported; a stored supply does not fit a route to follow. Repair the guess by naming the clue that rules in the local meaning rather than memorizing another isolated definition.",
-      "hash": "aa91863738c73d6fc380c2f326a49257c904737f7083177552e8abb75ac24ec7"
+      "passage": "The curator said the note was pertinent to the date of the painting. It named the exhibition where the artist first showed it. Other letters described the artist’s meals but gave no information about when the work was made.",
+      "task": "Which clue shows that “pertinent” means relevant?\nA. The note helps answer the question about the painting’s date.\nB. The note is older than every other letter.\nC. The artist enjoyed the meals described.",
+      "solution": "Supported answer: The note helps answer the question about the painting’s date.\n\nReason: Naming the first exhibition helps with the date question. That useful connection is what makes the note pertinent.\nTrap: The passage does not rank the letters by age. Meal details are contrasted with evidence useful to the question.",
+      "title": "Save the clue, not just a definition",
+      "hash": "9f6a47d6b9ed949b6b36da2124fc83fc0c2f908f69d83cdad3d35dfd51d3dbb3"
     },
     {
       "id": "reading-craft:0",
-      "title": "Worked method: Map structure before naming a function",
       "passage": "The new mountain road appears as one continuous line joining the coastal town to the villages above it. At the opening, a council speaker called that line a connection for every home.\n\nRafi could drive his empty cart along the road, but with a full load of grain he stopped at its steepest turn. He carried several sacks around the bend before bringing the cart through.\n\nA map can record a connection without showing the effort it demands from particular users. For Rafi, the road’s usefulness still depends on the cart’s load and the slope beneath its wheels.",
-      "task": "  Which structural map fits?\nA. Claim about connection → concrete difficulty → qualification of what connection means\nB. General claim about travel → proof that the road has no useful purpose → a replacement route\nC. A farmer’s difficulty → an account of why he caused it → confirmation of the opening claim",
-      "solution": "Supported answer: Claim about connection → concrete difficulty → qualification of what connection means\n\nReason: The farmer’s difficulty links a broad connection claim to the final qualification about usable access. The passage does not reject all usefulness or blame the farmer. Name how the middle changes the opening rather than restating its topic.",
-      "hash": "3f6945d4f23beb7cc82d3531251a63fcd4381d2e44c689ccd065d054f428c213"
+      "task": "Which structural map fits?\nA. Claim about connection → concrete difficulty → qualification of what connection means\nB. General claim about travel → proof that the road has no useful purpose → a replacement route\nC. A farmer’s difficulty → an account of why he caused it → confirmation of the opening claim",
+      "solution": "Supported answer: Claim about connection → concrete difficulty → qualification of what connection means\n\nReason: Rafi must unload sacks at the turn. That real difficulty limits the speaker’s claim that the road connects every home equally.\nTrap: The road is usable. The point is that its value depends on the load and slope.",
+      "title": "Ask why this detail is here",
+      "hash": "4d7705802e0b461c515a54ea9d9aaa9ec075687e30d0d250e9c220786b4a070c"
     },
     {
       "id": "reading-craft:1",
-      "title": "Worked method: Explain why this detail is here",
-      "passage": "The miniature ship rewards a close look. Its maker carved not only the railings and rigging but also a latch inside a cupboard that visitors cannot open. That hidden fitting extends the precision of the model beyond anything the display ordinarily allows its audience to see.",
-      "task": " What is the latch detail’s main function?\nA. To show why the cupboard should be opened for visitors\nB. To give a concrete instance of workmanship extending beyond visible display\nC. To identify a defect that weakens the claim of precision",
-      "solution": "Supported answer: To give a concrete instance of workmanship extending beyond visible display\n\nReason: The surrounding claim concerns precision beyond public sight, and the hidden latch exemplifies it. The essay neither requests access nor identifies a defect. Function connects a detail to the argument it supports; it is different from describing the object the detail mentions.",
-      "hash": "46633fc88351bdcbd3aac87ec2447b9f0dc46b49208dd6ff27098d0f81ea45ff"
+      "passage": "Museum labels should help visitors learn about what they see. A clear label can answer a question without a guide standing nearby.\n\nAt one exhibit, however, a label used terms that a school group did not understand. Students left with the same questions they had brought.\n\nBefore printing a full set, staff should ask visitors to read sample labels and explain what they learned.",
+      "task": "What is the middle paragraph’s job?\nA. Show why labels that aim to help still need testing\nB. Give a complete history of the museum\nC. Prove that every museum label is useless",
+      "solution": "Supported answer: Show why labels that aim to help still need testing\n\nReason: Students leave with unanswered questions. That problem explains why the last paragraph recommends testing labels with visitors.\nTrap: One confusing label limits the opening claim; it does not prove that all labels fail.",
+      "title": "Name the paragraph’s job",
+      "hash": "5c673091cd71fe51165333de194b62ee23c7c0714b8bc769ff74b2c400e6cde6"
     },
     {
       "id": "reading-craft:2",
-      "title": "Worked method: Match tone by direction and intensity",
-      "passage": "This translation is an inviting beginning. Its clear opening gives a new reader room to follow the speaker without losing the abruptness of her questions.\n\nSome later images, however, have become flatter. The small, sharp thing in the original sometimes becomes a broad word for brightness or movement. Those choices smooth the voice where its particularity matters.\n\nI hope a later edition returns to these images. Because this edition makes the poem so approachable, I would welcome a revision that restores the sharper images.",
-      "task": " Which tone fits the treatment as a whole?\nA. Dismissive of the translation’s usefulness\nB. Confident that no revision is needed\nC. Appreciative but constructively dissatisfied with some choices",
-      "solution": "Supported answer: Appreciative but constructively dissatisfied with some choices\n\nReason: “Inviting” and praise establish appreciation; the criticism and requested return establish dissatisfaction with specific choices. Dismissal ignores the praise, while complete satisfaction ignores a full paragraph and the closing wish. Tone must match both the evaluation’s direction and its measured intensity.",
-      "hash": "7cf5505f1a220edfaf8e50e92219d62888cdc169ec44eac692321d82756055c3"
+      "passage": "The play’s lively dialogue and strong lead performance make it worth seeing. The slow ending could still use another revision, but it does not spoil the evening. I recommend this production and look forward to the group’s next one.",
+      "task": "Which tone fits the whole review?\nA. Angry and dismissive\nB. Positive, with a small reservation\nC. Unsure whether anything worked",
+      "solution": "Supported answer: Positive, with a small reservation\n\nReason: “Worth seeing” and “I recommend” show approval. The slow ending adds one criticism without reversing that approval.\nTrap: Do not let one criticism erase the positive judgment across the rest of the review.",
+      "title": "Match the feeling and its strength",
+      "hash": "ba19ed282503ffe039176e8fc9840b0f5ab319293b1b72441c25e5b202b0d631"
     },
     {
       "id": "reading-craft:3",
-      "title": "Worked method: Separate the quoted claim from the author’s response",
       "passage": "“Machines have made the hand unnecessary,” a manufacturer announced at the fair. His advertisement showed the finished product sliding from a bright metal opening.\n\nBehind the display, a worker paused the machine when its printed guide failed. She adjusted the feed wheel by touch, ran a test, and adjusted it again before allowing the product to continue.\n\nThe hand had not disappeared from this process. Which kinds of handwork, then, had the advertisement taught its visitors not to notice?",
-      "task": " Why does the essay include the manufacturer’s claim?\nA. To introduce a position that the following observations complicate\nB. To certify the claim as the essay’s own conclusion\nC. To establish that the workers refused to use the machine",
-      "solution": "Supported answer: To introduce a position that the following observations complicate\n\nReason: The quoted assertion is followed by counterevidence: workers still use touch. The final question directly examines the advertisement’s framing. Quotation does not equal endorsement, and adjustment is not refusal to use the machine. Follow what the author does after another speaker’s words.",
-      "hash": "65d4e6afff26ccbaef91024e44a57292823967ff1fa055626778a6056ec452b2"
+      "task": "Why does the essay include the manufacturer’s claim?\nA. To introduce a position that the following observations complicate\nB. To certify the claim as the essay’s own conclusion\nC. To establish that the workers refused to use the machine",
+      "solution": "Supported answer: To introduce a position that the following observations complicate\n\nReason: The worker “adjusted the feed wheel by touch.” Her action shows that handwork is still needed after the manufacturer claims it is not.\nTrap: A quote is not automatically the author’s view. Read what the author puts after it.",
+      "title": "Track a speaker’s view and how it changes",
+      "hash": "4b38eda1634fffbd142beb744e705de44398780251a4fc14f277960bd434caeb"
     },
     {
       "id": "reading-craft:4",
-      "title": "Worked method: Explain an image’s selected relationship",
-      "passage": "At dusk the greenhouse panes became “a row of small moons” above the dark garden. Inside, workers moved seedlings from tray to tray; outside, the path had disappeared into shadow.",
-      "task": "  What does the image chiefly emphasize?\nA. The reflection of actual moonlight onto the workers\nB. A separated line of pale light against surrounding darkness\nC. A match between the workers’ movements and the regular spacing of the panes",
-      "solution": "Supported answer: A separated line of pale light against surrounding darkness\n\nReason: The shared feature is a row of pale lights against darkness, reinforced by the shadowed path. The image does not identify the physical source as moonlight or align the workers’ movements with the panes. Explain the selected visual relationship rather than adding another part of the scene.",
-      "hash": "2680f659923d7b570404370009a099131aa3c2725cfa74b0d2e12805caacb02e"
+      "passage": "At dusk, the greenhouse windows glowed like small lanterns along the dark field. Mara slowed her walk to look at the rows of warm light. Inside, the gardeners were covering the youngest plants before the temperature dropped.",
+      "task": "What does the lantern comparison emphasize?\nA. The windows’ warm light against the darkness\nB. The greenhouse’s ability to fly\nC. The exact temperature of each plant",
+      "solution": "Supported answer: The windows’ warm light against the darkness\n\nReason: The passage sets “glowed” and “warm light” against the “dark field.” That is the shared feature of windows and lanterns.\nTrap: A comparison highlights a useful likeness. It does not give the greenhouse every property of another object.",
+      "title": "Explain what an image helps us notice",
+      "hash": "7843bad69db66c859457f0ff214407e060c4a18b450001f095d4eed64e1fdc01"
     },
     {
       "id": "reading-craft:5",
-      "title": "Worked method: Distinguish example, concession, and reversal",
-      "passage": "I want the old stairway to remain available. It is narrow, and carrying boxes up it is awkward. But the new side entrance can handle deliveries while the stair stays open for ordinary use. Preserving it need not require pretending that every task belongs on it.",
-      "task": " What does the admission do?\nA. It withdraws the argument for keeping the stairs.\nB. It supplies the main benefit of the old design.\nC. It acknowledges a practical objection that the proposed arrangement addresses.",
-      "solution": "Supported answer: It acknowledges a practical objection that the proposed arrangement addresses.\n\nReason: The inconvenience is a concession, not the author’s reason for preservation. The next sentence offers an answer without reversing the position. Use the neighboring sentences to distinguish an acknowledged problem from abandonment of the claim.",
-      "hash": "59ef478eb8a734e18db88818e10d16a8791f2279fffc0aee15e1c324ca21333e"
+      "passage": "Inspectors found loose joints on the town bridge. The east lane is closed while those joints are repaired. Work is scheduled to finish on Friday. Until then, drivers should follow the marked route through Mill Street and allow extra travel time.",
+      "task": "Which description fits the report’s tone?\nA. Panicked because any damage is frightening\nB. Calm and practical\nC. Mocking the people who use the bridge",
+      "solution": "Supported answer: Calm and practical\n\nReason: The list of damage, repair schedule, and directions focus on facts and actions. They support a calm, practical tone.\nTrap: Choose from the wording and treatment, not from how the damaged bridge makes you feel.",
+      "title": "Use two clues for tone",
+      "hash": "30b76a5fd5e370a47f7eafdafad4ab0e6f9f5b21c741db31e4919c719229af70"
     },
     {
       "id": "reading-craft:6",
-      "title": "Worked method: Repair a purpose answer that only retells",
       "passage": "Before leaving, I checked the forecast three times. The same chance of showers remained on the screen; I wanted a more cooperative answer. I finally put the phone away and hurried toward the club.\n\nWhen rain began, I kept going. By the time I arrived, my sleeves were wet, my shoes made a noise on the floor, and I was laughing.\n\nA student labels the first paragraph’s purpose “to tell us that the narrator checks the weather.”",
-      "task": " Which revision explains its role rather than repeating its content?\nA. It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\nB. It establishes the checks as evidence that the later rain was forecast accurately.\nC. It shows why reaching the club depends on obtaining a different forecast.",
-      "solution": "Supported answer: It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\n\nReason: Wanting a more cooperative forecast supplies evidence of a wish for a manageable outcome; later laughter in the rain changes that response. The task is not to establish forecast accuracy or a condition for reaching the club. Connecting the first paragraph to the later response explains its role rather than merely repeating the weather-checking action.",
-      "hash": "57c770262338cb01186a4db93be8d311280586292a33b2243afaaa86908d5e70"
+      "task": "Which revision explains its role rather than repeating its content?\nA. It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\nB. It establishes the checks as evidence that the later rain was forecast accurately.\nC. It shows why reaching the club depends on obtaining a different forecast.",
+      "solution": "Supported answer: It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\n\nReason: “I wanted a more cooperative answer” shows a wish to avoid rain. “I was laughing” shows a different response after getting wet.\nTrap: Saying “checks the weather” names the action. The question asks how that action connects to the ending.",
+      "title": "Separate what it says from what it does",
+      "hash": "4b55039295d73e4153d38e98717aff690cf4fc315454ce55c00401c5d2885083"
     },
     {
       "id": "reading-integration:0",
-      "title": "Worked method: Map each claim before finding overlap",
-      "passage": "Source A: The new route shortens the walk from the station to the clinic. Its value is the direct connection it creates.\n\nSource B: A shorter walk helps only if people can use the surface throughout the year. I support the route, but its drainage must be funded as part of construction.",
-      "task": "  Which two-column map is faithful?\nA. A: a direct route matters; B: drainage must be funded as part of building it\nB. A: a direct route matters only after drainage is funded; B: a shorter walk is sufficient by itself\nC. A: the clinic’s distance is irrelevant; B: the drainage question should be postponed until after construction",
-      "solution": "Supported answer: A: a direct route matters; B: drainage must be funded as part of building it\n\nReason: A emphasizes a shorter connection. B accepts its benefit but requires drainage to be part of the construction plan. The wrong maps transfer a condition to the wrong writer, reverse its force, or remove the benefit A actually stresses.",
-      "hash": "e82b09d49d610ed30964c86732dae5d70e52d4911662a1e444a67a06dcd15614"
+      "passage": "Writer A: Open the school garden on weekends so families can visit. Pupils can still grow food there during the week.\n\nWriter B: I welcome weekend visitors too, but the youngest beds should be fenced first. Families could enjoy the paths while leaving those beds for the pupils to tend.",
+      "task": "Which pair of notes is accurate?\nA. A: welcome visitors. B: welcome visitors after protecting the young beds.\nB. A: close the garden. B: remove every bed.\nC. A: stop growing food. B: keep families out forever.",
+      "solution": "Supported answer: A: welcome visitors. B: welcome visitors after protecting the young beds.\n\nReason: A supports weekend access. B agrees but adds “fenced first,” a condition on that access.\nTrap: A condition is not total opposition. Both still support growing food during the week.",
+      "title": "Read each source on its own first",
+      "hash": "a88fb043afd710baad75115a9d57c9e8ad22ef2093f918547a51377c2d36996b"
     },
     {
       "id": "reading-integration:1",
-      "title": "Worked method: Retain the precise difference between supporters",
-      "passage": "Writer A supports publishing the letters so readers can encounter the correspondence directly. Writer B also supports publication, provided the edition identifies missing pages and distinguishes uncertain dates from confirmed ones. Neither argues for rewriting the letters.",
-      "task": "  Where do the positions differ?\nA. Whether publishing the letters is useful without any new research about their authors\nB. Whether a complete-looking edition is preferable to one that marks its gaps\nC. B explicitly requires documentation of gaps and uncertain dates.",
-      "solution": "Supported answer: B explicitly requires documentation of gaps and uncertain dates.\n\nReason: Both support publication. B explicitly adds documentation of missing pages and uncertain dates; the text does not establish an opposing preference by A for concealment. The distinction is a stated condition, not an invented disagreement inferred from A’s silence.",
-      "hash": "4f9a27825f4c8e886e3cd7dbfdf043ec000162d1308492a906d17fa0b4f92b67"
+      "passage": "Writer A: The old hall should host community events again. A building that once brought neighbors together can do so once more if we reopen its doors.\n\nWriter B: I support reopening only if the original painted ceiling is protected during repairs. We can welcome people back while keeping that part of the hall’s history.",
+      "task": "How does B’s view relate to A’s?\nA. B opposes all public events.\nB. B shares the goal and adds a condition about protecting the ceiling.\nC. B proves that A wants the ceiling destroyed.",
+      "solution": "Supported answer: B shares the goal and adds a condition about protecting the ceiling.\n\nReason: Both support reopening. B’s “only if” adds a protection requirement that A does not mention.\nTrap: Silence about the ceiling does not prove that A wants it damaged. Do not invent a disagreement.",
+      "title": "Find the agreement and the difference",
+      "hash": "19b4579d56ab8e36b5c1f9ab6a3e67d868f7d8e7576ffd329b0b3d4a26908b1c"
     },
     {
       "id": "reading-integration:2",
-      "title": "Worked method: Combine compatible claims without inventing a verdict",
-      "passage": "A landscape study reports that the planted strip reduced wind speed at the field edge. A second report finds that the strip occupies land previously used for crops, but does not calculate the value of either the lost crop area or the wind protection.",
-      "task": " Which joint conclusion follows?\nA. The protection is worth more than the lost crop area.\nB. The strip provides measured wind protection while the overall economic tradeoff remains uncalculated.\nC. The loss of crop area cancels the measured wind reduction.",
-      "solution": "Supported answer: The strip provides measured wind protection while the overall economic tradeoff remains uncalculated.\n\nReason: The sources establish a physical benefit and a cost in land use, not their relative economic values. They can both be true without canceling one another. A combined answer may retain an unresolved tradeoff; it must not create a cost-benefit verdict absent from either source.",
-      "hash": "4cff736bf417632719fcd03fdf8c4303fe548e43f840113a82d94abaf00fd616"
+      "passage": "The library report says the evening opening brought in 30 visitors during its first week. The budget note says staff covered that week without extra pay, but future staffing costs are undecided. Neither source describes attendance after the first week.",
+      "task": "Which combined statement is supported?\nA. Evening hours are guaranteed to stay free forever.\nB. The opening failed because future costs are unknown.\nC. The first week attracted visitors without extra pay, while later costs remain unsettled.",
+      "solution": "Supported answer: The first week attracted visitors without extra pay, while later costs remain unsettled.\n\nReason: The report supplies the visitors; the budget note supplies first-week pay and the limit on future costs.\nTrap: Do not turn a successful first week into a permanent guarantee or an unknown cost into proof of failure.",
+      "title": "Keep only what both sources support",
+      "hash": "d599e132ea5e1ee88035807e1c82e93b6bb2d4edd6bea943e3fd4b680e26a609"
     },
     {
       "id": "reading-integration:3",
-      "title": "Worked method: Read the table’s unit before making the claim",
-      "passage": "The gallery records each doorway entry, including a person returning after leaving.\n\nDay — Doorway entries\nFriday — 120\nSaturday — 150\n\nA companion note explains that workshop participants often left for lunch and returned through the same doors. The table therefore counts entry events rather than assigning a new identity to each event.",
-      "task": " Which claim uses both the table and definition correctly?\nA. The gallery had thirty more distinct visitors on Saturday.\nB. Twenty-five percent of Saturday visitors attended the workshop.\nC. Saturday had thirty more entries, but the figures do not identify the change in distinct visitors.",
-      "solution": "Supported answer: Saturday had thirty more entries, but the figures do not identify the change in distinct visitors.\n\nReason: Subtract like units: 150 − 120 = 30 entries. Repeat entry means that difference is not automatically thirty new people. Workshop behavior explains a possible difference between measures but gives no percentage of visitors. Both the numeric operation and the unit definition must survive the combined claim.",
-      "hash": "de830475353289572cfabbb3a2853d0197df7e5a1d62c1074d5006c0bcd677ab"
+      "passage": "A club wants a larger share of members to attend. Before changing meeting time, 20 of its 40 members came. After the change, 30 of 100 members came. Membership also grew, so comparing only 20 and 30 would miss part of the picture.",
+      "task": "What happened to attendance?\nA. The number rose, but the share fell from 50% to 30%.\nB. Both the number and the share rose.\nC. The share stayed the same because both counts are positive.",
+      "solution": "Supported answer: The number rose, but the share fell from 50% to 30%.\n\nReason: Before: 20 ÷ 40 = 50%. After: 30 ÷ 100 = 30%. More people came, but they were a smaller share of members.\nTrap: Compare part ÷ whole. The raw counts 20 and 30 cannot answer a question about share.",
+      "title": "Read the table’s labels, then compare",
+      "hash": "3586cdf3c05173e3a0eba2fd44f212572f3497a3f4ecc9bc64e9bb6aa35732ee"
     },
     {
       "id": "reading-integration:4",
-      "title": "Worked method: Respect the intersection of study limits",
-      "passage": "Study A found improved recall for adults learning short lists aloud. Study B found improved recall for teenagers practicing pictures silently. Neither study compared the two methods in the same participants, and neither measured retention after a week.",
-      "task": " Which combined conclusion stays inside both studies?\nA. A benefit occurred under each tested method and group, without establishing which method lasts longer.\nB. Speaking is equally effective for adults and teenagers.\nC. The two studies prove that both methods preserve learning for a week.",
-      "solution": "Supported answer: A benefit occurred under each tested method and group, without establishing which method lasts longer.\n\nReason: A and B each support a benefit in their own tested conditions. Different groups and materials prevent assigning their difference solely to method, and neither measures week-long retention. Combining positive results does not erase limits, create an age comparison, or supply an unmeasured time period.",
-      "hash": "2f025a77194a7ae97bdb8727e7ff104671838811a78632f741dcfec7ba7e3662"
+      "passage": "A survey reports that most of 15 volunteer cyclists liked a new sign. A separate report says the sign was tested on one route during daylight. Neither report counted accidents or included nighttime riders, and no other route was studied.",
+      "task": "Which conclusion stays within both reports?\nA. The sign prevents accidents on every route.\nB. The volunteers generally liked the sign in the limited setting tested.\nC. Night riders disliked the sign.",
+      "solution": "Supported answer: The volunteers generally liked the sign in the limited setting tested.\n\nReason: The survey gives the volunteers’ opinion; the second report limits the setting to one daylight route.\nTrap: Neither source measures accident prevention or night riders’ views. Do not fill in those missing results.",
+      "title": "Keep every source’s limits",
+      "hash": "c7219b7d0999c02bc24c5587aaae9e364452bec3a2332b889e984603640d2e4c"
     },
     {
       "id": "reading-integration:5",
-      "title": "Worked method: Use the exact point of disagreement",
-      "passage": "Historian A treats a merchant’s list as a record of goods intended for shipment. Historian B agrees about that purpose but warns that the list alone does not establish which goods arrived; she asks to compare a receiving ledger.",
-      "task": "  Which evidence would most directly address B’s additional question?\nA. A second copy confirming which goods the merchant intended to send\nB. A ledger identifying the goods received at the destination\nC. A ledger showing what similar merchants sent to other destinations",
-      "solution": "Supported answer: A ledger identifying the goods received at the destination\n\nReason: B asks which goods arrived in this shipment. Another plan confirms intention, and other merchants’ records provide a comparison without documenting this delivery. The receiving ledger addresses the precise step B wants checked.",
-      "hash": "2819a210086d061f9f7374d415a3dcd76208e93065fa796ade7afe7e6ca98fb1"
+      "passage": "Writer A: We should copy the old recordings so more people can hear them. A copy can travel to listeners who cannot visit our archive.\n\nWriter B: Copies do improve access. But we should also keep the originals available for future study. A researcher may someday need a detail that today’s copies do not preserve.",
+      "task": "What do both writers explicitly support?\nA. Discarding every original\nB. Replacing all future research with copies\nC. Using copies to let more people hear the recordings",
+      "solution": "Supported answer: Using copies to let more people hear the recordings\n\nReason: A wants more people to hear the recordings. B agrees that copies improve access. Those two statements overlap.\nTrap: Keeping originals is B’s added point. A’s silence does not make that point an explicit shared claim.",
+      "title": "Check the exact overlap",
+      "hash": "d54a026210c0a434a036b4402ee6ef7a21be7c2eed422b99ae477d30a4886e28"
     },
     {
       "id": "reading-integration:6",
-      "title": "Worked method: Repair a merged-speaker conclusion",
-      "passage": "A designer says the square should retain its old benches because people recognize them as meeting places. A wheelchair user supports retaining some, but asks for spaces beside them wide enough for different seating needs. A summary says both oppose changing the bench area.",
-      "task": " Which repair preserves both positions?\nA. Both think recognition is the only important consideration.\nB. The wheelchair user rejects retaining any old benches.\nC. Both allow old benches to remain, while the wheelchair user also calls for changes around them.",
-      "solution": "Supported answer: Both allow old benches to remain, while the wheelchair user also calls for changes around them.\n\nReason: Retaining benches is the overlap; changing adjacent space is the added condition. The mistaken summary turns agreement about an object into agreement against every alteration. Repair by naming each speaker’s actual scope instead of treating all support for preservation as opposition to change.",
-      "hash": "ade746dc8b73152797264c2480e8f6d3fa9258fc09f0fc406476226a998bef80"
+      "passage": "Writer A: Let us try later bus service for one month. People leaving evening shifts could have another way home, and we could find out how many use it.\n\nWriter B: I support that trial if the council checks its cost after the month. We need that information before deciding what comes next.\n\nA student summarizes them as “Both promise that later service will be permanent.”",
+      "task": "What is wrong with the student’s summary?\nA. It turns support for a trial into a promise of permanent service.\nB. It correctly keeps B’s cost condition.\nC. It shows that A opposes the trial.",
+      "solution": "Supported answer: It turns support for a trial into a promise of permanent service.\n\nReason: Both discuss a trial. B also requires a cost check, so permanent service is not an agreed promise.\nTrap: Keep the type of commitment: trying an idea and committing to it forever are different claims.",
+      "title": "Find which source your answer changed",
+      "hash": "4b0bd3ad4e8e8240ec65de77ac6ef38a679c859c686fb1bcada16ef9c6ac8733"
     }
   ],
   "skillCards": [
     {
       "id": "reading-main-idea-thesis",
       "topic": "reading-main-idea",
-      "title": "Find the controlling claim rather than only a subject",
+      "title": "Name the subject, then the point",
       "sections": [
         1
       ],
       "questionCount": 22,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "581808f4254f63c09933984ebcfd22e03a6b1aa224619ed8620e4f3030b9141f"
+      "workedExamples": [
+        {
+          "section": 1,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Ask: What is this about? Then: What does the writer say about it?",
+        "A topic names the subject. A main idea explains the point."
+      ],
+      "activity": {
+        "evidenceText": "The zoo shortened its animal signs. Children read more of them, but some adults wanted extra detail. Staff added links to longer descriptions while keeping the short signs.",
+        "prompt": "Which choice gives the whole point?",
+        "choices": [
+          "The zoo is a place with signs.",
+          "Short signs and optional details serve readers with different needs.",
+          "Adults do not read signs."
+        ],
+        "answer": 1,
+        "explanation": "The short signs remain, and the links add detail. The answer needs both parts of that solution. “A place with signs” names only the subject."
+      },
+      "hash": "0a56d55549006d449fce03d375fd6b096ba24f687b747c8b9f1dbdb3d79e09b7",
+      "tip": "Before reading the choices, finish: “This is about __, and the writer’s point is __.”",
+      "evidence": null
     },
     {
       "id": "reading-main-idea-movement",
       "topic": "reading-main-idea",
-      "title": "Preserve the passage’s argumentative movement",
+      "title": "Keep the beginning, turn, and ending",
       "sections": [
         2
       ],
       "questionCount": 5,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "639e13b2f1fb5833bd27e38640aad1a31dd7595fc6e5a5da4abb35cff3b1187b"
+      "workedExamples": [
+        {
+          "section": 2,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Look for a change: At first __. Then __. In the end __.",
+        "A good summary keeps that change. It does not stop at the first idea."
+      ],
+      "activity": {
+        "evidenceText": "Kai wanted his mural to match his first sketch exactly. After neighbors described the old market, he added their memories to the design. He kept the central tree from his sketch.",
+        "prompt": "Which summary follows the change?",
+        "choices": [
+          "Kai abandons painting after hearing criticism.",
+          "Kai replaces his whole idea with a copy of the market.",
+          "Kai keeps part of his idea while making room for neighbors’ memories."
+        ],
+        "answer": 2,
+        "explanation": "“Added their memories” shows the change; “kept the central tree” shows what remains. Neither quitting nor replacing everything matches both details."
+      },
+      "hash": "cab0dcdb5662eb5be17d1f8bb8ed06cbd85a42351e03361602fd978cef049a6f",
+      "tip": "Use “at first → then → finally” to keep the passage’s change in your summary.",
+      "evidence": null
     },
     {
       "id": "reading-main-idea-scope",
       "topic": "reading-main-idea",
-      "title": "Match a summary to its scope and qualifications",
+      "title": "Keep the answer within the evidence",
       "sections": [
         3
       ],
       "questionCount": 11,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "b4cd34cf2a77b2b5da477650aa3207635b778148bc605d240e5093a859810ca7"
+      "workedExamples": [
+        {
+          "section": 3,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Check who, where, and how sure. Keep the passage’s limits.",
+        "Watch words such as all, always, and proves. They need strong support."
+      ],
+      "activity": {
+        "evidenceText": "Eight volunteers tried the trail in dry weather. All finished comfortably. The organizer wants a rainy-day test before recommending the route to every walking group.",
+        "prompt": "Which summary keeps the limits?",
+        "choices": [
+          "One small dry-weather trial went well; broader advice needs more evidence.",
+          "Every group can use the trail safely in any weather.",
+          "The organizer thinks the trail has no possible value."
+        ],
+        "answer": 0,
+        "explanation": "Keep eight volunteers and dry weather. A planned rainy-day test shows what is still unknown; it does not erase the useful first result."
+      },
+      "hash": "7c10ae5f61eda92ce9a2d8e16c130a5194287762f5154942a3834186a5637283",
+      "tip": "Circle limit words in your mind: some, one group, during the trial, may, and only if.",
+      "evidence": null
     },
     {
       "id": "reading-main-idea-narrative-change",
       "topic": "reading-main-idea",
-      "title": "Trace a specific narrative change without overgeneralizing",
+      "title": "Show a character’s actual change",
       "sections": [
         4
       ],
       "questionCount": 10,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "b5d1b241ab24f4a495bacb62d57c57bb36006217b401becf24fd71ecdbb94223"
+      "workedExamples": [
+        {
+          "section": 4,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Compare what the person does at the start and end.",
+        "Name only the change those actions show. One brave act does not erase every fear."
+      ],
+      "activity": {
+        "evidenceText": "Rosa usually let her partner answer visitors’ questions. This time she explained one tool herself. She still asked her partner to handle a question she could not answer.",
+        "prompt": "What change is supported?",
+        "choices": [
+          "Rosa no longer needs help with anything.",
+          "Rosa takes a more active role while still accepting help.",
+          "Rosa refuses to talk to visitors."
+        ],
+        "answer": 1,
+        "explanation": "Explaining one tool shows more participation. Asking for help afterward limits the change. The text does not say she has become fully independent."
+      },
+      "hash": "fd466177bbc75811e1ce420d3cf8b4570f47ce7cbe622957c8c44ead7cda2248",
+      "tip": "Describe the final action before choosing a claim about how completely the character has changed.",
+      "evidence": null
     },
     {
       "id": "reading-details-locate",
       "topic": "reading-details",
-      "title": "Locate the exact actor, action, and requested fact",
+      "title": "Match the exact person or event",
       "sections": [
         1
       ],
       "questionCount": 16,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "925e7ede6c8c78f0c6baace31b3f56ce013aab715ec11332a382418fc740f6a1"
+      "workedExamples": [
+        {
+          "section": 1,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Turn the question into a small search: Who did what, and when?",
+        "Match all of those parts before choosing. A true detail can answer the wrong question."
+      ],
+      "activity": {
+        "evidenceText": "Luis drafted the invitation. Mei printed it, and Sam delivered it to each classroom. On Friday, Luis collected the reply slips.",
+        "prompt": "Who delivered the invitations?",
+        "choices": [
+          "Luis",
+          "Mei",
+          "Sam"
+        ],
+        "answer": 2,
+        "explanation": "“Sam delivered it” matches the exact action. Luis drafted and collected; Mei printed. Their names are real details but answer different questions."
+      },
+      "hash": "df2550b9a32b734111089ea963cd177cdc6b3511ad5ade84e9a44781917a9f7f",
+      "tip": "Use the question’s action as well as its name; the same person may perform several jobs.",
+      "evidence": null
     },
     {
       "id": "reading-details-sequence-cause",
       "topic": "reading-details",
-      "title": "Separate the stated sequence and explanation",
+      "title": "Track what happened, when, and why",
       "sections": [
         2
       ],
       "questionCount": 14,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "c3666933c87dcfa183dd401bd2070d054529ec02d9a8e216904765aa4e3d992f"
+      "workedExamples": [
+        {
+          "section": 2,
+          "example": 0
+        }
+      ],
+      "body": [
+        "For order, follow before, after, and the named events.",
+        "For why, find the stated reason or connect the person’s action to a nearby clue.",
+        "After alone does not prove because. Keep the explanation within the text."
+      ],
+      "activity": {
+        "evidenceText": "When the teacher asked for readers, Pia bent to tie a shoe that was already tied. Later, after everyone had chosen a role, she offered to carry the books.",
+        "prompt": "Why does Pia most likely bend toward her shoe?",
+        "choices": [
+          "Her shoe needs repair before she can walk.",
+          "She wants to show the class how to tie a knot.",
+          "She is avoiding volunteering to read."
+        ],
+        "answer": 2,
+        "explanation": "The shoe is already tied, and she bends down just when readers are requested. Those linked clues support avoiding that invitation. Nothing mentions a damaged shoe or a knot lesson."
+      },
+      "hash": "26116d34d6eaa4b286c50981927190ba2141a99fb51bb72f0cdf66f4a50eca7f",
+      "tip": "For “why,” connect the action to its clue; for “when,” match the event to the timeline.",
+      "evidence": null
     },
     {
       "id": "reading-details-unit-condition",
       "topic": "reading-details",
-      "title": "Keep the speaker, unit, denominator, and condition",
+      "title": "Keep the number attached to what it counts",
       "sections": [
         3
       ],
       "questionCount": 17,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "d77095001b6cea6f5e3ae9e1e1e288d2bc8a89e7a176fa1cabfdae9d274c87b9"
+      "workedExamples": [
+        {
+          "section": 3,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Read the noun beside the number: visits, people, items, or days.",
+        "Keep the group and time period too. Visits are not always different people."
+      ],
+      "activity": {
+        "evidenceText": "The clinic counted 60 appointments this week. Several patients came twice. Staff did not count how many different patients attended.",
+        "prompt": "What does 60 measure?",
+        "choices": [
+          "Different patients",
+          "Appointments",
+          "Patients who came twice"
+        ],
+        "answer": 1,
+        "explanation": "The noun is appointments. Repeat visits mean one person can account for more than one appointment, so 60 is not a count of different patients."
+      },
+      "hash": "7fb2abff1381c42144933023cd70e23da9bb6b9514f70ab0f0577021306d2453",
+      "tip": "Say the unit aloud with the number: “sixty visits,” not just “sixty.”",
+      "evidence": null
     },
     {
       "id": "reading-details-paraphrase",
       "topic": "reading-details",
-      "title": "Preserve the meaning and strength of a paraphrase",
+      "title": "Change the words, keep the meaning",
       "sections": [
         4
       ],
       "questionCount": 3,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "0ff85315d99ab1db0f1616fb533d9c94c1be20c7d4e939d863694755271c5c91"
+      "workedExamples": [
+        {
+          "section": 4,
+          "example": 0
+        }
+      ],
+      "body": [
+        "A paraphrase says the same thing in new words.",
+        "Check the actor, action, and limit. Similar words can still change the claim."
+      ],
+      "activity": {
+        "evidenceText": "The principal will approve an outdoor concert if a suitable indoor room is also reserved in case of rain.",
+        "prompt": "Which choice keeps the condition?",
+        "choices": [
+          "The concert must happen indoors.",
+          "The principal has rejected the concert.",
+          "Approval depends on reserving an indoor backup."
+        ],
+        "answer": 2,
+        "explanation": "The indoor room is a backup condition. The sentence neither requires an indoor concert nor refuses the plan outright."
+      },
+      "hash": "8ad81e0015275cf859f80e15be86fee903c2252cdcbaa799bd7938525ed02f18",
+      "tip": "Keep “if,” “some,” and “may” when you restate a sentence; those small words change its promise.",
+      "evidence": null
     },
     {
       "id": "reading-inference-evidence-link",
       "topic": "reading-inference",
-      "title": "Build the smallest conclusion from a specific clue",
+      "title": "Build one small link from the clue",
       "sections": [
         1
       ],
       "questionCount": 21,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "ecd2ae090d74e3d2ffd20d9f58014d5a82e65fa95fe59527bf35760e788388b2"
+      "workedExamples": [
+        {
+          "section": 1,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Use this sentence: The text says __, so __ is likely.",
+        "Stop there. Do not add a motive, event, or future success the text does not support."
+      ],
+      "activity": {
+        "evidenceText": "Ben checked tomorrow’s train times, packed a small bag, and put his ticket beside his keys. He set his alarm for an hour before departure.",
+        "prompt": "What is most likely?",
+        "choices": [
+          "Ben is preparing to take the train.",
+          "Ben drives the train for work.",
+          "Ben has canceled the trip."
+        ],
+        "answer": 0,
+        "explanation": "The times, ticket, bag, and alarm work together as travel preparations. None gives Ben a job on the train or shows a cancellation."
+      },
+      "hash": "37f886d6794be449ff72d743ed1ef24f576e3853258566c580393939f8e6fc86",
+      "tip": "Finish “The text says __, so __ is likely” before accepting an inferred motive.",
+      "evidence": null
     },
     {
       "id": "reading-inference-limits",
       "topic": "reading-inference",
-      "title": "Separate a supported inference from a plausible added story",
+      "title": "Choose what the text supports",
       "sections": [
         2
       ],
       "questionCount": 16,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "bbe1f15a309948893680bcb4e6f95b4915e3ced61d1aa1e9b72357e42cca5969"
+      "workedExamples": [
+        {
+          "section": 2,
+          "example": 0
+        }
+      ],
+      "body": [
+        "“Could happen” is weaker than “this text gives a reason to expect it.”",
+        "Ask which detail supports the answer. A possible story without a clue is not enough."
+      ],
+      "activity": {
+        "evidenceText": "The chef tried a new soup at one lunch service. Several customers asked for it again. She planned another trial before adding it to the regular menu.",
+        "prompt": "What does the next trial suggest?",
+        "choices": [
+          "The soup is already guaranteed a permanent place.",
+          "The chef sees enough promise to test it again.",
+          "No customer liked the soup."
+        ],
+        "answer": 1,
+        "explanation": "Requests for more and another trial support interest. “Before adding it” keeps the permanent decision open."
+      },
+      "hash": "02ae339c9ad184b0e12d65c4cf473341154200ed40ef34d4c0042d5138c61de9",
+      "tip": "Ask which exact clue makes this answer likely, not just possible in real life.",
+      "evidence": null
     },
     {
       "id": "reading-inference-attitude",
       "topic": "reading-inference",
-      "title": "Infer an attitude while preserving mixed feelings",
+      "title": "Read feelings from words and actions",
       "sections": [
         3
       ],
       "questionCount": 5,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "34c21ca7bc7f4897db3bae5e0f53acd85331011a627afd9a5e7ac2890dcad5a2"
+      "workedExamples": [
+        {
+          "section": 3,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Look at what the person says and does. Both are clues.",
+        "Match how strong the feeling is. A worry is not always a refusal."
+      ],
+      "activity": {
+        "evidenceText": "“I like the plan,” Mo said, “but I cannot help on weekdays.” He offered to join the planting team on Saturday.",
+        "prompt": "Which attitude fits Mo?",
+        "choices": [
+          "He opposes planting.",
+          "He will help every day.",
+          "He supports the plan with a limit on his availability."
+        ],
+        "answer": 2,
+        "explanation": "His praise and Saturday offer show support. “Cannot help on weekdays” gives the limit; it does not cancel his support."
+      },
+      "hash": "4a1813d1ac1793b8f27e5ac6d1c48f5f6cbe92d83d31ab9128eb70977d5c13ea",
+      "tip": "Keep both halves when someone praises an idea but adds a worry or condition.",
+      "evidence": null
     },
     {
       "id": "reading-inference-counterexample",
       "topic": "reading-inference",
-      "title": "Test a claim with an explicit contradiction or alternative",
+      "title": "Try to disprove the tempting answer",
       "sections": [
         4
       ],
       "questionCount": 6,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "e60ab76ffe98a27df281579059a63d4f86fb6cd6b67f1afbe8ec7c900a1c095b"
+      "workedExamples": [
+        {
+          "section": 4,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Ask: If this answer were true, what else would have to be true?",
+        "Check that claim against the passage. One clear contradiction can eliminate it."
+      ],
+      "activity": {
+        "evidenceText": "Ava complained that the first rehearsal was messy. She then made a practice schedule and returned early the next day to help set up.",
+        "prompt": "What best challenges “Ava gave up on the show”?",
+        "choices": [
+          "She returned early and made a practice schedule.",
+          "She noticed a problem at rehearsal.",
+          "The rehearsal happened before the next day."
+        ],
+        "answer": 0,
+        "explanation": "Her later actions show continued effort. A complaint about one rehearsal does not establish that she quit the whole project."
+      },
+      "hash": "bbef8662414de45aeded646d031e44a61bb53802ca0371adf14143c64ef7ac98",
+      "tip": "To test a strong answer, look for one action or sentence that would make it false.",
+      "evidence": null
     },
     {
       "id": "reading-vocabulary-local-sense",
       "topic": "reading-vocabulary",
-      "title": "Choose the word’s local sense and grammatical role",
+      "title": "Make a plain-word replacement",
       "sections": [
         1
       ],
       "questionCount": 25,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "f8ea1caf06dd4614e65ef5881adc6088d193b85798b7751849dc8a85594c595c"
+      "workedExamples": [
+        {
+          "section": 1,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Cover the choices and replace the word with a simple phrase.",
+        "Then choose the answer closest to your phrase. Read it back in the sentence."
+      ],
+      "activity": {
+        "evidenceText": "The editor called the ending abrupt. The story stopped in the middle of the argument, giving readers no warning that the last page was near.",
+        "prompt": "What does “abrupt” mean here?",
+        "choices": [
+          "Very steep",
+          "Sudden",
+          "Extremely polite"
+        ],
+        "answer": 1,
+        "explanation": "“Stopped ... giving readers no warning” points to sudden. The sentence concerns how the story ends, not a slope or someone’s manners."
+      },
+      "hash": "db5b85d4223d7d4b49d9163d97115359360b9f1db69321675972ea9ca9ed4ea1",
+      "tip": "Guess a plain meaning before reading the choices, then plug that meaning back into the sentence.",
+      "evidence": null
     },
     {
       "id": "reading-vocabulary-contrast-clue",
       "topic": "reading-vocabulary",
-      "title": "Use a neighboring contrast or example to define a word",
+      "title": "Use the clue beside the word",
       "sections": [
         2
       ],
       "questionCount": 7,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "0fa5b2891650e0b568ac888168fc9308021d39c901e98120d41c546f8f4768e3"
+      "workedExamples": [
+        {
+          "section": 2,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Look for a contrast, example, or explanation nearby.",
+        "Words such as but, rather than, and unlike often show which meaning fits."
+      ],
+      "activity": {
+        "evidenceText": "The vote was deferred rather than held that afternoon. Members wanted the new cost figures before making their decision.",
+        "prompt": "What does “deferred” mean?",
+        "choices": [
+          "Approved",
+          "Forgotten forever",
+          "Postponed"
+        ],
+        "answer": 2,
+        "explanation": "“Rather than held that afternoon” and waiting for figures show a delay. The passage gives no result of a completed vote."
+      },
+      "hash": "aec39279f655abca11cd65b7ae9979046b83c09b83a7c954d852e55264d3bf62",
+      "tip": "Look beside “but,” “unlike,” or “rather than”; the contrast often gives you the definition.",
+      "evidence": null
     },
     {
       "id": "reading-vocabulary-figurative",
       "topic": "reading-vocabulary",
-      "title": "Follow the target of a figurative action",
+      "title": "Notice when a word makes a picture",
       "sections": [
         3
       ],
       "questionCount": 5,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "f897a3a4c7e52cfb7be9b585e11c136f394ea67c037855d8453bcad02ee9ec77"
+      "workedExamples": [
+        {
+          "section": 3,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Some words describe an idea as if it were a physical thing.",
+        "Ask what is actually changing. Keep the comparison’s meaning without taking it literally."
+      ],
+      "activity": {
+        "evidenceText": "The missing permit acted as a brake on the project. Workers had the materials ready but could not begin until the approval arrived.",
+        "prompt": "What does “brake” mean here?",
+        "choices": [
+          "Something that slows or stops progress",
+          "A broken part of a truck",
+          "Proof that the project is finished"
+        ],
+        "answer": 0,
+        "explanation": "The permit delay prevents work from starting, like a brake slows movement. No vehicle part appears in this situation."
+      },
+      "hash": "a601ed854776505d3c429bf1d466dae1c0fb63167c5bd3bd38bb029f4222443f",
+      "tip": "Name what is being described before deciding whether the word is literal or a comparison.",
+      "evidence": null
     },
     {
       "id": "reading-vocabulary-paragraph-fit",
       "topic": "reading-vocabulary",
-      "title": "Verify the substitute against the paragraph’s claim",
+      "title": "Check the word against the whole point",
       "sections": [
         4
       ],
       "questionCount": 11,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "0b0c1bf6717d8e3c275c2a77e660e311a6f4dafc91025d2f5ea497b1f1f2d7a5"
+      "workedExamples": [
+        {
+          "section": 4,
+          "example": 0
+        }
+      ],
+      "body": [
+        "A replacement must fit both the sentence and the point around it.",
+        "Reject a meaning that fits the general topic but changes this particular claim."
+      ],
+      "activity": {
+        "evidenceText": "The first estimate was tentative. The team used it to plan supplies but expected to revise it after counting the remaining boxes.",
+        "prompt": "Which meaning fits “tentative”?",
+        "choices": [
+          "Deliberately false",
+          "Not yet final",
+          "Unrelated to planning"
+        ],
+        "answer": 1,
+        "explanation": "The estimate is useful for planning but may change after another count. “Not yet final” keeps both facts; false and unrelated do not."
+      },
+      "hash": "456153e82b5160408794100854406b51d5c5c886fe3980dc637d2a3b886cf865",
+      "tip": "After substitution, reread the whole claim; a topic-related meaning can still contradict the writer.",
+      "evidence": null
     },
     {
       "id": "reading-craft-function",
       "topic": "reading-craft",
-      "title": "Explain a detail’s job in its surrounding argument",
+      "title": "Name the paragraph’s job",
       "sections": [
         1
       ],
       "questionCount": 36,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "2d11edd6c3c001eadda6e95f47c4fda7737977403e1110136f4559d5cba57e6b"
+      "workedExamples": [
+        {
+          "section": 1,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Read the paragraph with the one before and after it.",
+        "Finish this sentence: The writer includes this to __. A job is more than a topic."
+      ],
+      "activity": {
+        "evidenceText": "The writer says delivery delays affect small businesses. She describes a baker who had to cancel an order when flour arrived late. She then proposes clearer arrival notices.",
+        "prompt": "Why include the baker?",
+        "choices": [
+          "To give a history of bread",
+          "To prove every business closed",
+          "To show a concrete effect of a delivery delay"
+        ],
+        "answer": 2,
+        "explanation": "The canceled order shows a delay causing a practical problem. It supports the claim about businesses; it is not a claim about every business."
+      },
+      "hash": "50c70ab4d0f9d7f22c734f23b4d9bee849d050b439401620cd0ea7562f6536eb",
+      "tip": "For a purpose question, answer “Why put this here?” instead of repeating what the detail says.",
+      "evidence": null
     },
     {
       "id": "reading-craft-tone",
       "topic": "reading-craft",
-      "title": "Match the direction and intensity of the writer’s tone",
+      "title": "Match the feeling and its strength",
       "sections": [
         2
       ],
       "questionCount": 3,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "68e51e1f293745332e2f33a4f56535665b4ce90ea0ce8f010b1962e4f9209e03"
+      "workedExamples": [
+        {
+          "section": 2,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Tone means the writer’s attitude. Find words that show it.",
+        "Match both the feeling and how strong it is: worried is different from furious."
+      ],
+      "activity": {
+        "evidenceText": "This guide is useful and easy to follow. I wish the maps were larger, but I would recommend it to anyone visiting the city for the first time.",
+        "prompt": "Which tone fits?",
+        "choices": [
+          "Mostly positive, with one criticism",
+          "Furious about the entire guide",
+          "Unable to judge the guide"
+        ],
+        "answer": 0,
+        "explanation": "“Useful,” “easy to follow,” and “recommend” establish approval. Wanting larger maps adds a specific criticism without reversing it."
+      },
+      "hash": "e597a4c91ba63a7455c869b5e0b02b7cd07ed05595821d251ed28ff197a50db6",
+      "tip": "Find two tone clues; match the strength of the feeling as well as whether it is positive.",
+      "evidence": null
     },
     {
       "id": "reading-craft-perspective",
       "topic": "reading-craft",
-      "title": "Track speakers, concessions, and structural shifts",
+      "title": "Track a speaker’s view and how it changes",
       "sections": [
         3
       ],
       "questionCount": 5,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "40a86e502b19fd9f41d8fca160a84b8c87d2976b9735bc7c0f682e21bbb3715a"
+      "workedExamples": [
+        {
+          "section": 3,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Keep each speaker’s view separate from the author’s. Check the response after a quote.",
+        "For a change in viewpoint, compare the opening view with the later one.",
+        "Name what is added, challenged, or kept. A new view may extend an old one instead of rejecting it."
+      ],
+      "activity": {
+        "evidenceText": "“Nobody uses that path,” the official said. The reporter watched six children use it to reach school and asked why they were missing from the official count.",
+        "prompt": "What does the reporter do with the official’s claim?",
+        "choices": [
+          "Accepts it without question",
+          "Challenges it with an observation",
+          "Proves every resident uses the path"
+        ],
+        "answer": 1,
+        "explanation": "Six children using the path contradict nobody. The observation challenges the quote without proving a claim about every resident."
+      },
+      "hash": "10e219de8f6aca72da1128696352943c50ea6796e8b8cf704f0f59b867bedc57",
+      "tip": "For a shift, finish “At first __; later __.” For a quote, read the response that follows.",
+      "evidence": null
     },
     {
       "id": "reading-craft-imagery",
       "topic": "reading-craft",
-      "title": "Explain an image’s effect without importing extra properties",
+      "title": "Explain what an image helps us notice",
       "sections": [
         4
       ],
       "questionCount": 6,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "94499e4917c7dc846371dbf8772bf4f2770a878d5a1e099de6f1c87f78532d33"
+      "workedExamples": [
+        {
+          "section": 4,
+          "example": 0
+        }
+      ],
+      "body": [
+        "For a comparison, name the feature the two things share.",
+        "Connect that feature to the scene. Do not bring in every fact about the comparison."
+      ],
+      "activity": {
+        "evidenceText": "From the hill, the line of bus headlights looked like a necklace of lights. Each small glow followed the next around the curve below.",
+        "prompt": "What feature does the necklace comparison emphasize?",
+        "choices": [
+          "The buses’ price",
+          "The drivers’ clothing",
+          "A linked row of small bright points"
+        ],
+        "answer": 2,
+        "explanation": "The line of lights curving one after another supplies the shared feature. A necklace’s cost and use as clothing are not part of this image."
+      },
+      "hash": "a9983f63dd43f965dd355e39a0c6256baf3c655415e0c6545a61cdc781ab93a0",
+      "tip": "Ask “What do these two things share here?” Keep only the feature supported by nearby words.",
+      "evidence": null
     },
     {
       "id": "reading-integration-positions",
       "topic": "reading-integration",
-      "title": "Compare the writers’ shared aims and exact differences",
+      "title": "Find the agreement and the difference",
       "sections": [
         1
       ],
       "questionCount": 10,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "67836304167258f3d9921f25b04e3f61e75e771e98926bb38376d135cc34efd6"
+      "workedExamples": [
+        {
+          "section": 1,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Ask what both writers support. Then ask what one adds or changes.",
+        "A condition such as “only if” can be the main difference."
+      ],
+      "activity": {
+        "evidenceText": "A: “The playground should open later so more families can use it.”\n\nB: “I support later hours if lighting is installed first. Children need to see the paths after dark.”",
+        "prompt": "How do their views compare?",
+        "choices": [
+          "Both support later hours; B adds a lighting condition.",
+          "B opposes all later opening.",
+          "A opposes installing lights."
+        ],
+        "answer": 0,
+        "explanation": "Both support the same opening change. “If ... first” is B’s condition. A’s silence does not establish opposition to lights."
+      },
+      "hash": "5fc760bf2ff88322b05d1fd0dbf34846c01870024d99622d60906cde9e6d1f2d",
+      "tip": "Write “A says __; B says __” before deciding whether B agrees, disagrees, or adds a condition.",
+      "evidence": [
+        {
+          "id": "reading-teaching-shared-goal",
+          "title": "Same goal, added condition",
+          "context": "Keep each writer’s view in its own row.",
+          "table": {
+            "columns": [
+              "Source",
+              "Shared goal",
+              "Added condition"
+            ],
+            "rows": [
+              [
+                "A",
+                "Reopen the hall",
+                "None stated"
+              ],
+              [
+                "B",
+                "Reopen the hall",
+                "Protect the painted ceiling"
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "reading-integration-combine",
       "topic": "reading-integration",
-      "title": "Combine sources or distant details without inventing a verdict",
+      "title": "Keep only what both sources support",
       "sections": [
         2
       ],
       "questionCount": 27,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "3e7a83624968c4d945622ce4ac264295a0beb43c2e3772abaf34893c8b7a64fe"
+      "workedExamples": [
+        {
+          "section": 2,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Check each part of the answer against its evidence.",
+        "Within one passage, compare the two named moments: what stays, changes, or connects?",
+        "Across sources, keep both claims and their limits. Do not add a cause or promise neither source establishes."
+      ],
+      "activity": {
+        "evidenceText": "The garden report says 12 families received vegetables this month. The budget note says donations paid for this month’s seeds, but next month’s funding is still unknown.",
+        "prompt": "Which statement uses both sources correctly?",
+        "choices": [
+          "The garden is funded forever.",
+          "It served 12 families this month, while future seed funding remains unknown.",
+          "The garden served no families because funding is uncertain."
+        ],
+        "answer": 1,
+        "explanation": "The report supplies the family count, and the note limits the funding. This month’s result is real without a promise about later months."
+      },
+      "hash": "4e0e28e14aecce18169279169774ce8c9f2d859fd2f81241877819cbb33104e8",
+      "tip": "For a comparison, point to evidence on both sides; name the relationship instead of listing two facts.",
+      "evidence": null
     },
     {
       "id": "reading-integration-graphic",
       "topic": "reading-integration",
-      "title": "Match a graphic’s values, units, and comparison base",
+      "title": "Read the table’s labels, then compare",
       "sections": [
         3
       ],
       "questionCount": 5,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "9683b625747f727e4f5ff497ae6ba61cd4f4668d2a5ab65751e314055a5f0a59"
+      "workedExamples": [
+        {
+          "section": 3,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Read what each number counts. For a share, divide the part by the whole.",
+        "Then connect that result to the passage. A higher count can still be a smaller share."
+      ],
+      "activity": {
+        "prompt": "How did the on-time return rate change?",
+        "choices": [
+          "The on-time share rose because the count rose.",
+          "The reminders alone explain the result.",
+          "The count rose, but the on-time share fell from 60% to 50%."
+        ],
+        "answer": 2,
+        "explanation": "18 ÷ 30 = 60%; 30 ÷ 60 = 50%. Count and share move differently. Changed opening hours also prevent isolating the reminders’ effect.",
+        "evidence": {
+          "id": "reading-tryit-return-share",
+          "title": "Book returns",
+          "context": "The library added reminders and changed its opening hours at the same time.",
+          "table": {
+            "columns": [
+              "Period",
+              "On time",
+              "Due"
+            ],
+            "rows": [
+              [
+                "Before",
+                18,
+                30
+              ],
+              [
+                "After",
+                30,
+                60
+              ]
+            ]
+          }
+        }
+      },
+      "hash": "eea791ecfa4a4873b0c7cda7c9fac17e7d74563f4813b93e0dc28221207c1ef0",
+      "tip": "For a percent or share, write “part ÷ whole” before comparing two raw counts.",
+      "evidence": [
+        {
+          "id": "reading-teaching-members-share",
+          "title": "Count and share can move differently",
+          "context": "Read the column headings before comparing the two meeting counts.",
+          "table": {
+            "columns": [
+              "Meeting",
+              "Attended",
+              "All members",
+              "Share attending"
+            ],
+            "rows": [
+              [
+                "Before",
+                20,
+                40,
+                "20 ÷ 40 = 50%"
+              ],
+              [
+                "After",
+                30,
+                100,
+                "30 ÷ 100 = 30%"
+              ]
+            ]
+          }
+        }
+      ]
     },
     {
       "id": "reading-integration-limits",
       "topic": "reading-integration",
-      "title": "Keep the combined conclusion within every source’s limits",
+      "title": "Keep every source’s limits",
       "sections": [
         4
       ],
       "questionCount": 6,
-      "workedExamples": null,
-      "body": null,
-      "activity": null,
-      "hash": "72409f0639e81850726cc566da68d1ce0bca1c098e346ca9d642a9ee9f6575f8"
+      "workedExamples": [
+        {
+          "section": 4,
+          "example": 0
+        }
+      ],
+      "body": [
+        "Check who was measured and under which conditions.",
+        "A combined answer must keep the limits from all sources, even if a broader answer sounds useful."
+      ],
+      "activity": {
+        "evidenceText": "A report says six volunteers preferred the new lamp. A second note says the trial lasted one evening in one room. Nobody measured reading speed.",
+        "prompt": "What can the sources support together?",
+        "choices": [
+          "Those volunteers preferred the lamp in that brief trial.",
+          "The lamp makes everyone read faster.",
+          "The lamp has been tested in every kind of room."
+        ],
+        "answer": 0,
+        "explanation": "Keep the six volunteers, preference, and short trial. Reading speed, every person, and other rooms were not measured."
+      },
+      "hash": "ce123ea723212e54946a9fa7899920a447ba529c0fec63de2ff1b3d06b96644c",
+      "tip": "Check the group, setting, and measured result in every source before accepting a broad conclusion.",
+      "evidence": null
     },
     {
       "id": "science-data-reading-locate",
@@ -5856,8 +6415,8 @@
       ],
       "answer": 1,
       "answerText": "It cannot fit over the cap of the post.",
-      "evidence": "The finished loop cannot pass the broad cap; Sam then unties it and takes the free end around the post. Not yet circling the post describes the incomplete task but not why the intended over-the-top method fails. The later loop holds without closing, and no request to leave the post clear is reported.",
-      "hash": "f7fd69c3136c688bcf1186d6ea223ef1ce694a3b2d51981f7119aa30a36a9e93"
+      "evidence": "The passage says the loop “would not pass over the mooring post’s broad cap.” That blocks Sam’s first plan. His foot briefly hides the mistake; it is not what holds the later loop in place. The later loop holds without closing, and the coach never asks him to clear the post.",
+      "hash": "b84d8feae61dd2286a6a749ff35296093b6d2269c053264230327e0be7262410"
     },
     {
       "id": "RP-V3-01-3",
@@ -6205,7 +6764,7 @@
       "answer": 2,
       "answerText": "how gearing connects a site’s slow power source with the different motion required inside a mill",
       "evidence": "The account follows energy from a constrained water source through gears suited to a task. Gearing does not remove the source constraint, create a motor, or establish one universally preferable speed solution.",
-      "hash": "f25132ce579fc25c8955c7b16a7eff89996e1df011ddeee328f356b47e672c11"
+      "hash": "8855ffc40403d761fd2e8a10c280d945bbcd36e41e04b7341c20105e32393cf7"
     },
     {
       "id": "RP-V3-06-2",
@@ -6217,7 +6776,7 @@
       "answer": 0,
       "answerText": "A reduction in turning force",
       "evidence": "The simplified tradeoff is speed for turning force, with some energy lost to friction. It does not increase channel energy, specify a changed axle length, or make the mechanism lossless.",
-      "hash": "8f2e3b3c1928c59798e8e177d6691f427ea2a0120e1b8f1486f402066fe41e18"
+      "hash": "30e871200d940baee885b5ef4fd37d869d88baeeb428bf9659dbf42e411f3e01"
     },
     {
       "id": "RP-V3-06-3",
@@ -6229,7 +6788,7 @@
       "answer": 2,
       "answerText": "chosen partly in response to the available site conditions",
       "evidence": "The drawing establishes limits on the water source, and the gears connect that source to grinding. They respond to the site and produce different motion; no drawing error or independence from water is established.",
-      "hash": "7d2c99e740bd531cd39609f619de5eb0bdc5c510613cf51939cda74201897f94"
+      "hash": "5f88e067f897454704f5d09302bd8d138e9fbf57d7e7e18f2c5df00e63ed95fd"
     },
     {
       "id": "RP-V3-06-4",
@@ -6240,8 +6799,8 @@
       ],
       "answer": 0,
       "answerText": "continue moving for a time after the driving input stops",
-      "evidence": "The indoor machinery continues briefly after its driver stops and then settles. This distinguishes residual motion from powered constant speed, an immediate stop, or a reported reversal.",
-      "hash": "7a7aa79c2765988a158afee3d673d5881de4e3891b49237f88d283b013eb901b"
+      "evidence": "Once the guide disconnects the drive, the indoor machinery keeps moving briefly and then settles. Coast means continue moving after the driving input stops. It does not mean powered constant speed, an immediate stop, or moving backward.",
+      "hash": "e22461d8a9f2a7afb9ea1a44c979d041a40b5dd9a072ca45d3d173f7aaf9e862"
     },
     {
       "id": "RP-V3-06-5",
@@ -6253,7 +6812,7 @@
       "answer": 2,
       "answerText": "introduces an expectation that the following mechanical explanation corrects",
       "evidence": "The suspicion introduces surprise that the visible slow wheel seems insufficient. The guide answers it with axle and gearing, not a located motor or refusal. The passage makes no measured expertise comparison.",
-      "hash": "6c5a511dadc42cac0974cc60dd68390a87a5e2632a5810f5be902764d0c0a6c9"
+      "hash": "8d720d95da5df03f5c40a16cf680ba5af15acd2fae83e0b299842cecb2e662df"
     },
     {
       "id": "RP-V3-06-6",
@@ -6264,8 +6823,8 @@
       ],
       "answer": 0,
       "answerText": "Both show why the motion of the outside wheel alone does not describe every part of the system.",
-      "evidence": "Different rotational speeds and a brief continuation after stopping show why one visible component is not the complete motion record. Neither proves no energy supply, changing ratios, or simultaneous stopping.",
-      "hash": "485600e0cb7083b5c419cb2da34ea6e107dde557c0d5934eb65b0ba092463136"
+      "evidence": "The gears can turn at different speeds, and the disconnected indoor machinery can coast after the wheel stops. Both show why watching the outside wheel alone does not describe every part’s motion. Neither establishes no energy supply, changing gear ratios, or simultaneous stopping.",
+      "hash": "d8d29377bea77e449e51f13b676e37c814a7fa59728ee585b51fcfc55b540aa1"
     },
     {
       "id": "RP-V3-07-1",
@@ -6397,7 +6956,7 @@
       "answer": 0,
       "answerText": "test whether Jo can apply her revised method when the interval changes again",
       "evidence": "Laughter varies the interval while leaving hand placement intact, testing Jo’s revised response. She does not revert to count or change the signal, and no speech-audibility diagnosis is stated.",
-      "hash": "768719f8fe4a959f7df9172dc334c5d0fdc3a9d6ab36812555e888b332cf14a2"
+      "hash": "54173db51750e3d4664c352a420ffc5b559e6a757141359b1c642f11b4facb4c"
     },
     {
       "id": "RP-V3-08-6",
@@ -7405,7 +7964,7 @@
       "answer": 2,
       "answerText": "turn a practical object from a seeming answer into evidence that a practical obstacle was not the real issue",
       "evidence": "The same available object first helps the narrator defend readiness and later exposes that readiness as incomplete. It proves neither earlier punctuality nor the sister’s inner plan, and no postal price matters to the change.",
-      "hash": "68c2cf227037fb4ff49d6724ea5c6380c195036e43f952e86e3363684dfed5a7"
+      "hash": "b591052ddf8ecd067b1450f95e34e555752ff613087011dc85abbc203b356883"
     },
     {
       "id": "RP-V3-22-6",
@@ -7768,5 +8327,38 @@
       "evidence": "The squared L term contributes (1.5)² = 2.25, while tripling R divides by 3. The combined factor is 2.25/3 = 0.75 = 3/4. Using 1.5/3 misses the square; multiplying by R or ignoring it gives different factors.",
       "hash": "1d72908f1f40f83761a91a0c073af51ecc802526ee8ee85eb4fd104ea2de2730"
     }
-  ]
+  ],
+  "readingTeachingRepair": {
+    "date": "2026-10-15",
+    "scope": "All6 topic lessons /42 methods and worked examples; all24 Daily Reading skills;24 independent try-it tasks and24 actionable study tips.",
+    "preserved": "All assessed Reading prompts, passages, choices, answer indices, IDs and18 historical checks unchanged. Protected inference and craft excerpts remain intact.",
+    "changes": "Short numbered methods, exact evidence and trap explanations, separate writer voices, and worked/independent count-versus-share tables.",
+    "limits": "Instructional simplification, not ACT score calibration or a fresh semantic audit of every assessment.",
+    "studentQa": {
+      "date": "2026-10-15",
+      "coverage": "Manually read all292 active drill items on48 complete passages and all72 held-out items on8 complete passages, including every question, choice, key and explanation. Traced all24 existing skill mappings and reviewed all42 worked examples and24 focused activities.",
+      "finding": "No wrong assessed answer key found. Repaired one stale distractor explanation, one missing mechanical disconnection, two grammatical giveaways, and three incomplete teaching-method bridges.",
+      "preserved": "Every assessed ID, answer index, correct-answer text, skill assignment, and held-out exam content preserved.",
+      "grades": {
+        "clarity": "B",
+        "skillTransfer": "B",
+        "testRealism": "B for held-out forms; C+ for isolated Daily drills",
+        "feedback": "B+",
+        "answerAmbiguity": "A-"
+      },
+      "limits": "Editorial grades, not ACT psychometric calibration. Repeated themes and short Daily passages remain; full-length official practice is needed to verify pacing and score readiness.",
+      "changedAssessmentIds": [
+        "RP-V3-01-2",
+        "RP-V3-06-1",
+        "RP-V3-06-2",
+        "RP-V3-06-3",
+        "RP-V3-06-4",
+        "RP-V3-06-5",
+        "RP-V3-06-6",
+        "RP-V3-08-5",
+        "RP-V3-22-5"
+      ],
+      "hashFormatForChangedItems": "SHA-256 of UTF-8 JSON with recursively sorted object keys, compact separators, original array order."
+    }
+  }
 }

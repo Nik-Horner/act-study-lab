@@ -2092,7 +2092,7 @@
       "source": "math-extra-questions.json",
       "key": "\\(3x^{4} - 2x^{2} + 7\\)",
       "answerIndex": 3,
-      "sourceSha256": "747f473b4acfa84d9b3bdcfc6ce3ee61335f917bf47bc784aee5ec9431bd7c82",
+      "sourceSha256": "a4e00de0dd8584bdc4b2e0430f3f4bdf905c348551d17a4ee33466f0451d55d8",
       "solution": "Only final polynomial contains solely even powers; x³−x odd, other mixtures neither."
     },
     {
@@ -3682,8 +3682,8 @@
       "topic": "math-essential-skills",
       "sectionIndex": 1,
       "heading": "Units and average rates",
-      "sourceSha256": "1741cfb6244ea5e4111757b436062ddb7e8bb20c316025adbd1bbcb68650f53f",
-      "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
+      "sourceSha256": "c812745d663ac0585c85a2d7f0997e29545e6ea48862b4d414b450b40bdd1db0",
+      "review": "2026-10-15: corrected formula grouping and checked units, arithmetic, and preserved section index."
     },
     {
       "topic": "math-essential-skills",
@@ -3696,8 +3696,8 @@
       "topic": "math-essential-skills",
       "sectionIndex": 3,
       "heading": "Choose the percent base and undo changes correctly",
-      "sourceSha256": "30f30b03f19763efea3777c30b6a30e0e52857166b1ffc2852da030b4bf8182d",
-      "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
+      "sourceSha256": "e25c276364d4bdd6ffc232fde979c1664781e3d70ebb6c964512fa01a4a3b36c",
+      "review": "2026-10-15: corrected formula grouping and checked units, arithmetic, and preserved section index."
     },
     {
       "topic": "math-essential-skills",
@@ -3731,8 +3731,8 @@
       "topic": "math-modeling",
       "sectionIndex": 1,
       "heading": "Linear versus exponential change",
-      "sourceSha256": "5b81191fd667df17d8b81dc6a308a5236eb0a5b020f0c05afe90868677ccbb4f",
-      "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
+      "sourceSha256": "bda783387183f2f039c9dce2dd12887501ea25f462a223cecaeefc67b1b3819c",
+      "review": "2026-10-15: corrected formula grouping and checked units, arithmetic, and preserved section index."
     },
     {
       "topic": "math-modeling",
@@ -3882,8 +3882,8 @@
     {
       "topic": "math-functions",
       "id": "exponential",
-      "sourceSha256": "b7975fa1614762299822eab5e42364db2112e007e8623e1f9aadbbba06dbfb4f",
-      "review": "Formula, conditions, numerical example and units independently checked."
+      "sourceSha256": "eb0118705aac4811c9a894f052dab8b97c381ec3a6215354d426d76c1b16f575",
+      "review": "2026-10-15: corrected formula conditions or example; checked geometric feasibility and mathematical meaning."
     },
     {
       "topic": "math-functions",
@@ -3918,8 +3918,8 @@
     {
       "topic": "math-geometry",
       "id": "heron",
-      "sourceSha256": "eb8a2f1ce56a704a809e4b577027309088e9e0a422d83d674d1e53b53166cb00",
-      "review": "Formula, conditions, numerical example and units independently checked."
+      "sourceSha256": "ed9cd10569ec10bab22cad05fcc0d2d33d0e2c0630f502dc961f8b4787e52670",
+      "review": "2026-10-15: corrected formula conditions or example; checked geometric feasibility and mathematical meaning."
     },
     {
       "topic": "math-geometry",
@@ -3948,8 +3948,8 @@
     {
       "topic": "math-geometry",
       "id": "lineforms",
-      "sourceSha256": "96335c707211fd3b4fdd9217104d31d64ebf7106f62816c2b3011dff66a34c0a",
-      "review": "Formula, conditions, numerical example and units independently checked."
+      "sourceSha256": "fa8ea9fca1890d1d9dd739b4777b3e5640cce6bf197fed636874e17e08e78e61",
+      "review": "2026-10-15: corrected formula conditions or example; checked geometric feasibility and mathematical meaning."
     },
     {
       "topic": "math-geometry",
@@ -4026,8 +4026,8 @@
     {
       "topic": "math-trigonometry",
       "id": "triggraphs",
-      "sourceSha256": "4d8302d2aaf3ad12fbdd5bc803d3225d17882170476deb52ec2dd3296ad71471",
-      "review": "Formula, conditions, numerical example and units independently checked."
+      "sourceSha256": "0be31e5f5a1ff7de333990951636794e138140de4f4f158db75ce8080425d716",
+      "review": "2026-10-15: corrected formula conditions or example; checked geometric feasibility and mathematical meaning."
     },
     {
       "topic": "math-trigonometry",

@@ -266,11 +266,8 @@ export function AccountForm({
               ))}
             </select>
             <p className="mt-1 text-sm text-ink-soft">
-              One guided session covers{" "}
-              {includeScience
-                ? "English, Reading, Math, and Science"
-                : "English, Reading, and Math"}
-              within this total time. Unfinished work carries forward.
+              Lessons share this time. Formula review is extra and can wait
+              until after lessons. Unfinished work carries forward.
             </p>
           </div>
           <div>

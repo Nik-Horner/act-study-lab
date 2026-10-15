@@ -1,0 +1,189 @@
+{
+  "date": "2026-10-15",
+  "scope": "Daily learner flow, Math teaching accuracy, formula recall, review recovery, and new-session allocation. Account history and question grading identities preserved.",
+  "assessmentBasis": [
+    "Read-only learner-flow inspection and deterministic simulations",
+    "Manual mathematical review of the listed content scope",
+    "Executable regression tests for navigation, persistence, review selection, timing, budgets, and historical records"
+  ],
+  "overallGrade": "B",
+  "gradeScale": {
+    "A": "Strong within verified scope",
+    "B": "Usable with stated limitations",
+    "C": "Material remaining limitation",
+    "D": "Major friction",
+    "F": "Proven blocker"
+  },
+  "grades": [
+    {
+      "area": "Daily next step and formula navigation",
+      "before": "D",
+      "after": "B",
+      "reason": "The former mandatory formula gate prevented access to lessons until every assigned formula was rated recalled. Continue to lessons now preserves pending formulas; explicit review controls remain visible during and after lessons. Same-account/day deferral survives reload in the same browser. Browser verification is owned by the root task."
+    },
+    {
+      "area": "Math formula correctness",
+      "after": "A",
+      "reason": "All 80 live formula cards were inspected, including conditions and units; no mathematical changes to those cards were needed. Accessible KaTeX rendering and identity checks passed."
+    },
+    {
+      "area": "Math focused teaching and reference accuracy",
+      "before": "C",
+      "after": "B",
+      "reason": "Fourteen targeted formula, example, condition, and feedback errors were repaired. Six corrected focused methods and three corrected legacy sections use increased teaching revisions so pending practice can receive the correction. This is not an external educator certification."
+    },
+    {
+      "area": "Formula recall usability",
+      "before": "C",
+      "after": "B",
+      "reason": "Recall/reveal/retry behavior remains intact. The rating now says I recalled it rather than Got it. Students can study all formulas without the deck blocking other subjects. Ratings remain self-reported."
+    },
+    {
+      "area": "Weak-skill recovery",
+      "before": "F",
+      "after": "B",
+      "reason": "Two-question skills could remain weak forever, and new lessons could consume the entire budget before weak reviews returned. Explicit later review pairs now resolve review-needed flags after two distinct correct, nonuncertain, validly timed answers; weak pairs receive reserved time and weak skills rotate. Ordinary repeated practice does not gain this exception, and fresh-question mastery requirements remain separate."
+    },
+    {
+      "area": "New-plan subject allocation",
+      "before": "D",
+      "after": "B",
+      "reason": "New lessons were selected primarily by remaining curriculum size, allowing a large strong-subject bank to crowd out a larger score gap. New candidate ordering uses the existing target-to-baseline gap divided by current estimated subject time, with course coverage as a tie-breaker. Active saved plans are not replaced."
+    },
+    {
+      "area": "Saved progress and returning students",
+      "after": "A",
+      "reason": "Tests preserve saved question IDs, choices, answers, concept keys, active-plan identity, course position, formula ratings, and account/day isolation. Corrected teaching refreshes are idempotent. Live browser/account checks remain separate."
+    },
+    {
+      "area": "One-to-two-hour time fit",
+      "after": "C",
+      "reason": "Lesson allocations fit the supported 60/75/90-minute budgets, but formulas are explicitly extra. With 80 unseen cards and two days left, the unchanged scheduler estimates 40 extra minutes: totals are 100, 115, or 130 minutes before formula retries. Deferral makes lessons accessible; it does not make a 90+40-minute session fit two hours."
+    },
+    {
+      "area": "Timed ACT transfer",
+      "after": "B",
+      "reason": "Completed Daily now offers Try an official timed section with instructions to use a fresh form and its scoring key. Daily practice and self-reported formula recall do not establish an official scaled score."
+    }
+  ],
+  "contentReviewCoverage": {
+    "focusedMathMethods": 143,
+    "activeMathTopicLessons": 8,
+    "mathFormulaReferenceEntries": 75,
+    "liveFormulaCards": 80,
+    "mathQuestionStemsChoicesAndKeys": 474,
+    "questionComposition": {
+      "practice": 384,
+      "heldOutExam": 90
+    },
+    "scopeLimit": "All listed stems, choices, and keys were inspected. Not every drill explanation was independently reread in full. All focused method bodies, worked examples, and formative activities were reviewed.",
+    "preserved": "No question ID, answer index, or choice was changed by the Math accuracy repairs."
+  },
+  "repairedContentIssues": [
+    "Unit-conversion factors placed units outside denominators",
+    "Stray variable in a percent-decrease example",
+    "Doubling time rendered division outside the exponent",
+    "Malformed exponential-output ratio denominator",
+    "Sphere cross-section statement omitted the through-center condition",
+    "Disjoint-event example used impossible marginal probabilities",
+    "Complex-product feedback mislabeled the correct last choice",
+    "Rotation feedback identified the wrong option positions",
+    "Parity feedback contradicted its correct expression",
+    "Even-function drill feedback relied on answer positions instead of expressions",
+    "Angle-bisector reference used side lengths that cannot form a triangle",
+    "Slope reference split the denominator incorrectly",
+    "Trig-graph reference confused sine-or-cosine wording with their quotient",
+    "Exponential growth-factor reference omitted distinct-time/nonzero-output conditions"
+  ],
+  "weakReviewReproductions": [
+    {
+      "finding": "A reviewed two-question skill could never clear its weakness after one initial miss.",
+      "exampleSkill": "math-geometry-trapezoid-area",
+      "affectedMathSkillsWithTwoQuestionPools": 95,
+      "before": "With either one or both IDs previously seen, both later answers correct at 10 seconds still retained the weak flag.",
+      "after": "An explicit later review unit with two distinct correct, nonuncertain, validly timed answers can resolve the repair flag. Wrong, uncertain, missing, zero, negative, NaN, infinite, and slow timings cannot clear it. Ordinary known practice and duplicate copies of one question cannot clear it."
+    },
+    {
+      "finding": "New lesson packing could starve known weak reviews.",
+      "before": "In final-day simulations with weak Math and Science units, 60- and 90-minute plans returned neither weak unit; the 75-minute plan returned Math only. The first weak unit was selected repeatedly.",
+      "after": "Explicit weak pairs reserve space before extra new lessons; routine spaced practice remains afterward. Weak-unit selection rotates by session sequence. Actual two-question Math and Science reviews fit all supported budgets in regression cases."
+    }
+  ],
+  "baselineAllocationRegression": {
+    "studyDate": "2026-10-15",
+    "testDate": "2026-10-17",
+    "targetScore": 36,
+    "lessonMinutes": 75,
+    "scores": {
+      "english": 34,
+      "math": 34,
+      "reading": 33,
+      "science": 28
+    },
+    "scienceScoreRepresentative": true,
+    "beforeMinutes": {
+      "english": 27,
+      "reading": 14,
+      "math": 21,
+      "science": 13
+    },
+    "afterMinutes": {
+      "english": 13,
+      "reading": 14,
+      "math": 12,
+      "science": 36
+    },
+    "conditions": "Before values came from root browser QA; after values came from the new planner simulation. The rule applies to new plans for all accounts, with no hardcoded learner. Equal and unknown baselines retain finite balanced budgets; nonrepresentative Science continues to use planningScores rather than treating the low-effort result as a remedial gap. Existing active sessions retain their saved plan."
+  },
+  "formulaNavigation": {
+    "continueAction": "Continue to lessons",
+    "writesFormulaRatings": false,
+    "clearsPendingCards": false,
+    "marksLessonsComplete": false,
+    "reloadPreference": "Browser localStorage scoped by authenticated user ID and study date",
+    "returnControls": [
+      "Pending-card banner during lessons",
+      "Review formulas button after lesson completion",
+      "Dashboard Finish daily formulas explicitly reopens review"
+    ],
+    "storageFailureBehavior": "Continuing still works for the current visit; the choice may need repeating after reload if browser storage is unavailable.",
+    "timing": "All 80 formulas remain available. The packet algorithm is unchanged and can estimate 40 extra minutes near the test date."
+  },
+  "validation": {
+    "targetedTests": {
+      "passed": 88,
+      "failed": 0
+    },
+    "fullSuiteAtLastRun": {
+      "passed": 348,
+      "failed": 1,
+      "total": 349
+    },
+    "remainingFullSuiteFailure": "tests/english-prerequisites.test.ts editorial hash for confused-forms changed during separate English work; root was notified. No Daily or Math regression failed at that run.",
+    "typeScript": "Passed after regenerating stale Next route types",
+    "scopedESLint": "Passed",
+    "diffWhitespaceCheck": "Passed",
+    "mathValidators": "Both passed: base/exam/check calculations and supplemental Math validation",
+    "keyTests": [
+      "tests/daily-weak-review.test.ts",
+      "tests/daily-formula-navigation.test.ts",
+      "tests/daily-evidence.test.ts",
+      "tests/daily-plan.test.ts",
+      "tests/daily-history.test.ts",
+      "tests/platform-progress-preservation.test.ts",
+      "tests/math-content-standard.test.ts",
+      "tests/math-focused-skills.test.ts",
+      "tests/math-lesson-alignment.test.ts",
+      "tests/formula-identities.test.ts",
+      "tests/formula-review.test.ts",
+      "tests/formula-schedule.test.ts",
+      "tests/session-recovery.test.ts"
+    ]
+  },
+  "limits": [
+    "Grades reflect the inspected code, content, and simulations; root owns browser visual QA and isolated-account end-to-end verification.",
+    "No production deployment was performed by this subtask.",
+    "Practice success, completion counts, and formula self-ratings do not guarantee a 36 or calibrate an official ACT score.",
+    "The unchanged formula packet remains extra workload and may exceed a two-hour total when combined with a 90-minute lesson budget."
+  ]
+}

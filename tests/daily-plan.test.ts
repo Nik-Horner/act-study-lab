@@ -1204,10 +1204,17 @@ test("misses become review questions while the next day teaches uncovered scopes
     (question) => question.reviewUnitId === reviewed.id,
   );
   assert.equal(freshReview.length, 2);
-  assert(
-    freshReview.every(
+  assert.equal(
+    freshReview.filter(
       (question) => !next.previouslyAnsweredQuestions!.includes(question.id),
+    ).length,
+    Math.min(
+      2,
+      reviewed.practiceIds!.filter(
+        (id) => !next.previouslyAnsweredQuestions!.includes(id),
+      ).length,
     ),
+    "prefer every available fresh item before later retention practice",
   );
   assert(
     !dailyFocus(

@@ -16,6 +16,7 @@ export interface Graph {
   title: string;
   xLabel: string;
   yLabel: string;
+  yRange?: [number, number];
   series: { label: string; points: [number, number][] }[];
 }
 export interface Passage {

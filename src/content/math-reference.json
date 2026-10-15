@@ -139,7 +139,7 @@
         "id": "exponential",
         "title": "Exponential growth and decay",
         "formula": "\\(f(t)=ab^t;\\quad b=\\left(\\frac{f(t_2)}{f(t_1)}\\right)^{1/(t_2-t_1)}\\)",
-        "when": "For real-time models use \\(b>0\\); a is the value at \\(t=0\\). Equal time gaps have equal ratios. Repeated p% growth uses \\(b=1+\\frac{p}{100}\\); decay uses \\(b=1-\\frac{p}{100}\\).",
+        "when": "For real-time models use \\(b>0\\); a is the value at \\(t=0\\). To recover b from the displayed ratio, use different times and nonzero outputs. Equal time gaps have equal ratios. Repeated p% growth uses \\(b=1+\\frac{p}{100}\\); decay uses \\(b=1-\\frac{p}{100}\\).",
         "example": "A quantity growing from 18 at \\(t=1\\) to 144 at \\(t=4\\) has \\(b^{3}=8\\), \\(b=2\\), and \\(a=9\\)."
       },
       {
@@ -188,7 +188,7 @@
         "title": "Heron and the angle bisector",
         "formula": "\\(s=(a+b+c)/2;\\quad A=\\sqrt{s(s-a)(s-b)(s-c)};\\quad BD/DC=AB/AC\\)",
         "when": "Heron uses three sides of a valid triangle. The ratio applies when AD bisects angle A and D lies on BC. Split the whole opposite side according to that ratio.",
-        "example": "Sides 5,5,6 give \\(s=8\\) and area \\(\\sqrt{8\\cdot 3\\cdot 3\\cdot 2}=12\\). A bisector between sides 4 and 6 splits an opposite side of 15 into 6 and 9."
+        "example": "Sides 5,5,6 give \\(s=8\\) and area \\(\\sqrt{8\\cdot 3\\cdot 3\\cdot 2}=12\\). A bisector between sides 6 and 9 splits an opposite side of 10 into 4 and 6. All three sides form a valid triangle."
       },
       {
         "id": "polygons",
@@ -222,7 +222,7 @@
         "id": "lineforms",
         "title": "Lines, distance, and midpoint",
         "formula": "\\(y-y_1=m(x-x_1);\\quad d=\\sqrt{(\\Delta x)^2+(\\Delta y)^2};\\quad M=((x_1+x_2)/2,(y_1+y_2)/2)\\)",
-        "when": "Slope is \\(\\frac{\\Delta  y}{\\Delta } x\\) for nonvertical lines. Parallel lines have the same slope. Perpendicular nonvertical slopes multiply to −1; horizontal and vertical lines are the special pair.",
+        "when": "Slope is \\(\\frac{\\Delta y}{\\Delta x}\\) for nonvertical lines. Parallel lines have the same slope. Perpendicular nonvertical slopes multiply to −1; horizontal and vertical lines are the special pair.",
         "example": "The line through (2,−1) with slope 3 is \\(y+1=3 \\left(x-2\\right)\\). The midpoint of (−2,4) and (6,0) is (2,2)."
       },
       {
@@ -319,7 +319,7 @@
         "id": "triggraphs",
         "title": "Trig graphs and intervals",
         "formula": "\\(y=A\\sin(Bx+C)+D;\\quad\\text{period}=2\\pi/|B|;\\quad\\text{shift}=-C/B;\\quad\\text{range}=[D-|A|,D+|A|]\\)",
-        "when": "For nonconstant \\(\\frac{\\sin\\theta}{\\cos\\theta}\\), A,\\(B\\ne 0\\). Tangent has period \\(\\frac{\\pi }{\\lvert B\\rvert }\\) and no finite amplitude. Restricted intervals can shrink the \\(\\frac{\\sin\\theta}{\\cos\\theta}\\) range. Inverse trig gives one angle, so count all solutions.",
+        "when": "For nonconstant sine or cosine graphs, \\(A,B\\ne0\\). Tangent has period \\(\\frac{\\pi}{|B|}\\) and no finite amplitude. Restricted intervals can shrink a sine or cosine graph’s range. Inverse trig gives one angle, so count all solutions.",
         "example": "For \\(4 \\cos \\left(2 x-\\pi \\right)+1\\), \\(\\text{amplitude}=4\\), \\(\\text{period}=\\pi\\), shift=\\(\\frac{\\pi }{2}\\) right, and full-domain range \\([-3,5]\\)."
       },
       {

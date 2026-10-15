@@ -9,12 +9,12 @@ const date = (offset: number) =>
     .slice(0, 10);
 const recall = (id: string, day: string) => `formula:${id}:recall:${day}`;
 
-test("daily scheduling can reach 36 twice-recalled formulas before test day across short and long horizons", () => {
+test("daily scheduling can reach every twice-recalled formula before test day across short and long horizons", () => {
   for (const horizon of [2, 3, 7, 14, 30, 90]) {
     const keys: string[] = [];
     for (let day = 0; day < horizon; day++) {
       const packet = formulaDay(keys, date(day), date(horizon));
-      assert(packet.ids.length > 0 && packet.ids.length <= 36);
+      assert(packet.ids.length > 0 && packet.ids.length <= cards.length);
       assert.equal(new Set(packet.ids).size, packet.ids.length);
       keys.push(...packet.ids.map((id) => recall(id, date(day))));
       const resumed = formulaDay(keys, date(day), date(horizon), packet.ids);
@@ -23,7 +23,7 @@ test("daily scheduling can reach 36 twice-recalled formulas before test day acro
     }
     assert.equal(
       formulaDay(keys, date(horizon - 1), date(horizon)).recalled,
-      36,
+      cards.length,
       `${horizon} study days`,
     );
   }

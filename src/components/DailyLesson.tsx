@@ -88,7 +88,7 @@ export function DailyLesson({
         <LessonSections
           key={index}
           sections={[section]}
-          hideHeading={section.heading === unit.title}
+          hideHeading={visible.length === 1 || section.heading === unit.title}
           idPrefix={`daily-${unit.id}-${index}`}
           showActivity={false}
         />

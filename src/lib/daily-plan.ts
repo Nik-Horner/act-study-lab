@@ -273,6 +273,7 @@ export function makeDailyPlan(
     Record<AccountSubject, ReturnType<typeof dailyScopes>>
   > = {};
   const weakUnits: Partial<Record<AccountSubject, DailyUnit[]>> = {};
+  const priorityReviews = new Set<AccountSubject>();
   const candidates: Partial<Record<AccountSubject, DailyUnit[]>> = {};
   const covered = new Set(course?.coveredUnits ?? []);
   const days = course
@@ -281,6 +282,12 @@ export function makeDailyPlan(
         Math.ceil((Date.parse(course.testDate) - Date.parse(date)) / 86400000),
       )
     : 0;
+  const weights = subjects.map((s) =>
+    Math.max(
+      1,
+      (course?.targetScore ?? 36) - (planningScores(settings)[s] ?? 28),
+    ),
+  );
   const draft = subjects.map((subject) => {
     const scopes = dailyScopes(subject, settings);
     const banks = new Map(
@@ -451,6 +458,7 @@ export function makeDailyPlan(
     const weak = preferred.filter((scope) =>
       course ? covered.has(scope.id) : scopes.indexOf(scope) < start,
     );
+    if (weak.length) priorityReviews.add(subject);
     const spaced = course
       ? scopes.filter(
           (entry) =>
@@ -462,7 +470,7 @@ export function makeDailyPlan(
       : [];
     weakUnits[subject] = (
       weak.length
-        ? weak
+        ? [weak[sequence % weak.length]]
         : spaced.length
           ? [spaced[sequence % spaced.length]]
           : []
@@ -472,6 +480,15 @@ export function makeDailyPlan(
       .map((unit) => ({ ...unit, questions: [] }));
     candidates[subject] = options;
     const units = options.slice(0, course ? 1 : 2);
+    // After coverage, keep the selected weak method in its explicit review pair.
+    if (
+      course &&
+      unseen.length === 0 &&
+      units[0].id === weakUnits[subject]?.[0]?.id
+    ) {
+      const other = options.find((unit) => unit.id !== units[0].id);
+      if (other) units[0] = other;
+    }
     const reviewQuestions = makeReviewQuestions(
       subject,
       units,
@@ -491,8 +508,86 @@ export function makeDailyPlan(
       questions: [...units.flatMap((u) => u.questions), ...reviewQuestions],
     } as DailyBlock;
   });
+  // Keep a complete lesson and its drill together. If two complete lessons
+  // would exceed the saved budget, defer a whole second unit, never its rules.
+  while (
+    draft.reduce((n, b) => n + Math.ceil(estimateDailyBlock(b)), 0) >
+    settings.minutesPerDay
+  ) {
+    const candidates = draft
+      .filter((b) => b.units!.length > 1)
+      .sort((a, b) => estimateDailyBlock(b) - estimateDailyBlock(a));
+    const block = candidates[0];
+    if (!block) break;
+    block.units!.pop();
+    block.reviewQuestions = makeReviewQuestions(
+      block.subject,
+      block.units!,
+      0,
+      seenQuestions,
+    );
+    block.questions = [
+      ...block.units!.flatMap((u) => u.questions),
+      ...block.reviewQuestions,
+    ];
+  }
+  const addReview = (block: DailyBlock) => {
+    const unit = weakUnits[block.subject]?.find(
+      (unit) =>
+        !block.units!.some(
+          (item) => (item.courseId ?? item.id) === (unit.courseId ?? unit.id),
+        ),
+    );
+    if (!unit) return;
+    const used = new Set([
+      ...block.questions.map((question) => question.id),
+      ...(course?.answeredQuestions ?? []),
+    ]);
+    const ids = [...new Set(unit.practiceIds)]
+      .filter((id) => !used.has(id))
+      .sort((a, b) => Number(seenIds.has(a)) - Number(seenIds.has(b)))
+      .slice(0, 2);
+    if (ids.length < 2) return;
+    const review = ids.map((id) => {
+      const source =
+        block.subject === "english"
+          ? englishDailyQuestions(unit.topic).find(
+              (question) => question.id === id,
+            )
+          : getQuestion(id);
+      if (!source) throw new Error(`Missing review question for ${unit.id}`);
+      return {
+        ...source,
+        subject: block.subject,
+        topic: unit.topic,
+        phase: "review" as const,
+        reviewUnitId: unit.id,
+        category: source.category ?? "",
+        difficulty: source.difficulty ?? "medium",
+      } as DailyQuestion;
+    });
+    const candidate = {
+      ...block,
+      reviewUnits: [unit],
+      reviewQuestions: [...block.reviewQuestions!, ...review],
+      questions: [...block.questions, ...review],
+    };
+    if (
+      draft.reduce(
+        (sum, item) =>
+          sum +
+          Math.ceil(estimateDailyBlock(item === block ? candidate : item)),
+        0,
+      ) <= settings.minutesPerDay
+    )
+      Object.assign(block, candidate);
+  };
+  // Repair known weaknesses before filling the day with new lessons.
+  draft
+    .filter((block) => priorityReviews.has(block.subject))
+    .forEach(addReview);
   if (course) {
-    // Add intact lesson/drill pairs where the deadline needs the most coverage.
+    // Spend extra teaching time on score gaps, then remaining course coverage.
     while (true) {
       const choices = draft.filter(
         (block) =>
@@ -501,20 +596,24 @@ export function makeDailyPlan(
       );
       choices.sort(
         (a, b) =>
+          weights[subjects.indexOf(b.subject)] /
+            Math.max(1, estimateDailyBlock(b)) -
+            weights[subjects.indexOf(a.subject)] /
+              Math.max(1, estimateDailyBlock(a)) ||
           pending[b.subject]!.length / b.units!.length -
-          pending[a.subject]!.length / a.units!.length,
+            pending[a.subject]!.length / a.units!.length,
       );
       const next = choices.find((block) => {
         const units = [
           ...block.units!,
           candidates[block.subject]![block.units!.length],
         ];
-        const reviewQuestions = makeReviewQuestions(
-          block.subject,
-          units,
-          0,
-          seenQuestions,
-        );
+        const reviewQuestions = [
+          ...makeReviewQuestions(block.subject, units, 0, seenQuestions),
+          ...block.reviewQuestions!.filter((q) =>
+            block.reviewUnits?.some((unit) => unit.id === q.reviewUnitId),
+          ),
+        ];
         return (
           draft.reduce(
             (n, item) =>
@@ -540,99 +639,25 @@ export function makeDailyPlan(
       });
       if (!next) break;
       next.units!.push(candidates[next.subject]![next.units!.length]);
-      next.reviewQuestions = makeReviewQuestions(
-        next.subject,
-        next.units!,
-        0,
-        seenQuestions,
-      );
+      next.reviewQuestions = [
+        ...makeReviewQuestions(next.subject, next.units!, 0, seenQuestions),
+        ...next.reviewQuestions!.filter((q) =>
+          next.reviewUnits?.some((unit) => unit.id === q.reviewUnitId),
+        ),
+      ];
       next.questions = [
         ...next.units!.flatMap((unit) => unit.questions),
         ...next.reviewQuestions,
       ];
     }
   }
-  // Keep a complete lesson and its drill together. If two complete lessons
-  // would exceed the saved budget, defer a whole second unit, never its rules.
-  while (
-    draft.reduce((n, b) => n + Math.ceil(estimateDailyBlock(b)), 0) >
-    settings.minutesPerDay
-  ) {
-    const candidates = draft
-      .filter((b) => b.units!.length > 1)
-      .sort((a, b) => estimateDailyBlock(b) - estimateDailyBlock(a));
-    const block = candidates[0];
-    if (!block) break;
-    block.units!.pop();
-    block.reviewQuestions = makeReviewQuestions(
-      block.subject,
-      block.units!,
-      0,
-      seenQuestions,
-    );
-    block.questions = [
-      ...block.units!.flatMap((u) => u.questions),
-      ...block.reviewQuestions,
-    ];
-  }
-  for (const block of draft) {
-    const unit = weakUnits[block.subject]?.find(
-      (unit) =>
-        !block.units!.some(
-          (item) => (item.courseId ?? item.id) === (unit.courseId ?? unit.id),
-        ),
-    );
-    if (!unit) continue;
-    for (let attempt = 0; attempt < 2; attempt++) {
-      const used = new Set([
-        ...block.questions.map((question) => question.id),
-        ...(course?.answeredQuestions ?? []),
-      ]);
-      const id =
-        unit.practiceIds?.find(
-          (id) => !used.has(id) && !seenQuestions.includes(id),
-        ) ?? unit.practiceIds?.find((id) => !used.has(id));
-      const source =
-        id &&
-        (block.subject === "english"
-          ? englishDailyQuestions(unit.topic).find(
-              (question) => question.id === id,
-            )
-          : getQuestion(id));
-      if (!source) break;
-      const question = {
-        ...source,
-        subject: block.subject,
-        topic: unit.topic,
-        phase: "review" as const,
-        reviewUnitId: unit.id,
-        category: source.category ?? "",
-        difficulty: source.difficulty ?? "medium",
-      } as DailyQuestion;
-      block.reviewQuestions!.push(question);
-      block.questions.push(question);
-      if (
-        draft.reduce(
-          (sum, item) => sum + Math.ceil(estimateDailyBlock(item)),
-          0,
-        ) > settings.minutesPerDay
-      ) {
-        block.reviewQuestions!.pop();
-        block.questions.pop();
-        break;
-      }
-      block.reviewUnits = [unit];
-    }
-  }
+  // Routine spaced practice can use any room left after new teaching.
+  draft
+    .filter((block) => !priorityReviews.has(block.subject))
+    .forEach(addReview);
   const minimum = draft.map((block) => Math.ceil(estimateDailyBlock(block)));
   if (minimum.reduce((a, b) => a + b, 0) > settings.minutesPerDay)
     throw new Error("Curriculum exceeds the daily budget");
-  const weights = subjects.map((s) =>
-    Math.max(
-      1,
-      (course?.targetScore ?? 36) - (planningScores(settings)[s] ?? 28),
-    ),
-  );
   const extra = settings.minutesPerDay - minimum.reduce((a, b) => a + b, 0);
   const total = weights.reduce((a, b) => a + b, 0);
   const allocations = minimum.map(
@@ -904,6 +929,7 @@ export function estimateDailyBlock(
         words(
           [
             ...s.body,
+            ...(s.evidence ?? []).map((passage) => passage.context),
             ...(s.examples ?? []).map((e) => e.text),
             s.tip ?? "",
             s.activity
@@ -921,7 +947,10 @@ export function estimateDailyBlock(
     ) / 180;
   const interaction =
     sections.reduce(
-      (n, s) => n + (s.activity ? 45 : (s.examples?.length ?? 0) * 10),
+      (n, s) =>
+        n +
+        (s.activity ? 45 : (s.examples?.length ?? 0) * 10) +
+        (s.evidence?.length ?? 0) * 15,
       0,
     ) / 60;
   const passages = new Map<string, string>();

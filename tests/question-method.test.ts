@@ -35,7 +35,7 @@ test("feedback targets the precise taught skill for advanced, held-out, and Read
   assert.match(questionMethod(q)!.label, /discriminant.*quadratic formula/i);
   const exam = getExamQuestions("reading-1")[0];
   assert.equal(questionMethod(exam)?.href, "/learn/reading-main-idea?skill=reading-main-idea-narrative-change");
-  assert.match(questionMethod(exam)!.label, /narrative change/);
+  assert.equal(questionMethod(exam)!.label, "Show a character’s actual change");
   assert.equal(
     questionMethod(getQuestions("reading-inference")[0])?.href,
     "/learn/reading-inference?skill=reading-inference-attitude",

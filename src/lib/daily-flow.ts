@@ -165,7 +165,7 @@ export function dailyComplete(
   return dailyStep(plan, answers, lessons).kind === "done";
 }
 
-/** Revisit weak skills with fresh drills instead of declaring mastery on completion. */
+/** Revisit weak skills without declaring mastery on lesson completion. */
 export function dailyFocus(
   plan: DailyPlan,
   answers: Record<string, number>,
@@ -211,6 +211,18 @@ export function dailyFocus(
           const questions = [...unit.questions, ...review].filter(
             (question) => answers[question.id] !== undefined,
           );
+          // A later review can resolve a repair flag; score mastery stays separate.
+          const laterReview =
+            block.reviewUnits?.some((entry) => entry.id === unit.id) &&
+            questions.every(
+              (question) =>
+                question.phase === "review" &&
+                question.reviewUnitId === unit.id,
+            ) &&
+            (plan.course?.coveredUnits.includes(unit.courseId ?? unit.id) ||
+              questions.some((question) =>
+                plan.previouslyAnsweredQuestions?.includes(question.id),
+              ));
           const missed = questions.some(
             (question) =>
               answers[question.id] !== question.answer ||
@@ -248,7 +260,10 @@ export function dailyFocus(
               questions
                 .filter(
                   (question) =>
-                    !plan.previouslyAnsweredQuestions?.includes(question.id) &&
+                    (laterReview ||
+                      !plan.previouslyAnsweredQuestions?.includes(
+                        question.id,
+                      )) &&
                     (!unit.skillId || question.skillId === unit.skillId) &&
                     !workedExamples.some(
                       (example) =>

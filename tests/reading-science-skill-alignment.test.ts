@@ -66,9 +66,10 @@ test("focused Science cards contain the actual method, selected worked evidence,
       skill.body,
       skill.id,
     );
-    assert(
-      lesson.sections.every((section) => !section.evidence?.length),
-      skill.id,
+    assert.deepEqual(
+      lesson.sections.flatMap((section) => section.evidence ?? []),
+      skill.evidence,
+      `${skill.id}: the learner must see the data used in the worked method`,
     );
     assert.equal(
       lesson.sections.filter((section) => section.activity).length,
