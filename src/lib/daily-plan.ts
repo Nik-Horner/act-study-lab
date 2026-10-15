@@ -121,11 +121,11 @@ export function dailyHistory(plans: DailyPlan[]) {
     plans.flatMap((plan) => plan.course?.completedSessions ?? []),
   );
   for (const plan of plans) {
-    if (!plan.complete) continue;
-    sessions.add(plan.id);
+    if (plan.complete) sessions.add(plan.id);
     for (const block of plan.blocks) {
       for (const unit of blockUnits(block)) {
         const id = unit.courseId ?? unit.id;
+        if (!plan.complete && !covered.has(id)) continue;
         covered.add(id);
         if (id.includes(":skill:")) continue;
         // A broad legacy pool is not proof that every method in that pool was practiced.

@@ -112,3 +112,17 @@ test("unfinished sessions earn no completion or unpracticed skills; finished ses
     1,
   );
 });
+
+test("previously credited units in an unfinished legacy session retain skill credit", () => {
+  const plan = legacy();
+  plan.complete = false;
+  const unit = blockUnits(plan.blocks[0])[0];
+  plan.course = {
+    testDate: "2026-10-17",
+    coveredUnits: [unit.courseId ?? unit.id],
+  };
+  const history = dailyHistory([plan]);
+  assert.equal(history.completedSessions.length, 0);
+  assert(history.coveredUnits.some((id) => id.includes(":skill:")));
+  assert(!history.coveredUnits.includes(blockUnits(plan.blocks[0])[1].id));
+});

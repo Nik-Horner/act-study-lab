@@ -27,6 +27,8 @@ import {
 } from "@/lib/daily-flow";
 import { ScoreChecks } from "./ScoreChecks";
 import { dailyDate } from "@/lib/daily-date";
+import { FormulaCards } from "./FormulaCards";
+import type { FormulaDay } from "@/lib/formula-schedule";
 interface DailyState {
   userId: string;
   plan: DailyPlan;
@@ -40,6 +42,7 @@ interface DailyState {
   error?: string;
   minutes: number;
   includeScience?: boolean;
+  formulas?: FormulaDay;
   goal?: { targetScore: number; testDate: string };
   coverage?: {
     covered: number;
@@ -79,7 +82,12 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         throw new Error(d.error ?? "Couldn’t load your daily lesson. Retry.");
       setError(null);
       setData((previous) => ({ ...previous, ...d }));
-      if (runner && d.saved && !d.plan.complete) setStarted(true);
+      if (
+        runner &&
+        d.saved &&
+        (!d.plan.complete || d.formulas?.remaining.length)
+      )
+        setStarted(true);
     } catch (e) {
       setError((e as Error).message);
     }
@@ -189,6 +197,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       </div>
     );
   const { plan, answers, lessons } = data;
+  const formulaPending = (data.formulas?.remaining.length ?? 0) > 0;
   const targetScore = data.goal?.targetScore ?? plan.course?.targetScore;
   const testDate = data.goal?.testDate ?? plan.course?.testDate;
   const focus = dailyFocus(
@@ -208,8 +217,14 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
   const count = all.filter((q) => answers[q.id] !== undefined).length;
   const remaining =
     data.deadline === null
-      ? data.minutes * 60
-      : Math.max(0, Math.ceil((data.deadline - now) / 1000));
+      ? (data.minutes + (data.formulas?.minutes ?? 0)) * 60
+      : Math.max(
+          0,
+          Math.ceil(
+            (data.deadline + (data.formulas?.minutes ?? 0) * 60000 - now) /
+              1000,
+          ),
+        );
   const block = step && "block" in step ? step.block : undefined;
   const resumeTitle =
     step && "unit" in step && step.unit
@@ -285,7 +300,11 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             {targetScore ? `Your path to ${targetScore}` : "Daily study"}
           </h1>
           <p className="mt-2 text-sm text-ink-soft">
-            {data.minutes} minutes a day ·{" "}
+            {data.minutes} min lessons
+            {data.formulas
+              ? ` + ~${data.formulas.minutes} min formulas`
+              : " a day"}{" "}
+            ·{" "}
             {testDate
               ? `Test date: ${new Date(`${testDate}T12:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric" })}`
               : `${plan.blocks.length} subjects`}
@@ -302,8 +321,18 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                   : `The remaining lessons don’t fit before ${data.coverage.testDate}. Focus on weak skills and timed practice.`}
             </p>
           )}
+          {data.formulas && (
+            <p className="mt-2 text-sm text-ink-soft">
+              {data.formulas.recalled}/{data.formulas.total} formulas recalled
+              on two days
+              {data.formulas.daysLeft < 2 &&
+              data.formulas.recalled < data.formulas.total
+                ? " · Keep reviewing; fewer than two study days remain."
+                : " · Goal: all 36 by test day."}
+            </p>
+          )}
           <div className="mt-6">
-            {plan.complete ? (
+            {plan.complete && !formulaPending ? (
               <>
                 <p className="font-semibold text-good">
                   Today’s lesson is complete.
@@ -324,7 +353,11 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                 href="/daily"
                 className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-brand px-6 font-semibold text-white hover:bg-brand-dark"
               >
-                {data.saved ? "Continue daily lesson" : "Start daily lesson"}
+                {plan.complete && formulaPending
+                  ? "Finish daily formulas"
+                  : data.saved
+                    ? "Continue daily lesson"
+                    : "Start daily lesson"}
               </Link>
             )}
           </div>
@@ -355,6 +388,20 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                 </span>
               </li>
             ))}
+            {data.formulas && (
+              <li className="flex items-center justify-between gap-4 py-3">
+                <div>
+                  <p className="text-sm font-semibold">Math Formulas</p>
+                  <p className="mt-1 text-sm text-ink-soft">
+                    {data.formulas.ids.length - data.formulas.remaining.length}/
+                    {data.formulas.ids.length} cards recalled today
+                  </p>
+                </div>
+                <span className="shrink-0 text-sm text-ink-soft">
+                  {formulaPending ? `~${data.formulas.minutes} min` : "Done"}
+                </span>
+              </li>
+            )}
           </ol>
           <p className="mt-4 text-xs text-ink-soft">
             Wrong, slow, and uncertain answers return for review. New questions
@@ -383,6 +430,59 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         </div>
       </div>
     );
+  if (started && formulaPending && data.formulas && !review)
+    return (
+      <div className="mx-auto max-w-3xl space-y-6">
+        <header className="space-y-3">
+          <h1 className="text-3xl font-semibold">Daily formulas</h1>
+          <p className="text-ink-soft">
+            {plan.complete
+              ? "Recall these formulas to finish today."
+              : "Recall these formulas, then continue your lessons."}
+          </p>
+          <p className="text-sm text-ink-soft">
+            {data.formulas.recalled}/36 recalled on two days · Goal: 36 by{" "}
+            {testDate}
+          </p>
+        </header>
+        <FormulaCards
+          key={`${data.userId}:${data.formulas.date}`}
+          ids={data.formulas.ids}
+          remainingIds={data.formulas.remaining}
+          onRate={async (cardId, rating) => {
+            const response = await fetch("/api/formulas", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                ownerId: data.userId,
+                date: data.formulas!.date,
+                cardId,
+                rating,
+              }),
+            });
+            const result = await response.json();
+            if (!response.ok)
+              throw new Error(
+                result.error ?? "Your formula rating did not save. Retry.",
+              );
+            if (result.userId !== data.userId)
+              throw new Error(
+                "Your account changed. Reload before continuing.",
+              );
+            setData(
+              (previous) =>
+                previous && { ...previous, formulas: result.formulas },
+            );
+          }}
+        />
+        <Link
+          href="/dashboard"
+          className="inline-block text-sm text-brand underline"
+        >
+          Save and finish later
+        </Link>
+      </div>
+    );
   if (plan.complete && !review)
     return (
       <div className="mx-auto max-w-3xl space-y-5">
@@ -392,6 +492,12 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             {count} of {all.length} questions answered ·{" "}
             {all.filter((q) => answers[q.id] === q.answer).length} correct
           </p>
+          {data.formulas && (
+            <p className="mt-3 text-sm text-good">
+              {data.formulas.ids.length} formulas reviewed today ·{" "}
+              {data.formulas.recalled}/36 recalled on two days
+            </p>
+          )}
           <p className="mt-3 text-sm text-ink-soft">
             {weakCount
               ? `${weakCount} skills need another look. They return in upcoming practice.`
@@ -441,7 +547,10 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         <Card className="p-8">
           <h1 className="text-2xl font-semibold">Daily study</h1>
           <p className="mt-2 text-sm text-ink-soft">
-            {data.minutes} minutes ·{" "}
+            {data.minutes} min lessons
+            {data.formulas
+              ? ` + ~${data.formulas.minutes} min formulas`
+              : ""} ·{" "}
             {plan.blocks.map((block) => label(block.subject)).join(", ")}
           </p>
           <ol className="mt-5 divide-y divide-border">
@@ -464,6 +573,12 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
               </li>
             ))}
           </ol>
+          {data.formulas && (
+            <p className="mt-4 text-sm text-ink-soft">
+              Start with {data.formulas.ids.length} formula flashcards. Recall,
+              reveal, and review anything you miss.
+            </p>
+          )}
           <Button
             className="mt-6 w-full"
             disabled={pending}
@@ -675,7 +790,9 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             {pending
               ? "Saving…"
               : step.block.subject === plan.blocks.at(-1)?.subject
-                ? "Finish daily study"
+                ? formulaPending
+                  ? "Continue to daily formulas"
+                  : "Finish daily study"
                 : `Finish ${label(step.block.subject)} review · next subject`}
           </Button>
         </div>

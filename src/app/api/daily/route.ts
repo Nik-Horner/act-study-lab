@@ -20,6 +20,8 @@ import {
   dailyConcepts,
 } from "@/lib/daily-flow";
 import type { Json } from "@/lib/supabase/database.types";
+import { loadFormulaDay } from "@/lib/formula-server";
+import type { FormulaDay } from "@/lib/formula-schedule";
 import {
   ENGLISH_PRACTICE_ID,
   validateEnglishDrillAnswer,
@@ -366,6 +368,7 @@ async function load(fullHistory = false) {
 function dailyResponse(
   ctx: Awaited<ReturnType<typeof load>>,
   includeCoverage = false,
+  formulas?: FormulaDay,
 ) {
   if (ctx.error) return ctx.error;
   return Response.json(
@@ -381,6 +384,7 @@ function dailyResponse(
       today: ctx.today,
       minutes: ctx.settings.minutesPerDay,
       includeScience: ctx.settings.includeScience !== false,
+      ...(formulas && { formulas }),
       goal: {
         targetScore: ctx.course.targetScore,
         testDate: ctx.course.testDate,
@@ -399,7 +403,27 @@ function dailyResponse(
   );
 }
 export async function GET() {
-  return dailyResponse(await load(), true);
+  const ctx = await load();
+  if (ctx.error) return ctx.error;
+  try {
+    const { day } = await loadFormulaDay(
+      ctx.db,
+      ctx.user.id,
+      ctx.today,
+      ctx.course.testDate,
+    );
+    return dailyResponse(ctx, true, day);
+  } catch (error) {
+    return Response.json(
+      {
+        error:
+          error instanceof Error
+            ? error.message
+            : "Your formula review could not load. Retry.",
+      },
+      { status: 503 },
+    );
+  }
 }
 export async function POST(request: Request) {
   let body;

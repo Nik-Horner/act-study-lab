@@ -1,0 +1,254 @@
+[
+  {
+    "id": "slope",
+    "category": "Coordinate geometry",
+    "title": "Slope",
+    "formula": "m=\\frac{y_2-y_1}{x_2-x_1}",
+    "note": "Two points: \\((x_1,y_1)\\), \\((x_2,y_2)\\). If \\(x_1=x_2\\), slope is undefined."
+  },
+  {
+    "id": "line",
+    "category": "Coordinate geometry",
+    "title": "Slope-intercept form",
+    "formula": "y=mx+b",
+    "note": "\\(m\\) = slope; \\(b\\) = y-intercept."
+  },
+  {
+    "id": "midpoint",
+    "category": "Coordinate geometry",
+    "title": "Midpoint",
+    "formula": "M=\\left(\\frac{x_1+x_2}{2},\\frac{y_1+y_2}{2}\\right)",
+    "note": "Average the two x-values and the two y-values."
+  },
+  {
+    "id": "distance",
+    "category": "Coordinate geometry",
+    "title": "Distance between two points",
+    "formula": "d=\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}",
+    "note": "\\(d\\) = distance; keep subtraction order consistent."
+  },
+  {
+    "id": "quadratic",
+    "category": "Algebra",
+    "title": "Quadratic formula",
+    "formula": "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}",
+    "note": "For \\(ax^2+bx+c=0\\), with \\(a\\ne0\\)."
+  },
+  {
+    "id": "log-definition",
+    "category": "Algebra",
+    "title": "Logarithm definition",
+    "formula": "\\log_b x=y\\iff b^y=x",
+    "note": "\\(b>0\\), \\(b\\ne1\\), \\(x>0\\)."
+  },
+  {
+    "id": "log-product",
+    "category": "Algebra",
+    "title": "Logarithm product rule",
+    "formula": "\\log_b(xy)=\\log_b x+\\log_b y",
+    "note": "\\(x,y>0\\); \\(b>0\\), \\(b\\ne1\\)."
+  },
+  {
+    "id": "log-quotient",
+    "category": "Algebra",
+    "title": "Logarithm quotient rule",
+    "formula": "\\log_b\\left(\\frac{x}{y}\\right)=\\log_b x-\\log_b y",
+    "note": "\\(x,y>0\\); \\(b>0\\), \\(b\\ne1\\)."
+  },
+  {
+    "id": "mean",
+    "category": "Statistics & probability",
+    "title": "Mean",
+    "formula": "\\bar{x}=\\frac{x_1+x_2+\\cdots+x_n}{n}",
+    "note": "\\(n\\) = number of values, including repeats; \\(n>0\\)."
+  },
+  {
+    "id": "speed",
+    "category": "Statistics & probability",
+    "title": "Average speed",
+    "formula": "v=\\frac{d_{\\text{total}}}{t_{\\text{total}}}",
+    "note": "\\(d\\) = distance; \\(t\\) = time, greater than zero."
+  },
+  {
+    "id": "probability",
+    "category": "Statistics & probability",
+    "title": "Probability of an event",
+    "formula": "P(A)=\\frac{\\text{favorable outcomes}}{\\text{total outcomes}}",
+    "note": "Outcomes must be equally likely."
+  },
+  {
+    "id": "independent",
+    "category": "Statistics & probability",
+    "title": "Both independent events",
+    "formula": "P(A\\cap B)=P(A)P(B)",
+    "note": "Only when A and B are independent."
+  },
+  {
+    "id": "counting",
+    "category": "Statistics & probability",
+    "title": "Counting choices",
+    "formula": "N=n_1n_2\\cdots n_k",
+    "note": "\\(n_i\\) = choices at step i, when every choice allows the next choices."
+  },
+  {
+    "id": "percent-of",
+    "category": "Percents",
+    "title": "Find p% of a number",
+    "formula": "\\text{part}=\\frac{p}{100}\\times\\text{whole}",
+    "note": "\\(p\\) is the percent, such as 25 for 25%."
+  },
+  {
+    "id": "percent",
+    "category": "Percents",
+    "title": "What percent is the part?",
+    "formula": "p=100\\times\\frac{\\text{part}}{\\text{whole}}",
+    "note": "The whole must be nonzero."
+  },
+  {
+    "id": "whole",
+    "category": "Percents",
+    "title": "Find the whole from a percent",
+    "formula": "\\text{whole}=\\frac{100\\times\\text{part}}{p}",
+    "note": "\\(p\\ne0\\)."
+  },
+  {
+    "id": "percent-change",
+    "category": "Percents",
+    "title": "Percent change",
+    "formula": "p=100\\times\\frac{\\text{new}-\\text{original}}{\\text{original}}",
+    "note": "Positive original: increase is positive; decrease is negative."
+  },
+  {
+    "id": "rectangle-area",
+    "category": "Geometry",
+    "title": "Rectangle area",
+    "formula": "A=lw",
+    "note": "\\(l\\) = length; \\(w\\) = width."
+  },
+  {
+    "id": "rectangle-perimeter",
+    "category": "Geometry",
+    "title": "Rectangle perimeter",
+    "formula": "P=2l+2w",
+    "note": "\\(l\\) = length; \\(w\\) = width."
+  },
+  {
+    "id": "box-volume",
+    "category": "Geometry",
+    "title": "Rectangular prism volume",
+    "formula": "V=lwh",
+    "note": "\\(l\\) = length; \\(w\\) = width; \\(h\\) = height."
+  },
+  {
+    "id": "parallelogram",
+    "category": "Geometry",
+    "title": "Parallelogram area",
+    "formula": "A=bh",
+    "note": "\\(b\\) = base; \\(h\\) = perpendicular height."
+  },
+  {
+    "id": "triangle",
+    "category": "Geometry",
+    "title": "Triangle area",
+    "formula": "A=\\frac12 bh",
+    "note": "\\(b\\) = base; \\(h\\) = perpendicular height."
+  },
+  {
+    "id": "pythagorean",
+    "category": "Geometry",
+    "title": "Pythagorean theorem",
+    "formula": "a^2+b^2=c^2",
+    "note": "Right triangle: \\(a,b\\) = legs; \\(c\\) = hypotenuse."
+  },
+  {
+    "id": "45-45-90",
+    "category": "Geometry",
+    "title": "45°–45°–90° triangle sides",
+    "formula": "x,\\quad x,\\quad x\\sqrt2",
+    "note": "Two equal legs, then hypotenuse; \\(x>0\\)."
+  },
+  {
+    "id": "30-60-90",
+    "category": "Geometry",
+    "title": "30°–60°–90° triangle sides",
+    "formula": "x,\\quad x\\sqrt3,\\quad 2x",
+    "note": "Opposite 30°, 60°, then 90°; \\(x>0\\)."
+  },
+  {
+    "id": "trapezoid",
+    "category": "Geometry",
+    "title": "Trapezoid area",
+    "formula": "A=\\frac{b_1+b_2}{2}h",
+    "note": "\\(b_1,b_2\\) = parallel bases; \\(h\\) = perpendicular height."
+  },
+  {
+    "id": "circle-area",
+    "category": "Circles",
+    "title": "Circle area",
+    "formula": "A=\\pi r^2",
+    "note": "\\(r\\) = radius."
+  },
+  {
+    "id": "circumference",
+    "category": "Circles",
+    "title": "Circle circumference",
+    "formula": "C=2\\pi r=\\pi d",
+    "note": "\\(r\\) = radius; \\(d=2r\\) = diameter."
+  },
+  {
+    "id": "sector",
+    "category": "Circles",
+    "title": "Sector area",
+    "formula": "A=\\frac{\\theta}{360^\\circ}\\pi r^2",
+    "note": "\\(\\theta\\) = central angle in degrees; \\(r\\) = radius."
+  },
+  {
+    "id": "arc",
+    "category": "Circles",
+    "title": "Arc length",
+    "formula": "s=\\frac{\\theta}{360^\\circ}2\\pi r",
+    "note": "\\(\\theta\\) = central angle in degrees; \\(r\\) = radius."
+  },
+  {
+    "id": "circle-equation",
+    "category": "Circles",
+    "title": "Equation of a circle",
+    "formula": "(x-h)^2+(y-k)^2=r^2",
+    "note": "Center \\((h,k)\\); radius \\(r>0\\)."
+  },
+  {
+    "id": "cylinder",
+    "category": "Circles",
+    "title": "Cylinder volume",
+    "formula": "V=\\pi r^2h",
+    "note": "\\(r\\) = base radius; \\(h\\) = perpendicular height."
+  },
+  {
+    "id": "trig",
+    "category": "Trigonometry",
+    "title": "Sine, cosine, tangent",
+    "formula": "\\begin{aligned}\\sin\\theta&=\\frac{O}{H}\\\\\\cos\\theta&=\\frac{A}{H}\\\\\\tan\\theta&=\\frac{O}{A}\\end{aligned}",
+    "note": "Right triangle: O = opposite, A = adjacent, H = hypotenuse, relative to θ."
+  },
+  {
+    "id": "reciprocal-trig",
+    "category": "Trigonometry",
+    "title": "Reciprocal trig functions",
+    "formula": "\\begin{aligned}\\csc\\theta&=\\frac1{\\sin\\theta}\\\\\\sec\\theta&=\\frac1{\\cos\\theta}\\\\\\cot\\theta&=\\frac1{\\tan\\theta}\\end{aligned}",
+    "note": "Each reciprocal requires a defined, nonzero denominator."
+  },
+  {
+    "id": "trig-identity",
+    "category": "Trigonometry",
+    "title": "Pythagorean trig identity",
+    "formula": "\\sin^2\\theta+\\cos^2\\theta=1",
+    "note": "\\(\\sin^2\\theta\\) means \\((\\sin\\theta)^2\\)."
+  },
+  {
+    "id": "tan-identity",
+    "category": "Trigonometry",
+    "title": "Tangent in terms of sine and cosine",
+    "formula": "\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}",
+    "note": "\\(\\cos\\theta\\ne0\\)."
+  }
+]

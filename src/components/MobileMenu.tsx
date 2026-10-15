@@ -19,7 +19,7 @@ export function MobileMenu() {
   }, []);
 
   return (
-    <div ref={rootRef} className="relative sm:hidden">
+    <div ref={rootRef} className="relative lg:hidden">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
@@ -55,6 +55,13 @@ export function MobileMenu() {
             className="block rounded-lg px-3 py-2 text-sm text-ink-soft hover:bg-bg-raised hover:text-ink"
           >
             Extra practice
+          </Link>
+          <Link
+            href="/math-formulas"
+            onClick={() => setOpen(false)}
+            className="block min-h-11 rounded-lg px-3 py-2 text-sm text-ink-soft hover:bg-bg-raised hover:text-ink"
+          >
+            Math Formulas
           </Link>
           <Link
             href="/account"
