@@ -5,10 +5,10 @@
       "choices": [
         "\\(\\frac{(6+18)\\times4}2\\)",
         "\\(\\frac{(6+18)\\times7}2\\)",
-        "18 × 4"
+        "\\(18\\times 4\\)"
       ],
       "answer": 0,
-      "explanation": "Average the two parallel bases, then multiply by the perpendicular height: (6+18)×4/2=48 square units. Using 7 substitutes a slanted side for the height; using only the larger base treats the trapezoid as a rectangle.",
+      "explanation": "Average the two parallel bases, then multiply by the perpendicular height: \\(\\frac{\\left(6+18\\right)\\times 4}{2}=48\\) square units. Using 7 substitutes a slanted side for the height; using only the larger base treats the trapezoid as a rectangle.",
       "diagram": "activity-trapezoid"
     },
     {
@@ -19,7 +19,7 @@
         "13"
       ],
       "answer": 1,
-      "explanation": "The third side must be strictly between 9 − 4 = 5 and 9 + 4 = 13. Equality makes a flat, degenerate triangle."
+      "explanation": "The third side must be strictly between \\(9-4=5\\) and \\(9+4=13\\). Equality makes a flat, degenerate triangle."
     },
     {
       "prompt": "Two solids are similar. The larger has 1.5 times every corresponding length. The smaller volume is 16 cubic units. What is the larger volume?",
@@ -29,18 +29,18 @@
         "54"
       ],
       "answer": 2,
-      "explanation": "The volume multiplier is the cube of the length factor: 1.5³=3.375. Thus volume is 16×3.375=54 cubic units. Multiplying by 1.5 gives 24 and applies length scaling; multiplying by 1.5² gives 36 and applies area scaling.",
+      "explanation": "The volume multiplier is the cube of the length factor: \\(1.5^{3}=3.375\\). Thus volume is \\(16\\times 3.375=54\\) cubic units. Multiplying by 1.5 gives 24 and applies length scaling; multiplying by \\(1.5^{2}\\) gives 36 and applies area scaling.",
       "diagram": "activity-similar-solids"
     },
     {
-      "prompt": "An inscribed angle intercepts a 96° arc. What is the angle?",
+      "prompt": "An inscribed angle intercepts \\(a 96^\\circ\\) arc. What is the angle?",
       "choices": [
-        "48°",
-        "96°",
-        "192°"
+        "\\(48^\\circ\\)",
+        "\\(96^\\circ\\)",
+        "\\(192^\\circ\\)"
       ],
       "answer": 0,
-      "explanation": "The vertex is on the circle, so the angle is half its intercepted arc: 96°/2=48°. The 96° option would be the corresponding central angle; 192° reverses the half-arc relationship.",
+      "explanation": "The vertex is on the circle, so the angle is half its intercepted arc: \\(\\frac{96^\\circ }{2}=48^\\circ\\). The \\(96^\\circ\\) option would be the corresponding central angle; \\(192^\\circ\\) reverses the half-arc relationship.",
       "diagram": "activity-inscribed-angle"
     },
     {
@@ -48,10 +48,10 @@
       "choices": [
         "\\(\\sqrt{6^2+8^2}\\)",
         "\\(\\sqrt{2^2+11^2}\\)",
-        "6 + 8"
+        "\\(6+8\\)"
       ],
       "answer": 0,
-      "explanation": "Subtract corresponding coordinates first: Δx = 6 and Δy = 8. Distance is the hypotenuse of that reference triangle, so the length is 10."
+      "explanation": "Subtract corresponding coordinates first: \\(\\Delta  x=6\\) and \\(\\Delta  y=8\\). Distance is the hypotenuse of that reference triangle, so the length is 10."
     },
     {
       "prompt": "A closed right circular cylinder has radius 4 and height 7. What is its total surface area?",
@@ -61,7 +61,7 @@
         "\\(112\\pi\\)"
       ],
       "answer": 1,
-      "explanation": "The curved side has area 2π(4)(7)=56π. The two circular ends add 2π(4²)=32π, giving total 88π square units. The 56π option omits the ends; 112π comes from the volume formula πr²h.",
+      "explanation": "The curved side has area \\(2 \\pi  \\left(4\\right) \\left(7\\right)=56 \\pi\\). The two circular ends add \\(2 \\pi  \\left(4^{2}\\right)=32 \\pi\\), giving total \\(88 \\pi\\) square units. The \\(56 \\pi\\) option omits the ends; \\(112 \\pi\\) comes from the volume formula \\(\\pi  r^{2} h\\).",
       "diagram": "activity-cylinder"
     },
     {
@@ -72,20 +72,20 @@
         "\\(\\sqrt{63}\\)"
       ],
       "answer": 0,
-      "explanation": "The radius and tangent meet at a right angle, so the center-to-P segment is the hypotenuse: √(12²+9²)=15. Adding 12+9 measures a bent path; subtracting their squares incorrectly treats the radius as the hypotenuse.",
+      "explanation": "The radius and tangent meet at a right angle, so the center-to-P segment is the hypotenuse: \\(\\sqrt{12^{2}+9^{2}}=15\\). Adding \\(12+9\\) measures a bent path; subtracting their squares incorrectly treats the radius as the hypotenuse.",
       "diagram": "activity-tangent"
     }
   ],
   "math-trigonometry": [
     {
-      "prompt": "In the pictured right triangle, θ is acute, its opposite side is 8, and the hypotenuse is 17. What is cos θ?",
+      "prompt": "In the pictured right triangle, \\(\\theta\\) is acute, its opposite side is 8, and the hypotenuse is 17. What is \\(\\cos \\theta\\)?",
       "choices": [
         "\\(15/17\\)",
         "\\(8/17\\)",
         "\\(8/15\\)"
       ],
       "answer": 0,
-      "explanation": "The adjacent side is √(17²−8²)=15. Cosine is adjacent/hypotenuse, so cos θ=15/17. The ratio 8/17 is sine, while 8/15 is tangent; label the sides relative to θ first.",
+      "explanation": "The adjacent side is \\(\\sqrt{17^{2}-8^{2}}=15\\). Cosine is adjacent/hypotenuse, so \\(\\cos \\theta =\\frac{15}{17}\\). The ratio \\(\\frac{8}{17}\\) is sine, while \\(\\frac{8}{15}\\) is tangent; label the sides relative to \\(\\theta\\) first.",
       "diagram": "activity-right-triangle"
     },
     {
@@ -100,7 +100,7 @@
       "diagram": "unit-circle"
     },
     {
-      "prompt": "\\(\\cos\\theta=-\\frac35\\) and θ is in Quadrant III. Choose sin θ.",
+      "prompt": "\\(\\cos\\theta=-\\frac35\\) and \\(\\theta\\) is in Quadrant III. Choose \\(\\sin \\theta\\).",
       "choices": [
         "\\(\\frac45\\)",
         "\\(-\\frac45\\)",
@@ -122,129 +122,129 @@
     {
       "prompt": "For \\(y=-3\\sin(2x)+4\\), identify the amplitude and period in radians.",
       "choices": [
-        "Amplitude −3; period 2π",
-        "Amplitude 3; period π",
-        "Amplitude 4; period π"
+        "Amplitude −3; period \\(2 \\pi\\)",
+        "Amplitude 3; period \\(\\pi\\)",
+        "Amplitude 4; period \\(\\pi\\)"
       ],
       "answer": 1,
-      "explanation": "Amplitude is |−3| = 3. Period is \\(\\frac{2\\pi}{|2|}=\\pi\\). The vertical shift 4 changes the midline and range, not the amplitude."
+      "explanation": "Amplitude is \\(\\lvert -3\\rvert =3\\). Period is \\(\\frac{2\\pi}{|2|}=\\pi\\). The vertical shift 4 changes the midline and range, not the amplitude."
     },
     {
-      "prompt": "Two known sides of a nonright triangle are 7 and 9, and the angle between them is 60°. What should you enter to find the third side?",
+      "prompt": "Two known sides of a nonright triangle are 7 and 9, and the angle between them is \\(60^\\circ\\). What should you enter to find the third side?",
       "choices": [
-        "c² = 7² + 9² − 2(7)(9)cos(60°)",
-        "c² = 7² + 9²",
-        "sin(60°)/7 = sin(C)/9"
+        "\\(c^{2}=7^{2}+9^{2}-2 \\left(7\\right) \\left(9\\right) \\cos \\left(60^\\circ \\right)\\)",
+        "\\(c^{2}=7^{2}+9^{2}\\)",
+        "\\(\\frac{\\sin \\left(60^\\circ \\right)}{7}=\\frac{\\sin \\left(C\\right)}{9}\\)"
       ],
       "answer": 0,
-      "explanation": "Two sides and their included angle call for the law of cosines. c² = 49 + 81 − 63 = 67. The Pythagorean theorem needs a right angle."
+      "explanation": "Two sides and their included angle call for the law of cosines. \\(c^{2}=49+81-63=67\\). The Pythagorean theorem needs a right angle."
     },
     {
-      "prompt": "You stand 20 m from a vertical tower. The angle of elevation is 35°, and your eye level is 1.6 m. Which setup gives the tower height?",
+      "prompt": "You stand 20 m from a vertical tower. The angle of elevation is \\(35^\\circ\\), and your eye level is 1.6 m. Which setup gives the tower height?",
       "choices": [
-        "20 tan(35°) + 1.6",
-        "20 sin(35°) + 1.6",
-        "20/tan(35°)"
+        "\\(20 \\tan \\left(35^\\circ \\right)+1.6\\)",
+        "\\(20 \\sin \\left(35^\\circ \\right)+1.6\\)",
+        "\\(\\frac{20}{\\tan \\left(35^\\circ \\right)}\\)"
       ],
       "answer": 0,
-      "explanation": "The ground distance is adjacent and the rise above your eyes is opposite. Rise = 20 tan(35°); then add eye height. Check degree mode."
+      "explanation": "The ground distance is adjacent and the rise above your eyes is opposite. Rise = \\(20 \\tan \\left(35^\\circ \\right)\\); then add eye height. Check degree mode."
     }
   ],
   "math-algebra": [
     {
-      "prompt": "6(x − 3) = 2x + 10. What is the left side after distribution?",
+      "prompt": "\\(6 \\left(x-3\\right)=2 x+10\\). What is the left side after distribution?",
       "choices": [
         "6x − 3",
         "6x − 18",
         "6x + 18"
       ],
       "answer": 1,
-      "explanation": "Multiply both terms in the parentheses by 6: 6x−18. The first wrong choice multiplies only x; the last changes the sign of the constant. The resulting equation is 6x−18=2x+10."
+      "explanation": "Multiply both terms in the parentheses by 6: 6x−18. The first wrong choice multiplies only x; the last changes the sign of the constant. The resulting equation is \\(6 x-18=2 x+10\\)."
     },
     {
-      "prompt": "What is the complete set of real solutions to x²=36?",
+      "prompt": "What is the complete set of real solutions to \\(x^{2}=36\\)?",
       "choices": [
         "6 only",
         "−6 and 6",
         "−36 and 36"
       ],
       "answer": 1,
-      "explanation": "Both −6 and 6 square to 36. The square-root symbol √36 denotes the principal root 6, but solving x²=36 requires both signs. Using ±36 fails to undo the squaring."
+      "explanation": "Both −6 and 6 square to 36. The square-root symbol \\(\\sqrt{36}\\) denotes the principal root 6, but solving \\(x^{2}=36\\) requires both signs. Using \\(\\pm 36\\) fails to undo the squaring."
     },
     {
-      "prompt": "(x − 4)(x + 1) > 0. Which intervals work?",
+      "prompt": "\\(\\left(x-4\\right) \\left(x+1\\right)>0\\). Which intervals work?",
       "choices": [
-        "−1 < x < 4",
-        "x < −1 or x > 4",
-        "x ≤ −1 or x ≥ 4"
+        "\\(-1<x<4\\)",
+        "\\(x<-1\\) or \\(x>4\\)",
+        "\\(x\\le -1\\) or \\(x\\ge 4\\)"
       ],
       "answer": 1,
       "explanation": "The factors have the same sign below −1 and above 4, making the product positive. Between the roots their signs differ. The strict inequality excludes the roots; the inclusive outside intervals would also admit a zero product."
     },
     {
-      "prompt": "Which is the useful first rewrite of x² − 49?",
+      "prompt": "Which is the useful first rewrite of \\(x^{2}-49\\)?",
       "choices": [
-        "(x − 7)²",
+        "\\(\\left(x-7\\right)^{2}\\)",
         "(x − 7)(x + 7)",
         "(x − 49)(x + 49)"
       ],
       "answer": 1,
-      "explanation": "Recognize a difference of squares: a² − b² = (a − b)(a + b). Squaring x − 7 would introduce a −14x term."
+      "explanation": "Recognize a difference of squares: \\(a^{2}-b^{2}=\\left(a-b\\right) \\left(a+b\\right)\\). Squaring x − 7 would introduce a −14x term."
     },
     {
-      "prompt": "(x² − 1)/(x − 1) = 3 simplifies to x + 1 = 3. What restriction survives cancellation?",
+      "prompt": "\\(\\frac{x^{2}-1}{x-1}=3\\) simplifies to \\(x+1=3\\). What restriction survives cancellation?",
       "choices": [
-        "x ≠ 1",
-        "x ≠ −1",
+        "\\(x\\ne 1\\)",
+        "\\(x\\ne -1\\)",
         "No restriction survives"
       ],
       "answer": 0,
       "explanation": "The original denominator cannot be zero. Cancellation does not put the excluded input back into the domain."
     },
     {
-      "prompt": "For which value of a does ax + 6 = 3x + 6 have infinitely many solutions?",
+      "prompt": "For which value of a does \\(ax+6=3 x+6\\) have infinitely many solutions?",
       "choices": [
         "0",
         "3",
         "6"
       ],
       "answer": 1,
-      "explanation": "The coefficients and constants must match on both sides. With a = 3, the equation is an identity."
+      "explanation": "The coefficients and constants must match on both sides. With \\(a=3\\), the equation is an identity."
     },
     {
-      "prompt": "Squaring √(3x)=x produces candidates x=0 and x=3. Which verification is sufficient to decide the original solutions?",
+      "prompt": "Squaring \\(\\sqrt{3 x}=x\\) produces candidates \\(x=0\\) and \\(x=3\\). Which verification is sufficient to decide the original solutions?",
       "choices": [
-        "Check both candidates in x²=3x only",
-        "Substitute both candidates into √(3x)=x",
-        "Discard x=0 because square roots must be positive"
+        "Check both candidates in \\(x^{2}=3 x\\) only",
+        "Substitute both candidates into \\(\\sqrt{3 x}=x\\)",
+        "Discard \\(x=0\\) because square roots must be positive"
       ],
       "answer": 1,
-      "explanation": "Squaring can remove sign information, so substitute both into the original equation. Here √0=0 and √9=3, so both work. A principal square root is nonnegative, which includes zero; checking only the squared equation cannot detect an extraneous candidate."
+      "explanation": "Squaring can remove sign information, so substitute both into the original equation. Here \\(\\sqrt{0}=0\\) and \\(\\sqrt{9}=3\\), so both work. A principal square root is nonnegative, which includes zero; checking only the squared equation cannot detect an extraneous candidate."
     }
   ],
   "math-functions": [
     {
-      "prompt": "f(x) = x² and g(x) = x + 3. What is f(g(2))?",
+      "prompt": "\\(f \\left(x\\right)=x^{2}\\) and \\(g \\left(x\\right)=x+3\\). What is f(g(2))?",
       "choices": [
         "7",
         "25",
         "20"
       ],
       "answer": 1,
-      "explanation": "Evaluate the inner function first: g(2)=5, then f(5)=25. Reversing the order gives g(f(2))=7; multiplying the separate outputs gives f(2)g(2)=20. Neither operation is the requested composition."
+      "explanation": "Evaluate the inner function first: \\(g \\left(2\\right)=5\\), then \\(f \\left(5\\right)=25\\). Reversing the order gives \\(g \\left(f \\left(2\\right)\\right)=7\\); multiplying the separate outputs gives \\(f \\left(2\\right) g \\left(2\\right)=20\\). Neither operation is the requested composition."
     },
     {
-      "prompt": "f(x) = √(x − 2)/(x − 5). Which domain restrictions must both hold?",
+      "prompt": "\\(f \\left(x\\right)=\\frac{\\sqrt{x-2}}{x-5}\\). Which domain restrictions must both hold?",
       "choices": [
-        "x ≥ 2 and x ≠ 5",
-        "x > 2 and x ≠ 5",
-        "x ≥ 2"
+        "\\(x\\ge 2\\) and \\(x\\ne 5\\)",
+        "\\(x>2\\) and \\(x\\ne 5\\)",
+        "\\(x\\ge 2\\)"
       ],
       "answer": 0,
-      "explanation": "The square root permits x=2 because its radicand can be zero. The denominator separately excludes x=5. The strict boundary wrongly removes x=2, while the unrestricted half-line wrongly includes the denominator zero."
+      "explanation": "The square root permits \\(x=2\\) because its radicand can be zero. The denominator separately excludes \\(x=5\\). The strict boundary wrongly removes \\(x=2\\), while the unrestricted half-line wrongly includes the denominator zero."
     },
     {
-      "prompt": "How does y = f(x − 4) + 2 move the graph of f?",
+      "prompt": "How does \\(y=f \\left(x-4\\right)+2\\) move the graph of f?",
       "choices": [
         "Left 4, up 2",
         "Right 4, up 2",
@@ -254,56 +254,56 @@
       "explanation": "The inside change x − 4 shifts inputs right by 4. The outside +2 shifts outputs up by 2."
     },
     {
-      "prompt": "f(x) = x² with domain x ≥ 0. Which inverse respects that branch?",
+      "prompt": "\\(f \\left(x\\right)=x^{2}\\) with domain \\(x\\ge 0\\). Which inverse respects that branch?",
       "choices": [
-        "f⁻¹(x) = √x",
-        "f⁻¹(x) = ±√x",
-        "f⁻¹(x) = −√x"
+        "\\(f^{-1} \\left(x\\right)=\\sqrt{x}\\)",
+        "\\(f^{-1} \\left(x\\right)=\\pm \\sqrt{x}\\)",
+        "\\(f^{-1} \\left(x\\right)=-\\sqrt{x}\\)"
       ],
       "answer": 0,
       "explanation": "The original outputs come from nonnegative inputs, so the inverse must return the nonnegative square root."
     },
     {
-      "prompt": "For y=(x²−16)/(x−4), what happens at x=4 in the original graph?",
+      "prompt": "For \\(y=\\frac{x^{2}-16}{x-4}\\), what happens at \\(x=4\\) in the original graph?",
       "choices": [
         "Cancellation fills the point at (4,8)",
         "There is a hole at (4,8)",
-        "There is a vertical asymptote at x=4"
+        "There is a vertical asymptote at \\(x=4\\)"
       ],
       "answer": 1,
-      "explanation": "Factor the numerator as (x−4)(x+4). The simplified line x+4 agrees only when x≠4, leaving the missing point (4,8). Since the simplified outputs approach the finite value 8, there is a hole rather than a vertical asymptote."
+      "explanation": "Factor the numerator as (x−4)(x+4). The simplified line x+4 agrees only when \\(x\\ne 4\\), leaving the missing point (4,8). Since the simplified outputs approach the finite value 8, there is a hole rather than a vertical asymptote."
     },
     {
-      "prompt": "A population is 3, 6, 12, 24 at times t=0,1,2,3. Which rule fits all four observations?",
+      "prompt": "A population is 3, 6, 12, 24 at times \\(t=0\\),1,2,3. Which rule fits all four observations?",
       "choices": [
-        "P(t)=3+3t",
-        "P(t)=3×2ᵗ",
-        "P(t)=3t²+3"
+        "\\(P \\left(t\\right)=3+3 t\\)",
+        "\\(P \\left(t\\right)=3\\times 2^{t}\\)",
+        "\\(P \\left(t\\right)=3 t^{2}+3\\)"
       ],
       "answer": 1,
-      "explanation": "Every one-unit step multiplies the previous value by 2, giving 3×2ᵗ. The other two rules match the first two observations but fail later: at t=2 they predict 9 and 15, respectively, rather than 12. Check every supplied point before extending a model."
+      "explanation": "Every one-unit step multiplies the previous value by 2, giving \\(3\\times 2^{t}\\). The other two rules match the first two observations but fail later: at \\(t=2\\) they predict 9 and 15, respectively, rather than 12. Check every supplied point before extending a model."
     },
     {
-      "prompt": "A graphing window with 0≤x≤3 shows one intersection of y=x² and y=4, at (2,4). Which step checks for all real intersections?",
+      "prompt": "A graphing window with \\(0\\le x\\le 3\\) shows one intersection of \\(y=x^{2}\\) and \\(y=4\\), at (2,4). Which step checks for all real intersections?",
       "choices": [
-        "Solve x²=4 and check the negative root outside the window",
-        "Expand only the positive side of the window to x=5",
-        "Substitute x=2 into both equations and stop because it works"
+        "Solve \\(x^{2}=4\\) and check the negative root outside the window",
+        "Expand only the positive side of the window to \\(x=5\\)",
+        "Substitute \\(x=2\\) into both equations and stop because it works"
       ],
       "answer": 0,
-      "explanation": "Solving x²=4 gives x=−2 and x=2; the current window hides the negative intersection (−2,4). Extending only the positive side still misses it. Verifying one intersection establishes that it works, not that it is the only solution."
+      "explanation": "Solving \\(x^{2}=4\\) gives \\(x=-2\\) and \\(x=2\\); the current window hides the negative intersection (−2,4). Extending only the positive side still misses it. Verifying one intersection establishes that it works, not that it is the only solution."
     }
   ],
   "math-statistics-probability": [
     {
       "prompt": "Ten students average 80; twenty students average 95. Which setup gives the combined mean?",
       "choices": [
-        "(80 + 95)/2",
-        "(10×80 + 20×95)/30",
-        "(20×80 + 10×95)/30"
+        "\\(\\frac{80+95}{2}\\)",
+        "\\(\\frac{10\\times 80+20\\times 95}{30}\\)",
+        "\\(\\frac{20\\times 80+10\\times 95}{30}\\)"
       ],
       "answer": 1,
-      "explanation": "Use each group size with its own mean: total score=10×80+20×95=2700 across 30 students, giving mean 90. Averaging the two means ignores unequal sizes; reversing the counts gives the higher-scoring group too little weight."
+      "explanation": "Use each group size with its own mean: total score=\\(10\\times 80+20\\times 95=2700\\) across 30 students, giving mean 90. Averaging the two means ignores unequal sizes; reversing the counts gives the higher-scoring group too little weight."
     },
     {
       "prompt": "The sorted data are 2, 3, 4, 5, 100. Which measure changes least if 100 becomes 1000?",
@@ -323,17 +323,17 @@
         "It becomes 3 times as large plus 7"
       ],
       "answer": 0,
-      "explanation": "Multiplication stretches distances from the mean by |3|. Adding a constant moves the whole set without changing spread."
+      "explanation": "Multiplication stretches distances from the mean by \\(\\lvert 3\\rvert\\). Adding a constant moves the whole set without changing spread."
     },
     {
       "prompt": "A deck has 30 cards. Twelve are red; of these, 3 are marked. Six black cards are also marked. Given that a selected card is red, what is the probability it is marked?",
       "choices": [
-        "3/30",
-        "3/12",
-        "3/9"
+        "\\(\\frac{3}{30}\\)",
+        "\\(\\frac{3}{12}\\)",
+        "\\(\\frac{3}{9}\\)"
       ],
       "answer": 1,
-      "explanation": "Condition on red cards: the denominator is the 12 red cards, of which 3 are marked, giving 3/12=1/4. Using 30 ignores the condition. Using the 9 marked cards reverses the conditional question and asks for red given marked."
+      "explanation": "Condition on red cards: the denominator is the 12 red cards, of which 3 are marked, giving \\(\\frac{3}{12}=\\frac{1}{4}\\). Using 30 ignores the condition. Using the 9 marked cards reverses the conditional question and asks for red given marked."
     },
     {
       "prompt": "A and B are independent with probabilities 0.3 and 0.4. What is P(A or B)?",
@@ -343,17 +343,17 @@
         "0.58"
       ],
       "answer": 2,
-      "explanation": "Add the two probabilities and subtract their overlap: 0.3 + 0.4 − (0.3×0.4) = 0.58. Independent events can still overlap."
+      "explanation": "Add the two probabilities and subtract their overlap: \\(0.3+0.4-\\left(0.3\\times 0.4\\right)=0.58\\). Independent events can still overlap."
     },
     {
       "prompt": "Three distinct prizes go to three of seven people, with nobody winning twice. Which count respects the prize assignments?",
       "choices": [
-        "7×6×5",
+        "\\(7\\times 6\\times 5\\)",
         "C(7,3)",
-        "7³"
+        "\\(7^{3}\\)"
       ],
       "answer": 0,
-      "explanation": "The distinct prizes identify three different positions. There are 7, then 6, then 5 eligible people, giving 210 assignments. C(7,3)=35 counts only groups and loses the prize assignment; 7³ permits the same person to win more than once."
+      "explanation": "The distinct prizes identify three different positions. There are 7, then 6, then 5 eligible people, giving 210 assignments. \\(C \\left(7,3\\right)=35\\) counts only groups and loses the prize assignment; \\(7^{3}\\) permits the same person to win more than once."
     },
     {
       "prompt": "Students volunteer for a study, then are randomly assigned to a treatment or control group with the same outcome measurement. Which conclusion does this design support?",
@@ -368,57 +368,57 @@
   ],
   "math-number-quantity": [
     {
-      "prompt": "What is √((-5)²)?",
+      "prompt": "What is \\(\\sqrt{\\left(-5\\right)^{2}}\\)?",
       "choices": [
         "−5",
         "5",
-        "±5"
+        "\\(\\pm 5\\)"
       ],
       "answer": 1,
       "explanation": "The square-root symbol gives the principal, nonnegative root. \\(\\sqrt{x^2}=|x|\\), so the answer is 5."
     },
     {
-      "prompt": "Can a 2×3 matrix multiply a 3×4 matrix, and what size is the result?",
+      "prompt": "Can \\(a 2\\times 3\\) matrix multiply \\(a 3\\times 4\\) matrix, and what size is the result?",
       "choices": [
-        "Yes: 2×4",
-        "Yes: 3×3",
+        "Yes: \\(2\\times 4\\)",
+        "Yes: \\(3\\times 3\\)",
         "No: the outer dimensions 2 and 4 must match"
       ],
       "answer": 0,
-      "explanation": "The inner dimensions match. The outer dimensions determine the product size: 2×4."
+      "explanation": "The inner dimensions match. The outer dimensions determine the product size: \\(2\\times 4\\)."
     },
     {
       "prompt": "A geometric sequence begins 3, 6, 12. Which expression is its nth term?",
       "choices": [
-        "3 + 2(n − 1)",
-        "3×2^(n − 1)",
-        "3×2^n"
+        "\\(3+2 \\left(n-1\\right)\\)",
+        "\\(3\\times 2^{n-1}\\)",
+        "\\(3\\times 2^{n}\\)"
       ],
       "answer": 1,
-      "explanation": "The ratio is 2, and the first term has exponent zero. Check n = 1 before accepting a formula."
+      "explanation": "The ratio is 2, and the first term has exponent zero. Check \\(n=1\\) before accepting a formula."
     },
     {
-      "prompt": "√(x − 4) = x − 6. Before squaring, which restriction is strongest?",
+      "prompt": "\\(\\sqrt{x-4}=x-6\\). Before squaring, which restriction is strongest?",
       "choices": [
-        "x ≥ 4",
-        "x ≥ 6",
-        "x ≠ 6"
+        "\\(x\\ge 4\\)",
+        "\\(x\\ge 6\\)",
+        "\\(x\\ne 6\\)"
       ],
       "answer": 1,
       "explanation": "The square root is nonnegative, so x − 6 must also be nonnegative. This includes the radicand restriction."
     },
     {
-      "prompt": "To simplify 1/(2 + i), what should multiply numerator and denominator?",
+      "prompt": "To simplify \\(\\frac{1}{2+i}\\), what should multiply numerator and denominator?",
       "choices": [
         "2 + i",
         "2 − i",
         "i"
       ],
       "answer": 1,
-      "explanation": "Use the complex conjugate. (2 + i)(2 − i) = 4 − i² = 5, giving (2 − i)/5."
+      "explanation": "Use the complex conjugate. \\(\\left(2+i\\right) \\left(2-i\\right)=4-i^{2}=5\\), giving \\(\\frac{2-i}{5}\\)."
     },
     {
-      "prompt": "A 2×2 matrix has determinant 0. What must you conclude about its inverse?",
+      "prompt": "A \\(2\\times 2\\) matrix has determinant 0. What must you conclude about its inverse?",
       "choices": [
         "It has no inverse",
         "Its inverse is the zero matrix",
@@ -428,14 +428,14 @@
       "explanation": "A zero determinant makes the matrix singular. Do not apply an inverse formula that divides by zero."
     },
     {
-      "prompt": "Which value equals i²⁰³⁰?",
+      "prompt": "Which value equals \\(i^{2030}\\)?",
       "choices": [
         "1",
         "−1",
         "i"
       ],
       "answer": 1,
-      "explanation": "Powers of i repeat every four. Since 2030=4×507+2, i²⁰³⁰=i²=−1. Reducing only to even versus odd does not distinguish i²=−1 from i⁴=1."
+      "explanation": "Powers of i repeat every four. Since \\(2030=4\\times 507+2\\), \\(i^{2030}=i^{2}=-1\\). Reducing only to even versus odd does not distinguish \\(i^{2}=-1\\) from \\(i^{4}=1\\)."
     }
   ],
   "math-essential-skills": [
@@ -447,7 +447,7 @@
         "102.89%"
       ],
       "answer": 1,
-      "explanation": "Multiply the successive factors: 1.17×0.83=0.9711, so 97.11% remains. Equal signed percentages do not cancel because their bases differ. The net change is −(0.17)²=−2.89%, not a positive 2.89%."
+      "explanation": "Multiply the successive factors: \\(1.17\\times 0.83=0.9711\\), so 97.11% remains. Equal signed percentages do not cancel because their bases differ. The net change is \\(-\\left(0.17\\right)^{2}=-2.89\\%\\), not a positive 2.89%."
     },
     {
       "prompt": "A trip covers equal distances at 36 mph and 72 mph. What is the average speed for the whole trip?",
@@ -457,7 +457,7 @@
         "60 mph"
       ],
       "answer": 1,
-      "explanation": "Use a convenient distance of 72 miles each way. Times are 2 hours and 1 hour, so average speed is 144/3=48 mph. The arithmetic mean 54 would apply to equal times, not equal distances. The 60 mph option reverses the time weights, assigning the longer time to the faster leg."
+      "explanation": "Use a convenient distance of 72 miles each way. Times are 2 hours and 1 hour, so average speed is \\(\\frac{144}{3}=48\\) mph. The arithmetic mean 54 would apply to equal times, not equal distances. The 60 mph option reverses the time weights, assigning the longer time to the faster leg."
     },
     {
       "prompt": "Combine 3 liters of a 12% solution with 2 liters of a 27% solution. Volumes add. What is the final concentration?",
@@ -467,14 +467,14 @@
         "21%"
       ],
       "answer": 1,
-      "explanation": "Solute is 3(0.12)+2(0.27)=0.90 liter in 5 liters, giving 18%. The unweighted mean 19.5% gives equal influence to unequal amounts. The 21% option reverses the volume weights. The larger amount of weaker solution pulls the correct mean toward 12%."
+      "explanation": "Solute is \\(3 \\left(0.12\\right)+2 \\left(0.27\\right)=0.90\\) liter in 5 liters, giving 18%. The unweighted mean 19.5% gives equal influence to unequal amounts. The 21% option reverses the volume weights. The larger amount of weaker solution pulls the correct mean toward 12%."
     },
     {
       "prompt": "After a 25% discount, a jacket costs $60. How do you recover the original price?",
       "choices": [
-        "$60×1.25",
-        "$60/0.75",
-        "$60/1.25"
+        "$\\(60\\times 1.25\\)",
+        "$\\(\\frac{60}{0.75}\\)",
+        "$\\(\\frac{60}{1.25}\\)"
       ],
       "answer": 1,
       "explanation": "The sale price is 75% of the original. Divide 60 by 0.75 to get $80."
@@ -487,24 +487,24 @@
         "288"
       ],
       "answer": 2,
-      "explanation": "Area requires squaring the linear conversion: 2 × 12² = 288 square inches."
+      "explanation": "Area requires squaring the linear conversion: \\(2\\times 12^{2}=288\\) square inches."
     },
     {
       "prompt": "One pipe fills a tank in 6 hours; a drain empties it in 12 hours. Which net rate applies while both run?",
       "choices": [
-        "1/6 + 1/12 tank per hour",
-        "1/6 − 1/12 tank per hour",
-        "6 − 12 hours"
+        "\\(\\frac{1}{6}+\\frac{1}{12}\\) tank per hour",
+        "\\(\\frac{1}{6}-\\frac{1}{12}\\) tank per hour",
+        "\\(6-12\\) hours"
       ],
       "answer": 1,
-      "explanation": "Work with rates and subtract the opposing flow. Net rate = 1/12 tank per hour, so filling takes 12 hours."
+      "explanation": "Work with rates and subtract the opposing flow. Net rate = \\(\\frac{1}{12}\\) tank per hour, so filling takes 12 hours."
     },
     {
       "prompt": "A calculation claims 0.8 meter equals 800 centimeters. Which calculation uses the stated unit relationship correctly?",
       "choices": [
-        "0.8×100=80 centimeters",
-        "0.8÷100=0.008 centimeter",
-        "0.8×1000=800 centimeters"
+        "\\(0.8\\times 100=80\\) centimeters",
+        "\\(0.8\\div 100=0.008\\) centimeter",
+        "\\(0.8\\times 1000=800\\) centimeters"
       ],
       "answer": 0,
       "explanation": "One meter equals 100 centimeters, so multiply by 100: 0.8 meter=80 centimeters. Division converts in the reverse direction. The factor 1000 would convert meters to millimeters, not centimeters."
@@ -515,21 +515,21 @@
       "prompt": "A ride costs $4 plus $2 per mile. Which expression is the total cost for m miles?",
       "choices": [
         "4m + 2",
-        "4 + 2m",
+        "\\(4+2 m\\)",
         "6m"
       ],
       "answer": 1,
-      "explanation": "The $4 fee occurs once. The $2 charge repeats per mile, so cost = 4 + 2m."
+      "explanation": "The $4 fee occurs once. The $2 charge repeats per mile, so cost = \\(4+2 m\\)."
     },
     {
       "prompt": "A value increases by 8% each year. Which model uses the correct repeated change?",
       "choices": [
-        "P(1+0.08t)",
-        "P(1.08)^t",
-        "P(0.08)^t"
+        "\\(P \\left(1+0.08 t\\right)\\)",
+        "\\(P \\left(1.08\\right)^{t}\\)",
+        "\\(P \\left(0.08\\right)^{t}\\)"
       ],
       "answer": 1,
-      "explanation": "An 8% increase repeats on the current value, multiplying it by 1.08 each year. P(1+0.08t) uses simple linear growth on the original amount. P(0.08)^t retains only 8% each year, modeling a rapid decline."
+      "explanation": "An 8% increase repeats on the current value, multiplying it by 1.08 each year. \\(P \\left(1+0.08 t\\right)\\) uses simple linear growth on the original amount. \\(P \\left(0.08\\right)^{t}\\) retains only 8% each year, modeling a rapid decline."
     },
     {
       "prompt": "A job pays $15/hour and you need at least $100. Hours must be whole numbers. What is the least number of hours?",
@@ -539,7 +539,7 @@
         "6.67"
       ],
       "answer": 1,
-      "explanation": "15h ≥ 100 gives h ≥ 6.67, but whole-number feasibility requires rounding up to 7."
+      "explanation": "\\(15 h\\ge 100\\) gives \\(h\\ge 6.67\\), but whole-number feasibility requires rounding up to 7."
     },
     {
       "prompt": "Shipping costs $5 for up to 2 kg, then $2 for each additional kilogram or part of one. What is the cost for 2.2 kg?",
@@ -552,34 +552,34 @@
       "explanation": "A partial additional kilogram counts as one full increment. The piecewise rule gives $5 + $2, not a continuous per-kilogram charge."
     },
     {
-      "prompt": "A projectile model is h(t)=−2t²+16t+3 for the time it is above the ground. Which calculation identifies its maximum height?",
+      "prompt": "A projectile model is \\(h \\left(t\\right)=-2 t^{2}+16 t+3\\) for the time it is above the ground. Which calculation identifies its maximum height?",
       "choices": [
         "Find the vertex’s output",
         "Find a zero",
-        "Evaluate at t = 0"
+        "Evaluate at \\(t=0\\)"
       ],
       "answer": 0,
-      "explanation": "The downward parabola reaches its maximum at vertex input t=−16/(2·−2)=4. The requested height is its output h(4)=35. A zero gives ground contact and h(0)=3 gives launch height; neither is the maximum height."
+      "explanation": "The downward parabola reaches its maximum at vertex input \\(t=\\frac{-16}{2\\cdot -2}=4\\). The requested height is its output \\(h \\left(4\\right)=35\\). A zero gives ground contact and \\(h \\left(0\\right)=3\\) gives launch height; neither is the maximum height."
     },
     {
       "prompt": "A line passes through (2, 7) and (5, 16). Which model fits?",
       "choices": [
-        "y = 3x + 1",
-        "y = 3x + 7",
-        "y = 9x − 11"
+        "\\(y=3 x+1\\)",
+        "\\(y=3 x+7\\)",
+        "\\(y=9 x-11\\)"
       ],
       "answer": 0,
-      "explanation": "Slope = (16 − 7)/(5 − 2) = 3. Substituting (2,7) gives intercept 1. Check the second point too."
+      "explanation": "Slope = \\(\\frac{16-7}{5-2}=3\\). Substituting (2,7) gives intercept 1. Check the second point too."
     },
     {
-      "prompt": "Whole-number quantities x,y satisfy 2x+y≤11 and x+2y≤11. Profit is 3x+2y dollars. Which nearby integer choice is feasible and earns the greatest profit?",
+      "prompt": "Whole-number quantities x,y satisfy \\(2 x+y\\le 11\\) and \\(x+2 y\\le 11\\). Profit is 3x+2y dollars. Which nearby integer choice is feasible and earns the greatest profit?",
       "choices": [
         "(4,4), profit $20",
         "(3,4), profit $17",
         "(4,3), profit $18"
       ],
       "answer": 2,
-      "explanation": "The pair (4,4) breaks both resource limits. Both (3,4) and (4,3) are feasible, but the latter earns more. For an upper bound, (4/3)(2x+y)+(1/3)(x+2y)=3x+2y≤55/3. Profit is an integer, so it is at most 18; (4,3) attains it. Check feasibility before rounding a continuous optimum."
+      "explanation": "The pair (4,4) breaks both resource limits. Both (3,4) and (4,3) are feasible, but the latter earns more. For an upper bound, \\(\\left(\\frac{4}{3}\\right) \\left(2 x+y\\right)+\\left(\\frac{1}{3}\\right) \\left(x+2 y\\right)=3 x+2 y\\le \\frac{55}{3}\\). Profit is an integer, so it is at most 18; (4,3) attains it. Check feasibility before rounding a continuous optimum."
     }
   ],
   "science-data-reading": [

@@ -34,13 +34,20 @@ test("every non-English concept has an authored prediction, valid feedback, and 
   for (const topic of getTopics()) {
     const lesson = getLesson(topic.slug);
     const original = activities[topic.slug as keyof typeof activities];
-    const focused = getLearningSkills(topic.slug).filter((skill) => skill.subject === "math");
+    const focused = getLearningSkills(topic.slug).filter(
+      (skill) => skill.subject === "math",
+    );
     assert.equal(
       lesson.sections.length,
       original.length + focused.length,
       `${topic.slug}: retain historical concepts and append exact Math methods`,
     );
-    assert.deepEqual(lesson.sections.slice(0, original.length).map((section) => section.activity), original);
+    assert.deepEqual(
+      lesson.sections
+        .slice(0, original.length)
+        .map((section) => section.activity),
+      original,
+    );
     for (const section of lesson.sections) {
       const activity = section.activity!;
       assert(activity, `${topic.slug}: ${section.heading}`);
@@ -61,13 +68,17 @@ test("every non-English concept has an authored prediction, valid feedback, and 
       count++;
     }
   }
-  assert.equal(count, 284, "141 retained concepts and 143 focused Math methods");
+  assert.equal(
+    count,
+    284,
+    "141 retained concepts and 143 focused Math methods",
+  );
 });
 test("worked predictions use correct geometry, trig, weighting, and interpolation", () => {
   const answer = (slug: keyof typeof activities, i: number) =>
     activities[slug][i].choices[activities[slug][i].answer];
   assert.equal(answer("math-geometry", 2), String(16 * 1.5 ** 3));
-  assert.equal(answer("math-geometry", 3), `${96 / 2}°`);
+  assert.equal(answer("math-geometry", 3), `\\(${96 / 2}^\\circ\\)`);
   assert.equal(answer("math-trigonometry", 2), String.raw`\(-\frac45\)`);
   assert.equal(
     answer("science-data-reading", 5),
@@ -185,5 +196,11 @@ test("saved feedback focus returns ahead of unrelated unread math", () => {
     blockUnits(plan.blocks.find((b) => b.subject === "math")!)[0].courseId,
     "math:math-trigonometry:skill:math-trigonometry-wave-features",
   );
-  assert(blockUnits(plan.blocks.find((b) => b.subject === "math")!)[0].questions.every((q) => q.skillId === "math-trigonometry-wave-features"));
+  assert(
+    blockUnits(
+      plan.blocks.find((b) => b.subject === "math")!,
+    )[0].questions.every(
+      (q) => q.skillId === "math-trigonometry-wave-features",
+    ),
+  );
 });

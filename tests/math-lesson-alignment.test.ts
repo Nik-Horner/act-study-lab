@@ -51,29 +51,49 @@ test("math unit titles describe the exact taught method after a saved-content re
 
 test("daily math assignments teach their specific formula, conditions, and interpretation", () => {
   const requirements = [
-    ["math-trigonometry-d6", /elevation/i, /tangent=opposite\/adjacent/],
+    [
+      "math-trigonometry-d6",
+      /elevation/i,
+      String.raw`\tan\theta=\frac{\text{opposite}}{\text{adjacent}}`,
+    ],
     [
       "math-statistics-probability-d14",
       /exactly k\s*successes/i,
-      /C\(n, k\).*p\^k/,
+      String.raw`C \left(n,k\right) p^{k}`,
     ],
     [
       "math-geometry-d6",
       /perpendicular distance/i,
-      /\|Ax₀\+By₀\+C\|\/√\(A²\+B²\)/,
+      String.raw`\frac{\lvert Ax_{0}+By_{0}+C\rvert }{\sqrt{A^{2}+B^{2}}}`,
     ],
-    ["math-geometry-d1", /trapezoid/i, /A=\(b₁\+b₂\)h\/2/],
-    ["math-geometry-d3", /Heron/, /s=\(a\+b\+c\)\/2/],
-    ["math-geometry-d14", /interior angle/i, /180\(n−2\)\/n/],
-    ["math-geometry-d2", /closed.*cylinder/i, /2π\s*rh\+2πr²/],
-    ["math-geometry-d16", /concentric circles/i, /π\(R²−r²\)/],
-    ["math-algebra-d18", /distance inequalities/i, /−a<u<a/],
+    [
+      "math-geometry-d1",
+      /trapezoid/i,
+      String.raw`A=\frac{\left(b_{1}+b_{2}\right) h}{2}`,
+    ],
+    ["math-geometry-d3", /Heron/, String.raw`s=\frac{a+b+c}{2}`],
+    [
+      "math-geometry-d14",
+      /interior angle/i,
+      String.raw`\frac{180 \left(n-2\right)}{n}`,
+    ],
+    [
+      "math-geometry-d2",
+      /closed.*cylinder/i,
+      String.raw`2 \pi  rh+2 \pi  r^{2}`,
+    ],
+    [
+      "math-geometry-d16",
+      /concentric circles/i,
+      String.raw`\pi  \left(R^{2}-r^{2}\right)`,
+    ],
+    ["math-algebra-d18", /distance inequalities/i, String.raw`-a<u<a`],
     [
       "math-algebra-d14",
       /common denominator/i,
       /reciprocal of the entire denominator/i,
     ],
-    ["math-functions-d6", /arithmetic sequence/i, /a_n=a₀\+nd/],
+    ["math-functions-d6", /arithmetic sequence/i, String.raw`a_{n}=a_{0}+nd`],
     [
       "math-functions-d5",
       /positivity.*original argument/i,
@@ -101,7 +121,14 @@ test("daily math assignments teach their specific formula, conditions, and inter
           ...(s.examples ?? []).map((e) => e.text),
         ])
         .join(" ");
-      for (const method of methods) assert.match(text, method, id);
+      for (const method of methods) {
+        if (typeof method === "string")
+          assert(
+            text.replace(/\s+/g, "").includes(method.replace(/\s+/g, "")),
+            id,
+          );
+        else assert.match(text, method, id);
+      }
       assert.deepEqual(
         scope.sections,
         getQuestionTeaching(q.topic, id)!.teachingSections,

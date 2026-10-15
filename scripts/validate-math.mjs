@@ -552,7 +552,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q26",
-    correct: "\\(-3\\) < x < 2",
+    correct: "\\(-3\\) < \\(x<2\\)",
     calculate: () => [-4, 0, 3].map((x) => (x - 2) * (x + 3) < 0),
     expected: [false, true, false],
   },
@@ -700,7 +700,7 @@ const answerChecks = [
   },
   {
     id: "check-math-functions-2",
-    correct: "x ≠ 6",
+    correct: "\\(x\\ne 6\\)",
     calculate: () => [1 / (5 - 6), 1 / (7 - 6), 6 - 6],
     expected: [-1, 1, 0],
   },
@@ -712,7 +712,7 @@ const answerChecks = [
   },
   {
     id: "check-math-geometry-2",
-    correct: "40°",
+    correct: "\\(40^\\circ\\)",
     calculate: () => 80 / 2,
     expected: 40,
   },
@@ -832,7 +832,7 @@ const answerChecks = [
   },
   {
     id: "math-algebra-d15",
-    correct: "x > 2",
+    correct: "\\(x>2\\)",
     calculate: () => [1 / (1 - 2) > 0, 1 / (3 - 2) > 0],
     expected: [false, true],
   },
@@ -850,7 +850,7 @@ const answerChecks = [
   },
   {
     id: "math-algebra-d18",
-    correct: "1 < x < 7",
+    correct: "\\(1<x<7\\)",
     calculate: () => [0, 4, 8].map((x) => Math.abs(x - 4) < 3),
     expected: [false, true, false],
   },
@@ -1257,7 +1257,7 @@ const answerChecks = [
   },
   {
     id: "math-modeling-d8",
-    correct: "x > 12",
+    correct: "\\(x>12\\)",
     calculate: () => [30 + 11 < 18 + 2 * 11, 30 + 13 < 18 + 2 * 13],
     expected: [false, true],
   },
@@ -1518,7 +1518,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q20",
-    correct: "40 km/h",
+    correct: "\\(\\frac{40 \\text{km}}{h}\\)",
     calculate: () => (45 + 15) / (45 / 45 + 15 / 30),
     expected: 40,
   },
@@ -1590,7 +1590,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q32",
-    correct: "k > 2",
+    correct: "\\(k>2\\)",
     calculate: () => [16 - 8 * 1, 16 - 8 * 2, 16 - 8 * 3],
     expected: [8, 0, -8],
   },

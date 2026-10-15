@@ -9,12 +9,12 @@
         "body": [
           "In \\(f(3)\\), replace every variable with 3. Use parentheses when the input is negative or contains several terms. If different input ranges use different formulas, first choose the formula for your original input.",
           "In \\(f(g(x))\\), evaluate the inner function first, then feed its output into the outer function. This process is called composition; it does not mean multiplying the functions. The order usually changes the result; square the entire substituted expression.",
-          "A function may take more than one input: F(x,y)=x²+3y substitutes both values, so F(−2,5)=4+15=19. A recursive sequence defines a term from an earlier term and needs a starting value. If b₀=2 and \\(b_{n+1}=2b_n-n\\), then b₁=4, b₂=7, b₃=12. Use the stated index at each step; a recurrence is not the same as an explicit n-th-term formula."
+          "A function may take more than one input: \\(F \\left(x,y\\right)=x^{2}+3 y\\) substitutes both values, so \\(F \\left(-2,5\\right)=4+15=19\\). A recursive sequence defines a term from an earlier term and needs a starting value. If \\(b_{0}=2\\) and \\(b_{n+1}=2b_n-n\\), then \\(b_{1}=4\\), \\(b_{2}=7\\), \\(b_{3}=12\\). Use the stated index at each step; a recurrence is not the same as an explicit n-th-term formula."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "Let f(x)=x²−2 and g(x)=3x+2. At input 1, g(1)=5 and f(g(1))=23. Reversing the order gives f(1)=−1 and g(f(1))=−1. Substitution order changes the result; it is not a product of outputs.",
+            "text": "Let \\(f \\left(x\\right)=x^{2}-2\\) and \\(g \\left(x\\right)=3 x+2\\). At input 1, \\(g \\left(1\\right)=5\\) and \\(f \\left(g \\left(1\\right)\\right)=23\\). Reversing the order gives \\(f \\left(1\\right)=-1\\) and \\(g \\left(f \\left(1\\right)\\right)=-1\\). Substitution order changes the result; it is not a product of outputs.",
             "good": true
           }
         ],
@@ -29,7 +29,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "For \\(f(x)=\\frac1{x-4}\\) and \\(g(x)=\\sqrt{x+2}\\), the square root needs x≥−2, while its output cannot equal 4. Thus x=14 is excluded. At x=−2 the denominator is −4, so the complete domain is x≥−2, x≠14.",
+            "text": "For \\(f(x)=\\frac1{x-4}\\) and \\(g(x)=\\sqrt{x+2}\\), the square root needs \\(x\\ge -2\\), while its output cannot equal 4. Thus \\(x=14\\) is excluded. At \\(x=-2\\) the denominator is −4, so the complete domain is \\(x\\ge -2\\), \\(x\\ne 14\\).",
             "good": true
           }
         ],
@@ -45,7 +45,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "Let f(x)=(x+4)²−1 and g(x)=3f(2x−2)+5. The original vertex input −4 is reached when 2x−2=−4, giving x=−1. The vertex output becomes 3(−1)+5=2. Therefore the new vertex is (−1,2); both coordinates must be transformed.",
+            "text": "Let \\(f \\left(x\\right)=\\left(x+4\\right)^{2}-1\\) and \\(g \\left(x\\right)=3 f \\left(2 x-2\\right)+5\\). The original vertex input −4 is reached when \\(2 x-2=-4\\), giving \\(x=-1\\). The vertex output becomes \\(3 \\left(-1\\right)+5=2\\). Therefore the new vertex is (−1,2); both coordinates must be transformed.",
             "good": true
           }
         ],
@@ -61,7 +61,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "For f(x)=(x+3)²−2 restricted to x≤−3, finding f⁻¹(14) gives (x+3)²=16. The candidates are 1 and −7; only −7 is permitted. Check f(−7)=16−2=14. Choosing a square-root sign without the domain would give the wrong branch.",
+            "text": "For \\(f \\left(x\\right)=\\left(x+3\\right)^{2}-2\\) restricted to \\(x\\le -3\\), finding f⁻¹(14) gives \\(\\left(x+3\\right)^{2}=16\\). The candidates are 1 and −7; only −7 is permitted. Check \\(f \\left(-7\\right)=16-2=14\\). Choosing a square-root sign without the domain would give the wrong branch.",
             "good": true
           }
         ],
@@ -77,7 +77,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "For \\(\\frac{x^2-25}{x-5}\\), cancellation gives x+5 for x≠5, leaving a hole at (5,10). Separately, for f(x)=x²−2x from x=1 to x=4, outputs −1 and 8 give average rate \\(\\frac{8-(-1)}{4-1}=3\\). A hole is a missing point; a rate uses two different inputs.",
+            "text": "For \\(\\frac{x^2-25}{x-5}\\), cancellation gives x+5 for \\(x\\ne 5\\), leaving a hole at (5,10). Separately, for \\(f \\left(x\\right)=x^{2}-2 x\\) from \\(x=1\\) to \\(x=4\\), outputs −1 and 8 give average rate \\(\\frac{8-(-1)}{4-1}=3\\). A hole is a missing point; a rate uses two different inputs.",
             "good": true
           }
         ],
@@ -88,14 +88,14 @@
         "body": [
           "For equal input steps, a linear pattern adds the same amount each time. An exponential pattern multiplies by the same amount each time. In \\(ab^t\\), a is the initial value and b the multiplier per input unit. A gap of several units produces a power of b; a half-life exponent counts how many times the amount halves.",
           "\\(\\log_b u=v\\) means \\(u=b^v\\). For positive expressions inside the logarithms, \\(\\log_b(uv)=\\log_b u+\\log_b v\\) and \\(\\log_b(u^p)=p\\log_b u\\). These rules do not split a sum. The base is positive and not 1.",
-          "An arithmetic sequence adds the same difference d each step: \\(a_n=a_0+nd\\), or \\(a_n=a_1+(n-1)d\\) when indexing starts at 1. For a₀=55 and a₁=48, d=−7, so a₅=55−35=20. Count jumps from the given starting index.",
-          "Every original logarithm argument must be positive. For \\(\\log_3(x-2)+\\log_3(x+2)=2\\), require x>2. Then (x−2)(x+2)=9 gives x²=13, and the sole valid root is x=√13 after checking the original domain. A combined logarithm may admit extra candidates that the separate arguments forbid.",
-          "Inverse variation has \\(y=k/x\\), so \\(xy=k\\) and \\(x\\ne0\\). If y=9 when x=4, then k=36 and y=6 when x=6. For positive u,v and valid base b, logarithm division becomes subtraction: \\(\\log_b(u/v)=\\log_bu-\\log_bv\\). Change of base is \\(\\log_bu=\\frac{\\ln u}{\\ln b}\\), with \\(b>0\\), \\(b\\ne1\\), and \\(u>0\\)."
+          "An arithmetic sequence adds the same difference d each step: \\(a_n=a_0+nd\\), or \\(a_n=a_1+(n-1)d\\) when indexing starts at 1. For \\(a_{0}=55\\) and \\(a_{1}=48\\), \\(d=-7\\), so \\(a_{5}=55-35=20\\). Count jumps from the given starting index.",
+          "Every original logarithm argument must be positive. For \\(\\log_3(x-2)+\\log_3(x+2)=2\\), require \\(x>2\\). Then \\(\\left(x-2\\right) \\left(x+2\\right)=9\\) gives \\(x^{2}=13\\), and the sole valid root is \\(x=\\sqrt{13}\\) after checking the original domain. A combined logarithm may admit extra candidates that the separate arguments forbid.",
+          "Inverse variation has \\(y=k/x\\), so \\(xy=k\\) and \\(x\\ne0\\). If \\(y=9\\) when \\(x=4\\), then \\(k=36\\) and \\(y=6\\) when \\(x=6\\). For positive u,v and valid base b, logarithm division becomes subtraction: \\(\\log_b(u/v)=\\log_bu-\\log_bv\\). Change of base is \\(\\log_bu=\\frac{\\ln u}{\\ln b}\\), with \\(b>0\\), \\(b\\ne1\\), and \\(u>0\\)."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "If f(1)=15 and f(4)=405 for f(t)=abᵗ with a,b>0, dividing gives b³=27, so b=3 and a=15/3=5. The initial value is 5, even though it was not observed at t=0. Also log₃(x+2)=2 gives x=7, after checking its argument is positive.",
+            "text": "If \\(f \\left(1\\right)=15\\) and \\(f \\left(4\\right)=405\\) for \\(f \\left(t\\right)=ab^{t}\\) with a,\\(b>0\\), dividing gives \\(b^{3}=27\\), so \\(b=3\\) and \\(a=\\frac{15}{3}=5\\). The initial value is 5, even though it was not observed at \\(t=0\\). Also \\(\\log _{3}\\left(x+2\\right)=2\\) gives \\(x=7\\), after checking its argument is positive.",
             "good": true
           }
         ],
@@ -111,7 +111,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "For f(x)=4x−3, evaluate f(f⁻¹(9)−2) from the inside: f⁻¹(9)=3, then the outer input is 1 and f(1)=1. The inverse cannot cancel across the subtraction inside the outer function. Verify the inverse step with f(3)=9.",
+            "text": "For \\(f \\left(x\\right)=4 x-3\\), evaluate f(f⁻¹(9)−2) from the inside: \\(f^{-1} \\left(9\\right)=3\\), then the outer input is 1 and \\(f \\left(1\\right)=1\\). The inverse cannot cancel across the subtraction inside the outer function. Verify the inverse step with \\(f \\left(3\\right)=9\\).",
             "good": true
           }
         ],
@@ -125,7 +125,7 @@
         "subject": "math",
         "category": "Functions and graphs",
         "difficulty": "easy",
-        "stem": "f(x) = x² + 3x.",
+        "stem": "\\(f \\left(x\\right)=x^{2}+3 x\\).",
         "questionText": "What is f(2)?",
         "choices": [
           "8",
@@ -134,7 +134,7 @@
           "16"
         ],
         "answer": 1,
-        "explanation": "Substitute 2 into both terms: f(2) = 2² + 3(2) = 4 + 6 = 10. Squaring applies only to the first x² term; grouping the whole sum before squaring changes the function."
+        "explanation": "Substitute 2 into both terms: \\(f \\left(2\\right)=2^{2}+3 \\left(2\\right)=4+6=10\\). Squaring applies only to the first \\(x^{2}\\) term; grouping the whole sum before squaring changes the function."
       },
       {
         "id": "check-math-functions-2",
@@ -142,16 +142,16 @@
         "subject": "math",
         "category": "Functions and graphs",
         "difficulty": "medium",
-        "stem": "f(x) = 1/(x − 6).",
+        "stem": "\\(f \\left(x\\right)=\\frac{1}{x-6}\\).",
         "questionText": "Which condition gives its real domain?",
         "choices": [
-          "x ≥ 6",
-          "x ≠ −6",
-          "x ≠ 6",
-          "x > 6"
+          "\\(x\\ge 6\\)",
+          "\\(x\\ne -6\\)",
+          "\\(x\\ne 6\\)",
+          "\\(x>6\\)"
         ],
         "answer": 2,
-        "explanation": "The denominator x − 6 must not equal zero, so only x = 6 is excluded. Both positive and negative nonzero denominators are allowed. Requiring a positive denominator adds a restriction that the function does not have."
+        "explanation": "The denominator x − 6 must not equal zero, so only \\(x=6\\) is excluded. Both positive and negative nonzero denominators are allowed. Requiring a positive denominator adds a restriction that the function does not have."
       },
       {
         "id": "check-math-functions-3",
@@ -159,7 +159,7 @@
         "subject": "math",
         "category": "Functions and graphs",
         "difficulty": "medium",
-        "stem": "f(x) = (x − 1)² + 4, restricted to x ≥ 1.",
+        "stem": "\\(f \\left(x\\right)=\\left(x-1\\right)^{2}+4\\), restricted to \\(x\\ge 1\\).",
         "questionText": "What is f⁻¹(13)?",
         "choices": [
           "10",
@@ -168,7 +168,7 @@
           "3"
         ],
         "answer": 1,
-        "explanation": "Solving (x − 1)² + 4 = 13 gives x − 1 = ±3, so x = 4 or −2. The domain restriction x ≥ 1 selects 4. Verify f(4) = 9 + 4 = 13. An inverse value must use the original function’s permitted branch."
+        "explanation": "Solving \\(\\left(x-1\\right)^{2}+4=13\\) gives \\(x-1=\\pm 3\\), so \\(x=4\\) or −2. The domain restriction \\(x\\ge 1\\) selects 4. Verify \\(f \\left(4\\right)=9+4=13\\). An inverse value must use the original function’s permitted branch."
       }
     ]
   },
@@ -181,7 +181,7 @@
         "heading": "1. Translate the diagram and protect units",
         "body": [
           "Mark the given measurements and the requested quantity. Height must meet the base at a right angle; a slanted side is not the height. Areas: triangle \\(\\frac{bh}{2}\\), parallelogram \\(bh\\), trapezoid \\(\\frac{(b_1+b_2)h}{2}\\).",
-          "Convert mixed units before calculating. Length uses units such as cm; area uses cm²; volume uses cm³. If a shape is built from several pieces, add what is included and subtract what is removed."
+          "Convert mixed units before calculating. Length uses units such as cm; area uses \\(\\text{cm}^{2}\\); volume uses \\(\\text{cm}^{3}\\). If a shape is built from several pieces, add what is included and subtract what is removed."
         ],
         "examples": [
           {
@@ -197,15 +197,15 @@
         "body": [
           "For a right triangle, find the hypotenuse—the side opposite the right angle— and use \\(a^2+b^2=c^2\\). Recognize side lengths 3–4–5, 5–12–13, and 8–15–17, including sets multiplied by the same number. Special triangles have sides \\(x,x,x\\sqrt2\\) for 45–45–90 and \\(x,x\\sqrt3,2x\\) for 30–60–90; confirm the angles first.",
           "A triangle’s third side must be longer than the difference of the other two and shorter than their sum: \\(|a-b|<x<a+b\\). A line splitting an angle in half divides the opposite side in the ratio of the two sides touching that angle, not always equally.",
-          "With three known sides, Heron’s formula gives area \\(\\sqrt{s(s-a)(s-b)(s-c)}\\), where \\(s=\\frac{a+b+c}{2}\\). For sides 5,5,6, s=8 and area=√(8·3·3·2)=12. The altitude to the 6-unit base is 4, independently confirming area 6·4/2=12.",
+          "With three known sides, Heron’s formula gives area \\(\\sqrt{s(s-a)(s-b)(s-c)}\\), where \\(s=\\frac{a+b+c}{2}\\). For sides 5,5,6, \\(s=8\\) and \\(\\text{area}=\\sqrt{8\\cdot 3\\cdot 3\\cdot 2}=12\\). The altitude to the 6-unit base is 4, independently confirming area \\(\\frac{6\\cdot 4}{2}=12\\).",
           "A regular polygon has equal sides and angles. With n sides, each interior angle (inside angle) is \\(\\frac{180(n-2)}n\\) degrees and each outside (exterior) angle is \\(\\frac{360}n\\) degrees. Exterior angles sum to 360 degrees.",
-          "Parallel lines cut by a transversal have equal corresponding and alternate interior angles; same-side interior angles sum to 180°. A triangle’s angles sum to 180°, and equal sides face equal angles. If two equal angles are each x and the third is 40°, then 2x+40=180 gives x=70°. Triangles are congruent under SSS, SAS, ASA/AAS, or right-triangle hypotenuse-leg; equal angles alone establish similarity, not equal size. A rectangle has two reflection axes; a nonsquare rhombus has its two diagonals as axes; a general parallelogram has half-turn symmetry but no reflection axis.",
-          "A median joins a vertex to the opposite midpoint; the three medians meet at the centroid, which is 2/3 of each median from the vertex. In coordinates it is \\((\\frac{x_1+x_2+x_3}3,\\frac{y_1+y_2+y_3}3)\\). The incenter is the intersection of angle bisectors, not medians: its radius is r=area/semiperimeter. A right triangle with legs 5,12 has hypotenuse 13, area 30, semiperimeter 15, and inradius 2. Its circumcenter is the hypotenuse midpoint, with circumradius 13/2. Keep the centers and radii distinct."
+          "Parallel lines cut by a transversal have equal corresponding and alternate interior angles; same-side interior angles sum to \\(180^\\circ\\). A triangle’s angles sum to \\(180^\\circ\\), and equal sides face equal angles. If two equal angles are each x and the third is \\(40^\\circ\\), then \\(2 x+40=180\\) gives \\(x=70^\\circ\\). Triangles are congruent under SSS, SAS, ASA/AAS, or right-triangle hypotenuse-leg; equal angles alone establish similarity, not equal size. A rectangle has two reflection axes; a nonsquare rhombus has its two diagonals as axes; a general parallelogram has half-turn symmetry but no reflection axis.",
+          "A median joins a vertex to the opposite midpoint; the three medians meet at the centroid, which is \\(\\frac{2}{3}\\) of each median from the vertex. In coordinates it is \\((\\frac{x_1+x_2+x_3}3,\\frac{y_1+y_2+y_3}3)\\). The incenter is the intersection of angle bisectors, not medians: its radius is r=area/semiperimeter. A right triangle with legs 5,12 has hypotenuse 13, area 30, semiperimeter 15, and inradius 2. Its circumcenter is the hypotenuse midpoint, with circumradius \\(\\frac{13}{2}\\). Keep the centers and radii distinct."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "An equilateral triangle of side 8 has altitude 4√3, found from a right triangle with hypotenuse 8 and short leg 4. Its area is \\(8(4\\sqrt3)/2=16\\sqrt3\\). For sides 6,11 and integer x, the strict triangle interval 5<x<17 gives eleven values, 6 through 16.",
+            "text": "An equilateral triangle of side 8 has altitude \\(4 \\sqrt{3}\\), found from a right triangle with hypotenuse 8 and short leg 4. Its area is \\(8(4\\sqrt3)/2=16\\sqrt3\\). For sides 6,11 and integer x, the strict triangle interval \\(5<x<17\\) gives eleven values, 6 through 16.",
             "good": true
           }
         ],
@@ -220,7 +220,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "Similar triangles with areas 16 and 49 have length ratio 4:7. A smaller perimeter of 20 therefore becomes 35. Similar solids with lengths in ratio 2:5 and smaller volume 24 have larger volume \\(24(5/2)^3=375\\); the volume multiplier is 125/8, not 5/2.",
+            "text": "Similar triangles with areas 16 and 49 have length ratio 4:7. A smaller perimeter of 20 therefore becomes 35. Similar solids with lengths in ratio 2:5 and smaller volume 24 have larger volume \\(24(5/2)^3=375\\); the volume multiplier is \\(\\frac{125}{8}\\), not \\(\\frac{5}{2}\\).",
             "good": true
           }
         ],
@@ -229,17 +229,17 @@
       {
         "heading": "4. Circle angles, chords, tangents, and secants",
         "body": [
-          "An arc is part of a circle’s edge. Find the arc between the angle’s arms. An angle at the center equals the arc’s angle measure; an angle on the edge is half as large. A tangent touches the circle once, at a right angle to the radius. A chord joins two edge points; a line from the center meeting it at 90° cuts it in half.",
+          "An arc is part of a circle’s edge. Find the arc between the angle’s arms. An angle at the center equals the arc’s angle measure; an angle on the edge is half as large. A tangent touches the circle once, at a right angle to the radius. A chord joins two edge points; a line from the center meeting it at \\(90^\\circ\\) cuts it in half.",
           "A secant crosses the circle at two points. Multiply the right lengths: crossing chords give part × part on each chord; two secants from an outside point give outside part × whole length; tangent and secant give \\(\\text{tangent}^2=\\text{external}\\times\\text{whole}\\). Add outside and inside portions to get the whole secant.",
-          "For θ in degrees, arc length is \\(\\frac\\theta{360}\\times2\\pi r\\). Radius 12 and angle 75° give \\(\\frac{75}{360}\\times24\\pi=5\\pi\\). Arc measure is an angle; arc length is a distance. A complete circumference supplies a useful upper bound.",
-          "Tangents and half-chords form right triangles. Radius 8 and center-to-external-point distance 17 give tangent √(17²−8²)=15. Radius 10 and center-to-chord distance 8 give half-chord 6, so the chord is 12. The radius to a tangency point is perpendicular to the tangent, while the center’s perpendicular bisects a chord.",
-          "For θ in degrees, a sector has area \\(\\frac\\theta{360}\\pi r^2\\). In radians, arc length is \\(r\\theta\\) and sector area is \\(\\frac12r^2\\theta\\). For radius 6 and angle \\(\\pi/3\\), arc length is \\(2\\pi\\) and sector area is \\(6\\pi\\); one is a length and the other an area.",
-          "Opposite angles in a quadrilateral with all vertices on a circle sum to 180°: an angle of 112° forces its opposite to be 68°. For angles formed by two chords crossing inside, use half the sum of intercepted opposite arcs. For an angle outside formed by two secants or tangents, use half the difference of the intercepted arcs. A tangent-chord angle has half its intercepted arc. First locate the angle’s vertex; this determines which rule applies."
+          "For \\(\\theta\\) in degrees, arc length is \\(\\frac\\theta{360}\\times2\\pi r\\). Radius 12 and angle \\(75^\\circ\\) give \\(\\frac{75}{360}\\times24\\pi=5\\pi\\). Arc measure is an angle; arc length is a distance. A complete circumference supplies a useful upper bound.",
+          "Tangents and half-chords form right triangles. Radius 8 and center-to-external-point distance 17 give tangent \\(\\sqrt{17^{2}-8^{2}}=15\\). Radius 10 and center-to-chord distance 8 give half-chord 6, so the chord is 12. The radius to a tangency point is perpendicular to the tangent, while the center’s perpendicular bisects a chord.",
+          "For \\(\\theta\\) in degrees, a sector has area \\(\\frac\\theta{360}\\pi r^2\\). In radians, arc length is \\(r\\theta\\) and sector area is \\(\\frac12r^2\\theta\\). For radius 6 and angle \\(\\pi/3\\), arc length is \\(2\\pi\\) and sector area is \\(6\\pi\\); one is a length and the other an area.",
+          "Opposite angles in a quadrilateral with all vertices on a circle sum to \\(180^\\circ\\): an angle of \\(112^\\circ\\) forces its opposite to be \\(68^\\circ\\). For angles formed by two chords crossing inside, use half the sum of intercepted opposite arcs. For an angle outside formed by two secants or tangents, use half the difference of the intercepted arcs. A tangent-chord angle has half its intercepted arc. First locate the angle’s vertex; this determines which rule applies."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "A radius-17 circle has a chord 8 units from its center. Half the chord is \\(\\sqrt{17^2-8^2}=15\\), so the chord is 30. For a tangent and secant with outside segment 5 and inside segment 4, the whole is 9: tangent²=5(9)=45 and tangent=3√5. Distinguish half, inside, and whole lengths.",
+            "text": "A radius-17 circle has a chord 8 units from its center. Half the chord is \\(\\sqrt{17^2-8^2}=15\\), so the chord is 30. For a tangent and secant with outside segment 5 and inside segment 4, the whole is 9: \\(t^2=5 \\left(9\\right)=45\\) and tangent=\\(3 \\sqrt{5}\\). Distinguish half, inside, and whole lengths.",
             "good": true
           }
         ],
@@ -252,13 +252,13 @@
           "Between \\((x_1,y_1)\\) and \\((x_2,y_2)\\), distance is \\(\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\\). For the point halfway between them, average the x-values and then the y-values. A missing endpoint is twice the midpoint minus the known endpoint. Put negative coordinates in parentheses.",
           "Slope is change in y divided by change in x. Parallel lines run in the same direction and share slopes. Lines at right angles have slopes that multiply to −1, unless one line is vertical. Handle horizontal and vertical lines separately. For area, look for a horizontal or vertical base with an easy height at a right angle to the base.",
           "The shortest, perpendicular distance from \\((x_0,y_0)\\) to \\(Ax+By+C=0\\) is \\(\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}\\). Put zero on the right first. From the origin to \\(3x+4y=20\\), distance is \\(\\frac{|-20|}{\\sqrt{3^2+4^2}}=4\\).",
-          "A circle has equation \\((x-h)^2+(y-k)^2=r^2\\). Complete the square in both coordinates: \\(x^2+y^2+4x-10y+20=0\\) becomes \\((x+2)^2+(y-5)^2=9\\), with center (−2,5) and radius 3. For rotations about the origin: 90° counterclockwise sends \\((x,y)\\to(-y,x)\\); 180° sends \\((-x,-y)\\); 90° clockwise sends \\((y,-x)\\). For another center, subtract its coordinates, rotate, then add them back.",
-          "Reflect across the x-axis using \\((x,-y)\\), the y-axis using \\((-x,y)\\), or \\(y=x\\) using \\((y,x)\\). Across \\(x=h\\), use \\((2h-x,y)\\). Thus reflecting (7,1) across x=2 gives (−3,1). A dilation centered at (h,k) multiplies the displacement from that center by the scale factor."
+          "A circle has equation \\((x-h)^2+(y-k)^2=r^2\\). Complete the square in both coordinates: \\(x^2+y^2+4x-10y+20=0\\) becomes \\((x+2)^2+(y-5)^2=9\\), with center (−2,5) and radius 3. For rotations about the origin: \\(90^\\circ\\) counterclockwise sends \\((x,y)\\to(-y,x)\\); \\(180^\\circ\\) sends \\((-x,-y)\\); \\(90^\\circ\\) clockwise sends \\((y,-x)\\). For another center, subtract its coordinates, rotate, then add them back.",
+          "Reflect across the x-axis using \\((x,-y)\\), the y-axis using \\((-x,y)\\), or \\(y=x\\) using \\((y,x)\\). Across \\(x=h\\), use \\((2h-x,y)\\). Thus reflecting (7,1) across \\(x=2\\) gives (−3,1). A dilation centered at (h,k) multiplies the displacement from that center by the scale factor."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "If A=(−3,8) and midpoint M=(2,1), the other endpoint is B=2M−A=(7,−6); averaging A and B recovers M. Vectors (5,1) and (−2,4) span a parallelogram of area |5·4−1(−2)|=22, using perpendicular height rather than multiplying slanted side lengths.",
+            "text": "If \\(A=\\left(-3,8\\right)\\) and midpoint \\(M=\\left(2,1\\right)\\), the other endpoint is \\(B=2 M-A=\\left(7,-6\\right)\\); averaging A and B recovers M. Vectors (5,1) and (−2,4) span a parallelogram of area \\(\\lvert 5\\cdot 4-1 \\left(-2\\right)\\rvert =22\\), using perpendicular height rather than multiplying slanted side lengths.",
             "good": true
           }
         ],
@@ -276,7 +276,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "A square inscribed in a circle of area 49π has radius 7 and diagonal 14. Since diagonal²=2·side², its area is 14²/2=98. For a right cone of radius 2 and height 6, volume is \\(\\pi(2^2)(6)/3=8\\pi\\). The circle diagonal and cone height are different geometric roles.",
+            "text": "A square inscribed in a circle of area \\(49 \\pi\\) has radius 7 and diagonal 14. Since \\(d^2=2s^2\\), its area is \\(\\frac{14^{2}}{2}=98\\). For a right cone of radius 2 and height 6, volume is \\(\\pi(2^2)(6)/3=8\\pi\\). The circle diagonal and cone height are different geometric roles.",
             "good": true
           }
         ],
@@ -292,7 +292,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "A regular 12-sided polygon has interior-angle sum (12−2)180°=1800°, so each interior angle is 150°. Each exterior angle is 360°/12=30°, confirming 150°+30°=180°. This check distinguishes a single angle from the total angle sum.",
+            "text": "A regular 12-sided polygon has interior-angle sum \\(\\left(12-2\\right) 180^\\circ =1800^\\circ\\), so each interior angle is \\(150^\\circ\\). Each exterior angle is \\(\\frac{360^\\circ }{12}=30^\\circ\\), confirming \\(150^\\circ +30^\\circ =180^\\circ\\). This check distinguishes a single angle from the total angle sum.",
             "good": true
           }
         ],
@@ -315,7 +315,7 @@
           "38 square units"
         ],
         "answer": 0,
-        "explanation": "Use A = \\(\\frac{bh}{2}\\) = 12(7)/2 = 42. A triangle occupies half of a parallelogram with the same base and height. Multiplying base and height without halving gives 84."
+        "explanation": "Use A = \\(\\frac{bh}{2}=\\frac{12 \\left(7\\right)}{2}=42\\). A triangle occupies half of a parallelogram with the same base and height. Multiplying base and height without halving gives 84."
       },
       {
         "id": "check-math-geometry-2",
@@ -323,16 +323,16 @@
         "subject": "math",
         "category": "Geometry",
         "difficulty": "medium",
-        "stem": "A central angle of 80° and an inscribed angle intercept the same arc.",
+        "stem": "A central angle of \\(80^\\circ\\) and an inscribed angle intercept the same arc.",
         "questionText": "What is the inscribed angle?",
         "choices": [
-          "100°",
-          "40°",
-          "80°",
-          "160°"
+          "\\(100^\\circ\\)",
+          "\\(40^\\circ\\)",
+          "\\(80^\\circ\\)",
+          "\\(160^\\circ\\)"
         ],
         "answer": 1,
-        "explanation": "The central angle tells us that the intercepted arc measures 80°. The inscribed angle measures half of that arc, so it is 40°. The central and inscribed angles share an arc, not a vertex."
+        "explanation": "The central angle tells us that the intercepted arc measures \\(80^\\circ\\). The inscribed angle measures half of that arc, so it is \\(40^\\circ\\). The central and inscribed angles share an arc, not a vertex."
       },
       {
         "id": "check-math-geometry-3",
@@ -340,16 +340,16 @@
         "subject": "math",
         "category": "Geometry",
         "difficulty": "medium",
-        "stem": "Two similar cones have radii 2 and 6. The smaller cone has volume 10π.",
+        "stem": "Two similar cones have radii 2 and 6. The smaller cone has volume \\(10 \\pi\\).",
         "questionText": "What is the larger cone’s volume?",
         "choices": [
-          "90π",
-          "180π",
-          "270π",
-          "30π"
+          "\\(90 \\pi\\)",
+          "\\(180 \\pi\\)",
+          "\\(270 \\pi\\)",
+          "\\(30 \\pi\\)"
         ],
         "answer": 2,
-        "explanation": "The radius ratio gives a length scale factor 6/2 = 3. Similarity scales all lengths, so volume scales by 3³ = 27. Multiply the smaller volume 10π by 27 to get 270π. A factor of 9 would scale area rather than volume."
+        "explanation": "The radius ratio gives a length scale factor \\(\\frac{6}{2}=3\\). Similarity scales all lengths, so volume scales by \\(3^{3}=27\\). Multiply the smaller volume \\(10 \\pi\\) by 27 to get \\(270 \\pi\\). A factor of 9 would scale area rather than volume."
       }
     ]
   },
@@ -361,13 +361,13 @@
       {
         "heading": "1. Build the reference triangle before choosing a ratio",
         "body": [
-          "Mark the named angle, which is less than 90°. The hypotenuse is across from the right angle. Relative to your marked angle, “opposite” is across from it and “adjacent” is the other side touching it. Use \\(\\sin\\theta=\\frac{\\text{opposite}}{\\text{hypotenuse}}\\), \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\), and \\(\\tan\\theta=\\frac{\\text{opposite}}{\\text{adjacent}}\\).",
+          "Mark the named angle, which is less than \\(90^\\circ\\). The hypotenuse is across from the right angle. Relative to your marked angle, “opposite” is across from it and “adjacent” is the other side touching it. Use \\(\\sin\\theta=\\frac{\\text{opposite}}{\\text{hypotenuse}}\\), \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\), and \\(\\tan\\theta=\\frac{\\text{opposite}}{\\text{adjacent}}\\).",
           "Use \\(a^2+b^2=c^2\\) to find a missing side. Recognize 3–4–5 and 5–12–13 triangles, including multiples of these lengths. Use 30–60–90 and 45–45–90 triangles for exact special-angle values. If given one ratio, draw a triangle whose sides match it, then find the new ratio."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "For an acute angle with \\(\\sin\\theta=7/25\\), use opposite 7 and hypotenuse 25. The adjacent side is \\(\\sqrt{625-49}=24\\). Thus cosine is 24/25 and tangent is 7/24. Using 25 in the tangent denominator would confuse the hypotenuse with the adjacent side.",
+            "text": "For an acute angle with \\(\\sin\\theta=7/25\\), use opposite 7 and hypotenuse 25. The adjacent side is \\(\\sqrt{625-49}=24\\). Thus cosine is \\(\\frac{24}{25}\\) and tangent is \\(\\frac{7}{24}\\). Using 25 in the tangent denominator would confuse the hypotenuse with the adjacent side.",
             "good": true
           }
         ],
@@ -376,18 +376,18 @@
       {
         "heading": "2. Radians and exact unit-circle values",
         "body": [
-          "Radians are another way to measure an angle. A full turn is 360° or \\(2\\pi\\) radians. Multiply degrees by \\(\\frac\\pi{180}\\) to get radians; multiply radians by \\(\\frac{180}\\pi\\) to get degrees. With θ already in radians, arc length is \\(s=r\\theta\\); do not convert again.",
-          "The first quadrant is the upper-right quarter of the coordinate plane. Learn exact values at 0°, 30°, 45°, 60°, and 90°, then use the small angle to the horizontal axis (reference angle) and the sign in the correct quarter. A negative angle rotates clockwise; its function value need not be negative. Sine is odd: \\(\\sin(-\\theta)=-\\sin\\theta\\). Cosine is even: \\(\\cos(-\\theta)=\\cos\\theta\\).",
+          "Radians are another way to measure an angle. A full turn is \\(360^\\circ\\) or \\(2\\pi\\) radians. Multiply degrees by \\(\\frac\\pi{180}\\) to get radians; multiply radians by \\(\\frac{180}\\pi\\) to get degrees. With \\(\\theta\\) already in radians, arc length is \\(s=r\\theta\\); do not convert again.",
+          "The first quadrant is the upper-right quarter of the coordinate plane. Learn exact values at \\(0^\\circ\\), \\(30^\\circ\\), \\(45^\\circ\\), \\(60^\\circ\\), and \\(90^\\circ\\), then use the small angle to the horizontal axis (reference angle) and the sign in the correct quarter. A negative angle rotates clockwise; its function value need not be negative. Sine is odd: \\(\\sin(-\\theta)=-\\sin\\theta\\). Cosine is even: \\(\\cos(-\\theta)=\\cos\\theta\\).",
           "The exact first-quadrant values must be available without guessing: at \\(0,\\pi/6,\\pi/4,\\pi/3,\\pi/2\\), sine is \\(0,1/2,\\sqrt2/2,\\sqrt3/2,1\\) and cosine is \\(1,\\sqrt3/2,\\sqrt2/2,1/2,0\\). Unit-circle coordinates are \\((\\cos\\theta,\\sin\\theta)\\). For \\(\\cos(5\\pi/6)\\), the reference angle is \\(\\pi/6\\) and cosine is negative, giving \\(-\\sqrt3/2\\)."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "Convert 315° to radians: \\(315\\pi/180=7\\pi/4\\). Its sine is −√2/2 because it lies in Quadrant IV with reference angle π/4. Cos(−π/4)=√2/2 by cosine symmetry. A radius-8 arc at π/4 radians has length 8(π/4)=2π; retain radians in the arc formula.",
+            "text": "Convert \\(315^\\circ\\) to radians: \\(315\\pi/180=7\\pi/4\\). Its sine is \\(\\frac{-\\sqrt{2}}{2}\\) because it lies in Quadrant IV with reference angle \\(\\frac{\\pi }{4}\\). Cos \\(\\left(\\frac{-\\pi }{4}\\right)=\\frac{\\sqrt{2}}{2}\\) by cosine symmetry. A radius-8 arc at \\(\\frac{\\pi }{4}\\) radians has length \\(8 \\left(\\frac{\\pi }{4}\\right)=2 \\pi\\); retain radians in the arc formula.",
             "good": true
           }
         ],
-        "tip": "Keep exact π multiples in scratch work, and check the calculator’s angle mode before verifying.",
+        "tip": "Keep exact \\(\\pi\\) multiples in scratch work, and check the calculator’s angle mode before verifying.",
         "teachingRevision": 2
       },
       {
@@ -399,7 +399,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "In Quadrant III, \\(\\cos\\theta=-8/17\\) gives \\(\\sin\\theta=-15/17\\) by the 8–15–17 triangle. Therefore tangent is 15/8 and secant is −17/8. Sine and cosine are both negative, so their quotient is positive; the reciprocal of cosine keeps its negative sign.",
+            "text": "In Quadrant III, \\(\\cos\\theta=-8/17\\) gives \\(\\sin\\theta=-15/17\\) by the 8–15–17 triangle. Therefore tangent is \\(\\frac{15}{8}\\) and secant is \\(\\frac{-17}{8}\\). Sine and cosine are both negative, so their quotient is positive; the reciprocal of cosine keeps its negative sign.",
             "good": true
           }
         ],
@@ -411,12 +411,12 @@
           "Use \\(\\sin^2\\theta+\\cos^2\\theta=1\\), and \\(\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}\\) when cosine is nonzero. These rules replace an angle with twice that angle: \\(\\sin(2\\theta)=2\\sin\\theta\\cos\\theta\\) and \\(\\cos(2\\theta)=2\\cos^2\\theta-1\\). The notation \\(\\sin^2\\theta\\) means \\((\\sin\\theta)^2\\), not \\(\\sin(\\theta^2)\\).",
           "Get the trig ratio alone, find its small reference angle, and include every matching angle in the allowed range. An inverse-trig calculator button gives only one standard angle, not every answer. Check whether the range includes its ends, and never allow a zero denominator.",
           "For angle sums, \\(\\sin(u\\pm v)=\\sin u\\cos v\\pm\\cos u\\sin v\\) and \\(\\cos(u\\pm v)=\\cos u\\cos v\\mp\\sin u\\sin v\\). The cosine formula uses the opposite sign in its second term. For example, \\(\\cos75^\\circ=\\cos(45^\\circ+30^\\circ)=\\frac{\\sqrt6-\\sqrt2}4\\). Use exact special-angle values before approximating.",
-          "Squaring a sum or difference often avoids finding the angle: \\((\\sin\\theta+\\cos\\theta)^2=1+\\sin(2\\theta)\\) and \\((\\sin\\theta-\\cos\\theta)^2=1-\\sin(2\\theta)\\). Their sum is 2. For example, if sin θ+cos θ=3/5, then sin(2θ)=9/25−1=−16/25. A negative result is possible; do not replace a squared expression by the sum of its squares."
+          "Squaring a sum or difference often avoids finding the angle: \\((\\sin\\theta+\\cos\\theta)^2=1+\\sin(2\\theta)\\) and \\((\\sin\\theta-\\cos\\theta)^2=1-\\sin(2\\theta)\\). Their sum is 2. For example, if \\(\\sin \\theta +\\cos \\theta =\\frac{3}{5}\\), then \\(\\sin \\left(2 \\theta \\right)=\\frac{9}{25}-1=\\frac{-16}{25}\\). A negative result is possible; do not replace a squared expression by the sum of its squares."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "For \\(2\\sin x=-\\sqrt3\\) on \\(0\\le x<2\\pi\\), sine is −√3/2, giving x=4π/3 or 5π/3. Their sum is 3π. Separately, if cosθ=5/13, then cos(2θ)=2(25/169)−1=−119/169. A principal inverse value alone cannot list every periodic solution.",
+            "text": "For \\(2\\sin x=-\\sqrt3\\) on \\(0\\le x<2\\pi\\), sine is \\(\\frac{-\\sqrt{3}}{2}\\), giving \\(x=\\frac{4 \\pi }{3}\\) or \\(\\frac{5 \\pi }{3}\\). Their sum is \\(3 \\pi\\). Separately, if \\(\\cos \\theta =\\frac{5}{13}\\), then \\(\\cos \\left(2 \\theta \\right)=2 \\left(\\frac{25}{169}\\right)-1=\\frac{-119}{169}\\). A principal inverse value alone cannot list every periodic solution.",
             "good": true
           }
         ],
@@ -432,7 +432,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "For \\(y=-4\\cos(3x)+2\\), amplitude is 4, range is [−2,6], and period is 2π/3. For \\(y=5\\sin(2x-\\pi/3)\\), factor the input as 2(x−π/6): the graph shifts π/6 right and has period π. The outside coefficient controls height, while the inside coefficient controls width.",
+            "text": "For \\(y=-4\\cos(3x)+2\\), amplitude is 4, range is [−2,6], and period is \\(\\frac{2 \\pi }{3}\\). For \\(y=5\\sin(2x-\\pi/3)\\), factor the input as \\(2 \\left(x-\\frac{\\pi }{6}\\right)\\): the graph shifts \\(\\frac{\\pi }{6}\\) right and has period \\(\\pi\\). The outside coefficient controls height, while the inside coefficient controls width.",
             "good": true
           }
         ],
@@ -441,14 +441,14 @@
       {
         "heading": "6. Nonright triangles and the ambiguous sine case",
         "body": [
-          "If you know two sides and the angle between them, use the law of cosines: \\(c^2=a^2+b^2-2ab\\cos C\\). An angle C greater than 90° has negative cosine, increasing \\(c^2\\). If you know a side and the angle directly across from it, use the law of sines: \\(\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}\\).",
-          "If two sides and an angle not between them are given, the same sine value may fit an angle below 90° or one above 90°. Check each against the 180° triangle sum and a positive third angle. There may be zero, one, or two triangles.",
-          "With sides a,b and included angle C, triangle area is \\(ab\\sin C/2\\): the perpendicular height is b sin C. Sides 6 and 10 enclosing 60° give area 15√3. A cosine-rule side computation and a sine-based area computation can use the same two sides, but they answer different questions."
+          "If you know two sides and the angle between them, use the law of cosines: \\(c^2=a^2+b^2-2ab\\cos C\\). An angle C greater than \\(90^\\circ\\) has negative cosine, increasing \\(c^2\\). If you know a side and the angle directly across from it, use the law of sines: \\(\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}\\).",
+          "If two sides and an angle not between them are given, the same sine value may fit an angle below \\(90^\\circ\\) or one above \\(90^\\circ\\). Check each against the \\(180^\\circ\\) triangle sum and a positive third angle. There may be zero, one, or two triangles.",
+          "With sides a,b and included angle C, triangle area is \\(ab\\sin C/2\\): the perpendicular height is b sin C. Sides 6 and 10 enclosing \\(60^\\circ\\) give area \\(15 \\sqrt{3}\\). A cosine-rule side computation and a sine-based area computation can use the same two sides, but they answer different questions."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "Sides 6 and 9 enclosing 120° give \\(c^2=36+81-108(-1/2)=171\\), so c=3√19. For A=30°, a=10, b=14, sine law gives sin B=7/10. Both B≈44.43° and B≈135.57° leave A+B<180°, giving two triangles. Verify the third angle for each branch.",
+            "text": "Sides 6 and 9 enclosing \\(120^\\circ\\) give \\(c^2=36+81-108(-1/2)=171\\), so \\(c=3 \\sqrt{19}\\). For \\(A=30^\\circ\\), \\(a=10\\), \\(b=14\\), sine law gives \\(\\sin B=\\frac{7}{10}\\). Both \\(B\\approx 44.43^\\circ\\) and \\(B\\approx 135.57^\\circ\\) leave \\(A+B<180^\\circ\\), giving two triangles. Verify the third angle for each branch.",
             "good": true
           }
         ],
@@ -463,7 +463,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "A 12-meter ladder at 45° reaches \\(12\\sin45^\\circ=6\\sqrt2\\) meters high, and its ground distance is also 6√2. If the angle changes to 30° with the same ladder, the height becomes 6 meters while the ground distance becomes 6√3; label which side the question asks for.",
+            "text": "A 12-meter ladder at \\(45^\\circ\\) reaches \\(12\\sin45^\\circ=6\\sqrt2\\) meters high, and its ground distance is also \\(6 \\sqrt{2}\\). If the angle changes to \\(30^\\circ\\) with the same ladder, the height becomes 6 meters while the ground distance becomes \\(6 \\sqrt{3}\\); label which side the question asks for.",
             "good": true
           }
         ],
@@ -477,16 +477,16 @@
         "subject": "math",
         "category": "Trigonometry",
         "difficulty": "medium",
-        "stem": "θ is acute and tan θ = 3/4.",
-        "questionText": "What is cos θ?",
+        "stem": "\\(\\theta\\) is acute and \\(\\tan \\theta =\\frac{3}{4}\\).",
+        "questionText": "What is \\(\\cos \\theta\\)?",
         "choices": [
-          "3/5",
-          "4/3",
-          "5/4",
+          "\\(\\frac{3}{5}\\)",
+          "\\(\\frac{4}{3}\\)",
+          "\\(\\frac{5}{4}\\)",
           "\\(\\frac45\\)"
         ],
         "answer": 3,
-        "explanation": "The reference triangle has opposite side 3 and adjacent side 4, so the hypotenuse is 5. Therefore \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\) = \\(\\frac45\\). A reciprocal such as 5/4 cannot be a cosine value."
+        "explanation": "The reference triangle has opposite side 3 and adjacent side 4, so the hypotenuse is 5. Therefore \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}=\\frac45\\). A reciprocal such as \\(\\frac{5}{4}\\) cannot be a cosine value."
       },
       {
         "id": "check-math-trigonometry-2",
@@ -494,16 +494,16 @@
         "subject": "math",
         "category": "Trigonometry",
         "difficulty": "medium",
-        "stem": "y = sin(4x).",
+        "stem": "\\(y=\\sin \\left(4 x\\right)\\).",
         "questionText": "What is its least positive period?",
         "choices": [
           "\\(\\frac\\pi2\\)",
-          "4π",
-          "2π",
+          "\\(4 \\pi\\)",
+          "\\(2 \\pi\\)",
           "\\(\\frac\\pi4\\)"
         ],
         "answer": 0,
-        "explanation": "The sine period is 2π divided by the absolute coefficient of x. Here it is 2π/4 = \\(\\frac\\pi2\\). Increasing the coefficient compresses the graph horizontally and reduces the period."
+        "explanation": "The sine period is \\(2 \\pi\\) divided by the absolute coefficient of x. Here it is \\(\\frac{2 \\pi }{4}=\\frac\\pi2\\). Increasing the coefficient compresses the graph horizontally and reduces the period."
       },
       {
         "id": "check-math-trigonometry-3",
@@ -511,16 +511,16 @@
         "subject": "math",
         "category": "Trigonometry",
         "difficulty": "medium",
-        "stem": "θ is in Quadrant IV and sin θ = −3/5.",
-        "questionText": "What is cos(2θ)?",
+        "stem": "\\(\\theta\\) is in Quadrant IV and \\(\\sin \\theta =\\frac{-3}{5}\\).",
+        "questionText": "What is \\(\\cos \\left(2 \\theta \\right)\\)?",
         "choices": [
-          "−7/25",
-          "16/25",
-          "−6/5",
-          "7/25"
+          "\\(\\frac{-7}{25}\\)",
+          "\\(\\frac{16}{25}\\)",
+          "\\(\\frac{-6}{5}\\)",
+          "\\(\\frac{7}{25}\\)"
         ],
         "answer": 3,
-        "explanation": "Use cos(2θ) = 1 − 2sin²θ. The square of −3/5 is 9/25, so cos(2θ) = 1 − 18/25 = 7/25. The negative sine sign disappears when squared. Doubling the angle does not double a sine or cosine value."
+        "explanation": "Use \\(\\cos \\left(2 \\theta \\right)=1-2 \\sin ^{2}\\theta\\). The square of \\(\\frac{-3}{5}\\) is \\(\\frac{9}{25}\\), so \\(\\cos \\left(2 \\theta \\right)=1-\\frac{18}{25}=\\frac{7}{25}\\). The negative sine sign disappears when squared. Doubling the angle does not double a sine or cosine value."
       }
     ]
   },
@@ -538,7 +538,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "Six students average 70 and four average 85. Their total is 6(70)+4(85)=760 across ten students, giving mean 76. Separately, adding 24 to eight values averaging 9 gives total 72+24=96 across nine values, so the new mean is 32/3. Update both the total and the count.",
+            "text": "Six students average 70 and four average 85. Their total is \\(6 \\left(70\\right)+4 \\left(85\\right)=760\\) across ten students, giving mean 76. Separately, adding 24 to eight values averaging 9 gives total \\(72+24=96\\) across nine values, so the new mean is \\(\\frac{32}{3}\\). Update both the total and the count.",
             "good": true
           }
         ],
@@ -553,7 +553,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "Adding 50 to 1,4,6,8,11 gives six sorted values, whose median is (6+8)/2=7. Adding 50 to five copies of 6 gives mean 80/6=40/3 but median 6. Recompute the central positions; do not assume the old median survives every added observation.",
+            "text": "Adding 50 to 1,4,6,8,11 gives six sorted values, whose median is \\(\\frac{6+8}{2}=7\\). Adding 50 to five copies of 6 gives mean \\(\\frac{80}{6}=\\frac{40}{3}\\) but median 6. Recompute the central positions; do not assume the old median survives every added observation.",
             "good": true
           }
         ],
@@ -563,13 +563,13 @@
         "heading": "3. Spread, transformations, and standardized distance",
         "body": [
           "Range is largest minus smallest. Interquartile range is the width of the middle half: \\(Q_3-Q_1\\), the middle half. Standard deviation measures how spread out the values are around the mean; variance is its square. Adding the same number to every value changes neither measure. Multiplying values by a scales standard deviation by \\(|a|\\) and variance by \\(a^2\\).",
-          "Use μ for the mean and σ for standard deviation. A value’s standardized distance is \\(\\frac{x-\\mu}{\\sigma}\\): the number of standard deviations above or below the mean. This calculation works even if the data do not follow a bell-shaped, or normal, pattern.",
-          "Population variance is \\(\\sigma^2=\\frac{\\sum(x_i-\\mu)^2}{N}\\); sample variance uses \\(s^2=\\frac{\\sum(x_i-\\bar x)^2}{n-1}\\) with n>1. Standard deviation is the square root. For the population 1,3,5, mean is 3 and variance is 8/3. Choose the denominator the question specifies; neither standardization nor standard deviation alone proves a normal distribution."
+          "Use \\(\\mu\\) for the mean and \\(\\sigma\\) for standard deviation. A value’s standardized distance is \\(\\frac{x-\\mu}{\\sigma}\\): the number of standard deviations above or below the mean. This calculation works even if the data do not follow a bell-shaped, or normal, pattern.",
+          "Population variance is \\(\\sigma^2=\\frac{\\sum(x_i-\\mu)^2}{N}\\); sample variance uses \\(s^2=\\frac{\\sum(x_i-\\bar x)^2}{n-1}\\) with \\(n>1\\). Standard deviation is the square root. For the population 1,3,5, mean is 3 and variance is \\(\\frac{8}{3}\\). Choose the denominator the question specifies; neither standardization nor standard deviation alone proves a normal distribution."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "If variance is 4 and every value becomes −3x+5, variance becomes 9(4)=36 and standard deviation becomes 3(2)=6. A value 82 in a distribution with mean 70 and standard deviation 6 is (82−70)/6=2 standard deviations above the mean. Center shifts do not change spread.",
+            "text": "If variance is 4 and every value becomes −3x+5, variance becomes \\(9 \\left(4\\right)=36\\) and standard deviation becomes \\(3 \\left(2\\right)=6\\). A value 82 in a distribution with mean 70 and standard deviation 6 is \\(\\frac{82-70}{6}=2\\) standard deviations above the mean. Center shifts do not change spread.",
             "good": true
           }
         ],
@@ -581,13 +581,13 @@
         "body": [
           "When every result is equally likely, probability is matching results divided by all possible results. List what counts as a result first: two dice have 36 ordered pairs, not 11 equally likely sums. In a table, use the total for the group you are choosing from: everyone, one row, or one column.",
           "If a drawn item stays out, change both the matching count and the total before the next draw. If it goes back in, use the original counts. If an earlier result is already known, start from that situation; do not multiply by its probability.",
-          "Conditional probability is \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\\) when \\(P(B)>0\\). In a two-way table, restrict the denominator to the given row or column. If 8 of 20 cyclists also run, then among cyclists the runner probability is 8/20=2/5; the total number of noncyclists is irrelevant to this conditional question.",
-          "The general multiplication rule is \\(P(A\\cap B)=P(A)P(B\\mid A)\\), so it also covers dependent draws. For 4 red and 3 blue marbles, red then blue has probability (4/7)(3/6)=2/7. Independence is the special case in which conditioning does not change the second probability. For a uniformly selected point in a region, geometric probability is favorable area divided by total area: a radius-2 disk inside a 6-by-6 square gives probability 4π/36=π/9."
+          "Conditional probability is \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\\) when \\(P(B)>0\\). In a two-way table, restrict the denominator to the given row or column. If 8 of 20 cyclists also run, then among cyclists the runner probability is \\(\\frac{8}{20}=\\frac{2}{5}\\); the total number of noncyclists is irrelevant to this conditional question.",
+          "The general multiplication rule is \\(P(A\\cap B)=P(A)P(B\\mid A)\\), so it also covers dependent draws. For 4 red and 3 blue marbles, red then blue has probability \\(\\left(\\frac{4}{7}\\right) \\left(\\frac{3}{6}\\right)=\\frac{2}{7}\\). Independence is the special case in which conditioning does not change the second probability. For a uniformly selected point in a region, geometric probability is favorable area divided by total area: a radius-2 disk inside a 6-by-6 square gives probability \\(\\frac{4 \\pi }{36}=\\frac{\\pi }{9}\\)."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "If 9 cyclists and 6 noncyclists wear helmets, selecting a helmet wearer gives cyclist probability 9/(9+6)=3/5. In a bag with 5 green and 3 orange marbles, removing one orange leaves 5 green among 7 total, so the next green probability is 5/7. The stated condition determines the denominator.",
+            "text": "If 9 cyclists and 6 noncyclists wear helmets, selecting a helmet wearer gives cyclist probability \\(\\frac{9}{9+6}=\\frac{3}{5}\\). In a bag with 5 green and 3 orange marbles, removing one orange leaves 5 green among 7 total, so the next green probability is \\(\\frac{5}{7}\\). The stated condition determines the denominator.",
             "good": true
           }
         ],
@@ -603,7 +603,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "For four independent trials with success chance 1/3, the chance of no successes is (2/3)⁴=16/81, so the chance of at least one is 65/81. For one fair die, “even or greater than 4” has outcomes {2,4,5,6}, giving 4/6=2/3; the outcome 6 is counted only once.",
+            "text": "For four independent trials with success chance \\(\\frac{1}{3}\\), the chance of no successes is \\(\\left(\\frac{2}{3}\\right)^{4}=\\frac{16}{81}\\), so the chance of at least one is \\(\\frac{65}{81}\\). For one fair die, “even or greater than 4” has outcomes {2,4,5,6}, giving \\(\\frac{4}{6}=\\frac{2}{3}\\); the outcome 6 is counted only once.",
             "good": true
           }
         ],
@@ -612,7 +612,7 @@
       {
         "heading": "6. Ordered counting and probability distributions",
         "body": [
-          "When order matters, multiply choices for each position; available choices shrink if repeats are forbidden. When order does not matter, count groups using combinations \\(\\binom nk=\\frac{n!}{k!(n-k)!}\\). Here, n! means multiplying the whole numbers from 1 through n, and 0! = 1. A committee has no order unless people receive different roles.",
+          "When order matters, multiply choices for each position; available choices shrink if repeats are forbidden. When order does not matter, count groups using combinations \\(\\binom nk=\\frac{n!}{k!(n-k)!}\\). Here, n! means multiplying the whole numbers from 1 through n, and \\(0!=1\\). A committee has no order unless people receive different roles.",
           "For exactly k successes in n tries, each with the same success chance p and no effect on the other tries, use \\(\\binom nk p^k(1-p)^{n-k}\\). The combination counts placements of successes. A first success on a particular trial has one order: failures, then success.",
           "Expected value is the long-run average: multiply each possible gain or loss by its probability, then add. Use negative numbers for losses. If outcomes are payouts before fees, subtract the fee once; if they are already net gains, do not subtract it again. A distribution needs nonnegative probabilities totaling 1; a missing probability is 1 minus the other probabilities.",
           "For r ordered choices from n without repeats, \\({}_nP_r=\\frac{n!}{(n-r)!}\\). If a word has indistinguishable repeated letters, divide its n! arrangements by every repeat-count factorial. BANANA has three As and two Ns, so \\(\\frac{6!}{3!2!}=60\\) distinct arrangements. This is different from choosing an unordered group of letters."
@@ -620,7 +620,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "Four distinct letters from six make 6·5·4·3=360 ordered codes. Three-person committees from eight instead give C(8,3)=56. A game with net gain +12 at probability 1/5 and net loss −1 otherwise has expectation 12/5−4/5=$1.60. Use signed outcomes and distinguish groups from ordered codes.",
+            "text": "Four distinct letters from six make \\(6\\cdot 5\\cdot 4\\cdot 3=360\\) ordered codes. Three-person committees from eight instead give \\(C \\left(8,3\\right)=56\\). A game with net gain +12 at probability \\(\\frac{1}{5}\\) and net loss −1 otherwise has expectation \\(\\frac{12}{5}-\\frac{4}{5}\\)=$1.60. Use signed outcomes and distinguish groups from ordered codes.",
             "good": true
           }
         ],
@@ -637,7 +637,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "For a uniform integer from 1 through 40, there are 10 multiples of 4 and 8 multiples of 5. Two multiples of 20 occur in both lists, so “multiple of 4 or 5” has 10+8−2=16 outcomes and probability 16/40=2/5. Listing the overlap prevents double-counting.",
+            "text": "For a uniform integer from 1 through 40, there are 10 multiples of 4 and 8 multiples of 5. Two multiples of 20 occur in both lists, so “multiple of 4 or 5” has \\(10+8-2=16\\) outcomes and probability \\(\\frac{16}{40}=\\frac{2}{5}\\). Listing the overlap prevents double-counting.",
             "good": true
           }
         ],
@@ -678,7 +678,7 @@
           "30"
         ],
         "answer": 2,
-        "explanation": "Choose 2 without order: C(6, 2) = 6(5)/2 = 15. The product 6 × 5 counts each pair twice, once in each order, so divide by 2. The lack of assigned roles is what makes order irrelevant."
+        "explanation": "Choose 2 without order: \\(C \\left(6,2\\right)=\\frac{6 \\left(5\\right)}{2}=15\\). The product \\(6\\times 5\\) counts each pair twice, once in each order, so divide by 2. The lack of assigned roles is what makes order irrelevant."
       },
       {
         "id": "check-math-statistics-probability-3",
@@ -689,13 +689,13 @@
         "stem": "A bag contains 2 red and 3 blue marbles. Two are drawn without replacement.",
         "questionText": "What is the probability that at least one is red?",
         "choices": [
-          "16/25",
-          "7/10",
-          "3/10",
+          "\\(\\frac{16}{25}\\)",
+          "\\(\\frac{7}{10}\\)",
+          "\\(\\frac{3}{10}\\)",
           "\\(\\frac45\\)"
         ],
         "answer": 1,
-        "explanation": "Use the complement of two blues. P(two blue) = (3/5)(2/4) = 3/10, so P(at least one red) = 1 − 3/10 = 7/10. The second draw uses four remaining marbles. Counting only two reds would miss outcomes with exactly one red."
+        "explanation": "Use the complement of two blues. \\(P(\\text{two blue})=\\left(\\frac{3}{5}\\right) \\left(\\frac{2}{4}\\right)=\\frac{3}{10}\\), so \\(P(\\text{at least one red})=1-\\frac{3}{10}=\\frac{7}{10}\\). The second draw uses four remaining marbles. Counting only two reds would miss outcomes with exactly one red."
       }
     ]
   }

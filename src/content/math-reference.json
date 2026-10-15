@@ -8,28 +8,28 @@
         "title": "Linear equations and systems",
         "formula": "\\(ax+b=c;\\quad ax+by=e,\\;cx+dy=f\\)",
         "when": "Undo operations in reverse order. Substitute or eliminate a variable in a system; verify both original equations. A zero coefficient can produce no solution or infinitely many.",
-        "example": "For 3x−4=11, x=5. In x+y=9 and 2x−y=6, adding gives x=5 and then y=4."
+        "example": "For \\(3 x-4=11\\), \\(x=5\\). In \\(x+y=9\\) and \\(2 x-y=6\\), adding gives \\(x=5\\) and then \\(y=4\\)."
       },
       {
         "id": "quadratic",
         "title": "Quadratic formula and discriminant",
         "formula": "\\(x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a};\\quad D=b^2-4ac\\)",
-        "when": "First set ax²+bx+c=0 with a≠0. D>0 gives two real roots, D=0 one repeated real root, and D<0 two nonreal complex roots.",
-        "example": "For x²−4x−1=0, D=20 and \\(x=2\\pm\\sqrt5\\). Substituting either root gives zero."
+        "when": "First set \\(ax^{2}+bx+c=0\\) with \\(a\\ne 0\\). \\(D>0\\) gives two real roots, \\(D=0\\) one repeated real root, and \\(D<0\\) two nonreal complex roots.",
+        "example": "For \\(x^{2}-4 x-1=0\\), \\(D=20\\) and \\(x=2\\pm\\sqrt5\\). Substituting either root gives zero."
       },
       {
         "id": "vertex",
         "title": "Vertex and completing the square",
         "formula": "\\(h=-\\frac b{2a},\\quad k=f(h);\\quad a(x-h)^2+k\\)",
-        "when": "For a≠0, the vertex is (h,k). Positive a means a minimum; negative a a maximum. For a restricted interval, also test allowed endpoints.",
+        "when": "For \\(a\\ne 0\\), the vertex is (h,k). Positive a means a minimum; negative a a maximum. For a restricted interval, also test allowed endpoints.",
         "example": "\\(2x^2-8x+3=2(x-2)^2-5\\), so the vertex is (2,−5)."
       },
       {
         "id": "factoring",
         "title": "Factoring and root relationships",
         "formula": "\\(u^2-v^2=(u-v)(u+v);\\quad u^2\\pm2uv+v^2=(u\\pm v)^2;\\quad r+s=-b/a,\\;rs=c/a\\)",
-        "when": "Factor out the greatest common factor first. The sum/product formulas apply to a quadratic with a≠0, including complex roots. Never cancel terms across addition.",
-        "example": "\\(3x^2-12=3(x-2)(x+2)\\). Roots of 4x²−12x+5 sum to 3 and multiply to 5/4."
+        "when": "Factor out the greatest common factor first. The sum/product formulas apply to a quadratic with \\(a\\ne 0\\), including complex roots. Never cancel terms across addition.",
+        "example": "\\(3x^2-12=3(x-2)(x+2)\\). Roots of \\(4 x^{2}-12 x+5\\) sum to 3 and multiply to \\(\\frac{5}{4}\\)."
       },
       {
         "id": "cubes",
@@ -42,36 +42,36 @@
         "id": "remainder",
         "title": "Remainder and factor theorems",
         "formula": "\\(P(x)=(x-r)Q(x)+P(r)\\)",
-        "when": "When dividing by x−r, the remainder is P(r). The divisor is a factor exactly when P(r)=0. For x+r, substitute −r.",
-        "example": "For P(x)=x³−2x+1, dividing by x−3 leaves P(3)=27−6+1=22."
+        "when": "When dividing by x−r, the remainder is P(r). The divisor is a factor exactly when \\(P \\left(r\\right)=0\\). For x+r, substitute −r.",
+        "example": "For \\(P \\left(x\\right)=x^{3}-2 x+1\\), dividing by x−3 leaves \\(P \\left(3\\right)=27-6+1=22\\)."
       },
       {
         "id": "absolute",
         "title": "Absolute value equations and inequalities",
         "formula": "\\(|u|=a\\Rightarrow u=\\pm a;\\quad |u|<a\\Leftrightarrow-a<u<a;\\quad |u|>a\\Leftrightarrow u<-a\\text{ or }u>a\\)",
-        "when": "The displayed inequality rules assume a>0. Use inclusive endpoints for ≤ or ≥. An absolute value cannot equal a negative number.",
-        "example": "\\(|2x-1|\\le5\\) becomes −5≤2x−1≤5, hence −2≤x≤3."
+        "when": "The displayed inequality rules assume \\(a>0\\). Use inclusive endpoints for \\(\\le\\) or \\(\\ge\\). An absolute value cannot equal a negative number.",
+        "example": "\\(|2x-1|\\le5\\) becomes \\(-5\\le 2 x-1\\le 5\\), hence \\(-2\\le x\\le 3\\)."
       },
       {
         "id": "rational",
         "title": "Rational equations and sign charts",
         "formula": "\\(\\frac1a+\\frac1b=\\frac{a+b}{ab}\\)",
         "when": "Exclude every original zero denominator before canceling. For inequalities, mark zeros of both numerator and denominator, then test each interval. A denominator zero is always excluded.",
-        "example": "\\(\\frac{x-1}{x+4}>0\\) is true for x<−4 or x>1; both boundary points are excluded."
+        "example": "\\(\\frac{x-1}{x+4}>0\\) is true for \\(x<-4\\) or \\(x>1\\); both boundary points are excluded."
       },
       {
         "id": "radical",
         "title": "Radical equations and extraneous roots",
         "formula": "\\(\\sqrt{u}=v\\Rightarrow u=v^2,\\;u\\ge0,\\;v\\ge0\\)",
         "when": "Squaring can create false solutions. Check each candidate in the original equation, including its sign restrictions.",
-        "example": "\\(\\sqrt{x+20}=x\\) gives x²−x−20=0. Candidate 5 works, while candidate −4 fails because a principal square root is nonnegative."
+        "example": "\\(\\sqrt{x+20}=x\\) gives \\(x^{2}-x-20=0\\). Candidate 5 works, while candidate −4 fails because a principal square root is nonnegative."
       },
       {
         "id": "inequality",
         "title": "Linear and quadratic inequalities",
         "formula": "\\(a<b,\\;c<0\\Rightarrow ac>bc\\)",
         "when": "Reverse the inequality when multiplying or dividing by a negative. For a quadratic product, use its real zeros to split the number line and test signs.",
-        "example": "−3x≥12 means x≤−4. Also (x−2)(x+5)<0 means −5<x<2."
+        "example": "\\(-3 x\\ge 12\\) means \\(x\\le -4\\). Also \\(\\left(x-2\\right) \\left(x+5\\right)<0\\) means \\(-5<x<2\\)."
       }
     ]
   },
@@ -84,77 +84,77 @@
         "title": "Evaluation and composition",
         "formula": "\\((f\\circ g)(x)=f(g(x))\\)",
         "when": "Evaluate the inner function first. In a piecewise function, choose the branch using its input before calculating. Composition is different from multiplication.",
-        "example": "If f(x)=x²+2 and g(x)=2x−3, then f(g(4))=f(5)=27."
+        "example": "If \\(f \\left(x\\right)=x^{2}+2\\) and \\(g \\left(x\\right)=2 x-3\\), then \\(f \\left(g \\left(4\\right)\\right)=f \\left(5\\right)=27\\)."
       },
       {
         "id": "domain",
         "title": "Domain and range",
         "formula": "\\(\\text{denominator}\\ne0;\\quad\\text{even-root input}\\ge0;\\quad\\text{log input}>0\\)",
         "when": "Intersect every restriction, including inner and outer functions in a composition. A canceled factor still excludes its original input. Range concerns outputs, not inputs.",
-        "example": "\\(\\frac{\\sqrt{7-x}}{x+2}\\) permits x≤7 except x=−2."
+        "example": "\\(\\frac{\\sqrt{7-x}}{x+2}\\) permits \\(x\\le 7\\) except \\(x=-2\\)."
       },
       {
         "id": "transform",
         "title": "Graph transformations",
         "formula": "\\(g(x)=af(b(x-h))+k\\)",
-        "when": "With a,b≠0, a feature at (u,v) moves to (h+u/b,k+av). Negative a reflects outputs; negative b reflects inputs. Apply horizontal changes inside the function.",
-        "example": "If f has a point (6,2), then g(x)=3f(2(x−1))−4 has the corresponding point (4,2)."
+        "when": "With a,\\(b\\ne 0\\), a feature at (u,v) moves to \\(\\left(h+\\frac{u}{b},k+av\\right)\\). Negative a reflects outputs; negative b reflects inputs. Apply horizontal changes inside the function.",
+        "example": "If f has a point (6,2), then \\(g \\left(x\\right)=3 f \\left(2 \\left(x-1\\right)\\right)-4\\) has the corresponding point (4,2)."
       },
       {
         "id": "inverse",
         "title": "Inverse functions and branches",
         "formula": "\\(f^{-1}(y)=x\\iff f(x)=y\\)",
         "when": "Solve for the original input and respect its domain. An inverse function requires one-to-one behavior, often enforced by restricting a quadratic to one side of its vertex.",
-        "example": "For f(x)=(x+1)²+3 on x≥−1, \\(f^{-1}(y)=-1+\\sqrt{y-3}\\), y≥3."
+        "example": "For \\(f \\left(x\\right)=\\left(x+1\\right)^{2}+3\\) on \\(x\\ge -1\\), \\(f^{-1}(y)=-1+\\sqrt{y-3}\\), \\(y\\ge 3\\)."
       },
       {
         "id": "rate",
         "title": "Slope and average rate of change",
         "formula": "\\(m=\\frac{y_2-y_1}{x_2-x_1};\\quad \\frac{f(b)-f(a)}{b-a}\\)",
         "when": "Inputs must differ. Keep the same subtraction order in numerator and denominator. Average rate is the slope of the secant, even when the function is curved.",
-        "example": "For f(x)=x²+1 from x=1 to x=4, average rate=(17−2)/(4−1)=5."
+        "example": "For \\(f \\left(x\\right)=x^{2}+1\\) from \\(x=1\\) to \\(x=4\\), average rate=\\(\\frac{17-2}{4-1}=5\\)."
       },
       {
         "id": "symmetry",
         "title": "Even and odd symmetry",
         "formula": "\\(f(-x)=f(x)\\text{ (even)};\\quad f(-x)=-f(x)\\text{ (odd)}\\)",
         "when": "The domain must allow both x and −x. For polynomials, all nonconstant terms in an even function have even powers; an odd polynomial has only odd powers and no nonzero constant.",
-        "example": "x⁴−3x²+2 is even; 2x³−x is odd; x²+x is neither."
+        "example": "\\(x^{4}-3 x^{2}+2\\) is even; \\(2 x^{3}-x\\) is odd; \\(x^{2}+x\\) is neither."
       },
       {
         "id": "asymptote",
         "title": "Zeros, holes, and asymptotes",
         "formula": "\\(\\frac{(x-r)P(x)}{(x-r)Q(x)}=\\frac{P(x)}{Q(x)},\\quad x\\ne r\\)",
         "when": "Cancel common factors first, retaining restrictions. A finite missing value is a hole; a remaining denominator zero typically gives a vertical asymptote. Leading terms describe end behavior.",
-        "example": "\\(\\frac{x^2-36}{x-6}\\) has a hole at (6,12). For 1/(x−7), the vertical asymptote is x=7; the numerator is nonzero at that denominator zero."
+        "example": "\\(\\frac{x^2-36}{x-6}\\) has a hole at (6,12). For \\(\\frac{1}{x-7}\\), the vertical asymptote is \\(x=7\\); the numerator is nonzero at that denominator zero."
       },
       {
         "id": "variation",
         "title": "Direct and inverse variation",
         "formula": "\\(y=kx\\text{ (direct)};\\quad y=\\frac{k}{x}\\text{ (inverse)}\\)",
-        "when": "For direct variation, y/x is constant when x≠0. For inverse variation, xy is constant and x cannot be zero. A nonzero intercept breaks direct proportionality.",
-        "example": "If y varies inversely with x and y=8 when x=3, k=24 and y=4 when x=6."
+        "when": "For direct variation, \\(\\frac{y}{x}\\) is constant when \\(x\\ne 0\\). For inverse variation, xy is constant and x cannot be zero. A nonzero intercept breaks direct proportionality.",
+        "example": "If y varies inversely with x and \\(y=8\\) when \\(x=3\\), \\(k=24\\) and \\(y=4\\) when \\(x=6\\)."
       },
       {
         "id": "exponential",
         "title": "Exponential growth and decay",
         "formula": "\\(f(t)=ab^t;\\quad b=\\left(\\frac{f(t_2)}{f(t_1)}\\right)^{1/(t_2-t_1)}\\)",
-        "when": "For real-time models use b>0; a is the value at t=0. Equal time gaps have equal ratios. Repeated p% growth uses b=1+p/100; decay uses b=1−p/100.",
-        "example": "A quantity growing from 18 at t=1 to 144 at t=4 has b³=8, b=2, and a=9."
+        "when": "For real-time models use \\(b>0\\); a is the value at \\(t=0\\). Equal time gaps have equal ratios. Repeated p% growth uses \\(b=1+\\frac{p}{100}\\); decay uses \\(b=1-\\frac{p}{100}\\).",
+        "example": "A quantity growing from 18 at \\(t=1\\) to 144 at \\(t=4\\) has \\(b^{3}=8\\), \\(b=2\\), and \\(a=9\\)."
       },
       {
         "id": "log",
         "title": "Logarithms and their rules",
         "formula": "\\(\\log_b u=v\\iff b^v=u;\\quad\\log_b(uv)=\\log_bu+\\log_bv;\\quad\\log_b(u/v)=\\log_bu-\\log_bv;\\quad\\log_b(u^p)=p\\log_bu\\)",
-        "when": "For real logarithms b>0, b≠1, and original arguments must be positive. Use u,v>0 for these rules. Change of base is log_b(u)=ln(u)/ln(b). No logarithm rule splits a sum.",
-        "example": "\\(\\log_2(x+3)-\\log_2(x-1)=1\\) requires x>1 and gives (x+3)/(x−1)=2, so x=5."
+        "when": "For real logarithms \\(b>0\\), \\(b\\ne 1\\), and original arguments must be positive. Use u,\\(v>0\\) for these rules. Change of base is \\(\\log _{b}\\left(u\\right)=\\frac{\\ln \\left(u\\right)}{\\ln \\left(b\\right)}\\). No logarithm rule splits a sum.",
+        "example": "\\(\\log_2(x+3)-\\log_2(x-1)=1\\) requires \\(x>1\\) and gives \\(\\frac{x+3}{x-1}=2\\), so \\(x=5\\)."
       },
       {
         "id": "recursive",
         "title": "Two-input functions and recursion",
         "formula": "\\(F(x,y);\\quad a_{n+1}=F(a_n,n+1)\\)",
         "when": "Substitute each argument into its named slot. A recurrence needs an initial term; compute each term before using it to obtain the next. Preserve the index and all parentheses.",
-        "example": "If b₀=2 and bₙ₊₁=2bₙ−n, then b₁=4, b₂=7, b₃=12. For F(x,y)=x²+3y, F(−2,5)=19."
+        "example": "If \\(b_{0}=2\\) and \\(b_{n+1}=2 b_{n}-n\\), then \\(b_{1}=4\\), \\(b_{2}=7\\), \\(b_{3}=12\\). For \\(F \\left(x,y\\right)=x^{2}+3 y\\), \\(F \\left(-2,5\\right)=19\\)."
       }
     ]
   },
@@ -167,35 +167,35 @@
         "title": "Plane areas and perimeters",
         "formula": "\\(A_{\\rm rectangle}=lw;\\;A_{\\rm triangle}=bh/2;\\;A_{\\rm parallelogram}=bh;\\;A_{\\rm trapezoid}=(b_1+b_2)h/2\\)",
         "when": "Heights are perpendicular to their bases. Perimeter adds exposed boundary lengths. Composite areas add included pieces and subtract cutouts; convert all lengths first.",
-        "example": "A trapezoid with parallel sides 6 and 12 and perpendicular height 5 has area (6+12)5/2=45."
+        "example": "A trapezoid with parallel sides 6 and 12 and perpendicular height 5 has area \\(\\frac{\\left(6+12\\right) 5}{2}=45\\)."
       },
       {
         "id": "triangles",
         "title": "Triangle lengths and angles",
         "formula": "\\(a^2+b^2=c^2;\\quad |a-b|<c<a+b;\\quad A+B+C=180^\\circ\\)",
-        "when": "Pythagoras requires a right triangle and c opposite 90°. In every nondegenerate triangle, each side is strictly between the difference and sum of the others.",
-        "example": "A right triangle with legs 9 and 12 has hypotenuse 15. Sides 5 and 11 require 6<c<16."
+        "when": "Pythagoras requires a right triangle and c opposite \\(90^\\circ\\). In every nondegenerate triangle, each side is strictly between the difference and sum of the others.",
+        "example": "A right triangle with legs 9 and 12 has hypotenuse 15. Sides 5 and 11 require \\(6<c<16\\)."
       },
       {
         "id": "special",
         "title": "Special triangles and equilateral area",
         "formula": "\\(45\\!:\\!45\\!:\\!90\\Rightarrow x,x,x\\sqrt2;\\quad30\\!:\\!60\\!:\\!90\\Rightarrow x,x\\sqrt3,2x;\\quad A_{\\rm equilateral}=s^2\\sqrt3/4\\)",
-        "when": "Associate each side with its opposite angle. The hypotenuse is always largest; the longer leg in a 30° triangle is not half the hypotenuse.",
-        "example": "An equilateral triangle with side 6 has altitude 3√3 and area 9√3."
+        "when": "Associate each side with its opposite angle. The hypotenuse is always largest; the longer leg in \\(a 30^\\circ\\) triangle is not half the hypotenuse.",
+        "example": "An equilateral triangle with side 6 has altitude \\(3 \\sqrt{3}\\) and area \\(9 \\sqrt{3}\\)."
       },
       {
         "id": "heron",
         "title": "Heron and the angle bisector",
         "formula": "\\(s=(a+b+c)/2;\\quad A=\\sqrt{s(s-a)(s-b)(s-c)};\\quad BD/DC=AB/AC\\)",
         "when": "Heron uses three sides of a valid triangle. The ratio applies when AD bisects angle A and D lies on BC. Split the whole opposite side according to that ratio.",
-        "example": "Sides 5,5,6 give s=8 and area √(8·3·3·2)=12. A bisector between sides 4 and 6 splits an opposite side of 15 into 6 and 9."
+        "example": "Sides 5,5,6 give \\(s=8\\) and area \\(\\sqrt{8\\cdot 3\\cdot 3\\cdot 2}=12\\). A bisector between sides 4 and 6 splits an opposite side of 15 into 6 and 9."
       },
       {
         "id": "polygons",
         "title": "Polygon and parallel-line angles",
         "formula": "\\(\\text{interior sum}=180(n-2)^\\circ;\\quad\\text{regular interior}=180(n-2)/n;\\quad\\text{regular exterior}=360/n\\)",
-        "when": "Regular means all sides and angles are equal. Corresponding and alternate interior angles agree for parallel lines; adjacent angles on a straight line sum to 180°.",
-        "example": "A regular nonagon has interior angle 140° and exterior angle 40°."
+        "when": "Regular means all sides and angles are equal. Corresponding and alternate interior angles agree for parallel lines; adjacent angles on a straight line sum to \\(180^\\circ\\).",
+        "example": "A regular nonagon has interior angle \\(140^\\circ\\) and exterior angle \\(40^\\circ\\)."
       },
       {
         "id": "similarity",
@@ -208,71 +208,71 @@
         "id": "circles",
         "title": "Circle, ring, arc, and sector",
         "formula": "\\(C=2\\pi r;\\;A=\\pi r^2;\\;A_{\\rm ring}=\\pi(R^2-r^2);\\;s=r\\theta;\\;A_{\\rm sector}=r^2\\theta/2\\)",
-        "when": "The last two formulas require θ in radians. For degrees multiply circumference or area by θ/360. Radius is half the diameter; arc length has linear units.",
-        "example": "A radius-5 sector of angle 72° has arc length 2π and area 5π; the equivalent radian angle is \\(2\\pi/5\\)."
+        "when": "The last two formulas require \\(\\theta\\) in radians. For degrees multiply circumference or area by \\(\\frac{\\theta }{360}\\). Radius is half the diameter; arc length has linear units.",
+        "example": "A radius-5 sector of angle \\(72^\\circ\\) has arc length \\(2 \\pi\\) and area \\(5 \\pi\\); the equivalent radian angle is \\(2\\pi/5\\)."
       },
       {
         "id": "circleangles",
         "title": "Circle angles and intersecting segments",
         "formula": "\\(\\text{inscribed angle}=\\tfrac12\\text{intercepted arc};\\quad AP\\cdot PB=CP\\cdot PD;\\quad t^2=e(e+i)\\)",
         "when": "The chord-product relation uses two chords crossing at interior P. The tangent-secant relation uses outside length e and inside length i from one exterior point. A tangent is perpendicular to its radius.",
-        "example": "Chord parts 2,15 and 5,x give 30=5x, hence x=6. A secant with outside part 5 and inside part 4 gives tangent length √45=3√5."
+        "example": "Chord parts 2,15 and 5,x give \\(30=5 x\\), hence \\(x=6\\). A secant with outside part 5 and inside part 4 gives tangent length \\(\\sqrt{45}=3 \\sqrt{5}\\)."
       },
       {
         "id": "lineforms",
         "title": "Lines, distance, and midpoint",
         "formula": "\\(y-y_1=m(x-x_1);\\quad d=\\sqrt{(\\Delta x)^2+(\\Delta y)^2};\\quad M=((x_1+x_2)/2,(y_1+y_2)/2)\\)",
-        "when": "Slope is Δy/Δx for nonvertical lines. Parallel lines have the same slope. Perpendicular nonvertical slopes multiply to −1; horizontal and vertical lines are the special pair.",
-        "example": "The line through (2,−1) with slope 3 is y+1=3(x−2). The midpoint of (−2,4) and (6,0) is (2,2)."
+        "when": "Slope is \\(\\frac{\\Delta  y}{\\Delta } x\\) for nonvertical lines. Parallel lines have the same slope. Perpendicular nonvertical slopes multiply to −1; horizontal and vertical lines are the special pair.",
+        "example": "The line through (2,−1) with slope 3 is \\(y+1=3 \\left(x-2\\right)\\). The midpoint of (−2,4) and (6,0) is (2,2)."
       },
       {
         "id": "coordinatecircle",
         "title": "Coordinate circles",
         "formula": "\\((x-h)^2+(y-k)^2=r^2\\)",
         "when": "Read center (h,k) with reversed signs inside parentheses. In a general circle equation, complete the square in both variables. The right side is radius squared, not radius.",
-        "example": "x²+y²+4x−10y+20=0 becomes (x+2)²+(y−5)²=9, with center (−2,5), radius 3."
+        "example": "\\(x^{2}+y^{2}+4 x-10 y+20=0\\) becomes \\(\\left(x+2\\right)^{2}+\\left(y-5\\right)^{2}=9\\), with center (−2,5), radius 3."
       },
       {
         "id": "transformations",
         "title": "Coordinate transformations",
         "formula": "\\(90^\\circ\\text{ CCW}:(x,y)\\to(-y,x);\\;180^\\circ:(-x,-y);\\;90^\\circ\\text{ CW}:(y,-x)\\)",
-        "when": "These rotations are about the origin. For center (h,k), subtract it, rotate, then add it back. Reflection in x-axis: (x,−y); y-axis: (−x,y); y=x: (y,x). Reflect across x=h using x′=2h−x.",
-        "example": "Rotating (3,−2) 90° counterclockwise about the origin gives (2,3). Reflecting (7,1) across x=2 gives (−3,1)."
+        "when": "These rotations are about the origin. For center (h,k), subtract it, rotate, then add it back. Reflection in x-axis: (x,−y); y-axis: (−x,y); \\(y=x:\\left(y,x\\right)\\). Reflect across \\(x=h\\) using \\(x '=2 h-x\\).",
+        "example": "Rotating \\(\\left(3,-2\\right) 90^\\circ\\) counterclockwise about the origin gives (2,3). Reflecting (7,1) across \\(x=2\\) gives (−3,1)."
       },
       {
         "id": "prisms",
         "title": "Prisms, boxes, and cylinders",
         "formula": "\\(V=Bh;\\quad V_{\\rm box}=lwh;\\quad SA_{\\rm box}=2(lw+lh+wh);\\quad SA_{\\rm cylinder}=2\\pi r^2+2\\pi rh\\)",
         "when": "B is base area and h perpendicular height. A right prism has lateral area base perimeter × height. Surface-area formulas assume closed solids; omit absent or hidden faces.",
-        "example": "A closed radius-4 cylinder of height 3 has volume 48π and surface area 56π. A 2×3×4 box has volume 24 and surface area 52."
+        "example": "A closed radius-4 cylinder of height 3 has volume \\(48 \\pi\\) and surface area \\(56 \\pi\\). A \\(2\\times 3\\times 4\\) box has volume 24 and surface area 52."
       },
       {
         "id": "conesphere",
         "title": "Cones, pyramids, and spheres",
         "formula": "\\(V_{\\rm cone/pyramid}=Bh/3;\\quad SA_{\\rm cone}=\\pi r^2+\\pi r\\ell;\\quad V_{\\rm sphere}=4\\pi r^3/3;\\quad SA_{\\rm sphere}=4\\pi r^2\\)",
-        "when": "For a right cone, slant height ℓ=√(r²+h²), not vertical height. A regular pyramid has lateral area perimeter × slant height /2. A closed hemisphere also includes its circular base.",
-        "example": "A right cone with radius 3 and height 4 has slant height 5, volume 12π, and total surface area 24π."
+        "when": "For a right cone, slant height \\(\\ell =\\sqrt{r^{2}+h^{2}}\\), not vertical height. A regular pyramid has lateral area perimeter × slant height /2. A closed hemisphere also includes its circular base.",
+        "example": "A right cone with radius 3 and height 4 has slant height 5, volume \\(12 \\pi\\), and total surface area \\(24 \\pi\\)."
       },
       {
         "id": "coordinatearea",
         "title": "Coordinate area and perpendicular distance",
         "formula": "\\(A_{\\rm parallelogram}=|u_xv_y-u_yv_x|;\\quad d_{\\rm point,line}=\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}\\)",
-        "when": "For a triangle using two adjacent vectors, halve the determinant area. The distance formula assumes Ax+By+C=0 and A,B not both zero. A box diagonal is √(l²+w²+h²).",
-        "example": "Vectors (3,1) and (−2,4) span a triangle of area |12+2|/2=7. Distance from (1,2) to 3x+4y−1=0 is 10/5=2."
+        "when": "For a triangle using two adjacent vectors, halve the determinant area. The distance formula assumes \\(Ax+By+C=0\\) and A,B not both zero. A box diagonal is \\(\\sqrt{l^{2}+w^{2}+h^{2}}\\).",
+        "example": "Vectors (3,1) and (−2,4) span a triangle of area \\(\\frac{\\lvert 12+2\\rvert }{2}=7\\). Distance from (1,2) to \\(3 x+4 y-1=0\\) is \\(\\frac{10}{5}=2\\)."
       },
       {
         "id": "centers",
         "title": "Triangle centers and circle radii",
         "formula": "\\(G=(\\tfrac{x_1+x_2+x_3}3,\\tfrac{y_1+y_2+y_3}3);\\quad r=A/s;\\quad R=c/2\\text{ (right triangle)}\\)",
         "when": "The centroid divides each median 2:1 from the vertex. The incenter meets angle bisectors; its radius is area divided by semiperimeter. A right triangle’s circumcenter is its hypotenuse midpoint.",
-        "example": "Legs 5 and 12 give hypotenuse 13, area 30 and semiperimeter 15; thus inradius 2 and circumradius 13/2. A 15-unit median has vertex-to-centroid distance 10."
+        "example": "Legs 5 and 12 give hypotenuse 13, area 30 and semiperimeter 15; thus inradius 2 and circumradius \\(\\frac{13}{2}\\). A 15-unit median has vertex-to-centroid distance 10."
       },
       {
         "id": "angleconditions",
         "title": "Angle conditions, congruence, and symmetry",
         "formula": "\\(\\alpha+\\beta+\\gamma=180^\\circ;\\quad\\alpha+\\alpha_{\\rm opposite}=180^\\circ\\text{ (cyclic quadrilateral)}\\)",
         "when": "Parallel-line angle equalities require parallel lines. Equal triangle angles prove similarity; SSS, SAS, ASA/AAS or right-triangle hypotenuse-leg can prove congruence. Locate a circle angle’s vertex before choosing sum, difference or half-arc.",
-        "example": "In a cyclic quadrilateral, an angle of 112° makes its opposite 68°. An isosceles triangle with vertex angle 40° has equal base angles 70°, regardless of its size."
+        "example": "In a cyclic quadrilateral, an angle of \\(112^\\circ\\) makes its opposite \\(68^\\circ\\). An isosceles triangle with vertex angle \\(40^\\circ\\) has equal base angles \\(70^\\circ\\), regardless of its size."
       }
     ]
   },
@@ -284,57 +284,57 @@
         "id": "ratios",
         "title": "Right-triangle ratios",
         "formula": "\\(\\sin\\theta=o/h;\\quad\\cos\\theta=a/h;\\quad\\tan\\theta=o/a\\)",
-        "when": "Use an acute marked angle in a right triangle. Opposite and adjacent depend on that angle. Hypotenuse is opposite 90° and does not change.",
-        "example": "With opposite 7, adjacent 24, hypotenuse 25, sine is 7/25 and tangent 7/24."
+        "when": "Use an acute marked angle in a right triangle. Opposite and adjacent depend on that angle. Hypotenuse is opposite \\(90^\\circ\\) and does not change.",
+        "example": "With opposite 7, adjacent 24, hypotenuse 25, sine is \\(\\frac{7}{25}\\) and tangent \\(\\frac{7}{24}\\)."
       },
       {
         "id": "exact",
         "title": "Exact unit-circle values",
         "formula": "\\(\\begin{array}{c|ccccc}\\theta&0&\\pi/6&\\pi/4&\\pi/3&\\pi/2\\\\\\sin\\theta&0&1/2&\\sqrt2/2&\\sqrt3/2&1\\\\\\cos\\theta&1&\\sqrt3/2&\\sqrt2/2&1/2&0\\end{array}\\)",
-        "when": "Unit-circle points are (cosθ,sinθ). Use a reference angle and the quadrant sign beyond the first quadrant. Tangent is sine/cosine and is undefined when cosine is zero.",
-        "example": "\\(\\cos(5\\pi/6)=-\\sqrt3/2\\) because the reference angle is π/6 in Quadrant II."
+        "when": "Unit-circle points are \\(\\left(\\cos \\theta ,\\sin \\theta \\right)\\). Use a reference angle and the quadrant sign beyond the first quadrant. Tangent is \\(\\frac{\\sin\\theta}{\\cos\\theta}\\) and is undefined when cosine is zero.",
+        "example": "\\(\\cos(5\\pi/6)=-\\sqrt3/2\\) because the reference angle is \\(\\frac{\\pi }{6}\\) in Quadrant II."
       },
       {
         "id": "units",
         "title": "Radians, arc length, and signs",
         "formula": "\\(\\theta_{\\rm rad}=\\theta_{\\rm deg}\\pi/180;\\quad s=r\\theta;\\quad\\sin(-\\theta)=-\\sin\\theta;\\quad\\cos(-\\theta)=\\cos\\theta\\)",
         "when": "Arc length requires radians. Sine is positive in I/II, cosine in I/IV, tangent in I/III. A negative angle is clockwise; its trig values do not all become negative.",
-        "example": "150°=5π/6 radians. On radius 12 its arc length is 10π."
+        "example": "\\(150^\\circ =\\frac{5 \\pi }{6}\\) radians. On radius 12 its arc length is \\(10 \\pi\\)."
       },
       {
         "id": "identities",
         "title": "Reciprocals and basic identities",
         "formula": "\\(\\sin^2\\theta+\\cos^2\\theta=1;\\;\\tan\\theta=\\sin\\theta/\\cos\\theta;\\;\\csc=1/\\sin;\\;\\sec=1/\\cos;\\;\\cot=\\cos/\\sin\\)",
-        "when": "Keep denominator restrictions. A squared sine means (sinθ)². Use quadrant signs when taking a square root to recover sine or cosine.",
-        "example": "If cosθ=−12/13 in Quadrant II, sinθ=5/13, tanθ=−5/12, and secθ=−13/12."
+        "when": "Keep denominator restrictions. A squared sine means \\(\\left(\\sin \\theta \\right)^{2}\\). Use quadrant signs when taking a square root to recover sine or cosine.",
+        "example": "If \\(\\cos \\theta =\\frac{-12}{13}\\) in Quadrant II, \\(\\sin \\theta =\\frac{5}{13}\\), \\(\\tan \\theta =\\frac{-5}{12}\\), and \\(\\sec \\theta =\\frac{-13}{12}\\)."
       },
       {
         "id": "doubleangle",
         "title": "Double-angle and sum identities",
         "formula": "\\(\\sin2\\theta=2\\sin\\theta\\cos\\theta;\\;\\cos2\\theta=\\cos^2\\theta-\\sin^2\\theta;\\;\\sin(u\\pm v)=\\sin u\\cos v\\pm\\cos u\\sin v;\\;\\cos(u\\pm v)=\\cos u\\cos v\\mp\\sin u\\sin v\\)",
-        "when": "Use the opposite sign in the cosine sum rule. Double-angle forms include 2cos²θ−1 and 1−2sin²θ. These formulas do not remove any restriction from an original denominator.",
+        "when": "Use the opposite sign in the cosine sum rule. Double-angle forms include \\(2 \\cos ^{2}\\theta -1\\) and \\(1-2 \\sin ^{2}\\theta\\). These formulas do not remove any restriction from an original denominator.",
         "example": "\\(\\sin75^\\circ=\\sin(45^\\circ+30^\\circ)=(\\sqrt6+\\sqrt2)/4\\)."
       },
       {
         "id": "triggraphs",
         "title": "Trig graphs and intervals",
         "formula": "\\(y=A\\sin(Bx+C)+D;\\quad\\text{period}=2\\pi/|B|;\\quad\\text{shift}=-C/B;\\quad\\text{range}=[D-|A|,D+|A|]\\)",
-        "when": "For nonconstant sine/cosine, A,B≠0. Tangent has period π/|B| and no finite amplitude. Restricted intervals can shrink the sine/cosine range. Inverse trig gives one angle, so count all solutions.",
-        "example": "For 4cos(2x−π)+1, amplitude=4, period=π, shift=π/2 right, and full-domain range=[−3,5]."
+        "when": "For nonconstant \\(\\frac{\\sin\\theta}{\\cos\\theta}\\), A,\\(B\\ne 0\\). Tangent has period \\(\\frac{\\pi }{\\lvert B\\rvert }\\) and no finite amplitude. Restricted intervals can shrink the \\(\\frac{\\sin\\theta}{\\cos\\theta}\\) range. Inverse trig gives one angle, so count all solutions.",
+        "example": "For \\(4 \\cos \\left(2 x-\\pi \\right)+1\\), \\(\\text{amplitude}=4\\), \\(\\text{period}=\\pi\\), shift=\\(\\frac{\\pi }{2}\\) right, and full-domain range \\([-3,5]\\)."
       },
       {
         "id": "trianglelaws",
         "title": "Laws of sines and cosines",
         "formula": "\\(a/\\sin A=b/\\sin B=c/\\sin C;\\quad c^2=a^2+b^2-2ab\\cos C;\\quad K=ab\\sin C/2\\)",
-        "when": "Lowercase side a is opposite angle A. Cosine law uses the included angle. A nonincluded angle with two sides can produce zero, one, or two triangles; test the supplement and the 180° sum.",
-        "example": "Sides 6 and 10 enclosing 60° give third side √76=2√19 and area 15√3."
+        "when": "Lowercase side a is opposite angle A. Cosine law uses the included angle. A nonincluded angle with two sides can produce zero, one, or two triangles; test the supplement and the \\(180^\\circ\\) sum.",
+        "example": "Sides 6 and 10 enclosing \\(60^\\circ\\) give third side \\(\\sqrt{76}=2 \\sqrt{19}\\) and area \\(15 \\sqrt{3}\\)."
       },
       {
         "id": "elevation",
         "title": "Elevation and angle solutions",
         "formula": "\\(h=d\\tan\\theta;\\quad\\sin u=\\sin\\alpha\\Rightarrow u=\\alpha+2k\\pi\\text{ or }\\pi-\\alpha+2k\\pi\\)",
-        "when": "The height formula uses horizontal distance d and elevation θ from horizontal; add observer eye height if needed. For a trig equation, solve for its entire inner angle, then restrict x to the stated interval.",
-        "example": "At horizontal distance 18 and elevation 45°, the rise is 18. With eye height 1.5, total height is 19.5."
+        "when": "The height formula uses horizontal distance d and elevation \\(\\theta\\) from horizontal; add observer eye height if needed. For a trig equation, solve for its entire inner angle, then restrict x to the stated interval.",
+        "example": "At horizontal distance 18 and elevation \\(45^\\circ\\), the rise is 18. With eye height 1.5, total height is 19.5."
       }
     ]
   },
@@ -347,56 +347,56 @@
         "title": "Mean, weighted mean, median, and mode",
         "formula": "\\(\\bar x=\\frac{\\sum x_i}{n};\\quad\\bar x_{\\rm weighted}=\\frac{\\sum n_i\\bar x_i}{\\sum n_i}\\)",
         "when": "Use counts as weights, including in frequency tables. Sort before locating a median; an even count uses the average of two middle entries. Mode is the most frequent value.",
-        "example": "Four values averaging 7 and six averaging 12 combine to mean (28+72)/10=10."
+        "example": "Four values averaging 7 and six averaging 12 combine to mean \\(\\frac{28+72}{10}=10\\)."
       },
       {
         "id": "spread",
         "title": "Spread, variance, and standardized distance",
         "formula": "\\(IQR=Q_3-Q_1;\\quad\\sigma^2=\\frac{\\sum(x_i-\\mu)^2}{N};\\quad s^2=\\frac{\\sum(x_i-\\bar x)^2}{n-1};\\quad z=(x-\\mu)/\\sigma\\)",
-        "when": "Population variance divides by N; sample variance by n−1 with n>1. Standard deviation is the square root. z requires σ>0 and does not by itself establish a normal distribution.",
-        "example": "The population 1,3,5 has mean 3, variance 8/3, and standard deviation √(8/3)."
+        "when": "Population variance divides by N; sample variance by n−1 with \\(n>1\\). Standard deviation is the square root. z requires \\(\\sigma >0\\) and does not by itself establish a normal distribution.",
+        "example": "The population 1,3,5 has mean 3, variance \\(\\frac{8}{3}\\), and standard deviation \\(\\sqrt{\\frac{8}{3}}\\)."
       },
       {
         "id": "datatransform",
         "title": "Transforming every data value",
         "formula": "\\(y=ax+b:\\quad\\mu_y=a\\mu_x+b,\\quad\\sigma_y=|a|\\sigma_x,\\quad\\operatorname{Var}(y)=a^2\\operatorname{Var}(x)\\)",
-        "when": "Adding a constant does not change spread. A negative multiplier reverses order but standard deviation stays nonnegative. Do not multiply variance by |a|.",
-        "example": "If mean=20 and standard deviation=4, y=−3x+10 has mean −50, standard deviation 12, variance 144."
+        "when": "Adding a constant does not change spread. A negative multiplier reverses order but standard deviation stays nonnegative. Do not multiply variance by \\(\\lvert a\\rvert\\).",
+        "example": "If \\(\\text{mean}=20\\) and \\(\\text{standard deviation}=4\\), \\(y=-3 x+10\\) has mean −50, standard deviation 12, variance 144."
       },
       {
         "id": "conditional",
         "title": "Conditional and joint probability",
         "formula": "\\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)};\\quad P(A\\cap B)=P(B)P(A\\mid B)\\)",
-        "when": "Conditioning requires P(B)>0 and changes the denominator to the given group. Without replacement, counts change after each draw. Independence means P(A|B)=P(A) when conditioning is defined.",
-        "example": "If 9 of 15 cyclists wear helmets, among cyclists the helmet probability is 9/15=3/5, regardless of the number of noncyclists."
+        "when": "Conditioning requires \\(P \\left(B\\right)>0\\) and changes the denominator to the given group. Without replacement, counts change after each draw. Independence means \\(P(A\\mid B)=P(A)\\) when conditioning is defined.",
+        "example": "If 9 of 15 cyclists wear helmets, among cyclists the helmet probability is \\(\\frac{9}{15}=\\frac{3}{5}\\), regardless of the number of noncyclists."
       },
       {
         "id": "union",
         "title": "Union and complements",
         "formula": "\\(P(A\\cup B)=P(A)+P(B)-P(A\\cap B);\\quad P(A^c)=1-P(A)\\)",
         "when": "Disjoint events have no overlap. Independent events may overlap; then multiply to get the overlap. “At least one” is often 1 minus the probability of none.",
-        "example": "With P(A)=0.6, P(B)=0.3, and overlap=0.1, the inclusive union is 0.8."
+        "example": "With \\(P \\left(A\\right)=0.6\\), \\(P \\left(B\\right)=0.3\\), and \\(\\text{overlap}=0.1\\), the inclusive union is 0.8."
       },
       {
         "id": "counting",
         "title": "Permutations, combinations, and repeated objects",
         "formula": "\\({}_nP_r=n!/(n-r)!;\\quad\\binom nr=n!/[r!(n-r)!];\\quad\\text{multiset arrangements}=n!/(n_1!n_2!\\cdots)\\)",
-        "when": "Use permutations for ordered choices without repeats, combinations for unordered choices. For arrangements with indistinguishable repeats, divide by each repeat count factorial. All counts are nonnegative integers and r≤n.",
-        "example": "Three roles from six people give 120 assignments; three-person groups give 20. BANANA has 6!/(3!2!)=60 distinct arrangements."
+        "when": "Use permutations for ordered choices without repeats, combinations for unordered choices. For arrangements with indistinguishable repeats, divide by each repeat count factorial. All counts are nonnegative integers and \\(r\\le n\\).",
+        "example": "Three roles from six people give 120 assignments; three-person groups give 20. BANANA has \\(\\frac{6!}{3! 2!}=60\\) distinct arrangements."
       },
       {
         "id": "distributions",
         "title": "Binomial probability and expected value",
         "formula": "\\(P(X=k)=\\binom nk p^k(1-p)^{n-k};\\quad E(X)=\\sum x_iP(X=x_i)\\)",
         "when": "Binomial trials must be independent with a fixed count n and unchanged success probability p. Distribution probabilities sum to 1. Subtract entry costs for net gains.",
-        "example": "In four independent fair trials, exactly one success has probability 4/16=1/4. A $9 payout with chance 1/3 and $2 entry cost has expected net gain $1."
+        "example": "In four independent fair trials, exactly one success has probability \\(\\frac{4}{16}=\\frac{1}{4}\\). A $9 payout with chance \\(\\frac{1}{3}\\) and $2 entry cost has expected net gain $1."
       },
       {
         "id": "design",
         "title": "Randomization, association, and residuals",
         "formula": "\\(\\text{residual}=\\text{observed}-\\text{predicted}\\)",
         "when": "Random sampling supports population generalization; random treatment assignment supports causal comparison under a sound design. Association alone does not establish cause. Systematic residual patterns suggest a model misses structure.",
-        "example": "A model predicts 18 when the observed value is 15, so residual=−3. This indicates overprediction, not an error of +3."
+        "example": "A model predicts 18 when the observed value is 15, so \\(\\text{residual}=-3\\). This indicates overprediction, not an error of +3."
       }
     ]
   },
@@ -408,7 +408,7 @@
         "id": "exponentlaws",
         "title": "Exponent rules and scientific notation",
         "formula": "\\(a^ma^n=a^{m+n};\\quad a^m/a^n=a^{m-n};\\quad(a^m)^n=a^{mn};\\quad a^{-n}=1/a^n;\\quad a^0=1\\)",
-        "when": "Use nonzero bases for zero/negative exponents and denominators. These identities hold for integer exponents; with arbitrary real exponents take a>0. Normalize scientific notation as c·10ⁿ with 1≤|c|<10.",
+        "when": "Use nonzero bases for zero/negative exponents and denominators. These identities hold for integer exponents; with arbitrary real exponents take \\(a>0\\). Normalize scientific notation as \\(c\\cdot 10^{n}\\) with \\(1\\le \\lvert c\\rvert <10\\).",
         "example": "\\(\\frac{6\\times10^7}{3\\times10^{-2}}=2\\times10^9\\). A negative denominator exponent is subtracted."
       },
       {
@@ -416,7 +416,7 @@
         "title": "Radicals and rational exponents",
         "formula": "\\(a^{m/n}=(\\sqrt[n]a)^m;\\quad\\sqrt{x^2}=|x|;\\quad\\sqrt{ab}=\\sqrt a\\sqrt b\\;(a,b\\ge0)\\)",
         "when": "Reduce the rational exponent first and state the real domain. Even roots need nonnegative radicands; negative powers also exclude zero. Do not distribute a radical across a sum.",
-        "example": "\\(16^{3/4}=8\\). For x=−5, √(4x²)=2|x|=10, not 2x."
+        "example": "\\(16^{3/4}=8\\). For \\(x=-5\\), \\(\\sqrt{4 x^{2}}=2 \\lvert x\\rvert =10\\), not 2x."
       },
       {
         "id": "complex",
@@ -430,49 +430,49 @@
         "title": "Vector operations and dot product",
         "formula": "\\(\\mathbf u+\\mathbf v=(u_x+v_x,u_y+v_y);\\quad|\\mathbf u|=\\sqrt{u_x^2+u_y^2};\\quad\\mathbf u\\cdot\\mathbf v=u_xv_x+u_yv_y=|\\mathbf u||\\mathbf v|\\cos\\theta\\)",
         "when": "Scalar multiplication applies to every component. Dot product zero implies perpendicularity only for two nonzero vectors. The angle formula divides by both magnitudes.",
-        "example": "For u=(1,−2), v=(4,2), the dot product is 0, so they are perpendicular. The vector 3u−v is (−1,−8)."
+        "example": "For \\(u=\\left(1,-2\\right)\\), \\(v=\\left(4,2\\right)\\), the dot product is 0, so they are perpendicular. The vector 3u−v is (−1,−8)."
       },
       {
         "id": "matrixproduct",
         "title": "Matrix addition, scalar multiplication, and products",
         "formula": "\\((AB)_{ij}=\\sum_k A_{ik}B_{kj}\\)",
-        "when": "Add/subtract matrices only if their dimensions match; scalar multiplication changes every entry. Multiplication needs matching inner dimensions and uses row-column dot products. Usually AB≠BA.",
+        "when": "Add/subtract matrices only if their dimensions match; scalar multiplication changes every entry. Multiplication needs matching inner dimensions and uses row-column dot products. Usually \\(AB\\ne BA\\).",
         "example": "\\(\\begin{bmatrix}2&1\\\\-1&3\\end{bmatrix}\\begin{bmatrix}4\\\\2\\end{bmatrix}=\\begin{bmatrix}10\\\\2\\end{bmatrix}\\)."
       },
       {
         "id": "matrixinverse",
         "title": "Determinant and 2×2 inverse",
         "formula": "\\(A=\\begin{bmatrix}a&b\\\\c&d\\end{bmatrix};\\quad\\det A=ad-bc;\\quad A^{-1}=\\frac1{ad-bc}\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}\\)",
-        "when": "An inverse exists only if ad−bc≠0. Verify by multiplying to the identity. Swap the diagonal entries and negate the off-diagonal entries before dividing by the determinant.",
+        "when": "An inverse exists only if \\(ad-bc\\ne 0\\). Verify by multiplying to the identity. Swap the diagonal entries and negate the off-diagonal entries before dividing by the determinant.",
         "example": "\\(A=\\begin{bmatrix}2&1\\\\1&1\\end{bmatrix}\\) has determinant 1 and inverse \\(\\begin{bmatrix}1&-1\\\\-1&2\\end{bmatrix}\\)."
       },
       {
         "id": "arithmetic",
         "title": "Arithmetic terms and sums",
         "formula": "\\(a_n=a_1+(n-1)d;\\quad S_n=n(a_1+a_n)/2\\)",
-        "when": "An arithmetic sequence has constant differences. The formula starts at index 1; with index 0 use a_n=a_0+nd. Distinguish the nth term from the sum of n terms.",
-        "example": "For first term 4, difference 5, the tenth term is 49 and first-ten sum is 10(4+49)/2=265."
+        "when": "An arithmetic sequence has constant differences. The formula starts at index 1; with index 0 use \\(a_{n}=a_{0}+nd\\). Distinguish the nth term from the sum of n terms.",
+        "example": "For first term 4, difference 5, the tenth term is 49 and first-ten sum is \\(\\frac{10 \\left(4+49\\right)}{2}=265\\)."
       },
       {
         "id": "geometric",
         "title": "Geometric terms and finite/infinite sums",
         "formula": "\\(a_n=a_1r^{n-1};\\quad S_n=a_1(1-r^n)/(1-r);\\quad S_\\infty=a_1/(1-r)\\)",
-        "when": "The finite sum formula assumes r≠1; if r=1, S_n=na_1. The infinite sum exists only when |r|<1. Count n−1 jumps from the first to nth term.",
-        "example": "For 20,10,5,…, the fifth term is 5/4, the first-five sum is 155/4, and the infinite sum is 40."
+        "when": "The finite sum formula assumes \\(r\\ne 1\\); if \\(r=1\\), \\(S_n=na_1\\). The infinite sum exists only when \\(\\lvert r\\rvert <1\\). Count n−1 jumps from the first to nth term.",
+        "example": "For 20,10,5,…, the fifth term is \\(\\frac{5}{4}\\), the first-five sum is \\(\\frac{155}{4}\\), and the infinite sum is 40."
       },
       {
         "id": "integers",
         "title": "Prime factors, GCF, LCM, and remainders",
         "formula": "\\(N=dq+r,\\;0\\le r<d;\\quad\\gcd(a,b)\\operatorname{lcm}(a,b)=ab\\)",
         "when": "For the GCF/LCM identity use positive integers. Prime factors with smaller exponents give the GCF; larger exponents give the LCM. An even plus an odd integer is odd; the product is even.",
-        "example": "60=2²·3·5 and 84=2²·3·7 have GCF 12 and LCM 420. Since N=7q+4, 2N+1 leaves remainder 2 on division by 7."
+        "example": "\\(60=2^{2}\\cdot 3\\cdot 5\\) and \\(84=2^{2}\\cdot 3\\cdot 7\\) have GCF 12 and LCM 420. Since \\(N=7 q+4\\), 2N+1 leaves remainder 2 on division by 7."
       },
       {
         "id": "numbersystems",
         "title": "Rational, irrational, and perfect-square reasoning",
         "formula": "\\(\\mathbb Q=\\{p/q:p,q\\in\\mathbb Z,q\\ne0\\};\\quad N=\\prod p_i^{e_i}\\text{ is a square iff every }e_i\\text{ is even}\\)",
         "when": "A rational decimal terminates or repeats. A square root of a positive integer is rational exactly when that integer is a square. Rational plus irrational is irrational; sums or products of two irrationals may be rational.",
-        "example": "72=2³·3² needs one more factor 2 to become a square: √144=12. Also √2·√2=2 is rational, so “irrational times irrational is always irrational” is false."
+        "example": "\\(72=2^{3}\\cdot 3^{2}\\) needs one more factor 2 to become a square: \\(\\sqrt{144}=12\\). Also \\(\\sqrt{2}\\cdot \\sqrt{2}=2\\) is rational, so “irrational times irrational is always irrational” is false."
       }
     ]
   },
@@ -485,14 +485,14 @@
         "title": "Percent change and reversing changes",
         "formula": "\\(\\%\\text{ change}=100(\\text{new}-\\text{old})/\\text{old};\\quad\\text{new}=\\text{old}(1\\pm p/100)\\)",
         "when": "Percent change needs a nonzero original base. Successive changes multiply factors. Reverse by dividing by the factor; a p% rise and p% fall do not cancel.",
-        "example": "After a 30% discount a price is $84, so the original price was 84/0.70=$120."
+        "example": "After a 30% discount a price is $84, so the original price was \\(\\frac{84}{0.70}\\)=$120."
       },
       {
         "id": "ratio",
         "title": "Ratios and proportions",
         "formula": "\\(a:b\\text{ split of }T\\Rightarrow Ta/(a+b),\\;Tb/(a+b)\\)",
-        "when": "Use a,b≥0 with positive sum. Cross-multiply a/b=c/d only when denominators are nonzero. Compare like units before forming a ratio.",
-        "example": "A 2:7 split of 81 gives 18 and 63; the smaller portion is 2/9 of the whole."
+        "when": "Use a,\\(b\\ge 0\\) with positive sum. Cross-multiply \\(\\frac{a}{b}=\\frac{c}{d}\\) only when denominators are nonzero. Compare like units before forming a ratio.",
+        "example": "A 2:7 split of 81 gives 18 and 63; the smaller portion is \\(\\frac{2}{9}\\) of the whole."
       },
       {
         "id": "rateunits",
@@ -506,21 +506,21 @@
         "title": "Work rates and relative motion",
         "formula": "\\(R_{\\rm together}=1/t_1+1/t_2;\\quad T=1/R;\\quad\\text{closing speed}=v_1+v_2\\text{ or }|v_1-v_2|\\)",
         "when": "Solo times are positive. Add filling rates and subtract draining rates. Add speeds toward each other; subtract for a same-direction chase. A zero or negative net filling rate cannot fill an empty tank.",
-        "example": "Machines needing 8 and 24 hours alone have combined rate 1/8+1/24=1/6 job/hour, so together take 6 hours. Rates, not completion times, add."
+        "example": "Machines needing 8 and 24 hours alone have combined rate \\(\\frac{1}{8}+\\frac{1}{24}=\\frac{1}{6}\\) job/hour, so together take 6 hours. Rates, not completion times, add."
       },
       {
         "id": "mixture",
         "title": "Mixtures and weighted quantities",
         "formula": "\\(c_{\\rm final}=\\frac{c_1V_1+c_2V_2}{V_1+V_2}\\)",
         "when": "Use compatible volume units and decimal concentrations. Pure water has concentration 0, pure ingredient 1. The final concentration lies between the input concentrations.",
-        "example": "Combining 3 liters at 20% and 7 at 40% gives (0.6+2.8)/10=34%."
+        "example": "Combining 3 liters at 20% and 7 at 40% gives \\(\\frac{0.6+2.8}{10}=34\\%\\)."
       },
       {
         "id": "precision",
         "title": "Estimation and whole-number rounding",
         "formula": "\\(\\text{containers needed}=\\lceil Q/c\\rceil;\\quad\\text{items affordable}=\\lfloor B/p\\rfloor\\)",
         "when": "Round only at the end unless the question specifies otherwise. For positive quantities, round up capacity needs and down budget limits. Use units and an estimate to catch misplaced decimals.",
-        "example": "For 97 guests at tables of 8, 12 tables are insufficient, so ceil(97/8)=13 tables are needed."
+        "example": "For 97 guests at tables of 8, 12 tables are insufficient, so ceil \\(\\left(\\frac{97}{8}\\right)=13\\) tables are needed."
       }
     ]
   },
@@ -532,43 +532,43 @@
         "id": "linear",
         "title": "Linear models and break-even",
         "formula": "\\(C(q)=F+vq;\\quad R(q)=pq;\\quad P(q)=(p-v)q-F\\)",
-        "when": "F is fixed cost, v cost per unit, and p selling price. Break-even requires R=C. Check domain and whole-unit constraints; if p≤v and F>0, positive production cannot cover the fixed cost.",
-        "example": "With fixed cost 120, cost 3 per item and price 8, break-even is q=120/(8−3)=24."
+        "when": "F is fixed cost, v cost per unit, and p selling price. Break-even requires \\(R=C\\). Check domain and whole-unit constraints; if \\(p\\le v\\) and \\(F>0\\), positive production cannot cover the fixed cost.",
+        "example": "With fixed cost 120, cost 3 per item and price 8, break-even is \\(q=\\frac{120}{8-3}=24\\)."
       },
       {
         "id": "compound",
         "title": "Simple and compound interest",
         "formula": "\\(A_{\\rm simple}=P(1+rt);\\quad A_{\\rm compound}=P(1+r/n)^{nt}\\)",
         "when": "r is annual rate as a decimal, t years, and n compounding periods per year. These models exclude additional deposits/withdrawals. Do not use a percent as a whole number.",
-        "example": "With $500 at 6% compounded twice yearly for 3 years, amount is 500(1.03)⁶; simple interest would give $590."
+        "example": "With $500 at 6% compounded twice yearly for 3 years, amount is \\(500 \\left(1.03\\right)^{6}\\); simple interest would give $590."
       },
       {
         "id": "doubling",
         "title": "Doubling time and half-life",
         "formula": "\\(P(t)=P_0\\,2^{t/d};\\quad P(t)=P_0(1/2)^{t/h}\\)",
         "when": "Use consistent time units. d is doubling time and h half-life. These assume a constant exponential rate; they do not describe constant absolute gains or losses.",
-        "example": "An 80-unit sample with half-life 6 hours has 80(1/2)³=10 units after 18 hours."
+        "example": "An 80-unit sample with half-life 6 hours has \\(80 \\left(\\frac{1}{2}\\right)^{3}=10\\) units after 18 hours."
       },
       {
         "id": "optimize",
         "title": "Quadratic optimization with constraints",
         "formula": "\\(q_{\\rm vertex}=-b/(2a);\\quad P_{\\rm vertex}=P(q_{\\rm vertex})\\)",
-        "when": "For a<0 the unrestricted vertex maximizes output. Compare it with allowed interval endpoints. For whole counts, check nearby feasible integers; the vertex input is different from its output.",
-        "example": "For P(q)=−q²+14q−10 on 0≤q≤5, the unrestricted vertex q=7 is unavailable; maximum P(5)=35."
+        "when": "For \\(a<0\\) the unrestricted vertex maximizes output. Compare it with allowed interval endpoints. For whole counts, check nearby feasible integers; the vertex input is different from its output.",
+        "example": "For \\(P \\left(q\\right)=-q^{2}+14 q-10\\) on \\(0\\le q\\le 5\\), the unrestricted vertex \\(q=7\\) is unavailable; maximum \\(P \\left(5\\right)=35\\)."
       },
       {
         "id": "piecewise",
         "title": "Thresholds and piecewise costs",
         "formula": "\\(C(q)=F+r\\max(0,q-q_0)\\)",
-        "when": "This model has F covering the first q₀ units and rate r on excess units. State whether thresholds include equality and whether a charge rounds up fractional units.",
-        "example": "A $12 plan includes 4 visits, then charges $3 per extra visit. Nine visits cost 12+3(9−4)=$27."
+        "when": "This model has F covering the first \\(q_{0}\\) units and rate r on excess units. State whether thresholds include equality and whether a charge rounds up fractional units.",
+        "example": "A $12 plan includes 4 visits, then charges $3 per extra visit. Nine visits cost \\(12+3 \\left(9-4\\right)\\)=$27."
       },
       {
         "id": "fit",
         "title": "Recovering and judging models",
         "formula": "\\(m=\\Delta y/\\Delta x;\\quad b=y-mx;\\quad\\text{residual}=y-\\hat y\\)",
         "when": "Use differences for a stated linear model and ratios across equal gaps for an exponential one. Small residuals suggest fit only on the observed data; systematic residual patterns signal missing structure.",
-        "example": "A linear model has outputs 17 at x=2 and 29 at x=5, giving m=4 and b=9. At x=3, observed 20 minus predicted 21 gives residual −1."
+        "example": "A linear model has outputs 17 at \\(x=2\\) and 29 at \\(x=5\\), giving \\(m=4\\) and \\(b=9\\). At \\(x=3\\), observed 20 minus predicted 21 gives residual −1."
       }
     ]
   }

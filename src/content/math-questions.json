@@ -111,7 +111,7 @@
     "questionText": "What is the real domain of f?",
     "choices": [
       "\\(x \\le  4\\)",
-      "x < 4 and \\(x \\ne  2\\)",
+      "\\(x<4\\) and \\(x \\ne  2\\)",
       "\\(x \\le  4\\) and \\(x \\ne  -2\\)",
       "\\(x \\ge  4\\) and \\(x \\ne  -2\\)"
     ],
@@ -184,7 +184,7 @@
       "\\(-3\\)"
     ],
     "answer": 2,
-    "explanation": "Both logarithms need positive inputs, giving x > 1. Combine the logs: \\(\\log _{2}((x - 1)(x + 1)) = 3\\), so \\(x^{2} - 1 = 2^{3} = 8\\). Then \\(x^{2} = 9\\). Only \\(x = 3\\) satisfies the domain; \\(x = -3\\) is an extraneous candidate. Do not turn a sum of logarithms into the logarithm of a sum."
+    "explanation": "Both logarithms need positive inputs, giving \\(x>1\\). Combine the logs: \\(\\log _{2}((x - 1)(x + 1)) = 3\\), so \\(x^{2} - 1 = 2^{3} = 8\\). Then \\(x^{2} = 9\\). Only \\(x = 3\\) satisfies the domain; \\(x = -3\\) is an extraneous candidate. Do not turn a sum of logarithms into the logarithm of a sum."
   },
   {
     "id": "math-functions-d6",
@@ -660,7 +660,7 @@
       "2"
     ],
     "answer": 2,
-    "explanation": "Convert kilometers to meters and hours to seconds: \\(72 \\times  \\frac{1000}{3600} = 20\\) meters per second. The units cancel as km/h × m/km × h/s. Multiplying by 3.6 converts the other way; to change km/h to m/s, divide by 3.6."
+    "explanation": "Convert kilometers to meters and hours to seconds: \\(72 \\times  \\frac{1000}{3600} = 20\\) meters per second. The units cancel as \\(\\frac{\\frac{\\frac{\\text{km}}{h}\\times m}{\\text{km}}\\times h}{s}\\). Multiplying by 3.6 converts the other way; to change \\(\\frac{\\text{km}}{h}\\) to \\(\\frac{m}{s}\\), divide by 3.6."
   },
   {
     "id": "math-essential-skills-d4",
@@ -1250,9 +1250,9 @@
     "questionText": "Which interval is the solution set?",
     "choices": [
       "\\(-3 \\le  x \\le  2\\)",
-      "x < 2",
-      "\\(-3\\) < x < 2",
-      "x < \\(-3\\) or x > 2"
+      "\\(x<2\\)",
+      "\\(-3\\) < \\(x<2\\)",
+      "x < \\(-3\\) or \\(x>2\\)"
     ],
     "answer": 2,
     "explanation": "The zeros are \\(-3\\) and 2. Between them, \\(x - 2\\) is negative and \\(x + 3\\) is positive, so their product is negative. Outside them, the factors have the same sign, so the product is positive. The strict inequality excludes both zeros. Testing one point in each interval prevents sign mistakes."
@@ -1323,7 +1323,7 @@
       "\\(\\frac{3}{4}\\)"
     ],
     "answer": 1,
-    "explanation": "There are \\(2^{4} = 16\\) equally likely sequences. Exactly 3 heads occurs in \\(C(4, 3) = 4\\) sequences, and exactly 4 heads occurs in 1 sequence. Thus P(at least 3) = \\(\\frac{4+1}{16}\\) = \\(\\frac{5}{16}\\). “At least” includes four heads, so counting only exactly three is incomplete."
+    "explanation": "There are \\(2^{4} = 16\\) equally likely sequences. Exactly 3 heads occurs in \\(C(4, 3) = 4\\) sequences, and exactly 4 heads occurs in 1 sequence. Thus P(at least 3) = \\(\\frac{4+1}{16}=\\frac{5}{16}\\). “At least” includes four heads, so counting only exactly three is incomplete."
   },
   {
     "id": "math-exam-1-q31",
@@ -1467,7 +1467,7 @@
     "subject": "math",
     "category": "Modeling",
     "difficulty": "hard",
-    "stem": "A population follows \\(P(t) = P_{0}b^{t}\\), where t is hours and b > 0. \\(P(2) = 400\\) and \\(P(5) = 3,200\\).",
+    "stem": "A population follows \\(P(t) = P_{0}b^{t}\\), where t is hours and \\(b>0\\). \\(P(2) = 400\\) and \\(P(5) = 3,200\\).",
     "questionText": "What is \\(P_{0}\\)?",
     "choices": [
       "50",
@@ -1725,13 +1725,13 @@
     "stem": "\\(\\frac1{x-2}\\) > 0.",
     "questionText": "Which condition describes all solutions?",
     "choices": [
-      "x > 2",
-      "x < 2",
+      "\\(x>2\\)",
+      "\\(x<2\\)",
       "\\(x \\ge  2\\)",
-      "x > 0"
+      "\\(x>0\\)"
     ],
     "answer": 0,
-    "explanation": "The numerator is positive, so the fraction is positive exactly when its denominator is positive. Thus \\(x - 2\\) > 0, giving x > 2. The boundary \\(x = 2\\) is undefined and must be excluded. Multiplying by \\(x - 2\\) without considering its sign can reverse or lose a case."
+    "explanation": "The numerator is positive, so the fraction is positive exactly when its denominator is positive. Thus \\(x - 2\\) > 0, giving \\(x>2\\). The boundary \\(x = 2\\) is undefined and must be excluded. Multiplying by \\(x - 2\\) without considering its sign can reverse or lose a case."
   },
   {
     "id": "math-algebra-d16",
@@ -1776,13 +1776,13 @@
     "stem": "\\(|x - 4|\\) < 3.",
     "questionText": "Which interval is the solution set?",
     "choices": [
-      "x < 1 or x > 7",
+      "\\(x<1\\) or \\(x>7\\)",
       "\\(1 \\le  x \\le  7\\)",
-      "\\(-3\\) < x < 3",
-      "1 < x < 7"
+      "\\(-3\\) < \\(x<3\\)",
+      "\\(1<x<7\\)"
     ],
     "answer": 3,
-    "explanation": "The expression says x is less than 3 units from 4. Write \\(-3\\) < \\(x - 4\\) < 3 and add 4 throughout: 1 < x < 7. Strict inequality excludes both endpoints. Using the outside intervals would describe an absolute value greater than 3."
+    "explanation": "The expression says x is less than 3 units from 4. Write \\(-3\\) < \\(x - 4\\) < 3 and add 4 throughout: \\(1<x<7\\). Strict inequality excludes both endpoints. Using the outside intervals would describe an absolute value greater than 3."
   },
   {
     "id": "math-algebra-d19",
@@ -1898,7 +1898,7 @@
       "\\(x \\ge  -4\\)",
       "\\(x \\le  -4\\) or \\(x \\ge  2\\)",
       "\\(-4 \\le  x \\le  2\\)",
-      "x < \\(-4\\) or x > 2"
+      "x < \\(-4\\) or \\(x>2\\)"
     ],
     "answer": 1,
     "explanation": "Factor as \\((x + 4)(x - 2)\\). The product is positive outside the two zeros and negative between them. Because the inequality includes equality, both zeros are included: \\(x \\le  -4\\) or \\(x \\ge  2\\). Using the middle interval gives the negative-product region."
@@ -2015,7 +2015,7 @@
     "questionText": "Which inequality is equivalent?",
     "choices": [
       "\\(1 \\le  x\\) < 4",
-      "1 < x < 4",
+      "\\(1<x<4\\)",
       "\\(-1\\) < \\(x \\le  \\frac{10}{3}\\)",
       "1 < \\(x \\le  4\\)"
     ],
@@ -2063,7 +2063,7 @@
     "category": "Number and quantity",
     "difficulty": "medium",
     "stem": "\\(z = -5 + 12i\\).",
-    "questionText": "What is |z|?",
+    "questionText": "What is \\(\\lvert z\\rvert\\)?",
     "choices": [
       "17",
       "169",
@@ -2139,7 +2139,7 @@
       "3"
     ],
     "answer": 1,
-    "explanation": "Because |r| < 1, the infinite series converges to \\(\\frac{a_1}{1-r} = \\frac6{1-\\frac12} = 12\\). The first few sums 6, 9, 10.5 approach 12. Using the finite-sum formula with an arbitrary number of terms would answer a different question."
+    "explanation": "Because \\(\\lvert r\\rvert <1\\), the infinite series converges to \\(\\frac{a_1}{1-r} = \\frac6{1-\\frac12} = 12\\). The first few sums 6, 9, 10.5 approach 12. Using the finite-sum formula with an arbitrary number of terms would answer a different question."
   },
   {
     "id": "math-number-quantity-d14",
@@ -2547,7 +2547,7 @@
       "9.7 kilometers"
     ],
     "answer": 1,
-    "explanation": "Multiply map distance by the scale: 7.2 cm \\(\\times  2.5\\) km/cm \\(= 18\\) km. Centimeters cancel. Dividing by 2.5 converts an actual distance back to map centimeters, which reverses the requested conversion."
+    "explanation": "Multiply map distance by the scale: 7.2 cm \\(\\times  2.5\\) \\(\\frac{\\text{km}}{\\text{cm}}\\) \\(= 18\\) km. Centimeters cancel. Dividing by 2.5 converts an actual distance back to map centimeters, which reverses the requested conversion."
   },
   {
     "id": "math-essential-skills-d12",
@@ -2729,12 +2729,12 @@
     "questionText": "How many hours does the replacement pump need to fill the reservoir?",
     "choices": [
       "0.125",
-      "10/3",
+      "\\(\\frac{10}{3}\\)",
       "450",
       "7.5"
     ],
     "answer": 3,
-    "explanation": "First recover the volume using consistent time units:5 hours×60 minutes/hour×12 liters/minute=3600 liters. At 480 liters/hour, the replacement pump needs 3600/480=7.5 hours. The slower pump must take longer. The 450 choice is minutes rather than hours;0.125 omits the conversion from hours to minutes."
+    "explanation": "First recover the volume using consistent time units:5 hours \\(\\times  60\\) minutes/hour \\(\\times  12\\) liters/minute=3600 liters. At 480 liters/hour, the replacement pump needs \\(\\frac{3600}{480}=7.5\\) hours. The slower pump must take longer. The 450 choice is minutes rather than hours;0.125 omits the conversion from hours to minutes."
   },
   {
     "id": "math-essential-skills-d23",
@@ -2785,7 +2785,7 @@
       "22.5"
     ],
     "answer": 2,
-    "explanation": "The front of the train must travel the bridge length plus the train’s length: \\(450 + 150 = 600\\) meters. Divide by 20 m/s to get 30 seconds. Using only 450 meters measures when the front leaves the bridge, while the rear is still on it."
+    "explanation": "The front of the train must travel the bridge length plus the train’s length: \\(450 + 150 = 600\\) meters. Divide by \\(\\frac{20 m}{s}\\) to get 30 seconds. Using only 450 meters measures when the front leaves the bridge, while the rear is still on it."
   },
   {
     "id": "math-essential-skills-d26",
@@ -2932,13 +2932,13 @@
     "stem": "An internet plan costs $18 plus $2 per extra unit. Another costs $30 plus $1 per extra unit.",
     "questionText": "For which usage x is the second plan strictly cheaper?",
     "choices": [
-      "x < 12",
+      "\\(x<12\\)",
       "\\(x \\ge  12\\)",
-      "x > 30",
-      "x > 12"
+      "\\(x>30\\)",
+      "\\(x>12\\)"
     ],
     "answer": 3,
-    "explanation": "Set \\(30 + x\\) < \\(18 + 2x\\). Subtract x and 18 to get 12 < x, or x > 12. At \\(x = 12\\) the costs are equal, so the word strictly excludes the boundary. The higher fixed fee is offset by the lower variable rate only beyond the break-even usage."
+    "explanation": "Set \\(30 + x\\) < \\(18 + 2x\\). Subtract x and 18 to get \\(12<x\\), or \\(x>12\\). At \\(x = 12\\) the costs are equal, so the word strictly excludes the boundary. The higher fixed fee is offset by the lower variable rate only beyond the break-even usage."
   },
   {
     "id": "math-modeling-d9",
@@ -3575,7 +3575,7 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "\\(f(x) = 3x\\) if x < 2, and \\(f(x) = x^{2}\\) if \\(x \\ge  2\\).",
+    "stem": "\\(f(x) = 3x\\) if \\(x<2\\), and \\(f(x) = x^{2}\\) if \\(x \\ge  2\\).",
     "questionText": "What is f(2)?",
     "choices": [
       "4",
@@ -3677,16 +3677,16 @@
     "subject": "math",
     "category": "Essential skills",
     "difficulty": "medium",
-    "stem": "A commuter drives 45 kilometers at 45 km/h, then 15 kilometers at 30 km/h.",
+    "stem": "A commuter drives 45 kilometers at \\(\\frac{45 \\text{km}}{h}\\), then 15 kilometers at \\(\\frac{30 \\text{km}}{h}\\).",
     "questionText": "What is the average speed over the entire trip?",
     "choices": [
-      "60 km/h",
-      "40 km/h",
-      "37.5 km/h",
-      "45 km/h"
+      "\\(\\frac{60 \\text{km}}{h}\\)",
+      "\\(\\frac{40 \\text{km}}{h}\\)",
+      "\\(\\frac{37.5 \\text{km}}{h}\\)",
+      "\\(\\frac{45 \\text{km}}{h}\\)"
     ],
     "answer": 1,
-    "explanation": "The legs take \\(\\frac{45}{45} = 1\\) hour and \\(\\frac{15}{30} = 0.5\\) hour. Total distance is 60 kilometers in 1.5 hours, so average speed is 40 km/h. The arithmetic mean 37.5 ignores the unequal amounts of time at each speed."
+    "explanation": "The legs take \\(\\frac{45}{45} = 1\\) hour and \\(\\frac{15}{30} = 0.5\\) hour. Total distance is 60 kilometers in 1.5 hours, so average speed is \\(\\frac{40 \\text{km}}{h}\\). The arithmetic mean 37.5 ignores the unequal amounts of time at each speed."
   },
   {
     "id": "math-exam-2-q21",
@@ -3703,7 +3703,7 @@
       "5"
     ],
     "answer": 2,
-    "explanation": "For a \\(2 \\times  2\\) matrix, determinant \\(=\\) ad \\(- bc\\). Here det\\((A) = 2(4) - (-3)(1) = 8 + 3 = 11\\). Keep the negative entry in parentheses; subtracting the negative cross-product adds 3."
+    "explanation": "For a \\(2 \\times  2\\) matrix, determinant \\(=\\) ad \\(- bc\\). Here det \\((A) = 2(4) - (-3)(1) = 8 + 3 = 11\\). Keep the negative entry in parentheses; subtracting the negative cross-product adds 3."
   },
   {
     "id": "math-exam-2-q22",
@@ -3884,13 +3884,13 @@
     "stem": "\\(2x^{2} + 4x + k = 0\\) has no real solutions.",
     "questionText": "Which condition must k satisfy?",
     "choices": [
-      "k > 2",
-      "k < 2",
+      "\\(k>2\\)",
+      "\\(k<2\\)",
       "\\(k \\ge  2\\)",
       "k > \\(-2\\)"
     ],
     "answer": 0,
-    "explanation": "No real solutions requires a negative discriminant: \\(4^{2} - 4(2)k\\) < 0. Thus \\(16 - 8k\\) < 0 and k > 2. Equality \\(k = 2\\) gives a repeated real root, so the boundary is excluded. Completing the square also gives \\(2(x + 1)^{2} + k - 2 = 0\\)."
+    "explanation": "No real solutions requires a negative discriminant: \\(4^{2} - 4(2)k\\) < 0. Thus \\(16 - 8k\\) < 0 and \\(k>2\\). Equality \\(k = 2\\) gives a repeated real root, so the boundary is excluded. Completing the square also gives \\(2(x + 1)^{2} + k - 2 = 0\\)."
   },
   {
     "id": "math-exam-2-q33",
@@ -3967,7 +3967,7 @@
     "category": "Number and quantity",
     "difficulty": "hard",
     "stem": "\\(z = \\frac{3+4i}{1-i}\\).",
-    "questionText": "What is |z|?",
+    "questionText": "What is \\(\\lvert z\\rvert\\)?",
     "choices": [
       "\\(\\frac{\\sqrt{13}}{2}\\)",
       "\\(\\frac{5\\sqrt2}{2}\\)",
