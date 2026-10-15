@@ -1,13 +1,67 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import cards from "../src/content/math-formula-cards.json";
-import { formulaDay, validFormulaPacket } from "../src/lib/formula-schedule";
+import {
+  formulaDay,
+  validFormulaPacket,
+  lessonMinutesWithFormulas,
+} from "../src/lib/formula-schedule";
+import {
+  makeDailyPlan,
+  estimateDailyBlock,
+  selectDailyPlan,
+} from "../src/lib/daily-plan";
 
 const date = (offset: number) =>
   new Date(Date.parse("2026-10-01") + offset * 86400000)
     .toISOString()
     .slice(0, 10);
 const recall = (id: string, day: string) => `formula:${id}:recall:${day}`;
+
+test("new Daily sessions fit the full formula packet within two hours without replacing active progress", () => {
+  const formulas = formulaDay([], "2026-10-15", "2026-10-17");
+  assert.equal(
+    formulas.ids.length,
+    cards.length,
+    "keep all formulas available",
+  );
+  for (const requested of [60, 75, 90]) {
+    const minutesPerDay = lessonMinutesWithFormulas(
+      requested,
+      formulas.minutes,
+    );
+    assert(minutesPerDay + formulas.minutes <= 120);
+    assert.equal(minutesPerDay, requested === 90 ? 80 : requested);
+    const settings = {
+      minutesPerDay,
+      scores: { english: 34, math: 34, reading: 33, science: 28 },
+    };
+    const plan = makeDailyPlan(
+      "complete-day",
+      "2026-10-15",
+      settings,
+      0,
+      undefined,
+      [],
+      {},
+      { testDate: "2026-10-17", targetScore: 36, coveredUnits: [] },
+    );
+    assert.equal(plan.minutes, minutesPerDay);
+    assert(
+      plan.blocks.every((block) => estimateDailyBlock(block) <= block.minutes),
+    );
+    const before = structuredClone(plan);
+    assert.strictEqual(
+      selectDailyPlan(plan, "complete-day", "2026-10-16", {
+        ...settings,
+        minutesPerDay: 60,
+      }),
+      plan,
+    );
+    assert.deepEqual(plan, before);
+  }
+  assert.equal(lessonMinutesWithFormulas(90, 0), 90);
+});
 
 test("daily scheduling can reach every twice-recalled formula before test day across short and long horizons", () => {
   for (const horizon of [2, 3, 7, 14, 30, 90]) {

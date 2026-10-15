@@ -25,6 +25,13 @@ export interface Passage {
   context: string;
   table?: DataTable;
   graph?: Graph;
+  diagram?: "seasons" | "rock-fault" | "sealed-fault" | "rock-intrusion";
+}
+export interface WorkedExample {
+  text: string;
+  label: string;
+  good: boolean;
+  evidence?: Passage;
 }
 export interface Question {
   skillId?: string;
@@ -66,7 +73,8 @@ export interface Lesson {
     evidence?: Passage[];
     body: string[];
     tip?: string;
-    examples?: { text: string; label: string; good: boolean }[];
+    examples?: WorkedExample[];
+    workedCases?: WorkedExample[];
   }[];
   check: Question[];
 }

@@ -195,6 +195,12 @@ test("a worked-example answer is practice, not fresh evidence of repair", () => 
   plan.nextFocus = { math: [key] };
   const answers = { [first.id]: first.answer, [second.id]: second.answer };
   assert(dailyFocus(plan, answers, answerTimes)!.math!.includes(key));
+  unit.lesson.sections[0].workedCases = unit.lesson.sections[0].examples;
+  unit.lesson.sections[0].examples = [];
+  assert(
+    dailyFocus(plan, answers, answerTimes)!.math!.includes(key),
+    "a demonstrated variant is not fresh evidence either",
+  );
 });
 
 test("legacy feedback returns to its authored wave method rather than an unrelated trig skill", () => {

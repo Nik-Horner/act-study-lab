@@ -118,6 +118,7 @@ function LessonSection({
                   <LessonExample
                     key={j}
                     example={ex}
+                    stepwise={section.skillId?.startsWith("math-")}
                     classify={
                       /^(Clauses and phrases|Sentence fragments)$/.test(
                         section.heading,
@@ -133,6 +134,13 @@ function LessonSection({
                 )}
               </div>
             </div>
+            {section.workedCases?.map((example, i) => (
+              <LessonExample
+                key={`case-${i}`}
+                example={example}
+                classify={false}
+              />
+            ))}
             {showActivity && (
               <Button
                 size="sm"

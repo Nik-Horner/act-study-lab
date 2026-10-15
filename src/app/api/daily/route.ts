@@ -21,7 +21,10 @@ import {
 } from "@/lib/daily-flow";
 import type { Json } from "@/lib/supabase/database.types";
 import { loadFormulaDay } from "@/lib/formula-server";
-import type { FormulaDay } from "@/lib/formula-schedule";
+import {
+  lessonMinutesWithFormulas,
+  type FormulaDay,
+} from "@/lib/formula-schedule";
 import {
   ENGLISH_PRACTICE_ID,
   validateEnglishDrillAnswer,
@@ -187,6 +190,38 @@ async function load(fullHistory = false) {
       ),
     };
   const settings = readStudySettings(user.user_metadata, profile.current_score);
+  let formulas: FormulaDay | undefined;
+  if (!last || (last.complete && last.date < today) || fullHistory) {
+    try {
+      ({ day: formulas } = await loadFormulaDay(
+        db,
+        user.id,
+        today,
+        profile.test_date,
+      ));
+    } catch (error) {
+      return {
+        error: Response.json(
+          {
+            error:
+              error instanceof Error
+                ? error.message
+                : "Your formula review could not load. Retry.",
+          },
+          { status: 503 },
+        ),
+      };
+    }
+  }
+  const planningSettings = formulas
+    ? {
+        ...settings,
+        minutesPerDay: lessonMinutesWithFormulas(
+          settings.minutesPerDay,
+          formulas.minutes,
+        ),
+      }
+    : settings;
   const course = {
     testDate: profile.test_date,
     targetScore: profile.target_score,
@@ -214,7 +249,7 @@ async function load(fullHistory = false) {
     last,
     user.id,
     today,
-    settings,
+    planningSettings,
     false,
     course,
   );
@@ -360,8 +395,10 @@ async function load(fullHistory = false) {
     answerTimes,
     uncertainAnswers,
     lessons,
-    deadline: clock ? Date.parse(clock) + settings.minutesPerDay * 60000 : null,
+    deadline: clock ? Date.parse(clock) + plan.minutes * 60000 : null,
     settings,
+    planningSettings,
+    formulas,
     course,
   };
 }
@@ -382,7 +419,7 @@ function dailyResponse(
       lessons: ctx.lessons,
       deadline: ctx.deadline,
       today: ctx.today,
-      minutes: ctx.settings.minutesPerDay,
+      minutes: ctx.plan.minutes,
       includeScience: ctx.settings.includeScience !== false,
       ...(formulas && { formulas }),
       goal: {
@@ -392,7 +429,7 @@ function dailyResponse(
       ...(includeCoverage && {
         coverage: dailyCoverage(
           ctx.plan,
-          ctx.settings,
+          { ...ctx.settings, minutesPerDay: ctx.plan.minutes },
           ctx.course,
           ctx.today,
           ctx.saved,
@@ -406,12 +443,16 @@ export async function GET() {
   const ctx = await load();
   if (ctx.error) return ctx.error;
   try {
-    const { day } = await loadFormulaDay(
-      ctx.db,
-      ctx.user.id,
-      ctx.today,
-      ctx.course.testDate,
-    );
+    const day =
+      ctx.formulas ??
+      (
+        await loadFormulaDay(
+          ctx.db,
+          ctx.user.id,
+          ctx.today,
+          ctx.course.testDate,
+        )
+      ).day;
     return dailyResponse(ctx, true, day);
   } catch (error) {
     return Response.json(
@@ -476,7 +517,7 @@ export async function POST(request: Request) {
       },
       user.id,
       today,
-      ctx.settings,
+      ctx.planningSettings,
       true,
       {
         ...ctx.course,

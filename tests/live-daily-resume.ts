@@ -4,6 +4,10 @@ import assert from "node:assert/strict";
 import { randomBytes, randomUUID } from "node:crypto";
 import { createServerClient } from "@supabase/ssr";
 import { makeDailyPlan, type DailyPlan } from "../src/lib/daily-plan";
+import {
+  lessonMinutesWithFormulas,
+  formulaDay,
+} from "../src/lib/formula-schedule";
 import { blockUnits, dailyStep, dailyReviewKey } from "../src/lib/daily-flow";
 const base = process.env.ACT_TEST_BASE ?? "http://127.0.0.1:3100";
 const url = process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -360,7 +364,10 @@ assert.deepEqual(
 );
 assert.equal(
   threeSubjects.plan.blocks.reduce((sum, block) => sum + block.minutes, 0),
-  settings.minutesPerDay,
+  lessonMinutesWithFormulas(
+    settings.minutesPerDay,
+    formulaDay([], threeSubjects.plan.date, "2026-10-17").minutes,
+  ),
 );
 assert.equal((await call()).plan.id, threeSubjects.plan.id);
 console.log(

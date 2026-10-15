@@ -22,6 +22,7 @@ export interface LearningSkill {
   body?: string[];
   tip?: string;
   workedExamples?: { section: number; example: number }[];
+  workedCases?: Section["workedCases"];
 }
 export interface MathSkill {
   id: string;
@@ -168,6 +169,7 @@ export function hasTeaching(section: Section) {
   return (
     section.body.some((text) => text.trim()) ||
     !!section.examples?.some((example) => example.text.trim()) ||
+    !!section.workedCases?.length ||
     !!section.evidence?.length ||
     !!section.activity
   );
@@ -236,6 +238,8 @@ export function focusLesson(full: Lesson, skill: LearningSkill): Lesson {
             ? skill.activity
             : undefined
           : section.activity,
+        workedCases:
+          position === sections.length - 1 ? skill.workedCases : undefined,
       };
     }),
     check: [],

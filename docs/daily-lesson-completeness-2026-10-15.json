@@ -1,0 +1,298 @@
+{
+  "date": "2026-10-15",
+  "scope": "Daily lesson teaching quality: clarity, worked evidence, coverage of assigned methods, independent practice, readable layouts and progress safety.",
+  "rubric": [
+    "A clear first action and stated conditions",
+    "Worked reasoning tied to the actual numbers or source",
+    "Known harder variants demonstrated before practice",
+    "Independent application with specific feedback",
+    "Readable measured desktop/mobile layouts",
+    "Stable skill/question IDs and saved progress"
+  ],
+  "result": {
+    "english": 106,
+    "math": 143,
+    "reading": 24,
+    "science": 52,
+    "total": 325,
+    "grade": "A for the checked Daily teaching criteria"
+  },
+  "resolvedPriorB": [
+    {
+      "skillId": "reading-main-idea-thesis",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The subject-plus-point method is clear. The22 assigned questions include technical arguments and paired texts; those demand more sustained reading than the simple shelf example.",
+      "repairs": [
+        "Another case: keep a quiet main point"
+      ]
+    },
+    {
+      "skillId": "reading-main-idea-movement",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The beginning–turn–ending map fits the five assigned accounts of revised ideas. The short restoration example shows a real change without claiming every story has a complete reversal.",
+      "repairs": [
+        "Another case: follow an argument"
+      ]
+    },
+    {
+      "skillId": "reading-details-sequence-cause",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The repaired method now distinguishes order, stated reasons, and reasons inferred from nearby actions. The worked and try-it narratives directly teach the hidden-reason tasks that the earlier correlation-only lesson missed.",
+      "repairs": [
+        "Another case: separate order from cause"
+      ]
+    },
+    {
+      "skillId": "reading-details-unit-condition",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The entries-versus-people example makes units clear. The17 drills also ask about conditions, speaker identity, and what a source cannot establish, so transfer requires using more than the number-check alone.",
+      "repairs": [
+        "Another case: keep the changing denominator"
+      ]
+    },
+    {
+      "skillId": "reading-details-paraphrase",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The lesson preserves a condition when wording changes. All three drills retain precise source limits, but the small pool provides limited independent repetition before examples become familiar.",
+      "repairs": [
+        "Another case: keep who believes the claim"
+      ]
+    },
+    {
+      "skillId": "reading-inference-evidence-link",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "A clue-to-small-conclusion link is modeled explicitly. The21 drills include motives, analogies, and hypothetical changes; the strongest ones require more reasoning than the short archive example.",
+      "repairs": [
+        "Another case: connect two clues"
+      ]
+    },
+    {
+      "skillId": "reading-inference-attitude",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The lesson keeps both support and concern. Five drills include mixed feelings, a director’s interpretation, and quiet actions; students must connect multiple clues rather than just find a feeling word.",
+      "repairs": [
+        "Another case: trust the action as well as the words"
+      ]
+    },
+    {
+      "skillId": "reading-inference-counterexample",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The repaired question challenges an observable claim about abandoning work rather than claiming to disprove a private desire. Six drills extend the method to new evidence and competing historical interpretations.",
+      "repairs": [
+        "Another case: challenge a theory with new evidence"
+      ]
+    },
+    {
+      "skillId": "reading-vocabulary-figurative",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The belief-that-loosens example teaches how an idea can take a physical verb. Five drills involve subtler everyday metaphors; the passage remains necessary to choose the precise sense.",
+      "repairs": [
+        "Another case: keep a subtle comparison"
+      ]
+    },
+    {
+      "skillId": "reading-vocabulary-paragraph-fit",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The substitute must preserve the whole claim, not merely fit the topic. Eleven drills include abstract meanings such as authority, prescribed, and exacting, retaining meaningful difficulty.",
+      "repairs": [
+        "Another case: let context choose the sense"
+      ]
+    },
+    {
+      "skillId": "reading-craft-function",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "Actual paragraphs show why an example belongs between a claim and a recommendation. The36-question pool covers many rhetorical jobs; one example cannot demonstrate every kind, but the question about purpose transfers.",
+      "repairs": [
+        "Another case: an example can limit a claim"
+      ]
+    },
+    {
+      "skillId": "reading-craft-tone",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The worked review supplies actual approving and critical wording. The three assigned drills retain dry humor and mixed self-awareness; their difficulty is not reduced to obvious happy-versus-sad choices.",
+      "repairs": [
+        "Another case: notice dry humor"
+      ]
+    },
+    {
+      "skillId": "reading-craft-perspective",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The repaired method covers both separate speakers and a changed viewpoint. The protected manufacturer/worker excerpt supplies real counterevidence; five drills also ask about extensions, reframing, and movement through a scene.",
+      "repairs": [
+        "Another case: a viewpoint changes without reversing"
+      ]
+    },
+    {
+      "skillId": "reading-craft-imagery",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The shared-feature check prevents literal overreading of an image. Six drills include more abstract images and recurring objects, so students still have to explain what the image does in its passage.",
+      "repairs": [
+        "Another case: follow a repeated object"
+      ]
+    },
+    {
+      "skillId": "reading-integration-combine",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The revised method explicitly covers two moments within one passage as well as separate sources. The worked example retains both source limits; the27 drills include narrative contrasts and technical relationships beyond that first example.",
+      "repairs": [
+        "Another case: connect the beginning and ending"
+      ]
+    },
+    {
+      "skillId": "reading-integration-graphic",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "Worked and independent tables show why a larger count can be a smaller share. The five drills retain harder denominator changes, pooled rates, and endpoint comparisons; reading the actual labels remains essential.",
+      "repairs": [
+        "Another case: combine groups before taking a rate"
+      ]
+    },
+    {
+      "skillId": "science-data-reading-changes",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "Correct formulas now cover change, part/whole, percentage points, and percent-to-count; several variants share one short card.",
+      "repairs": [
+        "Another case: choose the whole",
+        "Another case: percentage points"
+      ]
+    },
+    {
+      "skillId": "science-data-reading-supplied-model",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The repaired heat example teaches rearrangement and inverse mass effects; power and capacity rules still require transfer to a different supplied equation.",
+      "repairs": [
+        "Another case: find time"
+      ]
+    },
+    {
+      "skillId": "science-data-reading-calibration",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The revised worked graph now teaches choosing either calibration line, keeping the offset, undoing dilution, and applying changed flow; the chain remains demanding.",
+      "repairs": [
+        "Another case: follow the value through"
+      ]
+    },
+    {
+      "skillId": "science-trends-interpolation-interval-rates",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "Unequal intervals and rate magnitude are taught correctly; students must distinguish several closely related change and duration questions.",
+      "repairs": [
+        "Another case: distance takes time"
+      ]
+    },
+    {
+      "skillId": "science-trends-interpolation-equation",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "Starting value, slope, direct proportion, and excess above a limit are now explicit, but several related operations share one card.",
+      "repairs": [
+        "Another case: direct proportion"
+      ]
+    },
+    {
+      "skillId": "science-trends-interpolation-nonlinear",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The revision demonstrates deriving k from x²/t and taking the root, and names the straight-line x² plot; this is still a multi-step model task.",
+      "repairs": [
+        "Another case: make the curved rule straight"
+      ]
+    },
+    {
+      "skillId": "science-experimental-design-matched-comparison",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "Fair comparisons are demonstrated and the tip now covers measuring an intermediate mechanism; mechanism questions still require broader transfer.",
+      "repairs": [
+        "Another case: test the middle step"
+      ]
+    },
+    {
+      "skillId": "science-conflicting-viewpoints-joint-evidence",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The worked counterexample tests a necessary condition; removal-effect comparisons are covered briefly in the tip, so the task family remains broad.",
+      "repairs": [
+        "Another case: check both trends",
+        "Another case: compare removal effects"
+      ]
+    },
+    {
+      "skillId": "science-models-evidence-substitution",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "Equation substitution is explicit; the new tip supplies the verbal density rule needed by an assigned exam item, but equations and verbal models remain different variants.",
+      "repairs": [
+        "Another case: compare every row",
+        "Another case: a rule in words"
+      ]
+    },
+    {
+      "skillId": "science-models-evidence-combined-experiments",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The repaired example checks the required density graph before the growth table and explains a matched follow-up; coordinating both displays still takes several steps.",
+      "repairs": [
+        "Another case: count first, then test a cause"
+      ]
+    },
+    {
+      "skillId": "science-scientific-foundations-seasons",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The opposite-daylight table and axial-tilt explanation are correct; the physical geometry is explained in words rather than a spatial diagram.",
+      "repairs": [
+        "Visible spatial diagram paired with its matching data"
+      ]
+    },
+    {
+      "skillId": "science-scientific-foundations-relative-order",
+      "before": "B",
+      "after": "A",
+      "previousIssue": "The rules now include a layer sealing an earlier fault, but the learner still translates a relationship table into a spatial rock sequence.",
+      "repairs": [
+        "Another case: a layer seals an old fault",
+        "Visible spatial diagram paired with its matching data"
+      ]
+    }
+  ],
+  "mathImprovement": "All 143 focused methods display worked reasoning in numbered steps. The whole-number optimum method uses a simpler title and explicitly derives its formerly unexplained constraint multipliers.",
+  "timing": "New plans retain the full formula packet and reserve lesson time so the estimated combined session is at most 120 minutes. Saved active plans, their lesson minutes and clocks are retained.",
+  "preservation": "No question/skill IDs, practice assignments, answer indices, choices, student settings or existing completed concept keys were changed. Only isolated QA accounts were used.",
+  "verification": {
+    "unitTests": 356,
+    "contentValidators": "passed",
+    "typeScript": "passed",
+    "layout": "325 real lesson components at 1280px and 390px; zero overflow, empty-table or SVG-label-clipping findings",
+    "liveSavedSession": "15 prior answers, concept checkpoint, timing, deadline, uncertainty, retries and history preserved",
+    "twoAccountIsolation": "passed",
+    "browser": "Manual seasons, rock-order, Reading hard-variant and Math step views; screenshots in screenshots/lesson-completeness",
+    "productionBuilds": "Native Next.js and Sites/Vinext passed",
+    "uiDetector": "No findings",
+    "githubCI": "Hosted runner previously blocked by account billing; equivalent checks passed locally"
+  },
+  "limits": [
+    "These are editorial teaching grades, not a scaled-score prediction.",
+    "Existing question-bank calibration and full-section rehearsal are separate from the Daily lesson grade.",
+    "Physical-device and screen-reader validation was not performed."
+  ]
+}
