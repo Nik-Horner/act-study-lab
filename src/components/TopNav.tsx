@@ -24,19 +24,25 @@ export async function TopNav() {
         </Link>
         {user ? (
           <nav className="flex items-center gap-2 text-sm sm:gap-5">
-            <div className="flex items-center gap-5 max-sm:hidden">
+            <div className="flex items-center gap-5 max-lg:hidden">
               <Link href="/dashboard" className="text-ink-soft hover:text-ink">
                 Daily study
               </Link>
               <Link href="/practice" className="text-ink-soft hover:text-ink">
                 Extra practice
               </Link>
+              <Link
+                href="/math-formulas"
+                className="text-ink-soft hover:text-ink"
+              >
+                Math Formulas
+              </Link>
               <Link href="/account" className="text-ink-soft hover:text-ink">
                 Account
               </Link>
             </div>
             <ThemeToggle />
-            <div className="max-sm:hidden">
+            <div className="max-lg:hidden">
               <LogoutButton />
             </div>
             <MobileMenu />

@@ -103,12 +103,45 @@ export interface DailyPlan {
   course?: DailyCourse;
 }
 export interface DailyCourse {
+  coverageVersion?: number;
+  completedSessions?: string[];
   testDate: string;
   targetScore?: number;
   coveredUnits: string[];
   deferUnits?: string[];
   answeredQuestions?: string[];
   seenQuestions?: string[];
+}
+/** Recover coverage from completed assessments, retaining original history identifiers. */
+export function dailyHistory(plans: DailyPlan[]) {
+  const covered = new Set(
+    plans.flatMap((plan) => plan.course?.coveredUnits ?? []),
+  );
+  const sessions = new Set(
+    plans.flatMap((plan) => plan.course?.completedSessions ?? []),
+  );
+  for (const plan of plans) {
+    if (plan.complete) sessions.add(plan.id);
+    for (const block of plan.blocks) {
+      for (const unit of blockUnits(block)) {
+        const id = unit.courseId ?? unit.id;
+        if (!plan.complete && !covered.has(id)) continue;
+        covered.add(id);
+        if (id.includes(":skill:")) continue;
+        // A broad legacy pool is not proof that every method in that pool was practiced.
+        for (const question of unit.questions) {
+          const skill = getQuestionTeaching(unit.topic, question.id)?.skillId;
+          if (skill)
+            covered.add(`${block.subject}:${unit.topic}:skill:${skill}`);
+        }
+      }
+    }
+  }
+  return {
+    coveredUnits: [...covered],
+    completedSessions: [...sessions],
+    coverageVersion: 1,
+  };
 }
 export function dailyScopes(subject: AccountSubject, settings?: StudySettings) {
   if (subject === "science" && settings?.includeScience === false) return [];
@@ -745,6 +778,10 @@ export function dailyCoverage(
       ) ?? null);
   return {
     covered: confirmed.size,
+    completedSessions: new Set([
+      ...(course.completedSessions ?? []),
+      ...(plan.complete ? [plan.id] : []),
+    ]).size,
     total: all.size,
     testDate: course.testDate,
     finishDate,

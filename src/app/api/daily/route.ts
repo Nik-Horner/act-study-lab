@@ -3,6 +3,7 @@ import { readStudySettings } from "@/lib/account-settings";
 import {
   dailyDate,
   dailyCoverage,
+  dailyHistory,
   dailyId,
   selectDailyPlan,
   dailyComplete,
@@ -19,6 +20,8 @@ import {
   dailyConcepts,
 } from "@/lib/daily-flow";
 import type { Json } from "@/lib/supabase/database.types";
+import { loadFormulaDay } from "@/lib/formula-server";
+import type { FormulaDay } from "@/lib/formula-schedule";
 import {
   ENGLISH_PRACTICE_ID,
   validateEnglishDrillAnswer,
@@ -52,19 +55,30 @@ async function load(fullHistory = false) {
       ),
     };
   const today = dailyDate();
-  const readPlans = (limit: number) =>
+  const readPlans = (offset: number, limit: number) =>
     db
       .from("exam_attempts")
       .select("*")
       .eq("user_id", user.id)
       .eq("exam_id", "daily:plan")
       .order("completed_at", { ascending: false })
-      .limit(limit);
-  let { data: plans, error } = await readPlans(1);
+      .order("id")
+      .range(offset, offset + limit - 1);
+  let { data: plans, error } = await readPlans(0, 1);
   const newest = plans?.[0]?.answers as unknown as DailyPlan | undefined;
-  // Current plans snapshot prior coverage; only legacy plans need bootstrap history.
-  if (!error && newest && !Array.isArray(newest.course?.coveredUnits)) {
-    ({ data: plans, error } = await readPlans(100));
+  // Rebuild once even when an older curriculum already saved a coverage array.
+  if (!error && newest && newest.course?.coverageVersion !== 1) {
+    const history = [];
+    for (let offset = 0; ; offset += 100) {
+      const page = await readPlans(offset, 100);
+      if (page.error) {
+        error = page.error;
+        break;
+      }
+      history.push(...(page.data ?? []));
+      if (!page.data || page.data.length < 100) break;
+    }
+    plans = history;
   }
   if (error)
     return {
@@ -177,22 +191,25 @@ async function load(fullHistory = false) {
     testDate: profile.test_date,
     targetScore: profile.target_score,
     seenQuestions: [...seen],
-    coveredUnits: [
-      ...new Set(
-        (plans ?? []).flatMap((row) => {
-          const previous = row.answers as unknown as DailyPlan;
-          return [
-            ...(previous.course?.coveredUnits ?? []),
-            ...(previous.complete
-              ? previous.blocks
-                  .flatMap(blockUnits)
-                  .map((unit) => unit.courseId ?? unit.id)
-              : []),
-          ];
-        }),
-      ),
-    ],
+    ...dailyHistory(
+      (plans ?? []).map((row) => row.answers as unknown as DailyPlan),
+    ),
   };
+  if (last && last.course?.coverageVersion !== 1) {
+    last = { ...last, course: { ...last.course, ...course } };
+    const migration = await db
+      .from("exam_attempts")
+      .update({ answers: last as unknown as Json })
+      .eq("id", last.id)
+      .eq("user_id", user.id);
+    if (migration.error)
+      return {
+        error: Response.json(
+          { error: "Your study history could not refresh. Retry." },
+          { status: 503 },
+        ),
+      };
+  }
   const selected = selectDailyPlan(
     last,
     user.id,
@@ -351,6 +368,7 @@ async function load(fullHistory = false) {
 function dailyResponse(
   ctx: Awaited<ReturnType<typeof load>>,
   includeCoverage = false,
+  formulas?: FormulaDay,
 ) {
   if (ctx.error) return ctx.error;
   return Response.json(
@@ -366,6 +384,7 @@ function dailyResponse(
       today: ctx.today,
       minutes: ctx.settings.minutesPerDay,
       includeScience: ctx.settings.includeScience !== false,
+      ...(formulas && { formulas }),
       goal: {
         targetScore: ctx.course.targetScore,
         testDate: ctx.course.testDate,
@@ -384,7 +403,27 @@ function dailyResponse(
   );
 }
 export async function GET() {
-  return dailyResponse(await load(), true);
+  const ctx = await load();
+  if (ctx.error) return ctx.error;
+  try {
+    const { day } = await loadFormulaDay(
+      ctx.db,
+      ctx.user.id,
+      ctx.today,
+      ctx.course.testDate,
+    );
+    return dailyResponse(ctx, true, day);
+  } catch (error) {
+    return Response.json(
+      {
+        error:
+          error instanceof Error
+            ? error.message
+            : "Your formula review could not load. Retry.",
+      },
+      { status: 503 },
+    );
+  }
 }
 export async function POST(request: Request) {
   let body;
