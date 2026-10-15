@@ -5,7 +5,7 @@
     {
       "id": "p1",
       "title": "The Self-Taught Inventor",
-      "html": "Garrett Morgan never finished grade school, but he became one of the most inventive minds of his era. Born in Kentucky in 1877, he moved to Cleveland as a teenager and found work repairing sewing machines. [[1|Tinkering with the machines, the mechanics fascinated him,]] and he soon filed his first patent for an improved sewing device.\n\nMorgan's curiosity rarely [[2|stayed]] in one place. In 1914 he patented a breathing hood that let firefighters enter smoke-filled buildings, [[3|a device that would later inspire the modern gas mask.]] Two years later, the invention proved its worth. When an explosion trapped workers in a tunnel beneath Lake Erie, Morgan and his brother strapped on the hoods and [[4|descended]] into the toxic air to pull survivors free.\n\n[[5|]] Morgan is perhaps best remembered for a far more ordinary problem: traffic. After witnessing a collision between a car and a carriage, he designed a signal with a third position that halted traffic in all directions, giving drivers and pedestrians a moment to cross safely. [[6|]]\n\nHe sold the rights to the signal [[7|for forty thousand dollars, a sum]] that few inventors of his background could have imagined. Yet money was never his only aim. Throughout his life Morgan founded newspapers, opened businesses, and [[8|he supported]] causes he believed in.\n\n[[9|In conclusion,]] when he died in 1963, Morgan left behind dozens of patents and a reputation as a problem-solver who refused to accept that a lack of formal schooling [[10|limited what he could achieve.]]",
+      "html": "Garrett Morgan never finished grade school, but he became one of the most inventive minds of his era. Born in Kentucky in 1877, he moved to Cleveland as a teenager and found work repairing sewing machines. [[1|Tinkering with the machines, the mechanics fascinated him,]] and he soon filed his first patent for an improved sewing device.\n\nMorgan's curiosity rarely [[2|stayed]] in one place. In 1914 he patented a breathing hood that let firefighters enter smoke-filled buildings, [[3|a device that would later inspire the modern gas mask.]] Two years later, the invention proved its worth. When an explosion trapped workers in a tunnel beneath Lake Erie, Morgan and his brother strapped on the hoods and [[4|descended]] into the toxic air to pull survivors free.\n\n[[5|]] Morgan is perhaps best remembered for a far more ordinary problem: traffic. After witnessing a collision between a car and a carriage, he designed a signal with a third position that halted traffic in all directions, giving drivers and pedestrians a moment to cross safely. [[6|]]\n\nHe sold the rights to the signal [[7|for forty thousand dollars, a sum]] that few inventors of his background could have imagined. Yet money was never his only aim. Throughout his life Morgan founded newspapers, opened businesses, and [[8|he supported]] causes he believed in.\n\n[[9|In conclusion, when]] he died in 1963, Morgan left behind dozens of patents and a reputation as a problem-solver who refused to accept that a lack of formal schooling [[10|limited what he could achieve.]]",
       "questions": [
         {
           "number": 1,
@@ -28,12 +28,7 @@
           "difficulty": "medium",
           "topic": "word-choice",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "rested",
-            "remained seated",
-            "stalled"
-          ],
+          "choices": ["NO CHANGE", "rested", "remained seated", "stalled"],
           "answer": 0,
           "explanation": "\"Stayed in one place\" idiomatically fits restless curiosity. \"Rested\" and \"stalled\" carry wrong connotations for an active mind, and \"remained seated\" makes no sense applied to an abstract noun like curiosity. Only \"stayed\" fits."
         },
@@ -58,12 +53,7 @@
           "difficulty": "easy",
           "topic": "word-choice",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "got down",
-            "fell down",
-            "came down"
-          ],
+          "choices": ["NO CHANGE", "got down", "fell down", "came down"],
           "answer": 0,
           "explanation": "\"Descended\" precisely conveys a deliberate move into the tunnel; the alternatives are vague or imply an accidental fall."
         },
@@ -73,12 +63,7 @@
           "difficulty": "medium",
           "topic": "transitions",
           "questionText": "Which choice provides the most logical transition into the new paragraph?",
-          "choices": [
-            "For example,",
-            "Likewise,",
-            "As a result,",
-            "Still,"
-          ],
+          "choices": ["For example,", "Likewise,", "As a result,", "Still,"],
           "answer": 3,
           "explanation": "The paragraph contrasts dramatic rescues with an \"ordinary problem,\" so the contrast word \"Still\" fits; the others signal example, cause, or similarity."
         },
@@ -118,12 +103,7 @@
           "difficulty": "medium",
           "topic": "parallel-structure",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "and supported",
-            "supported",
-            "supporting"
-          ],
+          "choices": ["NO CHANGE", "and supported", "supported", "supporting"],
           "answer": 2,
           "explanation": "The series \"founded... opened... supported\" needs parallel verbs; \"he supported\" breaks the pattern by adding a subject."
         },
@@ -162,7 +142,7 @@
     {
       "id": "p2",
       "title": "Shaping Fire and Sand",
-      "html": "In a glassblower's studio, the heart of the work is a furnace that never cools. Inside it, sand, soda, and lime [[11|melts]] together at temperatures above two thousand degrees, turning a gritty mixture into a glowing, honey-thick liquid.\n\nThe artisan gathers a blob of this molten glass on the end of a hollow steel rod called a blowpipe. [[12|Rotating the pipe constantly, gravity is kept from pulling the glass]] into a shapeless drip. With a steady breath into the pipe, the worker opens a small bubble inside the glob, [[13|that]] becomes the hollow center of a finished vase or cup.\n\nShaping the piece is a [[14|race against the clock that must be won quickly,]] because cooling glass stiffens fast. The blower reheats the work again and again at a second opening in the furnace, [[15|known as the glory hole.]] Between heatings, the artisan rolls the glass on a steel table, presses it with wet wooden paddles, and [[16|stretching it with tongs.]]\n\n[[17|]] When the form is right, the piece must cool slowly. A finished vessel goes into a third oven, the annealer, where the temperature drops over many hours. [[18|Dodging]] this stage would leave hidden stresses in the glass, and the object might shatter days later on a quiet shelf.\n\nModern factories can mold thousands of identical bottles in minutes. [[19|Therefore,]] hand glassblowing survives because each breath, twist, and reheating leaves a mark that no machine can [[20|copy or imitate.]]",
+      "html": "In a glassblower's studio, the heart of the work is a furnace that never cools. Inside it, sand, soda, and lime [[11|melts]] together at temperatures above two thousand degrees, turning a gritty mixture into a glowing, honey-thick liquid.\n\nThe artisan gathers a blob of this molten glass on the end of a hollow steel rod called a blowpipe. [[12|Rotating the pipe constantly, gravity is kept from pulling the glass]] into a shapeless drip. With a steady breath into the pipe, the worker opens a small bubble inside the glob, [[13|that]] becomes the hollow center of a finished vase or cup.\n\nShaping the piece is a [[14|race against the clock that must be won quickly,]] because cooling glass stiffens fast. The blower reheats the work again and again at a second opening in the furnace, [[15|known as the glory hole.]] Between heatings, the artisan rolls the glass on a steel table, presses it with wet wooden paddles, and [[16|stretching it with tongs.]]\n\n[[17|]] when the form is right, the piece must cool slowly. A finished vessel goes into a third oven, the annealer, where the temperature drops over many hours. [[18|Dodging]] this stage would leave hidden stresses in the glass, and the object might shatter days later on a quiet shelf.\n\nModern factories can mold thousands of identical bottles in minutes. [[19|Therefore,]] hand glassblowing survives because each breath, twist, and reheating leaves a mark that no machine can [[20|copy or imitate.]]",
       "questions": [
         {
           "number": 11,
@@ -170,12 +150,7 @@
           "difficulty": "medium",
           "topic": "verbs",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "has melted",
-            "is melting",
-            "melt"
-          ],
+          "choices": ["NO CHANGE", "has melted", "is melting", "melt"],
           "answer": 3,
           "explanation": "The compound subject \"sand, soda, and lime\" is plural and takes the plural verb \"melt.\""
         },
@@ -200,12 +175,7 @@
           "difficulty": "medium",
           "topic": "pronouns",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "what",
-            "it",
-            "which"
-          ],
+          "choices": ["NO CHANGE", "what", "it", "which"],
           "answer": 3,
           "explanation": "A nonrestrictive clause set off by a comma takes \"which,\" not \"that\"; \"it\" and \"what\" break the clause."
         },
@@ -247,9 +217,9 @@
           "questionText": "",
           "choices": [
             "NO CHANGE",
-            "stretches it",
-            "stretch it",
-            "to stretch it"
+            "stretches it with tongs.",
+            "stretch it with tongs.",
+            "to stretch it with tongs."
           ],
           "answer": 1,
           "explanation": "The series needs parallel present-tense verbs: \"rolls... presses... stretches.\""
@@ -275,12 +245,7 @@
           "difficulty": "medium",
           "topic": "word-choice",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "Missing",
-            "Skipping",
-            "Avoiding"
-          ],
+          "choices": ["NO CHANGE", "Missing", "Skipping", "Avoiding"],
           "answer": 2,
           "explanation": "\"Skipping\" precisely means leaving out a step; \"dodging,\" \"avoiding,\" and \"missing\" misstate a deliberate omission in a process."
         },
@@ -290,12 +255,7 @@
           "difficulty": "medium",
           "topic": "transitions",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "Yet",
-            "For example,",
-            "In addition,"
-          ],
+          "choices": ["NO CHANGE", "Yet", "For example,", "In addition,"],
           "answer": 1,
           "explanation": "The sentence contrasts mass production with the survival of handwork, so \"Yet\" fits; \"Therefore\" wrongly signals cause."
         },
@@ -319,7 +279,7 @@
     {
       "id": "p3",
       "title": "The Day Boston Drowned in Syrup",
-      "html": "On a warm January afternoon in 1919, the North End of Boston was struck by a disaster so strange that people still struggle to believe it. A steel tank holding more than two million gallons of molasses [[21|burst, and sent]] a wave of thick syrup surging through the streets.\n\nThe tank had been built [[22|quick]] three years earlier to store molasses bound for a distillery. Residents had long complained that it groaned and leaked, [[23|but the company painted it brown to hide the seeping syrup.]] On the day of the collapse, an unusually mild spell may have weakened the metal further.\n\nWhen the tank failed, the molasses moved with shocking force. [[24|Witnesses, who described]] a wave as tall as fifteen feet, rolling fast enough to snap the steel supports of an elevated railway. [[25|Buildings were knocked from their foundations; horses and people were trapped in the sticky flood.]] Twenty-one people died, and many more [[26|was injured]].\n\nRescuers struggled for days. [[27|Because]] the cooling molasses thickened into a stubborn glue, every step through it took enormous effort. Cleanup crews used salt water and sand for weeks, [[28|and the harbor reportedly ran brown until summer.]]\n\n[[29|]] The flood led to one lasting change. In the lawsuits that followed, the company was found responsible for cutting corners, and the case helped push cities to require [[30|stricter]] engineering reviews for large structures.",
+      "html": "On a warm January afternoon in 1919, the North End of Boston was struck by a disaster so strange that people still struggle to believe it. A steel tank holding more than two million gallons of molasses [[21|burst, and sent]] a wave of thick syrup surging through the streets.\n\nThe tank had been built [[22|quick]] three years earlier to store molasses bound for a distillery. Residents had long complained that it groaned and leaked, [[23|but the company painted it brown to hide the seeping syrup.]] On the day of the collapse, an unusually mild spell may have weakened the metal further.\n\nWhen the tank failed, the molasses moved with shocking force. [[24|Witnesses, who described]] a wave as tall as fifteen feet, rolling fast enough to snap the steel supports of an elevated railway. [[25|Buildings were knocked from their foundations; horses and people were trapped in the sticky flood.]] Twenty-one people died, and many more [[26|was injured]].\n\nRescuers struggled for days. [[27|Because]] the cooling molasses thickened into a stubborn glue, every step through it took enormous effort. Cleanup crews used salt water and sand for weeks, [[28|and the harbor reportedly ran brown until summer.]]\n\n[[29|]] the flood led to one lasting change. In the lawsuits that followed, the company was found responsible for cutting corners, and the case helped push cities to require [[30|stricter]] engineering reviews for large structures.",
       "questions": [
         {
           "number": 21,
@@ -342,12 +302,7 @@
           "difficulty": "easy",
           "topic": "modifiers",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "more quick",
-            "quick and fast",
-            "quickly"
-          ],
+          "choices": ["NO CHANGE", "more quick", "quick and fast", "quickly"],
           "answer": 3,
           "explanation": "An adverb is needed to modify the verb \"built,\" so \"quickly\" is correct."
         },
@@ -417,12 +372,7 @@
           "difficulty": "medium",
           "topic": "transitions",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "Although",
-            "While",
-            "Whether"
-          ],
+          "choices": ["NO CHANGE", "Although", "While", "Whether"],
           "answer": 0,
           "explanation": "The thickened molasses causes the difficulty, so the causal \"Because\" fits; the others signal contrast or alternatives."
         },
@@ -476,7 +426,7 @@
     {
       "id": "p4",
       "title": "From Paper Cranes to Spacecraft",
-      "html": "For centuries, origami was treasured as a quiet pastime, a way to fold a flat square of paper into a crane or a flower. [[31|Today, however, it has become a tool for serious science.]] Researchers now study the ancient art to solve problems that have nothing to do with decoration.\n\nThe link between paper folding and engineering [[32|lies in]] a simple idea: a folded shape can shrink for travel and then unfold into something much larger. Engineers at space agencies [[33|has]] used this principle to pack solar panels and antennas into rockets. [[34|]]\n\nOne famous pattern, the Miura fold, lets a flat sheet collapse along crisscrossing creases [[35|so as]] a single tug spreads it open again. Maps once printed with this fold could be opened with one hand, [[36|and refolded just as easily.]] The same geometry now guides the design of compact stents that surgeons thread into narrow arteries before [[37|expanding it.]]\n\n[[38|]] Origami has even reshaped robotics. Some engineers build machines that fold themselves flat for shipping and then [[39|pop]] into working shapes when heated. Others design grippers that close around an object the way folded paper wraps a gift.\n\nWhat began as a craft for children and monks now [[40|tells]] laboratories around the world, proving that an old idea can keep finding new uses.",
+      "html": "For centuries, origami was treasured as a quiet pastime, a way to fold a flat square of paper into a crane or a flower. [[31|Today, however, it has become a tool for serious science.]] Researchers now study the ancient art to solve problems that have nothing to do with decoration.\n\nThe link between paper folding and engineering [[32|lies in]] a simple idea: a folded shape can shrink for travel and then unfold into something much larger. Engineers at space agencies [[33|has]] used this principle to pack solar panels and antennas into rockets. [[34|]]\n\nOne famous pattern, the Miura fold, lets a flat sheet collapse along crisscrossing creases [[35|so as]] a single tug spreads it open again. Maps once printed with this fold could be opened with one [[36|hand, and refolded just as easily.]] The same geometry now guides the design of compact stents that surgeons thread into narrow arteries before [[37|expanding it.]]\n\n[[38|]] origami has even reshaped robotics. Some engineers build machines that fold themselves flat for shipping and then [[39|pop]] into working shapes when heated. Others design grippers that close around an object the way folded paper wraps a gift.\n\nWhat began as a craft for children and monks now [[40|tells]] laboratories around the world, proving that an old idea can keep finding new uses.",
       "questions": [
         {
           "number": 31,
@@ -499,12 +449,7 @@
           "difficulty": "medium",
           "topic": "word-choice",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "lays in",
-            "lays on",
-            "lies on"
-          ],
+          "choices": ["NO CHANGE", "lays in", "lays on", "lies on"],
           "answer": 0,
           "explanation": "\"Lies in\" is the correct idiom for where something is located; \"lays\" needs a direct object."
         },
@@ -514,12 +459,7 @@
           "difficulty": "medium",
           "topic": "verbs",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "is having",
-            "had",
-            "have"
-          ],
+          "choices": ["NO CHANGE", "is having", "had", "have"],
           "answer": 3,
           "explanation": "The plural subject \"engineers\" takes \"have,\" not the singular \"has\"; the present perfect also fits the ongoing relevance."
         },
@@ -544,12 +484,7 @@
           "difficulty": "medium",
           "topic": "sentence-structure",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "so that",
-            "such that",
-            "in order"
-          ],
+          "choices": ["NO CHANGE", "so that", "such that", "in order"],
           "answer": 1,
           "explanation": "\"So that\" introduces the result clause correctly; \"so as\" requires an infinitive, and \"such that\" and \"in order\" are unidiomatic here."
         },
@@ -560,10 +495,10 @@
           "topic": "punctuation",
           "questionText": "",
           "choices": [
-            "and refolded just as easily.",
-            ", and refolded just as easily.",
-            "and refolding just as easily.",
-            "and refolded, just as easily."
+            "hand and refolded just as easily.",
+            "hand, and refolded just as easily.",
+            "hand and refolding just as easily.",
+            "hand and refolded, just as easily."
           ],
           "answer": 0,
           "explanation": "\"Opened... and refolded\" is a compound verb needing no comma; \", and refolded just as easily\" wrongly separates the pair, and \"and refolding just as easily\" breaks parallelism."
@@ -604,12 +539,7 @@
           "difficulty": "easy",
           "topic": "word-choice",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "jump",
-            "spring",
-            "leap"
-          ],
+          "choices": ["NO CHANGE", "jump", "spring", "leap"],
           "answer": 0,
           "explanation": "\"Pop into working shapes\" idiomatically describes a quick unfolding; \"spring,\" \"jump,\" and \"leap\" misfit the motion."
         },
@@ -619,12 +549,7 @@
           "difficulty": "medium",
           "topic": "word-choice",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "speaks",
-            "talks",
-            "informs"
-          ],
+          "choices": ["NO CHANGE", "speaks", "talks", "informs"],
           "answer": 3,
           "explanation": "\"Informs laboratories\" means it shapes their work; \"tells,\" \"speaks,\" and \"talks\" do not fit this sense."
         }
@@ -671,12 +596,7 @@
           "difficulty": "medium",
           "topic": "parallel-structure",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "attracts",
-            "to attract",
-            "attract"
-          ],
+          "choices": ["NO CHANGE", "attracts", "to attract", "attract"],
           "answer": 3,
           "explanation": "The verb must parallel \"startle\" in \"may startle... or attract.\""
         },
@@ -701,12 +621,7 @@
           "difficulty": "medium",
           "topic": "transitions",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "Therefore,",
-            "Similarly,",
-            "For example,"
-          ],
+          "choices": ["NO CHANGE", "Therefore,", "Similarly,", "For example,"],
           "answer": 0,
           "explanation": "The sentence qualifies the appeal of the displays with a limitation, so the contrast word \"Still\" fits."
         }
@@ -738,12 +653,7 @@
           "difficulty": "medium",
           "topic": "parallel-structure",
           "questionText": "",
-          "choices": [
-            "NO CHANGE",
-            "comparing",
-            "compared",
-            "had compared"
-          ],
+          "choices": ["NO CHANGE", "comparing", "compared", "had compared"],
           "answer": 2,
           "explanation": "The past-tense series needs \"gathered... compared... predicted\" for parallelism."
         },

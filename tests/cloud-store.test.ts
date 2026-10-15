@@ -31,6 +31,10 @@ function fixture() {
     });
   };
   const storage = () => ({
+    get length() {
+      return values.size;
+    },
+    key: (index: number) => [...values.keys()][index] ?? null,
     getItem: (key: string) => values.get(key) ?? null,
     setItem: (key: string, value: string) => {
       values.set(key, value);
@@ -95,7 +99,11 @@ test("failed cloud saves preserve optimistic work and recover after a reload", a
   assert.equal(await store.update((state) => recordAnswer(state, a)), false);
   assert.equal(store.getSnapshot().state.answers.length, 1);
   assert(store.getSnapshot().storageError);
-  assert(f.values.has(`act-study-unsaved:${first}`));
+  assert(
+    f.values.has(
+      `act-study-unsaved:${first}:${encodeURIComponent(`answer:${a.id}`)}`,
+    ),
+  );
   const restored = f.make();
   await restored.refresh();
   assert.equal(restored.getSnapshot().state.answers[0].id, a.id);
@@ -103,7 +111,7 @@ test("failed cloud saves preserve optimistic work and recover after a reload", a
   f.setFail(false);
   assert(await restored.retry());
   assert.equal(restored.pendingCount(), 0);
-  assert(!f.values.has(`act-study-unsaved:${first}`));
+  assert.equal(f.values.size, 0);
 });
 test("recovered plan check dates survive retry and undo", async () => {
   const f = fixture(),
@@ -141,7 +149,11 @@ test("changing accounts never displays or sends the previous account pending wor
   f.setFail(false);
   await store.retry();
   assert.equal(f.posts.length, 1);
-  assert(f.values.has(`act-study-unsaved:${first}`));
+  assert(
+    [...f.values.keys()].some((key) =>
+      key.startsWith(`act-study-unsaved:${first}:`),
+    ),
+  );
 });
 test("expired authentication clears the previous account snapshot and blocks updates", async () => {
   const f = fixture(),
@@ -183,4 +195,97 @@ test("account budget is authoritative over the retired browser preference", asyn
   const store = f.make();
   await store.refresh();
   assert.equal(store.getSnapshot().state.profile.minutesPerDay, 75);
+});
+
+test("two offline tabs keep both answer jobs and a successful retry removes only its own job", async () => {
+  const f = fixture(),
+    a = f.make(),
+    b = f.make();
+  await a.refresh();
+  await b.refresh();
+  f.setFail(true);
+  const firstAnswer = answer(),
+    secondAnswer = answer();
+  await a.update((state) => recordAnswer(state, firstAnswer));
+  await b.update((state) => recordAnswer(state, secondAnswer));
+  assert.equal(f.values.size, 2);
+  const restored = f.make();
+  await restored.refresh();
+  assert.deepEqual(
+    new Set(restored.getSnapshot().state.answers.map((event) => event.id)),
+    new Set([firstAnswer.id, secondAnswer.id]),
+  );
+  await restored.retry();
+  f.setFail(false);
+  assert(await a.retry());
+  assert.equal(f.values.size, 1);
+  const remaining = f.make();
+  f.setFail(true);
+  await remaining.refresh();
+  assert.deepEqual(
+    remaining.getSnapshot().state.answers.map((event) => event.id),
+    [secondAnswer.id],
+  );
+  await remaining.retry();
+});
+
+test("legacy shared recovery migrates alongside newer per-job work without changing answers or dates", async () => {
+  const f = fixture(),
+    store = f.make();
+  await store.refresh();
+  f.setFail(true);
+  const a = answer();
+  await store.update((state) => recordAnswer(state, a));
+  const checkKey = "2026-10-05:reading-diagnostic";
+  const draft = setPlanTaskComplete(
+    createDefaultState(),
+    checkKey,
+    true,
+    "2026-10-06",
+  );
+  f.values.set(
+    `act-study-unsaved:${first}`,
+    JSON.stringify({
+      state: draft,
+      jobs: [
+        [
+          `check:${checkKey}`,
+          {
+            ownerId: first,
+            url: "/api/plan-check",
+            body: { ownerId: first, itemKey: checkKey, checked: true },
+          },
+        ],
+      ],
+    }),
+  );
+  const restored = f.make();
+  await restored.refresh();
+  assert.equal(restored.getSnapshot().state.answers[0].id, a.id);
+  assert.equal(
+    restored.getSnapshot().state.planCheckDates?.[checkKey],
+    "2026-10-06",
+  );
+  assert(!f.values.has(`act-study-unsaved:${first}`));
+  assert.equal(f.values.size, 2);
+  await restored.retry();
+  f.setFail(false);
+  await restored.retry();
+  assert.equal(f.values.size, 0);
+});
+
+test("an acknowledged older job cannot remove a newer version written by another tab", async () => {
+  const f = fixture(),
+    store = f.make();
+  await store.refresh();
+  f.setFail(true);
+  const a = answer();
+  await store.update((state) => recordAnswer(state, a));
+  const key = `act-study-unsaved:${first}:${encodeURIComponent(`answer:${a.id}`)}`;
+  const newer = JSON.parse(f.values.get(key)!);
+  newer.body.record.event.cause = "concept";
+  f.values.set(key, JSON.stringify(newer));
+  f.setFail(false);
+  await store.retry();
+  assert.equal(f.values.get(key), JSON.stringify(newer));
 });

@@ -17,8 +17,10 @@ export default async function DashboardPage() {
   if (!profile?.test_date || !profile.target_score)
     return (
       <AccountForm
+        key={user.id}
         variant="onboarding"
         initial={{
+          ownerId: user.id,
           display_name: profile?.display_name ?? null,
           current_score: profile?.current_score ?? null,
           target_score: profile?.target_score ?? null,

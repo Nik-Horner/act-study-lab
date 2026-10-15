@@ -6,6 +6,7 @@ import { NextResponse } from "next/server";
 import { createClient } from "@/lib/supabase/server";
 
 interface ProfilePatchBody {
+  ownerId?: string;
   display_name?: string | null;
   current_score?: number | null;
   target_score?: number | null;
@@ -44,7 +45,12 @@ export async function PATCH(request: Request) {
       { status: 400 },
     );
   }
-  const update: Omit<ProfilePatchBody, "study_settings"> = {};
+  if (body.ownerId !== user.id)
+    return NextResponse.json(
+      { error: "The signed-in account changed. Reload before continuing." },
+      { status: 409 },
+    );
+  const update: Omit<ProfilePatchBody, "study_settings" | "ownerId"> = {};
   const settings =
     "study_settings" in body
       ? validateStudySettings(body.study_settings)

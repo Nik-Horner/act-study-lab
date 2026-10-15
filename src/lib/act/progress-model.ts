@@ -1,4 +1,5 @@
 import type { Question } from "./types";
+import { QUESTION_TARGET_SECONDS } from "../question-pacing";
 
 export interface StudyProfile {
   testDate: string;
@@ -53,21 +54,23 @@ export interface StudyState {
 }
 
 export const STORAGE_KEY = "act-math-science-lab-v1";
-const DEFAULT_PLAN_START_DATE = "2026-10-05";
-
-export function createDefaultState(): StudyState {
+export function createDefaultState(now = new Date()): StudyState {
+  // Loading state only: study routes require the student's saved profile.
+  const date = now.toISOString().slice(0, 10);
   return {
     version: 1,
     profile: {
-      testDate: "2026-10-17",
-      mathBaseline: 34,
-      scienceBaseline: 27,
+      testDate: date,
+      mathBaseline: null,
+      scienceBaseline: null,
       minutesPerDay: 75,
     },
     answers: [],
     attempts: [],
     planChecks: [],
-    planStartDate: DEFAULT_PLAN_START_DATE,
+    planStartDate: new Date(Date.parse(date) - 12 * 86400000)
+      .toISOString()
+      .slice(0, 10),
     planCheckDates: {},
   };
 }
@@ -249,10 +252,15 @@ export function validateState(value: unknown): StudyState | null {
   // preparation history when inferring their previously unstored start date.
   const planStartDate =
     value.planStartDate ??
-    (value.planChecks as string[]).reduce((start, id) => {
-      const date = /^(\d{4}-\d{2}-\d{2}):.+$/.exec(id)?.[1];
-      return calendarDate(date) && date < start ? date : start;
-    }, DEFAULT_PLAN_START_DATE);
+    (value.planChecks as string[]).reduce(
+      (start, id) => {
+        const date = /^(\d{4}-\d{2}-\d{2}):.+$/.exec(id)?.[1];
+        return calendarDate(date) && date < start ? date : start;
+      },
+      new Date(Date.parse(value.profile.testDate as string) - 12 * 86400000)
+        .toISOString()
+        .slice(0, 10),
+    );
 
   return {
     version: 1,
@@ -374,6 +382,7 @@ export function getTopicStats(
   topicSlug: string,
   questions: Question[],
   answers: AnswerRecord[],
+  targetScore = 30,
 ): TopicStats {
   const topicQuestions = new Map(
     questions
@@ -384,31 +393,106 @@ export function getTopicStats(
     topicQuestions.has(answer.questionId),
   );
   const latest = new Map<string, AnswerRecord>();
+  const first = new Map<string, AnswerRecord>();
   for (const answer of relevant) {
     const previous = latest.get(answer.questionId);
     if (!previous || Date.parse(answer.at) >= Date.parse(previous.at))
       latest.set(answer.questionId, answer);
+    const initial = first.get(answer.questionId);
+    if (
+      topicQuestions.get(answer.questionId)!.assessment !== false &&
+      answer.mode === "drill" &&
+      (!initial || Date.parse(answer.at) < Date.parse(initial.at))
+    )
+      first.set(answer.questionId, answer);
   }
   let correct = 0;
-  let hardCorrect = 0;
   let answered = 0;
+  let assessed = 0;
   const unresolvedIds: string[] = [];
   for (const [id, answer] of latest) {
     const question = topicQuestions.get(id)!;
+    if (question.assessment === false) {
+      const replacement =
+        question.replacementId && topicQuestions.get(question.replacementId);
+      const replacementAnswer = replacement
+        ? latest.get(replacement.id)
+        : undefined;
+      if (
+        answer.chosen !== question.answer &&
+        !(replacement && replacementAnswer?.chosen === replacement.answer)
+      )
+        unresolvedIds.push(id);
+      continue;
+    }
+    if (answer.mode === "exam") {
+      if (answer.chosen !== question.answer) unresolvedIds.push(id);
+      continue;
+    }
+    assessed += 1;
     if (answer.chosen !== null) answered += 1;
     if (answer.chosen === question.answer) {
       correct += 1;
-      if (question.difficulty === "hard") hardCorrect += 1;
     } else unresolvedIds.push(id);
   }
-  const accuracy = latest.size ? correct / latest.size : null;
+  const accuracy = assessed ? correct / assessed : null;
+  const required = masteryRequirements(targetScore);
+  const fresh = [...first.values()]
+    .sort((a, b) => Date.parse(a.at) - Date.parse(b.at))
+    .slice(-required.questions);
+  const verified = fresh.filter((answer) => {
+    const question = topicQuestions.get(answer.questionId)!;
+    return (
+      answer.chosen === question.answer &&
+      answer.confidence !== "low" &&
+      answer.elapsedMs > 0 &&
+      answer.elapsedMs <= QUESTION_TARGET_SECONDS[question.subject] * 1000
+    );
+  });
+  const mastered =
+    fresh.length >= required.questions &&
+    accuracy !== null &&
+    accuracy >= required.accuracy &&
+    verified.length / fresh.length >= required.accuracy &&
+    verified.filter(
+      (answer) => topicQuestions.get(answer.questionId)!.difficulty === "hard",
+    ).length >= required.hard;
   return {
     attempted: relevant.length,
     correct,
     accuracy,
     unique: answered,
-    mastered:
-      answered >= 6 && accuracy !== null && accuracy >= 0.9 && hardCorrect >= 2,
-    unresolvedIds,
+    mastered,
+    unresolvedIds: unresolvedIds.filter((id) => {
+      const answer = latest.get(id)!;
+      return (
+        answer.mode !== "exam" ||
+        !mastered ||
+        Date.parse(answer.at) >= Date.parse(fresh[0].at)
+      );
+    }),
   };
+}
+
+/** Practice thresholds guide review; official timed forms verify the score goal. */
+export function masteryRequirements(targetScore: number) {
+  return targetScore >= 33
+    ? { questions: 10, accuracy: targetScore === 36 ? 1 : 0.95, hard: 3 }
+    : targetScore >= 28
+      ? { questions: 6, accuracy: 0.9, hard: 2 }
+      : { questions: 6, accuracy: 0.85, hard: 1 };
+}
+
+export function practiceForMisses(
+  active: Question[],
+  all: Question[],
+  missed: ReadonlySet<string>,
+) {
+  const activeIds = new Set(active.map((q) => q.id));
+  const topics = new Set(
+    all
+      .filter((q) => missed.has(q.id) && !activeIds.has(q.id))
+      .map((q) => q.topic),
+  );
+  return active.filter((q) => missed.has(q.id) || topics.has(q.topic));
 }

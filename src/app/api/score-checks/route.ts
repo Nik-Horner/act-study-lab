@@ -42,7 +42,7 @@ async function history(
   );
 }
 
-export async function GET() {
+export async function GET(request: Request) {
   const db = await createClient();
   const {
     data: { user },
@@ -51,6 +51,11 @@ export async function GET() {
     return Response.json(
       { error: "Sign in to load your score checks." },
       { status: 401 },
+    );
+  if (new URL(request.url).searchParams.get("ownerId") !== user.id)
+    return Response.json(
+      { error: "The signed-in account changed. Reload before continuing." },
+      { status: 409 },
     );
   return history(db, user.id);
 }
@@ -71,6 +76,13 @@ export async function POST(request: Request) {
   } catch {
     return Response.json({ error: "Invalid JSON." }, { status: 400 });
   }
+  if (!body || typeof body !== "object" || Array.isArray(body))
+    return Response.json({ error: "Invalid score check." }, { status: 400 });
+  if (!("ownerId" in body) || body.ownerId !== user.id)
+    return Response.json(
+      { error: "The signed-in account changed. Reload before continuing." },
+      { status: 409 },
+    );
   const input = validateScoreCheck(body);
   if (!input)
     return Response.json(

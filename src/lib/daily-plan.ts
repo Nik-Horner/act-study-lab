@@ -11,6 +11,7 @@ import {
   type Lesson,
   type Question,
   getQuestion,
+  getPracticeReplacement,
 } from "./act/content";
 import { blockUnits } from "./daily-flow";
 import { englishDailyQuestions } from "./english-daily-content";
@@ -245,9 +246,16 @@ export function makeDailyPlan(
           (a, b) =>
             Number(seenQuestions.includes(a.id)) -
               Number(seenQuestions.includes(b.id)) ||
-            (subject === "math" && (settings.scores.math ?? 0) >= 32
-              ? difficultyRank(b.difficulty) - difficultyRank(a.difficulty)
-              : 0),
+            practicePriority(
+              a.difficulty,
+              planningScores(settings)[subject],
+              course?.targetScore ?? 36,
+            ) -
+              practicePriority(
+                b.difficulty,
+                planningScores(settings)[subject],
+                course?.targetScore ?? 36,
+              ),
         );
       const q = rotated[0];
       used.add(q.id);
@@ -524,6 +532,7 @@ export function dailyCoverage(
   settings: StudySettings,
   course: DailyCourse,
   today: string,
+  saved = true,
 ) {
   const all = new Set(
     dailySubjects(settings.includeScience).flatMap((subject) =>
@@ -535,7 +544,7 @@ export function dailyCoverage(
     0,
     Math.ceil((Date.parse(course.testDate) - Date.parse(today)) / 86400000),
   );
-  const finish = (minutes: number, useCurrent: boolean) => {
+  const finish = (minutes: number) => {
     const covered = new Set(confirmed);
     if (covered.size === all.size) return today;
     // A long horizon needs at most one day per authored scope to establish coverage.
@@ -546,7 +555,7 @@ export function dailyCoverage(
         .toISOString()
         .slice(0, 10);
       const next =
-        day === 0 && useCurrent
+        day === 0 && (saved || minutes === settings.minutesPerDay)
           ? plan
           : makeDailyPlan(
               "forecast",
@@ -565,11 +574,11 @@ export function dailyCoverage(
     }
     return null;
   };
-  const finishDate = finish(settings.minutesPerDay, true);
+  const finishDate = finish(settings.minutesPerDay);
   const requiredMinutes = finishDate
     ? settings.minutesPerDay
     : ([75, 90].find(
-        (minutes) => minutes > settings.minutesPerDay && finish(minutes, false),
+        (minutes) => minutes > settings.minutesPerDay && finish(minutes),
       ) ?? null);
   return {
     covered: confirmed.size,
@@ -590,6 +599,17 @@ function mathPriority(topic: string) {
 }
 function difficultyRank(difficulty: string) {
   return difficulty === "hard" ? 2 : difficulty === "medium" ? 1 : 0;
+}
+export function practicePriority(
+  difficulty: string,
+  baseline: number | null,
+  target: number,
+) {
+  const rank = difficultyRank(difficulty);
+  if (baseline === null) return 0;
+  if (target >= 33 && baseline >= 28) return 2 - rank;
+  if (target <= 27 || baseline < 24) return rank;
+  return difficulty === "medium" ? 0 : difficulty === "hard" ? 1 : 2;
 }
 function englishScopes(topic: string): DailyScope[] {
   const full = englishLesson(topic);
@@ -655,7 +675,7 @@ export function estimateDailyBlock(
         words(
           [
             ...s.body,
-            ...(s.activity ? [] : (s.examples ?? []).map((e) => e.text)),
+            ...(s.examples ?? []).map((e) => e.text),
             s.tip ?? "",
             s.activity
               ? [
@@ -932,22 +952,27 @@ export function refreshDailyContent(
   plan: DailyPlan,
   answers: Record<string, number> = {},
 ): DailyPlan {
-  const question = (q: DailyQuestion): DailyQuestion => {
+  const question = (q: DailyQuestion, replaceExposed = true): DailyQuestion => {
     const lesson =
       q.subject === "english" ? englishLesson(q.topic) : getLesson(q.topic);
+    const replacement =
+      replaceExposed && answers[q.id] === undefined
+        ? getPracticeReplacement(q.id)
+        : undefined;
     const source =
-      q.subject === "english"
+      replacement ??
+      (q.subject === "english"
         ? (englishDailyQuestions(q.topic).find((item) => item.id === q.id) ??
           lesson.check.find(
             (item, i) =>
               (item.id ?? `${q.topic}-daily-check-${i + 1}`) === q.id,
           ))
-        : getQuestion(q.id);
+        : getQuestion(q.id));
     return source
       ? ({
           ...q,
           ...source,
-          id: q.id,
+          id: replacement?.id ?? q.id,
           subject: q.subject,
           topic: q.topic,
           phase: q.phase,
@@ -1019,7 +1044,12 @@ export function refreshDailyContent(
           sectionIndices: indices,
           requiredConceptIndices: [...new Set(required)],
           lesson: sliceLesson(full, indices, b.subject),
-          questions: u.questions.map(question),
+          practiceIds: u.practiceIds?.map((id) =>
+            answers[id] === undefined
+              ? (getPracticeReplacement(id)?.id ?? id)
+              : id,
+          ),
+          questions: u.questions.map((q) => question(q)),
         };
       });
       const refreshed = {
@@ -1027,9 +1057,11 @@ export function refreshDailyContent(
         units,
         title: units[0].title,
         lesson: units[0].lesson,
-        questions: b.questions.map(question),
-        historicalQuestions: b.historicalQuestions?.map(question),
-        reviewQuestions: b.reviewQuestions?.map(question),
+        questions: b.questions.map((q) => question(q)),
+        historicalQuestions: b.historicalQuestions?.map((q) =>
+          question(q, false),
+        ),
+        reviewQuestions: b.reviewQuestions?.map((q) => question(q)),
       };
       return { ...refreshed, estimatedMinutes: estimateDailyBlock(refreshed) };
     }),

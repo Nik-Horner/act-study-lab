@@ -27,6 +27,7 @@ import {
 import { ScoreChecks } from "./ScoreChecks";
 import { dailyDate } from "@/lib/daily-date";
 interface DailyState {
+  userId: string;
   plan: DailyPlan;
   saved: boolean;
   answers: Record<string, number>;
@@ -125,7 +126,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       if (
         body.action !== "start" &&
         body.action !== "next" &&
-        data.deadline === null
+        (!data.saved || data.deadline === null)
       ) {
         const start = await fetch("/api/daily", {
           method: "POST",
@@ -357,6 +358,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
           </p>
           {targetScore && (
             <ScoreChecks
+              ownerId={data.userId}
               targetScore={targetScore}
               today={data.today}
               includeScience={data.includeScience !== false}

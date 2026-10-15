@@ -119,7 +119,7 @@ for (const topic of topics) {
   const drills = questions.filter(
     (question) => question.topic === topic.slug && !reserved.has(question.id),
   );
-  assert.equal(drills.length, 32, `Insufficient distinct drills ${topic.slug}`);
+  assert(drills.length >= 32, `Insufficient distinct drills ${topic.slug}`);
   assert(
     drills.filter((question) => question.difficulty === "hard").length >= 2,
     `Insufficient hard drills ${topic.slug}`,

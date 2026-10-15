@@ -17,6 +17,7 @@ type Snapshot = {
 };
 type PendingJob = {
   ownerId: string;
+  checkedDate?: string;
   url: string;
   body: {
     ownerId: string;
@@ -35,7 +36,10 @@ const serverSnapshot: Snapshot = {
 export function createCloudProgressStore(
   options: {
     fetcher?: typeof fetch;
-    storage?: () => Pick<Storage, "getItem" | "setItem" | "removeItem">;
+    storage?: () => Pick<
+      Storage,
+      "getItem" | "setItem" | "removeItem" | "key" | "length"
+    >;
     timeZone?: () => string;
   } = {},
 ) {
@@ -47,17 +51,15 @@ export function createCloudProgressStore(
   let loading = false,
     flushing: Promise<boolean> | null = null;
   const recoveryKey = (userId: string) => `act-study-unsaved:${userId}`;
-  function persistPending() {
-    if (!snapshot.userId) return;
+  const jobKey = (key: string, job: PendingJob) =>
+    `${recoveryKey(job.ownerId)}:${encodeURIComponent(key)}`;
+  function persistJob(key: string, job: PendingJob) {
     try {
-      if (pending.size)
-        storage().setItem(
-          recoveryKey(snapshot.userId),
-          JSON.stringify({ state: snapshot.state, jobs: [...pending] }),
-        );
-      else storage().removeItem(recoveryKey(snapshot.userId));
+      storage().setItem(jobKey(key, job), JSON.stringify(job));
+      return true;
     } catch {
       /* The visible save error still asks the student to retry before leaving. */
+      return false;
     }
   }
   function publish(next: Snapshot) {
@@ -67,13 +69,57 @@ export function createCloudProgressStore(
   function restorePending(userId: string, cloud: StudyState): StudyState {
     let state = cloud;
     try {
+      const entries: [string, PendingJob][] = [];
+      const local = storage();
+      for (let i = 0; i < local.length; i++) {
+        const key = local.key(i);
+        if (!key?.startsWith(`${recoveryKey(userId)}:`)) continue;
+        try {
+          entries.push([
+            decodeURIComponent(key.slice(recoveryKey(userId).length + 1)),
+            JSON.parse(local.getItem(key)!),
+          ]);
+        } catch {
+          /* A damaged entry must not hide other recoverable answers. */
+        }
+      }
       const raw = storage().getItem(recoveryKey(userId));
-      if (!raw) return state;
-      const saved = JSON.parse(raw);
-      const draft = validateState(saved.state);
-      if (!draft || !Array.isArray(saved.jobs) || saved.jobs.length > 10000)
-        return state;
-      for (const entry of saved.jobs) {
+      if (raw) {
+        try {
+          const saved = JSON.parse(raw);
+          const draft = validateState(saved.state);
+          if (
+            draft &&
+            Array.isArray(saved.jobs) &&
+            saved.jobs.length <= 10000
+          ) {
+            let migrated = true;
+            for (const entry of saved.jobs) {
+              if (!Array.isArray(entry) || entry.length !== 2) continue;
+              const [key, job] = entry as [string, PendingJob];
+              if (
+                !job ||
+                job.ownerId !== userId ||
+                job.body?.ownerId !== userId
+              )
+                continue;
+              const recovered = {
+                ...job,
+                checkedDate: draft.planCheckDates?.[job.body.itemKey ?? ""],
+              };
+              // Prefer a newer per-job entry written by another tab.
+              if (!local.getItem(jobKey(key, job))) {
+                entries.push([key, recovered]);
+                migrated = persistJob(key, recovered) && migrated;
+              }
+            }
+            if (migrated) local.removeItem(recoveryKey(userId));
+          }
+        } catch {
+          /* Other per-job recovery remains usable if the legacy snapshot is damaged. */
+        }
+      }
+      for (const entry of entries) {
         if (!Array.isArray(entry) || entry.length !== 2) continue;
         const [key, job] = entry as [string, PendingJob];
         if (!job || job.ownerId !== userId || job.body?.ownerId !== userId)
@@ -116,8 +162,10 @@ export function createCloudProgressStore(
             state,
             itemKey,
             checked,
-            draft.planCheckDates?.[itemKey] ??
-              new Date().toLocaleDateString("en-CA"),
+            (typeof job.checkedDate === "string" &&
+            /^\d{4}-\d{2}-\d{2}$/.test(job.checkedDate)
+              ? job.checkedDate
+              : null) ?? new Date().toLocaleDateString("en-CA"),
           );
         } else continue;
         pending.set(key, job);
@@ -214,10 +262,15 @@ export function createCloudProgressStore(
             );
           if (job.ownerId !== snapshot.userId) return false;
           if (pending.get(key) === job) pending.delete(key);
-          persistPending();
+          try {
+            const local = storage();
+            if (local.getItem(jobKey(key, job)) === JSON.stringify(job))
+              local.removeItem(jobKey(key, job));
+          } catch {
+            /* A retained recovery entry is safe to retry because writes are idempotent. */
+          }
         } catch (error) {
           if (job.ownerId === snapshot.userId) {
-            persistPending();
             publish({
               ...snapshot,
               saving: false,
@@ -245,6 +298,7 @@ export function createCloudProgressStore(
     const ownerId = snapshot.userId;
     if (!ownerId) return Promise.resolve(false);
     const current = snapshot.state;
+    const previousPending = new Map(pending);
     const state = validateState(
       typeof next === "function" ? next(current) : next,
     );
@@ -283,11 +337,13 @@ export function createCloudProgressStore(
       if (before.has(itemKey) !== after.has(itemKey))
         pending.set(`check:${itemKey}`, {
           ownerId,
+          checkedDate: state.planCheckDates?.[itemKey],
           url: "/api/plan-check",
           body: { ownerId, itemKey, checked: after.has(itemKey) },
         });
     publish({ ...snapshot, state });
-    persistPending();
+    for (const [key, job] of pending)
+      if (previousPending.get(key) !== job) persistJob(key, job);
     return retryPending();
   }
   function subscribe(listener: () => void) {

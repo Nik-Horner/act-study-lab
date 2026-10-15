@@ -9,6 +9,8 @@ import { Card } from "@/components/ui/Card";
 import { ButtonLink } from "@/components/ui/Button";
 import { topicStatus } from "@/lib/mastery";
 import { QuickCheck } from "./QuickCheck";
+import { loadEnglishProgress } from "@/lib/english-progress-server";
+import { EnglishProgressError } from "@/components/EnglishProgressError";
 
 export default async function LearnPage({
   params,
@@ -35,13 +37,12 @@ export default async function LearnPage({
 
   let progressRow;
   if (user) {
-    const { data } = await supabase
-      .from("topic_progress")
-      .select("*")
-      .eq("user_id", user.id)
-      .eq("topic_slug", slug)
-      .maybeSingle();
-    progressRow = data ?? undefined;
+    try {
+      const { progress } = await loadEnglishProgress(supabase, user.id);
+      progressRow = progress.find((row) => row.topic_slug === slug);
+    } catch {
+      return <EnglishProgressError href={`/learn/${slug}`} />;
+    }
   }
 
   const status = topicStatus(progressRow);

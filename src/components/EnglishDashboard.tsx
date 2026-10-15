@@ -20,6 +20,8 @@ import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { ButtonLink } from "@/components/ui/Button";
 import { AccountForm } from "@/components/AccountForm";
+import { EnglishProgressError } from "@/components/EnglishProgressError";
+import { loadEnglishProgress } from "@/lib/english-progress-server";
 import {
   PlanChecklist,
   type ChecklistItem,
@@ -94,18 +96,31 @@ export default async function EnglishDashboard() {
     return null; // the proxy already gates this route to logged-in users
   }
 
-  const [{ data: profile }, { data: progressRows }, { data: checkRows }] =
-    await Promise.all([
-      supabase.from("profiles").select("*").eq("id", user.id).single(),
-      supabase.from("topic_progress").select("*").eq("user_id", user.id),
+  let loaded;
+  try {
+    const [profile, progress, checks] = await Promise.all([
+      supabase.from("profiles").select("*").eq("id", user.id).maybeSingle(),
+      loadEnglishProgress(supabase, user.id),
       supabase.from("plan_checks").select("*").eq("user_id", user.id),
     ]);
+    if (profile.error || checks.error) throw new Error("Progress unavailable");
+    loaded = {
+      profile: profile.data,
+      progressRows: progress.progress,
+      checkRows: checks.data,
+    };
+  } catch {
+    return <EnglishProgressError href="/study/english" />;
+  }
+  const { profile, progressRows, checkRows } = loaded;
 
   if (!profile || profile.target_score === null || profile.test_date === null) {
     return (
       <AccountForm
+        key={user.id}
         variant="onboarding"
         initial={{
+          ownerId: user.id,
           display_name: profile?.display_name ?? null,
           current_score: profile?.current_score ?? null,
           target_score: profile?.target_score ?? null,
@@ -222,6 +237,8 @@ export default async function EnglishDashboard() {
         {today ? (
           <Card className="p-6">
             <PlanChecklist
+              key={user.id}
+              ownerId={user.id}
               items={resolveItems(today, progressBySlug, checkedKeys)}
             />
           </Card>
@@ -324,7 +341,11 @@ export default async function EnglishDashboard() {
                     </span>
                   </span>
                   <div className="min-w-0 w-full sm:flex-1">
-                    <PlanChecklist items={resolved} />
+                    <PlanChecklist
+                      key={user.id}
+                      ownerId={user.id}
+                      items={resolved}
+                    />
                   </div>
                   <span className="sr-only">
                     {doneCount === resolved.length

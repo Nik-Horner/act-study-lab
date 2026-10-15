@@ -1,28 +1,40 @@
 "use client";
-import { useEffect, useRef, useState, type FormEvent } from "react";
+import {
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type FormEvent,
+} from "react";
 import { SUBJECTS } from "@/lib/account-settings";
 import { scoreCheckEvidence, type ScoreCheck } from "@/lib/score-checks";
 import { Button } from "./ui/Button";
 
 export function ScoreChecks({
+  ownerId: initialOwnerId,
   targetScore,
   today,
   includeScience = true,
 }: {
+  ownerId: string;
   targetScore: number;
   today: string;
   includeScience?: boolean;
 }) {
+  const [ownerId] = useState(initialOwnerId);
   const [checks, setChecks] = useState<ScoreCheck[]>([]);
   const [loaded, setLoaded] = useState(false);
   const [pending, setPending] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [message, setMessage] = useState("");
   const requestId = useRef(0);
-  async function load() {
+  const load = useCallback(async () => {
     const id = ++requestId.current;
     try {
-      const response = await fetch("/api/score-checks", { cache: "no-store" });
+      const response = await fetch(
+        `/api/score-checks?ownerId=${encodeURIComponent(ownerId)}`,
+        { cache: "no-store" },
+      );
       const data = await response.json();
       if (id !== requestId.current) return;
       if (!response.ok)
@@ -33,11 +45,11 @@ export function ScoreChecks({
     } catch (error) {
       if (id === requestId.current) setError((error as Error).message);
     }
-  }
+  }, [ownerId]);
   useEffect(() => {
     const timer = setTimeout(() => void load(), 0);
     return () => clearTimeout(timer);
-  }, []);
+  }, [load]);
   async function save(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (pending) return;
@@ -51,6 +63,7 @@ export function ScoreChecks({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          ownerId,
           subject: form.get("subject"),
           score: Number(form.get("score")),
           formName: form.get("formName"),

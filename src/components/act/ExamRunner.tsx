@@ -11,6 +11,7 @@ import {
 import { useProgress, recordExam, type ExamAttempt } from "@/lib/act/progress";
 import {
   validateSession,
+  finalizeSession,
   remainingSeconds,
   type ExamSession,
 } from "@/lib/act/exam-session";
@@ -34,7 +35,7 @@ export function ExamRunner({
     params = useSearchParams();
   const key = `act-study-active:${userId ?? "signed-out"}:${examId}`;
   const [session, setSession] = useState<ExamSession | null>(null),
-    [loaded, setLoaded] = useState(false),
+    [loadedOwner, setLoadedOwner] = useState<string | null>(null),
     [now, setNow] = useState<number | null>(null),
     [completedId, setCompletedId] = useState<string | null>(null),
     [error, setError] = useState<string | null>(null),
@@ -46,7 +47,7 @@ export function ExamRunner({
   const lastSaveAttempt = useRef(0);
   const navigation = useQuestionNavigation(
     session ? questions[session.index] : undefined,
-    loaded && ready,
+    loadedOwner === userId && ready,
   );
   useEffect(() => {
     if (!ready || !userId) return;
@@ -54,10 +55,13 @@ export function ExamRunner({
     setNow(Date.now());
     setSession(null);
     setCompletedId(null);
+    setError(null);
+    finishing.current = false;
+    lastSaveAttempt.current = 0;
     try {
       const text = localStorage.getItem(key);
       if (text) {
-        const restored = validateSession(JSON.parse(text), exam);
+        const restored = validateSession(JSON.parse(text), exam, userId);
         if (restored) setSession(restored);
         else
           setError(
@@ -69,12 +73,12 @@ export function ExamRunner({
         "This browser could not restore a saved section. Keep this page open during practice.",
       );
     }
-    setLoaded(true);
-    // The exam schema and key are immutable for this mounted route.
+    setLoadedOwner(userId);
+    // Restore only the current account's browser key.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, ready, userId]);
   useEffect(() => {
-    if (!session) return;
+    if (!session || session.ownerId !== userId) return;
     try {
       localStorage.setItem(key, JSON.stringify(session));
     } catch {
@@ -83,7 +87,7 @@ export function ExamRunner({
         "Your active section cannot be saved in this browser. Keep the page open; retry saving after finishing.",
       );
     }
-  }, [session, key]);
+  }, [session, key, userId]);
   useEffect(() => {
     if (!session?.id) return;
     const tick = () => setNow(Date.now()),
@@ -99,6 +103,7 @@ export function ExamRunner({
   const finish = useCallback(async () => {
     if (
       !session ||
+      session.ownerId !== userId ||
       finishing.current ||
       !ready ||
       Date.now() - lastSaveAttempt.current < 15000
@@ -106,13 +111,21 @@ export function ExamRunner({
       return;
     lastSaveAttempt.current = Date.now();
     finishing.current = true;
-    const ended = Date.now(),
+    const finalized = finalizeSession(session);
+    setSession(finalized);
+    setConfirmEnd(false);
+    try {
+      localStorage.setItem(key, JSON.stringify(finalized));
+    } catch {
+      // Cloud recovery also retains the immutable submission when device storage is unavailable.
+    }
+    const ended = finalized.finishedAt!,
       attempt: ExamAttempt = {
         id: session.id,
         examId,
         startedAt: session.startedAt,
         completedAt: new Date(ended).toISOString(),
-        answers: session.answers,
+        answers: finalized.answers,
         elapsedSeconds: Math.min(
           exam.minutes * 60,
           Math.max(
@@ -135,12 +148,23 @@ export function ExamRunner({
     setCompletedId(session.id);
     setSession(null);
     setConfirmEnd(false);
-  }, [session, ready, examId, exam.minutes, update, state, questions, key]);
+  }, [
+    session,
+    userId,
+    ready,
+    examId,
+    exam.minutes,
+    update,
+    state,
+    questions,
+    key,
+  ]);
   useEffect(() => {
     if (
       session &&
       now !== null &&
-      remainingSeconds(session.deadline, now) === 0
+      (session.finishedAt !== null ||
+        remainingSeconds(session.deadline, now) === 0)
     ) {
       const timeout = window.setTimeout(() => void finish(), 0);
       return () => window.clearTimeout(timeout);
@@ -164,7 +188,7 @@ export function ExamRunner({
         </ButtonLink>
       </Card>
     );
-  if (!loaded || !ready)
+  if (loadedOwner !== userId || !ready)
     return (
       <div
         role="status"
@@ -196,9 +220,11 @@ export function ExamRunner({
     setCompletedId(null);
     setSession({
       id: crypto.randomUUID(),
+      ownerId: userId!,
       examId,
       startedAt: new Date(time).toISOString(),
       deadline: time + exam.minutes * 60_000,
+      finishedAt: null,
       answers: {},
       flags: [],
       eliminated: {},
@@ -283,6 +309,12 @@ export function ExamRunner({
     ),
     answered = Object.values(session.answers).filter((a) => a !== null).length;
   function mutate(next: ExamSession) {
+    if (
+      session!.ownerId !== userId ||
+      session!.finishedAt !== null ||
+      finishing.current
+    )
+      return;
     if (Date.now() >= session!.deadline) {
       finish();
       return;
@@ -347,10 +379,21 @@ export function ExamRunner({
             {hideTime ? "Show timer" : "Hide timer"}
           </button>
         </div>
-        <Button size="sm" variant="ghost" onClick={() => setConfirmEnd(true)}>
+        <Button
+          size="sm"
+          variant="ghost"
+          disabled={session.finishedAt !== null}
+          onClick={() => setConfirmEnd(true)}
+        >
           End section
         </Button>
       </div>
+      {session.finishedAt !== null && (
+        <p role="status" className="rounded-xl bg-warn-soft p-4 text-sm">
+          This section has ended. Answers are locked while your submission
+          saves. Retry saving if needed.
+        </p>
+      )}
       {(error || storageError) && (
         <p role="alert" className="rounded-xl bg-warn-soft p-3 text-sm">
           {error || storageError}
@@ -377,6 +420,7 @@ export function ExamRunner({
         <Button
           variant="ghost"
           size="sm"
+          disabled={session.finishedAt !== null}
           className={session.flags.includes(q.id) ? "ring-1 ring-warn" : ""}
           aria-pressed={session.flags.includes(q.id)}
           onClick={() =>
@@ -425,26 +469,33 @@ export function ExamRunner({
           chosen={session.answers[q.id] ?? null}
           onChoose={choose}
           eliminated={session.eliminated[q.id] ?? []}
-          onEliminate={eliminate}
+          onEliminate={session.finishedAt === null ? eliminate : undefined}
+          disabled={session.finishedAt !== null}
           zoom={zoom}
         />
       </Card>
       <div className="flex flex-wrap justify-between gap-3">
         <Button
           variant="ghost"
-          disabled={session.index === 0}
+          disabled={session.index === 0 || session.finishedAt !== null}
           onClick={() => mutate({ ...session, index: session.index - 1 })}
         >
           Previous
         </Button>
         {session.index < questions.length - 1 ? (
           <Button
+            disabled={session.finishedAt !== null}
             onClick={() => mutate({ ...session, index: session.index + 1 })}
           >
             Next question
           </Button>
         ) : (
-          <Button onClick={() => setConfirmEnd(true)}>Review and submit</Button>
+          <Button
+            disabled={session.finishedAt !== null}
+            onClick={() => setConfirmEnd(true)}
+          >
+            Review and submit
+          </Button>
         )}
       </div>
       <Card className="p-4 sm:p-5">
@@ -462,6 +513,7 @@ export function ExamRunner({
               return (
                 <button
                   key={item.id}
+                  disabled={session.finishedAt !== null}
                   aria-label={`Question ${i + 1}${hasAnswer ? ", answered" : ", unanswered"}${marked ? ", flagged" : ""}`}
                   aria-current={i === session.index ? "step" : undefined}
                   className={`study-data min-h-11 min-w-11 rounded-lg border px-2 text-sm transition-colors hover:border-brand ${hasAnswer ? "bg-brand-soft" : "bg-bg-raised text-ink-soft"} ${i === session.index ? "border-brand ring-2 ring-brand" : hasAnswer ? "border-brand" : "border-border"} ${marked ? "font-bold" : ""}`}

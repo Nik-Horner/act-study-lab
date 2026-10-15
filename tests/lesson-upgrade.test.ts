@@ -56,7 +56,7 @@ test("every non-English concept has an authored prediction, valid feedback, and 
       count++;
     }
   }
-  assert.equal(count, 140);
+  assert.equal(count, 141);
 });
 test("worked predictions use correct geometry, trig, weighting, and interpolation", () => {
   const answer = (slug: keyof typeof activities, i: number) =>
@@ -66,10 +66,10 @@ test("worked predictions use correct geometry, trig, weighting, and interpolatio
   assert.equal(answer("math-trigonometry", 2), String.raw`\(-\frac45\)`);
   assert.equal(
     answer("science-data-reading", 5),
-    `${(30 * 4 + 10 * 12) / 40} mg/L`,
+    `${(12 * 2 + 4 * 10) / (12 + 4)} mg/L`,
   );
-  assert.equal(answer("science-trends-interpolation", 1), `${(58 + 50) / 2}°C`);
-  assert.equal(answer("science-scientific-foundations", 3), String(5 + 2));
+  assert.equal(answer("science-trends-interpolation", 1), `${(46 + 34) / 2}°C`);
+  assert.equal(answer("science-scientific-foundations", 3), String(9 + 4));
   assert.equal(answer("math-essential-skills", 4), String(2 * 12 ** 2));
 });
 test("low-effort Science stays on record without becoming a remedial baseline", () => {

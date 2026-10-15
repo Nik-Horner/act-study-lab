@@ -85,8 +85,8 @@ test("Science concepts retain evidence and worked examples with concise methods"
   for (const lesson of scienceLessons) {
     assert.equal(
       lesson.sections.length,
-      7,
-      "saved concept positions stay stable",
+      lesson.slug === "science-scientific-foundations" ? 8 : 7,
+      "saved concept positions stay stable; Earth/space is appended",
     );
     assert.equal(lesson.check.length, 3);
     assert(

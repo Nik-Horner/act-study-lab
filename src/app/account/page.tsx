@@ -37,8 +37,10 @@ export default async function AccountPage() {
     <div className="space-y-4">
       <p className="text-center text-sm text-ink-faint">{user.email}</p>
       <AccountForm
+        key={user.id}
         variant="settings"
         initial={{
+          ownerId: user.id,
           display_name: profile?.display_name ?? null,
           current_score: profile?.current_score ?? null,
           target_score: profile?.target_score ?? null,

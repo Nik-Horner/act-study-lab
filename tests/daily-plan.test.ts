@@ -37,6 +37,45 @@ const settings = {
   scores: { english: 32, math: 34, reading: null, science: 27 },
   minutesPerDay: 75,
 };
+test("larger-budget coverage preserves an already saved session on the final study day", () => {
+  const original = { ...settings, minutesPerDay: 60 };
+  const all = DAILY_SUBJECTS.flatMap((subject) =>
+    dailyScopes(subject).map((scope) => scope.id),
+  );
+  const missing = dailyScopes("english")
+    .slice(9)
+    .map((scope) => scope.id);
+  const course = {
+    testDate: "2026-10-17",
+    coveredUnits: all.filter((id) => !missing.includes(id)),
+  };
+  const saved = makeDailyPlan(
+    "qa",
+    "2026-10-16",
+    original,
+    0,
+    undefined,
+    [],
+    {},
+    course,
+  );
+  const before = dailyCoverage(saved, original, course, saved.date);
+  assert.equal(before.onTrack, false);
+  assert.equal(before.requiredMinutes, null);
+  const changed = { ...original, minutesPerDay: 90 };
+  assert.equal(
+    selectDailyPlan(saved, "qa", saved.date, changed, false, course),
+    saved,
+  );
+  assert.equal(
+    dailyCoverage(saved, changed, course, saved.date).requiredMinutes,
+    null,
+  );
+  assert.equal(
+    dailyCoverage(saved, original, course, saved.date, false).requiredMinutes,
+    90,
+  );
+});
 test("Reading scopes teach each section once and have distinct lesson titles", () => {
   for (const topic of new Set(
     dailyScopes("reading").map((s) => s.topic.slug),
@@ -604,7 +643,7 @@ test("saved sessions load corrected lessons and real worked-example evidence wit
   assert.equal(
     blockUnits(updated.blocks.find((b) => b.subject === "science")!)[0].lesson
       .sections[0].evidence?.[0].id,
-    "science-drill-reservoir",
+    "science-teaching-data-reading-1",
   );
 });
 

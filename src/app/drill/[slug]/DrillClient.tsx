@@ -34,6 +34,7 @@ type OriginalDrillProps =
   | { mode: "misses"; pool: PoolItem[] };
 
 type DrillClientProps = OriginalDrillProps & {
+  ownerId?: string;
   daily?: {
     savedChoice?: number;
     savedSeconds?: number;
@@ -45,6 +46,7 @@ type DrillClientProps = OriginalDrillProps & {
   };
 };
 export function DrillClient(props: DrillClientProps) {
+  const [ownerId] = useState(props.ownerId);
   const items: PoolItem[] = useMemo(() => {
     if (props.mode === "topic") {
       return props.questions.map((q) => ({
@@ -87,6 +89,8 @@ export function DrillClient(props: DrillClientProps) {
   const qStartRef = useRef(0);
   const answeredRef = useRef(answered);
   const savedRef = useRef(props.daily?.savedChoice !== undefined);
+  const answerIdRef = useRef<string | null>(null);
+  const saveInFlightRef = useRef(false);
   useEffect(() => {
     answeredRef.current = answered;
   }, [answered]);
@@ -119,12 +123,21 @@ export function DrillClient(props: DrillClientProps) {
   }, [order, idx]);
 
   const submitAnswer = useCallback(
-    async (choiceIdx: number) => {
-      if (answeredRef.current || !current) return;
+    async (choiceIdx: number, retry = false) => {
+      if (
+        (!retry && answeredRef.current) ||
+        !current ||
+        savedRef.current ||
+        saveInFlightRef.current
+      )
+        return;
+      saveInFlightRef.current = true;
       answeredRef.current = true;
       setAnswered(true);
       setPicked(choiceIdx);
-      const seconds = Math.round((Date.now() - qStartRef.current) / 1000);
+      const seconds = retry
+        ? answerSec
+        : Math.round((Date.now() - qStartRef.current) / 1000);
       setAnswerSec(seconds);
       setSaving(true);
       setSaveError(null);
@@ -138,10 +151,13 @@ export function DrillClient(props: DrillClientProps) {
             );
           return;
         }
+        answerIdRef.current ??= crypto.randomUUID();
         const res = await fetch("/api/drill/answer", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
+            ownerId,
+            answerId: answerIdRef.current,
             topicSlug: current.topicSlug,
             questionId: current.question.id,
             chosen: choiceIdx,
@@ -151,7 +167,7 @@ export function DrillClient(props: DrillClientProps) {
           const result = await res.json();
           setSaveError(
             result.error ??
-              "Your answer save could not be confirmed. Reload to check progress before continuing.",
+              "Your answer save could not be confirmed. Retry before continuing.",
           );
           return;
         }
@@ -174,13 +190,14 @@ export function DrillClient(props: DrillClientProps) {
         setSaveError(
           props.daily
             ? "Your answer has not saved yet. Retry before continuing."
-            : "Your answer save could not be confirmed. Reload to check progress before continuing.",
+            : "Your answer save could not be confirmed. Retry before continuing.",
         );
       } finally {
+        saveInFlightRef.current = false;
         setSaving(false);
       }
     },
-    [current, props.mode, props.daily],
+    [current, props.mode, props.daily, ownerId, answerSec],
   );
 
   const goNext = useCallback(() => {
@@ -220,6 +237,7 @@ export function DrillClient(props: DrillClientProps) {
     });
     answeredRef.current = false;
     savedRef.current = false;
+    answerIdRef.current = null;
     setAnswered(false);
     setPicked(null);
   }, [current, picked, props.mode, props.daily, items, saving, saveError]);
@@ -452,6 +470,16 @@ export function DrillClient(props: DrillClientProps) {
               setSaving(false);
             }
           }}
+        >
+          Retry saving answer
+        </button>
+      )}
+      {saveError && !props.daily && (
+        <button
+          type="button"
+          disabled={saving}
+          className="min-h-11 text-brand underline"
+          onClick={() => picked !== null && void submitAnswer(picked, true)}
         >
           Retry saving answer
         </button>

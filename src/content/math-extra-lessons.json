@@ -13,7 +13,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "If f(x) = x² − 4 and g(x) = 3x + 1, then 2 → g → 7 → f → 45. Reversing the chain gives 2 → f → 0 → g → 1. Those two results make an order mistake easy to spot.",
+            "text": "If f(x) = x² + 3 and g(x) = 2x − 1, then 3 → g → 5 → f → 28. Reversing the chain gives 3 → f → 12 → g → 23. Those different results show why the inner function must be evaluated first.",
             "good": true
           }
         ],
@@ -38,7 +38,8 @@
         "heading": "3. Transformations without guessing the direction",
         "body": [
           "Outside changes affect outputs: \\(af(x)+k\\) multiplies each output by a, then adds k. A negative a flips the graph across the horizontal axis. Inside changes affect inputs: for \\(f(bx+c)\\), solve \\(bx+c=h\\) to locate an original feature at input h.",
-          "For \\(a(x-h)^2+k\\), the turning point (vertex) is \\((h,k)\\); positive a gives a lowest point and negative a a highest point. For absolute value, find the input that makes the inside zero. Solve the inside equation instead of guessing a horizontal shift."
+          "For \\(a(x-h)^2+k\\), the turning point (vertex) is \\((h,k)\\); positive a gives a lowest point and negative a a highest point. For absolute value, find the input that makes the inside zero. Solve the inside equation instead of guessing a horizontal shift.",
+          "For \\(ax^2+bx+c\\) with \\(a\\ne0\\), the vertex input is \\(h=-\\frac b{2a}\\) and output is \\(k=f(h)\\). Example: \\(3x^2-18x+20=3(x-3)^2-7\\) has vertex (3,−7). The input 3 and output −7 answer different questions; a restricted domain may exclude the vertex."
         ],
         "examples": [
           {
@@ -47,7 +48,8 @@
             "good": true
           }
         ],
-        "tip": "Solve for the input that triggers the original feature; do not read the inner constant as the shift."
+        "tip": "Solve for the input that triggers the original feature; do not read the inner constant as the shift.",
+        "teachingRevision": 2
       },
       {
         "heading": "4. Inverse values and restricted branches",
@@ -86,7 +88,8 @@
           "For equal input steps, a linear pattern adds the same amount each time. An exponential pattern multiplies by the same amount each time. In \\(ab^t\\), a is the initial value and b the multiplier per input unit. A gap of several units produces a power of b; a half-life exponent counts how many times the amount halves.",
           "\\(\\log_b u=v\\) means \\(u=b^v\\). For positive expressions inside the logarithms, \\(\\log_b(uv)=\\log_b u+\\log_b v\\) and \\(\\log_b(u^p)=p\\log_b u\\). These rules do not split a sum. The base is positive and not 1.",
           "An arithmetic sequence adds the same number d at each step. It has \\(a_n=a_0+nd\\), or \\(a_n=a_1+(n-1)d\\) when indexing starts at 1. For \\(a_0=80\\) and \\(a_1=68\\), \\(d=-12\\), so \\(a_6=8\\).",
-          "In logarithmic equations, every original argument (the expression inside a logarithm) must be positive. For \\(\\log_2(x-1)+\\log_2(x+1)=3\\), require \\(x>1\\). Then \\((x-1)(x+1)=8\\) gives the sole valid root \\(x=3\\)."
+          "In logarithmic equations, every original argument (the expression inside a logarithm) must be positive. For \\(\\log_2(x-1)+\\log_2(x+1)=3\\), require \\(x>1\\). Then \\((x-1)(x+1)=8\\) gives the sole valid root \\(x=3\\).",
+          "Inverse variation has \\(y=k/x\\), so \\(xy=k\\) and \\(x\\ne0\\). If y=9 when x=4, then k=36 and y=6 when x=6. For positive u,v and valid base b, logarithm division becomes subtraction: \\(\\log_b(u/v)=\\log_bu-\\log_bv\\). Change of base is \\(\\log_bu=\\frac{\\ln u}{\\ln b}\\), with \\(b>0\\), \\(b\\ne1\\), and \\(u>0\\)."
         ],
         "examples": [
           {
@@ -95,7 +98,8 @@
             "good": true
           }
         ],
-        "tip": "Write the input gap next to an exponential ratio before taking a root."
+        "tip": "Write the input gap next to an exponential ratio before taking a root.",
+        "teachingRevision": 2
       },
       {
         "heading": "7. A fast digital decision process",
@@ -225,7 +229,8 @@
           "An arc is part of a circle’s edge. Find the arc between the angle’s arms. An angle at the center equals the arc’s angle measure; an angle on the edge is half as large. A tangent touches the circle once, at a right angle to the radius. A chord joins two edge points; a line from the center meeting it at 90° cuts it in half.",
           "A secant crosses the circle at two points. Multiply the right lengths: crossing chords give part × part on each chord; two secants from an outside point give outside part × whole length; tangent and secant give \\(\\text{tangent}^2=\\text{external}\\times\\text{whole}\\). Add outside and inside portions to get the whole secant.",
           "For θ in degrees, arc length is \\(\\frac\\theta{360}\\times2\\pi r\\). Radius 9 and angle 80° give \\(\\frac{80}{360}\\times18\\pi=4\\pi\\). Arc measure is an angle; arc length is a distance.",
-          "Tangents and half-chords form right triangles. Radius 5 and center-to-external-point distance 13 give tangent \\(\\sqrt{13^2-5^2}=12\\). Radius 13 and center-to-chord distance 5 give half-chord 12, so the full chord is 24."
+          "Tangents and half-chords form right triangles. Radius 5 and center-to-external-point distance 13 give tangent \\(\\sqrt{13^2-5^2}=12\\). Radius 13 and center-to-chord distance 5 give half-chord 12, so the full chord is 24.",
+          "For θ in degrees, a sector has area \\(\\frac\\theta{360}\\pi r^2\\). In radians, arc length is \\(r\\theta\\) and sector area is \\(\\frac12r^2\\theta\\). For radius 6 and angle \\(\\pi/3\\), arc length is \\(2\\pi\\) and sector area is \\(6\\pi\\); one is a length and the other an area."
         ],
         "examples": [
           {
@@ -235,14 +240,16 @@
           }
         ],
         "tip": "Draw brackets for outside, inside, and whole segments before multiplying.",
-        "teachingRevision": 1
+        "teachingRevision": 2
       },
       {
         "heading": "5. Coordinates and vectors as geometric tools",
         "body": [
           "Between \\((x_1,y_1)\\) and \\((x_2,y_2)\\), distance is \\(\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\\). For the point halfway between them, average the x-values and then the y-values. A missing endpoint is twice the midpoint minus the known endpoint. Put negative coordinates in parentheses.",
           "Slope is change in y divided by change in x. Parallel lines run in the same direction and share slopes. Lines at right angles have slopes that multiply to −1, unless one line is vertical. Handle horizontal and vertical lines separately. For area, look for a horizontal or vertical base with an easy height at a right angle to the base.",
-          "The shortest, perpendicular distance from \\((x_0,y_0)\\) to \\(Ax+By+C=0\\) is \\(\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}\\). Put zero on the right first. From the origin to \\(3x+4y=20\\), distance is \\(\\frac{|-20|}{\\sqrt{3^2+4^2}}=4\\)."
+          "The shortest, perpendicular distance from \\((x_0,y_0)\\) to \\(Ax+By+C=0\\) is \\(\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}\\). Put zero on the right first. From the origin to \\(3x+4y=20\\), distance is \\(\\frac{|-20|}{\\sqrt{3^2+4^2}}=4\\).",
+          "A circle has equation \\((x-h)^2+(y-k)^2=r^2\\). Complete the square in both coordinates: \\(x^2+y^2+4x-10y+20=0\\) becomes \\((x+2)^2+(y-5)^2=9\\), with center (−2,5) and radius 3. For rotations about the origin: 90° counterclockwise sends \\((x,y)\\to(-y,x)\\); 180° sends \\((-x,-y)\\); 90° clockwise sends \\((y,-x)\\). For another center, subtract its coordinates, rotate, then add them back.",
+          "Reflect across the x-axis using \\((x,-y)\\), the y-axis using \\((-x,y)\\), or \\(y=x\\) using \\((y,x)\\). Across \\(x=h\\), use \\((2h-x,y)\\). Thus reflecting (7,1) across x=2 gives (−3,1). A dilation centered at (h,k) multiplies the displacement from that center by the scale factor."
         ],
         "examples": [
           {
@@ -251,14 +258,16 @@
             "good": true
           }
         ],
-        "tip": "Use coordinate differences and perpendicular heights instead of measuring the sketch."
+        "tip": "Use coordinate differences and perpendicular heights instead of measuring the sketch.",
+        "teachingRevision": 2
       },
       {
         "heading": "6. Solids, surface area, and inscribed shapes",
         "body": [
           "A prism or cylinder has two matching, parallel ends. Its volume is base area × height at a right angle to the base. A cone or pyramid uses one third of that product. A sphere has surface area \\(4\\pi r^2\\) and volume \\(\\frac43\\pi r^3\\). Surface area adds the areas of all exposed faces.",
           "A circle has area \\(\\pi r^2\\) and distance around it (circumference) \\(2\\pi r\\). A ring between circles with the same center (concentric circles) has area \\(\\pi R^2-\\pi r^2\\); radii 5 and 3 give \\(16\\pi\\). A closed cylinder has surface area \\(2\\pi r^2+2\\pi rh\\); radius 3 and height 8 give \\(66\\pi\\).",
-          "A rectangle whose corners sit on a circle has diagonal equal to the circle’s diameter. A square’s diagonal is side × \\(\\sqrt2\\). A circle that fits inside a square and touches all four sides instead has diameter equal to the square’s side."
+          "A rectangle whose corners sit on a circle has diagonal equal to the circle’s diameter. A square’s diagonal is side × \\(\\sqrt2\\). A circle that fits inside a square and touches all four sides instead has diameter equal to the square’s side.",
+          "A rectangular box has \\(V=lwh\\), \\(SA=2(lw+lh+wh)\\), and diagonal \\(\\sqrt{l^2+w^2+h^2}\\). A right cone has \\(V=\\frac13\\pi r^2h\\), slant height \\(\\ell=\\sqrt{r^2+h^2}\\), and closed surface area \\(\\pi r^2+\\pi r\\ell\\). Radius 3 and height 4 give \\(\\ell=5\\), \\(V=12\\pi\\), and \\(SA=24\\pi\\). A regular pyramid has lateral area \\(\\frac12\\times\\text{base perimeter}\\times\\text{slant height}\\); add the base for total area."
         ],
         "examples": [
           {
@@ -267,7 +276,8 @@
             "good": true
           }
         ],
-        "tip": "Write the shared diameter, diagonal, or height before using either shape’s formula."
+        "tip": "Write the shared diameter, diagonal, or height before using either shape’s formula.",
+        "teachingRevision": 2
       },
       {
         "heading": "7. Fast recognition and a final verification pass",
@@ -363,7 +373,8 @@
         "heading": "2. Radians and exact unit-circle values",
         "body": [
           "Radians are another way to measure an angle. A full turn is 360° or \\(2\\pi\\) radians. Multiply degrees by \\(\\frac\\pi{180}\\) to get radians; multiply radians by \\(\\frac{180}\\pi\\) to get degrees. With θ already in radians, arc length is \\(s=r\\theta\\); do not convert again.",
-          "The first quadrant is the upper-right quarter of the coordinate plane. Learn exact values at 0°, 30°, 45°, 60°, and 90°, then use the small angle to the horizontal axis (reference angle) and the sign in the correct quarter. A negative angle rotates clockwise; its function value need not be negative. Sine is odd: \\(\\sin(-\\theta)=-\\sin\\theta\\). Cosine is even: \\(\\cos(-\\theta)=\\cos\\theta\\)."
+          "The first quadrant is the upper-right quarter of the coordinate plane. Learn exact values at 0°, 30°, 45°, 60°, and 90°, then use the small angle to the horizontal axis (reference angle) and the sign in the correct quarter. A negative angle rotates clockwise; its function value need not be negative. Sine is odd: \\(\\sin(-\\theta)=-\\sin\\theta\\). Cosine is even: \\(\\cos(-\\theta)=\\cos\\theta\\).",
+          "The exact first-quadrant values must be available without guessing: at \\(0,\\pi/6,\\pi/4,\\pi/3,\\pi/2\\), sine is \\(0,1/2,\\sqrt2/2,\\sqrt3/2,1\\) and cosine is \\(1,\\sqrt3/2,\\sqrt2/2,1/2,0\\). Unit-circle coordinates are \\((\\cos\\theta,\\sin\\theta)\\). For \\(\\cos(5\\pi/6)\\), the reference angle is \\(\\pi/6\\) and cosine is negative, giving \\(-\\sqrt3/2\\)."
         ],
         "examples": [
           {
@@ -372,7 +383,8 @@
             "good": true
           }
         ],
-        "tip": "Keep exact π multiples in scratch work, and check the calculator’s angle mode before verifying."
+        "tip": "Keep exact π multiples in scratch work, and check the calculator’s angle mode before verifying.",
+        "teachingRevision": 2
       },
       {
         "heading": "3. Quadrant signs and reciprocal relationships",
@@ -393,7 +405,8 @@
         "heading": "4. Identities and all solutions in an interval",
         "body": [
           "Use \\(\\sin^2\\theta+\\cos^2\\theta=1\\), and \\(\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}\\) when cosine is nonzero. These rules replace an angle with twice that angle: \\(\\sin(2\\theta)=2\\sin\\theta\\cos\\theta\\) and \\(\\cos(2\\theta)=2\\cos^2\\theta-1\\). The notation \\(\\sin^2\\theta\\) means \\((\\sin\\theta)^2\\), not \\(\\sin(\\theta^2)\\).",
-          "Get the trig ratio alone, find its small reference angle, and include every matching angle in the allowed range. An inverse-trig calculator button gives only one standard angle, not every answer. Check whether the range includes its ends, and never allow a zero denominator."
+          "Get the trig ratio alone, find its small reference angle, and include every matching angle in the allowed range. An inverse-trig calculator button gives only one standard angle, not every answer. Check whether the range includes its ends, and never allow a zero denominator.",
+          "For angle sums, \\(\\sin(u\\pm v)=\\sin u\\cos v\\pm\\cos u\\sin v\\) and \\(\\cos(u\\pm v)=\\cos u\\cos v\\mp\\sin u\\sin v\\). The cosine formula uses the opposite sign in its second term. For example, \\(\\cos75^\\circ=\\cos(45^\\circ+30^\\circ)=\\frac{\\sqrt6-\\sqrt2}4\\). Use exact special-angle values before approximating."
         ],
         "examples": [
           {
@@ -402,7 +415,8 @@
             "good": true
           }
         ],
-        "tip": "For an equation, draw the allowed interval and count the full set before choosing a quantity."
+        "tip": "For an equation, draw the allowed interval and count the full set before choosing a quantity.",
+        "teachingRevision": 2
       },
       {
         "heading": "5. Read amplitude, period, shift, and range",
@@ -544,7 +558,8 @@
         "heading": "3. Spread, transformations, and standardized distance",
         "body": [
           "Range is largest minus smallest. Interquartile range is the width of the middle half: \\(Q_3-Q_1\\), the middle half. Standard deviation measures how spread out the values are around the mean; variance is its square. Adding the same number to every value changes neither measure. Multiplying values by a scales standard deviation by \\(|a|\\) and variance by \\(a^2\\).",
-          "Use μ for the mean and σ for standard deviation. A value’s standardized distance is \\(\\frac{x-\\mu}{\\sigma}\\): the number of standard deviations above or below the mean. This calculation works even if the data do not follow a bell-shaped, or normal, pattern."
+          "Use μ for the mean and σ for standard deviation. A value’s standardized distance is \\(\\frac{x-\\mu}{\\sigma}\\): the number of standard deviations above or below the mean. This calculation works even if the data do not follow a bell-shaped, or normal, pattern.",
+          "Population variance is \\(\\sigma^2=\\frac{\\sum(x_i-\\mu)^2}{N}\\); sample variance uses \\(s^2=\\frac{\\sum(x_i-\\bar x)^2}{n-1}\\) with n>1. Standard deviation is the square root. For the population 1,3,5, mean is 3 and variance is 8/3. Choose the denominator the question specifies; neither standardization nor standard deviation alone proves a normal distribution."
         ],
         "examples": [
           {
@@ -553,13 +568,15 @@
             "good": true
           }
         ],
-        "tip": "For spread changes, circle whether the statistic is squared before applying the multiplier."
+        "tip": "For spread changes, circle whether the statistic is squared before applying the multiplier.",
+        "teachingRevision": 2
       },
       {
         "heading": "4. Sample spaces and conditional information",
         "body": [
           "When every result is equally likely, probability is matching results divided by all possible results. List what counts as a result first: two dice have 36 ordered pairs, not 11 equally likely sums. In a table, use the total for the group you are choosing from: everyone, one row, or one column.",
-          "If a drawn item stays out, change both the matching count and the total before the next draw. If it goes back in, use the original counts. If an earlier result is already known, start from that situation; do not multiply by its probability."
+          "If a drawn item stays out, change both the matching count and the total before the next draw. If it goes back in, use the original counts. If an earlier result is already known, start from that situation; do not multiply by its probability.",
+          "Conditional probability is \\(P(A\\mid B)=\\frac{P(A\\cap B)}{P(B)}\\) when \\(P(B)>0\\). In a two-way table, restrict the denominator to the given row or column. If 8 of 20 cyclists also run, then among cyclists the runner probability is 8/20=2/5; the total number of noncyclists is irrelevant to this conditional question."
         ],
         "examples": [
           {
@@ -568,7 +585,8 @@
             "good": true
           }
         ],
-        "tip": "Rewrite given as among and name the remaining population aloud or on scratch paper."
+        "tip": "Rewrite given as among and name the remaining population aloud or on scratch paper.",
+        "teachingRevision": 2
       },
       {
         "heading": "5. And, or, independence, and complements",
@@ -590,7 +608,8 @@
         "body": [
           "When order matters, multiply choices for each position; available choices shrink if repeats are forbidden. When order does not matter, count groups using combinations \\(\\binom nk=\\frac{n!}{k!(n-k)!}\\). Here, n! means multiplying the whole numbers from 1 through n, and 0! = 1. A committee has no order unless people receive different roles.",
           "For exactly k successes in n tries, each with the same success chance p and no effect on the other tries, use \\(\\binom nk p^k(1-p)^{n-k}\\). The combination counts placements of successes. A first success on a particular trial has one order: failures, then success.",
-          "Expected value is the long-run average: multiply each possible gain or loss by its probability, then add. Use a negative number for a loss. If asked for net gain, subtract the entry cost from the payout."
+          "Expected value is the long-run average: multiply each possible gain or loss by its probability, then add. Use a negative number for a loss. If asked for net gain, subtract the entry cost from the payout.",
+          "For r ordered choices from n without repeats, \\({}_nP_r=\\frac{n!}{(n-r)!}\\). If a word has indistinguishable repeated letters, divide its n! arrangements by every repeat-count factorial. BANANA has three As and two Ns, so \\(\\frac{6!}{3!2!}=60\\) distinct arrangements. This is different from choosing an unordered group of letters."
         ],
         "examples": [
           {
@@ -599,13 +618,15 @@
             "good": true
           }
         ],
-        "tip": "Decide order and replacement before touching a factorial or multiplying fractions."
+        "tip": "Decide order and replacement before touching a factorial or multiplying fractions.",
+        "teachingRevision": 2
       },
       {
         "heading": "7. Study design and a reliable final pass",
         "body": [
           "A sample is a smaller group used to learn about a larger group. Random selection helps when everyone in that larger group can be chosen. Volunteers may differ from nonvolunteers, even in a huge sample. Randomly choosing from a list still misses anyone left off the list.",
-          "Find the key phrase, such as “at least one,” and the group you are choosing from before calculating. For unclear counting problems, sketch positions or a small table. If you move on, leave enough scratch work to resume. On the final pass, check whether results overlap, whether drawn items go back in, and whether order matters."
+          "Find the key phrase, such as “at least one,” and the group you are choosing from before calculating. For unclear counting problems, sketch positions or a small table. If you move on, leave enough scratch work to resume. On the final pass, check whether results overlap, whether drawn items go back in, and whether order matters.",
+          "Random sampling supports generalizing to the population sampled. Random assignment to treatments supports causal comparisons under a sound experimental design; a survey or observational association alone does not. A residual is observed minus predicted: observed 21 with predicted 24 gives −3, meaning the model overpredicted. A repeated curve or trend in residuals suggests the model misses a pattern, even if some individual errors are small."
         ],
         "examples": [
           {
@@ -614,7 +635,8 @@
             "good": true
           }
         ],
-        "tip": "Final checks: count, denominator, exactly versus at least, and whether outcomes were counted twice."
+        "tip": "Final checks: count, denominator, exactly versus at least, and whether outcomes were counted twice.",
+        "teachingRevision": 2
       }
     ],
     "check": [
