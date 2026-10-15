@@ -43,6 +43,7 @@ interface DailyState {
   goal?: { targetScore: number; testDate: string };
   coverage?: {
     covered: number;
+    completedSessions: number;
     total: number;
     testDate: string;
     finishDate: string | null;
@@ -291,7 +292,9 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
           </p>
           {data.coverage && (
             <p className="mt-2 text-sm text-ink-soft">
-              {data.coverage.covered}/{data.coverage.total} lessons covered ·{" "}
+              {data.coverage.completedSessions} Daily sessions completed ·{" "}
+              {data.coverage.covered}/{data.coverage.total} focused skills
+              covered ·{" "}
               {data.coverage.onTrack
                 ? `First pass planned by ${data.coverage.finishDate}`
                 : data.coverage.requiredMinutes
