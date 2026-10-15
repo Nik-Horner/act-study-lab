@@ -147,19 +147,19 @@ const answerChecks = [
   },
   {
     id: "math-algebra-d6",
-    correct: "x ≥ −2",
+    correct: "\\(x \\ge  -2\\)",
     calculate: () => [-3 * (2 * 0 - 1) <= 15, -3 * (2 * -3 - 1) <= 15],
     expected: [true, false],
   },
   {
     id: "math-functions-d1",
-    correct: "x ≤ 4 and x ≠ −2",
+    correct: "\\(x \\le  4\\) and \\(x \\ne  -2\\)",
     calculate: () => [12 - 3 * 4 >= 0, -2 + 2 === 0, 12 - 3 * 5 >= 0],
     expected: [true, true, false],
   },
   {
     id: "math-functions-d2",
-    correct: "4xh + 2h²",
+    correct: "\\(4xh + 2h^{2}\\)",
     calculate: () =>
       2 * (3 + 5) ** 2 - 3 - (2 * 3 ** 2 - 3) - (4 * 3 * 5 + 2 * 5 ** 2),
     expected: 0,
@@ -172,7 +172,7 @@ const answerChecks = [
   },
   {
     id: "math-functions-d4",
-    correct: "(−1, 8)",
+    correct: "\\((-1, 8)\\)",
     calculate: () => [(-2 * -1 - 2) ** 2 + 8, -2 * -1 - 2],
     expected: [8, 0],
   },
@@ -196,7 +196,7 @@ const answerChecks = [
   },
   {
     id: "math-geometry-d2",
-    correct: "66π square units",
+    correct: "\\(66\\pi\\) square units",
     calculate: () => 2 * 3 * 8 + 2 * 3 ** 2,
     expected: 66,
   },
@@ -214,7 +214,7 @@ const answerChecks = [
   },
   {
     id: "math-geometry-d5",
-    correct: "55°",
+    correct: "\\(55^\\circ\\)",
     calculate: () => 110 / 2,
     expected: 55,
   },
@@ -226,31 +226,31 @@ const answerChecks = [
   },
   {
     id: "math-trigonometry-d1",
-    correct: "5/12",
+    correct: "\\(\\frac{5}{12}\\)",
     calculate: () => 5 / Math.sqrt(13 ** 2 - 5 ** 2),
     expected: 0.4166666666666667,
   },
   {
     id: "math-trigonometry-d2",
-    correct: "√57",
+    correct: "\\(\\sqrt{57}\\)",
     calculate: () => 7 ** 2 + 8 ** 2 - 2 * 7 * 8 * Math.cos(Math.PI / 3),
     expected: 57,
   },
   {
     id: "math-trigonometry-d3",
-    correct: "−3/5",
+    correct: "\\(\\frac{-3}{5}\\)",
     calculate: () => -3 / Math.hypot(3, 4),
     expected: -0.6,
   },
   {
     id: "math-trigonometry-d4",
-    correct: "π",
+    correct: "\\(\\pi\\)",
     calculate: () => (2 * Math.PI) / 2 / Math.PI,
     expected: 1,
   },
   {
     id: "math-trigonometry-d5",
-    correct: "120/169",
+    correct: "\\(\\frac{120}{169}\\)",
     calculate: () => 2 * (Math.sqrt(13 ** 2 - 12 ** 2) / 13) * (12 / 13),
     expected: 0.7100591715976331,
   },
@@ -268,7 +268,7 @@ const answerChecks = [
   },
   {
     id: "math-statistics-probability-d2",
-    correct: "1/9",
+    correct: "\\(\\frac{1}{9}\\)",
     calculate: () => 4 / 36,
     expected: 0.1111111111111111,
   },
@@ -280,7 +280,7 @@ const answerChecks = [
   },
   {
     id: "math-statistics-probability-d4",
-    correct: "3/5",
+    correct: "\\(\\frac{3}{5}\\)",
     calculate: () => (3 / 5) * (2 / 4) + (2 / 5) * (3 / 4),
     expected: 0.6,
   },
@@ -298,7 +298,7 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d1",
-    correct: "11 − 10i",
+    correct: "\\(11 - 10i\\)",
     calculate: () => [3 * 1 - 2 * -4, 3 * -4 + 2 * 1],
     expected: [11, -10],
   },
@@ -310,13 +310,13 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d3",
-    correct: "[[6], [14]]",
+    correct: "\\(\\begin{bmatrix}6 \\\\ 14\\end{bmatrix}\\)",
     calculate: () => [2 * 4 + 1 * -2, 3 * 4 + -1 * -2],
     expected: [6, 14],
   },
   {
     id: "math-number-quantity-d4",
-    correct: "65/9",
+    correct: "\\(\\frac{65}{9}\\)",
     calculate: () => 3 + 3 * (2 / 3) + 3 * (2 / 3) ** 2 + 3 * (2 / 3) ** 3,
     expected: 7.222222222222222,
   },
@@ -328,7 +328,7 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d6",
-    correct: "4π/3",
+    correct: "\\(\\frac{4\\pi}{3}\\)",
     calculate: () => 240 / 180,
     expected: 1.3333333333333333,
   },
@@ -442,7 +442,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q07",
-    correct: "1.2 × 10⁴",
+    correct: "\\(1.2 \\times  10^{4}\\)",
     calculate: () => 4 * 10 ** 5 * (3 * 10 ** -2),
     expected: 12000,
   },
@@ -460,7 +460,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q10",
-    correct: "81π square units",
+    correct: "\\(81\\pi\\) square units",
     calculate: () => (18 / 2) ** 2,
     expected: 81,
   },
@@ -478,7 +478,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q13",
-    correct: "−1",
+    correct: "\\(-1\\)",
     calculate: () => 5 + ((-7 - 5) / (4 + 2)) * (1 + 2),
     expected: -1,
   },
@@ -508,7 +508,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q18",
-    correct: "8/125",
+    correct: "\\(\\frac{8}{125}\\)",
     calculate: () => (8 / 20) ** 3,
     expected: 0.064,
   },
@@ -556,13 +556,13 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q26",
-    correct: "−3 < x < 2",
+    correct: "\\(-3\\) < x < 2",
     calculate: () => [-4, 0, 3].map((x) => (x - 2) * (x + 3) < 0),
     expected: [false, true, false],
   },
   {
     id: "math-exam-1-q27",
-    correct: "−8",
+    correct: "\\(-8\\)",
     calculate: () => 3 ** 2 - 6 * 3 + 1,
     expected: -8,
   },
@@ -574,19 +574,19 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q29",
-    correct: "−3/4",
+    correct: "\\(\\frac{-3}{4}\\)",
     calculate: () => Math.sqrt(5 ** 2 - 4 ** 2) / 5 / (-4 / 5),
     expected: -0.75,
   },
   {
     id: "math-exam-1-q30",
-    correct: "5/16",
+    correct: "\\(\\frac{5}{16}\\)",
     calculate: () => (4 + 1) / 2 ** 4,
     expected: 0.3125,
   },
   {
     id: "math-exam-1-q31",
-    correct: "−1",
+    correct: "\\(-1\\)",
     calculate: () => [1, [0, 1], -1, [0, -1]][2026 % 4],
     expected: -1,
   },
@@ -604,19 +604,19 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q34",
-    correct: "15π square units",
+    correct: "\\(15\\pi\\) square units",
     calculate: () => (150 / 360) * 6 ** 2,
     expected: 15,
   },
   {
     id: "math-exam-1-q35",
-    correct: "2 + √3",
+    correct: "\\(2 + \\sqrt3\\)",
     calculate: () => (2 + Math.sqrt(3) - 2) ** 2 + 1,
     expected: 4,
   },
   {
     id: "math-exam-1-q36",
-    correct: "8√2",
+    correct: "\\(8\\sqrt{2}\\)",
     calculate: () => (8 * Math.sin(Math.PI / 4)) / Math.sin(Math.PI / 6),
     expected: 11.313708498984761,
   },
@@ -628,7 +628,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q38",
-    correct: "90°",
+    correct: "\\(90^\\circ\\)",
     calculate: () => 3 * -4 + 4 * 3,
     expected: 0,
   },
@@ -646,7 +646,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-1-q41",
-    correct: "24√3 square units",
+    correct: "\\(24\\sqrt{3}\\) square units",
     calculate: () => 6 * (4 ** 2 / 4),
     expected: 24,
   },
@@ -722,13 +722,13 @@ const answerChecks = [
   },
   {
     id: "check-math-trigonometry-1",
-    correct: "4/5",
+    correct: "\\(\\frac45\\)",
     calculate: () => 4 / Math.hypot(3, 4),
     expected: 0.8,
   },
   {
     id: "check-math-trigonometry-2",
-    correct: "π/2",
+    correct: "\\(\\frac\\pi2\\)",
     calculate: () => (2 * Math.PI) / 4 / Math.PI,
     expected: 0.5,
   },
@@ -830,7 +830,7 @@ const answerChecks = [
   },
   {
     id: "math-algebra-d14",
-    correct: "(a + b)/(b − a)",
+    correct: "\\(\\frac{a+b}{b-a}\\)",
     calculate: () => (1 / 2 + 1 / 5) / (1 / 2 - 1 / 5) - (2 + 5) / (5 - 2),
     expected: 0,
   },
@@ -848,7 +848,7 @@ const answerChecks = [
   },
   {
     id: "math-algebra-d17",
-    correct: "−2",
+    correct: "\\(-2\\)",
     calculate: () => [Math.sqrt(3 + 6) === 3, Math.sqrt(-2 + 6) === -2],
     expected: [true, false],
   },
@@ -872,32 +872,32 @@ const answerChecks = [
   },
   {
     id: "math-algebra-d21",
-    correct: "2x² − 6x − 8",
+    correct: "\\(2x^{2} - 6x - 8\\)",
     calculate: () => [2 * (-1) ** 2 - 6 * -1 - 8, 2 * 4 ** 2 - 6 * 4 - 8, -8],
     expected: [0, 0, -8],
   },
   {
     id: "math-algebra-d22",
-    correct: "(5x + 1)/(x² − 1)",
+    correct: "\\(\\frac{5x+1}{x^2-1}\\)",
     calculate: () => 2 / (4 + 1) + 3 / (4 - 1) - (5 * 4 + 1) / (4 ** 2 - 1),
     expected: 0,
   },
   {
     id: "math-algebra-d23",
-    correct: "1/2",
+    correct: "\\(\\frac{1}{2}\\)",
     calculate: () => 2 * 0.5 - 1,
     expected: 0,
   },
   { id: "math-algebra-d24", correct: "4", calculate: () => 2 + 2, expected: 4 },
   {
     id: "math-algebra-d25",
-    correct: "x ≤ −4 or x ≥ 2",
+    correct: "\\(x \\le  -4\\) or \\(x \\ge  2\\)",
     calculate: () => [-5, 0, 3].map((x) => x * x + 2 * x - 8 >= 0),
     expected: [true, false, true],
   },
   {
     id: "math-algebra-d26",
-    correct: "y⁶/x⁴",
+    correct: "\\(\\frac{y^6}{x^4}\\)",
     calculate: () => (2 ** -2 * 3 ** 3) ** 2 - 3 ** 6 / 2 ** 4,
     expected: 0,
   },
@@ -921,7 +921,7 @@ const answerChecks = [
   },
   {
     id: "math-algebra-d30",
-    correct: "8/3",
+    correct: "\\(\\frac{8}{3}\\)",
     calculate: () => 3 + -1 / 3,
     expected: 2.6666666666666665,
   },
@@ -933,13 +933,13 @@ const answerChecks = [
   },
   {
     id: "math-algebra-d32",
-    correct: "1 < x ≤ 4",
+    correct: "1 < \\(x \\le  4\\)",
     calculate: () => [(2 + 1) / 3, (11 + 1) / 3],
     expected: [1, 4],
   },
   {
     id: "math-number-quantity-d7",
-    correct: "4√2",
+    correct: "\\(4\\sqrt{2}\\)",
     calculate: () => Math.sqrt(72) - Math.sqrt(8),
     expected: 5.656854249492381,
   },
@@ -960,7 +960,7 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d10",
-    correct: "−20",
+    correct: "\\(-20\\)",
     calculate: () => 7 + (10 - 1) * -3,
     expected: -20,
   },
@@ -984,25 +984,25 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d14",
-    correct: "3 × 10⁻⁵",
+    correct: "\\(3 \\times  10^{-5}\\)",
     calculate: () => (6 * 10 ** -3) / (2 * 10 ** 2),
     expected: 3e-5,
   },
   {
     id: "math-number-quantity-d15",
-    correct: "4b²",
+    correct: "\\(4b^{2}\\)",
     calculate: () => Math.cbrt(64 * 3 ** 6) - 4 * 3 ** 2,
     expected: 0,
   },
   {
     id: "math-number-quantity-d16",
-    correct: "(−6, 15)",
+    correct: "\\((-6, 15)\\)",
     calculate: () => [-2 * 3, 5 * 3],
     expected: [-6, 15],
   },
   {
     id: "math-number-quantity-d17",
-    correct: "−5",
+    correct: "\\(-5\\)",
     calculate: () => 1 * 3 + 2 * -4,
     expected: -5,
   },
@@ -1014,13 +1014,13 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d19",
-    correct: "−4",
+    correct: "\\(-4\\)",
     calculate: () => 3 * 0 + 4 * -1,
     expected: -4,
   },
   {
     id: "math-number-quantity-d20",
-    correct: "3 × 4",
+    correct: "\\(3 \\times  4\\)",
     calculate: () => [3, 4],
     expected: [3, 4],
   },
@@ -1032,7 +1032,8 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d22",
-    correct: "[[1/3, 0], [0, 1/2]]",
+    correct:
+      "\\(\\begin{bmatrix}\\frac{1}{3} & 0 \\\\ 0 & \\frac{1}{2}\\end{bmatrix}\\)",
     calculate: () => [3 * (1 / 3), 2 * (1 / 2)],
     expected: [1, 1],
   },
@@ -1068,7 +1069,7 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d28",
-    correct: "3 − 4i",
+    correct: "\\(3 - 4i\\)",
     calculate: () => [2 ** 2 - (-1) ** 2, 2 * 2 * -1],
     expected: [3, -4],
   },
@@ -1086,7 +1087,7 @@ const answerChecks = [
   },
   {
     id: "math-number-quantity-d31",
-    correct: "(3/5, 4/5)",
+    correct: "\\((\\frac{3}{5}, \\frac{4}{5})\\)",
     calculate: () => [6 / Math.hypot(6, 8), 8 / Math.hypot(6, 8)],
     expected: [0.6, 0.8],
   },
@@ -1152,7 +1153,7 @@ const answerChecks = [
   },
   {
     id: "math-essential-skills-d16",
-    correct: "300/7 mph",
+    correct: "\\(\\frac{300}{7}\\) mph",
     calculate: () => (100 + 50) / (2 + 1.5),
     expected: 42.857142857142854,
   },
@@ -1176,7 +1177,7 @@ const answerChecks = [
   },
   {
     id: "math-essential-skills-d20",
-    correct: "16⅔%",
+    correct: "\\(16\\frac23\\%\\)",
     calculate: () => ((120 - 100) / 120) * 100,
     expected: 16.666666666666668,
   },
@@ -1308,7 +1309,7 @@ const answerChecks = [
   },
   {
     id: "math-modeling-d16",
-    correct: "P(t) = 2000(1.03)ᵗ",
+    correct: "\\(P(t) = 2000(1.03)^{t}\\)",
     calculate: () => 2000 * 1.03,
     expected: 2060,
   },
@@ -1405,7 +1406,7 @@ const answerChecks = [
   },
   {
     id: "math-modeling-d31",
-    correct: "−13",
+    correct: "\\(-13\\)",
     calculate: () => -4 * (0 - 2) ** 2 + 3,
     expected: -13,
   },
@@ -1435,7 +1436,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q04",
-    correct: "36 cm²",
+    correct: "\\(36 cm^{2}\\)",
     calculate: () => (9 * 8) / 2,
     expected: 36,
   },
@@ -1448,7 +1449,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q07",
-    correct: "1/2",
+    correct: "\\(\\frac{1}{2}\\)",
     calculate: () => Math.cos(Math.PI / 3),
     expected: 0.5,
   },
@@ -1484,14 +1485,14 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q13",
-    correct: "2 + 4i",
+    correct: "\\(2 + 4i\\)",
     calculate: () => [4 - 2, -1 + 5],
     expected: [2, 4],
   },
   { id: "math-exam-2-q14", correct: "4", calculate: () => 2 ** 2, expected: 4 },
   {
     id: "math-exam-2-q15",
-    correct: "3/4",
+    correct: "\\(\\frac{3}{4}\\)",
     calculate: () => 9 / 12,
     expected: 0.75,
   },
@@ -1503,19 +1504,19 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q17",
-    correct: "−3",
+    correct: "\\(-3\\)",
     calculate: () => (2 - Math.sqrt(4 + 60)) / 2,
     expected: -3,
   },
   {
     id: "math-exam-2-q18",
-    correct: "5/18",
+    correct: "\\(\\frac{5}{18}\\)",
     calculate: () => (5 / 9) * (4 / 8),
     expected: 0.2777777777777778,
   },
   {
     id: "math-exam-2-q19",
-    correct: "108°",
+    correct: "\\(108^\\circ\\)",
     calculate: () => ((5 - 2) * 180) / 5,
     expected: 108,
   },
@@ -1545,13 +1546,13 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q24",
-    correct: "−1/2",
+    correct: "\\(\\frac{-1}{2}\\)",
     calculate: () => Math.sin((210 * Math.PI) / 180),
     expected: -0.5,
   },
   {
     id: "math-exam-2-q25",
-    correct: "x + 3",
+    correct: "\\(x + 3\\)",
     calculate: () => (4 ** 2 + 5 * 4 + 6) / (4 + 2) - (4 + 3),
     expected: 0,
   },
@@ -1563,13 +1564,13 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q27",
-    correct: "−4",
+    correct: "\\(-4\\)",
     calculate: () => (0 - 2) ** 3 - 1 + 5,
     expected: -4,
   },
   {
     id: "math-exam-2-q28",
-    correct: "97°",
+    correct: "\\(97^\\circ\\)",
     calculate: () => 180 - 83,
     expected: 97,
   },
@@ -1605,7 +1606,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q34",
-    correct: "5√3",
+    correct: "\\(5\\sqrt{3}\\)",
     calculate: () =>
       Math.sqrt(5 ** 2 + 5 ** 2 - 2 * 5 * 5 * Math.cos((120 * Math.PI) / 180)),
     expected: 8.660254037844386,
@@ -1624,7 +1625,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q37",
-    correct: "5√2/2",
+    correct: "\\(\\frac{5\\sqrt2}{2}\\)",
     calculate: () => Math.hypot(3, 4) / Math.hypot(1, -1),
     expected: 3.5355339059327378,
   },
@@ -1654,7 +1655,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q42",
-    correct: "y = 2",
+    correct: "\\(y = 2\\)",
     calculate: () => (2 * 17 + 5) / (17 - 3) - (2 + 11 / (17 - 3)),
     expected: 0,
   },
@@ -1666,7 +1667,7 @@ const answerChecks = [
   },
   {
     id: "math-exam-2-q44",
-    correct: "7/25",
+    correct: "\\(\\frac{7}{25}\\)",
     calculate: () => 1 - 2 * (3 / 5) ** 2,
     expected: 0.28,
   },
@@ -1791,10 +1792,17 @@ for (const slug of [
   const wordCount = [lesson.intro, ...lesson.sections.flatMap((s) => s.body)]
     .join(" ")
     .match(/\S+/g).length;
-  assert.ok(
-    wordCount >= 900,
-    `${slug}: thorough prose; found ${wordCount} words`,
-  );
+  for (const section of lesson.sections) {
+    assert.ok(section.body.length >= 2, `${slug}: rule and application`);
+    assert.ok(section.body.every((text) => text.trim().length > 0));
+    assert.ok(
+      section.examples?.length >= 1,
+      `${slug}: worked example per concept`,
+    );
+    assert.ok(
+      section.examples.every((example) => example.text.trim().length > 0),
+    );
+  }
   console.log(
     `${slug}: ${lesson.sections.length} sections, ${wordCount} prose words, ${lesson.check.length} quick checks.`,
   );

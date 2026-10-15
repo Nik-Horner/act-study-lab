@@ -1,74 +1,113 @@
 {
   "slug": "misc-grammar",
   "title": "Other Grammar Topics",
-  "intro": "A few rules show up on nearly every ACT English section without fitting under one big heading: confused word pairs, fewer versus less, prepositional idioms, and the active-passive choice. Together they account for several questions per test, and the ACT picks them because the wrong version sounds right in everyday speech. The core idea: when two choices differ by one small word, a fixed rule decides the answer, so apply the rule instead of trusting your ear.",
+  "intro": "Check adjectives, adverbs, comparisons, and common grammar traps.",
   "sections": [
     {
       "heading": "Commonly confused word pairs",
       "body": [
-        "Many ACT traps swap a word for its sound-alike. The words sound identical or nearly so, but each has its own job, and your ear will not save you because both versions sound the same out loud.",
-        "Memorize these pairs: 'their' (belonging to them), 'there' (a place), 'they're' (they are); 'your' (belonging to you), 'you're' (you are); 'its' (belonging to it), 'it's' (it is); 'affect' (usually a verb, to influence), 'effect' (usually a noun, a result); 'accept' (to receive), 'except' (other than); 'whose' (belonging to whom), 'who's' (who is). When two choices differ only by one of these, the question is testing whether you know which job the sentence needs done."
+        "Match the word’s job: their = belonging to them; there = place; they’re = they are. Your and its show ownership; you’re = you are; it’s = it is or it has.",
+        "Affect usually means influence; effect usually means result. Accept means receive; except means other than. Whose shows ownership; who’s means who is or who has. Expand shortened forms to test them."
       ],
       "examples": [
-        { "text": "The storm will affect traffic, and its main effect is delay.", "label": "affect = verb, its = possessive, effect = noun", "good": true },
-        { "text": "The storm will effect traffic, and it's main affect is delay.", "label": "All three swapped: effect for affect, it's for its, affect for effect", "good": false }
+        {
+          "text": "The storm will affect traffic, and its main effect is delay.",
+          "label": "affect = verb, its = possessive, effect = noun",
+          "good": true
+        },
+        {
+          "text": "The storm will effect traffic, and it's main affect is delay.",
+          "label": "All three swapped: effect for affect, it's for its, affect for effect",
+          "good": false
+        }
       ],
       "tip": "Expand every apostrophe form out loud: it's = it is, they're = they are, who's = who is. If the expanded sentence works, keep the apostrophe; if not, you need the possessive."
     },
     {
       "heading": "Than vs. then, and could have vs. could of",
       "body": [
-        "'Than' makes a comparison: 'taller than me.' 'Then' marks time or sequence: 'we ate, then we left.' If two things are being measured against each other, you need 'than.' If one thing follows another in time, you need 'then.'",
-        "'Could have,' 'should have,' and 'would have' are never written 'could of,' 'should of,' or 'would of.' The contraction 'could've' sounds like 'could of,' which is why the error spreads, but 'of' is a preposition and cannot follow a helping verb. The verb form is always 'have.'"
+        "Than compares; then marks time or sequence. Identify which relationship the sentence needs.",
+        "Write could have, should have, and would have. Could’ve sounds like “could of,” but the verb construction requires have, not of."
       ],
       "examples": [
-        { "text": "She runs faster than I do, so I should have trained harder.", "label": "than for comparison, have after should", "good": true },
-        { "text": "She runs faster then I do, so I should of trained harder.", "label": "then and 'should of' are both wrong", "good": false }
+        {
+          "text": "She runs faster than I do, so I should have trained harder.",
+          "label": "than for comparison, have after should",
+          "good": true
+        },
+        {
+          "text": "She runs faster then I do, so I should of trained harder.",
+          "label": "then and 'should of' are both wrong",
+          "good": false
+        }
       ],
       "tip": "See 'could of,' 'should of,' or 'would of' in any choice? Eliminate it instantly. The ACT never rewards 'of' after a helping verb."
     },
     {
       "heading": "Countable vs. non-countable words",
       "body": [
-        "Some nouns you can count one by one (chairs, dollars, students). Others you measure as a mass and cannot count individually (water, time, information). The ACT pairs each type with the right modifier.",
-        "Use 'fewer,' 'number,' and 'many' with countable nouns: fewer chairs, the number of students, many dollars. Use 'less,' 'amount,' and 'much' with non-countable nouns: less water, the amount of time, much information. 'Ten items or less' is the famous grocery-store error; items can be counted, so the sign should read 'ten items or fewer.'"
+        "For separately countable items, use fewer, number, or many: fewer chairs, many students.",
+        "For an amount treated as a mass, use less, amount, or much: less water, much information. Check how the noun is being used in the sentence."
       ],
       "examples": [
-        { "text": "The recipe needs fewer eggs and a smaller amount of sugar.", "label": "fewer with countable eggs, amount with mass-noun sugar", "good": true },
-        { "text": "The recipe needs less eggs and a smaller number of sugar.", "label": "less and number attached to the wrong noun types", "good": false }
+        {
+          "text": "The recipe needs fewer eggs and a smaller amount of sugar.",
+          "label": "fewer with countable eggs, amount with mass-noun sugar",
+          "good": true
+        },
+        {
+          "text": "The recipe needs less eggs and a smaller number of sugar.",
+          "label": "less and number attached to the wrong noun types",
+          "good": false
+        }
       ],
       "tip": "Can you put a number directly in front of the noun (three eggs)? Use fewer, number, many. If you can't (three sugars makes no sense here), use less, amount, much."
     },
     {
       "heading": "Active vs. passive voice",
       "body": [
-        "In the active voice, the subject does the action: 'The committee approved the plan.' In the passive voice, the subject receives the action: 'The plan was approved by the committee.' Passive voice adds words and hides who acted.",
-        "Passive voice is not a grammar error, so the ACT never tests it alone. It tests it through concision: when a clear active version and a wordy passive version say the same thing, the shorter active one wins. Pick the passive choice only when the other choices contain genuine grammar errors or change the meaning."
+        "Active voice makes the actor the subject: “The committee approved the plan.” Passive voice makes the receiver the subject: “The plan was approved.”",
+        "Passive voice is grammatical. Prefer the clearer, more concise choice when meaning and emphasis stay appropriate; do not reject passive voice automatically."
       ],
       "examples": [
-        { "text": "Marie Curie discovered radium.", "label": "Active: subject does the action, two words shorter", "good": true },
-        { "text": "Radium was discovered by Marie Curie.", "label": "Passive: grammatical but wordier, so the ACT prefers the active version", "good": false }
+        {
+          "text": "Marie Curie discovered radium.",
+          "label": "Active: subject does the action, two words shorter",
+          "good": true
+        },
+        {
+          "text": "Radium was discovered by Marie Curie.",
+          "label": "Passive: grammatical but wordier, so the ACT prefers the active version",
+          "good": false
+        }
       ],
       "tip": "When a choice says 'was [verb]ed by,' check whether a shorter active choice says the same thing. If it does, the active choice is the answer."
     },
     {
       "heading": "Prepositional idioms",
       "body": [
-        "An idiom is a fixed pairing that English speakers simply accept: we say 'interested in,' 'capable of,' 'depend on,' and 'different from.' No rule explains why; the preposition is locked to the word.",
-        "The ACT tests whether you know the standard pairing. Common ones to memorize: 'comply with,' 'consist of,' 'prefer X to Y,' 'responsible for,' 'agree with' (a person, opinion, or idea) versus 'agree to' (consent to a plan or terms), and 'different from' (not 'different than'). When all four choices repeat the same verb or adjective with different prepositions, the only question is which preposition rides with it."
+        "Learn standard pairings in context: interested in, capable of, depend on, comply with, consist of, responsible for, prefer X to Y, and different from.",
+        "Agree with a person or opinion; agree to a plan or terms. When choices vary only the preposition, check the phrase’s intended meaning and construction."
       ],
       "examples": [
-        { "text": "Her method is different from mine, but I agree with her goal.", "label": "different from, agree with a person's idea", "good": true },
-        { "text": "Her method is different than mine, but I agree to her goal.", "label": "wrong preposition for each idiom", "good": false }
+        {
+          "text": "Her method is different from mine, but I agree with her goal.",
+          "label": "different from, agree with a person's idea",
+          "good": true
+        },
+        {
+          "text": "Her method is different than mine, but I agree to her goal.",
+          "label": "wrong preposition for each idiom",
+          "good": false
+        }
       ],
       "tip": "Read the phrase aloud with each preposition and pick the pairing you'd expect in a textbook, not a text message. 'Different from' beats 'different than' every time on the ACT."
     },
     {
       "heading": "How to spot these questions",
       "body": [
-        "Scan the answer choices first. These questions announce themselves: the choices differ by a single small word while the rest of the sentence stays identical. Watch for sound-alike sets ('your,' 'you're,' 'yours'), a fewer/less or amount/number swap, the same verb with four different prepositions, or one choice flipping a sentence between active and passive.",
-        "Then match the pattern to its rule. Sound-alikes: expand the contraction and ask whether the sentence needs a possessive or a subject-plus-verb. Fewer/less: ask whether you can count the noun. Idioms: recall the fixed pairing. Active/passive: ask whether the shorter choice keeps the same meaning.",
-        "Never decide by which version you hear more often. These traps exist precisely because the wrong version dominates casual speech. Run the test for the rule, pick the choice that passes, and move on."
+        "Identify the change: sound-alike, countable/mass word, preposition, or voice.",
+        "Expand shortened words, check whether the noun can be counted, test the usual word pairing, or compare clarity and meaning. Use the rule that matches the question instead of choosing only by familiarity."
       ],
       "tip": "One word changing across all four choices means a rule question, not a style question. Find the rule, and three choices eliminate themselves."
     }
@@ -77,21 +116,36 @@
     {
       "stem": "If you study tonight, [[your]] going to feel ready for the test.",
       "questionText": "Which choice is correct?",
-      "choices": ["NO CHANGE", "you're", "yours", "their"],
+      "choices": [
+        "NO CHANGE",
+        "you're",
+        "yours",
+        "their"
+      ],
       "answer": 1,
       "explanation": "Expand the contraction: 'you are going to feel ready' works, so 'you're' is correct. 'Your' is a possessive and would need a noun to own, 'yours' is a standalone possessive that cannot sit before 'going,' and 'their' is both possessive and the wrong person."
     },
     {
       "stem": "We packed [[less]] sandwiches than we did last year.",
       "questionText": "Which choice is correct?",
-      "choices": ["NO CHANGE", "fewer", "lesser", "much"],
+      "choices": [
+        "NO CHANGE",
+        "fewer",
+        "lesser",
+        "much"
+      ],
       "answer": 1,
       "explanation": "Sandwiches can be counted, so the comparison needs 'fewer.' 'Less' and 'much' pair with non-countable nouns like 'bread,' and 'lesser' means lower in quality or rank, not smaller in number."
     },
     {
       "stem": "The new rule will [[effect]] every student who rides the bus.",
       "questionText": "Which choice is correct?",
-      "choices": ["NO CHANGE", "affect", "effects", "affects"],
+      "choices": [
+        "NO CHANGE",
+        "affect",
+        "effects",
+        "affects"
+      ],
       "answer": 1,
       "explanation": "The sentence needs a verb meaning to influence, which is 'affect.' 'Effect' is usually a noun (a result); its rare verb sense, 'to bring about,' makes no sense with 'every student' as the object. The helping verb 'will' must be followed by a base form, so the -s forms 'effects' and 'affects' cannot follow it."
     }

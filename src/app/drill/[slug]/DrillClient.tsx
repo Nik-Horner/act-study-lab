@@ -72,7 +72,7 @@ export function DrillClient(props: DrillClientProps) {
   );
   const [answerSec, setAnswerSec] = useState(props.daily?.savedSeconds ?? 0);
   const [saving, setSaving] = useState(false);
-  const [saveError, setSaveError] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
   const [sessionCorrect, setSessionCorrect] = useState(0);
   const [sessionCount, setSessionCount] = useState(0);
   const [streak, setStreak] = useState(
@@ -85,7 +85,8 @@ export function DrillClient(props: DrillClientProps) {
   const [justMastered, setJustMastered] = useState(false);
 
   const qStartRef = useRef(0);
-  const answeredRef = useRef(false);
+  const answeredRef = useRef(answered);
+  const savedRef = useRef(props.daily?.savedChoice !== undefined);
   useEffect(() => {
     answeredRef.current = answered;
   }, [answered]);
@@ -119,35 +120,46 @@ export function DrillClient(props: DrillClientProps) {
 
   const submitAnswer = useCallback(
     async (choiceIdx: number) => {
-      if (answered || !current) return;
+      if (answeredRef.current || !current) return;
+      answeredRef.current = true;
       setAnswered(true);
       setPicked(choiceIdx);
       const seconds = Math.round((Date.now() - qStartRef.current) / 1000);
       setAnswerSec(seconds);
-      if (props.daily) {
-        setSaving(true);
-        const saved = await props.daily.onAnswer(choiceIdx, seconds);
-        setSaveError(!saved);
-        setSaving(false);
-        return;
-      }
-
-      const correct = choiceIdx === current.question.answer;
-      setSessionCount((c) => c + 1);
-      if (correct) setSessionCorrect((c) => c + 1);
-
+      setSaving(true);
+      setSaveError(null);
       try {
+        if (props.daily) {
+          const saved = await props.daily.onAnswer(choiceIdx, seconds);
+          savedRef.current = saved;
+          if (!saved)
+            setSaveError(
+              "Your answer has not saved yet. Retry before continuing.",
+            );
+          return;
+        }
         const res = await fetch("/api/drill/answer", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
             topicSlug: current.topicSlug,
             questionId: current.question.id,
-            correct,
+            chosen: choiceIdx,
           }),
         });
-        if (!res.ok) return;
+        if (!res.ok) {
+          const result = await res.json();
+          setSaveError(
+            result.error ??
+              "Your answer save could not be confirmed. Reload to check progress before continuing.",
+          );
+          return;
+        }
         const updated = (await res.json()) as TopicProgressRow;
+        savedRef.current = true;
+        setSessionCount((c) => c + 1);
+        if (choiceIdx === current.question.answer)
+          setSessionCorrect((c) => c + 1);
         setStreak(updated.current_streak);
         if (props.mode === "topic") {
           setProgress(updated);
@@ -159,14 +171,27 @@ export function DrillClient(props: DrillClientProps) {
           }
         }
       } catch {
-        // best-effort; session score above already reflects the answer
+        setSaveError(
+          props.daily
+            ? "Your answer has not saved yet. Retry before continuing."
+            : "Your answer save could not be confirmed. Reload to check progress before continuing.",
+        );
+      } finally {
+        setSaving(false);
       }
     },
-    [answered, current, props.mode, props.daily],
+    [current, props.mode, props.daily],
   );
 
   const goNext = useCallback(() => {
-    if (!current || saving || saveError) return;
+    if (
+      !answeredRef.current ||
+      !savedRef.current ||
+      !current ||
+      saving ||
+      saveError
+    )
+      return;
     if (props.daily) {
       props.daily.onNext();
       return;
@@ -193,6 +218,8 @@ export function DrillClient(props: DrillClientProps) {
       }
       return { order: s.order, idx: nextIdx };
     });
+    answeredRef.current = false;
+    savedRef.current = false;
     setAnswered(false);
     setPicked(null);
   }, [current, picked, props.mode, props.daily, items, saving, saveError]);
@@ -203,8 +230,8 @@ export function DrillClient(props: DrillClientProps) {
       if (e.metaKey || e.ctrlKey || e.altKey) return;
       const target = e.target as HTMLElement | null;
       if (
-        target &&
-        (target.tagName === "INPUT" || target.tagName === "TEXTAREA")
+        target?.isContentEditable ||
+        target?.closest("input,textarea,select,button,a,summary")
       )
         return;
 
@@ -319,7 +346,9 @@ export function DrillClient(props: DrillClientProps) {
         </p>
       )}
 
-      <Card className="p-6">
+      <Card
+        className={props.daily ? "daily-english-question p-5 sm:p-8" : "p-6"}
+      >
         <div className="mb-3 flex flex-wrap gap-2">
           <Badge tone="neutral">{current.question.difficulty}</Badge>
           {props.mode !== "topic" && (
@@ -407,13 +436,39 @@ export function DrillClient(props: DrillClientProps) {
           onClick={async () => {
             if (picked === null) return;
             setSaving(true);
-            const saved = await props.daily!.onAnswer(picked, answerSec);
-            setSaveError(!saved);
-            setSaving(false);
+            try {
+              const saved = await props.daily!.onAnswer(picked, answerSec);
+              savedRef.current = saved;
+              setSaveError(
+                saved
+                  ? null
+                  : "Your answer has not saved yet. Retry before continuing.",
+              );
+            } catch {
+              setSaveError(
+                "Your answer has not saved yet. Retry before continuing.",
+              );
+            } finally {
+              setSaving(false);
+            }
           }}
         >
           Retry saving answer
         </button>
+      )}
+      {saveError && (
+        <div role="alert" className="text-center text-sm text-bad">
+          <p>{saveError}</p>
+          {!props.daily && (
+            <button
+              type="button"
+              className="mt-2 min-h-11 text-brand underline"
+              onClick={() => window.location.reload()}
+            >
+              Reload and check saved progress
+            </button>
+          )}
+        </div>
       )}
       {answered && !saving && !saveError && (
         <div className="flex justify-center">

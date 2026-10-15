@@ -15,11 +15,11 @@
   --color-accent: #d97a34;
   --color-accent-soft: #fbe8d6;
 
-  --color-good: #2f7a4f;
+  --color-good: #286d45;
   --color-good-soft: #dff1e6;
-  --color-warn: #b8892f;
+  --color-warn: #80601f;
   --color-warn-soft: #f7ecd8;
-  --color-bad: #b8433a;
+  --color-bad: #a63730;
   --color-bad-soft: #f9e2df;
 
   --shadow-card:
@@ -71,11 +71,11 @@
   --color-accent: #d97a34;
   --color-accent-soft: #fbe8d6;
 
-  --color-good: #2f7a4f;
+  --color-good: #286d45;
   --color-good-soft: #dff1e6;
-  --color-warn: #b8892f;
+  --color-warn: #80601f;
   --color-warn-soft: #f7ecd8;
-  --color-bad: #b8433a;
+  --color-bad: #a63730;
   --color-bad-soft: #f9e2df;
 
   --shadow-card:
@@ -353,4 +353,221 @@ input[type="checkbox"] {
 .reading-passage-pane::-webkit-scrollbar-thumb {
   background: var(--color-ink-faint);
   border-radius: 999px;
+}
+
+/* The daily workbench gives evidence room and keeps one decision in focus. */
+.lesson-heading,
+.lesson-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.lesson-actions {
+  border-top: 1px solid var(--color-border);
+  padding: 1rem 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 10;
+  background: var(--color-bg);
+}
+.lesson-phase-nav {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+.lesson-phase-nav button {
+  min-height: 44px;
+  padding: 0.75rem 1rem;
+  color: var(--color-ink-soft);
+  border-bottom: 2px solid transparent;
+}
+.lesson-phase-nav button[aria-pressed="true"] {
+  color: var(--color-brand);
+  border-color: var(--color-brand);
+  font-weight: 600;
+}
+.lesson-method-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.lesson-method-text {
+  max-width: 68ch;
+}
+.lesson-method-text p + p {
+  margin-top: 1rem;
+}
+.lesson-method-examples {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+  min-width: 0;
+}
+.lesson-original {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.lesson-original > .lesson-method-grid {
+  margin-top: 1.25rem;
+}
+.katex {
+  font-size: 1.1em;
+}
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.35rem 0;
+}
+.math-text {
+  overflow-wrap: anywhere;
+}
+@media (min-width: 900px) {
+  .daily-workbench .lesson-method-grid:has(.lesson-method-examples > *) {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    gap: 2.5rem;
+  }
+}
+.lesson-progress {
+  display: flex;
+  gap: 0.4rem;
+}
+.lesson-progress span {
+  flex: 1;
+  height: 0.3rem;
+  border-radius: 1rem;
+  background: var(--color-border);
+}
+.lesson-progress [data-current="true"] {
+  background: var(--color-brand);
+}
+.lesson-progress [data-done="true"] {
+  background: var(--color-good);
+}
+.lesson-lab {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  background: var(--color-bg-soft);
+}
+.lesson-lab-evidence {
+  display: grid;
+  align-content: center;
+  padding: 1.5rem;
+  background: var(--color-bg-raised);
+  border-bottom: 1px solid var(--color-border);
+}
+.lesson-lab-evidence > section {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+.lesson-lab-evidence figure {
+  width: 100%;
+  margin: 0 auto;
+}
+.lesson-lab-evidence blockquote {
+  padding: 1rem 0;
+  max-width: 38ch;
+}
+.lesson-lab-task {
+  padding: 1.5rem;
+}
+.lesson-choice-letter {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid currentColor;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+.english-lesson-workbench {
+  padding-top: 0.5rem;
+}
+.english-lesson-workbench p {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.daily-subject-rail {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+.daily-subject-rail li {
+  min-width: 0;
+  padding: 0.75rem 0.5rem;
+  border-bottom: 2px solid var(--color-border);
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--color-ink-soft);
+}
+.daily-subject-rail [aria-current="step"] {
+  border-color: var(--color-brand);
+  color: var(--color-brand);
+  font-weight: 600;
+}
+.daily-subject-rail [data-done="true"] {
+  border-color: var(--color-good);
+  color: var(--color-good);
+}
+.daily-workbench .choice {
+  min-height: 3.75rem;
+  font-size: 1rem;
+  padding: 1rem;
+  line-height: 1.5;
+}
+.daily-workbench .prose-study {
+  font-size: 1rem;
+}
+.daily-workbench .reading-passage-pane {
+  max-height: min(42rem, 65dvh);
+}
+.daily-workbench .choice[disabled] {
+  opacity: 1;
+}
+.daily-drill-status {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 1rem;
+}
+.daily-drill-status strong {
+  font-variant-numeric: tabular-nums;
+}
+.daily-english-question > div.mb-3.text-lg {
+  background: var(--color-bg-raised);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+.daily-english-question > p.mb-4 {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.daily-english-question button {
+  min-height: 3.75rem;
+  padding: 1rem;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .lesson-lab:has(.lesson-lab-evidence) {
+    display: grid;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  }
+  .lesson-lab-evidence {
+    border-bottom: 0;
+    border-right: 1px solid var(--color-border);
+    padding: 2rem;
+  }
+  .lesson-lab-task {
+    padding: 2rem;
+  }
 }

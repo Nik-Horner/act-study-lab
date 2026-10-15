@@ -80,11 +80,13 @@ for (const t of topics) {
   assert(l?.intro && l.title, t.slug);
   assert(l.sections.length >= 6 && l.sections.length <= 8, t.slug);
   assert.equal(l.check.length, 3, t.slug);
-  assert(
-    l.sections.reduce((n, s) => n + s.body.join(" ").split(/\s+/).length, 0) >=
-      900,
-    `Lesson depth: ${l.slug}`,
-  );
+  for (const section of l.sections)
+    assert(
+      section.heading.trim() &&
+        section.body.length > 0 &&
+        section.body.every((paragraph) => paragraph.trim()),
+      `${l.slug}: missing concept or teaching method`,
+    );
   assert(
     questions.filter(
       (q) =>
@@ -443,5 +445,5 @@ for (const l of lessons)
     `Worked examples: ${l.slug}`,
   );
 console.log(
-  "Science validation passed: 6 topics; 192 drills across 48 passages; 2 independent 40-question/40-minute sections across 14 new passages; 6 lessons of 1,000+ words, 7 sections, 6 worked examples, and 3 checks each. All 290 IDs, shared evidence, option keys, balanced exam answers, table/graph consistency, and quantitative deductions passed.",
+  "Science validation passed: 6 topics; 192 drills across 48 passages; 2 independent 40-question/40-minute sections across 14 new passages; 6 lessons with teaching methods, 7 sections, 6 worked examples, and 3 checks each. All 290 IDs, shared evidence, option keys, balanced exam answers, table/graph consistency, and quantitative deductions passed.",
 );

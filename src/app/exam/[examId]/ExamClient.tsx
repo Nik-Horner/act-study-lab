@@ -8,7 +8,15 @@ import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { fmtTime, LETTERS } from "@/lib/format";
 
-const EXAM_SECONDS = 35 * 60;
+import { remainingSeconds } from "@/lib/act/exam-session";
+import {
+  ENGLISH_EXAM_SECONDS,
+  englishExamStorageKey,
+  englishExamSubmission,
+  newEnglishExamSession,
+  validateEnglishExamSession,
+  type EnglishExamSession,
+} from "@/lib/english-exam-session";
 
 interface FlatQuestion {
   number: number;
@@ -17,7 +25,13 @@ interface FlatQuestion {
   choices: string[];
 }
 
-export default function ExamClient({ exam }: { exam: Exam }) {
+export default function ExamClient({
+  exam,
+  userId,
+}: {
+  exam: Exam;
+  userId: string;
+}) {
   const router = useRouter();
 
   const flat = useMemo<FlatQuestion[]>(() => {
@@ -35,107 +49,223 @@ export default function ExamClient({ exam }: { exam: Exam }) {
     return list.sort((a, b) => a.number - b.number);
   }, [exam]);
 
-  const [answers, setAnswers] = useState<Record<number, number | null>>(() =>
-    Object.fromEntries(flat.map((f) => [f.number, null])),
-  );
-  const [flagged, setFlagged] = useState<Set<number>>(new Set());
-  const [activeQuestion, setActiveQuestion] = useState<number>(flat[0]?.number ?? 1);
-  const [secondsLeft, setSecondsLeft] = useState(EXAM_SECONDS);
+  const storageKey = englishExamStorageKey(userId, exam.id);
+  const [session, setSession] = useState<EnglishExamSession | null>(null);
+  const [loaded, setLoaded] = useState(false);
+  const [now, setNow] = useState(Date.now);
+  const [storageError, setStorageError] = useState<string | null>(null);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const submittedRef = useRef(false);
-
+  const autoAttempted = useRef(false);
+  const saveSession = useCallback(
+    (next: EnglishExamSession) => {
+      setSession(next);
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(next));
+        setStorageError(null);
+      } catch {
+        setStorageError(
+          "This browser could not save your exam. Keep this page open until submission succeeds.",
+        );
+      }
+    },
+    [storageKey],
+  );
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      try {
+        const saved = localStorage.getItem(storageKey);
+        if (saved) {
+          const restored = validateEnglishExamSession(
+            JSON.parse(saved),
+            exam,
+            userId,
+          );
+          if (!restored) throw new Error("invalid-session");
+          setSession(restored);
+        } else saveSession(newEnglishExamSession(exam, userId));
+      } catch (error) {
+        if (
+          error instanceof SyntaxError ||
+          (error instanceof Error && error.message === "invalid-session")
+        ) {
+          setLoadError(
+            "This browser’s saved exam could not be restored. Starting again replaces that saved exam.",
+          );
+        } else {
+          setSession(newEnglishExamSession(exam, userId));
+          setStorageError(
+            "This browser could not read saved progress. Keep this page open until submission succeeds.",
+          );
+        }
+      }
+      setLoaded(true);
+      setNow(Date.now());
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [exam, userId, storageKey, saveSession]);
+  useEffect(() => {
+    const tick = () => setNow(Date.now());
+    const timer = setInterval(tick, 1000);
+    window.addEventListener("focus", tick);
+    document.addEventListener("visibilitychange", tick);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("focus", tick);
+      document.removeEventListener("visibilitychange", tick);
+    };
+  }, []);
+  const answers = session?.answers ?? {};
+  const flagged = new Set(session?.flags ?? []);
+  const activeQuestion = session?.activeQuestion ?? flat[0].number;
+  const secondsLeft = session
+    ? remainingSeconds(session.deadline, now)
+    : ENGLISH_EXAM_SECONDS;
+  const locked = submitting || !!session?.finishedAt || secondsLeft === 0;
   const currentIndex = flat.findIndex((f) => f.number === activeQuestion);
   const current = flat[currentIndex] ?? flat[0];
   const passage = exam.passages[current.passageIndex];
 
   const submit = useCallback(async () => {
-    if (submittedRef.current) return;
+    if (!session || submittedRef.current) return;
     submittedRef.current = true;
+    const finished = {
+      ...session,
+      finishedAt:
+        session.finishedAt ??
+        Math.min(session.deadline, Math.max(session.startedAt, Date.now())),
+    };
+    saveSession(finished);
     setSubmitting(true);
+    setSubmitError(null);
     try {
       const res = await fetch("/api/exam/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          examId: exam.id,
-          answers: flat.map((f) => ({ number: f.number, picked: answers[f.number] ?? null })),
-          durationSeconds: EXAM_SECONDS - secondsLeft,
-        }),
+        body: JSON.stringify(englishExamSubmission(finished)),
       });
-      if (!res.ok) throw new Error("submit failed");
-      const { attemptId } = (await res.json()) as { attemptId: string };
-      router.push(`/exam/${exam.id}/results/${attemptId}`);
-    } catch {
+      const result = await res.json();
+      if (!res.ok)
+        throw new Error(result.error ?? "Your exam could not be submitted.");
+      try {
+        localStorage.removeItem(storageKey);
+      } catch {}
+      router.push(`/exam/${exam.id}/results/${result.attemptId}`);
+    } catch (error) {
       submittedRef.current = false;
       setSubmitting(false);
-      window.alert("Couldn't submit your exam. Please try again.");
+      setSubmitError(
+        `${(error as Error).message} Your answers are still here. Retry before leaving.`,
+      );
     }
-  }, [answers, exam.id, flat, router, secondsLeft]);
-
-  // Countdown, ticking every second.
+  }, [session, saveSession, storageKey, exam.id, router]);
   useEffect(() => {
-    const id = setInterval(() => {
-      setSecondsLeft((s) => Math.max(0, s - 1));
-    }, 1000);
-    return () => clearInterval(id);
-  }, []);
-
-  // Auto-submit once the clock hits 0. submit() is idempotent (guarded by submittedRef).
+    if (
+      !loaded ||
+      !session ||
+      (secondsLeft > 0 && session.finishedAt === null) ||
+      autoAttempted.current
+    )
+      return;
+    autoAttempted.current = true;
+    const timer = setTimeout(() => void submit(), 0);
+    return () => clearTimeout(timer);
+  }, [loaded, session, secondsLeft, submit]);
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect -- reacting to the countdown reaching zero, not derived state
-    if (secondsLeft === 0) submit();
-  }, [secondsLeft, submit]);
-
-  // Scroll the active question's blank into view when it changes.
-  useEffect(() => {
-    document.getElementById(`q-${activeQuestion}`)?.scrollIntoView({ behavior: "smooth", block: "center" });
-  }, [activeQuestion]);
+    if (loaded)
+      document
+        .getElementById(`q-${activeQuestion}`)
+        ?.scrollIntoView({ behavior: "smooth", block: "center" });
+  }, [activeQuestion, loaded]);
 
   function pick(choiceIndex: number) {
-    setAnswers((a) => ({ ...a, [current.number]: choiceIndex }));
-  }
-
-  function toggleFlag() {
-    setFlagged((f) => {
-      const next = new Set(f);
-      if (next.has(current.number)) next.delete(current.number);
-      else next.add(current.number);
-      return next;
+    // eslint-disable-next-line react-hooks/purity -- event-time check catches a throttled countdown
+    if (!session || locked || Date.now() >= session.deadline) return;
+    saveSession({
+      ...session,
+      answers: { ...session.answers, [current.number]: choiceIndex },
     });
   }
-
+  function toggleFlag() {
+    if (!session || locked || Date.now() >= session.deadline) return;
+    saveSession({
+      ...session,
+      flags: flagged.has(current.number)
+        ? session.flags.filter((n) => n !== current.number)
+        : [...session.flags, current.number],
+    });
+  }
+  function selectQuestion(number: number) {
+    if (session && !submittedRef.current)
+      saveSession({ ...session, activeQuestion: number });
+  }
   function goPrev() {
-    if (currentIndex > 0) setActiveQuestion(flat[currentIndex - 1].number);
+    if (currentIndex > 0) selectQuestion(flat[currentIndex - 1].number);
   }
-
   function goNext() {
-    if (currentIndex < flat.length - 1) setActiveQuestion(flat[currentIndex + 1].number);
+    if (currentIndex < flat.length - 1)
+      selectQuestion(flat[currentIndex + 1].number);
   }
-
   function handleSubmitClick() {
+    if (submitError) {
+      void submit();
+      return;
+    }
     const unanswered = flat.filter((f) => answers[f.number] == null).length;
     const msg =
       unanswered > 0
         ? `You have ${unanswered} unanswered question${unanswered === 1 ? "" : "s"}. Submit anyway?`
         : "Submit your exam?";
-    if (window.confirm(msg)) submit();
+    if (window.confirm(msg)) void submit();
   }
+  if (!loaded) return <p role="status">Loading saved exam…</p>;
+  if (!session)
+    return (
+      <Card className="space-y-4 p-6">
+        <p role="alert">{loadError}</p>
+        <Button
+          onClick={() => {
+            setLoadError(null);
+            autoAttempted.current = false;
+            saveSession(newEnglishExamSession(exam, userId));
+          }}
+        >
+          Start a new attempt
+        </Button>
+      </Card>
+    );
 
   const answeredCount = Object.values(answers).filter((a) => a != null).length;
 
   return (
     <div className="space-y-6">
+      {storageError && (
+        <p role="alert" className="rounded-xl bg-warn-soft p-4 text-sm">
+          {storageError}
+        </p>
+      )}
+      {submitError && (
+        <p role="alert" className="rounded-xl bg-bad-soft p-4 text-sm">
+          {submitError}
+        </p>
+      )}
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">{exam.title}</p>
+          <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">
+            {exam.title}
+          </p>
           <p className="text-sm text-ink-soft">
-            Question {current.number} of {flat.length} · Passage {current.passageIndex + 1} of{" "}
-            {exam.passages.length}
+            Question {current.number} of {flat.length} · Passage{" "}
+            {current.passageIndex + 1} of {exam.passages.length}
           </p>
         </div>
         <div
           className={`rounded-full border px-4 py-1.5 text-sm font-bold ${
-            secondsLeft <= 300 ? "border-bad bg-bad-soft text-bad" : "border-border bg-bg-soft text-ink"
+            secondsLeft <= 300
+              ? "border-bad bg-bad-soft text-bad"
+              : "border-border bg-bg-soft text-ink"
           }`}
         >
           {fmtTime(secondsLeft)}
@@ -145,7 +275,11 @@ export default function ExamClient({ exam }: { exam: Exam }) {
       <div className="grid gap-6 lg:grid-cols-[3fr_2fr]">
         <Card className="p-6">
           <h2 className="mb-4 font-semibold">{passage.title}</h2>
-          <PassageView passage={passage} activeNumber={current.number} onSelect={setActiveQuestion} />
+          <PassageView
+            passage={passage}
+            activeNumber={current.number}
+            onSelect={selectQuestion}
+          />
         </Card>
 
         <Card className="flex flex-col p-6">
@@ -156,8 +290,12 @@ export default function ExamClient({ exam }: { exam: Exam }) {
             <button
               type="button"
               onClick={toggleFlag}
+              disabled={locked}
+              aria-pressed={flagged.has(current.number)}
               className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-xs font-semibold ${
-                flagged.has(current.number) ? "bg-warn-soft text-warn" : "bg-bg-raised text-ink-soft"
+                flagged.has(current.number)
+                  ? "bg-warn-soft text-warn"
+                  : "bg-bg-raised text-ink-soft"
               }`}
             >
               {flagged.has(current.number) ? "Flagged" : "Flag"}
@@ -170,6 +308,8 @@ export default function ExamClient({ exam }: { exam: Exam }) {
                 key={i}
                 type="button"
                 onClick={() => pick(i)}
+                disabled={locked}
+                aria-pressed={answers[current.number] === i}
                 className={`flex w-full items-start gap-3 rounded-xl border px-3 py-2.5 text-left text-sm transition-colors ${
                   answers[current.number] === i
                     ? "border-brand bg-brand-soft"
@@ -182,10 +322,19 @@ export default function ExamClient({ exam }: { exam: Exam }) {
             ))}
           </div>
           <div className="mt-6 flex justify-between">
-            <Button variant="ghost" size="sm" onClick={goPrev} disabled={currentIndex <= 0}>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={goPrev}
+              disabled={currentIndex <= 0}
+            >
               ← Back
             </Button>
-            <Button size="sm" onClick={goNext} disabled={currentIndex >= flat.length - 1}>
+            <Button
+              size="sm"
+              onClick={goNext}
+              disabled={currentIndex >= flat.length - 1}
+            >
               Next →
             </Button>
           </div>
@@ -205,7 +354,7 @@ export default function ExamClient({ exam }: { exam: Exam }) {
               <button
                 key={f.number}
                 type="button"
-                onClick={() => setActiveQuestion(f.number)}
+                onClick={() => selectQuestion(f.number)}
                 className={`h-8 rounded-md text-xs font-semibold ${isCurrent ? "ring-2 ring-brand" : ""} ${
                   isFlagged
                     ? "bg-warn-soft text-warn"
@@ -223,7 +372,11 @@ export default function ExamClient({ exam }: { exam: Exam }) {
 
       <div className="flex justify-end">
         <Button onClick={handleSubmitClick} disabled={submitting}>
-          {submitting ? "Submitting…" : "Submit exam"}
+          {submitting
+            ? "Submitting…"
+            : submitError
+              ? "Retry submission"
+              : "Submit exam"}
         </Button>
       </div>
     </div>
@@ -239,7 +392,10 @@ function PassageView({
   activeNumber: number;
   onSelect: (number: number) => void;
 }) {
-  const paragraphs = useMemo(() => groupParagraphs(parsePassage(passage.html)), [passage.html]);
+  const paragraphs = useMemo(
+    () => groupParagraphs(parsePassage(passage.html)),
+    [passage.html],
+  );
 
   return (
     <div className="space-y-4 text-[15px] leading-relaxed">
@@ -255,10 +411,16 @@ function PassageView({
                 data-question={seg.number}
                 onClick={() => onSelect(seg.number)}
                 className={`ul cursor-pointer rounded px-0.5 transition-colors ${
-                  seg.number === activeNumber ? "bg-brand-soft" : "hover:bg-bg-raised"
+                  seg.number === activeNumber
+                    ? "bg-brand-soft"
+                    : "hover:bg-bg-raised"
                 }`}
               >
-                {seg.text ? seg.text : <sup className="font-bold text-brand">{seg.number}</sup>}
+                {seg.text ? (
+                  seg.text
+                ) : (
+                  <sup className="font-bold text-brand">{seg.number}</sup>
+                )}
               </span>
             ),
           )}
@@ -277,7 +439,8 @@ function groupParagraphs(segments: PassageSegment[]): PassageSegment[][] {
       const parts = seg.value.split(/\n\n+/);
       parts.forEach((part, i) => {
         if (i > 0) paragraphs.push([]);
-        if (part) paragraphs[paragraphs.length - 1].push({ type: "text", value: part });
+        if (part)
+          paragraphs[paragraphs.length - 1].push({ type: "text", value: part });
       });
     } else {
       paragraphs[paragraphs.length - 1].push(seg);

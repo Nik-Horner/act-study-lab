@@ -1,53 +1,85 @@
 {
   "slug": "modifiers",
   "title": "Misplaced Modifiers",
-  "intro": "A modifier is a word or phrase that describes another word in the sentence, and the ACT tests modifier placement on nearly every English test, usually two or three times. The rule is strict: a modifier must sit directly beside the word it describes. Let it drift next to the wrong noun and the sentence says something absurd, like a backpack running for a bus.",
+  "intro": "Place descriptions next to the person or thing they describe.",
   "sections": [
     {
       "heading": "The core rule: stay next to what you describe",
       "body": [
-        "A modifier attaches to the nearest noun. Put it next to the wrong noun and you change the meaning. 'The waiter served a steak to the customer that was cooked medium-rare' accidentally cooks the customer, because 'cooked medium-rare' sits beside 'customer' instead of 'steak.'",
-        "To fix it, move the modifier next to the noun it truly describes: 'The waiter served the customer a steak that was cooked medium-rare.' Ask what the phrase is meant to describe, then place the two side by side."
+        "Place a descriptive phrase beside the word it is meant to modify. “A steak for the customer that was cooked medium-rare” appears to describe the customer.",
+        "Move the description next to steak. Read the whole sentence and ask which word the phrase actually describes."
       ],
       "examples": [
-        { "text": "She returned the sweater with a torn sleeve to the clerk.", "label": "Modifier sits next to 'sweater'", "good": true },
-        { "text": "She returned the sweater to the clerk with a torn sleeve.", "label": "Now the clerk has the torn sleeve", "good": false }
+        {
+          "text": "She returned the sweater with a torn sleeve to the clerk.",
+          "label": "Modifier sits next to 'sweater'",
+          "good": true
+        },
+        {
+          "text": "She returned the sweater to the clerk with a torn sleeve.",
+          "label": "Now the clerk has the torn sleeve",
+          "good": false
+        }
       ],
       "tip": "Name the noun the phrase describes, then make sure they touch."
     },
     {
       "heading": "Opening phrases with a comma",
       "body": [
-        "When a sentence opens with a descriptive phrase followed by a comma, the first noun after the comma must be the thing that phrase describes. If no noun in the sentence can do the describing phrase's action, the modifier is called a dangling modifier. This setup is the ACT's favorite way to test modifiers.",
-        "Opening phrases that start with an -ing word ('Running to catch the bus'), an -ed word ('Exhausted after the marathon'), or 'To' ('To improve her serve') describe whoever or whatever performs that action or holds that state. 'Running to catch the bus, my backpack slipped' is wrong because a backpack cannot run. Fix it by putting the runner after the comma: 'Running to catch the bus, I felt my backpack slip.'"
+        "An opening description usually belongs to the main clause’s subject: who or what the sentence is about. Identify who performs the action or has the condition, then put that subject after the comma.",
+        "“Running to catch the bus, my backpack slipped” gives the backpack the running action. “Running to catch the bus, I felt my backpack slip” supplies the runner."
       ],
       "examples": [
-        { "text": "Exhausted after the marathon, Devon took a long nap.", "label": "Devon was the exhausted one", "good": true },
-        { "text": "Exhausted after the marathon, a long nap was taken by Devon.", "label": "A nap cannot be exhausted", "good": false }
+        {
+          "text": "Exhausted after the marathon, Devon took a long nap.",
+          "label": "Devon was the exhausted one",
+          "good": true
+        },
+        {
+          "text": "Exhausted after the marathon, a long nap was taken by Devon.",
+          "label": "A nap cannot be exhausted",
+          "good": false
+        }
       ],
       "tip": "Read the opening phrase, then check the first noun after the comma. They must match."
     },
     {
       "heading": "Modifiers without commas",
       "body": [
-        "Not every misplaced modifier has a comma. Limiting words like 'only,' 'nearly,' 'almost,' and 'just' must sit directly before the word or phrase they limit, or the meaning shifts.",
-        "'I nearly watched the entire series' means you almost watched it but did not. 'I watched nearly the entire series' means you watched almost all of it. Same words, different placement, different meaning. The ACT asks which placement matches the intended idea, so identify what the sentence means to limit before you place the word."
+        "Place only, nearly, almost, or just close to what it limits. Their position can change the claim.",
+        "“I nearly watched the entire series” suggests I almost watched it. “I watched nearly the entire series” says I watched almost all of it. Match the stated intended meaning."
       ],
       "examples": [
-        { "text": "I watched nearly the entire series in one weekend.", "label": "Watched almost all of it", "good": true },
-        { "text": "I nearly watched the entire series in one weekend.", "label": "Almost watched it, but didn't", "good": false }
+        {
+          "text": "I watched nearly the entire series in one weekend.",
+          "label": "Watched almost all of it",
+          "good": true
+        },
+        {
+          "text": "I nearly watched the entire series in one weekend.",
+          "label": "Almost watched it, but didn't",
+          "good": false
+        }
       ],
       "tip": "Limiting words (only, nearly, almost, just) go directly before what they limit."
     },
     {
       "heading": "How to spot these questions",
       "body": [
-        "Modifier questions have a signature look: the underline starts right after an opening phrase and a comma, and the four choices contain roughly the same words with a different noun leading each one. When the choices shuffle the subject of the main clause, you are looking at a modifier question.",
-        "Use three steps. First, read the opening phrase by itself. Second, ask who or what performs that action or holds that state. Third, pick the choice that puts exactly that noun first, and eliminate every choice whose lead noun could not do what the phrase describes. Watch for wrong answers like 'an error was found by the accountant,' which bury the real doer at the end and leave the wrong noun sitting beside the modifier."
+        "Choices that rearrange the noun after an opening phrase often test modifiers.",
+        "Read the phrase, identify who does the action, then check the sentence’s subject. A choice may put the real doer at the end, as in “an error was found by the accountant.” The opening description still needs to fit the subject, error."
       ],
       "examples": [
-        { "text": "While reviewing the budget, the accountant found an error.", "label": "The accountant did the reviewing", "good": true },
-        { "text": "While reviewing the budget, an error was found by the accountant.", "label": "An error did not review the budget", "good": false }
+        {
+          "text": "While reviewing the budget, the accountant found an error.",
+          "label": "The accountant did the reviewing",
+          "good": true
+        },
+        {
+          "text": "While reviewing the budget, an error was found by the accountant.",
+          "label": "An error did not review the budget",
+          "good": false
+        }
       ],
       "tip": "Same words, shuffled order? It's a modifier question. Put the doer right after the comma."
     }
@@ -56,21 +88,36 @@
     {
       "stem": "Soaring above the canyon, [[the photographer captured the eagle]].",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "choices": ["NO CHANGE", "the photographer's camera captured the eagle", "the eagle glided into the photographer's frame", "capturing the eagle was the photographer's goal"],
+      "choices": [
+        "NO CHANGE",
+        "the photographer's camera captured the eagle",
+        "the eagle glided into the photographer's frame",
+        "capturing the eagle was the photographer's goal"
+      ],
       "answer": 2,
       "explanation": "'Soaring above the canyon' must describe the first noun after the comma, and only 'the eagle glided into the photographer's frame' puts a soaring creature there. 'The photographer,' 'the photographer's camera,' and 'capturing the eagle' were not soaring above the canyon."
     },
     {
       "stem": "Frozen solid overnight, [[we could skate across the pond]].",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "choices": ["NO CHANGE", "the pond was safe for us to skate across", "skating across the pond was finally possible", "we found the pond thick enough for skating"],
+      "choices": [
+        "NO CHANGE",
+        "the pond was safe for us to skate across",
+        "skating across the pond was finally possible",
+        "we found the pond thick enough for skating"
+      ],
       "answer": 1,
       "explanation": "'Frozen solid overnight' describes the pond, so 'the pond was safe for us to skate across' must follow the comma. In the choices that begin 'we could skate,' 'we found the pond,' and 'skating across the pond,' people and an activity become the things frozen solid."
     },
     {
       "stem": "She [[only needs]] two more points to win the match.",
       "questionText": "The writer wants to emphasize how few points remain before victory. Which choice best accomplishes that goal?",
-      "choices": ["NO CHANGE", "needs only", "needs, only,", "needs only,"],
+      "choices": [
+        "NO CHANGE",
+        "needs only",
+        "needs, only,",
+        "needs only,"
+      ],
       "answer": 1,
       "explanation": "To stress how few points remain, 'only' must sit directly before 'two more points,' so 'needs only' is correct. 'Only needs' attaches the limiter to the verb instead of the number, and 'needs, only,' and 'needs only,' insert commas that wrongly cut the limiter off from 'two more points.'"
     }

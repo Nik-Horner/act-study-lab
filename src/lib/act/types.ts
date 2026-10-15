@@ -43,6 +43,16 @@ export interface Lesson {
   title: string;
   intro: string;
   sections: {
+    teachingRevision?: number;
+    activity?: {
+      prompt: string;
+      choices: string[];
+      answer: number;
+      explanation: string;
+      evidence?: Passage;
+      evidenceText?: string;
+      diagram?: string;
+    };
     heading: string;
     evidenceIds?: string[];
     evidence?: Passage[];

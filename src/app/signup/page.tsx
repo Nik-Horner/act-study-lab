@@ -14,6 +14,7 @@ export default function SignupPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [confirmationSent, setConfirmationSent] = useState(false);
 
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
@@ -26,7 +27,7 @@ export default function SignupPage() {
 
     setLoading(true);
     const supabase = createClient();
-    const { error } = await supabase.auth.signUp({
+    const { data, error } = await supabase.auth.signUp({
       email,
       password,
       options: {
@@ -43,10 +44,34 @@ export default function SignupPage() {
       );
       return;
     }
+    if (!data.session) {
+      setLoading(false);
+      setConfirmationSent(true);
+      return;
+    }
     router.push("/dashboard");
     router.refresh();
   }
 
+  if (confirmationSent)
+    return (
+      <div className="mx-auto max-w-md">
+        <Card className="space-y-4 p-8">
+          <h1 className="text-xl font-semibold">Check your email</h1>
+          <p role="status" className="text-sm leading-relaxed text-ink-soft">
+            If a new account was created, a confirmation link is on its way to{" "}
+            {email}. Open it before signing in. Check your spam folder if
+            needed.
+          </p>
+          <Link
+            href="/login"
+            className="inline-flex min-h-11 items-center text-brand underline"
+          >
+            Back to sign in
+          </Link>
+        </Card>
+      </div>
+    );
   return (
     <div className="mx-auto max-w-md">
       <Card className="p-8">
@@ -57,7 +82,10 @@ export default function SignupPage() {
 
         <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <div>
-            <label className="mb-1 block text-sm font-medium" htmlFor="displayName">
+            <label
+              className="mb-1 block text-sm font-medium"
+              htmlFor="displayName"
+            >
               Name
             </label>
             <input
@@ -83,7 +111,10 @@ export default function SignupPage() {
             />
           </div>
           <div>
-            <label className="mb-1 block text-sm font-medium" htmlFor="password">
+            <label
+              className="mb-1 block text-sm font-medium"
+              htmlFor="password"
+            >
               Password
             </label>
             <input
@@ -95,7 +126,9 @@ export default function SignupPage() {
               onChange={(e) => setPassword(e.target.value)}
               className="w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
             />
-            <p className="mt-1 text-xs text-ink-faint">At least 8 characters.</p>
+            <p className="mt-1 text-xs text-ink-faint">
+              At least 8 characters.
+            </p>
           </div>
           {error && <p className="text-sm text-bad">{error}</p>}
           <Button type="submit" disabled={loading} className="w-full">
@@ -105,7 +138,10 @@ export default function SignupPage() {
 
         <p className="mt-5 text-center text-sm text-ink-soft">
           Already have an account?{" "}
-          <Link href="/login" className="font-medium text-brand hover:underline">
+          <Link
+            href="/login"
+            className="font-medium text-brand hover:underline"
+          >
             Log in
           </Link>
         </p>

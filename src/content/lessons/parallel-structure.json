@@ -1,62 +1,93 @@
 {
   "slug": "parallel-structure",
   "title": "Parallel Structure",
-  "intro": "Parallel structure means that items doing the same job in a sentence must wear the same grammatical form: all -ing words, all infinitives, all nouns, all adjectives, and so on. The ACT tests this on nearly every English section, usually once or twice, and almost always by planting one mismatched item in a list, a comparison, or a paired connector. Find the pattern the unchangeable items set, then make the underlined item match it.",
+  "intro": "Give matching ideas matching grammar.",
   "sections": [
     {
       "heading": "Parallelism in lists",
       "body": [
-        "When a sentence lists items in a series, every item must take the same grammatical form. If the first two items are -ing words, the third must be an -ing word. If the first two are infinitives ('to run, to jump'), the third must be an infinitive ('to swim,' not 'swimming').",
-        "'Theo enjoys hiking, swimming, and to bike' breaks the rule: the first two items are -ing forms and the third is an infinitive. The fix makes all three match: 'hiking, swimming, and biking.' On the ACT the underlined item usually sits last in the list, so check it against the items in front of it."
+        "Give list items the same kind of wording: hiking, swimming, and biking; or to run, to jump, and to swim.",
+        "Compare the underlined item with the unchanged items. Keep an -ing pattern or a to + verb pattern, called an infinitive. Do not switch between them when the list needs matching forms."
       ],
       "examples": [
-        { "text": "On weekends Theo enjoys hiking, swimming, and biking.", "label": "All three items are -ing forms", "good": true },
-        { "text": "On weekends Theo enjoys hiking, swimming, and to bike.", "label": "Third item switches to an infinitive", "good": false }
+        {
+          "text": "On weekends Theo enjoys hiking, swimming, and biking.",
+          "label": "All three items are -ing forms",
+          "good": true
+        },
+        {
+          "text": "On weekends Theo enjoys hiking, swimming, and to bike.",
+          "label": "Third item switches to an infinitive",
+          "good": false
+        }
       ],
       "tip": "Chant the forms as you read the list: '-ing, -ing, -ing' or 'to, to, to.' The item that breaks the chant is the error."
     },
     {
       "heading": "Parallelism in comparisons",
       "body": [
-        "When a sentence compares two things using 'than,' 'as,' or 'rather than,' both sides of the comparison must share the same form. The comparison must also be logical: compare an activity to an activity, not an activity to an object.",
-        "'Reading the novel is more rewarding than to watch the film' is wrong because 'Reading' is an -ing form but 'to watch' is an infinitive. Balance them: 'Reading the novel is more rewarding than watching the film.' Whatever form sits on the left of 'than' must reappear on the right."
+        "Make comparisons both grammatical and logical. Compare activity with activity, or one object with the corresponding object.",
+        "“Reading the novel is more rewarding than watching the film” balances two -ing phrases. Check both sides of than, as, or rather than."
       ],
       "examples": [
-        { "text": "Reading the novel is more rewarding than watching the film.", "label": "Both sides use -ing forms", "good": true },
-        { "text": "Reading the novel is more rewarding than to watch the film.", "label": "Infinitive clashes with the -ing form", "good": false }
+        {
+          "text": "Reading the novel is more rewarding than watching the film.",
+          "label": "Both sides use -ing forms",
+          "good": true
+        },
+        {
+          "text": "Reading the novel is more rewarding than to watch the film.",
+          "label": "Infinitive clashes with the -ing form",
+          "good": false
+        }
       ],
       "tip": "Cover everything except the two compared items. If they do not start with the same kind of word, the sentence fails."
     },
     {
       "heading": "Watch the paired connectors",
       "body": [
-        "Some connectors come in pairs and demand strict balance: 'not only ... but also,' 'either ... or,' 'neither ... nor,' and 'both ... and.' Whatever structure follows the first half must follow the second half.",
-        "'She was praised not only for her research but also she mentored students' breaks the pattern. 'Not only' is followed by the preposition 'for,' so 'but also' needs 'for' too: 'not only for her research but also for her mentoring.' Compare the word that comes right after each half of the pair; if the kinds of words differ, the sentence is broken."
+        "Paired connectors include not only…but also, either…or, neither…nor, and both…and. Compare what follows each half.",
+        "“Not only for her research but also for her mentoring” balances prepositional phrases. Replacing the second phrase with “she mentored students” breaks that construction."
       ],
       "examples": [
-        { "text": "She was praised not only for her research but also for her mentoring.", "label": "'for' follows both halves of the pair", "good": true },
-        { "text": "She was praised not only for her research but also she mentored students.", "label": "A clause follows 'but also' instead of 'for'", "good": false }
+        {
+          "text": "She was praised not only for her research but also for her mentoring.",
+          "label": "'for' follows both halves of the pair",
+          "good": true
+        },
+        {
+          "text": "She was praised not only for her research but also she mentored students.",
+          "label": "A clause follows 'but also' instead of 'for'",
+          "good": false
+        }
       ],
       "tip": "After the second connector, repeat the exact structure you used after the first. 'Not only for X' demands 'but also for Y.'"
     },
     {
       "heading": "Keep prepositions consistent",
       "body": [
-        "When list items follow a preposition such as 'in,' 'for,' or 'about,' two patterns are legal: state the preposition once before the whole list ('interested in writing, editing, and publishing') or repeat it before every item ('interested in writing, in editing, and in publishing'). Repeating it for some items but not others, or switching the form of one item, breaks the parallel.",
-        "'The committee was more interested in cutting costs than to improve service' fails because the first side pairs 'in' with an -ing form and the second side switches to an infinitive. The fix repeats the pattern: 'more interested in cutting costs than in improving service.'"
+        "A shared preposition can introduce a whole list: “in writing, editing, and publishing.” It can also repeat: “in writing, in editing, and in publishing.”",
+        "Keep comparisons in the same form: “interested in cutting costs rather than in reducing service.” Do not change the second part to a different form such as “to reduce service.”"
       ],
       "examples": [
-        { "text": "She is interested in writing, in editing, and in publishing.", "label": "'in' repeats before every -ing form", "good": true },
-        { "text": "She is interested in writing, editing, and to publish.", "label": "Last item switches to an infinitive", "good": false }
+        {
+          "text": "She is interested in writing, in editing, and in publishing.",
+          "label": "'in' repeats before every -ing form",
+          "good": true
+        },
+        {
+          "text": "She is interested in writing, editing, and to publish.",
+          "label": "Last item switches to an infinitive",
+          "good": false
+        }
       ],
       "tip": "All or one: repeat the preposition before every item, or say it once before the first. Never some but not all."
     },
     {
       "heading": "How to spot these questions",
       "body": [
-        "The answer choices give parallelism away: every choice says roughly the same thing, but the grammatical form keeps changing. One choice is an -ing word, another is 'to' plus a verb, another is a full clause with its own subject, and another is a plain noun or prepositional phrase. Four outfits on the same idea means you should hunt for a list, a comparison, or a paired connector nearby.",
-        "Step 1: Find the pattern marker: commas with 'and' or 'or,' the word 'than' or 'as,' or a pair like 'not only ... but also.' Step 2: Look at the items you cannot change; their form is locked in. Step 3: Pick the choice that copies that form, then read the full sentence to confirm it flows.",
-        "Do not pick the choice that merely sounds shortest or smoothest. A clause like 'and it uses less fuel' can sound fine in isolation; it fails only when you line it up against the other items in the series."
+        "Find a list, comparison, or paired connector. Use the unchanged items to identify the required form.",
+        "Choose the matching construction, then reread the complete sentence. A phrase that sounds smooth alone can still fail the surrounding pattern."
       ],
       "tip": "The non-underlined items are the answer key. The ACT can only change the underlined part, so the rest of the list dictates the form you need."
     }
@@ -65,21 +96,36 @@
     {
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The coach told the team to rest well, to eat right, and [[that they stretch daily]].",
-      "choices": ["NO CHANGE", "to stretch daily", "stretching daily", "daily stretching"],
+      "choices": [
+        "NO CHANGE",
+        "to stretch daily",
+        "stretching daily",
+        "daily stretching"
+      ],
       "answer": 1,
       "explanation": "The first two items in the list are infinitives, 'to rest well' and 'to eat right,' so the third must be the infinitive 'to stretch daily.' 'That they stretch daily' drops a clause into a list of infinitives, 'stretching daily' switches to an -ing form, and 'daily stretching' switches to a noun phrase; each one breaks the pattern the first two items set."
     },
     {
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Painting the fence took longer than [[mowing the lawn]].",
-      "choices": ["NO CHANGE", "to mow the lawn", "the lawn", "when we mowed the lawn"],
+      "choices": [
+        "NO CHANGE",
+        "to mow the lawn",
+        "the lawn",
+        "when we mowed the lawn"
+      ],
       "answer": 0,
       "explanation": "'Painting the fence' is an -ing phrase, so the other side of the 'than' comparison must match: 'mowing the lawn' is correct as written. 'To mow the lawn' pits an infinitive against an -ing form, 'the lawn' compares a chore to a patch of grass, and 'when we mowed the lawn' compares a chore to a point in time."
     },
     {
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The new car is faster, quieter, and [[it uses less fuel]] than the old model.",
-      "choices": ["NO CHANGE", "has better efficiency", "more efficient", "with less fuel use"],
+      "choices": [
+        "NO CHANGE",
+        "has better efficiency",
+        "more efficient",
+        "with less fuel use"
+      ],
       "answer": 2,
       "explanation": "The list runs on comparative adjectives, 'faster' and 'quieter,' so the third item must be the comparative adjective 'more efficient.' 'It uses less fuel' drops a full clause into the adjective list, 'has better efficiency' switches to a verb phrase, and 'with less fuel use' switches to a prepositional phrase; none of them matches 'faster' and 'quieter.'"
     }

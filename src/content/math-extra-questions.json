@@ -5,16 +5,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "f(x) = 2x + 5 for x < 0, and f(x) = x² − 1 for x ≥ 0.",
-    "questionText": "What is f(−2)?",
+    "stem": "\\(f(x) = 2x + 5\\) for x < 0, and \\(f(x) = x^{2} - 1\\) for \\(x \\ge  0\\).",
+    "questionText": "What is \\(f(-2)\\)?",
     "choices": [
       "1",
       "3",
-      "−5",
+      "\\(-5\\)",
       "7"
     ],
     "answer": 0,
-    "explanation": "The input −2 is negative, so use the first branch: 2(−2) + 5 = 1. The x² branch would give 3, but that branch does not apply to this input. Select the branch from the input condition before doing any arithmetic."
+    "explanation": "The input \\(-2\\) is negative, so use the first branch: \\(2(-2) + 5 = 1\\). The \\(x^{2}\\) branch would give 3, but that branch does not apply to this input. Select the branch from the input condition before doing any arithmetic."
   },
   {
     "id": "math-functions-d8",
@@ -22,16 +22,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "f(x) = 5x − 7.",
-    "questionText": "What is f⁻¹(18)?",
+    "stem": "\\(f(x) = 5x - 7\\).",
+    "questionText": "What is \\(f^{-1}(18)\\)?",
     "choices": [
-      "11/5",
+      "\\(\\frac{11}{5}\\)",
       "83",
-      "18/5",
+      "\\(\\frac{18}{5}\\)",
       "5"
     ],
     "answer": 3,
-    "explanation": "An inverse value asks which input produces the given output. Solve 5x − 7 = 18, giving 5x = 25 and x = 5. Verify f(5) = 18. The superscript −1 means inverse, not reciprocal or substitution of 18 into the original rule."
+    "explanation": "An inverse value asks which input produces the given output. Solve \\(5x - 7 = 18\\), giving \\(5x = 25\\) and \\(x = 5\\). Verify \\(f(5) = 18\\). The superscript \\(-1\\) means inverse, not reciprocal or substitution of 18 into the original rule."
   },
   {
     "id": "math-functions-d9",
@@ -39,7 +39,7 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = x² − 4 and g(x) = 3x + 1.",
+    "stem": "\\(f(x) = x^{2} - 4\\) and \\(g(x) = 3x + 1\\).",
     "questionText": "What is f(g(2))?",
     "choices": [
       "23",
@@ -48,7 +48,7 @@
       "1"
     ],
     "answer": 2,
-    "explanation": "Work from the inside: g(2) = 7, and then f(7) = 49 − 4 = 45. Reversing the order gives g(f(2)) = g(0) = 1, which is a listed trap. Composition is sequential substitution; it is not multiplication of the two outputs."
+    "explanation": "Work from the inside: \\(g(2) = 7\\), and then \\(f(7) = 49 - 4 = 45\\). Reversing the order gives \\(g(f(2)) = g(0) = 1\\), which is a listed trap. Composition is sequential substitution; it is not multiplication of the two outputs."
   },
   {
     "id": "math-functions-d10",
@@ -56,16 +56,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = log₂(x − 2)/(x − 5).",
+    "stem": "\\(f(x) = \\frac{\\log_2(x-2)}{x-5}\\).",
     "questionText": "Which condition describes its real domain?",
     "choices": [
       "x > 5",
-      "x ≠ 2 and x ≠ 5",
-      "x > 2 and x ≠ 5",
-      "x ≥ 2 and x ≠ 5"
+      "\\(x \\ne  2\\) and \\(x \\ne  5\\)",
+      "x > 2 and \\(x \\ne  5\\)",
+      "\\(x \\ge  2\\) and \\(x \\ne  5\\)"
     ],
     "answer": 2,
-    "explanation": "The logarithm requires its argument x − 2 to be strictly positive, so x > 2. The denominator separately requires x ≠ 5. Combine both conditions. The endpoint 2 is forbidden, while values such as 3 and 4 are allowed even though their denominators are negative."
+    "explanation": "The logarithm requires its argument \\(x - 2\\) to be strictly positive, so x > 2. The denominator separately requires \\(x \\ne  5\\). Combine both conditions. The endpoint 2 is forbidden, while values such as 3 and 4 are allowed even though their denominators are negative."
   },
   {
     "id": "math-functions-d11",
@@ -73,16 +73,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "f(x) = −2(x + 1)² + 7 for all real x.",
+    "stem": "\\(f(x) = -2(x + 1)^{2} + 7\\) for all real x.",
     "questionText": "Which condition describes its range?",
     "choices": [
-      "y ≥ −1",
-      "y ≤ 7",
-      "y ≥ 7",
-      "y ≤ −1"
+      "\\(y \\ge  -1\\)",
+      "\\(y \\le  7\\)",
+      "\\(y \\ge  7\\)",
+      "\\(y \\le  -1\\)"
     ],
     "answer": 1,
-    "explanation": "The square is nonnegative, and multiplying it by −2 makes that term nonpositive. Thus 7 is the greatest output, achieved at x = −1, and the range is y ≤ 7. The x-coordinate of the vertex is an input; it is not the range endpoint."
+    "explanation": "The square is nonnegative, and multiplying it by \\(-2\\) makes that term nonpositive. Thus 7 is the greatest output, achieved at \\(x = -1\\), and the range is \\(y \\le  7\\). The x-coordinate of the vertex is an input; it is not the range endpoint."
   },
   {
     "id": "math-functions-d12",
@@ -90,16 +90,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = (x² − 9)/(x − 3), with its original domain.",
+    "stem": "\\(f(x) = \\frac{x^2-9}{x-3}\\), with its original domain.",
     "questionText": "At which point does the graph have a hole?",
     "choices": [
       "(3, 6)",
       "(3, 0)",
-      "(−3, 0)",
+      "\\((-3, 0)\\)",
       "(0, 3)"
     ],
     "answer": 0,
-    "explanation": "Factor and cancel to get the line y = x + 3 for x ≠ 3. The original denominator still excludes x = 3. The missing point has the limiting line value y = 3 + 3 = 6. A canceled common factor creates a hole here, rather than a vertical asymptote."
+    "explanation": "Factor and cancel to get the line \\(y = x + 3\\) for \\(x \\ne  3\\). The original denominator still excludes \\(x = 3\\). The missing point has the limiting line value \\(y = 3 + 3 = 6\\). A canceled common factor creates a hole here, rather than a vertical asymptote."
   },
   {
     "id": "math-functions-d13",
@@ -107,16 +107,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "f(x) = (2x + 1)/(x − 4).",
+    "stem": "\\(f(x) = \\frac{2x+1}{x-4}\\).",
     "questionText": "Which line is a vertical asymptote?",
     "choices": [
-      "y = 4",
-      "x = −1/2",
-      "y = 2",
-      "x = 4"
+      "\\(y = 4\\)",
+      "\\(x = \\frac{-1}{2}\\)",
+      "\\(y = 2\\)",
+      "\\(x = 4\\)"
     ],
     "answer": 3,
-    "explanation": "The denominator vanishes at x = 4, while the numerator there is 9, not zero. That noncanceling denominator zero gives the vertical asymptote x = 4. The numerator zero gives an x-intercept; the ratio of leading coefficients gives the horizontal asymptote y = 2."
+    "explanation": "The denominator vanishes at \\(x = 4\\), while the numerator there is 9, not zero. That noncanceling denominator zero gives the vertical asymptote \\(x = 4\\). The numerator zero gives an x-intercept; the ratio of leading coefficients gives the horizontal asymptote \\(y = 2\\)."
   },
   {
     "id": "math-functions-d14",
@@ -124,7 +124,7 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "The only zero of f is x = 12. Define g(x) = f(3x − 6).",
+    "stem": "The only zero of f is \\(x = 12\\). Define \\(g(x) = f(3x - 6)\\).",
     "questionText": "What is the only zero of g?",
     "choices": [
       "2",
@@ -133,7 +133,7 @@
       "12"
     ],
     "answer": 2,
-    "explanation": "The output becomes zero when the input supplied to f equals 12. Set 3x − 6 = 12 and solve x = 6. The horizontal transformation acts on the input; multiplying the original root by 3 or shifting it without dividing gives the wrong location."
+    "explanation": "The output becomes zero when the input supplied to f equals 12. Set \\(3x - 6 = 12\\) and solve \\(x = 6\\). The horizontal transformation acts on the input; multiplying the original root by 3 or shifting it without dividing gives the wrong location."
   },
   {
     "id": "math-functions-d15",
@@ -141,16 +141,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "An exponential model has values 80 at t = 0, 100 at t = 1, and 125 at t = 2.",
+    "stem": "An exponential model has values 80 at \\(t = 0, 100\\) at \\(t = 1\\), and 125 at \\(t = 2\\).",
     "questionText": "Which rule fits these values?",
     "choices": [
-      "80(0.25)ᵗ",
-      "80(1.25)ᵗ",
-      "80 + 20t",
-      "100(1.25)ᵗ"
+      "\\(80(0.25)^{t}\\)",
+      "\\(80(1.25)^{t}\\)",
+      "\\(80 + 20t\\)",
+      "\\(100(1.25)^{t}\\)"
     ],
     "answer": 1,
-    "explanation": "Each step multiplies by 100/80 = 125/100 = 1.25. The value at t = 0 supplies the initial factor 80, so the rule is 80(1.25)ᵗ. Adding a fixed amount matches only the first difference, and using 0.25 keeps only the increase rather than the whole growth multiplier."
+    "explanation": "Each step multiplies by \\(\\frac{100}{80} = \\frac{125}{100} = 1.25\\). The value at \\(t = 0\\) supplies the initial factor 80, so the rule is \\(80(1.25)^{t}\\). Adding a fixed amount matches only the first difference, and using 0.25 keeps only the increase rather than the whole growth multiplier."
   },
   {
     "id": "math-functions-d16",
@@ -158,7 +158,7 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "log₂(x − 1) = 3.",
+    "stem": "\\(\\log _{2}(x - 1) = 3\\).",
     "questionText": "What is x?",
     "choices": [
       "9",
@@ -167,7 +167,7 @@
       "4"
     ],
     "answer": 0,
-    "explanation": "Translate the logarithm to an exponential statement: x − 1 = 2³ = 8. Add 1 to get x = 9, which has a positive logarithm argument. The 8 is the argument value, not the requested input x; reread the expression inside the logarithm."
+    "explanation": "Translate the logarithm to an exponential statement: \\(x - 1 = 2^{3} = 8\\). Add 1 to get \\(x = 9\\), which has a positive logarithm argument. The 8 is the argument value, not the requested input x; reread the expression inside the logarithm."
   },
   {
     "id": "math-functions-d17",
@@ -175,16 +175,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = (x − 2)² + 1 is restricted to x ≤ 2.",
-    "questionText": "What is f⁻¹(10)?",
+    "stem": "\\(f(x) = (x - 2)^{2} + 1\\) is restricted to \\(x \\le  2\\).",
+    "questionText": "What is \\(f^{-1}(10)\\)?",
     "choices": [
       "5",
       "3",
-      "−3",
-      "−1"
+      "\\(-3\\)",
+      "\\(-1\\)"
     ],
     "answer": 3,
-    "explanation": "Solve (x − 2)² + 1 = 10 to obtain x − 2 = ±3, giving x = −1 or x = 5. The original restriction x ≤ 2 selects −1. An inverse must follow the specified branch; the unrestricted parabola would not have a single-valued inverse."
+    "explanation": "Solve \\((x - 2)^{2} + 1 = 10\\) to obtain \\(x - 2 = \\pm 3\\), giving \\(x = -1\\) or \\(x = 5\\). The original restriction \\(x \\le  2\\) selects \\(-1\\). An inverse must follow the specified branch; the unrestricted parabola would not have a single-valued inverse."
   },
   {
     "id": "math-functions-d18",
@@ -192,8 +192,8 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = x² − 3x.",
-    "questionText": "What is the average rate of change from x = 2 to x = 5?",
+    "stem": "\\(f(x) = x^{2} - 3x\\).",
+    "questionText": "What is the average rate of change from \\(x = 2\\) to \\(x = 5\\)?",
     "choices": [
       "3",
       "10",
@@ -201,7 +201,7 @@
       "12"
     ],
     "answer": 2,
-    "explanation": "Compute the difference in outputs divided by the difference in inputs. Here f(5) = 10 and f(2) = −2, so the rate is [10 − (−2)]/(5 − 2) = 12/3 = 4. The output change 12 alone is not a rate, and the denominator is the input difference."
+    "explanation": "Compute the difference in outputs divided by the difference in inputs. Here \\(f(5) = 10\\) and \\(f(2) = -2\\), so the rate is \\(\\frac{10-(-2)}{5-2} = \\frac{12}{3} = 4\\). The output change 12 alone is not a rate, and the denominator is the input difference."
   },
   {
     "id": "math-functions-d19",
@@ -209,16 +209,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = x² − 6x + 8.",
+    "stem": "\\(f(x) = x^{2} - 6x + 8\\).",
     "questionText": "For which x is f(x) negative?",
     "choices": [
-      "2 ≤ x ≤ 4",
+      "\\(2 \\le  x \\le  4\\)",
       "2 < x < 4",
       "x < 2 or x > 4",
-      "x ≤ 2 or x ≥ 4"
+      "\\(x \\le  2\\) or \\(x \\ge  4\\)"
     ],
     "answer": 1,
-    "explanation": "Factor f(x) = (x − 2)(x − 4). Between the roots, the factors have opposite signs, so their product is negative. Outside the roots the factors have the same sign. The strict word negative excludes the roots themselves, where the output is zero."
+    "explanation": "Factor \\(f(x) = (x - 2)(x - 4)\\). Between the roots, the factors have opposite signs, so their product is negative. Outside the roots the factors have the same sign. The strict word negative excludes the roots themselves, where the output is zero."
   },
   {
     "id": "math-functions-d20",
@@ -226,7 +226,7 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "A quadratic function has f(0) = 1, f(1) = 4, f(2) = 9, and f(3) = 16.",
+    "stem": "A quadratic function has \\(f(0) = 1, f(1) = 4, f(2) = 9\\), and \\(f(3) = 16\\).",
     "questionText": "What is f(4)?",
     "choices": [
       "32",
@@ -235,7 +235,7 @@
       "24"
     ],
     "answer": 1,
-    "explanation": "The outputs are consecutive squares, matching f(x) = (x + 1)². Their first differences are 3, 5, and 7; a quadratic has constant second differences, so the next first difference is 9. Thus f(4) = 16 + 9 = 25. Doubling the last output assumes exponential growth."
+    "explanation": "The outputs are consecutive squares, matching \\(f(x) = (x + 1)^{2}\\). Their first differences are 3, 5, and 7; a quadratic has constant second differences, so the next first difference is 9. Thus \\(f(4) = 16 + 9 = 25\\). Doubling the last output assumes exponential growth."
   },
   {
     "id": "math-functions-d21",
@@ -243,16 +243,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = −3|2x − 8| + 5.",
+    "stem": "\\(f(x) = -3|2x - 8| + 5\\).",
     "questionText": "What is the vertex of its graph?",
     "choices": [
       "(4, 5)",
       "(8, 5)",
-      "(−4, 5)",
-      "(4, −3)"
+      "\\((-4, 5)\\)",
+      "\\((4, -3)\\)"
     ],
     "answer": 0,
-    "explanation": "The absolute-value expression is zero when 2x − 8 = 0, so the vertex input is 4. At that input the output is 5. The negative multiplier makes this a maximum, but it does not change the vertex output. Solve the inside expression rather than reading 8 as the horizontal shift."
+    "explanation": "The absolute-value expression is zero when \\(2x - 8 = 0\\), so the vertex input is 4. At that input the output is 5. The negative multiplier makes this a maximum, but it does not change the vertex output. Solve the inside expression rather than reading 8 as the horizontal shift."
   },
   {
     "id": "math-functions-d22",
@@ -263,13 +263,13 @@
     "stem": "Consider the following functions on all real numbers.",
     "questionText": "Which one is an even function?",
     "choices": [
-      "3x³ − 2x + 7",
-      "x² + x",
-      "x³ − x",
-      "3x⁴ − 2x² + 7"
+      "\\(3x^{3} - 2x + 7\\)",
+      "\\(x^{2} + x\\)",
+      "\\(x^{3} - x\\)",
+      "\\(3x^{4} - 2x^{2} + 7\\)"
     ],
     "answer": 3,
-    "explanation": "An even function satisfies f(−x) = f(x). The selected polynomial uses only even powers and a constant, so replacing x by −x leaves it unchanged. An odd-power term changes sign. The last option is odd, which is a different symmetry rule, and adding a constant to an odd function does not make it even."
+    "explanation": "An even function satisfies \\(f(-x) = f(x)\\). The selected polynomial uses only even powers and a constant, so replacing x by \\(-x\\) leaves it unchanged. An odd-power term changes sign. The last option is odd, which is a different symmetry rule, and adding a constant to an odd function does not make it even."
   },
   {
     "id": "math-functions-d23",
@@ -277,7 +277,7 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "A linear function satisfies f(0) = 3 and f(4) = 11.",
+    "stem": "A linear function satisfies \\(f(0) = 3\\) and \\(f(4) = 11\\).",
     "questionText": "What is f(10)?",
     "choices": [
       "27.5",
@@ -286,7 +286,7 @@
       "20"
     ],
     "answer": 2,
-    "explanation": "The slope is (11 − 3)/(4 − 0) = 2, and f(0) = 3 is the intercept. Thus f(x) = 2x + 3 and f(10) = 23. Dividing the two outputs treats the relationship as proportional even though the intercept is nonzero. Keep both the rate and the starting value."
+    "explanation": "The slope is \\(\\frac{11-3}{4-0} = 2\\), and \\(f(0) = 3\\) is the intercept. Thus \\(f(x) = 2x + 3\\) and \\(f(10) = 23\\). Dividing the two outputs treats the relationship as proportional even though the intercept is nonzero. Keep both the rate and the starting value."
   },
   {
     "id": "math-functions-d24",
@@ -294,16 +294,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "The graphs y = x² and y = 2x + 3 intersect.",
+    "stem": "The graphs \\(y = x^{2}\\) and \\(y = 2x + 3\\) intersect.",
     "questionText": "What is the sum of the x-coordinates of their intersection points?",
     "choices": [
       "4",
       "2",
       "3",
-      "−2"
+      "\\(-2\\)"
     ],
     "answer": 1,
-    "explanation": "At an intersection the outputs agree, so x² = 2x + 3. Rearrange and factor: x² − 2x − 3 = (x − 3)(x + 1) = 0. The x-coordinates are 3 and −1, with sum 2. The question asks for their sum, rather than one root or the y-coordinates."
+    "explanation": "At an intersection the outputs agree, so \\(x^{2} = 2x + 3\\). Rearrange and factor: \\(x^{2} - 2x - 3 = (x - 3)(x + 1) = 0\\). The x-coordinates are 3 and \\(-1\\), with sum 2. The question asks for their sum, rather than one root or the y-coordinates."
   },
   {
     "id": "math-functions-d25",
@@ -311,8 +311,8 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "a and b are positive, log₃(a) = 2, and log₃(b) = 3.",
-    "questionText": "What is log₃(ab)?",
+    "stem": "a and b are positive, \\(\\log _{3}(a) = 2\\), and \\(\\log _{3}(b) = 3\\).",
+    "questionText": "What is \\(\\log _{3}(ab)\\)?",
     "choices": [
       "5",
       "6",
@@ -320,7 +320,7 @@
       "13"
     ],
     "answer": 0,
-    "explanation": "For positive arguments, the logarithm of a product equals the sum of the logarithms. Thus log₃(ab) = 2 + 3 = 5. Equivalently, a = 9 and b = 27, so ab = 243 = 3⁵. Multiplying the two logarithm values applies an invalid logarithm rule."
+    "explanation": "For positive arguments, the logarithm of a product equals the sum of the logarithms. Thus \\(\\log _{3}(ab) = 2 + 3 = 5\\). Equivalently, \\(a = 9\\) and \\(b = 27\\), so \\(ab = 243 = 3^{5}\\). Multiplying the two logarithm values applies an invalid logarithm rule."
   },
   {
     "id": "math-functions-d26",
@@ -337,7 +337,7 @@
       "32"
     ],
     "answer": 3,
-    "explanation": "Twelve hours contains 12/4 = 3 half-life intervals. Multiply the starting mass by (1/2)³: 256/8 = 32 grams. The exponent counts half-life periods rather than hours. Subtracting the original half repeatedly would model a fixed loss, not the stated proportional decay."
+    "explanation": "Twelve hours contains \\(\\frac{12}{4} = 3\\) half-life intervals. Multiply the starting mass by \\((\\frac{1}{2})^{3}: \\frac{256}{8} = 32\\) grams. The exponent counts half-life periods rather than hours. Subtracting the original half repeatedly would model a fixed loss, not the stated proportional decay."
   },
   {
     "id": "math-functions-d27",
@@ -345,16 +345,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = (x + 2)/(x − 1), with x ≠ 1.",
+    "stem": "\\(f(x) = \\frac{x+2}{x-1}\\), with \\(x \\ne  1\\).",
     "questionText": "Which real output can f never produce?",
     "choices": [
-      "−2",
+      "\\(-2\\)",
       "3",
       "1",
       "0"
     ],
     "answer": 2,
-    "explanation": "Set y = (x + 2)/(x − 1) and rearrange: x(y − 1) = y + 2. If y = 1, the equation would say 0 = 3, which is impossible. Every other y produces x = (y + 2)/(y − 1). An excluded input and an excluded output are different restrictions."
+    "explanation": "Set \\(y = \\frac{x+2}{x-1}\\) and rearrange: \\(x(y - 1) = y + 2\\). If \\(y = 1\\), the equation would say \\(0 = 3\\), which is impossible. Every other y produces \\(x = \\frac{y+2}{y-1}\\). An excluded input and an excluded output are different restrictions."
   },
   {
     "id": "math-functions-d28",
@@ -362,16 +362,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "medium",
-    "stem": "f(x) = x² and g(x) = 2x.",
-    "questionText": "What is the sum of all real solutions to f(x) = g(x)?",
+    "stem": "\\(f(x) = x^{2}\\) and \\(g(x) = 2x\\).",
+    "questionText": "What is the sum of all real solutions to \\(f(x) = g(x)\\)?",
     "choices": [
-      "−2",
+      "\\(-2\\)",
       "2",
       "0",
       "4"
     ],
     "answer": 1,
-    "explanation": "Equal outputs require x² = 2x, so x(x − 2) = 0. The solutions are 0 and 2, with sum 2. Dividing both sides by x without considering x = 0 loses a valid solution. Factor first when a variable may be zero."
+    "explanation": "Equal outputs require \\(x^{2} = 2x\\), so \\(x(x - 2) = 0\\). The solutions are 0 and 2, with sum 2. Dividing both sides by x without considering \\(x = 0\\) loses a valid solution. Factor first when a variable may be zero."
   },
   {
     "id": "math-functions-d29",
@@ -379,16 +379,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = 1/(x − 3) and g(x) = √(x − 1).",
+    "stem": "\\(f(x)=\\frac1{x-3}\\) and \\(g(x)=\\sqrt{x-1}\\).",
     "questionText": "Which condition describes the real domain of f(g(x))?",
     "choices": [
-      "x ≥ 1 and x ≠ 10",
-      "x ≥ 1 and x ≠ 3",
-      "x > 1 and x ≠ 10",
-      "x ≥ 10"
+      "\\(x \\ge  1\\) and \\(x \\ne  10\\)",
+      "\\(x \\ge  1\\) and \\(x \\ne  3\\)",
+      "x > 1 and \\(x \\ne  10\\)",
+      "\\(x \\ge  10\\)"
     ],
     "answer": 0,
-    "explanation": "The inner square root requires x ≥ 1. The outer denominator requires √(x − 1) ≠ 3, which excludes x − 1 = 9, or x = 10. The endpoint x = 1 is allowed because its outer denominator is −3. Composition requires checking both functions at their actual inputs."
+    "explanation": "The inner square root requires \\(x \\ge  1\\). The outer denominator requires \\(\\sqrt{x-1}\\ne3\\), which excludes \\(x - 1 = 9\\), or \\(x = 10\\). The endpoint \\(x = 1\\) is allowed because its outer denominator is \\(-3\\). Composition requires checking both functions at their actual inputs."
   },
   {
     "id": "math-functions-d30",
@@ -396,7 +396,7 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(t) = abᵗ for positive a and b. It is known that f(2) = 12 and f(5) = 96.",
+    "stem": "\\(f(t) = ab^{t}\\) for positive a and b. It is known that \\(f(2) = 12\\) and \\(f(5) = 96\\).",
     "questionText": "What is f(0)?",
     "choices": [
       "3",
@@ -405,7 +405,7 @@
       "12"
     ],
     "answer": 0,
-    "explanation": "Divide the two equations to cancel a: b³ = 96/12 = 8, so b = 2. Then 12 = a(2²), giving a = 3. Since b⁰ = 1, f(0) = a = 3. The time gap is 3, so taking 8 as the one-period multiplier is the trap."
+    "explanation": "Divide the two equations to cancel \\(a: b^{3} = \\frac{96}{12} = 8\\), so \\(b = 2\\). Then \\(12 = a(2^{2})\\), giving \\(a = 3\\). Since \\(b^{0} = 1, f(0) = a = 3\\). The time gap is 3, so taking 8 as the one-period multiplier is the trap."
   },
   {
     "id": "math-functions-d31",
@@ -413,16 +413,16 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = x² + 1 and h ≠ 0.",
-    "questionText": "Which expression equals [f(x + h) − f(x)]/h?",
+    "stem": "\\(f(x) = x^{2} + 1\\) and \\(h \\ne  0\\).",
+    "questionText": "Which expression equals \\(\\frac{f(x+h)-f(x)}{h}\\)?",
     "choices": [
       "2x",
-      "x + h",
-      "2x + h + 1",
-      "2x + h"
+      "\\(x + h\\)",
+      "\\(2x + h + 1\\)",
+      "\\(2x + h\\)"
     ],
     "answer": 3,
-    "explanation": "Expand the entire numerator: (x + h)² + 1 − (x² + 1) = 2xh + h². The constants cancel, and dividing both terms by nonzero h gives 2x + h. Dropping the cross term or leaving the canceled constant changes the difference quotient."
+    "explanation": "Expand the entire numerator: \\((x + h)^{2} + 1 - (x^{2} + 1) = 2xh + h^{2}\\). The constants cancel, and dividing both terms by nonzero h gives \\(2x + h\\). Dropping the cross term or leaving the canceled constant changes the difference quotient."
   },
   {
     "id": "math-functions-d32",
@@ -430,8 +430,8 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "hard",
-    "stem": "f(x) = 3x + 5.",
-    "questionText": "What is f(f⁻¹(11) + 2)?",
+    "stem": "\\(f(x) = 3x + 5\\).",
+    "questionText": "What is \\(f(f^{-1}(11) + 2)\\)?",
     "choices": [
       "13",
       "38",
@@ -439,7 +439,7 @@
       "11"
     ],
     "answer": 2,
-    "explanation": "First find f⁻¹(11): solve 3x + 5 = 11 to get x = 2. The outer input is then 2 + 2 = 4, and f(4) = 17. The inverse and f do not directly cancel because the added 2 sits between them. Preserve the parentheses when evaluating nested notation."
+    "explanation": "First find \\(f^{-1}(11)\\): solve \\(3x + 5 = 11\\) to get \\(x = 2\\). The outer input is then \\(2 + 2 = 4\\), and \\(f(4) = 17\\). The inverse and f do not directly cancel because the added 2 sits between them. Preserve the parentheses when evaluating nested notation."
   },
   {
     "id": "math-geometry-d7",
@@ -456,7 +456,7 @@
       "24"
     ],
     "answer": 1,
-    "explanation": "Area scales with the square of the side-length factor. The smaller-to-larger length ratio is √(9/25) = 3/5. Perimeter scales like length, so the larger perimeter is 18(5/3) = 30. Applying the area ratio directly to perimeter would give 50."
+    "explanation": "Area scales with the square of the side-length factor. The smaller-to-larger length ratio is \\(\\sqrt{\\frac{9}{25}} = \\frac{3}{5}\\). Perimeter scales like length, so the larger perimeter is \\(18\\left(\\frac53\\right)=30\\). Applying the area ratio directly to perimeter would give 50."
   },
   {
     "id": "math-geometry-d8",
@@ -473,7 +473,7 @@
       "3:2"
     ],
     "answer": 0,
-    "explanation": "Volume scales with the cube of the length factor. Taking cube roots gives the corresponding length ratio ∛8:∛27 = 2:3. Squaring that ratio would describe surface areas, while reversing it would compare the larger solid to the smaller one."
+    "explanation": "Volume scales with the cube of the length factor. Taking cube roots gives the corresponding length ratio ∛8:∛\\(27 = 2:3\\). Squaring that ratio would describe surface areas, while reversing it would compare the larger solid to the smaller one."
   },
   {
     "id": "math-geometry-d9",
@@ -481,16 +481,16 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "hard",
-    "stem": "A circle has radius 9. A minor arc is intercepted by a central angle of 80°.",
+    "stem": "A circle has radius 9. A minor arc is intercepted by a central angle of \\(80^\\circ\\).",
     "questionText": "What is the arc’s length?",
     "choices": [
-      "18π",
-      "2π",
-      "8π",
-      "4π"
+      "\\(18\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(8\\pi\\)",
+      "\\(4\\pi\\)"
     ],
     "answer": 3,
-    "explanation": "An arc uses the same fraction of the circumference as its central angle uses of a full turn. Its length is (80/360)(2π·9) = 4π. Using πr² calculates sector area instead. The radius is 9; doubling it once to form the circumference is enough."
+    "explanation": "An arc uses the same fraction of the circumference as its central angle uses of a full turn. Its length is \\((\\frac{80}{360})(2\\pi\\cdot 9) = 4\\pi\\). Using \\(\\pi r^2\\) calculates sector area instead. The radius is 9; doubling it once to form the circumference is enough."
   },
   {
     "id": "math-geometry-d10",
@@ -503,11 +503,11 @@
     "choices": [
       "8",
       "18",
-      "√194",
+      "\\(\\sqrt{194}\\)",
       "12"
     ],
     "answer": 3,
-    "explanation": "The radius OT is perpendicular to tangent PT, so triangle OTP is right with hypotenuse OP = 13. Thus PT = √(13² − 5²) = 12. Subtracting the radius from the center distance gives 8, but the two distances are not collinear along the tangent segment."
+    "explanation": "The radius OT is perpendicular to tangent PT, so triangle OTP is right with hypotenuse OP \\(= 13\\). Thus PT \\(= \\sqrt{13^2-5^2}=12\\). Subtracting the radius from the center distance gives 8, but the two distances are not collinear along the tangent segment."
   },
   {
     "id": "math-geometry-d11",
@@ -524,7 +524,7 @@
       "60"
     ],
     "answer": 2,
-    "explanation": "An inscribed rectangle’s diagonal is a diameter of its circumcircle, so its diagonal is 10. The other side is √(10² − 6²) = 8 by the Pythagorean theorem. The area is 6(8) = 48. The circle’s diameter is not a rectangle side."
+    "explanation": "An inscribed rectangle’s diagonal is a diameter of its circumcircle, so its diagonal is 10. The other side is \\(\\sqrt{10^{2} - 6^{2}} = 8\\) by the Pythagorean theorem. The area is \\(6(8) = 48\\). The circle’s diameter is not a rectangle side."
   },
   {
     "id": "math-geometry-d12",
@@ -541,7 +541,7 @@
       "26"
     ],
     "answer": 1,
-    "explanation": "The perpendicular from a circle’s center bisects a chord. Half the chord is the missing leg of a right triangle with hypotenuse 13 and other leg 5, giving √(169 − 25) = 12. Double that half-length to get 24. Stopping at 12 answers only half the requested segment."
+    "explanation": "The perpendicular from a circle’s center bisects a chord. Half the chord is the missing leg of a right triangle with hypotenuse 13 and other leg 5, giving \\(\\sqrt{169-25}=12\\). Double that half-length to get 24. Stopping at 12 answers only half the requested segment."
   },
   {
     "id": "math-geometry-d13",
@@ -555,10 +555,10 @@
       "6",
       "9",
       "36",
-      "3√5"
+      "\\(3\\sqrt{5}\\)"
     ],
     "answer": 0,
-    "explanation": "The tangent-secant theorem gives t² = external segment × whole secant = 3(12) = 36. Since a length is positive, t = 6. Use the whole secant length, not just the portion inside the circle, and take the square root after forming the product."
+    "explanation": "The tangent-secant theorem gives \\(t^{2} =\\) external segment \\(\\times\\) whole secant \\(= 3(12) = 36\\). Since a length is positive, \\(t = 6\\). Use the whole secant length, not just the portion inside the circle, and take the square root after forming the product."
   },
   {
     "id": "math-geometry-d14",
@@ -569,13 +569,13 @@
     "stem": "A regular polygon has 10 sides.",
     "questionText": "What is the measure of each interior angle?",
     "choices": [
-      "36°",
-      "140°",
-      "162°",
-      "144°"
+      "\\(36^\\circ\\)",
+      "\\(140^\\circ\\)",
+      "\\(162^\\circ\\)",
+      "\\(144^\\circ\\)"
     ],
     "answer": 3,
-    "explanation": "The sum of the interior angles is (n − 2)180° = 8(180°) = 1440°. All 10 angles are equal, so each is 144°. The 36° exterior angle is supplementary to 144°, not an alternative interior-angle formula."
+    "explanation": "The sum of the interior angles is \\((n - 2)180^\\circ  = 8(180^\\circ ) = 1440^\\circ\\). All 10 angles are equal, so each is \\(144^\\circ\\). The \\(36^\\circ\\) exterior angle is supplementary to \\(144^\\circ\\), not an alternative interior-angle formula."
   },
   {
     "id": "math-geometry-d15",
@@ -583,7 +583,7 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "medium",
-    "stem": "Each exterior angle of a regular polygon measures 60°.",
+    "stem": "Each exterior angle of a regular polygon measures \\(60^\\circ\\).",
     "questionText": "How many sides does the polygon have?",
     "choices": [
       "8",
@@ -592,7 +592,7 @@
       "3"
     ],
     "answer": 2,
-    "explanation": "One exterior angle at each vertex sums to 360°. With equal 60° exterior angles, the number of vertices and sides is 360/60 = 6. Interior angles sum to a quantity that depends on the number of sides, whereas the exterior-angle sum stays 360°."
+    "explanation": "One exterior angle at each vertex sums to \\(360^\\circ\\). With equal \\(60^\\circ\\) exterior angles, the number of vertices and sides is \\(\\frac{360}{60} = 6\\). Interior angles sum to a quantity that depends on the number of sides, whereas the exterior-angle sum stays \\(360^\\circ\\)."
   },
   {
     "id": "math-geometry-d16",
@@ -603,13 +603,13 @@
     "stem": "Two concentric circles have radii 5 and 3.",
     "questionText": "What is the area between the circles?",
     "choices": [
-      "34π",
-      "16π",
-      "4π",
-      "8π"
+      "\\(34\\pi\\)",
+      "\\(16\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(8\\pi\\)"
     ],
     "answer": 1,
-    "explanation": "Subtract the smaller circular area from the larger: π(5²) − π(3²) = π(25 − 9) = 16π. Squaring the difference of radii would give 4π, which is not the difference of areas. The region is an annulus, so both complete circles matter."
+    "explanation": "Subtract the smaller circular area from the larger: \\(\\pi(5^{2}) - \\pi(3^{2}) = \\pi(25 - 9) = 16\\pi\\). Squaring the difference of radii would give \\(4\\pi\\), which is not the difference of areas. The region is an annulus, so both complete circles matter."
   },
   {
     "id": "math-geometry-d17",
@@ -626,7 +626,7 @@
       "108"
     ],
     "answer": 0,
-    "explanation": "The triangular base area is (1/2)(6)(8) = 24. Multiply that area by the perpendicular prism length 9 to get 216 cubic units. Using 6(8) without halving treats the base as a rectangle and doubles the volume. The triangle’s hypotenuse is not needed."
+    "explanation": "The triangular base area is \\((\\frac{1}{2})(6)(8) = 24\\). Multiply that area by the perpendicular prism length 9 to get 216 cubic units. Using 6(8) without halving treats the base as a rectangle and doubles the volume. The triangle’s hypotenuse is not needed."
   },
   {
     "id": "math-geometry-d18",
@@ -637,13 +637,13 @@
     "stem": "A right circular cone has radius 3 and height 12.",
     "questionText": "What is its volume?",
     "choices": [
-      "108π",
-      "12π",
-      "45π",
-      "36π"
+      "\\(108\\pi\\)",
+      "\\(12\\pi\\)",
+      "\\(45\\pi\\)",
+      "\\(36\\pi\\)"
     ],
     "answer": 3,
-    "explanation": "Cone volume is one third of the corresponding cylinder volume: V = πr²h/3 = π(9)(12)/3 = 36π. The given height is perpendicular to the base. The factor 1/3 belongs to volume, while a slant height would be used in a lateral-surface calculation."
+    "explanation": "Cone volume is one third of the corresponding cylinder volume: \\(V = \\frac{\\pi r^2h}3 = \\frac{\\pi(9)(12)}3 = 36\\pi\\). The given height is perpendicular to the base. The factor \\(\\frac{1}{3}\\) belongs to volume, while a slant height would be used in a lateral-surface calculation."
   },
   {
     "id": "math-geometry-d19",
@@ -654,13 +654,13 @@
     "stem": "A sphere has radius 4.",
     "questionText": "What is its surface area?",
     "choices": [
-      "256π/3",
-      "32π",
-      "64π",
-      "16π"
+      "\\(\\frac{256\\pi}{3}\\)",
+      "\\(32\\pi\\)",
+      "\\(64\\pi\\)",
+      "\\(16\\pi\\)"
     ],
     "answer": 2,
-    "explanation": "The surface area of a sphere is 4πr². Substitute r = 4 to get 4π(16) = 64π. The expression 4πr³/3 gives volume instead, and πr² gives a circular cross-section. Check that the requested units are square units rather than cubic units."
+    "explanation": "The surface area of a sphere is \\(4\\pi r^2\\). Substitute \\(r = 4\\) to get \\(4\\pi(16) = 64\\pi\\). The expression \\(\\frac43\\pi r^3\\) gives volume instead, and \\(\\pi r^2\\) gives a circular cross-section. Check that the requested units are square units rather than cubic units."
   },
   {
     "id": "math-geometry-d20",
@@ -668,7 +668,7 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "hard",
-    "stem": "A triangle has vertices (−2, 1), (4, 1), and (1, 5).",
+    "stem": "A triangle has vertices \\((-2, 1), (4, 1)\\), and (1, 5).",
     "questionText": "What is its area?",
     "choices": [
       "18",
@@ -677,7 +677,7 @@
       "24"
     ],
     "answer": 2,
-    "explanation": "The first two vertices form a horizontal base of length 4 − (−2) = 6. The perpendicular height is 5 − 1 = 4, because the third vertex is four units above that base line. Thus area = 6(4)/2 = 12. A slanted side is not the height."
+    "explanation": "The first two vertices form a horizontal base of length \\(4 - (-2) = 6\\). The perpendicular height is \\(5 - 1 = 4\\), because the third vertex is four units above that base line. Thus area \\(= \\frac{6(4)}2 = 12\\). A slanted side is not the height."
   },
   {
     "id": "math-geometry-d21",
@@ -685,16 +685,16 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "medium",
-    "stem": "A circle has equation (x − 3)² + (y + 2)² = 25.",
+    "stem": "A circle has equation \\((x - 3)^{2} + (y + 2)^{2} = 25\\).",
     "questionText": "What is its radius?",
     "choices": [
-      "√29",
+      "\\(\\sqrt{29}\\)",
       "5",
       "25",
       "3"
     ],
     "answer": 1,
-    "explanation": "In standard circle form, (x − h)² + (y − k)² = r². The right side is the square of the radius, so r = √25 = 5. The center is (3, −2), but neither center coordinate determines the radius. Reading 25 directly as r overlooks the square."
+    "explanation": "In standard circle form, \\((x - h)^{2} + (y - k)^{2} = r^{2}\\). The right side is the square of the radius, so \\(r = \\sqrt{25} = 5\\). The center is \\((3, -2)\\), but neither center coordinate determines the radius. Reading 25 directly as r overlooks the square."
   },
   {
     "id": "math-geometry-d22",
@@ -702,16 +702,16 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "hard",
-    "stem": "A segment has endpoint A = (−4, 7) and midpoint M = (1, 2).",
+    "stem": "A segment has endpoint \\(A = (-4, 7)\\) and midpoint \\(M = (1, 2)\\).",
     "questionText": "What is the other endpoint B?",
     "choices": [
-      "(6, −3)",
-      "(−3, 9)",
-      "(−1.5, 4.5)",
-      "(−6, 3)"
+      "\\((6, -3)\\)",
+      "\\((-3, 9)\\)",
+      "\\((-1.5, 4.5)\\)",
+      "\\((-6, 3)\\)"
     ],
     "answer": 0,
-    "explanation": "Each midpoint coordinate is the average of the endpoint coordinates. Solve (−4 + x)/2 = 1 and (7 + y)/2 = 2, giving x = 6 and y = −3. Equivalently, B = 2M − A. Averaging A and M would find a different midpoint, not the missing endpoint."
+    "explanation": "Each midpoint coordinate is the average of the endpoint coordinates. Solve \\(\\frac{-4+x}2 = 1\\) and \\(\\frac{7+y}2 = 2\\), giving \\(x = 6\\) and \\(y = -3\\). Equivalently, \\(B = 2M - A\\). Averaging A and M would find a different midpoint, not the missing endpoint."
   },
   {
     "id": "math-geometry-d23",
@@ -719,16 +719,16 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "medium",
-    "stem": "A nonvertical line has slope −3/4.",
+    "stem": "A nonvertical line has slope \\(\\frac{-3}{4}\\).",
     "questionText": "What is the slope of a line perpendicular to it?",
     "choices": [
-      "−4/3",
-      "3/4",
-      "−3/4",
-      "4/3"
+      "\\(\\frac{-4}{3}\\)",
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{-3}{4}\\)",
+      "\\(\\frac{4}{3}\\)"
     ],
     "answer": 3,
-    "explanation": "For perpendicular nonvertical lines, the slopes multiply to −1. The negative reciprocal of −3/4 is 4/3, and (−3/4)(4/3) = −1. Taking only the reciprocal leaves the sign wrong; keeping the original slope produces a parallel line instead."
+    "explanation": "For perpendicular nonvertical lines, the slopes multiply to \\(-1\\). The negative reciprocal of \\(\\frac{-3}{4}\\) is \\(\\frac{4}{3}\\), and \\((\\frac{-3}{4})(\\frac{4}{3}) = -1\\). Taking only the reciprocal leaves the sign wrong; keeping the original slope produces a parallel line instead."
   },
   {
     "id": "math-geometry-d24",
@@ -742,10 +742,10 @@
       "6",
       "20",
       "12",
-      "4√13"
+      "\\(4\\sqrt{13}\\)"
     ],
     "answer": 2,
-    "explanation": "Use the horizontal side as a base of length 4. The other vector reaches a vertical height of 3, so the perpendicular area is 4(3) = 12. Its slanted length √13 is not the height. The determinant |4·3 − 0·2| gives the same area."
+    "explanation": "Use the horizontal side as a base of length 4. The other vector reaches a vertical height of 3, so the perpendicular area is \\(4(3) = 12\\). Its slanted length \\(\\sqrt{13}\\) is not the height. The determinant \\(|4\\cdot 3 - 0\\cdot 2|\\) gives the same area."
   },
   {
     "id": "math-geometry-d25",
@@ -756,13 +756,13 @@
     "stem": "An 8-by-6 rectangle has a quarter-circle of radius 2 removed from one corner.",
     "questionText": "What is the remaining area?",
     "choices": [
-      "24 − π",
-      "48 − π",
-      "48 − 4π",
-      "48 − 2π"
+      "\\(24 - \\pi\\)",
+      "\\(48 - \\pi\\)",
+      "\\(48 - 4\\pi\\)",
+      "\\(48 - 2\\pi\\)"
     ],
     "answer": 1,
-    "explanation": "The rectangle area is 8(6) = 48. The removed quarter-circle area is π(2²)/4 = π, so the remaining area is 48 − π. Keep the quarter factor and square the radius before subtracting. The curved boundary does not mean the whole circle was removed."
+    "explanation": "The rectangle area is \\(8(6) = 48\\). The removed quarter-circle area is \\(\\frac{\\pi(2^2)}4 = \\pi\\), so the remaining area is \\(48 - \\pi\\). Keep the quarter factor and square the radius before subtracting. The curved boundary does not mean the whole circle was removed."
   },
   {
     "id": "math-geometry-d26",
@@ -773,13 +773,13 @@
     "stem": "An equilateral triangle has side length 10.",
     "questionText": "What is its area?",
     "choices": [
-      "25√3",
-      "50√3",
-      "100√3",
+      "\\(25\\sqrt{3}\\)",
+      "\\(50\\sqrt{3}\\)",
+      "\\(100\\sqrt{3}\\)",
       "25"
     ],
     "answer": 0,
-    "explanation": "Its altitude splits it into two 30–60–90 triangles. The altitude is 5√3, so the area is (1/2)(10)(5√3) = 25√3. Using the side length as the height gives 50, and failing to halve the base-height product gives 50√3."
+    "explanation": "Its altitude splits it into two 30–60–90 triangles. The altitude is \\(5\\sqrt{3}\\), so the area is \\((\\frac{1}{2})(10)(5\\sqrt{3}) = 25\\sqrt{3}\\). Using the side length as the height gives 50, and failing to halve the base-height product gives \\(50\\sqrt{3}\\)."
   },
   {
     "id": "math-geometry-d27",
@@ -787,7 +787,7 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "hard",
-    "stem": "In triangle ABC, AB = 9, AC = 12, and BC = 14. The angle bisector from A meets BC at D.",
+    "stem": "In triangle ABC, \\(AB = 9, AC = 12\\), and BC \\(= 14\\). The angle bisector from A meets BC at D.",
     "questionText": "What is BD?",
     "choices": [
       "8",
@@ -796,7 +796,7 @@
       "6"
     ],
     "answer": 3,
-    "explanation": "The angle-bisector theorem gives BD/DC = AB/AC = 9/12 = 3/4. The whole base 14 consists of seven ratio parts, so BD is three parts: 14(3/7) = 6. Match each base segment to the adjacent side rather than reversing the ratio."
+    "explanation": "The angle-bisector theorem gives \\(\\frac{BD}{DC} = \\frac{AB}{AC} = \\frac{9}{12} = \\frac{3}{4}\\). The whole base 14 consists of seven ratio parts, so BD is three parts: \\(14(\\frac{3}{7}) = 6\\). Match each base segment to the adjacent side rather than reversing the ratio."
   },
   {
     "id": "math-geometry-d28",
@@ -804,16 +804,16 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "medium",
-    "stem": "An inscribed angle intercepts an arc of measure 140°.",
+    "stem": "An inscribed angle intercepts an arc of measure \\(140^\\circ\\).",
     "questionText": "What is the angle’s measure?",
     "choices": [
-      "40°",
-      "280°",
-      "70°",
-      "140°"
+      "\\(40^\\circ\\)",
+      "\\(280^\\circ\\)",
+      "\\(70^\\circ\\)",
+      "\\(140^\\circ\\)"
     ],
     "answer": 2,
-    "explanation": "An inscribed angle measures half its intercepted arc, giving 140°/2 = 70°. The angle’s vertex lies on the circle, rather than at its center. If the question specified the other arc, its measure would differ; use the named intercepted arc directly."
+    "explanation": "An inscribed angle measures half its intercepted arc, giving \\(\\frac{140^\\circ}{2} = 70^\\circ\\). The angle’s vertex lies on the circle, rather than at its center. If the question specified the other arc, its measure would differ; use the named intercepted arc directly."
   },
   {
     "id": "math-geometry-d29",
@@ -830,7 +830,7 @@
       "6"
     ],
     "answer": 1,
-    "explanation": "For secants from the same external point, external × whole is equal for both. Thus 2(18) = 3x and x = 12. The second secant’s interior portion is 12 − 3 = 9, but the problem asks for the whole length x. Label external and whole lengths before multiplying."
+    "explanation": "For secants from the same external point, external \\(\\times\\) whole is equal for both. Thus \\(2(18) = 3x\\) and \\(x = 12\\). The second secant’s interior portion is \\(12 - 3 = 9\\), but the problem asks for the whole length x. Label external and whole lengths before multiplying."
   },
   {
     "id": "math-geometry-d30",
@@ -838,7 +838,7 @@
     "subject": "math",
     "category": "Geometry",
     "difficulty": "hard",
-    "stem": "A square is inscribed in a circle whose area is 64π.",
+    "stem": "A square is inscribed in a circle whose area is \\(64\\pi\\).",
     "questionText": "What is the square’s area?",
     "choices": [
       "32",
@@ -847,7 +847,7 @@
       "256"
     ],
     "answer": 1,
-    "explanation": "The circle has radius 8, so its diameter is 16. That diameter is the square’s diagonal. For a square, diagonal² = 2(side²), so the square area is side² = 16²/2 = 128. Treating the radius as a side or the diameter as a side gives the listed traps."
+    "explanation": "The circle has radius 8, so its diameter is 16. That diameter is the square’s diagonal. For a square, \\(diagonal^{2} = 2(side^{2})\\), so the square area is \\(side^{2} = \\frac{16^2}2=128\\). Treating the radius as a side or the diameter as a side gives the listed traps."
   },
   {
     "id": "math-geometry-d31",
@@ -864,7 +864,7 @@
       "800"
     ],
     "answer": 0,
-    "explanation": "The length scale factor is 10/4 = 2.5. Volumes scale by its cube, so the new volume is 32(2.5)³ = 500. Multiplying only by 2.5 scales a length, and multiplying by its square scales an area. Similarity applies to all three dimensions."
+    "explanation": "The length scale factor is \\(\\frac{10}{4} = 2.5\\). Volumes scale by its cube, so the new volume is \\(32(2.5)^{3} = 500\\). Multiplying only by 2.5 scales a length, and multiplying by its square scales an area. Similarity applies to all three dimensions."
   },
   {
     "id": "math-geometry-d32",
@@ -881,7 +881,7 @@
       "7"
     ],
     "answer": 3,
-    "explanation": "The triangle inequality requires |9 − 4| < x < 9 + 4, so 5 < x < 13. The allowed integers are 6 through 12, seven values. Equality at either endpoint would create a degenerate straight-line figure, so 5 and 13 do not qualify."
+    "explanation": "The triangle inequality requires \\(|9 - 4|\\) < x < \\(9 + 4\\), so 5 < x < 13. The allowed integers are 6 through 12, seven values. Equality at either endpoint would create a degenerate straight-line figure, so 5 and 13 do not qualify."
   },
   {
     "id": "math-trigonometry-d7",
@@ -889,16 +889,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "θ is in Quadrant II and cos θ = −5/13.",
-    "questionText": "What is sin θ?",
+    "stem": "\\(\\theta\\) is in Quadrant II and \\(\\cos\\theta=-\\frac5{13}\\).",
+    "questionText": "What is \\(\\sin  \\theta\\)?",
     "choices": [
-      "5/13",
-      "−5/12",
-      "12/13",
-      "−12/13"
+      "\\(\\frac{5}{13}\\)",
+      "\\(\\frac{-5}{12}\\)",
+      "\\(\\frac{12}{13}\\)",
+      "\\(\\frac{-12}{13}\\)"
     ],
     "answer": 2,
-    "explanation": "Use sin²θ + cos²θ = 1 to find |sin θ| = √(1 − 25/169) = 12/13. Sine is positive in Quadrant II, so choose 12/13. The quadrant controls the sign; a negative cosine does not imply a negative sine."
+    "explanation": "Use \\(\\sin^2\\theta+\\cos^2\\theta=1\\) to find \\(|\\sin  \\theta | = \\sqrt{1-\\frac{25}{169}} = \\frac{12}{13}\\). Sine is positive in Quadrant II, so choose \\(\\frac{12}{13}\\). The quadrant controls the sign; a negative cosine does not imply a negative sine."
   },
   {
     "id": "math-trigonometry-d8",
@@ -906,16 +906,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "θ is acute and sin θ = 3/5.",
-    "questionText": "What is csc θ?",
+    "stem": "\\(\\theta\\) is acute and \\(\\sin  \\theta  = \\frac{3}{5}\\).",
+    "questionText": "What is \\(\\csc  \\theta\\)?",
     "choices": [
-      "5/4",
-      "5/3",
-      "3/5",
-      "4/5"
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{5}{3}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{4}{5}\\)"
     ],
     "answer": 1,
-    "explanation": "Cosecant is the reciprocal of sine, so csc θ = 1/(3/5) = 5/3. Unlike sine, cosecant need not lie between −1 and 1. The 4/5 and 5/4 values would relate to cosine and secant in the associated 3–4–5 triangle."
+    "explanation": "Cosecant is the reciprocal of sine, so \\(\\csc  \\theta  = \\frac1{\\frac35} = \\frac{5}{3}\\). Unlike sine, cosecant need not lie between \\(-1\\) and 1. The \\(\\frac{4}{5}\\) and \\(\\frac{5}{4}\\) values would relate to cosine and secant in the associated 3–4–5 triangle."
   },
   {
     "id": "math-trigonometry-d9",
@@ -923,16 +923,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "sin θ ≠ 0.",
-    "questionText": "Which expression equals (1 − cos²θ)/sin θ?",
+    "stem": "\\(\\sin  \\theta  \\ne  0\\).",
+    "questionText": "Which expression equals \\(\\frac{1-\\cos^2\\theta}{\\sin\\theta}\\)?",
     "choices": [
-      "sin θ",
-      "cos θ",
-      "tan θ",
-      "1/sin θ"
+      "\\(\\sin  \\theta\\)",
+      "\\(\\cos  \\theta\\)",
+      "\\(\\tan  \\theta\\)",
+      "\\(\\frac1{\\sin\\theta}\\)"
     ],
     "answer": 0,
-    "explanation": "The Pythagorean identity gives 1 − cos²θ = sin²θ. Divide by nonzero sin θ to obtain sin θ. Keep the denominator restriction even after canceling. Treating the squared term as an ordinary unsquared difference leads to invalid algebra."
+    "explanation": "The Pythagorean identity gives \\(1 - \\cos ^{2}\\theta  = \\sin ^{2}\\theta\\). Divide by nonzero \\(\\sin  \\theta\\) to obtain \\(\\sin  \\theta\\). Keep the denominator restriction even after canceling. Treating the squared term as an ordinary unsquared difference leads to invalid algebra."
   },
   {
     "id": "math-trigonometry-d10",
@@ -940,16 +940,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "An angle measures 225°.",
+    "stem": "An angle measures \\(225^\\circ\\).",
     "questionText": "What is its measure in radians?",
     "choices": [
-      "5π/4",
-      "4π/5",
-      "3π/4",
-      "5π/2"
+      "\\(\\frac{5\\pi}{4}\\)",
+      "\\(\\frac{4\\pi}{5}\\)",
+      "\\(\\frac{3\\pi}{4}\\)",
+      "\\(\\frac{5\\pi}{2}\\)"
     ],
     "answer": 0,
-    "explanation": "Multiply degrees by π/180: 225π/180 = 5π/4. This is more than π but less than 3π/2, consistent with a Quadrant III angle. Reversing the conversion factor or confusing the reference angle with the full angle gives the wrong result."
+    "explanation": "Multiply degrees by \\(\\frac{\\pi}{180}: \\frac{225\\pi}{180} = \\frac{5\\pi}{4}\\). This is more than \\(\\pi\\) but less than \\(\\frac{3\\pi}{2}\\), consistent with a Quadrant III angle. Reversing the conversion factor or confusing the reference angle with the full angle gives the wrong result."
   },
   {
     "id": "math-trigonometry-d11",
@@ -957,16 +957,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "Evaluate sin(7π/6).",
+    "stem": "Evaluate \\(\\sin\\left(\\frac{7\\pi}6\\right)\\).",
     "questionText": "What is its exact value?",
     "choices": [
-      "1/2",
-      "−√3/2",
-      "√3/2",
-      "−1/2"
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{-\\sqrt{3}}{2}\\)",
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(\\frac{-1}{2}\\)"
     ],
     "answer": 3,
-    "explanation": "The angle 7π/6 is 210°, in Quadrant III, with reference angle π/6. Sine has magnitude 1/2 at that reference angle and is negative in Quadrant III, so its value is −1/2. The √3/2 magnitude belongs to cosine at this reference angle."
+    "explanation": "The angle \\(\\frac{7\\pi}{6}\\) is \\(210^\\circ\\), in Quadrant III, with reference angle \\(\\frac\\pi6\\). Sine has magnitude \\(\\frac{1}{2}\\) at that reference angle and is negative in Quadrant III, so its value is \\(\\frac{-1}{2}\\). The \\(\\frac{\\sqrt{3}}{2}\\) magnitude belongs to cosine at this reference angle."
   },
   {
     "id": "math-trigonometry-d12",
@@ -974,16 +974,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "Evaluate cos(−π/3).",
+    "stem": "Evaluate \\(\\cos\\left(-\\frac\\pi3\\right)\\).",
     "questionText": "What is its exact value?",
     "choices": [
-      "√3/2",
-      "−√3/2",
-      "1/2",
-      "−1/2"
+      "\\(\\frac{\\sqrt{3}}{2}\\)",
+      "\\(\\frac{-\\sqrt{3}}{2}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{-1}{2}\\)"
     ],
     "answer": 2,
-    "explanation": "Cosine is even, so cos(−π/3) = cos(π/3) = 1/2. A negative angle describes clockwise rotation; it does not automatically make the function value negative. The resulting point lies in Quadrant IV, where cosine is positive."
+    "explanation": "Cosine is even, so \\(\\cos\\left(-\\frac\\pi3\\right) = \\cos (\\frac{\\pi}{3}) = \\frac{1}{2}\\). A negative angle describes clockwise rotation; it does not automatically make the function value negative. The resulting point lies in Quadrant IV, where cosine is positive."
   },
   {
     "id": "math-trigonometry-d13",
@@ -991,16 +991,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "y = tan(3x).",
+    "stem": "\\(y = \\tan (3x)\\).",
     "questionText": "What is its least positive period?",
     "choices": [
-      "π",
-      "π/3",
-      "2π/3",
-      "3π"
+      "\\(\\pi\\)",
+      "\\(\\frac{\\pi}{3}\\)",
+      "\\(\\frac{2\\pi}{3}\\)",
+      "\\(3\\pi\\)"
     ],
     "answer": 1,
-    "explanation": "The basic tangent period is π, so multiplying its input by 3 compresses the period to π/3. Sine and cosine have base period 2π, but tangent does not. The coefficient of x belongs in the denominator of the period formula."
+    "explanation": "The basic tangent period is \\(\\pi\\), so multiplying its input by 3 compresses the period to \\(\\frac{\\pi}{3}\\). Sine and cosine have base period \\(2\\pi\\), but tangent does not. The coefficient of x belongs in the denominator of the period formula."
   },
   {
     "id": "math-trigonometry-d14",
@@ -1008,16 +1008,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "y = 2sin(4x − π).",
-    "questionText": "What is the graph’s horizontal shift from y = 2sin(4x)?",
+    "stem": "\\(y=2\\sin(4x-\\pi)\\).",
+    "questionText": "What is the graph’s horizontal shift from \\(y = 2\\sin (4x)\\)?",
     "choices": [
-      "π/4 to the right",
-      "π to the right",
-      "π/8 to the left",
-      "4π to the right"
+      "\\(\\frac{\\pi}{4}\\) to the right",
+      "\\(\\pi\\) to the right",
+      "\\(\\frac{\\pi}{8}\\) to the left",
+      "\\(4\\pi\\) to the right"
     ],
     "answer": 0,
-    "explanation": "Factor the input as 4(x − π/4). The inner expression reaches zero at x = π/4, so the graph shifts right by π/4. The coefficient 4 divides the phase term. The amplitude 2 changes vertical size but has no effect on this shift."
+    "explanation": "Factor the input as \\(4\\left(x-\\frac\\pi4\\right)\\). The inner expression reaches zero at \\(x = \\frac{\\pi}{4}\\), so the graph shifts right by \\(\\frac{\\pi}{4}\\). The coefficient 4 divides the phase term. The amplitude 2 changes vertical size but has no effect on this shift."
   },
   {
     "id": "math-trigonometry-d15",
@@ -1025,7 +1025,7 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "y = −3cos(2x) + 5.",
+    "stem": "\\(y=-3\\cos(2x)+5\\).",
     "questionText": "What is the maximum value of y?",
     "choices": [
       "5",
@@ -1034,7 +1034,7 @@
       "8"
     ],
     "answer": 3,
-    "explanation": "Cosine ranges from −1 to 1. Multiplying by −3 gives values from −3 to 3, and adding 5 shifts that range to [2, 8]. The maximum occurs when cos(2x) = −1. The input coefficient 2 changes the period, rather than the amplitude or maximum."
+    "explanation": "Cosine ranges from \\(-1\\) to 1. Multiplying by \\(-3\\) gives values from \\(-3\\) to 3, and adding 5 shifts that range to [2, 8]. The maximum occurs when \\(\\cos (2x) = -1\\). The input coefficient 2 changes the period, rather than the amplitude or maximum."
   },
   {
     "id": "math-trigonometry-d16",
@@ -1042,16 +1042,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "Two sides of a triangle are 5 and 7, and their included angle is 120°.",
+    "stem": "Two sides of a triangle are 5 and 7, and their included angle is \\(120^\\circ\\).",
     "questionText": "What is the opposite side’s length?",
     "choices": [
-      "√74",
+      "\\(\\sqrt{74}\\)",
       "12",
-      "√109",
-      "√39"
+      "\\(\\sqrt{109}\\)",
+      "\\(\\sqrt{39}\\)"
     ],
     "answer": 2,
-    "explanation": "Apply the law of cosines: c² = 5² + 7² − 2(5)(7)cos120°. Since cos120° = −1/2, this is 25 + 49 + 35 = 109. An obtuse included angle makes the third side longer than the right-triangle counterpart √74. Keep the negative cosine sign."
+    "explanation": "Apply the law of cosines: \\(c^{2} = 5^{2} + 7^{2} - 2(5)(7)\\cos 120^\\circ\\). Since \\(\\cos 120^\\circ  = \\frac{-1}{2}\\), this is \\(25 + 49 + 35 = 109\\). An obtuse included angle makes the third side longer than the right-triangle counterpart \\(\\sqrt{74}\\). Keep the negative cosine sign."
   },
   {
     "id": "math-trigonometry-d17",
@@ -1059,16 +1059,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "Two sides of a triangle are 8 and 10, and their included angle is 30°.",
+    "stem": "Two sides of a triangle are 8 and 10, and their included angle is \\(30^\\circ\\).",
     "questionText": "What is the triangle’s area?",
     "choices": [
-      "20√3",
+      "\\(20\\sqrt{3}\\)",
       "20",
       "40",
       "80"
     ],
     "answer": 1,
-    "explanation": "The area formula for two sides and their included angle is A = ab sin C/2. Thus A = 8(10)sin30°/2 = 80(1/2)/2 = 20. The sine supplies the perpendicular-height factor. Dropping either one-half factor produces an answer that is too large."
+    "explanation": "The area formula for two sides and their included angle is \\(A = \\frac{ab\\sin C}{2}\\). Thus \\(A = \\frac{8(10)\\sin30^\\circ}{2} = \\frac{80(\\frac12)}2 = 20\\). The sine supplies the perpendicular-height factor. Dropping either one-half factor produces an answer that is too large."
   },
   {
     "id": "math-trigonometry-d18",
@@ -1076,16 +1076,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "In a triangle, a side of length 10 is opposite a 30° angle. Another angle is 45°.",
-    "questionText": "What is the length of the side opposite 45°?",
+    "stem": "In a triangle, a side of length 10 is opposite a \\(30^\\circ\\) angle. Another angle is \\(45^\\circ\\).",
+    "questionText": "What is the length of the side opposite \\(45^\\circ\\)?",
     "choices": [
-      "10√2",
-      "5√2",
+      "\\(10\\sqrt{2}\\)",
+      "\\(5\\sqrt{2}\\)",
       "20",
-      "10/√2"
+      "\\(\\frac{10}{\\sqrt{2}}\\)"
     ],
     "answer": 0,
-    "explanation": "By the law of sines, b/sin45° = 10/sin30°. Therefore b = 10(√2/2)/(1/2) = 10√2. Pair each side with its opposite angle. The larger angle should have the larger side, giving a quick check that b must exceed 10."
+    "explanation": "By the law of sines, \\(\\frac{b}{\\sin45^\\circ} = \\frac{10}{\\sin30^\\circ}\\). Therefore \\(b = \\frac{10(\\frac{\\sqrt2}{2})}{\\frac12} = 10\\sqrt{2}\\). Pair each side with its opposite angle. The larger angle should have the larger side, giving a quick check that b must exceed 10."
   },
   {
     "id": "math-trigonometry-d19",
@@ -1093,16 +1093,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "A tower is 30 meters tall. A point on level ground is 30√3 meters from its base. Ignore eye height.",
+    "stem": "A tower is 30 meters tall. A point on level ground is \\(30\\sqrt{3}\\) meters from its base. Ignore eye height.",
     "questionText": "What is the angle of elevation to the top?",
     "choices": [
-      "60°",
-      "45°",
-      "90°",
-      "30°"
+      "\\(60^\\circ\\)",
+      "\\(45^\\circ\\)",
+      "\\(90^\\circ\\)",
+      "\\(30^\\circ\\)"
     ],
     "answer": 3,
-    "explanation": "The height is opposite and the ground distance is adjacent, so tan θ = 30/(30√3) = 1/√3. The acute angle with this tangent is 30°. The ground distance is longer than the height, so the elevation must be less than 45°, which rejects two traps immediately."
+    "explanation": "The height is opposite and the ground distance is adjacent, so \\(\\tan  \\theta  = \\frac{30}{30\\sqrt3} = \\frac1{\\sqrt3}\\). The acute angle with this tangent is \\(30^\\circ\\). The ground distance is longer than the height, so the elevation must be less than \\(45^\\circ\\), which rejects two traps immediately."
   },
   {
     "id": "math-trigonometry-d20",
@@ -1110,16 +1110,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "2cos x = 1 and 0 ≤ x < 2π.",
+    "stem": "\\(2\\cos x=1\\) and \\(0\\le x<2\\pi\\).",
     "questionText": "What is the sum of all solutions?",
     "choices": [
-      "π",
-      "π/3",
-      "4π/3",
-      "2π"
+      "\\(\\pi\\)",
+      "\\(\\frac{\\pi}{3}\\)",
+      "\\(\\frac{4\\pi}{3}\\)",
+      "\\(2\\pi\\)"
     ],
     "answer": 3,
-    "explanation": "Solve cos x = 1/2. On the specified interval, the two solutions are π/3 in Quadrant I and 5π/3 in Quadrant IV. Their sum is 2π. Using only the calculator’s principal inverse-cosine value misses the second solution. The upper endpoint 2π is excluded but is not a solution here anyway."
+    "explanation": "Solve \\(\\cos  x = \\frac{1}{2}\\). On the specified interval, the two solutions are \\(\\frac{\\pi}{3}\\) in Quadrant I and \\(\\frac{5\\pi}{3}\\) in Quadrant IV. Their sum is \\(2\\pi\\). Using only the calculator’s principal inverse-cosine value misses the second solution. The upper endpoint \\(2\\pi\\) is excluded but is not a solution here anyway."
   },
   {
     "id": "math-trigonometry-d21",
@@ -1127,8 +1127,8 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "−π ≤ x ≤ π.",
-    "questionText": "How many values of x in this interval satisfy sin x = 0?",
+    "stem": "\\(-\\pi \\le  x \\le  \\pi\\).",
+    "questionText": "How many values of x in this interval satisfy \\(\\sin  x = 0\\)?",
     "choices": [
       "2",
       "4",
@@ -1136,7 +1136,7 @@
       "1"
     ],
     "answer": 2,
-    "explanation": "Sine is zero at integer multiples of π. The included interval contains −π, 0, and π, so there are three solutions. Both endpoints count because the inequalities include equality. Counting only the principal inverse-sine output 0 overlooks valid periodic solutions."
+    "explanation": "Sine is zero at integer multiples of \\(\\pi\\). The included interval contains \\(-\\pi, 0\\), and \\(\\pi\\), so there are three solutions. Both endpoints count because the inequalities include equality. Counting only the principal inverse-sine output 0 overlooks valid periodic solutions."
   },
   {
     "id": "math-trigonometry-d22",
@@ -1144,16 +1144,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "θ is acute and cos θ = 3/5.",
-    "questionText": "What is cos(2θ)?",
+    "stem": "\\(\\theta\\) is acute and \\(\\cos\\theta=\\frac35\\).",
+    "questionText": "What is \\(\\cos (2\\theta )\\)?",
     "choices": [
-      "6/5",
-      "−7/25",
-      "7/25",
-      "9/25"
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{-7}{25}\\)",
+      "\\(\\frac{7}{25}\\)",
+      "\\(\\frac{9}{25}\\)"
     ],
     "answer": 1,
-    "explanation": "Use cos(2θ) = 2cos²θ − 1. Substitution gives 2(9/25) − 1 = 18/25 − 25/25 = −7/25. Doubling an angle does not double its cosine. A negative double-angle cosine is possible even when the original angle is acute."
+    "explanation": "Use \\(\\cos(2\\theta)=2\\cos^2\\theta-1\\). Substitution gives \\(2(\\frac{9}{25}) - 1 = \\frac{18}{25} - \\frac{25}{25} = \\frac{-7}{25}\\). Doubling an angle does not double its cosine. A negative double-angle cosine is possible even when the original angle is acute."
   },
   {
     "id": "math-trigonometry-d23",
@@ -1161,16 +1161,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "A unit-circle point has coordinates (−√3/2, 1/2). Its angle is between 0° and 360°.",
+    "stem": "A unit-circle point has coordinates \\((\\frac{-\\sqrt{3}}{2}, \\frac{1}{2})\\). Its angle is between \\(0^\\circ\\) and \\(360^\\circ\\).",
     "questionText": "What is that angle?",
     "choices": [
-      "150°",
-      "30°",
-      "210°",
-      "330°"
+      "\\(150^\\circ\\)",
+      "\\(30^\\circ\\)",
+      "\\(210^\\circ\\)",
+      "\\(330^\\circ\\)"
     ],
     "answer": 0,
-    "explanation": "The coordinates give cosine negative and sine positive, locating the point in Quadrant II. The reference angle is 30° because sin30° = 1/2. Thus the angle is 180° − 30° = 150°. Match the signs before choosing among angles with the same reference angle."
+    "explanation": "The coordinates give cosine negative and sine positive, locating the point in Quadrant II. The reference angle is \\(30^\\circ\\) because \\(\\sin 30^\\circ  = \\frac{1}{2}\\). Thus the angle is \\(180^\\circ  - 30^\\circ  = 150^\\circ\\). Match the signs before choosing among angles with the same reference angle."
   },
   {
     "id": "math-trigonometry-d24",
@@ -1178,16 +1178,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "θ is in Quadrant IV and cos θ = 4/5.",
-    "questionText": "What is sec θ?",
+    "stem": "\\(\\theta\\) is in Quadrant IV and \\(\\cos\\theta=\\frac45\\).",
+    "questionText": "What is \\(\\sec  \\theta\\)?",
     "choices": [
-      "−5/4",
-      "4/5",
-      "−3/5",
-      "5/4"
+      "\\(\\frac{-5}{4}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{-3}{5}\\)",
+      "\\(\\frac{5}{4}\\)"
     ],
     "answer": 3,
-    "explanation": "Secant is the reciprocal of cosine, so sec θ = 5/4. Cosine is positive in Quadrant IV, so secant is positive as well. The negative sine associated with that quadrant does not change the sign of cosine or its reciprocal."
+    "explanation": "Secant is the reciprocal of cosine, so \\(\\sec\\theta=\\frac54\\). Cosine is positive in Quadrant IV, so secant is positive as well. The negative sine associated with that quadrant does not change the sign of cosine or its reciprocal."
   },
   {
     "id": "math-trigonometry-d25",
@@ -1195,16 +1195,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "A 10-meter ladder makes a 60° angle with level ground.",
+    "stem": "A 10-meter ladder makes a \\(60^\\circ\\) angle with level ground.",
     "questionText": "How high above the ground does its top reach?",
     "choices": [
-      "10√3 meters",
-      "10/√3 meters",
-      "5√3 meters",
+      "\\(10\\sqrt{3}\\) meters",
+      "\\(\\frac{10}{\\sqrt{3}}\\) meters",
+      "\\(5\\sqrt{3}\\) meters",
       "5 meters"
     ],
     "answer": 2,
-    "explanation": "The ladder is the hypotenuse, and its vertical reach is opposite the 60° ground angle. Thus h = 10sin60° = 10(√3/2) = 5√3 meters. Cosine would calculate the horizontal distance to the wall. The height cannot exceed the ladder’s length."
+    "explanation": "The ladder is the hypotenuse, and its vertical reach is opposite the \\(60^\\circ\\) ground angle. Thus \\(h = 10\\sin 60^\\circ  = 10(\\frac{\\sqrt{3}}{2}) = 5\\sqrt{3}\\) meters. Cosine would calculate the horizontal distance to the wall. The height cannot exceed the ladder’s length."
   },
   {
     "id": "math-trigonometry-d26",
@@ -1212,16 +1212,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "A circle has radius 6, and an arc subtends an angle of 2π/3 radians at its center.",
+    "stem": "A circle has radius 6, and an arc subtends an angle of \\(\\frac{2\\pi}{3}\\) radians at its center.",
     "questionText": "What is the arc length?",
     "choices": [
-      "8π",
-      "4π",
-      "2π",
-      "12π"
+      "\\(8\\pi\\)",
+      "\\(4\\pi\\)",
+      "\\(2\\pi\\)",
+      "\\(12\\pi\\)"
     ],
     "answer": 1,
-    "explanation": "For a central angle already measured in radians, arc length is s = rθ. Multiply 6 by 2π/3 to get 4π. Do not convert the angle again or insert an extra circumference factor. A one-third turn should produce one third of the 12π circumference, which confirms the result."
+    "explanation": "For a central angle already measured in radians, arc length is \\(s=r\\theta\\). Multiply 6 by \\(\\frac{2\\pi}{3}\\) to get \\(4\\pi\\). Do not convert the angle again or insert an extra circumference factor. A one-third turn should produce one third of the \\(12\\pi\\) circumference, which confirms the result."
   },
   {
     "id": "math-trigonometry-d27",
@@ -1229,16 +1229,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "sin(2θ) = 3/5.",
-    "questionText": "What is (sin θ + cos θ)²?",
+    "stem": "\\(\\sin (2\\theta ) = \\frac{3}{5}\\).",
+    "questionText": "What is \\((\\sin  \\theta  + \\cos  \\theta )^{2}\\)?",
     "choices": [
-      "8/5",
-      "3/5",
-      "6/5",
-      "2/5"
+      "\\(\\frac{8}{5}\\)",
+      "\\(\\frac{3}{5}\\)",
+      "\\(\\frac{6}{5}\\)",
+      "\\(\\frac{2}{5}\\)"
     ],
     "answer": 0,
-    "explanation": "Expand the square: sin²θ + 2sinθ cosθ + cos²θ. The squared terms sum to 1, and the cross term equals sin(2θ). Therefore the expression is 1 + 3/5 = 8/5. Omitting the cross term or assuming sine and cosine can be squared separately is the trap."
+    "explanation": "Expand the square: \\(\\sin ^{2}\\theta  + 2\\sin \\theta  \\cos \\theta  + \\cos ^{2}\\theta\\). The squared terms sum to 1, and the cross term equals \\(\\sin (2\\theta )\\). Therefore the expression is \\(1 + \\frac{3}{5} = \\frac{8}{5}\\). Omitting the cross term or assuming sine and cosine can be squared separately is the trap."
   },
   {
     "id": "math-trigonometry-d28",
@@ -1246,16 +1246,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "θ is acute and sin θ = 4/5.",
-    "questionText": "What is sin(π/2 − θ)?",
+    "stem": "\\(\\theta\\) is acute and \\(\\sin  \\theta  = \\frac{4}{5}\\).",
+    "questionText": "What is \\(\\sin (\\frac{\\pi}{2} - \\theta )\\)?",
     "choices": [
-      "4/5",
-      "5/4",
-      "−3/5",
-      "3/5"
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{5}{4}\\)",
+      "\\(\\frac{-3}{5}\\)",
+      "\\(\\frac{3}{5}\\)"
     ],
     "answer": 3,
-    "explanation": "The cofunction identity gives sin(π/2 − θ) = cos θ. Since θ is acute, cos θ is positive, with value √(1 − 16/25) = 3/5. The complementary angle exchanges sine and cosine; it does not preserve the original sine value in general."
+    "explanation": "The cofunction identity gives \\(\\sin (\\frac{\\pi}{2} - \\theta ) = \\cos  \\theta\\). Since \\(\\theta\\) is acute, \\(\\cos  \\theta\\) is positive, with value \\(\\sqrt{1-\\frac{16}{25}} = \\frac{3}{5}\\). The complementary angle exchanges sine and cosine; it does not preserve the original sine value in general."
   },
   {
     "id": "math-trigonometry-d29",
@@ -1263,8 +1263,8 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "0 ≤ x < 2π.",
-    "questionText": "How many zeros does y = sin(2x) have in this interval?",
+    "stem": "\\(0\\le x<2\\pi\\).",
+    "questionText": "How many zeros does \\(y = \\sin (2x)\\) have in this interval?",
     "choices": [
       "3",
       "5",
@@ -1272,7 +1272,7 @@
       "2"
     ],
     "answer": 2,
-    "explanation": "The zeros satisfy 2x = kπ, or x = kπ/2. In the stated interval these are 0, π/2, π, and 3π/2. The endpoint 2π is excluded. Doubling the input doubles the number of sine cycles across this interval, so counting only two zeros misses half of them."
+    "explanation": "The zeros satisfy \\(2x = k\\pi\\), or \\(x = \\frac{k\\pi}2\\). In the stated interval these are \\(0, \\frac{\\pi}{2}, \\pi\\), and \\(\\frac{3\\pi}{2}\\). The endpoint \\(2\\pi\\) is excluded. Doubling the input doubles the number of sine cycles across this interval, so counting only two zeros misses half of them."
   },
   {
     "id": "math-trigonometry-d30",
@@ -1280,7 +1280,7 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "In triangle ABC, A = 30°, side a = 8, and side b = 12. Each side is opposite its corresponding angle.",
+    "stem": "In triangle ABC, \\(A = 30^\\circ\\), side \\(a = 8\\), and side \\(b = 12\\). Each side is opposite its corresponding angle.",
     "questionText": "How many different triangles satisfy these data?",
     "choices": [
       "1",
@@ -1289,7 +1289,7 @@
       "0"
     ],
     "answer": 2,
-    "explanation": "The law of sines gives sin B = 12sin30°/8 = 3/4. Both an acute B ≈ 48.59° and an obtuse B ≈ 131.41° have that sine. Each leaves A + B below 180°, so both yield valid triangles. This side-side-angle case is ambiguous; checking the second sine branch is essential."
+    "explanation": "The law of sines gives \\(\\sin  B = \\frac{12\\sin30^\\circ}8 = \\frac{3}{4}\\). Both an acute \\(B \\approx  48.59^\\circ\\) and an obtuse \\(B \\approx  131.41^\\circ\\) have that sine. Each leaves \\(A + B\\) below \\(180^\\circ\\), so both yield valid triangles. This side-side-angle case is ambiguous; checking the second sine branch is essential."
   },
   {
     "id": "math-trigonometry-d31",
@@ -1297,16 +1297,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "medium",
-    "stem": "θ is in Quadrant II and tan θ = −2/3.",
-    "questionText": "What is cot θ?",
+    "stem": "\\(\\theta\\) is in Quadrant II and \\(\\tan  \\theta  = \\frac{-2}{3}\\).",
+    "questionText": "What is \\(\\cot  \\theta\\)?",
     "choices": [
-      "2/3",
-      "−3/2",
-      "3/2",
-      "−2/3"
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{-3}{2}\\)",
+      "\\(\\frac{3}{2}\\)",
+      "\\(\\frac{-2}{3}\\)"
     ],
     "answer": 1,
-    "explanation": "Cotangent is the reciprocal of tangent, so cot θ = −3/2. In Quadrant II sine is positive and cosine negative, making both tangent and cotangent negative. The reciprocal swaps numerator and denominator; it does not remove the sign."
+    "explanation": "Cotangent is the reciprocal of tangent, so \\(\\cot  \\theta  = \\frac{-3}{2}\\). In Quadrant II sine is positive and cosine negative, making both tangent and cotangent negative. The reciprocal swaps numerator and denominator; it does not remove the sign."
   },
   {
     "id": "math-trigonometry-d32",
@@ -1314,16 +1314,16 @@
     "subject": "math",
     "category": "Trigonometry",
     "difficulty": "hard",
-    "stem": "θ is in Quadrant II and sin θ = 5/13.",
-    "questionText": "What is sin(2θ)?",
+    "stem": "\\(\\theta\\) is in Quadrant II and \\(\\sin\\theta=\\frac5{13}\\).",
+    "questionText": "What is \\(\\sin (2\\theta )\\)?",
     "choices": [
-      "−120/169",
-      "120/169",
-      "10/13",
-      "−60/169"
+      "\\(\\frac{-120}{169}\\)",
+      "\\(\\frac{120}{169}\\)",
+      "\\(\\frac{10}{13}\\)",
+      "\\(\\frac{-60}{169}\\)"
     ],
     "answer": 0,
-    "explanation": "The reference triangle gives |cos θ| = 12/13, and Quadrant II makes cosine negative. Apply sin(2θ) = 2sinθ cosθ to get 2(5/13)(−12/13) = −120/169. Determining the cosine sign before using the identity prevents the positive-answer trap."
+    "explanation": "The reference triangle gives \\(|\\cos  \\theta | = \\frac{12}{13}\\), and Quadrant II makes cosine negative. Apply \\(\\sin(2\\theta)=2\\sin\\theta\\cos\\theta\\) to get \\(2(\\frac{5}{13})(\\frac{-12}{13}) = \\frac{-120}{169}\\). Determining the cosine sign before using the identity prevents the positive-answer trap."
   },
   {
     "id": "math-statistics-probability-d7",
@@ -1340,7 +1340,7 @@
       "170"
     ],
     "answer": 0,
-    "explanation": "Reconstruct the total scores: 10(80) + 15(90) = 2150. Divide by the total count 25 to get 86. Taking the unweighted mean 85 gives the two groups equal influence even though their sizes differ. Weighted means use counts as the weights."
+    "explanation": "Reconstruct the total scores: \\(10(80) + 15(90) = 2150\\). Divide by the total count 25 to get 86. Taking the unweighted mean 85 gives the two groups equal influence even though their sizes differ. Weighted means use counts as the weights."
   },
   {
     "id": "math-statistics-probability-d8",
@@ -1352,12 +1352,12 @@
     "questionText": "What is the new mean?",
     "choices": [
       "14",
-      "32/11",
+      "\\(\\frac{32}{11}\\)",
       "12",
-      "140/11"
+      "\\(\\frac{140}{11}\\)"
     ],
     "answer": 3,
-    "explanation": "The original total is 10(12) = 120. Adding the new value makes the total 140 and the count 11, so the new mean is 140/11. Keep track of both numerator and denominator. Dividing by 10 again ignores the added observation."
+    "explanation": "The original total is \\(10(12) = 120\\). Adding the new value makes the total 140 and the count 11, so the new mean is \\(\\frac{140}{11}\\). Keep track of both numerator and denominator. Dividing by 10 again ignores the added observation."
   },
   {
     "id": "math-statistics-probability-d9",
@@ -1369,12 +1369,12 @@
     "questionText": "What is the new median?",
     "choices": [
       "9",
-      "131/6",
+      "\\(\\frac{131}{6}\\)",
       "8",
       "7"
     ],
     "answer": 2,
-    "explanation": "The six values in sorted order are 2, 3, 7, 9, 10, 100. The median is the average of the third and fourth values: (7 + 9)/2 = 8. The large new value changes the mean strongly, but the median depends only on the two central positions."
+    "explanation": "The six values in sorted order are 2, 3, 7, 9, 10, 100. The median is the average of the third and fourth values: \\(\\frac{7+9}2 = 8\\). The large new value changes the mean strongly, but the median depends only on the two central positions."
   },
   {
     "id": "math-statistics-probability-d10",
@@ -1385,13 +1385,13 @@
     "stem": "Of 20 athletes, 12 ride the bus. Of 30 nonathletes, 10 ride the bus. One bus rider is selected at random.",
     "questionText": "What is the probability that this person is an athlete?",
     "choices": [
-      "6/25",
-      "2/5",
-      "6/11",
-      "3/5"
+      "\\(\\frac{6}{25}\\)",
+      "\\(\\frac{2}{5}\\)",
+      "\\(\\frac{6}{11}\\)",
+      "\\(\\frac{3}{5}\\)"
     ],
     "answer": 2,
-    "explanation": "The condition limits the sample space to bus riders, of whom there are 12 + 10 = 22. Twelve are athletes, so the conditional probability is 12/22 = 6/11. Dividing by all 50 people ignores the condition, while 12/20 answers the reverse conditional question."
+    "explanation": "The condition limits the sample space to bus riders, of whom there are \\(12 + 10 = 22\\). Twelve are athletes, so the conditional probability is \\(\\frac{12}{22} = \\frac{6}{11}\\). Dividing by all 50 people ignores the condition, while \\(\\frac{12}{20}\\) answers the reverse conditional question."
   },
   {
     "id": "math-statistics-probability-d11",
@@ -1399,7 +1399,7 @@
     "subject": "math",
     "category": "Statistics and probability",
     "difficulty": "hard",
-    "stem": "P(A) = 0.4, P(B) = 0.3, and P(A and B) = 0.12.",
+    "stem": "\\(P(A) = 0.4, P(B) = 0.3\\), and P(A and B) = 0.12.",
     "questionText": "Which statement about A and B is true?",
     "choices": [
       "They are neither disjoint nor independent.",
@@ -1408,7 +1408,7 @@
       "They are both disjoint and independent."
     ],
     "answer": 1,
-    "explanation": "Independence requires P(A and B) = P(A)P(B), and 0.4(0.3) = 0.12 meets that requirement. Disjoint events have an intersection probability of zero, but the stated intersection is positive. Independence describes unchanged likelihood, not inability to occur together."
+    "explanation": "Independence requires P(A and B) = P(A)P(B), and \\(0.4(0.3) = 0.12\\) meets that requirement. Disjoint events have an intersection probability of zero, but the stated intersection is positive. Independence describes unchanged likelihood, not inability to occur together."
   },
   {
     "id": "math-statistics-probability-d12",
@@ -1416,7 +1416,7 @@
     "subject": "math",
     "category": "Statistics and probability",
     "difficulty": "medium",
-    "stem": "P(A) = 0.5, P(B) = 0.4, and P(A and B) = 0.2.",
+    "stem": "\\(P(A) = 0.5, P(B) = 0.4\\), and P(A and B) = 0.2.",
     "questionText": "What is P(A or B)?",
     "choices": [
       "0.7",
@@ -1425,7 +1425,7 @@
       "0.1"
     ],
     "answer": 0,
-    "explanation": "Use the inclusive-or rule: P(A or B) = P(A) + P(B) − P(A and B) = 0.5 + 0.4 − 0.2 = 0.7. Subtract the overlap once because it was included in both individual probabilities. Adding alone double-counts the shared outcomes."
+    "explanation": "Use the inclusive-or rule: P(A or \\(B) = P(A) + P(B) - P(A\\) and B) = 0.5 + 0.4 − 0.2 = 0.7. Subtract the overlap once because it was included in both individual probabilities. Adding alone double-counts the shared outcomes."
   },
   {
     "id": "math-statistics-probability-d13",
@@ -1433,16 +1433,16 @@
     "subject": "math",
     "category": "Statistics and probability",
     "difficulty": "hard",
-    "stem": "Each of three independent trials succeeds with probability 1/4.",
+    "stem": "Each of three independent trials succeeds with probability \\(\\frac{1}{4}\\).",
     "questionText": "What is the probability of at least one success?",
     "choices": [
-      "3/4",
-      "1/64",
-      "27/64",
-      "37/64"
+      "\\(\\frac{3}{4}\\)",
+      "\\(\\frac{1}{64}\\)",
+      "\\(\\frac{27}{64}\\)",
+      "\\(\\frac{37}{64}\\)"
     ],
     "answer": 3,
-    "explanation": "The complement of at least one success is no successes. Each failure has probability 3/4, so three failures have probability (3/4)³ = 27/64. Subtract from 1 to obtain 37/64. Adding the three success probabilities overcounts outcomes with multiple successes."
+    "explanation": "The complement of at least one success is no successes. Each failure has probability \\(\\frac{3}{4}\\), so three failures have probability \\(\\left(\\frac34\\right)^3=\\frac{27}{64}\\). Subtract from 1 to obtain \\(\\frac{37}{64}\\). Adding the three success probabilities overcounts outcomes with multiple successes."
   },
   {
     "id": "math-statistics-probability-d14",
@@ -1453,13 +1453,13 @@
     "stem": "A fair coin is tossed three times.",
     "questionText": "What is the probability of exactly two heads?",
     "choices": [
-      "1/2",
-      "7/8",
-      "3/8",
-      "1/8"
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{7}{8}\\)",
+      "\\(\\frac{3}{8}\\)",
+      "\\(\\frac{1}{8}\\)"
     ],
     "answer": 2,
-    "explanation": "There are eight equally likely three-toss sequences. Exactly two heads occurs in HHT, HTH, and THH, giving 3/8. One sequence contributes 1/8, but the tail can occupy any of three positions. The word exactly excludes the all-heads outcome."
+    "explanation": "There are eight equally likely three-toss sequences. Exactly two heads occurs in HHT, HTH, and THH, giving \\(\\frac{3}{8}\\). One sequence contributes \\(\\frac{1}{8}\\), but the tail can occupy any of three positions. The word exactly excludes the all-heads outcome."
   },
   {
     "id": "math-statistics-probability-d15",
@@ -1476,7 +1476,7 @@
       "125"
     ],
     "answer": 1,
-    "explanation": "There are five choices for the first position, four for the second, and three for the third because repeats are forbidden. Multiply to get 5(4)(3) = 60. Combinations would ignore order, and 5³ would incorrectly permit repeated letters."
+    "explanation": "There are five choices for the first position, four for the second, and three for the third because repeats are forbidden. Multiply to get \\(5(4)(3) = 60\\). Combinations would ignore order, and \\(5^{3}\\) would incorrectly permit repeated letters."
   },
   {
     "id": "math-statistics-probability-d16",
@@ -1493,7 +1493,7 @@
       "84"
     ],
     "answer": 0,
-    "explanation": "Order does not matter, so use C(9,4) = 9·8·7·6/(4·3·2·1) = 126. The numerator alone counts each committee once for every ordering of its four members. Dividing by 4 rather than 4! does not remove all duplicate orderings."
+    "explanation": "Order does not matter, so use \\(C(9,4) = \\frac{9\\cdot8\\cdot7\\cdot6}{4\\cdot3\\cdot2\\cdot1} = 126\\). The numerator alone counts each committee once for every ordering of its four members. Dividing by 4 rather than 4! does not remove all duplicate orderings."
   },
   {
     "id": "math-statistics-probability-d17",
@@ -1501,7 +1501,7 @@
     "subject": "math",
     "category": "Statistics and probability",
     "difficulty": "hard",
-    "stem": "A game produces a net gain of $8 with probability 1/4 and a net loss of $2 otherwise.",
+    "stem": "A game produces a net gain of $8 with probability \\(\\frac{1}{4}\\) and a net loss of $2 otherwise.",
     "questionText": "What is the expected net gain per play?",
     "choices": [
       "$2.00",
@@ -1510,7 +1510,7 @@
       "$0.50"
     ],
     "answer": 3,
-    "explanation": "Expected net gain weights signed outcomes by their probabilities: 8(1/4) + (−2)(3/4) = 2 − 1.5 = 0.5 dollars. A loss is negative, not positive, and its probability is 3/4. Expected gain is a long-run average; it is not one of the game’s possible single-play outcomes."
+    "explanation": "Expected net gain weights signed outcomes by their probabilities: \\(8(\\frac{1}{4}) + (-2)(\\frac{3}{4}) = 2 - 1.5 = 0.5\\) dollars. A loss is negative, not positive, and its probability is \\(\\frac{3}{4}\\). Expected gain is a long-run average; it is not one of the game’s possible single-play outcomes."
   },
   {
     "id": "math-statistics-probability-d18",
@@ -1518,7 +1518,7 @@
     "subject": "math",
     "category": "Statistics and probability",
     "difficulty": "hard",
-    "stem": "A data set has variance 9. Every value x is replaced by −2x + 7.",
+    "stem": "A data set has variance 9. Every value x is replaced by \\(-2x + 7\\).",
     "questionText": "What is the new variance?",
     "choices": [
       "43",
@@ -1527,7 +1527,7 @@
       "18"
     ],
     "answer": 2,
-    "explanation": "Multiplying every observation by a multiplies its variance by a². Here (−2)²(9) = 36. Adding 7 changes the location but not the spread. Standard deviation would multiply by |−2|; variance multiplies by the square of that factor."
+    "explanation": "Multiplying every observation by a multiplies its variance by \\(a^{2}\\). Here \\((-2)^{2}(9) = 36\\). Adding 7 changes the location but not the spread. Standard deviation would multiply by \\(|-2|\\); variance multiplies by the square of that factor."
   },
   {
     "id": "math-statistics-probability-d19",
@@ -1561,7 +1561,7 @@
       "(4, 4)"
     ],
     "answer": 1,
-    "explanation": "The new total is 5(4) + 100 = 120 across six values, giving mean 20. The ordered data are 4, 4, 4, 4, 4, 100, so both central values are 4 and the median is 4. A large outlier can pull the mean while leaving the median unchanged."
+    "explanation": "The new total is \\(5(4) + 100 = 120\\) across six values, giving mean 20. The ordered data are 4, 4, 4, 4, 4, 100, so both central values are 4 and the median is 4. A large outlier can pull the mean while leaving the median unchanged."
   },
   {
     "id": "math-statistics-probability-d21",
@@ -1573,12 +1573,12 @@
     "questionText": "What is the mean?",
     "choices": [
       "2",
-      "7/3",
+      "\\(\\frac{7}{3}\\)",
       "3",
       "12"
     ],
     "answer": 0,
-    "explanation": "Multiply each value by its frequency to recover the total: 1(2) + 2(3) + 4(1) = 12. There are 2 + 3 + 1 = 6 observations, so the mean is 2. Averaging only the three distinct displayed values gives each value the wrong weight."
+    "explanation": "Multiply each value by its frequency to recover the total: \\(1(2) + 2(3) + 4(1) = 12\\). There are \\(2 + 3 + 1 = 6\\) observations, so the mean is 2. Averaging only the three distinct displayed values gives each value the wrong weight."
   },
   {
     "id": "math-statistics-probability-d22",
@@ -1612,7 +1612,7 @@
       "28"
     ],
     "answer": 2,
-    "explanation": "The interquartile range is Q3 − Q1, so IQR = 20 − 8 = 12. It measures the spread of the middle half of the data. The full range would need the maximum and minimum, which were not supplied. Averaging the quartiles answers a different question."
+    "explanation": "The interquartile range is \\(Q3 - Q1\\), so IQR \\(= 20 - 8 = 12\\). It measures the spread of the middle half of the data. The full range would need the maximum and minimum, which were not supplied. Averaging the quartiles answers a different question."
   },
   {
     "id": "math-statistics-probability-d24",
@@ -1623,13 +1623,13 @@
     "stem": "A distribution has mean 60 and standard deviation 8. An observation is 76.",
     "questionText": "How many standard deviations above the mean is it?",
     "choices": [
-      "−2",
+      "\\(-2\\)",
       "2",
       "16",
       "9.5"
     ],
     "answer": 1,
-    "explanation": "Subtract the mean before dividing by the standard deviation: (76 − 60)/8 = 16/8 = 2. The observation lies above the mean, so the standardized value is positive. Dividing the raw score by 8 does not measure distance from the center."
+    "explanation": "Subtract the mean before dividing by the standard deviation: \\(\\frac{76-60}{8} = \\frac{16}{8} = 2\\). The observation lies above the mean, so the standardized value is positive. Dividing the raw score by 8 does not measure distance from the center."
   },
   {
     "id": "math-statistics-probability-d25",
@@ -1640,13 +1640,13 @@
     "stem": "A bag contains 4 red and 6 blue marbles. Two marbles are drawn without replacement.",
     "questionText": "What is the probability both are red?",
     "choices": [
-      "2/15",
-      "4/25",
-      "1/5",
-      "4/15"
+      "\\(\\frac{2}{15}\\)",
+      "\\(\\frac{4}{25}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{4}{15}\\)"
     ],
     "answer": 0,
-    "explanation": "The first red has probability 4/10. After that draw there are three reds among nine marbles, so the second red has probability 3/9. Multiply to get 12/90 = 2/15. Keeping the probability 4/10 for the second draw would incorrectly model replacement."
+    "explanation": "The first red has probability \\(\\frac{4}{10}\\). After that draw there are three reds among nine marbles, so the second red has probability \\(\\frac39\\). Multiply to get \\(\\frac{12}{90} = \\frac{2}{15}\\). Keeping the probability \\(\\frac{4}{10}\\) for the second draw would incorrectly model replacement."
   },
   {
     "id": "math-statistics-probability-d26",
@@ -1663,7 +1663,7 @@
       "0.128"
     ],
     "answer": 3,
-    "explanation": "The first success on trial three requires failure, failure, success in that order. Multiply 0.8(0.8)(0.2) = 0.128. Exactly one success among three trials would also include two other possible positions; those do not meet the first-success-on-third condition."
+    "explanation": "The first success on trial three requires failure, failure, success in that order. Multiply \\(0.8(0.8)(0.2) = 0.128\\). Exactly one success among three trials would also include two other possible positions; those do not meet the first-success-on-third condition."
   },
   {
     "id": "math-statistics-probability-d27",
@@ -1674,13 +1674,13 @@
     "stem": "Two fair six-sided dice are rolled.",
     "questionText": "What is the probability that at least one die shows 6?",
     "choices": [
-      "1/36",
-      "25/36",
-      "11/36",
-      "1/3"
+      "\\(\\frac{1}{36}\\)",
+      "\\(\\frac{25}{36}\\)",
+      "\\(\\frac{11}{36}\\)",
+      "\\(\\frac{1}{3}\\)"
     ],
     "answer": 2,
-    "explanation": "Use the complement: neither die is 6 with probability (5/6)² = 25/36. Subtract from 1 to get 11/36. Adding 1/6 and 1/6 gives 12/36 but double-counts the outcome (6,6), which must be counted only once."
+    "explanation": "Use the complement: neither die is 6 with probability \\((\\frac{5}{6})^{2} = \\frac{25}{36}\\). Subtract from 1 to get \\(\\frac{11}{36}\\). Adding \\(\\frac{1}{6}\\) and \\(\\frac{1}{6}\\) gives \\(\\frac{12}{36}\\) but double-counts the outcome (6,6), which must be counted only once."
   },
   {
     "id": "math-statistics-probability-d28",
@@ -1691,13 +1691,13 @@
     "stem": "Two different cards are selected uniformly from cards numbered 1 through 10.",
     "questionText": "What is the probability that their sum is odd?",
     "choices": [
-      "2/9",
-      "5/9",
-      "1/2",
-      "1/4"
+      "\\(\\frac{2}{9}\\)",
+      "\\(\\frac{5}{9}\\)",
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{1}{4}\\)"
     ],
     "answer": 1,
-    "explanation": "An odd sum needs one even and one odd number. There are five of each, so 5(5) = 25 favorable unordered pairs. There are C(10,2) = 45 total pairs, giving 25/45 = 5/9. Drawing distinct cards without replacement changes the probability from the independent approximation 1/2."
+    "explanation": "An odd sum needs one even and one odd number. There are five of each, so \\(5(5) = 25\\) favorable unordered pairs. There are \\(C(10,2) = 45\\) total pairs, giving \\(\\frac{25}{45} = \\frac{5}{9}\\). Drawing distinct cards without replacement changes the probability from the independent approximation \\(\\frac{1}{2}\\)."
   },
   {
     "id": "math-statistics-probability-d29",
@@ -1708,13 +1708,13 @@
     "stem": "A bag starts with 3 green and 4 orange marbles. One green marble is removed.",
     "questionText": "What is the probability that the next marble drawn is orange?",
     "choices": [
-      "2/3",
-      "4/7",
-      "3/7",
-      "1/2"
+      "\\(\\frac{2}{3}\\)",
+      "\\(\\frac{4}{7}\\)",
+      "\\(\\frac{3}{7}\\)",
+      "\\(\\frac{1}{2}\\)"
     ],
     "answer": 0,
-    "explanation": "After one green is removed, the bag has 2 green and 4 orange marbles, six total. The next-draw orange probability is 4/6 = 2/3. The numerator stays 4, but the denominator decreases from 7 to 6. Use the stated condition to update the sample space."
+    "explanation": "After one green is removed, the bag has 2 green and 4 orange marbles, six total. The next-draw orange probability is \\(\\frac{4}{6} = \\frac{2}{3}\\). The numerator stays 4, but the denominator decreases from 7 to 6. Use the stated condition to update the sample space."
   },
   {
     "id": "math-statistics-probability-d30",
@@ -1722,7 +1722,7 @@
     "subject": "math",
     "category": "Statistics and probability",
     "difficulty": "medium",
-    "stem": "A data set has mean 15. Each value x is changed to 3x − 2.",
+    "stem": "A data set has mean 15. Each value x is changed to \\(3x - 2\\).",
     "questionText": "What is the new mean?",
     "choices": [
       "43",
@@ -1731,7 +1731,7 @@
       "47"
     ],
     "answer": 0,
-    "explanation": "The mean transforms by the same affine rule as each observation: 3(15) − 2 = 43. Multiplication changes the total proportionally, and subtracting 2 from every value subtracts 2 from their mean. This center rule differs from the standard-deviation rule, which ignores the added constant."
+    "explanation": "The mean transforms by the same affine rule as each observation: \\(3(15) - 2 = 43\\). Multiplication changes the total proportionally, and subtracting 2 from every value subtracts 2 from their mean. This center rule differs from the standard-deviation rule, which ignores the added constant."
   },
   {
     "id": "math-statistics-probability-d31",
@@ -1742,13 +1742,13 @@
     "stem": "A score table lists 60 for 2 students, 70 for 3 students, and 80 for 5 students.",
     "questionText": "What fraction of the students scored strictly below 70?",
     "choices": [
-      "1/2",
-      "3/10",
-      "4/5",
-      "1/5"
+      "\\(\\frac{1}{2}\\)",
+      "\\(\\frac{3}{10}\\)",
+      "\\(\\frac{4}{5}\\)",
+      "\\(\\frac{1}{5}\\)"
     ],
     "answer": 3,
-    "explanation": "Strictly below 70 includes only the two students with score 60. There are 2 + 3 + 5 = 10 students, so the fraction is 2/10 = 1/5. Including the three students at 70 would answer at most 70 instead. The inequality wording determines which frequency rows count."
+    "explanation": "Strictly below 70 includes only the two students with score 60. There are \\(2 + 3 + 5 = 10\\) students, so the fraction is \\(\\frac{2}{10} = \\frac{1}{5}\\). Including the three students at 70 would answer at most 70 instead. The inequality wording determines which frequency rows count."
   },
   {
     "id": "math-statistics-probability-d32",
@@ -1759,12 +1759,12 @@
     "stem": "An integer is selected uniformly from 1 through 30, inclusive.",
     "questionText": "What is the probability it is a multiple of 3 or 5?",
     "choices": [
-      "1/3",
-      "1/5",
-      "7/15",
-      "8/15"
+      "\\(\\frac{1}{3}\\)",
+      "\\(\\frac{1}{5}\\)",
+      "\\(\\frac{7}{15}\\)",
+      "\\(\\frac{8}{15}\\)"
     ],
     "answer": 2,
-    "explanation": "There are ten multiples of 3 and six multiples of 5. The two multiples of 15 belong to both groups, so favorable outcomes total 10 + 6 − 2 = 14. Divide by 30 to get 7/15. Inclusive or permits either property or both; subtract only the double count."
+    "explanation": "There are ten multiples of 3 and six multiples of 5. The two multiples of 15 belong to both groups, so favorable outcomes total \\(10 + 6 - 2 = 14\\). Divide by 30 to get \\(\\frac{7}{15}\\). Inclusive or permits either property or both; subtract only the double count."
   }
 ]

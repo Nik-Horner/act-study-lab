@@ -2,21 +2,20 @@
   {
     "slug": "reading-main-idea",
     "title": "Main ideas and summaries",
-    "intro": "Find the controlling idea without mistaking a vivid detail for the whole passage. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "intro": "Find the main point of the whole passage.",
     "sections": [
       {
         "heading": "Use the screen to build a passage map",
         "body": [
-          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
-          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
-          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+          "Give each paragraph a short job: introduce a problem, give evidence, explain a limit to a claim, or show a change. For a main-idea question, connect those jobs into one sentence about the whole passage.",
+          "Use the opening and ending as anchors, then check that your summary accounts for the middle. A topic such as “buses” is not yet a main idea."
         ]
       },
       {
         "heading": "Find the controlling idea, not just the subject",
         "body": [
-          "A passage’s subject is the thing it discusses: a bus pilot, a family desk, a research method, or a renovation. Its controlling idea is what the passage develops about that subject. Saying this passage is about buses will not distinguish a report that proves profitability from one that gathers promising evidence while limiting its claims. Start with a subject-and-movement sentence: the town uses a limited trial to decide what it still needs to learn. That sentence captures both the topic and the direction of the discussion.",
-          "Look at the opening problem and the closing resolution, but do not assume the last sentence alone contains the answer. The middle paragraphs explain how the passage reaches its ending. A narrative can move from an expectation to a changed understanding without announcing a moral. An informational passage may qualify an initial interpretation rather than replace it completely. Notice contrasts such as at first, yet, instead, and still. They often mark the relationship that a correct main-idea answer must preserve."
+          "Name both the subject and what the passage develops about it. “A curator revises a map’s claim after finding gaps in its evidence” is more precise than “a passage about maps.”",
+          "Check the beginning, turning point, and ending. Keep any limits the writer gives: a trial that looks promising is not proof of lasting success."
         ],
         "examples": [
           {
@@ -34,8 +33,8 @@
       {
         "heading": "Match a summary to the passage’s full movement",
         "body": [
-          "A strong summary includes the major stages in proportion to their importance. For the map passage, the curator first treats the distribution as a town-wide picture, discovers an uneven participant pool, revises the claim, and invites additional residents. The controlling movement is making the display’s claim fit the evidence while broadening participation. A choice about swimming locations repeats a detail but does not summarize that movement. A choice about discarding memories reverses the actual solution, which preserves the original project and documents its limits.",
-          "Test your proposed summary against each paragraph. It should explain why the major paragraphs belong together without listing every object or name. If one paragraph challenges the result, a summary that presents the result as settled is incomplete. If the passage retains a useful method while acknowledging limitations, a summary claiming total rejection goes too far. Compress the passage into a relationship, not a catalogue. Words such as evaluates, revises, distinguishes, and comes to recognize often express movement more accurately than celebrates or proves when the passage is cautious."
+          "Summarize the passage’s movement without listing every detail. In the map passage: initial interpretation → uneven participant pool → revised caption and wider participation.",
+          "A correct summary explains why all major paragraphs belong. Reject an option that omits a limitation, reverses the outcome, or focuses on one memorable example."
         ],
         "examples": [
           {
@@ -53,8 +52,8 @@
       {
         "heading": "Reject narrow, inflated, and imported choices",
         "body": [
-          "Three recurring main-idea traps deserve separate tests. A narrow choice describes one vivid example and cannot account for the rest of the text. An inflated choice changes a local event into a universal lesson or turns a tentative result into proof. An imported choice makes a plausible claim about the subject that the passage never develops. The correct answer must be supported by the particular passage, even when another choice sounds wiser, more scientific, or more inspirational in ordinary conversation.",
-          "For each remaining option, identify its scope and attitude. Does it refer to the interviewed residents or all children in town? Does it say the service is promising or permanently successful? Does it say the narrator changes a belief or abandons the activity entirely? These are not cosmetic differences. They determine whether the choice can survive the passage’s explicit qualifications. A correct summary can sound modest because the evidence is modest. Do not reward a dramatic answer merely because the passage contains an emotionally memorable final image."
+          "Test three traps: a narrow choice covers only one detail; an inflated choice claims more than the passage; an imported choice adds an idea the text never develops.",
+          "Check who the answer includes and how sure it sounds. “The interviewed residents” is narrower than “everyone,” and “promising” is weaker than “proven.” Point to the words that support the choice."
         ],
         "examples": [
           {
@@ -67,8 +66,8 @@
       {
         "heading": "Treat narrative change as evidence, not a slogan",
         "body": [
-          "In literary narrative, track the starting belief, the complicating event, and the final action. Mara initially expects impressive documents, discovers a small note showing personal attention, and later displays that note beside the fruit. The ending supports a connection through an ordinary object. It does not prove she will preserve every family possession or stop comparing prices forever. The final action matters because it differs from her initial expectations; the meaning emerges through that contrast.",
-          "A narrator’s attitude can be mixed. Enjoying an interruption while worrying about rehearsal time does not mean the narrator dislikes music or resents the aunt completely. A main-idea choice should preserve the development across those mixed responses. Distinguish what a character learns from what an author claims about everyone. Before choosing a broad lesson, point to at least two moments in the narrative that support it. Then remove any universal language that those moments cannot justify. This keeps interpretation anchored in change actually shown on the page."
+          "In a narrative, track the initial expectation, the event that changes it, and the final action. Mara’s decision to display the pear list shows a new appreciation of an ordinary reminder.",
+          "Preserve mixed feelings and limited changes. One meaningful purchase does not establish a permanent habit or a lesson about every person."
         ],
         "examples": [
           {
@@ -81,17 +80,15 @@
       {
         "heading": "Pace a decision instead of rereading everything",
         "body": [
-          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
-          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
-          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+          "For a main-idea choice, check one sentence from the beginning and one from the ending. Then ask whether the middle supports the same movement.",
+          "If two choices remain, name their difference: who they include, how the writer feels, or what happens. Return to the part of the passage that settles that difference."
         ]
       },
       {
         "heading": "Review the reason for the miss and test the repair",
         "body": [
-          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
-          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
-          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+          "After a miss, label its cause: chose a detail, ignored the ending, exaggerated the conclusion, or imported an outside idea.",
+          "Rewrite the main idea in one sentence using two passage anchors. Then try a new passage; recognizing an answer you have already seen is not evidence of transfer."
         ]
       }
     ],
@@ -167,21 +164,20 @@
   {
     "slug": "reading-details",
     "title": "Details, sequence, and cause",
-    "intro": "Locate exact evidence and distinguish a sequence from a causal explanation. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "intro": "Find the exact detail that answers the question.",
     "sections": [
       {
         "heading": "Use the screen to build a passage map",
         "body": [
-          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
-          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
-          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+          "Map where each fact lives: people, events, dates, measurements, and explanations. You need locations, not a memorized list of details.",
+          "Use the question’s distinctive noun or action to return to the right paragraph. Read the neighboring sentence before choosing."
         ]
       },
       {
         "heading": "Turn the stem into a precise search",
         "body": [
-          "An explicit-detail question asks what the passage states, but the answer may use a paraphrase rather than identical words. First identify the requested fact: who acted, what happened, when it happened, why the text says it happened, or what a named measurement counts. Use the question’s distinctive noun or event to find the relevant paragraph. Read the surrounding sentence too; a phrase quoted correctly can still be attached to the wrong person or stage of the story.",
-          "In the bus passage, asking why the report mentions the summer program requires the sentence naming the limits of the trial. The program may have affected demand. It is not evidence that every future route is funded, because the passage never makes that financial claim. Paraphrase the located evidence in your own words before checking the options. This small step keeps a familiar-looking choice from displacing the actual relationship you just found. Exact evidence takes priority over a plausible general explanation."
+          "Turn the question into a search target: who did what, when, or under which condition? Find that event, then match the requested detail.",
+          "A correct quotation can still answer the wrong question. Check the actor, time, and unit before accepting a choice."
         ],
         "examples": [
           {
@@ -199,8 +195,8 @@
       {
         "heading": "Separate sequence from cause",
         "body": [
-          "An event occurring after another event does not automatically mean the first caused the second. Detail questions sometimes ask for the order of events, while other questions ask for a cause explicitly supplied by the passage. Keep those tasks separate. In a pilot that adds an evening return window and reminder messages at the same time, improved returns follow both changes. The passage can report that sequence without assigning the entire improvement to either change alone.",
-          "Build a quick sequence when dates or stages matter: initial expectation, trial, observation, revised report, further test. Then examine causal language. Because, led to, and attributed to can establish a stated explanation; coincided with marks a weaker relationship. A choice may preserve the right events but reverse their order or strengthen coincidence into proof. When the stem asks according to the passage, report the text’s claim faithfully even if you personally think another explanation is likely. Your outside knowledge cannot supply a causal statement the writer did not make."
+          "Separate what happened next from what caused it. “Returns improved after reminders began” states sequence; it does not isolate reminders as the cause.",
+          "If the question asks why, find the explanation the text supplies. Do not replace it with a plausible explanation of your own."
         ],
         "examples": [
           {
@@ -218,8 +214,8 @@
       {
         "heading": "Control the unit, speaker, and condition",
         "body": [
-          "A detail’s unit is part of the fact. A tool-return count measures tools, not borrowers. Occupied seats at two times do not count distinct visitors over the whole afternoon. A map assembled from volunteer participants reflects that group, not automatically every resident. Before accepting a number or comparison, identify what is counted, over which period, and under what conditions. These qualifiers often do more work than the number itself.",
-          "Also track speakers. A visitor may propose a strong interpretation that the researchers immediately qualify; the passage does not thereby endorse the visitor’s claim. A director and a historian can agree about unsafe rigging while disagreeing about retained machinery. When an option says the report, the historian, or the narrator believes something, check that speaker specifically. An accurate sentence from Passage A is not necessarily an accurate description of Passage B. Underline the attribution mentally and reread the sentence where the opinion appears."
+          "Keep the number attached to what it counts. Tool returns are not unique borrowers; occupied seats are not distinct visitors.",
+          "Check speaker and condition too. A volunteer’s claim is not automatically the author’s conclusion, and results for one group do not describe everyone."
         ],
         "examples": [
           {
@@ -232,8 +228,8 @@
       {
         "heading": "Check a paraphrase without demanding identical wording",
         "body": [
-          "The right answer may translate a stated phrase into simpler language. A report’s guarded wording can mean that evidence supports continuing a trial without justifying daily expansion. The passage need not use the exact word cautious for that paraphrase to be correct. Match the relationship and strength of the claim, not merely repeated vocabulary. Conversely, an option can borrow several words from the passage and connect them in a way the text never does.",
-          "After finding the evidence, compare each option’s actor, action, object, and qualifier. A choice saying the curator changes the caption is supported; one saying she removes the first map reverses the preserved-project detail. Reject an option for a concrete mismatch rather than for sounding unfamiliar. If the fact appears in two places, use both when necessary to resolve a pronoun or chronology. This evidence-first habit makes explicit-detail questions efficient while preventing careless substitutions that can be costly near the top of the score range."
+          "A correct paraphrase keeps the fact and its strength while changing the wording. “Guarded support” can become “cautious approval”; it cannot become “proof.”",
+          "Substitute the choice into the passage’s claim. Reject a choice that copies familiar words but changes their relationship."
         ],
         "examples": [
           {
@@ -246,17 +242,15 @@
       {
         "heading": "Pace a decision instead of rereading everything",
         "body": [
-          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
-          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
-          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+          "Find the requested fact before weighing all the choices. Mark the sentence that answers the precise question.",
+          "When two options differ by a date, person, or condition, compare that feature directly with the source. Avoid rereading unrelated paragraphs."
         ]
       },
       {
         "heading": "Review the reason for the miss and test the repair",
         "body": [
-          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
-          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
-          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+          "Identify the exact mismatch in a missed detail: wrong speaker, unit, date, condition, or cause.",
+          "Write the corrected fact with its limits intact: who, when, how many, or under what conditions. Then try that same check on a fresh passage."
         ]
       }
     ],
@@ -332,21 +326,20 @@
   {
     "slug": "reading-inference",
     "title": "Evidence-based inference",
-    "intro": "Make the smallest inference the text supports; control scope and certainty. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "intro": "Use clues in the passage to reach a supported conclusion.",
     "sections": [
       {
         "heading": "Use the screen to build a passage map",
         "body": [
-          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
-          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
-          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+          "An inference is a conclusion you draw from clues rather than a statement you copy from the text. Look for actions, differences, and limits that support the conclusion.",
+          "Keep track of who believes what and what changes. An answer that could happen is not enough; this passage must give reasons to believe it."
         ]
       },
       {
         "heading": "Make the smallest supported bridge",
         "body": [
-          "An inference is a conclusion not stated in exactly the answer’s wording but supported by the text. It is not an invitation to invent a motive or complete a story. Identify the stated facts and ask what modest connection follows from them. Mara buys the pears named in her grandmother’s note and displays the note beside them. This supports a wish to act on the reminder of care. It does not establish that she will never buy another kind of fruit.",
-          "Treat the answer as a bridge whose ends must both touch textual evidence. One end is the observed action or claim; the other is the proposed meaning. If the bridge requires an unstated biography, a future event, or knowledge the passage never provides, it is too long. Prefer a conclusion that explains the available details without adding a new obligation. Inference answers often use most reasonably, likely, or suggests because the task concerns support rather than direct quotation or certainty about every possible interpretation."
+          "Start with a stated fact, then make the smallest supported connection. Mara buys the pears named in her grandmother’s note and displays the note: she is acting on a reminder of care.",
+          "Avoid adding a permanent decision, hidden motive, or future outcome that the text does not establish."
         ],
         "examples": [
           {
@@ -364,8 +357,8 @@
       {
         "heading": "Distinguish reasonable uncertainty from unsupported possibility",
         "body": [
-          "Many things are possible in real life, but an ACT Reading inference must be more than possible. The theater historian could own a collection of old cables, yet nothing in the passage supports that claim. The historian’s conditions for renovation do support approval of safety upgrades that preserve representative mechanisms and documentation. Evidence narrows the choice among possible worlds. Ask why this passage, rather than any passage on the same subject, makes the inference reasonable.",
-          "Qualifiers matter on both sides. A researcher’s plan to gather further evidence suggests caution about an early conclusion; it does not show certainty that the early trend is false. Continued use of a method alongside documented limitations suggests qualified trust, not total rejection. Avoid opposite extremes when the passage describes a conditional position. To test a choice, point to the sentence supporting its certainty level. If the text says some, a choice saying all needs additional evidence. If it says may, a choice saying guarantees usually outruns the claim."
+          "Separate “could be true” from “supported here.” Checking an archive’s hours supports planning a visit; it does not establish ownership of the archive.",
+          "Ask which specific detail makes the inference reasonable. If the same claim could fit almost any passage on the subject, it needs stronger support."
         ],
         "examples": [
           {
@@ -383,8 +376,8 @@
       {
         "heading": "Infer attitudes from choices and contrasts",
         "body": [
-          "Characters and authors reveal attitudes through actions, concessions, and comparisons. Nico returns to the same location and hears more after following the listening instruction. Giving both recordings the same place name suggests that his attention, rather than a new location, explains the contrast. The passage supports this inference with the final observation that the place has barely changed. An inference about attitude is strongest when an action and an explicit contrast point in the same direction.",
-          "Do not flatten mixed attitudes into a single extreme. A narrator can value family history while discarding most papers, or enjoy an unplanned musical exchange while worrying about time. An informational writer can welcome a new camera method and examine its distortions. Look for the position the writer retains after acknowledging the difficulty. A choice saying rejects all measurement is not supported by a passage that improves definitions and keeps collecting data. Read concessions as part of the attitude rather than as proof of a complete reversal."
+          "Work out how a person feels by combining their actions with what changes. Nico returns to the same place but listens more carefully; the richer recording points to a change in attention.",
+          "Keep mixed feelings together. Praise plus a practical worry means approval with a concern, not complete enthusiasm or rejection."
         ],
         "examples": [
           {
@@ -397,8 +390,8 @@
       {
         "heading": "Use the contradiction test on tempting options",
         "body": [
-          "When two inference choices remain, ask what would have to be true for each to hold. Then compare those requirements with the text. A choice saying a council promised permanent daily service requires an actual commitment; the passage explicitly approves another trial without promising permanence. A choice saying the office wants to test a promising trend under additional conditions fits both the continued service and the unresolved seasonality question. This test makes the inferential gap visible instead of relying on which option feels more confident.",
-          "A contradiction is stronger grounds for elimination than a personal preference. Wrong answers may reverse the evidence, introduce an unsupported motive, generalize beyond the sample, or remove an explicit condition. Name that defect. For a supported inference, name the two pieces of evidence that combine to justify it. Practicing this short explanation on untimed drills builds a habit you can compress during a timed section. The goal is disciplined inference: enough interpretation to answer the question, without adding facts the passage does not supply."
+          "For each remaining choice, ask what would have to be true. Then look for a passage detail that supports or contradicts that requirement.",
+          "Approving another trial does not promise permanent service. A choice that preserves uncertainty can fit better than one that sounds decisive."
         ],
         "examples": [
           {
@@ -411,17 +404,15 @@
       {
         "heading": "Pace a decision instead of rereading everything",
         "body": [
-          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
-          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
-          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+          "Link a clue to your conclusion: “The text says __, so I can reasonably conclude __.” The better answer should require fewer details you have to invent.",
+          "If neither choice has a clear link, return to the relevant action or contrast instead of inventing an explanation."
         ]
       },
       {
         "heading": "Review the reason for the miss and test the repair",
         "body": [
-          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
-          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
-          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+          "After a miss, name the unsupported leap: motive, certainty, future outcome, or a claim about everyone.",
+          "Replace it with a smaller conclusion and cite the action or statement that supports it. Try the same process on new text."
         ]
       }
     ],
@@ -497,21 +488,20 @@
   {
     "slug": "reading-vocabulary",
     "title": "Words in context",
-    "intro": "Use the surrounding sentence to select the meaning actually intended. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "intro": "Use the surrounding sentence to work out a word’s meaning.",
     "sections": [
       {
         "heading": "Use the screen to build a passage map",
         "body": [
-          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
-          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
-          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+          "Locate the target word, then read its sentence and the sentences around it. Note what the word describes or acts on.",
+          "Your task is its meaning here. A familiar dictionary meaning can be wrong in this context."
         ]
       },
       {
         "heading": "Read the local meaning before recalling the dictionary",
         "body": [
-          "A familiar word can have several correct dictionary meanings, but a words-in-context question asks which meaning fits this use. Locate the word in its sentence and read the sentence before and after it. Identify whether it names an action, attitude, relationship, or technical idea. Then replace it mentally with a plain phrase. Guarded wording in a report means cautious wording, not wording watched by security officers. The surrounding claim about limited evidence selects the sense.",
-          "Keep the original grammar intact when testing a substitute. If the word describes a model as provisional, the sentence may explain that new observations can revise it. Open to revision fits that function; temporary in the sense of disposable after a fixed date may not. The right answer must preserve meaning in this particular sentence rather than list every association you have with the word. A common meaning is not automatically the contextual meaning, and a technical-looking option can be wrong if the passage is using an ordinary figurative sense."
+          "Before looking at choices, replace the word with a plain phrase. “Guarded wording” in a cautious report means wording that avoids a strong claim.",
+          "Substitute each candidate into the sentence. Keep the grammar, meaning, and tone of the original."
         ],
         "examples": [
           {
@@ -529,8 +519,8 @@
       {
         "heading": "Use nearby contrasts and examples as definitions",
         "body": [
-          "Writers often explain a word indirectly through contrast. The historian contrasts erased evidence with a past that remains legible, so legible means understandable from the surviving evidence rather than written in neat handwriting. Nico notices pauses between traffic sounds, so intervals refers to periods between louder sounds. Look for the example or contrast that constrains the word. A colon, dash, appositive, or following explanation can provide the necessary definition without a formal dictionary statement.",
-          "If the word appears in a quotation, determine who uses it and why. A speaker may use modernization skeptically, while another treats it as a practical upgrade. The quotation marks can indicate a disputed label rather than the author’s unqualified endorsement. Context includes rhetoric as well as neighboring nouns. The best substitute should preserve that attitude when the stem asks for the word’s meaning, but do not turn a vocabulary question into a broad judgment about the whole speaker. Answer the local semantic task first."
+          "Look for a contrast, example, or explanation near the word. “Spare rather than ornate” points toward minimal decoration.",
+          "Use those clues to narrow the meaning before relying on a remembered definition. Then reread the sentence with your substitute."
         ],
         "examples": [
           {
@@ -548,8 +538,8 @@
       {
         "heading": "Avoid literal answers to a figurative use",
         "body": [
-          "Reading questions frequently exploit a literal sense that is valid elsewhere. Filing a list away means putting it into organized storage; it does not mean smoothing the paper with a metal file. A narrator’s conviction loosening means becoming less rigid, not being physically untied. A measurement method shaping a result can influence the result without forming it with a mold. Establish the object of the verb or adjective, since that object often reveals whether the sense is literal or figurative.",
-          "You do not need to label a figure of speech to answer correctly. You need a substitute that makes the sentence retain its meaning. Read the resulting sentence aloud in your head. Does it describe the same action and carry the same degree of certainty? An option may sound sophisticated while shifting from a belief becoming less rigid to a belief being completely forgotten. Those are different changes. The passage may show the narrator still wants to play well while abandoning only an exclusive image of rehearsal, so the narrower substitute is necessary."
+          "Ask whether the word describes a real action or creates a comparison. Filing a list away means storing it. A belief “loosening” means becoming less fixed, not being physically untied.",
+          "Identify the object of the action. An unresolved question can “haunt” a project without anything supernatural occurring."
         ],
         "examples": [
           {
@@ -562,8 +552,8 @@
       {
         "heading": "Verify a substitute against the paragraph’s claim",
         "body": [
-          "After a candidate fits the sentence, check it against the paragraph. Pertinent in the paired recording passages means relevant to an inquiry because the writer contrasts details that matter to different research questions. It does not mean especially loud, even though the passage concerns sound. Neutral in the root-camera passage describes a boundary that does not influence what is observed, not soil acidity. The paragraph’s argument prevents subject-related distractors from gaining support merely by sounding appropriate to music or science.",
-          "When all choices seem unfamiliar, predict a simple phrase from the context before selecting the nearest option. If you cannot predict it, read the explanatory clause again rather than guessing from the word’s appearance. Avoid relying on a remembered synonym that has a different intensity or grammatical role. Review a miss by writing the full substituted sentence and identifying which nearby words establish the sense. This turns vocabulary review into a reusable context-reading process rather than a list of definitions disconnected from actual passages."
+          "After a substitute fits the sentence, test it against the paragraph’s claim. A “neutral” observation method does not influence the result; the word need not refer to soil acidity.",
+          "Reject choices that fit the passage’s general subject but change the local argument."
         ],
         "examples": [
           {
@@ -576,17 +566,15 @@
       {
         "heading": "Pace a decision instead of rereading everything",
         "body": [
-          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
-          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
-          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+          "Use a two-step check: substitute the candidate, then reread the surrounding claim. Eliminate any choice that changes the writer’s attitude or degree of certainty.",
+          "Do not spend time listing every dictionary sense. The sentence and paragraph decide which one applies."
         ]
       },
       {
         "heading": "Review the reason for the miss and test the repair",
         "body": [
-          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
-          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
-          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+          "After a vocabulary miss, record the contextual clue you overlooked: contrast, example, object, or tone.",
+          "Write a new sentence using that meaning. Then test the method with a different word in a fresh passage."
         ]
       }
     ],
@@ -662,21 +650,20 @@
   {
     "slug": "reading-craft",
     "title": "Purpose, tone, and structure",
-    "intro": "Track what each paragraph does and distinguish the author from quoted speakers. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "intro": "Notice how the writer’s choices shape the passage.",
     "sections": [
       {
         "heading": "Use the screen to build a passage map",
         "body": [
-          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
-          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
-          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+          "Map what each paragraph does, not just its topic: introduces a claim, illustrates it, raises an objection, or limits a conclusion.",
+          "Track changes in speaker and perspective. A quoted opinion may be included so the author can challenge it."
         ]
       },
       {
         "heading": "Ask what a paragraph does, not only what it says",
         "body": [
-          "A function question concerns the role of a detail or paragraph in the passage’s development. The resident’s complaint about weekday employment says the Saturday bus is useful but too infrequent for that need. Its function is to show a need the current pilot does not fully address. Repeating the sentence’s topic is not enough. Connect the detail to the surrounding argument: does it introduce a problem, illustrate a claim, qualify a result, present an objection, or explain a change?",
-          "Try a because sentence: the author includes this example because it shows a limitation in the current service. Then test that statement against what comes before and after. If the preceding paragraph praises rising attendance and the following one lists unresolved questions, the complaint helps complicate simple success. A function choice should describe the actual contribution without inventing a new argument. It does not prove the route benefits nobody, because the resident explicitly calls it useful. Function and factual accuracy must agree."
+          "Ask what the detail contributes to the surrounding argument. A commuter’s account can illustrate an access problem without proving that every resident has it.",
+          "Connect the paragraph to what comes before and after. A function answer describes that relationship, not merely the detail’s subject."
         ],
         "examples": [
           {
@@ -694,8 +681,8 @@
       {
         "heading": "Separate tone from topic and intensity",
         "body": [
-          "Tone describes the writer’s attitude expressed through diction and treatment of evidence, not merely the emotional associations of the subject. A passage about storm damage can be measured rather than alarmed. A family-memory narrative can be affectionate without claiming every object is sacred. Identify patterns: qualified verbs, acknowledged limitations, amused self-correction, or sharp criticism. One dramatic noun cannot outweigh the broader way the writer handles the material.",
-          "Compare neighboring tone choices by intensity. Cautious is different from hostile; appreciative is different from worshipful; skeptical is different from dismissive. A researcher who extends a promising trial while gathering more evidence is cautious, not contemptuous of the project. A narrator who laughs at an expectation can be gently self-aware rather than bitter. Find a sentence that directly supports the attitude and another that limits its strength. This double check helps reject extreme labels that latch onto one phrase while ignoring the rest of the passage."
+          "Identify tone from the writer’s wording and treatment of evidence. Approval plus a stated limit supports a cautiously favorable tone.",
+          "Match both direction and intensity. A passage about damage can still be measured; one dramatic word does not make the entire passage alarmed."
         ],
         "examples": [
           {
@@ -713,8 +700,8 @@
       {
         "heading": "Track perspective, quotation, and structural shifts",
         "body": [
-          "The narrator, the author, and a quoted speaker are different sources of perspective. In the root passage, a visitor offers a broad interpretation and the researchers narrow it. A question about the author’s reason for including the visitor therefore concerns a contrast between an appealing claim and supported evidence, not endorsement of that claim. Follow the attribution before assigning an attitude. In paired texts, label each writer’s purpose independently before inferring agreement or disagreement.",
-          "Structural shifts often reveal purpose. A paragraph beginning with another complication may add a limitation; one beginning after the trial can move from observation to response. In narrative, a repeated object may gain a different meaning by the end. The rehearsal-room chairs begin as part of an impressive arrangement and end as furniture willingly returned for other uses. The object itself has not changed, but its role in the narrator’s understanding has. A correct structure answer connects those stages rather than merely noticing that chairs appear twice."
+          "The author writes the piece; the narrator tells the story; a quoted speaker gives their own words. Check who is speaking before deciding whose belief a sentence expresses.",
+          "Read what follows a quotation. The author may answer an objection, explain a limit, or compare it with evidence instead of agreeing with it."
         ],
         "examples": [
           {
@@ -727,8 +714,8 @@
       {
         "heading": "Explain the effect of imagery without overreading it",
         "body": [
-          "A comparison or image directs attention to a relationship. Calling a locked theater a photograph of itself contrasts a static record with repeated public use. It does not establish the writer’s experience with cameras or the financial superiority of exhibitions. In the music-room narrative, old carpet dents make previous arrangements tangible. Their function is to remind the narrator that the room already has other uses, not to prove a particular piece of furniture is damaged.",
-          "To analyze an image, identify the two things compared and the quality they share in context. Then connect that quality to the nearby claim. Resist assigning a symbolic meaning that depends on outside assumptions. The bell, pears, map, or window can carry meaning because the passage develops a contrast around it; the same object could function differently in another text. Review by finishing the sentence this image helps the reader understand that, using evidence from the paragraph. If your explanation floats free of that paragraph, return to the text and narrow it."
+          "Explain what the image helps the reader notice. Calling a locked theater “a photograph of itself” contrasts a static record with public use.",
+          "Keep your explanation close to the text. A metaphor describes one thing through another; calling a theater a photograph does not make it an actual photograph."
         ],
         "examples": [
           {
@@ -741,17 +728,15 @@
       {
         "heading": "Pace a decision instead of rereading everything",
         "body": [
-          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
-          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
-          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+          "For a purpose question, read the sentence with its neighbors. Name what it does: gives an example, questions a claim, adds a limit, or shows a difference.",
+          "For tone, compare two pieces of wording. Reject choices that overstate the emotion or confuse the topic with the attitude."
         ]
       },
       {
         "heading": "Review the reason for the miss and test the repair",
         "body": [
-          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
-          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
-          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+          "After a miss, name what you mixed up: what a detail says versus why it is there, a quoted speaker versus the author, an actual fact versus an image, or a mild feeling versus an extreme one.",
+          "Explain why the writer placed the detail there, then apply the same distinction to a new passage."
         ]
       }
     ],
@@ -827,21 +812,20 @@
   {
     "slug": "reading-integration",
     "title": "Paired texts and visual evidence",
-    "intro": "Compare claims and combine passage evidence with another text or graphic. Learn the evidence process, study six worked examples, and test it on three new passages.",
+    "intro": "Connect ideas across passages and compare their evidence.",
     "sections": [
       {
         "heading": "Use the screen to build a passage map",
         "body": [
-          "An enhanced Reading section gives you forty minutes for thirty-six questions arranged around four passage units. Think in units, not isolated questions: roughly ten minutes must cover reading, finding evidence, and answering nine questions. This is a planning checkpoint rather than an order to abandon a useful question at an exact second. If you spend twelve minutes on the first unit, you need to notice that debt before repeating the same pace three more times. Begin with a clear view of the passage and use the question navigator to see unanswered and flagged items.",
-          "On the first read, assign each paragraph a short job in your head: introduces a problem, gives an example, challenges an explanation, changes the speaker’s view, or limits a result. You do not need to memorize every date or number. A useful map tells you where to return. In a narrative, track the narrator’s initial expectation and the event that changes it. In an informational passage, distinguish the question being investigated, the evidence, and the conclusion. For paired texts, give each writer a separate claim before searching for agreement.",
-          "Use the lab’s text-size control when it improves readability, and scroll within the passage rather than treating the visible screen as the whole text. A question may point to material below the current view. The lab approximates useful screen-based actions; the official platform can present tools differently, so rehearse with ACT’s official digital practice as well. Flags preserve a question for review, and elimination should remove a choice only for an identifiable reason. An answer left selected still counts as your answer even when the item is flagged."
+          "Map each source separately before combining them. Write a short claim for A and a separate claim for B, including each condition or limit.",
+          "For a graphic, read its title, labels, units, and time period. Similar-looking numbers may measure different things."
         ]
       },
       {
         "heading": "Map each source before comparing them",
         "body": [
-          "In paired texts, write a short mental claim for A and a separate claim for B. The theater director wants safe equipment and a building used by the public. The historian supports safety changes while preserving representative old mechanisms and documentation. Both reject an unsafe frozen building, but the historian adds a condition about retained evidence. If you merge the sources before naming their positions, you can confuse a condition stated by one writer with a shared demand.",
-          "For agreement questions, find support in both texts. For difference questions, name the contrast without exaggerating it into total opposition. The recording engineer focuses on making processing choices inspectable; the historian extends that concern to future research questions. Neither prohibits all processing. A difference answer can describe emphasis rather than disagreement. Read the stem carefully: what both would accept, how B responds to A, and what distinguishes their approaches are separate tasks with separate proof obligations."
+          "Compare each writer’s claim and conditions. A director may support safe renovation while a historian supports it only if representative evidence survives.",
+          "Name both the shared aim and the difference. Do not turn a condition from one writer into a demand made by both."
         ],
         "examples": [
           {
@@ -859,8 +843,8 @@
       {
         "heading": "Combine evidence without inventing a compromise",
         "body": [
-          "A synthesis answer must follow from the sources supplied, not from a compromise you wish the writers would adopt. One writer may value use and another documentary evidence; a supported shared claim can be that preservation allows safe changes. It cannot become documentation makes every removal harmless, because the historian still values retained mechanisms. Preserve each writer’s conditions when building the combined statement. Shared ground is the overlap of their actual claims, not the average of two imagined extremes.",
-          "Cross-reference the relevant paragraph in each text. If an option relies entirely on Passage A, it cannot establish agreement unless Passage B also supports it. If the stem asks how one passage extends another, identify the new consideration and the common starting point. Future researchers valuing currently distracting sounds extends the engineer’s concern about visible choices because it explains why alternatives must remain available. This relationship is more specific than both discuss recordings, which names a subject without showing how the arguments connect."
+          "A combined conclusion must be supported by the supplied sources. Put their claims together without inventing a compromise.",
+          "“The pilot improved access” and “its costs remain uncertain” can both be true. Neither statement proves that any cost is worthwhile."
         ],
         "examples": [
           {
@@ -878,8 +862,8 @@
       {
         "heading": "Read the graphic’s labels before its pattern",
         "body": [
-          "A visual-information item requires the passage and graphic together. Start with the title, axes or column labels, units, time period, and category definitions. An occupied-seat count is not a unique-visitor count. A tool-return percentage uses scheduled returns as the denominator, not the number of volunteers. When a row shows eighty-one on-time returns out of ninety scheduled returns, the proportion is ninety percent. Eighty-one is a count; it becomes a percent only after division by the stated total.",
-          "Before comparing periods, ask whether denominators or measurement conditions changed. A raw increase can coexist with a smaller rate, and a rate increase need not isolate a cause. The passage may identify reminders, weather, or seasonality as simultaneous changes. Use the graphic to establish the numerical pattern and the prose to establish what that pattern can reasonably mean. If the chart cannot count distinct people, no clever calculation creates that missing measure. Reject answers that change the unit or treat an association as experimental proof."
+          "Keep quantities and denominators consistent. Eighty-one on-time returns out of ninety scheduled returns is 90%; eighty-one alone is a count.",
+          "Occupied seats and unique visitors measure different things. Check definitions before treating a graph as evidence for the passage’s claim."
         ],
         "examples": [
           {
@@ -892,8 +876,8 @@
       {
         "heading": "Keep a combined conclusion within all supplied limits",
         "body": [
-          "Integration questions often tempt you with a true-looking sentence that ignores a qualification elsewhere. A table may show fewer unfilled requests, while the text explains that it counts only requests blocked by tools still out. You can conclude that this type of request decreased during the trial. You cannot conclude that every requested tool was available or that the library should stop purchasing tools. The combined answer must satisfy the graphic’s definitions and the passage’s scope simultaneously.",
-          "For a final check, make a two-column mental audit: what the source shows, and what it does not show. A clear image can illustrate root growth without representing all plots; two library seat observations can show occupancy at those times without measuring an afternoon’s unique visitors. In paired texts, apply the same discipline to authors’ positions. Mark the evidence supporting the shared claim and the condition that limits it. A careful synthesis usually retains those conditions, even if a broader answer sounds more decisive."
+          "Check a proposed conclusion against every source’s limits. Fewer requests blocked by overdue tools does not mean every requested tool was available.",
+          "A conclusion about two tested groups does not establish all groups or equal effects. Preserve who was measured and under which conditions."
         ],
         "examples": [
           {
@@ -906,17 +890,15 @@
       {
         "heading": "Pace a decision instead of rereading everything",
         "body": [
-          "Give the first read a purpose: learn enough structure to locate evidence efficiently. After reading a question, name the task before examining its choices. Is it asking for an explicit detail, an inference, a word’s local meaning, a paragraph’s function, or a relationship between sources? Different tasks require different evidence. A detail usually sends you back to a narrow location; a summary needs the passage’s controlling movement. Rereading the entire passage for every question hides this difference and consumes time without guaranteeing a better decision.",
-          "If two choices remain, compare them against the same piece of evidence. Ask which word in each choice creates the disagreement. The decisive difference is often scope, certainty, chronology, speaker, or purpose rather than an unfamiliar vocabulary word. A choice saying every participant is not interchangeable with one saying the interviewed group. Identify the mismatch in a short phrase. If you cannot locate support after a deliberate attempt, select the best available answer, flag it, and move. Use a later return to test one unresolved issue rather than restart the question from nothing.",
-          "At each passage transition, check elapsed time and unanswered items. Reserving a brief final review is useful only if you have selected answers throughout the section. This practice lab records raw accuracy on original material; it cannot promise a particular ACT scaled score. Your score goal should guide careful review of repeated errors, not encourage claims that a small practice set predicts a thirty-six. Build speed from a consistent evidence process, then examine whether timing or comprehension changes when you use complete forty-minute forms."
+          "Build a two-column comparison in your head: A claims __; B claims __. Locate the exact overlap or disagreement the question asks about.",
+          "For a graph or table, read the needed row or point and connect it to the passage. Do not assume two things are related just because they look similar."
         ]
       },
       {
         "heading": "Review the reason for the miss and test the repair",
         "body": [
-          "Before revealing an explanation, record a specific confidence judgment. Afterward, compare your chosen answer with the actual evidence rather than simply reading why the key is correct. Write the smallest rule that would have changed your decision: return to the stated date, separate the quoted speaker from the author, reject a claim about every resident, or compare proportions using the same denominator. A note such as read more carefully is too broad to guide another attempt. Name the exact decision you made and the evidence you overlooked.",
-          "Use the error-cause control to distinguish content or comprehension gaps from timing, a misread stem, a rushed choice, or uncertainty between two options. A slow correct answer can still reveal a weak process, while a quick wrong answer can reveal unjustified confidence. Review at least one tempting distractor and explain its defect using the passage. If the explanation sounds equally applicable to every wrong choice, make it more concrete. The point is to acquire a transferable check, not memorize which letter happened to be right in one question.",
-          "After the repair, do a fresh set rather than immediately repeating the same remembered item. Keep full-section questions separate from topic drills so the timed result measures a new decision. This lab saves completed practice to your signed-in account and shows mastery only after sufficient distinct-question evidence. A topic badge is a signal about this bank, not proof of an official scaled score. When today’s plan exceeds the available budget, unfinished tasks remain visible and carry forward in order; extra work should be a deliberate choice rather than an invisible doubling of tomorrow’s assignment."
+          "After a miss, identify whether you merged speakers, ignored a condition, changed units, or claimed more than both sources support.",
+          "Repair the combined claim in one sentence and verify it against each source separately. Then try a fresh pair of sources."
         ]
       }
     ],

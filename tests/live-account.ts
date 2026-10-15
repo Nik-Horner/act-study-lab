@@ -214,6 +214,8 @@ async function main() {
   });
   assert.equal(eng.response.status, 200);
   const english = await call("/api/exam/submit", {
+    attemptId: randomUUID(),
+    ownerId: a.id,
     examId: "exam-1",
     answers: [],
     durationSeconds: 10,

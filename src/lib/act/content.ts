@@ -1,4 +1,5 @@
 import readingTopics from "@/content/reading-topics.json";
+import lessonActivities from "@/content/lesson-activities.json";
 import readingLessons from "@/content/reading-lessons.json";
 import readingQuestions from "@/content/reading-questions.json";
 import readingExams from "@/content/reading-exams.json";
@@ -46,8 +47,14 @@ export function getLesson(slug: string) {
   if (!lesson) throw new Error("Unknown lesson");
   return {
     ...lesson,
-    sections: lesson.sections.map((section) => ({
+    sections: lesson.sections.map((section, index) => ({
       ...section,
+      activity: (
+        lessonActivities as Record<
+          string,
+          NonNullable<Lesson["sections"][number]["activity"]>[]
+        >
+      )[slug]?.[index],
       evidence: (section.evidenceIds ?? []).map((id) => {
         const passage = questions.find(
           (q) => !reserved.has(q.id) && q.passage?.id === id,

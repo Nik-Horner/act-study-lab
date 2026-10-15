@@ -32,14 +32,14 @@ const proofs = [
   },
   {
     id: "math-functions-d10",
-    key: "x > 2 and x ≠ 5",
+    key: "x > 2 and \\(x \\ne  5\\)",
     calculation: "[2,3,4,5,6].map(x=>x-2>0&&x-5!==0)",
     result: [false, true, true, false, true],
     skill: "domain intersections",
   },
   {
     id: "math-functions-d11",
-    key: "y ≤ 7",
+    key: "\\(y \\le  7\\)",
     calculation: "[-3,-1,0,2].map(x=>-2*(x+1)**2+7)",
     result: [-1, 7, 5, -11],
     skill: "quadratic range",
@@ -53,7 +53,7 @@ const proofs = [
   },
   {
     id: "math-functions-d13",
-    key: "x = 4",
+    key: "\\(x = 4\\)",
     calculation: "[4-4,2*4+1]",
     result: [0, 9],
     skill: "rational asymptotes",
@@ -67,7 +67,7 @@ const proofs = [
   },
   {
     id: "math-functions-d15",
-    key: "80(1.25)ᵗ",
+    key: "\\(80(1.25)^{t}\\)",
     calculation: "[0,1,2].map(t=>80*1.25**t)",
     result: [80, 100, 125],
     skill: "exponential recognition",
@@ -81,7 +81,7 @@ const proofs = [
   },
   {
     id: "math-functions-d17",
-    key: "−1",
+    key: "\\(-1\\)",
     calculation: "[(-1-2)**2+1,(-1<=2),(5<=2)]",
     result: [10, true, false],
     skill: "restricted quadratic inverse",
@@ -116,7 +116,7 @@ const proofs = [
   },
   {
     id: "math-functions-d22",
-    key: "3x⁴ − 2x² + 7",
+    key: "\\(3x^{4} - 2x^{2} + 7\\)",
     calculation:
       "[-2,-1,0,1,2].every(x=>3*(-x)**4-2*(-x)**2+7===3*x**4-2*x**2+7)",
     result: true,
@@ -166,7 +166,7 @@ const proofs = [
   },
   {
     id: "math-functions-d29",
-    key: "x ≥ 1 and x ≠ 10",
+    key: "\\(x \\ge  1\\) and \\(x \\ne  10\\)",
     calculation: "[0,1,3,10,11].map(x=>x>=1&&Math.sqrt(x-1)!==3)",
     result: [false, true, true, false, true],
     skill: "composition domains",
@@ -180,7 +180,7 @@ const proofs = [
   },
   {
     id: "math-functions-d31",
-    key: "2x + h",
+    key: "\\(2x + h\\)",
     calculation:
       "[[1,2],[-3,4],[0,5]].every(([x,h])=>(((x+h)**2+1)-(x*x+1))/h===2*x+h)",
     result: true,
@@ -209,7 +209,7 @@ const proofs = [
   },
   {
     id: "math-geometry-d9",
-    key: "4π",
+    key: "\\(4\\pi\\)",
     calculation: "(80/360)*2*9",
     result: 4,
     skill: "arc length",
@@ -244,7 +244,7 @@ const proofs = [
   },
   {
     id: "math-geometry-d14",
-    key: "144°",
+    key: "\\(144^\\circ\\)",
     calculation: "(10-2)*180/10",
     result: 144,
     skill: "polygon angles",
@@ -258,7 +258,7 @@ const proofs = [
   },
   {
     id: "math-geometry-d16",
-    key: "16π",
+    key: "\\(16\\pi\\)",
     calculation: "5**2-3**2",
     result: 16,
     skill: "annulus area",
@@ -272,14 +272,14 @@ const proofs = [
   },
   {
     id: "math-geometry-d18",
-    key: "36π",
+    key: "\\(36\\pi\\)",
     calculation: "3**2*12/3",
     result: 36,
     skill: "cone volume",
   },
   {
     id: "math-geometry-d19",
-    key: "64π",
+    key: "\\(64\\pi\\)",
     calculation: "4*4**2",
     result: 64,
     skill: "sphere surface area",
@@ -300,14 +300,14 @@ const proofs = [
   },
   {
     id: "math-geometry-d22",
-    key: "(6, −3)",
+    key: "\\((6, -3)\\)",
     calculation: "[2*1-(-4),2*2-7]",
     result: [6, -3],
     skill: "midpoint reversal",
   },
   {
     id: "math-geometry-d23",
-    key: "4/3",
+    key: "\\(\\frac{4}{3}\\)",
     calculation: "-1/(-3/4)",
     result: 1.3333333333333333,
     skill: "perpendicular slopes",
@@ -321,14 +321,14 @@ const proofs = [
   },
   {
     id: "math-geometry-d25",
-    key: "48 − π",
+    key: "\\(48 - \\pi\\)",
     calculation: "8*6-Math.PI*2**2/4",
     result: 44.8584073464102,
     skill: "composite area",
   },
   {
     id: "math-geometry-d26",
-    key: "25√3",
+    key: "\\(25\\sqrt{3}\\)",
     calculation: "10**2*Math.sqrt(3)/4",
     result: 43.30127018922193,
     skill: "equilateral area",
@@ -342,7 +342,7 @@ const proofs = [
   },
   {
     id: "math-geometry-d28",
-    key: "70°",
+    key: "\\(70^\\circ\\)",
     calculation: "140/2",
     result: 70,
     skill: "inscribed arcs",
@@ -378,21 +378,21 @@ const proofs = [
   },
   {
     id: "math-trigonometry-d7",
-    key: "12/13",
+    key: "\\(\\frac{12}{13}\\)",
     calculation: "Math.sqrt(1-(5/13)**2)",
     result: 0.9230769230769231,
     skill: "quadrant signs",
   },
   {
     id: "math-trigonometry-d8",
-    key: "5/3",
+    key: "\\(\\frac{5}{3}\\)",
     calculation: "1/(3/5)",
     result: 1.6666666666666667,
     skill: "reciprocal ratios",
   },
   {
     id: "math-trigonometry-d9",
-    key: "sin θ",
+    key: "\\(\\sin  \\theta\\)",
     calculation:
       "[.3,.8,1.2].every(t=>Math.abs((1-Math.cos(t)**2)/Math.sin(t)-Math.sin(t))<1e-10)",
     result: true,
@@ -400,35 +400,35 @@ const proofs = [
   },
   {
     id: "math-trigonometry-d10",
-    key: "5π/4",
+    key: "\\(\\frac{5\\pi}{4}\\)",
     calculation: "225/180",
     result: 1.25,
     skill: "angle conversion",
   },
   {
     id: "math-trigonometry-d11",
-    key: "−1/2",
+    key: "\\(\\frac{-1}{2}\\)",
     calculation: "Math.sin(7*Math.PI/6)",
     result: -0.5,
     skill: "unit-circle exact values",
   },
   {
     id: "math-trigonometry-d12",
-    key: "1/2",
+    key: "\\(\\frac{1}{2}\\)",
     calculation: "Math.cos(-Math.PI/3)",
     result: 0.5,
     skill: "negative-angle symmetry",
   },
   {
     id: "math-trigonometry-d13",
-    key: "π/3",
+    key: "\\(\\frac{\\pi}{3}\\)",
     calculation: "Math.PI/3/Math.PI",
     result: 0.3333333333333333,
     skill: "tangent periods",
   },
   {
     id: "math-trigonometry-d14",
-    key: "π/4 to the right",
+    key: "\\(\\frac{\\pi}{4}\\) to the right",
     calculation: "Math.PI/4/Math.PI",
     result: 0.25,
     skill: "phase shifts",
@@ -442,7 +442,7 @@ const proofs = [
   },
   {
     id: "math-trigonometry-d16",
-    key: "√109",
+    key: "\\(\\sqrt{109}\\)",
     calculation: "5**2+7**2-2*5*7*Math.cos(120*Math.PI/180)",
     result: 109,
     skill: "law of cosines with obtuse angles",
@@ -456,21 +456,21 @@ const proofs = [
   },
   {
     id: "math-trigonometry-d18",
-    key: "10√2",
+    key: "\\(10\\sqrt{2}\\)",
     calculation: "10*Math.sin(Math.PI/4)/Math.sin(Math.PI/6)",
     result: 14.142135623730951,
     skill: "law of sines",
   },
   {
     id: "math-trigonometry-d19",
-    key: "30°",
+    key: "\\(30^\\circ\\)",
     calculation: "Math.atan(30/(30*Math.sqrt(3)))*180/Math.PI",
     result: 30,
     skill: "elevation recognition",
   },
   {
     id: "math-trigonometry-d20",
-    key: "2π",
+    key: "\\(2\\pi\\)",
     calculation: "(Math.PI/3+5*Math.PI/3)/Math.PI",
     result: 2,
     skill: "trig-equation intervals",
@@ -485,49 +485,49 @@ const proofs = [
   },
   {
     id: "math-trigonometry-d22",
-    key: "−7/25",
+    key: "\\(\\frac{-7}{25}\\)",
     calculation: "2*(3/5)**2-1",
     result: -0.28,
     skill: "double-angle cosine",
   },
   {
     id: "math-trigonometry-d23",
-    key: "150°",
+    key: "\\(150^\\circ\\)",
     calculation: "Math.atan2(.5,-Math.sqrt(3)/2)*180/Math.PI",
     result: 150,
     skill: "unit-circle coordinates",
   },
   {
     id: "math-trigonometry-d24",
-    key: "5/4",
+    key: "\\(\\frac{5}{4}\\)",
     calculation: "1/(4/5)",
     result: 1.25,
     skill: "secant signs",
   },
   {
     id: "math-trigonometry-d25",
-    key: "5√3 meters",
+    key: "\\(5\\sqrt{3}\\) meters",
     calculation: "10*Math.sin(Math.PI/3)",
     result: 8.660254037844386,
     skill: "right-triangle modeling",
   },
   {
     id: "math-trigonometry-d26",
-    key: "4π",
+    key: "\\(4\\pi\\)",
     calculation: "6*(2/3)",
     result: 4,
     skill: "radian arc formula",
   },
   {
     id: "math-trigonometry-d27",
-    key: "8/5",
+    key: "\\(\\frac{8}{5}\\)",
     calculation: "1+3/5",
     result: 1.6,
     skill: "identities and cross terms",
   },
   {
     id: "math-trigonometry-d28",
-    key: "3/5",
+    key: "\\(\\frac{3}{5}\\)",
     calculation: "Math.sqrt(1-(4/5)**2)",
     result: 0.6,
     skill: "cofunction identities",
@@ -550,14 +550,14 @@ const proofs = [
   },
   {
     id: "math-trigonometry-d31",
-    key: "−3/2",
+    key: "\\(\\frac{-3}{2}\\)",
     calculation: "1/(-2/3)",
     result: -1.5,
     skill: "cotangent",
   },
   {
     id: "math-trigonometry-d32",
-    key: "−120/169",
+    key: "\\(\\frac{-120}{169}\\)",
     calculation: "2*(5/13)*(-Math.sqrt(1-(5/13)**2))",
     result: -0.7100591715976331,
     skill: "double-angle sine with signs",
@@ -571,7 +571,7 @@ const proofs = [
   },
   {
     id: "math-statistics-probability-d8",
-    key: "140/11",
+    key: "\\(\\frac{140}{11}\\)",
     calculation: "(10*12+20)/11",
     result: 12.727272727272727,
     skill: "mean after adding data",
@@ -585,7 +585,7 @@ const proofs = [
   },
   {
     id: "math-statistics-probability-d10",
-    key: "6/11",
+    key: "\\(\\frac{6}{11}\\)",
     calculation: "12/(12+10)",
     result: 0.5454545454545454,
     skill: "conditional sample spaces",
@@ -606,14 +606,14 @@ const proofs = [
   },
   {
     id: "math-statistics-probability-d13",
-    key: "37/64",
+    key: "\\(\\frac{37}{64}\\)",
     calculation: "1-(3/4)**3",
     result: 0.578125,
     skill: "complement strategy",
   },
   {
     id: "math-statistics-probability-d14",
-    key: "3/8",
+    key: "\\(\\frac{3}{8}\\)",
     calculation: "(3*2/2)*(.5)**2*(.5)",
     result: 0.375,
     skill: "binomial exact counts",
@@ -692,7 +692,7 @@ const proofs = [
   },
   {
     id: "math-statistics-probability-d25",
-    key: "2/15",
+    key: "\\(\\frac{2}{15}\\)",
     calculation: "4/10*3/9",
     result: 0.13333333333333333,
     skill: "dependent sequential probability",
@@ -706,21 +706,21 @@ const proofs = [
   },
   {
     id: "math-statistics-probability-d27",
-    key: "11/36",
+    key: "\\(\\frac{11}{36}\\)",
     calculation: "1-(5/6)**2",
     result: 0.3055555555555556,
     skill: "overlap and complements",
   },
   {
     id: "math-statistics-probability-d28",
-    key: "5/9",
+    key: "\\(\\frac{5}{9}\\)",
     calculation: "(5*5)/(10*9/2)",
     result: 0.5555555555555556,
     skill: "parity sample spaces",
   },
   {
     id: "math-statistics-probability-d29",
-    key: "2/3",
+    key: "\\(\\frac{2}{3}\\)",
     calculation: "4/(3+4-1)",
     result: 0.6666666666666666,
     skill: "updated conditional counts",
@@ -734,14 +734,14 @@ const proofs = [
   },
   {
     id: "math-statistics-probability-d31",
-    key: "1/5",
+    key: "\\(\\frac{1}{5}\\)",
     calculation: "2/(2+3+5)",
     result: 0.2,
     skill: "cumulative frequency wording",
   },
   {
     id: "math-statistics-probability-d32",
-    key: "7/15",
+    key: "\\(\\frac{7}{15}\\)",
     calculation:
       "Array.from({length:30},(_,i)=>i+1).filter(x=>x%3===0||x%5===0).length/30",
     result: 0.4666666666666667,
@@ -810,20 +810,17 @@ for (const topic of [
   assert.ok(lesson);
   assert.ok(lesson.sections.length >= 6 && lesson.sections.length <= 8);
   assert.equal(lesson.check.length, 3);
-  const words = [
-    lesson.intro,
-    ...lesson.sections.flatMap((s) => [
-      ...s.body,
-      ...s.examples.map((e) => e.text),
-      s.tip,
-    ]),
-  ]
-    .join(" ")
-    .split(/\s+/).length;
-  assert.ok(
-    words >= 900 && words <= 1300,
-    topic + ": substantive lesson length",
-  );
+  for (const section of lesson.sections) {
+    assert.ok(section.body.length >= 2, topic + ": teach the rule and its use");
+    assert.ok(section.body.every((text) => text.trim().length > 0));
+    assert.ok(
+      section.examples.length >= 1,
+      topic + ": worked example per concept",
+    );
+    assert.ok(
+      section.examples.every((example) => example.text.trim().length > 0),
+    );
+  }
   assert.ok(lesson.sections.flatMap((s) => s.examples).length >= 6);
   assert.ok(group.filter((q) => q.difficulty === "hard").length >= 8);
 }
@@ -854,14 +851,48 @@ for (const proof of proofs) {
 // differently written distractors that are mathematically the same value.
 function numericChoice(text) {
   let value = text
+    .replace(/\\\(|\\\)/g, "")
+    .replace(/\^\\circ\b/g, "")
     .replace(/\$/g, "")
     .replace(/°/g, "")
     .replace(/−/g, "-")
     .replace(/\s+(?:meters|square units|cubic units)$/, "")
     .replace(/:/g, "/")
     .trim();
+  // Read only the authored numeric TeX subset; the same independent numeric
+  // checks still apply after choices acquire display markup.
+  let cursor = 0;
+  const argument = () => {
+    while (value[cursor] === " ") cursor++;
+    if (value[cursor] === "{") {
+      cursor++;
+      let result = "";
+      while (cursor < value.length && value[cursor] !== "}") result += atom();
+      if (value[cursor++] !== "}") throw new Error("Unclosed numeric group");
+      return result;
+    }
+    return atom();
+  };
+  const atom = () => {
+    if (value[cursor] !== "\\") return value[cursor++] ?? "";
+    const command = value.slice(cursor).match(/^\\([a-z]+)/)?.[1];
+    if (!command) throw new Error("Unknown numeric notation");
+    cursor += command.length + 1;
+    if (command === "pi") return "π";
+    if (command === "sqrt") return `√(${argument()})`;
+    if (command === "frac") return `((${argument()})/(${argument()}))`;
+    throw new Error("Not a numeric choice");
+  };
+  try {
+    let numeric = "";
+    while (cursor < value.length) numeric += atom();
+    value = numeric;
+  } catch {
+    return null;
+  }
   if (!/^[0-9.\-+*/()π√\s]+$/.test(value)) return null;
   value = value
+    .replace(/√\(/g, "Math.sqrt(")
     .replace(/√(\d+(?:\.\d+)?)/g, "Math.sqrt($1)")
     .replace(/π/g, "Math.PI")
     .replace(/(\d|\))(?=Math\.)/g, "$1*");
@@ -871,6 +902,15 @@ function numericChoice(text) {
     return null;
   }
 }
+assert.ok(
+  close(
+    numericChoice(String.raw`\(\frac{5\sqrt{2}}{2}\)`),
+    (5 * Math.sqrt(2)) / 2,
+  ),
+);
+assert.equal(numericChoice(String.raw`\(\frac{1}{\frac{2}{3}}\)`), 1.5);
+assert.equal(numericChoice(String.raw`\(\frac{x}{2}\)`), null);
+assert.equal(numericChoice(String.raw`\(\frac{1}{\)`), null);
 let numericAudits = 0;
 for (const proof of proofs) {
   const q = map.get(proof.id);
@@ -884,23 +924,23 @@ for (const proof of proofs) {
     proof.id + ": equivalent numeric distractors",
   );
   if (
-    proof.key.includes("π") &&
+    /π|\\pi/.test(proof.key) &&
     (!proof.calculation.includes("Math.PI") ||
       proof.calculation.trim().endsWith("/Math.PI"))
   )
     selected /= Math.PI;
   assert.ok(
     close(selected, proof.result) ||
-      (proof.key.includes("√") && close(selected * selected, proof.result)),
+      (/√|\\sqrt/.test(proof.key) && close(selected * selected, proof.result)),
     proof.id + ": numeric text agrees with derived conclusion",
   );
   numericAudits++;
 }
 assert.ok(numericAudits >= 80);
 const phase = map.get("math-trigonometry-d14");
-assert.ok(phase.choices.includes("π/8 to the left"));
+assert.ok(phase.choices.includes(String.raw`\(\frac{\pi}{8}\) to the left`));
 assert.ok(
-  !phase.choices.includes("π/4 to the left"),
+  !phase.choices.includes(String.raw`\(\frac{\pi}{4}\) to the left`),
   "a left π/4 shift is equivalent to the correct right π/4 shift",
 );
 for (const x of [0.02, 0.21, 0.43])

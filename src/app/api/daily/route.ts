@@ -2,6 +2,8 @@ import { createClient } from "@/lib/supabase/server";
 import { readStudySettings } from "@/lib/account-settings";
 import {
   dailyDate,
+  makeDailyPlan,
+  dailyCoverage,
   dailyId,
   selectDailyPlan,
   dailyComplete,
@@ -9,9 +11,15 @@ import {
   refreshDailyContent,
   type DailyPlan,
 } from "@/lib/daily-plan";
-import { dailyStep, blockUnits, dailyFocus } from "@/lib/daily-flow";
+import {
+  dailyStep,
+  blockUnits,
+  dailyFocus,
+  dailyReviewKey,
+  readingConceptProgress,
+} from "@/lib/daily-flow";
 import type { Json } from "@/lib/supabase/database.types";
-async function load() {
+async function load(fullHistory = false) {
   const db = await createClient();
   const {
     data: { user },
@@ -40,13 +48,20 @@ async function load() {
       ),
     };
   const today = dailyDate();
-  const { data: plans, error } = await db
-    .from("exam_attempts")
-    .select("*")
-    .eq("user_id", user.id)
-    .eq("exam_id", "daily:plan")
-    .order("completed_at", { ascending: false })
-    .limit(1);
+  const readPlans = (limit: number) =>
+    db
+      .from("exam_attempts")
+      .select("*")
+      .eq("user_id", user.id)
+      .eq("exam_id", "daily:plan")
+      .order("completed_at", { ascending: false })
+      .limit(limit);
+  let { data: plans, error } = await readPlans(1);
+  const newest = plans?.[0]?.answers as unknown as DailyPlan | undefined;
+  // Current plans snapshot prior coverage; only legacy plans need bootstrap history.
+  if (!error && newest && !Array.isArray(newest.course?.coveredUnits)) {
+    ({ data: plans, error } = await readPlans(100));
+  }
   if (error)
     return {
       error: Response.json(
@@ -54,60 +69,289 @@ async function load() {
         { status: 503 },
       ),
     };
-  const last = plans?.[0]?.answers as unknown as DailyPlan | undefined;
-  const settings = readStudySettings(user.user_metadata, profile.current_score);
-  const selected = selectDailyPlan(last, user.id, today, settings);
-  const saved = selected === last;
-  let plan = selected;
-  const [
-    { data: rows, error: answerError },
-    { data: checks, error: checkError },
-  ] = await Promise.all([
-    db
+  let last = plans?.[0]?.answers as unknown as DailyPlan | undefined;
+  const seen = new Set(last?.previouslyAnsweredQuestions ?? []);
+  const priorSeen = new Set(last?.previouslyAnsweredQuestions ?? []);
+  const previousAnswers: Record<string, number> = {};
+  const previousTimes: Record<string, number> = {};
+  const previousUncertain: Record<string, boolean> = {};
+  for (let offset = 0; ; offset += 500) {
+    let query = db
       .from("exam_attempts")
       .select("answers")
       .eq("user_id", user.id)
-      .contains("answers", { dailyPlanId: plan.id }),
-    db
-      .from("plan_checks")
-      .select("*")
-      .eq("user_id", user.id)
-      .or(`item_key.eq.daily-clock:${today},item_key.like.daily:${plan.id}:%`),
-  ]);
-  if (answerError || checkError)
+      .in("exam_id", [
+        "daily:english",
+        "practice:math",
+        "practice:reading",
+        "practice:science",
+      ])
+      .order("completed_at")
+      .order("id");
+    // Existing plans already snapshot prior answers; only load the full history for a new plan.
+    if (
+      !fullHistory &&
+      last?.previouslyAnsweredQuestions &&
+      (!last.complete || last.date === today)
+    )
+      query = query.contains("answers", { dailyPlanId: last.id });
+    const page = await query.range(offset, offset + 499);
+    if (page.error)
+      return {
+        error: Response.json(
+          { error: "Your answer history could not load. Retry." },
+          { status: 503 },
+        ),
+      };
+    for (const row of page.data ?? []) {
+      const record = row.answers as unknown as {
+        kind?: string;
+        dailyPlanId?: string;
+        event?: {
+          questionId?: string;
+          chosen?: number;
+          elapsedMs?: number;
+          confidence?: string;
+        };
+      };
+      const event = record?.event;
+      if (
+        record?.kind !== "answer" ||
+        typeof event?.questionId !== "string" ||
+        !Number.isInteger(event.chosen) ||
+        event.chosen! < 0 ||
+        event.chosen! > 3
+      )
+        continue;
+      seen.add(event.questionId);
+      if (record.dailyPlanId !== last?.id) {
+        priorSeen.add(event.questionId);
+        continue;
+      }
+      previousAnswers[event.questionId] = event.chosen!;
+      if (
+        typeof event.elapsedMs === "number" &&
+        Number.isFinite(event.elapsedMs) &&
+        event.elapsedMs >= 0
+      )
+        previousTimes[event.questionId] = event.elapsedMs;
+      previousUncertain[event.questionId] = event.confidence === "low";
+    }
+    if (!page.data || page.data.length < 500) break;
+    if (offset >= 99500)
+      return {
+        error: Response.json(
+          {
+            error:
+              "This answer history is too large to load safely. Contact support.",
+          },
+          { status: 413 },
+        ),
+      };
+  }
+  if (last && !last.previouslyAnsweredQuestions)
+    last = { ...last, previouslyAnsweredQuestions: [...priorSeen] };
+  if (last?.complete)
+    last = {
+      ...last,
+      nextFocus: dailyFocus(
+        last,
+        previousAnswers,
+        previousTimes,
+        previousUncertain,
+      ),
+    };
+  const settings = readStudySettings(user.user_metadata, profile.current_score);
+  const course = {
+    testDate: profile.test_date,
+    targetScore: profile.target_score,
+    seenQuestions: [...seen],
+    coveredUnits: [
+      ...new Set(
+        (plans ?? []).flatMap((row) => {
+          const previous = row.answers as unknown as DailyPlan;
+          return [
+            ...(previous.course?.coveredUnits ?? []),
+            ...(previous.complete
+              ? previous.blocks
+                  .flatMap(blockUnits)
+                  .map((unit) => unit.courseId ?? unit.id)
+              : []),
+          ];
+        }),
+      ),
+    ],
+  };
+  const selected = selectDailyPlan(
+    last,
+    user.id,
+    today,
+    settings,
+    false,
+    course,
+  );
+  const saved = selected === last;
+  let plan = selected;
+  const { data: checks, error: checkError } = await db
+    .from("plan_checks")
+    .select("*")
+    .eq("user_id", user.id)
+    .or(`item_key.eq.daily-clock:${today},item_key.like.daily:${plan.id}:%`);
+  if (checkError)
     return {
       error: Response.json(
         { error: "Saved daily progress could not load. Retry." },
         { status: 503 },
       ),
     };
-  const answers: Record<string, number> = {};
-  const answerTimes: Record<string, number> = {};
-  for (const row of rows ?? []) {
-    const record = row.answers as unknown as {
-      event: { questionId: string; chosen: number; elapsedMs?: number };
-    };
-    answers[record.event.questionId] = record.event.chosen;
-    if (typeof record.event.elapsedMs === "number")
-      answerTimes[record.event.questionId] = record.event.elapsedMs;
-  }
+  const answers = saved ? previousAnswers : {};
+  const answerTimes = saved ? previousTimes : {};
+  const uncertainAnswers = saved ? previousUncertain : {};
   plan = refreshDailyContent(
     restoreDailyTeaching(plan, answers, settings),
     answers,
   );
-  const lessons = (checks ?? []).flatMap((c) => {
-    const prefix = `daily:${plan.id}:step:`;
-    if (c.item_key.startsWith(prefix)) return [c.item_key.slice(prefix.length)];
-    const block = plan.blocks.find(
-      (b) => c.item_key === `daily:${plan.id}:lesson:v2:${b.subject}`,
+  const lessons = readingConceptProgress(
+    plan,
+    (checks ?? []).flatMap((c) => {
+      const prefix = `daily:${plan.id}:step:`;
+      if (c.item_key.startsWith(prefix))
+        return [c.item_key.slice(prefix.length)];
+      const block = plan.blocks.find(
+        (b) => c.item_key === `daily:${plan.id}:lesson:v2:${b.subject}`,
+      );
+      return block ? [blockUnits(block)[0].id] : [];
+    }),
+  );
+  // Recover a completed session if the final completion write was interrupted.
+  if (!plan.complete && dailyComplete(plan, answers, lessons)) {
+    const finishedAt = (checks ?? [])
+      .filter((c) => c.item_key.startsWith(`daily:${plan.id}:step:`))
+      .map((c) => c.checked_at)
+      .sort()
+      .at(-1);
+    const { error: completionError } = await db
+      .from("exam_attempts")
+      .update({
+        answers: {
+          ...plan,
+          complete: true,
+          completedDate: finishedAt
+            ? dailyDate(new Date(finishedAt))
+            : plan.date,
+          nextFocus: dailyFocus(plan, answers, answerTimes, uncertainAnswers),
+        } as unknown as Json,
+      })
+      .eq("id", plan.id)
+      .eq("user_id", user.id);
+    if (completionError)
+      return {
+        error: Response.json(
+          { error: "Your completed lesson could not refresh. Retry." },
+          { status: 503 },
+        ),
+      };
+    return load();
+  }
+  // Upgrade today's course while keeping answer records, lesson checkpoints, and clock.
+  if (
+    saved &&
+    !plan.complete &&
+    (!plan.plannerVersion || !plan.course) &&
+    plan.date === today
+  ) {
+    const completed = plan.blocks
+      .flatMap(blockUnits)
+      .filter(
+        (unit) =>
+          lessons.includes(unit.id) &&
+          unit.questions.every(
+            (question) => answers[question.id] !== undefined,
+          ),
+      );
+    const updatedCourse = {
+      ...course,
+      coveredUnits: [
+        ...new Set([
+          ...course.coveredUnits,
+          ...completed.map((unit) => unit.courseId ?? unit.id),
+        ]),
+      ],
+    };
+    const fresh = makeDailyPlan(
+      user.id,
+      today,
+      {
+        ...settings,
+        includeScience: plan.blocks.some(
+          (block) => block.subject === "science",
+        ),
+      },
+      plan.sequence,
+      plan.nextFocus,
+      Object.keys(answers),
+      {},
+      { ...updatedCourse, answeredQuestions: Object.keys(answers) },
     );
-    return block ? [blockUnits(block)[0].id] : [];
-  });
+    fresh.blocks = fresh.blocks.map((block) => {
+      const old = plan.blocks.find((item) => item.subject === block.subject)!;
+      const units = blockUnits(block).map((unit) => {
+        const active = blockUnits(old).find((item) => item.id === unit.id);
+        return active &&
+          (active.questions.some(
+            (question) => answers[question.id] !== undefined,
+          ) ||
+            lessons.some(
+              (key) =>
+                key === active.id || key.startsWith(`${active.id}:concept:`),
+            ))
+          ? active
+          : unit;
+      });
+      const questions = [
+        ...units.flatMap((unit) => unit.questions),
+        ...(block.reviewQuestions ?? []),
+      ];
+      const activeIds = new Set(questions.map((question) => question.id));
+      const historicalQuestions = [
+        ...old.questions,
+        ...(old.historicalQuestions ?? []),
+      ].filter(
+        (question, i, all) =>
+          answers[question.id] !== undefined &&
+          !activeIds.has(question.id) &&
+          all.findIndex((item) => item.id === question.id) === i,
+      );
+      return {
+        ...block,
+        units,
+        questions,
+        historicalQuestions,
+        topic: units[0].topic,
+        title: units[0].title,
+        lesson: units[0].lesson,
+      };
+    });
+    const upgraded = refreshDailyContent(fresh, answers);
+    const { error: refreshError } = await db
+      .from("exam_attempts")
+      .update({ answers: upgraded as unknown as Json })
+      .eq("id", plan.id)
+      .eq("user_id", user.id);
+    if (refreshError)
+      return {
+        error: Response.json(
+          { error: "Today's course plan could not refresh. Retry." },
+          { status: 503 },
+        ),
+      };
+    return load();
+  }
   if (plan.complete)
     for (const block of plan.blocks)
       lessons.push(
         ...blockUnits(block).map((u) => u.id),
-        `review:${block.subject}`,
+        dailyReviewKey(block),
       );
   const clock = checks?.find(
     (c) => c.item_key === `daily-clock:${today}`,
@@ -120,13 +364,17 @@ async function load() {
     today,
     answers,
     answerTimes,
+    uncertainAnswers,
     lessons,
     deadline: clock ? Date.parse(clock) + settings.minutesPerDay * 60000 : null,
     settings,
+    course,
   };
 }
-export async function GET() {
-  const ctx = await load();
+function dailyResponse(
+  ctx: Awaited<ReturnType<typeof load>>,
+  includeCoverage = false,
+) {
   if (ctx.error) return ctx.error;
   return Response.json(
     {
@@ -134,19 +382,27 @@ export async function GET() {
       saved: ctx.saved,
       answers: ctx.answers,
       answerTimes: ctx.answerTimes,
+      uncertainAnswers: ctx.uncertainAnswers,
       lessons: ctx.lessons,
       deadline: ctx.deadline,
       today: ctx.today,
       minutes: ctx.settings.minutesPerDay,
+      includeScience: ctx.settings.includeScience !== false,
+      goal: {
+        targetScore: ctx.course.targetScore,
+        testDate: ctx.course.testDate,
+      },
+      ...(includeCoverage && {
+        coverage: dailyCoverage(ctx.plan, ctx.settings, ctx.course, ctx.today),
+      }),
     },
     { headers: { "Cache-Control": "private, no-store" } },
   );
 }
+export async function GET() {
+  return dailyResponse(await load(), true);
+}
 export async function POST(request: Request) {
-  const receivedAt = Date.now();
-  const ctx = await load();
-  if (ctx.error) return ctx.error;
-  const { db, user, plan, today } = ctx;
   let body;
   try {
     body = await request.json();
@@ -155,13 +411,62 @@ export async function POST(request: Request) {
   }
   if (!body || typeof body !== "object" || Array.isArray(body))
     return Response.json({ error: "Invalid request." }, { status: 400 });
+  const ctx = await load(body.action === "next");
+  if (ctx.error) return ctx.error;
+  const { db, user, today } = ctx;
+  let plan = ctx.plan;
   if (body.planId !== plan.id)
     return Response.json(
       { error: "Your daily lesson changed. Reload to continue." },
       { status: 409 },
     );
-  if (body.action === "start") {
-    if (!ctx.saved) {
+  if (body.action === "next") {
+    if (plan.date >= today || plan.complete)
+      return Response.json(
+        { error: "Today’s lesson is already selected." },
+        { status: 409 },
+      );
+    const coveredUnits = [
+      ...new Set([
+        ...ctx.course.coveredUnits,
+        ...plan.blocks
+          .flatMap(blockUnits)
+          .filter(
+            (unit) =>
+              ctx.lessons.includes(unit.id) &&
+              unit.questions.every(
+                (question) => ctx.answers[question.id] !== undefined,
+              ),
+          )
+          .map((unit) => unit.courseId ?? unit.id),
+      ]),
+    ];
+    plan = selectDailyPlan(
+      {
+        ...plan,
+        nextFocus: dailyFocus(
+          plan,
+          ctx.answers,
+          ctx.answerTimes,
+          ctx.uncertainAnswers,
+        ),
+      },
+      user.id,
+      today,
+      ctx.settings,
+      true,
+      {
+        ...ctx.course,
+        coveredUnits,
+        deferUnits: plan.blocks
+          .flatMap(blockUnits)
+          .map((unit) => unit.courseId ?? unit.id)
+          .filter((id) => !coveredUnits.includes(id)),
+      },
+    );
+  }
+  if (body.action === "start" || body.action === "next") {
+    if (!ctx.saved || body.action === "next") {
       const { error } = await db.from("exam_attempts").insert({
         id: plan.id,
         user_id: user.id,
@@ -196,20 +501,20 @@ export async function POST(request: Request) {
       { error: "Start your daily lesson first." },
       { status: 409 },
     );
-  if (ctx.deadline === null || receivedAt > ctx.deadline)
-    return Response.json(
-      { error: "Today’s study time is complete. Continue tomorrow." },
-      { status: 409 },
-    );
   const step = dailyStep(plan, ctx.answers, ctx.lessons);
   if (
     body.action === "concept" ||
     body.action === "lesson" ||
     body.action === "review"
   ) {
+    const reviewBlock = plan.blocks.find(
+      (block) => block.subject === body.subject,
+    );
     const key =
       body.action === "review"
-        ? `review:${body.subject}`
+        ? reviewBlock
+          ? dailyReviewKey(reviewBlock)
+          : null
         : body.action === "concept"
           ? `${body.unitId}:concept:${body.index}`
           : body.unitId;
@@ -219,7 +524,7 @@ export async function POST(request: Request) {
           ? `${step.unit.id}:concept:${body.index}`
           : step.unit.id
         : step.kind === "review"
-          ? `review:${step.block.subject}`
+          ? dailyReviewKey(step.block)
           : null;
     if (!key || (key !== expected && !ctx.lessons.includes(key)))
       return Response.json(
@@ -229,6 +534,7 @@ export async function POST(request: Request) {
         },
         { status: 409 },
       );
+    const keys = [key];
     if (body.action === "concept") {
       const unit = plan.blocks
         .flatMap(blockUnits)
@@ -246,6 +552,7 @@ export async function POST(request: Request) {
           { error: "Continue through the lesson in order." },
           { status: 409 },
         );
+      if (body.index === unit.lesson.sections.length - 1) keys.push(unit.id);
     }
     if (body.action === "lesson" && !ctx.lessons.includes(key)) {
       const unit = plan.blocks.flatMap(blockUnits).find((u) => u.id === key);
@@ -260,18 +567,19 @@ export async function POST(request: Request) {
           { status: 409 },
         );
     }
-    const { error } = await db
-      .from("plan_checks")
-      .upsert(
-        { user_id: user.id, item_key: `daily:${plan.id}:step:${key}` },
-        { onConflict: "user_id,item_key", ignoreDuplicates: true },
-      );
+    const { error } = await db.from("plan_checks").upsert(
+      keys.map((key) => ({
+        user_id: user.id,
+        item_key: `daily:${plan.id}:step:${key}`,
+      })),
+      { onConflict: "user_id,item_key", ignoreDuplicates: true },
+    );
     if (error)
       return Response.json(
         { error: "Couldn’t save your progress. Retry." },
         { status: 503 },
       );
-    ctx.lessons.push(key);
+    ctx.lessons.push(...keys);
   } else if (body.action === "answer") {
     const q = plan.blocks
       .flatMap((b) => [...b.questions, ...(b.historicalQuestions ?? [])])
@@ -280,7 +588,8 @@ export async function POST(request: Request) {
       !q ||
       !Number.isInteger(body.chosen) ||
       body.chosen < 0 ||
-      body.chosen > 3
+      body.chosen > 3 ||
+      (body.uncertain !== undefined && typeof body.uncertain !== "boolean")
     )
       return Response.json(
         { error: "Choose a valid answer." },
@@ -300,12 +609,12 @@ export async function POST(request: Request) {
         { error: "This answer is already saved. Reload to review it." },
         { status: 409 },
       );
-    const event = {
+    let event = {
       id,
       questionId: q.id,
       chosen: body.chosen,
       elapsedMs: Math.min(86400000, Math.max(0, Number(body.elapsedMs) || 0)),
-      confidence: "medium",
+      confidence: body.uncertain ? "low" : "medium",
       cause: null,
       at: new Date().toISOString(),
       mode: "drill",
@@ -344,8 +653,11 @@ export async function POST(request: Request) {
           },
           { status: 409 },
         );
+      event = (existing!.answers as unknown as { event: typeof event }).event;
     }
     ctx.answers[q.id] = body.chosen;
+    ctx.answerTimes[q.id] = event.elapsedMs;
+    ctx.uncertainAnswers[q.id] = event.confidence === "low";
   } else return Response.json({ error: "Unknown action." }, { status: 400 });
   if (dailyComplete(plan, ctx.answers, ctx.lessons)) {
     const { error } = await db
@@ -355,7 +667,12 @@ export async function POST(request: Request) {
           ...plan,
           complete: true,
           completedDate: today,
-          nextFocus: dailyFocus(plan, ctx.answers),
+          nextFocus: dailyFocus(
+            plan,
+            ctx.answers,
+            ctx.answerTimes,
+            ctx.uncertainAnswers,
+          ),
         } as unknown as Json,
       })
       .eq("id", plan.id)
@@ -365,6 +682,7 @@ export async function POST(request: Request) {
         { error: "Your answers saved, but completion could not save. Retry." },
         { status: 503 },
       );
+    return GET();
   }
-  return GET();
+  return dailyResponse(ctx);
 }

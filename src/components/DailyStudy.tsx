@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Card } from "./ui/Card";
@@ -18,17 +18,35 @@ import { DesmosPanel } from "./act/DesmosPanel";
 import { QuestionView } from "./act/QuestionView";
 import type { Question } from "@/lib/act/types";
 import { renderStem } from "@/lib/format";
-import { dailyStep, blockUnits } from "@/lib/daily-flow";
+import {
+  dailyStep,
+  blockUnits,
+  dailyReviewKey,
+  dailyFocus,
+} from "@/lib/daily-flow";
+import { ScoreChecks } from "./ScoreChecks";
+import { dailyDate } from "@/lib/daily-date";
 interface DailyState {
   plan: DailyPlan;
   saved: boolean;
   answers: Record<string, number>;
   answerTimes: Record<string, number>;
+  uncertainAnswers?: Record<string, boolean>;
   lessons: string[];
   deadline: number | null;
   today: string;
   error?: string;
   minutes: number;
+  includeScience?: boolean;
+  goal?: { targetScore: number; testDate: string };
+  coverage?: {
+    covered: number;
+    total: number;
+    testDate: string;
+    finishDate: string | null;
+    onTrack: boolean;
+    requiredMinutes: number | null;
+  };
 }
 const label = (s: string) => s[0].toUpperCase() + s.slice(1);
 export function DailyStudy({ runner = false }: { runner?: boolean }) {
@@ -41,6 +59,11 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
   const [started, setStarted] = useState(false);
   const [revisitLesson, setRevisitLesson] = useState(false);
   const [history, setHistory] = useState(false);
+  const [uncertainQuestions, setUncertainQuestions] = useState<string[]>([]);
+  const [answeringQuestion, setAnsweringQuestion] = useState<string | null>(
+    null,
+  );
+  const answerUncertainty = useRef<Record<string, boolean>>({});
   async function load() {
     try {
       const r = await fetch("/api/daily", { cache: "no-store" });
@@ -52,7 +75,8 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       if (!r.ok)
         throw new Error(d.error ?? "Couldn’t load your daily lesson. Retry.");
       setError(null);
-      setData(d);
+      setData((previous) => ({ ...previous, ...d }));
+      if (runner && d.saved && !d.plan.complete) setStarted(true);
     } catch (e) {
       setError((e as Error).message);
     }
@@ -65,14 +89,44 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       clearInterval(timer);
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  useEffect(() => {
+    if (!data?.today) return;
+    const checkDay = () => {
+      const today = dailyDate();
+      if (today === data.today) return;
+      setStarted(false);
+      setReview(null);
+      setHistory(false);
+      setRevisitLesson(false);
+      void load();
+    };
+    const timer = setInterval(checkDay, 60000);
+    window.addEventListener("focus", checkDay);
+    document.addEventListener("visibilitychange", checkDay);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener("focus", checkDay);
+      document.removeEventListener("visibilitychange", checkDay);
+    };
+  }, [data?.today]); // eslint-disable-line react-hooks/exhaustive-deps
   async function action(body: Record<string, unknown>) {
     if (!data || pending) return;
+    if (body.action === "answer" && typeof body.questionId === "string") {
+      const id = body.questionId;
+      answerUncertainty.current[id] ??= body.uncertain === true;
+      body = { ...body, uncertain: answerUncertainty.current[id] };
+      setAnsweringQuestion(id);
+    }
     setPending(true);
     setError(null);
     try {
       // A session crossing local midnight gets today's durable clock before
       // saving its next step. It does not reset an existing daily deadline.
-      if (body.action !== "start" && data.deadline === null) {
+      if (
+        body.action !== "start" &&
+        body.action !== "next" &&
+        data.deadline === null
+      ) {
         const start = await fetch("/api/daily", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -91,9 +145,13 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       const d = await r.json();
       if (!r.ok)
         throw new Error(d.error ?? "Couldn’t save. Retry before leaving.");
-      setData(d);
-      if (body.action === "start") {
+      setData((previous) => ({ ...previous, ...d }));
+      if (body.action === "start" || body.action === "next") {
         setStarted(true);
+        if (body.action === "next") {
+          answerUncertainty.current = {};
+          setAnsweringQuestion(null);
+        }
       }
       return d as DailyState;
     } catch (e) {
@@ -104,7 +162,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     }
   }
   const step = data ? dailyStep(data.plan, data.answers, data.lessons) : null;
-  const screenKey = `${started}:${revisitLesson}:${review?.id ?? ""}:${step?.kind}:${step && "unit" in step ? step.unit?.id : ""}:${step && "question" in step ? step.question?.id : ""}`;
+  const screenKey = `${started}:${revisitLesson}:${review ? "drill" : step?.kind}:${review?.id ?? (step && "question" in step ? step.question?.id : step && "unit" in step ? step.unit?.id : "")}`;
   useEffect(() => {
     const frame = requestAnimationFrame(() =>
       window.scrollTo({ top: 0, behavior: "auto" }),
@@ -117,7 +175,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         <Card className="p-8">
           <h1 className="text-xl font-semibold">Your daily lesson</h1>
           <p role="status" className="mt-3 text-ink-soft">
-            {error ?? "Preparing your four-subject session…"}
+            {error ?? "Preparing your daily session…"}
           </p>
           {error && (
             <Button className="mt-4" onClick={() => void load()}>
@@ -128,6 +186,18 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       </div>
     );
   const { plan, answers, lessons } = data;
+  const targetScore = data.goal?.targetScore ?? plan.course?.targetScore;
+  const testDate = data.goal?.testDate ?? plan.course?.testDate;
+  const focus = dailyFocus(
+    plan,
+    answers,
+    data.answerTimes,
+    data.uncertainAnswers,
+  );
+  const weakCount = plan.blocks.reduce(
+    (total, block) => total + (focus?.[block.subject]?.length ?? 0),
+    0,
+  );
   const all = plan.blocks.flatMap((b) => [
     ...b.questions,
     ...(b.historicalQuestions ?? []),
@@ -137,8 +207,11 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     data.deadline === null
       ? data.minutes * 60
       : Math.max(0, Math.ceil((data.deadline - now) / 1000));
-  const expired = data.deadline !== null && remaining === 0;
   const block = step && "block" in step ? step.block : undefined;
+  const resumeTitle =
+    step && "unit" in step && step.unit
+      ? step.unit.title.replace(/^\d+\.\s*/, "")
+      : "Final review";
   const q = step?.kind === "drill" ? step.question : undefined;
   const time = `${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, "0")}`;
   const errorView = error && (
@@ -149,14 +222,81 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       {error}
     </p>
   );
+  if (plan.date < data.today && !plan.complete && !started)
+    return (
+      <div className="mx-auto max-w-2xl space-y-4">
+        <Card className="p-6 sm:p-8">
+          <h1 className="text-2xl font-semibold">
+            Continue where you left off
+          </h1>
+          <p className="mt-3 text-ink-soft">
+            {block && `${label(block.subject)} · ${resumeTitle}`}
+          </p>
+          <p className="mt-2 text-sm text-ink-soft">
+            {count} saved answers · session started {plan.date}
+          </p>
+          <div className="mt-6 flex flex-col gap-3">
+            <Button
+              disabled={pending}
+              onClick={() => {
+                if (runner) void action({ action: "start" });
+                else router.push("/daily");
+              }}
+            >
+              Resume saved session
+            </Button>
+            <details>
+              <summary className="min-h-11 cursor-pointer py-3 text-sm text-ink-soft underline">
+                Choose new lessons instead
+              </summary>
+              <p className="mb-3 text-sm text-ink-soft">
+                This starts a different session. Your previous answers stay in
+                history; unfinished lessons return later.
+              </p>
+              <Button
+                variant="ghost"
+                disabled={pending}
+                onClick={async () => {
+                  const result = await action({ action: "next" });
+                  if (result && !runner) router.push("/daily");
+                }}
+              >
+                Start today’s lesson
+              </Button>
+            </details>
+          </div>
+          <p className="mt-4 text-xs text-ink-soft">
+            Resume opens your next unfinished concept or question. Today’s{" "}
+            {data.minutes}-minute timer is a goal; you can keep studying after
+            it ends.
+          </p>
+        </Card>
+        {errorView}
+      </div>
+    );
   if (!runner)
     return (
       <div className="mx-auto max-w-2xl space-y-6">
         <Card className="p-6 sm:p-8">
-          <h1 className="text-2xl font-semibold">Daily study</h1>
+          <h1 className="text-2xl font-semibold">
+            {targetScore ? `Your path to ${targetScore}` : "Daily study"}
+          </h1>
           <p className="mt-2 text-sm text-ink-soft">
-            {data.minutes} minutes · 4 subjects
+            {data.minutes} minutes a day ·{" "}
+            {testDate
+              ? `Test date: ${new Date(`${testDate}T12:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric" })}`
+              : `${plan.blocks.length} subjects`}
           </p>
+          {data.coverage && (
+            <p className="mt-2 text-sm text-ink-soft">
+              {data.coverage.covered}/{data.coverage.total} lessons covered ·{" "}
+              {data.coverage.onTrack
+                ? `First pass planned by ${data.coverage.finishDate}`
+                : data.coverage.requiredMinutes
+                  ? `Set ${data.coverage.requiredMinutes} min/day to finish before ${data.coverage.testDate}`
+                  : `The remaining lessons don’t fit before ${data.coverage.testDate}. Focus on weak skills and timed practice.`}
+            </p>
+          )}
           <div className="mt-6">
             {plan.complete ? (
               <>
@@ -173,14 +313,6 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                 >
                   Review today’s answers
                 </Link>
-              </>
-            ) : expired ? (
-              <>
-                <p className="font-semibold">Today’s study time is complete.</p>
-                <p className="mt-2 text-sm text-ink-soft">
-                  Your {count} saved {count === 1 ? "answer" : "answers"} and
-                  unfinished work will be ready tomorrow.
-                </p>
               </>
             ) : (
               <Link
@@ -199,13 +331,20 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
               >
                 <div>
                   <p className="text-sm font-semibold">{label(b.subject)}</p>
-                  <p className="mt-1 text-sm text-ink-soft">
-                    {blockUnits(b).length} lessons · {blockUnits(b).length}{" "}
-                    drills · review
+                  <p className="mt-1 text-sm leading-relaxed text-ink-soft">
+                    {blockUnits(b)
+                      .map((unit) => unit.title.replace(/^\d+\.\s*/, ""))
+                      .join(" · ")}
+                  </p>
+                  <p className="mt-1 text-xs text-ink-soft">
+                    {b.questions.length} practice questions
+                    {focus?.[b.subject]?.length
+                      ? ` · ${focus[b.subject]!.length} skills to revisit`
+                      : ""}
                   </p>
                 </div>
                 <span className="shrink-0 text-sm text-ink-soft">
-                  {plan.complete || lessons.includes(`review:${b.subject}`)
+                  {plan.complete || lessons.includes(dailyReviewKey(b))
                     ? "Done"
                     : `~${b.minutes} min`}
                 </span>
@@ -213,13 +352,24 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             ))}
           </ol>
           <p className="mt-4 text-xs text-ink-soft">
-            Time follows your score needs. Unfinished work carries forward.
+            Wrong, slow, and uncertain answers return for review. New questions
+            take priority over questions you’ve already answered.
           </p>
+          {targetScore && (
+            <ScoreChecks
+              targetScore={targetScore}
+              today={data.today}
+              includeScience={data.includeScience !== false}
+            />
+          )}
         </Card>
         {errorView}
         <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm">
-          <Link href="/account" className="text-ink-soft underline">
-            Change study time or scores
+          <Link
+            href="/account#daily-subjects"
+            className="text-ink-soft underline"
+          >
+            Change daily subjects, time, or scores
           </Link>
           <Link href="/practice" className="text-ink-soft underline">
             Extra practice
@@ -227,21 +377,20 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         </div>
       </div>
     );
-  if ((plan.complete || expired) && !review)
+  if (plan.complete && !review)
     return (
       <div className="mx-auto max-w-3xl space-y-5">
         <Card className="p-6 sm:p-8">
-          <h1 className="text-2xl font-semibold">
-            {plan.complete ? "Daily lesson complete" : "Study time complete"}
-          </h1>
+          <h1 className="text-2xl font-semibold">Daily lesson complete</h1>
           <p className="mt-3 text-ink-soft">
             {count} of {all.length} questions answered ·{" "}
             {all.filter((q) => answers[q.id] === q.answer).length} correct
           </p>
           <p className="mt-3 text-sm text-ink-soft">
-            {plan.complete
-              ? "You covered all four subjects. Your next lesson will be ready tomorrow."
-              : "Everything you answered is saved. We’ll continue the unfinished categories tomorrow, inside your daily budget."}
+            {weakCount
+              ? `${weakCount} skills need another look. They return in upcoming practice.`
+              : "No new weak skills flagged in this session. Keep checking your progress with fresh, timed practice."}{" "}
+            Your next lesson is ready tomorrow.
           </p>
           <Link
             href="/dashboard"
@@ -286,7 +435,8 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         <Card className="p-8">
           <h1 className="text-2xl font-semibold">Daily study</h1>
           <p className="mt-2 text-sm text-ink-soft">
-            {data.minutes} minutes · English, Reading, Math, Science
+            {data.minutes} minutes ·{" "}
+            {plan.blocks.map((block) => label(block.subject)).join(", ")}
           </p>
           <ol className="mt-5 divide-y divide-border">
             {plan.blocks.map((b) => (
@@ -297,8 +447,9 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                 <div>
                   <p className="font-semibold">{label(b.subject)}</p>
                   <p className="mt-1 text-sm text-ink-soft">
-                    {blockUnits(b).length} lessons · {blockUnits(b).length}{" "}
-                    drills · review
+                    {blockUnits(b).length}{" "}
+                    {b.reviewOnly ? "review lessons" : "new lessons"} ·{" "}
+                    {blockUnits(b).length} drills · review
                   </p>
                 </div>
                 <span className="text-sm text-ink-soft">~{b.minutes} min</span>
@@ -327,8 +478,12 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
   const currentUnit =
     currentBlock &&
     (review
-      ? blockUnits(currentBlock).find(
-          (u) => u.practiceIds?.includes(review.id) ?? u.topic === review.topic,
+      ? [...blockUnits(currentBlock), ...(currentBlock.reviewUnits ?? [])].find(
+          (u) =>
+            review.reviewUnitId
+              ? u.id === review.reviewUnitId
+              : (u.practiceIds?.includes(review.id) ??
+                u.topic === review.topic),
         )
       : step && "unit" in step
         ? step.unit
@@ -346,6 +501,8 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     streak++;
   }
   function nextQuestion() {
+    answerUncertainty.current = {};
+    setAnsweringQuestion(null);
     setReview(null);
     setRevisitLesson(false);
     window.scrollTo({ top: 0, behavior: "auto" });
@@ -354,31 +511,86 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     currentBlock?.subject === "english" ? DailyEnglishLesson : DailyLesson;
   const showLesson =
     currentUnit &&
-    (!lessons.includes(currentUnit.id) ||
-      revisitLesson ||
-      currentUnit.requiredConceptIndices?.some(
-        (i) => !lessons.includes(`${currentUnit.id}:concept:${i}`),
-      ));
+    (revisitLesson ||
+      (current?.phase !== "review" &&
+        (!lessons.includes(currentUnit.id) ||
+          currentUnit.requiredConceptIndices?.some(
+            (i) => !lessons.includes(`${currentUnit.id}:concept:${i}`),
+          ))));
   return (
-    <div className="mx-auto max-w-4xl space-y-5">
+    <div className="daily-workbench mx-auto max-w-6xl space-y-6">
+      <ol
+        className="daily-subject-rail"
+        aria-label="Daily subjects"
+        style={{
+          gridTemplateColumns: `repeat(${plan.blocks.length}, minmax(0, 1fr))`,
+        }}
+      >
+        {plan.blocks.map((item) => (
+          <li
+            key={item.subject}
+            aria-current={
+              item.subject === currentBlock?.subject ? "step" : undefined
+            }
+            data-done={lessons.includes(dailyReviewKey(item))}
+          >
+            {label(item.subject)}
+            {lessons.includes(dailyReviewKey(item)) && (
+              <span className="sr-only"> complete</span>
+            )}
+          </li>
+        ))}
+      </ol>
       <div className="flex flex-wrap items-center justify-between gap-3">
         <p className="text-sm font-semibold">
           {label(currentBlock?.subject ?? "english")} ·{" "}
-          {current?.phase === "review" || step?.kind === "review"
+          {currentBlock?.reviewOnly ||
+          current?.phase === "review" ||
+          step?.kind === "review"
             ? "Review"
             : `Lesson ${currentUnit ? blockUnits(currentBlock!).findIndex((u) => u.id === currentUnit.id) + 1 : 1}/${currentBlock ? blockUnits(currentBlock).length : 2}`}
         </p>
-        <p className="tabular-nums text-sm text-ink-soft">{time} left</p>
+        <p className="tabular-nums text-sm text-ink-soft">
+          {remaining > 0 ? `${time} left` : "Goal reached · keep going"}
+        </p>
       </div>
       {errorView}
-      {currentBlock &&
-        (currentBlock.subject === "math" ||
-          currentBlock.subject === "science") && (
-          <DesmosPanel
-            key={currentBlock.subject}
-            subject={currentBlock.subject}
-          />
+      {current &&
+        !showLesson &&
+        (!review || data.uncertainAnswers?.[current.id]) && (
+          <label className="flex min-h-11 items-center gap-3 text-sm">
+            <input
+              type="checkbox"
+              disabled={pending || !!review || answeringQuestion === current.id}
+              checked={
+                review
+                  ? !!data.uncertainAnswers?.[current.id]
+                  : uncertainQuestions.includes(current.id)
+              }
+              onChange={(e) =>
+                setUncertainQuestions(
+                  e.target.checked
+                    ? [...uncertainQuestions, current.id]
+                    : uncertainQuestions.filter((id) => id !== current.id),
+                )
+              }
+            />
+            {review
+              ? "Marked unsure — this skill returns for review"
+              : "I’m guessing or I can’t explain this yet"}
+          </label>
         )}
+      {currentBlock && currentBlock.subject === "math" && (
+        <DesmosPanel
+          key={currentBlock.subject}
+          subject={currentBlock.subject}
+        />
+      )}
+      {currentBlock?.subject === "science" && !showLesson && (
+        <p className="rounded-xl border border-border bg-bg-raised px-4 py-3 text-sm">
+          Science: no calculator. Use the question to find the right evidence.
+        </p>
+      )}
       {!review && step?.kind === "review" ? (
         <div className="space-y-6">
           <header>
@@ -393,54 +605,58 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
               /{step.block.questions.length} correct
             </p>
           </header>
-          {blockUnits(step.block).map((unit) => (
-            <Card key={unit.id} className="p-6 sm:p-8">
-              <h2 className="text-xl font-semibold">{unit.title}</h2>
-              <details className="mt-5 rounded-xl border border-border p-4">
-                <summary className="cursor-pointer text-sm font-semibold">
-                  Rules and worked examples
-                </summary>
-                <div className="mt-5">
-                  {step.block.subject === "english" ? (
-                    <EnglishLessonSections sections={unit.lesson.sections} />
-                  ) : (
-                    <LessonSections
-                      sections={unit.lesson.sections}
-                      idPrefix={`review-${unit.id}`}
-                    />
-                  )}
+          {[...blockUnits(step.block), ...(step.block.reviewUnits ?? [])].map(
+            (unit) => (
+              <Card key={unit.id} className="p-6 sm:p-8">
+                <h2 className="text-xl font-semibold">{unit.title}</h2>
+                <details className="mt-5 rounded-xl border border-border p-4">
+                  <summary className="cursor-pointer text-sm font-semibold">
+                    Rules and worked examples
+                  </summary>
+                  <div className="mt-5">
+                    {step.block.subject === "english" ? (
+                      <EnglishLessonSections sections={unit.lesson.sections} />
+                    ) : (
+                      <LessonSections
+                        sections={unit.lesson.sections}
+                        idPrefix={`review-${unit.id}`}
+                      />
+                    )}
+                  </div>
+                </details>
+                <div className="mt-6 divide-y divide-border">
+                  {[
+                    ...unit.questions,
+                    ...(step.block.reviewQuestions ?? []).filter((q) =>
+                      q.reviewUnitId
+                        ? q.reviewUnitId === unit.id
+                        : unit.practiceIds
+                          ? unit.practiceIds.includes(q.id)
+                          : q.topic === unit.topic,
+                    ),
+                  ].map((item, i) => (
+                    <details
+                      key={item.id}
+                      className="py-4"
+                      open={answers[item.id] !== item.answer}
+                    >
+                      <summary className="cursor-pointer text-sm font-semibold">
+                        Question {i + 1} ·{" "}
+                        {answers[item.id] === item.answer
+                          ? "Correct"
+                          : "Missed — review this"}{" "}
+                        ·{" "}
+                        {data.answerTimes[item.id] === undefined
+                          ? "Pacing unavailable"
+                          : `${answerPacing(data.answerTimes[item.id], item.subject).seconds}s / target ${answerPacing(data.answerTimes[item.id], item.subject).target}s`}
+                      </summary>
+                      <DailyCorrection q={item} chosen={answers[item.id]} />
+                    </details>
+                  ))}
                 </div>
-              </details>
-              <div className="mt-6 divide-y divide-border">
-                {[
-                  ...unit.questions,
-                  ...(step.block.reviewQuestions ?? []).filter((q) =>
-                    unit.practiceIds
-                      ? unit.practiceIds.includes(q.id)
-                      : q.topic === unit.topic,
-                  ),
-                ].map((item, i) => (
-                  <details
-                    key={item.id}
-                    className="py-4"
-                    open={answers[item.id] !== item.answer}
-                  >
-                    <summary className="cursor-pointer text-sm font-semibold">
-                      Question {i + 1} ·{" "}
-                      {answers[item.id] === item.answer
-                        ? "Correct"
-                        : "Missed — review this"}{" "}
-                      ·{" "}
-                      {data.answerTimes[item.id] === undefined
-                        ? "Pacing unavailable"
-                        : `${answerPacing(data.answerTimes[item.id], item.subject).seconds}s / target ${answerPacing(data.answerTimes[item.id], item.subject).target}s`}
-                    </summary>
-                    <DailyCorrection q={item} chosen={answers[item.id]} />
-                  </details>
-                ))}
-              </div>
-            </Card>
-          ))}
+              </Card>
+            ),
+          )}
           <Button
             disabled={pending}
             className="w-full"
@@ -450,7 +666,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
           >
             {pending
               ? "Saving…"
-              : step.block.subject === "science"
+              : step.block.subject === plan.blocks.at(-1)?.subject
                 ? "Finish daily study"
                 : `Finish ${label(step.block.subject)} review · next subject`}
           </Button>
@@ -463,21 +679,12 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
           revisiting={revisitLesson}
           pending={pending}
           onBack={() => setRevisitLesson(false)}
-          onAdvance={async (index, last) => {
-            if (
-              !(await action({
-                action: "concept",
-                unitId: currentUnit.id,
-                index,
-              }))
-            )
-              return false;
-            if (last)
-              return !!(await action({
-                action: "lesson",
-                unitId: currentUnit.id,
-              }));
-            return true;
+          onAdvance={async (index) => {
+            return !!(await action({
+              action: "concept",
+              unitId: currentUnit.id,
+              index,
+            }));
           }}
         />
       ) : current && currentBlock?.subject === "english" ? (
@@ -506,6 +713,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                 questionId: current.id,
                 chosen: choice,
                 elapsedMs: seconds * 1000,
+                uncertain: uncertainQuestions.includes(current.id),
               });
               if (result) setReview(current);
               return !!result;
@@ -521,11 +729,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
           savedChoice={answers[current.id]}
           savedTime={data.answerTimes[current.id]}
           count={blockAnswers.length}
-          correct={
-            blockAnswers.filter((item) => answers[item.id] === item.answer)
-              .length
-          }
-          streak={streak}
+          total={practiceQuestions.length}
           onLesson={() => {
             setRevisitLesson(true);
             window.scrollTo({ top: 0, behavior: "auto" });
@@ -537,6 +741,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
               questionId: current.id,
               chosen: choice,
               elapsedMs,
+              uncertain: uncertainQuestions.includes(current.id),
             });
             if (result) setReview(current);
             return !!result;

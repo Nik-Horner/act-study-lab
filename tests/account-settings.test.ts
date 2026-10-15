@@ -47,6 +47,19 @@ test("section settings validate every score and budget, including explicit blank
   ])
     assert.equal(validateStudySettings(value), null);
 });
+test("Science is optional without clearing its saved score", () => {
+  for (const includeScience of [false, true]) {
+    const preference = { ...settings, includeScience };
+    assert.deepEqual(validateStudySettings(preference), preference);
+    const restored = readStudySettings({ act_study_settings: preference }, 32);
+    assert.equal(restored.includeScience, includeScience);
+    assert.equal(restored.scores.science, 27);
+  }
+  assert.equal(
+    validateStudySettings({ ...settings, includeScience: "false" }),
+    null,
+  );
+});
 test("account settings hydrate and survive validation for all three added subjects", () => {
   const state = hydrateCloudState([], null, [], "America/Chicago", {
     act_study_settings: settings,

@@ -15,9 +15,8 @@ export function DailyDrill({
   revealed,
   savedChoice,
   savedTime,
-  correct,
   count,
-  streak,
+  total,
   onSubmit,
   onNext,
   onLesson,
@@ -27,9 +26,8 @@ export function DailyDrill({
   revealed: boolean;
   savedChoice?: number;
   savedTime?: number;
-  correct: number;
   count: number;
-  streak: number;
+  total: number;
   onSubmit: (choice: number, elapsedMs: number) => Promise<boolean>;
   onNext: () => void;
   onLesson: () => void;
@@ -78,7 +76,7 @@ export function DailyDrill({
         e.ctrlKey ||
         e.altKey ||
         t?.isContentEditable ||
-        t?.closest("input,textarea,select")
+        t?.closest("input,textarea,select,button,a,summary")
       )
         return;
       if (revealed && ["Enter", "n", "N", " "].includes(e.key)) {
@@ -101,31 +99,18 @@ export function DailyDrill({
     <div className="space-y-5">
       <div className="flex flex-wrap items-start justify-between gap-3">
         <div>
-          <h1 className="text-2xl font-semibold">
-            {title} —{" "}
-            {q.phase === "check"
-              ? "Quick check"
-              : q.phase === "review"
-                ? "Final review"
-                : "Drill"}
+          <h1 className="text-2xl font-semibold sm:text-3xl">
+            {title.replace(/^\d+\.\s*/, "")}
           </h1>
           <button
             onClick={onLesson}
-            className="mt-2 min-h-11 text-sm text-brand underline"
+            disabled={saving || failed}
+            className="mt-2 min-h-11 text-sm text-brand underline disabled:opacity-50"
           >
             Review the lesson
           </button>
         </div>
         <div className="flex flex-wrap items-center gap-4 text-sm">
-          <span>
-            {q.phase === "review" ? "Final review" : "This drill"}{" "}
-            <strong>
-              {correct}/{count}
-            </strong>
-          </span>
-          <span>
-            Streak <strong>{streak}</strong>
-          </span>
           <span
             className={`rounded-full border border-border px-3 py-2 tabular-nums ${(pace?.seconds ?? 0) > target ? "text-warn" : "text-ink-soft"}`}
           >
@@ -135,6 +120,12 @@ export function DailyDrill({
             · target {target}s
           </span>
         </div>
+      </div>
+      <div className="daily-drill-status text-sm">
+        <span>
+          {q.phase === "review" ? "Review · " : ""}Question{" "}
+          {Math.min(count + (revealed ? 0 : 1), total)} of {total}
+        </span>
       </div>
       {q.subject === "english" ? (
         <Card className="p-6">
@@ -171,7 +162,7 @@ export function DailyDrill({
           )}
         </Card>
       ) : (
-        <Card className="p-5 sm:p-7">
+        <Card className="p-5 sm:p-8">
           <QuestionView
             {...navigation}
             q={q as Question}
@@ -179,7 +170,7 @@ export function DailyDrill({
             onChoose={(i) => {
               if (i !== null) void submit(i);
             }}
-            revealed={revealed}
+            revealed={revealed || selection !== null}
             disabled={saving || failed}
           />
         </Card>
@@ -206,7 +197,7 @@ export function DailyDrill({
           Retry saving answer
         </Button>
       )}
-      {revealed && <Button onClick={onNext}>Next question</Button>}
+      {revealed && <Button onClick={onNext}>Continue</Button>}
       <p className="text-xs text-ink-soft">
         A–D or 1–4 answers · Enter, N, or Space continues after feedback.
       </p>

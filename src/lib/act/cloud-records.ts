@@ -126,7 +126,10 @@ export function hydrateCloudState(
     ...state.profile,
     testDate: profile?.test_date ?? state.profile.testDate,
     mathBaseline: settings.scores.math,
-    scienceBaseline: settings.scores.science,
+    scienceBaseline:
+      settings.scienceScoreRepresentative === false
+        ? null
+        : settings.scores.science,
     readingBaseline: settings.scores.reading,
     minutesPerDay: settings.minutesPerDay,
     targetScore: profile?.target_score ?? 36,

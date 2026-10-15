@@ -1,82 +1,133 @@
 {
   "slug": "commas",
   "title": "Commas",
-  "intro": "Commas appear in more ACT English questions than any other punctuation mark; expect several on every test. The core idea: a comma must earn its place by doing one of four specific jobs, and most wrong answers add a comma that has no job. If you cannot name a comma's job, cut it.",
+  "intro": "Learn where a comma helps—and where it splits words that belong together.",
   "sections": [
     {
-      "heading": "The 4 jobs of a comma",
+      "heading": "Common jobs of a comma",
       "body": [
-        "On the ACT, a comma earns its place only when it does one of four jobs. Job 1: a comma plus a FANBOYS word (for, and, nor, but, or, yet, so) joins two independent clauses. Job 2: a comma links an opening dependent clause to the independent clause that follows. Job 3: a pair of commas walls off unnecessary information. Job 4: commas separate items in a list.",
-        "If a comma is not doing one of these four jobs, delete it. The most common trap on the test is a jobless comma dropped between a subject and its verb or between a verb and its object."
+        "Use a comma plus a connecting word such as and or but to join two complete thoughts. A comma also separates an introductory clause, phrase, or word. Paired commas enclose extra information. Other commas separate list items or two adjectives that each describe the same noun.",
+        "Commas also introduce many quotations and mark direct address: “Maya, bring your notes.” Do not insert a lone comma between subject and verb or verb and object just because you pause there."
       ],
       "examples": [
-        { "text": "My alarm did not go off, so I arrived late.", "label": "Job 1: comma + FANBOYS joining two independent clauses", "good": true },
-        { "text": "While electronic music is popular, many people still prefer rock.", "label": "Job 2: opening dependent clause + independent clause", "good": true },
-        { "text": "The team's strongest swimmer, broke the school record.", "label": "Wrong: this comma does none of the four jobs; it splits subject and verb", "good": false }
+        {
+          "text": "My alarm did not go off, so I arrived late.",
+          "label": "Job 1: comma + FANBOYS joining two independent clauses",
+          "good": true
+        },
+        {
+          "text": "While electronic music is popular, many people still prefer rock.",
+          "label": "Job 2: opening dependent clause + independent clause",
+          "good": true
+        },
+        {
+          "text": "The team's strongest swimmer, broke the school record.",
+          "label": "Wrong: this comma splits subject and verb",
+          "good": false
+        }
       ],
-      "tip": "When in doubt, leave it out. A comma with no job is the most common wrong answer."
+      "tip": "For an opening phrase, check the boundary: 'After a long day at school, Maya rested.' The phrase is introductory even though it has no subject and verb."
     },
     {
       "heading": "Unnecessary information commas",
       "body": [
-        "Commas set off information you could remove without changing the core meaning of the sentence. That extra information can sit at the start of a sentence before a comma, at the end after a comma, or in the middle between a pair of commas.",
-        "The crossing-out trick decides every one of these questions: cover the suspected information and read what remains. If a complete sentence is left and the meaning still holds, the information is unnecessary and needs commas around it. If removing it breaks the sentence or changes who or what you mean, it is necessary and gets no commas.",
-        "When a phrase sits in the middle of a sentence, you need a comma on BOTH sides or on neither. One lonely comma at the edge of a non-essential phrase is wrong every time."
+        "Cover the extra information and reread. If the sentence stays complete and still identifies the same person or thing, that information is nonessential: useful extra detail that can be set off with commas.",
+        "If removal changes which person or thing is meant, keep the information without commas. A nonessential interruption in the middle needs both opening and closing commas."
       ],
       "examples": [
-        { "text": "Mrs. Ellison, who is known for pop quizzes, is my least favorite teacher.", "label": "Non-essential: commas on both sides", "good": true },
-        { "text": "The dresses that need to be hemmed are hanging in the closet.", "label": "Essential: no commas (tells which dresses)", "good": true },
-        { "text": "The snowboard in the closet, the one with no stickers, needs waxing.", "label": "Non-essential aside, walled off by a pair of commas", "good": true }
+        {
+          "text": "Mrs. Ellison, who is known for pop quizzes, is my least favorite teacher.",
+          "label": "Non-essential: commas on both sides",
+          "good": true
+        },
+        {
+          "text": "The dresses that need to be hemmed are hanging in the closet.",
+          "label": "Essential: no commas (tells which dresses)",
+          "good": true
+        },
+        {
+          "text": "The snowboard in the closet, the one with no stickers, needs waxing.",
+          "label": "Non-essential aside, walled off by a pair of commas",
+          "good": true
+        }
       ],
       "tip": "Cross it out. If the sentence still stands and means the same thing, wrap the phrase in commas. If not, use no commas."
     },
     {
       "heading": "The Names Rule",
       "body": [
-        "Punctuating names confuses students because both styles can be right. The deciding factor is whether the description before the name already points to exactly one person.",
-        "If the description is NOT specific to one person (friend, American physicist, Olympic medalist, high school principal), the name is necessary, so use NO commas: 'My friend Kelly moved to London.' You have many friends, so the name tells the reader which one.",
-        "If the description IS specific to one person (best friend, youngest sister, the CEO of Tesla), the name is extra, so wrap it in commas: 'My best friend, Andrew, is a scuba diver.' You can have only one best friend, so the name is unnecessary.",
-        "When the description comes AFTER the name, it is always unnecessary and always takes commas: 'Kelly, my friend from London, visits every summer.'"
+        "Ask whether the name identifies the person or adds detail about someone already identified. “My friend Kelly” can need the name to say which friend.",
+        "“The museum’s only curator, Lena Ortiz,” already identifies one person. An added description also takes commas: “Kelly, my friend from London, visits.” Context decides; position or a title alone does not."
       ],
       "examples": [
-        { "text": "Italian cyclist Marco Pantani won the Tour de France in 1998.", "label": "Generic description fits many people: no commas", "good": true },
-        { "text": "The CEO of Tesla, Elon Musk, has revolutionized cars.", "label": "Description fits only one person: commas around the name", "good": true },
-        { "text": "Kelly, my friend from London, visits every summer.", "label": "Description after the name: always commas", "good": true }
+        {
+          "text": "Italian cyclist Marco Pantani won the Tour de France in 1998.",
+          "label": "Generic description fits many people: no commas",
+          "good": true
+        },
+        {
+          "text": "The museum’s only curator, Lena Ortiz, opened the exhibit.",
+          "label": "Description fits only one person: commas around the name",
+          "good": true
+        },
+        {
+          "text": "Kelly, my friend from London, visits every summer.",
+          "label": "Extra description after an identified name: commas",
+          "good": true
+        }
       ],
-      "tip": "Ask: can the description fit more than one person? If yes, no commas. If it can name only one, put commas around the name."
+      "tip": "Use context: is the name needed to identify the person? If yes, no commas. If the person is already identified, set off the extra name."
     },
     {
       "heading": "Listing commas",
       "body": [
-        "Use commas to separate three or more items in a series: 'coconut shrimp, hot wings, and onion rings.' Two items joined by 'and' take no comma; a comma belongs before 'and' only in a list of three or more or when a full independent clause follows (Job 1).",
-        "Also use a comma between two adjectives that each describe the same noun on equal footing. The switching trick decides it: if you can swap the order of the adjectives, or insert 'and' between them, and the phrase still sounds right, put a comma between them. 'The old, limping dog' works because 'the limping, old dog' also works.",
-        "If swapping sounds wrong, do not add a comma. 'Three large dogs' takes no comma because 'large three dogs' fails; the adjectives are not the same type."
+        "Separate three or more list items with commas. Two ordinary items joined by and do not need a comma between them. If and joins two complete thoughts, use the clause-joining comma rule instead.",
+        "For two adjectives, try swapping them or inserting and. “Old, limping dog” passes: both words describe dog separately. “Three large dogs” does not: three tells how many large dogs. Those adjectives work together without a comma."
       ],
       "examples": [
-        { "text": "The picnic group ordered shrimp, wings, and onion rings.", "label": "Three-item list", "good": true },
-        { "text": "The old, limping dog finished the hike.", "label": "Two equal adjectives: the switch test passes", "good": true },
-        { "text": "She wore a beautiful, silk scarf.", "label": "Wrong: 'silk beautiful scarf' fails the switch test, so no comma belongs here", "good": false }
+        {
+          "text": "The picnic group ordered shrimp, wings, and onion rings.",
+          "label": "Three-item list",
+          "good": true
+        },
+        {
+          "text": "The old, limping dog finished the hike.",
+          "label": "Two equal adjectives: the switch test passes",
+          "good": true
+        },
+        {
+          "text": "She wore a beautiful, silk scarf.",
+          "label": "Wrong: 'silk beautiful scarf' fails the switch test, so no comma belongs here",
+          "good": false
+        }
       ],
       "tip": "For adjectives, swap their order or insert 'and.' If it still reads naturally, use a comma; if not, drop it."
     },
     {
       "heading": "The 1-comma rule",
       "body": [
-        "Many ACT questions place a single comma between a subject and its verb, or between a verb and its object. A comma never belongs in those spots.",
-        "'The wooden beam set at an angle, created an optical illusion' is wrong because the comma splits the subject from its verb. You have two legal fixes: remove the comma, or, if the middle phrase is truly unnecessary, add a second comma to wall it off: 'The wooden beam, set at an angle, created an optical illusion.'"
+        "A lone comma must not separate a subject from its verb or a verb from its object.",
+        "In “The beam set at an angle, created an illusion,” remove the comma. If “set at an angle” is extra information, enclose it with a matched pair instead: “The beam, set at an angle, created an illusion.”"
       ],
       "examples": [
-        { "text": "Expertly kneaded bread will have air pockets.", "label": "No comma between subject and verb", "good": true },
-        { "text": "Expertly kneaded bread, will have air pockets.", "label": "Wrong: a single comma splits subject from verb", "good": false }
+        {
+          "text": "Expertly kneaded bread will have air pockets.",
+          "label": "No comma between subject and verb",
+          "good": true
+        },
+        {
+          "text": "Expertly kneaded bread, will have air pockets.",
+          "label": "Wrong: a single comma splits subject from verb",
+          "good": false
+        }
       ],
       "tip": "Never let a single comma separate a subject from its verb. It is either no comma or a matched pair."
     },
     {
       "heading": "How to spot these questions",
       "body": [
-        "Comma questions are easy to recognize: all four answer choices contain the same words, and only the commas move. When you see that pattern, stop asking what sounds right and start checking what job each comma does.",
-        "Work three steps. First, name the job of every comma in a choice; one jobless comma kills the choice. Second, when a pair of commas surrounds a phrase, cross the phrase out and confirm that a complete sentence with the same meaning remains. Third, eliminate any choice that leaves a single comma between a subject and its verb or between a verb and its object.",
-        "Let the choices help you. A name offered in four arrangements (no commas, a pair of commas, comma before, comma after) signals the Names Rule. And if two choices would produce interchangeable sentences, both are wrong, because the test allows only one correct answer."
+        "When the words stay the same but commas move, name each comma’s job. Check introductions, clause boundaries, lists, and extra information.",
+        "For a name, decide whether it identifies or adds detail. For a paired interruption, cross it out and reread. Reject a lone comma separating subject and verb. Judge each full sentence rather than choosing by how many commas it has."
       ],
       "tip": "Same words, different commas: that is a comma question. Name every comma's job or cut the comma."
     }
@@ -85,21 +136,36 @@
     {
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Eric's mother[[ Louisa]] cheered from the bleachers.",
-      "choices": ["NO CHANGE", ", Louisa,", ", Louisa", " Louisa,"],
+      "choices": [
+        "NO CHANGE",
+        ", Louisa,",
+        ", Louisa",
+        " Louisa,"
+      ],
       "answer": 1,
-      "explanation": "A person has only one mother, so 'Louisa' is unnecessary information and needs commas on both sides: 'Eric's mother, Louisa, cheered.' The no-comma version treats the name as necessary. ', Louisa' leaves a lone comma at the front edge of the name with no closing partner, and ' Louisa,' leaves a single comma splitting the subject from its verb."
+      "explanation": "Here, 'Eric’s mother' identifies the person before the name, so 'Louisa' is added information and takes commas on both sides: 'Eric's mother, Louisa, cheered.' The no-comma version treats the name as necessary. ', Louisa' leaves a lone comma at the front edge of the name with no closing partner, and ' Louisa,' leaves a single comma splitting the subject from its verb."
     },
     {
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Award-winning teacher[[, Mrs. Saunders,]] helped me become a better writer.",
-      "choices": ["NO CHANGE", " Mrs. Saunders", ", Mrs. Saunders", " Mrs. Saunders,"],
+      "choices": [
+        "NO CHANGE",
+        " Mrs. Saunders",
+        ", Mrs. Saunders",
+        " Mrs. Saunders,"
+      ],
       "answer": 1,
       "explanation": "'Award-winning teacher' could describe many people, so the name is necessary and takes no commas: 'Award-winning teacher Mrs. Saunders helped me.' Cross out the name in the NO CHANGE version and 'Award-winning teacher helped me' fails, which proves the name cannot be walled off. ', Mrs. Saunders' opens a comma pair that never closes, and ' Mrs. Saunders,' leaves a single comma between the subject and its verb."
     },
     {
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The group at the picnic table ordered coconut shrimp, hot wings[[, and, onion rings]] to share.",
-      "choices": ["NO CHANGE", ", and onion rings", " and onion rings,", ", and onion rings,"],
+      "choices": [
+        "NO CHANGE",
+        ", and onion rings",
+        " and onion rings,",
+        ", and onion rings,"
+      ],
       "answer": 1,
       "explanation": "The list needs a comma before 'and' and nothing after it: 'coconut shrimp, hot wings, and onion rings to share.' NO CHANGE puts a comma after 'and' with nothing non-essential following it, so that comma has no job. Both choices ending in 'onion rings,' insert a jobless comma between the list and 'to share.'"
     }

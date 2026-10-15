@@ -2,6 +2,7 @@
 import { DesmosPanel } from "./DesmosPanel";
 import { QuestionPacing } from "../QuestionPacing";
 import { LessonSections } from "../LessonSections";
+import { MathText } from "../MathText";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
@@ -516,7 +517,9 @@ export function LessonView({ slug }: { slug: string }) {
           <Badge tone="brand">{topic.category}</Badge>
           <Badge>{SUBJECT_LABELS[topic.subject]}</Badge>
         </div>
-        <p className="prose-study mt-3 text-ink-soft">{lesson.intro}</p>
+        <p className="prose-study mt-3 text-ink-soft">
+          <MathText>{lesson.intro}</MathText>
+        </p>
       </header>
       {(topic.subject === "math" || topic.subject === "science") && (
         <DesmosPanel subject={topic.subject} />

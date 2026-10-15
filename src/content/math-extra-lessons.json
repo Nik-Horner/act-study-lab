@@ -2,13 +2,13 @@
   {
     "slug": "math-functions",
     "title": "Functions",
-    "intro": "Function questions reward careful reading more than long calculations. Concentrate on composition order, domain restrictions, inverse branches, and graph features that survive transformations. Every answer should identify an input, an output, or a relationship between them. Label which one the question requests. On digital practice, flag a question when the setup is unclear, keep a short line of scratch work, and return with a definite plan rather than repeatedly trying the same substitution.",
+    "intro": "Follow inputs and outputs to read, change, and combine functions.",
     "sections": [
       {
         "heading": "1. Inputs, outputs, and composition",
         "body": [
-          "A function assigns one output to each permitted input. In f(3), replace every occurrence of the variable by 3, using parentheses if the input is negative or an expression. The notation does not mean that f is a number multiplied by 3. For a piecewise rule, choose the branch using the original input condition before evaluating its formula.",
-          "Composition is an ordered process. In f(g(x)), evaluate g first, then feed its output into f. Writing a small input-output chain avoids reversing the order. The two compositions usually differ, and neither is a product of function values. With symbolic input, distribute carefully and square the entire expression."
+          "In \\(f(3)\\), replace every variable with 3. Use parentheses when the input is negative or contains several terms. If different input ranges use different formulas, first choose the formula for your original input.",
+          "In \\(f(g(x))\\), evaluate the inner function first, then feed its output into the outer function. This process is called composition; it does not mean multiplying the functions. The order usually changes the result; square the entire substituted expression."
         ],
         "examples": [
           {
@@ -22,13 +22,13 @@
       {
         "heading": "2. Domain restrictions and range endpoints",
         "body": [
-          "Domain describes permitted inputs; range describes attainable outputs. For real-number questions, a denominator must be nonzero, a square-root radicand must be nonnegative, and a logarithm argument must be strictly positive. These are separate conditions that must all hold. A square root can equal zero, but a logarithm cannot take zero as its argument.",
-          "For a composition, also check whether the inner output belongs to the outer domain. For range questions, inspect graph extremes, horizontal asymptotes, and any missing outputs. A downward parabola includes its maximum if the vertex input is allowed. A rational expression may approach an output forever without attaining it."
+          "Domain means allowed inputs; range means possible outputs. A denominator cannot be zero. The part inside a square root must be zero or positive. A logarithm’s argument—the expression inside it—must be positive. A square root can take zero; a logarithm cannot.",
+          "When one function feeds into another, both must allow the values you use. For possible outputs, check the graph’s highest and lowest points and any missing points. An asymptote is a line the graph gets closer to; approaching it does not always mean reaching it."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "For f(x) = 1/(x − 3) and g(x) = √(x − 1), the composition needs x ≥ 1 and √(x − 1) ≠ 3. Thus x = 10 is excluded, but x = 1 is allowed. The complete domain is x ≥ 1, x ≠ 10.",
+            "text": "For \\(f(x)=\\frac1{x-3}\\) and \\(g(x)=\\sqrt{x-1}\\), the composition needs x ≥ 1 and \\(\\sqrt{x-1}\\ne3\\). Thus x = 10 is excluded, but x = 1 is allowed. The complete domain is x ≥ 1, x ≠ 10.",
             "good": true
           }
         ],
@@ -37,8 +37,8 @@
       {
         "heading": "3. Transformations without guessing the direction",
         "body": [
-          "Changes outside a function affect outputs. The rule af(x) + k scales outputs by a and shifts them by k; a negative a also reflects across the horizontal axis. Changes inside a function affect inputs. The rule f(bx + c) reaches an original feature at input h when bx + c = h.",
-          "For a parabola in vertex form a(x − h)² + k, the vertex is (h, k), and the sign of a determines whether it is a minimum or maximum. An absolute-value graph uses the input that makes its inside zero. A vertical shift changes the output coordinate, while a horizontal compression changes the input coordinate."
+          "Outside changes affect outputs: \\(af(x)+k\\) multiplies each output by a, then adds k. A negative a flips the graph across the horizontal axis. Inside changes affect inputs: for \\(f(bx+c)\\), solve \\(bx+c=h\\) to locate an original feature at input h.",
+          "For \\(a(x-h)^2+k\\), the turning point (vertex) is \\((h,k)\\); positive a gives a lowest point and negative a a highest point. For absolute value, find the input that makes the inside zero. Solve the inside equation instead of guessing a horizontal shift."
         ],
         "examples": [
           {
@@ -52,8 +52,8 @@
       {
         "heading": "4. Inverse values and restricted branches",
         "body": [
-          "An inverse reverses the input-output relationship. The statement f⁻¹(y) = x means f(x) = y. For a single inverse value, solving that one equation is often faster than deriving a full inverse formula. The inverse superscript is different from the reciprocal 1/f(x).",
-          "To find a formula, set y equal to the original function, solve for x, and then exchange the variable names. Retain restrictions on the inverse input and output. Squared expressions may give two algebraic candidates; the original domain decides which is valid. To verify an inverse value, substitute the proposed input into the original function."
+          "An inverse works backward from an output to its input: \\(f^{-1}(y)=x\\) means \\(f(x)=y\\). For one inverse value, solve that equation directly. An inverse undoes the function; it is different from taking 1 divided by the function: \\(\\frac1{f(x)}\\).",
+          "To find an inverse formula, solve the original equation for its input, then swap variable names. Keep the rules about allowed inputs and outputs. Squaring may leave two possible answers; use the original input rule to choose between them. Substitute the result into the original function to check it."
         ],
         "examples": [
           {
@@ -67,13 +67,14 @@
       {
         "heading": "5. Zeros, intersections, holes, and rates",
         "body": [
-          "Zeros are inputs whose output is zero; graph intersections are inputs where two outputs agree. Move the expressions into one equation and factor when possible. Dividing by a variable can lose a solution at zero, so consider that case first. Even functions satisfy f(−x) = f(x); odd functions satisfy f(−x) = −f(x).",
-          "Rational functions require a second distinction. A canceled factor creates a hole only if the simplified expression is finite at that excluded input; a remaining denominator zero can still give an asymptote. The average rate of change is an output difference divided by an input difference, not just the numerator. Its units are output units per input unit."
+          "Zeros are inputs with output zero. Intersections are inputs where two outputs agree. Set up that equation and factor when possible. Before dividing by a variable, check zero separately so you do not lose a solution.",
+          "Even functions satisfy \\(f(-x)=f(x)\\); odd functions satisfy \\(f(-x)=-f(x)\\). Canceling a factor leaves a missing point, or hole, if the shorter expression has a finite value there. If the remaining denominator is zero, the graph may instead approach a vertical line without reaching it.",
+          "Average rate of change is \\(\\frac{\\text{output change}}{\\text{input change}}\\). Include both differences and label the result in output units per input unit."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "For (x² − 9)/(x − 3), cancellation gives x + 3 only when x ≠ 3, so the hole is at (3, 6). For f(x) = x² − 3x, the average rate from 2 to 5 is [10 − (−2)]/3 = 4.",
+            "text": "For \\(\\frac{x^2-9}{x-3}\\), cancellation gives x + 3 only when x ≠ 3, so the hole is at (3, 6). For f(x) = x² − 3x, the average rate from 2 to 5 is \\(\\frac{10-(-2)}3=4\\).",
             "good": true
           }
         ],
@@ -82,8 +83,10 @@
       {
         "heading": "6. Linear, exponential, and logarithmic structure",
         "body": [
-          "At equal input steps, a linear relationship has constant output differences, while an exponential relationship has constant ratios. The model abᵗ has initial value a at t = 0 and multiplier b per one input unit. If measurements are several units apart, their ratio equals a power of b. For half-life questions, the exponent counts half-life intervals, not raw hours.",
-          "A logarithm is an exponent statement: log_b(u) = v means u = bᵛ. For positive arguments, log_b(uv) = log_b(u) + log_b(v), and log_b(uᵖ) = p log_b(u). These rules do not turn log(u + v) into a sum of logarithms. The base must be positive and different from 1."
+          "For equal input steps, a linear pattern adds the same amount each time. An exponential pattern multiplies by the same amount each time. In \\(ab^t\\), a is the initial value and b the multiplier per input unit. A gap of several units produces a power of b; a half-life exponent counts how many times the amount halves.",
+          "\\(\\log_b u=v\\) means \\(u=b^v\\). For positive expressions inside the logarithms, \\(\\log_b(uv)=\\log_b u+\\log_b v\\) and \\(\\log_b(u^p)=p\\log_b u\\). These rules do not split a sum. The base is positive and not 1.",
+          "An arithmetic sequence adds the same number d at each step. It has \\(a_n=a_0+nd\\), or \\(a_n=a_1+(n-1)d\\) when indexing starts at 1. For \\(a_0=80\\) and \\(a_1=68\\), \\(d=-12\\), so \\(a_6=8\\).",
+          "In logarithmic equations, every original argument (the expression inside a logarithm) must be positive. For \\(\\log_2(x-1)+\\log_2(x+1)=3\\), require \\(x>1\\). Then \\((x-1)(x+1)=8\\) gives the sole valid root \\(x=3\\)."
         ],
         "examples": [
           {
@@ -97,8 +100,8 @@
       {
         "heading": "7. A fast digital decision process",
         "body": [
-          "First identify the task: evaluate, restrict, transform, invert, intersect, or model. Choose the shortest valid method for that task. Keep one line that captures the vulnerable step.",
-          "If the setup is unresolved after a brief attempt, choose your best provisional answer, flag the question, and move forward. The final pass should check the exact target and the original domain. In practice, classify a miss as notation, algebra, domain, branch, or pacing, then redo it later without the explanation."
+          "Name what you need: a function value, allowed inputs, a graph change, an inverse, a crossing point, or an equation for a situation. Choose the shortest valid method and write the step most likely to go wrong.",
+          "If the setup stays unclear, choose your best answer for now, flag it, and move on. Before submitting, reread the requested quantity and check the original domain. After a miss, identify notation, algebra, domain, branch, or pacing as the cause; redo it later without the explanation."
         ],
         "examples": [
           {
@@ -167,18 +170,18 @@
   {
     "slug": "math-geometry",
     "title": "Geometry",
-    "intro": "Geometry becomes reliable when each diagram is translated into a few labeled relationships. Protect the perpendicular height, the corresponding sides, the named arc, and the distinction between radius and diameter. Build accuracy by choosing the right theorem quickly and refusing assumptions based on a picture’s appearance. Build a small scratch sketch for text-only questions. A diagram supplies relationships that are stated or marked; its apparent proportions are not additional evidence.",
+    "intro": "Use shapes, angles, and measurements to find missing values.",
     "sections": [
       {
         "heading": "1. Translate the diagram and protect units",
         "body": [
-          "Start by marking what is given and what is requested. A base and its height must be perpendicular; a slanted side does not automatically serve as a height. A triangle has area bh/2, a parallelogram bh, and a trapezoid (b1 + b2)h/2. Choose the base that makes the perpendicular height easiest to identify.",
-          "Keep the dimension of the answer visible. Length uses linear units, area uses square units, and volume uses cubic units. If one measurement is in centimeters and another in meters, convert before combining them. For a composite region, separate the included pieces from the removed pieces."
+          "Mark the given measurements and the requested quantity. Height must meet the base at a right angle; a slanted side is not the height. Areas: triangle \\(\\frac{bh}{2}\\), parallelogram \\(bh\\), trapezoid \\(\\frac{(b_1+b_2)h}{2}\\).",
+          "Convert mixed units before calculating. Length uses units such as cm; area uses cm²; volume uses cm³. If a shape is built from several pieces, add what is included and subtract what is removed."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "An 8-by-6 rectangle with a radius-2 quarter-circle removed has area 48 − π(2²)/4 = 48 − π. The quarter factor applies to the circular area, not to the rectangle, and the radius must be squared.",
+            "text": "An 8-by-6 rectangle with a radius-2 quarter-circle removed has area \\(48-\\frac{\\pi(2^2)}4=48-\\pi\\). The quarter factor applies to the circular area, not to the rectangle, and the radius must be squared.",
             "good": true
           }
         ],
@@ -187,14 +190,15 @@
       {
         "heading": "2. Triangles: heights, angles, and allowed sides",
         "body": [
-          "For right triangles, identify the hypotenuse opposite the right angle and use a² + b² = c². Memorize the 3–4–5, 5–12–13, and 8–15–17 patterns, along with their multiples. A 45–45–90 triangle has sides x, x, x√2. A 30–60–90 triangle has sides x, x√3, 2x, with the smallest side opposite 30°. A familiar ratio is useful only after the angles are confirmed.",
-          "The triangle inequality is strict: the sum of any two side lengths must exceed the third. For sides a, b, x, this becomes |a − b| < x < a + b. An angle bisector divides the opposite side in the ratio of the two adjacent sides; it does not usually split it equally.",
-          "For a triangle with three known sides a, b, and c, Heron’s formula gives area = √[s(s−a)(s−b)(s−c)], where s = (a+b+c)/2. For sides 13, 14, and 15, s = 21 and area = √(21×8×7×6) = 84. For a regular n-sided polygon, each interior angle is 180(n−2)/n degrees and each exterior angle is 360/n degrees. The exterior angles sum to 360 degrees."
+          "For a right triangle, find the hypotenuse—the side opposite the right angle— and use \\(a^2+b^2=c^2\\). Recognize side lengths 3–4–5, 5–12–13, and 8–15–17, including sets multiplied by the same number. Special triangles have sides \\(x,x,x\\sqrt2\\) for 45–45–90 and \\(x,x\\sqrt3,2x\\) for 30–60–90; confirm the angles first.",
+          "A triangle’s third side must be longer than the difference of the other two and shorter than their sum: \\(|a-b|<x<a+b\\). A line splitting an angle in half divides the opposite side in the ratio of the two sides touching that angle, not always equally.",
+          "With three known sides, Heron’s formula gives area \\(\\sqrt{s(s-a)(s-b)(s-c)}\\), where \\(s=\\frac{a+b+c}{2}\\). For sides 13, 14, 15, \\(s=21\\) and area \\(\\sqrt{21\\times8\\times7\\times6}=84\\).",
+          "A regular polygon has equal sides and angles. With n sides, each interior angle (inside angle) is \\(\\frac{180(n-2)}n\\) degrees and each outside (exterior) angle is \\(\\frac{360}n\\) degrees. Exterior angles sum to 360 degrees."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "An equilateral triangle of side 10 has altitude 5√3, so its area is 10(5√3)/2 = 25√3. For a triangle with sides 4, 9, and integer x, the strict interval 5 < x < 13 gives seven values, 6 through 12.",
+            "text": "An equilateral triangle of side 10 has altitude 5√3, so its area is \\(\\frac{10(5\\sqrt3)}2=25\\sqrt3\\). For a triangle with sides 4, 9, and integer x, the strict interval 5 < x < 13 gives seven values, 6 through 12.",
             "good": true
           }
         ],
@@ -203,13 +207,13 @@
       {
         "heading": "3. Similarity across lengths, areas, and volumes",
         "body": [
-          "Similar figures have equal corresponding angles and proportional corresponding lengths. Establish correspondence from labels or angles before writing a ratio. If the larger-to-smaller length factor is k, every perimeter also scales by k, every area by k², and every volume by k³. This dimension pattern prevents the common error of using an area ratio directly for a side or a perimeter.",
-          "To recover a length factor from an area ratio, take a square root; from a volume ratio, take a cube root. Then apply that factor to the requested measurement. The figures may be rotated or reflected without changing correspondence. For a scale drawing, explicitly label which measurement belongs to the drawing and which belongs to the actual object."
+          "Match sides in the same position using labels and equal angles. If the larger-to-smaller length factor is k, the distance around each shape multiplies by k, areas multiply by \\(k^2\\), and volumes multiply by \\(k^3\\). Do not use an area ratio directly as a side ratio.",
+          "Find the multiplier for side lengths with the square root of an area ratio or cube root of a volume ratio. Turning or flipping a shape does not change these ratios. Label drawing and actual measurements before writing a scale ratio."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "If similar triangles have areas 9 and 25, their length ratio is 3:5. A smaller perimeter of 18 therefore becomes 18(5/3) = 30. If similar solids have heights 4 and 10, a volume of 32 becomes 32(10/4)³ = 500.",
+            "text": "If similar triangles have areas 9 and 25, their length ratio is 3:5. A smaller perimeter of 18 therefore becomes \\(18\\left(\\frac53\\right)=30\\). If similar solids have heights 4 and 10, a volume of 32 becomes \\(32\\left(\\frac{10}4\\right)^3=500\\).",
             "good": true
           }
         ],
@@ -218,25 +222,27 @@
       {
         "heading": "4. Circle angles, chords, tangents, and secants",
         "body": [
-          "A central angle equals its intercepted arc measure; an inscribed angle is half that measure. Identify the intercepted arc. A radius is perpendicular to its tangent. A perpendicular from the center bisects a chord.",
-          "Power-of-a-point relationships use products, with different segments depending on the location. Intersecting interior chords give segment × segment on each chord. Two exterior secants give external × whole on each secant. A tangent and a secant give tangent² = external × whole. Label the whole secant by adding its outside and inside portions if necessary.",
-          "For a central angle θ in degrees, arc length = (θ/360) × 2πr. Radius 9 and angle 80° give (80/360) × 18π = 4π units. Arc measure is angular; length is linear.",
-          "Tangents and perpendicular half-chords form right triangles: leg² = hypotenuse² − other leg². Radius 5 and center-to-external-point distance 13 give tangent √(13²−5²) = 12. Radius 13 and center-to-chord distance 5 give half-chord 12, so chord length is 24."
+          "An arc is part of a circle’s edge. Find the arc between the angle’s arms. An angle at the center equals the arc’s angle measure; an angle on the edge is half as large. A tangent touches the circle once, at a right angle to the radius. A chord joins two edge points; a line from the center meeting it at 90° cuts it in half.",
+          "A secant crosses the circle at two points. Multiply the right lengths: crossing chords give part × part on each chord; two secants from an outside point give outside part × whole length; tangent and secant give \\(\\text{tangent}^2=\\text{external}\\times\\text{whole}\\). Add outside and inside portions to get the whole secant.",
+          "For θ in degrees, arc length is \\(\\frac\\theta{360}\\times2\\pi r\\). Radius 9 and angle 80° give \\(\\frac{80}{360}\\times18\\pi=4\\pi\\). Arc measure is an angle; arc length is a distance.",
+          "Tangents and half-chords form right triangles. Radius 5 and center-to-external-point distance 13 give tangent \\(\\sqrt{13^2-5^2}=12\\). Radius 13 and center-to-chord distance 5 give half-chord 12, so the full chord is 24."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "A radius-13 circle with a chord five units from its center has half-chord √(13² − 5²) = 12, so the chord is 24. For a tangent and secant with outside 3 and whole 12, tangent² = 36, giving tangent length 6.",
+            "text": "A radius-13 circle with a chord five units from its center has half-chord \\(\\sqrt{13^2-5^2}=12\\), so the chord is 24. For a tangent and secant with outside 3 and whole 12, tangent² = 36, giving tangent length 6.",
             "good": true
           }
         ],
-        "tip": "Draw brackets for outside, inside, and whole segments before multiplying."
+        "tip": "Draw brackets for outside, inside, and whole segments before multiplying.",
+        "teachingRevision": 1
       },
       {
         "heading": "5. Coordinates and vectors as geometric tools",
         "body": [
-          "Coordinate questions can replace a complicated sketch with differences. The distance between (x1,y1) and (x2,y2) is √[(x2 − x1)² + (y2 − y1)²]. The midpoint averages each coordinate. If a midpoint and one endpoint are known, reverse the averaging: the missing endpoint is twice the midpoint minus the known endpoint. Negative coordinates require parentheses before squaring or subtracting.",
-          "For nonvertical lines, slope is change in y divided by change in x. Parallel lines have equal slopes, and perpendicular slopes multiply to −1. Horizontal and vertical lines need separate handling because a vertical slope is undefined. To find coordinate area, look for a horizontal or vertical base and a simple perpendicular height."
+          "Between \\((x_1,y_1)\\) and \\((x_2,y_2)\\), distance is \\(\\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}\\). For the point halfway between them, average the x-values and then the y-values. A missing endpoint is twice the midpoint minus the known endpoint. Put negative coordinates in parentheses.",
+          "Slope is change in y divided by change in x. Parallel lines run in the same direction and share slopes. Lines at right angles have slopes that multiply to −1, unless one line is vertical. Handle horizontal and vertical lines separately. For area, look for a horizontal or vertical base with an easy height at a right angle to the base.",
+          "The shortest, perpendicular distance from \\((x_0,y_0)\\) to \\(Ax+By+C=0\\) is \\(\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}\\). Put zero on the right first. From the origin to \\(3x+4y=20\\), distance is \\(\\frac{|-20|}{\\sqrt{3^2+4^2}}=4\\)."
         ],
         "examples": [
           {
@@ -250,13 +256,14 @@
       {
         "heading": "6. Solids, surface area, and inscribed shapes",
         "body": [
-          "Volume for a prism or cylinder is base area times perpendicular height. A cone or pyramid uses one third of that product. Surface area counts exposed faces, so a closed cylinder includes its curved side and both circular ends. A sphere has surface area 4πr² and volume 4πr³/3.",
-          "Inscribed and circumscribed figures connect through a shared segment. A rectangle inscribed in a circle has a diagonal equal to the circle’s diameter. A square’s diagonal is its side times √2. A circle inscribed in a square has diameter equal to the square’s side, a different relationship."
+          "A prism or cylinder has two matching, parallel ends. Its volume is base area × height at a right angle to the base. A cone or pyramid uses one third of that product. A sphere has surface area \\(4\\pi r^2\\) and volume \\(\\frac43\\pi r^3\\). Surface area adds the areas of all exposed faces.",
+          "A circle has area \\(\\pi r^2\\) and distance around it (circumference) \\(2\\pi r\\). A ring between circles with the same center (concentric circles) has area \\(\\pi R^2-\\pi r^2\\); radii 5 and 3 give \\(16\\pi\\). A closed cylinder has surface area \\(2\\pi r^2+2\\pi rh\\); radius 3 and height 8 give \\(66\\pi\\).",
+          "A rectangle whose corners sit on a circle has diagonal equal to the circle’s diameter. A square’s diagonal is side × \\(\\sqrt2\\). A circle that fits inside a square and touches all four sides instead has diameter equal to the square’s side."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "A square inscribed in a circle of area 64π has circle radius 8 and diameter 16. Its diagonal is 16, so its side squared is 16²/2 = 128. Thus the square’s area is 128. A cone with r = 3 and h = 12 has volume 36π.",
+            "text": "A square inscribed in a circle of area 64π has circle radius 8 and diameter 16. Its diagonal is 16, so its side squared is \\(\\frac{16^2}2=128\\). Thus the square’s area is 128. A cone with r = 3 and h = 12 has volume 36π.",
             "good": true
           }
         ],
@@ -265,8 +272,8 @@
       {
         "heading": "7. Fast recognition and a final verification pass",
         "body": [
-          "Classify the geometry before calculating: a right triangle, similarity, a circle-angle relationship, a segment product, a coordinate difference, or a solid formula. A short diagram with two labels is often faster than reading the entire question repeatedly. If no theorem is clear, mark a provisional answer and flag the question.",
-          "On the final pass, check radius versus diameter, whole versus partial segment, perpendicular versus slanted height, and length versus area versus volume. A numerical estimate can reject unreasonable choices without replacing the exact calculation. For practice review, draw the figure again from the text and state why each distractor corresponds to a different measurement or theorem."
+          "Find the pattern: right triangle, similarity, circle angles, segment products, coordinates, or solid formulas. Draw and label it. If you cannot see which rule to use, leave your best answer for now and flag the question.",
+          "Before submitting, check radius versus diameter, whole versus partial segment, perpendicular versus slanted height, and the requested units. Estimate to rule out answers that are far too large or small. After a miss, redraw the figure and identify the measurement or rule each wrong answer misuses."
         ],
         "examples": [
           {
@@ -294,7 +301,7 @@
           "38 square units"
         ],
         "answer": 0,
-        "explanation": "Use A = bh/2 = 12(7)/2 = 42. A triangle occupies half of a parallelogram with the same base and height. Multiplying base and height without halving gives 84."
+        "explanation": "Use A = \\(\\frac{bh}{2}\\) = 12(7)/2 = 42. A triangle occupies half of a parallelogram with the same base and height. Multiplying base and height without halving gives 84."
       },
       {
         "id": "check-math-geometry-2",
@@ -335,18 +342,18 @@
   {
     "slug": "math-trigonometry",
     "title": "Trigonometry",
-    "intro": "Trigonometry becomes manageable when the angle, its units, and the needed relationship are visible before the calculator opens. Protect quadrant signs, the opposite-angle pairing, and the interval used in an equation. Practice recognizing the setup quickly enough to reserve time for less familiar reasoning. Exact values often beat decimals on ACT questions. Treat the calculator as a verification tool after a correct model, and rehearse the degree or radian mode you intend to use.",
+    "intro": "Use triangle ratios, angles, and graphs to solve trig problems.",
     "sections": [
       {
         "heading": "1. Build the reference triangle before choosing a ratio",
         "body": [
-          "For an acute angle in a right triangle, sine is opposite divided by hypotenuse, cosine is adjacent divided by hypotenuse, and tangent is opposite divided by adjacent. The hypotenuse lies opposite the right angle; opposite and adjacent depend on which acute angle is named. Label the requested angle on a scratch sketch before selecting a ratio.",
-          "Use the Pythagorean theorem to fill a missing reference side. The 3–4–5 and 5–12–13 patterns speed this up, but scaled versions work the same way. The exact special-angle ratios come from 30–60–90 and 45–45–90 triangles. When a question gives one ratio and asks for another, reconstruct proportional sides rather than inventing a new angle with the calculator."
+          "Mark the named angle, which is less than 90°. The hypotenuse is across from the right angle. Relative to your marked angle, “opposite” is across from it and “adjacent” is the other side touching it. Use \\(\\sin\\theta=\\frac{\\text{opposite}}{\\text{hypotenuse}}\\), \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\), and \\(\\tan\\theta=\\frac{\\text{opposite}}{\\text{adjacent}}\\).",
+          "Use \\(a^2+b^2=c^2\\) to find a missing side. Recognize 3–4–5 and 5–12–13 triangles, including multiples of these lengths. Use 30–60–90 and 45–45–90 triangles for exact special-angle values. If given one ratio, draw a triangle whose sides match it, then find the new ratio."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "If an acute angle has sin θ = 5/13, choose opposite 5 and hypotenuse 13. The adjacent side is √(169 − 25) = 12, so cos θ = 12/13 and tan θ = 5/12. Tangent’s denominator is adjacent, not the hypotenuse.",
+            "text": "If an acute angle has \\(\\sin\\theta=\\frac5{13}\\), choose opposite 5 and hypotenuse 13. The adjacent side is \\(\\sqrt{169-25}=12\\), so \\(\\cos\\theta=\\frac{12}{13}\\) and \\(\\tan\\theta=\\frac5{12}\\). Tangent’s denominator is adjacent, not the hypotenuse.",
             "good": true
           }
         ],
@@ -355,13 +362,13 @@
       {
         "heading": "2. Radians and exact unit-circle values",
         "body": [
-          "A full turn is 360° or 2π radians. Convert degrees to radians by multiplying by π/180, and radians to degrees by multiplying by 180/π. An angle measured in radians can be used directly in arc length s = rθ. Do not convert it twice.",
-          "Memorize the first-quadrant exact values at 0°, 30°, 45°, 60°, and 90°. Then use a reference angle and quadrant signs to reach the other quadrants. A negative angle rotates clockwise; it does not automatically give a negative function value. Sine is odd, with sin(−θ) = −sin θ, while cosine is even, with cos(−θ) = cos θ."
+          "Radians are another way to measure an angle. A full turn is 360° or \\(2\\pi\\) radians. Multiply degrees by \\(\\frac\\pi{180}\\) to get radians; multiply radians by \\(\\frac{180}\\pi\\) to get degrees. With θ already in radians, arc length is \\(s=r\\theta\\); do not convert again.",
+          "The first quadrant is the upper-right quarter of the coordinate plane. Learn exact values at 0°, 30°, 45°, 60°, and 90°, then use the small angle to the horizontal axis (reference angle) and the sign in the correct quarter. A negative angle rotates clockwise; its function value need not be negative. Sine is odd: \\(\\sin(-\\theta)=-\\sin\\theta\\). Cosine is even: \\(\\cos(-\\theta)=\\cos\\theta\\)."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "225° = 225π/180 = 5π/4. For sin(7π/6), the reference angle is π/6 in Quadrant III, so the result is −1/2. For cos(−π/3), cosine symmetry gives 1/2. A radius-6 arc at 2π/3 radians has length 4π.",
+            "text": "\\(225^\\circ=\\frac{225\\pi}{180}=\\frac{5\\pi}4\\). For \\(\\sin\\left(\\frac{7\\pi}6\\right)\\), the reference angle is \\(\\frac\\pi6\\) in Quadrant III, so the result is \\(-\\frac12\\). For \\(\\cos\\left(-\\frac\\pi3\\right)\\), cosine symmetry gives \\(\\frac12\\). A radius-6 arc at \\(\\frac{2\\pi}3\\) radians has length 4π.",
             "good": true
           }
         ],
@@ -370,13 +377,13 @@
       {
         "heading": "3. Quadrant signs and reciprocal relationships",
         "body": [
-          "In Quadrant I, sine and cosine are both positive; in II, sine is positive and cosine negative; in III, both are negative; in IV, sine is negative and cosine positive. Tangent equals sine divided by cosine, so it is positive in I and III and negative in II and IV. Determine the quadrant sign separately from the reference-triangle magnitude.",
-          "The reciprocal ratios are cosecant = 1/sine, secant = 1/cosine, and cotangent = 1/tangent. They inherit the sign of the corresponding original ratio. Unlike sine and cosine, reciprocal ratios can have magnitude greater than 1. A reciprocal is undefined when its denominator ratio is zero."
+          "Find the + or − sign separately from the size of the answer. Quadrants I–IV are the four quarters, numbered counterclockwise from the upper right. Sine is positive in I and II; cosine in I and IV; tangent in I and III. Tangent equals sine divided by cosine.",
+          "A reciprocal flips a fraction, or takes 1 divided by a value: \\(\\csc\\theta=\\frac1{\\sin\\theta}\\), \\(\\sec\\theta=\\frac1{\\cos\\theta}\\), and \\(\\cot\\theta=\\frac1{\\tan\\theta}\\). They keep the original ratio’s sign and can be larger than 1 in size. You cannot take a reciprocal of zero because that would divide by zero."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "In Quadrant II, cos θ = −5/13 gives sin θ = 12/13, tan θ = −12/5, and sec θ = −13/5. The reference sides determine magnitudes; the quadrant supplies the signs. In Quadrant IV, cos θ = 4/5 gives sec θ = 5/4.",
+            "text": "In Quadrant II, \\(\\cos\\theta=-\\frac5{13}\\) gives \\(\\sin\\theta=\\frac{12}{13}\\), \\(\\tan\\theta=-\\frac{12}{5}\\), and \\(\\sec\\theta=-\\frac{13}5\\). The reference sides determine magnitudes; the quadrant supplies the signs. In Quadrant IV, \\(\\cos\\theta=\\frac45\\) gives \\(\\sec\\theta=\\frac54\\).",
             "good": true
           }
         ],
@@ -385,13 +392,13 @@
       {
         "heading": "4. Identities and all solutions in an interval",
         "body": [
-          "The core identity sin²θ + cos²θ = 1 helps recover a missing magnitude and simplify expressions. Also use tan θ = sin θ/cos θ where cosine is nonzero. Double-angle identities include sin(2θ) = 2sinθ cosθ and cos(2θ) = 2cos²θ − 1. The notation sin²θ means [sin θ]²; it does not mean sin(θ²).",
-          "For an equation, isolate the ratio first, find a reference angle, and then count every solution allowed by the interval. A calculator inverse returns a principal value, not every periodic solution. Check whether endpoints are included. Keep denominator restrictions when canceling expressions in identities."
+          "Use \\(\\sin^2\\theta+\\cos^2\\theta=1\\), and \\(\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}\\) when cosine is nonzero. These rules replace an angle with twice that angle: \\(\\sin(2\\theta)=2\\sin\\theta\\cos\\theta\\) and \\(\\cos(2\\theta)=2\\cos^2\\theta-1\\). The notation \\(\\sin^2\\theta\\) means \\((\\sin\\theta)^2\\), not \\(\\sin(\\theta^2)\\).",
+          "Get the trig ratio alone, find its small reference angle, and include every matching angle in the allowed range. An inverse-trig calculator button gives only one standard angle, not every answer. Check whether the range includes its ends, and never allow a zero denominator."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "For 2cos x = 1 on 0 ≤ x < 2π, the solutions are π/3 and 5π/3, with sum 2π. If cos θ = 3/5, then cos(2θ) = 2(9/25) − 1 = −7/25. Both examples require a step beyond the principal ratio value.",
+            "text": "For \\(2\\cos x=1\\) on \\(0\\le x<2\\pi\\), the solutions are \\(\\frac\\pi3\\) and \\(\\frac{5\\pi}3\\), with sum 2π. If \\(\\cos\\theta=\\frac35\\), then \\(\\cos(2\\theta)=2\\left(\\frac9{25}\\right)-1=-\\frac7{25}\\). Both examples require a step beyond the principal ratio value.",
             "good": true
           }
         ],
@@ -400,13 +407,13 @@
       {
         "heading": "5. Read amplitude, period, shift, and range",
         "body": [
-          "For y = A sin(Bx + C) + D or the analogous cosine rule, amplitude is |A|, the midline is y = D, and the range runs from D − |A| to D + |A|. The sine and cosine period is 2π/|B|. Tangent has base period π, so its period is π/|B| instead.",
-          "Factor the input to find the phase shift: Bx + C = B(x + C/B). The shift is −C/B. Solving Bx + C = 0 is another dependable way to locate it. A negative A reflects the graph vertically. When counting zeros or cycles, translate the specified x-interval into the inner-angle interval."
+          "For \\(y=A\\sin(Bx+C)+D\\) or its cosine version, amplitude (distance from the middle to a peak) is \\(|A|\\), middle line is \\(y=D\\), and all possible outputs lie in \\([D-|A|,D+|A|]\\). The period is the width of one repeating cycle. For sine and cosine it is \\(\\frac{2\\pi}{|B|}\\); for tangent it is \\(\\frac\\pi{|B|}\\).",
+          "Factor \\(Bx+C=B(x+\\frac CB)\\) to read horizontal shift \\(-\\frac CB\\), or solve \\(Bx+C=0\\). A negative A flips the wave vertically. To count zeros or cycles, put both ends of the allowed x-range into the expression inside sine or cosine."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "For y = −3cos(2x) + 5, the range is [2,8] and the period is π. For y = 2sin(4x − π), the input is 4(x − π/4), so the shift is π/4 right and the period is π/2. Neither feature uses amplitude 2 as the input coefficient.",
+            "text": "For \\(y=-3\\cos(2x)+5\\), the range is [2,8] and the period is π. For \\(y=2\\sin(4x-\\pi)\\), the input is \\(4\\left(x-\\frac\\pi4\\right)\\), so the shift is \\(\\frac\\pi4\\) right and the period is \\(\\frac\\pi2\\). Neither feature uses amplitude 2 as the input coefficient.",
             "good": true
           }
         ],
@@ -415,14 +422,14 @@
       {
         "heading": "6. Nonright triangles and the ambiguous sine case",
         "body": [
-          "The law of cosines c² = a² + b² − 2ab cos C uses the angle C included between known sides a and b. For an obtuse included angle, cosine is negative, so subtracting the cosine term increases c². The law of sines is a/sin A = b/sin B = c/sin C; pair each side with its opposite angle.",
-          "Two sides with their included angle suggest cosine. A known opposite side-angle pair plus another angle suggests sine. With side-side-angle data, sine can give an acute and an obtuse angle sharing the same sine. Test both candidates against the 180° triangle sum and positive third angle. Some data allow zero, one, or two triangles.",
-          "When two sides a and b and their included angle C are known, triangle area = ab sin C/2. Drop a perpendicular to side a: its height is b sin C, so the usual base × height/2 becomes ab sin C/2. The angle must be the one between the two known sides. With sides 8 and 10 enclosing 30°, area = (8×10×sin 30°)/2 = 20 square units."
+          "If you know two sides and the angle between them, use the law of cosines: \\(c^2=a^2+b^2-2ab\\cos C\\). An angle C greater than 90° has negative cosine, increasing \\(c^2\\). If you know a side and the angle directly across from it, use the law of sines: \\(\\frac a{\\sin A}=\\frac b{\\sin B}=\\frac c{\\sin C}\\).",
+          "If two sides and an angle not between them are given, the same sine value may fit an angle below 90° or one above 90°. Check each against the 180° triangle sum and a positive third angle. There may be zero, one, or two triangles.",
+          "With sides a, b and the angle C between them, triangle area is \\(\\frac{ab\\sin C}{2}\\): the height at a right angle to the base is \\(b\\sin C\\). Sides 8 and 10 enclosing 30° give area \\(\\frac{8\\times10\\times\\sin30^\\circ}2=20\\)."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "With sides 5 and 7 enclosing 120°, c² = 25 + 49 − 70(−1/2) = 109. For A = 30°, a = 8, b = 12, sin B = 3/4; both B ≈ 48.59° and B ≈ 131.41° leave room for a third angle, giving two triangles.",
+            "text": "With sides 5 and 7 enclosing 120°, \\(c^2=25+49-70\\left(-\\frac12\\right)=109\\). For A = 30°, a = 8, b = 12, \\(\\sin B=\\frac34\\); both B ≈ 48.59° and B ≈ 131.41° leave room for a third angle, giving two triangles.",
             "good": true
           }
         ],
@@ -431,13 +438,13 @@
       {
         "heading": "7. Model the situation and control digital pacing",
         "body": [
-          "For an elevation or ladder question, draw the level ground, vertical object, and line of sight. Decide which length is known and which is requested. If eye height is mentioned, add it after finding the rise above the observer’s eye. Use units consistently.",
-          "When a hard trig problem stalls, leave a provisional answer, flag it, and continue. On the return pass, check mode, quadrant, interval endpoints, and the matching angle-side pair. During review, solve the same relationship exactly where possible and explain the sign before reaching for decimals."
+          "For an elevation problem (looking upward) or a ladder problem, sketch level ground, the vertical object, and the line of sight. Label known and requested lengths. If eye height is given, add it after finding the rise above the eye. Keep units consistent.",
+          "If stuck, leave your best answer for now and return later. On the final pass, check degrees versus radians, the correct quarter of the circle, the ends of the allowed range, and which angle faces each side. After a miss, solve exactly when possible and explain the sign before calculating decimals."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "A 10-meter ladder at 60° to the ground reaches 10sin60° = 5√3 meters high. Its ground distance is 10cos60° = 5 meters. These two quantities can appear together as distractors, so the requested height determines the correct ratio.",
+            "text": "A 10-meter ladder at 60° to the ground reaches \\(10\\sin60^\\circ=5\\sqrt3\\) meters high. Its ground distance is \\(10\\cos60^\\circ=5\\) meters. These two quantities can appear together as distractors, so the requested height determines the correct ratio.",
             "good": true
           }
         ],
@@ -457,10 +464,10 @@
           "3/5",
           "4/3",
           "5/4",
-          "4/5"
+          "\\(\\frac45\\)"
         ],
         "answer": 3,
-        "explanation": "The reference triangle has opposite side 3 and adjacent side 4, so the hypotenuse is 5. Therefore cos θ = adjacent/hypotenuse = 4/5. A reciprocal such as 5/4 cannot be a cosine value."
+        "explanation": "The reference triangle has opposite side 3 and adjacent side 4, so the hypotenuse is 5. Therefore \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\) = \\(\\frac45\\). A reciprocal such as 5/4 cannot be a cosine value."
       },
       {
         "id": "check-math-trigonometry-2",
@@ -471,13 +478,13 @@
         "stem": "y = sin(4x).",
         "questionText": "What is its least positive period?",
         "choices": [
-          "π/2",
+          "\\(\\frac\\pi2\\)",
           "4π",
           "2π",
-          "π/4"
+          "\\(\\frac\\pi4\\)"
         ],
         "answer": 0,
-        "explanation": "The sine period is 2π divided by the absolute coefficient of x. Here it is 2π/4 = π/2. Increasing the coefficient compresses the graph horizontally and reduces the period."
+        "explanation": "The sine period is 2π divided by the absolute coefficient of x. Here it is 2π/4 = \\(\\frac\\pi2\\). Increasing the coefficient compresses the graph horizontally and reduces the period."
       },
       {
         "id": "check-math-trigonometry-3",
@@ -501,13 +508,13 @@
   {
     "slug": "math-statistics-probability",
     "title": "Statistics & Probability",
-    "intro": "Statistics and probability questions are usually decided by the correct denominator, the correct count, or the meaning of a word such as exactly or given. Make the sample space and the requested summary explicit before computing. Keep totals separate from averages and distinguish shifts from changes in spread. For probability, identify whether order matters and whether a draw changes the next draw’s population. Short organized scratch work is more useful than a long list of unlabeled fractions.",
+    "intro": "Read data and calculate how likely an outcome is.",
     "sections": [
       {
         "heading": "1. Means are totals divided by counts",
         "body": [
-          "The arithmetic mean is the sum divided by the number of observations. To recover a missing value, rebuild the required total from mean times count and subtract the known total. When a value is added or removed, update both the numerator and denominator.",
-          "A combined mean must weight group means by their group sizes. Averaging the two means works only when the groups have equal counts. For a frequency table, multiply each value by its frequency before adding, and use the sum of frequencies as the count. If every observation becomes ax + b, its mean becomes aμ + b."
+          "The mean, or average, is the sum divided by how many values there are. For a missing value, rebuild the required total as mean × count, then subtract the known total. Adding or removing a value changes both total and count.",
+          "To combine groups, multiply each mean by its group size, add, and divide by the total size. Simply averaging the means works only for equal-sized groups. A frequency table lists how often each value occurs. Multiply each value by that count, add, then divide by the total count. If every value becomes \\(ax+b\\), the mean becomes \\(a\\mu+b\\)."
         ],
         "examples": [
           {
@@ -521,8 +528,8 @@
       {
         "heading": "2. Medians, frequencies, and outliers",
         "body": [
-          "The median depends on sorted positions. For an odd count, use the single middle observation; for an even count, average the two central observations. A frequency table contains repeated observations even when it lists each value only once. Use cumulative counts to locate the median position.",
-          "An extreme outlier can pull the mean substantially without changing the median. The mode is the most frequent value and is a different summary again. Do not assume the mean must be one of the observed values. If the problem changes the data count, identify the new middle positions before carrying over the old median."
+          "The median is the middle value after sorting from least to greatest. For an even count, average the two middle values. In a frequency table, include each value as many times as its count says. Add those counts as you go to locate the middle.",
+          "An outlier is a value far from the rest. It can move the mean without moving the median. The mode is the most frequent value; the mean need not appear in the data. If the count changes, locate the new middle positions before reusing an old median."
         ],
         "examples": [
           {
@@ -536,13 +543,13 @@
       {
         "heading": "3. Spread, transformations, and standardized distance",
         "body": [
-          "Range is maximum minus minimum; interquartile range is Q3 − Q1 and describes the middle half of the observations. Standard deviation measures distance from the mean, and variance is its square. Adding a constant shifts every value and the mean together, leaving these distances unchanged. Multiplying values by a changes standard deviation by |a| and variance by a².",
-          "For a value x in a distribution with mean μ and standard deviation σ, the standardized distance is (x − μ)/σ. This tells how many standard deviations the observation lies above or below the mean. It does not require a normal distribution simply to compute the distance."
+          "Range is largest minus smallest. Interquartile range is the width of the middle half: \\(Q_3-Q_1\\), the middle half. Standard deviation measures how spread out the values are around the mean; variance is its square. Adding the same number to every value changes neither measure. Multiplying values by a scales standard deviation by \\(|a|\\) and variance by \\(a^2\\).",
+          "Use μ for the mean and σ for standard deviation. A value’s standardized distance is \\(\\frac{x-\\mu}{\\sigma}\\): the number of standard deviations above or below the mean. This calculation works even if the data do not follow a bell-shaped, or normal, pattern."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "If variance is 9 and each value becomes −2x + 7, the new variance is 4(9) = 36; the new standard deviation is 2(3) = 6. If a score is 76 with mean 60 and standard deviation 8, its standardized distance is (76 − 60)/8 = 2.",
+            "text": "If variance is 9 and each value becomes −2x + 7, the new variance is 4(9) = 36; the new standard deviation is 2(3) = 6. If a score is 76 with mean 60 and standard deviation 8, its standardized distance is \\(\\frac{76-60}8=2\\).",
             "good": true
           }
         ],
@@ -551,13 +558,13 @@
       {
         "heading": "4. Sample spaces and conditional information",
         "body": [
-          "Probability is favorable outcomes divided by total outcomes when the elementary outcomes are equally likely. Define those outcomes before counting. Two dice have 36 equally likely ordered pairs, not 11 equally likely sums. In a two-way table, totals determine different denominators depending on whether selection is from everyone, a row, or a column.",
-          "Without replacement, the first draw changes both counts and total for later draws. With replacement, the population is restored. If a first result is already known, update the sample space using that result rather than multiplying by the probability that it occurred."
+          "When every result is equally likely, probability is matching results divided by all possible results. List what counts as a result first: two dice have 36 ordered pairs, not 11 equally likely sums. In a table, use the total for the group you are choosing from: everyone, one row, or one column.",
+          "If a drawn item stays out, change both the matching count and the total before the next draw. If it goes back in, use the original counts. If an earlier result is already known, start from that situation; do not multiply by its probability."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "If 12 athletes and 10 nonathletes ride a bus, selecting a bus rider gives athlete probability 12/(12 + 10) = 6/11. If a bag has 3 green and 4 orange marbles and one green is removed, the next orange probability is 4/6 = 2/3.",
+            "text": "If 12 athletes and 10 nonathletes ride a bus, selecting a bus rider gives athlete probability \\(\\frac{12}{12+10}=\\frac6{11}\\). If a bag has 3 green and 4 orange marbles and one green is removed, the next orange probability is 4/6 = 2/3.",
             "good": true
           }
         ],
@@ -566,13 +573,13 @@
       {
         "heading": "5. And, or, independence, and complements",
         "body": [
-          "For independent events, an intersection probability is the product of the individual probabilities. Independence means one event does not change the other’s likelihood; it does not mean they cannot occur together. Disjoint events cannot occur together and have zero intersection. For an inclusive union, use P(A or B) = P(A) + P(B) − P(A and B).",
-          "At least one is often easier through its complement, none. Exactly one and at least one describe different sets of outcomes. Sequential outcomes may require adding different orders, such as red then blue or blue then red. When drawing without replacement, each order uses changing probabilities."
+          "Independent events do not change each other’s chances; multiply their probabilities to find the chance of both. Disjoint events cannot happen together. For “A or B, including both,” subtract the overlap: \\(P(A\\text{ or }B)=P(A)+P(B)-P(A\\text{ and }B)\\).",
+          "“At least one” means one or more. It is often easier to find 1 minus the chance of none. “Exactly one” excludes two or more. For sequences, add valid orders when needed, such as red-blue and blue-red. Without replacement, update probabilities within each order."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "Three independent trials with success probability 1/4 have no-success probability (3/4)³ = 27/64, so at least one success has probability 37/64. For two dice, at least one 6 has probability 1 − (5/6)² = 11/36, rather than the double-counted 1/3.",
+            "text": "Three independent trials with success probability 1/4 have no-success probability \\(\\left(\\frac34\\right)^3=\\frac{27}{64}\\), so at least one success has probability 37/64. For two dice, at least one 6 has probability \\(1-\\left(\\frac56\\right)^2=\\frac{11}{36}\\), rather than the double-counted 1/3.",
             "good": true
           }
         ],
@@ -581,8 +588,9 @@
       {
         "heading": "6. Ordered counting and probability distributions",
         "body": [
-          "When order matters, multiply the available choices for each position. If repetition is forbidden, the number of available choices decreases after each selection. When order does not matter, divide out the duplicate orderings or use combinations C(n,k) = n!/[k!(n − k)!]. A committee has no order unless roles are assigned.",
-          "For exactly k successes in n independent trials with success probability p, use C(n,k)pᵏ(1 − p)ⁿ⁻ᵏ. The combination counts the placements of the successes. A first success on a particular trial has only one required order: failures followed by a success. Expected value is a probability-weighted average of signed outcomes."
+          "When order matters, multiply choices for each position; available choices shrink if repeats are forbidden. When order does not matter, count groups using combinations \\(\\binom nk=\\frac{n!}{k!(n-k)!}\\). Here, n! means multiplying the whole numbers from 1 through n, and 0! = 1. A committee has no order unless people receive different roles.",
+          "For exactly k successes in n tries, each with the same success chance p and no effect on the other tries, use \\(\\binom nk p^k(1-p)^{n-k}\\). The combination counts placements of successes. A first success on a particular trial has one order: failures, then success.",
+          "Expected value is the long-run average: multiply each possible gain or loss by its probability, then add. Use a negative number for a loss. If asked for net gain, subtract the entry cost from the payout."
         ],
         "examples": [
           {
@@ -596,8 +604,8 @@
       {
         "heading": "7. Study design and a reliable final pass",
         "body": [
-          "A random sample supports estimates about its source population when selection is representative. A volunteer sample can remain biased even when it is large, because those who opt in may differ from those who do not. Randomly choosing from a biased sampling frame does not restore missing members of the intended population.",
-          "For digital pacing, identify the question’s trigger word and denominator quickly. If a counting setup is unclear, sketch positions or a small table instead of listing outcomes at random. Flag an unresolved problem after a reasonable first attempt and preserve enough scratch labeling for the return pass."
+          "A sample is a smaller group used to learn about a larger group. Random selection helps when everyone in that larger group can be chosen. Volunteers may differ from nonvolunteers, even in a huge sample. Randomly choosing from a list still misses anyone left off the list.",
+          "Find the key phrase, such as “at least one,” and the group you are choosing from before calculating. For unclear counting problems, sketch positions or a small table. If you move on, leave enough scratch work to resume. On the final pass, check whether results overlap, whether drawn items go back in, and whether order matters."
         ],
         "examples": [
           {
@@ -656,7 +664,7 @@
           "16/25",
           "7/10",
           "3/10",
-          "4/5"
+          "\\(\\frac45\\)"
         ],
         "answer": 1,
         "explanation": "Use the complement of two blues. P(two blue) = (3/5)(2/4) = 3/10, so P(at least one red) = 1 − 3/10 = 7/10. The second draw uses four remaining marbles. Counting only two reds would miss outcomes with exactly one red."

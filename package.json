@@ -4,30 +4,45 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "vite build && node scripts/clean-hosting-build.mjs",
     "start": "next start",
     "lint": "eslint",
     "test": "tsx --test tests/*.test.ts",
     "validate:content": "node scripts/validate-content.mjs && node scripts/validate-math.mjs && node scripts/validate-math-extra.mjs && node scripts/validate-science.mjs && node scripts/validate-reading.mjs && node scripts/validate-quality.mjs",
-    "check": "npm run lint && npm run validate:content && npm test && npm run build"
+    "check": "npm run lint && npm run validate:content && npm test && npm run build",
+    "dev:vinext": "vite dev --port 3001",
+    "build:vinext": "vite build",
+    "start:vinext": "wrangler dev --config dist/server/wrangler.json",
+    "deploy:vinext": "vinext-cloudflare deploy --config dist/server/wrangler.json",
+    "build:next": "next build"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",
     "@supabase/supabase-js": "^2.112.2",
+    "katex": "^0.19.0",
     "next": "^16.3.8",
     "react": "19.2.8",
     "react-dom": "19.2.8"
   },
   "devDependencies": {
+    "@cloudflare/vite-plugin": "^1.63.0",
     "@tailwindcss/postcss": "^4",
+    "@types/katex": "^0.16.8",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@vinext/cloudflare": "^1.0.1",
+    "@vitejs/plugin-react": "^6.1.2",
+    "@vitejs/plugin-rsc": "^0.5.36",
     "eslint": "^9",
     "eslint-config-next": "^16.3.8",
     "prettier": "^3.9.9",
+    "react-server-dom-webpack": "^19.2.8",
     "tailwindcss": "^4",
     "tsx": "^4.23.15",
-    "typescript": "^5"
-  }
+    "typescript": "^5",
+    "vinext": "^1.0.1",
+    "vite": "^8.3.3"
+  },
+  "type": "module"
 }

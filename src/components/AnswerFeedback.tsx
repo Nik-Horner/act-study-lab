@@ -1,4 +1,5 @@
 import { explanationSteps } from "@/lib/answer-explanation";
+import { MathText } from "./MathText";
 export function AnswerFeedback({
   choices,
   answer,
@@ -24,11 +25,13 @@ export function AnswerFeedback({
         </h3>
         {!correct && chosen != null && (
           <p className="mt-2 text-sm text-ink-soft">
-            Your answer: {String.fromCharCode(65 + chosen)}. {choices[chosen]}
+            Your answer: {String.fromCharCode(65 + chosen)}.{" "}
+            <MathText>{choices[chosen]}</MathText>
           </p>
         )}
         <p className="mt-2 font-semibold text-good">
-          {String.fromCharCode(65 + answer)}. {choices[answer]}
+          {String.fromCharCode(65 + answer)}.{" "}
+          <MathText>{choices[answer]}</MathText>
         </p>
       </div>
       <div className="border-t border-border pt-4">
@@ -36,7 +39,7 @@ export function AnswerFeedback({
         <ol className="list-decimal space-y-3 pl-5 text-sm leading-relaxed text-ink">
           {steps.map((step, i) => (
             <li key={i} className="max-w-prose pl-1">
-              {step}
+              <MathText>{step}</MathText>
             </li>
           ))}
         </ol>

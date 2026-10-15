@@ -2,12 +2,12 @@
   {
     "slug": "math-algebra",
     "title": "Algebra",
-    "intro": "Make algebra automatic while keeping every restriction and sign. Write the one step most likely to go wrong; then verify the candidate in the original statement.",
+    "intro": "Solve equations and inequalities, then check that your answer fits.",
     "sections": [
       {
         "heading": "Equations: isolate, then verify",
         "body": [
-          "For a linear equation, distribute before combining terms. For a system, choose elimination when coefficients already cancel and substitution when a variable is isolated.",
+          "First multiply the number outside parentheses by every term inside. Then combine matching terms. With two equations, add or subtract them to remove a variable (elimination). If a variable is already alone, replace it in the other equation (substitution).",
           "Worked example: 4(x − 2) = 2x + 10 becomes 4x − 8 = 2x + 10, so x = 9. Verify: both original sides equal 28. For x + y = 11 and x − y = 3, adding gives 2x = 14, so x = 7 and y = 4."
         ],
         "tip": "Before filling a bubble, reread whether the question asks for x, y, a sum, or a product.",
@@ -22,8 +22,9 @@
       {
         "heading": "Restrictions and multiple branches",
         "body": [
-          "Before canceling a rational expression, write which denominator values are forbidden. Absolute values usually produce two equations; squaring can introduce candidates that fail the original equation.",
-          "Worked example: (x² − 16)/(x − 4) = 10 has x ≠ 4. Cancel (x − 4) to obtain x + 4 = 10, so x = 6. For |3x + 1| = 8, solve 3x + 1 = 8 and 3x + 1 = −8, giving x = 7/3 or x = −3."
+          "First rule out values that make a denominator—the bottom of a fraction—zero. Absolute value measures distance from zero, so the inside may be positive or negative. Check both possibilities. After squaring, test each possible answer in the original equation.",
+          "Worked example: \\(\\frac{x^2-16}{x-4}=10\\) has x ≠ 4. Cancel (x − 4) to obtain x + 4 = 10, so x = 6. For |3x + 1| = 8, solve 3x + 1 = 8 and 3x + 1 = −8, giving x = 7/3 or x = −3.",
+          "For an absolute-value inequality \\(|u|<a\\) with \\(a>0\\), use \\(-a<u<a\\); ≤ includes endpoints. For \\(|u|>a\\), use \\(u<-a\\) or \\(u>a\\). Example: \\(|x-4|<3\\) gives \\(-3<x-4<3\\), so \\(1<x<7\\). A less-than inequality describes the numbers between its two ends."
         ],
         "tip": "A canceled factor keeps its original domain restriction.",
         "examples": [
@@ -37,7 +38,7 @@
       {
         "heading": "Quadratics and inequalities",
         "body": [
-          "Factor when the numbers cooperate. Otherwise use the quadratic formula or complete the square. In an inequality, multiplying or dividing by a negative reverses the inequality sign.",
+          "Try writing the quadratic (an expression whose highest power is 2) as multiplied pieces, called factors. Otherwise use the quadratic formula or rewrite it as a squared expression. If you multiply or divide an inequality by a negative, reverse its sign.",
           "Worked example: x² − 8x + 15 = (x − 3)(x − 5), so its zeros are 3 and 5. The product is negative between the zeros and positive outside. Thus x² − 8x + 15 < 0 has 3 < x < 5; strict inequalities exclude the zeros."
         ],
         "tip": "Test a point from each interval when the expression’s sign is uncertain.",
@@ -52,9 +53,9 @@
       {
         "heading": "Recognize polynomial structure before calculating",
         "body": [
-          "Look for a common factor, a difference of squares, a perfect-square trinomial, or a pair of grouped terms with the same factor. A cubic does not automatically require a long computation. Factoring reveals all the zeros at once and preserves repeated roots. If the question asks only for a roots’ sum or product, use the coefficient relationships instead of solving each root.",
+          "Look for a piece shared by every term, or a pattern such as \\(u^2-v^2=(u-v)(u+v)\\) or \\(u^2+2uv+v^2=(u+v)^2\\). You can also group terms to find a shared piece. The zeros, or roots, make the expression equal zero. For \\(ax^2+bx+c\\), their sum is \\(-b/a\\) and product is \\(c/a\\).",
           "Worked example: p(x) = x³ + 2x² − 9x − 18 groups as x²(x + 2) − 9(x + 2). Therefore p(x) = (x + 2)(x − 3)(x + 3), with zeros −2, 3, −3. Their sum is −2. For 5x² − 15x + 2, the roots’ sum is 15/5 = 3 and their product is 2/5 even though the individual roots are awkward.",
-          "A provided zero can also determine an unknown coefficient: substitute that input and set the output to zero. To recover a polynomial from two zeros r and s, start with a(x − r)(x − s); use a supplied point to find a. Do not assume a = 1. Division by x − r leaves remainder p(r), so a remainder question often needs one substitution rather than long division."
+          "If a zero is given, put it into the expression and set the result to zero to find a missing coefficient—the number multiplying a variable. With zeros r and s, start with \\(a(x-r)(x-s)\\), then use a point to find a; do not assume 1. Division by \\(x-r\\) leaves remainder \\(p(r)\\), often avoiding long division."
         ],
         "tip": "Ask what information is actually requested before committing to the quadratic formula.",
         "examples": [
@@ -68,15 +69,16 @@
       {
         "heading": "Rational and radical equations: protect the original statement",
         "body": [
-          "The simplified equation and the original equation can have different domains. Record denominator exclusions before finding a common denominator or cross-multiplying. Cancel common factors of an entire expression, never isolated terms across a sum. A radical equation also imposes a nonnegative radicand; when a square root equals another expression, that other expression must be nonnegative too.",
-          "Worked example: √(x + 12) = x gives x ≥ 0. Squaring produces x² − x − 12 = 0, so candidates are 4 and −3. Substitution accepts 4 because √16 = 4, but rejects −3 because √9 = 3. For 1/(x − 2) = 2/(x + 1), exclude 2 and −1; then x + 1 = 2x − 4 gives x = 5, which is valid.",
-          "Keep a small candidate list and perform the original-equation test on every candidate. This catches sign information lost by squaring and values forbidden by division. If the prompt asks for a count, sum, or set of solutions, calculate it only after filtering the candidates. For rational inequalities, break the number line at zeros of the numerator and denominator, then test the sign in each interval."
+          "Rule out values that make any denominator zero. Cancel whole multiplied pieces, never individual terms joined by + or −. The expression inside a square root must be zero or positive. Anything equal to that square root must also be zero or positive.",
+          "Worked example: \\(\\sqrt{x+12}=x\\) gives x ≥ 0. Squaring produces x² − x − 12 = 0, so candidates are 4 and −3. Substitution accepts 4 because √16 = 4, but rejects −3 because √9 = 3. For \\(\\frac1{x-2}=\\frac2{x+1}\\), exclude 2 and −1; then x + 1 = 2x − 4 gives x = 5, which is valid.",
+          "Test each possible answer in the original equation before counting, adding, or listing solutions. For an inequality with fractions, mark where the top or bottom becomes zero. Test one number between each pair of marks to find the sign.",
+          "Use a common denominator before canceling. For nonzero a and b, \\(\\frac1a+\\frac1b=\\frac{a+b}{ab}\\) and \\(\\frac1a-\\frac1b=\\frac{b-a}{ab}\\). Their quotient is \\(\\frac{a+b}{b-a}\\), requiring \\(a\\ne b\\). Cancel the common factor ab only after forming the quotient."
         ],
         "tip": "A zero denominator is an excluded boundary, even when a factor cancels later.",
         "examples": [
           {
             "label": "Worked example",
-            "text": "(x² − 1)/(x − 1) = 2 simplifies to x + 1 = 2, but its candidate x = 1 is excluded, so the original equation has no solution.",
+            "text": "\\(\\frac{x^2-1}{x-1}=2\\) simplifies to x + 1 = 2, but its candidate x = 1 is excluded, so the original equation has no solution.",
             "good": true
           }
         ]
@@ -84,9 +86,9 @@
       {
         "heading": "Parameters, identities, and exponent equations",
         "body": [
-          "A parameter is a fixed but unknown number. Decide what behavior the prompt requires: one solution, no solutions, infinitely many solutions, or a repeated quadratic root. For Ax = B, nonzero A gives one solution; A = 0 with B ≠ 0 gives none; A = B = 0 gives infinitely many. In a polynomial identity, match corresponding coefficients because equality must hold for every input.",
+          "Check what the question wants: one solution, no solutions, every value as a solution, or a quadratic with one repeated solution. For \\(Ax=B\\), nonzero A gives one solution; \\(A=0\\), \\(B\\ne0\\) gives none; \\(A=B=0\\) gives infinitely many. An identity is true for every allowed input. Match the numbers multiplying the same powers on both sides.",
           "Worked example: (k − 3)x = 0 has infinitely many solutions when k = 3, because both sides become zero for every x. In x² + 8x + c = 0, exactly one real root requires discriminant 8² − 4c = 0, giving c = 16. For a(x + 2)² + b = ax² + 12x + 7, matching the linear coefficient gives 4a = 12, so a = 3 and then b = −5.",
-          "For exponent equations, rewrite both sides with the same base when possible. A product of powers adds exponents, while a power raised to another power multiplies them. For example, 3^(2x − 1) = 81 = 3⁴ gives 2x − 1 = 4 and x = 5/2. Keep the whole exponent in parentheses and avoid treating an exponent as a multiplication factor."
+          "For exponent equations, write both sides as powers of the same base. Multiplying powers of that base adds their exponents. Raising a power to another power multiplies the exponents. Example: \\(3^{2x-1}=81=3^4\\) gives \\(2x-1=4\\), so \\(x=\\frac52\\). Group the whole exponent."
         ],
         "tip": "For a quadratic, discriminant positive means two real roots, zero means one, and negative means none.",
         "examples": [
@@ -100,9 +102,9 @@
       {
         "heading": "Fast methods and an algebra error log",
         "body": [
-          "Back-solving answer choices is useful when the question seeks a single number and direct algebra looks long. Start with a middle-sized choice if the relationship is monotonic, then use whether the result is too large or too small to narrow the rest. For an identity or equivalent expression, plug in simple allowed values to eliminate choices, but remember that agreement at one input does not prove an identity.",
+          "Try the answer choices in the equation when solving directly takes too long. If the result only rises or only falls as the input grows, a middle choice shows which direction to try next. Use simple allowed inputs to reject unequal expressions. One matching result does not prove two expressions always agree.",
           "Worked example: to compare proposed forms of (2x + 1)(x − 3), x = 0 checks the constant −3 and x = 1 checks the output −6. Those tests quickly reject many incorrect signs, after which expanding gives 2x² − 5x − 3 as a proof. Avoid x values that make all choices equal, such as zero when every choice contains a factor of x.",
-          "In timed work, write a brief line showing the risky step: a negative division, a distribution over subtraction, or a denominator restriction. If no clear route appears after a short attempt, mark the problem and return after securing clearer points. After each drill, label an error as concept, setup, arithmetic, restriction, or requested quantity. Redo the problem without viewing the explanation; recognizing the explanation is not the same as reproducing the method."
+          "Write the step most likely to cause a mistake: dividing by a negative, multiplying through parentheses, or avoiding a zero denominator. If stuck, flag and return. After a miss, label the cause: concept, setup, arithmetic, restriction, or requested quantity. Redo without the explanation to check that you can reproduce the method."
         ],
         "tip": "For a 36 target, a clean easy-point pass and a deliberate final check matter as much as hard-question tricks.",
         "examples": [
@@ -127,7 +129,7 @@
           "−4",
           "16",
           "4",
-          "1/2"
+          "\\(\\frac12\\)"
         ],
         "answer": 2,
         "explanation": "Add 7 to both sides: 4x = 16. Divide by 4: x = 4. The original left side is 4(4) − 7 = 9. Subtracting 7 instead of undoing its subtraction gives the wrong equation."
@@ -171,7 +173,7 @@
   {
     "slug": "math-functions",
     "title": "Functions",
-    "intro": "Treat a function as an input-output rule. Most difficult ACT function errors come from reversing the order of operations, confusing inverse with reciprocal, or forgetting the original domain.",
+    "intro": "Follow inputs and outputs to read, change, and combine functions.",
     "sections": [
       {
         "heading": "Inputs, composition, and domains",
@@ -259,19 +261,19 @@
   {
     "slug": "math-geometry",
     "title": "Geometry",
-    "intro": "Translate the diagram into a small set of relationships. Mark perpendicular heights, corresponding sides, and intercepted arcs before calculating. A sketch need not be drawn to scale.",
+    "intro": "Use shapes, angles, and measurements to find missing values.",
     "sections": [
       {
         "heading": "Area, similarity, and three dimensions",
         "body": [
-          "Triangle area is bh/2; trapezoid area is (b₁ + b₂)h/2. The height is perpendicular to the base. Similar figures scale lengths by k, areas by k², and volumes by k³.",
-          "Worked example: a triangle with base 10 and height 6 has area 30. If a similar triangle has twice the corresponding side length, its area is 30(2²) = 120. For a cylinder with r = 2 and h = 7, volume is 28π, while total surface area is 2π(2)(7) + 2π(2²) = 36π."
+          "Triangle area is \\(\\frac{bh}{2}\\); trapezoid area is \\(\\frac{(b_1+b_2)h}{2}\\). The height is perpendicular to the base. Similar figures scale lengths by k, areas by \\(k^2\\), and volumes by \\(k^3\\).",
+          "Worked example: a triangle with base 10 and height 6 has area 30. If a similar triangle has twice the corresponding side length, its area is \\(30(2^2)=120\\). For a cylinder with r = 2 and h = 7, volume is 28π, while total surface area is \\(2\\pi(2)(7)+2\\pi(2^2)=36\\pi\\)."
         ],
         "tip": "Check whether the question asks for length, area, volume, or surface area; keep units consistent.",
         "examples": [
           {
             "label": "Right triangle",
-            "text": "With legs 8 and 15, the hypotenuse is √(8² + 15²) = 17.",
+            "text": "With legs 8 and 15, the hypotenuse is \\(\\sqrt{8^2+15^2}=17\\).",
             "good": true
           }
         ]
@@ -280,13 +282,13 @@
         "heading": "Circle angles, tangents, and chords",
         "body": [
           "A central angle equals its intercepted arc measure. An inscribed angle is half its intercepted arc. A radius to a point of tangency is perpendicular to the tangent.",
-          "Worked example: a 96° arc gives an inscribed angle of 48°. For intersecting chords with segment lengths 2 and 15 on one chord and 5 and x on the other, 2(15) = 5x, so x = 6. For a sector with radius 4 and angle 90°, area is (90/360)π(4²) = 4π."
+          "Worked example: a 96° arc gives an inscribed angle of 48°. For intersecting chords with segment lengths 2 and 15 on one chord and 5 and x on the other, 2(15) = 5x, so x = 6. For a sector with radius 4 and angle 90°, area is \\(\\frac{90}{360}\\pi(4^2)=4\\pi\\)."
         ],
         "tip": "Identify the exact arc and the two segments belonging to each chord before using a theorem.",
         "examples": [
           {
             "label": "Arc versus area",
-            "text": "A sector’s area uses πr²; its arc length uses 2πr. Both are multiplied by the fraction of a full turn.",
+            "text": "A sector’s area uses \\(\\pi r^2\\); its arc length uses \\(2\\pi r\\). Both are multiplied by the fraction of a full turn.",
             "good": true
           }
         ]
@@ -295,13 +297,13 @@
         "heading": "Coordinates and special shapes",
         "body": [
           "Horizontal and vertical distances are coordinate differences. Use the distance formula for a slanted segment and the slope formula for a line. Parallel lines share slopes; perpendicular nonvertical lines have slopes whose product is −1.",
-          "Worked example: the distance from (−1, 2) to (5, 10) is √(6² + 8²) = 10. A regular hexagon can be split into six equilateral triangles. An equilateral triangle of side s has height s√3/2 and area s²√3/4."
+          "Worked example: the distance from (−1, 2) to (5, 10) is \\(\\sqrt{6^2+8^2}=10\\). A regular hexagon can be split into six equilateral triangles. An equilateral triangle of side s has height \\(\\frac{s\\sqrt{3}}{2}\\) and area \\(\\frac{s^2\\sqrt{3}}{4}\\)."
         ],
         "tip": "For coordinate area, choose a horizontal or vertical base when available so its height is easy to read.",
         "examples": [
           {
             "label": "Perpendicular distance",
-            "text": "The distance from (x₀, y₀) to Ax + By + C = 0 is |Ax₀ + By₀ + C|/√(A² + B²).",
+            "text": "The distance from (x₀, y₀) to Ax + By + C = 0 is \\(\\frac{|Ax_0+By_0+C|}{\\sqrt{A^2+B^2}}\\).",
             "good": true
           }
         ]
@@ -323,7 +325,7 @@
           "38 square units"
         ],
         "answer": 0,
-        "explanation": "Use A = bh/2 = 12(7)/2 = 42. A triangle occupies half of a parallelogram with the same base and height. Multiplying base and height without halving gives 84."
+        "explanation": "Use A = \\(\\frac{bh}{2}\\) = 12(7)/2 = 42. A triangle occupies half of a parallelogram with the same base and height. Multiplying base and height without halving gives 84."
       },
       {
         "id": "check-math-geometry-2",
@@ -347,19 +349,19 @@
   {
     "slug": "math-trigonometry",
     "title": "Trigonometry",
-    "intro": "Start with the angle, identify opposite/adjacent/hypotenuse, then choose a relationship. For harder questions, keep quadrant signs and angle units visible.",
+    "intro": "Use triangle ratios, angles, and graphs to solve trig problems.",
     "sections": [
       {
         "heading": "Right-triangle ratios and units",
         "body": [
-          "Use sin θ = opposite/hypotenuse, cos θ = adjacent/hypotenuse, and tan θ = opposite/adjacent. The Pythagorean theorem fills in a missing side. The sides opposite 30°, 60°, 90° are in the ratio 1:√3:2.",
-          "Worked example: if cos θ = 8/17 for an acute angle, the third side of the reference triangle is √(17² − 8²) = 15. Thus sin θ = 15/17 and tan θ = 15/8. A 45–45–90 triangle has hypotenuse equal to a leg times √2."
+          "Use \\(\\sin\\theta=\\frac{\\text{opposite}}{\\text{hypotenuse}}\\), \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\), and \\(\\tan\\theta=\\frac{\\text{opposite}}{\\text{adjacent}}\\). The Pythagorean theorem fills in a missing side. The sides opposite 30°, 60°, 90° are in the ratio \\(1:\\sqrt{3}:2\\).",
+          "Worked example: if \\(\\cos\\theta=\\frac{8}{17}\\) for an acute angle, the third side of the reference triangle is \\(\\sqrt{17^2-8^2}=15\\). Thus \\(\\sin\\theta=\\frac{15}{17}\\) and \\(\\tan\\theta=\\frac{15}{8}\\). A 45–45–90 triangle has hypotenuse equal to a leg times \\(\\sqrt2\\)."
         ],
         "tip": "Use degree mode for degree angles and radian mode for radian angles.",
         "examples": [
           {
             "label": "Conversion",
-            "text": "Radians = degrees × π/180. Therefore 135° = 3π/4.",
+            "text": "\\(\\text{radians}=\\text{degrees}\\times\\frac{\\pi}{180}\\). Therefore \\(135^\\circ=\\frac{3\\pi}{4}\\).",
             "good": true
           }
         ]
@@ -367,8 +369,8 @@
       {
         "heading": "Quadrants, identities, and periods",
         "body": [
-          "In Quadrants I, II, III, IV, the signs of (sin, cos) are (+,+), (+,−), (−,−), (−,+). Use sin²θ + cos²θ = 1 and tan θ = sin θ/cos θ. The double-angle identity is sin(2θ) = 2sin θ cos θ.",
-          "Worked example: in Quadrant IV with cos θ = 5/13, sin θ = −12/13 and tan θ = −12/5. For y = 2sin(3x + π), the amplitude is 2 and the period is 2π/3; shifting the graph does not change its period."
+          "In Quadrants I, II, III, IV, the signs of (sin, cos) are (+,+), (+,−), (−,−), (−,+). Use \\(\\sin^2\\theta+\\cos^2\\theta=1\\) and \\(\\tan\\theta=\\frac{\\sin\\theta}{\\cos\\theta}\\). The double-angle identity is \\(\\sin(2\\theta)=2\\sin\\theta\\cos\\theta\\).",
+          "Worked example: in Quadrant IV with \\(\\cos\\theta=\\frac{5}{13}\\), \\(\\sin\\theta=-\\frac{12}{13}\\) and \\(\\tan\\theta=-\\frac{12}{5}\\). For \\(y=2\\sin(3x+\\pi)\\), the amplitude is 2 and the period is \\(\\frac{2\\pi}3\\); shifting the graph does not change its period."
         ],
         "tip": "For a trig equation, solve for the ratio value first, then count all angles in the specified interval.",
         "examples": [
@@ -382,8 +384,8 @@
       {
         "heading": "Nonright triangles",
         "body": [
-          "The law of cosines c² = a² + b² − 2ab cos C uses an angle included between two known sides. The law of sines a/sin A = b/sin B = c/sin C pairs each side with its opposite angle.",
-          "Worked example: sides 4 and 6 enclosing 60° give c² = 16 + 36 − 2(4)(6)(1/2) = 28, so c = 2√7. If a = 6 opposite 30° and B = 60°, then b = 6 sin60°/sin30° = 6√3."
+          "The law of cosines \\(c^2=a^2+b^2-2ab\\cos C\\) uses an angle included between two known sides. The law of sines \\(\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}\\) pairs each side with its opposite angle.",
+          "Worked example: sides 4 and 6 enclosing 60° give \\(c^2=16+36-2(4)(6)\\left(\\frac12\\right)=28\\), so c = 2√7. If a = 6 opposite 30° and B = 60°, then \\(b=\\frac{6\\sin60^\\circ}{\\sin30^\\circ}=6\\sqrt3\\)."
         ],
         "tip": "Use cosine for two sides and their included angle; use sine when a known side-angle opposite pair is available.",
         "examples": [
@@ -408,10 +410,10 @@
           "3/5",
           "4/3",
           "5/4",
-          "4/5"
+          "\\(\\frac45\\)"
         ],
         "answer": 3,
-        "explanation": "The reference triangle has opposite side 3 and adjacent side 4, so the hypotenuse is 5. Therefore cos θ = adjacent/hypotenuse = 4/5. A reciprocal such as 5/4 cannot be a cosine value."
+        "explanation": "The reference triangle has opposite side 3 and adjacent side 4, so the hypotenuse is 5. Therefore \\(\\cos\\theta=\\frac{\\text{adjacent}}{\\text{hypotenuse}}\\) = \\(\\frac45\\). A reciprocal such as 5/4 cannot be a cosine value."
       },
       {
         "id": "check-math-trigonometry-2",
@@ -422,20 +424,20 @@
         "stem": "y = sin(4x).",
         "questionText": "What is its least positive period?",
         "choices": [
-          "π/2",
+          "\\(\\frac\\pi2\\)",
           "4π",
           "2π",
-          "π/4"
+          "\\(\\frac\\pi4\\)"
         ],
         "answer": 0,
-        "explanation": "The sine period is 2π divided by the absolute coefficient of x. Here it is 2π/4 = π/2. Increasing the coefficient compresses the graph horizontally and reduces the period."
+        "explanation": "The sine period is 2π divided by the absolute coefficient of x. Here it is 2π/4 = \\(\\frac\\pi2\\). Increasing the coefficient compresses the graph horizontally and reduces the period."
       }
     ]
   },
   {
     "slug": "math-statistics-probability",
     "title": "Statistics & Probability",
-    "intro": "Define the sample space before computing a probability. For data questions, keep totals, counts, and spread separate. Read “exactly,” “at least,” “with replacement,” and “order matters” literally.",
+    "intro": "Read data and calculate how likely an outcome is.",
     "sections": [
       {
         "heading": "Center and spread",
@@ -456,7 +458,7 @@
         "heading": "Counting and sequential probability",
         "body": [
           "When order matters, multiply the number of choices at each position. When order does not matter, divide out the repeated orderings or use combinations. Independent outcomes multiply; disjoint ways to meet the same condition add.",
-          "Worked example: choose 2 people from 7 in C(7, 2) = 7(6)/2 = 21 ways. From a bag with 4 green and 3 gold tokens, drawing two green without replacement has probability (4/7)(3/6) = 2/7. With replacement it would instead be (4/7)²."
+          "Worked example: choose 2 people from 7 in \\(\\binom72=\\frac{7(6)}2=21\\) ways. From a bag with 4 green and 3 gold tokens, drawing two green without replacement has probability \\(\\frac47\\times\\frac36=\\frac27\\). With replacement it would instead be \\(\\left(\\frac47\\right)^2\\)."
         ],
         "tip": "Draw a short tree when two different orders lead to the requested outcome.",
         "examples": [
@@ -470,8 +472,8 @@
       {
         "heading": "Distributions and expected value",
         "body": [
-          "For a discrete distribution, probabilities must total 1. Expected value is Σ(value × probability). For n independent trials with success probability p, exactly k successes has probability C(n, k)pᵏ(1 − p)ⁿ⁻ᵏ.",
-          "Worked example: a net gain of $6 with probability 1/4 and a loss of $2 otherwise has expectation 6(1/4) − 2(3/4) = $0. For three independent trials with p = 1/2, exactly two successes has probability 3(1/2)²(1/2) = 3/8."
+          "For a discrete distribution, probabilities must total 1. Expected value is Σ(value × probability). For n independent trials with success probability p, exactly k successes has probability \\(\\binom nk p^k(1-p)^{n-k}\\).",
+          "Worked example: a net gain of $6 with probability 1/4 and a loss of $2 otherwise has expectation 6(1/4) − 2(3/4) = $0. For three independent trials with p = \\(\\frac12\\), exactly two successes has probability \\(3\\left(\\frac12\\right)^2\\left(\\frac12\\right)=\\frac38\\)."
         ],
         "tip": "In an expected gain, enter losses as negative values and distinguish net gain from total payout.",
         "examples": [
@@ -523,13 +525,13 @@
   {
     "slug": "math-number-quantity",
     "title": "Number & Quantity",
-    "intro": "These topics are compact, so careful notation can turn them into reliable points. Separate real and imaginary parts, row and column dimensions, and a sequence’s first term from its common ratio.",
+    "intro": "Work with powers, roots, number types, and vectors.",
     "sections": [
       {
         "heading": "Exponents, radicals, and complex numbers",
         "body": [
-          "Use a^(m/n) = (n-th root of a)ᵐ when the real expression is defined. Powers of i repeat every four because i² = −1. For complex multiplication, distribute and then replace i² with −1.",
-          "Worked example: 27^(2/3) = 3² = 9. Also, (1 + 2i)(3 + i) = 3 + i + 6i + 2i² = 1 + 7i. The magnitude of a + bi is √(a² + b²), which is a nonnegative real number."
+          "Use \\(a^{m/n}=(\\sqrt[n]{a})^m\\) when the result is a real number. Powers of i repeat every four because \\(i^2=-1\\). A complex number combines an ordinary number with a multiple of i. Multiply every term in one factor by every term in the other, then replace \\(i^2\\) with −1.",
+          "Worked example: \\(27^{2/3}=3^2=9\\). Also, (1 + 2i)(3 + i) = 3 + i + 6i + 2i² = 1 + 7i. The magnitude of a + bi is \\(\\sqrt{a^2+b^2}\\), which is a nonnegative real number."
         ],
         "tip": "Do not confuse a complex square z² with a squared magnitude |z|².",
         "examples": [
@@ -543,7 +545,7 @@
       {
         "heading": "Vectors and matrices",
         "body": [
-          "Add vectors by corresponding components. Magnitude is the square root of the sum of squared components. A zero dot product between two nonzero vectors means they are perpendicular.",
+          "A vector lists movement in each direction. Add matching entries. Its magnitude, or length, is the square root of the sum of their squares. For a dot product, multiply matching entries and add. If two nonzero vectors have dot product zero, they meet at a right angle.",
           "Worked example: (1, 5) + (−4, −1) = (−3, 4), with magnitude 5. Matrix multiplication uses row-by-column dot products: [[1, 3], [2, 0]] times [[4], [−1]] gives [[1], [8]]. A 2 × 2 times 2 × 1 product has shape 2 × 1."
         ],
         "tip": "Before multiplying matrices, check that the first matrix’s column count equals the second matrix’s row count.",
@@ -558,10 +560,10 @@
       {
         "heading": "Sequences and scientific notation",
         "body": [
-          "An arithmetic sequence adds a constant d; a geometric sequence multiplies by a constant r. For first term a₁, the n-th geometric term is a₁rⁿ⁻¹. Its first n terms sum to a₁(1 − rⁿ)/(1 − r), when r ≠ 1.",
-          "Worked example: the geometric sequence 2, 6, 18, 54 has ratio 3, fourth term 2(3³) = 54, and first-four sum 80. In scientific notation, (2 × 10⁶)/(5 × 10²) = 0.4 × 10⁴ = 4 × 10³."
+          "A sequence is an ordered list of numbers. Arithmetic sequences add the same number each step; geometric sequences multiply by the same number r. With first term \\(a_1\\), the n-th geometric term is \\(a_1r^{n-1}\\). The first n terms sum to \\(\\frac{a_1(1-r^n)}{1-r}\\) for \\(r\\ne1\\).",
+          "Worked example: the geometric sequence 2, 6, 18, 54 has ratio 3, fourth term 2(3³) = 54, and first-four sum 80. In scientific notation, \\(\\frac{2\\times10^6}{5\\times10^2}=0.4\\times10^4=4\\times10^3\\)."
         ],
-        "tip": "Count terms carefully: the first term has exponent 0, not 1, when using a₁rⁿ⁻¹.",
+        "tip": "Count terms carefully: the first term has exponent 0, not 1, when using \\(a_1r^{n-1}\\).",
         "examples": [
           {
             "label": "Normalization",
@@ -573,15 +575,15 @@
       {
         "heading": "Radical signs and real-number restrictions",
         "body": [
-          "For nonnegative a and b, √a · √b = √(ab), and for positive b, √a/√b = √(a/b). A square root does not distribute across addition or subtraction. Extract perfect-square factors to create like radical terms. Also remember that √(x²) = |x| for real x; the principal square root is never negative even when the original variable is negative.",
-          "Worked example: √50 + √18 = 5√2 + 3√2 = 8√2. For √(9x²), the result is 3|x|, which becomes 3x only if x is known to be nonnegative. If x = −4, √(9x²) = 12, so writing 3x would incorrectly give −12. An even root of a negative real number is not real, while an odd root can be negative.",
-          "For rational exponents, identify the root represented by the denominator and the power represented by the numerator. With x positive, x^(5/2) means (√x)⁵. If x^(5/2) = 32, raising both sides to 2/5 gives x = 4. A stated positivity assumption is often present to keep a fractional exponent and its inverse unambiguous; do not silently remove it."
+          "For a and b that are zero or positive, \\(\\sqrt a\\sqrt b=\\sqrt{ab}\\); with positive b, \\(\\frac{\\sqrt a}{\\sqrt b}=\\sqrt{\\frac ab}\\). Do not split a square root across addition or subtraction. Pull out square factors such as 4, 9, or 25 before combining matching roots. A square-root sign asks for the zero-or-positive answer: \\(\\sqrt{x^2}=|x|\\).",
+          "Worked example: \\(\\sqrt{50}+\\sqrt{18}=5\\sqrt2+3\\sqrt2=8\\sqrt2\\). For \\(\\sqrt{9x^2}\\), the result is 3|x|, which becomes 3x only if x is known to be nonnegative. If x = −4, \\(\\sqrt{9x^2}=12\\), so writing 3x would incorrectly give −12. An even root of a negative real number is not real, while an odd root can be negative.",
+          "A fractional exponent uses its bottom number for the root and its top number for the power. For positive x, \\(x^{5/2}=(\\sqrt x)^5\\). If \\(x^{5/2}=32\\), raise both sides to \\(\\frac25\\), giving \\(x=4\\). Keep any rule that says x must be positive."
         ],
         "tip": "Choose simple test values, including a negative one when allowed, to audit sign-sensitive radical identities.",
         "examples": [
           {
             "label": "Worked example",
-            "text": "√((−3)²) = 3, while the number inside the square is −3; the square root returns its absolute value.",
+            "text": "\\(\\sqrt{(-3)^2}=3\\), while the number inside the square is −3; the square root returns its absolute value.",
             "good": true
           }
         ]
@@ -589,9 +591,9 @@
       {
         "heading": "Complex division, conjugates, and powers",
         "body": [
-          "The conjugate of a + bi is a − bi. Their product is a² + b², a real number. To divide complex numbers, multiply top and bottom by the denominator’s conjugate, distribute, replace i² with −1, and combine real and imaginary terms. Magnitudes are distances, so they are nonnegative and multiply or divide consistently with complex products and quotients.",
-          "Worked example: (3 + i)/(2 − i) becomes (3 + i)(2 + i)/[(2 − i)(2 + i)]. The numerator is 6 + 5i + i² = 5 + 5i, and the denominator is 5, so the quotient is 1 + i. Its magnitude is √2. The same magnitude follows from √10/√5 = √2 without doing the complex division.",
-          "For a large integer power of i, divide the exponent by 4 and use the remainder. For example, i³¹ has remainder 3 and equals −i. For a binomial square such as (a + bi)², include the middle term 2abi and use i² = −1. Neither squaring real and imaginary parts separately nor computing a magnitude answers an algebraic-square question."
+          "To find the conjugate, change the sign before the i-part: \\(a+bi\\) becomes \\(a-bi\\); their product is \\(a^2+b^2\\). To divide, multiply numerator and denominator by the denominator’s conjugate, distribute, use \\(i^2=-1\\), and combine real and imaginary parts. Magnitudes measure distance, so they cannot be negative. Multiply them when multiplying complex numbers; divide them when dividing complex numbers.",
+          "Worked example: \\(\\frac{3+i}{2-i}\\) becomes \\(\\frac{(3+i)(2+i)}{(2-i)(2+i)}\\). The numerator is 6 + 5i + i² = 5 + 5i, and the denominator is 5, so the quotient is 1 + i. Its magnitude is \\(\\sqrt2\\). The same magnitude follows from \\(\\frac{\\sqrt{10}}{\\sqrt5}=\\sqrt2\\) without doing the complex division.",
+          "For a power of i, use the exponent’s remainder after division by 4: \\(i^{31}=-i\\). In \\((a+bi)^2\\), keep the middle term \\(2abi\\) and substitute \\(i^2=-1\\). A magnitude is different from an algebraic square."
         ],
         "tip": "Complex division must multiply both numerator and denominator by the same conjugate.",
         "examples": [
@@ -605,9 +607,9 @@
       {
         "heading": "Matrix structure and inverse checks",
         "body": [
-          "Keep the order of matrix multiplication. If A is m × n and B is n × p, AB exists and is m × p. Each output entry is a row of A dotted with a column of B. BA can have a different value or fail to exist. When asked for one entry, calculate that one dot product instead of every entry.",
+          "A matrix is a grid of numbers. Keep the multiplication order. If A is \\(m\\times n\\) and B is \\(n\\times p\\), AB is \\(m\\times p\\). For each answer entry, multiply matching numbers from a row of A and a column of B, then add. BA may differ or not exist. If asked for one entry, calculate only that row-column sum.",
           "Worked example: [[2, 1], [0, 3]] times [[1, 4], [2, −1]] has first row [2(1) + 1(2), 2(4) + 1(−1)] = [4, 7] and second row [0(1) + 3(2), 0(4) + 3(−1)] = [6, −3]. The result is [[4, 7], [6, −3]]. Entry-by-entry multiplication would give a different matrix.",
-          "A 2 × 2 matrix has inverse only if determinant ad − bc is nonzero. Its inverse is 1/(ad − bc) times [[d, −b], [−c, a]]. For [[1, 2], [3, 4]], the determinant is −2 and the inverse is [[−2, 1], [3/2, −1/2]]. Multiplying the proposed inverse by the original and obtaining the identity gives a strong verification. A zero determinant means the rows carry dependent information."
+          "An inverse undoes a matrix multiplication. A 2 × 2 matrix has one only when \\(ad-bc\\ne0\\). Its inverse is \\(\\frac1{ad-bc}\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}\\). For \\(\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}\\), determinant −2 gives inverse \\(\\begin{bmatrix}-2&1\\\\\\frac32&-\\frac12\\end{bmatrix}\\). Multiply to check that you get the identity matrix: 1s on its diagonal, 0s elsewhere. A zero determinant means one row carries no new information."
         ],
         "tip": "Check dimensions first; then keep minus signs inside parentheses when finding a determinant.",
         "examples": [
@@ -621,15 +623,15 @@
       {
         "heading": "Sequences, remainders, and efficient checking",
         "body": [
-          "Distinguish a term question from a sum question. In an arithmetic sequence, the first-n sum is n(a₁ + aₙ)/2. In a geometric sequence, a ratio must be applied once for every jump between terms. Infinite sums require |r| < 1. Make a two- or three-term list as a check when an indexing error would change the answer.",
-          "Worked example: an arithmetic sequence with first term 8 and ninth term 40 has average term 24, so its first-nine sum is 9(24) = 216. For geometric terms 12, 6, 3, the fourth is 1.5 and the infinite sum is 12/(1 − 1/2) = 24. A finite third-term value and an infinite-sum value use different formulas and answer different requests.",
-          "Integer-remainder questions are easier if you write N = dk + r. If N leaves remainder 2 on division by 5, then 3N + 4 = 15k + 10, whose remainder is zero. For scientific notation, normalize the coefficient only after doing the exponent rule. In timed practice, write units or a shape label beside a result: scalar, vector, matrix, or real magnitude. That catches many answer-format mistakes before bubbling."
+          "A term is one number in a sequence; a sum adds several numbers. The first-n arithmetic sum is \\(\\frac{n(a_1+a_n)}2\\). Multiply by the geometric ratio once for each jump between terms; adding forever gives a finite sum only when \\(|r|<1\\). List a few terms to check indexing.",
+          "Worked example: an arithmetic sequence with first term 8 and ninth term 40 has average term 24, so its first-nine sum is 9(24) = 216. For geometric terms 12, 6, 3, the fourth is 1.5 and the infinite sum is \\(\\frac{12}{1-\\frac12}=24\\). A finite third-term value and an infinite-sum value use different formulas and answer different requests.",
+          "A remainder is what is left after whole-number division. Write \\(N=dk+r\\). If \\(N=5k+2\\), then \\(3N+4=15k+10\\), with remainder zero on division by 5. In scientific notation, handle the powers of 10 first. Then adjust the front number to be at least 1 and less than 10. Label the result’s units or type: scalar, vector, matrix, or magnitude."
         ],
         "tip": "A quick scale check can reject a misplaced power of 10 or an impossible negative magnitude.",
         "examples": [
           {
             "label": "Worked example",
-            "text": "(8 × 10⁴)/(2 × 10⁻²) = 4 × 10⁶; subtracting the negative denominator exponent increases the final exponent.",
+            "text": "\\(\\frac{8\\times10^4}{2\\times10^{-2}}=4\\times10^6\\); subtracting the negative denominator exponent increases the final exponent.",
             "good": true
           }
         ]
@@ -692,12 +694,12 @@
   {
     "slug": "math-essential-skills",
     "title": "Essential Skills",
-    "intro": "Accuracy on percentages, units, and rates protects the easier points you need for a 36. Write a unit next to each intermediate number so a wrong operation becomes visible.",
+    "intro": "Use fractions, ratios, units, and rates correctly.",
     "sections": [
       {
         "heading": "Ratios and percent bases",
         "body": [
-          "A ratio a:b divides the combined total into a + b parts. A p% increase multiplies by 1 + p/100; a decrease multiplies by 1 − p/100. Each percentage applies to the quantity named as its base.",
+          "A ratio a:b divides the total into a+b parts. A p% increase multiplies by \\(1+\\frac p{100}\\); a decrease by \\(1-\\frac p{100}\\). Name the starting amount the percentage applies to; this is the percent base.",
           "Worked example: a 3:5 split of 72 gives 27 and 45. A $100 price increased by 10% and then decreased by 10% becomes 100(1.10)(0.90) = $99. The two percentages have different dollar bases and do not cancel."
         ],
         "tip": "When recovering an original price, divide by the retained fraction rather than subtracting the percent from the final price.",
@@ -712,7 +714,7 @@
       {
         "heading": "Units and average rates",
         "body": [
-          "Build conversion factors so unwanted units cancel. Average speed always equals total distance divided by total time. It is an arithmetic average of speeds only when the time intervals at each speed are equal.",
+          "To change units, multiply by a fraction whose top and bottom mean the same amount. Place the old unit on the bottom so it cancels. Average speed is total distance divided by total time. Average the speeds directly only when time spent at each speed is equal.",
           "Worked example: 90 km/h × (1000 m/1 km) × (1 h/3600 s) = 25 m/s. Traveling 40 miles at 20 mph and 40 miles at 40 mph takes 2 + 1 = 3 hours, so the trip average is 80/3 mph."
         ],
         "tip": "Choose one system of units before combining values; minutes and hours are different units.",
@@ -727,7 +729,7 @@
       {
         "heading": "Work, mixtures, and weighted averages",
         "body": [
-          "For simultaneous work, add work-per-time rates. For mixtures, track the actual amount of the ingredient, then divide by total mixture weight. Weighted averages multiply each value by the size of its group.",
+          "When people or machines work together, add how much work each finishes per hour. For mixtures, add actual ingredient amounts, then divide by total mixture weight. A weighted average gives bigger groups more say: multiply each average by its group size, add, then divide by the total group size.",
           "Worked example: machines taking 4 and 12 hours alone have combined rate 1/4 + 1/12 = 1/3 job per hour, so together they take 3 hours. Mixing 2 liters at 10% with 3 liters at 20% gives (0.10 · 2 + 0.20 · 3)/5 = 16%."
         ],
         "tip": "Your combined work time should be less than either individual time when both make positive progress.",
@@ -742,9 +744,9 @@
       {
         "heading": "Choose the percent base and undo changes correctly",
         "body": [
-          "A percentage always compares a part or change with a named reference quantity. For percent increase or decrease, the reference is the original amount. For profit as a percent of selling price, it is the selling price; for markup, it is cost. Underline the base in the prompt before writing a fraction. Two equal percentage changes can produce different dollar changes because their bases differ.",
+          "Name the amount the percentage compares against before calculating. Percent change uses the original amount; profit as a percent of selling price uses selling price; markup uses cost. Equal percentages can give different dollar changes when their bases differ.",
           "Worked example: cost is $50 and selling price is $70. Profit is $20. Markup relative to cost is 20/50 = 40%, while profit relative to selling price is 20/70 = 2/7, about 28.57%. Neither percentage replaces the other. A 25% discount resulting in $90 means the original price P satisfies 0.75P = 90, so P = $120.",
-          "For successive changes, multiply retained or growth factors. A 10% rise followed by a 30% fall has combined factor 1.10(0.70) = 0.77, so the final amount is 23% below the original. To reverse a change, divide by its factor. Increasing an amount by p% and then decreasing the new amount by p% gives factor (1 + p/100)(1 − p/100), which is below 1 for any positive p."
+          "Multiply factors for successive changes: a 10% rise then 30% fall gives \\(1.10(0.70)=0.77\\), a 23% decrease. Reverse a change by dividing by its factor. Equal p% increases and decreases produce \\((1+\\frac p{100})(1-\\frac p{100})<1\\) for positive p."
         ],
         "tip": "A percent answer needs a clear denominator; the same dollar difference can support different percentages.",
         "examples": [
@@ -758,9 +760,9 @@
       {
         "heading": "Units: cancel factors and square the conversion when needed",
         "body": [
-          "A conversion factor is a ratio of equal quantities, so it changes the unit without changing the physical amount. Place the unit you want to remove in the denominator. A length conversion factor must be squared for area and cubed for volume. Apply the factor to every dimension rather than assuming a square centimeter and a centimeter convert the same way.",
+          "A conversion factor is a fraction whose top and bottom mean the same amount. Put the old unit on the bottom. For area, use the length conversion twice; for volume, use it three times. Every dimension must change units.",
           "Worked example: a 3-meter by 4-meter rectangle has area 12 m². Its dimensions are also 300 cm by 400 cm, giving 120,000 cm². Thus 1 m² = 10,000 cm². For a 2-meter cube, volume is 8 m³; the 200-centimeter dimensions give 8,000,000 cm³, confirming that 1 m³ = 1,000,000 cm³.",
-          "For compound units, convert numerator and denominator separately. A speed of 18 km/h equals 18(1000/3600) = 5 m/s. A density of 2 grams per cubic centimeter gives mass 2 × 30 = 60 grams for 30 cm³. When a problem supplies an unfamiliar conversion, use that given relationship directly. Write one unit-cancellation chain and postpone rounding until the final requested precision."
+          "For units such as distance per hour, change both the top and bottom: \\(18\\text{ km/h}=18(\\frac{1000}{3600})=5\\text{ m/s}\\). Density is mass per unit of volume. Density 2 grams/cm³ and volume 30 cm³ give mass \\(2\\times30=60\\) grams. Use supplied conversion relationships, show how the old units cancel, and round only at the end."
         ],
         "tip": "Ask whether the quantity is length, area, volume, or a ratio before choosing the conversion factor.",
         "examples": [
@@ -774,9 +776,9 @@
       {
         "heading": "Relative motion and opposing flows",
         "body": [
-          "For travelers moving toward each other, add speeds to find how quickly the gap closes. For a faster traveler catching a slower one in the same direction, subtract speeds. If one starts later, first calculate the earlier traveler’s head start using time in the correct unit. The requested clock may begin at either traveler’s start, so state which interval your answer measures.",
+          "Add speeds for travelers approaching each other; subtract them when a faster traveler catches a slower one. For a delayed start, find the head start first using consistent time units. Say which traveler’s start you are counting time from.",
           "Worked example: a cyclist travels at 18 mph and starts 20 minutes before a rider traveling at 24 mph. The head start is 18(1/3) = 6 miles. The faster rider closes the gap at 24 − 18 = 6 mph, taking 1 hour after the later start. The elapsed time since the first start is 1 hour 20 minutes, a different quantity.",
-          "For tanks and work, assign a positive rate to progress and a negative rate to undoing it. A tap filling in 8 hours contributes 1/8 tank per hour; a drain emptying in 24 hours removes 1/24. Net filling rate is 1/12, so a tank fills in 12 hours. If the drain rate equals or exceeds the tap rate, an initially empty tank will not fill under that model. Do not automatically invert a negative rate into a negative completion time."
+          "Count filling as positive and draining as negative. A tap filling in 8 hours and drain emptying in 24 give combined rate \\(\\frac18-\\frac1{24}=\\frac1{12}\\), so filling takes 12 hours. If combined rate is zero or negative, an empty tank will not fill."
         ],
         "tip": "A flow or distance model should agree with the direction of physical change.",
         "examples": [
@@ -790,9 +792,9 @@
       {
         "heading": "Fast arithmetic, estimation, and a timed checking routine",
         "body": [
-          "Simplify a fraction before multiplying large numbers when possible. Benchmark percentages help: 10% is one tenth, 25% is one fourth, and 12.5% is one eighth. Estimate the result’s size before using a calculator so a decimal-entry mistake stands out. A unit price or rate should have a unit in the answer; a count of physical objects may require a whole number.",
+          "Simplify fractions before large multiplications. Use easy reference amounts: 10% is one tenth, 25% one fourth, and 12.5% one eighth. Estimate before using a calculator. Label prices and rates with units; physical counts may require whole numbers.",
           "Worked example: 37.5% of 64 equals 3/8 of 64, which is 24. For 17 packages of mass 0.48 kg each, the total must be slightly less than 17/2 = 8.5 kg; the exact product is 8.16 kg. A result of 81.6 kg contradicts that estimate and exposes a misplaced decimal. This check takes a few seconds and can protect a straightforward point.",
-          "In a 45-question, 50-minute practice section, the overall average is about 67 seconds per question, but easy arithmetic should leave extra time for hard reasoning. A useful initial checkpoint is about 25 questions in 25 minutes, adjusted to the actual difficulty. When checking a flagged rate problem, recompute total time and units before repeating the same calculation. Log percent-base, conversion, and rounding errors separately so the next short drill targets the true cause instead of repeating comfortable questions."
+          "A 45-question, 50-minute section averages about 67 seconds per question. Save time on easy arithmetic; around 25 questions in 25 minutes is a flexible checkpoint. Recheck total time and units on flagged rate problems. Track percent-base, conversion, and rounding mistakes separately."
         ],
         "tip": "Round only at the end unless the question explicitly requires rounding an intermediate quantity.",
         "examples": [
@@ -861,12 +863,12 @@
   {
     "slug": "math-modeling",
     "title": "Modeling",
-    "intro": "Define variables and their units before writing equations. Distinguish a fixed fee from a rate, revenue from profit, and a model’s input from its output. Check the answer against the actual constraints.",
+    "intro": "Turn a word problem into a useful equation.",
     "sections": [
       {
         "heading": "Translate words into equations",
         "body": [
-          "For a fixed fee F and rate r per unit, total cost is F + rx. For two kinds of objects, use one equation for their count and another for their total value. A variable should refer to exactly one quantity.",
+          "For a starting fee F and a charge r for each unit, cost is \\(F+rx\\). For two object types, write one equation for count and another for total value. Define each variable as one specific quantity.",
           "Worked example: a $20 fee plus $6 per visit gives C(v) = 20 + 6v. A $62 total therefore means v = (62 − 20)/6 = 7 visits. If 10 tickets cost $66, with tickets priced at $9 or $3, then a + b = 10 and 9a + 3b = 66; subtracting gives a = 6."
         ],
         "tip": "After solving, verify the count, value, and requested units in the original situation.",
@@ -881,7 +883,7 @@
       {
         "heading": "Linear versus exponential change",
         "body": [
-          "A constant amount added each period gives a linear model. A constant percentage change gives an exponential model P₀bᵗ, where b = 1 + rate for growth and b = 1 − rate for decay.",
+          "Adding the same amount each step gives a straight-line, or linear, pattern. Multiplying by the same factor each step gives an exponential pattern, as with repeated percentage changes. In \\(P_0b^t\\), use \\(b=1+\\text{rate}\\) for growth and \\(b=1-\\text{rate}\\) for decay.",
           "Worked example: 500 growing by 8% per year becomes 500(1.08)ᵗ. If a quantity changes from 120 at t = 1 to 960 at t = 4, dividing gives b³ = 8, so b = 2 and P₀ = 60. A doubling time of d units gives P(t) = P₀2ᵗ⁄ᵈ."
         ],
         "tip": "The exponent counts periods. Make the time unit match the period named in the problem.",
@@ -896,7 +898,7 @@
       {
         "heading": "Optimize under limits",
         "body": [
-          "A downward-opening quadratic reaches its maximum at x = −b/(2a). For linear objectives with linear limits, test boundary intersections and endpoints, then enforce whole-number conditions if the situation requires them.",
+          "A quadratic graph is a U-shaped curve. If it opens downward, its highest point occurs at \\(x=-\\frac b{2a}\\). When the goal and limits are straight-line equations, compare the corners of the allowed region and any endpoints. Use whole numbers when the objects cannot be split.",
           "Worked example: profit P(q) = −q² + 16q − 20 = −(q − 8)² + 44 has maximum $44 at q = 8. If x + y ≤ 10 with x, y ≥ 0 and profit 3x + 2y, then 3x + 2y ≤ 3(x + y) ≤ 30, attained at x = 10, y = 0."
         ],
         "tip": "An optimum must be feasible. Check every constraint and distinguish the maximizing input from the maximum output.",
@@ -911,9 +913,9 @@
       {
         "heading": "Piecewise rules and whole-number thresholds",
         "body": [
-          "A piecewise model changes rules at a stated threshold. Identify which portion receives each rate, and identify which branch includes the boundary. A base fee covering the first few units should not be charged again through the per-unit portion. If the result counts indivisible objects, enforce whole-number conditions after solving the continuous equation or inequality.",
+          "A piecewise rule uses different formulas for different inputs. Find where the rule changes and which formula includes that exact value. Charge each rate only for its part. Do not charge included units twice. If counting objects that cannot be split, use whole numbers.",
           "Worked example: shipping is $8 for the first 3 kilograms plus $2 for every kilogram beyond 3. For a 7-kilogram package, cost is 8 + 2(7 − 3) = $16. At exactly 3 kilograms, cost is still $8. If a bus holds 40 passengers, carrying 121 passengers requires ceil(121/40) = 4 buses, even though the quotient is only 3.025.",
-          "Rounding direction follows the situation. To determine boxes needed or weeks until a minimum is reached, round up. To determine the most items affordable within a budget, round down. Suppose a budget leaves $97 after a fixed fee and each item costs $12: floor(97/12) = 8 items fit, while nine exceed the budget. A phrase such as “at least” includes equality; “more than” or “strictly cheaper” excludes the equality boundary."
+          "Round up for boxes needed or weeks until a minimum; round down for affordable items. With $97 left and items costing $12, \\(\\lfloor\\frac{97}{12}\\rfloor=8\\) fit. “At least” includes equality; “more than” and “strictly cheaper” exclude it."
         ],
         "tip": "First solve the model; then apply feasibility, integrality, and the exact inequality wording.",
         "examples": [
@@ -927,9 +929,9 @@
       {
         "heading": "Quadratic models: input, output, and physical domain",
         "body": [
-          "A quadratic optimum has two coordinates: the input where it occurs and the output value there. Read which one the question asks for. Complete the square or use x = −b/(2a) to find the input, then substitute if the maximum output is requested. The sign of a determines whether the vertex is a maximum or a minimum.",
+          "Check whether the question asks where the highest or lowest point occurs, or how high or low it is. Complete the square or use \\(x=-\\frac b{2a}\\) for the input, then substitute for the output. A negative a gives a highest point; a positive a gives a lowest point.",
           "Worked example: height h(t) = −4t² + 24t + 5 can be written −4(t − 3)² + 41. The peak time is 3 seconds and peak height is 41 units. The initial height is h(0) = 5. Neither the coefficient 24 nor the time 3 gives the requested maximum height. To find ground contact, solve h(t) = 0 and keep the nonnegative time consistent with the situation.",
-          "Constraints may restrict the model’s meaningful inputs. A sales count cannot be negative, a rectangle dimension must be positive, and an event may end when a projectile reaches the ground. If the vertex lies outside an allowed interval, check the interval endpoints instead. For example, f(x) = −(x − 8)² + 20 on 0 ≤ x ≤ 5 reaches its allowed maximum at x = 5, not at the unrestricted vertex x = 8."
+          "Respect what the situation allows: counts cannot be negative, dimensions must be positive, and a thrown object’s flight ends when it hits the ground. The vertex is the curve’s turning point. If it lies outside the allowed input range, compare the two ends instead. For \\(f(x)=-(x-8)^2+20\\) on \\(0\\le x\\le5\\), the allowed maximum occurs at 5, not 8."
         ],
         "tip": "An algebraically correct optimum outside the model’s allowed inputs is not a valid answer.",
         "examples": [
@@ -943,9 +945,9 @@
       {
         "heading": "Recover a model from observations",
         "body": [
-          "Two observations determine a linear rate and intercept when linear behavior is specified. Use change in output divided by change in input for the rate, then substitute a point for the initial value. For exponential behavior, divide output values to recover a growth factor over the elapsed interval. Equal ratios mean exponential behavior only when the input intervals are equal.",
+          "For a stated straight-line pattern, divide the output change by the input change to get the rate. Put one known point into the equation to find the starting value. For an exponential pattern, divide outputs to find the growth factor across that time gap. Compare ratios only across equal gaps.",
           "Worked example: a linear cost is $38 at 4 hours and $62 at 7 hours. Rate is (62 − 38)/(7 − 4) = $8 per hour, and fixed charge is 38 − 8(4) = $6, so C(t) = 6 + 8t. For an exponential count of 50 at t = 1 and 400 at t = 4, the ratio is 8 across three periods, so b³ = 8, b = 2, and the initial count is 25.",
-          "Use units to interpret coefficients. In distance d(t) = 7 + 3t with t in hours and d in miles, 7 is an initial distance and 3 is miles per hour. In P(t) = 800(0.9)ᵗ, the factor 0.9 is a retained fraction, not a 90% decrease; the decline is 10% per period. A model can fit given points yet require additional assumptions to extrapolate, so use the behavior stated in the problem."
+          "Use units to understand the numbers in the formula. In \\(d(t)=7+3t\\), with hours and miles, 7 is initial miles and 3 is miles/hour. In \\(P(t)=800(0.9)^t\\), 0.9 means retaining 90%: a 10% decline. Use the pattern the question gives. Matching a few points alone does not prove the same pattern continues beyond them."
         ],
         "tip": "Write the elapsed interval between observations before taking a root of their ratio.",
         "examples": [
@@ -959,9 +961,9 @@
       {
         "heading": "Prove feasibility and use the calculator deliberately",
         "body": [
-          "For a constrained maximum, locating a promising point is only half the work. Verify every limit, then compare it with other boundary candidates or produce an upper bound. A resource may be fully used at the optimum, but that is not guaranteed without checking the model. Whole-number constraints can move the best answer away from the exact intersection of two lines.",
+          "Check every limit at your proposed best answer. Then compare other corners, or show why no answer can be larger. You may not need to use every resource. If objects must be whole, the best answer may be near a line crossing rather than exactly on it.",
           "Worked example: with x + y ≤ 10 and x, y ≥ 0, profit 2x + 3y satisfies 2x + 3y ≤ 3(x + y) ≤ 30. Choosing x = 0, y = 10 achieves 30, so the upper bound proves optimality. For a small integer model, listing feasible values of one variable and taking the largest allowed second variable can be safer than guessing from a sketch.",
-          "The calculator should carry arithmetic after you choose the correct model. Keep percentage factors, parentheses, and exponents explicit; do not enter an ungrouped expression whose calculator order changes the equation. Estimate before trusting the display and retain unrounded values until the final requested precision. During timed practice, write a model before browsing answer choices, check one viable candidate, and flag any question whose setup remains unclear. When reviewing, explain why each rejected answer violates the model or answers a different quantity; this turns a wrong result into a transferable correction."
+          "Write the equation before using the calculator. Show percent factors, parentheses, and exponents. Estimate first and round only at the end. If stuck, flag it. After a miss, explain which limit each wrong choice breaks or why it answers the wrong question."
         ],
         "tip": "A maximum needs both an attainable value and a reason that no feasible choice can exceed it.",
         "examples": [
