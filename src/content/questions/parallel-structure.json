@@ -156,15 +156,15 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "The director was known not only for her demanding rehearsals but also [[she inspired loyalty]].",
+      "stem": "The director was known not only for demanding rehearsals but also [[she inspired loyalty]].",
       "choices": [
         "NO CHANGE",
         "to inspire loyalty",
         "inspires loyalty",
-        "for her inspiring loyalty"
+        "for inspiring loyalty"
       ],
       "answer": 3,
-      "explanation": "'Not only for her demanding rehearsals but also for her inspiring loyalty' balances two prepositional phrases. The other alternatives switch to a clause, a finite verb, or an infinitive. Repeating a preposition is not always mandatory: the choice must fit the complete paired construction."
+      "explanation": "“Not only for demanding rehearsals but also for inspiring loyalty” balances two for-phrases. The alternatives change the second part into a clause, an infinitive, or a finite verb. Read both halves together: the director was known for demanding rehearsals and for inspiring loyalty."
     },
     {
       "id": "parallel-structure-012",

@@ -12,7 +12,7 @@
       "examples": [
         {
           "text": "The excited child opened his present.",
-          "label": "Independent clause — you can stop here",
+          "label": "Independent clause — a subject and main verb form a complete statement",
           "good": true
         },
         {
@@ -116,13 +116,14 @@
     {
       "heading": "Advanced transfer: find the main clause inside layered sentences",
       "body": [
-        "Strip away relative clauses and interruptions to locate the sentence's subject and finite main verb. A relative clause may contain several verbs without supplying the main predicate.",
-        "Then restore the layers and check the connection: a dependent opening needs a main clause; two independent clauses need a valid boundary. Choose the connection that preserves the writer's actual reason or contrast."
+        "Set aside relative clauses beginning with who, which, or that, and time clauses beginning with after. Find the main subject and the verb that completes its sentence; verbs inside the added clauses do not supply it.",
+        "A main verb can show tense: the catalogue lists or the catalogue was listed. Listing alone cannot complete the sentence. Restore the added clauses after finding that core.",
+        "Then check the connection: a dependent opening needs a main clause; two independent clauses need a valid boundary. Preserve the writer’s reason or contrast."
       ],
       "examples": [
         {
           "text": "The catalogue, which the interns revised after the originals arrived, lists every damaged page.",
-          "label": "Catalogue is the main subject; lists is its verb. Revised and arrived belong to embedded clauses.",
+          "label": "Core sentence: “The catalogue lists every damaged page.” The which-clause adds who revised it and when; revised and arrived do not replace lists.",
           "good": true
         },
         {
@@ -132,7 +133,7 @@
         }
       ],
       "tip": "Bracket each inserted clause, read the main sentence, then restore the clauses and test the meaning.",
-      "teachingRevision": 2
+      "teachingRevision": 4
     },
     {
       "heading": "Reason and concession express different relationships",

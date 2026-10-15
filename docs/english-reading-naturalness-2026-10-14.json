@@ -1,0 +1,1985 @@
+{
+  "date": "2026-10-14",
+  "baselineCommit": "a6eb2c6cde9f348c21c1f7c621d8a9d998c4f540",
+  "scope": {
+    "englishQuestionsAndChecks": 758,
+    "readingActiveAndHeldoutItems": 364,
+    "readingActivePassages": 48,
+    "readingHeldoutPassages": 8,
+    "readingWorkedExamples": 42,
+    "readingFormativeSlots": 42
+  },
+  "gradingContractCount": 1122,
+  "gradingContractSha256": "895e73e5073d2672c89f7672215b391df76340e14d1b9d87d5a3de7da7e2624e",
+  "hashFormat": "SHA256 of UTF-8 JSON with recursively sorted property keys and no extra whitespace; contract array sorted by ID code point.",
+  "limits": "An editorial review of naturalness and supported meaning, not a psychometric ACT score calibration. Intentionally incorrect editing targets remain incorrect until the right choice is inserted.",
+  "revisions": [
+    {
+      "id": "english-skill-sentence-structure-nested-main-clause-01",
+      "source": "src/content/english-skill-questions.json",
+      "reason": "Remove a garden path ending in disagreeing describes; mark the embedded clause clearly.",
+      "before": {
+        "id": "english-skill-sentence-structure-nested-main-clause-01",
+        "topic": "sentence-structure",
+        "category": "CSE",
+        "difficulty": "hard",
+        "stem": "The series of reports that the laboratory issued after its two instruments, both of which had passed inspection, began disagreeing [[describing]] a fault in the comparison procedure.",
+        "questionText": "Which choice supplies the main predicate for series?",
+        "choices": [
+          "NO CHANGE",
+          "that describe",
+          "describes",
+          "having described"
+        ],
+        "answer": 2,
+        "explanation": "Series is the singular main subject, and describes supplies its finite main verb. Issued, had passed, and began belong to embedded clauses. The other choices supply nonfinite or dependent material instead of the missing predicate."
+      },
+      "after": {
+        "id": "english-skill-sentence-structure-nested-main-clause-01",
+        "topic": "sentence-structure",
+        "category": "CSE",
+        "difficulty": "hard",
+        "stem": "The series of reports, which the laboratory released after both instruments passed inspection, [[describing]] a fault in the comparison procedure.",
+        "questionText": "Which choice supplies the main verb for the subject series?",
+        "choices": [
+          "NO CHANGE",
+          "that describe",
+          "describes",
+          "having described"
+        ],
+        "answer": 2,
+        "explanation": "Read the main sentence without the words between commas: “The series of reports describes a fault in the comparison procedure.” Series is the singular subject, and describes is its main verb. The which-clause adds information about the reports; released and passed belong inside that clause. Describing and having described cannot serve as the main verb on their own, and that describe starts another dependent clause."
+      }
+    },
+    {
+      "id": "english-skill-sentence-structure-conjunctive-adverb-01",
+      "source": "src/content/english-skill-questions.json",
+      "reason": "Supply an actual contrast rather than two unrelated trial descriptions.",
+      "before": {
+        "id": "english-skill-sentence-structure-conjunctive-adverb-01",
+        "topic": "sentence-structure",
+        "category": "CSE",
+        "difficulty": "medium",
+        "stem": "The first trial used untreated cloth[[, nevertheless,]] the second used a water-resistant coating.",
+        "questionText": "Which choice correctly punctuates the contrast between independent clauses?",
+        "choices": [
+          "NO CHANGE",
+          "; nevertheless,",
+          " nevertheless,",
+          ", nevertheless;"
+        ],
+        "answer": 1,
+        "explanation": "Each trial has its own subject and finite verb. Nevertheless cannot coordinate those clauses with commas alone; a semicolon before it and a comma after it form the correct boundary. The other choices leave a splice or fuse the clauses."
+      },
+      "after": {
+        "id": "english-skill-sentence-structure-conjunctive-adverb-01",
+        "topic": "sentence-structure",
+        "category": "CSE",
+        "difficulty": "medium",
+        "stem": "The coating was advertised as waterproof[[, nevertheless,]] the fabric became soaked during the trial.",
+        "questionText": "Which choice correctly punctuates the contrast between independent clauses?",
+        "choices": [
+          "NO CHANGE",
+          "; nevertheless,",
+          " nevertheless,",
+          ", nevertheless;"
+        ],
+        "answer": 1,
+        "explanation": "“The coating was advertised as waterproof” and “the fabric became soaked during the trial” are complete clauses. Nevertheless marks the contrast between the promise and the result. Use a semicolon before nevertheless and a comma after it; the other choices leave a comma splice or a run-on, or put the semicolon between the second subject and its verb."
+      }
+    },
+    {
+      "id": "english-skill-punctuation-complex-list-02",
+      "source": "src/content/english-skill-questions.json",
+      "reason": "Use natural explanatory commas inside list items instead of artificial commas before with.",
+      "before": {
+        "id": "english-skill-punctuation-complex-list-02",
+        "topic": "punctuation",
+        "category": "CSE",
+        "difficulty": "hard",
+        "stem": "The exhibit pairs a photograph with a personal object: a street scene, with the photographer’s notebook; a harbor view, with a sailor’s compass[[; and]] a farmhouse, with the resident’s handwritten recipe.",
+        "questionText": "Which choice correctly separates the final complete list item?",
+        "choices": [
+          "NO CHANGE",
+          ", and",
+          ": and",
+          "; but"
+        ],
+        "answer": 0,
+        "explanation": "The semicolons separate three photograph-and-object pairings, each of which contains an internal comma. The final semicolon correctly precedes and; it is a list boundary rather than a conjunction between independent clauses. The alternatives blur the pairings or introduce an explanation or contrast the list does not need."
+      },
+      "after": {
+        "id": "english-skill-punctuation-complex-list-02",
+        "topic": "punctuation",
+        "category": "CSE",
+        "difficulty": "hard",
+        "stem": "The exhibit pairs each photograph with an object from its setting: a street scene with a notebook, open to a sketch of the corner; a harbor view with a compass, still in its leather case[[; and]] a farmhouse with a recipe, written on the back of an envelope.",
+        "questionText": "Which choice most clearly separates the last photograph-and-object pairing from the others?",
+        "choices": [
+          "NO CHANGE",
+          ", and",
+          ": and",
+          "; but"
+        ],
+        "answer": 0,
+        "explanation": "Each pairing contains a comma introducing a description of its object. Semicolons mark the larger boundaries between the three pairings, so the last one begins “; and a farmhouse.” A comma alone blurs those boundaries; a colon would make the last pairing an explanation of the preceding one, and but introduces an unsupported contrast."
+      }
+    },
+    {
+      "id": "english-skill-verbs-lay-lie-01",
+      "source": "src/content/english-skill-questions.json",
+      "reason": "Give the past-perfect construction a clear later event.",
+      "before": {
+        "id": "english-skill-verbs-lay-lie-01",
+        "topic": "verbs",
+        "category": "CSE",
+        "difficulty": "medium",
+        "stem": "After the repairs, the old sign had [[laid]] in storage for nearly a decade before the museum displayed it again.",
+        "questionText": "Which form means had rested in a place?",
+        "choices": [
+          "NO CHANGE",
+          "lay",
+          "lying",
+          "lain"
+        ],
+        "answer": 3,
+        "explanation": "The sign rested somewhere and placed no object. The participle of lie meaning rest is lain, so had lain is correct. Laid belongs to the transitive verb lay; lay is the simple past of lie; lying would require had been."
+      },
+      "after": {
+        "id": "english-skill-verbs-lay-lie-01",
+        "topic": "verbs",
+        "category": "CSE",
+        "difficulty": "medium",
+        "stem": "By the time the museum displayed the repaired sign, it had [[laid]] in storage for nearly a decade.",
+        "questionText": "Which form means had rested in a place?",
+        "choices": [
+          "NO CHANGE",
+          "lay",
+          "lying",
+          "lain"
+        ],
+        "answer": 3,
+        "explanation": "The sign had rested in storage before the museum displayed it. The past participle of lie, meaning rest in a place, is lain: “it had lain in storage.” Laid is used when someone places an object; lay is the simple past of lie; lying would need had been."
+      }
+    },
+    {
+      "id": "english-skill-verbs-inverted-subject-02",
+      "source": "src/content/english-skill-questions.json",
+      "reason": "Remove an unnecessary chain of location modifiers and a relative clause.",
+      "before": {
+        "id": "english-skill-verbs-inverted-subject-02",
+        "topic": "verbs",
+        "category": "CSE",
+        "difficulty": "hard",
+        "stem": "Beside the model, beneath a row of photographs that show the original site, [[is]] two fragments of the foundation.",
+        "questionText": "Which choice makes the main verb agree with its actual subject?",
+        "choices": [
+          "NO CHANGE",
+          "was",
+          "being",
+          "are"
+        ],
+        "answer": 3,
+        "explanation": "The inverted subject is two fragments, so are agrees. Model, row, site and foundation are singular nouns in other phrases or clauses, but none is the main subject. Being alone would not supply a finite main verb."
+      },
+      "after": {
+        "id": "english-skill-verbs-inverted-subject-02",
+        "topic": "verbs",
+        "category": "CSE",
+        "difficulty": "hard",
+        "stem": "Beneath the photographs of the original site [[is]] two fragments of the foundation.",
+        "questionText": "Which choice makes the main verb agree with its actual subject?",
+        "choices": [
+          "NO CHANGE",
+          "was",
+          "being",
+          "are"
+        ],
+        "answer": 3,
+        "explanation": "The subject comes after the verb: “two fragments ... are beneath the photographs.” Fragments is plural, so are agrees. The singular site is inside the opening location phrase and does not control the verb."
+      }
+    },
+    {
+      "id": "english-skill-pronouns-embedded-relative-01",
+      "source": "src/content/english-skill-questions.json",
+      "reason": "Use paired commas to make the relative clause easier to locate.",
+      "before": {
+        "id": "english-skill-pronouns-embedded-relative-01",
+        "topic": "pronouns",
+        "category": "CSE",
+        "difficulty": "hard",
+        "stem": "The restorer [[whom]] the committee believes preserved the original surface will supervise the next project.",
+        "questionText": "Which choice gives the relative pronoun the role required inside its own clause?",
+        "choices": [
+          "NO CHANGE",
+          "whose",
+          "who",
+          "her"
+        ],
+        "answer": 2,
+        "explanation": "The restorer preserved the surface, so who is the subject of preserved. The committee believes is reporting language inside the larger construction; it does not make the pronoun an object. Whose is possessive, and her cannot introduce this relative clause."
+      },
+      "after": {
+        "id": "english-skill-pronouns-embedded-relative-01",
+        "topic": "pronouns",
+        "category": "CSE",
+        "difficulty": "hard",
+        "stem": "The restorer, [[whom]] the committee believes preserved the original surface, will supervise the next project.",
+        "questionText": "Which choice gives the relative pronoun the role required inside its own clause?",
+        "choices": [
+          "NO CHANGE",
+          "whose",
+          "who",
+          "her"
+        ],
+        "answer": 2,
+        "explanation": "The main sentence is “The restorer will supervise the next project.” Inside the added relative clause, who is the subject of preserved: “she preserved the original surface.” The words the committee believes report a belief about that action; they do not make who an object. Whom is an object form, whose is possessive, and her cannot introduce this relative clause."
+      }
+    },
+    {
+      "id": "pronouns-transfer-01",
+      "source": "src/content/questions/pronouns.json",
+      "reason": "Mark the embedded clause and show its underlying subject-verb structure.",
+      "before": {
+        "stem": "The analyst [[whom]] the review panel concluded had identified the error was invited to explain her method.",
+        "questionText": "Which choice gives the relative pronoun the case required by its own clause?",
+        "choices": [
+          "NO CHANGE",
+          "who",
+          "whose",
+          "her"
+        ],
+        "answer": 1,
+        "explanation": "Who is the subject of had identified: she had identified the error. The panel concluded is embedded reporting language and does not make the relative pronoun an object. Whom is an object form; whose is possessive; her cannot introduce this relative clause.",
+        "id": "pronouns-transfer-01",
+        "category": "CSE",
+        "difficulty": "hard"
+      },
+      "after": {
+        "stem": "The analyst, [[whom]] the review panel believed had identified the error, was invited to explain her method.",
+        "questionText": "Which choice gives the relative pronoun the case required by its own clause?",
+        "choices": [
+          "NO CHANGE",
+          "who",
+          "whose",
+          "her"
+        ],
+        "answer": 1,
+        "explanation": "The main sentence is “The analyst was invited to explain her method.” Within the relative clause, who is the subject of had identified: “she had identified the error.” The review panel believed reports that judgment; it does not make the relative pronoun an object. Whom is an object form, whose is possessive, and her cannot introduce the relative clause.",
+        "id": "pronouns-transfer-01",
+        "category": "CSE",
+        "difficulty": "hard"
+      }
+    },
+    {
+      "id": "parallel-structure-011",
+      "source": "src/content/questions/parallel-structure.json",
+      "reason": "Replace the awkward possessive gerund her inspiring loyalty with a natural balanced phrase.",
+      "before": {
+        "id": "parallel-structure-011",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "The director was known not only for her demanding rehearsals but also [[she inspired loyalty]].",
+        "choices": [
+          "NO CHANGE",
+          "to inspire loyalty",
+          "inspires loyalty",
+          "for her inspiring loyalty"
+        ],
+        "answer": 3,
+        "explanation": "'Not only for her demanding rehearsals but also for her inspiring loyalty' balances two prepositional phrases. The other alternatives switch to a clause, a finite verb, or an infinitive. Repeating a preposition is not always mandatory: the choice must fit the complete paired construction."
+      },
+      "after": {
+        "id": "parallel-structure-011",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "The director was known not only for demanding rehearsals but also [[she inspired loyalty]].",
+        "choices": [
+          "NO CHANGE",
+          "to inspire loyalty",
+          "inspires loyalty",
+          "for inspiring loyalty"
+        ],
+        "answer": 3,
+        "explanation": "“Not only for demanding rehearsals but also for inspiring loyalty” balances two for-phrases. The alternatives change the second part into a clause, an infinitive, or a finite verb. Read both halves together: the director was known for demanding rehearsals and for inspiring loyalty."
+      }
+    },
+    {
+      "id": "modifiers-029",
+      "source": "src/content/questions/modifiers.json",
+      "reason": "Remove an awkward relative-clause repair that still invites the wrong attachment.",
+      "before": {
+        "id": "modifiers-029",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice most clearly indicates that the astrolabe, rather than the portrait, was made of brass?",
+        "stem": "The museum displayed the astrolabe [[beside a portrait that was made of brass]].",
+        "choices": [
+          "NO CHANGE",
+          "that was made of brass beside a portrait",
+          "beside the brass-made portrait",
+          "beside a portrait, which was made of brass"
+        ],
+        "answer": 1,
+        "explanation": "That was made of brass must directly follow astrolabe to identify the material of the instrument. Each other choice attaches brass to portrait. The correct position follows the intended referent specified by the question, not an assumption that only one object could ever be made of brass."
+      },
+      "after": {
+        "id": "modifiers-029",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice most clearly indicates that the astrolabe, rather than the portrait, was made of brass?",
+        "stem": "The museum displayed [[the astrolabe beside a portrait made of brass]].",
+        "choices": [
+          "NO CHANGE",
+          "the brass astrolabe beside a portrait",
+          "the astrolabe beside the brass portrait",
+          "the astrolabe beside a portrait, which was made of brass"
+        ],
+        "answer": 1,
+        "explanation": "“The brass astrolabe beside a portrait” places brass directly before astrolabe, so the material clearly belongs to the instrument. The other choices describe the portrait as made of brass. The task specifies the intended meaning; it does not require guessing what either object could be made from."
+      }
+    },
+    {
+      "id": "pronouns-027",
+      "source": "src/content/questions/pronouns.json",
+      "reason": "Remove the misleading suggestion that placing a lamp causes a radiator to heat up.",
+      "before": {
+        "id": "pronouns-027",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice most clearly indicates what grew hot to the touch?",
+        "stem": "After Maya set the lamp on the radiator, [[it]] grew uncomfortably hot to the touch.",
+        "choices": [
+          "NO CHANGE",
+          "the radiator",
+          "them",
+          "it's"
+        ],
+        "answer": 1,
+        "explanation": "'It' could mean the lamp or the radiator, so naming 'the radiator' fixes the unclear reference. 'Them' is objective and cannot be the subject of 'grew,' and 'it's' means 'it is.'"
+      },
+      "after": {
+        "id": "pronouns-027",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice most clearly indicates what grew hot to the touch?",
+        "stem": "Maya moved the lamp away from the radiator before turning up the heat. Soon [[it]] grew uncomfortably hot to the touch.",
+        "choices": [
+          "NO CHANGE",
+          "the radiator",
+          "them",
+          "it's"
+        ],
+        "answer": 1,
+        "explanation": "It could refer to the lamp or the radiator. Naming “the radiator” makes the intended meaning explicit. Them cannot be the subject of grew, and it’s means it is, which would not fit before grew."
+      }
+    },
+    {
+      "id": "misc-grammar-026",
+      "source": "src/content/questions/misc-grammar.json",
+      "reason": "Supply the people who could miss the meeting, rather than attaching that action to traffic.",
+      "before": {
+        "id": "misc-grammar-026",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "There was too [[much]] traffic on the highway to make the meeting on time.",
+        "choices": [
+          "NO CHANGE",
+          "few",
+          "much of",
+          "many"
+        ],
+        "answer": 0,
+        "explanation": "Traffic is non-countable, so 'much' is correct and NO CHANGE stands. 'Many' and 'few' go with countable nouns, and 'much of' would need a definite noun, as in 'much of the traffic.'"
+      },
+      "after": {
+        "id": "misc-grammar-026",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "There was [[too much]] traffic on the highway for us to reach the meeting on time.",
+        "choices": [
+          "NO CHANGE",
+          "few",
+          "much of",
+          "many"
+        ],
+        "answer": 0,
+        "explanation": "Traffic is non-countable, so 'much' is correct and NO CHANGE stands. 'Many' and 'few' go with countable nouns, and 'much of' would need a definite noun, as in 'much of the traffic.'"
+      }
+    },
+    {
+      "id": "verbs-007",
+      "source": "src/content/questions/verbs.json",
+      "reason": "Avoid equating a reason with physical samples; retain a singular head noun and plural distractors.",
+      "before": {
+        "id": "verbs-007",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "One of the reasons the experiment failed [[were]] the contaminated samples.",
+        "choices": [
+          "NO CHANGE",
+          "have been",
+          "are",
+          "was"
+        ],
+        "answer": 3,
+        "explanation": "The subject is the singular 'One,' so 'was' agrees. The plural 'reasons' and 'samples' are decoys; 'were,' 'have been,' and 'are' all miss the singular subject."
+      },
+      "after": {
+        "id": "verbs-007",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "One of the unwashed sample jars [[were]] the source of the contamination.",
+        "choices": [
+          "NO CHANGE",
+          "have been",
+          "are",
+          "was"
+        ],
+        "answer": 3,
+        "explanation": "The subject is One, not the plural noun jars inside the of-phrase. Read the core sentence: “One ... was the source of the contamination.” Was agrees with that singular subject; were, have been, and are are plural forms."
+      }
+    },
+    {
+      "id": "sentence-structure-022",
+      "source": "src/content/questions/sentence-structure.json",
+      "reason": "Fix loafs outside the target and remove a loosely attached ranging phrase.",
+      "before": {
+        "id": "sentence-structure-022",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "[[While the bakery varies]] its types of bread with the seasons, ranging from tomato basil loafs in the summer to olive rosemary focaccia in the fall, and always has a line around the block.",
+        "choices": [
+          "NO CHANGE",
+          "With the bakery having varied bread types",
+          "Having various types of bread",
+          "The bakery varies"
+        ],
+        "answer": 3,
+        "explanation": "'The bakery varies' supplies the subject and main verb the sentence needs: 'The bakery varies its types of bread with the seasons...and always has a line around the block.' 'While the bakery varies' keeps everything subordinate, so the sentence never reaches a main clause. 'Having various types of bread' and 'With the bakery having varied bread types' collide with the stem's own 'its types of bread,' producing garbled fragments."
+      },
+      "after": {
+        "id": "sentence-structure-022",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "[[While the bakery varies]] its selection with the seasons and draws a crowd throughout the year. Summer loaves feature tomato and basil; fall batches often include olives and rosemary.",
+        "choices": [
+          "NO CHANGE",
+          "With the bakery having varied bread types",
+          "Having various types of bread",
+          "The bakery varies"
+        ],
+        "answer": 3,
+        "explanation": "“The bakery varies its selection ... and draws a crowd” has a subject and two coordinated main verbs. Starting with While makes that first sentence dependent without supplying a main clause. The two remaining openings do not fit the following words its selection and also leave the first sentence incomplete."
+      }
+    },
+    {
+      "id": "sentence-structure-028",
+      "source": "src/content/questions/sentence-structure.json",
+      "reason": "Describe a violation as carrying a fine rather than being a fine. State the intended contrast so coordination is assessed without treating every additive alternative as inherently ungrammatical.",
+      "before": {
+        "id": "sentence-structure-028",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "The first warning given to a business violating the new rules will not include a fine[[; while a]] second violation will be a guaranteed $1,000 fine.",
+        "choices": [
+          "NO CHANGE",
+          "; although a",
+          " and a",
+          ", but a"
+        ],
+        "answer": 3,
+        "explanation": "The comma plus but coordinates two independent statements and marks their contrast. Both semicolon alternatives introduce dependent clauses, with while or although, rather than independent ones. The remaining and alternative omits the standard comma between the independent clauses."
+      },
+      "after": {
+        "id": "sentence-structure-028",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice joins the two independent statements while emphasizing the contrast between the penalties?",
+        "stem": "A first violation of the new rules will result in a warning without a fine[[; while a]] second violation will carry a $1,000 fine.",
+        "choices": [
+          "NO CHANGE",
+          "; although a",
+          " and a",
+          ", but a"
+        ],
+        "answer": 3,
+        "explanation": "The first violation brings a warning, but the second brings a fine. Comma plus but both joins the complete statements and signals that contrast. The semicolon alternatives introduce dependent while- or although-clauses; the and alternative merely adds the second policy and does not express the requested contrast."
+      }
+    },
+    {
+      "id": "sentence-structure-034",
+      "source": "src/content/questions/sentence-structure.json",
+      "reason": "Replace a vague uniqueness claim and unnecessary health-benefit wording with a concrete statement. Give the semicolon question three genuinely invalid clause joins, avoiding an optional-comma alternative.",
+      "before": {
+        "id": "sentence-structure-034",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "The eucalyptus tree is [[unique; it]] is known not only for its flowers but also for the health benefits it can produce.",
+        "choices": [
+          "NO CHANGE",
+          "unique and it",
+          "unique it",
+          "unique, it"
+        ],
+        "answer": 0,
+        "explanation": "Two independent clauses need a semicolon, so the original is correct: 'unique; it is known...' 'unique, it' is a comma splice, 'unique and it' needs a comma before the FANBOYS, and 'unique it' is a run-on."
+      },
+      "after": {
+        "id": "sentence-structure-034",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "The eucalyptus has a distinctive scent[[; it]] comes from oils in its leaves.",
+        "choices": [
+          "NO CHANGE",
+          "; which",
+          " it",
+          ", it"
+        ],
+        "answer": 0,
+        "explanation": "“The eucalyptus has a distinctive scent” and “it comes from oils in its leaves” are complete clauses. The original semicolon joins them correctly. Which begins a dependent clause that cannot stand after the semicolon here; it without punctuation runs the clauses together; and a comma alone creates a comma splice."
+      }
+    },
+    {
+      "id": "sentence-structure-036",
+      "source": "src/content/questions/sentence-structure.json",
+      "reason": "Remove an unsupported opening transition and a sweeping hurricane-damage guarantee. Make the initial error an actual fragment after a semicolon.",
+      "before": {
+        "id": "sentence-structure-036",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "Instead, the houses sit on wooden beams that keep them out of the [[water, and ensure]] that no damage will be done if hurricane flooding occurs.",
+        "choices": [
+          "NO CHANGE",
+          "water and these beams ensure",
+          "water to ensure",
+          "water; ensuring"
+        ],
+        "answer": 2,
+        "explanation": "'water to ensure' keeps the sentence as one clause, with the infinitive showing the beams' purpose. The original comma wrongly splits the compound verb 'keep...and ensure,' 'and these beams ensure' starts a second independent clause without the required comma before 'and,' and '; ensuring' leaves a fragment after the semicolon."
+      },
+      "after": {
+        "id": "sentence-structure-036",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "The houses rest on raised wooden beams that keep their floors above the [[water; and ensuring]] that routine high tides do not flood the living areas.",
+        "choices": [
+          "NO CHANGE",
+          "water and these beams ensure",
+          "water to ensure",
+          "water; ensuring"
+        ],
+        "answer": 2,
+        "explanation": "“Water to ensure” connects the raised floors with their intended protection: the beams keep the floors above water to ensure that routine tides do not flood the rooms. The original and ensuring phrase and the ensuring alternative cannot stand as clauses after a semicolon. The these beams alternative starts a second independent clause without a comma before and."
+      }
+    },
+    {
+      "id": "sentence-structure-037",
+      "source": "src/content/questions/sentence-structure.json",
+      "reason": "Remove a long ingredient interruption and make the contrast between traditional and newer uses explicit.",
+      "before": {
+        "id": "sentence-structure-037",
+        "category": "CSE",
+        "difficulty": "hard",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "Although pesto, which is made of pine nuts, olive oil, basil leaves, and parmesan cheese, is mostly used in classic Italian [[food; many]] restaurants now serve it on a variety of dishes and even offer different types of pesto featuring ingredients such as kale or cilantro.",
+        "choices": [
+          "NO CHANGE",
+          "food, many",
+          "food, but many",
+          "food, many are"
+        ],
+        "answer": 1,
+        "explanation": "'Although...' opens a dependent clause and attaches with a comma to the main clause 'many restaurants now serve it.' Insert only 'food, many' in the marked span. The semicolon cuts off the dependent opener; 'but' conflicts with 'Although'; 'food, many are restaurants now serve' introduces competing main verbs."
+      },
+      "after": {
+        "id": "sentence-structure-037",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "stem": "Although pesto is best known as a sauce for classic Italian [[food; many]] restaurants now serve it in dishes from other cuisines.",
+        "choices": [
+          "NO CHANGE",
+          "food, many",
+          "food, but many",
+          "food, many are"
+        ],
+        "answer": 1,
+        "explanation": "Read the two parts: “Although pesto is best known as a sauce for classic Italian food” is dependent; “many restaurants now serve it in dishes from other cuisines” is the main clause. A comma joins the opening although-clause to that main clause. The semicolon leaves a dependent clause on its left; but repeats the contrast already introduced by although; and many are does not fit the remaining words restaurants now serve."
+      }
+    },
+    {
+      "id": "sentence-structure-038",
+      "source": "src/content/questions/sentence-structure.json",
+      "reason": "Replace unnatural little press given by newspapers with ordinary coverage wording.",
+      "before": {
+        "id": "sentence-structure-038",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice connects the two independent statements with a coordinating conjunction?",
+        "stem": "The international commission was ecstatic over the release of the new report[[, although there]] was little press given by major newspapers about the announcement.",
+        "choices": [
+          "NO CHANGE",
+          ", but there",
+          " there",
+          "; although there"
+        ],
+        "answer": 1,
+        "explanation": "', but there' joins the two statements with a coordinating conjunction and marks contrast. The original although is also grammatical, but it subordinates the second statement and does not meet the stated coordination goal. 'There' alone creates a run-on; '; although there' puts a dependent clause after a semicolon."
+      },
+      "after": {
+        "id": "sentence-structure-038",
+        "category": "CSE",
+        "difficulty": "medium",
+        "questionText": "Which choice connects the two independent statements with a coordinating conjunction?",
+        "stem": "The international commission welcomed the new report[[, although there]] was little coverage of its release in major newspapers.",
+        "choices": [
+          "NO CHANGE",
+          ", but there",
+          " there",
+          "; although there"
+        ],
+        "answer": 1,
+        "explanation": "“, but there” joins two independent statements and makes their contrast clear: the commission welcomed the report, but newspapers gave it little coverage. Although is grammatical, but it makes the second statement dependent and does not meet the requested coordination goal. There alone creates a run-on; a semicolon cannot introduce the dependent although-clause here."
+      }
+    },
+    {
+      "id": "word-choice-018",
+      "source": "src/content/questions/word-choice.json",
+      "reason": "Use a setting in which remaining stationary is a natural requirement.",
+      "before": {
+        "id": "word-choice-018",
+        "category": "KLA",
+        "difficulty": "easy",
+        "questionText": "Which choice is the most precise and idiomatic in context?",
+        "stem": "The teacher asked the class to remain [[stationery]] while she fetched more pens and paper.",
+        "choices": [
+          "NO CHANGE",
+          "stationary",
+          "stationaries",
+          "stationeries"
+        ],
+        "answer": 1,
+        "explanation": "'Stationary' means not moving, which fits staying still. 'Stationery' is writing paper, and the plural forms are not standard words for this meaning."
+      },
+      "after": {
+        "id": "word-choice-018",
+        "category": "KLA",
+        "difficulty": "easy",
+        "questionText": "Which choice is the most precise and idiomatic in context?",
+        "stem": "The telescope must remain [[stationery]] while the camera records each exposure.",
+        "choices": [
+          "NO CHANGE",
+          "stationary",
+          "stationaries",
+          "stationeries"
+        ],
+        "answer": 1,
+        "explanation": "Stationary means not moving, which is required during the exposure. Stationery means writing materials; the other choices do not supply the adjective needed after remain."
+      }
+    },
+    {
+      "id": "logical-placement-031",
+      "source": "src/content/questions/logical-placement.json",
+      "reason": "Replace awkward editorial phrasing with the actual sentence a writer would use.",
+      "before": {
+        "id": "logical-placement-031",
+        "category": "POW",
+        "difficulty": "medium",
+        "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+        "stem": "[1] In the early 1900s, sailors used tools such as compasses and observations of the stars to navigate. [2] Radio beacons later let ships check their position from shore signals. [3] By the 1990s, satellite GPS pinpointed a vessel almost anywhere on Earth. [4] Engineers today are testing systems that need no satellites at all. Sentence to place: \"For the first time in this sequence of developments, a broadcast from a shore station could guide the crew.\"",
+        "choices": [
+          "before sentence 1",
+          "after sentence 2",
+          "after sentence 3",
+          "after sentence 4"
+        ],
+        "answer": 1,
+        "explanation": "The reference to a shore broadcast elaborates on radio beacons, introduced in sentence 2. After sentence 2 it develops that new technique before the paragraph shifts to satellite GPS. Before sentence 1 it has no introduced radio technique to explain; after sentence 3 or 4 it interrupts a later technology with a return to an earlier one. Navigation without visible stars existed before radio, so that false first-time claim is not used."
+      },
+      "after": {
+        "id": "logical-placement-031",
+        "category": "POW",
+        "difficulty": "medium",
+        "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+        "stem": "[1] In the early 1900s, sailors used tools such as compasses and observations of the stars to navigate. [2] Radio beacons later let ships check their position from shore signals. [3] By the 1990s, satellite GPS pinpointed a vessel almost anywhere on Earth. [4] Engineers today are testing systems that need no satellites at all. Sentence to place: \"Crews could now use a signal from land to check their course.\"",
+        "choices": [
+          "before sentence 1",
+          "after sentence 2",
+          "after sentence 3",
+          "after sentence 4"
+        ],
+        "answer": 1,
+        "explanation": "The reference to a shore broadcast elaborates on radio beacons, introduced in sentence 2. After sentence 2 it develops that new technique before the paragraph shifts to satellite GPS. Before sentence 1 it has no introduced radio technique to explain; after sentence 3 or 4 it interrupts a later technology with a return to an earlier one. Navigation without visible stars existed before radio, so that false first-time claim is not used."
+      }
+    },
+    {
+      "id": "logical-placement-032",
+      "source": "src/content/questions/logical-placement.json",
+      "reason": "Remove a strained claim that reports gave an institution votes.",
+      "before": {
+        "id": "logical-placement-032",
+        "category": "POW",
+        "difficulty": "medium",
+        "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+        "stem": "[1] For years, smoke from the valley's mills hung over the town like a gray ceiling. [2] County health reports showed childhood asthma rates climbing far above the state average. [3] In 1991, a new ordinance forced the mills to install costly scrubbers. [4] A decade later, residents could finally see the mountains from Main Street. Sentence to place: \"These alarming health reports gave city council the votes it needed.\"",
+        "choices": [
+          "before sentence 1",
+          "after sentence 1",
+          "after sentence 2",
+          "after sentence 4"
+        ],
+        "answer": 2,
+        "explanation": "\"These alarming health reports\" refers to the rising childhood asthma cases in sentence 2, so it must follow sentence 2, and as the cause of the 1991 ordinance it must precede sentence 3. Before sentence 1 or after sentence 1 there are no health reports yet to name; after sentence 4 the council acts only after the air has already cleared, breaking the cause-before-effect order."
+      },
+      "after": {
+        "id": "logical-placement-032",
+        "category": "POW",
+        "difficulty": "medium",
+        "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
+        "stem": "[1] For years, smoke from the valley's mills hung over the town like a gray ceiling. [2] County health reports showed childhood asthma rates climbing far above the state average. [3] In 1991, a new ordinance forced the mills to install costly scrubbers. [4] A decade later, residents could finally see the mountains from Main Street. Sentence to place: \"These alarming health reports persuaded the city council to act.\"",
+        "choices": [
+          "before sentence 1",
+          "after sentence 1",
+          "after sentence 2",
+          "after sentence 4"
+        ],
+        "answer": 2,
+        "explanation": "\"These alarming health reports\" refers to the rising childhood asthma cases in sentence 2, so it must follow sentence 2, and as the cause of the 1991 ordinance it must precede sentence 3. Before sentence 1 or after sentence 1 there are no health reports yet to name; after sentence 4 the council acts only after the air has already cleared, breaking the cause-before-effect order."
+      }
+    },
+    {
+      "id": "sentence-structure:section:5",
+      "source": "src/content/lessons/sentence-structure.json",
+      "reason": "Show the core sentence and clearly mark embedded clauses.",
+      "before": {
+        "heading": "Advanced transfer: find the main clause inside layered sentences",
+        "body": [
+          "Strip away relative clauses and interruptions to locate the sentence's subject and finite main verb. A relative clause may contain several verbs without supplying the main predicate.",
+          "Then restore the layers and check the connection: a dependent opening needs a main clause; two independent clauses need a valid boundary. Choose the connection that preserves the writer's actual reason or contrast."
+        ],
+        "examples": [
+          {
+            "text": "The catalogue, which the interns revised after the originals arrived, lists every damaged page.",
+            "label": "Catalogue is the main subject; lists is its verb. Revised and arrived belong to embedded clauses.",
+            "good": true
+          },
+          {
+            "text": "The catalogue, which the interns revised after the originals arrived, listing every damaged page.",
+            "label": "Listing supplies no finite main verb for catalogue; the embedded verbs do not complete the sentence.",
+            "good": false
+          }
+        ],
+        "tip": "Bracket each inserted clause, read the main sentence, then restore the clauses and test the meaning.",
+        "teachingRevision": 2
+      },
+      "after": {
+        "heading": "Advanced transfer: find the main clause inside layered sentences",
+        "body": [
+          "Set aside relative clauses beginning with who, which, or that, and time clauses beginning with after. Find the main subject and the verb that completes its sentence; verbs inside the added clauses do not supply it.",
+          "A main verb can show tense: the catalogue lists or the catalogue was listed. Listing alone cannot complete the sentence. Restore the added clauses after finding that core.",
+          "Then check the connection: a dependent opening needs a main clause; two independent clauses need a valid boundary. Preserve the writer’s reason or contrast."
+        ],
+        "examples": [
+          {
+            "text": "The catalogue, which the interns revised after the originals arrived, lists every damaged page.",
+            "label": "Core sentence: “The catalogue lists every damaged page.” The which-clause adds who revised it and when; revised and arrived do not replace lists.",
+            "good": true
+          },
+          {
+            "text": "The catalogue, which the interns revised after the originals arrived, listing every damaged page.",
+            "label": "Listing supplies no finite main verb for catalogue; the embedded verbs do not complete the sentence.",
+            "good": false
+          }
+        ],
+        "tip": "Bracket each inserted clause, read the main sentence, then restore the clauses and test the meaning.",
+        "teachingRevision": 4
+      }
+    },
+    {
+      "id": "pronouns:section:5",
+      "source": "src/content/lessons/pronouns.json",
+      "reason": "Show the core sentence and clearly mark embedded clauses. Keep the correct and incorrect relative-pronoun examples as a minimal pair.",
+      "before": {
+        "heading": "Advanced transfer: embedded clauses and precise reference",
+        "body": [
+          "For who/whom, isolate the clause containing the pronoun's job. An insertion such as the curator believes does not turn the subject of restored into an object.",
+          "Case, number, and reference are separate checks. A grammatically shaped pronoun can still point to two plausible antecedents; replace it with a specific noun when the writer's intended referent must be explicit."
+        ],
+        "examples": [
+          {
+            "text": "The conservator who the curator believes restored the frame will speak.",
+            "label": "The conservator restored it: who is the subject of restored, despite the intervening the curator believes.",
+            "good": true
+          },
+          {
+            "text": "The conservator whom the curator believes restored the frame will speak.",
+            "label": "Whom cannot be the subject of restored; the intervening words do not change its job.",
+            "good": false
+          },
+          {
+            "text": "Three assistants moved the telescope, but its lens cap stayed in the case.",
+            "label": "Its refers to telescope rather than the nearby plural assistants; the cap belongs to the instrument.",
+            "good": true
+          }
+        ],
+        "tip": "Locate the pronoun’s own verb before looking at the closest verb or preposition.",
+        "teachingRevision": 3
+      },
+      "after": {
+        "heading": "Advanced transfer: embedded clauses and precise reference",
+        "body": [
+          "For who/whom, isolate the clause containing the pronoun's job. An insertion such as the curator believes does not turn the subject of restored into an object.",
+          "Case, number, and reference are separate checks. A grammatically shaped pronoun can still point to two plausible antecedents; replace it with a specific noun when the writer's intended referent must be explicit."
+        ],
+        "examples": [
+          {
+            "text": "The conservator, who the curator believes restored the frame, will speak.",
+            "label": "Main sentence: “The conservator will speak.” Within the relative clause, who does the restoring: “she restored the frame.” The curator believes reports that claim.",
+            "good": true
+          },
+          {
+            "text": "The conservator, whom the curator believes restored the frame, will speak.",
+            "label": "Whom cannot be the subject of restored; the intervening words do not change its job.",
+            "good": false
+          },
+          {
+            "text": "Three assistants moved the telescope, but its lens cap stayed in the case.",
+            "label": "Its refers to telescope rather than the nearby plural assistants; the cap belongs to the instrument.",
+            "good": true
+          }
+        ],
+        "tip": "Locate the pronoun’s own verb before looking at the closest verb or preposition.",
+        "teachingRevision": 4
+      }
+    },
+    {
+      "id": "sentence-structure:nested-main-clause:activity",
+      "source": "src/content/english-prerequisites.json",
+      "reason": "Make the main sentence and the pronoun’s own verb explicit.",
+      "before": {
+        "evidenceText": "The guidelines, which the panel revised after two reviewers objected, ___ the minimum training each volunteer must complete.",
+        "prompt": "Which choice supplies the main verb without adding another subordinate clause?",
+        "choices": [
+          "specifying",
+          "that specify",
+          "specify"
+        ],
+        "answer": 2,
+        "explanation": "Guidelines is the main plural subject; specify supplies its finite main verb. Revised, objected and must complete belong to embedded clauses. Specifying lacks a finite verb, and that specify starts yet another subordinate clause."
+      },
+      "after": {
+        "evidenceText": "The guidelines, which the panel revised after two reviewers objected, ___ the minimum training each volunteer must complete.",
+        "prompt": "Which choice supplies the main verb without adding another subordinate clause?",
+        "choices": [
+          "specifying",
+          "that specify",
+          "specify"
+        ],
+        "answer": 2,
+        "explanation": "The core sentence is “The guidelines specify the minimum training.” Guidelines is plural, so specify supplies its main verb. The which-clause adds information about the revision, and each volunteer must complete describes training. Neither supplies a main verb for guidelines. Specifying cannot complete the main sentence alone; that specify begins another dependent clause."
+      }
+    },
+    {
+      "id": "pronouns:embedded-relative:activity",
+      "source": "src/content/english-prerequisites.json",
+      "reason": "Make the main sentence and the pronoun’s own verb explicit.",
+      "before": {
+        "evidenceText": "The pilot ___ the investigators believe reported the fault first will testify tomorrow.",
+        "prompt": "Which pronoun is the subject of reported?",
+        "choices": [
+          "whom",
+          "whose",
+          "who"
+        ],
+        "answer": 2,
+        "explanation": "The pilot reported the fault, so who is the subject of reported. The investigators believe is embedded reporting language and does not turn that subject into an object. Whose is possessive."
+      },
+      "after": {
+        "evidenceText": "The pilot, ___ the investigators believe reported the fault first, will testify tomorrow.",
+        "prompt": "Which pronoun is the subject of reported?",
+        "choices": [
+          "whom",
+          "whose",
+          "who"
+        ],
+        "answer": 2,
+        "explanation": "The main sentence is “The pilot will testify tomorrow.” Within the relative clause, who is the subject of reported: “she reported the fault.” The investigators believe reports that claim; it does not turn who into an object. Whom is an object form, and whose is possessive."
+      }
+    },
+    {
+      "id": "exam-2:p4",
+      "source": "src/content/exams/exam-2.json",
+      "reason": "The correct verb informs naturally takes research, rather than laboratories as an institution.",
+      "before": "For centuries, origami was treasured as a quiet pastime, a way to fold a flat square of paper into a crane or a flower. [[31|Today, however, it has become a tool for serious science.]] Researchers now study the ancient art to solve problems that have nothing to do with decoration.\n\nThe link between paper folding and engineering [[32|lies in]] a simple idea: a folded shape can shrink for travel and then unfold into something much larger. Engineers at space agencies [[33|has]] used this principle to pack solar panels and antennas into rockets. [[34|]]\n\nOne famous pattern, the Miura fold, lets a flat sheet collapse along crisscrossing creases [[35|so as]] a single tug spreads it open again. Maps once printed with this fold could be opened with one [[36|hand, and refolded just as easily.]] The same geometry now guides the design of compact stents that surgeons thread into narrow arteries before [[37|expanding it.]]\n\n[[38|]] origami has even reshaped robotics. Some engineers build machines that fold themselves flat for shipping and then [[39|pop]] into working shapes when heated. Others design grippers that close around an object the way folded paper wraps a gift.\n\nWhat began as a craft for children and monks now [[40|tells]] laboratories around the world, proving that an old idea can keep finding new uses.",
+      "after": "For centuries, origami was treasured as a quiet pastime, a way to fold a flat square of paper into a crane or a flower. [[31|Today, however, it has become a tool for serious science.]] Researchers now study the ancient art to solve problems that have nothing to do with decoration.\n\nThe link between paper folding and engineering [[32|lies in]] a simple idea: a folded shape can shrink for travel and then unfold into something much larger. Engineers at space agencies [[33|has]] used this principle to pack solar panels and antennas into rockets. [[34|]]\n\nOne famous pattern, the Miura fold, lets a flat sheet collapse along crisscrossing creases [[35|so as]] a single tug spreads it open again. Maps once printed with this fold could be opened with one [[36|hand, and refolded just as easily.]] The same geometry now guides the design of compact stents that surgeons thread into narrow arteries before [[37|expanding it.]]\n\n[[38|]] origami has even reshaped robotics. Some engineers build machines that fold themselves flat for shipping and then [[39|pop]] into working shapes when heated. Others design grippers that close around an object the way folded paper wraps a gift.\n\nWhat began as a craft for children and monks now [[40|tells]] research in laboratories around the world, proving that an old idea can keep finding new uses."
+    },
+    {
+      "id": "exam-1:p4",
+      "source": "src/content/exams/exam-1.json",
+      "reason": "Avoid describing a lame horse as an object the smith repaired.",
+      "before": "Long before factories stamped out metal parts by the thousands, the blacksmith was one of the most [[31|important]] workers in any town. With a hammer, an anvil, and a blazing forge, a skilled smith could shape raw iron into tools, hinges, horseshoes, and [[32|making weapons]].\n\nThe work began at the forge, where coal or charcoal heated the iron until it glowed orange. [[33|]] Only then could the metal be shaped. [[34|Therefore,]] the smith worked quickly, hammering the softened iron against the anvil before it cooled and hardened again.\n\n[[35|]] A blacksmith had to read the color of the glowing iron to judge its temperature, [[36|since]] a piece heated too long would crumble, while one too cool would crack. This knowledge came only through years of [[37|practice, and patient observation]].\n\nBlacksmiths were also problem solvers. A farmer might arrive with a broken plow, a cook with a [[38|bent, pot, and a]] traveler with a lame horse. [[39|]] The smith repaired them all, often inventing solutions on the spot.\n\nToday, machines produce most metal goods, [[40|but the craft of the blacksmith has not disappeared completely]]. Artists and hobbyists still gather around glowing forges, drawn to the satisfying ring of hammer on hot iron and to a tradition thousands of years old.",
+      "after": "Long before factories stamped out metal parts by the thousands, the blacksmith was one of the most [[31|important]] workers in any town. With a hammer, an anvil, and a blazing forge, a skilled smith could shape raw iron into tools, hinges, horseshoes, and [[32|making weapons]].\n\nThe work began at the forge, where coal or charcoal heated the iron until it glowed orange. [[33|]] Only then could the metal be shaped. [[34|Therefore,]] the smith worked quickly, hammering the softened iron against the anvil before it cooled and hardened again.\n\n[[35|]] A blacksmith had to read the color of the glowing iron to judge its temperature, [[36|since]] a piece heated too long would crumble, while one too cool would crack. This knowledge came only through years of [[37|practice, and patient observation]].\n\nBlacksmiths were also problem solvers. A farmer might arrive with a broken plow, a cook with a [[38|bent, pot, and a]] traveler with a lame horse. [[39|]] The smith addressed each problem, often inventing a solution on the spot.\n\nToday, machines produce most metal goods, [[40|but the craft of the blacksmith has not disappeared completely]]. Artists and hobbyists still gather around glowing forges, drawn to the satisfying ring of hammer on hot iron and to a tradition thousands of years old."
+    },
+    {
+      "id": "reading-practice-v3-p02",
+      "source": [
+        "src/content/reading-practice.json"
+      ],
+      "reason": "Replace an unnatural statement about colors existing with the intended printing observation.",
+      "before": "In the print shop, a color poster began as separate plans for yellow, red, and blue. Each plan marked only the parts of the image that would receive that color. Where inks overlapped, the paper could show another color. A patch of green, for example, might require yellow and blue printed in the same place rather than a separate green ink.\n\nThe printer placed two small crosses beyond the edge of the picture on every plan. Those marks would later be trimmed away. During a trial run she looked at them through a magnifying glass. If the colored crosses did not coincide, she adjusted the position of the paper before printing the next sheet. The process was called registration.\n\nHer apprentice thought the nearly invisible crosses were a fussy extra. He preferred the center of the image, where the lettering was largest. The printer showed him a test sheet on which the blue pass had shifted slightly. The yellow and blue still existed, but a thin yellow edge appeared beside the intended green shape. Looking only for the presence of the right inks would have missed the fault.\n\nThe apprentice began checking both corners before counting a sheet as finished. On the final stack, the crosses stood outside the useful picture and did their work there. The knife removed them only after the colors met.",
+      "after": "In the print shop, a color poster began as separate plans for yellow, red, and blue. Each plan marked only the parts of the image that would receive that color. Where inks overlapped, the paper could show another color. A patch of green, for example, might require yellow and blue printed in the same place rather than a separate green ink.\n\nThe printer placed two small crosses beyond the edge of the picture on every plan. Those marks would later be trimmed away. During a trial run she looked at them through a magnifying glass. If the colored crosses did not coincide, she adjusted the position of the paper before printing the next sheet. The process was called registration.\n\nHer apprentice thought the nearly invisible crosses were a fussy extra. He preferred the center of the image, where the lettering was largest. The printer showed him a test sheet on which the blue pass had shifted slightly. Both inks were present, but a thin yellow edge appeared beside the intended green shape. Looking only for the presence of the right inks would have missed the fault.\n\nThe apprentice began checking both corners before counting a sheet as finished. On the final stack, the crosses stood outside the useful picture and did their work there. The knife removed them only after the colors met."
+    },
+    {
+      "id": "reading-practice-v3-p05",
+      "source": [
+        "src/content/reading-practice.json"
+      ],
+      "reason": "Distinguish fallen leaves at a doorway from architectural door leaves.",
+      "before": "Ana had waited beneath the station’s side-door canopy since she was small enough to mistake its peeling paint for a map. The door was painted shut. No one passed through her corner, and when her father stepped from the train he always knew where to look. She disliked the repair workers clearing its leaves and freeing the hinges, though she called their effort a waste rather than explaining why.\n\nAfter reopening, two bicycle travelers stood there in the rain. One held the door while the other wheeled a loaded bicycle through. Ana stopped outside the canopy until they had gone. A sign inside pointed to a level passage beside the stairs she usually climbed.\n\nHer father arrived carrying a heavy case. She offered to take one end; he said he had it. At the stairs he set it down to change hands. Ana carried his smaller bag along the level passage without announcing where she was going. He followed, and they reached their usual street without lifting the case between them. Neither spoke about the stairs.\n\nThe next week she waited under the canopy again. The corner had not stopped being hers, she told herself, although she now had to stand aside. When leaves gathered along the door’s edge, she pushed them clear. Her father appeared without a case, and she opened the door. A stranger passed through first, thanking her as if she were holding it for him. She almost corrected him. Then she stepped back into the dry corner and watched her father cross the platform.",
+      "after": "Ana had waited beneath the station’s side-door canopy since she was small enough to mistake its peeling paint for a map. The door was painted shut. No one passed through her corner, and when her father stepped from the train he always knew where to look. She disliked the repair workers sweeping away fallen leaves and freeing the hinges, though she called their effort a waste rather than explaining why.\n\nAfter reopening, two bicycle travelers stood there in the rain. One held the door while the other wheeled a loaded bicycle through. Ana stopped outside the canopy until they had gone. A sign inside pointed to a level passage beside the stairs she usually climbed.\n\nHer father arrived carrying a heavy case. She offered to take one end; he said he had it. At the stairs he set it down to change hands. Ana carried his smaller bag along the level passage without announcing where she was going. He followed, and they reached their usual street without lifting the case between them. Neither spoke about the stairs.\n\nThe next week she waited under the canopy again. The corner had not stopped being hers, she told herself, although she now had to stand aside. When leaves gathered along the door’s edge, she pushed them clear. Her father appeared without a case, and she opened the door. A stranger passed through first, thanking her as if she were holding it for him. She almost corrected him. Then she stepped back into the dry corner and watched her father cross the platform."
+    },
+    {
+      "id": "reading-practice-v3-p10",
+      "source": [
+        "src/content/reading-practice.json"
+      ],
+      "reason": "Remove an unnatural count-noun opening and an opaque contrast about the real root.",
+      "before": "A flooded soil contains water, but water can occupy spaces that would otherwise hold air. For a plant growing in such soil, access to water and access to oxygen are not the same problem. Some wetland plants have internal air spaces that provide a route between above-water tissues and submerged parts.\n\nA researcher studying one such plant compared two root samples under a microscope. In one, compact tissue filled most of the cross-section. In the other, larger connected spaces ran between cells. She warned her students not to describe those spaces as simply missing pieces. Their arrangement could be part of how an intact root functions.\n\nThe team then introduced a harmless tracer into an above-water leaf chamber and tested for it near the root. They used the tracer to investigate a pathway, not to claim that the visible spaces alone measured the exact oxygen available at every root tip. Root activity and soil conditions could affect that availability too.\n\nWhen students prepared a model for visitors, they first made a solid tube. They revised it to show both tissue and passages. The tissue was not an obstacle to a root’s success merely because the passages mattered. The plant needed a living structure and a route through it. The model worked best when it showed their relationship rather than asking viewers to choose which one was the real root.",
+      "after": "Flooded soil contains water, but water can occupy spaces that would otherwise hold air. For a plant growing in such soil, access to water and access to oxygen are not the same problem. Some wetland plants have internal air spaces that provide a route between above-water tissues and submerged parts.\n\nA researcher studying one such plant compared two root samples under a microscope. In one, compact tissue filled most of the cross-section. In the other, larger connected spaces ran between cells. She warned her students not to describe those spaces as simply missing pieces. Their arrangement could be part of how an intact root functions.\n\nThe team then introduced a harmless tracer into an above-water leaf chamber and tested for it near the root. They used the tracer to investigate a pathway, not to claim that the visible spaces alone measured the exact oxygen available at every root tip. Root activity and soil conditions could affect that availability too.\n\nWhen students prepared a model for visitors, they first made a solid tube. They revised it to show both tissue and passages. The air passages did not make the surrounding tissue unnecessary. The plant needed both living tissue and a route for gases to move through it. The revised model showed how those two features work together."
+    },
+    {
+      "id": "reading-practice-v3-p11",
+      "source": [
+        "src/content/reading-practice.json"
+      ],
+      "reason": "Replace a strained description of a crowded period with the actual changed interpretation.",
+      "before": "The photograph showed a busy avenue almost empty. A broad pale road ran between buildings, and a single figure near one corner appeared to have waited while a worker cleaned his shoes. The catalog described the image as a long exposure. The historian placed that phrase at the center of her account rather than treating emptiness as the avenue’s condition.\n\nDuring a long exposure, light arriving over an interval contributes to the picture. A moving object may spend too little of that interval at any one place to appear clearly, while buildings and a person standing still can leave a stronger image. The picture’s time is therefore not simply the instant a modern viewer might imagine from a sharp-looking facade.\n\nThe historian compared the photograph with descriptions of traffic on the avenue. She did not use the written descriptions to paint missing carriages onto the image. Instead she asked what kinds of presence the photographic process made visible and which kinds could pass through without becoming equally distinct.\n\nFor an exhibition, the museum printed the photograph beside a short explanation of exposure. A visitor called it a quiet street. Another, after reading the explanation, described it as a crowded period gathered around things that had stayed. Both were looking at the same pale road. The historian’s label asked viewers to consider duration as one of the image’s materials, alongside light and the surface that received it.",
+      "after": "The photograph showed a busy avenue almost empty. A broad pale road ran between buildings, and a single figure near one corner appeared to have waited while a worker cleaned his shoes. The catalog described the image as a long exposure. The historian placed that phrase at the center of her account rather than treating emptiness as the avenue’s condition.\n\nDuring a long exposure, light arriving over an interval contributes to the picture. A moving object may spend too little of that interval at any one place to appear clearly, while buildings and a person standing still can leave a stronger image. The picture’s time is therefore not simply the instant a modern viewer might imagine from a sharp-looking facade.\n\nThe historian compared the photograph with descriptions of traffic on the avenue. She did not use the written descriptions to paint missing carriages onto the image. Instead she asked what kinds of presence the photographic process made visible and which kinds could pass through without becoming equally distinct.\n\nFor an exhibition, the museum printed the photograph beside a short explanation of exposure. A visitor called it a quiet street. Another, after reading the explanation, said that passing traffic could have filled the apparently empty road. Both were looking at the same pale road. The historian’s label asked viewers to consider duration as one of the image’s materials, alongside light and the surface that received it."
+    },
+    {
+      "id": "reading-practice-v3-p15",
+      "source": [
+        "src/content/reading-practice.json"
+      ],
+      "reason": "Distinguish a notebook mark from a check and remove it that could refer to the hand or notebook.",
+      "before": "Mina’s notebook gave the relay a tidy shape. From the painted mark to the exchange she recorded eight steps, then a check when the baton reached her hand. When she and Leah missed an exchange in practice, the coach asked who had moved too soon. Mina showed the page. She heard herself saying eight as if a number could identify which of them had failed.\n\nLeah said nothing until they were putting their bags away. Then she asked whether Mina could leave her hand ready a little longer. Mina nearly opened the notebook again. Instead she asked when Leah needed to see it. The answer concerned a sightline and a spoken call, neither of which had a column on the page.\n\nThey practiced without timing the full run. Mina still counted, but her hand waited for Leah’s call rather than demanding that the baton arrive on the old beat. Some exchanges took seven steps and some nine. Leah admitted that she sometimes delayed the call when she feared the hand would disappear. Their two private counts had given each a reason to feel correct without giving the other a reliable opening.\n\nAt the meet, the rhythm steadied Mina. The exchange came late in her count, and for an instant she wanted the reassuring check on the page more than the awkward extra step. She kept her hand there. Afterward the coach praised their clean changeover. Mina began to say how many steps it had taken, then asked Leah what it had looked like from behind. Her notebook stayed in the bag, though she reached for its strap while she listened.",
+      "after": "Mina’s notebook gave the relay a tidy shape. For the run from the painted mark to the exchange, she wrote down eight steps and added a check mark when the baton reached her hand. When she and Leah missed an exchange in practice, the coach asked who had moved too soon. Mina showed the page. She heard herself saying eight as if a number could identify which of them had failed.\n\nLeah said nothing until they were putting their bags away. Then she asked whether Mina could leave her hand ready a little longer. Mina nearly opened the notebook again. Instead, she asked, “When do you need to see my hand?” The answer concerned a sightline and a spoken call, neither of which had a column on the page.\n\nThey practiced without timing the full run. Mina still counted, but her hand waited for Leah’s call rather than demanding that the baton arrive on the old beat. Some exchanges took seven steps and some nine. Leah admitted that she sometimes delayed the call when she feared the hand would disappear. Their two private counts had given each a reason to feel correct without giving the other a reliable opening.\n\nAt the meet, the rhythm steadied Mina. The exchange came late in her count, and for an instant she wanted the reassuring check on the page more than the awkward extra step. She kept her hand there. Afterward the coach praised their clean changeover. Mina began to say how many steps it had taken, then asked Leah what it had looked like from behind. Her notebook stayed in the bag, though she reached for its strap while she listened."
+    },
+    {
+      "id": "reading-practice-v3-p18",
+      "source": [
+        "src/content/reading-practice.json"
+      ],
+      "reason": "Move the relative clause beside relationship instead of leaving a garden-path attachment after inspectable.",
+      "before": "In the laboratory model, a block rests on a rough surface while a spring attached to it is drawn forward slowly. For a time the block does not move. The spring stretches, and the force it exerts grows until the block slips. The apparatus is not a miniature landscape in every respect. It is a way to separate a slowly applied input from an intermittent visible response.\n\nA graph of the pulling device’s position rises smoothly. A graph of the block’s position contains flat intervals and jumps. If an observer watches only the block, a flat interval can look like nothing is happening. If the observer also watches the spring, the same interval includes a changing condition. Lack of motion is not lack of change in the whole system.\n\nResearchers use such simplified models to think about friction and stored deformation. They do not infer the time of a particular natural event merely by matching one laboratory interval. Materials, geometry, and loading conditions can differ. The model’s value lies partly in making a relation inspectable that is harder to isolate at a large scale.\n\nOne student called the jumps a failure of the smooth pulling motion. The instructor replied that the difference between input and response was the feature to explain, not a defect to erase. Plotting both on the same time axis kept that difference visible. A smooth average of the block’s motion might describe its overall displacement, but it would conceal the periods in which force accumulated and the brief releases through which movement occurred.",
+      "after": "In the laboratory model, a block rests on a rough surface while a spring attached to it is drawn forward slowly. For a time the block does not move. The spring stretches, and the force it exerts grows until the block slips. The apparatus is not a miniature landscape in every respect. It is a way to separate a slowly applied input from an intermittent visible response.\n\nA graph of the pulling device’s position rises smoothly. A graph of the block’s position contains flat intervals and jumps. If an observer watches only the block, a flat interval can look like nothing is happening. If the observer also watches the spring, the same interval includes a changing condition. Lack of motion is not lack of change in the whole system.\n\nResearchers use such simplified models to think about friction and stored deformation. They do not infer the time of a particular natural event merely by matching one laboratory interval. Materials, geometry, and loading conditions can differ. In the model, a relationship that is difficult to isolate on a larger scale becomes inspectable.\n\nOne student called the jumps a failure of the smooth pulling motion. The instructor replied that the difference between input and response was the feature to explain, not a defect to erase. Plotting both on the same time axis kept that difference visible. A smooth average of the block’s motion might describe its overall displacement, but it would conceal the periods in which force accumulated and the brief releases through which movement occurred."
+    },
+    {
+      "id": "reading-practice-v3-p23",
+      "source": [
+        "src/content/reading-practice.json"
+      ],
+      "reason": "State the relationship between decoration and repair without an opaque abstract ending.",
+      "before": "The costume looked heavy with embroidery from the front of the stage. Up close, its reverse showed a different kind of work: a strip of plain cloth strengthened the shoulder, and a new line of small stitches stopped short of an older repair. The costume supervisor described that stopping point as a decision, not a missed section.\n\nThe older stitches held a patch made during an earlier production. Removing them would have weakened cloth already thinned by use. The new reinforcement carried strain around the damaged area while leaving the earlier support in place. This was not the same as restoring the garment to a first, untouched condition. It was preparing an altered object to be used again.\n\nIn the exhibition proposed after the production, the designer first wanted the garment displayed on a figure facing forward. A technician suggested a mirror behind it. Through the mirror, visitors could see the repairs without turning or handling the fragile cloth. The arrangement did not make every stitch equally legible, but it gave the hidden decisions a place in the account.\n\nOne visitor later called the mirror a way of showing how much work appearance conceals. The supervisor accepted that description with a qualification: the front was work too. Decoration and reinforcement were not rivals for the title of real labor. The mirror mattered because a single view could make one kind seem sufficient to explain the object’s continued presence on the stage.",
+      "after": "The costume looked heavy with embroidery from the front of the stage. Up close, its reverse showed a different kind of work: a strip of plain cloth strengthened the shoulder, and a new line of small stitches stopped short of an older repair. The costume supervisor described that stopping point as a decision, not a missed section.\n\nThe older stitches held a patch made during an earlier production. Removing them would have weakened cloth already thinned by use. The new reinforcement carried strain around the damaged area while leaving the earlier support in place. This was not the same as restoring the garment to a first, untouched condition. It was preparing an altered object to be used again.\n\nIn the exhibition proposed after the production, the designer first wanted the garment displayed on a figure facing forward. A technician suggested a mirror behind it. Through the mirror, visitors could see the repairs without turning or handling the fragile cloth. The arrangement did not make every stitch equally legible, but it gave the hidden decisions a place in the account.\n\nOne visitor later called the mirror a way of showing how much work appearance conceals. The supervisor accepted that description with a qualification: the front was work too. Decoration and reinforcement were not rivals for the title of real labor. The mirror mattered because a view of the decorated front alone could hide the repairs that kept the costume usable. Seeing both sides helped visitors understand how its appearance and its strength depended on different kinds of work."
+    },
+    {
+      "id": "reading-form-1-p2",
+      "source": [
+        "src/content/reading-questions.json"
+      ],
+      "reason": "Make the before/after timing explicit instead of implying both months came after the change.",
+      "before": "[1] When the neighborhood library added chairs beside its windows, staff expected them to encourage longer visits. The old reading area had twelve seats near the circulation desk. The new arrangement kept those seats and added eight by the windows. For the next month, an assistant counted occupied seats at noon and at four in the afternoon on weekdays. The afternoon counts increased much more than the noon counts. At the first planning meeting, one member called the furniture change an immediate success.\n\n[2] The librarian asked what kind of success the group meant. More occupied chairs might indicate more visitors, longer visits by the same number of people, or people moving from places the assistant had not counted. The count recorded seats in use at particular moments. It did not record distinct visitors, how long each person stayed, or why anyone selected a chair. The figures were useful, she said, but their usefulness began with recognizing what they measured.\n\n[3] Staff added observations without discarding the first month's counts. At selected intervals they noted whether visitors were reading, using laptops, waiting for someone, or talking. They also offered a short voluntary card asking what brought visitors to that area. The card included an open line for an answer the designers had not anticipated. Several people wrote that the window seats let them watch for a bus. Others mentioned daylight, space to work, or a quiet place before a late shift.\n\n[4] Those answers complicated the original expectation that the chairs primarily encouraged reading. They did not necessarily weaken the case for the chairs. The library's stated mission included access to information and welcoming public space; the staff had simply used a narrower picture of its visitors when imagining the new area. The librarian resisted substituting a new universal story about bus passengers for the old story about readers. A handful of comments could reveal overlooked uses without showing how common each use was.\n\n[5] A comparison of the first and second months also required care. The second month included school examinations, and staff noticed more students carrying review books. A rainy week altered the amount of daylight near the windows. Neither condition had been controlled. The committee therefore reported the observed seat use and examples from the cards separately from any claim about why use had changed. It planned additional counts during a less unusual month, using the same times and locations. The committee also asked staff to keep a brief record of unusual events rather than reconstruct them from memory after the counts were finished. A visiting class, a closed meeting room, or a temporary change in bus schedules could alter who sat where. Such notes would not transform observation into an experiment, but they could help a later reader recognize circumstances hidden behind a monthly average. Staff agreed to record those conditions in plain language and keep the original daily counts, so that the summary could be checked instead of becoming the only surviving account.\n\n[6] Not everyone accepted the cautious wording. A committee member argued that the library needed a clear number to justify the purchase to its funders. The librarian agreed that financial decisions required evidence, but said a precise number was not automatically a precise answer to a policy question. If the goal was to provide space, occupied seats were directly relevant. If the goal was to attract additional people, the library needed a measure of distinct visitors. Defining the goal could make the report clearer without making its claims larger.\n\n[7] The resulting report retained the table below. It described a rise in observed afternoon seat occupancy and presented the comment cards as illustrations of possible uses. It did not estimate the number of new library users or claim that the furniture alone caused the change. The committee kept the window chairs and funded further observation. A staff member remarked that the windows had broadened the view in two ways: they gave visitors a new place to look out, and they gave the library a reason to look more closely at who was already there.\n\n[8] The librarian liked the phrase but declined to put it in the report's heading. It would fit an essay about the project, she said. The public report needed a title that identified both the object and the limits of the study. The title she chose was “Weekday Seat Occupancy Before and After the Window Area Opened.” It was less memorable than the phrase about a broadened view, but it described the evidence a reader would actually find.",
+      "after": "[1] When the neighborhood library added chairs beside its windows, staff expected them to encourage longer visits. The old reading area had twelve seats near the circulation desk. The new arrangement kept those seats and added eight by the windows. Before the change, an assistant counted occupied seats at noon and at four in the afternoon on weekdays for a month. She repeated those counts for a month after the eight window seats were added. The afternoon counts increased much more than the noon counts. At the first planning meeting, one member called the furniture change an immediate success.\n\n[2] The librarian asked what kind of success the group meant. More occupied chairs might indicate more visitors, longer visits by the same number of people, or people moving from places the assistant had not counted. The count recorded seats in use at particular moments. It did not record distinct visitors, how long each person stayed, or why anyone selected a chair. The figures were useful, she said, but their usefulness began with recognizing what they measured.\n\n[3] Staff added observations without discarding the first month's counts. At selected intervals they noted whether visitors were reading, using laptops, waiting for someone, or talking. They also offered a short voluntary card asking what brought visitors to that area. The card included an open line for an answer the designers had not anticipated. Several people wrote that the window seats let them watch for a bus. Others mentioned daylight, space to work, or a quiet place before a late shift.\n\n[4] Those answers complicated the original expectation that the chairs primarily encouraged reading. They did not necessarily weaken the case for the chairs. The library's stated mission included access to information and welcoming public space; the staff had simply used a narrower picture of its visitors when imagining the new area. The librarian resisted substituting a new universal story about bus passengers for the old story about readers. A handful of comments could reveal overlooked uses without showing how common each use was.\n\n[5] A comparison of the first and second months also required care. The second month included school examinations, and staff noticed more students carrying review books. A rainy week altered the amount of daylight near the windows. Neither condition had been controlled. The committee therefore reported the observed seat use and examples from the cards separately from any claim about why use had changed. It planned additional counts during a less unusual month, using the same times and locations. The committee also asked staff to keep a brief record of unusual events rather than reconstruct them from memory after the counts were finished. A visiting class, a closed meeting room, or a temporary change in bus schedules could alter who sat where. Such notes would not transform observation into an experiment, but they could help a later reader recognize circumstances hidden behind a monthly average. Staff agreed to record those conditions in plain language and keep the original daily counts, so that the summary could be checked instead of becoming the only surviving account.\n\n[6] Not everyone accepted the cautious wording. A committee member argued that the library needed a clear number to justify the purchase to its funders. The librarian agreed that financial decisions required evidence, but said a precise number was not automatically a precise answer to a policy question. If the goal was to provide space, occupied seats were directly relevant. If the goal was to attract additional people, the library needed a measure of distinct visitors. Defining the goal could make the report clearer without making its claims larger.\n\n[7] The resulting report retained the table below. It described a rise in observed afternoon seat occupancy and presented the comment cards as illustrations of possible uses. It did not estimate the number of new library users or claim that the furniture alone caused the change. The committee kept the window chairs and funded further observation. A staff member remarked that the windows had broadened the view in two ways: they gave visitors a new place to look out, and they gave the library a reason to look more closely at who was already there.\n\n[8] The librarian liked the phrase but declined to put it in the report's heading. It would fit an essay about the project, she said. The public report needed a title that identified both the object and the limits of the study. The title she chose was “Weekday Seat Occupancy Before and After the Window Area Opened.” It was less memorable than the phrase about a broadened view, but it described the evidence a reader would actually find."
+    },
+    {
+      "id": "reading-form-1-p4",
+      "source": [
+        "src/content/reading-questions.json"
+      ],
+      "reason": "Place the measurement during the visits, not after them.",
+      "before": "[1] On a narrow beach, a student research team marked a line of temporary stakes above the tide and measured the sand's height at each point after weekly visits. The first four measurements showed a steady loss of sand near the middle of the beach. One student proposed a simple model: if the measured loss continued at the same rate, the beach would disappear within a predictable number of months. The model was easy to graph, and its apparent clarity made the group reluctant to abandon it.\n\n[2] Their supervisor asked them to add the direction and strength of the wind, recent wave conditions, and the tide level at each visit. A storm during the fifth week removed sand from one section and deposited it farther along the shore. The stakes near the middle still showed losses, but others showed gains. The team realized that a set of local measurements was not automatically a measure of the whole beach's sand budget. Sand could leave one measured point without leaving the beach entirely.\n\n[3] The group expanded the survey to additional points and measured the distance between them. With more information about the beach's profile, it could estimate a broader change in volume rather than extend one point's height change across the entire shoreline. The estimates remained approximate: a weekly visit might miss material that arrived and departed between measurements. Nevertheless, they described the area more responsibly than the first model had. More observations did not simply make the original prediction stronger; they changed what needed to be predicted.\n\n[4] A second complication arrived with calmer weather. Waves returned some of the sand to places that had lost it. The original downward line could not represent that recovery. It was not wrong about the initial four observations, which still showed a decline at particular stakes. Its problem was the assumption that a short, local sequence would continue unchanged. The supervisor used the phrase “a provisional account”: a model to be compared with new conditions, not a forecast protected from them.\n\n[5] The team began displaying its measurements alongside the conditions recorded at each visit. It grouped days by broad wave patterns, then looked for similarities within those groups. The students were careful about causation. Measurements under rough waves might differ from measurements under calm waves, but wind, tides, and the timing of earlier storms also varied. Sorting observations by one condition could reveal a pattern without isolating that condition as its only cause. A more ambitious causal test would require a design that addressed those other influences. One student wanted to divide the observations into smaller and smaller groups until every day seemed comparable. The supervisor pointed out that a group containing a single visit could describe that visit precisely while offering little basis for a general pattern. More detailed labels did not automatically create more evidence. The team kept the broad comparisons and listed the conditions that varied within them. That decision made the display less tidy, but it also made clear why another season of visits could change a pattern that currently looked convincing.\n\n[6] Some beach visitors wanted a simpler answer. Were the new barriers near the dunes saving the beach or not? The students had measurements from a period before the barriers were installed and a period afterward, but the weather differed markedly between them. They could describe what happened during each period. They could not confidently attribute the difference to the barriers alone. The report recommended longer observation and comparison with an appropriate nearby stretch of coast, while acknowledging that no comparison would match every condition exactly.\n\n[7] The group's final public display included its first graph. A note explained why it had once seemed persuasive and where its assumptions exceeded the measurements. Visitors could follow the shift from one shrinking point to a changing beach profile. The students wanted the revised account to be readable without pretending it was final. One student wrote that the beach had not defeated measurement; it had defeated the shortcut from a tidy set of numbers to a tidy, unqualified future.\n\n[8] At the last visit of the term, the team removed the stakes so they would not obstruct walkers. The removal did not mean the beach had stopped changing. The supervisor arranged for another group to continue the survey with the same coordinate references. The most useful inheritance, she said, was not a prediction to repeat. It was a set of observations, clear definitions, and questions that the next group could test against what the shoreline did next.",
+      "after": "[1] On a narrow beach, a student research team marked a line of temporary stakes above the tide and measured the sand's height at each point during weekly visits. The first four measurements showed a steady loss of sand near the middle of the beach. One student proposed a simple model: if the measured loss continued at the same rate, the beach would disappear within a predictable number of months. The model was easy to graph, and its apparent clarity made the group reluctant to abandon it.\n\n[2] Their supervisor asked them to add the direction and strength of the wind, recent wave conditions, and the tide level at each visit. A storm during the fifth week removed sand from one section and deposited it farther along the shore. The stakes near the middle still showed losses, but others showed gains. The team realized that a set of local measurements was not automatically a measure of the whole beach's sand budget. Sand could leave one measured point without leaving the beach entirely.\n\n[3] The group expanded the survey to additional points and measured the distance between them. With more information about the beach's profile, it could estimate a broader change in volume rather than extend one point's height change across the entire shoreline. The estimates remained approximate: a weekly visit might miss material that arrived and departed between measurements. Nevertheless, they described the area more responsibly than the first model had. More observations did not simply make the original prediction stronger; they changed what needed to be predicted.\n\n[4] A second complication arrived with calmer weather. Waves returned some of the sand to places that had lost it. The original downward line could not represent that recovery. It was not wrong about the initial four observations, which still showed a decline at particular stakes. Its problem was the assumption that a short, local sequence would continue unchanged. The supervisor used the phrase “a provisional account”: a model to be compared with new conditions, not a forecast protected from them.\n\n[5] The team began displaying its measurements alongside the conditions recorded at each visit. It grouped days by broad wave patterns, then looked for similarities within those groups. The students were careful about causation. Measurements under rough waves might differ from measurements under calm waves, but wind, tides, and the timing of earlier storms also varied. Sorting observations by one condition could reveal a pattern without isolating that condition as its only cause. A more ambitious causal test would require a design that addressed those other influences. One student wanted to divide the observations into smaller and smaller groups until every day seemed comparable. The supervisor pointed out that a group containing a single visit could describe that visit precisely while offering little basis for a general pattern. More detailed labels did not automatically create more evidence. The team kept the broad comparisons and listed the conditions that varied within them. That decision made the display less tidy, but it also made clear why another season of visits could change a pattern that currently looked convincing.\n\n[6] Some beach visitors wanted a simpler answer. Were the new barriers near the dunes saving the beach or not? The students had measurements from a period before the barriers were installed and a period afterward, but the weather differed markedly between them. They could describe what happened during each period. They could not confidently attribute the difference to the barriers alone. The report recommended longer observation and comparison with an appropriate nearby stretch of coast, while acknowledging that no comparison would match every condition exactly.\n\n[7] The group's final public display included its first graph. A note explained why it had once seemed persuasive and where its assumptions exceeded the measurements. Visitors could follow the shift from one shrinking point to a changing beach profile. The students wanted the revised account to be readable without pretending it was final. One student wrote that the beach had not defeated measurement; it had defeated the shortcut from a tidy set of numbers to a tidy, unqualified future.\n\n[8] At the last visit of the term, the team removed the stakes so they would not obstruct walkers. The removal did not mean the beach had stopped changing. The supervisor arranged for another group to continue the survey with the same coordinate references. The most useful inheritance, she said, was not a prediction to repeat. It was a set of observations, clear definitions, and questions that the next group could test against what the shoreline did next."
+    },
+    {
+      "id": "RP-V3-06-4",
+      "source": "src/content/reading-practice.json",
+      "reason": "Quote a complete verb phrase instead of a detached object-plus-bare-infinitive sequence.",
+      "before": {
+        "id": "RP-V3-06-4",
+        "topic": "reading-vocabulary",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "easy",
+        "stem": "",
+        "questionText": "In “the mechanism coast briefly,” “coast” most nearly means:",
+        "choices": [
+          "continue moving for a time after the driving input stops",
+          "run at a lower but constant powered speed",
+          "stop at the same moment as the outside wheel",
+          "turn backward under the force of the water"
+        ],
+        "answer": 0,
+        "explanation": "The indoor machinery continues briefly after its driver stops and then settles. This distinguishes residual motion from powered constant speed, an immediate stop, or a reported reversal.",
+        "passage": {
+          "id": "reading-practice-v3-p06",
+          "title": "The Slow Wheel",
+          "context": "At the mill demonstration, the waterwheel turned more slowly than visitors expected. Several looked beyond it for a hidden motor. The guide pointed instead to the axle entering the building. Inside, a large toothed wheel drove a smaller one, which turned faster. A later pair changed the direction of rotation before the motion reached the grinding stones.\n\nThe mechanism did not create energy by making one part faster. In the guide’s simplified explanation, a speed increase traded away turning force, and friction used some energy along the way. The wheel outside could move slowly while the machinery inside performed a different motion.\n\nA visitor asked why the miller had not simply built a faster waterwheel. The guide brought out an old drawing of the channel. The available drop and water supply limited that choice; the gear arrangement connected the site’s power source to the work required. The drawing showed an adaptation to conditions rather than one best design for every stream.\n\nWhen the wheel stopped for the afternoon, the last visitors heard the indoor mechanism coast briefly and settle. The guide asked them to follow the axle with their eyes once more before leaving. What had looked like a single slow wheel was the visible beginning of a linked system, not a measure of every movement within it."
+        },
+        "teachingSections": [
+          2
+        ],
+        "skillId": "reading-vocabulary-contrast-clue"
+      },
+      "after": {
+        "id": "RP-V3-06-4",
+        "topic": "reading-vocabulary",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "easy",
+        "stem": "",
+        "questionText": "In the final paragraph, “coast briefly” most nearly means:",
+        "choices": [
+          "continue moving for a time after the driving input stops",
+          "run at a lower but constant powered speed",
+          "stop at the same moment as the outside wheel",
+          "turn backward under the force of the water"
+        ],
+        "answer": 0,
+        "explanation": "The indoor machinery continues briefly after its driver stops and then settles. This distinguishes residual motion from powered constant speed, an immediate stop, or a reported reversal.",
+        "passage": {
+          "id": "reading-practice-v3-p06",
+          "title": "The Slow Wheel",
+          "context": "At the mill demonstration, the waterwheel turned more slowly than visitors expected. Several looked beyond it for a hidden motor. The guide pointed instead to the axle entering the building. Inside, a large toothed wheel drove a smaller one, which turned faster. A later pair changed the direction of rotation before the motion reached the grinding stones.\n\nThe mechanism did not create energy by making one part faster. In the guide’s simplified explanation, a speed increase traded away turning force, and friction used some energy along the way. The wheel outside could move slowly while the machinery inside performed a different motion.\n\nA visitor asked why the miller had not simply built a faster waterwheel. The guide brought out an old drawing of the channel. The available drop and water supply limited that choice; the gear arrangement connected the site’s power source to the work required. The drawing showed an adaptation to conditions rather than one best design for every stream.\n\nWhen the wheel stopped for the afternoon, the last visitors heard the indoor mechanism coast briefly and settle. The guide asked them to follow the axle with their eyes once more before leaving. What had looked like a single slow wheel was the visible beginning of a linked system, not a measure of every movement within it."
+        },
+        "teachingSections": [
+          2
+        ],
+        "skillId": "reading-vocabulary-contrast-clue"
+      }
+    },
+    {
+      "id": "RP-V3-13-3",
+      "source": "src/content/reading-practice.json",
+      "reason": "Remove the doubled as construction that gives regard an unclear object.",
+      "before": {
+        "id": "RP-V3-13-3",
+        "topic": "reading-inference",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "The scholar would most likely regard a later meaning as an “error” simply because it differs from the first as:",
+        "choices": [
+          "a useful shortcut if the oldest written record survives",
+          "a conclusion justified whenever the material itself is absent",
+          "a distinction between source and borrowed language that the dates establish",
+          "a mistaken way to understand the documented development"
+        ],
+        "answer": 3,
+        "explanation": "The scholar asks for later meanings to be presented as developments, not errors, and explains why a joke can retain a trade association without physical cloth. Date and origin alone do not justify ranking later use as mistaken.",
+        "passage": {
+          "id": "reading-practice-v3-p13",
+          "title": "A Word That Arrived by Sea",
+          "context": "The language scholar first found the borrowed word in a merchant’s list of cargo. It named a kind of cloth. Two generations later, letters used the same word for the trade in that cloth, and eventually a satirical play applied it to the bargaining style associated with the merchants. A word had traveled through uses, not simply crossed a border once.\n\nThe scholar was careful about the gaps. A first surviving written example is not necessarily the first time anyone said the word. Spoken use may leave no document, and the cloth might have circulated under several names. Still, the dated examples established a sequence of recorded meanings. They made it possible to compare what the word did in different settings.\n\nA dictionary editor wanted one short origin statement. The scholar supplied the cloth meaning and its source language, then asked that later uses be shown as developments rather than errors. In the play, the original material was absent, but the association with trade made the joke available to its audience.\n\nAt a public talk, someone asked what the word really meant. The scholar returned to the examples. The question could ask about the cargo list, the letters, or the joke, but one answer would not fit all three. A history of the word was not a contest in which the earliest meaning had to defeat every later one."
+        },
+        "teachingSections": [
+          4
+        ],
+        "skillId": "reading-inference-counterexample"
+      },
+      "after": {
+        "id": "RP-V3-13-3",
+        "topic": "reading-inference",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "The scholar would most likely describe the claim that a later meaning must be wrong because it differs from the earliest recorded meaning as:",
+        "choices": [
+          "a useful shortcut if the oldest written record survives",
+          "a conclusion justified whenever the material itself is absent",
+          "a distinction between source and borrowed language that the dates establish",
+          "a mistaken way to understand the documented development"
+        ],
+        "answer": 3,
+        "explanation": "The scholar asks for later meanings to be presented as developments, not errors, and explains why a joke can retain a trade association without physical cloth. Date and origin alone do not justify ranking later use as mistaken.",
+        "passage": {
+          "id": "reading-practice-v3-p13",
+          "title": "A Word That Arrived by Sea",
+          "context": "The language scholar first found the borrowed word in a merchant’s list of cargo. It named a kind of cloth. Two generations later, letters used the same word for the trade in that cloth, and eventually a satirical play applied it to the bargaining style associated with the merchants. A word had traveled through uses, not simply crossed a border once.\n\nThe scholar was careful about the gaps. A first surviving written example is not necessarily the first time anyone said the word. Spoken use may leave no document, and the cloth might have circulated under several names. Still, the dated examples established a sequence of recorded meanings. They made it possible to compare what the word did in different settings.\n\nA dictionary editor wanted one short origin statement. The scholar supplied the cloth meaning and its source language, then asked that later uses be shown as developments rather than errors. In the play, the original material was absent, but the association with trade made the joke available to its audience.\n\nAt a public talk, someone asked what the word really meant. The scholar returned to the examples. The question could ask about the cargo list, the letters, or the joke, but one answer would not fit all three. A history of the word was not a contest in which the earliest meaning had to defeat every later one."
+        },
+        "teachingSections": [
+          4
+        ],
+        "skillId": "reading-inference-counterexample"
+      }
+    },
+    {
+      "id": "RP-V3-18-4",
+      "source": "src/content/reading-practice.json",
+      "reason": "Keep the vocabulary question synchronized with the clearer source sentence.",
+      "before": {
+        "id": "RP-V3-18-4",
+        "topic": "reading-vocabulary",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "In “making a relation inspectable,” “inspectable” most nearly means:",
+        "choices": [
+          "open to examination in an observable arrangement",
+          "sufficiently similar to a landscape to predict its next event directly",
+          "free of the frictional effects that the experiment is meant to study",
+          "expressed in a form requiring no interpretation of the observed signals"
+        ],
+        "answer": 0,
+        "explanation": "Inspectable means available for examination through the separated arrangement. That does not make it an identical landscape, remove friction, or exempt an interpretation from conditions and limits.",
+        "passage": {
+          "id": "reading-practice-v3-p18",
+          "title": "A Quiet Interval in a Fault Model",
+          "context": "In the laboratory model, a block rests on a rough surface while a spring attached to it is drawn forward slowly. For a time the block does not move. The spring stretches, and the force it exerts grows until the block slips. The apparatus is not a miniature landscape in every respect. It is a way to separate a slowly applied input from an intermittent visible response.\n\nA graph of the pulling device’s position rises smoothly. A graph of the block’s position contains flat intervals and jumps. If an observer watches only the block, a flat interval can look like nothing is happening. If the observer also watches the spring, the same interval includes a changing condition. Lack of motion is not lack of change in the whole system.\n\nResearchers use such simplified models to think about friction and stored deformation. They do not infer the time of a particular natural event merely by matching one laboratory interval. Materials, geometry, and loading conditions can differ. In the model, a relationship that is difficult to isolate on a larger scale becomes inspectable.\n\nOne student called the jumps a failure of the smooth pulling motion. The instructor replied that the difference between input and response was the feature to explain, not a defect to erase. Plotting both on the same time axis kept that difference visible. A smooth average of the block’s motion might describe its overall displacement, but it would conceal the periods in which force accumulated and the brief releases through which movement occurred."
+        },
+        "teachingSections": [
+          1
+        ],
+        "skillId": "reading-vocabulary-local-sense"
+      },
+      "after": {
+        "id": "RP-V3-18-4",
+        "topic": "reading-vocabulary",
+        "subject": "reading",
+        "category": "Craft and Structure",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "In the third paragraph, “inspectable” most nearly means:",
+        "choices": [
+          "possible to examine directly",
+          "sufficiently similar to a landscape to predict its next event directly",
+          "free of the frictional effects that the experiment is meant to study",
+          "expressed in a form requiring no interpretation of the observed signals"
+        ],
+        "answer": 0,
+        "explanation": "The model separates the spring’s changing force from the block’s motion, making their relationship possible to examine directly. Inspectable does not mean identical to a landscape, free of friction, or understandable without interpreting the observations and their limits.",
+        "passage": {
+          "id": "reading-practice-v3-p18",
+          "title": "A Quiet Interval in a Fault Model",
+          "context": "In the laboratory model, a block rests on a rough surface while a spring attached to it is drawn forward slowly. For a time the block does not move. The spring stretches, and the force it exerts grows until the block slips. The apparatus is not a miniature landscape in every respect. It is a way to separate a slowly applied input from an intermittent visible response.\n\nA graph of the pulling device’s position rises smoothly. A graph of the block’s position contains flat intervals and jumps. If an observer watches only the block, a flat interval can look like nothing is happening. If the observer also watches the spring, the same interval includes a changing condition. Lack of motion is not lack of change in the whole system.\n\nResearchers use such simplified models to think about friction and stored deformation. They do not infer the time of a particular natural event merely by matching one laboratory interval. Materials, geometry, and loading conditions can differ. In the model, a relationship that is difficult to isolate on a larger scale becomes inspectable.\n\nOne student called the jumps a failure of the smooth pulling motion. The instructor replied that the difference between input and response was the feature to explain, not a defect to erase. Plotting both on the same time axis kept that difference visible. A smooth average of the block’s motion might describe its overall displacement, but it would conceal the periods in which force accumulated and the brief releases through which movement occurred."
+        },
+        "teachingSections": [
+          1
+        ],
+        "skillId": "reading-vocabulary-local-sense"
+      }
+    },
+    {
+      "id": "RP-V3-01-1",
+      "source": "src/content/reading-practice.json",
+      "reason": "Replace abstract mastered form and useful engagement with the character’s actual change.",
+      "before": {
+        "id": "RP-V3-01-1",
+        "topic": "reading-main-idea",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "easy",
+        "stem": "",
+        "questionText": "Which description best summarizes Sam’s development across the passage?",
+        "choices": [
+          "from seeking help with an unfamiliar knot to proving that the coach’s method is unnecessary",
+          "from enjoying private practice to treating another beginner’s difficulty as a test he must win",
+          "from concealing a failed knot to openly explaining his mistake as part of helping another beginner",
+          "from displaying a mastered form toward useful engagement that still carries concern about appearing competent"
+        ],
+        "answer": 3,
+        "explanation": "The finished form first lets Sam present himself as capable. Practical difficulty and the boat’s movement change his attention, and he helps another learner, but still hides the rope-under-foot moment. An account of complete openness overstates the ending; winning or rejecting the coach’s method is not established.",
+        "passage": {
+          "id": "reading-practice-v3-p01",
+          "title": "The Line Around the Post",
+          "context": "The rowing club had lent Sam a boat before the other beginners, and he was determined not to require any help with it. At home he practiced the bowline from a card showing a loop against a blank background, without a post or water. By Saturday he could make the loop with his eyes closed. He tied it on the landing while the coach spoke to someone farther along the shore.\n\nThe finished loop would not pass over the mooring post’s broad cap. Sam put a foot on the rope as though that had been his intention. When the coach looked over, he looked down. He could have called out. Instead he untied the knot, walked the free end around the post, and began again, less quickly this time.\n\nThe boat moved outward with the small waves. The loop held without closing around the wood. The line was secure. For the first time Sam watched the knot doing something rather than waiting to show that he had made it. He was relieved, then irritated by how close the relief felt to needing help.\n\nAfter practice another beginner stood with a polished little loop beside the same post. Sam nearly took the rope and retied it; that would have been quick, and he knew how competent his hands could look. Instead he pointed around the post and handed over the free end. He did not mention the rope beneath his shoe. He stayed while the beginner worked, answering one question, then carried both their oars into the shed."
+        },
+        "teachingSections": [
+          4
+        ],
+        "skillId": "reading-main-idea-narrative-change"
+      },
+      "after": {
+        "id": "RP-V3-01-1",
+        "topic": "reading-main-idea",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "easy",
+        "stem": "",
+        "questionText": "Which description best summarizes Sam’s development across the passage?",
+        "choices": [
+          "from seeking help with an unfamiliar knot to proving that the coach’s method is unnecessary",
+          "from enjoying private practice to treating another beginner’s difficulty as a test he must win",
+          "from concealing a failed knot to openly explaining his mistake as part of helping another beginner",
+          "from wanting to look skilled to offering practical help, while still hiding his own earlier difficulty"
+        ],
+        "answer": 3,
+        "explanation": "Sam first wants to prove he can tie the knot without help. By the end, he helps another beginner use the rope, but he does not admit his own earlier trouble. That supports the answer; the passage does not show a competition, rejection of the coach’s method, or complete openness about his mistake.",
+        "passage": {
+          "id": "reading-practice-v3-p01",
+          "title": "The Line Around the Post",
+          "context": "The rowing club had lent Sam a boat before the other beginners, and he was determined not to require any help with it. At home he practiced the bowline from a card showing a loop against a blank background, without a post or water. By Saturday he could make the loop with his eyes closed. He tied it on the landing while the coach spoke to someone farther along the shore.\n\nThe finished loop would not pass over the mooring post’s broad cap. Sam put a foot on the rope as though that had been his intention. When the coach looked over, he looked down. He could have called out. Instead he untied the knot, walked the free end around the post, and began again, less quickly this time.\n\nThe boat moved outward with the small waves. The loop held without closing around the wood. The line was secure. For the first time Sam watched the knot doing something rather than waiting to show that he had made it. He was relieved, then irritated by how close the relief felt to needing help.\n\nAfter practice another beginner stood with a polished little loop beside the same post. Sam nearly took the rope and retied it; that would have been quick, and he knew how competent his hands could look. Instead he pointed around the post and handed over the free end. He did not mention the rope beneath his shoe. He stayed while the beginner worked, answering one question, then carried both their oars into the shed."
+        },
+        "teachingSections": [
+          4
+        ],
+        "skillId": "reading-main-idea-narrative-change"
+      }
+    },
+    {
+      "id": "RP-V3-05-1",
+      "source": "src/content/reading-practice.json",
+      "reason": "Describe Ana’s conflict without the awkward makes room for wider usefulness phrase.",
+      "before": {
+        "id": "RP-V3-05-1",
+        "topic": "reading-main-idea",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "easy",
+        "stem": "",
+        "questionText": "The passage primarily traces Ana as she:",
+        "choices": [
+          "discovers that her attachment to the corner depended entirely on its being closed to others",
+          "replaces a private waiting ritual with a wish to supervise the station’s travelers",
+          "accepts the repaired entrance chiefly because her father openly asks for assistance",
+          "makes room for the doorway’s wider usefulness while retaining an uneasy personal attachment to the corner"
+        ],
+        "answer": 3,
+        "explanation": "Ana retains the waiting ritual and discomfort about standing aside while clearing and opening a useful door. Her father does not request help, and she does not become a supervisor. The ending holds competing motives rather than an uncomplicated conversion.",
+        "passage": {
+          "id": "reading-practice-v3-p05",
+          "title": "The Unused Door",
+          "context": "Ana had waited beneath the station’s side-door canopy since she was small enough to mistake its peeling paint for a map. The door was painted shut. No one passed through her corner, and when her father stepped from the train he always knew where to look. She disliked the repair workers sweeping away fallen leaves and freeing the hinges, though she called their effort a waste rather than explaining why.\n\nAfter reopening, two bicycle travelers stood there in the rain. One held the door while the other wheeled a loaded bicycle through. Ana stopped outside the canopy until they had gone. A sign inside pointed to a level passage beside the stairs she usually climbed.\n\nHer father arrived carrying a heavy case. She offered to take one end; he said he had it. At the stairs he set it down to change hands. Ana carried his smaller bag along the level passage without announcing where she was going. He followed, and they reached their usual street without lifting the case between them. Neither spoke about the stairs.\n\nThe next week she waited under the canopy again. The corner had not stopped being hers, she told herself, although she now had to stand aside. When leaves gathered along the door’s edge, she pushed them clear. Her father appeared without a case, and she opened the door. A stranger passed through first, thanking her as if she were holding it for him. She almost corrected him. Then she stepped back into the dry corner and watched her father cross the platform."
+        },
+        "teachingSections": [
+          4
+        ],
+        "skillId": "reading-main-idea-narrative-change"
+      },
+      "after": {
+        "id": "RP-V3-05-1",
+        "topic": "reading-main-idea",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "easy",
+        "stem": "",
+        "questionText": "The passage primarily traces Ana as she:",
+        "choices": [
+          "discovers that her attachment to the corner depended entirely on its being closed to others",
+          "replaces a private waiting ritual with a wish to supervise the station’s travelers",
+          "accepts the repaired entrance chiefly because her father openly asks for assistance",
+          "accepts the doorway’s value to others while still feeling attached to her private corner"
+        ],
+        "answer": 3,
+        "explanation": "Ana retains the waiting ritual and discomfort about standing aside while clearing and opening a useful door. Her father does not request help, and she does not become a supervisor. The ending holds competing motives rather than an uncomplicated conversion.",
+        "passage": {
+          "id": "reading-practice-v3-p05",
+          "title": "The Unused Door",
+          "context": "Ana had waited beneath the station’s side-door canopy since she was small enough to mistake its peeling paint for a map. The door was painted shut. No one passed through her corner, and when her father stepped from the train he always knew where to look. She disliked the repair workers sweeping away fallen leaves and freeing the hinges, though she called their effort a waste rather than explaining why.\n\nAfter reopening, two bicycle travelers stood there in the rain. One held the door while the other wheeled a loaded bicycle through. Ana stopped outside the canopy until they had gone. A sign inside pointed to a level passage beside the stairs she usually climbed.\n\nHer father arrived carrying a heavy case. She offered to take one end; he said he had it. At the stairs he set it down to change hands. Ana carried his smaller bag along the level passage without announcing where she was going. He followed, and they reached their usual street without lifting the case between them. Neither spoke about the stairs.\n\nThe next week she waited under the canopy again. The corner had not stopped being hers, she told herself, although she now had to stand aside. When leaves gathered along the door’s edge, she pushed them clear. Her father appeared without a case, and she opened the door. A stranger passed through first, thanking her as if she were holding it for him. She almost corrected him. Then she stepped back into the dry corner and watched her father cross the platform."
+        },
+        "teachingSections": [
+          4
+        ],
+        "skillId": "reading-main-idea-narrative-change"
+      }
+    },
+    {
+      "id": "RP-V3-14-6",
+      "source": "src/content/reading-practice.json",
+      "reason": "Replace end constraints out of the effective explanation with the actual shared omission.",
+      "before": {
+        "id": "RP-V3-14-6",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "Which comparison between the string test and Ravi’s first drawing is supported?",
+        "choices": [
+          "Both initially leave the cable’s end constraints out of the effective explanation.",
+          "Both initially test a bridge without any load on its roadway.",
+          "Both show that end anchorage becomes unnecessary if the central curve is drawn accurately.",
+          "Both establish the safe load for a full-scale bridge from a tabletop trial."
+        ],
+        "answer": 0,
+        "explanation": "Free ends in the test and absent anchorages in the drawing omit the same constraint. The model has small weights and limited purpose, so it neither tests no load nor supplies a full-scale safe-load specification.",
+        "passage": {
+          "id": "reading-practice-v3-p14",
+          "title": "The Anchor Outside the Picture",
+          "context": "The suspension bridge in the textbook looked like a roadway hanging from two curved cables. Ravi copied the graceful center span and stopped at the towers. His teacher asked him to continue the drawing beyond them. At each end the main cable ran down toward a large anchorage in the ground.\n\nIn the simplified model they studied, the suspended roadway pulls downward through smaller hangers. The main cable carries tension along its curve, and the anchorages resist its pull at the ends. Towers and anchorages therefore have different jobs. A tall tower alone is not a substitute for securing the cable.\n\nThe class built a string model between two stands. At first they merely draped the string over the tops and hung small weights in the middle. The free ends slid, and the center dropped. Clamping the ends made a stable model possible under the same load. The teacher emphasized that the tabletop model demonstrated one relationship rather than every engineering feature of a full bridge.\n\nRavi’s final drawing included less empty river but more ground. It was less like the picture he had wanted for his notebook. Yet the curve in the center now led somewhere. He labeled the anchorages before adding shadows to the towers, and found that the edges of a diagram could change what he understood about its most striking part."
+        },
+        "teachingSections": [
+          2
+        ],
+        "skillId": "reading-integration-combine"
+      },
+      "after": {
+        "id": "RP-V3-14-6",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "Which comparison between the string test and Ravi’s first drawing is supported?",
+        "choices": [
+          "Both initially fail to account for how the cable’s ends are secured.",
+          "Both initially test a bridge without any load on its roadway.",
+          "Both show that end anchorage becomes unnecessary if the central curve is drawn accurately.",
+          "Both establish the safe load for a full-scale bridge from a tabletop trial."
+        ],
+        "answer": 0,
+        "explanation": "Free ends in the test and absent anchorages in the drawing omit the same constraint. The model has small weights and limited purpose, so it neither tests no load nor supplies a full-scale safe-load specification.",
+        "passage": {
+          "id": "reading-practice-v3-p14",
+          "title": "The Anchor Outside the Picture",
+          "context": "The suspension bridge in the textbook looked like a roadway hanging from two curved cables. Ravi copied the graceful center span and stopped at the towers. His teacher asked him to continue the drawing beyond them. At each end the main cable ran down toward a large anchorage in the ground.\n\nIn the simplified model they studied, the suspended roadway pulls downward through smaller hangers. The main cable carries tension along its curve, and the anchorages resist its pull at the ends. Towers and anchorages therefore have different jobs. A tall tower alone is not a substitute for securing the cable.\n\nThe class built a string model between two stands. At first they merely draped the string over the tops and hung small weights in the middle. The free ends slid, and the center dropped. Clamping the ends made a stable model possible under the same load. The teacher emphasized that the tabletop model demonstrated one relationship rather than every engineering feature of a full bridge.\n\nRavi’s final drawing included less empty river but more ground. It was less like the picture he had wanted for his notebook. Yet the curve in the center now led somewhere. He labeled the anchorages before adding shadows to the towers, and found that the edges of a diagram could change what he understood about its most striking part."
+        },
+        "teachingSections": [
+          2
+        ],
+        "skillId": "reading-integration-combine"
+      }
+    },
+    {
+      "id": "RP-V3-23-6",
+      "source": "src/content/reading-practice.json",
+      "reason": "Replace accumulated making with the concrete relationship between preserving and showing repairs.",
+      "before": {
+        "id": "RP-V3-23-6",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "How do the decision to retain old stitches and the mirror display work together?",
+        "choices": [
+          "Both return the costume to the state preceding every performance alteration.",
+          "Both establish that each visible stitch belongs to the same production.",
+          "The repair preserves old support while the mirror requires that support to be removed for inspection.",
+          "They preserve and expose part of the garment’s accumulated making rather than replace it with one idealized view."
+        ],
+        "answer": 3,
+        "explanation": "The working repair and the exhibition keep earlier making materially present and partly visible. They do not erase alterations, date all work to one production, or require destructive removal to inspect it.",
+        "passage": {
+          "id": "reading-practice-v3-p23",
+          "title": "The Seam That Faces Inward",
+          "context": "The costume looked heavy with embroidery from the front of the stage. Up close, its reverse showed a different kind of work: a strip of plain cloth strengthened the shoulder, and a new line of small stitches stopped short of an older repair. The costume supervisor described that stopping point as a decision, not a missed section.\n\nThe older stitches held a patch made during an earlier production. Removing them would have weakened cloth already thinned by use. The new reinforcement carried strain around the damaged area while leaving the earlier support in place. This was not the same as restoring the garment to a first, untouched condition. It was preparing an altered object to be used again.\n\nIn the exhibition proposed after the production, the designer first wanted the garment displayed on a figure facing forward. A technician suggested a mirror behind it. Through the mirror, visitors could see the repairs without turning or handling the fragile cloth. The arrangement did not make every stitch equally legible, but it gave the hidden decisions a place in the account.\n\nOne visitor later called the mirror a way of showing how much work appearance conceals. The supervisor accepted that description with a qualification: the front was work too. Decoration and reinforcement were not rivals for the title of real labor. The mirror mattered because a view of the decorated front alone could hide the repairs that kept the costume usable. Seeing both sides helped visitors understand how its appearance and its strength depended on different kinds of work."
+        },
+        "teachingSections": [
+          2
+        ],
+        "skillId": "reading-integration-combine"
+      },
+      "after": {
+        "id": "RP-V3-23-6",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "How do the decision to retain old stitches and the mirror display work together?",
+        "choices": [
+          "Both return the costume to the state preceding every performance alteration.",
+          "Both establish that each visible stitch belongs to the same production.",
+          "The repair preserves old support while the mirror requires that support to be removed for inspection.",
+          "They keep earlier repairs in place and let visitors see how those repairs helped the garment remain usable."
+        ],
+        "answer": 3,
+        "explanation": "The working repair and the exhibition keep earlier making materially present and partly visible. They do not erase alterations, date all work to one production, or require destructive removal to inspect it.",
+        "passage": {
+          "id": "reading-practice-v3-p23",
+          "title": "The Seam That Faces Inward",
+          "context": "The costume looked heavy with embroidery from the front of the stage. Up close, its reverse showed a different kind of work: a strip of plain cloth strengthened the shoulder, and a new line of small stitches stopped short of an older repair. The costume supervisor described that stopping point as a decision, not a missed section.\n\nThe older stitches held a patch made during an earlier production. Removing them would have weakened cloth already thinned by use. The new reinforcement carried strain around the damaged area while leaving the earlier support in place. This was not the same as restoring the garment to a first, untouched condition. It was preparing an altered object to be used again.\n\nIn the exhibition proposed after the production, the designer first wanted the garment displayed on a figure facing forward. A technician suggested a mirror behind it. Through the mirror, visitors could see the repairs without turning or handling the fragile cloth. The arrangement did not make every stitch equally legible, but it gave the hidden decisions a place in the account.\n\nOne visitor later called the mirror a way of showing how much work appearance conceals. The supervisor accepted that description with a qualification: the front was work too. Decoration and reinforcement were not rivals for the title of real labor. The mirror mattered because a view of the decorated front alone could hide the repairs that kept the costume usable. Seeing both sides helped visitors understand how its appearance and its strength depended on different kinds of work."
+        },
+        "teachingSections": [
+          2
+        ],
+        "skillId": "reading-integration-combine"
+      }
+    },
+    {
+      "id": "RP-V3-24-6",
+      "source": "src/content/reading-practice.json",
+      "reason": "Replace hydraulic reading and continuing human requirements with a clear comparison of the two arguments.",
+      "before": {
+        "id": "RP-V3-24-6",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "Which relationship between the passages is best supported?",
+        "choices": [
+          "B treats A’s focus on water levels as evidence that labor records should be ignored.",
+          "A supplies the complete account that makes B’s maintenance examples redundant.",
+          "B accepts the need for A’s hydraulic reading and adds evidence about its continuing human requirements.",
+          "B accepts the map’s distances but rejects the existence of the marked level changes."
+        ],
+        "answer": 2,
+        "explanation": "B explicitly calls the hydraulic reading necessary and not false, then examines continuing work and costs. The relation is extension of a valid account, not rejection of level changes or redundancy of maintenance.",
+        "passage": {
+          "id": "reading-practice-v3-p24",
+          "title": "The Canal’s Two Maps — Paired Texts",
+          "context": "Passage A — An engineer\n\nThe canal plan can be read as a sequence of controlled levels. Each lock allows a boat to pass between stretches held at different heights. The map’s distances matter, but its marked rises explain why the route is not simply a trench following the river. To understand the design, I begin with the water that must be retained and moved, then trace the boat through that arrangement.\n\nPassage B — A labor historian\n\nThat is a necessary reading, but the plan does not show all the movements that kept the route open. Records of dredging, gate repair, and delayed wages describe recurring work. A successful design did not put the canal beyond maintenance or settle who bore its burdens. I read the engineer’s controlled levels beside schedules that repeatedly fell behind, not because the hydraulic account is false but because control was also something people had to keep producing.\n\nA gate-repair entry may name a day on which traffic waited and another on which payment was requested. Such entries connect the passage of boats to the arrangement of work. They leave other workers unnamed, which is a limit on the account rather than a reason to make the work disappear."
+        },
+        "teachingSections": [
+          1
+        ],
+        "skillId": "reading-integration-positions"
+      },
+      "after": {
+        "id": "RP-V3-24-6",
+        "topic": "reading-integration",
+        "subject": "reading",
+        "category": "Integration of Knowledge and Ideas",
+        "difficulty": "hard",
+        "stem": "",
+        "questionText": "Which relationship between the passages is best supported?",
+        "choices": [
+          "B treats A’s focus on water levels as evidence that labor records should be ignored.",
+          "A supplies the complete account that makes B’s maintenance examples redundant.",
+          "B accepts A’s explanation of the water levels and adds the work needed to keep the canal operating.",
+          "B accepts the map’s distances but rejects the existence of the marked level changes."
+        ],
+        "answer": 2,
+        "explanation": "B explicitly calls the hydraulic reading necessary and not false, then examines continuing work and costs. The relation is extension of a valid account, not rejection of level changes or redundancy of maintenance.",
+        "passage": {
+          "id": "reading-practice-v3-p24",
+          "title": "The Canal’s Two Maps — Paired Texts",
+          "context": "Passage A — An engineer\n\nThe canal plan can be read as a sequence of controlled levels. Each lock allows a boat to pass between stretches held at different heights. The map’s distances matter, but its marked rises explain why the route is not simply a trench following the river. To understand the design, I begin with the water that must be retained and moved, then trace the boat through that arrangement.\n\nPassage B — A labor historian\n\nThat is a necessary reading, but the plan does not show all the movements that kept the route open. Records of dredging, gate repair, and delayed wages describe recurring work. A successful design did not put the canal beyond maintenance or settle who bore its burdens. I read the engineer’s controlled levels beside schedules that repeatedly fell behind, not because the hydraulic account is false but because control was also something people had to keep producing.\n\nA gate-repair entry may name a day on which traffic waited and another on which payment was requested. Such entries connect the passage of boats to the arrangement of work. They leave other workers unnamed, which is a limit on the account rather than a reason to make the work disappear."
+        },
+        "teachingSections": [
+          1
+        ],
+        "skillId": "reading-integration-positions"
+      }
+    },
+    {
+      "id": "sentence-structure:section:0",
+      "source": "src/content/lessons/sentence-structure.json",
+      "reason": "Describe the grammatical criterion instead of whether the reader can stop speaking.",
+      "before": {
+        "heading": "Clauses and phrases",
+        "body": [
+          "A clause has a subject (who or what it is about) and a verb (an action or state, such as runs or is). An independent clause is a complete thought that can stand alone. A dependent clause needs another clause to finish its thought; it often starts with because, although, if, when, or while.",
+          "A phrase is a group of words without a complete subject and verb. Find those two parts first. If removing a starter such as because leaves a complete thought, you had a dependent clause. Do not decide only by where you pause."
+        ],
+        "examples": [
+          {
+            "text": "The excited child opened his present.",
+            "label": "Independent clause — you can stop here",
+            "good": true
+          },
+          {
+            "text": "When the excited child opened his present…",
+            "label": "Dependent clause — the opening word forces you to keep going",
+            "good": false
+          },
+          {
+            "text": "Excited to open his present…",
+            "label": "Phrase — no subject doing the action",
+            "good": false
+          }
+        ],
+        "tip": "Find the subject and a finite verb first. Then check whether a word such as because, although, if, when, or while makes that clause dependent. A pause or a period does not prove independence.",
+        "teachingRevision": 3
+      },
+      "after": {
+        "heading": "Clauses and phrases",
+        "body": [
+          "A clause has a subject (who or what it is about) and a verb (an action or state, such as runs or is). An independent clause is a complete thought that can stand alone. A dependent clause needs another clause to finish its thought; it often starts with because, although, if, when, or while.",
+          "A phrase is a group of words without a complete subject and verb. Find those two parts first. If removing a starter such as because leaves a complete thought, you had a dependent clause. Do not decide only by where you pause."
+        ],
+        "examples": [
+          {
+            "text": "The excited child opened his present.",
+            "label": "Independent clause — a subject and main verb form a complete statement",
+            "good": true
+          },
+          {
+            "text": "When the excited child opened his present…",
+            "label": "Dependent clause — the opening word forces you to keep going",
+            "good": false
+          },
+          {
+            "text": "Excited to open his present…",
+            "label": "Phrase — no subject doing the action",
+            "good": false
+          }
+        ],
+        "tip": "Find the subject and a finite verb first. Then check whether a word such as because, although, if, when, or while makes that clause dependent. A pause or a period does not prove independence.",
+        "teachingRevision": 3
+      }
+    },
+    {
+      "id": "reading-main-idea:section:2",
+      "source": "src/content/reading-lessons.json",
+      "reason": "Replace an opaque abstract summary with the actual change in the orchestra’s approach.",
+      "before": {
+        "heading": "Match a summary to the passage’s full movement",
+        "body": [
+          "Mark the argumentative turn: what did the writer or character expect, what complicated it, and what changed afterward? A summary should preserve that sequence without becoming a list of events.",
+          "Check the outcome against the middle. If the ending qualifies an earlier position, a choice that simply repeats the opening is incomplete."
+        ],
+        "examples": [
+          {
+            "label": "Worked method: Keep the argumentative turn",
+            "text": "A school orchestra planned to perform an unfamiliar piece without an introduction, hoping listeners would encounter it without instructions about what to hear. During rehearsal, players disagreed about whether an abrupt silence was a joke or an interruption.\n\nThey recorded both versions and listened without the score. Neither sounded accidental. The conductor kept the silence but added a short spoken invitation to notice how the same pause might feel different on its return.\n\nQuestion:  Which summary keeps the full movement?\nA. An initial wish to avoid directing listeners becomes a more selective invitation to hear an unresolved musical possibility.\nB. The orchestra resolves the disagreement by removing the ambiguous pause from the piece.\nC. A conductor replaces the players’ experiment with a detailed explanation of the correct interpretation.\n\nSupported answer: An initial wish to avoid directing listeners becomes a more selective invitation to hear an unresolved musical possibility.\n\nReason: The passage moves from no introduction through two workable readings to a selective prompt. The pause remains and no single correct reading is imposed. A summary should carry the starting position, the complication, and the limited revision rather than invent resolution by removal or instruction.",
+            "good": true
+          }
+        ],
+        "teachingRevision": 3
+      },
+      "after": {
+        "heading": "Match a summary to the passage’s full movement",
+        "body": [
+          "Mark the argumentative turn: what did the writer or character expect, what complicated it, and what changed afterward? A summary should preserve that sequence without becoming a list of events.",
+          "Check the outcome against the middle. If the ending qualifies an earlier position, a choice that simply repeats the opening is incomplete."
+        ],
+        "examples": [
+          {
+            "label": "Worked method: Keep the argumentative turn",
+            "text": "A school orchestra planned to perform an unfamiliar piece without an introduction, hoping listeners would encounter it without instructions about what to hear. During rehearsal, players disagreed about whether an abrupt silence was a joke or an interruption.\n\nThey recorded both versions and listened without the score. Neither sounded accidental. The conductor kept the silence but added a short spoken invitation to notice how the same pause might feel different on its return.\n\nQuestion:  Which summary keeps the full movement?\nA. The orchestra moves from avoiding an introduction to briefly inviting listeners to notice the pause’s possible meanings.\nB. The orchestra resolves the disagreement by removing the ambiguous pause from the piece.\nC. A conductor replaces the players’ experiment with a detailed explanation of the correct interpretation.\n\nSupported answer: The orchestra moves from avoiding an introduction to briefly inviting listeners to notice the pause’s possible meanings.\n\nReason: The passage moves from no introduction through two workable readings to a selective prompt. The pause remains and no single correct reading is imposed. A summary should carry the starting position, the complication, and the limited revision rather than invent resolution by removal or instruction.",
+            "good": true
+          }
+        ],
+        "teachingRevision": 3
+      }
+    },
+    {
+      "id": "reading-craft:section:2",
+      "source": "src/content/reading-lessons.json",
+      "reason": "Replace the unnatural phrase next attention worth wanting while preserving constructive criticism.",
+      "before": {
+        "heading": "Separate tone from topic and intensity",
+        "body": [
+          "Identify tone from the writer’s wording and treatment of evidence. Approval plus a stated limit supports a cautiously favorable tone.",
+          "Match both direction and intensity. A passage about damage can still be measured; one dramatic word does not make the entire passage alarmed."
+        ],
+        "examples": [
+          {
+            "label": "Worked method: Match tone by direction and intensity",
+            "text": "This translation is an inviting beginning. Its clear opening gives a new reader room to follow the speaker without losing the abruptness of her questions.\n\nSome later images, however, have become flatter. The small, sharp thing in the original sometimes becomes a broad word for brightness or movement. Those choices smooth the voice where its particularity matters.\n\nI hope a later edition returns to these images. The clarity achieved here makes that next attention worth wanting, rather than making it unnecessary.\n\nQuestion: Which tone fits the treatment as a whole?\nA. Dismissive of the translation’s usefulness\nB. Confident that no revision is needed\nC. Appreciative but constructively dissatisfied with some choices\n\nSupported answer: Appreciative but constructively dissatisfied with some choices\n\nReason: “Inviting” and praise establish appreciation; the criticism and requested return establish dissatisfaction with specific choices. Dismissal ignores the praise, while complete satisfaction ignores a full paragraph and the closing wish. Tone must match both the evaluation’s direction and its measured intensity.",
+            "good": true
+          }
+        ],
+        "teachingRevision": 3
+      },
+      "after": {
+        "heading": "Separate tone from topic and intensity",
+        "body": [
+          "Identify tone from the writer’s wording and treatment of evidence. Approval plus a stated limit supports a cautiously favorable tone.",
+          "Match both direction and intensity. A passage about damage can still be measured; one dramatic word does not make the entire passage alarmed."
+        ],
+        "examples": [
+          {
+            "label": "Worked method: Match tone by direction and intensity",
+            "text": "This translation is an inviting beginning. Its clear opening gives a new reader room to follow the speaker without losing the abruptness of her questions.\n\nSome later images, however, have become flatter. The small, sharp thing in the original sometimes becomes a broad word for brightness or movement. Those choices smooth the voice where its particularity matters.\n\nI hope a later edition returns to these images. Because this edition makes the poem so approachable, I would welcome a revision that restores the sharper images.\n\nQuestion: Which tone fits the treatment as a whole?\nA. Dismissive of the translation’s usefulness\nB. Confident that no revision is needed\nC. Appreciative but constructively dissatisfied with some choices\n\nSupported answer: Appreciative but constructively dissatisfied with some choices\n\nReason: “Inviting” and praise establish appreciation; the criticism and requested return establish dissatisfaction with specific choices. Dismissal ignores the praise, while complete satisfaction ignores a full paragraph and the closing wish. Tone must match both the evaluation’s direction and its measured intensity.",
+            "good": true
+          }
+        ],
+        "teachingRevision": 3
+      }
+    },
+    {
+      "id": "reading-craft:section:6",
+      "source": "src/content/reading-lessons.json",
+      "reason": "Explain the paragraph’s role as a concrete contrast rather than an abstract response becoming a change.",
+      "before": {
+        "heading": "Review the reason for the miss and test the repair",
+        "body": [
+          "After a miss, name what you mixed up: what a detail says versus why it is there, a quoted speaker versus the author, an actual fact versus an image, or a mild feeling versus an extreme one.",
+          "Explain why the writer placed the detail there, then apply the same distinction to a new passage."
+        ],
+        "examples": [
+          {
+            "label": "Worked method: Repair a purpose answer that only retells",
+            "text": "Before leaving, I checked the forecast three times. The same chance of showers remained on the screen; I wanted a more cooperative answer. I finally put the phone away and hurried toward the club.\n\nWhen rain began, I kept going. By the time I arrived, my sleeves were wet, my shoes made a noise on the floor, and I was laughing.\n\nA student labels the first paragraph’s purpose “to tell us that the narrator checks the weather.”\n\nQuestion: Which revision explains its role rather than repeating its content?\nA. It establishes a wish for control, against which the later response becomes a change.\nB. It establishes the checks as evidence that the later rain was forecast accurately.\nC. It shows why reaching the club depends on obtaining a different forecast.\n\nSupported answer: It establishes a wish for control, against which the later response becomes a change.\n\nReason: Wanting a more cooperative forecast supplies evidence of a wish for a manageable outcome; later laughter in the rain changes that response. The task is not to establish forecast accuracy or a condition for reaching the club. Connecting the first paragraph to the later response explains its role rather than merely repeating the weather-checking action.",
+            "good": true
+          }
+        ],
+        "teachingRevision": 3
+      },
+      "after": {
+        "heading": "Review the reason for the miss and test the repair",
+        "body": [
+          "After a miss, name what you mixed up: what a detail says versus why it is there, a quoted speaker versus the author, an actual fact versus an image, or a mild feeling versus an extreme one.",
+          "Explain why the writer placed the detail there, then apply the same distinction to a new passage."
+        ],
+        "examples": [
+          {
+            "label": "Worked method: Repair a purpose answer that only retells",
+            "text": "Before leaving, I checked the forecast three times. The same chance of showers remained on the screen; I wanted a more cooperative answer. I finally put the phone away and hurried toward the club.\n\nWhen rain began, I kept going. By the time I arrived, my sleeves were wet, my shoes made a noise on the floor, and I was laughing.\n\nA student labels the first paragraph’s purpose “to tell us that the narrator checks the weather.”\n\nQuestion: Which revision explains its role rather than repeating its content?\nA. It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\nB. It establishes the checks as evidence that the later rain was forecast accurately.\nC. It shows why reaching the club depends on obtaining a different forecast.\n\nSupported answer: It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\n\nReason: Wanting a more cooperative forecast supplies evidence of a wish for a manageable outcome; later laughter in the rain changes that response. The task is not to establish forecast accuracy or a condition for reaching the club. Connecting the first paragraph to the later response explains its role rather than merely repeating the weather-checking action.",
+            "good": true
+          }
+        ],
+        "teachingRevision": 3
+      }
+    },
+    {
+      "id": "reading-integration:section:0",
+      "source": "src/content/reading-lessons.json",
+      "reason": "State the actual drainage condition instead of an invented maintained-surface condition.",
+      "before": {
+        "heading": "Use the screen to build a passage map",
+        "body": [
+          "Map each source separately before combining them. Write a short claim for A and a separate claim for B, including each condition or limit.",
+          "For a graphic, read its title, labels, units, and time period. Similar-looking numbers may measure different things."
+        ],
+        "examples": [
+          {
+            "label": "Worked method: Map each claim before finding overlap",
+            "text": "Source A: The new route shortens the walk from the station to the clinic. Its value is the direct connection it creates.\n\nSource B: A shorter walk helps only if people can use the surface throughout the year. I support the route, but its drainage must be funded as part of construction.\n\nQuestion:  Which two-column map is faithful?\nA. A: connection matters; B: connection matters with a maintained-surface condition\nB. A: a direct route matters only after drainage is funded; B: a shorter walk is sufficient by itself\nC. A: the clinic’s distance is irrelevant; B: the drainage question should be postponed until after construction\n\nSupported answer: A: connection matters; B: connection matters with a maintained-surface condition\n\nReason: A emphasizes a shorter connection. B accepts its benefit but requires drainage to be part of the construction plan. The wrong maps transfer a condition to the wrong writer, reverse its force, or remove the benefit A actually stresses.",
+            "good": true
+          }
+        ],
+        "teachingRevision": 3
+      },
+      "after": {
+        "heading": "Use the screen to build a passage map",
+        "body": [
+          "Map each source separately before combining them. Write a short claim for A and a separate claim for B, including each condition or limit.",
+          "For a graphic, read its title, labels, units, and time period. Similar-looking numbers may measure different things."
+        ],
+        "examples": [
+          {
+            "label": "Worked method: Map each claim before finding overlap",
+            "text": "Source A: The new route shortens the walk from the station to the clinic. Its value is the direct connection it creates.\n\nSource B: A shorter walk helps only if people can use the surface throughout the year. I support the route, but its drainage must be funded as part of construction.\n\nQuestion:  Which two-column map is faithful?\nA. A: a direct route matters; B: drainage must be funded as part of building it\nB. A: a direct route matters only after drainage is funded; B: a shorter walk is sufficient by itself\nC. A: the clinic’s distance is irrelevant; B: the drainage question should be postponed until after construction\n\nSupported answer: A: a direct route matters; B: drainage must be funded as part of building it\n\nReason: A emphasizes a shorter connection. B accepts its benefit but requires drainage to be part of the construction plan. The wrong maps transfer a condition to the wrong writer, reverse its force, or remove the benefit A actually stresses.",
+            "good": true
+          }
+        ],
+        "teachingRevision": 3
+      }
+    },
+    {
+      "id": "reading-main-idea:activity:6",
+      "source": "src/content/lesson-activities.json",
+      "reason": "Expand the excerpt to its complete existing source so the instruction, names, or earlier action are introduced before they are referenced.",
+      "before": {
+        "prompt": "A summary says Sofia replaces written measurements with intuition. Which revision best fixes it?",
+        "choices": [
+          "Sofia keeps measurements while specifying where tasting and judgment are needed",
+          "Sofia treats the written quantity as more reliable than later tasting",
+          "Sofia preserves her uncle’s recipe by keeping its instructions unchanged"
+        ],
+        "answer": 0,
+        "explanation": "The quantity remains a useful starting point while the card states where judgment belongs. That combines measurement and tasting rather than replacing either. Making the number override later tasting reverses the qualification, while keeping the instructions unchanged misses how the written guidance has been clarified.",
+        "evidence": {
+          "id": "lesson-reading-main-idea-6",
+          "title": "A Family Recipe",
+          "context": "When her cousin asked for a copy, Sofia kept that instruction. The number was useful as a starting point, she explained, but the beans and lemons would not always be identical. Her card had grown more precise, not by removing judgment, but by saying where judgment belonged."
+        }
+      },
+      "after": {
+        "prompt": "A summary says Sofia replaces written measurements with intuition. Which revision best fixes it?",
+        "choices": [
+          "Sofia keeps measurements while specifying where tasting and judgment are needed",
+          "Sofia treats the written quantity as more reliable than later tasting",
+          "Sofia preserves her uncle’s recipe by keeping its instructions unchanged"
+        ],
+        "answer": 0,
+        "explanation": "The quantity remains a useful starting point while the card states where judgment belongs. That combines measurement and tasting rather than replacing either. Making the number override later tasting reverses the qualification, while keeping the instructions unchanged misses how the written guidance has been clarified.",
+        "evidence": {
+          "id": "lesson-reading-main-idea-6",
+          "title": "A Family Recipe",
+          "context": "Sofia asked her uncle for the soup recipe he made each winter. He dictated precise quantities for beans and broth, then told her to add “enough” lemon. She wanted a number. He tasted the pot and handed her a spoon, asking her to describe the difference before and after he added another squeeze.\n\nThe next week she made the soup alone. Following the written quantities gave her a familiar texture, but the taste remained flat. She began with a small amount of lemon, tasted again, and stopped when the flavor seemed clearer without becoming sour. On the recipe card she wrote the amount she used that day, followed by “taste first.”\n\nWhen her cousin asked for a copy, Sofia kept that instruction. The number was useful as a starting point, she explained, but the beans and lemons would not always be identical. Her card had grown more precise, not by removing judgment, but by saying where judgment belonged."
+        }
+      }
+    },
+    {
+      "id": "reading-inference:activity:0",
+      "source": "src/content/lesson-activities.json",
+      "reason": "Expand the excerpt to its complete existing source so the instruction, names, or earlier action are introduced before they are referenced.",
+      "before": {
+        "prompt": "Which inference about Jae’s purpose needs the fewest added assumptions?",
+        "choices": [
+          "He wants to explain why this instrument should replace each borrower’s usual violin",
+          "He wants to give the next borrower a useful technique to try",
+          "He wants to prescribe one fixed technique that every borrower should use"
+        ],
+        "answer": 1,
+        "explanation": "The note offers softly started notes as something the next borrower might try. That modest practical purpose follows from the action. A universal preference contradicts the explicit limit, and prescribing a technique for everyone turns an invitation to experiment into a rule.",
+        "evidence": {
+          "id": "lesson-reading-inference-0",
+          "title": "The Borrowed Violin",
+          "context": "When his own violin came back, Jae returned the school instrument with a note describing the softly started notes. He put the note beneath the list of names. It was not a recommendation that everyone should prefer the old violin. It was something the next borrower might try before deciding what the instrument could do."
+        }
+      },
+      "after": {
+        "prompt": "Which inference about Jae’s purpose needs the fewest added assumptions?",
+        "choices": [
+          "He wants to explain why this instrument should replace each borrower’s usual violin",
+          "He wants to give the next borrower a useful technique to try",
+          "He wants to prescribe one fixed technique that every borrower should use"
+        ],
+        "answer": 1,
+        "explanation": "The note offers softly started notes as something the next borrower might try. That modest practical purpose follows from the action. A universal preference contradicts the explicit limit, and prescribing a technique for everyone turns an invitation to experiment into a rule.",
+        "evidence": {
+          "id": "lesson-reading-inference-0",
+          "title": "The Borrowed Violin",
+          "context": "When Jae borrowed the school’s oldest violin, he expected a temporary instrument until his repaired one returned. The old case smelled faintly of cedar. A faded label inside listed six former borrowers. During rehearsal he kept checking the tuning, irritated by a bridge that seemed unfamiliar under his hand.\n\nHis teacher asked him to play one phrase slowly rather than testing the violin with scales. He noticed that a softly started note carried farther than he expected. He still missed the easy response of his own instrument, but he stopped treating each difference as a defect. At the end of the week he played the borrowed violin at a small recital.\n\nWhen his own violin came back, Jae returned the school instrument with a note describing the softly started notes. He put the note beneath the list of names. It was not a recommendation that everyone should prefer the old violin. It was something the next borrower might try before deciding what the instrument could do."
+        }
+      }
+    },
+    {
+      "id": "reading-inference:activity:5",
+      "source": "src/content/lesson-activities.json",
+      "reason": "Expand the excerpt to its complete existing source so the instruction, names, or earlier action are introduced before they are referenced.",
+      "before": {
+        "prompt": "Which detail most directly supports the inference that the coach accepts Leah’s different portrayal of him?",
+        "choices": [
+          "He mentions championships when Leah asks",
+          "The trophy cabinet appears at the far edge",
+          "He asks to keep the pencil lines around the unfinished tile"
+        ],
+        "answer": 2,
+        "explanation": "His request retains the portrait’s focus on work rather than trophies. It is an action supporting acceptance; his earlier comment about the cabinet expresses a reservation.",
+        "evidence": {
+          "id": "lesson-reading-inference-5",
+          "title": "The Unfinished Portrait",
+          "context": "Leah asked him instead to keep working while she made several sketches. He told her about a student who had returned years later to say that the team had been the first place she felt useful. He mentioned championships only when Leah asked. Her sketches showed his hands above the tile, one hand steadying it while the other tested the corner.\n\nIn the finished portrait, the trophy cabinet appeared at the far edge. The coach objected mildly that anyone looking for the championship would have to search. Leah said that anyone looking for him would not. The coach considered the canvas, then asked whether she could leave the pencil lines around the unfinished tile visible. She had planned to cover them. She agreed to let them remain."
+        }
+      },
+      "after": {
+        "prompt": "Which detail most directly supports the inference that the coach accepts Leah’s different portrayal of him?",
+        "choices": [
+          "He mentions championships when Leah asks",
+          "The trophy cabinet appears at the far edge",
+          "He asks to keep the pencil lines around the unfinished tile"
+        ],
+        "answer": 2,
+        "explanation": "His request retains the portrait’s focus on work rather than trophies. It is an action supporting acceptance; his earlier comment about the cabinet expresses a reservation.",
+        "evidence": {
+          "id": "lesson-reading-inference-5",
+          "title": "The Unfinished Portrait",
+          "context": "Leah’s commission was to paint the retired coach in the gym where he had worked for thirty years. She brought a photograph of him holding a trophy and expected to use it as her model. When she arrived, he was repairing the edge of a loose floor tile. He put down the tools and offered to recreate the trophy pose.\n\nLeah asked him instead to keep working while she made several sketches. He told her about a student who had returned years later to say that the team had been the first place she felt useful. He mentioned championships only when Leah asked. Her sketches showed his hands above the tile, one hand steadying it while the other tested the corner.\n\nIn the finished portrait, the trophy cabinet appeared at the far edge. The coach objected mildly that anyone looking for the championship would have to search. Leah said that anyone looking for him would not. The coach considered the canvas, then asked whether she could leave the pencil lines around the unfinished tile visible. She had planned to cover them. She agreed to let them remain."
+        }
+      }
+    },
+    {
+      "id": "reading-inference:activity:1",
+      "source": "src/content/lesson-activities.json",
+      "reason": "Clarify which action happens between interviews and remove an abstract bridge prompt.",
+      "before": {
+        "prompt": "Which inference requires the smallest supported bridge?",
+        "choices": [
+          "She wanted to prevent recordings from being confused",
+          "She wanted to revise earlier answers before recording new ones",
+          "She wanted to choose which interviews would be published"
+        ],
+        "answer": 0,
+        "explanation": "Labeling each file before making another most directly supports avoiding confusion among recordings. Revising interview answers and selecting material for publication are possible later tasks, but neither is indicated by the action. Prefer the motive requiring the least added information.",
+        "evidenceText": "Leena stopped the interview to label each recording before beginning another."
+      },
+      "after": {
+        "prompt": "Which purpose is best supported by this action?",
+        "choices": [
+          "She wanted to prevent recordings from being confused",
+          "She wanted to revise earlier answers before recording new ones",
+          "She wanted to choose which interviews would be published"
+        ],
+        "answer": 0,
+        "explanation": "Labeling each file before making another most directly supports avoiding confusion among recordings. Revising interview answers and selecting material for publication are possible later tasks, but neither is indicated by the action. Prefer the motive requiring the least added information.",
+        "evidenceText": "Between interviews, Leena labeled the recording she had just made before starting the next one."
+      }
+    },
+    {
+      "id": "reading-details:activity:0",
+      "source": "src/content/lesson-activities.json",
+      "reason": "Simplify a nested question about locating a detail.",
+      "before": {
+        "prompt": "To answer what the coordinator requested before judging the counter, which detail should you locate?",
+        "choices": [
+          "The fact that volunteers counted on two evenings",
+          "The comparison between volunteers’ notes and the time-stamped log",
+          "The location of the counter on the main trail"
+        ],
+        "answer": 1,
+        "explanation": "The question asks for a requested action. The final sentence names that action; the other details describe the study but do not answer what was requested.",
+        "evidence": {
+          "id": "lesson-reading-details-0",
+          "title": "Counting Evening Visitors",
+          "context": "A nature center installed a people counter on its main trail. On two evenings volunteers also counted visitors by hand. The electronic totals were higher. Before concluding that the device was inaccurate, the coordinator asked the volunteers to compare their notes with the counter’s time-stamped log."
+        }
+      },
+      "after": {
+        "prompt": "Which detail tells you what the coordinator requested before judging the counter?",
+        "choices": [
+          "The fact that volunteers counted on two evenings",
+          "The comparison between volunteers’ notes and the time-stamped log",
+          "The location of the counter on the main trail"
+        ],
+        "answer": 1,
+        "explanation": "The question asks for a requested action. The final sentence names that action; the other details describe the study but do not answer what was requested.",
+        "evidence": {
+          "id": "lesson-reading-details-0",
+          "title": "Counting Evening Visitors",
+          "context": "A nature center installed a people counter on its main trail. On two evenings volunteers also counted visitors by hand. The electronic totals were higher. Before concluding that the device was inaccurate, the coordinator asked the volunteers to compare their notes with the counter’s time-stamped log."
+        }
+      }
+    },
+    {
+      "id": "exam-2:40",
+      "source": "src/content/exams/exam-2.json",
+      "reason": "Explain the corrected idiomatic object research.",
+      "before": {
+        "number": 40,
+        "category": "KLA",
+        "difficulty": "medium",
+        "topic": "word-choice",
+        "questionText": "Which choice means shapes the work of in this context?",
+        "choices": [
+          "NO CHANGE",
+          "speaks",
+          "talks",
+          "informs"
+        ],
+        "answer": 3,
+        "explanation": "\"Informs laboratories\" means it shapes their work; \"tells,\" \"speaks,\" and \"talks\" do not fit this sense."
+      },
+      "after": {
+        "number": 40,
+        "category": "KLA",
+        "difficulty": "medium",
+        "topic": "word-choice",
+        "questionText": "Which choice means shapes the work of in this context?",
+        "choices": [
+          "NO CHANGE",
+          "speaks",
+          "talks",
+          "informs"
+        ],
+        "answer": 3,
+        "explanation": "Informs research means guides or shapes what researchers do. Tells, speaks, and talks refer to speaking and do not fit the object research in this sentence."
+      }
+    },
+    {
+      "id": "modifiers:timing-scope:activity",
+      "source": "src/content/english-prerequisites.json",
+      "reason": "Make readers, not the archive, the explicit subject of completing an orientation.",
+      "before": {
+        "evidenceText": "The archive permits all registered readers to view the letters, but only after completing an orientation.",
+        "prompt": "Which sentence most clearly restricts when access is permitted?",
+        "choices": [
+          "Readers may view the letters only after orientation.",
+          "Only readers may view the letters after orientation.",
+          "Readers may view only the letters after orientation."
+        ],
+        "answer": 0,
+        "explanation": "Only after orientation restricts the condition or time of viewing. Only readers restricts who may view; only the letters restricts what they may view. Neither expresses the stated timing requirement."
+      },
+      "after": {
+        "evidenceText": "The archive requires registered readers to complete an orientation before they may view the letters.",
+        "prompt": "Which sentence most clearly restricts when access is permitted?",
+        "choices": [
+          "Readers may view the letters only after orientation.",
+          "Only readers may view the letters after orientation.",
+          "Readers may view only the letters after orientation."
+        ],
+        "answer": 0,
+        "explanation": "Only after orientation restricts the condition or time of viewing. Only readers restricts who may view; only the letters restricts what they may view. Neither expresses the stated timing requirement."
+      }
+    },
+    {
+      "id": "word-choice:reference-and-meaning:activity",
+      "source": "src/content/english-prerequisites.json",
+      "reason": "Use two actual blanks so the noun and verb forms in the answer pair fit their stated grammatical roles.",
+      "before": {
+        "evidenceText": "The passage hints at an older myth without naming it, and the reader recognizes the connection from a repeated image.",
+        "prompt": "Which pair names the writer’s reference and the reader’s act?",
+        "choices": [
+          "illusion; implies",
+          "allusion; infers",
+          "allusion; eludes"
+        ],
+        "answer": 1,
+        "explanation": "An allusion is an indirect reference; the reader infers the connection from evidence. An illusion is a false impression, imply describes the act of suggesting, and elude means escape."
+      },
+      "after": {
+        "evidenceText": "The passage hints at an older myth without naming it. The writer makes an ___, and the reader ___ the connection from a repeated image.",
+        "prompt": "Which pair correctly completes both blanks?",
+        "choices": [
+          "illusion; implies",
+          "allusion; infers",
+          "allusion; eludes"
+        ],
+        "answer": 1,
+        "explanation": "An allusion is an indirect reference; the reader infers the connection from evidence. An illusion is a false impression, imply describes the act of suggesting, and elude means escape."
+      }
+    },
+    {
+      "id": "RP-V3-15-2",
+      "source": "src/content/reading-practice.json",
+      "reason": "Name Leah in the answer as well as making the hand explicit in the source, so she has no competing referent.",
+      "before": {
+        "id": "RP-V3-15-2",
+        "topic": "reading-details",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "What does Mina ask Leah while they are putting their bags away?",
+        "choices": [
+          "Whether the coach had counted the same number of steps",
+          "Whether Leah wanted the painted starting mark moved",
+          "Whether the notebook should record the full race time",
+          "When she needs to see Mina’s hand ready"
+        ],
+        "answer": 3,
+        "explanation": "Mina asks when Leah needs to see the hand, after nearly reopening the notebook. This changes the question from defending a step count to understanding a partner’s view; no proposed new mark or timing request is reported.",
+        "passage": {
+          "id": "reading-practice-v3-p15",
+          "title": "The Baton’s Quiet Interval",
+          "context": "Mina’s notebook gave the relay a tidy shape. For the run from the painted mark to the exchange, she wrote down eight steps and added a check mark when the baton reached her hand. When she and Leah missed an exchange in practice, the coach asked who had moved too soon. Mina showed the page. She heard herself saying eight as if a number could identify which of them had failed.\n\nLeah said nothing until they were putting their bags away. Then she asked whether Mina could leave her hand ready a little longer. Mina nearly opened the notebook again. Instead, she asked, “When do you need to see my hand?” The answer concerned a sightline and a spoken call, neither of which had a column on the page.\n\nThey practiced without timing the full run. Mina still counted, but her hand waited for Leah’s call rather than demanding that the baton arrive on the old beat. Some exchanges took seven steps and some nine. Leah admitted that she sometimes delayed the call when she feared the hand would disappear. Their two private counts had given each a reason to feel correct without giving the other a reliable opening.\n\nAt the meet, the rhythm steadied Mina. The exchange came late in her count, and for an instant she wanted the reassuring check on the page more than the awkward extra step. She kept her hand there. Afterward the coach praised their clean changeover. Mina began to say how many steps it had taken, then asked Leah what it had looked like from behind. Her notebook stayed in the bag, though she reached for its strap while she listened."
+        },
+        "teachingSections": [
+          2
+        ],
+        "skillId": "reading-details-sequence-cause"
+      },
+      "after": {
+        "id": "RP-V3-15-2",
+        "topic": "reading-details",
+        "subject": "reading",
+        "category": "Key Ideas and Details",
+        "difficulty": "medium",
+        "stem": "",
+        "questionText": "What does Mina ask Leah while they are putting their bags away?",
+        "choices": [
+          "Whether the coach had counted the same number of steps",
+          "Whether Leah wanted the painted starting mark moved",
+          "Whether the notebook should record the full race time",
+          "When Leah needs to see Mina’s hand in place"
+        ],
+        "answer": 3,
+        "explanation": "Mina asks when Leah needs to see the hand, after nearly reopening the notebook. This changes the question from defending a step count to understanding a partner’s view; no proposed new mark or timing request is reported.",
+        "passage": {
+          "id": "reading-practice-v3-p15",
+          "title": "The Baton’s Quiet Interval",
+          "context": "Mina’s notebook gave the relay a tidy shape. For the run from the painted mark to the exchange, she wrote down eight steps and added a check mark when the baton reached her hand. When she and Leah missed an exchange in practice, the coach asked who had moved too soon. Mina showed the page. She heard herself saying eight as if a number could identify which of them had failed.\n\nLeah said nothing until they were putting their bags away. Then she asked whether Mina could leave her hand ready a little longer. Mina nearly opened the notebook again. Instead, she asked, “When do you need to see my hand?” The answer concerned a sightline and a spoken call, neither of which had a column on the page.\n\nThey practiced without timing the full run. Mina still counted, but her hand waited for Leah’s call rather than demanding that the baton arrive on the old beat. Some exchanges took seven steps and some nine. Leah admitted that she sometimes delayed the call when she feared the hand would disappear. Their two private counts had given each a reason to feel correct without giving the other a reliable opening.\n\nAt the meet, the rhythm steadied Mina. The exchange came late in her count, and for an instant she wanted the reassuring check on the page more than the awkward extra step. She kept her hand there. Afterward the coach praised their clean changeover. Mina began to say how many steps it had taken, then asked Leah what it had looked like from behind. Her notebook stayed in the bag, though she reached for its strap while she listened."
+        },
+        "teachingSections": [
+          2
+        ],
+        "skillId": "reading-details-sequence-cause"
+      }
+    }
+  ]
+}

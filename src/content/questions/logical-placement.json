@@ -456,7 +456,7 @@
       "category": "POW",
       "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
-      "stem": "[1] In the early 1900s, sailors used tools such as compasses and observations of the stars to navigate. [2] Radio beacons later let ships check their position from shore signals. [3] By the 1990s, satellite GPS pinpointed a vessel almost anywhere on Earth. [4] Engineers today are testing systems that need no satellites at all. Sentence to place: \"For the first time in this sequence of developments, a broadcast from a shore station could guide the crew.\"",
+      "stem": "[1] In the early 1900s, sailors used tools such as compasses and observations of the stars to navigate. [2] Radio beacons later let ships check their position from shore signals. [3] By the 1990s, satellite GPS pinpointed a vessel almost anywhere on Earth. [4] Engineers today are testing systems that need no satellites at all. Sentence to place: \"Crews could now use a signal from land to check their course.\"",
       "choices": [
         "before sentence 1",
         "after sentence 2",
@@ -471,7 +471,7 @@
       "category": "POW",
       "difficulty": "medium",
       "questionText": "For the sake of logic and coherence, where should the underlined sentence be placed?",
-      "stem": "[1] For years, smoke from the valley's mills hung over the town like a gray ceiling. [2] County health reports showed childhood asthma rates climbing far above the state average. [3] In 1991, a new ordinance forced the mills to install costly scrubbers. [4] A decade later, residents could finally see the mountains from Main Street. Sentence to place: \"These alarming health reports gave city council the votes it needed.\"",
+      "stem": "[1] For years, smoke from the valley's mills hung over the town like a gray ceiling. [2] County health reports showed childhood asthma rates climbing far above the state average. [3] In 1991, a new ordinance forced the mills to install costly scrubbers. [4] A decade later, residents could finally see the mountains from Main Street. Sentence to place: \"These alarming health reports persuaded the city council to act.\"",
       "choices": [
         "before sentence 1",
         "after sentence 1",

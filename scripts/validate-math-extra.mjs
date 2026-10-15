@@ -32,7 +32,7 @@ const proofs = [
   },
   {
     id: "math-functions-d10",
-    key: "x > 2 and \\(x \\ne  5\\)",
+    key: "\\(x>2\\) and \\(x \\ne  5\\)",
     calculation: "[2,3,4,5,6].map(x=>x-2>0&&x-5!==0)",
     result: [false, true, true, false, true],
     skill: "domain intersections",
@@ -95,7 +95,7 @@ const proofs = [
   },
   {
     id: "math-functions-d19",
-    key: "2 < x < 4",
+    key: "\\(2<x<4\\)",
     calculation: "[1,2,3,4,5].map(x=>x*x-6*x+8<0)",
     result: [false, false, true, false, false],
     skill: "graph sign intervals",
@@ -756,21 +756,21 @@ const proofs = [
   },
   {
     id: "check-math-geometry-3",
-    key: "270π",
+    key: "\\(270 \\pi\\)",
     calculation: "10*(6/2)**3",
     result: 270,
     skill: "solid scaling check",
   },
   {
     id: "check-math-trigonometry-3",
-    key: "7/25",
+    key: "\\(\\frac{7}{25}\\)",
     calculation: "1-2*(-3/5)**2",
     result: 0.28,
     skill: "double-angle check",
   },
   {
     id: "check-math-statistics-probability-3",
-    key: "7/10",
+    key: "\\(\\frac{7}{10}\\)",
     calculation: "1-(3/5)*(2/4)",
     result: 0.7,
     skill: "complement without replacement check",

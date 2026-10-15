@@ -223,7 +223,10 @@ test("all 48 method answer keys have independent arithmetic or solution-set chec
       () =>
         close(4 ** 2 + 7 ** 2 - 2 * 4 * 7 * Math.cos((2 * Math.PI) / 3), 93),
     ],
-    "math-statistics-probability-m1": ["5/9", () => close(10 / 18, 5 / 9)],
+    "math-statistics-probability-m1": [
+      "\\(\\frac{5}{9}\\)",
+      () => close(10 / 18, 5 / 9),
+    ],
     "math-statistics-probability-m2": [
       "30",
       () => {
@@ -296,11 +299,11 @@ test("all 48 method answer keys have independent arithmetic or solution-set chec
     ],
     "math-essential-skills-m1": ["$200", () => close(200 * 1.2 * 0.85, 204)],
     "math-essential-skills-m2": [
-      "300/7 mph",
+      "\\(\\frac{300}{7}\\) mph",
       () => close((60 + 90) / (60 / 30 + 90 / 60), 300 / 7),
     ],
     "math-essential-skills-m3": [
-      "27/5",
+      "\\(\\frac{27}{5}\\)",
       () => close(3 / 12 + 27 / 5 / 12 + 27 / 5 / 18, 1),
     ],
     "math-essential-skills-m4": [
@@ -373,7 +376,7 @@ test("all 48 method answer keys have independent arithmetic or solution-set chec
       },
     ],
     "math-functions-m5": [
-      "(5/2,2)",
+      "\\(\\left(\\frac{5}{2},2\\right)\\)",
       () => {
         const f = (x: number) => ((x - 1) * (x - 7)) / 3;
         close(f(4), -3);
@@ -404,7 +407,7 @@ test("all 48 method answer keys have independent arithmetic or solution-set chec
       },
     ],
     "math-geometry-m6": [
-      "2/5",
+      "\\(\\frac{2}{5}\\)",
       () => {
         const c = Math.hypot(12, 9);
         const area = (12 * 9) / 2;
@@ -429,7 +432,7 @@ test("all 48 method answer keys have independent arithmetic or solution-set chec
       },
     ],
     "math-trigonometry-m6": [
-      "17/9",
+      "\\(\\frac{17}{9}\\)",
       () => {
         const angles = [
           Math.PI / 4 + Math.asin(1 / (3 * Math.SQRT2)),
@@ -442,7 +445,7 @@ test("all 48 method answer keys have independent arithmetic or solution-set chec
       },
     ],
     "math-statistics-probability-m5": [
-      "5/18",
+      "\\(\\frac{5}{18}\\)",
       () => {
         const k = (4 * 5 - (3 * 4 + 2 * 8)) / (2 - 4);
         assert.equal(k, 4);

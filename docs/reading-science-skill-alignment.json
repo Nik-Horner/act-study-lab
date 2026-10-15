@@ -136,7 +136,7 @@
           "source": "reading-inference:1",
           "answerIndex": 0,
           "answerText": "She wanted to prevent recordings from being confused",
-          "contentSha256": "fa817b03f41350cbc83976355e214677dd504c8ee6a1a536b8fbb7adec345d03"
+          "contentSha256": "8c63769cfc5b915c802ffbfa36d5f4303ae47b369060e794c7404085e34422ed"
         },
         {
           "skillId": "reading-inference-limits",
@@ -260,6 +260,62 @@
       "independentPeer": "All 144 original items against all 24 complete passages/tables, including final grammar and ambiguity repairs.",
       "preservedContractSha256": "8db3d7e536527cd9f02d24b691789a6efeb5d706cf975b1384c08c0141ba0e25",
       "limit": "Human source and distractor review, with frozen grading and provenance regressions. This is not psychometric calibration, official ACT equivalence, or evidence that a learner will achieve 36."
+    },
+    "naturalnessReview": {
+      "date": "2026-10-14",
+      "scope": "All48 active and8 held-out passages;364 active/held-out question lead-ins and keyed responses;42 worked examples and42 formative slots scanned for awkward language and missing referents.",
+      "changedSourceProofs": [
+        "RP-V3-01-1",
+        "RP-V3-02-1",
+        "RP-V3-02-2",
+        "RP-V3-02-3",
+        "RP-V3-02-4",
+        "RP-V3-02-5",
+        "RP-V3-02-6",
+        "RP-V3-05-1",
+        "RP-V3-05-2",
+        "RP-V3-05-3",
+        "RP-V3-05-4",
+        "RP-V3-05-5",
+        "RP-V3-05-6",
+        "RP-V3-06-4",
+        "RP-V3-10-1",
+        "RP-V3-10-2",
+        "RP-V3-10-3",
+        "RP-V3-10-4",
+        "RP-V3-10-5",
+        "RP-V3-10-6",
+        "RP-V3-11-1",
+        "RP-V3-11-2",
+        "RP-V3-11-3",
+        "RP-V3-11-4",
+        "RP-V3-11-5",
+        "RP-V3-11-6",
+        "RP-V3-13-3",
+        "RP-V3-14-6",
+        "RP-V3-15-1",
+        "RP-V3-15-2",
+        "RP-V3-15-3",
+        "RP-V3-15-4",
+        "RP-V3-15-5",
+        "RP-V3-15-6",
+        "RP-V3-18-1",
+        "RP-V3-18-2",
+        "RP-V3-18-3",
+        "RP-V3-18-4",
+        "RP-V3-18-5",
+        "RP-V3-18-6",
+        "RP-V3-23-1",
+        "RP-V3-23-2",
+        "RP-V3-23-3",
+        "RP-V3-23-4",
+        "RP-V3-23-5",
+        "RP-V3-23-6",
+        "RP-V3-24-6",
+        "RP-V3-15-7"
+      ],
+      "preserved": "All question IDs and answer positions. Existing643 historical answer-text contracts remain unchanged.",
+      "evidence": "docs/english-reading-naturalness-2026-10-14.json"
     }
   },
   "preservedContracts": [
@@ -3500,9 +3556,9 @@
       "id": "reading-main-idea:2",
       "title": "Worked method: Keep the argumentative turn",
       "passage": "A school orchestra planned to perform an unfamiliar piece without an introduction, hoping listeners would encounter it without instructions about what to hear. During rehearsal, players disagreed about whether an abrupt silence was a joke or an interruption.\n\nThey recorded both versions and listened without the score. Neither sounded accidental. The conductor kept the silence but added a short spoken invitation to notice how the same pause might feel different on its return.",
-      "task": "  Which summary keeps the full movement?\nA. An initial wish to avoid directing listeners becomes a more selective invitation to hear an unresolved musical possibility.\nB. The orchestra resolves the disagreement by removing the ambiguous pause from the piece.\nC. A conductor replaces the players’ experiment with a detailed explanation of the correct interpretation.",
-      "solution": "Supported answer: An initial wish to avoid directing listeners becomes a more selective invitation to hear an unresolved musical possibility.\n\nReason: The passage moves from no introduction through two workable readings to a selective prompt. The pause remains and no single correct reading is imposed. A summary should carry the starting position, the complication, and the limited revision rather than invent resolution by removal or instruction.",
-      "hash": "080f8b387fc44f45d89430b9ab4a3010fc5db822f13af923bcb91f0141c55905"
+      "task": "  Which summary keeps the full movement?\nA. The orchestra moves from avoiding an introduction to briefly inviting listeners to notice the pause’s possible meanings.\nB. The orchestra resolves the disagreement by removing the ambiguous pause from the piece.\nC. A conductor replaces the players’ experiment with a detailed explanation of the correct interpretation.",
+      "solution": "Supported answer: The orchestra moves from avoiding an introduction to briefly inviting listeners to notice the pause’s possible meanings.\n\nReason: The passage moves from no introduction through two workable readings to a selective prompt. The pause remains and no single correct reading is imposed. A summary should carry the starting position, the complication, and the limited revision rather than invent resolution by removal or instruction.",
+      "hash": "3b23bfa3ad12b1dbc2bb02d4fbf538904fe39357d8ce7cf0c83f0feff8a3ec28"
     },
     {
       "id": "reading-main-idea:3",
@@ -3723,10 +3779,10 @@
     {
       "id": "reading-craft:2",
       "title": "Worked method: Match tone by direction and intensity",
-      "passage": "This translation is an inviting beginning. Its clear opening gives a new reader room to follow the speaker without losing the abruptness of her questions.\n\nSome later images, however, have become flatter. The small, sharp thing in the original sometimes becomes a broad word for brightness or movement. Those choices smooth the voice where its particularity matters.\n\nI hope a later edition returns to these images. The clarity achieved here makes that next attention worth wanting, rather than making it unnecessary.",
+      "passage": "This translation is an inviting beginning. Its clear opening gives a new reader room to follow the speaker without losing the abruptness of her questions.\n\nSome later images, however, have become flatter. The small, sharp thing in the original sometimes becomes a broad word for brightness or movement. Those choices smooth the voice where its particularity matters.\n\nI hope a later edition returns to these images. Because this edition makes the poem so approachable, I would welcome a revision that restores the sharper images.",
       "task": " Which tone fits the treatment as a whole?\nA. Dismissive of the translation’s usefulness\nB. Confident that no revision is needed\nC. Appreciative but constructively dissatisfied with some choices",
       "solution": "Supported answer: Appreciative but constructively dissatisfied with some choices\n\nReason: “Inviting” and praise establish appreciation; the criticism and requested return establish dissatisfaction with specific choices. Dismissal ignores the praise, while complete satisfaction ignores a full paragraph and the closing wish. Tone must match both the evaluation’s direction and its measured intensity.",
-      "hash": "5fd4dea721b63ce5af7d9f2e669bc39ebf9e3667cb1c50ada881297d4ee7e178"
+      "hash": "7cf5505f1a220edfaf8e50e92219d62888cdc169ec44eac692321d82756055c3"
     },
     {
       "id": "reading-craft:3",
@@ -3756,17 +3812,17 @@
       "id": "reading-craft:6",
       "title": "Worked method: Repair a purpose answer that only retells",
       "passage": "Before leaving, I checked the forecast three times. The same chance of showers remained on the screen; I wanted a more cooperative answer. I finally put the phone away and hurried toward the club.\n\nWhen rain began, I kept going. By the time I arrived, my sleeves were wet, my shoes made a noise on the floor, and I was laughing.\n\nA student labels the first paragraph’s purpose “to tell us that the narrator checks the weather.”",
-      "task": " Which revision explains its role rather than repeating its content?\nA. It establishes a wish for control, against which the later response becomes a change.\nB. It establishes the checks as evidence that the later rain was forecast accurately.\nC. It shows why reaching the club depends on obtaining a different forecast.",
-      "solution": "Supported answer: It establishes a wish for control, against which the later response becomes a change.\n\nReason: Wanting a more cooperative forecast supplies evidence of a wish for a manageable outcome; later laughter in the rain changes that response. The task is not to establish forecast accuracy or a condition for reaching the club. Connecting the first paragraph to the later response explains its role rather than merely repeating the weather-checking action.",
-      "hash": "9fa412366e872f46a8ce888e16e7a2903b024c74bcd5af6541d7e22fbf691389"
+      "task": " Which revision explains its role rather than repeating its content?\nA. It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\nB. It establishes the checks as evidence that the later rain was forecast accurately.\nC. It shows why reaching the club depends on obtaining a different forecast.",
+      "solution": "Supported answer: It contrasts the narrator’s early wish to avoid rain with the later laughter despite getting wet.\n\nReason: Wanting a more cooperative forecast supplies evidence of a wish for a manageable outcome; later laughter in the rain changes that response. The task is not to establish forecast accuracy or a condition for reaching the club. Connecting the first paragraph to the later response explains its role rather than merely repeating the weather-checking action.",
+      "hash": "57c770262338cb01186a4db93be8d311280586292a33b2243afaaa86908d5e70"
     },
     {
       "id": "reading-integration:0",
       "title": "Worked method: Map each claim before finding overlap",
       "passage": "Source A: The new route shortens the walk from the station to the clinic. Its value is the direct connection it creates.\n\nSource B: A shorter walk helps only if people can use the surface throughout the year. I support the route, but its drainage must be funded as part of construction.",
-      "task": "  Which two-column map is faithful?\nA. A: connection matters; B: connection matters with a maintained-surface condition\nB. A: a direct route matters only after drainage is funded; B: a shorter walk is sufficient by itself\nC. A: the clinic’s distance is irrelevant; B: the drainage question should be postponed until after construction",
-      "solution": "Supported answer: A: connection matters; B: connection matters with a maintained-surface condition\n\nReason: A emphasizes a shorter connection. B accepts its benefit but requires drainage to be part of the construction plan. The wrong maps transfer a condition to the wrong writer, reverse its force, or remove the benefit A actually stresses.",
-      "hash": "83c8752aa8050e3c170afe923e08b0bf03128461cea44810997f51c61a699116"
+      "task": "  Which two-column map is faithful?\nA. A: a direct route matters; B: drainage must be funded as part of building it\nB. A: a direct route matters only after drainage is funded; B: a shorter walk is sufficient by itself\nC. A: the clinic’s distance is irrelevant; B: the drainage question should be postponed until after construction",
+      "solution": "Supported answer: A: a direct route matters; B: drainage must be funded as part of building it\n\nReason: A emphasizes a shorter connection. B accepts its benefit but requires drainage to be part of the construction plan. The wrong maps transfer a condition to the wrong writer, reverse its force, or remove the benefit A actually stresses.",
+      "hash": "e82b09d49d610ed30964c86732dae5d70e52d4911662a1e444a67a06dcd15614"
     },
     {
       "id": "reading-integration:1",
@@ -5787,9 +5843,9 @@
         4
       ],
       "answer": 3,
-      "answerText": "from displaying a mastered form toward useful engagement that still carries concern about appearing competent",
-      "evidence": "The finished form first lets Sam present himself as capable. Practical difficulty and the boat’s movement change his attention, and he helps another learner, but still hides the rope-under-foot moment. An account of complete openness overstates the ending; winning or rejecting the coach’s method is not established.",
-      "hash": "f700f968122ad3f9308e1d1cfb82f23b974e51d334a6d62980b74c6b1284d91c"
+      "answerText": "from wanting to look skilled to offering practical help, while still hiding his own earlier difficulty",
+      "evidence": "Sam first wants to prove he can tie the knot without help. By the end, he helps another beginner use the rope, but he does not admit his own earlier trouble. That supports the answer; the passage does not show a competition, rejection of the coach’s method, or complete openness about his mistake.",
+      "hash": "5acb33435f0b838e9be89e8d7c7e557cc68bc700239b22f6a6ff91f3ce9efbe5"
     },
     {
       "id": "RP-V3-01-2",
@@ -5861,7 +5917,7 @@
       "answer": 2,
       "answerText": "why aligning separate color impressions matters to the finished image",
       "evidence": "The shifted impression contains the intended inks but places them differently. The crosses remain outside the image and are trimmed after use. Thus the account concerns alignment of impressions, not pigment correction, a new visible design, or sufficient inspection of the center alone.",
-      "hash": "65c76aa4f74a4487861d8068859e44a4a695c9940f5da3dcc00096d6937aef0b"
+      "hash": "a99fb2b602bc4f3d73a52b4a2d1df235cfe039b52cf4bc601fee7553d25d8172"
     },
     {
       "id": "RP-V3-02-2",
@@ -5873,7 +5929,7 @@
       "answer": 0,
       "answerText": "After printing has aligned the colors",
       "evidence": "The final line orders the operations: colors meet, then the knife removes the crosses. Ink presence and a checked center can coexist with displacement, which the corner marks are needed to reveal.",
-      "hash": "63c19d6104180816b10a6bbb10c241664fe9ec1b27711574782c3c49caf6ce53"
+      "hash": "897b02be2fc1915bb3a1e7592796dab7ce1c4470c98f878f5d458dabb928703a"
     },
     {
       "id": "RP-V3-02-3",
@@ -5885,7 +5941,7 @@
       "answer": 2,
       "answerText": "recognizes that a feature outside the final picture can be essential to producing it",
       "evidence": "He changes inspection after a sheet shows that correct inks can still be displaced. The marks are useful before being trimmed; their function does not make the center irrelevant or reduce the need for registration.",
-      "hash": "5f219cab3ad43720b8672a36241d7ffc2dd783e2363520288e005e43eb5371b4"
+      "hash": "df5f6b37c751624faf98e9fb47c5a596ce612b9cf40cf63db8323d96b010849d"
     },
     {
       "id": "RP-V3-02-4",
@@ -5897,7 +5953,7 @@
       "answer": 0,
       "answerText": "occupy the same position",
       "evidence": "The response to noncoincidence is a positional adjustment. Sharing a sheet is insufficient if marks do not line up, and ink quantity or survival after trimming does not define the term here.",
-      "hash": "3fe1c6c8b34c78e8ddd230a7298fe7f6fe89f47258844272dc81119685027824"
+      "hash": "51009c4edd981d4787ef8dda47a79851a90169f61dabf5189eef33dddf6dc3c9"
     },
     {
       "id": "RP-V3-02-5",
@@ -5909,7 +5965,7 @@
       "answer": 2,
       "answerText": "make the consequence of misalignment visible",
       "evidence": "A yellow edge appears where yellow and blue should coincide. The fault is positional, not a paper change or a shade corrected by trimming. Large central lettering had attracted the apprentice’s attention, but the example prompts additional corner checking.",
-      "hash": "f328f9814caff3fa7bafa08d82ae264a48ce8eab9459d1d7cdff14f5d1e52822"
+      "hash": "53c23bf6ea4b33f46c3968365671a91f8f2db53361a71b0842fb8117443c622a"
     },
     {
       "id": "RP-V3-02-6",
@@ -5921,7 +5977,7 @@
       "answer": 0,
       "answerText": "The crosses help align the inks whose overlap produces the intended green shape.",
       "evidence": "The green requires overlap at the right position; the crosses provide alignment references. They do not establish pigment chemistry or remain in the trimmed result, and mere ink visibility did not expose the error as clearly as registration checking.",
-      "hash": "7cdb08355ed285a295498fa5f4f0ae99f42a5826e90cdb8b4e63a05ce776de0a"
+      "hash": "d007de25afbcd0a9e67258458a68aa8671e0eb401e5d95aad3206c639e9a0a43"
     },
     {
       "id": "RP-V3-03-1",
@@ -6075,9 +6131,9 @@
         4
       ],
       "answer": 3,
-      "answerText": "makes room for the doorway’s wider usefulness while retaining an uneasy personal attachment to the corner",
+      "answerText": "accepts the doorway’s value to others while still feeling attached to her private corner",
       "evidence": "Ana retains the waiting ritual and discomfort about standing aside while clearing and opening a useful door. Her father does not request help, and she does not become a supervisor. The ending holds competing motives rather than an uncomplicated conversion.",
-      "hash": "4cbdf4934b688362e77b01a1f8af884b71284c738397c58eeb05a3e098effa8d"
+      "hash": "22b0f02ae63957bd282edda39fcac09a232916fa3ecce75f07f3f60f651da2f5"
     },
     {
       "id": "RP-V3-05-2",
@@ -6089,7 +6145,7 @@
       "answer": 1,
       "answerText": "The level passage reached through the side door",
       "evidence": "The level route removes the need to lift the case up steps; Ana takes the smaller bag and he follows with the case. Shelter does not carry the load, and the travelers have already gone.",
-      "hash": "8409a75b4d7d227c0581a8a323e58a716cf3af8700d0aaf83c9a76bfdcd0542d"
+      "hash": "d89148afd411e41b33eb911154afab35ec2abbd8a4014eb710f0a707a1cfd0cf"
     },
     {
       "id": "RP-V3-05-3",
@@ -6101,7 +6157,7 @@
       "answer": 3,
       "answerText": "supports the doorway’s use even while her attachment to the sheltered corner remains complicated",
       "evidence": "Her actions make the doorway usable, even though strangers diminish its privacy. The final mistaken thanks exposes that tension; it does not establish a permanent role, a platform rule, or a way of restoring exclusive use.",
-      "hash": "fdc1d994c4d70897ea880b71cb3d1f7fb2e60980ca07723bea48363990452396"
+      "hash": "4ce33532659d19b81d2d309c21bde1330e273df6ce88c56c209e4498af34eba2"
     },
     {
       "id": "RP-V3-05-4",
@@ -6113,7 +6169,7 @@
       "answer": 1,
       "answerText": "allowing them to move",
       "evidence": "Freeing painted-shut hinges restores their motion. The later swinging door supports that sense, not removal, relocation, or a promise that maintenance is finished.",
-      "hash": "287b5a826208949d284b49b7219d2d3865e0a0cb65375f97887c71bda5ad39d3"
+      "hash": "77424ce2ac9184c437bb6d55ea4adea7b95540347e36a1bd515652ac59e32091"
     },
     {
       "id": "RP-V3-05-5",
@@ -6125,7 +6181,7 @@
       "answer": 3,
       "answerText": "shows Ana trying to preserve a sense of belonging as the corner becomes less private",
       "evidence": "“She told herself” makes the sentence an effort to retain belonging, not an objective title. Standing aside and nearly correcting the stranger complicate her reassurance. No staff-granted claim or request for permission appears.",
-      "hash": "c8dbdd3e01c9931c8f4269832a1c612b1703643d2b9f0a6eca864a3c685c9b89"
+      "hash": "a2f6d11ebd8c130c7185206b20bff147cb69a75d8e5d94bc1e062e4e250ccb4e"
     },
     {
       "id": "RP-V3-05-6",
@@ -6137,7 +6193,7 @@
       "answer": 1,
       "answerText": "Ana first uses the sheltered corner for herself and later helps keep its doorway usable by others.",
       "evidence": "Her waiting continues while clearing leaves and holding the working door serve passage. That change does not erase her attachment or her ambivalence; she neither leaves the station nor excludes the stranger who passes first.",
-      "hash": "6af0406369cf8417cf8e58ff6cea6777c30fbbfbf0a7ca82535e84a98ab1d9d6"
+      "hash": "1e6eb50f6fe446a73579e5bb491986f87db5d45a648b18341f78aeac55d1d727"
     },
     {
       "id": "RP-V3-06-1",
@@ -6185,7 +6241,7 @@
       "answer": 0,
       "answerText": "continue moving for a time after the driving input stops",
       "evidence": "The indoor machinery continues briefly after its driver stops and then settles. This distinguishes residual motion from powered constant speed, an immediate stop, or a reported reversal.",
-      "hash": "c3348b206e20ffdf6dd17d89dca97bd9cd77d23722f82ea3ffec7fd1a0d5baea"
+      "hash": "7a7aa79c2765988a158afee3d673d5881de4e3891b49237f88d283b013eb901b"
     },
     {
       "id": "RP-V3-06-5",
@@ -6437,7 +6493,7 @@
       "answer": 2,
       "answerText": "how internal spaces can be a functional part of a living root rather than merely an absence of tissue",
       "evidence": "The researcher treats spaces as organized features and the revision shows tissue with passages. The tracer investigates a route but does not measure every endpoint’s supply. Neither damage nor a ranking of the components is the developed claim.",
-      "hash": "2674bc5b5499260ea2cc7a60bdf274e87fd7c7ba0622a519e928086fd8b3e7f8"
+      "hash": "5d5e5dd28ee4d789d4f361e2e782f1bc3ab66bf3b62d70ad7710a89f35132fb9"
     },
     {
       "id": "RP-V3-10-2",
@@ -6449,7 +6505,7 @@
       "answer": 0,
       "answerText": "To investigate a route from above-water tissues toward the root",
       "evidence": "The tracer is introduced above water and looked for near the root, testing a pathway. Cell counts, exact consumption, and equality of all soil conditions require different evidence not supplied by that procedure.",
-      "hash": "693f131074961160a1521d996e58572d946c7671f1217cf2a5feaaa0b52a2263"
+      "hash": "8021b1e38dfaba8b071d749ead9251db66ea2705122cf5ebaaded8f5bb53eadc"
     },
     {
       "id": "RP-V3-10-3",
@@ -6461,7 +6517,7 @@
       "answer": 2,
       "answerText": "potentially organized features whose role must be understood within the root",
       "evidence": "The text presents connected spaces as potentially functional within a living structure. It preserves the surrounding tissue’s role and separates pathway anatomy from exact oxygen availability; filling the gaps would repeat the solid model’s omission.",
-      "hash": "289e0bb772863ccda304cbc0eb008f512aa3a696a2b120203d386019f2765c0b"
+      "hash": "298b071a11cc975642e85d89a543180341130de11079ccf6fefcec04661a4938"
     },
     {
       "id": "RP-V3-10-4",
@@ -6473,7 +6529,7 @@
       "answer": 0,
       "answerText": "closely packed",
       "evidence": "The microscope contrast is densely packed tissue versus larger connected spaces in cross-sections. It does not report preparation into a portable object, compression by the tracer, or location exclusively above water.",
-      "hash": "1a6da39d9dc69fef8ac5de96e18631fddc8a31dc33a8a91d58371d6ee2fae44a"
+      "hash": "ba7d825ca31b2a9bf405a980f32a7ba7a3273459ea7225434e60186f1b6f2e94"
     },
     {
       "id": "RP-V3-10-5",
@@ -6485,7 +6541,7 @@
       "answer": 2,
       "answerText": "shows the value of representing the relationship between material and spaces",
       "evidence": "The revised model displays the relationship between tissue and route. The tracer does not create the anatomy, and a structural model is not an exact delivery measurement. Asking viewers to choose one part repeats the misconception the ending rejects.",
-      "hash": "e9ed3a66faa581053b033134241323be4b9c1b90f89bcbfbc500039a0be20725"
+      "hash": "af39c087c86fc0f0e3fd7554845a51862bb56d6d05b273a982fa253214bc03e2"
     },
     {
       "id": "RP-V3-10-6",
@@ -6497,7 +6553,7 @@
       "answer": 0,
       "answerText": "Connected spaces can form a transport route, while actual oxygen availability requires more than noticing their presence.",
       "evidence": "Anatomy and tracer evidence support a possible transport route. Root activity and soil still matter to actual oxygen availability, so neither exact amounts nor universal impossibility follows from visible spaces.",
-      "hash": "0a35e909458d379ce2ca3c52e17c7d0fd4dceef6446e1c970b5025f1061bb447"
+      "hash": "c97270696ed140c84e345a07919a3a24cce1b6581a8e96a449173c5b15a7a115"
     },
     {
       "id": "RP-V3-11-1",
@@ -6509,7 +6565,7 @@
       "answer": 1,
       "answerText": "how exposure duration shapes what a photograph can show about an apparently empty street",
       "evidence": "The exposure account explains differential visibility, not interpretive impossibility or an empty avenue. The historian compares descriptions without editing traffic into the image. Duration mediates what the surface records.",
-      "hash": "c1b49f57736644fa6922045ab6834e17b30135afc4b6bebb4d41386dd7c7b9ab"
+      "hash": "0fa3ad98d2e0114799e721e5cf3d4f7cb8e3405240690b44bb6d182d49fa0a6b"
     },
     {
       "id": "RP-V3-11-2",
@@ -6521,7 +6577,7 @@
       "answer": 3,
       "answerText": "It remains in one position for more of the exposure interval.",
       "evidence": "A position occupied longer contributes more consistently to that place in the image. The passage describes an exposure effect, not altered road reflectance, selective museum deletion, or a later insertion.",
-      "hash": "896396c9dc754795759a8e94a6c7b5fa16ea937798a95920507ae449d2324116"
+      "hash": "5d429c0e5b8a7ca23c49a5c8c15ba5b7868742622f205efa121f0533ce728466"
     },
     {
       "id": "RP-V3-11-3",
@@ -6533,7 +6589,7 @@
       "answer": 1,
       "answerText": "The photograph’s nearly empty road proves that few people used the avenue during the exposure.",
       "evidence": "Those three claims match the supplied process. Inferring low actual use from a nearly empty photographic road ignores differential visibility during a long interval. The challenged claim converts a recorded appearance into a population observation.",
-      "hash": "61c04bba08e5ea880e96c9288416f475e2550348cea9d51ecc17585e79efafde"
+      "hash": "1b9ffa90c32c344af64eddf62b32a6509f58d68598c80b9d972ea65425cecf84"
     },
     {
       "id": "RP-V3-11-4",
@@ -6545,7 +6601,7 @@
       "answer": 3,
       "answerText": "clearly visible as separate forms",
       "evidence": "The local comparison is clarity of forms left by stationary and moving objects. The passage is not using distinct to rank historical importance, establish equal time spacing, or identify social groups.",
-      "hash": "89c063d074087db2d69fd964c74e691ad29e31de526641d337da02551b6c5750"
+      "hash": "eb27d0324e5c2794e64ff31bd7640eae4c9fa90c2df10d81b7550d21d2ae3dca"
     },
     {
       "id": "RP-V3-11-5",
@@ -6557,7 +6613,7 @@
       "answer": 1,
       "answerText": "illustrate how knowledge of the process can change a reading of the same image",
       "evidence": "The same image admits a revised interpretation when duration is considered. The process explanation constrains that reading without yielding an exact count, erasing appearance, or supplying another exposure for comparison.",
-      "hash": "144e3e6e34ee174ce97073a641e8ac4be0ca62833ae2bb356f9bd3a0c99f3b83"
+      "hash": "6e242aa0379cf7a307cfe6d00000314afcb6eb6dd9587474e9ba42462fa12829"
     },
     {
       "id": "RP-V3-11-6",
@@ -6569,7 +6625,7 @@
       "answer": 3,
       "answerText": "Both treat time as something that helps produce the image’s pattern of visibility.",
       "evidence": "The process accumulates light over an interval, with unequal visibility by movement. Calling duration a material acknowledges its role alongside light and surface, not a replacement or an instantaneous equal record.",
-      "hash": "8b7e83ba3e44ee4566302d9f117ef8a1a1248f7371f16057f6dbbc0bfa303369"
+      "hash": "5f22d7e8b4bdf1e0a66b9e6d4517220827fb1adcaf9880b6ad8c1b1dbcdb3d36"
     },
     {
       "id": "RP-V3-12-1",
@@ -6677,7 +6733,7 @@
       "answer": 3,
       "answerText": "a mistaken way to understand the documented development",
       "evidence": "The scholar asks for later meanings to be presented as developments, not errors, and explains why a joke can retain a trade association without physical cloth. Date and origin alone do not justify ranking later use as mistaken.",
-      "hash": "72a24e1aa9a472808da56e0e6b29aab4f4573797a5e095a11ac32fccbcd98bfb"
+      "hash": "39f6af042f9d7a0ff216b134fba57c2f248f0d073e1868b6d8b1b2fa0ecfb708"
     },
     {
       "id": "RP-V3-13-4",
@@ -6783,9 +6839,9 @@
         2
       ],
       "answer": 0,
-      "answerText": "Both initially leave the cable’s end constraints out of the effective explanation.",
+      "answerText": "Both initially fail to account for how the cable’s ends are secured.",
       "evidence": "Free ends in the test and absent anchorages in the drawing omit the same constraint. The model has small weights and limited purpose, so it neither tests no load nor supplies a full-scale safe-load specification.",
-      "hash": "9d76a4a979ff0fee63c3d9f718802f9b5d6d9e200919d11f2e9f691065da5c71"
+      "hash": "905ace589d82f740ac4b6888fcacf809dc95c3ea400e5be7fa6a70636f5f4f96"
     },
     {
       "id": "RP-V3-15-1",
@@ -6797,7 +6853,7 @@
       "answer": 1,
       "answerText": "moves from using a private measure to defend herself toward coordinating with a partner while retaining a familiar rhythm",
       "evidence": "The notebook first becomes a defense when blame is raised. Mina later keeps rhythm but leaves her hand ready and asks for Leah’s view, while still reaching toward the bag strap. Cooperation develops without a simple disappearance of her wish for reassurance.",
-      "hash": "db31735af1fce246465a30b441f46c20976580ec148dcfa6cf5eb9fbc25f1da0"
+      "hash": "90db517f11b4c76ba20ca03561546a1f95eb7a48c099f56622a25fd1ceec076b"
     },
     {
       "id": "RP-V3-15-2",
@@ -6807,9 +6863,9 @@
         2
       ],
       "answer": 3,
-      "answerText": "When she needs to see Mina’s hand ready",
+      "answerText": "When Leah needs to see Mina’s hand in place",
       "evidence": "Mina asks when Leah needs to see the hand, after nearly reopening the notebook. This changes the question from defending a step count to understanding a partner’s view; no proposed new mark or timing request is reported.",
-      "hash": "fc5029974761186e15042bc251a4682fb3b8ed5b8bc3dd300034397d8c38599a"
+      "hash": "96879aeab72bfa51f4dcad208120d3e669d2d0f331f852eda4fd65d8657c613f"
     },
     {
       "id": "RP-V3-15-3",
@@ -6821,7 +6877,7 @@
       "answer": 1,
       "answerText": "protect her account of a missed exchange by pointing to a fixed count",
       "evidence": "Showing the page after a question about who moved early uses a fixed count as protection for Mina’s account. It cannot establish the partner’s hearing, prior coach approval, or the call’s irrelevance. The inference concerns her defensive purpose rather than objective proof of fault.",
-      "hash": "eebd9cb28f91dfb039c26d7aa55f8b742114d3547e14d912aff1aafa6d583503"
+      "hash": "841337a5a38d47a8812d5aa3d635643e2577533d8c8433c50a8197653c6a0d80"
     },
     {
       "id": "RP-V3-15-4",
@@ -6833,7 +6889,7 @@
       "answer": 3,
       "answerText": "helped her remain composed",
       "evidence": "The familiar rhythm offers composure, while counts and hand timing can still vary. It is not a fixed position, an invariant number, or a direct measure of what Leah can see.",
-      "hash": "6e0a75929195aba87ef4f38d9d2d6d2abcb3b39c3e33ff24488779b094d2fd7a"
+      "hash": "297946eff975b2cbba8fed1ce4b9cd60308376670e71b000b0b0389fc3c0a903"
     },
     {
       "id": "RP-V3-15-5",
@@ -6845,7 +6901,7 @@
       "answer": 1,
       "answerText": "the limit of coordinating a shared task through separate internal schedules",
       "evidence": "Each private measure could make its user feel correct while failing to offer the other a reliable opening. The phrase exposes that coordination problem; merely compiling counts is not shown to solve it or establish superior accuracy.",
-      "hash": "253b549e503deaec6ffc14005addb47703d0196a5cc030eb60d3d04ad57f62cb"
+      "hash": "b3f44945ac04d716321e289a3450a85e10c360e260f97146c1c843e2304caad0"
     },
     {
       "id": "RP-V3-15-6",
@@ -6857,7 +6913,7 @@
       "answer": 3,
       "answerText": "Counting begins as both a trigger and a defense; it later supports her rhythm without settling what the partner needs.",
       "evidence": "Initially the number determines action and helps assign fault; later rhythm remains but does not answer what Leah needs. The bag-strap gesture preserves residual attachment, while her question invites a different perspective rather than a new sole trigger.",
-      "hash": "b7bf68b2c66b814439733250665e7622be80f463868d07990c082f47c9f8a5c3"
+      "hash": "c86d8134857338c5559999b3151dba23496eeac40fc622ddee698a8bc307c1f5"
     },
     {
       "id": "RP-V3-16-1",
@@ -7013,7 +7069,7 @@
       "answer": 2,
       "answerText": "why a simplified model’s separate input and response can reveal change hidden by a single movement record",
       "evidence": "The spring changes while the block stays fixed, and paired graphs retain input/response timing. Averaging can describe displacement but suppresses the release pattern. The passage distinguishes rather than equates visible motion and system change.",
-      "hash": "2e88a5d0b645e1b7d726453a3c05e6f3c19bf9939041c87a124dd4db0e7a2b5b"
+      "hash": "d4ee7c098e6553f35ea3470dc88f29fac8179713b480e2be5a5e247a5cc8bf2e"
     },
     {
       "id": "RP-V3-18-2",
@@ -7025,7 +7081,7 @@
       "answer": 0,
       "answerText": "The spring’s extension and exerted force",
       "evidence": "The supplied model stretches the spring and increases force while the block remains fixed. The surface and shared time scale do not change; smoothly increasing displacement belongs to the pulling device, not the block in that interval.",
-      "hash": "7954172f4e7b81a32a401072df4f5e4b04cfcdd94449e16b015f5452256bb118"
+      "hash": "ebc71f5420bd2301f0fd52a48af618f47de26463b2e0e923bf9a11d11ec05c88"
     },
     {
       "id": "RP-V3-18-3",
@@ -7037,7 +7093,7 @@
       "answer": 2,
       "answerText": "lose information about when accumulation and sudden motion occurred",
       "evidence": "An average omits the time distribution of accumulation and motion. It does not recover individual jump times or isolate natural-setting variables, and the spring already provides an example of changing deformation during block stillness.",
-      "hash": "21e9cdce244b6463ad8600fa30d3083e5e3dcfc6fdf45f7387971faa17ee3091"
+      "hash": "c9957e63cf432a7da3c23d7e9faf969676257a02849791752fcf65ab856368b4"
     },
     {
       "id": "RP-V3-18-4",
@@ -7047,9 +7103,9 @@
         1
       ],
       "answer": 0,
-      "answerText": "open to examination in an observable arrangement",
-      "evidence": "Inspectable means available for examination through the separated arrangement. That does not make it an identical landscape, remove friction, or exempt an interpretation from conditions and limits.",
-      "hash": "f44e68ab439c1ca432ee03b16c3edbac4c7d456cb64f497356772b600e6656d4"
+      "answerText": "possible to examine directly",
+      "evidence": "The model separates the spring’s changing force from the block’s motion, making their relationship possible to examine directly. Inspectable does not mean identical to a landscape, free of friction, or understandable without interpreting the observations and their limits.",
+      "hash": "4a6766537c5a60fe89659b839e64ac407826557fd3838bfd4c547a1a9d1ecd4d"
     },
     {
       "id": "RP-V3-18-5",
@@ -7061,7 +7117,7 @@
       "answer": 2,
       "answerText": "reframes a perceived discrepancy as the phenomenon the model is meant to explain",
       "evidence": "The response turns the discrepancy into an explanatory target. Plotting both preserves it; suppressing or averaging away the jumps would conceal the feature the instructor wants investigated.",
-      "hash": "b59da3267a79e2bcbaafb7a0c79d41825a67784ad7b35da4b8a4722cc9041019"
+      "hash": "f6ef464213f9a1a7a4e895084947295ebfb27b5e394b4bb266737bcc857c680d"
     },
     {
       "id": "RP-V3-18-6",
@@ -7073,7 +7129,7 @@
       "answer": 0,
       "answerText": "Both show why unchanged position or an overall rate can omit changing internal conditions and timing.",
       "evidence": "Spring change during stillness and the average’s loss of timing are complementary examples of information missing from one summary. They do not make force constant, recover the process from a mean, or deny an average its stated descriptive use.",
-      "hash": "fab51291a508fb19e0124a6a7d97dfeff8937f435284bfcf7fba2a3dcb1b3bae"
+      "hash": "25f919f5ee16be62eb898410534c74df189f9e1e7259d9347d03be3c5c4196bf"
     },
     {
       "id": "RP-V3-19-1",
@@ -7373,7 +7429,7 @@
       "answer": 1,
       "answerText": "making distinct forms of work visible in an object whose appearance and continued use depend on both",
       "evidence": "The supervisor insists that front and reverse both embody work. Retained repairs and a partial mirror view expose accumulated decisions without returning to an untouched first state or supplying full attribution.",
-      "hash": "67cc074030cb2a8a8f765940bb4cf2eac8352ad2ab653d3b9cc603f560abf89c"
+      "hash": "99d86c20d45581d4c017f70cebdb4948ef7e7aa80c4023eacee5f9a8551bbcd5"
     },
     {
       "id": "RP-V3-23-2",
@@ -7385,7 +7441,7 @@
       "answer": 3,
       "answerText": "Removing the older stitches would weaken already thinned cloth.",
       "evidence": "The earlier repair supports thinned fabric; removing it would weaken the area. New reinforcement carries strain around it. The preservation decision precedes exhibition discussion and is not based on a demand to hide the reverse.",
-      "hash": "b1f79b1ae1d22d3a950da8363d09ba427ff08b474d13dc79d4adfd2d137f0347"
+      "hash": "af04d53396385ba0392c7959750b224289594ee618632dc0a2e280919e5ee007"
     },
     {
       "id": "RP-V3-23-3",
@@ -7397,7 +7453,7 @@
       "answer": 1,
       "answerText": "an object made usable again through decisions that preserve some earlier alterations",
       "evidence": "Preparation for reuse preserves some support and adds more. The garment is neither untouched nor completely decoded, and the supervisor explicitly includes the front as work rather than dismissing it.",
-      "hash": "06b191b74e5fa73e388debae74b69e216469ff038c1543f8dcec81efd11d181a"
+      "hash": "98b71aa14518de226204de4068b368bf1450242a4b2c53248f6db91182553b14"
     },
     {
       "id": "RP-V3-23-4",
@@ -7409,7 +7465,7 @@
       "answer": 3,
       "answerText": "readily distinguishable and understandable as evidence of work",
       "evidence": "The mirror makes some physical work easier to see and interpret while preserving limits. It does not provide complete dating or authorship, and avoiding handling is part of the display’s purpose.",
-      "hash": "1ce1432b4dbd534598b690d915c68050cc26ff9acb5618660aeb50251641bd37"
+      "hash": "b13787c4c36fee93a6e144e4b6245b372ff28dd27ff2d6a3b7ec76dc00a728bd"
     },
     {
       "id": "RP-V3-23-5",
@@ -7421,7 +7477,7 @@
       "answer": 1,
       "answerText": "prevents a correction of one omission from becoming a new exclusion",
       "evidence": "The qualification prevents an overdue attention to support from excluding decoration. It does not reverse the ranking in favor of the front, make the mirror useless, or restore the sufficiency of one view.",
-      "hash": "ea25be51bdc3a99afcec4a7399f067ee2f62009f07124dca6329c3dc38c398c7"
+      "hash": "5de9ebb3e2f936858900410ce30f6ccc6d0551a55546ac96ed06e0dfb16869b7"
     },
     {
       "id": "RP-V3-23-6",
@@ -7431,9 +7487,9 @@
         2
       ],
       "answer": 3,
-      "answerText": "They preserve and expose part of the garment’s accumulated making rather than replace it with one idealized view.",
+      "answerText": "They keep earlier repairs in place and let visitors see how those repairs helped the garment remain usable.",
       "evidence": "The working repair and the exhibition keep earlier making materially present and partly visible. They do not erase alterations, date all work to one production, or require destructive removal to inspect it.",
-      "hash": "7d134bae7fc945ce054996d8a0d681a5fd739cf6a254449ba06492a8106bc27c"
+      "hash": "8318eec5dbe7adff6f212da2889fd62d0036f74461657f110516ed2c789e4d4f"
     },
     {
       "id": "RP-V3-24-1",
@@ -7503,9 +7559,9 @@
         1
       ],
       "answer": 2,
-      "answerText": "B accepts the need for A’s hydraulic reading and adds evidence about its continuing human requirements.",
+      "answerText": "B accepts A’s explanation of the water levels and adds the work needed to keep the canal operating.",
       "evidence": "B explicitly calls the hydraulic reading necessary and not false, then examines continuing work and costs. The relation is extension of a valid account, not rejection of level changes or redundancy of maintenance.",
-      "hash": "4f5afb82fef7d2222e599275b1550a5abd8fbd49f30547c4144247973ce44391"
+      "hash": "232ada3b205770f9ab1a8d8559ed8f4e38dee070c8efaeef2d836d10cac3560f"
     },
     {
       "id": "RP-V3-13-7",
@@ -7541,7 +7597,7 @@
       "answer": 2,
       "answerText": "tentatively receptive, inviting a different view while still seeking the comfort of a familiar measure",
       "evidence": "Mina asks what the exchange looked like from Leah’s position, inviting a view her own count could not supply. Reaching toward the notebook’s strap while listening retains a wish for familiar reassurance. Together the details suggest guarded receptiveness, not complete confidence, a neutral report for the coach, or rejection of the rhythm that still steadies her.",
-      "hash": "1c279b50f7e62ef7fcb7176e7fc06d752b0e36fc0ed253b9496025ad811858ad"
+      "hash": "6e47ddae6d9e65a4cd45d37ca3720fb68aa95dac883ac1862e5b648f83e9f2b4"
     },
     {
       "id": "RP-V3-22-7",

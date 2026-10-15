@@ -119,12 +119,12 @@
       ],
       "examples": [
         {
-          "text": "The conservator who the curator believes restored the frame will speak.",
-          "label": "The conservator restored it: who is the subject of restored, despite the intervening the curator believes.",
+          "text": "The conservator, who the curator believes restored the frame, will speak.",
+          "label": "Main sentence: “The conservator will speak.” Within the relative clause, who does the restoring: “she restored the frame.” The curator believes reports that claim.",
           "good": true
         },
         {
-          "text": "The conservator whom the curator believes restored the frame will speak.",
+          "text": "The conservator, whom the curator believes restored the frame, will speak.",
           "label": "Whom cannot be the subject of restored; the intervening words do not change its job.",
           "good": false
         },
@@ -135,7 +135,7 @@
         }
       ],
       "tip": "Locate the pronoun’s own verb before looking at the closest verb or preposition.",
-      "teachingRevision": 3
+      "teachingRevision": 4
     }
   ],
   "check": [

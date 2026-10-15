@@ -5,7 +5,7 @@
     "subject": "math",
     "category": "Functions and graphs",
     "difficulty": "easy",
-    "stem": "\\(f(x) = 2x + 5\\) for x < 0, and \\(f(x) = x^{2} - 1\\) for \\(x \\ge  0\\).",
+    "stem": "\\(f(x) = 2x + 5\\) for \\(x<0\\), and \\(f(x) = x^{2} - 1\\) for \\(x \\ge  0\\).",
     "questionText": "What is \\(f(-2)\\)?",
     "choices": [
       "1",
@@ -59,13 +59,13 @@
     "stem": "\\(f(x) = \\frac{\\log_2(x-2)}{x-5}\\).",
     "questionText": "Which condition describes its real domain?",
     "choices": [
-      "x > 5",
+      "\\(x>5\\)",
       "\\(x \\ne  2\\) and \\(x \\ne  5\\)",
-      "x > 2 and \\(x \\ne  5\\)",
+      "\\(x>2\\) and \\(x \\ne  5\\)",
       "\\(x \\ge  2\\) and \\(x \\ne  5\\)"
     ],
     "answer": 2,
-    "explanation": "The logarithm requires its argument \\(x - 2\\) to be strictly positive, so x > 2. The denominator separately requires \\(x \\ne  5\\). Combine both conditions. The endpoint 2 is forbidden, while values such as 3 and 4 are allowed even though their denominators are negative."
+    "explanation": "The logarithm requires its argument \\(x - 2\\) to be strictly positive, so \\(x>2\\). The denominator separately requires \\(x \\ne  5\\). Combine both conditions. The endpoint 2 is forbidden, while values such as 3 and 4 are allowed even though their denominators are negative."
   },
   {
     "id": "math-functions-d11",
@@ -213,8 +213,8 @@
     "questionText": "For which x is f(x) negative?",
     "choices": [
       "\\(2 \\le  x \\le  4\\)",
-      "2 < x < 4",
-      "x < 2 or x > 4",
+      "\\(2<x<4\\)",
+      "\\(x<2\\) or \\(x>4\\)",
       "\\(x \\le  2\\) or \\(x \\ge  4\\)"
     ],
     "answer": 1,
@@ -269,7 +269,7 @@
       "\\(3x^{4} - 2x^{2} + 7\\)"
     ],
     "answer": 3,
-    "explanation": "An even function satisfies \\(f(-x)=f(x)\\). The final choice, \\(3x^4-2x^2+7\\), has only even powers and a constant, so each term is unchanged under x→−x. The third choice, \\(x^3-x\\), is odd: its entire output changes sign. The first and second choices are neither even nor odd; their mixed terms break both symmetry conditions."
+    "explanation": "An even function satisfies \\(f(-x)=f(x)\\). The final choice, \\(3x^4-2x^2+7\\), has only even powers and a constant, so each term is unchanged under \\(x\\to -x\\). The third choice, \\(x^3-x\\), is odd: its entire output changes sign. The first and second choices are neither even nor odd; their mixed terms break both symmetry conditions."
   },
   {
     "id": "math-functions-d23",
@@ -384,7 +384,7 @@
     "choices": [
       "\\(x \\ge  1\\) and \\(x \\ne  10\\)",
       "\\(x \\ge  1\\) and \\(x \\ne  3\\)",
-      "x > 1 and \\(x \\ne  10\\)",
+      "\\(x>1\\) and \\(x \\ne  10\\)",
       "\\(x \\ge  10\\)"
     ],
     "answer": 0,
@@ -473,7 +473,7 @@
       "3:2"
     ],
     "answer": 0,
-    "explanation": "Volume scales with the cube of the length factor. Taking cube roots gives the corresponding length ratio ∛8:∛\\(27 = 2:3\\). Squaring that ratio would describe surface areas, while reversing it would compare the larger solid to the smaller one."
+    "explanation": "Volume scales with the cube of the length factor. Taking cube roots gives the corresponding length ratio \\(\\sqrt[3]{8}:\\sqrt[3]{27}=2:3\\). Squaring that ratio would describe surface areas, while reversing it would compare the larger solid to the smaller one."
   },
   {
     "id": "math-geometry-d9",
@@ -881,7 +881,7 @@
       "7"
     ],
     "answer": 3,
-    "explanation": "The triangle inequality requires \\(|9 - 4|\\) < x < \\(9 + 4\\), so 5 < x < 13. The allowed integers are 6 through 12, seven values. Equality at either endpoint would create a degenerate straight-line figure, so 5 and 13 do not qualify."
+    "explanation": "The triangle inequality requires \\(|9 - 4|\\) < x < \\(9 + 4\\), so \\(5<x<13\\). The allowed integers are 6 through 12, seven values. Equality at either endpoint would create a degenerate straight-line figure, so 5 and 13 do not qualify."
   },
   {
     "id": "math-trigonometry-d7",
@@ -1425,7 +1425,7 @@
       "0.1"
     ],
     "answer": 0,
-    "explanation": "Use the inclusive-or rule: P(A or \\(B) = P(A) + P(B) - P(A\\) and B) = 0.5 + 0.4 − 0.2 = 0.7. Subtract the overlap once because it was included in both individual probabilities. Adding alone double-counts the shared outcomes."
+    "explanation": "Use the inclusive-or rule: P(A or \\(B) = P(A) + P(B) - P(A\\) and B) = \\(0.5+0.4-0.2=0.7\\). Subtract the overlap once because it was included in both individual probabilities. Adding alone double-counts the shared outcomes."
   },
   {
     "id": "math-statistics-probability-d13",

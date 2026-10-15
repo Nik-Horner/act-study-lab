@@ -155,7 +155,7 @@
               "specify"
             ],
             "answer": 2,
-            "explanation": "Guidelines is the main plural subject; specify supplies its finite main verb. Revised, objected and must complete belong to embedded clauses. Specifying lacks a finite verb, and that specify starts yet another subordinate clause."
+            "explanation": "The core sentence is “The guidelines specify the minimum training.” Guidelines is plural, so specify supplies its main verb. The which-clause adds information about the revision, and each volunteer must complete describes training. Neither supplies a main verb for guidelines. Specifying cannot complete the main sentence alone; that specify begins another dependent clause."
           }
         },
         "reason-versus-concession": {
@@ -1523,7 +1523,7 @@
             }
           ],
           "activity": {
-            "evidenceText": "The pilot ___ the investigators believe reported the fault first will testify tomorrow.",
+            "evidenceText": "The pilot, ___ the investigators believe reported the fault first, will testify tomorrow.",
             "prompt": "Which pronoun is the subject of reported?",
             "choices": [
               "whom",
@@ -1531,7 +1531,7 @@
               "who"
             ],
             "answer": 2,
-            "explanation": "The pilot reported the fault, so who is the subject of reported. The investigators believe is embedded reporting language and does not turn that subject into an object. Whose is possessive."
+            "explanation": "The main sentence is “The pilot will testify tomorrow.” Within the relative clause, who is the subject of reported: “she reported the fault.” The investigators believe reports that claim; it does not turn who into an object. Whom is an object form, and whose is possessive."
           }
         },
         "distant-reference": {
@@ -1804,7 +1804,7 @@
             }
           ],
           "activity": {
-            "evidenceText": "The archive permits all registered readers to view the letters, but only after completing an orientation.",
+            "evidenceText": "The archive requires registered readers to complete an orientation before they may view the letters.",
             "prompt": "Which sentence most clearly restricts when access is permitted?",
             "choices": [
               "Readers may view the letters only after orientation.",
@@ -4164,8 +4164,8 @@
             }
           ],
           "activity": {
-            "evidenceText": "The passage hints at an older myth without naming it, and the reader recognizes the connection from a repeated image.",
-            "prompt": "Which pair names the writer’s reference and the reader’s act?",
+            "evidenceText": "The passage hints at an older myth without naming it. The writer makes an ___, and the reader ___ the connection from a repeated image.",
+            "prompt": "Which pair correctly completes both blanks?",
             "choices": [
               "illusion; implies",
               "allusion; infers",

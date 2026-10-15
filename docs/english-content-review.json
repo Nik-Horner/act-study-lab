@@ -2142,8 +2142,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "after sentence 2",
-      "rationale": "The reference to a shore broadcast elaborates on radio beacons, introduced in sentence 2.",
-      "contentSha256": "bc70c36aa8fcc7558295d2728ab861e68455fa36cd7761eb050dbef99ad76d3a"
+      "rationale": "The reference to a shore broadcast elaborates on radio beacons, introduced in sentence 2. After sentence 2 it develops that new technique before the paragraph shifts to satellite GPS. Before sentence 1 it has no introduced radio technique to explain; after sentence 3 or 4 it interrupts a later technology with a return to an earlier one. Navigation without visible stars existed before radio, so that false first-time claim is not used.",
+      "contentSha256": "49d8dc1212e1001151a9c9feedbe54807d083b0aaf51aeccffc26fd963d628c8"
     },
     {
       "id": "logical-placement-032",
@@ -2151,8 +2151,8 @@
       "status": "reviewed",
       "answerIndex": 2,
       "verifiedAnswer": "after sentence 2",
-      "rationale": "\"These alarming health reports\" refers to the rising childhood asthma cases in sentence 2, so it must follow sentence 2, and as the cause of the 1991 ordinance it must precede sentence 3.",
-      "contentSha256": "fc9b266eee593d294fee3e87ce808e08c9b1e116df6d7c2b754101fe2638e5f5"
+      "rationale": "\"These alarming health reports\" refers to the rising childhood asthma cases in sentence 2, so it must follow sentence 2, and as the cause of the 1991 ordinance it must precede sentence 3. Before sentence 1 or after sentence 1 there are no health reports yet to name; after sentence 4 the council acts only after the air has already cleared, breaking the cause-before-effect order.",
+      "contentSha256": "a6c20548a4f8a6e8a6f83e084c3ec60cd579e139f483d1d12895b1c51cbb1dd5"
     },
     {
       "id": "logical-placement-transfer-01",
@@ -2402,9 +2402,9 @@
       "source": "src/content/questions/misc-grammar.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "much",
-      "rationale": "Traffic is non-countable, so 'much' is correct and NO CHANGE stands.",
-      "contentSha256": "aaeaaeb75c05c969206775db55d32e8470916e4d1d4707cd6ea3429fb99679b0"
+      "verifiedAnswer": "NO CHANGE",
+      "rationale": "Traffic is non-countable, so 'much' is correct and NO CHANGE stands. 'Many' and 'few' go with countable nouns, and 'much of' would need a definite noun, as in 'much of the traffic.'",
+      "contentSha256": "50bdeeef83b2eaa1934e863bceeaf63bebb9bc1d16a23c46e7c6db77cb5c8069"
     },
     {
       "id": "misc-grammar-027",
@@ -2735,9 +2735,9 @@
       "source": "src/content/questions/modifiers.json",
       "status": "reviewed",
       "answerIndex": 1,
-      "verifiedAnswer": "that was made of brass beside a portrait",
-      "rationale": "That was made of brass must directly follow astrolabe to identify the material of the instrument.",
-      "contentSha256": "ef2361f8da3fec14f0e472e71ba1374d07634d936c25ec76ace1b4658e49dac0"
+      "verifiedAnswer": "the brass astrolabe beside a portrait",
+      "rationale": "“The brass astrolabe beside a portrait” places brass directly before astrolabe, so the material clearly belongs to the instrument. The other choices describe the portrait as made of brass. The task specifies the intended meaning; it does not require guessing what either object could be made from.",
+      "contentSha256": "dbc541cba99947c247049616b0fba26e683be20b992da39c6c60f053dbe5253e"
     },
     {
       "id": "modifiers-030",
@@ -2879,9 +2879,9 @@
       "source": "src/content/questions/parallel-structure.json",
       "status": "reviewed",
       "answerIndex": 3,
-      "verifiedAnswer": "for her inspiring loyalty",
-      "rationale": "'Not only for her demanding rehearsals but also for her inspiring loyalty' balances two prepositional phrases.",
-      "contentSha256": "54e0d02881f9e5ef4046435b67255a17771d293c1b874205cfec92922ea07009"
+      "verifiedAnswer": "for inspiring loyalty",
+      "rationale": "“Not only for demanding rehearsals but also for inspiring loyalty” balances two for-phrases. The alternatives change the second part into a clause, an infinitive, or a finite verb. Read both halves together: the director was known for demanding rehearsals and for inspiring loyalty.",
+      "contentSha256": "9476fee29905c3ae9507a2ea20ada2c9ababe20669215446915d71f32d4a74ed"
     },
     {
       "id": "parallel-structure-012",
@@ -3330,8 +3330,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "the radiator",
-      "rationale": "'It' could mean the lamp or the radiator, so naming 'the radiator' fixes the unclear reference.",
-      "contentSha256": "43987430a5090e3645fcd4da76d902c0eba408e63c54fa0d60c9217a723122aa"
+      "rationale": "It could refer to the lamp or the radiator. Naming “the radiator” makes the intended meaning explicit. Them cannot be the subject of grew, and it’s means it is, which would not fit before grew.",
+      "contentSha256": "16e3d23bea64a9ea6cf85eb037dc493fb6fb73e7bba73eb0710036b419bd0f63"
     },
     {
       "id": "pronouns-028",
@@ -3384,8 +3384,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "who",
-      "rationale": "Who is the subject of had identified: she had identified the error.",
-      "contentSha256": "c4cee0c88b9a711c8542697f17e039b8969cf93ce0cb8f35b7ec4dfd95c7b6e1"
+      "rationale": "The main sentence is “The analyst was invited to explain her method.” Within the relative clause, who is the subject of had identified: “she had identified the error.” The review panel believed reports that judgment; it does not make the relative pronoun an object. Whom is an object form, whose is possessive, and her cannot introduce the relative clause.",
+      "contentSha256": "14dd8f088f788135f108ecb22171c10622a6d54e65df1ae62ff6e5bd3c80ff22"
     },
     {
       "id": "pronouns-transfer-02",
@@ -4203,8 +4203,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "The bakery varies",
-      "rationale": "'The bakery varies' supplies the subject and main verb the sentence needs: 'The bakery varies its types of bread with the seasons...and always has a line around the block.' 'While the bakery varies' keeps everything subordinate, so the sentence never reaches a main clause.",
-      "contentSha256": "f614ae3aae531b14f99a4d57c86b53b2d41e984f1edbda1ab48a8390e0ce7eaa"
+      "rationale": "“The bakery varies its selection ... and draws a crowd” has a subject and two coordinated main verbs. Starting with While makes that first sentence dependent without supplying a main clause. The two remaining openings do not fit the following words its selection and also leave the first sentence incomplete.",
+      "contentSha256": "e9203f71e368b463016b29d57f132beeec6be9528fc6e311d9f640360df1f419"
     },
     {
       "id": "sentence-structure-023",
@@ -4257,8 +4257,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": ", but a",
-      "rationale": "The comma plus but coordinates two independent statements and marks their contrast.",
-      "contentSha256": "677d2a60955d82d57002a15c5e20760121bef577c4143432f0e18918bc6fb4f3"
+      "rationale": "The first violation brings a warning, but the second brings a fine. Comma plus but both joins the complete statements and signals that contrast. The semicolon alternatives introduce dependent while- or although-clauses; the and alternative merely adds the second policy and does not express the requested contrast.",
+      "contentSha256": "79dcf3b2df0e0eb96799ef47a72a3af8cf2e33ed312d93510201c973e5317878"
     },
     {
       "id": "sentence-structure-029",
@@ -4310,9 +4310,9 @@
       "source": "src/content/questions/sentence-structure.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "unique; it",
-      "rationale": "Two independent clauses need a semicolon, so the original is correct: 'unique; it is known...' 'unique, it' is a comma splice, 'unique and it' needs a comma before the FANBOYS, and 'unique it' is a run-on.",
-      "contentSha256": "1cd6956bdd6ca88a72cb68ef9f27d95fb1393b7d3dfcecc8fba356647c40a32a"
+      "verifiedAnswer": "NO CHANGE",
+      "rationale": "“The eucalyptus has a distinctive scent” and “it comes from oils in its leaves” are complete clauses. The original semicolon joins them correctly. Which begins a dependent clause that cannot stand after the semicolon here; it without punctuation runs the clauses together; and a comma alone creates a comma splice.",
+      "contentSha256": "c42edff39636a44c1f1a92de5e1bbb98d20462655ea9fe338eb5c1c1bb4a6f22"
     },
     {
       "id": "sentence-structure-035",
@@ -4329,8 +4329,8 @@
       "status": "reviewed",
       "answerIndex": 2,
       "verifiedAnswer": "water to ensure",
-      "rationale": "'water to ensure' keeps the sentence as one clause, with the infinitive showing the beams' purpose.",
-      "contentSha256": "d40ad8b1d19583e60c9f3027b6da4e206c1abff65edc22ec822180ad602c1e9f"
+      "rationale": "“Water to ensure” connects the raised floors with their intended protection: the beams keep the floors above water to ensure that routine tides do not flood the rooms. The original and ensuring phrase and the ensuring alternative cannot stand as clauses after a semicolon. The these beams alternative starts a second independent clause without a comma before and.",
+      "contentSha256": "0461f57f466c587cb603c2712b612099bacc064e0720ce3d7bbd1583df88dec1"
     },
     {
       "id": "sentence-structure-037",
@@ -4338,8 +4338,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "food, many",
-      "rationale": "'Although...' opens a dependent clause and attaches with a comma to the main clause 'many restaurants now serve it.' Insert only 'food, many' in the marked span.",
-      "contentSha256": "f6d7f8c147cbf9338315e9b7bbd5faf2688d6d713c96a7ee6f891a434ddde3fb"
+      "rationale": "Read the two parts: “Although pesto is best known as a sauce for classic Italian food” is dependent; “many restaurants now serve it in dishes from other cuisines” is the main clause. A comma joins the opening although-clause to that main clause. The semicolon leaves a dependent clause on its left; but repeats the contrast already introduced by although; and many are does not fit the remaining words restaurants now serve.",
+      "contentSha256": "3c0980fcd39db782cc3fe6d855df452906641f883db8af07fccb8c5d49c0c75d"
     },
     {
       "id": "sentence-structure-038",
@@ -4347,8 +4347,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": ", but there",
-      "rationale": "', but there' joins the two statements with a coordinating conjunction and marks contrast.",
-      "contentSha256": "a9a7230292f85695e7c05143482228fa7a88dd20cc46c0586691090bce8b8374"
+      "rationale": "“, but there” joins two independent statements and makes their contrast clear: the commission welcomed the report, but newspapers gave it little coverage. Although is grammatical, but it makes the second statement dependent and does not meet the requested coordination goal. There alone creates a run-on; a semicolon cannot introduce the dependent although-clause here.",
+      "contentSha256": "0461982bc112d35e948b3a35d99b227990c87547b5a18f44381cc853509a081c"
     },
     {
       "id": "sentence-structure-transfer-01",
@@ -4968,8 +4968,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "was",
-      "rationale": "The subject is the singular 'One,' so 'was' agrees.",
-      "contentSha256": "5b266584d924ba970aefa8a5eaeb0dfc523260b51d64de2b7a2b6db867e6da39"
+      "rationale": "The subject is One, not the plural noun jars inside the of-phrase. Read the core sentence: “One ... was the source of the contamination.” Was agrees with that singular subject; were, have been, and are are plural forms.",
+      "contentSha256": "9a1be3d3b17ac706f9b619adbf5e04eadb6c9b28e55e6c3705bbe4300d0e080e"
     },
     {
       "id": "verbs-008",
@@ -5679,8 +5679,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "stationary",
-      "rationale": "'Stationary' means not moving, which fits staying still.",
-      "contentSha256": "85d355f4d03381a8cb8d681dc2b837ff4e01bae7ea7aab7162581ec8d32c8b38"
+      "rationale": "Stationary means not moving, which is required during the exposure. Stationery means writing materials; the other choices do not supply the adjective needed after remain.",
+      "contentSha256": "f2991233f612cea5ac0fa93148f009bbf1d411bd61eb502dfdd1979117fbb1a6"
     },
     {
       "id": "word-choice-019",
@@ -6614,9 +6614,9 @@
       "source": "src/content/exams/exam-1.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "important",
-      "rationale": "'Important' fits the blacksmith's central role supplying tools and repairs.",
-      "contentSha256": "e68df070f3840f84d499e215f6ec1835acf14cf0c3bb75f89d3ba985292b492b"
+      "verifiedAnswer": "NO CHANGE",
+      "rationale": "'Important' fits the blacksmith's central role supplying tools and repairs. 'Inconsequential' means unimportant, contradicting that role; 'neat' and 'okay' are vague and too casual for the passage's measured tone.",
+      "contentSha256": "252ad7af4f5f1e5ae1831524ada9c1d2635c2e6104ac6462ce71df9ddf527469"
     },
     {
       "id": "exam-1:32",
@@ -6624,8 +6624,8 @@
       "status": "reviewed",
       "answerIndex": 2,
       "verifiedAnswer": "weapons",
-      "rationale": "The objects of into are the nouns tools, hinges, horseshoes, and weapons.",
-      "contentSha256": "a7ccaf2ad07be5c2aa356d0412910b9ed2d8215b566ba83dde94aaf8854ac94d"
+      "rationale": "The objects of into are the nouns tools, hinges, horseshoes, and weapons. 'Weapons' keeps the same direct naming of products. 'Making weapons' and 'the making of weapons' name an activity rather than a product; 'to fashion weapons' is an infinitive rather than another object in that list.",
+      "contentSha256": "fd880c63dc4d9e7e5bab44ffbb313016662ea7dbb60602f78907eb976109e8f7"
     },
     {
       "id": "exam-1:33",
@@ -6633,17 +6633,17 @@
       "status": "reviewed",
       "answerIndex": 0,
       "verifiedAnswer": "Cold iron is far too stiff to bend or stretch.",
-      "rationale": "The next sentence says only the heated metal could be shaped, so a line explaining that cold iron is too stiff to work logically connects the heating to the shaping.",
-      "contentSha256": "63e2b4b6c00edf8d5157c0c6a7ba0964bba2558cf3750c2b5945a25c255c27dc"
+      "rationale": "The next sentence says only the heated metal could be shaped, so a line explaining that cold iron is too stiff to work logically connects the heating to the shaping. The facts about the forge's material, training, and iron's history do not link those two ideas.",
+      "contentSha256": "c6fcccd0e31774ace7596a8d74f0ed08573e548dc25ed41a8494bd3fde750967"
     },
     {
       "id": "exam-1:34",
       "source": "src/content/exams/exam-1.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "Therefore,",
-      "rationale": "The iron must be shaped only while hot, so the smith works quickly as a result, making \"Therefore\" correct.",
-      "contentSha256": "8f2207c54208129bc3cdb9ac44b48faa865ccae04edb4b98b47c499335591fde"
+      "verifiedAnswer": "NO CHANGE",
+      "rationale": "The iron must be shaped only while hot, so the smith works quickly as a result, making \"Therefore\" correct. \"However\" and \"Instead\" signal contrast, and \"For example\" signals illustration, none matching the cause-effect link.",
+      "contentSha256": "325a8885e4a744037a72a565d597f8e46ea9434f2545dc240c9e396a087d45e9"
     },
     {
       "id": "exam-1:35",
@@ -6651,17 +6651,17 @@
       "status": "reviewed",
       "answerIndex": 2,
       "verifiedAnswer": "Shaping metal required more than strength.",
-      "rationale": "The paragraph explains the knowledge and judgment smithing demands, so \"required more than strength\" frames that idea.",
-      "contentSha256": "a1068cd7676ab9121201953ad9bcd66b21375a411084150a826f8d646d146ba3"
+      "rationale": "The paragraph explains the knowledge and judgment smithing demands, so \"required more than strength\" frames that idea. The facts about iron's abundance, town demographics, and smoke do not set up the paragraph's focus on skill.",
+      "contentSha256": "7bbadc3d6f5648f3af86b5115f48943813d73c2fa10c69a37f5f0477ae593cac"
     },
     {
       "id": "exam-1:36",
       "source": "src/content/exams/exam-1.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "since",
-      "rationale": "Reading the iron's color matters because overheated or cool metal fails, a causal link, so \"since\" is correct.",
-      "contentSha256": "8ac6cddc44d685027a4b38dc3d356a3e4388fe88dcb8ef92f650db539a48e673"
+      "verifiedAnswer": "NO CHANGE",
+      "rationale": "Reading the iron's color matters because overheated or cool metal fails, a causal link, so \"since\" is correct. \"Although\" signals contrast, \"unless\" sets a condition, and \"before\" signals time, none fitting the reason given.",
+      "contentSha256": "e0d0f9eca02542e743c3d3c1117a5d6906b3e292a5c6f7a03998d39bbed407f3"
     },
     {
       "id": "exam-1:37",
@@ -6669,8 +6669,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "practice and patient observation",
-      "rationale": "\"Practice and patient observation\" is a two-item compound object, so no comma precedes \"and,\" making this version correct.",
-      "contentSha256": "c9093d7ed9862d796caa6d963cf38c0865686df1e1ed2fd3d73c8822852bf1f5"
+      "rationale": "\"Practice and patient observation\" is a two-item compound object, so no comma precedes \"and,\" making this version correct. A comma or semicolon before \"and\" wrongly separates the pair of nouns.",
+      "contentSha256": "1ff9e1fc631dc79e26263c5b1df657658e92212adca3fe00bb40df937d4840b6"
     },
     {
       "id": "exam-1:38",
@@ -6678,8 +6678,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "bent pot, and a",
-      "rationale": "The sentence lists three parallel arrivals: a farmer with a plow, a cook with a pot, and a traveler with a horse.",
-      "contentSha256": "a73337f2f6308653a8598bd69d4537775dbfbfff5a75a864f4475500c02f72ea"
+      "rationale": "The sentence lists three parallel arrivals: a farmer with a plow, a cook with a pot, and a traveler with a horse. The keyed choice keeps the list punctuation consistent. Do not separate the adjective bent from its noun pot. A semicolon cannot separate this incomplete list item. A serial comma is not a universal requirement; the other offered choices contain specific punctuation errors.",
+      "contentSha256": "a6588c09b262a6faea4e77797125809bc4992f9a00c804761ffa166f6d880a90"
     },
     {
       "id": "exam-1:39",
@@ -6687,8 +6687,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "Each one needed the smith's particular skill.",
-      "rationale": "The next sentence says the smith repaired them all, so a line noting each customer needed his skill bridges the list and the resolution.",
-      "contentSha256": "84273261e1d6c444b45f157c52430bc4e98b0874d50e5364ec736c4e0662c6b1"
+      "rationale": "The next sentence says the smith repaired them all, so a line noting each customer needed his skill bridges the list and the resolution. The horse, plow, and pot facts are tangents that break the flow into the following sentence.",
+      "contentSha256": "e805e04cc24fe5d66c6423b280adef303a949f965beec2ebdf0231b1026210aa"
     },
     {
       "id": "exam-1:40",
@@ -6696,8 +6696,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "but the craft of the blacksmith has not disappeared",
-      "rationale": "\"Has not disappeared\" states the idea cleanly.",
-      "contentSha256": "620e1c49123b40fd02c3bf01972837b82b5f3b51db03dbec9e514d9fa4e3eea5"
+      "rationale": "\"Has not disappeared\" states the idea cleanly. \"Disappeared completely,\" \"vanished without a trace,\" and \"remains and has not gone away\" each pile on redundant phrasing.",
+      "contentSha256": "75c31ff60c4840fa91aa7124113fef2abbe325d60d432627f4589f7987fa8ca3"
     },
     {
       "id": "exam-1:41",
@@ -7066,16 +7066,16 @@
       "answerIndex": 3,
       "verifiedAnswer": "Today, however, it has become a tool for serious science.",
       "rationale": "Only \"Today, however, it has become a tool for serious science\" forecasts the essay's focus on origami's scientific uses; the others stay with hobby or trivia.",
-      "contentSha256": "d1f90f006216ef0a5e54310cccf2c5512991fc04cd2d657b9d5b0a24abd75858"
+      "contentSha256": "c7e09763a19ae79decfabe8d73818d105cafc085a019fe4da0904a23c0c89cec"
     },
     {
       "id": "exam-2:32",
       "source": "src/content/exams/exam-2.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "lies in",
+      "verifiedAnswer": "NO CHANGE",
       "rationale": "\"Lies in\" is the correct idiom for where something is located; \"lays\" needs a direct object.",
-      "contentSha256": "9e97975d8d9a547fe7fe0f469f164118bdd8a948b5db5c23efce520b1ded8e0d"
+      "contentSha256": "749822a7bc99acee34c2b55e409beed2cded28048a6cba81a0f4c124a51a03f3"
     },
     {
       "id": "exam-2:33",
@@ -7083,8 +7083,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "have",
-      "rationale": "'Engineers have used' supplies a plural present-perfect verb.",
-      "contentSha256": "db27517b40b6516cf82fa4227ae85d230a75a6eddc044c471d78d37df6dcc109"
+      "rationale": "'Engineers have used' supplies a plural present-perfect verb. 'Has' and 'is having' do not agree with plural engineers; 'having used' lacks a finite main verb. A past-perfect 'had used' would be possible with a past reference point and is not an offered distractor.",
+      "contentSha256": "67d52b20a4d604862c4c6f4bbedc2a29e6cb047069125926ff4d8bfbd3b1ff20"
     },
     {
       "id": "exam-2:34",
@@ -7093,7 +7093,7 @@
       "answerIndex": 3,
       "verifiedAnswer": "Inside a rocket, every inch of cargo space is scarce and costly.",
       "rationale": "Only \"Inside a rocket, every inch of cargo space is scarce and costly\" explains why compact folding matters in a rocket by stressing scarce cargo space; the others drift off the point.",
-      "contentSha256": "4a50be97e20b1f9a877267608027bc0d9507a71b503a985309176ec9290bdee3"
+      "contentSha256": "ca62df2c37cfa9ef15c351deeaaec047a3c04e347be9707425f5a85186d3fb9f"
     },
     {
       "id": "exam-2:35",
@@ -7101,8 +7101,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "so that",
-      "rationale": "'So that a single tug spreads it open again' introduces the result the folding pattern permits.",
-      "contentSha256": "3149927359519cb225c6bb7514a2d2cd44e45d6e7869a24d7d767553bd2a36ef"
+      "rationale": "'So that a single tug spreads it open again' introduces the result the folding pattern permits. 'So as' and 'in order' would require to plus an infinitive; 'such as' introduces an example, not this result clause. The grammatical result construction 'such that' is not an offered error.",
+      "contentSha256": "d3b344c474c8306002b8355e53c77035f74f9371429ec6fca698ac33e30ec6a4"
     },
     {
       "id": "exam-2:36",
@@ -7111,7 +7111,7 @@
       "answerIndex": 0,
       "verifiedAnswer": "hand and refolded just as easily.",
       "rationale": "\"Opened... and refolded\" is a compound verb needing no comma; \", and refolded just as easily\" wrongly separates the pair, and \"and refolding just as easily\" breaks parallelism.",
-      "contentSha256": "f411d52163e42c28a4472c04e9ff24a0bf1f3fcebeef7203dd79007ed4044381"
+      "contentSha256": "9ff559a58d4dba384c1d49144fffbe0803e6c083538e6563b6c615c4c050476e"
     },
     {
       "id": "exam-2:37",
@@ -7119,8 +7119,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "expanding them.",
-      "rationale": "'Expanding them' gives surgeons' next action and uses a plural object for stents.",
-      "contentSha256": "966116b0d5b6c47a0b76ad65679a9eb69534db4448464a1c3ce4bb497919cdba"
+      "rationale": "'Expanding them' gives surgeons' next action and uses a plural object for stents. 'Expanding it' and 'its expansion' use singular reference; 'they is expanded' mismatches plural they with singular is. 'Before they are expanded' would be grammatical and is not offered.",
+      "contentSha256": "bb1aa3fe15832cff93d2d6f64fad69ba9d012efc662d2a53d39edba287a8b9e8"
     },
     {
       "id": "exam-2:38",
@@ -7129,16 +7129,16 @@
       "answerIndex": 1,
       "verifiedAnswer": "Beyond space and medicine,",
       "rationale": "The paragraph adds robotics to space and medicine, so \"Beyond space and medicine\" links them; the others signal contrast, cause, or timing.",
-      "contentSha256": "90b2432f85696001225e3a6abd29e2265c5653e72ae7669fbb92d5568cb5e874"
+      "contentSha256": "f63a36bc0ee3fec0d52e3dd9dfb3228bc25116136cd3291437c2ef81e62d62de"
     },
     {
       "id": "exam-2:39",
       "source": "src/content/exams/exam-2.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "pop",
-      "rationale": "The plural antecedent machines governs the coordinated verbs fold and pop.",
-      "contentSha256": "a0141b4197b744a53985dd988a04f0a6bffe447eeb77aa21b1ea8701478e7f64"
+      "verifiedAnswer": "NO CHANGE",
+      "rationale": "The plural antecedent machines governs the coordinated verbs fold and pop. 'Pops' and 'has popped' are singular; 'popping' cannot complete the finite verb series. 'Spring into working shapes' would also be idiomatic and is not used as an incorrect alternative.",
+      "contentSha256": "903b835aedf5950da1180b7be461244e226c1035764159cdbe28afb01b1cc066"
     },
     {
       "id": "exam-2:40",
@@ -7146,8 +7146,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "informs",
-      "rationale": "\"Informs laboratories\" means it shapes their work; \"tells,\" \"speaks,\" and \"talks\" do not fit this sense.",
-      "contentSha256": "738a4f81c551756be2bb88a17e50fb5f8952068e673bed50a30aa2dfb4c548ce"
+      "rationale": "Informs research means guides or shapes what researchers do. Tells, speaks, and talks refer to speaking and do not fit the object research in this sentence.",
+      "contentSha256": "0fe6f80a8baea6a986731af63bcb5d4553e8d66c2752c18e66ab9ea80c0ddb9a"
     },
     {
       "id": "exam-2:41",
@@ -7245,8 +7245,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "; nevertheless,",
-      "rationale": "Each trial has its own subject and finite verb.",
-      "contentSha256": "3ac48801536086d7ed4c867ace70c2d5f60a6c1d1b2826a9bf84672a29fa0dac"
+      "rationale": "“The coating was advertised as waterproof” and “the fabric became soaked during the trial” are complete clauses. Nevertheless marks the contrast between the promise and the result. Use a semicolon before nevertheless and a comma after it; the other choices leave a comma splice or a run-on, or put the semicolon between the second subject and its verb.",
+      "contentSha256": "c422f4e79ef484eb03b111c06d4b6783bb065ae13b3f527a65721587f5a3ecd1"
     },
     {
       "id": "english-skill-sentence-structure-conjunctive-adverb-02",
@@ -7263,8 +7263,8 @@
       "status": "reviewed",
       "answerIndex": 2,
       "verifiedAnswer": "describes",
-      "rationale": "Series is the singular main subject, and describes supplies its finite main verb.",
-      "contentSha256": "38c312b60fcfe1a946cc2dc9c9e22c5c6d83cbaec1f04f41641268454969dfba"
+      "rationale": "Read the main sentence without the words between commas: “The series of reports describes a fault in the comparison procedure.” Series is the singular subject, and describes is its main verb. The which-clause adds information about the reports; released and passed belong inside that clause. Describing and having described cannot serve as the main verb on their own, and that describe starts another dependent clause.",
+      "contentSha256": "3c33967edb8eda2301a549872ce1d01209abd857cc502e3e5b21b9bbf1ff33d6"
     },
     {
       "id": "english-skill-sentence-structure-nested-main-clause-02",
@@ -7388,9 +7388,9 @@
       "source": "src/content/english-skill-questions.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "; and",
-      "rationale": "The semicolons separate three photograph-and-object pairings, each of which contains an internal comma.",
-      "contentSha256": "d0c9b6422aa80ca3cd48d6b2903869c536a89e76b9b34e51ff4d5a69e225dbac"
+      "verifiedAnswer": "NO CHANGE",
+      "rationale": "Each pairing contains a comma introducing a description of its object. Semicolons mark the larger boundaries between the three pairings, so the last one begins “; and a farmhouse.” A comma alone blurs those boundaries; a colon would make the last pairing an explanation of the preceding one, and but introduces an unsupported contrast.",
+      "contentSha256": "55b06221c97000f6b8a9f019e34a0c932709ff5ff8ad2ed704479c5876ae07c0"
     },
     {
       "id": "english-skill-punctuation-complex-elaboration-01",
@@ -7416,8 +7416,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "lain",
-      "rationale": "The sign rested somewhere and placed no object.",
-      "contentSha256": "13f0829a9f26b49edde9c94e63878028fbbfd2329be6cd8f3c8d60e231aed0b4"
+      "rationale": "The sign had rested in storage before the museum displayed it. The past participle of lie, meaning rest in a place, is lain: “it had lain in storage.” Laid is used when someone places an object; lay is the simple past of lie; lying would need had been.",
+      "contentSha256": "f75a24b5cea3d89bb91b9f62e7bc7bddba67eb6aea27d0eb889f56d72688cac3"
     },
     {
       "id": "english-skill-verbs-inverted-subject-01",
@@ -7434,8 +7434,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "are",
-      "rationale": "The inverted subject is two fragments, so are agrees.",
-      "contentSha256": "bf43e5fb650b9c8ee49ce88400a1c8b2d66d458cb406d07324630839fc05b46a"
+      "rationale": "The subject comes after the verb: “two fragments ... are beneath the photographs.” Fragments is plural, so are agrees. The singular site is inside the opening location phrase and does not control the verb.",
+      "contentSha256": "c51a447c5cc7c97cf262d08d47183c95f040d715e02938499986c8305a933537"
     },
     {
       "id": "english-skill-verbs-paragraph-time-01",
@@ -7470,8 +7470,8 @@
       "status": "reviewed",
       "answerIndex": 2,
       "verifiedAnswer": "who",
-      "rationale": "The restorer preserved the surface, so who is the subject of preserved.",
-      "contentSha256": "473164c1cc9bf9af633f4a31e3dedece7ced22b01b34e975f46aae8652fa1a17"
+      "rationale": "The main sentence is “The restorer will supervise the next project.” Inside the added relative clause, who is the subject of preserved: “she preserved the original surface.” The words the committee believes report a belief about that action; they do not make who an object. Whom is an object form, whose is possessive, and her cannot introduce this relative clause.",
+      "contentSha256": "ed54719b89d273ddbaac319f4a5b77809d2e716574ee2650ada9184a2b866b8c"
     },
     {
       "id": "english-skill-pronouns-embedded-relative-02",
@@ -8674,8 +8674,8 @@
         "activityAnswer": "While makes its clause dependent",
         "activityRationale": "Instruments is the subject and recorded is a finite verb. While makes that complete subject-verb clause dependent on another statement.",
         "activitySha256": "732c71b94b296b778f8055c3b8cb7ec6c3314cd9356758bc25d4d66944a6d4f2",
-        "teachingSha256": "60af84ce19ccf442732aee9cd21ad4381ec140d775d87231f9673bb71992c1c9",
-        "workedSha256": "276f4225f1c8d030ba45361aa59e1be6425ad1cdc0bc6e9c3abf4cf51ea59ae8",
+        "teachingSha256": "ab7170acc0be39273cf87df1024d640ac23a9dcd7b0aa555744395e89c0e0226",
+        "workedSha256": "ceb9921c59071e18722757792e2bda0e18dda411627bb3feb0833f45755ce5b1",
         "questionIds": [
           "daily-clauses-1",
           "daily-clauses-2",
@@ -8691,7 +8691,7 @@
         "activityAnswer": "was displayed",
         "activityRationale": "Bowl needs a finite main verb. Was displayed supplies it; displaying is nonfinite and which was displayed creates another modifying clause. The participle decorated does not supply the main predicate.",
         "activitySha256": "8c3805c6c158d6fd91f3c1a612638838e34a4386cf6d8c9cf1abf6920dcbf2de",
-        "teachingSha256": "c450b23b5352d80911a4386f24f9ae47d0b1af8e3470a05982c7d94f552600d4",
+        "teachingSha256": "9cada31f0b9b27ac2bae3d293485b48c6e0f7c03576b49b0fe795913ae3ef855",
         "workedSha256": "716d09b2492e3c7f1b982c9b64d1341bdb5e1e224939948223ce134d8f9ca834",
         "questionIds": [
           "sentence-structure-005",
@@ -8715,7 +8715,7 @@
         "activityAnswer": ",",
         "activityRationale": "Unless introduces a dependent condition. A comma attaches it to the main clause beginning the engineer; a semicolon cannot follow the dependent clause, and a period strands it as a fragment.",
         "activitySha256": "7c9cd01d46abac5222202283cc1e45c421c1fedd1aae3f06e1acad08ca18063d",
-        "teachingSha256": "5fc130528b763b17d3364f1a4c58fd5f709e6bad030251940a38073fb2363831",
+        "teachingSha256": "389c5b2f97fa4e8987548a2fdff9f9286caf364cca2e43f3deac8442a4ee22d3",
         "workedSha256": "4d3b99d462369da8cea1e92f5b5cae3f0476264374d06e2f0867ab023d96eb68",
         "questionIds": [
           "sentence-structure-001",
@@ -8736,7 +8736,7 @@
         "activityAnswer": ", so",
         "activityRationale": "Each side has its own subject and verb. Comma plus so supplies a correct coordinating boundary and the result relationship; however between commas still creates a splice, and so, puts the comma on the wrong side.",
         "activitySha256": "28db254cdb7750f4e5cd81fbc00889e2a354d8f0a7dcd27cd4284c5058b17ae8",
-        "teachingSha256": "3d2b5ee9195d0f2f89fed8f66d4267b0bda4f44b00104f08fe4bcf346c9278d0",
+        "teachingSha256": "c76826846ed2348823e92669fc3b92bd9ed321ebe57c2366470748cc23d2ade9",
         "workedSha256": "92e998a723589c43d670d040a4073a0fca7ffc70bb1ceff7d0e1fbaaa41bcbeb",
         "questionIds": [
           "sentence-structure-002",
@@ -8767,7 +8767,7 @@
         "activityAnswer": ";",
         "activityRationale": "The survey was short and every response required a detailed explanation are independent clauses. However is a conjunctive adverb, so a semicolon or period belongs before it; neither a comma alone nor and however supplies the offered standard construction.",
         "activitySha256": "57d88789a82706d7b52fff11d4a5a7c19543471de7b5bbc64dbd09f8da005d07",
-        "teachingSha256": "3d2b5ee9195d0f2f89fed8f66d4267b0bda4f44b00104f08fe4bcf346c9278d0",
+        "teachingSha256": "c76826846ed2348823e92669fc3b92bd9ed321ebe57c2366470748cc23d2ade9",
         "workedSha256": "f022c7cb8e34308e10fa6d54daa267115f342fbdc92fbc565af57bd1382941b5",
         "questionIds": [
           "sentence-structure-014",
@@ -8779,10 +8779,10 @@
         "topic": "sentence-structure",
         "skill": "nested-main-clause",
         "activityAnswer": "specify",
-        "activityRationale": "Guidelines is the main plural subject; specify supplies its finite main verb. Revised, objected and must complete belong to embedded clauses. Specifying lacks a finite verb, and that specify starts yet another subordinate clause.",
-        "activitySha256": "26d8da7a3067bf817427ea04269fd6db221c89194b718db79f8aab46e0871a25",
-        "teachingSha256": "38a8545c4833ab66e9a41d62cea77e5de85b448037f3d86fee1e5c4397e03acb",
-        "workedSha256": "54c25e36d1c00f1e23567efb3e8e241fde54514d0174f83eac2016d202d20a1d",
+        "activityRationale": "The core sentence is “The guidelines specify the minimum training.” Guidelines is plural, so specify supplies its main verb. The which-clause adds information about the revision, and each volunteer must complete describes training. Neither supplies a main verb for guidelines. Specifying cannot complete the main sentence alone; that specify begins another dependent clause.",
+        "activitySha256": "7c4537b7c07593aa1a5cd25e0897b711b5ba66a127b6f1d9338d1296c9c6cae7",
+        "teachingSha256": "b4f73de5513e946d4fce2ef5a12df757b6787b536cbb8ee91ea86cf8d2dec6b7",
+        "workedSha256": "4d24611de81e609bf919735682715d8cbdc0d98e9c767c1121e0108fabe3a770",
         "questionIds": [
           "sentence-structure-transfer-01",
           "english-skill-sentence-structure-nested-main-clause-01",
@@ -9279,10 +9279,10 @@
         "topic": "pronouns",
         "skill": "embedded-relative",
         "activityAnswer": "who",
-        "activityRationale": "The pilot reported the fault, so who is the subject of reported. The investigators believe is embedded reporting language and does not turn that subject into an object. Whose is possessive.",
-        "activitySha256": "936288638f6075125e9b8fadd014b47538f41b23a0009adc61f0dc076010ad73",
-        "teachingSha256": "fc9714b4d06e1cac54c3b31747c9467fd0d1c113a806723cfba4652f8d572b5a",
-        "workedSha256": "4584db56cfeb43497036e2ba7afa6e320457c0c8c7231bbfc367ddc33a33c17f",
+        "activityRationale": "The main sentence is “The pilot will testify tomorrow.” Within the relative clause, who is the subject of reported: “she reported the fault.” The investigators believe reports that claim; it does not turn who into an object. Whom is an object form, and whose is possessive.",
+        "activitySha256": "467d681af801673b0681f112db9410d125b3e4540181961d6b3f0f8b68164c1e",
+        "teachingSha256": "c4ef4522dc49b2b70a9592a4326980f4ddac56224a54875137abee375c0eeb3b",
+        "workedSha256": "cc4c30c575cd43b652e9edebff8abdcf563256c6809af78df11a7eb41e2ed6bb",
         "questionIds": [
           "pronouns-transfer-01",
           "english-skill-pronouns-embedded-relative-01",
@@ -9295,7 +9295,7 @@
         "activityAnswer": "its",
         "activityRationale": "The telescope, not the nearby students, owns the cover. Its supplies singular possession; their points to a plural owner, and it’s is a contraction.",
         "activitySha256": "d69e48151fd2ac50afd235bcd5b7ba3ab8545a52363dbdd3989aa180d28ba619",
-        "teachingSha256": "d491b3dff49ec379fe10779064cabd4cebf93c247013c6feaf4bfc2446c38934",
+        "teachingSha256": "2d24a513363c5f46a6036092699acb5888476c8555b18fac2136c152775d32ac",
         "workedSha256": "6851eadb3008130134efb9b3d9fc866c82d3b330fadc6654536038e3cf4b7299",
         "questionIds": [
           "pronouns-transfer-02",
@@ -9387,7 +9387,7 @@
         "skill": "timing-scope",
         "activityAnswer": "Readers may view the letters only after orientation.",
         "activityRationale": "Only after orientation restricts the condition or time of viewing. Only readers restricts who may view; only the letters restricts what they may view. Neither expresses the stated timing requirement.",
-        "activitySha256": "04445e20a89952d9600043184e2b03fc12bdfefee95dabbb6b70b1befe19c748",
+        "activitySha256": "8366a9b78aef81ff2b6d93896b278096f9c3e9306a1688d797db0c243b8054f7",
         "teachingSha256": "38e1cc97b06767f5aa5ca877889ba4f2fe56f2599b76a719889b8036463ce618",
         "workedSha256": "8a0ab86c8eb98d92f17d64ac14a5aabe64201532c9de281f9defc5dd01365940",
         "questionIds": [
@@ -10244,7 +10244,7 @@
         "skill": "reference-and-meaning",
         "activityAnswer": "allusion; infers",
         "activityRationale": "An allusion is an indirect reference; the reader infers the connection from evidence. An illusion is a false impression, imply describes the act of suggesting, and elude means escape.",
-        "activitySha256": "e9a228714dae58070068eed18ba8c4e0d65165ff3ba1bb0397bc9510def0b6d1",
+        "activitySha256": "0731d003f83cd5f2a66c84bc79fcc907c1433204fcb446f14a309eab9bc7d7fe",
         "teachingSha256": "b868afec8b474bfc7084d546a0104be7fbb3c3c3f4b89a3159b80d49b2d92740",
         "workedSha256": "17901a2e634ad1bdfd378f2cf32f9974c94af66b42352752e407c848b6a95633",
         "questionIds": [
@@ -10466,5 +10466,54 @@
       "sourceSection": 6,
       "workedExamplesAdded": 2
     }
+  },
+  "naturalnessReview": {
+    "date": "2026-10-14",
+    "scope": "Readability of the keyed sentence, clear clause boundaries, natural modifiers and pronoun references, and explanations that show the core sentence.",
+    "changedQuestionProofs": [
+      "logical-placement-031",
+      "logical-placement-032",
+      "misc-grammar-026",
+      "modifiers-029",
+      "parallel-structure-011",
+      "pronouns-027",
+      "pronouns-transfer-01",
+      "sentence-structure-022",
+      "sentence-structure-028",
+      "sentence-structure-034",
+      "sentence-structure-036",
+      "sentence-structure-037",
+      "sentence-structure-038",
+      "verbs-007",
+      "word-choice-018",
+      "exam-1:31",
+      "exam-1:32",
+      "exam-1:33",
+      "exam-1:34",
+      "exam-1:35",
+      "exam-1:36",
+      "exam-1:37",
+      "exam-1:38",
+      "exam-1:39",
+      "exam-1:40",
+      "exam-2:31",
+      "exam-2:32",
+      "exam-2:33",
+      "exam-2:34",
+      "exam-2:35",
+      "exam-2:36",
+      "exam-2:37",
+      "exam-2:38",
+      "exam-2:39",
+      "exam-2:40",
+      "english-skill-sentence-structure-conjunctive-adverb-01",
+      "english-skill-sentence-structure-nested-main-clause-01",
+      "english-skill-punctuation-complex-list-02",
+      "english-skill-verbs-lay-lie-01",
+      "english-skill-verbs-inverted-subject-02",
+      "english-skill-pronouns-embedded-relative-01"
+    ],
+    "grading": "All answer positions retained. Two English keyed phrases were reworded at the same correct position without changing their grammatical purpose.",
+    "evidence": "docs/english-reading-naturalness-2026-10-14.json"
   }
 }

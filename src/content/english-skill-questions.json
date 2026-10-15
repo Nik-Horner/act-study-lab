@@ -4,7 +4,7 @@
     "topic": "sentence-structure",
     "category": "CSE",
     "difficulty": "medium",
-    "stem": "The first trial used untreated cloth[[, nevertheless,]] the second used a water-resistant coating.",
+    "stem": "The coating was advertised as waterproof[[, nevertheless,]] the fabric became soaked during the trial.",
     "questionText": "Which choice correctly punctuates the contrast between independent clauses?",
     "choices": [
       "NO CHANGE",
@@ -13,7 +13,7 @@
       ", nevertheless;"
     ],
     "answer": 1,
-    "explanation": "Each trial has its own subject and finite verb. Nevertheless cannot coordinate those clauses with commas alone; a semicolon before it and a comma after it form the correct boundary. The other choices leave a splice or fuse the clauses."
+    "explanation": "“The coating was advertised as waterproof” and “the fabric became soaked during the trial” are complete clauses. Nevertheless marks the contrast between the promise and the result. Use a semicolon before nevertheless and a comma after it; the other choices leave a comma splice or a run-on, or put the semicolon between the second subject and its verb."
   },
   {
     "id": "english-skill-sentence-structure-conjunctive-adverb-02",
@@ -36,8 +36,8 @@
     "topic": "sentence-structure",
     "category": "CSE",
     "difficulty": "hard",
-    "stem": "The series of reports that the laboratory issued after its two instruments, both of which had passed inspection, began disagreeing [[describing]] a fault in the comparison procedure.",
-    "questionText": "Which choice supplies the main predicate for series?",
+    "stem": "The series of reports, which the laboratory released after both instruments passed inspection, [[describing]] a fault in the comparison procedure.",
+    "questionText": "Which choice supplies the main verb for the subject series?",
     "choices": [
       "NO CHANGE",
       "that describe",
@@ -45,7 +45,7 @@
       "having described"
     ],
     "answer": 2,
-    "explanation": "Series is the singular main subject, and describes supplies its finite main verb. Issued, had passed, and began belong to embedded clauses. The other choices supply nonfinite or dependent material instead of the missing predicate."
+    "explanation": "Read the main sentence without the words between commas: “The series of reports describes a fault in the comparison procedure.” Series is the singular subject, and describes is its main verb. The which-clause adds information about the reports; released and passed belong inside that clause. Describing and having described cannot serve as the main verb on their own, and that describe starts another dependent clause."
   },
   {
     "id": "english-skill-sentence-structure-nested-main-clause-02",
@@ -260,8 +260,8 @@
     "topic": "punctuation",
     "category": "CSE",
     "difficulty": "hard",
-    "stem": "The exhibit pairs a photograph with a personal object: a street scene, with the photographer’s notebook; a harbor view, with a sailor’s compass[[; and]] a farmhouse, with the resident’s handwritten recipe.",
-    "questionText": "Which choice correctly separates the final complete list item?",
+    "stem": "The exhibit pairs each photograph with an object from its setting: a street scene with a notebook, open to a sketch of the corner; a harbor view with a compass, still in its leather case[[; and]] a farmhouse with a recipe, written on the back of an envelope.",
+    "questionText": "Which choice most clearly separates the last photograph-and-object pairing from the others?",
     "choices": [
       "NO CHANGE",
       ", and",
@@ -269,7 +269,7 @@
       "; but"
     ],
     "answer": 0,
-    "explanation": "The semicolons separate three photograph-and-object pairings, each of which contains an internal comma. The final semicolon correctly precedes and; it is a list boundary rather than a conjunction between independent clauses. The alternatives blur the pairings or introduce an explanation or contrast the list does not need."
+    "explanation": "Each pairing contains a comma introducing a description of its object. Semicolons mark the larger boundaries between the three pairings, so the last one begins “; and a farmhouse.” A comma alone blurs those boundaries; a colon would make the last pairing an explanation of the preceding one, and but introduces an unsupported contrast."
   },
   {
     "id": "english-skill-punctuation-complex-elaboration-01",
@@ -308,7 +308,7 @@
     "topic": "verbs",
     "category": "CSE",
     "difficulty": "medium",
-    "stem": "After the repairs, the old sign had [[laid]] in storage for nearly a decade before the museum displayed it again.",
+    "stem": "By the time the museum displayed the repaired sign, it had [[laid]] in storage for nearly a decade.",
     "questionText": "Which form means had rested in a place?",
     "choices": [
       "NO CHANGE",
@@ -317,7 +317,7 @@
       "lain"
     ],
     "answer": 3,
-    "explanation": "The sign rested somewhere and placed no object. The participle of lie meaning rest is lain, so had lain is correct. Laid belongs to the transitive verb lay; lay is the simple past of lie; lying would require had been."
+    "explanation": "The sign had rested in storage before the museum displayed it. The past participle of lie, meaning rest in a place, is lain: “it had lain in storage.” Laid is used when someone places an object; lay is the simple past of lie; lying would need had been."
   },
   {
     "id": "english-skill-verbs-inverted-subject-01",
@@ -340,7 +340,7 @@
     "topic": "verbs",
     "category": "CSE",
     "difficulty": "hard",
-    "stem": "Beside the model, beneath a row of photographs that show the original site, [[is]] two fragments of the foundation.",
+    "stem": "Beneath the photographs of the original site [[is]] two fragments of the foundation.",
     "questionText": "Which choice makes the main verb agree with its actual subject?",
     "choices": [
       "NO CHANGE",
@@ -349,7 +349,7 @@
       "are"
     ],
     "answer": 3,
-    "explanation": "The inverted subject is two fragments, so are agrees. Model, row, site and foundation are singular nouns in other phrases or clauses, but none is the main subject. Being alone would not supply a finite main verb."
+    "explanation": "The subject comes after the verb: “two fragments ... are beneath the photographs.” Fragments is plural, so are agrees. The singular site is inside the opening location phrase and does not control the verb."
   },
   {
     "id": "english-skill-verbs-paragraph-time-01",
@@ -404,7 +404,7 @@
     "topic": "pronouns",
     "category": "CSE",
     "difficulty": "hard",
-    "stem": "The restorer [[whom]] the committee believes preserved the original surface will supervise the next project.",
+    "stem": "The restorer, [[whom]] the committee believes preserved the original surface, will supervise the next project.",
     "questionText": "Which choice gives the relative pronoun the role required inside its own clause?",
     "choices": [
       "NO CHANGE",
@@ -413,7 +413,7 @@
       "her"
     ],
     "answer": 2,
-    "explanation": "The restorer preserved the surface, so who is the subject of preserved. The committee believes is reporting language inside the larger construction; it does not make the pronoun an object. Whose is possessive, and her cannot introduce this relative clause."
+    "explanation": "The main sentence is “The restorer will supervise the next project.” Inside the added relative clause, who is the subject of preserved: “she preserved the original surface.” The words the committee believes report a belief about that action; they do not make who an object. Whom is an object form, whose is possessive, and her cannot introduce this relative clause."
   },
   {
     "id": "english-skill-pronouns-embedded-relative-02",

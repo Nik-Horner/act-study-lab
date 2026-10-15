@@ -84,7 +84,7 @@
       "source": "math-questions.json",
       "key": "\\(x \\le  4\\) and \\(x \\ne  -2\\)",
       "answerIndex": 2,
-      "sourceSha256": "b722c8d95d6ed3a543b8868fd1229885a27d14428e22e1cfbbcb2f41aedc2c7d",
+      "sourceSha256": "5e481e264eca1dcb1950919f14df2ef1042490983b1acdc72a945a668930dbd2",
       "solution": "Radicand12−3x≥0 gives x≤4; denominator excludes−2, while endpoint4 allowed."
     },
     {
@@ -116,7 +116,7 @@
       "source": "math-questions.json",
       "key": "3",
       "answerIndex": 2,
-      "sourceSha256": "17d05a4453d3f847da8ecc04917f2e29a64ad293775f6374d23c2e317d914348",
+      "sourceSha256": "ef98db294d8e4ed1ed499486d1a4b091cd9a6166a98fab767e2b2d70a7a09941",
       "solution": "Original logs require x>1; product x²−1=8 gives only x3."
     },
     {
@@ -340,7 +340,7 @@
       "source": "math-questions.json",
       "key": "20",
       "answerIndex": 2,
-      "sourceSha256": "ab6495e46c7d8dcfef7ba006d07f8555787b3240429126d45618f87327e4b3f3",
+      "sourceSha256": "5e8a075fab23ac85937d1553e2b329ac8ee36cf38cbef81a07793e460c6efdff",
       "solution": "72·1000/3600=20m/s."
     },
     {
@@ -618,9 +618,9 @@
     {
       "id": "math-exam-1-q26",
       "source": "math-questions.json",
-      "key": "\\(-3\\) < x < 2",
+      "key": "\\(-3\\) < \\(x<2\\)",
       "answerIndex": 2,
-      "sourceSha256": "9f3f25c7e8f017cb06b57373e4bb5c9e6df8ff62d9803ffc695acc946e0950df",
+      "sourceSha256": "7e8e6693d8b073d78dfc50b782efd5cc3c811fbb65cb4bc48ba2229b87ed3991",
       "solution": "Productnegativebetweenzeros−3,2, bothexcluded."
     },
     {
@@ -652,7 +652,7 @@
       "source": "math-questions.json",
       "key": "\\(\\frac{5}{16}\\)",
       "answerIndex": 1,
-      "sourceSha256": "f12486dc10d7323a6a90e0e4efd59d6491651c7d16d0a2c270d582cecee57c9e",
+      "sourceSha256": "1ba3bdb70f30b26b1e9591b3e841ad073c4c96baaaac77b60959bb826adb8946",
       "solution": "Coinsequences≥3heads:4+1out16,5/16."
     },
     {
@@ -724,7 +724,7 @@
       "source": "math-questions.json",
       "key": "100",
       "answerIndex": 2,
-      "sourceSha256": "703a93f5680cde927a1ed49fbfbd760ab56c16db2cb4952c233079d02bd50e7a",
+      "sourceSha256": "3332a628904a2515bd4ce2687a327ddb37e4634ea0dee6a50d09e55d996824aa",
       "solution": "Growthratio8across3hours→b2, P0400/4=100."
     },
     {
@@ -842,9 +842,9 @@
     {
       "id": "math-algebra-d15",
       "source": "math-questions.json",
-      "key": "x > 2",
+      "key": "\\(x>2\\)",
       "answerIndex": 0,
-      "sourceSha256": "a95fcec7c10462c86fc16c03dbe7e5db0fe2e757b02072620bb718c049a816a7",
+      "sourceSha256": "263621d82af57f2e5f02647c0535c3cba5bf106d45235b9c54279168fe02c44c",
       "solution": "Positive numerator requires denominator x−2>0; exclude2."
     },
     {
@@ -866,9 +866,9 @@
     {
       "id": "math-algebra-d18",
       "source": "math-questions.json",
-      "key": "1 < x < 7",
+      "key": "\\(1<x<7\\)",
       "answerIndex": 3,
-      "sourceSha256": "cccc2d122782b15ab63d23f59767c3dbe02efc612b688f245a59e35449d48d7b",
+      "sourceSha256": "db80b14c27a28f2fd344e75e46772e5130eeaa140e195ab4d76c5490945b3de4",
       "solution": "Distance from4 less than3 gives strict interval(1,7)."
     },
     {
@@ -924,7 +924,7 @@
       "source": "math-questions.json",
       "key": "\\(x \\le  -4\\) or \\(x \\ge  2\\)",
       "answerIndex": 1,
-      "sourceSha256": "82ce8d0303082f99095936d1df9f838b842f16e6dd090ba9fc9c528dac903bf6",
+      "sourceSha256": "8ec45f13e55f66c08ffdb8fd8253ae0c47078aa75ce230ab85680a4c130183ad",
       "solution": "Zeros−4,2; upward quadratic nonnegative outside with both zeros included."
     },
     {
@@ -980,7 +980,7 @@
       "source": "math-questions.json",
       "key": "1 < \\(x \\le  4\\)",
       "answerIndex": 3,
-      "sourceSha256": "2073dd3b3712d41a45f20a5aed18f56eac9c615ea40e784ede4caaa19aab5952",
+      "sourceSha256": "da58d353ba2b802fd7fc6bce02b8d8e66ec3795833abcbc87382ee2bc8a21139",
       "solution": "Add1 to all parts, divide3:1<x≤4, preserving endpoints."
     },
     {
@@ -1004,7 +1004,7 @@
       "source": "math-questions.json",
       "key": "13",
       "answerIndex": 2,
-      "sourceSha256": "fa3e88c8aacf7608ed8155acf969921887a92eb50defd0ef9d75a3a045418409",
+      "sourceSha256": "b485affb4cb33ae685e7ec9482d24365d08d25bc71544bc42b33e91ac448b0d5",
       "solution": "Magnitude√(25+144)=13, not taxicab17."
     },
     {
@@ -1036,7 +1036,7 @@
       "source": "math-questions.json",
       "key": "12",
       "answerIndex": 1,
-      "sourceSha256": "eed85c3363ef3326d0d16647ecb50cd07eb69bc0fc604e493ac4d6d047fe65bd",
+      "sourceSha256": "168162a478466dac64c2e981bf25bb2fc84a6d0f5bdd0273e8581f7713cedd41",
       "solution": "Convergent geometric total6/(1−1/2)=12, |r|<1."
     },
     {
@@ -1228,7 +1228,7 @@
       "source": "math-questions.json",
       "key": "18 kilometers",
       "answerIndex": 1,
-      "sourceSha256": "0fd9ea081c4bd7b6282c1bcf891925d55d0826ae6f8ec8fa42036d0980793c20",
+      "sourceSha256": "66053199116a2513d2683f37e538dcf298ea09e5b9856421de82a0c04ac52035",
       "solution": "Scale7.2·2.5=18km."
     },
     {
@@ -1316,7 +1316,7 @@
       "source": "math-questions.json",
       "key": "7.5",
       "answerIndex": 3,
-      "sourceSha256": "06784100b8d658fa5e6b6c6efb237fadb8387daaf54d4d6e12c1b6953df85067",
+      "sourceSha256": "478e5ff67093674f73a4189fb384e09ab0e5cd1fd61b99ec97980171956adaf8",
       "solution": "5 hours at12liters/minute gives5·60·12=3600liters. At480liters/hour,the replacement pump takes7.5hours. Original keytext7.5and answerindex3preserved."
     },
     {
@@ -1340,7 +1340,7 @@
       "source": "math-questions.json",
       "key": "30",
       "answerIndex": 2,
-      "sourceSha256": "3a72b1e1c42d9b7dd8128594491006982edd5eddff328ad107a8d8b488f8bae7",
+      "sourceSha256": "8892f5f14a12f5c8906640db99a61e7ee8b149c23b1a8bbfe0ffb73000e0024e",
       "solution": "Trainfronttravels450+150=600m at20m/s→30seconds."
     },
     {
@@ -1410,9 +1410,9 @@
     {
       "id": "math-modeling-d8",
       "source": "math-questions.json",
-      "key": "x > 12",
+      "key": "\\(x>12\\)",
       "answerIndex": 3,
-      "sourceSha256": "426e997b971c4381cadfd1ab56b9996c709002c3a1ee91a8eadf29b8c9551928",
+      "sourceSha256": "34424756c29744f944b16f2ced38e88c091c6860bff0d519742fa2149e929c25",
       "solution": "30+x<18+2x givesx>12, excludesbreak-even."
     },
     {
@@ -1716,7 +1716,7 @@
       "source": "math-questions.json",
       "key": "4",
       "answerIndex": 0,
-      "sourceSha256": "295d19a77177d10d151db8959e93f548960fad8b9bac4aa7d9438553e4150e73",
+      "sourceSha256": "6cfa4e601d601310a9fc0aa1192e590286a3b33cc5c1e0b3bd5a943933b644e9",
       "solution": "Boundary2usesthesecondpiece, square4."
     },
     {
@@ -1762,9 +1762,9 @@
     {
       "id": "math-exam-2-q20",
       "source": "math-questions.json",
-      "key": "40 km/h",
+      "key": "\\(\\frac{40 \\text{km}}{h}\\)",
       "answerIndex": 1,
-      "sourceSha256": "fe2088c4e1a1b80b8a13a69d395f649642f0c5eb6e60e63c36323d0a507c4ab6",
+      "sourceSha256": "7115ca69e12437c14f364f22d5a8fc54856f9f55010efafdb7e5a344946130e6",
       "solution": "Total60km over1+.5hours gives40km/h."
     },
     {
@@ -1772,7 +1772,7 @@
       "source": "math-questions.json",
       "key": "11",
       "answerIndex": 2,
-      "sourceSha256": "a8f4a52fb9b9ba57681f54056adc29bf7cb72a816522f9f34a6424b99e7e5ce2",
+      "sourceSha256": "394899f01db045941ac3adc234916f7818c8c0f65a7ceb47bcab016ed8a639e0",
       "solution": "Det2·4−(−3)·1=11."
     },
     {
@@ -1858,9 +1858,9 @@
     {
       "id": "math-exam-2-q32",
       "source": "math-questions.json",
-      "key": "k > 2",
+      "key": "\\(k>2\\)",
       "answerIndex": 0,
-      "sourceSha256": "755bb8ba5b58c350aaded2fb1f849399f38387c63a38ae5fe12fb1b09c90be57",
+      "sourceSha256": "f56ff4646197cc5667e89c14b7b20ec935681495b30ab8e345a5b7fa6c6f080a",
       "solution": "Discriminant16−8k<0 iff k>2, equalityhasrealroot."
     },
     {
@@ -1900,7 +1900,7 @@
       "source": "math-questions.json",
       "key": "\\(\\frac{5\\sqrt2}{2}\\)",
       "answerIndex": 1,
-      "sourceSha256": "d91013d8b2a5ff46756df763dd5f01e45b1100fc9a6c47f5efc92b3bf7b84781",
+      "sourceSha256": "1acb39cb8887412181df3b844b4c07a937716b23678e12dbd57034e8ecb90a85",
       "solution": "Magnitudequotient5/√2=5√2/2."
     },
     {
@@ -1972,7 +1972,7 @@
       "source": "math-extra-questions.json",
       "key": "1",
       "answerIndex": 0,
-      "sourceSha256": "f4a34b758e2765aecfaaa404806f41a824904d016a1a0d3ce46cce6c63fa0ed2",
+      "sourceSha256": "ebf70425ca7eeeead043d08ab1c8a19bb6f70b6483626b73b650635399af3625",
       "solution": "Input−2 meets first piece,2(−2)+5=1, not second-piece3."
     },
     {
@@ -1994,9 +1994,9 @@
     {
       "id": "math-functions-d10",
       "source": "math-extra-questions.json",
-      "key": "x > 2 and \\(x \\ne  5\\)",
+      "key": "\\(x>2\\) and \\(x \\ne  5\\)",
       "answerIndex": 2,
-      "sourceSha256": "b8145baa84322ea0e97a4dbd567f1bf55cb8236f54400a929e93206ebbf8ff60",
+      "sourceSha256": "cd18c9cf2b0173ecb2f9f26e47795e9bdbc5499153913abad7f5f6b19f383dd5",
       "solution": "Log requires x>2 and denominator separately excludes5."
     },
     {
@@ -2066,9 +2066,9 @@
     {
       "id": "math-functions-d19",
       "source": "math-extra-questions.json",
-      "key": "2 < x < 4",
+      "key": "\\(2<x<4\\)",
       "answerIndex": 1,
-      "sourceSha256": "b653e1f79be988fea248b85dd60b246a1a0acd58f23d6525e416cca30d0914e0",
+      "sourceSha256": "d7d2c76ea16df123cccaa0e2fcbf20df3f9f1736f7fe02f3ae33a01e95fc63cc",
       "solution": "Factor(x−2)(x−4), negative only between2 and4, strict endpoints."
     },
     {
@@ -2092,7 +2092,7 @@
       "source": "math-extra-questions.json",
       "key": "\\(3x^{4} - 2x^{2} + 7\\)",
       "answerIndex": 3,
-      "sourceSha256": "9659f14d983e5dc7863bd0e0e0a3721e6b9aad54365bb18400f1e64e82663bf9",
+      "sourceSha256": "747f473b4acfa84d9b3bdcfc6ce3ee61335f917bf47bc784aee5ec9431bd7c82",
       "solution": "Only final polynomial contains solely even powers; x³−x odd, other mixtures neither."
     },
     {
@@ -2148,7 +2148,7 @@
       "source": "math-extra-questions.json",
       "key": "\\(x \\ge  1\\) and \\(x \\ne  10\\)",
       "answerIndex": 0,
-      "sourceSha256": "4912fb7755c1727db28538f66d22a859bb6ae3dc3aa29689fc5f70ab843bcf3e",
+      "sourceSha256": "adf2bf6ccc273689eadf8fdb17140ac4629755d95b4cbeaad5d9c56e88863d62",
       "solution": "Inner requires x≥1; outer excludes √(x−1)=3, hence x10."
     },
     {
@@ -2188,7 +2188,7 @@
       "source": "math-extra-questions.json",
       "key": "2:3",
       "answerIndex": 0,
-      "sourceSha256": "393341a5d5b86d564957e8d0b10a44846d5023c4c9c63ec4ab8abd9913b57595",
+      "sourceSha256": "db87e5e511ce2e75b4ace21d631bb185d0d2dcd0b694bf6cb5305333e5060026",
       "solution": "Volume ratio8:27 implies cube-root length ratio2:3."
     },
     {
@@ -2380,7 +2380,7 @@
       "source": "math-extra-questions.json",
       "key": "7",
       "answerIndex": 3,
-      "sourceSha256": "3eb16a2fd951385dea6b682a2fde657dbd1575c821ac5eefab43a6b6176930ed",
+      "sourceSha256": "a07f87d815e1d50bda7d0706b2465f7efb56ae6113a5dfc2a766aa8a492ca6e8",
       "solution": "Triangle inequality5<x<13 gives integers6..12, count7."
     },
     {
@@ -2636,7 +2636,7 @@
       "source": "math-extra-questions.json",
       "key": "0.7",
       "answerIndex": 0,
-      "sourceSha256": "fce754a7dbc8cbdb2ac6d747d58d4c10fbbbf23cc68c216aa3e43e7878f3a679",
+      "sourceSha256": "ed94282fc338876ca05ad7e5e47ae373bd182a7471cc402005210de722ed87f1",
       "solution": "Inclusive union.5+.4−.2=.7."
     },
     {
@@ -2812,7 +2812,7 @@
       "source": "math-method-questions.json",
       "key": "8",
       "answerIndex": 1,
-      "sourceSha256": "d8e1ad6cf03bbbd350a1a12d3c5ada7b7fbf4c3f8f357150618e777d736a1154",
+      "sourceSha256": "49d535de77d598e5f7a043c984f407455906bd859897dc9b779da81342aec044",
       "solution": "D=k²−64=0, positivek8; doublecheck2(x+2)²."
     },
     {
@@ -2828,7 +2828,7 @@
       "source": "math-method-questions.json",
       "key": "\\(x<-2\\text{ or }x\\ge3\\)",
       "answerIndex": 3,
-      "sourceSha256": "3a7fd0760657552325bc2f076cf4d3edb1c5b8933f06565a68b15f8d7a719485",
+      "sourceSha256": "3084907d2762efb5b88a7b4ca2911b4063900cce31ef01b5bcbb08979d9a4245",
       "solution": "Signchart(x−3)/(x+2)≥0: x<−2orx≥3; poleexcluded."
     },
     {
@@ -2836,7 +2836,7 @@
       "source": "math-method-questions.json",
       "key": "(3, −7)",
       "answerIndex": 2,
-      "sourceSha256": "c7fda438cb91b2940c84c1e5afa2e0deba3befcd1f1b97487f5fc025b55ec17e",
+      "sourceSha256": "45ae1b4b2523ead1a79a21376ce1f7e0d60de822cd93a8a527345d0b2b60133f",
       "solution": "Vertex2(x−3)²−7→(3,−7)."
     },
     {
@@ -2844,7 +2844,7 @@
       "source": "math-method-questions.json",
       "key": "\\(\\frac{17}{7}\\)",
       "answerIndex": 0,
-      "sourceSha256": "3b767b42e58c3f415000822c0fbfabdb4ca9cf7e00f2cc5cd3d39fdd388afd14",
+      "sourceSha256": "091a4a24d56da62014e56181b213a74e601e2efb51db0772bdbce87e200046f8",
       "solution": "Originalx>2;ratio(2x−1)/(x−2)=9 givesx17/7."
     },
     {
@@ -2852,7 +2852,7 @@
       "source": "math-method-questions.json",
       "key": "\\(-4+2\\sqrt3\\)",
       "answerIndex": 3,
-      "sourceSha256": "635c6764b1eddf75731a2d57add10a53ded4c2d4c1f3a6b865fe4ddf738dcb7c",
+      "sourceSha256": "fddf5f3e4ed04c6cf6d0c31f20ec004444ad71d8bc8adb075b36f84a587ae765",
       "solution": "Inversecandidates−4±2√3, originaldomainselectspositivebranch."
     },
     {
@@ -2860,7 +2860,7 @@
       "source": "math-method-questions.json",
       "key": "3",
       "answerIndex": 1,
-      "sourceSha256": "a1a68020bd6806f47c490927d5cfb8e729a50f245e0557f22a58859680aa4440",
+      "sourceSha256": "70a542162425f2da84b7c5c966ae4f063b5b606f8de360601f33123173350fb9",
       "solution": "Inversevariationproducts10·3=2·15, constant30."
     },
     {
@@ -2868,7 +2868,7 @@
       "source": "math-method-questions.json",
       "key": "Center (3,−4), radius 5",
       "answerIndex": 1,
-      "sourceSha256": "8afa53c74ae7278a7a4a9145aef83213c0aca550f9fa715cebdbc8071a6b82d2",
+      "sourceSha256": "b765fdf026eb87aea87662eded0437e5e0d458a5d22c475f3189a5078cd31814",
       "solution": "Completetwosquarescenter(3,−4),r5;substituteaxispointsoncircle."
     },
     {
@@ -2876,7 +2876,7 @@
       "source": "math-method-questions.json",
       "key": "(−1,1)",
       "answerIndex": 3,
-      "sourceSha256": "c390a1082452b8aecbd9280495e05f3b7c2dd3117886441e489bddf5434ea056",
+      "sourceSha256": "3b58c329f1ea4a9f911b8f91811f5d0c3e724de993762dd41889c123c5d39506",
       "solution": "Subtractcenter(1,−2), rotate displacement(3,2)to(−2,3), addcenter→(−1,1)."
     },
     {
@@ -2884,7 +2884,7 @@
       "source": "math-method-questions.json",
       "key": "\\(90\\pi\\)",
       "answerIndex": 2,
-      "sourceSha256": "eb9efd8cc837412d12123c909615806769ba3776d4e5641f21000f8f428cd858",
+      "sourceSha256": "aa53224a3a639db516352910f03d2136f273d0ca68af4ecadb452ca585ad37d4",
       "solution": "Cone slant13, totalareaπ·5·13+25π=90π."
     },
     {
@@ -2892,7 +2892,7 @@
       "source": "math-method-questions.json",
       "key": "72",
       "answerIndex": 0,
-      "sourceSha256": "bb00b98134301d8e2eb1a576800e01e5bcc9b2c2e79b69a2b94fa2d3ced89674",
+      "sourceSha256": "77a0c6ec5df05cce453670055dfc772aae219023162318025da5b3dca9da714c",
       "solution": "Boxfacestotal2(6+12+18)=72."
     },
     {
@@ -2900,7 +2900,7 @@
       "source": "math-method-questions.json",
       "key": "\\(-\\frac{\\sqrt3}2\\)",
       "answerIndex": 3,
-      "sourceSha256": "894b9c29992c9523cd21bb1ee146fdc4be3c43e13102c698487e589988eb8786",
+      "sourceSha256": "09093314e9c062b1f4b6fdc3ecc8c89b974811b5f33df2249012f7daf1b758f3",
       "solution": "Unitcircle5π/3QIV gives sine−√3/2."
     },
     {
@@ -2908,7 +2908,7 @@
       "source": "math-method-questions.json",
       "key": "\\(7/25\\)",
       "answerIndex": 1,
-      "sourceSha256": "2cb4ecf403b2a15853ddfda32fca29945b443bcac7a51a1b35d437c621c9f8d3",
+      "sourceSha256": "880c40c4dddf40b975ff3e17af0cab1e4b03690480eb2aca9afa65215acecb2d",
       "solution": "1−2(3/5)²=7/25, QIIdoesnotchangesquare."
     },
     {
@@ -2916,7 +2916,7 @@
       "source": "math-method-questions.json",
       "key": "\\(3\\pi\\)",
       "answerIndex": 2,
-      "sourceSha256": "5db253038f266e5b5659eb27a6babe43e39d3fb9f3b765f2ada31cccd4307302",
+      "sourceSha256": "187302f32f61a7f4d6ae2de220eba17273659eba4a406110b12b84da398dc365",
       "solution": "Sin2x=√3/2 yieldsxπ/6,π/3,7π/6,4π/3sum3π."
     },
     {
@@ -2924,15 +2924,15 @@
       "source": "math-method-questions.json",
       "key": "\\(\\sqrt{93}\\)",
       "answerIndex": 0,
-      "sourceSha256": "4101d318e5c45e1a2b58c6df1a62a15863568ac421320eeed637f6e384acd2c9",
+      "sourceSha256": "7e91a9bcdc274e245ca8c894abbf1691d528e4bb71da2ff4a51555b6005dcd23",
       "solution": "Cosinerule16+49−56cos120=93, length√93."
     },
     {
       "id": "math-statistics-probability-m1",
       "source": "math-method-questions.json",
-      "key": "5/9",
+      "key": "\\(\\frac{5}{9}\\)",
       "answerIndex": 2,
-      "sourceSha256": "070027aa18ba178376747fb73339c47282c1ca688004cbc11934f1c3997ac240",
+      "sourceSha256": "ec837ae5da79e0cfdc1d5f41e367fac8d0894a931f5048613dedefbc9d3ab358",
       "solution": "Conditioncolumn18peoplewith10matches→5/9."
     },
     {
@@ -2940,7 +2940,7 @@
       "source": "math-method-questions.json",
       "key": "30",
       "answerIndex": 3,
-      "sourceSha256": "b08512c19984b5e90e0ce5ab1d2eb44240f647759a7201e60e6cd6e7d6ad7deb",
+      "sourceSha256": "eda2e82603ce58dbea6161669e0b81cd069f8049c9485df83febd519c2bc8d87",
       "solution": "LEVEL5lettersrepeatL2,E2→5!/(2!2!)=30;enumerationchecks."
     },
     {
@@ -2948,7 +2948,7 @@
       "source": "math-method-questions.json",
       "key": "9",
       "answerIndex": 0,
-      "sourceSha256": "65359ebc409accb6d4c9362725c48f50e73c8d7b63108da58259ceab085a3caa",
+      "sourceSha256": "8aa24a84a6d9c1e40d48e4fab9aa6f9d08e3559aede8685b953a148f0b1a695a",
       "solution": "Population2,2,8,8hasSD3, multiplying−3gives9;meanoffsetdoesnotmatter."
     },
     {
@@ -2956,7 +2956,7 @@
       "source": "math-method-questions.json",
       "key": "−$0.60",
       "answerIndex": 1,
-      "sourceSha256": "77b07b1c700244050d00c9aff23c36a3ebb07654c4256d83b699cb6c2ae7447e",
+      "sourceSha256": "09135228e4227a53507e44faab972f4e1b25b44c571beb138de0c2b3ce38ea36",
       "solution": "Payout12withp.2lessfee3→12(.2)−3=−.6dollars."
     },
     {
@@ -2964,7 +2964,7 @@
       "source": "math-method-questions.json",
       "key": "−2",
       "answerIndex": 3,
-      "sourceSha256": "899d44b1c499954f6a1cf81e6bdd586b3cddbcdce5cf7fec44069e97e31cd477",
+      "sourceSha256": "24ade6160ecb81124d989809b415cabcdd2afb3efbb452a0764b8de4f91e3f13",
       "solution": "Unknowninverseentry−2makesfullmatrixproductidentity."
     },
     {
@@ -2972,7 +2972,7 @@
       "source": "math-method-questions.json",
       "key": "\\(\\sqrt{37}\\)",
       "answerIndex": 1,
-      "sourceSha256": "6a4bb14e90ca5f30ed64c777aeb6819e4467cf95053388e1cc5f540af0b689d5",
+      "sourceSha256": "a014e1b521a932dee3d297de093e3075e38f3a0f73727c6a66576624c45737a0",
       "solution": "2u−v=(1,−6), magnitude√37."
     },
     {
@@ -2980,7 +2980,7 @@
       "source": "math-method-questions.json",
       "key": "282",
       "answerIndex": 0,
-      "sourceSha256": "366d86585ffba724e86f518928ea72dc754ca7d9318295db03a59cd208ab928d",
+      "sourceSha256": "bf43eb4f831c70973f03cc9c521494720763d681b3a5f890f556474d3d52970e",
       "solution": "Arithmetic12term7+3i, sum12(7+40)/2=282."
     },
     {
@@ -2988,7 +2988,7 @@
       "source": "math-method-questions.json",
       "key": "252",
       "answerIndex": 2,
-      "sourceSha256": "80161eed313821f0f93b66db429ed0ab5c11812432274ffdf829c6ec6f443edc",
+      "sourceSha256": "17d18340399830d6891365da639cb6b641bfe171ae4bc59232bd550dc2dc4af4",
       "solution": "Primefactors84=2²37,126=2·3²7,LCM2²3²7=252."
     },
     {
@@ -2996,23 +2996,23 @@
       "source": "math-method-questions.json",
       "key": "$200",
       "answerIndex": 1,
-      "sourceSha256": "768466c7077b075ecfc068f24193a37b850ff887012fcabe77f62b470e37edad",
+      "sourceSha256": "91f6e6affd92e3c7013c3119ea2cfa8385b08fa671bb38acd94120c9ccd0ad24",
       "solution": "Originalx·1.2·.85=204→x200."
     },
     {
       "id": "math-essential-skills-m2",
       "source": "math-method-questions.json",
-      "key": "300/7 mph",
+      "key": "\\(\\frac{300}{7}\\) mph",
       "answerIndex": 3,
-      "sourceSha256": "b3d0cc1f4412318f81d641d3983018820b110dba3c734a23b6d09cf6b2066522",
+      "sourceSha256": "83729bb50dcdacf7b97c5a955df473715d3997710983e0703fabf890faddeafc",
       "solution": "Distance150/time(2+1.5)=300/7mph."
     },
     {
       "id": "math-essential-skills-m3",
       "source": "math-method-questions.json",
-      "key": "27/5",
+      "key": "\\(\\frac{27}{5}\\)",
       "answerIndex": 1,
-      "sourceSha256": "c6ea5801823685def77804010453dc4afc8e828a0761e429a6d83a5332f6d6e1",
+      "sourceSha256": "9aa7271af04ba8e3e7dcf063c9d9e57df7d9d8710490782b97eada677a5cbc0f",
       "solution": "First3hfill1/4job;remaining3/4atcombined5/36job/hneed27/5h."
     },
     {
@@ -3020,7 +3020,7 @@
       "source": "math-method-questions.json",
       "key": "8",
       "answerIndex": 3,
-      "sourceSha256": "5a67d57a15309f71ef5e95a8159a2561e97bdef7ef139538f5eae3bd0a787e50",
+      "sourceSha256": "981214328a2158690bb00ba6508d8cc1c7be3a2c59a8e9f69392b4df0c9ddeb7",
       "solution": "Salt3litersunchanged;3/(12+w)=.15→w8."
     },
     {
@@ -3028,7 +3028,7 @@
       "source": "math-method-questions.json",
       "key": "\\(1000(1.025)^8\\)",
       "answerIndex": 2,
-      "sourceSha256": "4453c19d3fa62cc3e86c8d2ecfae441569252a32206eb091131022250de2f4fc",
+      "sourceSha256": "d604b23ad498de99b8fdc008b73a9fd7753647c73a9cdb8fc819256e9b898078",
       "solution": "Quarterrate.1/4=.025eightperiods→1000(1.025)^8."
     },
     {
@@ -3036,7 +3036,7 @@
       "source": "math-method-questions.json",
       "key": "44",
       "answerIndex": 1,
-      "sourceSha256": "d53af44f864855cae5bd6267eeb6e73080606ad73b7042cf36c30a169fbd5fe1",
+      "sourceSha256": "0525d7997d92f6bd52366ef9723cfe37bf9255585fddb7eab9497d10d128713c",
       "solution": "Unrestrictedvertex9outside[0,6], increasingto6, output44."
     },
     {
@@ -3044,7 +3044,7 @@
       "source": "math-method-questions.json",
       "key": "13",
       "answerIndex": 2,
-      "sourceSha256": "a644896396a50f864a89c25c9c261b3e738f89266f7dd7e491d23aed19dc76cf",
+      "sourceSha256": "43e2f279a3cee28b42ea091bd95922f5c0faca872657fdd4c3df16c94bde212e",
       "solution": "Strictplancomparisonthresholdn>12, firstwhole13."
     },
     {
@@ -3052,7 +3052,7 @@
       "source": "math-method-questions.json",
       "key": "−2",
       "answerIndex": 0,
-      "sourceSha256": "008992f0275da2e03abdd06a117feb491d8b04c56ccb810a73b51790b4995b61",
+      "sourceSha256": "2f765c6edcde2ee44a0c5b96b6dfeae09a294585a5be777f5ffb0788d27fe653",
       "solution": "Observedminusmodeledresiduals−1,−1,0, sum−2."
     },
     {
@@ -3060,7 +3060,7 @@
       "source": "math-method-questions.json",
       "key": "28",
       "answerIndex": 2,
-      "sourceSha256": "c7c51a78a25a16477c8b8cb7fd2c618d6befcbd4479d5db70ee513ec85a0e475",
+      "sourceSha256": "c01a86d1843f7d01314b605ed3fd4d945d629bd26eaf935067faa2ffbaf3b8df",
       "solution": "Positivefactorpairsof12:(1,12),(2,6),(3,4), sumsofroots13,8,7sum28."
     },
     {
@@ -3068,15 +3068,15 @@
       "source": "math-method-questions.json",
       "key": "\\(-3\\le x<-2\\)",
       "answerIndex": 3,
-      "sourceSha256": "372534711201acac3bad61f16acc2dfecb4d121458ab6d860029efea6a5098ff",
+      "sourceSha256": "27abb67d0caaf443fa1499e7b6d80cbb2dc48f32d255b5be3bfeb0a3294566fe",
       "solution": "Cancelx−3withoriginalexclusions3,−2; signratio(x+3)/(x+2)nonpositiveon[−3,−2)."
     },
     {
       "id": "math-functions-m5",
       "source": "math-method-questions.json",
-      "key": "(5/2,2)",
+      "key": "\\(\\left(\\frac{5}{2},2\\right)\\)",
       "answerIndex": 3,
-      "sourceSha256": "aeb2674cabcaa5b0488cf588130c2c66b36709568c4920d8e6c64983107abc35",
+      "sourceSha256": "e3d048dbcaa1e363060ee500b6262e674128b45a3f77dccbbe0b000b0722cb40",
       "solution": "Zero-midpoint4andminimum−3→originalvertex(4,−3);solve2x−1=4andadd5→(5/2,2)."
     },
     {
@@ -3084,7 +3084,7 @@
       "source": "math-method-questions.json",
       "key": "3",
       "answerIndex": 1,
-      "sourceSha256": "36afb917697ffa7730329a00e249cbf9716daad24205e258cf100d6f2846ba4c",
+      "sourceSha256": "5a559611ab2b9cf010dd04c5ad89d9a31f3f214e0d9457a5a92b691ca743352f",
       "solution": "Recursionfroma0=1produces−1,−3,3withsecondinputs1,2,3."
     },
     {
@@ -3092,15 +3092,15 @@
       "source": "math-method-questions.json",
       "key": "160",
       "answerIndex": 1,
-      "sourceSha256": "aedb9b35ce0cf8cfcdb33dd8c35dade7093f74f5a7e17a396d20fae9409ee66e",
+      "sourceSha256": "5e55abf050acc35040789abaa8847e1860a682e93b913633117856a6dcfbfa38",
       "solution": "Chordhalf8, OM6byPythagoras, PM20, trianglearea16·20/2=160."
     },
     {
       "id": "math-geometry-m6",
       "source": "math-method-questions.json",
-      "key": "2/5",
+      "key": "\\(\\frac{2}{5}\\)",
       "answerIndex": 1,
-      "sourceSha256": "fa37de51b68b9ea4885e29abe035d1627e901c7ee059f234c9d2c8d648da5595",
+      "sourceSha256": "69500d6cd837f9a1b96e4f97dd898f6665d49485441c5a9664765549c4f9f8c4",
       "solution": "Righttrianglelegs12,9hyp15:area54,s18,r3,R7.5,ratio2/5."
     },
     {
@@ -3108,23 +3108,23 @@
       "source": "math-method-questions.json",
       "key": "\\(2\\pi/9\\)",
       "answerIndex": 2,
-      "sourceSha256": "30cc9f4d18df276742ab90ebc6cbffd88619ea9dddf0de5dc961bae187be213f",
+      "sourceSha256": "6d42ebabd78077815bcd4d223a722b601530ec0877503bb62187ae22a342213e",
       "solution": "Amplitude6midline2frequency3;cos3x=−1/2firstpositive3x2π/3→x2π/9."
     },
     {
       "id": "math-trigonometry-m6",
       "source": "math-method-questions.json",
-      "key": "17/9",
+      "key": "\\(\\frac{17}{9}\\)",
       "answerIndex": 3,
-      "sourceSha256": "9c2ba9d0d48db63bf869479e41888330a33a32bfa7263106bd6dfee98bb5615b",
+      "sourceSha256": "153fe7077595dbc93f5a3969f44909124151e94d2a62d2c2c19c686072550e00",
       "solution": "Squaredsumplussquareddifference=2;subtract1/9gives17/9."
     },
     {
       "id": "math-statistics-probability-m5",
       "source": "math-method-questions.json",
-      "key": "5/18",
+      "key": "\\(\\frac{5}{18}\\)",
       "answerIndex": 1,
-      "sourceSha256": "f23940fd4b4e615c16f022a5bab50e24b4d16d7bba7701b854736384ad1ad5df",
+      "sourceSha256": "f61a7407719dc7140d10e58bd24a3f6d713024104144d289a6b1d25dbd867c4b",
       "solution": "Meanrequiresfour2scores;9studentsyield10equal-scorepairsout36→5/18."
     },
     {
@@ -3132,7 +3132,7 @@
       "source": "math-method-questions.json",
       "key": "$0.00",
       "answerIndex": 1,
-      "sourceSha256": "4f6b693f2d28cc8505b92bfdf7242f1bb0d9bad36cd97ca786a310c3e71052f7",
+      "sourceSha256": "5ce3f9fa7dd821d56f53c8bbcd3a2118b632365691b30b0720b2cc12b8e1dc05",
       "solution": "Matchprobability4/10;expectedpayout6(.4)+1(.6)=3, fee3leaves0."
     },
     {
@@ -3140,7 +3140,7 @@
       "source": "math-method-questions.json",
       "key": "41",
       "answerIndex": 2,
-      "sourceSha256": "74bf91612b4d8c199b47b387c63a45f0def904955318a19edc383eb3d71edcbd",
+      "sourceSha256": "90e0b3e2b9f143593b3c44d0bd7f85518682be1dfd6a3d84a3a952f246833c7d",
       "solution": "Repeatedmatrixmultiplicationincrementsupperright1eachtime;37→39aftertwo, entriesum41."
     },
     {
@@ -3148,7 +3148,7 @@
       "source": "math-method-questions.json",
       "key": "No such positive integer exists",
       "answerIndex": 3,
-      "sourceSha256": "db3d36cbd14bb1f0404b559b29e450ff43132d2368019a82dbb35e7f34919519",
+      "sourceSha256": "6b5d485e486f98d472e0aedd02c9ee7d5d08c56e42adb7a31897866815003b59",
       "solution": "Prime2exponentinnmustbeevenfor12nandoddfor18n;impossibleforeverypositiveinteger."
     },
     {
@@ -3156,7 +3156,7 @@
       "source": "math-method-questions.json",
       "key": "50",
       "answerIndex": 2,
-      "sourceSha256": "b19ec5c450655c3a4400ff190f6326bc9b677f62f3a997de891edb9f66d28428",
+      "sourceSha256": "8830913333d742c2f4212e37a93ade192901c6d79f6f3e9dbf26379063c2a598",
       "solution": "Original2k,3kchangedratio(2k+12)/(3k−6)=4/3→k10,total50."
     },
     {
@@ -3164,7 +3164,7 @@
       "source": "math-method-questions.json",
       "key": "$792.00",
       "answerIndex": 2,
-      "sourceSha256": "6f5bdded1abdf7e163f32160e75c3a0f4da6a52613507a7eddb2fabc9e00f777",
+      "sourceSha256": "dca61d994bc849a52dfcf91a51743576cde59cc58f9cc47da08bd48b36a1c277",
       "solution": "Floor90m²/tile.09=1000, extra8%1080, packsceil1080/25=44,cost792."
     },
     {
@@ -3172,7 +3172,7 @@
       "source": "math-method-questions.json",
       "key": "$50",
       "answerIndex": 1,
-      "sourceSha256": "7702bd96ede7c5f8652bdb1c328fe3b59c608e4b9d6eb02f7acb90893c4fd19e",
+      "sourceSha256": "23fb88ba5d57f82da35f664a0858310e74a955a3b07b501e6b1e6c5f50db885d",
       "solution": "Weightedlimitbound51requiresfractionalintersection17/3;integerobjective≤50attained(6,5)."
     },
     {
@@ -3180,7 +3180,7 @@
       "source": "math-method-questions.json",
       "key": "5",
       "answerIndex": 2,
-      "sourceSha256": "71942da0b60fcd98ec73718a2d200544102d66819a17d016f68ca41f304e7bdd",
+      "sourceSha256": "a8726ba592e6f0ede0191d67a9578c06b776ff90009e10ffe42c06adc2099bf1",
       "solution": "Dividegrowthmodels, (12/11)^t>1.5→t4.6599...,firstwhole5;checkyears4and5."
     },
     {
@@ -3188,7 +3188,7 @@
       "source": "math-lessons.json",
       "key": "4",
       "answerIndex": 2,
-      "sourceSha256": "bc852930aaec2ff7a655a56b44bd35425b797eda700f3d338949567d7a6d9b22",
+      "sourceSha256": "2ccf8a9d676b22a1b9ac9495ea4b0e6e19ea8ecdb38a55459c32352d68b5ad8a",
       "solution": "(9+7)/4=4; substitute4x−7=9."
     },
     {
@@ -3196,7 +3196,7 @@
       "source": "math-lessons.json",
       "key": "1",
       "answerIndex": 3,
-      "sourceSha256": "a9d1352bf5fd5e89054a7e861efed6044435ace90dd90d3f0749a2e4a6df148a",
+      "sourceSha256": "912ffe0cd55edc43d1e9f4cf6e29e4311944e9ddb3b6febc41fea3c006002fd8",
       "solution": "Zeros1,−5, larger1."
     },
     {
@@ -3204,7 +3204,7 @@
       "source": "math-lessons.json",
       "key": "4",
       "answerIndex": 0,
-      "sourceSha256": "693ec239e06d2cc95ea0c49fef312f2db2e64843db85292cfcc10e461428728b",
+      "sourceSha256": "03db3f64346c778cd861b8299c2da9bc788edebb1c9d6118b0491095c9be60e4",
       "solution": "Discriminant16−4c=0→c4."
     },
     {
@@ -3212,15 +3212,15 @@
       "source": "math-extra-lessons.json",
       "key": "10",
       "answerIndex": 1,
-      "sourceSha256": "9b1627582b243d812d0d080f267b8652b1dc6b5426b2d452ea4f22283d2cb3ab",
+      "sourceSha256": "152020d499f89ab9517d23f00a566d839e1a2b55529b9253e73e806a8f5b52b5",
       "solution": "f2=4+6=10."
     },
     {
       "id": "check-math-functions-2",
       "source": "math-extra-lessons.json",
-      "key": "x ≠ 6",
+      "key": "\\(x\\ne 6\\)",
       "answerIndex": 2,
-      "sourceSha256": "e5639598d418ad858cc0f58728a25b7dd9a26e2dff6593432ec77b0d12f500fd",
+      "sourceSha256": "f4e535ff756c53550e0fd536eaebd9854fa45859688ce02715035034bf423baf",
       "solution": "Onlydenominatorzero6excluded; negativesotherwiseallowed."
     },
     {
@@ -3228,7 +3228,7 @@
       "source": "math-extra-lessons.json",
       "key": "4",
       "answerIndex": 1,
-      "sourceSha256": "028789e52b4b6d633f44330d951db770852c44d84f251efbfffc5327084960e4",
+      "sourceSha256": "97a6153688f6b9cc55a8af5c4d364efb2ca925473d24e57340ad5b48c154b9cd",
       "solution": "Candidates4,−2; originaldomain≥1selects4."
     },
     {
@@ -3236,23 +3236,23 @@
       "source": "math-extra-lessons.json",
       "key": "42 square units",
       "answerIndex": 0,
-      "sourceSha256": "6882ded1114d7a52023acd3a6584113be0ca95856715a529eb281fbea82deef7",
+      "sourceSha256": "55926e8ad2580fd8a94b99237454d37c47ea793913f830e834f466eec7de7695",
       "solution": "Triangle12·7/2=42."
     },
     {
       "id": "check-math-geometry-2",
       "source": "math-extra-lessons.json",
-      "key": "40°",
+      "key": "\\(40^\\circ\\)",
       "answerIndex": 1,
-      "sourceSha256": "ea9e1dcabffbf4f7de296543ee187532484682ea91fb0f0b72d988e0f2e6d976",
+      "sourceSha256": "7232d6b3a4e4cae9296c1c89d905b0dbe28a1a3e7b88d05bd13e4c9da3facfa0",
       "solution": "Sharedarc80°, inscribedangle40°."
     },
     {
       "id": "check-math-geometry-3",
       "source": "math-extra-lessons.json",
-      "key": "270π",
+      "key": "\\(270 \\pi\\)",
       "answerIndex": 2,
-      "sourceSha256": "451332eafa782af3c1be62261ec1e449231283efcdce44902139f9cad9b12748",
+      "sourceSha256": "36afeb1967f8dda474b0c979f7a3f761d76fc1b517fa2808667dad9b7b9bbd4b",
       "solution": "Lengthfactor3, volumefactor27, output270π."
     },
     {
@@ -3260,7 +3260,7 @@
       "source": "math-extra-lessons.json",
       "key": "\\(\\frac45\\)",
       "answerIndex": 3,
-      "sourceSha256": "ca56b48cdce9be56c77cf852036b5408ca00fb41cb641bde86c133738d6cbd03",
+      "sourceSha256": "9dd27aa192fda5779c7fabdd1f194ce1de58407ed27237562c332b8936a8da13",
       "solution": "Reference3,4,5, cosineadjacent4/5."
     },
     {
@@ -3268,15 +3268,15 @@
       "source": "math-extra-lessons.json",
       "key": "\\(\\frac\\pi2\\)",
       "answerIndex": 0,
-      "sourceSha256": "2661c18a0433858aab2374b1daa8b7875bff86590326995ab7b672acb17ed1a7",
+      "sourceSha256": "553d4e3f65608818c84bdad29f0630a48e90b64fcfe052d59d5e01d4af31c5db",
       "solution": "Leastperiod2π/4=π/2."
     },
     {
       "id": "check-math-trigonometry-3",
       "source": "math-extra-lessons.json",
-      "key": "7/25",
+      "key": "\\(\\frac{7}{25}\\)",
       "answerIndex": 3,
-      "sourceSha256": "b3318c64700c51221a6cd2da4d5d51d10459c488bb6b512bee0e958892df44db",
+      "sourceSha256": "0e67ec2bb29b8d5c027cf3853b5fbe5166bc92ea359b1156d0241903a507cffb",
       "solution": "Doublecosine1−2(−3/5)²=7/25."
     },
     {
@@ -3292,15 +3292,15 @@
       "source": "math-extra-lessons.json",
       "key": "15",
       "answerIndex": 2,
-      "sourceSha256": "6ec945edf2d70dfd492f666dc4248fc851a3102d28a5ca49315358afe4c86be7",
+      "sourceSha256": "23246a7b69ac386840d8d73df684caddc8b67833c9e33de16dfa1988989aebc1",
       "solution": "Unorderedpairs6·5/2=15."
     },
     {
       "id": "check-math-statistics-probability-3",
       "source": "math-extra-lessons.json",
-      "key": "7/10",
+      "key": "\\(\\frac{7}{10}\\)",
       "answerIndex": 1,
-      "sourceSha256": "feae0426e167dfe0b6414b9cae679be37f41b338a8511b7e665dea9e55bb9152",
+      "sourceSha256": "e7f58862c85ff6b9908db5d659300f599ac38828a9a1be520d18055668f05071",
       "solution": "Complementtwoblue1−(3/5)(2/4)=7/10."
     },
     {
@@ -3308,7 +3308,7 @@
       "source": "math-lessons.json",
       "key": "7 + i",
       "answerIndex": 1,
-      "sourceSha256": "2fe9bcd8377c689709e1c4c19bf3c7fd3150c48aaab17a3119a1af75263df042",
+      "sourceSha256": "c6dbd4e0be150e7d9a849ad1b6892cef512bfafae5a1ef317db37eadcdbac919",
       "solution": "Complexproduct6−2i+3i−i²=7+i."
     },
     {
@@ -3316,7 +3316,7 @@
       "source": "math-lessons.json",
       "key": "\\(\\begin{bmatrix}13 & 16\\\\-5 & -6\\end{bmatrix}\\)",
       "answerIndex": 2,
-      "sourceSha256": "ed26ad21f69a242da6a84284d8280c28603412a4efde72331fb8160019377348",
+      "sourceSha256": "123ba3945d28129aa1cf68005277fbcfab357da19a6cc5fa980d624b5f7c634f",
       "solution": "Row-columnmatrixproduct[[13,16],[-5,-6]], shape2by2."
     },
     {
@@ -3324,7 +3324,7 @@
       "source": "math-lessons.json",
       "key": "−4",
       "answerIndex": 3,
-      "sourceSha256": "d8b161d630cbc2108fd2a87a1a033cd43314c2012856fa9d19eba519e383622e",
+      "sourceSha256": "a9821918677644038c2641ebe488cb47e6bb8798af0be4b96e4eaf472825c9eb",
       "solution": "Square(1−i)to−2i, squareagain−4."
     },
     {
@@ -3332,7 +3332,7 @@
       "source": "math-lessons.json",
       "key": "$68",
       "answerIndex": 3,
-      "sourceSha256": "77f3efe95b8cc055cd80c2f9c272e620bea56b41e006bc6f12aafabfeea0ef3c",
+      "sourceSha256": "7d4cc6cdf527d6428464719572061a22fd666286ee5603f0576acfe685c69594",
       "solution": "Pay80(.85)=68."
     },
     {
@@ -3340,7 +3340,7 @@
       "source": "math-lessons.json",
       "key": "48",
       "answerIndex": 0,
-      "sourceSha256": "ea2ecefa0805574f98f86d8ddb65a2e5683bb1804a541e55dcfa20a09d0c433a",
+      "sourceSha256": "1d2c80234a9590972dcdd043cd3d4c67e98c22b472a80e1e05a08daca54a5610",
       "solution": "24km/.5hour=48km/h."
     },
     {
@@ -3348,7 +3348,7 @@
       "source": "math-lessons.json",
       "key": "25%",
       "answerIndex": 1,
-      "sourceSha256": "c1dc76443212d1232856b31551495cc553daf69560d6beb1c6a515bb94ab5639",
+      "sourceSha256": "e2222c14eda5f30f46de8f764089870c62e93e07a86338041a877958d5d26e07",
       "solution": "Increase15/original60=25%."
     },
     {
@@ -3356,7 +3356,7 @@
       "source": "math-lessons.json",
       "key": "$147",
       "answerIndex": 3,
-      "sourceSha256": "c64fe76155ca7e9b8cd2650d05a9590767b5102fa7b1a344cbb98248a4889619",
+      "sourceSha256": "ff15eb9c7408d31b62eca428f07e1e4979b4da04960234c9a9220a800808282d",
       "solution": "75+9·8=147."
     },
     {
@@ -3364,7 +3364,7 @@
       "source": "math-lessons.json",
       "key": "72",
       "answerIndex": 0,
-      "sourceSha256": "96c10dda6d7e0a62072f9201bf4ac5b571495bb64eeb722526355c1f8bcf35ca",
+      "sourceSha256": "41c54e49dfbdcdf290d163206e4e0166d9bde8abe72eaa38b650fb4c377e43f7",
       "solution": "Two40%declines200(.6)²=72."
     },
     {
@@ -3372,7 +3372,7 @@
       "source": "math-lessons.json",
       "key": "10",
       "answerIndex": 1,
-      "sourceSha256": "50b4c8dd9ce6f112364675b3d9551bea165cfcee6ff6c1ca033a35d8bb14b266",
+      "sourceSha256": "963a28883468ff7137206cda6d826611626c1c732f5026bbc441d126318caee8",
       "solution": "24+7n≤100→n≤76/7, floor10; elevenexceedsbudget."
     }
   ],
@@ -3381,392 +3381,392 @@
       "topic": "math-algebra",
       "sectionIndex": 0,
       "heading": "Equations: isolate, then verify",
-      "sourceSha256": "b324c81848878ac3c10e16ab6d888bf9e2449a094a6c2b82bbe2bb7134c137a0",
+      "sourceSha256": "3dc09af91ed081e29a096497c76b5c51b6122f0db35648cf26835c6401ebd961",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 1,
       "heading": "Restrictions and multiple branches",
-      "sourceSha256": "9de3d9df7fd6568a47f1b0e53e950513bd47301e17da92962ebc5e4b4ca8eee1",
+      "sourceSha256": "153e3a9414e46419496918f90b366fc5b929bf88aa619e69b88a3ff926a064c0",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 2,
       "heading": "Quadratics and inequalities",
-      "sourceSha256": "5250bc5c7ab0fd91852ad1fd414c7ac385e941481e7850f30512e2e6561c8158",
+      "sourceSha256": "a15f0cfd22bb3f384204db3caab97403ef5747ec2202482a96bfe32bc81c964c",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 3,
       "heading": "Recognize polynomial structure before calculating",
-      "sourceSha256": "b3c9ca5a6241bc606fac3c61210181c0674f09809e1a5d6f11075f973a70ffa4",
+      "sourceSha256": "a562fce7d42ba476709bbad79530a5e012982306a8ced557a966f067188ac4f6",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 4,
       "heading": "Rational and radical equations: protect the original statement",
-      "sourceSha256": "3c98590cd154530ff8b01358eb32efe3b218f305008901532c450b1532f3c606",
+      "sourceSha256": "c65c83ee883306bc8b2de703d7a08cefcc8c14e504b3c9ba36c850ba47c9cc4b",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 5,
       "heading": "Parameters, identities, and exponent equations",
-      "sourceSha256": "fa708896993edb737fb7b23991c272b4dc87d9b5abe2152bcd789e02674c235a",
+      "sourceSha256": "a7fb60fa9b69fb1f21a099813e17625af0c7fee02fcde130bd7b03b685c71fbe",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 6,
       "heading": "Fast methods and an algebra error log",
-      "sourceSha256": "cc917862db4e3ab35e39e0cbde2f93ce549bca1d4b1f58895eca1ee8af7eaef7",
+      "sourceSha256": "7ed1d4ac8afe83d47ad5eebbf0ce559cc6d3432960556aa1c1fa2559898a1b58",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 0,
       "heading": "1. Inputs, outputs, and composition",
-      "sourceSha256": "4e4bccabf776050b31311f61fd1bde3b1d18785108bd8f2f71b3c77c49e7722b",
+      "sourceSha256": "4bdb432ab4c28e7cc028bd4a4a6bb544d54c3cc3d6de22f51aec2d8310f1048b",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 1,
       "heading": "2. Domain restrictions and range endpoints",
-      "sourceSha256": "1abe044193e26621077e705011a7b44b95970a0e666a7df7eafce24b66c3f5ca",
+      "sourceSha256": "a8dc703ba7d653bec23054f0ee13aae40d073fb753fd6b7b5202efea3b8a0a9a",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 2,
       "heading": "3. Transformations without guessing the direction",
-      "sourceSha256": "0d477625dbcc2bd763a0af0b62e7917174f6b667a75d7d61fe683a9bd0875a36",
+      "sourceSha256": "8eee685d692ce40b76269bfa89fc5c93191ac8c70c3abdab22785010c6bcdd7d",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 3,
       "heading": "4. Inverse values and restricted branches",
-      "sourceSha256": "a4f8cff2c9dc253116283839be6fb5c09e1ef2b9cf50e6e669ea0fca854216bb",
+      "sourceSha256": "ba192bd8390ee05d63f004f94e6aeddbe430f8dfa5eadd7a2a11396ad6e7571b",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 4,
       "heading": "5. Zeros, intersections, holes, and rates",
-      "sourceSha256": "f4ea1cf04b3bba1282782021008365f19ec2d5454df4a283190abcdae68f22fd",
+      "sourceSha256": "dd49addacdf8c9893f3ef0d0b369c0f34edc0ecb3c84e4922a182fe498427fec",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 5,
       "heading": "6. Linear, exponential, and logarithmic structure",
-      "sourceSha256": "2adfcec47b003c6e084523b8174a1e2484ef4b83324c92f9500e64a327e3323b",
+      "sourceSha256": "19dca3fa4d286e6db16878fce38152d3509db7e5cd4159c58bad5f09a75050fc",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 6,
       "heading": "7. A fast digital decision process",
-      "sourceSha256": "074933f1a7f745535264d4f26287118c26e352d6fcccfd5dcdd6e2c44a7e3c70",
+      "sourceSha256": "9024412b85cee2e997a0c235572627324db295ad4d4b2075b5cebbec4730858a",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-geometry",
       "sectionIndex": 0,
       "heading": "1. Translate the diagram and protect units",
-      "sourceSha256": "ed70c65f4eea036693c8f3dab1e48bbecdc6eb90d61f3bf2c60329f615ce0762",
+      "sourceSha256": "c45cdfc20658048e03f247457b213830a55e488bebcb8d5e56f5c76980b9f72d",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-geometry",
       "sectionIndex": 1,
       "heading": "2. Triangles: heights, angles, and allowed sides",
-      "sourceSha256": "671db6885f1845c7bcb2a9e2372a27a2de8ec5893bdb39106572ae5241e3f48e",
+      "sourceSha256": "0c2d0aad19e6fa37750ede7aea1feeed7de7d763c96ee461a966163dc0258ba5",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-geometry",
       "sectionIndex": 2,
       "heading": "3. Similarity across lengths, areas, and volumes",
-      "sourceSha256": "d758360b7e0b644b863ed7d479e8514cad40b7514e31331f126ba429a1a32f06",
+      "sourceSha256": "9f5958285a7315a54b037b0817977248d71a0b67fbf31be53164a46e76e1f0ed",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-geometry",
       "sectionIndex": 3,
       "heading": "4. Circle angles, chords, tangents, and secants",
-      "sourceSha256": "e459100de6265371a55212cb3755cc7a49c24b6e02bbf39acdfd3dd9c7b84305",
+      "sourceSha256": "e2b0ff43c5ba7f2ee8340a41c3422f346de1c8b4974ac91041cce23b7e5324fa",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-geometry",
       "sectionIndex": 4,
       "heading": "5. Coordinates and vectors as geometric tools",
-      "sourceSha256": "85c42e019b12ad02b35a02c87ba404dee0fa56548eddd56f55aa13b8a98fce5c",
+      "sourceSha256": "030965b22a060fb783961be409ea4c92b1f49a9f5c851d6b1f440dd4701f405d",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-geometry",
       "sectionIndex": 5,
       "heading": "6. Solids, surface area, and inscribed shapes",
-      "sourceSha256": "455ca703754c4c8b680f411f2cb62fcd96e8470a3591e8681eef90189d372ed8",
+      "sourceSha256": "f5e9e1ce8feeb4b82b28e98a49a478284ae0cee8f565b5d33048077e7a1d58c7",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-geometry",
       "sectionIndex": 6,
       "heading": "7. Fast recognition and a final verification pass",
-      "sourceSha256": "559719c759042f2ec7cf697a083cbf3909b0341df5c3c374b3b48907e5659e16",
+      "sourceSha256": "296dc957ff2a9650712ba68e6704140d0fccba1f15b355a27d53a1118384dfa6",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 0,
       "heading": "1. Build the reference triangle before choosing a ratio",
-      "sourceSha256": "5fa5cfc83400adafd44336b76586777c4345fbbf0aa9a6c27c990b277bc65019",
+      "sourceSha256": "73b2f2e88fec560705cd420eb2dbcf7baa44354a8bb382b8b77666cd4544b100",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 1,
       "heading": "2. Radians and exact unit-circle values",
-      "sourceSha256": "5a64a90768c87c3a4c78a677db4198206d18b2987a6d72f8ea90f2565f8ee759",
+      "sourceSha256": "e7b68bdc6b43d7da0be7dc4a1178a94e88e4adefa54b0081326849cdc42c8b44",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 2,
       "heading": "3. Quadrant signs and reciprocal relationships",
-      "sourceSha256": "ce0f9efc23205d96d3a6a1dc99034ec2eebdfdaf7b2eba5d2cf100dbbc7a6779",
+      "sourceSha256": "4a3e35a8cb173eb18a4f8968092e080317000be5d3b7101e4d3ae62a77d26f73",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 3,
       "heading": "4. Identities and all solutions in an interval",
-      "sourceSha256": "fec3a0f51f061bd2a91b612d6be454130fc53a36cc5a121e24bf15e0e3aeba55",
+      "sourceSha256": "004ce98a73a77448d0c9555eadfc7fab2484f2d063ad9cdd78148447c98f4d68",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 4,
       "heading": "5. Read amplitude, period, shift, and range",
-      "sourceSha256": "f60a51117e3bb3378c3e8b875634a92f7941dda6fbb0f9bfc4d3e7dbf4f1b060",
+      "sourceSha256": "0e68273c2ab6c335295e70ae97b1f8d8cecc856f654406ba574ae33e36d3151a",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 5,
       "heading": "6. Nonright triangles and the ambiguous sine case",
-      "sourceSha256": "6bdd24b824d011609d8415f9afc80ba7f7e184aa9ce8a134c0df027041bc46e0",
+      "sourceSha256": "b06b7c9fd07abdd233531b2ac4d436e6297ad22bc68103aa603c351613933b9c",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 6,
       "heading": "7. Model the situation and control digital pacing",
-      "sourceSha256": "081e1d63cd41b7e683f356d74514de27bb85e777a3e11e07cf209d7acfd67842",
+      "sourceSha256": "cf2107288fc8458929bd385b6e71fe4757cca2a6096b606f91e46cb889f94ace",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 0,
       "heading": "1. Means are totals divided by counts",
-      "sourceSha256": "c504108d185c34548e919fa6f575ffb4665f255f5a769d3751875b9f719d22c4",
+      "sourceSha256": "259b9d09b83b4df06740e68586a6c6eee47e59202f20bd8d44e384c8e72492ef",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 1,
       "heading": "2. Medians, frequencies, and outliers",
-      "sourceSha256": "a7bead54127db8b6a8654689751f4e31d8b9d93cd76859064b983ad668ad34fa",
+      "sourceSha256": "31c8101904c49296a48b4d19cc29db44712ae4d16cf6b396efd5f9ba3cbbe5be",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 2,
       "heading": "3. Spread, transformations, and standardized distance",
-      "sourceSha256": "a0c647e5157542ddeaa382719306cc235d9ab7e97daa84a4445b80918733b0b1",
+      "sourceSha256": "894dbe86e6f673a4ed088c85d0ff8c0c484de4e7d56796f600b22046fdce753a",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 3,
       "heading": "4. Sample spaces and conditional information",
-      "sourceSha256": "866c141062c466209b1e86915b84719c0cbc8d94fd3d8229a1edec84b65307e2",
+      "sourceSha256": "b7498c4b1296b729f3046749dcb3728d86cfbfe84329a1c48334f569c42987d9",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 4,
       "heading": "5. And, or, independence, and complements",
-      "sourceSha256": "4183a958a6499e6bcd5549ad010df305dc81a9c908b12c3ddea9797a4fc5341a",
+      "sourceSha256": "e426c2001c4e8accc5b1de6ef6d3ea8b10eafe31a95d33b921bc17b8a581ad29",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 5,
       "heading": "6. Ordered counting and probability distributions",
-      "sourceSha256": "291bfb95ae1e98da64172a972fe5c7bfe1c942f31561cbc6ff9a120b04e3d60d",
+      "sourceSha256": "a3e36030e26474434aa74acf3b042501320390047720aa9d567990aa8fd478ba",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 6,
       "heading": "7. Study design and a reliable final pass",
-      "sourceSha256": "d22fb5cbdbd3f5194f24fbfba686010dd6ce65a4cc206f63bdf52af89509011b",
+      "sourceSha256": "6d5f33ef420be1e2d12d513cca86eb8074ce139dfb83a7076182126b6d25068a",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 0,
       "heading": "Exponents, radicals, and complex numbers",
-      "sourceSha256": "46a2dcb5f91a1198bac064d2ff255fa29a663a0edbf6a766292ee1a9223f1515",
+      "sourceSha256": "7ac238a3699790575487145a417ad633cb0acb20d27ecb7270b1a153c47e5b55",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 1,
       "heading": "Vectors and matrices",
-      "sourceSha256": "a50cb0deaf3e7b84349f9d52c831a3f445e7f96f40cc5e52abf8189a9422553f",
+      "sourceSha256": "c7bfb9e8c5d10f0b35e429479053854b216a7aa3962590a6ece015533b0df973",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 2,
       "heading": "Sequences and scientific notation",
-      "sourceSha256": "70d13708a8a20636fd742d88faf2eb296e31417a086b04047327857c8a80cbba",
+      "sourceSha256": "f63fe9dc68c85e269bf54d13212c5f0c5db1f5bfbc9dda6d3588364503a003a3",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 3,
       "heading": "Radical signs and real-number restrictions",
-      "sourceSha256": "854b2d630ce31c385085094113e1bd2ac1058287970ccbd0a19ddc4c4f2e624f",
+      "sourceSha256": "baa2acf1fda6b926a6d9c877773081af75ac49eb56ee1c66bdb688d48d4164d0",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 4,
       "heading": "Complex division, conjugates, and powers",
-      "sourceSha256": "3a9b7ad6f24f67adb8387fb5b6737bca98bd543a5ba682d96216e154cd60fcec",
+      "sourceSha256": "7729d64285d251914e32c39d8859db778d29b0006832f144211a87d12c5702b4",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 5,
       "heading": "Matrix structure and inverse checks",
-      "sourceSha256": "0d4f1a7301d53fab2d54280a61fd3b2c32aa99567adaef7a944bc590d79df05a",
+      "sourceSha256": "7f8ee2661bac4b5d902d4ce1c0cbb59f6fac60b8f854bc786fd299854ae16007",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 6,
       "heading": "Sequences, remainders, and efficient checking",
-      "sourceSha256": "8c98025e62c68ac91dae0e5e4c9a5efd94773248a446b4d0e410dc956ce67ca5",
+      "sourceSha256": "db991c72530a8eda8e2b02d422858658b5b3471109f41ca66d2bd55296c1a5c7",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 0,
       "heading": "Ratios and percent bases",
-      "sourceSha256": "87bccbeea3a59ca82f1994ab3db0af8acfa266c9e878e9c1b953e5b1bbfee753",
+      "sourceSha256": "2294c947f2df07bf838012aa8e802b18568100cb6100b0362a7d1e1526a698a9",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 1,
       "heading": "Units and average rates",
-      "sourceSha256": "61e6f6b3b3a7fce3d3a635264ca19fe050f99db09b0f8cdc5ef773ad6c56d52a",
+      "sourceSha256": "1741cfb6244ea5e4111757b436062ddb7e8bb20c316025adbd1bbcb68650f53f",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 2,
       "heading": "Work, mixtures, and weighted averages",
-      "sourceSha256": "24248d629a1016926a8edacd33dc8d11dcdee925323a688892e76e74285d8598",
+      "sourceSha256": "556a1fabee445bc9a62af791e505b5812d347eee7c6dabcf8cb268b410cd4d66",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 3,
       "heading": "Choose the percent base and undo changes correctly",
-      "sourceSha256": "ca531105c9e04ebb4f94e1590c1894fa3f2dbae82c1af71226a139d37b50de92",
+      "sourceSha256": "30f30b03f19763efea3777c30b6a30e0e52857166b1ffc2852da030b4bf8182d",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 4,
       "heading": "Units: cancel factors and square the conversion when needed",
-      "sourceSha256": "ca5d2e24e351e041d7d225407f23fede79548b3dab38f0a45113676fd8ff1a33",
+      "sourceSha256": "50092d403f341bd2375061c7aa2f89f3677b3ce225980494b0a94131d84763d2",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 5,
       "heading": "Relative motion and opposing flows",
-      "sourceSha256": "29b64bf42111d91e465df3a5b745e9b331ac07a9fb992e6b665fdcab195d2eed",
+      "sourceSha256": "796d23eacdd54ae4234f40b45f2760e456efbd683c0a49cfa5c5340831e6e764",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 6,
       "heading": "Fast arithmetic, estimation, and a timed checking routine",
-      "sourceSha256": "77c44d871754b39838cc0328f918af806974ec8465f83be184fcbfd86b09c21f",
+      "sourceSha256": "19964868ae5fafc6015a02c4529ba06ba49c7099712625d3ad8996aaedfb52fe",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 0,
       "heading": "Translate words into equations",
-      "sourceSha256": "030605d1b77fda48bf4ab80bec00789390f6986be6ab002c6ac75bc9fe108ee2",
+      "sourceSha256": "6f3ad1894951e0807e8b792f3276a5d6a3579ace5d62869e08820e41f3504617",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 1,
       "heading": "Linear versus exponential change",
-      "sourceSha256": "a9ea8cdaad5719d9f5ae7902ba13753b7bd845cbaa0c18de2c701f5962340381",
+      "sourceSha256": "5b81191fd667df17d8b81dc6a308a5236eb0a5b020f0c05afe90868677ccbb4f",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 2,
       "heading": "Optimize under limits",
-      "sourceSha256": "c9852bf1d9618d53c1db84b6ce260eb0a0d07a70af543af0a5495c9c43ce7f4c",
+      "sourceSha256": "4a383e7bdebd143e70f0b69cc77b3f3181940c834ade8a6edfc33d7c5644e9a5",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 3,
       "heading": "Piecewise rules and whole-number thresholds",
-      "sourceSha256": "77c7e6107bbc62778d5b70bcd215a00b7711d50fbf136f194aab9248e15f6c00",
+      "sourceSha256": "08e20ff9d97e056a9d3ac865cd746b9cbc3f2631ce71c67cf3364479b5bf6c31",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 4,
       "heading": "Quadratic models: input, output, and physical domain",
-      "sourceSha256": "64733c4dcdb73498fd8010f1e9da629504a97ca1fbd781873b4ddb5da524d8f3",
+      "sourceSha256": "71f498d502c95ed66138104a656bf32a506e56bcbe9d102429f43521b41d1900",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 5,
       "heading": "Recover a model from observations",
-      "sourceSha256": "5f27624f1bc4ae24168bc784a78337ef911ef52d22b41c0ff7e85a0715ebfb67",
+      "sourceSha256": "08b670bca3b1e30295c32baafc263ce8574ba6a1569f6940d7449842e174a85d",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 6,
       "heading": "Prove feasibility and use the calculator deliberately",
-      "sourceSha256": "6dc68733fcdb3d9e96b105b0eaf6b9edd6c1c1f102a69425299fee8f72e0c2c8",
+      "sourceSha256": "79b33eae74fca91ad4ff7005d66f13d5c31eba78a088b9d42d9d318fa88af3d0",
       "review": "Rules, domains, worked arithmetic, distractor methods, and named question prerequisites checked. Section index preserved for saved progress."
     }
   ],
@@ -3774,25 +3774,25 @@
     {
       "topic": "math-algebra",
       "id": "linear",
-      "sourceSha256": "545ada832b0563764ca8b3939179637462a8b1043193e044709ad2aac4ef9a63",
+      "sourceSha256": "cc83c0a9e7c51dc8dcf2b3979c0d5a25aa103d6faa8e69c5525a66f46f783461",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-algebra",
       "id": "quadratic",
-      "sourceSha256": "6d336988a4f49aa5d84388ba602183d8a5bbb067b7e723e97b8f85a430eaed32",
+      "sourceSha256": "12dbe94a28a037c4f72ddd5a71b7374004462e8c0281b1ef2b546455970584fb",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-algebra",
       "id": "vertex",
-      "sourceSha256": "4912e7c698bc3963b7c5a63c28f9d3a6bf01741d8d206d15629d7dc08e32bb8a",
+      "sourceSha256": "531ef2f05ec3c911b29cb70a71b5a7026c89417f25827563958e9de2c42e1f1a",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-algebra",
       "id": "factoring",
-      "sourceSha256": "f97cf8e817afe19606ff0e7b014a8ec1e9282fb68f51a054e05385158e4ed552",
+      "sourceSha256": "d361476becace14223f3a1a9d8fd7a5dc85b4eafeb7250e4783045457177e6ed",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
@@ -3804,127 +3804,127 @@
     {
       "topic": "math-algebra",
       "id": "remainder",
-      "sourceSha256": "0f298e1f8033dffa3c065ed6527ccf6465cf7250de1c833f0f20954b289147f4",
+      "sourceSha256": "9b93070ba08104c0576243c3acd8f9a4365616841454f93996127ad6e1bbba7d",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-algebra",
       "id": "absolute",
-      "sourceSha256": "f0875b1a21188f1f00babfd2e2ea91d14e50f4413810c6f41a4bcab5e0e3961b",
+      "sourceSha256": "334e55c473955da6218fc879d76c1ffd293769bdbe5958e94249174367805d78",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-algebra",
       "id": "rational",
-      "sourceSha256": "51a2c4b4741d2c27d55198159924a568381c1423d44277d266eeb515ce3b193d",
+      "sourceSha256": "c76bbcf3f6858e6fdb911d6b8cd5e8c36c4a4a9e1ee10435bde173b3a4c40340",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-algebra",
       "id": "radical",
-      "sourceSha256": "4d05b6d832a97976517f172c9cf2b6da5ac99cca3ff6538c78494f15e42bda78",
+      "sourceSha256": "c0fd7af9f013c41167f52b4c10059f8ca8c0b996e91d845c5c96aee389801a58",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-algebra",
       "id": "inequality",
-      "sourceSha256": "e2bee565b366dfc6cb17b68e8844775e699135b7a899d05d53e0637ac458459a",
+      "sourceSha256": "ef963261c3e3a6f5e3e84baff4e1322d7f1fa62fac62512242953a265e274d88",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "notation",
-      "sourceSha256": "c8771cfe59ad0907c24b1cfad6c0faceb2a50d53203ac4da2098fcb5097130a4",
+      "sourceSha256": "0877ceb8cb3b474e8ce1993953f859499461616245dd9d6a5edf9d1abf4d80c2",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "domain",
-      "sourceSha256": "590ec4832e5279adb9576d14fe2ac960050cddaae99f072156fa3a2dba62faea",
+      "sourceSha256": "e517f21d951551837d4d6d0dea1b017185c8c270b26a8b76f38e3ee3ef089925",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "transform",
-      "sourceSha256": "30d5760bcee11f8d1d09f602037fa64010db540f04ea6c49501979231258e039",
+      "sourceSha256": "dc6fdc0d88a0e2685785b92897b17f8041c9b90cc7c47e27418c7d4356a8f4f3",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "inverse",
-      "sourceSha256": "8f2b0330259ff261edc678ff677024ca458357557822c0c4b27b0f7fe8e77ffb",
+      "sourceSha256": "d6f957e9d901f949c683bafe1e59e5f971d042bceb395fbb21133ecb65d54fd3",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "rate",
-      "sourceSha256": "d28354b93c45675c4f1098d8e1cff888cad80debb36b694cda3cf50cd058a573",
+      "sourceSha256": "9506f0ed76bbd1775361dd992405ddabab74f7a1f7a6a1cabf838c9e13ce6542",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "symmetry",
-      "sourceSha256": "436e59b6f1f50195d821b40905a2820c20aa1a389d639ef9a4ea86e76c392f62",
+      "sourceSha256": "2354856d96fada411362869b3f48afb9780599fdf706d7487ba7a696f183b018",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "asymptote",
-      "sourceSha256": "5cbb2cfc235e479e709a732492726a1108cf6fc959d951dbe3f42d7e43081aaf",
+      "sourceSha256": "62721575bae96aeb143e5df8cf4448c9e27761310dd9154daab24d8e76f51d2c",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "variation",
-      "sourceSha256": "318e5418eb87c53e2384ddbc2b5d1dba371b125a01ef0ccff17c52c1ba776ca8",
+      "sourceSha256": "58d3bd7448185ec15949aaad7dbb6a93d44c79f3072522c5011a78121782c9ac",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "exponential",
-      "sourceSha256": "33904a39aec27bd340b0ae82eb4c44a265ba42740491135bf1991c7eafbbdfe0",
+      "sourceSha256": "b7975fa1614762299822eab5e42364db2112e007e8623e1f9aadbbba06dbfb4f",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "log",
-      "sourceSha256": "c00c7c1e3ae63250ce052cc1b7d5033120fda7855129678205086635c8eae95c",
+      "sourceSha256": "59bb3e76c92db223a8e9d57e3f7105c6d43242a7da73f5c2c6aa6011ebae2e1d",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-functions",
       "id": "recursive",
-      "sourceSha256": "757ad52cde0c6a5d2b4b501c0b33705cfaad9e99b80ac5c52fb236156ef08d55",
+      "sourceSha256": "91de6af4315683ae1dac40ecd6047c4d5e762af38b382619e0e0424fbd09125e",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "planeareas",
-      "sourceSha256": "f3d845b0937269a1c5cbc7bc3dd474df93522b79332a87849cb9642c64abcb05",
+      "sourceSha256": "965ab233e695a7daac0aa91688a2cee12ff90b563c0423424eecc7116dc90122",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "triangles",
-      "sourceSha256": "55561c8f5aaadb50be920310222d3bb7e9002385300c6f6770dfba79b500f757",
+      "sourceSha256": "8cef33c38b26f97fc8f90011126f8fb8d98d253f0194f541d51563820f0ca91b",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "special",
-      "sourceSha256": "1c402bf100be0002b96971ef459af9ec512c6c78372ce584c8631e6004ca203c",
+      "sourceSha256": "0cbbc347027df139aa7e9c7f926f7c5bde65db65c44743aea54a628955f9e13d",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "heron",
-      "sourceSha256": "a78d42c114936929af2a57bc215482acba69a487b1959e46bb4bf5aee6aa55e4",
+      "sourceSha256": "eb8a2f1ce56a704a809e4b577027309088e9e0a422d83d674d1e53b53166cb00",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "polygons",
-      "sourceSha256": "9649707eee05cb86665e8fab132e1dca70d2e6787b0318d139580eb20db4ea84",
+      "sourceSha256": "023ba4e7a53d264dfd129275cfe8bb362b3020521314f9f2d54cbb3437c49b91",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
@@ -3936,169 +3936,169 @@
     {
       "topic": "math-geometry",
       "id": "circles",
-      "sourceSha256": "1aff08cd3ba9198d6d2ca9ab4d4e8e9edd4301bbaf6aa8ff28eaac2e13cb6c9b",
+      "sourceSha256": "c9c37aeef0e7f058078d0b2b59dfc000dcb8bfadc07e0acc28acd8f57bf0a363",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "circleangles",
-      "sourceSha256": "ee779b81972f06baf4eb50f2c77c138e33c3466f5a998d4adaa554ee52e87727",
+      "sourceSha256": "558409da1689fc0f231a9129fa0d1144b6c6e233f7fe5f58dc8ca3d7e7924b20",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "lineforms",
-      "sourceSha256": "c84d1c86021c64d803e991d8dc1fe51c74a739faa57db19c4fa2435e7ca1939d",
+      "sourceSha256": "96335c707211fd3b4fdd9217104d31d64ebf7106f62816c2b3011dff66a34c0a",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "coordinatecircle",
-      "sourceSha256": "bbed4bfa1847c431024926f0dc60f009a3f9db9ef85f03e835452d7f59ae998d",
+      "sourceSha256": "58cf1292a9d86c1d7788f4126d03525a020c10725a88ec80b80e0dcc2f73be64",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "transformations",
-      "sourceSha256": "af70f0723d6f9a14266295f5c08884282f1dad8e9cd651e26d7f792e969cb92e",
+      "sourceSha256": "2c9c58b09c94403d958d1ada1819c5c357e1ace431b29e8f916659618d1e2bd9",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "prisms",
-      "sourceSha256": "a012ea7f84b9216eb4c29b3f27493278f5670faf8a4244f94bd08f207862b560",
+      "sourceSha256": "a132cb82be28c08b8cfe7d3c14cabf775ea55f3de7152d1e8ded2fa5c891e80f",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "conesphere",
-      "sourceSha256": "5501079d8897422731d1fada7d1b234e7c0ac33fd665e53022457bf018d5eb68",
+      "sourceSha256": "497984bf061ba8fcf34daa60336fecd13967fc486c3f12909d97c51dce701520",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "coordinatearea",
-      "sourceSha256": "5bc4d854a8878baf9467bd6172f6d8f2162cf7c8e098b48daba516d3e5cb3c66",
+      "sourceSha256": "66a3e15bb95cd5428e7ad3349aacfd8f7a5cb013135580b8e2cfef8a672965cf",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "centers",
-      "sourceSha256": "1a338b518d93dbdb3df95f9e1db0818e282dee34bf6f03d7f0d812f4d52a4f9f",
+      "sourceSha256": "d7d106ebaf5249a5db16dc2937bdd2832241ae67ee4e248e32fba1ed5d7ed028",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-geometry",
       "id": "angleconditions",
-      "sourceSha256": "4654b581c04ffad08d3ddb5433f564f87fb8717c1c1f38cc0d3011b375d6162c",
+      "sourceSha256": "46a088e0bf905aff098b88a98f4a629b0ec9d61e2faeeca91ee862d8670bb5e5",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-trigonometry",
       "id": "ratios",
-      "sourceSha256": "9dff4fbe31dcc6126ca76518d4ad4e7f67442ec4e4da38cc07b936eee977054d",
+      "sourceSha256": "e6a8db400611afc267986b25e2159c847a1b2945e3c242ef1719b63333377ca2",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-trigonometry",
       "id": "exact",
-      "sourceSha256": "863e07c2f56d09a3b4cafcf19db121ad7f56a9f9c7c510266ba693f309394b87",
+      "sourceSha256": "c01e294428c57c6cd415d4548740949e666b7961163ffe4bdb87576d11c6745a",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-trigonometry",
       "id": "units",
-      "sourceSha256": "51ef86466b63668b4fe383c4001d3345f5accaf10d0df834574b3e0567a80a72",
+      "sourceSha256": "94f3cafe05988c6ecce6b11b9af879f9a4da85a7afce26048c5a6c370971ef37",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-trigonometry",
       "id": "identities",
-      "sourceSha256": "005dc5d430069de0d8932bf8bc15c464e941bc0d5ea0d3fe842473bafa4db96e",
+      "sourceSha256": "d2e6090d012c4d638e5100e1ed6e23141f3b91b30fda810a474032c286292cbc",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-trigonometry",
       "id": "doubleangle",
-      "sourceSha256": "b18ace8fc3c7654a6ceb216e13050318d200b4b29916924b6caab59ea5768f37",
+      "sourceSha256": "571b234a87c35485903fa8d6895b70a4510caef4d97eaeb920ec168de495ea0d",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-trigonometry",
       "id": "triggraphs",
-      "sourceSha256": "031fe457ccd663c43ea7c1af1f483bba42d499be6b91a4cefc97860113ef2889",
+      "sourceSha256": "4d8302d2aaf3ad12fbdd5bc803d3225d17882170476deb52ec2dd3296ad71471",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-trigonometry",
       "id": "trianglelaws",
-      "sourceSha256": "7cfdda9d9ef8f64532ba4203b17c1e204215b7fb2fb29765880bcaf6a2227e52",
+      "sourceSha256": "4914ca0f41c229de0fe33da3bbb9a3c4364489a35effa12ee1f8d2837b5cf100",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-trigonometry",
       "id": "elevation",
-      "sourceSha256": "d139adf546cf7d159207d679f66d7c5f7f41178ecced49585e1e757bfbf71a71",
+      "sourceSha256": "4857c2d23f365fc7420f5140764ff947490676521a4e71d1bea1c3fa9924c6e2",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-statistics-probability",
       "id": "center",
-      "sourceSha256": "88b287f9094b3cdae321f4080ed6eef103d4ce922c541e64edef1ef6554d9270",
+      "sourceSha256": "4773f7af0c398cf233a12c599757d3144534256d311e88dd1b8b0d66e1469a6a",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-statistics-probability",
       "id": "spread",
-      "sourceSha256": "e98da7e8086354c10a62ce4c2935565cdfa3845e55e49e42ab7f0980f77f7679",
+      "sourceSha256": "650490e10cc12300ad685156382053ac1e6c64768146b36ded24ec7977bd5ed6",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-statistics-probability",
       "id": "datatransform",
-      "sourceSha256": "9783ee6eee5d0e5cca8cf46e0fa5e553b3a1b43961716fa0bd6cf7393575232c",
+      "sourceSha256": "f5e3b9456eed3d0e227fe10675029e27a27d76962ac438226271dcd27a5ec89c",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-statistics-probability",
       "id": "conditional",
-      "sourceSha256": "e1f8b695b554ceb68880b120eec6596eb3a1ce6b93cafbdea25810d28b6fecd4",
+      "sourceSha256": "496532dba097c86ae005decca443ddc3aa7ed30364c831bc2d650abf06903140",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-statistics-probability",
       "id": "union",
-      "sourceSha256": "381e0ff2607e3ccc49ee981b395717970326162eb1a0f058239a9301b8f2fc3b",
+      "sourceSha256": "9602678a029afd7b898d9b87c40b7a95034ace88473b72818ddaf99cd1ba218f",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-statistics-probability",
       "id": "counting",
-      "sourceSha256": "7c19c7a37093e594c35841c5cff6b5778f1cc3a59f3eba6f52c2c35ad41130a5",
+      "sourceSha256": "384da9fe556f8f5a4aa9e61482ee54a45e89eca70c9532e9a9af3844a45842ba",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-statistics-probability",
       "id": "distributions",
-      "sourceSha256": "e41997852af47f6e8aaf10aaf68c895710383e5dadc4903e447d8c4feeff79c9",
+      "sourceSha256": "e8742e46327185b257f127ea5e8552b4e94ba55947fafb7b10a907d7a1f96b96",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-statistics-probability",
       "id": "design",
-      "sourceSha256": "a6d40bdf6624a99db1bb9fd89e8f929f9621bc419ce4eb3cb99e7a352fa928bc",
+      "sourceSha256": "19b449a64814f6fdb9807c2cdf767d070da703b0d06c5fa3257bfd87715b4d5a",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-number-quantity",
       "id": "exponentlaws",
-      "sourceSha256": "156ebcc4d720738aca180dcbb09d37e888e4639e9dede8add84d839f2f48c96a",
+      "sourceSha256": "7147f7f76a23b99b7c46c2a313447e6f1bef4271836c6273dbfeddb3d1a56c79",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-number-quantity",
       "id": "radicallaws",
-      "sourceSha256": "2cd89f69943c853ce9fa617f8c2860789ef61502add9444fbb18ccce4174b9a1",
+      "sourceSha256": "294e65d9c1e9495a1b0c1bea1cc72143fdfa66213e2b9c5e9d94b13e0597725c",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
@@ -4110,55 +4110,55 @@
     {
       "topic": "math-number-quantity",
       "id": "vectors",
-      "sourceSha256": "c212d20f2b02e9ad2700465a46f2c4835e6b3e3fb06de9801281e6787aca47f3",
+      "sourceSha256": "4c012c38169ab70345a44c048629e00b2bdb669f9d9dab5f00801cf09ba45ce1",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-number-quantity",
       "id": "matrixproduct",
-      "sourceSha256": "2f93dc83934f07efe21840df20a7ef4e0254535190558e0cd4055ee4f0e06da1",
+      "sourceSha256": "8d4ad94e5218607cdc137ed3ba870b9035ba26080b1ee217694e7c1fd57d8e6d",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-number-quantity",
       "id": "matrixinverse",
-      "sourceSha256": "8598cd0168af1712f10a0170b710c53538ea9b2f1c5aca03a40ac985dc43679c",
+      "sourceSha256": "87cd6efe1108492a13a187a913ad9918a071456131a18b6eee4a617dc1348739",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-number-quantity",
       "id": "arithmetic",
-      "sourceSha256": "4575a8f48a4aa7a75cf05a754339aa2dff26214a74be8eb90b5afe9edfdb6b4b",
+      "sourceSha256": "f890c281b0a67c2b682e77ae8c817acb3c6840bb7f7a23682b512951956084e9",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-number-quantity",
       "id": "geometric",
-      "sourceSha256": "27ad5abe7f4bb2de2186b3735493f40c603d5ab3ef2cd12935ca4d3bc65be3c5",
+      "sourceSha256": "2ee1841b59475dfd2429c6954c6d5e09c829345dd2368ddb2672b560651d63e5",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-number-quantity",
       "id": "integers",
-      "sourceSha256": "0c5436f86731e6483b02418bd5daff7f6dcab15fa50b7424ec712c0e4fbdbe81",
+      "sourceSha256": "a73067760a117167444ee9cb43adf51942589b777ecf2568fe7361ebed50b8d7",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-number-quantity",
       "id": "numbersystems",
-      "sourceSha256": "135b0be848f5a14e2054f2770d177877a5534da72b3542a22a3d2c6f85ad65f8",
+      "sourceSha256": "f2d5d5e9bba4f3b62ca51a059587f85f8b8c9b4aafb97e5c20e293318ea75c75",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-essential-skills",
       "id": "percent",
-      "sourceSha256": "43ab4923cb7aaa9147586feedd58233afae05272eedf0a31111f5d362cb5d289",
+      "sourceSha256": "83c94a5dfa8fd293b907465147584fe8fecfb3cc1304171f28ec47a4c6f76f83",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-essential-skills",
       "id": "ratio",
-      "sourceSha256": "28be7874499c6ced30fa528f3f6f0ba1a069c2b744fb19edd29e117278d146b9",
+      "sourceSha256": "d1ff3578e6994a5c131822ad448074fa0f2c6b173a70510b41d694b06ab7570a",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
@@ -4170,55 +4170,55 @@
     {
       "topic": "math-essential-skills",
       "id": "work",
-      "sourceSha256": "1020474dceb0cf7b18f077f52e57887a0ac1ca85851c1945a55562e280037322",
+      "sourceSha256": "185aec6732ad778adb6b868895ca464855e7cf64006538ef205e7702b04e40d9",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-essential-skills",
       "id": "mixture",
-      "sourceSha256": "8ec862838051865ae986875e5e4fd157c6b34e745ba5b25738b4caae9916170f",
+      "sourceSha256": "78bee03d31763bdefd59c1f50b82fae52526b34b00c93eedd0af7652018ee2bd",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-essential-skills",
       "id": "precision",
-      "sourceSha256": "d5601ac261524e55618f574dee24e65ab0dac27ecf7c822781ab7d0f0c6c88a8",
+      "sourceSha256": "af69a8aa532dcd9ce9c21a5a87017f32956c3c21145c291f649f299f291d5a06",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-modeling",
       "id": "linear",
-      "sourceSha256": "1635d3c626de26b37fa51ec3eb46231272258f2a98fc66697d9d28baf4fd42f8",
+      "sourceSha256": "3968774337c1fbead974b0df37dd2f9c8481f40280fc0a6cab7852b2a6705863",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-modeling",
       "id": "compound",
-      "sourceSha256": "45db9dc474f612c0f94d495eaa6e761d08d3d38de00388c044b60081e4d99f98",
+      "sourceSha256": "56b44e3e16fc2f69076bbe8ef26790cb72cadaca6623ce66982b06f51d168bc2",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-modeling",
       "id": "doubling",
-      "sourceSha256": "8815f0f42427cb0ced527aedd413a24e66bf9bf5585f423aef797921d9d82f23",
+      "sourceSha256": "7f31a49cba33f57700c95b178b6dcab164101bccf5d45b8516521d7c131c5ab3",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-modeling",
       "id": "optimize",
-      "sourceSha256": "2d5314845c2ca0230445c8187cfe2904beac5e76cd1a44d652eda9f4a40805ed",
+      "sourceSha256": "a71b01e37834e5e0f9bb895d997a6252a4b1179a76a79c5b2ed093e6891b5fe5",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-modeling",
       "id": "piecewise",
-      "sourceSha256": "834aac7bbe0d512ee236fb0fe628e222ea705435e56570c7e30fba92b87e9bae",
+      "sourceSha256": "e7693236be6d73eef69779be5c228cce67b29e243f141d267a37ebbab1eed29c",
       "review": "Formula, conditions, numerical example and units independently checked."
     },
     {
       "topic": "math-modeling",
       "id": "fit",
-      "sourceSha256": "17b0486f7a97689183e3877e97e0dd36b3d2fcc18a754d5589fa921014fde8d0",
+      "sourceSha256": "48780aa236b1c49bbcca12246fd6fbbfc8c4bbbf74f6837ce5a05344b6152dfe",
       "review": "Formula, conditions, numerical example and units independently checked."
     }
   ],
@@ -4960,7 +4960,7 @@
       "sectionIndex": 0,
       "answerIndex": 0,
       "key": "\\(\\frac{(6+18)\\times4}2\\)",
-      "sourceSha256": "4934ee295ff247bac37022372141de860452513780fd7ab5d27824d68805c2a1",
+      "sourceSha256": "f06b9285cfe818ed63df500f7dba1b054a432611d2babb41310163c5806b104e",
       "solution": "Area (6+18)4/2=48; other setups use slant or one base."
     },
     {
@@ -4968,7 +4968,7 @@
       "sectionIndex": 1,
       "answerIndex": 1,
       "key": "10",
-      "sourceSha256": "ec5440cf51a5ecf269e52f7da2384753da2759998637e2aa5bc1f9caa63f2aef",
+      "sourceSha256": "ae645620382acfb67d5e605af6efcea0522a1115dd236179539c16055eb87cfc",
       "solution": "Strict bounds 5<c<13 allow10, not endpoints5/13."
     },
     {
@@ -4976,15 +4976,15 @@
       "sectionIndex": 2,
       "answerIndex": 2,
       "key": "54",
-      "sourceSha256": "a6f01c928c0c74d4993e056462b95a383e4f8acd792e2a5e7a50c44b455b30e1",
+      "sourceSha256": "1cf867879825babda8da53c6f785c7696161c32761a282f06ed91b88797548d1",
       "solution": "Volume16(1.5)³=54;24/36 scale length/area."
     },
     {
       "topic": "math-geometry",
       "sectionIndex": 3,
       "answerIndex": 0,
-      "key": "48°",
-      "sourceSha256": "02e1723be569bfdbb9c4561702429551c837792e0d5f58b173d577bcdadb02b5",
+      "key": "\\(48^\\circ\\)",
+      "sourceSha256": "f3444860d237e84003bcc7f4494cfa9be3b0d981f05bac2fb4bbc9f00bed6db1",
       "solution": "Inscribed angle96/2=48°, not full/double arc."
     },
     {
@@ -4992,7 +4992,7 @@
       "sectionIndex": 4,
       "answerIndex": 0,
       "key": "\\(\\sqrt{6^2+8^2}\\)",
-      "sourceSha256": "7c792efcb16ac8cbafc4ab011f76ce7d14a5a32f46c0df57755026847dcf6ed1",
+      "sourceSha256": "47079c0a7b3171d24836dbed7ea3c17b17af75deefc17984246d2f83ccf311c5",
       "solution": "Changes6,8 give distance10."
     },
     {
@@ -5000,7 +5000,7 @@
       "sectionIndex": 5,
       "answerIndex": 1,
       "key": "\\(88\\pi\\)",
-      "sourceSha256": "660dd9599bc156ec1f404cd3048c1712e6d64e8e670ca9e2b12251696f2d0778",
+      "sourceSha256": "df12aa1c03ff65b3dc71e4d90415b4aff22106cbea3a3221692f093ead807996",
       "solution": "Closed cylinder2π4²+2π4·7=88π; lateral56π,volume112π."
     },
     {
@@ -5008,7 +5008,7 @@
       "sectionIndex": 6,
       "answerIndex": 0,
       "key": "15",
-      "sourceSha256": "5b67e1ee7dfccd7b3ea5d3cb621d1ac4f470aeffd0c1b220cfef8beb0c3dbcfc",
+      "sourceSha256": "c7b5e6a6f7ebed050b606dd80a36f76a35b148ac4904822ffe36a573abd1c948",
       "solution": "Perpendicular tangent9/radius12 imply hypotenuse15; adding21 orsubtracting squares fails."
     },
     {
@@ -5016,7 +5016,7 @@
       "sectionIndex": 0,
       "answerIndex": 0,
       "key": "\\(15/17\\)",
-      "sourceSha256": "71b413fd256407cf0bd551cfee94f176b610166951e8dcda0264a51f2abcd05a",
+      "sourceSha256": "a3d8ce6a155c80ff1e3b96f30a9eaef211c0e50ecefbf1414b8776bd09184066",
       "solution": "Reference8,15,17:cos15/17, sine8/17,tangent8/15."
     },
     {
@@ -5032,7 +5032,7 @@
       "sectionIndex": 2,
       "answerIndex": 1,
       "key": "\\(-\\frac45\\)",
-      "sourceSha256": "16077bf8877a9ddaff1cdf26dbf60718860a9e15fe2dec1e93e88aa186664cf5",
+      "sourceSha256": "7e282d221748817bc306815922c88dedd2920c55218d2803ad82d3e0d29ef0a5",
       "solution": "QIIIcos−3/5 implies sine−4/5."
     },
     {
@@ -5047,24 +5047,24 @@
       "topic": "math-trigonometry",
       "sectionIndex": 4,
       "answerIndex": 1,
-      "key": "Amplitude 3; period π",
-      "sourceSha256": "8995deb160882ad783386d88ddb47b8c08417ab8b606ed1bd48b166b2ec0ee37",
+      "key": "Amplitude 3; period \\(\\pi\\)",
+      "sourceSha256": "f117429a2f01b06a1732d7782ee8d7a5aee6397e72adf0a4743291111922fe91",
       "solution": "Amplitude3,period2π/2=π,offset4 not amplitude."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 5,
       "answerIndex": 0,
-      "key": "c² = 7² + 9² − 2(7)(9)cos(60°)",
-      "sourceSha256": "6cb349be596739cf2632569bbfacb408cfcc5bd1bcd41468cea7c32620853aca",
+      "key": "\\(c^{2}=7^{2}+9^{2}-2 \\left(7\\right) \\left(9\\right) \\cos \\left(60^\\circ \\right)\\)",
+      "sourceSha256": "d57c88a456e93f181afe63bcebd5a21d4de16f555ddb4ad5498ffb2218d6fdeb",
       "solution": "Included60° uses cosinerule49+81−126/2=67."
     },
     {
       "topic": "math-trigonometry",
       "sectionIndex": 6,
       "answerIndex": 0,
-      "key": "20 tan(35°) + 1.6",
-      "sourceSha256": "fa5026b92e9f01fc0fccb3bb0b9d3c1012b31ee53036dc6a70919223221d4057",
+      "key": "\\(20 \\tan \\left(35^\\circ \\right)+1.6\\)",
+      "sourceSha256": "39862d0987bb15bffe1894c51f0a5a31fd5f5a36df2d6ef872d8cb27bd5d70ad",
       "solution": "Rise20tan35° plus1.6 eyeheight."
     },
     {
@@ -5072,7 +5072,7 @@
       "sectionIndex": 0,
       "answerIndex": 1,
       "key": "6x − 18",
-      "sourceSha256": "f8e5719081c9826096bbc1e7b6f6108c65695e06a5df5dea671936e0f442c63b",
+      "sourceSha256": "4a0406dfd268da1267b49ed419ed9be034547ff57387bb2ba4c9e90c53d59f72",
       "solution": "Distribute6 to bothterms:6x−18."
     },
     {
@@ -5080,15 +5080,15 @@
       "sectionIndex": 1,
       "answerIndex": 1,
       "key": "−6 and 6",
-      "sourceSha256": "15a8da691ef7319008e3d0ac9fc1269eab852129ad963a6532f34ad008addb06",
+      "sourceSha256": "fce64a63618dae623fec4c0367d83fc54feaf4a0345b9fd2091f658b04e6e5a3",
       "solution": "Both±6 squareto36;±36 do not."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 2,
       "answerIndex": 1,
-      "key": "x < −1 or x > 4",
-      "sourceSha256": "9608e014f727a4c23fc2542511ab311c2eb911ecd18a24f19ee1305a6655e96a",
+      "key": "\\(x<-1\\) or \\(x>4\\)",
+      "sourceSha256": "0e630843217682edae67cb46d939cc6db619805dfc76991f92bf8a1f0cb21bf6",
       "solution": "Positiveproduct outside roots−1,4 withstrict endpoints."
     },
     {
@@ -5096,15 +5096,15 @@
       "sectionIndex": 3,
       "answerIndex": 1,
       "key": "(x − 7)(x + 7)",
-      "sourceSha256": "b7266297d74390903f47d5f92f850af68defa327c32cc352b3872952b8605aac",
+      "sourceSha256": "2d614da7110f36d830fa0472f2bd661dc011a8f6df5163302b2a7ce080a6f1a3",
       "solution": "Differenceofsquares factors(x−7)(x+7); alternatives introduce cross-term orsquare2401."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 4,
       "answerIndex": 0,
-      "key": "x ≠ 1",
-      "sourceSha256": "ca01a35a189c6f6558f8e7f18bb0b43acc205f0713e295eafa820905223cd6b9",
+      "key": "\\(x\\ne 1\\)",
+      "sourceSha256": "86ef7afce4cae48ca3f6a082a907993ec0392169c6b75a49e70a850db58e28bf",
       "solution": "Originaldenominator excludes1 after cancellation."
     },
     {
@@ -5112,15 +5112,15 @@
       "sectionIndex": 5,
       "answerIndex": 1,
       "key": "3",
-      "sourceSha256": "7d57d2054032927b7f08a522ccd25513c8b9ef1302e1bac2634ad3a890e33759",
+      "sourceSha256": "dfd8766119dfa8307fd48d515082459b66f0d6cda6e9d6f9d9bef284e48a579b",
       "solution": "Identityrequiresmatchingcoefficient3."
     },
     {
       "topic": "math-algebra",
       "sectionIndex": 6,
       "answerIndex": 1,
-      "key": "Substitute both candidates into √(3x)=x",
-      "sourceSha256": "25274d77499307c117eacce37e649953766aaa6df29d2838e772bd231555a075",
+      "key": "Substitute both candidates into \\(\\sqrt{3 x}=x\\)",
+      "sourceSha256": "63c80bb1f44dde58f84acbc713448921250099836585e51be4016ad8a11b1321",
       "solution": "Original√3x=x accepts0and3; principalrootsmay equalzero."
     },
     {
@@ -5128,15 +5128,15 @@
       "sectionIndex": 0,
       "answerIndex": 1,
       "key": "25",
-      "sourceSha256": "aebb0d64b48296ede7eeeff31f10e0d367839d0ac4458161c236e9cdad85b8b3",
+      "sourceSha256": "8ebe211a1473544ff00a4f7cf280b1d91aff6cd83504ac86d25d04ffebc8091d",
       "solution": "Innerg2=5;outerf5=25, reversal7 andproduct20 wrong."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 1,
       "answerIndex": 0,
-      "key": "x ≥ 2 and x ≠ 5",
-      "sourceSha256": "a79b5e4d6617b424dca3fe9ae750d99b7113461b5f70d245193fb409bd962b5d",
+      "key": "\\(x\\ge 2\\) and \\(x\\ne 5\\)",
+      "sourceSha256": "8bc840217dca375054b298a81fcb7b8c7983043f4965db9bd7a58e2505c4b25f",
       "solution": "Intersect radicand≥0 anddenominator≠0: x≥2 except5."
     },
     {
@@ -5144,15 +5144,15 @@
       "sectionIndex": 2,
       "answerIndex": 1,
       "key": "Right 4, up 2",
-      "sourceSha256": "05fc39ffd3f676cbeb573a5679525b06144636199800b6452fe26e9339516d21",
+      "sourceSha256": "5d5d10e454e66d363e95904c0b40ad9c8780afc9117374d5f89fc0d5e4ee5588",
       "solution": "Inside−4 shiftsright4,outside+2 shiftsup2."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 3,
       "answerIndex": 0,
-      "key": "f⁻¹(x) = √x",
-      "sourceSha256": "a17c5281e3fac7d054165510bb46e631f9b12989652ef3bf7c2c0565e0831f07",
+      "key": "\\(f^{-1} \\left(x\\right)=\\sqrt{x}\\)",
+      "sourceSha256": "20b061a5ec910b03f14d0e53a87ca0e46c881dc8da4875c3e24cb6971b0d157b",
       "solution": "Nonnegative branch chooses√x,not±ornegative."
     },
     {
@@ -5160,31 +5160,31 @@
       "sectionIndex": 4,
       "answerIndex": 1,
       "key": "There is a hole at (4,8)",
-      "sourceSha256": "c97a0690a9528b5d6c6342f8039dd322fb1ad6eaabce5837cf76ded27a99ab08",
+      "sourceSha256": "ca4aac20f5d2d4d704cdc0db088adb176426bb19510fc1ce15aef0106a8ae745",
       "solution": "Originalpolecancels tofinitehole(4,8),notfilledpointorasymptote."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 5,
       "answerIndex": 1,
-      "key": "P(t)=3×2ᵗ",
-      "sourceSha256": "7f4ebbfd6617d162ca776943570057c9108dc04211e09f4f64ca89ed7e56084e",
+      "key": "\\(P \\left(t\\right)=3\\times 2^{t}\\)",
+      "sourceSha256": "ab9975fcad421ee18b106f4be92b76823813b5966ceabe74b0882f8a264932a7",
       "solution": "Ratios2fit3×2^t;bothalternative rulesfailatthirdpoint."
     },
     {
       "topic": "math-functions",
       "sectionIndex": 6,
       "answerIndex": 0,
-      "key": "Solve x²=4 and check the negative root outside the window",
-      "sourceSha256": "2a83f8939cf4c18e23818e1e9c1f721a194e5e8c4cebbe6a1595040f041f67dd",
+      "key": "Solve \\(x^{2}=4\\) and check the negative root outside the window",
+      "sourceSha256": "747bcb52e6dacc6027ffeeee85fb265d2531e41ed2b133f9bd78e3480a617372",
       "solution": "x²=4 has±2;positive-onlywindowandverifyingonerootcannotprovecompleteness."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 0,
       "answerIndex": 1,
-      "key": "(10×80 + 20×95)/30",
-      "sourceSha256": "d85fd8be7b3613b02b5c5ab55bee3a842ed0389c0fc933aa8943fbc8bb7bf24f",
+      "key": "\\(\\frac{10\\times 80+20\\times 95}{30}\\)",
+      "sourceSha256": "290a6b929373cee3cc2142946b950f6ee86e715f89d8981a017545d54f8f179e",
       "solution": "Weights10and20give2700/30=90;unweighted87.5andreverse85 fail."
     },
     {
@@ -5200,15 +5200,15 @@
       "sectionIndex": 2,
       "answerIndex": 0,
       "key": "It becomes 3 times as large",
-      "sourceSha256": "20085f886f61ae2ded3bd60a2a840653b1342b4182b096fbb3ab4b975323de9f",
+      "sourceSha256": "35b5fb28b7e1967306c3bb48820923b619c7c6d6bc6d1a7985fc26d0b61e4d76",
       "solution": "SDscalesby3;shift7doesnotchange spread."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 3,
       "answerIndex": 1,
-      "key": "3/12",
-      "sourceSha256": "f4dc00d147ae622da5b0830502c0fc81703d9bd363bfe25faaac1f03450c20ab",
+      "key": "\\(\\frac{3}{12}\\)",
+      "sourceSha256": "6dc80ac76e171c50eefb966ac92be79aa925445d1bd9ccf4b70cff2b48a28d74",
       "solution": "Conditionredlimitsdenominatorto12:3/12;3/9reversescondition."
     },
     {
@@ -5216,15 +5216,15 @@
       "sectionIndex": 4,
       "answerIndex": 2,
       "key": "0.58",
-      "sourceSha256": "4c71897a1b7fa52b1d773d10ab193931abdcba1a435f8b88e0b2ce71d799bb98",
+      "sourceSha256": "f526b8c4a49f8eecdf20d06937a5b79c9aa4715a42298e73bb25780c893ba8f6",
       "solution": "Union.3+.4−.12=.58."
     },
     {
       "topic": "math-statistics-probability",
       "sectionIndex": 5,
       "answerIndex": 0,
-      "key": "7×6×5",
-      "sourceSha256": "bd057d55fa4a7338f69b8d3aabb37d1b5291d92f33c26653c8577749da854f89",
+      "key": "\\(7\\times 6\\times 5\\)",
+      "sourceSha256": "7869349638b4a4bf0f4a82adf9c29614180d7209d8d3554ffceb3803a2748ccd",
       "solution": "Orderedprizes7·6·5=210;unordered35andrepeat343wrong."
     },
     {
@@ -5240,31 +5240,31 @@
       "sectionIndex": 0,
       "answerIndex": 1,
       "key": "5",
-      "sourceSha256": "21eb3ac3a71e11a7e7839d76deadaa683e7b4e2cd4723720a5ab9a905e4bd07a",
+      "sourceSha256": "65c5605eeeb1e9282a69908a7d1f06d6cad063a2ecf01c425a08f8665ebc9ab2",
       "solution": "Principal√25=5,notnegativeorbothsigns."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 1,
       "answerIndex": 0,
-      "key": "Yes: 2×4",
-      "sourceSha256": "c7085255d85dfc7a67784df55be5ff8e227e906ddb7686e0fc0e5ef638260230",
+      "key": "Yes: \\(2\\times 4\\)",
+      "sourceSha256": "027c7e66c6add7095c12c5c46d6dba5e04a81fcc745c233655167a69cb4553e3",
       "solution": "Inner3matches;outer2×4result,not3×3."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 2,
       "answerIndex": 1,
-      "key": "3×2^(n − 1)",
-      "sourceSha256": "b8a27541bdfcae0df3f208a8ced285a103459e802547df4317a4388dda768afe",
+      "key": "\\(3\\times 2^{n-1}\\)",
+      "sourceSha256": "8d55a6296b5f128940ebb954230e16b29f59031889a82939048682d96aa4050b",
       "solution": "Firstterm3ratio2requires exponentn−1."
     },
     {
       "topic": "math-number-quantity",
       "sectionIndex": 3,
       "answerIndex": 1,
-      "key": "x ≥ 6",
-      "sourceSha256": "b1170e2efb0d9be0c8286eb047aa581eb3db3ae6d9f41710c481ee4d3e680761",
+      "key": "\\(x\\ge 6\\)",
+      "sourceSha256": "58cd9296e65e637b3c7086c81eb0f6f4963ff377e368c7fff8b1f3dcfb9b5676",
       "solution": "Rightsideofradicalnonnegativeimpliesx≥6, strongerthanx≥4."
     },
     {
@@ -5272,7 +5272,7 @@
       "sectionIndex": 4,
       "answerIndex": 1,
       "key": "2 − i",
-      "sourceSha256": "c3f43c80961496535bc451f738776402a6bc7ef2eff799b520a9eff9a3286125",
+      "sourceSha256": "7a95b2c9ae20f9929833b9cdc3a5d6f7d9be1d74905c9cb07cba0ef13f2cbb22",
       "solution": "Conjugate2−i gives realdenominator5."
     },
     {
@@ -5280,7 +5280,7 @@
       "sectionIndex": 5,
       "answerIndex": 0,
       "key": "It has no inverse",
-      "sourceSha256": "092b6fafe3a01a7d9d2a2d2577cbff5fac57d56d9d8e15819a9161c71a2ab758",
+      "sourceSha256": "9dafa72e39cbade6f188a163a256da449c6bb85c82b610c03303dcd1a603a6ea",
       "solution": "Determinant0makesinverseundefined,notzeromatrix."
     },
     {
@@ -5288,7 +5288,7 @@
       "sectionIndex": 6,
       "answerIndex": 1,
       "key": "−1",
-      "sourceSha256": "7f18b98fa99a510e9b0f2b4980cace59c34c100aec0fa5f59cd61493045be021",
+      "sourceSha256": "1cdd211a708ab0f97bb40aa569e3f2b5d9fbb36d8c99dca869d273a9e76018da",
       "solution": "2030mod4=2 givesi²=−1."
     },
     {
@@ -5296,7 +5296,7 @@
       "sectionIndex": 0,
       "answerIndex": 1,
       "key": "97.11%",
-      "sourceSha256": "4769fc312b25b3085e67bdcfb9f22adb9a4c48fea149b423a7e3bb1b7eac6c6e",
+      "sourceSha256": "8e26dd8ad5456e7c07ab622c9b355251312a9226bfd9bbb432a8172bfa659ca6",
       "solution": "1.17·.83=.9711,net−2.89%,notcancellationorpositivechange."
     },
     {
@@ -5304,7 +5304,7 @@
       "sectionIndex": 1,
       "answerIndex": 1,
       "key": "48 mph",
-      "sourceSha256": "3f2d9a66d884cbfe6c58696a198328825d83b2e8032947c665652945730040dd",
+      "sourceSha256": "da2f80a2a8280c3da34f4227e543bd22bd17ce25ac77064c353d0ea1f8d81b71",
       "solution": "Equal72-miledistancestake2and1hours;144/3=48;54unweightedand60reverseweights."
     },
     {
@@ -5312,15 +5312,15 @@
       "sectionIndex": 2,
       "answerIndex": 1,
       "key": "18%",
-      "sourceSha256": "888f4eed676025fa9d3dafb798c0c76e43fd5bae2db0a9230e71d3f778f46d2a",
+      "sourceSha256": "753b52b018d0decac07180ec6b06b1d5b66c57b00d2775e3a9dac2ce4ac14636",
       "solution": "Solute.36+.54=.90over5=18%;19.5unweightedand21reverseweights."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 3,
       "answerIndex": 1,
-      "key": "$60/0.75",
-      "sourceSha256": "b239c76d9b76581c477ffaa1d335061498db32ddfc19c0c0f7aa215c113f6856",
+      "key": "$\\(\\frac{60}{0.75}\\)",
+      "sourceSha256": "3532e62d0cc77af5d70603580a90192c0d6a2e5555a163280ed4cfde70464e14",
       "solution": "Sale.75P60 requiresP60/.75=80."
     },
     {
@@ -5328,39 +5328,39 @@
       "sectionIndex": 4,
       "answerIndex": 2,
       "key": "288",
-      "sourceSha256": "dfc10dd0864353f3610a296630720a3af5bae9e96e0ed63e3b075d6c37a95c23",
+      "sourceSha256": "243141df85adb9323314646b24d2b1d002c0c5c1d5a415cc50a61fc59dabb6c5",
       "solution": "Squaredconversion2·12²=288."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 5,
       "answerIndex": 1,
-      "key": "1/6 − 1/12 tank per hour",
-      "sourceSha256": "b9d31e1363210130218d25898c7fc74d293028b5519b65aaf2bc52773d0611f7",
+      "key": "\\(\\frac{1}{6}-\\frac{1}{12}\\) tank per hour",
+      "sourceSha256": "ccca6aa4a9b74aa55eb6f28ea47bab254d72e8abbe08cdd3db77fa14a5202fe5",
       "solution": "Netflow1/6−1/12=1/12tank/hour."
     },
     {
       "topic": "math-essential-skills",
       "sectionIndex": 6,
       "answerIndex": 0,
-      "key": "0.8×100=80 centimeters",
-      "sourceSha256": "10f5c9572a07e69523b13c4a8b713c03f4ddb557c2f2c4dd8927199982746c4f",
+      "key": "\\(0.8\\times 100=80\\) centimeters",
+      "sourceSha256": "7bc5343ec58a7af03471c34665c335441c646e4f8e1fdc399efcf3a6c6237faf",
       "solution": ".8meter×100=80cm;divisionwrongdirection,1000givesmm."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 0,
       "answerIndex": 1,
-      "key": "4 + 2m",
-      "sourceSha256": "13b44e1535847f1f525ed6a327e4fb53a7b1e2e0032e32d8dade268e3f17800b",
+      "key": "\\(4+2 m\\)",
+      "sourceSha256": "d666ffb36b2aa8634ebea5075a6d6bdee975296b841427d856acc69351fb5841",
       "solution": "Fixed4plus2permile→4+2m."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 1,
       "answerIndex": 1,
-      "key": "P(1.08)^t",
-      "sourceSha256": "4322567f939dcd4059bf7125b287886d4c7eb456a8f9dc8e29023159ece9994c",
+      "key": "\\(P \\left(1.08\\right)^{t}\\)",
+      "sourceSha256": "2c4b54c57990289bf6db36e729536623197a0e87c22b3a3ac6f671f41b5df771",
       "solution": "Repeated8%requiresfactor1.08;linearand.08multipliersdiffer."
     },
     {
@@ -5368,7 +5368,7 @@
       "sectionIndex": 2,
       "answerIndex": 1,
       "key": "7",
-      "sourceSha256": "99daebfca600a4b3881ab8418ec913a07d9c966bfd31896489ff4656467b4850",
+      "sourceSha256": "23a58b1a255e5762233034e543bbf4b3d6f97f3e09ffc085b3547939fa25fa69",
       "solution": "Ceil100/15=7;6insufficient,6.67noninteger."
     },
     {
@@ -5384,15 +5384,15 @@
       "sectionIndex": 4,
       "answerIndex": 0,
       "key": "Find the vertex’s output",
-      "sourceSha256": "79a728663ded8f2c11104408ac85fa7d7ad5f034ecbc8b52cd4fdaefcca2f7be",
+      "sourceSha256": "d52cad076e0617e7f63b02ce945b42393bec44d0cda112993b2a568a29a1282d",
       "solution": "Vertexinput4givesheight35;zeroandinitial3wrongquantities."
     },
     {
       "topic": "math-modeling",
       "sectionIndex": 5,
       "answerIndex": 0,
-      "key": "y = 3x + 1",
-      "sourceSha256": "236bea106a9d2b5052a9837c3660876c3670e50e8abd2490f8ab05c3214094be",
+      "key": "\\(y=3 x+1\\)",
+      "sourceSha256": "dbf6edf03ff3633a6e26dbbfbb1e69ffb0038477abc709445f1aa94760b4736b",
       "solution": "Slope9/3=3,intercept1; bothpointsverify."
     },
     {
@@ -5400,7 +5400,7 @@
       "sectionIndex": 6,
       "answerIndex": 2,
       "key": "(4,3), profit $18",
-      "sourceSha256": "fb9fb25d57eae42b634ee23a4b7672e94c54df4a994793bb3c7aa7aceee41a9c",
+      "sourceSha256": "9b85807fc2f592e97a494ec2902432e2cb71409057ab865199e74f3f64075eb8",
       "solution": "Profitinteger≤55/3 via4/3first+1/3secondlimits; max18attained(4,3);(4,4)infeasible."
     }
   ]

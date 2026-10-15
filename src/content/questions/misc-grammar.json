@@ -381,7 +381,7 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "There was too [[much]] traffic on the highway to make the meeting on time.",
+      "stem": "There was [[too much]] traffic on the highway for us to reach the meeting on time.",
       "choices": [
         "NO CHANGE",
         "few",

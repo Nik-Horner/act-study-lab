@@ -3,6 +3,8 @@ import assert from "node:assert/strict";
 import { renderMathText } from "../src/lib/math-text";
 import katex from "katex";
 import { readFileSync } from "node:fs";
+import skills from "../src/content/math-skill-lessons.json";
+import skillQuestions from "../src/content/math-skill-questions.json";
 
 test("authored equations render accessible fractions, radicals and powers", () => {
   const html = renderMathText(
@@ -64,6 +66,16 @@ test("all authored math in the curriculum parses without errors", () => {
         /\\[()[\]]/,
         `${path}: unmatched math delimiter`,
       );
+      if (
+        !/\.(?:title|heading)$/.test(path) &&
+        (!path.startsWith("lesson-activities.") ||
+          path.startsWith("lesson-activities.math-"))
+      )
+        assert.doesNotMatch(
+          remainder,
+          /[√∛^_²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉ₙ]/,
+          `${path}: unformatted formula`,
+        );
       for (const match of matches) {
         assert.doesNotThrow(
           () =>
@@ -92,6 +104,8 @@ test("all authored math in the curriculum parses without errors", () => {
     "math-exams",
     "math-reference",
     "math-method-questions",
+    "math-skill-lessons",
+    "math-skill-questions",
   ]) {
     inspect(
       JSON.parse(
@@ -104,7 +118,54 @@ test("all authored math in the curriculum parses without errors", () => {
     );
   }
   assert(
-    expressions >= 200,
+    expressions >= 3000,
     "Math lessons need authored equations, not just a renderer",
+  );
+});
+
+test("focused Math teaching and practice cannot leave raw equation notation in prose", () => {
+  function inspect(value: unknown, path: string) {
+    if (typeof value === "string") {
+      const prose = value.replace(/\\\(([\s\S]*?)\\\)|\\\[([\s\S]*?)\\\]/g, "");
+      assert.doesNotMatch(
+        prose,
+        /[=√∛^≤≥≠π²³⁴⁵⁶⁷⁸⁹₀₁₂₃₄₅₆₇₈₉ₙθσμ±]|\d\s*\/\s*\d/,
+        `${path}: author equations with TeX delimiters`,
+      );
+    } else if (Array.isArray(value)) {
+      value.forEach((item, i) => inspect(item, `${path}[${i}]`));
+    } else if (value && typeof value === "object") {
+      for (const [key, item] of Object.entries(value))
+        if (!["diagram", "graph", "table", "title", "heading"].includes(key))
+          inspect(item, `${path}.${key}`);
+    }
+  }
+  inspect(skills, "skills");
+  inspect(skillQuestions, "skillQuestions");
+});
+
+test("the Heron lesson renders the formula, worked radicals, and practice explanation", () => {
+  const section = skills.find(
+    (skill) => skill.id === "math-geometry-heron-area",
+  )!.section;
+  const formula = renderMathText(section.body.join(" "));
+  assert.match(formula, /<mfrac>/);
+  assert.match(formula, /<msqrt>/);
+  const example = renderMathText(section.examples[0].text);
+  assert.equal((example.match(/<msqrt>/g) ?? []).length, 3);
+  assert.match(example, /<msup>/);
+  assert.match(renderMathText(section.activity.explanation), /<msqrt>/);
+});
+
+test("function arguments remain inside fraction denominators", () => {
+  const identity = skills.find(
+    (skill) => skill.id === "math-trigonometry-identity-rewrites",
+  )!;
+  assert(identity);
+  const html = renderMathText(identity.section.activity.prompt);
+  assert.match(html, /<mfrac>[\s\S]*<msup>[\s\S]*<mi>θ<\/mi>/);
+  assert.doesNotMatch(
+    identity.section.activity.prompt,
+    /\{\\sin\s*\^\{2\}\}\s*\\theta/,
   );
 });
