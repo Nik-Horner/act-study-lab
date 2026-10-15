@@ -22,7 +22,6 @@ import {
   getTopicStats,
   subjectBaseline,
   masteryRequirements,
-  practiceForMisses,
   recordAnswer,
   setPlanTaskComplete,
   type StudyState,
@@ -31,6 +30,8 @@ import {
 } from "@/lib/act/progress";
 import { buildStudyPlan, localDate } from "@/lib/act/plan";
 import { daysUntil } from "@/lib/format";
+import { practiceStage, selectPracticeSet } from "@/lib/act/practice-queue";
+import { practiceForMisses } from "@/lib/act/question-method";
 import { Card } from "../ui/Card";
 import { Button, ButtonLink } from "../ui/Button";
 import { Badge } from "../ui/Badge";
@@ -615,9 +616,11 @@ export function LessonView({ slug }: { slug: string }) {
 function PracticeSet({
   initialQuestions,
   title,
+  onAnotherSet,
 }: {
   initialQuestions: Question[];
   title: string;
+  onAnotherSet?: () => void;
 }) {
   const { state, ready, update, storageError, userId } = useProgress();
   const [index, setIndex] = useState(0),
@@ -659,8 +662,8 @@ function PracticeSet({
           Set complete: {correct}/{initialQuestions.length}
         </h2>
         <p className="mt-3 text-ink-soft">
-          Read the explanation for each miss, then solve it again later without
-          looking.
+          Review the method behind each miss, then apply it to a fresh problem.
+          Correcting a remembered answer checks retention, not fresh evidence.
         </p>
         <p className="mt-3 text-sm">
           Average answer time:{" "}
@@ -703,6 +706,9 @@ function PracticeSet({
           })}
         </div>
         <div className="mt-5 flex flex-wrap gap-3">
+          {onAnotherSet && (
+            <Button onClick={onAnotherSet}>Another focused set</Button>
+          )}
           <ButtonLink href={`/study/${initialQuestions[0].subject}`}>
             Back to study
           </ButtonLink>
@@ -866,6 +872,7 @@ export function DrillView({ slug }: { slug: string }) {
 function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
   const { state, ready, storageError, userId } = useProgress();
   const [queue, setQueue] = useState<Question[] | null>(null);
+  const [setNumber, setSetNumber] = useState(0);
   if (!ready) return <Loading />;
   if (!userId) return <AccountUnavailable error={storageError} />;
   const topic = getTopic(slug);
@@ -895,12 +902,8 @@ function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
       const weak = new Set(ranking.slice(0, 3).map((t) => t.slug));
       qs = qs.filter((q) => weak.has(q.topic));
     }
-    const seen = new Set(state.answers.map((a) => a.questionId));
-    qs = qs
-      .map((q) => ({ q, priority: (seen.has(q.id) ? 1 : 0) + Math.random() }))
-      .sort((a, b) => a.priority - b.priority)
-      .map((x) => x.q);
-    setQueue(qs.slice(0, topic ? qs.length : slug === "misses" ? 20 : 12));
+    setQueue(selectPracticeSet(qs, state, subject));
+    setSetNumber((n) => n + 1);
   }
   return (
     <div
@@ -919,9 +922,10 @@ function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
       </header>
       {queue ? (
         <PracticeSet
-          key={subject + slug}
+          key={subject + slug + setNumber}
           initialQuestions={queue}
           title={title}
+          onAnotherSet={start}
         />
       ) : (
         <Card className="max-w-3xl p-6 sm:p-8">
@@ -933,13 +937,19 @@ function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
           <p className="prose-study mt-2 text-sm text-ink-soft">
             {slug === "misses"
               ? "Review missed drill questions and solve fresh questions on skills missed in timed sections or older lessons. Original section answers remain in your results."
-              : "Start with unseen questions. Mark your confidence, then check the reasoning before moving on."}
+              : `${practiceStage(
+                  getQuestions(topic?.slug).filter(
+                    (q) => q.subject === subject,
+                  ),
+                  state,
+                  subject,
+                )} practice for your target of ${state.profile.targetScore ?? 36}. New questions come first; difficulty adjusts to your baseline and recent independent work.`}
           </p>
           <div className="my-6 grid gap-4 border-y border-border py-5 sm:grid-cols-3">
             <div>
               <p className="text-sm font-semibold">
                 {topic
-                  ? `${getQuestions(slug).length} questions`
+                  ? `12-question sets · ${getQuestions(slug).length} available`
                   : slug === "misses"
                     ? "Your missed questions"
                     : "12 focused questions"}

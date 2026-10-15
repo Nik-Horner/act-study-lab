@@ -106,7 +106,7 @@ export function dailyScopes(subject: AccountSubject, settings?: StudySettings) {
             subject !== "math" ||
             !settings?.mathCoveredTopics?.includes(topic.slug),
         );
-  return topics.flatMap((topic) =>
+  const scopes = topics.flatMap((topic) =>
     (subject === "english"
       ? englishScopes(topic.slug)
       : DAILY_CURRICULUM[topic.slug]
@@ -120,6 +120,17 @@ export function dailyScopes(subject: AccountSubject, settings?: StudySettings) {
           : `${subject}:${topic.slug}:scope:${index}`,
     })),
   );
+  // Keep stored curriculum positions stable when advanced English scopes grow.
+  return subject === "english"
+    ? [
+        ...scopes.filter(
+          (s) => !s.scope.title?.startsWith("Advanced transfer:"),
+        ),
+        ...scopes.filter((s) =>
+          s.scope.title?.startsWith("Advanced transfer:"),
+        ),
+      ]
+    : scopes;
 }
 export function dailyId(value: string) {
   const hex = createHash("sha256").update(value).digest("hex");
@@ -201,6 +212,15 @@ export function makeDailyPlan(
               Number(course?.deferUnits?.includes(b.id) ?? false) ||
             Number(preferred.some((scope) => scope.id === b.id)) -
               Number(preferred.some((scope) => scope.id === a.id)) ||
+            (course &&
+            subject === "english" &&
+            (course?.targetScore ?? 36) >= 33 &&
+            (planningScores(settings).english ?? 0) >= 28
+              ? Number(
+                  b.scope.title?.startsWith("Advanced transfer:") ?? false,
+                ) -
+                Number(a.scope.title?.startsWith("Advanced transfer:") ?? false)
+              : 0) ||
             (course && subject === "math" && geometryFirst(settings)
               ? mathPriority(a.topic.slug) - mathPriority(b.topic.slug)
               : 0),
@@ -612,25 +632,45 @@ export function practicePriority(
   return difficulty === "medium" ? 0 : difficulty === "hard" ? 1 : 2;
 }
 function englishScopes(topic: string): DailyScope[] {
-  const full = englishLesson(topic);
+  const full = englishLesson(topic) as Lesson;
   const bank = englishQuestions(topic);
   const complete = {
-    sections: full.sections.map((_, i) => i),
-    practice: bank.map((_, i) => i),
+    sections: full.sections.flatMap((s, i) =>
+      s.teachingRevision === 2 ? [] : [i],
+    ),
+    practice: bank.flatMap((q, i) =>
+      /-transfer-0[12]$/.test(q.id) ? [] : [i],
+    ),
   };
-  return topic === "sentence-structure"
+  const core =
+    topic === "sentence-structure"
+      ? [
+          {
+            sections: [0],
+            practice: [0, 1, 2, 3, 4, 5].map((i) => bank.length + i),
+          },
+          {
+            sections: [1],
+            practice: [0, 1, 2, 3, 4, 5].map((i) => bank.length + 6 + i),
+          },
+          { sections: [2, 3, 4], practice: complete.practice },
+        ]
+      : [complete];
+  const advanced = full.sections.flatMap((s, i) =>
+    s.teachingRevision === 2 ? [i] : [],
+  );
+  return advanced.length
     ? [
+        ...core,
         {
-          sections: [0],
-          practice: [0, 1, 2, 3, 4, 5].map((i) => bank.length + i),
+          title: `Advanced transfer: ${full.title}`,
+          sections: advanced,
+          practice: bank.flatMap((q, i) =>
+            /-transfer-0[12]$/.test(q.id) ? [i] : [],
+          ),
         },
-        {
-          sections: [1],
-          practice: [0, 1, 2, 3, 4, 5].map((i) => bank.length + 6 + i),
-        },
-        { sections: [2, 3, 4], practice: complete.practice },
       ]
-    : [complete];
+    : core;
 }
 function sliceLesson(
   full: Lesson,
@@ -648,7 +688,10 @@ function sliceLesson(
         : section;
     }),
     check:
-      subject === "english" && indices.length === full.sections.length
+      subject === "english" &&
+      indices.length ===
+        full.sections.filter((s) => s.teachingRevision !== 2).length &&
+      indices.every((i) => full.sections[i].teachingRevision !== 2)
         ? full.check
         : [],
   };
@@ -802,11 +845,10 @@ export function restoreDailyTeaching(
   if (plan.complete) return { ...plan, formatVersion: 6 };
   const oldEnglish = plan.blocks.find((b) => b.subject === "english");
   const oldUnit = oldEnglish && blockUnits(oldEnglish)[0];
-  const entries = englishTopics()
-    .filter((t) => t.part !== "final")
-    .flatMap((t) =>
-      englishScopes(t.slug).map((_, index) => ({ topic: t.slug, index })),
-    );
+  const entries = dailyScopes("english", settings).map(({ topic, index }) => ({
+    topic: topic.slug,
+    index,
+  }));
   const oldScope = Number(oldUnit?.id.match(/:scope:(\d+)$/)?.[1] ?? 0);
   const start = Math.max(
     0,

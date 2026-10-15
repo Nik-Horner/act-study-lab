@@ -43,7 +43,7 @@ const ITEM_META: Record<
   },
   weak: {
     title: "Drill your weakest topics",
-    subtitle: "Get each one back toward an 8-streak.",
+    subtitle: "Practice fresh questions on the topics that need work.",
     href: "/drill/weak",
   },
   rest: {
@@ -67,8 +67,8 @@ function resolveItems(
         key,
         title: item.title ?? item.slug,
         subtitle: mastered
-          ? "Mastered"
-          : "Read the lesson, then drill to an 8-streak.",
+          ? "Practice milestone reached"
+          : "Read the lesson, then build an 8-answer practice streak.",
         href: `/learn/${item.slug}`,
         auto: true,
         checked: mastered,
@@ -168,7 +168,7 @@ export default async function EnglishDashboard() {
       <section className="flex flex-wrap items-center justify-between gap-6 rounded-2xl border border-border bg-bg-soft p-6 shadow-[var(--shadow-card)]">
         <div>
           <h1 className="text-2xl font-bold">
-            Let&apos;s get a {profile.target_score} on English.
+            Your English goal: {profile.target_score}.
           </h1>
           <p className="mt-1 text-sm text-ink-soft">
             Learn every rule, then drill it until it&apos;s automatic.
@@ -196,6 +196,11 @@ export default async function EnglishDashboard() {
         </div>
       </section>
 
+      <p className="text-sm text-ink-soft">
+        An 8-answer streak is a practice milestone. Use independent timed
+        sections to assess progress toward your score goal.
+      </p>
+
       {/* Summary bar */}
       <section>
         <Card className="flex flex-wrap items-center gap-6 p-6">
@@ -203,7 +208,9 @@ export default async function EnglishDashboard() {
             <div className="text-2xl font-bold">
               {masteredCount}/{topics.length}
             </div>
-            <div className="text-xs text-ink-faint">topics mastered</div>
+            <div className="text-xs text-ink-faint">
+              practice milestones reached
+            </div>
           </div>
           <ProgressBar
             percent={(masteredCount / topics.length) * 100}
@@ -300,7 +307,7 @@ export default async function EnglishDashboard() {
                             }
                           >
                             {status === "mastered"
-                              ? "Mastered"
+                              ? "Practice milestone reached"
                               : status === "practicing"
                                 ? "Practicing"
                                 : "Not started"}

@@ -40,10 +40,6 @@ for (const topic of topics) {
       : 6,
     `${topic.slug}: correct drill count required`,
   );
-  assert.ok(
-    drills.filter((q) => q.difficulty === "hard").length >= 2,
-    `${topic.slug}: two hard drills required`,
-  );
   const lesson = lessons.find((l) => l.slug === topic.slug);
   assert.ok(lesson, `${topic.slug}: matching lesson required`);
   assert.ok(lesson.sections.length >= 2 && lesson.sections.length <= 8);

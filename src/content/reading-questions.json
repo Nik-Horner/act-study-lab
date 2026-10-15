@@ -3176,13 +3176,13 @@
     "stem": "",
     "questionText": "The passage as a whole primarily traces the narrator’s movement from:",
     "choices": [
-      "wanting to work at the harbor to rejecting the maintenance job entirely",
+      "seeing the bell as a shared custom to deciding that its emotional value outweighs the complaints",
       "dismissing a customary signal to recognizing its varied roles without declaring it universally necessary",
-      "defending every harbor tradition to abandoning all of them",
-      "believing the bell was obsolete to proving that modern navigation still required it"
+      "trusting the maintenance records to replacing them with residents’ recollections",
+      "questioning the bell’s navigational role to discovering that it remains essential for safe arrivals"
     ],
     "answer": 1,
-    "explanation": "Paragraph1 presents the bell as neglected obsolete equipment. Paragraphs4–7 develop social meanings and a qualified proposal that also respects complaints. The supported answer is “dismissing a customary signal to recognizing its varied roles without declaring it universally necessary.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Build the change from the beginning and ending, not one incident. In paragraph 1 the narrator treats the bell as neglected obsolete equipment. By paragraphs 6–8, the narrator asks about both supported routines and disturbance, and declines to interpret the worker’s pause with certainty. Ada adds meaning rather than replacing the records; the complaints remain valid; modern navigation is not shown to depend on the bell.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3199,12 +3199,12 @@
     "questionText": "What does the narrator do with Ada’s name while copying the maintenance record?",
     "choices": [
       "Includes it in the repair description",
-      "Creates a separate spreadsheet field devoted to her",
-      "Deletes it because only dates can be preserved",
-      "Replaces it with the name of the newspaper customer"
+      "Adds a separate field for personal names to every spreadsheet entry",
+      "Records Ada in a private notebook but leaves her out of the spreadsheet",
+      "Enters her name as the person who replaced the cable"
     ],
     "answer": 0,
-    "explanation": "Paragraph3 says the spreadsheet has no Ada field, so the narrator puts her name in the description. The supported answer is “Includes it in the repair description.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Locate the copying action in paragraph 3: because the spreadsheet has no field for Ada, the narrator puts her name in the description. The absence of a field does not prompt a redesign or deletion. The later notebook records observed gestures, and Ada’s asking about the silence does not make her the cable repairer.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3220,13 +3220,13 @@
     "stem": "",
     "questionText": "The council’s proposed trial would involve:",
     "choices": [
-      "replacing the breakwater’s electric lights",
-      "moving the harbor office to the bus stop",
-      "requiring every resident to follow Ada’s kettle routine",
+      "ringing the bell only when a vessel is expected",
+      "postponing the bell from seven until the harbor office closes",
+      "measuring the bell’s loudness before deciding whether to silence it",
       "temporarily silencing the bell"
     ],
     "answer": 3,
-    "explanation": "Paragraph6 describes a trial period in which the bell would be silenced. The supported answer is “temporarily silencing the bell.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 6 names the proposed intervention: silencing the bell “during a trial period.” The complaints explain why, but no changed hour, vessel-only schedule, or loudness study is proposed. Keep the actual council action separate from plausible alternatives to it.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3242,13 +3242,13 @@
     "stem": "",
     "questionText": "The father’s response to the revised statement most strongly suggests that he:",
     "choices": [
-      "believes Ada’s experience should determine the council’s decision alone",
-      "changes his vote solely to agree with his child",
+      "accepts the revised statement because it finally argues against the trial",
+      "supports the trial because he thinks the bell’s only value is navigational",
       "can value the bell’s meanings while still supporting a test of the complaints about it",
-      "has concealed a plan to remove all harbor traditions"
+      "regards the competing interpretations of the bell as a misunderstanding the council must resolve"
     ],
     "answer": 2,
-    "explanation": "In paragraph7 he has voted for the trial and still wants its questions to account for the signal’s roles. The two positions coexist. The supported answer is “can value the bell’s meanings while still supporting a test of the complaints about it.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 7 combines two facts: the father voted for the trial, and he wants the council to ask useful questions about the bell. He can recognize its varied meanings and take complaints seriously. The revision does not oppose a trial, he no longer treats navigation as its only function, and the final sentence accepts different meanings rather than demanding agreement.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3262,15 +3262,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "As used in paragraph7, “obsolete” most nearly means:",
+    "questionText": "As used in paragraph 7, “obsolete” most nearly means:",
     "choices": [
-      "audible only from a short distance",
+      "kept in service despite needing repair",
       "no longer needed for its original practical purpose",
-      "poorly repaired during the current summer",
-      "valuable because it is privately owned"
+      "unfamiliar to people who arrived in town recently",
+      "passed down as a custom from an earlier generation"
     ],
     "answer": 1,
-    "explanation": "The electric lights have replaced the bell’s original navigation role, but the narrator learns that other meanings remain. The supported answer is “no longer needed for its original practical purpose.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Substitute the definition into paragraph 7: the bell is an instruction left over from navigation whose original warning function has been superseded by lights. “No longer needed for its original practical purpose” fits. The word does not mean damaged, unfamiliar, or merely inherited; something inherited can still perform a current practical function.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3284,15 +3284,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "Ada’s matter-of-fact manner in paragraph4 mainly contributes to the passage by:",
+    "questionText": "Ada’s matter-of-fact manner in paragraph 4 mainly contributes to the passage by:",
     "choices": [
       "presenting an emotionally significant habit as part of ordinary daily life",
-      "suggesting that her account is a rehearsed performance for officials",
-      "making the narrator conclude that the story is irrelevant to maintenance",
-      "proving that the customer already knows her entire history"
+      "suggesting that repetition has removed the personal significance of the bell",
+      "turning the narrator’s question into a request for official recognition of her husband",
+      "contrasting her reliable memory of the repair date with the incomplete maintenance book"
     ],
     "answer": 0,
-    "explanation": "She tells the story while counting change, and the narrator explicitly contrasts ordinary facts with revelations. The supported answer is “presenting an emotionally significant habit as part of ordinary daily life.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "In paragraph 4, Ada connects the bell to her husband and her continued kettle routine while counting a customer’s change. The ordinary manner and emotionally significant content coexist. She does not ask for commemoration, supply the repair date, or imply that the habit has become meaningless. The detail works through understatement, not an explicit appeal.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3306,15 +3306,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "The clerk’s warning in paragraph5 primarily introduces:",
+    "questionText": "The clerk’s warning in paragraph 5 primarily introduces:",
     "choices": [
-      "an official ban on residents expressing opinions",
-      "evidence that the spreadsheet has already been completed",
-      "the clerk’s belief that no one hears the bell",
+      "evidence that the clerk doubts the accuracy of the narrator’s copied dates",
+      "a reason for treating residents’ stories as replacements for the maintenance figures",
+      "a proposal to turn the spreadsheet into a formal survey of people’s routines",
       "a practical counterweight to the narrator’s growing emotional investment"
     ],
     "answer": 3,
-    "explanation": "The reminder to finish the assigned spreadsheet limits the narrator’s tendency to romanticize the newly observed routines. The supported answer is “a practical counterweight to the narrator’s growing emotional investment.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The warning is to finish the spreadsheet instead of writing a sentimental essay. It checks the narrator’s emotional investment against the job’s practical task. The clerk does not challenge copied dates or propose replacing records with stories. Her later suggestion of a note leaves room for uncertainty without making the spreadsheet a residents’ survey.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3328,15 +3328,15 @@
     "category": "Integration of Knowledge and Ideas",
     "difficulty": "hard",
     "stem": "",
-    "questionText": "Which statement best describes the relationship between the narrator’s two drafts in paragraph6?",
+    "questionText": "Which statement best describes the relationship between the narrator’s two drafts in paragraph 6?",
     "choices": [
-      "The revision exchanges a factual claim for a demand that complaints be ignored",
-      "The revision proves that the first draft accurately described every resident",
+      "The revision shifts the argument from residents’ habits to the cost of maintaining the bell",
+      "The revision makes the case for the bell rest entirely on Ada’s personal experience",
       "The revision narrows a sweeping claim while keeping the underlying question about the bell’s value",
-      "The revision removes every reference to residents’ routines"
+      "The revision replaces the proposed trial with an immediate decision to preserve the bell"
     ],
     "answer": 2,
-    "explanation": "The narrator crosses out a town-wide necessity claim and proposes asking about both supported routines and disturbances. The supported answer is “The revision narrows a sweeping claim while keeping the underlying question about the bell’s value.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Compare what is removed with what remains. The first draft turns Ada’s story into a claim that everyone needs the bell. The revision still asks about its value but includes both supported routines and the people disturbed. It introduces neither cost evidence nor a no-trial decision, and it moves away from making Ada represent everybody.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3352,13 +3352,13 @@
     "stem": "",
     "questionText": "The final uncertainty about the restaurant worker most clearly echoes which earlier concern?",
     "choices": [
-      "The possibility that the father cannot hear the signal",
+      "The possibility that a practical maintenance task has become too personal to complete",
       "The risk of assigning a broad meaning to an observation without sufficient evidence",
-      "The difficulty of pulling the bell rope with adequate force",
-      "The absence of a spreadsheet field for repair dates"
+      "The difficulty of preserving personal names in an institutional record",
+      "The tension between the father’s support for the trial and the narrator’s affection for Ada"
     ],
     "answer": 1,
-    "explanation": "The narrator refuses to infer whether the worker is listening, just as the revised statement avoids turning a particular routine into a universal claim. The supported answer is “The risk of assigning a broad meaning to an observation without sufficient evidence.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The final pause could mean listening or resting. This directly repeats paragraph 5’s caution that looking up could have several explanations, and paragraph 6’s refusal to turn Ada’s routine into a universal claim. Recordkeeping and family disagreement are related themes, but they do not explain the narrator’s refusal to assign a meaning to this particular gesture.",
     "passage": {
       "id": "reading-form-1-p1",
       "title": "Literary narrative — The Night Signal",
@@ -3374,13 +3374,13 @@
     "stem": "",
     "questionText": "The author’s central argument is that the library should:",
     "choices": [
-      "judge the chairs solely by whether occupancy rises at noon",
+      "use increases in occupancy as a provisional estimate of how many additional visitors the chairs attracted",
       "interpret an encouraging count in terms of its definition, the library’s goals, and the study’s limits",
-      "replace quantitative evidence entirely with visitor stories",
-      "count only visitors who are actively reading"
+      "give visitor comments priority over counts when evaluating whether the area serves the library’s mission",
+      "repeat the first month’s counts until weather and examination schedules stop influencing the totals"
     ],
     "answer": 1,
-    "explanation": "The librarian repeatedly distinguishes the observed measure from other possible goals and interpretations. The supported answer is “interpret an encouraging count in terms of its definition, the library’s goals, and the study’s limits.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Follow the librarian’s recurring distinction between a measure and the question it answers (paragraphs 2 and 6). Occupancy can inform a goal about providing space without counting distinct people. Cards illustrate possible uses without replacing counts. Additional observations help, but the argument does not promise that repetition removes every outside influence or permits estimating new visitors from chairs alone.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3392,16 +3392,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3418,10 +3410,10 @@
       "How many distinct people used the library",
       "How many seats were occupied at the counted times",
       "Whether noon and afternoon counts differed",
-      "Whether the windows added eight chairs"
+      "Whether average afternoon occupancy increased after the area opened"
     ],
     "answer": 0,
-    "explanation": "Paragraph2 says the counts do not identify distinct visitors; the counts are snapshots of occupied seats. The supported answer is “How many distinct people used the library.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "One occupied seat at noon is not an identified visitor: the same person might still occupy it at four, or several people might use it at different times. Paragraph 2 explicitly excludes distinct visitors from the measure. The table does provide occupied-seat snapshots, time-of-day comparisons, and before/after afternoon averages. All three alternatives are quantities the counts actually support.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3433,16 +3425,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3456,13 +3440,13 @@
     "stem": "",
     "questionText": "Why did the card include an open line?",
     "choices": [
-      "To require visitors to identify every bus route",
-      "To calculate the number of new chairs",
-      "To replace all fixed-time seat counts",
+      "To check whether visitors agreed with the staff’s preferred explanation for the chairs",
+      "To identify which observed visitors had already filled out a card",
+      "To ask visitors to choose among the reading and laptop categories used by observers",
       "To allow uses the designers had not anticipated to be described"
     ],
     "answer": 3,
-    "explanation": "Paragraph3 explicitly connects the open line to unanticipated answers. The supported answer is “To allow uses the designers had not anticipated to be described.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 3 says the open line permits an answer the designers had not anticipated. Bus-watching illustrates the benefit. Restricting answers to the observation categories would defeat that purpose; the passage does not describe matching individuals to cards or using the card to seek agreement with staff.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3474,16 +3458,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3497,13 +3473,13 @@
     "stem": "",
     "questionText": "The librarian’s reaction to the bus comments most reasonably indicates that she:",
     "choices": [
-      "has concluded that bus passengers caused the entire increase",
-      "regards voluntary comments as unable to reveal any useful possibility",
+      "regards bus watching as the most likely explanation of the overall afternoon increase",
+      "wants a separate bus-passenger survey before allowing those comments into the report",
       "values newly noticed uses while avoiding a claim that those uses characterize all visitors",
-      "considers every bus-related visit outside the library’s mission"
+      "accepts the comments as representative because the card was offered to all visitors"
     ],
     "answer": 2,
-    "explanation": "Paragraph4 accepts overlooked uses but rejects replacing one universal story with another based on a handful of comments. The supported answer is “values newly noticed uses while avoiding a claim that those uses characterize all visitors.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 4 accepts bus watching as an overlooked use while warning that a handful of comments cannot show how common it is. The librarian neither selects it as the cause of the whole increase nor requires a new survey before mentioning it. Offering a voluntary card also does not establish that its respondents represent all visitors.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3515,16 +3491,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3536,15 +3504,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "As used in paragraph5, “controlled” most nearly means:",
+    "questionText": "As used in paragraph 5, “controlled” most nearly means:",
     "choices": [
-      "reported using a more memorable title",
+      "counted at the same times each day",
       "held constant or accounted for in the comparison",
-      "enforced by library security staff",
-      "eliminated from every visitor’s experience"
+      "verified by checking the original daily counts",
+      "restricted to visitors who accepted a comment card"
     ],
     "answer": 1,
-    "explanation": "The examinations and rainy week vary between periods, so they were not controlled conditions in the comparison. The supported answer is “held constant or accounted for in the comparison.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "In paragraph 5, examinations and a rainy week are conditions that changed between months and were not held constant or accounted for in a controlled comparison. Counting times and checking records are procedures, not the meaning of “controlled” here. The word also does not refer to selecting card respondents.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3556,16 +3524,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3577,15 +3537,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "The contrast between a precise number and a precise answer in paragraph6 chiefly serves to:",
+    "questionText": "The contrast between a precise number and a precise answer in paragraph 6 chiefly serves to:",
     "choices": [
       "show that a measurement must match the question being asked",
-      "suggest that all numerical counts are imprecise",
-      "prove that funders dislike quantitative reports",
-      "reject the need to define the library’s mission"
+      "show that a larger sample would make the occupancy count a reliable estimate of new visitors",
+      "suggest that stories can answer policy questions more precisely than numerical counts",
+      "explain why the report should present only measures directly relevant to funders’ financial decisions"
     ],
     "answer": 0,
-    "explanation": "The librarian differentiates space provision, for which occupied seats matter, from attracting distinct new visitors, for which another measure is needed. The supported answer is “show that a measurement must match the question being asked.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 6 gives two different goals: providing space and attracting additional people. Occupied seats address the first; distinct-visitor counts address the second. A more precise count of the wrong quantity still does not answer the other question. The contrast neither dismisses numbers in favor of stories nor limits the report to finance.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3597,16 +3557,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3620,13 +3572,13 @@
     "stem": "",
     "questionText": "The final discussion of the report’s title emphasizes:",
     "choices": [
-      "the author’s belief that essays should contain no evidence",
-      "the librarian’s wish to conceal the study’s subject",
-      "the committee’s decision to remove the table",
+      "the need for a report title to persuade funders before presenting technical details",
+      "the usefulness of separating numerical results from all discussion of visitor experience",
+      "the committee’s wish to postpone interpretation until a controlled experiment is possible",
       "the value of clear scope over a more evocative but less specific phrase"
     ],
     "answer": 3,
-    "explanation": "Paragraph8 contrasts a memorable essay phrase with a heading that accurately identifies what the study measured. The supported answer is “the value of clear scope over a more evocative but less specific phrase.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "In paragraph 8, the librarian rejects the evocative phrase as the report heading and chooses a title naming weekday occupancy before and after opening. That title communicates both topic and scope. It does not conceal interpretation until an experiment, exclude the visitor comments, or privilege persuasion over an accurate account of the evidence.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3638,16 +3590,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3661,13 +3605,13 @@
     "stem": "",
     "questionText": "Which statement is directly supported by the table?",
     "choices": [
-      "Every added chair was occupied at every observation",
-      "The chairs caused a larger rise in morning reading time",
+      "Noon occupancy increased by a larger proportion than afternoon occupancy",
+      "The afternoon increase equaled the number of added chairs",
       "The observed afternoon occupancy increased more than the observed noon occupancy",
-      "The number of distinct library users doubled"
+      "Average afternoon occupancy after opening remained below average noon occupancy after opening"
     ],
     "answer": 2,
-    "explanation": "Afternoon occupancy rises from8 to17, a change of9; noon rises from6 to8, a change of2. The table does not measure individuals, continuous use, or causation. The supported answer is “The observed afternoon occupancy increased more than the observed noon occupancy.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Compute changes in the same units: afternoon 17 − 8 = 9 occupied seats, noon 8 − 6 = 2. The afternoon increase is larger in both count and proportion. Nine is not the eight chairs added; movement into the retained seats can also change occupancy. After opening, 17 afternoon seats exceeds 8 noon seats.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3679,16 +3623,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3702,13 +3638,13 @@
     "stem": "",
     "questionText": "Considering both the table and the passage, which report conclusion is most justified?",
     "choices": [
-      "The noon count proves that school examinations had no effect",
+      "The occupancy increase is a conservative estimate of additional visitors because only two times were counted",
       "Seat occupancy rose at the observed times, but these numbers alone do not establish an increase in distinct visitors",
-      "Nine additional afternoon seats prove nine additional individual visitors attended every day",
-      "The comment cards make the numerical table irrelevant"
+      "The afternoon rise can be attributed to new seating because the observation locations were kept consistent",
+      "The cards establish which activity accounts for most of the increased afternoon occupancy"
     ],
     "answer": 1,
-    "explanation": "The table records occupancy snapshots, and paragraph2 explains why those snapshots cannot count unique visitors. The supported answer is “Seat occupancy rose at the observed times, but these numbers alone do not establish an increase in distinct visitors.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The table shows more occupied seats at each observed time, and paragraph 2 explains why this does not identify additional individuals. Fixed observation locations aid comparison but do not isolate cause. Missing other times does not turn occupancy into a lower bound on new visitors, and voluntary comments do not establish how common each activity is.",
     "passage": {
       "id": "reading-form-1-p2",
       "title": "Social science — What a Seat Measures",
@@ -3720,16 +3656,8 @@
           "After opening: average occupied seats"
         ],
         "rows": [
-          [
-            "Noon",
-            6,
-            8
-          ],
-          [
-            "4 p.m.",
-            8,
-            17
-          ]
+          ["Noon", 6, 8],
+          ["4 p.m.", 8, 17]
         ]
       }
     }
@@ -3744,12 +3672,12 @@
     "questionText": "The paired passages primarily explore:",
     "choices": [
       "how researchers can use archives while making the limits of recorded evidence visible",
-      "why official documents should be excluded from historical research",
-      "how oral recordings eliminate the need for institutional records",
-      "why bridge construction is the only subject worth preserving"
+      "how oral accounts can correct institutional records sufficiently to produce a unified history",
+      "why the survival of official records makes private recollections less necessary for research",
+      "how gaps in a collection reveal deliberate efforts to exclude particular residents"
     ],
     "answer": 0,
-    "explanation": "Both writers support several kinds of evidence and explicit documentation of what each can and cannot show. The supported answer is “how researchers can use archives while making the limits of recorded evidence visible.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Both writers want sources used with their limits visible. Passage A places recollections beside plans without blending them into a seamless account; Passage B documents how records and interviews were created. Neither promises that oral accounts complete the story, makes private voices unnecessary, or assumes every gap was deliberate exclusion.",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3766,12 +3694,12 @@
     "questionText": "According to Passage A, the original municipal collection was principally organized around:",
     "choices": [
       "decisions an institution needed to record",
-      "every private conversation among residents",
-      "interviews conducted by the narrator personally",
-      "the experiences of every household in chronological order"
+      "residents’ requests arranged according to the extent of disruption they experienced",
+      "the narrator’s later comparison of interviews and engineering drawings",
+      "the bridge’s effects on daily routines along its approaches"
     ],
     "answer": 0,
-    "explanation": "Paragraph1 identifies institutional decisions as the organizing purpose of the surviving records. The supported answer is “decisions an institution needed to record.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Passage A, paragraph 1 explicitly says the archive was organized around the decisions an institution needed to record. Petitions contain some resident names, but that does not make residents’ experiences the collection’s organizing purpose. Interviews and the comparison of sources belong to the historian’s later research, not the original collection.",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3787,13 +3715,13 @@
     "stem": "",
     "questionText": "Which question does the archivist specifically recommend documenting for a new oral-history collection?",
     "choices": [
-      "Whether every speaker agreed with council votes",
-      "Which engineering drawing contained the most measurements",
-      "Whether all recollections can be combined without interruption",
+      "Which recollections most closely agree with the official council minutes",
+      "Whether interviewees can provide a continuous account without pauses",
+      "Which interviews best represent the community as a whole",
       "Who was invited to speak"
     ],
     "answer": 3,
-    "explanation": "Paragraph7 asks who was invited, who declined, and what interview questions were used. The supported answer is “Who was invited to speak.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Passage B, paragraph 7 lists invitation, refusal, and interview questions as conditions that should travel with oral-history evidence. “Who was invited to speak” is one of those explicit questions. Agreement with minutes, uninterrupted delivery, and selecting representative interviews are plausible research concerns, but none is the specific documentation the paragraph recommends.",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3809,13 +3737,13 @@
     "stem": "",
     "questionText": "The historian’s decision not to create a seamless final narrative suggests that the historian:",
     "choices": [
-      "has been unable to identify the bridge’s final dimensions",
-      "expects readers to supply invented accounts for every missing resident",
+      "wants recollections to take precedence whenever they conflict with engineering records",
+      "treats interruptions as evidence that the bridge’s design was repeatedly changed",
       "wants differences in evidence sources to remain apparent to readers",
-      "considers every source too unreliable to use"
+      "expects readers to decide which source supplies a complete account"
     ],
     "answer": 2,
-    "explanation": "Paragraph4 explicitly connects visible interruptions to the argument about distinct kinds of evidence. The supported answer is “wants differences in evidence sources to remain apparent to readers.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 4 explains the interruptions as marks of movement between different kinds of evidence. Keeping them visible allows readers to judge each source and the limits of conclusions requiring both. The choice does not rank recollections above plans, establish design changes, or imply that one source must contain the whole event.",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3829,15 +3757,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "As used in paragraph8, “intelligible” most nearly means:",
+    "questionText": "As used in paragraph 8, “intelligible” most nearly means:",
     "choices": [
-      "immune to criticism",
+      "complete enough to settle the historical question",
       "understandable",
-      "fully eliminated",
-      "selected at random"
+      "consistent across every source in a collection",
+      "capable of being reconstructed from surviving records"
     ],
     "answer": 1,
-    "explanation": "The archivist wants the collection’s limits made clear, not erased or rendered beyond question. The supported answer is “understandable.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The sentence concerns making the archive’s limits understandable. A limit can be explained even when the missing conversation cannot be reconstructed and the sources do not settle the whole question. “Complete,” “consistent,” and “recoverable” would change the archivist’s restrained goal rather than paraphrase “intelligible.”",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3851,15 +3779,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "The examples of dust, paths, and morning noise in paragraph3 mainly:",
+    "questionText": "The examples of dust, paths, and morning noise in paragraph 3 mainly:",
     "choices": [
       "illustrate aspects of a project that engineering plans do not fully describe",
-      "prove that the bridge was constructed without approval",
-      "show that all residents shared an identical opinion",
-      "replace the need to identify sources for recollections"
+      "establish that residents’ memories provide a more precise construction timetable than official minutes",
+      "identify construction problems that the council had failed to foresee in its original plans",
+      "show why the historian decided that recollections should determine the bridge’s final dimensions"
     ],
     "answer": 0,
-    "explanation": "The historian calls them other dimensions of the same project, not evidence invalidating the plans. The supported answer is “illustrate aspects of a project that engineering plans do not fully describe.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The household details in paragraph 3 add dimensions of lived experience—washing, shopping paths, and work noise—to the same project described in engineering records. The historian explicitly says they do not invalidate the plans. They do not date construction more precisely, establish what the council foresaw, or determine structural dimensions.",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3875,13 +3803,13 @@
     "stem": "",
     "questionText": "Passage B’s distinction between making records and making history primarily:",
     "choices": [
-      "claims that documents are never historical evidence",
-      "shows that archivists alone created all events in the past",
-      "argues that unrecorded conversations can always be reconstructed exactly",
+      "suggests that a collection becomes historical evidence only when an archivist describes its gaps",
+      "shows that most archival gaps result from records deliberately discarded after an event",
+      "argues that oral histories should be organized outside institutional categories",
       "challenges the assumption that every past experience originally produced a document"
     ],
     "answer": 3,
-    "explanation": "Paragraph5 notes that some activities never generated records in the first place. The supported answer is “challenges the assumption that every past experience originally produced a document.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 5 locates some absences before preservation: the activity was never recorded, not necessarily lost or discarded. Thus an event need not have generated a document. This distinction does not deny that undescribed records are evidence, identify deliberate disposal as the main cause, or prescribe a new arrangement for oral histories.",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3897,13 +3825,13 @@
     "stem": "",
     "questionText": "On which point do the two writers most clearly agree?",
     "choices": [
-      "An archive without residents’ letters contains no evidence about residents",
-      "The conditions under which an interview occurs are irrelevant",
+      "Official records become useful only after interviews reveal the experiences they omit",
+      "Interviews should be used principally to test the accuracy of institutional decisions",
       "Adding personal accounts can broaden understanding without making the evidence complete",
-      "Oral recollections are inherently exempt from interpretation"
+      "The best historical account merges different sources so that their origins do not interrupt the narrative"
     ],
     "answer": 2,
-    "explanation": "Passage A says adding voices does not fill every silence; Passage B requires documentation and rejects promises of completeness. The supported answer is “Adding personal accounts can broaden understanding without making the evidence complete.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Pair Passage A’s “adding voices” does not fill every silence (paragraph 3) with Passage B’s warning that expanded collections can still create an illusion of completeness (paragraph 7). Both support broadening evidence while keeping limits. Neither makes interviews a prerequisite for useful records, limits interviews to checking officials, or favors hiding source boundaries.",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3919,13 +3847,13 @@
     "stem": "",
     "questionText": "Which difference between the passages is best supported?",
     "choices": [
-      "Passage A concerns only the present; Passage B concerns only fictional events",
+      "Passage A centers on the reliability of memory; Passage B presents institutional documents as unaffected by interpretation",
       "Passage A emphasizes composing a historical account; Passage B emphasizes describing how collections and new records are made",
-      "Passage A opposes oral histories; Passage B endorses only oral histories",
-      "Passage A regards records as complete; Passage B sees every record as false"
+      "Passage A explains why institutional categories should be discarded; Passage B explains how those categories should be restored",
+      "Passage A argues for adding private voices; Passage B argues that doing so weakens an archive’s usefulness"
     ],
     "answer": 1,
-    "explanation": "The historian discusses using sources in a chapter, while the archivist discusses collection formation, categories, and interview conditions. The supported answer is “Passage A emphasizes composing a historical account; Passage B emphasizes describing how collections and new records are made.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Passage A follows a historian choosing and presenting evidence in a chapter about a bridge. Passage B examines collection formation, institutional categories, and documenting new interviews. Both discuss memory and support private voices. Neither treats institutional categories as natural truth or argues that adding personal material weakens an archive.",
     "passage": {
       "id": "reading-form-1-p3",
       "title": "Humanities — The Archive’s Silence (paired texts)",
@@ -3942,12 +3870,12 @@
     "questionText": "The passage chiefly describes how the research team:",
     "choices": [
       "revises an appealing prediction after recognizing spatial, temporal, and causal limits in its data",
-      "proves that beaches cannot be measured accurately in any way",
-      "discovers that barriers are the sole cause of every sand movement",
-      "replaces all field measurements with visitors’ opinions"
+      "learns to replace forecasts of shoreline loss with more precise predictions about individual storms",
+      "develops a causal model showing how barriers change the movement of sand between beach sections",
+      "confirms an early local trend by dividing its observations into increasingly similar weather groups"
     ],
     "answer": 0,
-    "explanation": "The sequence moves from a local straight-line forecast to broader volume estimates and qualified causal claims. The supported answer is “revises an appealing prediction after recognizing spatial, temporal, and causal limits in its data.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The sequence expands what is measured, confronts recovery over time, and limits the claim about barriers. The team revises the attractive initial forecast rather than merely making it more precise or confirming it. Paragraph 5 rejects ever smaller groups as automatic evidence, and paragraph 6 leaves the barriers’ causal role unresolved.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -3963,13 +3891,13 @@
     "stem": "",
     "questionText": "What happened during the fifth-week storm?",
     "choices": [
-      "Every stake recorded an identical gain",
-      "The team’s four earlier observations were erased",
-      "The barriers were installed at all measurement points",
+      "Sand was lost at the central stakes and at every newly added survey point",
+      "Sand returned to the places that had lost it during the calmer weeks",
+      "Sand accumulated behind the new barriers while leaving the rest of the beach unchanged",
       "Sand was removed from one section and deposited farther along the shore"
     ],
     "answer": 3,
-    "explanation": "Paragraph2 describes redistribution of sand, with losses and gains at different stakes. The supported answer is “Sand was removed from one section and deposited farther along the shore.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 2 describes the fifth-week storm redistributing sand: removal from one section and deposition farther along the shore. The calmer-weather return occurs later in paragraph 4. Neither uniform loss at every point nor a barrier-specific accumulation is reported for this storm. Track the event and its timing separately from later interpretations.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -3985,13 +3913,13 @@
     "stem": "",
     "questionText": "What did the expanded survey help estimate?",
     "choices": [
-      "The exact route of every individual grain",
-      "The number of visitors at each weekly visit",
-      "A guaranteed date when the beach would disappear",
+      "The average rate at which all the sand would leave the shoreline permanently",
+      "The amount of sand transported by each recorded wind direction",
+      "The separate contribution of barriers to the height measured at each stake",
       "A broader change in beach volume"
     ],
     "answer": 3,
-    "explanation": "Paragraph3 says additional points and distances allow a broader volume estimate. The supported answer is “A broader change in beach volume.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 3 adds spatial information—more measurement points and distances between them—to estimate a broader volume change. That is different from assuming a permanent loss rate, tracing sand to particular winds, or isolating barriers’ effects. The expanded survey improves the quantity estimated while leaving temporal and causal limits.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -4007,13 +3935,13 @@
     "stem": "",
     "questionText": "Including the first graph in the final display most reasonably suggests that the students:",
     "choices": [
-      "want visitors to ignore all later measurements",
-      "have lost the coordinate references needed for further surveys",
+      "regard the first four measurements as less trustworthy than the later measurements",
+      "believe a simple early forecast is the clearest way to present the final beach-wide result",
       "consider the correction of assumptions part of explaining their findings",
-      "still endorse its original unqualified prediction"
+      "want visitors to compare the first graph with an equally confident revised forecast"
     ],
     "answer": 2,
-    "explanation": "Paragraph7 pairs the original graph with a note showing how its assumptions exceeded the observations. The supported answer is “consider the correction of assumptions part of explaining their findings.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 7 keeps the graph with a note identifying the assumptions that exceeded the observations. This exposes how the interpretation changed. The original four observations remain valid; what failed was extrapolating them. The revised account is explicitly readable without being final, so retaining the graph is neither distrust of early data nor a contest between certain forecasts.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -4027,15 +3955,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "As used in paragraph4, “provisional” most nearly means:",
+    "questionText": "As used in paragraph 4, “provisional” most nearly means:",
     "choices": [
-      "designed only for private use",
+      "restricted to the shoreline points measured in the first month",
       "open to revision in light of further evidence",
-      "certain to remain correct under all conditions",
-      "unrelated to the measurements already collected"
+      "based mainly on an explanation rather than on direct observations",
+      "prepared for the public before the technical report is complete"
     ],
     "answer": 1,
-    "explanation": "The supervisor defines the model as an account to compare with new conditions rather than protect from them. The supported answer is “open to revision in light of further evidence.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The supervisor glosses “a provisional account” as a model compared with new conditions rather than protected from them. The issue is revisability in light of evidence, not whether the account is public, purely theoretical, or geographically restricted. Substitute the definition into the sentence and check that it preserves this relation to future tests.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -4052,12 +3980,12 @@
     "questionText": "The visitors’ question about barriers primarily introduces:",
     "choices": [
       "a practical causal question that the existing comparisons cannot fully answer",
-      "proof that the beach has gained sand at every point",
-      "the reason why the original stakes were installed in dunes",
-      "an argument against collecting weather information"
+      "a reason to make the earlier and later measurement periods the same length before drawing conclusions",
+      "a request to identify where sand gains were greatest after the barriers were installed",
+      "an explanation for why the team grouped observations by broad wave conditions"
     ],
     "answer": 0,
-    "explanation": "Paragraph6 distinguishes describing before-and-after observations from isolating the barriers’ effect. The supported answer is “a practical causal question that the existing comparisons cannot fully answer.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The visitors ask whether the barriers are saving the beach—a question about cause. Paragraph 6 explains that different weather in the before/after periods prevents attributing the change to barriers alone. Equal period lengths and locations of gains would supply useful descriptions, but neither is the question’s main function in the argument.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -4073,13 +4001,13 @@
     "stem": "",
     "questionText": "The last paragraph mainly shifts attention toward:",
     "choices": [
-      "celebrating the end of all shoreline changes",
-      "replacing the survey with a public vote",
-      "proving that walkers caused the first four declines",
+      "reassuring visitors that the stakes themselves had little effect on the measured sand movement",
+      "identifying a single forecast the next group can use as its initial measurement standard",
+      "recommending that the next group begin elsewhere to avoid being influenced by the first survey",
       "continuing a testable investigation rather than preserving a fixed prediction"
     ],
     "answer": 3,
-    "explanation": "The inherited coordinates, observations, and definitions enable a future group to investigate further. The supported answer is “continuing a testable investigation rather than preserving a fixed prediction.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 8 removes physical stakes but retains coordinate references, observations, definitions, and questions for another group. Continuity makes further testing possible while leaving the prediction open. The passage does not assess whether stakes moved sand, give a fixed forecast as a standard, or ask successors to discard the survey locations.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -4095,13 +4023,13 @@
     "stem": "",
     "questionText": "Which statement best combines the storm and calmer-weather observations?",
     "choices": [
-      "Calmer weather proves that the barriers caused all recoveries",
-      "The original local measurements contain no usable information",
+      "Storms and calm periods affect the same locations in opposite but predictably equal amounts",
+      "A broader volume estimate can identify the exact sand movement missed between weekly visits",
       "Sand can move among locations and return over time, so a short decline at one point need not describe permanent beach-wide loss",
-      "Every storm permanently removes the same amount of sand from every point"
+      "The barriers explain why sand returned after the storm rather than leaving the shoreline permanently"
     ],
     "answer": 2,
-    "explanation": "Paragraph2 shows spatial redistribution and paragraph4 shows recovery, limiting extrapolation from one early local trend. The supported answer is “Sand can move among locations and return over time, so a short decline at one point need not describe permanent beach-wide loss.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Combine two distinct limits: the storm redistributes sand among locations (paragraph 2), and later calm waves return some of it (paragraph 4). A local early decline therefore need not be permanent beach-wide loss. Nothing establishes equal opposing amounts, exact between-visit movements, or a barrier-caused recovery.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -4117,13 +4045,13 @@
     "stem": "",
     "questionText": "How does the supervisor’s final statement relate to the idea of a provisional account?",
     "choices": [
-      "Both reject the usefulness of consistent coordinate references",
+      "Both treat a longer record as sufficient to remove the need to state assumptions",
       "Both favor information and assumptions that can be tested as conditions change",
-      "Both require future groups to repeat the first prediction without checking it",
-      "Both argue that orderly data are necessarily false"
+      "Both favor the broader volume estimate as a forecast that future groups should preserve",
+      "Both require a new group to use a different observation method before reconsidering the results"
     ],
     "answer": 1,
-    "explanation": "The model is revisable, and the final inheritance consists of observations and questions to confront with new shoreline behavior. The supported answer is “Both favor information and assumptions that can be tested as conditions change.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "A provisional account is tested against new conditions (paragraph 4); the final inheritance supplies observations and questions for the next shoreline test (paragraph 8). Both make later checking possible. Neither turns longer records into certainty, freezes the revised estimate, or requires a different method before existing conclusions may be reconsidered.",
     "passage": {
       "id": "reading-form-1-p4",
       "title": "Natural science — The Unsteady Shore",
@@ -4140,16 +4068,16 @@
     "questionText": "The passage primarily traces the narrator’s change from:",
     "choices": [
       "a rigid image of serious rehearsal toward a more flexible understanding of musical work",
-      "disliking music to choosing a professional career",
-      "preferring the cello to rejecting all string instruments",
-      "wanting to share a room to demanding exclusive ownership"
+      "believing a dedicated room will make rehearsal easy toward seeking a space with fewer interruptions",
+      "reliance on the quartet’s written plan toward trusting the aunt to direct its musical decisions",
+      "concern with how the room looks toward believing that careful preparation interferes with creativity"
     ],
     "answer": 0,
-    "explanation": "The opening ideal of a dedicated room gives way to the final acceptance of other uses and useful unplanned exchanges. The supported answer is “a rigid image of serious rehearsal toward a more flexible understanding of musical work.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 1 makes seriousness a picture of chairs and windows; paragraph 8 preserves the goal of playing well while relaxing exclusivity. The change is toward a more flexible understanding of musical work. The narrator does not end by seeking fewer interruptions, adopting the aunt as director, or rejecting preparation: the quartet still works through its planned repairs and adapts useful suggestions.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4161,17 +4089,17 @@
     "stem": "",
     "questionText": "Why does the mother insist that the piano remain?",
     "choices": [
-      "The quartet needs it for every assigned piece",
-      "Moving it would violate a written rental agreement",
-      "The neighbor plans to sell it after tea",
+      "It marks the position around which the quartet’s chairs must be arranged.",
+      "Lina will use it to check the cello’s tuning during rehearsals.",
+      "The mother expects the quartet to add a piano part later.",
       "The aunt plays it during Sunday visits"
     ],
     "answer": 3,
-    "explanation": "Paragraph2 states the aunt’s Sunday use; no quartet member plays the piano. The supported answer is “The aunt plays it during Sunday visits.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 2 gives the mother’s reason: the aunt likes to play after Sunday lunch. No quartet member plays it. The later musical exchange does not make tuning, a future piano part, or the chair arrangement the original reason for leaving it in place. Distinguish a stated motive from later possible uses.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4183,17 +4111,17 @@
     "stem": "",
     "questionText": "What does the narrator do when the aunt asks about the quartet’s improvement?",
     "choices": [
-      "Shows a photograph of the carefully spaced chairs",
-      "Refuses to discuss the music until Sunday is over",
+      "Explains why the piano’s position made the group’s chairs uneven",
+      "Asks the aunt to play the melody from the community concert again",
       "Describes a difficult measure rather than the room’s appearance",
-      "Claims that the group has stopped rehearsing"
+      "Lists the changes the mother required before allowing the quartet to meet"
     ],
     "answer": 2,
-    "explanation": "Paragraph7 explicitly contrasts discussing the stubborn third measure with describing chairs and windows. The supported answer is “Describes a difficult measure rather than the room’s appearance.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 7 explicitly contrasts telling the aunt about the stubborn third measure with describing chairs and windows. This action demonstrates attention to the music itself. The aunt then asks to see the score; the narrator does not start by revisiting the room arrangement, requesting the earlier song, or listing the mother’s conditions.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4203,19 +4131,19 @@
     "category": "Key Ideas and Details",
     "difficulty": "hard",
     "stem": "",
-    "questionText": "The narrator’s response to the aunt’s interruption in paragraph4 suggests that the narrator:",
+    "questionText": "The narrator’s response to the aunt’s interruption in paragraph 4 suggests that the narrator:",
     "choices": [
-      "expects the aunt to join every future performance",
+      "values the exchange mainly because it helps Lina correct the troublesome third measure",
       "enjoys an unexpected musical exchange while worrying about the planned rehearsal time",
-      "finds the aunt’s playing entirely unpleasant",
-      "believes the quartet has no difficult measures left"
+      "welcomes the exchange as a replacement for the planned rehearsal",
+      "resents the delay because the aunt insists on performing the whole song"
     ],
     "answer": 1,
-    "explanation": "The narrator says the conversation is enjoyable and resented simultaneously because the group has only an hour. The supported answer is “enjoys an unexpected musical exchange while worrying about the planned rehearsal time.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 4 states simultaneous enjoyment and resentment: the exchange is appealing, but the quartet has only an hour and a list of repairs. It is not said to fix the third measure, replace the rehearsal, or be imposed by the aunt. Lina invites the opening to be repeated, and the planned work follows afterward.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4225,19 +4153,19 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "As used in paragraph8, “loosened” most nearly means:",
+    "questionText": "As used in paragraph 8, “loosened” most nearly means:",
     "choices": [
       "became less rigid",
-      "was physically untied",
-      "grew louder",
-      "was completely forgotten"
+      "became easier to explain to other people",
+      "lost its importance because the quartet had improved",
+      "was replaced by an equally firm belief about shared rooms"
     ],
     "answer": 0,
-    "explanation": "The subject is the narrator’s conviction about exclusivity, which changes without ending the wish to play well. The supported answer is “became less rigid.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The subject of “loosened” is the conviction that serious work requires exclusivity. The narrator still wants to play well, but that conviction becomes less rigid. Improved playing does not make seriousness unimportant, and the ending does not install a new absolute rule. Use both the sentence’s subject and the preceding statement of continuing ambition.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4247,19 +4175,19 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "The mother’s question about the arrangement in paragraph3 mainly serves to:",
+    "questionText": "The mother’s question about the arrangement in paragraph 3 mainly serves to:",
     "choices": [
-      "show that she cannot recognize a music stand",
-      "announce that the quartet is unwelcome",
-      "demonstrate that all chairs must be equally high",
+      "suggest that Lina should adapt her playing position rather than alter the arrangement",
+      "remind the narrator that restoring the room matters more than the rehearsal itself",
+      "encourage the quartet to reproduce the formal arrangement seen in photographs",
       "challenge the narrator to distinguish a useful setup from an impressive-looking one"
     ],
     "answer": 3,
-    "explanation": "Her contrast between helping the players and making the room look like rehearsal exposes the narrator’s misplaced priority. The supported answer is “challenge the narrator to distinguish a useful setup from an impressive-looking one.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The question asks whether the arrangement should help the players or merely look like rehearsal. Moving stands then gives Lina a workable sightline and improves the sound. It challenges appearance as the priority; it does not ask Lina to endure the setup, elevate room restoration above music, or endorse the photographs’ arrangement.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4269,19 +4197,19 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "The carpet dents in paragraph6 function primarily as:",
+    "questionText": "The carpet dents in paragraph 6 function primarily as:",
     "choices": [
-      "an explanation for Lina’s cushion",
-      "a sign that the neighbor objects to all music",
+      "a measure of how long the quartet has occupied its new rehearsal space",
+      "a visual sign that moving the chairs will make future rehearsals less comfortable",
       "a concrete reminder that the room already accommodates changing uses",
-      "proof that the quartet has damaged an antique piano"
+      "an image linking the mother’s practical work to the quartet’s musical improvement"
     ],
     "answer": 2,
-    "explanation": "The narrator interprets the old dents as evidence of earlier arrangements rather than a wholly new room. The supported answer is “a concrete reminder that the room already accommodates changing uses.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "In paragraph 6 the narrator sees old dents while returning chairs and realizes the room already contains many arrangements. The physical detail makes earlier uses visible. It does not date the quartet’s occupancy, predict comfort, or directly explain musical improvement; its function is to revise the narrator’s claim to a wholly new, dedicated room.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4293,17 +4221,17 @@
     "stem": "",
     "questionText": "How do the aunt’s repeated phrase and the quartet’s difficult measure relate?",
     "choices": [
-      "Both prove that the room prevents concentration",
+      "Both show how an informal setting eliminates the difficult work of rehearsal",
       "Both reveal that improvement involves trying and adjusting a passage",
-      "Both demonstrate that skilled players never repeat music",
-      "Both show that the aunt wrote the quartet’s entire piece"
+      "Both indicate that outside suggestions matter more than a player’s own adjustments",
+      "Both suggest that a passage becomes expressive only after its written markings are discarded"
     ],
     "answer": 1,
-    "explanation": "Paragraph5 describes repeated attempts; paragraph7 leads the narrator to recognize the aunt’s repetitions as similar work. The supported answer is “Both reveal that improvement involves trying and adjusting a passage.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 5 shows several attempts at the same difficult measures; paragraph 7 shows the aunt repeat a phrase and adjust her touch. The narrator recognizes the resemblance: trying and revising are musical work in either setting. Difficulty remains, the aunt adjusts her own playing, and neither scene requires discarding the written music.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4316,16 +4244,16 @@
     "questionText": "Which statement best connects the final chair-moving action to the narrator’s changed view?",
     "choices": [
       "Returning the chairs willingly shows acceptance of the room’s other purposes",
-      "Returning the chairs shows that the narrator has abandoned the quartet",
-      "Leaving the stands uneven proves that musical skill is unnecessary",
-      "Moving furniture guarantees the next rehearsal will be perfect"
+      "Returning the chairs signals that planned rehearsal has become less important than spontaneous music",
+      "Returning the chairs shows that the narrator now regards the mother as the quartet’s organizer",
+      "Returning the chairs follows from accepting the aunt’s suggestion as a fixed performance rule"
     ],
     "answer": 0,
-    "explanation": "The voluntary action accompanies the explicit relaxation of the belief that serious work requires exclusive use. The supported answer is “Returning the chairs willingly shows acceptance of the room’s other purposes.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Compare paragraph 6’s resistance with paragraph 8’s unprompted return of the chairs. The narrator accepts that serious rehearsal can coexist with the room’s other purposes. The group still pursues improvement, modifies the aunt’s suggestion, and organizes its own work; the action does not transfer authority or reject planning.",
     "passage": {
       "id": "reading-form-2-p1",
       "title": "A Room for Music",
-      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song our aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
+      "context": "[1] When my mother announced that the front room would become a rehearsal room, I imagined an audience. I was sixteen, and the quartet I had organized at school had played together twice, both times in a corridor outside the gym. In the front room there would be space to arrange our chairs in a square, and the tall windows seemed suited to the kind of concentration I associated with photographs of serious musicians. I moved a small table myself, carrying it by its edges as if the transformation had already made ordinary furniture delicate.\n\n[2] My mother had a different picture. She measured the doorway, asked whether the neighbors could hear through the shared wall, and found four chairs that did not wobble. She also insisted that the piano remain where it was. Nobody in the quartet played it, but my aunt came on Sundays and liked to sit there after lunch. I objected that an unused piano occupied the best part of the room. My mother answered that unused depended on when you looked. It was an irritating answer because I could not find a factual error in it.\n\n[3] At the first rehearsal, our cellist, Lina, arrived carrying a cushion. The chairs were too low for her, she explained. I had already placed the music stands at equal intervals and resisted moving them. Through the open doorway my mother asked whether the arrangement was supposed to help us play or help the room look like a rehearsal. I moved two stands. Lina settled into the corner near the piano, and we began again. From there she could see the other players without twisting her shoulders; the uneven square sounded better than the careful one.\n\n[4] The next week my aunt was still at the piano when the quartet arrived. She apologized and began gathering her music, but Lina asked about the piece she had been playing. It was a song my aunt had accompanied at a community concert years before. She played the opening again, slowly, while Lina found its melody on the cello. For ten minutes we followed phrases that were not in our folder. I enjoyed the conversation and resented it at the same time: we had only an hour together, and I had drawn up a list of measures to repair.\n\n[5] Once my aunt left, we worked through that list. The passage that had defeated us in school still came apart in the third measure. We tried it more slowly, then without the first violin, then with everyone counting aloud. Nothing about the room made the work easy. Yet nobody asked to stop. When we finally played the measures together, Lina laughed, and the laugh startled me more than the improvement. I had associated concentration with a silence in which nothing unrelated to the music could occur. Our first violinist asked to repeat the passage once more before turning the page. This time I watched how we signaled the entrance to one another. The music depended on those small exchanges as much as on the orderly list in my notebook.\n\n[6] That evening I left the chairs where they were. My mother asked me to put them back because a neighbor was coming for tea. I said that moving them would mean setting everything up again. She nodded as if this were an inconvenience worth noticing, then waited. Carrying the chairs toward the wall, I discovered faint dents in the carpet where the legs had stood before. I had not made a new room so much as added another arrangement to a room already full of them.\n\n[7] On Sunday I listened while my aunt played. She stopped at a phrase, repeated it, and changed the pressure of her left hand. I had never thought of those afternoons as rehearsals, partly because she never used that word. Now the repetitions sounded familiar. When she asked whether the quartet was improving, I told her about the stubborn third measure instead of describing our chairs and windows. She asked to see the music and marked a breath between two phrases. It was a suggestion, she said, not a rule.\n\n[8] At our next meeting we tried her marking. It helped, though not immediately, and we changed it a little. Before leaving, I returned the chairs to the wall without being reminded. I still wanted the quartet to play well. What had loosened was my conviction that seriousness required a room, an arrangement, and an hour devoted exclusively to us."
     }
   },
   {
@@ -4338,12 +4266,12 @@
     "questionText": "The passage chiefly describes how a tool library:",
     "choices": [
       "evaluates a narrower service change while keeping its evidence and limitations clear",
-      "proves that a Wednesday window eliminates the need to buy tools",
-      "abandons recordkeeping in favor of volunteer opinions",
-      "replaces Saturday loans with unrestricted daily borrowing"
+      "finds that improving the circulation of existing tools is more effective than expanding the collection",
+      "uses an initial increase in on-time returns to identify the evening window’s separate contribution",
+      "moves from a circulation trial to a broader investigation of which tools the collection should contain"
     ],
     "answer": 0,
-    "explanation": "The return-window trial is evaluated with counts, proportions, confounds, demand limits, and staffing considerations. The supported answer is “evaluates a narrower service change while keeping its evidence and limitations clear.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The whole passage evaluates the return-only window, checking denominators, reminders and seasonality, purchasing limits, and volunteer labor. That supports the key’s account of a limited service change evaluated with clear evidence and limits. The collection’s required size is not compared experimentally; the window’s separate effect remains unresolved; and the purchasing question is one boundary of the trial, not the investigation the library proceeds to carry out.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4356,18 +4284,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4381,13 +4299,13 @@
     "stem": "",
     "questionText": "Why does the Wednesday window accept returns but not make new loans?",
     "choices": [
-      "Only gardening tools may be used on Wednesdays",
-      "Members are forbidden to borrow more than one tool",
-      "The board has ended all Saturday operations",
+      "Tools may be returned midweek only if they require no inspection.",
+      "Members prefer to select borrowed tools in daylight on Saturdays.",
+      "The library needs the interval before Saturday to buy replacement tools.",
       "Preparing a tool for a new borrower requires more volunteers"
     ],
     "answer": 3,
-    "explanation": "Paragraph2 identifies the different volunteer requirements. The supported answer is “Preparing a tool for a new borrower requires more volunteers.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 2 states the staffing difference: checking equipment for a new borrower needs more volunteers than receiving a return. Earlier returns can leave time for later inspection, but the window does not promise to accept only inspection-free items. Member daylight preferences and replacement purchases are not the reason given for withholding new loans.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4400,18 +4318,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4425,13 +4333,13 @@
     "stem": "",
     "questionText": "What does one on-time return represent in the trial records?",
     "choices": [
-      "One newly purchased tool",
-      "One request made during a workshop",
+      "One loan that will be available to another borrower on the next Saturday",
+      "One scheduled return, whether or not the tool arrived by the due date",
       "One tool returned by its due date",
-      "One individual borrower regardless of the number of tools"
+      "One borrower who brought back all of that borrower’s tools on time"
     ],
     "answer": 2,
-    "explanation": "Paragraph3 explicitly says the return measure counts tools rather than people. The supported answer is “One tool returned by its due date.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 3 defines the unit as a tool returned by its due date. A borrower returning three tools contributes three returns, not one. A scheduled return can be late, and an on-time return does not itself guarantee the tool passes inspection and becomes available the next Saturday. Follow the definition rather than the hoped-for downstream effect.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4444,18 +4352,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4469,13 +4367,13 @@
     "stem": "",
     "questionText": "The coordinator’s response to the purchasing question implies that she:",
     "choices": [
-      "considers all unfilled requests unimportant",
+      "takes improved on-time returns as a reliable indicator that the existing collection is large enough",
       "distinguishes evidence about circulation from evidence about the range of tools needed",
-      "believes every member wants the same tool",
-      "expects late returns to increase whenever tools are purchased"
+      "wants the library to solve all late-return problems before collecting data on tool demand",
+      "regards the seasonal change in gardening loans as evidence that purchasing can be reduced"
     ],
     "answer": 1,
-    "explanation": "Paragraph6 separates requests blocked by a loan from requests for tools never owned and special-event demand. The supported answer is “distinguishes evidence about circulation from evidence about the range of tools needed.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 6 separates blocked requests for tools still out from unmet demand for tools never owned and demand during the repair workshop. Circulation data do not describe the collection’s required range. Better returns need not be solved first, and the seasonal change neither proves reduced demand overall nor justifies fewer purchases.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4488,18 +4386,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4511,15 +4399,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "In paragraph5, “mechanism” most nearly means:",
+    "questionText": "In paragraph 5, “mechanism” most nearly means:",
     "choices": [
       "a process by which the change could produce an effect",
-      "a broken component inside a drill",
-      "an official rule prohibiting reminders",
-      "a numerical table with no interpretation"
+      "the set of rules defining which tools count as on-time returns",
+      "a pattern that remains after all outside influences have been removed",
+      "the combination of services approved in the board’s final decision"
     ],
     "answer": 0,
-    "explanation": "The word refers to the explanation of how an earlier return may make a tool ready sooner, not the equipment itself. The supported answer is “a process by which the change could produce an effect.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The surrounding sentence concerns how an earlier return could allow inspection and then a Saturday loan. That is a process capable of producing an effect—a mechanism. Definitions, an isolated statistical pattern, and the final policy combination are different concepts. The coordinator also says a plausible process does not substitute for evidence separating causes.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4532,18 +4420,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4557,13 +4435,13 @@
     "stem": "",
     "questionText": "The statement that a percentage cannot unlock the door mainly emphasizes that:",
     "choices": [
-      "the coordinator has lost the building’s key",
-      "numerical evidence is never useful",
-      "the library should stop opening on Saturdays",
+      "return-time statistics omit how much staff time is saved on Saturday",
+      "the volunteer comments provide stronger evidence of improved access than the table does",
+      "staff availability should determine the library’s success measure instead of return proportions",
       "staffing must also make the service feasible"
     ],
     "answer": 3,
-    "explanation": "Paragraph7 connects the practical volunteer schedule to the ability to operate the window. The supported answer is “staffing must also make the service feasible.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 7 links the door image to whether volunteers can actually staff the service. A favorable percentage cannot itself supply that labor. The passage includes staffing beside the table rather than treating comments as stronger outcome evidence or replacing the return measure. Saturday time savings are not what the phrase emphasizes.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4576,18 +4454,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4601,13 +4469,13 @@
     "stem": "",
     "questionText": "The report’s recommendation to compare periods with consistent reminders serves to:",
     "choices": [
-      "eliminate seasonal changes permanently",
-      "prove that reminders had no role in the trial",
+      "make seasonal demand patterns identical between the comparison periods",
+      "identify which individual members respond to reminders rather than to the return window",
       "reduce one source of ambiguity in interpreting the window’s effect",
-      "guarantee that every future tool will be returned on time"
+      "show whether the raw return count rises even when fewer tools are scheduled"
     ],
     "answer": 2,
-    "explanation": "Paragraph5 identifies reminders as a simultaneous change and proposes holding that practice consistent in future comparisons. The supported answer is “reduce one source of ambiguity in interpreting the window’s effect.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "If reminder practices remain consistent, one simultaneous change is less able to explain a later difference attributed to the window. That is a reduction in causal ambiguity, not a guarantee of identical seasons or a method for identifying each person’s motive. The recommendation addresses the confound, not simply a raw-count pattern.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4620,18 +4488,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4644,14 +4502,9 @@
     "difficulty": "hard",
     "stem": "",
     "questionText": "According to the table and the passage’s definitions, the proportion of scheduled tools returned on time during the trial was:",
-    "choices": [
-      "81 percent",
-      "90 percent",
-      "75 percent",
-      "21 percent"
-    ],
+    "choices": ["81 percent", "90 percent", "75 percent", "21 percent"],
     "answer": 1,
-    "explanation": "Paragraph4 defines the denominator as scheduled returns: 81 divided by 90 is 0.90. The supported answer is “90 percent.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The requested fraction uses on-time tools over scheduled tools in the same trial period: 81/90 = 0.90, or 90%. Eighty-one is a count, not a percentage; 75% is the earlier period’s 60/80; and 21 is the increase in the raw on-time count, 81 − 60. Identify both the unit and denominator before calculating.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4664,18 +4517,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4690,12 +4533,12 @@
     "questionText": "Which conclusion is supported by the table without going beyond the passage’s qualifications?",
     "choices": [
       "Unfilled requests due to tools remaining out decreased during the combined trial changes",
-      "The Wednesday window alone caused every observed change",
-      "The library met every request during the trial",
-      "Exactly nine fewer individual people used the library"
+      "The fall in requests blocked by loans establishes that the collection met a larger share of all demand.",
+      "The change from 18 to 9 blocked requests shows that nine additional borrowers obtained tools.",
+      "The increased return proportion identifies the return window as more effective than reminders."
     ],
     "answer": 0,
-    "explanation": "The relevant count falls from18 to9, but reminders and seasonality limit causal attribution, and the table does not count all requests or individuals. The supported answer is “Unfilled requests due to tools remaining out decreased during the combined trial changes.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The table directly shows requests blocked by tools still out falling 18→9 during the combined changes. It does not count all kinds of unmet demand, identify individual borrowers, or separate reminders from the window. A supported description can report the fall without converting it into an overall fulfillment rate or a single-cause finding.",
     "passage": {
       "id": "reading-form-2-p2",
       "title": "The Return Window",
@@ -4708,18 +4551,8 @@
           "Requests unfilled because a tool was still out"
         ],
         "rows": [
-          [
-            "Before trial",
-            80,
-            60,
-            18
-          ],
-          [
-            "During trial",
-            90,
-            81,
-            9
-          ]
+          ["Before trial", 80, 60, 18],
+          ["During trial", 90, 81, 9]
         ]
       }
     }
@@ -4733,13 +4566,13 @@
     "stem": "",
     "questionText": "Taken together, the passages primarily argue that:",
     "choices": [
-      "all digital processing should be prohibited",
-      "restored files perfectly reproduce the original hall experience",
-      "recordings matter only when every word is intelligible",
+      "restoration should favor the sounds of the performance over sounds made by its audience",
+      "a documented listening copy can replace the original file once uncertain sounds are retained",
+      "restoration is most faithful when the engineer removes surface noise but leaves all vocal roughness",
       "useful restoration should preserve access to evidence and make the choices behind processing visible"
     ],
     "answer": 3,
-    "explanation": "Both support a listening version while valuing an alternative file and documentation of interventions. The supported answer is “useful restoration should preserve access to evidence and make the choices behind processing visible.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Passage A offers processed and unprocessed copies with notes; Passage B supports that choice so later researchers can ask different questions. The shared claim is accessible restoration with inspectable decisions and preserved evidence. Neither ranks audience sounds below music for every inquiry, treats notes as a substitute for the source, or turns uncertain sound classification into an absolute rule.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4755,13 +4588,13 @@
     "stem": "",
     "questionText": "What does the engineer do when unable to distinguish recording noise confidently from performance roughness?",
     "choices": [
-      "Automatically removes every rough edge",
-      "Changes the singer’s words to fit the transcript",
-      "Claims that the original performance was silent",
+      "Checks the sound against a complete acoustic reference from the original hall.",
+      "Removes it from the listening copy but preserves it only in the unprocessed file.",
+      "Marks the corresponding word uncertain in the transcript and smooths the recording.",
       "Leaves the sound and documents the uncertainty"
     ],
     "answer": 3,
-    "explanation": "Paragraph2 states the decision to retain uncertain sounds and describe the uncertainty. The supported answer is “Leaves the sound and documents the uncertainty.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 2 says the engineer leaves an uncertain sound in place and describes the uncertainty. There is no complete acoustic reference (paragraph 1). The transcript handles uncertain words in paragraph 3, not a rule allowing automatic smoothing. Preserving the unprocessed file also does not mean every doubtful sound is removed from the listening version.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4777,13 +4610,13 @@
     "stem": "",
     "questionText": "Why does the historian discuss chairs shifting?",
     "choices": [
-      "To prove that the piano was never played",
-      "To show that the engineer removed the sound from every file",
+      "To show that a louder recording would make the audience easier to count",
+      "To distinguish sounds caused by the recording surface from those caused by the microphone",
       "To illustrate a detail that could matter to a different research question",
-      "To establish the exact number of concert attendees"
+      "To argue that a concert’s social setting is more important than its musical performance"
     ],
     "answer": 2,
-    "explanation": "Paragraphs5–6 distinguish vocal-technique inquiry from inquiry into the concert as a social occasion. The supported answer is “To illustrate a detail that could matter to a different research question.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "In paragraphs 5–6, shifting chairs might distract someone studying vocal technique yet matter to someone studying the concert as a social occasion. The example makes relevance depend on the inquiry. It does not allow an audience count, isolate a microphone defect, or establish that social history outranks musical research.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4799,13 +4632,13 @@
     "stem": "",
     "questionText": "The historian would most likely object to an institution that:",
     "choices": [
-      "acknowledges the microphone’s limitations",
+      "retains the unprocessed file while giving visitors a transcript of the difficult words",
       "discards the unprocessed file after producing an attractive listening copy",
-      "offers visitors both versions with explanatory notes",
-      "marks uncertain words in a transcript"
+      "provides a processed version designed mainly for hearing the singer clearly",
+      "identifies unresolved sound classifications in the restoration notes"
     ],
     "answer": 1,
-    "explanation": "Paragraph7 identifies retaining only the polished result as the concern because future questions may differ. The supported answer is “discards the unprocessed file after producing an attractive listening copy.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 7 names the concern: keeping only the polished result would force future researchers to depend on today’s choices. The historian supports accessible processed versions and notes, so neither a singer-focused listening copy nor uncertainty documentation is objectionable. What matters is retaining the alternative evidence for reconsideration.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4819,15 +4652,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "In paragraph6, “pertinent” most nearly means:",
+    "questionText": "In paragraph 6, “pertinent” most nearly means:",
     "choices": [
       "relevant to the inquiry",
-      "unusually loud",
-      "recorded after the performance",
-      "deliberately misleading"
+      "faithful to the original performance",
+      "preserved in its original sequence",
+      "available for direct acoustic measurement"
     ],
     "answer": 0,
-    "explanation": "The sentence contrasts what is irrelevant to one question with what matters to another. The supported answer is “relevant to the inquiry.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 6 contrasts “irrelevant to one inquiry” with “pertinent to another.” The opposing context gives “relevant to the inquiry.” A sound can be relevant even if its source is uncertain or its acoustic measurement limited; pertinence does not itself certify authenticity, sequence, or measurability.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4843,13 +4676,13 @@
     "stem": "",
     "questionText": "The engineer’s discussion of clicks and vocal roughness mainly serves to:",
     "choices": [
-      "claim that all crackles are part of the singer’s technique",
-      "explain why a transcript can replace every recording",
-      "demonstrate that computer smoothing is always faithful",
+      "establish a fixed distinction the equipment can apply to every sound automatically",
+      "suggest that vocal roughness is a more serious defect than surface noise",
+      "explain why removing an obvious click makes the original hall acoustics recoverable",
       "illustrate why different kinds of sound call for different restoration judgments"
     ],
     "answer": 3,
-    "explanation": "Paragraph2 contrasts a surface click with potentially authentic vocal texture and explains a cautious decision. The supported answer is “illustrate why different kinds of sound call for different restoration judgments.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "A known surface click and possibly authentic vocal texture have different origins, so smoothing them involves different judgments. Paragraph 2 then addresses cases where the distinction is uncertain. The point is neither an infallible automatic rule nor ranking defects; removing one click cannot reconstruct the complete acoustic reference paragraph 1 says is unavailable.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4865,13 +4698,13 @@
     "stem": "",
     "questionText": "The historian’s final distinction between presentation and preservation primarily:",
     "choices": [
-      "rejects the engineer’s choice to document changes",
-      "claims that future researchers will ask exactly the same questions",
+      "explains why preserving the most audible version should take priority over preserving earlier files",
+      "suggests that documenting current choices is enough to meet the needs of any future inquiry",
       "explains why current listening goals should not determine all material retained for future use",
-      "establishes that public exhibitions are inherently useless"
+      "requires public presentation to include every surviving sound without selection"
     ],
     "answer": 2,
-    "explanation": "Paragraph8 defines presentation by a particular encounter and preservation by future encounters not yet specified. The supported answer is “explains why current listening goals should not determine all material retained for future use.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 8 distinguishes a selection for today’s encounter from keeping evidence for future encounters not yet known. This explains retaining more than the present listening copy. Notes alone cannot replace a discarded source, and preservation does not require the public presentation to reproduce every sound without selection. The responsibilities are related, not interchangeable.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4887,13 +4720,13 @@
     "stem": "",
     "questionText": "Which claim would both writers most likely accept?",
     "choices": [
-      "Preserving only one public listening file is sufficient",
+      "A transcript makes an unprocessed copy unnecessary when the listening file remains noisy.",
       "A processed copy can help listeners, while an alternative copy and notes allow decisions to be reconsidered",
-      "The smoothest file is always the most faithful",
-      "Every surviving noise can be assigned an exact source"
+      "The original source is useful mainly for checking how closely the restoration matches present listening goals.",
+      "Every questionable sound should be removed from public copies and described in the notes."
     ],
     "answer": 1,
-    "explanation": "The engineer offers two versions and notes; the historian explicitly supports that approach. The supported answer is “A processed copy can help listeners, while an alternative copy and notes allow decisions to be reconsidered.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The engineer supplies two versions and documentation in paragraph 3; the historian explicitly endorses that approach in paragraph 7. It combines accessibility with the ability to reconsider decisions. Transcripts do not retain all sound evidence, future questions need not match current goals, and the engineer retains sounds whose origin is uncertain rather than automatically removing them.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4910,12 +4743,12 @@
     "questionText": "How does the historian extend the engineer’s concern about processing choices?",
     "choices": [
       "By emphasizing that later inquiries may value details that current listeners find distracting",
-      "By denying that any adjustment can make music easier to hear",
-      "By proving that the engineer changed the singer’s phrasing",
-      "By demanding that institutions eliminate all public listening stations"
+      "By explaining how a different microphone would have recorded a more faithful performance",
+      "By distinguishing obvious surface clicks from the singer’s potentially authentic vocal texture",
+      "By arguing that later researchers should prefer the listening copy to the alternative file"
     ],
     "answer": 0,
-    "explanation": "Passage A focuses on making intervention inspectable; Passage B adds changing research purposes and the value of retaining alternatives. The supported answer is “By emphasizing that later inquiries may value details that current listeners find distracting.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Passage A explains intervention and uncertainty in making a listening version. Passage B adds why retaining alternatives matters over time: a distracting chair sound can answer a later social-history question. Classifying clicks versus roughness is already the engineer’s concern; the historian neither proposes a new recording nor tells future scholars to prefer the processed file.",
     "passage": {
       "id": "reading-form-2-p3",
       "title": "Restoring a Recording — Paired Texts",
@@ -4931,13 +4764,13 @@
     "stem": "",
     "questionText": "The passage mainly describes:",
     "choices": [
-      "proof that all root systems move intact during drought",
-      "a method that removes every uncertainty in soil research",
-      "the decision to abandon repeated observation entirely",
+      "how a prairie grass redistributes its existing roots downward in response to drought",
+      "how repeated photographs isolate the effect of rainfall from seasonal changes in temperature",
+      "how researchers replace uncertain visual judgments with a shared numerical rule for tracing roots",
       "how researchers use root images to investigate growth while examining the method’s limits"
     ],
     "answer": 3,
-    "explanation": "The team gains repeated views but limits conclusions, checks disturbance, and improves tracing consistency. The supported answer is “how researchers use root images to investigate growth while examining the method’s limits.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The repeated images enable investigation, but the passage also checks tube disturbance, inference about individuals, seasonal confounds, and tracing disagreement. The key captures both the method and the examination of its limits. Intact redistribution is explicitly rejected, rainfall is not yet isolated, and tracing improvement is one part rather than the passage’s whole subject.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",
@@ -4953,13 +4786,13 @@
     "stem": "",
     "questionText": "Why are the same tube sections photographed repeatedly?",
     "choices": [
-      "To ensure that every root belongs to the same plant",
-      "To make newer tubes identical to older ones",
+      "To follow every root continuously from its parent plant to its deepest branch",
+      "To ensure that installation disturbances fade at the same rate in every tube",
       "To compare visible root length at consistent locations",
-      "To prevent soil temperature from changing"
+      "To compare different soil depths without having to record each camera position"
     ],
     "answer": 2,
-    "explanation": "Paragraph2 explains how consistent positions distinguish growth changes from changes in where the camera looks. The supported answer is “To compare visible root length at consistent locations.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 2 explains that consistent positions make later and earlier visible-root lengths comparable at the same location. The method does not follow every connection to a parent plant or make installation effects equal. Camera position still must be consistent; omitting it would undermine the very comparison the repeated sections permit.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",
@@ -4975,13 +4808,13 @@
     "stem": "",
     "questionText": "What does the team do about differences in tracing faint marks?",
     "choices": [
-      "Assumes that the software has eliminated the disagreement",
-      "Counts every uncertain mark as a confirmed root",
+      "Selects the tracer whose estimates most closely match the clearest photographs",
+      "Applies the larger of the two estimates to avoid missing fine roots",
       "Creates shared examples and confidence labels, then repeats some tracing",
-      "Deletes every photograph from dry weeks"
+      "Replaces the visual judgments with an automatic software classification"
     ],
     "answer": 2,
-    "explanation": "Paragraph6 details common example images, confidence labels, and repeated tracing after practice. The supported answer is “Creates shared examples and confidence labels, then repeats some tracing.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 6 describes shared example images, confidence labels, and another tracing exercise after practice. These make the counting rule more consistent while leaving ambiguity visible. The team does not designate one tracer as correct, choose the larger estimate, or assume software removes the need for judgment.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",
@@ -4997,13 +4830,13 @@
     "stem": "",
     "questionText": "The proposed watering experiment suggests the team wants to:",
     "choices": [
-      "replace measurements with the visitor’s explanation",
+      "test whether camera tubes can distinguish shallow from deep growth more reliably",
       "test moisture’s contribution more directly than the seasonal association permits",
-      "prove that soil temperature can never affect plants",
-      "make all observation tubes unnecessary immediately"
+      "determine how much rainfall naturally reaches each plant during autumn storms",
+      "show whether older tubes eliminate installation effects in the driest plots"
     ],
     "answer": 1,
-    "explanation": "Paragraph5 notes simultaneous changes and proposes additional water under otherwise similar conditions, with a check on the treatment. The supported answer is “test moisture’s contribution more directly than the seasonal association permits.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 5 first identifies moisture, temperature, and season as changing together, then proposes extra water under otherwise similar conditions. This is a more direct test of moisture’s contribution. Checking that treatment changes underground moisture verifies the intervention; it does not make the experiment primarily a rainfall survey or a tube-age test.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",
@@ -5017,15 +4850,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "As used in paragraph4, “neutral” most nearly means:",
+    "questionText": "As used in paragraph 4, “neutral” most nearly means:",
     "choices": [
       "not influencing the process being observed",
-      "neither acidic nor alkaline",
-      "placed exactly halfway between plots",
-      "unreadable in the camera images"
+      "representative of the average soil conditions across all plots",
+      "unchanged since the tube was installed",
+      "equally visible in every photograph"
     ],
     "answer": 0,
-    "explanation": "The issue is whether installing a tube changes nearby conditions, not chemical pH or location. The supported answer is “not influencing the process being observed.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 4 asks whether installing a tube leaves a gap or alters water travel. A “neutral” boundary would not itself influence the growth being observed. “Representative,” “unchanged,” and “equally visible” are different properties: a stable, easily photographed boundary could still alter local growth.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",
@@ -5039,15 +4872,15 @@
     "category": "Craft and Structure",
     "difficulty": "medium",
     "stem": "",
-    "questionText": "The visitor’s interpretation in paragraph3 primarily allows the passage to:",
+    "questionText": "The visitor’s interpretation in paragraph 3 primarily allows the passage to:",
     "choices": [
-      "establish that the visitor designed the camera",
-      "show that the researchers never observed deep roots",
-      "prove that all individual plants responded identically",
+      "explain why the researchers began photographing deeper sections only after the visitor arrived",
+      "show how the team used a visitor’s account to connect separate roots to particular plants",
+      "identify declining surface growth as evidence against any drought response in the grass",
       "contrast an appealing broad claim with the narrower evidence the images provide"
     ],
     "answer": 3,
-    "explanation": "The researchers correct intact relocation and all-plant claims by explaining what the images actually record. The supported answer is “contrast an appealing broad claim with the narrower evidence the images provide.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The visitor turns a local pattern into a claim about every plant moving its root system. The researchers then explain what the images can show: new visible growth and disappearing traces at selected sites. The contrast clarifies an inference limit; it does not introduce the deeper observations, connect all roots to plants, or deny any drought-related response.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",
@@ -5063,13 +4896,13 @@
     "stem": "",
     "questionText": "The caption accompanying the clear image sequence serves mainly to:",
     "choices": [
-      "claim that all faint traces are roots",
-      "replace the need for summaries across plots",
+      "explain that the illustrated sequence was selected because it matched the most common response",
+      "identify the illustrated tube as a control unaffected by installation",
       "prevent a memorable illustration from being mistaken for the broader results",
-      "deny that the illustrated tube exists"
+      "treat the clear images as more reliable evidence than the uncertain traces in the summary"
     ],
     "answer": 2,
-    "explanation": "Paragraph7 distinguishes an easy-to-see example from the distribution of observations across plots. The supported answer is “prevent a memorable illustration from being mistaken for the broader results.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "Paragraph 7 says the sequence illustrates change but cannot substitute for results across plots. Clarity can make a picture memorable without making its response representative. The caption therefore prevents overgeneralization; it does not certify a most-common case, an undisturbed control tube, or priority over the broader summary.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",
@@ -5085,13 +4918,13 @@
     "stem": "",
     "questionText": "How do the tube-age comparison and the tracing exercise relate?",
     "choices": [
-      "Both measure the precise age of every grass plant",
+      "Both use a second method to measure the complete root system independently",
       "Both examine how the observation method may shape the reported results",
-      "Both guarantee that every source of uncertainty has been removed",
-      "Both show that the root camera cannot produce useful information"
+      "Both address differences among individual plants rather than differences in measurement",
+      "Both compare new plots with older plots to remove the influence of season"
     ],
     "answer": 1,
-    "explanation": "Tube ages address installation disturbance; tracing examples address classification consistency. Both qualify interpretation of the method. The supported answer is “Both examine how the observation method may shape the reported results.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The tube-age comparison checks a physical effect introduced by observation: installation may alter soil. The tracing exercise checks a classification effect: people may assign different lengths to faint marks. Both ask how the method shapes the reported result. Neither is a complete independent root measurement or simply a comparison of plant age and season.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",
@@ -5108,12 +4941,12 @@
     "questionText": "Which conclusion best integrates the final paragraph with the earlier findings?",
     "choices": [
       "Repeated imaging is useful, but its interpretations should be tested within the comparisons and limitations it supports",
-      "A useful new method must reveal the entire root system",
-      "The clearest photograph establishes the response of every plant",
-      "No experiment can examine a convincing interpretation"
+      "Repeated photographs become representative of whole plants once tracing judgments are standardized.",
+      "Testing the effect of added water would remove the need to assess tube installation effects.",
+      "The tube method should be replaced by excavation before any growth interpretation is reported."
     ],
     "answer": 0,
-    "explanation": "The final paragraph values the new window while asking about supported comparisons, introduced influences, and independent testing. The supported answer is “Repeated imaging is useful, but its interpretations should be tested within the comparisons and limitations it supports.” Reject choices that change the stated facts, exceed the evidence, or answer a different question.",
+    "explanation": "The final paragraph values repeated views while asking which comparisons they support, which influences they introduce, and how another method could test an interpretation. Earlier examples supply those limits. Standardized tracing does not reveal every root, a watering test does not erase tube disturbance, and the passage does not require abandoning a useful method before reporting qualified findings.",
     "passage": {
       "id": "reading-form-2-p4",
       "title": "Roots Under Observation",

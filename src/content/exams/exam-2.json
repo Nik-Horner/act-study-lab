@@ -12,7 +12,7 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "modifiers",
-          "questionText": "",
+          "questionText": "Which choice corrects the dangling opening description?",
           "choices": [
             "Tinkering with the machines, he grew fascinated by their mechanics,",
             "The mechanics fascinating him by tinkering with the machines,",
@@ -27,8 +27,13 @@
           "category": "KLA",
           "difficulty": "medium",
           "topic": "word-choice",
-          "questionText": "",
-          "choices": ["NO CHANGE", "rested", "remained seated", "stalled"],
+          "questionText": "Which choice most precisely describes Morgan's continually changing interests?",
+          "choices": [
+            "NO CHANGE",
+            "rested",
+            "remained seated",
+            "stalled"
+          ],
           "answer": 0,
           "explanation": "\"Stayed in one place\" idiomatically fits restless curiosity. \"Rested\" and \"stalled\" carry wrong connotations for an active mind, and \"remained seated\" makes no sense applied to an abstract noun like curiosity. Only \"stayed\" fits."
         },
@@ -52,8 +57,13 @@
           "category": "KLA",
           "difficulty": "easy",
           "topic": "word-choice",
-          "questionText": "",
-          "choices": ["NO CHANGE", "got down", "fell down", "came down"],
+          "questionText": "Which choice most precisely describes the rescuers' deliberate movement into the tunnel?",
+          "choices": [
+            "NO CHANGE",
+            "got down",
+            "fell down",
+            "came down"
+          ],
           "answer": 0,
           "explanation": "\"Descended\" precisely conveys a deliberate move into the tunnel; the alternatives are vague or imply an accidental fall."
         },
@@ -63,7 +73,12 @@
           "difficulty": "medium",
           "topic": "transitions",
           "questionText": "Which choice provides the most logical transition into the new paragraph?",
-          "choices": ["For example,", "Likewise,", "As a result,", "Still,"],
+          "choices": [
+            "For example,",
+            "Likewise,",
+            "As a result,",
+            "Still,"
+          ],
           "answer": 3,
           "explanation": "The paragraph contrasts dramatic rescues with an \"ordinary problem,\" so the contrast word \"Still\" fits; the others signal example, cause, or similarity."
         },
@@ -87,7 +102,7 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "punctuation",
-          "questionText": "",
+          "questionText": "Which choice correctly punctuates the added description of the payment?",
           "choices": [
             "for forty thousand dollars a sum",
             "for forty thousand dollars; a sum",
@@ -102,8 +117,13 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "parallel-structure",
-          "questionText": "",
-          "choices": ["NO CHANGE", "and supported", "supported", "supporting"],
+          "questionText": "Which choice keeps the list of Morgan's activities parallel?",
+          "choices": [
+            "NO CHANGE",
+            "and supported",
+            "supported",
+            "supporting"
+          ],
           "answer": 2,
           "explanation": "The series \"founded... opened... supported\" needs parallel verbs; \"he supported\" breaks the pattern by adding a subject."
         },
@@ -112,7 +132,7 @@
           "category": "KLA",
           "difficulty": "easy",
           "topic": "redundancy",
-          "questionText": "",
+          "questionText": "Which choice most concisely begins this final paragraph?",
           "choices": [
             "When",
             "To conclude, when",
@@ -149,8 +169,13 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "verbs",
-          "questionText": "",
-          "choices": ["NO CHANGE", "has melted", "is melting", "melt"],
+          "questionText": "Which choice agrees with the compound subject?",
+          "choices": [
+            "NO CHANGE",
+            "has melted",
+            "is melting",
+            "melt"
+          ],
           "answer": 3,
           "explanation": "The compound subject \"sand, soda, and lime\" is plural and takes the plural verb \"melt.\""
         },
@@ -159,7 +184,7 @@
           "category": "CSE",
           "difficulty": "hard",
           "topic": "modifiers",
-          "questionText": "",
+          "questionText": "Which choice correctly identifies who is rotating the pipe?",
           "choices": [
             "Rotating the pipe constantly, the glass is kept by gravity from pulling",
             "Rotating the pipe constantly, gravity is kept from pulling the glass",
@@ -174,8 +199,13 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "pronouns",
-          "questionText": "",
-          "choices": ["NO CHANGE", "what", "it", "which"],
+          "questionText": "Which choice correctly introduces the nonessential relative clause?",
+          "choices": [
+            "NO CHANGE",
+            "what",
+            "it",
+            "which"
+          ],
           "answer": 3,
           "explanation": "A nonrestrictive clause set off by a comma takes \"which,\" not \"that\"; \"it\" and \"what\" break the clause."
         },
@@ -184,7 +214,7 @@
           "category": "KLA",
           "difficulty": "medium",
           "topic": "redundancy",
-          "questionText": "",
+          "questionText": "Which choice most concisely preserves the idea of working before the glass cools?",
           "choices": [
             "quick, fast race against the clock,",
             "race against the clock done in a speedy way,",
@@ -214,7 +244,7 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "parallel-structure",
-          "questionText": "",
+          "questionText": "Which choice completes the series of present-tense actions?",
           "choices": [
             "NO CHANGE",
             "stretches it with tongs.",
@@ -244,18 +274,28 @@
           "category": "KLA",
           "difficulty": "medium",
           "topic": "word-choice",
-          "questionText": "",
-          "choices": ["NO CHANGE", "Missing", "Skipping", "Avoiding"],
+          "questionText": "Which word most precisely describes deliberately omitting a production step?",
+          "choices": [
+            "NO CHANGE",
+            "Missing",
+            "Skipping",
+            "Delaying"
+          ],
           "answer": 2,
-          "explanation": "\"Skipping\" precisely means leaving out a step; \"dodging,\" \"avoiding,\" and \"missing\" misstate a deliberate omission in a process."
+          "explanation": "'Skipping' precisely names leaving a step out entirely. 'Missing' does not clearly indicate a deliberate omission; 'dodging' implies evasiveness; 'delaying' means postponing rather than omitting. The stated goal is precision about the production step."
         },
         {
           "number": 19,
           "category": "POW",
           "difficulty": "medium",
           "topic": "transitions",
-          "questionText": "",
-          "choices": ["NO CHANGE", "Yet", "For example,", "In addition,"],
+          "questionText": "Which transition best contrasts mass production with the survival of hand glassblowing?",
+          "choices": [
+            "NO CHANGE",
+            "Yet",
+            "For example,",
+            "In addition,"
+          ],
           "answer": 1,
           "explanation": "The sentence contrasts mass production with the survival of handwork, so \"Yet\" fits; \"Therefore\" wrongly signals cause."
         },
@@ -264,7 +304,7 @@
           "category": "KLA",
           "difficulty": "easy",
           "topic": "redundancy",
-          "questionText": "",
+          "questionText": "Which choice is most concise without losing meaning?",
           "choices": [
             "copy or imitate.",
             "copy and imitate exactly.",
@@ -286,7 +326,7 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "sentence-structure",
-          "questionText": "",
+          "questionText": "Which choice correctly connects the tank's bursting to the wave it produced?",
           "choices": [
             "NO CHANGE",
             "burst, sending",
@@ -301,8 +341,13 @@
           "category": "CSE",
           "difficulty": "easy",
           "topic": "modifiers",
-          "questionText": "",
-          "choices": ["NO CHANGE", "more quick", "quick and fast", "quickly"],
+          "questionText": "Which choice supplies the form needed to describe how the tank was built?",
+          "choices": [
+            "NO CHANGE",
+            "more quick",
+            "quick and fast",
+            "quickly"
+          ],
           "answer": 3,
           "explanation": "An adverb is needed to modify the verb \"built,\" so \"quickly\" is correct."
         },
@@ -326,7 +371,7 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "sentence-structure",
-          "questionText": "",
+          "questionText": "Which choice supplies the sentence's main subject and verb?",
           "choices": [
             "NO CHANGE",
             "Witnesses described",
@@ -341,7 +386,7 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "punctuation",
-          "questionText": "",
+          "questionText": "Which choice correctly joins the two independent clauses?",
           "choices": [
             "Buildings were knocked from their foundations horses and people were trapped in the sticky flood.",
             "Buildings were knocked from their foundations; horses and people were trapped in the sticky flood.",
@@ -356,7 +401,7 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "verbs",
-          "questionText": "",
+          "questionText": "Which choice matches both the plural subject and the narrative's past tense?",
           "choices": [
             "NO CHANGE",
             "are injured",
@@ -371,8 +416,13 @@
           "category": "POW",
           "difficulty": "medium",
           "topic": "transitions",
-          "questionText": "",
-          "choices": ["NO CHANGE", "Although", "While", "Whether"],
+          "questionText": "Which choice most clearly shows why rescuers found movement through the molasses difficult?",
+          "choices": [
+            "NO CHANGE",
+            "Although",
+            "While",
+            "Whether"
+          ],
           "answer": 0,
           "explanation": "The thickened molasses causes the difficulty, so the causal \"Because\" fits; the others signal contrast or alternatives."
         },
@@ -411,15 +461,15 @@
           "category": "KLA",
           "difficulty": "easy",
           "topic": "word-choice",
-          "questionText": "",
+          "questionText": "Which choice most precisely conveys tighter engineering requirements in the passage's measured tone?",
           "choices": [
             "NO CHANGE",
             "meaner",
             "more strict and tougher",
-            "harsher"
+            "severer"
           ],
           "answer": 0,
-          "explanation": "\"Stricter\" is the concise, correct comparative; \"more strict and tougher\" is redundant and \"meaner\" carries the wrong tone."
+          "explanation": "'Stricter engineering reviews' precisely describes tighter requirements. 'Meaner' and 'severer' suggest personal unkindness or severity rather than the intended standards; 'more strict and tougher' unnecessarily repeats the comparison."
         }
       ]
     },
@@ -448,8 +498,13 @@
           "category": "KLA",
           "difficulty": "medium",
           "topic": "word-choice",
-          "questionText": "",
-          "choices": ["NO CHANGE", "lays in", "lays on", "lies on"],
+          "questionText": "Which choice forms the correct expression meaning is based on?",
+          "choices": [
+            "NO CHANGE",
+            "lays in",
+            "lays on",
+            "lies on"
+          ],
           "answer": 0,
           "explanation": "\"Lies in\" is the correct idiom for where something is located; \"lays\" needs a direct object."
         },
@@ -458,10 +513,15 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "verbs",
-          "questionText": "",
-          "choices": ["NO CHANGE", "is having", "had", "have"],
+          "questionText": "Which choice correctly completes the present-perfect verb with engineers as its subject?",
+          "choices": [
+            "NO CHANGE",
+            "is having",
+            "having",
+            "have"
+          ],
           "answer": 3,
-          "explanation": "The plural subject \"engineers\" takes \"have,\" not the singular \"has\"; the present perfect also fits the ongoing relevance."
+          "explanation": "'Engineers have used' supplies a plural present-perfect verb. 'Has' and 'is having' do not agree with plural engineers; 'having used' lacks a finite main verb. A past-perfect 'had used' would be possible with a past reference point and is not an offered distractor."
         },
         {
           "number": 34,
@@ -483,17 +543,22 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "sentence-structure",
-          "questionText": "",
-          "choices": ["NO CHANGE", "so that", "such that", "in order"],
+          "questionText": "Which choice correctly introduces the clause describing what the fold allows?",
+          "choices": [
+            "NO CHANGE",
+            "so that",
+            "such as",
+            "in order"
+          ],
           "answer": 1,
-          "explanation": "\"So that\" introduces the result clause correctly; \"so as\" requires an infinitive, and \"such that\" and \"in order\" are unidiomatic here."
+          "explanation": "'So that a single tug spreads it open again' introduces the result the folding pattern permits. 'So as' and 'in order' would require to plus an infinitive; 'such as' introduces an example, not this result clause. The grammatical result construction 'such that' is not an offered error."
         },
         {
           "number": 36,
           "category": "CSE",
           "difficulty": "medium",
           "topic": "punctuation",
-          "questionText": "",
+          "questionText": "Which choice keeps opened and refolded parallel without unnecessary punctuation?",
           "choices": [
             "hand and refolded just as easily.",
             "hand, and refolded just as easily.",
@@ -508,15 +573,15 @@
           "category": "CSE",
           "difficulty": "hard",
           "topic": "pronouns",
-          "questionText": "",
+          "questionText": "Which choice correctly refers back to the plural noun stents?",
           "choices": [
             "NO CHANGE",
             "its expansion.",
-            "they are expanded.",
+            "they is expanded.",
             "expanding them."
           ],
           "answer": 3,
-          "explanation": "\"Stents\" is plural, so the singular pronoun \"it\" is wrong; \"expanding them\" agrees in number and keeps the parallel verb form."
+          "explanation": "'Expanding them' gives surgeons' next action and uses a plural object for stents. 'Expanding it' and 'its expansion' use singular reference; 'they is expanded' mismatches plural they with singular is. 'Before they are expanded' would be grammatical and is not offered."
         },
         {
           "number": 38,
@@ -538,18 +603,28 @@
           "category": "KLA",
           "difficulty": "easy",
           "topic": "word-choice",
-          "questionText": "",
-          "choices": ["NO CHANGE", "jump", "spring", "leap"],
+          "questionText": "Which choice agrees with machines and remains parallel with fold?",
+          "choices": [
+            "NO CHANGE",
+            "pops",
+            "popping",
+            "has popped"
+          ],
           "answer": 0,
-          "explanation": "\"Pop into working shapes\" idiomatically describes a quick unfolding; \"spring,\" \"jump,\" and \"leap\" misfit the motion."
+          "explanation": "The plural antecedent machines governs the coordinated verbs fold and pop. 'Pops' and 'has popped' are singular; 'popping' cannot complete the finite verb series. 'Spring into working shapes' would also be idiomatic and is not used as an incorrect alternative."
         },
         {
           "number": 40,
           "category": "KLA",
           "difficulty": "medium",
           "topic": "word-choice",
-          "questionText": "",
-          "choices": ["NO CHANGE", "speaks", "talks", "informs"],
+          "questionText": "Which choice means shapes the work of in this context?",
+          "choices": [
+            "NO CHANGE",
+            "speaks",
+            "talks",
+            "informs"
+          ],
           "answer": 3,
           "explanation": "\"Informs laboratories\" means it shapes their work; \"tells,\" \"speaks,\" and \"talks\" do not fit this sense."
         }
@@ -565,7 +640,7 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "misc-grammar",
-          "questionText": "",
+          "questionText": "Which choice most concisely expresses the comparison in formal prose?",
           "choices": [
             "as if lit from below.",
             "like they were lit from below.",
@@ -573,7 +648,7 @@
             "as lit from below."
           ],
           "answer": 0,
-          "explanation": "Standard usage prefers \"as if\" before a clause of comparison; \"like\" is informal here and the others are ungrammatical."
+          "explanation": "'As if lit from below' expresses the comparison concisely in formal prose. 'Like they were lit from below' is longer and more conversational, so it does not meet the stated concision goal as well. 'Like lit' and 'as lit' do not form the intended hypothetical comparison here. Like introducing a clause is not universally ungrammatical."
         },
         {
           "number": 42,
@@ -595,8 +670,13 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "parallel-structure",
-          "questionText": "",
-          "choices": ["NO CHANGE", "attracts", "to attract", "attract"],
+          "questionText": "Which choice keeps the verbs following may parallel?",
+          "choices": [
+            "NO CHANGE",
+            "attracts",
+            "to attract",
+            "attract"
+          ],
           "answer": 3,
           "explanation": "The verb must parallel \"startle\" in \"may startle... or attract.\""
         },
@@ -605,7 +685,7 @@
           "category": "POW",
           "difficulty": "medium",
           "topic": "transitions",
-          "questionText": "",
+          "questionText": "Which phrase most accurately connects uncertainty about purpose to the known condition for glowing?",
           "choices": [
             "NO CHANGE",
             "For example,",
@@ -620,8 +700,13 @@
           "category": "POW",
           "difficulty": "medium",
           "topic": "transitions",
-          "questionText": "",
-          "choices": ["NO CHANGE", "Therefore,", "Similarly,", "For example,"],
+          "questionText": "Which transition best qualifies the appeal of the displays with an unpredictable limitation?",
+          "choices": [
+            "NO CHANGE",
+            "Therefore,",
+            "Similarly,",
+            "For example,"
+          ],
           "answer": 0,
           "explanation": "The sentence qualifies the appeal of the displays with a limitation, so the contrast word \"Still\" fits."
         }
@@ -652,8 +737,13 @@
           "category": "CSE",
           "difficulty": "medium",
           "topic": "parallel-structure",
-          "questionText": "",
-          "choices": ["NO CHANGE", "comparing", "compared", "had compared"],
+          "questionText": "Which choice maintains the parallel sequence of completed past actions?",
+          "choices": [
+            "NO CHANGE",
+            "comparing",
+            "compared",
+            "had compared"
+          ],
           "answer": 2,
           "explanation": "The past-tense series needs \"gathered... compared... predicted\" for parallelism."
         },
@@ -662,22 +752,22 @@
           "category": "CSE",
           "difficulty": "hard",
           "topic": "punctuation",
-          "questionText": "",
+          "questionText": "Which choice correctly connects the reason to coined?",
           "choices": [
             "because",
             "; because",
-            ", because",
+            ", because,",
             ", he did so because"
           ],
           "answer": 0,
-          "explanation": "No comma should separate the verb \"coined\" from its reason clause introduced by \"because\"; the comma and semicolon versions misuse punctuation."
+          "explanation": "'Because' directly attaches the reason for coining the word. A semicolon cannot introduce this dependent reason clause; ', because,' wrongly separates because from its subject; ', he did so because' adds a new independent clause after a comma alone. A comma before a reason clause is not universally forbidden."
         },
         {
           "number": 49,
           "category": "CSE",
           "difficulty": "medium",
           "topic": "sentence-structure",
-          "questionText": "",
+          "questionText": "Which choice correctly joins all the clauses and preserves the contrast?",
           "choices": [
             "but his forecasts were often wrong, critics mocked them.",
             "but his forecasts were often wrong critics mocked them.",
@@ -694,13 +784,13 @@
           "topic": "add-delete",
           "questionText": "Which sentence, if added here, would best set up the essay's hopeful final sentence?",
           "choices": [
-            "His critics, too, were soon forgotten by the public.",
+            "By then, daily forecasts were already standard throughout the world.",
             "Storms continued to batter the British coast each winter.",
             "Public memory of his name faded almost completely.",
             "He had also designed several types of barometers."
           ],
           "answer": 2,
-          "explanation": "The closing sentence contrasts his obscurity with the later triumph of forecasting; noting that his name faded sets up that \"however\" turn."
+          "explanation": "'Public memory of his name faded almost completely' establishes personal obscurity against which however introduces the later success of forecasting. The first alternative already states that worldwide success, so it undermines both the contrast and the later time marker 'Within decades.' The storm and barometer details do not establish the intended obscurity-to-lasting-influence turn."
         }
       ]
     }

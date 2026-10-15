@@ -43,7 +43,7 @@ test("larger-budget coverage preserves an already saved session on the final stu
     dailyScopes(subject).map((scope) => scope.id),
   );
   const missing = dailyScopes("english")
-    .slice(9)
+    .slice(9, 15)
     .map((scope) => scope.id);
   const course = {
     testDate: "2026-10-17",
@@ -709,26 +709,71 @@ test("clause and fragment drills never introduce untaught joining punctuation", 
   );
 });
 
-test("original English rules stay intact; sentence boundaries follow the previously taught foundations", () => {
-  for (let sequence = 1; sequence < 30; sequence++) {
+test("English core and transfer scopes preserve original IDs and teach their own independent questions", () => {
+  const scopes = dailyScopes("english");
+  assert.equal(scopes.length, 30);
+  assert.equal(scopes[0].id, "english:sentence-structure:original:0");
+  assert.equal(scopes[2].id, "english:sentence-structure:original:2");
+  assert(scopes.slice(0, 16).every((s) => !s.scope.title));
+  assert(
+    scopes
+      .slice(16)
+      .every((s) => s.scope.title?.startsWith("Advanced transfer:")),
+  );
+  for (let position = 0; position < scopes.length; position++) {
     const block = makeDailyPlan(
       "alignment",
       "2026-10-06",
       { ...settings, minutesPerDay: 90 },
-      sequence,
+      0,
+      undefined,
+      [],
+      { english: position },
     ).blocks[0];
     for (const unit of blockUnits(block)) {
       if (unit.questions.some((q) => !q.id.startsWith("daily-"))) {
         const original = englishLesson(unit.topic);
-        if (unit.topic === "sentence-structure") {
-          assert.deepEqual(unit.lesson.sections, original.sections.slice(2));
+        const advanced = unit.questions.every((q) =>
+          /-transfer-0[12]$/.test(q.id),
+        );
+        if (advanced) {
+          assert.deepEqual(unit.lesson.sections, original.sections.slice(-1));
+          assert.deepEqual(unit.lesson.check, []);
+        } else if (unit.topic === "sentence-structure") {
+          assert.deepEqual(unit.lesson.sections, original.sections.slice(2, 5));
           assert.deepEqual(unit.lesson.check, []);
         } else {
-          assert.deepEqual(unit.lesson.sections, original.sections);
+          assert.deepEqual(
+            unit.lesson.sections,
+            original.sections.slice(0, -1),
+          );
           assert.deepEqual(unit.lesson.check, original.check);
         }
       }
     }
+  }
+});
+
+test("high-goal English courses prioritize transfer while unknown and lower baselines start with core teaching", () => {
+  for (const english of [null, 20, 32]) {
+    const plan = makeDailyPlan(
+      "english-level",
+      "2026-10-14",
+      {
+        ...settings,
+        scores: { ...settings.scores, english },
+      },
+      0,
+      undefined,
+      [],
+      {},
+      { testDate: "2026-11-17", targetScore: 36, coveredUnits: [] },
+    );
+    const unit = blockUnits(plan.blocks[0])[0];
+    assert.equal(
+      unit.questions.every((q) => /-transfer-0[12]$/.test(q.id)),
+      english === 32,
+    );
   }
 });
 
@@ -744,6 +789,30 @@ test("English repair preserves non-English work and historical answers in a save
     updated.blocks.reduce((n, b) => n + b.minutes, 0),
     old.minutes,
   );
+});
+test("older English plans migrate at the same core curriculum position after transfer scopes are appended", () => {
+  const scopes = dailyScopes("english");
+  for (const topic of ["commas", "misc-grammar", "logical-placement"]) {
+    const position = scopes.findIndex((s) => s.topic.slug === topic);
+    const plan = makeDailyPlan(
+      "legacy-core",
+      "2026-10-06",
+      { ...settings, minutesPerDay: 90 },
+      0,
+      undefined,
+      [],
+      { english: position },
+    );
+    plan.formatVersion = 5;
+    const migrated = restoreDailyTeaching(
+      plan,
+      {},
+      { ...settings, minutesPerDay: 90 },
+    );
+    assert.equal(migrated.curriculumPositions?.english, position, topic);
+    assert.equal(blockUnits(migrated.blocks[0])[0].topic, topic);
+    assert.equal(migrated.id, plan.id);
+  }
 });
 
 test("a deferred whole lesson remains next in the course instead of being skipped", () => {
@@ -1088,7 +1157,7 @@ test("misses become review questions while the next day teaches uncovered scopes
   );
 });
 
-test("the course covers every authored scope before October 17 without repeating new lessons or exceeding the budget", () => {
+test("the expanded course covers every authored scope with sufficient days without repeating new lessons or exceeding the budget", () => {
   for (const minutesPerDay of [75, 90]) {
     const covered = new Set<string>();
     DAILY_SUBJECTS.forEach((subject) =>
@@ -1097,7 +1166,7 @@ test("the course covers every authored scope before October 17 without repeating
         .forEach((scope) => covered.add(scope.id)),
     );
     let focus: DailyPlan["nextFocus"];
-    for (let day = 8; day < 17; day++) {
+    for (let day = 8; day < 24; day++) {
       const plan = makeDailyPlan(
         "deadline",
         `2026-10-${String(day).padStart(2, "0")}`,
@@ -1106,7 +1175,7 @@ test("the course covers every authored scope before October 17 without repeating
         focus,
         [],
         {},
-        { testDate: "2026-10-17", coveredUnits: [...covered] },
+        { testDate: "2026-10-24", coveredUnits: [...covered] },
       );
       const refreshed = refreshDailyContent(plan);
       assert.equal(
@@ -1170,7 +1239,23 @@ test("a close test date changes daily coverage; impossible budgets are reported 
     nearPlan.blocks.flatMap(blockUnits).length >
       farPlan.blocks.flatMap(blockUnits).length,
   );
-  const adequate = dailyCoverage(nearPlan, settings, close, nearPlan.date);
+  const adequateSettings = { ...settings, minutesPerDay: 90 };
+  const adequatePlan = makeDailyPlan(
+    "date",
+    "2026-10-08",
+    adequateSettings,
+    1,
+    undefined,
+    [],
+    {},
+    close,
+  );
+  const adequate = dailyCoverage(
+    adequatePlan,
+    adequateSettings,
+    close,
+    adequatePlan.date,
+  );
   assert(adequate.onTrack);
   assert(adequate.finishDate! < close.testDate);
   const shortSettings = { ...settings, minutesPerDay: 60 };
@@ -1186,7 +1271,7 @@ test("a close test date changes daily coverage; impossible budgets are reported 
   );
   const short = dailyCoverage(shortPlan, shortSettings, close, shortPlan.date);
   assert.equal(short.onTrack, false);
-  assert.equal(short.requiredMinutes, 75);
+  assert.equal(short.requiredMinutes, 90);
   assert.equal(
     dailyCoverage(shortPlan, shortSettings, close, "2026-10-17").onTrack,
     false,

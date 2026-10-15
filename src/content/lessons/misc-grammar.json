@@ -71,17 +71,17 @@
       ],
       "examples": [
         {
-          "text": "Marie Curie discovered radium.",
-          "label": "Active: subject does the action, two words shorter",
+          "text": "The plan was approved yesterday; the committee will implement it Monday.",
+          "label": "Passive keeps the plan as the topic; the next clause changes to the actor",
           "good": true
         },
         {
-          "text": "Radium was discovered by Marie Curie.",
-          "label": "Passive: grammatical but wordier, so the ACT prefers the active version",
-          "good": false
+          "text": "The plan was approved by the committee.",
+          "label": "Grammatical passive: use it when the plan is the focus",
+          "good": true
         }
       ],
-      "tip": "When a choice says 'was [verb]ed by,' check whether a shorter active choice says the same thing. If it does, the active choice is the answer."
+      "tip": "Choose voice to serve the passage: actor first for emphasis on responsibility, receiver first when it is the continuing topic."
     },
     {
       "heading": "Prepositional idioms",
@@ -91,17 +91,17 @@
       ],
       "examples": [
         {
-          "text": "Her method is different from mine, but I agree with her goal.",
-          "label": "different from, agree with a person's idea",
+          "text": "Her method differs from mine, but I agree with her goal.",
+          "label": "differ from; agree with an opinion",
           "good": true
         },
         {
-          "text": "Her method is different than mine, but I agree to her goal.",
-          "label": "wrong preposition for each idiom",
+          "text": "Her method differs of mine, but I agree at her goal.",
+          "label": "These prepositions do not fit the intended constructions",
           "good": false
         }
       ],
-      "tip": "Read the phrase aloud with each preposition and pick the pairing you'd expect in a textbook, not a text message. 'Different from' beats 'different than' every time on the ACT."
+      "tip": "Learn the complete construction. Different from is standard, and different than also occurs in American English; do not invent an error based on a disputed blanket ban."
     },
     {
       "heading": "How to spot these questions",
@@ -110,6 +110,27 @@
         "Expand shortened words, check whether the noun can be counted, test the usual word pairing, or compare clarity and meaning. Use the rule that matches the question instead of choosing only by familiarity."
       ],
       "tip": "One word changing across all four choices means a rule question, not a style question. Find the rule, and three choices eliminate themselves."
+    },
+    {
+      "heading": "Advanced transfer: comparisons and adjective/adverb roles",
+      "body": [
+        "Compare corresponding things: the budget for restoration was larger than the budget for storage, or larger than that for storage. Do not compare a budget directly with a department or building.",
+        "A linking verb describes its subject with an adjective: the sample looks clear. An action verb may need an adverb: the technician labeled it clearly. For comparisons, use a comparative for two and a superlative for a set of three or more."
+      ],
+      "examples": [
+        {
+          "text": "The north wing's roof is steeper than that of the south wing.",
+          "label": "That replaces roof, keeping roof compared with roof.",
+          "good": true
+        },
+        {
+          "text": "The north wing's roof is steeper than the south wing.",
+          "label": "The wording compares a roof with an entire wing instead of the corresponding roof.",
+          "good": false
+        }
+      ],
+      "tip": "Ask what is being compared and what the describing word actually modifies.",
+      "teachingRevision": 2
     }
   ],
   "check": [

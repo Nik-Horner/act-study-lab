@@ -24,12 +24,12 @@
       "stem": "The coach told us to stretch, to hydrate, and [[resting]] before the race.",
       "choices": [
         "NO CHANGE",
-        "rest",
+        "rested",
         "to rest",
         "that we rest"
       ],
       "answer": 2,
-      "explanation": "The series uses infinitives 'to stretch, to hydrate, and ___,' so 'to rest' matches. The gerund 'resting,' the bare verb 'rest,' and the clause 'that we rest' all break the parallel form."
+      "explanation": "'To rest' matches the infinitives 'to stretch' and 'to hydrate.' 'Resting' is a gerund, 'rested' is a past-tense form, and 'that we rest' is a clause. An initial 'to' may be shared in a coordinated series, so a bare 'rest' would also be defensible and is not offered here."
     },
     {
       "id": "parallel-structure-003",
@@ -160,11 +160,11 @@
       "choices": [
         "NO CHANGE",
         "to inspire loyalty",
-        "inspiring loyalty",
+        "inspires loyalty",
         "for her inspiring loyalty"
       ],
       "answer": 3,
-      "explanation": "The correlative 'not only...but also' must join matching structures; 'for her demanding rehearsals' pairs with 'for her inspiring loyalty.' The clause, the bare gerund phrase, and the infinitive all break the parallel form."
+      "explanation": "'Not only for her demanding rehearsals but also for her inspiring loyalty' balances two prepositional phrases. The other alternatives switch to a clause, a finite verb, or an infinitive. Repeating a preposition is not always mandatory: the choice must fit the complete paired construction."
     },
     {
       "id": "parallel-structure-012",
@@ -199,22 +199,22 @@
     {
       "id": "parallel-structure-014",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The fellowship rewards scientists who design original experiments, who publish rigorous findings, and [[who mentor younger researchers]].",
       "choices": [
         "NO CHANGE",
         "mentoring younger researchers",
         "to mentor younger researchers",
-        "mentor younger researchers"
+        "mentors younger researchers"
       ],
       "answer": 0,
-      "explanation": "The series of relative clauses, 'who design...,' 'who publish...,' and 'who mentor...,' is parallel, so NO CHANGE is correct. The gerund phrase 'mentoring,' the bare verb phrase 'mentor,' and the infinitive 'to mentor' all break the parallel form."
+      "explanation": "The plural antecedent 'scientists' controls 'who design,' 'who publish,' and 'who mentor.' 'Mentors' disagrees in number, while 'mentoring' and 'to mentor' do not complete this relative-clause series. A repeated 'who' may be omitted in a grammatical coordination; omission alone is not an error."
     },
     {
       "id": "parallel-structure-015",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The report concluded that the city should invest in public transit not because cars are inefficient but because trains [[reducing emissions]].",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "parallel-structure-016",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Learning to play the cello demands as much daily discipline as [[to train]] for a marathon does.",
       "choices": [
@@ -311,10 +311,10 @@
         "NO CHANGE",
         "that units be checked",
         "to check our units",
-        "check our units"
+        "checked our units"
       ],
       "answer": 2,
-      "explanation": "The series uses infinitives 'to label, to record, and to check,' so 'to check our units' is parallel. The gerund 'checking,' the bare verb 'check,' and the clause 'that units be checked' all break the parallel form."
+      "explanation": "'To check our units' continues the infinitive series after 'reminded us.' 'Checking' is a gerund, 'checked' changes to past tense, and 'that units be checked' switches to a clause. A coordinated series can share its first 'to'; a bare 'check' is not inherently incorrect."
     },
     {
       "id": "parallel-structure-022",
@@ -386,10 +386,10 @@
         "NO CHANGE",
         "to market cleverly",
         "by marketing cleverly",
-        "marketing cleverly"
+        "marketed cleverly"
       ],
       "answer": 2,
-      "explanation": "The correlative 'not only...but also' must join matching structures; 'by designing a useful product' pairs with 'by marketing cleverly.' The clause 'it marketed cleverly,' the bare gerund 'marketing cleverly,' and the infinitive all break the parallel form."
+      "explanation": "'Not only by designing a useful product but also by marketing cleverly' keeps the same construction after each connector. The other choices switch to a clause, a past-tense verb, or an infinitive. A preposition can be shared where the entire coordination permits it; omission alone does not prove an error."
     },
     {
       "id": "parallel-structure-027",
@@ -439,7 +439,7 @@
     {
       "id": "parallel-structure-030",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The grant supports teachers who develop new curricula, who share their methods openly, and [[who train new colleagues]].",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "parallel-structure-031",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The biologist explained that the wetland matters not because tourists enjoy it but because migrating birds [[depending on it]].",
       "choices": [
@@ -469,7 +469,7 @@
     {
       "id": "parallel-structure-032",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Restoring an antique clock requires as much careful attention as [[to rebuild]] a vintage engine does.",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 3,
       "explanation": "The 'as much...as' comparison matches the gerund 'Restoring,' so 'rebuilding' is parallel. The infinitives 'to rebuild' and 'to be rebuilding' and the clause 'you rebuild' all break the parallel form."
+    },
+    {
+      "stem": "The proposal asks the city not only to replace damaged pipes but also [[a review of the maintenance schedule]].",
+      "questionText": "Which choice keeps the two requests parallel?",
+      "choices": [
+        "NO CHANGE",
+        "that the maintenance schedule be reviewed",
+        "to review the maintenance schedule",
+        "a maintenance schedule that is reviewed"
+      ],
+      "answer": 2,
+      "explanation": "The two requests after asks the city are actions: to replace pipes and to review the schedule. A review and a maintenance schedule are noun phrases, while that the schedule be reviewed is a clause; none matches the infinitive phrase after not only.",
+      "id": "parallel-structure-transfer-01",
+      "category": "CSE",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "The committee evaluated the project by how accurately it measured erosion, how consistently it recorded rainfall, and [[whether its conclusions were explained clearly]].",
+      "questionText": "Which choice most precisely makes the third criterion parallel to the two stated measures of quality?",
+      "choices": [
+        "NO CHANGE",
+        "explaining its conclusions clearly",
+        "its clear conclusions",
+        "how clearly it explained its conclusions"
+      ],
+      "answer": 3,
+      "explanation": "The first two criteria measure degree: how accurately and how consistently. How clearly supplies a matching degree criterion for the explanation. Whether asks a yes/no question rather than how well it was done; the gerund and noun phrase change the established construction.",
+      "id": "parallel-structure-transfer-02",
+      "category": "CSE",
+      "difficulty": "hard"
     }
   ]
 }

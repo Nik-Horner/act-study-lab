@@ -199,7 +199,7 @@
     {
       "id": "redundancy-014",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice is the least redundant in context?",
       "stem": "For a [[brief moment lasting only a short time,]] the room fell silent.",
       "choices": [
@@ -214,7 +214,7 @@
     {
       "id": "redundancy-015",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice most effectively concludes the sentence without adding irrelevant detail?",
       "stem": "Dr. Patel studied how coral reefs recover after storms, publishing her findings in a leading marine-biology journal[[ that her cousin had once subscribed to as a teenager.]]",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "redundancy-016",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice is the least redundant in context?",
       "stem": "The hikers reached the summit at [[exactly 12 noon in the middle of the day]] and paused to rest.",
       "choices": [
@@ -439,7 +439,7 @@
     {
       "id": "redundancy-030",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice is the least redundant in context?",
       "stem": "The climbers watched the cable car slowly [[ascend]] toward the summit.",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "redundancy-031",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice is the least redundant in context?",
       "stem": "After two days of deliberation, the jury reached its [[final conclusion]] and notified the judge.",
       "choices": [
@@ -464,12 +464,12 @@
         "final concluding decision"
       ],
       "answer": 2,
-      "explanation": "A conclusion is by definition final, so 'final,' 'concluding,' and 'ultimate' repeat it; 'conclusion' alone is complete. The other choices keep a redundant finality word."
+      "explanation": "In this completed jury-decision context, 'conclusion' already conveys the decision reached and reported to the judge, so the extra finality wording adds nothing necessary. 'Ultimate final conclusion' and 'final concluding decision' repeat that point with more words. A conclusion is not universally final: in other contexts, interim and final conclusions can differ."
     },
     {
       "id": "redundancy-032",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice most effectively concludes the sentence without adding irrelevant detail?",
       "stem": "The engineer redesigned the bridge's supports to withstand stronger earthquakes[[, and she happened to prefer tea over coffee on her morning commute.]]",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 1,
       "explanation": "Her beverage habits have nothing to do with the bridge redesign, so the sentence should end after 'earthquakes.' ', though she usually drank tea instead of coffee' and ', and she drank tea on her commute most mornings' keep the off-topic detail."
+    },
+    {
+      "stem": "The workshop was available only to first-year teachers who volunteered. Among that group, average lesson-preparation time fell by ten minutes. The report concluded that [[the workshop reduced preparation time for all teachers]].",
+      "questionText": "Which revision most concisely preserves both the observed result and the limit on whom it concerns?",
+      "choices": [
+        "NO CHANGE",
+        "the workshop helped teachers",
+        "preparation time fell by ten minutes among the participating first-year teachers",
+        "all first-year teachers saved time because of the workshop"
+      ],
+      "answer": 2,
+      "explanation": "The keyed choice retains the measured ten-minute change and the restricted volunteer group without asserting proven causation. All teachers and all first-year teachers extend beyond the study. Helped teachers drops both the magnitude and sample limit. Concision must not erase the evidence's scope.",
+      "id": "redundancy-transfer-01",
+      "category": "KLA",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "The archive is open to the public on Saturdays only. Visitors may handle reproductions, but the original letters remain sealed. [[Members of the public can visit the archive only on Saturdays.]]",
+      "questionText": "Which choice best ends the paragraph by adding useful information rather than repeating a point?",
+      "choices": [
+        "NO CHANGE",
+        "Saturdays are the only days when public visits are permitted.",
+        "The archive admits public visitors exclusively on Saturdays.",
+        "Staff provide magnifiers so visitors can read the reproductions' smallest annotations."
+      ],
+      "answer": 3,
+      "explanation": "The final option adds a practical detail about examining the reproductions and develops the second sentence. The other three choices all restate the opening restriction, even though their wording differs. Repetition must be checked across the paragraph, not just inside the underlined phrase.",
+      "id": "redundancy-transfer-02",
+      "category": "KLA",
+      "difficulty": "hard"
     }
   ]
 }

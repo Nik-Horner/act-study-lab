@@ -70,11 +70,32 @@
         "Name the paragraph’s purpose, decide whether the sentence serves it, then compare the reasons. Choose a verdict and explanation that are both supported."
       ],
       "tip": "Decide the verdict before you read the reasons. Choosing between two reasons is far easier than juggling four full choices."
+    },
+    {
+      "heading": "Advanced transfer: needed background versus a tempting tangent",
+      "body": [
+        "Some details become relevant only when a later sentence depends on them. Before deleting, inspect both the local paragraph and the essay's larger purpose.",
+        "A detail's subject can match the topic without serving the point. Keep background that resolves a likely reader question or explains a later consequence; delete appealing context that interrupts the argument without supporting it."
+      ],
+      "examples": [
+        {
+          "text": "A paragraph says a valve opens only above a pressure threshold, then explains a delayed release. Keeping the threshold definition helps explain the delay.",
+          "label": "Background earns its place by supporting a later causal explanation.",
+          "good": true
+        },
+        {
+          "text": "Adding the inventor's birthplace between the threshold and the delayed release.",
+          "label": "The fact concerns the inventor but supplies no needed link in the mechanism.",
+          "good": false
+        }
+      ],
+      "tip": "Ask what later idea becomes harder to understand if the detail disappears.",
+      "teachingRevision": 2
     }
   ],
   "check": [
     {
-      "stem": "Context: A paragraph explains how photosynthesis turns sunlight into sugar. Underlined sentence: [[Chlorophyll in the leaves captures light energy to start the process.]]",
+      "stem": "Context: A paragraph explains how photosynthesis uses sunlight to make sugar. Underlined sentence: [[Chlorophyll in the leaves captures light energy to start the process.]]",
       "questionText": "The writer is considering deleting the underlined sentence. Should it be kept or deleted?",
       "choices": [
         "Kept, because it explains a key step in how photosynthesis works.",

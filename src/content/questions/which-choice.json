@@ -199,7 +199,7 @@
     {
       "id": "which-choice-014",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice best emphasizes the violinist's nervousness rather than her skill?",
       "stem": "A paragraph describes a young violinist waiting backstage before her first solo recital. The writer wants to convey her anxiety.",
       "choices": [
@@ -214,7 +214,7 @@
     {
       "id": "which-choice-015",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice sets a somber, reflective tone consistent with a passage about an abandoned factory?",
       "stem": "An essay describes returning to the shuttered mill where the writer's grandparents once worked. The surrounding paragraphs are quiet and mournful.",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "which-choice-016",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice best supports the paragraph's claim that the new bridge design saved money without sacrificing strength?",
       "stem": "The paragraph argues that engineers cut construction costs while keeping the bridge just as strong as older designs.",
       "choices": [
@@ -439,7 +439,7 @@
     {
       "id": "which-choice-030",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice best emphasizes the runner's exhaustion rather than her determination?",
       "stem": "A paragraph describes a marathoner in the final mile of a race. The writer wants to convey how worn out she is.",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "which-choice-031",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice sets a hopeful, uplifting tone consistent with a passage about a town rebuilding after a flood?",
       "stem": "An essay describes a small town a year after a devastating flood. The surrounding paragraphs are warm and optimistic about its recovery.",
       "choices": [
@@ -469,7 +469,7 @@
     {
       "id": "which-choice-032",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice best supports the paragraph's claim that the new irrigation method raised crop yields while using less water?",
       "stem": "The paragraph argues that a drip-irrigation system let farmers grow more while drawing far less water than flooding the fields.",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 1,
       "explanation": "A quarter rise in yields paired with water use cut in half addresses both halves of the claim, more crops and less water. The others speak to the tubing, the farm's reputation, and the supplier, none of which tie yield to water savings."
+    },
+    {
+      "stem": "An essay opens with the writer standing outside a shuttered observatory, unable to enter. It describes volunteers repairing the telescope and recruiting local guides, then ends with the first public viewing night. The tone is quietly hopeful.",
+      "questionText": "Which closing sentence best echoes the opening image while emphasizing the observatory's new community role?",
+      "choices": [
+        "The observatory opened in 1924 and has a dome made of copper.",
+        "The telescope can now reveal details of Jupiter that were once invisible.",
+        "The door I had found locked now stood open, and neighbors waited together for their turn at the eyepiece.",
+        "Volunteers will need to raise additional funds to replace the dome next year."
+      ],
+      "answer": 2,
+      "explanation": "The locked-to-open door echoes the essay's starting image, and neighbors taking turns shows the shared role created by the volunteers. The first gives historical background; the second stays on astronomy but omits access and community; the last introduces future repair needs rather than completing the hopeful arc.",
+      "id": "which-choice-transfer-01",
+      "category": "POW",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "A paragraph argues that relocating a bus stop improved access for residents with limited mobility without slowing the route. It has already described a newly built ramp beside the relocated stop.",
+      "questionText": "Which addition most effectively supports both parts of the paragraph's claim?",
+      "choices": [
+        "Passengers praised the shelter's design, and the stop remained a popular meeting place.",
+        "Wheelchair boardings rose, while recorded end-to-end trip times remained unchanged.",
+        "The ramp met accessibility guidelines, and the shelter had space for twelve seats.",
+        "The route served three more neighborhoods, increasing its total distance by two miles."
+      ],
+      "answer": 1,
+      "explanation": "Increased wheelchair boardings provides evidence of improved access, while unchanged end-to-end times supports no slowdown. The shelter and ramp details do not establish route speed; the added neighborhoods change the route's scope without addressing mobility access or showing unchanged travel time. Both halves require evidence.",
+      "id": "which-choice-transfer-02",
+      "category": "POW",
+      "difficulty": "hard"
     }
   ]
 }

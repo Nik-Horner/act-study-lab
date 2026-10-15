@@ -14,6 +14,110 @@ export function MathDiagram({ id }: { id: string }) {
     </text>
   );
   switch (id) {
+    case "activity-trapezoid":
+      description =
+        "Trapezoid with parallel bases 6 and 18, perpendicular height 4, and a slanted side 7.";
+      content = (
+        <>
+          <path d="M105 90H177L249 138H33Z" />
+          <path d="M105 90V138" strokeDasharray="5 4" />
+          <path d="M105 128h10v10" />
+          {label(141, 77, "6")}
+          {label(141, 164, "18")}
+          {label(121, 120, "4")}
+          {label(60, 106, "7")}
+        </>
+      );
+      break;
+    case "activity-similar-solids":
+      description =
+        "Two similar cubes. The larger has 1.5 times each corresponding length. The smaller volume is 16; find the larger volume.";
+      content = (
+        <>
+          <path d="M35 125h60v60H35ZM35 125l20-20h60v60l-20 20M95 125l20-20" />
+          <path d="M155 100h90v90H155ZM155 100l30-30h90v90l-30 30M245 100l30-30" />
+          {label(74, 212, "Volume 16")}
+          {label(210, 225, "Length ×1.5")}
+        </>
+      );
+      break;
+    case "activity-inscribed-angle":
+      description =
+        "Circle with an inscribed angle at the left intercepting a 96-degree arc on the right. Find the inscribed angle.";
+      content = (
+        <>
+          <circle cx="150" cy="125" r="80" />
+          <path d="M203.53 65.55L70 125L203.53 184.45" />
+          <path
+            d="M203.53 65.55A80 80 0 0 1 203.53 184.45"
+            stroke="var(--color-brand)"
+            strokeWidth="4"
+          />
+          {label(253, 130, "96°")}
+          {label(99, 130, "?")}
+        </>
+      );
+      break;
+    case "activity-cylinder":
+      description =
+        "Closed right circular cylinder with radius 4 and height 7.";
+      content = (
+        <>
+          <ellipse cx="150" cy="70" rx="48" ry="17" />
+          <path d="M102 70V190M198 70V190" />
+          <ellipse cx="150" cy="190" rx="48" ry="17" />
+          <path d="M150 70h48" />
+          {label(174, 60, "4")}
+          {label(218, 136, "7")}
+        </>
+      );
+      break;
+    case "activity-tangent":
+      description =
+        "A circle radius 12 is perpendicular to a tangent of length 9 from point P. Find the distance from P to the center.";
+      content = (
+        <>
+          <circle cx="110" cy="90" r="60" />
+          <path d="M110 90V150H155Z" />
+          <path d="M110 141h9v9" />
+          {label(95, 123, "12")}
+          {label(134, 174, "9")}
+          {label(169, 155, "P")}
+          {label(145, 111, "?")}
+          {label(97, 85, "O")}
+        </>
+      );
+      break;
+    case "activity-right-triangle":
+      description =
+        "Right triangle with acute angle theta, opposite side 8, hypotenuse 17, and an unlabeled adjacent side.";
+      content = (
+        <>
+          <path d="M50 175H230V79Z" />
+          <path d="M220 175v-10h10" />
+          <path d="M77 175A27 27 0 0 0 74 162" />
+          {label(90, 165, "θ")}
+          {label(139, 110, "17")}
+          {label(247, 131, "8")}
+        </>
+      );
+      break;
+    case "unit-circle":
+      description =
+        "Unit circle with axes and a radius at 150 degrees in Quadrant II. The angle's sine is its vertical coordinate.";
+      content = (
+        <>
+          <path d="M40 125H260M150 25V225" strokeWidth="1" />
+          <circle cx="150" cy="125" r="80" />
+          <path d="M150 125L80.72 85" stroke="var(--color-brand)" />
+          <path d="M80.72 85V125" strokeDasharray="4 4" />
+          <circle cx="80.72" cy="85" r="3" fill="currentColor" />
+          {label(127, 101, "150°")}
+          {label(242, 145, "1")}
+          {label(169, 48, "1")}
+        </>
+      );
+      break;
     case "inscribed-angle":
       description =
         "Circle with an inscribed angle at the left intercepting an 80-degree arc on the right. Find the inscribed angle.";

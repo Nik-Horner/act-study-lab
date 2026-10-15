@@ -155,7 +155,7 @@
       "id": "modifiers-011",
       "category": "CSE",
       "difficulty": "medium",
-      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "questionText": "Which choice most clearly indicates that the package has the smudged label?",
       "stem": "She handed the package [[to the courier with the smudged label]].",
       "choices": [
         "NO CHANGE",
@@ -164,7 +164,7 @@
         "to the smudged-label courier"
       ],
       "answer": 2,
-      "explanation": "'With the smudged label' describes the package, so it must sit beside 'package,' giving 'the package with the smudged label to the courier.' 'To the courier with the smudged label,' 'to the courier, who had a smudged label,' and 'to the smudged-label courier' all pin the label on the courier, a person who has no label."
+      "explanation": "Place 'with the smudged label' beside 'package,' the object identified in the question. The keyed wording clearly describes the package; the other choices attach the description to the courier. Modifier questions depend on the intended meaning, not whether a person could ever wear a label."
     },
     {
       "id": "modifiers-012",
@@ -185,7 +185,7 @@
       "id": "modifiers-013",
       "category": "CSE",
       "difficulty": "medium",
-      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "questionText": "Which choice most clearly expresses that the writer watched almost all of the series?",
       "stem": "I [[nearly watched the entire series]] over winter break, stopping just two episodes short of the finale.",
       "choices": [
         "NO CHANGE",
@@ -194,12 +194,12 @@
         "the entire series nearly watched"
       ],
       "answer": 2,
-      "explanation": "The limiting word 'nearly' belongs next to 'the entire series' to mean I watched almost all of it, which matches stopping two episodes short. 'Nearly watched' wrongly says I almost watched but never did, while 'watched the entire series nearly' and 'the entire series nearly watched' are garbled."
+      "explanation": "'Watched nearly the entire series' puts the limiter directly beside the amount watched and matches the two unwatched episodes. 'Nearly watched' can be ambiguous about whether the viewing happened at all. The other two placements are unidiomatic in this sentence."
     },
     {
       "id": "modifiers-014",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Designed by a celebrated architect, [[the bridge draws photographers from around the world]].",
       "choices": [
@@ -214,22 +214,22 @@
     {
       "id": "modifiers-015",
       "category": "CSE",
-      "difficulty": "hard",
-      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "difficulty": "medium",
+      "questionText": "Which choice most clearly indicates that the professor spent decades developing the theory?",
       "stem": "The professor explained [[the theory to her students that she had spent decades developing]].",
       "choices": [
         "NO CHANGE",
         "to her students the theory that she had spent decades developing",
-        "the decades-old developing theory to her students",
+        "the theory to her students that they had developed",
         "the theory to her students, who had spent decades developing it"
       ],
       "answer": 1,
-      "explanation": "'That she had spent decades developing' describes the theory, so the theory must sit right before that clause, as in 'explained to her students the theory that she had spent decades developing.' The original attaches the clause to 'students,' 'who had spent decades developing it' wrongly credits the students with the work, and 'the decades-old developing theory' is garbled."
+      "explanation": "'To her students the theory that she had spent decades developing' places the relative clause immediately after its intended antecedent, theory. The original separates the clause from theory with students; the remaining choices explicitly credit students with the development."
     },
     {
       "id": "modifiers-016",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "To qualify for the scholarship, [[a portfolio of essays must be submitted by each applicant]].",
       "choices": [
@@ -380,16 +380,16 @@
       "id": "modifiers-026",
       "category": "CSE",
       "difficulty": "medium",
-      "questionText": "Which choice makes the sentence most grammatically acceptable?",
+      "questionText": "Which choice most clearly limits the collected items to canned goods?",
       "stem": "The volunteers [[only collected canned goods]] at the food drive, not clothing.",
       "choices": [
         "NO CHANGE",
         "only canned goods collected",
         "collected only canned goods",
-        "collected canned goods only"
+        "collected canned goods at only"
       ],
       "answer": 2,
-      "explanation": "The limiting word 'only' belongs next to 'canned goods' to mean the volunteers collected nothing but canned goods. 'Only collected' wrongly limits the verb, 'collected canned goods only' shifts the limit onto 'at the food drive,' and 'only canned goods collected' is garbled."
+      "explanation": "'Collected only canned goods' puts the limiter next to the items, making the contrast with clothing explicit. 'Only collected' can instead limit the action; 'only canned goods collected' has no appropriate main verb; and 'collected canned goods at only at the food drive' repeats the preposition and is malformed."
     },
     {
       "id": "modifiers-027",
@@ -439,7 +439,7 @@
     {
       "id": "modifiers-030",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Wired with hundreds of sensors overnight, [[engineers monitored the bridge during the storm]].",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "modifiers-031",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Painted by a teenage apprentice in 1620, [[historians now consider the portrait a masterpiece]].",
       "choices": [
@@ -469,7 +469,7 @@
     {
       "id": "modifiers-032",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "To be considered for the fellowship, [[a research proposal must accompany each application]].",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 2,
       "explanation": "The infinitive opener 'To be considered for the fellowship' must describe whoever seeks consideration, so 'each applicant' must follow the comma. A proposal and the panel are not seeking the fellowship, so 'a research proposal must accompany each application,' 'a research proposal is part of the requirements,' and 'the panel weighs each research proposal' all dangle the modifier."
+    },
+    {
+      "stem": "After being scanned at high resolution, [[the original letters were returned to their protective sleeves]].",
+      "questionText": "Which choice keeps the opening description attached to the object that was scanned?",
+      "choices": [
+        "NO CHANGE",
+        "the archivists returned the original letters to their sleeves",
+        "returning the letters to their sleeves took the archivists an hour",
+        "protective sleeves once again held the original letters"
+      ],
+      "answer": 0,
+      "explanation": "The original letters were scanned, and the keyed passive clause makes those letters its subject. The other choices make archivists, the activity of returning, or sleeves the subject, so the opener attaches to something that was not scanned. Passive voice is appropriate because the letters remain the topic.",
+      "id": "modifiers-transfer-01",
+      "category": "CSE",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "The lab must inspect every seal before it releases a sample. To express that timing requirement clearly, the writer proposes: The lab [[only releases samples after inspection]].",
+      "questionText": "Which choice most clearly restricts when samples may be released?",
+      "choices": [
+        "NO CHANGE",
+        "releases only samples after inspection",
+        "releases samples only after inspection",
+        "releases samples after only inspection"
+      ],
+      "answer": 2,
+      "explanation": "Only after inspection explicitly restricts the time or condition of release. Only releases can limit the action; only samples restricts what is released. After only inspection is not idiomatic for the required timing relationship. All the samples must wait, so the limiter belongs with after inspection.",
+      "id": "modifiers-transfer-02",
+      "category": "CSE",
+      "difficulty": "hard"
     }
   ]
 }

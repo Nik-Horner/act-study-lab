@@ -1,5 +1,5 @@
 import type { Tables } from "./supabase/database.types";
-import { validateEnglishDrillAnswer } from "./english-drill-answer";
+import { ANSWER_ID, validateEnglishDrillAnswer } from "./english-drill-answer";
 
 export type EnglishAnswerRow = Pick<
   Tables<"exam_attempts">,
@@ -12,12 +12,38 @@ export function englishProgress(
   baseline: Tables<"topic_progress">[],
   legacyMisses: Tables<"question_misses">[],
   answers: EnglishAnswerRow[],
+  dailyAnswers: EnglishAnswerRow[] = [],
 ) {
   const progress = new Map(baseline.map((row) => [row.topic_slug, { ...row }]));
   const misses = new Map(
     legacyMisses.map((row) => [row.question_id, { ...row }]),
   );
   const seen = new Set<string>();
+  // shortcut: Legacy correct-answer totals lack question IDs; backfill only if an event archive becomes available.
+  const answeredQuestionIds = new Set(
+    legacyMisses.map((row) => row.question_id),
+  );
+  // Daily English uses the same practice bank but keeps its separate scoring history.
+  for (const row of dailyAnswers) {
+    const record = row.answers as unknown as {
+      kind?: string;
+      event?: { id?: string; questionId?: string; chosen?: number };
+    };
+    const event = record?.event;
+    if (
+      record?.kind !== "answer" ||
+      event?.id !== row.id ||
+      !ANSWER_ID.test(row.id) ||
+      typeof event?.questionId !== "string" ||
+      !Number.isInteger(event.chosen) ||
+      event.chosen! < 0 ||
+      event.chosen! > 3
+    )
+      throw new Error(
+        "Your daily English answer history could not be read. Reload to retry.",
+      );
+    answeredQuestionIds.add(event.questionId);
+  }
   const ordered = [...answers].sort(
     (a, b) =>
       a.completed_at.localeCompare(b.completed_at) || a.id.localeCompare(b.id),
@@ -34,6 +60,7 @@ export function englishProgress(
         "Your English answer history could not be read. Reload to retry.",
       );
     seen.add(row.id);
+    answeredQuestionIds.add(answer.questionId);
     const previous = progress.get(answer.topicSlug) ?? {
       user_id: userId,
       topic_slug: answer.topicSlug,
@@ -61,5 +88,9 @@ export function englishProgress(
         missed_at: row.completed_at,
       });
   }
-  return { progress: [...progress.values()], misses: [...misses.values()] };
+  return {
+    progress: [...progress.values()],
+    misses: [...misses.values()],
+    answeredQuestionIds: [...answeredQuestionIds].sort(),
+  };
 }

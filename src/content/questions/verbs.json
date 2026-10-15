@@ -199,7 +199,7 @@
     {
       "id": "verbs-014",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Neither the coach nor the players [[was]] willing to forfeit the game.",
       "choices": [
@@ -214,7 +214,7 @@
     {
       "id": "verbs-015",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "After she had [[swam]] the length of the pool, she climbed out exhausted.",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "verbs-016",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Scientists now believe that the comet, which passed Earth in 1066, [[returns]] roughly every seventy-six years and will next be visible in 2061.",
       "choices": [
@@ -439,7 +439,7 @@
     {
       "id": "verbs-030",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Neither the violinists nor the conductor [[were]] satisfied with the rehearsal.",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "verbs-031",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Before the museum opened, the curator confirmed that a thief had [[stole]] the smallest painting.",
       "choices": [
@@ -469,7 +469,7 @@
     {
       "id": "verbs-032",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Geologists explain that even today this canyon, which formed millions of years ago, [[deepens]] slightly with each passing century.",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 0,
       "explanation": "The cue 'even today' marks an ongoing fact, so the present tense 'deepens' is correct. 'Deepened' and 'had deepened' contradict 'even today' by placing the action in the past, and 'deepening' leaves the clause without a finite verb."
+    },
+    {
+      "stem": "Beyond the rows of labeled containers [[stand]] a single cabinet in which the rarest samples are kept.",
+      "questionText": "Which choice makes the main verb agree with its actual subject?",
+      "choices": [
+        "NO CHANGE",
+        "have stood",
+        "stands",
+        "are standing"
+      ],
+      "answer": 2,
+      "explanation": "The inverted subject is a single cabinet, whose head noun cabinet is singular. Stands agrees with it. Rows, containers, and samples belong to other phrases or clauses and do not control the main verb. Stand, have stood, and are standing are plural forms.",
+      "id": "verbs-transfer-01",
+      "category": "CSE",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "In her 1998 report, Patel described the basin as unusually dry. The basin, which receives most of its water from seasonal snowmelt, [[remains]] vulnerable to drought today.",
+      "questionText": "Which choice maintains the time and agreement required by the paragraph?",
+      "choices": [
+        "NO CHANGE",
+        "remain",
+        "remained",
+        "had remained"
+      ],
+      "answer": 0,
+      "explanation": "Today signals a continuing present condition, and singular basin takes remains. The earlier described belongs to the dated 1998 report and does not force every later statement into past tense. Remain disagrees with basin; remained and had remained would shift the explicitly current condition into the past.",
+      "id": "verbs-transfer-02",
+      "category": "CSE",
+      "difficulty": "hard"
     }
   ]
 }

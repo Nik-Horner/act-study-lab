@@ -21,7 +21,7 @@
       "category": "CSE",
       "difficulty": "easy",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "The chemist[[, Rosalind Franklin,]] worked on the structure of DNA.",
+      "stem": "Several chemists worked at the laboratory. The chemist[[, Rosalind Franklin,]] worked on the structure of DNA.",
       "choices": [
         "NO CHANGE",
         ", Rosalind Franklin",
@@ -29,7 +29,7 @@
         " Rosalind Franklin,"
       ],
       "answer": 2,
-      "explanation": "'The chemist' could name many people, so the name is necessary and takes no commas. The comma versions wrongly treat an essential name as removable."
+      "explanation": "The preceding sentence introduces several chemists, and the name identifies which one is meant. An identifying name takes no enclosing commas. A comma on only one side also wrongly separates the subject from its verb or leaves the interruption unbalanced."
     },
     {
       "id": "commas-003",
@@ -66,7 +66,7 @@
       "category": "CSE",
       "difficulty": "easy",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "The novelist[[ Jane Austen]] published her first book anonymously.",
+      "stem": "The exhibition features three novelists. The novelist[[ Jane Austen]] published her first book anonymously.",
       "choices": [
         "NO CHANGE",
         ", Jane Austen",
@@ -74,7 +74,7 @@
         ", Jane Austen,"
       ],
       "answer": 0,
-      "explanation": "'The novelist' fits many people, so the name is necessary and takes no commas. The comma versions wrongly set off an essential name as if it were removable."
+      "explanation": "Among three novelists, the name identifies the particular person. An identifying name takes no enclosing commas. A comma on only one side also wrongly separates the subject from its verb or leaves the interruption unbalanced."
     },
     {
       "id": "commas-006",
@@ -96,7 +96,7 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "My coworker[[, Priya,]] offered to cover my shift on Friday.",
+      "stem": "I work with several people at the store. My coworker[[, Priya,]] offered to cover my shift on Friday.",
       "choices": [
         "NO CHANGE",
         " Priya,",
@@ -104,7 +104,7 @@
         ", Priya"
       ],
       "answer": 2,
-      "explanation": "'My coworker' could be any of several people, so the name is necessary and takes no commas. The comma versions incorrectly treat an essential name as removable."
+      "explanation": "The name distinguishes Priya from the other coworkers introduced in the first sentence. An identifying name takes no enclosing commas. A comma on only one side also wrongly separates the subject from its verb or leaves the interruption unbalanced."
     },
     {
       "id": "commas-008",
@@ -199,7 +199,7 @@
     {
       "id": "commas-014",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Her debut novel[[ a coming-of-age story]] earned a national book award.",
       "choices": [
@@ -214,7 +214,7 @@
     {
       "id": "commas-015",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The judges awarded the prize to a quiet[[, determined]] runner from a small town.",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "commas-016",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The volunteers spent the morning sorting[[ donated winter]] coats for the shelter.",
       "choices": [
@@ -276,7 +276,7 @@
       "category": "CSE",
       "difficulty": "easy",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "The poet[[ Langston Hughes]] wrote about everyday life in Harlem.",
+      "stem": "Our class studied several poets. The poet[[ Langston Hughes]] wrote about everyday life in Harlem.",
       "choices": [
         "NO CHANGE",
         " Langston Hughes,",
@@ -284,7 +284,7 @@
         ", Langston Hughes,"
       ],
       "answer": 0,
-      "explanation": "'The poet' fits many people, so the name is necessary and takes no commas. The comma versions wrongly set off an essential name as if it were removable."
+      "explanation": "The name identifies which of the poets the writer means. An identifying name takes no enclosing commas. A comma on only one side also wrongly separates the subject from its verb or leaves the interruption unbalanced."
     },
     {
       "id": "commas-020",
@@ -439,7 +439,7 @@
     {
       "id": "commas-030",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "His latest invention[[ a solar-powered fan]] won first prize at the science fair.",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "commas-031",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The gallery featured a bold[[, colorful]] mural by a local artist.",
       "choices": [
@@ -469,7 +469,7 @@
     {
       "id": "commas-032",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The crew loaded several[[ heavy steel]] beams onto the flatbed truck.",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "answer": 0,
       "explanation": "'Heavy' and 'steel' are cumulative adjectives, since 'steel heavy beams' and 'heavy and steel beams' both fail, so no comma belongs between them or before the noun. ' heavy, steel' splits the cumulative pair, and the trailing-comma choices wrongly separate an adjective from 'beams.'"
+    },
+    {
+      "stem": "Of the forty specimens, only six had been exposed to saltwater. The specimens that had been exposed to saltwater[[, showed]] surface damage under magnification.",
+      "questionText": "Which choice preserves the distinction between those six specimens and the rest?",
+      "choices": [
+        "NO CHANGE",
+        " showed,",
+        ", showed,",
+        " showed"
+      ],
+      "answer": 3,
+      "explanation": "The restrictive that-clause identifies only the six exposed specimens. Showed is the main verb, and no comma belongs between that complete subject and its predicate. Each alternative adds a comma that either separates subject and verb or separates showed from its object surface damage.",
+      "id": "commas-transfer-01",
+      "category": "CSE",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "The oldest map in the archive—a fragile sheet that two volunteers recently flattened[[, records]] a coastline very different from the modern one.",
+      "questionText": "Which choice correctly completes the parenthetical punctuation?",
+      "choices": [
+        "NO CHANGE",
+        "—records",
+        ": records",
+        " records"
+      ],
+      "answer": 1,
+      "explanation": "The dash after archive opens an interruption, so a second dash must close it before records, the main verb of map. The comma and colon do not match the opening dash; deleting punctuation leaves the interruption unclosed.",
+      "id": "commas-transfer-02",
+      "category": "CSE",
+      "difficulty": "hard"
     }
   ]
 }

@@ -411,13 +411,13 @@
     "stem": "Which prediction is best supported for a fresh trial at 45°C?",
     "questionText": "Which prediction is best supported for a fresh trial at 45°C?",
     "choices": [
-      "Its rate must be zero.",
-      "Its rate is likely greater than 20 µmol/min.",
+      "Its rate is likely between 1 and 6 µmol/min.",
+      "Its rate is likely between 9 and 12 µmol/min.",
       "Its rate is likely between 6 and 12 µmol/min.",
-      "Its rate must be exactly 12 µmol/min."
+      "Its rate is known to be exactly 9 µmol/min."
     ],
     "answer": 2,
-    "explanation": "45°C lies between tested temperatures of 40°C and 50°C, where rates are 12 and 6. A value between them is a reasonable interpolation, though exact linear behavior is not established.",
+    "explanation": "Bracket the target temperature with its nearest measured neighbors: at 40°C the rate is 12, and at 50°C it is 6 µmol/min. A value between 6 and 12 is the supported interpolation. Using 50–60°C picks the wrong interval; restricting to 9–12 drops part of the relevant range; exactly 9 assumes a straight line that was not established.",
     "passage": {
       "id": "science-drill-enzyme-temp",
       "title": "Temperature and reaction rate",
@@ -720,13 +720,13 @@
     "stem": "Why were three trials run for each condition?",
     "questionText": "Why were three trials run for each condition?",
     "choices": [
-      "To make catalyst mass increase on every trial",
+      "To separate the effect of catalyst mass from the effect of its surface area",
       "To check how consistently each condition reached the endpoint",
-      "To prove that no measurement could contain error",
-      "To replace the need for a no-catalyst comparison"
+      "To detect a consistent timing bias caused by the same uncalibrated stopwatch",
+      "To hold the amount of gas collected constant without defining an endpoint"
     ],
     "answer": 1,
-    "explanation": "Repeated times cluster near 122 s, 80 s, and 40 s for the respective conditions. Replication checks consistency and variation; it does not eliminate all error or replace a control.",
+    "explanation": "Three independent runs under each condition show how repeatable its endpoint time is and how much times vary. Replication alone does not separate mass from surface area; that depends on the large-piece/crushed-piece comparison at equal mass. A common systematic stopwatch bias can persist in every replicate, and the gas endpoint must still be defined.",
     "passage": {
       "id": "science-drill-catalyst-design",
       "title": "A reusable catalyst",
@@ -816,12 +816,12 @@
     "questionText": "If later tests showed that the sterilization procedure also removed most dissolved methane, how would that affect the interpretation?",
     "choices": [
       "The removal result would be less able to distinguish the scientists because two factors had changed.",
-      "Scientist A and Scientist B would now propose the same mechanism.",
-      "Scientist B would be proven correct.",
-      "The measured gas collection rates would necessarily become identical."
+      "The loss of gas would favor B alone because the procedure removed dissolved methane.",
+      "The loss of gas would favor A alone because the procedure killed living microbes.",
+      "The restored-microbe result would become irrelevant to evaluating either explanation."
     ],
     "answer": 0,
-    "explanation": "Removing both microbes and dissolved methane would change a factor relevant to each mechanism. The 6-to-0.3 mL/h decrease would no longer isolate microbes, although other evidence such as restoration could still be considered.",
+    "explanation": "The same low gas result could now reflect removal of microbes (A’s factor) or dissolved methane (B’s factor). Changing both weakens the removal trial’s power to distinguish mechanisms; it does not uniquely favor either. Restoration is separate evidence and can still matter if its conditions are understood.",
     "passage": {
       "id": "science-drill-bubble-views",
       "title": "Gas bubbles from pond sediment",
@@ -846,12 +846,12 @@
     "questionText": "Which observation contradicts the direction of change proposed by Scientist S?",
     "choices": [
       "Cooler water had a higher equilibrium oxygen concentration: 9.1 instead of 8.3 mg/L.",
-      "Pond oxygen decreased from 9 to 5 mg/L.",
-      "The pond began at 25°C.",
-      "The measurements lasted 8 h."
+      "Pond oxygen decreased from 9 to 5 mg/L while the water cooled.",
+      "Pond temperature decreased from 25°C to 20°C during the eight hours.",
+      "Pond oxygen and water temperature both decreased across the measured night."
     ],
     "answer": 0,
-    "explanation": "S claims cooler water holds less oxygen at equilibrium. The independent values show the opposite: 20°C water holds 9.1 mg/L compared with 8.3 mg/L at 25°C.",
+    "explanation": "S makes a claim about equilibrium capacity, so compare the independent equilibrium measurements: cooling from 25°C to 20°C raises that capacity from 8.3 to 9.1 mg/L, the opposite of S’s mechanism. The actual pond oxygen decline is what S tries to explain; observing that decline alongside cooling does not itself test the claimed equilibrium direction.",
     "passage": {
       "id": "science-drill-pond-views",
       "title": "Why a pond’s oxygen falls",
@@ -973,13 +973,13 @@
     "stem": "What can be concluded from the transport tests alone?",
     "questionText": "What can be concluded from the transport tests alone?",
     "choices": [
-      "Only bird transport is possible.",
-      "Only wind transport is possible.",
-      "Seawater transport preserved more seeds than either proposed route.",
+      "Wind is the more likely actual route because 90% rather than 85% of seeds remained viable.",
+      "The mud result identifies birds as the actual route because attached seeds can germinate.",
+      "The seawater result excludes seawater transport because most seeds lost viability.",
       "Both proposed routes can preserve viability, but the tests do not identify the actual route."
     ],
     "answer": 3,
-    "explanation": "Airborne and mud treatments preserved 90% and 85% viability. Both routes are feasible under the simulated conditions; the data contain no observation of which route reached the island.",
+    "explanation": "Both airborne and mud treatments leave many viable seeds, so neither proposed route is excluded by viability. A five-point laboratory difference does not identify the route that occurred: route frequency and real transport were not observed. Ten viable seawater-treated seeds also do not rule out that route. Feasibility is different from historical identification.",
     "passage": {
       "id": "science-drill-dispersal-views",
       "title": "Seeds appearing on an island",
@@ -1079,7 +1079,7 @@
       "At 4.5 N, extension is 9.0 cm."
     ],
     "answer": 2,
-    "explanation": "L predicts 6 cm at 3 N, so repeated 9 cm measurements contradict it within 0–5 N. The first two results match x = 2F; the 8 N result is outside the model’s stated range.",
+    "explanation": "Within its stated 0–5 N range, Model L predicts x = 2F. At 3.0 N it therefore predicts 6.0 cm; repeated values near 9.0 cm challenge it. The 2.5 N/5.0 cm and 4.5 N/9.0 cm observations fit L. Deformation at 8.0 N occurs outside the model’s range and does not test that stated claim.",
     "passage": {
       "id": "science-drill-spring-model",
       "title": "A spring model",
@@ -1205,13 +1205,13 @@
     "stem": "Which statement best describes the relationship in the measured data?",
     "questionText": "Which statement best describes the relationship in the measured data?",
     "choices": [
-      "Transmitted light increases in proportion to dye concentration.",
-      "No light is transmitted at concentrations above 1 mg/L.",
+      "Each 1 mg/L increase removes half of the original 100 light units.",
+      "Transmitted light is inversely proportional to dye concentration, so doubling concentration halves light.",
       "Each 1 mg/L increase leaves half as much transmitted light as before.",
-      "Each 1 mg/L increase removes exactly 50 light units."
+      "Each 1 mg/L increase removes the same number of transmitted light units."
     ],
     "answer": 2,
-    "explanation": "The sequence 100, 50, 25, 12.5 halves at each step. The absolute drops are 50, 25, and 12.5 units, so the decrease is not a fixed 50 units.",
+    "explanation": "Check successive values: 100→50→25→12.5 retains one-half of the previous light at each equal concentration step. The absolute losses shrink (50, 25, 12.5), so a fixed loss or half of the original 100 is wrong. This is also not inverse proportionality: going from 1 to 2 mg/L halves light, but 2 to 3 does too even though concentration is not doubled.",
     "passage": {
       "id": "science-drill-absorption-model",
       "title": "Light passing through a dye",
@@ -1368,13 +1368,13 @@
     "stem": "Which interpretation is consistent with both measurements between 0 and 4 min?",
     "questionText": "Which interpretation is consistent with both measurements between 0 and 4 min?",
     "choices": [
-      "Additional particles enter from outside the sealed vessel.",
+      "The gas pressure increase shows that the sealed vessel gained additional matter.",
       "Some reactants are converted to gas while total matter remains in the vessel.",
-      "The vessel loses 31 g of mass as gas forms.",
-      "A pressure increase proves that the gas has zero mass."
+      "The higher pressure requires the total mass to rise even if no matter enters.",
+      "The pressure rise can occur only if the vessel’s volume decreases."
     ],
     "answer": 1,
-    "explanation": "Pressure increases by 31 kPa while measured mass remains 250.0 g. Conversion of existing reactants to gas can increase gas particle number without adding or losing matter.",
+    "explanation": "Read both instruments and the boundary condition: pressure rises 101→132 kPa, mass stays at 250 g, and the vessel is sealed and rigid. Converting material already inside into gas can increase gas-particle number without gaining matter. Mass gain conflicts with the balance; volume reduction conflicts with the rigid vessel.",
     "passage": {
       "id": "science-drill-matter",
       "title": "Gas in a sealed reaction vessel",
@@ -1648,12 +1648,12 @@
     "questionText": "Which feature helped prevent water volume from confounding the salt comparison?",
     "choices": [
       "Every pad received the same solution volume.",
-      "Species A and B had identical root lengths.",
-      "Every solution had the same salt concentration.",
-      "Only one seed was used per pad."
+      "Both species had similar germination percentages without added salt.",
+      "Root length was calculated only for germinated seedlings.",
+      "Three independent pads were averaged for each condition."
     ],
     "answer": 0,
-    "explanation": "The passage specifies equal solution volumes for all pads. Salt concentration still varied from 0 to 16 g/L, so volume did not change along with the salt treatment.",
+    "explanation": "Equal solution volume is the control that prevents water supply from changing with salt concentration. Similar baseline germination, restricting the root-length calculation to germinated seedlings, and averaging replicate pads address different features; none ensures equal water volume.",
     "passage": {
       "id": "science-exam-salinity",
       "title": "Passage 1: Seed responses to salinity",
@@ -1718,7 +1718,7 @@
       "Species B’s germination was less reduced by increasing salt than Species A’s."
     ],
     "answer": 3,
-    "explanation": "From 0 to 16 g/L, A falls from 95% to 10% (85 points), while B falls from 90% to 60% (30 points). B has the smaller reduction; root lengths at 0 g/L contradict the second option, and concentrations above 16 were not tested.",
+    "explanation": "Compare the change within each species over the same 0–16 g/L range: A falls from 95% to 10%, an 85-percentage-point reduction, whereas B falls from 90% to 60%, a 30-point reduction. Thus B’s germination is less reduced. B does not have longer roots at 0 or 4 g/L, both species’ germination falls rather than rises, and concentrations above 16 g/L were not tested.",
     "passage": {
       "id": "science-exam-salinity",
       "title": "Passage 1: Seed responses to salinity",
@@ -1777,13 +1777,13 @@
     "stem": "Suppose salt outside a seed can reduce water entering it by osmosis. Which additional measurement would most directly test whether that mechanism contributes to low germination?",
     "questionText": "Suppose salt outside a seed can reduce water entering it by osmosis. Which additional measurement would most directly test whether that mechanism contributes to low germination?",
     "choices": [
-      "Root length in seedlings grown only without salt",
-      "The number of columns in the data table",
+      "Root length only in seedlings that germinated at each salt concentration",
+      "Salt remaining in the pads after seven days without measuring seed water content",
       "Mass of water absorbed by seeds at each concentration before germination",
-      "Seed coat color at each concentration"
+      "Dry seed mass after all absorbed water has been removed"
     ],
     "answer": 2,
-    "explanation": "The proposed mechanism concerns water entering seeds. Measuring absorbed water across the 0–16 g/L treatments directly tests whether higher salt accompanies lower water uptake, which could help explain A’s fall from 95% to 10%.",
+    "explanation": "The proposed chain is salt outside the seed → reduced water entry → reduced germination. Water absorbed before germination measures that intermediate process directly. Root length samples only successful seedlings; residual pad salt is not seed water uptake; dry mass deliberately excludes the water the mechanism concerns. The measurement tests a prediction but would not by itself prove the whole causal chain.",
     "passage": {
       "id": "science-exam-salinity",
       "title": "Passage 1: Seed responses to salinity",
@@ -1984,12 +1984,12 @@
     "questionText": "Why did investigators compare liquids of the same density?",
     "choices": [
       "To keep the density difference between bead and liquid from changing along with viscosity",
-      "To make every liquid have the same viscosity",
-      "To make every bead remain motionless",
-      "To avoid measuring bead radius"
+      "To hold viscosity constant while bead radius changed",
+      "To give every bead the same radius in every test",
+      "To ensure equal fall distances automatically produced equal speeds"
     ],
     "answer": 0,
-    "explanation": "The bead material was fixed and liquids had equal density, holding the bead–liquid density difference constant. Thus the viscosity values 1, 4, and 10 can be compared without changing that second physical factor.",
+    "explanation": "With bead material fixed, equal liquid density keeps the bead–liquid density difference constant, leaving viscosity as the liquid property being compared. Equal density does not make viscosities or radii equal, and an equal travel distance does not guarantee equal speed.",
     "passage": {
       "id": "science-exam-beads",
       "title": "Passage 2: Beads moving through liquids",
@@ -2087,13 +2087,13 @@
     "stem": "The beads fell downward because their density was slightly greater than the liquids’. Which change would reverse the expected direction of motion for an otherwise identical freely suspended bead?",
     "questionText": "The beads fell downward because their density was slightly greater than the liquids’. Which change would reverse the expected direction of motion for an otherwise identical freely suspended bead?",
     "choices": [
-      "Change the liquid’s label from U to V.",
+      "Use a less viscous liquid with the same density as the original liquid.",
       "Use a liquid denser than the bead.",
-      "Double the observation time.",
-      "Measure radius in centimeters instead of millimeters."
+      "Use a larger bead of the same material in the original liquid.",
+      "Release the bead from a greater depth in the same liquid."
     ],
     "answer": 1,
-    "explanation": "A freely suspended bead less dense than its surrounding liquid tends to rise. The original beads were slightly denser and fell; a liquid denser than the bead reverses that density relationship.",
+    "explanation": "Direction depends on the bead–liquid density relationship: a bead less dense than the surrounding liquid tends to rise, so a liquid denser than the bead reverses the original direction. Changing viscosity or bead size can change speed; release depth changes travel conditions. None of those three changes reverses the stated density relationship.",
     "passage": {
       "id": "science-exam-beads",
       "title": "Passage 2: Beads moving through liquids",
@@ -2139,13 +2139,13 @@
     "stem": "What was the deliberately varied factor in Study 2?",
     "questionText": "What was the deliberately varied factor in Study 2?",
     "choices": [
-      "Starting biomass",
-      "Light intensity",
+      "Starting dry biomass of the algae",
+      "Light intensity reaching the flasks",
       "Nitrate concentration",
-      "Water volume"
+      "Volume of culture medium"
     ],
     "answer": 2,
-    "explanation": "Study 2 kept light at 60 and varied nitrate across 0.2, 1.0, and 2.0 mg/L. The starting biomass and water volume were the same for all flasks.",
+    "explanation": "Read the Study 2 rows together: nitrate changes from 0.2 to 1.0 to 2.0 mg/L while light stays at 60 µmol photons/m²/s. Starting biomass is 10 mg and flask volume is 100 mL throughout. The deliberately varied factor is nitrate, not the measured biomass increase or a controlled starting condition.",
     "passage": {
       "id": "science-exam-algae",
       "title": "Passage 3: Light and nitrate in algae cultures",
@@ -2346,13 +2346,13 @@
     "stem": "A model claims that biomass increase is always directly proportional to light intensity at 2.0 mg/L nitrate. Which result most directly challenges the model?",
     "questionText": "A model claims that biomass increase is always directly proportional to light intensity at 2.0 mg/L nitrate. Which result most directly challenges the model?",
     "choices": [
-      "All flasks initially contain 10 mg biomass.",
-      "Study 2 uses light 60.",
+      "At light 20, the biomass increase is 4 mg.",
+      "At light 60, the biomass increase is 12 mg.",
       "Increase is 12 mg at both light 60 and light 100.",
-      "Increase is 4 mg at light 20."
+      "The starting biomass is the same at all three light levels."
     ],
     "answer": 2,
-    "explanation": "Direct proportionality would require biomass increase to rise when light rises from 60 to 100. Instead it remains 12 mg at both light levels, contradicting the claimed relationship over that interval.",
+    "explanation": "Direct proportionality requires a constant biomass-increase/light ratio. The 20/4 and 60/12 results both give 0.20, but the light-100 result is still 12 mg rather than the 20 mg that ratio predicts. The shared 12 mg plateau therefore challenges the model. Equal starting biomass is a control, not a test of proportionality.",
     "passage": {
       "id": "science-exam-algae",
       "title": "Passage 3: Light and nitrate in algae cultures",
@@ -2399,13 +2399,13 @@
     "stem": "Which added condition would best test whether more nitrate allows growth to increase when light rises above 60?",
     "questionText": "Which added condition would best test whether more nitrate allows growth to increase when light rises above 60?",
     "choices": [
-      "Light 60, nitrate 2.0, measured after 8 days only",
-      "Light 20, nitrate 0.2 only",
+      "Light 60 and 100 at nitrate 2.0 again, with the same other conditions",
+      "Light 60 at nitrate 2.0 and light 100 at nitrate 4.0, with the same other conditions",
       "Light 60 and 100, each at nitrate 4.0, with the same other conditions",
-      "Light 100, nitrate 2.0, with a different algae species only"
+      "Light 20 and 60, each at nitrate 4.0, with the same other conditions"
     ],
     "answer": 2,
-    "explanation": "Testing 60 and 100 at a higher common nitrate level (4.0 mg/L) directly checks whether the 12-to-12 mg plateau at nitrate 2.0 persists when nitrate is increased. Changing duration or species would introduce another factor.",
+    "explanation": "The question asks whether the light-60-to-100 plateau changes at a higher nitrate supply. Compare those same two light levels at one higher common nitrate level, 4.0 mg/L. Repeating nitrate 2.0 does not test more nitrate; increasing nitrate only at light 100 confounds the factors; testing only 20 and 60 misses the plateau interval.",
     "passage": {
       "id": "science-exam-algae",
       "title": "Passage 3: Light and nitrate in algae cultures",
@@ -2452,13 +2452,13 @@
     "stem": "Which prediction is shared by Scientists I and V but not by Scientist D?",
     "questionText": "Which prediction is shared by Scientists I and V but not by Scientist D?",
     "choices": [
-      "Limestone dissolution produces shock-deformed quartz.",
-      "A steam explosion produces shock-deformed quartz.",
-      "All outside fragments must be ordinary background material.",
+      "Groundwater dissolves limestone beneath the pit.",
+      "Some quartz shows shock deformation.",
+      "Volcanic glass can be present in the landscape.",
       "Newly ejected fragments become less abundant with distance."
     ],
     "answer": 3,
-    "explanation": "I and V both predict an ejecta blanket decreasing with distance. D predicts no newly ejected blanket and attributes outside fragments to background material.",
+    "explanation": "Create a prediction matrix: I and V both require a newly ejected blanket that thins with distance; D predicts no new blanket. Shock deformation belongs to I alone, limestone dissolution to D, and preexisting volcanic glass is allowed by all three. Only the thinning new ejecta is shared by I and V while excluded by D.",
     "passage": {
       "id": "science-exam-geology",
       "title": "Passage 4: Three explanations for a geological pit",
@@ -2486,13 +2486,13 @@
     "stem": "Which measurement most strongly distinguishes Scientist I’s explanation from Scientist V’s?",
     "questionText": "Which measurement most strongly distinguishes Scientist I’s explanation from Scientist V’s?",
     "choices": [
-      "The pit is 500 m wide.",
-      "Basalt lies above limestone.",
-      "Fragments are less abundant at 300 m than at 20 m.",
+      "The 300 m fragment abundance is 0.2 kg/m².",
+      "Preexisting volcanic glass occurs near the pit.",
+      "Fragments decrease in abundance from 20 to 300 m.",
       "Shock-deformed quartz is present in samples 20 and 100 m outside the rim."
     ],
     "answer": 3,
-    "explanation": "I predicts shock-deformed quartz, whereas V predicts none. The table reports 6% at 20 m and 2% at 100 m; the decreasing fragment masses are predicted by both I and V.",
+    "explanation": "Choose evidence for which I and V make different predictions. I predicts shock-deformed quartz and V predicts none, so the 6% and 2% observations distinguish them. Both allow a thinning ejecta blanket and preexisting volcanic glass; fragment mass alone therefore does not separate their mechanisms.",
     "passage": {
       "id": "science-exam-geology",
       "title": "Passage 4: Three explanations for a geological pit",
@@ -2520,13 +2520,13 @@
     "stem": "If specialists found only preexisting volcanic glass near the pit, which conclusion would follow from the stated viewpoints?",
     "questionText": "If specialists found only preexisting volcanic glass near the pit, which conclusion would follow from the stated viewpoints?",
     "choices": [
-      "Only D could explain the glass.",
+      "It would favor D because collapse is the only mechanism that permits preexisting material.",
       "The glass alone would not distinguish the three explanations.",
-      "Only V could explain the glass.",
-      "Only I could explain the glass."
+      "It would favor V because the glass establishes when the pit formed.",
+      "It would favor I because the glass must have formed under shock pressure."
     ],
     "answer": 1,
-    "explanation": "The passage explicitly states that all three allow preexisting volcanic glass in the landscape. Its presence alone therefore does not identify the pit-forming mechanism.",
+    "explanation": "The key restriction is preexisting: all three scientists explicitly allow preexisting volcanic glass in this basalt landscape. Its presence supplies neither an event date nor proof of shock heating, and D is not the only viewpoint that permits old material. This observation alone cannot separate the three mechanisms.",
     "passage": {
       "id": "science-exam-geology",
       "title": "Passage 4: Three explanations for a geological pit",
@@ -2554,13 +2554,13 @@
     "stem": "A control area 1 km away contains 0.2 kg/m² of ordinary fragments and no shock-deformed quartz. How would this finding affect the evidence?",
     "questionText": "A control area 1 km away contains 0.2 kg/m² of ordinary fragments and no shock-deformed quartz. How would this finding affect the evidence?",
     "choices": [
-      "It would prove that no pit-forming event occurred.",
-      "It would make the 20 m sample identical to background.",
+      "It would identify impact rather than steam explosion as the source of all near-rim fragments.",
+      "It would show that the 300 m and 20 m fragment abundances are both ordinary background.",
       "It would support the interpretation that the 20 m fragment abundance exceeds ordinary background.",
-      "It would show that fragment mass increases with distance."
+      "It would show that the near-rim accumulation came from limestone dissolution."
     ],
     "answer": 2,
-    "explanation": "The control background is 0.2 kg/m², compared with 4 kg/m² at 20 m—a 20-fold difference. That supports an unusual near-rim accumulation, though it alone does not distinguish impact from steam explosion.",
+    "explanation": "Compare the same units: 4 kg/m² at 20 m is twenty times the 0.2 kg/m² control background. This strengthens the claim of unusual near-rim accumulation. The 300 m sample equals background, not the 20 m sample; the control does not by itself identify impact, steam explosion, or dissolution as the cause.",
     "passage": {
       "id": "science-exam-geology",
       "title": "Passage 4: Three explanations for a geological pit",
@@ -2588,13 +2588,13 @@
     "stem": "Why were grain specialists kept unaware of collection distances?",
     "questionText": "Why were grain specialists kept unaware of collection distances?",
     "choices": [
-      "To ensure every sample had the same fragment mass",
+      "To keep sample collection distance constant across all three groups",
       "To prevent expectations about distance from influencing grain classification",
-      "To eliminate the need to collect samples outside the rim",
-      "To change the physical shock pressure in each sample"
+      "To make the shock-deformed percentage independent of the amount of quartz collected",
+      "To provide a substitute for a distant background sampling area"
     ],
     "answer": 1,
-    "explanation": "Blinding reduces the chance that expected near-rim shock grains influence the classification. It does not alter the actual values (6%, 2%, and 0%) or replace sampling.",
+    "explanation": "A classifier who expects more shock grains near the rim could unconsciously classify borderline grains differently. Hiding distance reduces that expectation bias. It does not make collection distances equal, control the physical proportion of grains, or replace a background sample.",
     "passage": {
       "id": "science-exam-geology",
       "title": "Passage 4: Three explanations for a geological pit",
@@ -2622,13 +2622,13 @@
     "stem": "Which new observation would most directly contradict Scientist D’s stated prediction?",
     "questionText": "Which new observation would most directly contradict Scientist D’s stated prediction?",
     "choices": [
-      "The region has groundwater.",
-      "Limestone occurs beneath basalt.",
-      "Ordinary quartz is found in the basalt.",
+      "Groundwater is present beneath the limestone.",
+      "Ordinary quartz occurs in fragments outside the rim.",
+      "The basalt contains preexisting volcanic glass.",
       "A freshly exposed layer demonstrably deposited by the pit-forming event contains shock-deformed quartz."
     ],
     "answer": 3,
-    "explanation": "D predicts neither new ejecta nor shock-deformed quartz from collapse. A layer tied directly to the event containing shock-deformed quartz contradicts that prediction; the other findings are compatible with dissolution.",
+    "explanation": "D permits groundwater dissolution, ordinary background fragments, and old glass, but predicts no shock-deformed quartz from the pit-forming collapse. Tying shock grains to a layer demonstrably deposited by that event directly contradicts D; merely finding old or ordinary material would not.",
     "passage": {
       "id": "science-exam-geology",
       "title": "Passage 4: Three explanations for a geological pit",
@@ -2854,12 +2854,12 @@
     "questionText": "Which change would introduce a major confound into the temperature comparison?",
     "choices": [
       "Use 1.00 A only at 60°C while retaining 0.50 A elsewhere.",
-      "Use 0.50 A discharge at every temperature.",
-      "Fully charge every battery using the same procedure.",
-      "Use four batteries at every temperature."
+      "Use a constant 0.50 A current at every temperature.",
+      "Apply the same full-charge procedure to every battery.",
+      "Test four separate same-model batteries at each temperature."
     ],
     "answer": 0,
-    "explanation": "Changing current only at 60°C would make both temperature and discharge current differ. Capacity or cutoff time could then reflect either factor.",
+    "explanation": "A change to 1.00 A only at 60°C makes discharge current vary with temperature. A performance difference could then reflect temperature, current, or both. A shared charge procedure, shared current, and equal replication maintain the comparison rather than confound it.",
     "passage": {
       "id": "science-exam-battery",
       "title": "Passage 5: Temperature and battery performance",
@@ -2906,13 +2906,13 @@
     "stem": "Which claim is unsupported by these tests?",
     "questionText": "Which claim is unsupported by these tests?",
     "choices": [
-      "Internal resistance fell over the tested temperature range.",
+      "Capacity increased between −10°C and 40°C under the stated discharge procedure.",
       "Keeping batteries at 40°C for several years maximizes their long-term lifespan.",
-      "Capacity at 60°C was less than at 20°C.",
-      "The largest measured capacity occurred at 40°C."
+      "The tested 60°C batteries delivered less capacity than the tested 20°C batteries.",
+      "The largest measured single-discharge capacity was at 40°C."
     ],
     "answer": 1,
-    "explanation": "Only one discharge per battery was measured. The 2.1 Ah maximum at 40°C supports short-term delivered capacity under this procedure, not a claim about years of aging or lifespan.",
+    "explanation": "These tests concern delivered capacity in one controlled discharge, not repeated cycling or years of storage. The table supports the other three short-term comparisons, including the 2.1 Ah maximum at 40°C. It supplies no evidence that years at that temperature maximize lifespan.",
     "passage": {
       "id": "science-exam-battery",
       "title": "Passage 5: Temperature and battery performance",
@@ -3143,12 +3143,12 @@
     "questionText": "Which change would most directly improve the time resolution of the peak-lag estimate?",
     "choices": [
       "Sample each sensor every 30 s instead of every 2 min.",
-      "Place B at the same position as A.",
-      "Express concentrations in g/L instead of mg/L.",
-      "Stop recording immediately after A’s peak."
+      "Repeat the measurements every 2 min using more decimal places for concentration.",
+      "Move B farther downstream but retain the same 2 min sampling interval.",
+      "Continue every 2 min for longer after both measured peaks."
     ],
     "answer": 0,
-    "explanation": "Measurements every 30 s locate each peak more closely in time than 2 min intervals. Unit conversion would not improve timing, and stopping after A peaks would miss B’s 6 min peak.",
+    "explanation": "Peak-lag timing is limited by the 2 min sampling interval. Sampling every 30 s places each peak in a narrower time interval. More concentration decimals improve a different precision; a greater separation may change the lag but does not improve sampling time resolution; later observations do not refine the already passed peaks.",
     "passage": {
       "id": "science-exam-stream",
       "title": "Passage 6: Tracking a tracer pulse",
@@ -3208,13 +3208,13 @@
     "stem": "Which conclusion about Sensor B after the final measurement is justified by the data alone?",
     "questionText": "Which conclusion about Sensor B after the final measurement is justified by the data alone?",
     "choices": [
-      "Its concentration must rise to 8.5 mg/L again at 12 min.",
-      "It had already returned to background by 8 min.",
-      "Its concentration must become exactly zero at 12 min.",
+      "Its concentration must return to background exactly 2 min after the last reading.",
+      "It had returned to background by 8 min because its concentration was falling.",
+      "Its concentration must reach zero after one more equal decline.",
       "It remained above background at 10 min, and later values were not measured."
     ],
     "answer": 3,
-    "explanation": "B is 1.5 mg/L at 10 min, exceeding the 0.5 mg/L background. The declining measured values do not specify an exact concentration or return time after 10 min.",
+    "explanation": "The final B reading is 1.5 mg/L at 10 min, still above the 0.5 mg/L background. A decline does not mean background has already been reached, and extrapolating equal declines gives neither a measured return time nor a valid zero value. Later measurements are needed.",
     "passage": {
       "id": "science-exam-stream",
       "title": "Passage 6: Tracking a tracer pulse",
@@ -3333,12 +3333,12 @@
     "questionText": "Why were survivors grown on compound-free agar for counting?",
     "choices": [
       "To count cells able to form colonies after the specified 1 h exposure without continuing the treatment",
-      "To make initial cultures contain different cell numbers",
-      "To ensure every strain had a survival rate of 100%",
-      "To make continued exposure during counting an additional cause of colony loss"
+      "To compare growth rates of the strains during continued exposure",
+      "To ensure each colony contained the same initial number of cells",
+      "To prevent the original treatment from causing any cell deaths"
     ],
     "answer": 0,
-    "explanation": "Removing the compound confines treatment to the stated 1 h. Colonies then reflect surviving cells rather than further inhibition during the counting period; the measured survival is still 50 S and 850 R at 4 µg/mL.",
+    "explanation": "Compound-free counting medium ends the treatment after the specified hour. Cells lost while growing on compound-containing agar could reflect further inhibition, not just survival of the one-hour exposure. Removing the compound does not undo earlier deaths, equalize colony starting counts, or turn this into a growth-rate comparison.",
     "passage": {
       "id": "science-exam-bacteria",
       "title": "Passage 7: Comparing bacterial strains",
@@ -3366,13 +3366,13 @@
     "stem": "Which statement is best supported by the experiment?",
     "questionText": "Which statement is best supported by the experiment?",
     "choices": [
-      "R cells reproduce faster than S cells when no compound is present.",
-      "All bacteria always survive 4 µg/mL of any compound.",
+      "R reproduced faster than S during the compound-free colony-counting step.",
+      "R had the same survival percentage at every tested concentration.",
       "R cells survived the tested compound concentrations better than S cells.",
-      "Exposure definitely caused new resistance mutations in S."
+      "The compound created new resistance mutations in the surviving R cells."
     ],
     "answer": 2,
-    "explanation": "At 1 µg/mL, R has 900 survivors versus S’s 350; at 4, R has 850 versus 50. This supports greater R survival in these conditions. Mutation rates and reproduction speeds were not measured.",
+    "explanation": "Equal starting counts make survival comparable: R has 900 versus 350 survivors at 1 µg/mL and 850 versus 50 at 4 µg/mL. R’s survival is not constant across doses. No reproduction-rate or DNA/mutation measurement identifies why the strains differ, so neither faster growth nor induced mutation follows.",
     "passage": {
       "id": "science-exam-bacteria",
       "title": "Passage 7: Comparing bacterial strains",
@@ -3401,12 +3401,12 @@
     "questionText": "If survivors from the mixed culture divide in compound-free medium and both strains divide at the same rate, which outcome is expected after one division per surviving cell?",
     "choices": [
       "Both counts double while the R fraction remains about 94%.",
-      "The total viable count remains 900.",
-      "The R fraction falls to 50%.",
-      "Only S cells divide."
+      "Both counts double and the R fraction rises to about 99%.",
+      "Only the R count doubles, leaving the S count unchanged.",
+      "Both strains gain the same absolute number of cells, making their proportions more similar."
     ],
     "answer": 0,
-    "explanation": "After exposure, there are 50 S and 850 R cells. One division per cell gives 100 S and 1,700 R (1,800 total), preserving R’s fraction: 1,700/1,800 ≈ 94%.",
+    "explanation": "One division per survivor multiplies each strain by two: S 50→100 and R 850→1,700. The total is 1,800, and 1,700/1,800 equals 850/900, about 94%. Equal multiplicative growth preserves the fraction; it neither doubles only one strain nor adds the same absolute count to both.",
     "passage": {
       "id": "science-exam-bacteria",
       "title": "Passage 7: Comparing bacterial strains",
@@ -3558,13 +3558,13 @@
     "stem": "Which statement is supported by the unknown’s measurements?",
     "questionText": "Which statement is supported by the unknown’s measurements?",
     "choices": [
-      "The unknown definitely contains no other chemicals.",
-      "The unknown’s bands both have Rf greater than 1.",
-      "Matching distances prove identical chemical structures.",
+      "The two unknown bands represent equal amounts because each was run with a 60 mm solvent front.",
+      "The unknown definitely contains only C and E because its bands match their retention factors.",
+      "The lower band has a larger retention factor because it remains closer to the origin.",
       "The unknown’s two observed bands traveled different fractions of the solvent-front distance."
     ],
     "answer": 3,
-    "explanation": "The bands have Rf 18/60 = 0.30 and 48/60 = 0.80. Matching a standard is possible-match evidence only; unseparated or undetected components cannot be excluded.",
+    "explanation": "Calculate each band’s ratio separately: 18/60 = 0.30 and 48/60 = 0.80. Their fractions differ. Band distances do not measure the quantities present, possible retention-factor matches do not prove exclusive identity, and a shorter distance at the same front gives a smaller—not larger—retention factor.",
     "passage": {
       "id": "science-drill-chromatography",
       "title": "Separating dissolved pigments",
@@ -5381,13 +5381,13 @@
     "stem": "Why use new insect groups rather than repeatedly expose the same group to all four treatments in one fixed order?",
     "questionText": "Why use new insect groups rather than repeatedly expose the same group to all four treatments in one fixed order?",
     "choices": [
-      "To remove the need for equal group sizes",
-      "To guarantee zero biological variation",
-      "To make Compound A evaporate faster",
+      "To ensure all conditions begin with insects that have identical behavior",
+      "To make the four treatments equally likely to produce the same mean number of landings",
+      "To eliminate the need to randomize treatment assignments to cloth squares",
       "To reduce carryover and fixed-order effects from earlier exposure"
     ],
     "answer": 3,
-    "explanation": "Fresh groups avoid responses to a later treatment being affected by prior exposure or an unchanging order. Random assignment and equal group sizes still matter.",
+    "explanation": "A group exposed to earlier treatments could carry a changed response into the next treatment, and a fixed order would confound treatment with exposure history. New groups reduce that risk. They do not make individuals identical, force equal treatment outcomes, or replace random treatment assignment.",
     "passage": {
       "id": "science-drill-repellent",
       "title": "Testing insect repellents",
@@ -5523,13 +5523,13 @@
     "stem": "Which conclusion respects the study’s conditions?",
     "questionText": "Which conclusion respects the study’s conditions?",
     "choices": [
-      "Cleaning changes the Sun’s brightness.",
-      "Cleaning guarantees 92 W under every sky condition.",
+      "The higher cleaned-group final output proves that no panel had unusually high initial output.",
+      "The results show that cleaning caused a 12 W gain in every individual panel.",
       "Cleaning increased mean output under the tested lamp conditions.",
-      "All panel models respond identically to cleaning."
+      "The mean output difference will remain 12 W under any later illumination conditions."
     ],
     "answer": 2,
-    "explanation": "The cleaned group rose by 12 W while the control fell by 1 W. This supports an effect in the tested same-model panels and steady artificial illumination, without universal guarantees.",
+    "explanation": "Compare group changes: cleaned +12 W, control −1 W under steady illumination. This supports a mean cleaning effect in the tested panels and conditions. A group mean is not the change of every panel, randomization does not prove identical starting panels, and a one-hour lamp test gives no guarantee for later illumination.",
     "passage": {
       "id": "science-drill-panels",
       "title": "Cleaning solar panels",
@@ -5867,7 +5867,7 @@
     "passage": {
       "id": "science-drill-insect-temperature",
       "title": "Temperature and insect movement",
-      "context": "Investigators recorded the distance moved by insects over 2 min in identical arenas. Equal-size groups were randomly assigned to 15, 25, or 35°C and acclimated for 30 min. A tracking program coded videos with temperature labels hidden. All insects came from the same laboratory population.",
+      "context": "Investigators recorded the distance moved by individual insects over 2 min. Each insect was tested alone in an identical arena; 12 insects were assigned randomly to each of 15, 25, or 35°C and acclimated for 30 min. Arenas were maintained independently at the assigned temperature. Videos were coded with temperature labels hidden. All insects came from the same laboratory population.",
       "table": {
         "columns": [
           "Temperature (°C)",
@@ -5901,7 +5901,7 @@
     "passage": {
       "id": "science-drill-insect-temperature",
       "title": "Temperature and insect movement",
-      "context": "Investigators recorded the distance moved by insects over 2 min in identical arenas. Equal-size groups were randomly assigned to 15, 25, or 35°C and acclimated for 30 min. A tracking program coded videos with temperature labels hidden. All insects came from the same laboratory population.",
+      "context": "Investigators recorded the distance moved by individual insects over 2 min. Each insect was tested alone in an identical arena; 12 insects were assigned randomly to each of 15, 25, or 35°C and acclimated for 30 min. Arenas were maintained independently at the assigned temperature. Videos were coded with temperature labels hidden. All insects came from the same laboratory population.",
       "table": {
         "columns": [
           "Temperature (°C)",
@@ -5935,7 +5935,7 @@
     "passage": {
       "id": "science-drill-insect-temperature",
       "title": "Temperature and insect movement",
-      "context": "Investigators recorded the distance moved by insects over 2 min in identical arenas. Equal-size groups were randomly assigned to 15, 25, or 35°C and acclimated for 30 min. A tracking program coded videos with temperature labels hidden. All insects came from the same laboratory population.",
+      "context": "Investigators recorded the distance moved by individual insects over 2 min. Each insect was tested alone in an identical arena; 12 insects were assigned randomly to each of 15, 25, or 35°C and acclimated for 30 min. Arenas were maintained independently at the assigned temperature. Videos were coded with temperature labels hidden. All insects came from the same laboratory population.",
       "table": {
         "columns": [
           "Temperature (°C)",
@@ -5969,7 +5969,7 @@
     "passage": {
       "id": "science-drill-insect-temperature",
       "title": "Temperature and insect movement",
-      "context": "Investigators recorded the distance moved by insects over 2 min in identical arenas. Equal-size groups were randomly assigned to 15, 25, or 35°C and acclimated for 30 min. A tracking program coded videos with temperature labels hidden. All insects came from the same laboratory population.",
+      "context": "Investigators recorded the distance moved by individual insects over 2 min. Each insect was tested alone in an identical arena; 12 insects were assigned randomly to each of 15, 25, or 35°C and acclimated for 30 min. Arenas were maintained independently at the assigned temperature. Videos were coded with temperature labels hidden. All insects came from the same laboratory population.",
       "table": {
         "columns": [
           "Temperature (°C)",
@@ -6003,7 +6003,7 @@
     "passage": {
       "id": "science-drill-insect-temperature",
       "title": "Temperature and insect movement",
-      "context": "Investigators recorded the distance moved by insects over 2 min in identical arenas. Equal-size groups were randomly assigned to 15, 25, or 35°C and acclimated for 30 min. A tracking program coded videos with temperature labels hidden. All insects came from the same laboratory population.",
+      "context": "Investigators recorded the distance moved by individual insects over 2 min. Each insect was tested alone in an identical arena; 12 insects were assigned randomly to each of 15, 25, or 35°C and acclimated for 30 min. Arenas were maintained independently at the assigned temperature. Videos were coded with temperature labels hidden. All insects came from the same laboratory population.",
       "table": {
         "columns": [
           "Temperature (°C)",
@@ -6129,13 +6129,13 @@
     "stem": "Does the chamber establish that A explains every natural cloud’s temperature effect?",
     "questionText": "Does the chamber establish that A explains every natural cloud’s temperature effect?",
     "choices": [
-      "Yes, all natural cloud properties were tested.",
-      "No; there was no warming difference.",
-      "Yes, clouds can never affect outgoing heat.",
+      "Yes; constant humidity rules out every possible effect of clouds on heat transfer.",
+      "No; a reflective screen can test the sunlight mechanism only if it is itself made of water droplets.",
+      "Yes; the proportional warming changes establish the same proportional effect for all cloud types.",
       "No; the chamber isolates reflected incoming light under one set of conditions."
     ],
     "answer": 3,
-    "explanation": "The screen tests reflected incoming light at constant humidity and air conditions. Natural clouds can differ in other properties not tested here, so the supported claim is narrower.",
+    "explanation": "The screen experiment isolates reduced incoming light at fixed air conditions. That is evidence for the specified daytime mechanism, not a complete test of natural clouds, whose properties and effects on outgoing heat can vary. A model screen can test a mechanism without being a cloud, and a proportional response in the chamber does not establish a universal cloud rule.",
     "passage": {
       "id": "science-drill-cloud-views",
       "title": "Clouds and surface temperature",
@@ -6163,13 +6163,13 @@
     "stem": "Which added trial would most directly test B’s evaporation mechanism?",
     "questionText": "Which added trial would most directly test B’s evaporation mechanism?",
     "choices": [
-      "Measure screen mass only.",
-      "Use dry surfaces only and change chamber size.",
-      "Change humidity and light together.",
+      "Vary incoming light while keeping humidity fixed over wet surfaces.",
+      "Vary humidity while also changing incoming light by the same proportion.",
+      "Vary humidity over dry surfaces that contain no water available to evaporate.",
       "Vary humidity at fixed incoming light, starting temperature, and airflow over wet surfaces."
     ],
     "answer": 3,
-    "explanation": "B’s prediction depends on lower humidity causing evaporation-related cooling. Varying humidity while keeping light and other conditions fixed isolates that mechanism.",
+    "explanation": "B’s proposed chain is lower humidity → greater evaporation → cooling. Wet surfaces supply water, and varying humidity at fixed light and other conditions tests that chain. Varying light tests A’s factor; changing both confounds them; dry surfaces omit the water needed for the proposed evaporative response.",
     "passage": {
       "id": "science-drill-cloud-views",
       "title": "Clouds and surface temperature",
@@ -6294,13 +6294,13 @@
     "stem": "Which design would be least useful for isolating which cue birds followed?",
     "questionText": "Which design would be least useful for isolating which cue birds followed?",
     "choices": [
-      "Keep both normal as a baseline.",
+      "Rotate only the magnetic field west while keeping the star display normal.",
       "Rotate both cues to east at once.",
-      "Rotate only the star display.",
-      "Rotate only the magnetic field."
+      "Rotate only the star display west while keeping the magnetic field normal.",
+      "Rotate only the magnetic field east while keeping the star display normal."
     ],
     "answer": 1,
-    "explanation": "If both cues point east, an east response matches either mechanism. Changing one cue at a time, as in the listed trials, creates separating predictions.",
+    "explanation": "Both cues rotated east make both models predict east, so an east response cannot distinguish them. Each alternative rotates just one cue while the other remains north; M and S then predict different dominant directions, creating an informative test.",
     "passage": {
       "id": "science-drill-navigation-views",
       "title": "Bird orientation cues",
@@ -6328,13 +6328,13 @@
     "stem": "Why does the use of most common orientation matter?",
     "questionText": "Why does the use of most common orientation matter?",
     "choices": [
-      "It makes cue manipulations impossible.",
+      "It identifies the same direction that every individual bird selected.",
       "It summarizes a group tendency without claiming all individuals behaved identically.",
-      "It means direction was measured as temperature.",
-      "It proves every bird oriented north."
+      "It reports the average angular difference between the magnetic and star cues.",
+      "It shows that random variation disappeared when the magnetic field was rotated."
     ],
     "answer": 1,
-    "explanation": "The passage allows random variation among birds. The mode identifies the dominant response (north or east) without asserting unanimity.",
+    "explanation": "Most common orientation is the group’s mode, not a unanimous response or an average of cue angles. The passage explicitly permits individual variation. A dominant north or east direction can coexist with birds pointing elsewhere; the summary does not show that the manipulation removed that variation.",
     "passage": {
       "id": "science-drill-navigation-views",
       "title": "Bird orientation cues",
@@ -6455,13 +6455,13 @@
     "stem": "Which additional experiment would most directly test P’s claimed pigment-cell mechanism?",
     "questionText": "Which additional experiment would most directly test P’s claimed pigment-cell mechanism?",
     "choices": [
-      "Count rocks in the enclosure.",
+      "Compare darkness scores at two temperatures without observing the pigment cells.",
       "Image pigment distribution before and after cooling the same skin under controlled light and background.",
-      "Change light, temperature, and background simultaneously.",
-      "Measure only the background darkness."
+      "Compare pigment distribution on dark and light backgrounds at one temperature only.",
+      "Image skin pigment after cooling while also changing the background from light to dark."
     ],
     "answer": 1,
-    "explanation": "P specifically proposes redistribution within pigment cells during temperature response. Imaging before and after controlled cooling addresses that mechanism beyond the score’s observed change.",
+    "explanation": "P proposes temperature-driven redistribution within pigment cells. Imaging the same skin before and after controlled cooling directly checks that process while holding background and light fixed. Scores alone measure the outcome rather than the cellular mechanism; changing only background tests C’s factor; changing temperature and background together confounds them.",
     "passage": {
       "id": "science-drill-color-views",
       "title": "A lizard changes color",
@@ -6625,13 +6625,13 @@
     "stem": "Which conclusion best respects the evidence?",
     "questionText": "Which conclusion best respects the evidence?",
     "choices": [
-      "The table measures modern infection transmission.",
+      "The near-constant scar percentages exclude every possible contribution from infection.",
       "D is supported more directly by the listed trends, but drought causation is not proved.",
-      "I is proved because any scar exists.",
-      "Both mechanisms are impossible."
+      "The rising dry-condition indicator proves drought was the only cause of the decline.",
+      "The small rise from 5% to 6% scars in Layer 3 establishes I’s predicted trend across all layers."
     ],
     "answer": 1,
-    "explanation": "The dry indicator and abundance align with D’s prediction, while scar percentage does not rise as I predicts. Sediment associations alone still do not prove a unique cause.",
+    "explanation": "D predicts a rising dryness indicator as abundance falls, which the full sequence shows. I predicts an increasing scar proportion, but the percentages 5, 5, 6, 5 do not show a sustained rise. That supports D’s listed prediction more directly without proving a unique cause or excluding all possible infection effects.",
     "passage": {
       "id": "science-drill-fossil-views",
       "title": "A population disappears from sediments",
@@ -6662,12 +6662,12 @@
     "questionText": "Which new observation would strengthen I’s explanation most directly?",
     "choices": [
       "A validated alternative infection marker rises strongly in T fossils as abundance falls.",
-      "Dry indicators rise further.",
-      "There are no living T animals today.",
-      "The oldest layer contains 40 fossils per kg."
+      "The dry-condition indicator rises while infection-scar percentage remains near 5%.",
+      "A new layer contains fewer T fossils per kilogram but no infection-specific measurements.",
+      "The same five-percent scar frequency is confirmed in a larger sample from each layer."
     ],
     "answer": 0,
-    "explanation": "A reliable infection-specific marker increasing during the decline would support I’s proposed disease mechanism even though the original scar measure stayed near 5%.",
+    "explanation": "I’s mechanism is infection, so a validated independent infection marker increasing during the decline supplies the most relevant new support. More dryness or a smaller population fits other explanations too. A more precise confirmation of a flat scar percentage does not produce the rising infection signal I predicts.",
     "passage": {
       "id": "science-drill-fossil-views",
       "title": "A population disappears from sediments",
@@ -6725,16 +6725,16 @@
     "subject": "science",
     "category": "Evaluation of models",
     "difficulty": "medium",
-    "stem": "Which result shows that droplets still contribute some opacity?",
-    "questionText": "Which result shows that droplets still contribute some opacity?",
+    "stem": "Which comparison with the untreated plume most directly isolates a contribution from droplets while leaving solid ash present?",
+    "questionText": "Which comparison with the untreated plume most directly isolates a contribution from droplets while leaving solid ash present?",
     "choices": [
-      "Removing solids raises transmission to 75%.",
-      "No treatment gives 15%.",
+      "Removing solids raises transmission from 15% to 75%.",
+      "Leaving both components present gives 15% transmission.",
       "Removing droplets raises transmission from 15% to 25%.",
-      "Both removals give 95%."
+      "Removing both components raises transmission from 15% to 95%."
     ],
     "answer": 2,
-    "explanation": "The untreated and droplet-removed samples differ only in droplet removal, and transmission increases by 10 points. That indicates some droplet contribution.",
+    "explanation": "Compare untreated plume (15%) with droplets removed (25%). Both retain solid ash, so the 10-percentage-point increase isolates removing droplets. Removing solids tests ash; leaving both present changes nothing; removing both changes two factors and cannot isolate droplets in an ash-containing plume.",
     "passage": {
       "id": "science-drill-plume-views",
       "title": "Why a volcanic plume looks opaque",
@@ -6791,12 +6791,12 @@
     "questionText": "If the droplet-removal device also removed most ash, what would happen to the interpretation?",
     "choices": [
       "The droplet-only effect could no longer be isolated from ash removal.",
-      "Transmission would necessarily fall below zero.",
-      "Both scientists would make identical mechanisms.",
-      "W would be automatically proved."
+      "The original droplet contribution would equal the combined 80-point increase after both removals.",
+      "A large increase after the procedure would uniquely favor W because droplets were among the removed components.",
+      "The result would still isolate droplets because ash was present before the treatment."
     ],
     "answer": 0,
-    "explanation": "Removing ash and droplets together changes both proposed opacity causes. A large transmission increase could then be due to either, so the droplet-only test would be confounded.",
+    "explanation": "Isolation requires only the intended component to change. If ash is removed too, a rise in transmission can reflect ash, droplets, or both. Ash having been present before treatment does not preserve it as a control, and the combined removal effect cannot simply be assigned to droplets.",
     "passage": {
       "id": "science-drill-plume-views",
       "title": "Why a volcanic plume looks opaque",
@@ -6821,13 +6821,13 @@
     "stem": "Which statement is compatible with the evidence without claiming a unique cause?",
     "questionText": "Which statement is compatible with the evidence without claiming a unique cause?",
     "choices": [
-      "Droplets have no effect whatsoever.",
-      "The plume contains no solid ash.",
+      "Only solids affect transmission because the ash-removal change is the larger of the two.",
+      "Droplets account for more measured opacity because the droplets-removed sample transmits less light.",
       "Both solids and droplets affect transmission, with solids having the larger measured removal effect.",
-      "Transmission must reach 100% after either single removal."
+      "Each component removal has the same effect regardless of whether the other component is present."
     ],
     "answer": 2,
-    "explanation": "Both single removals increase transmission above 15%; solids removal increases it to 75% and droplets to 25%. Even both removed gives 95%, not 100%.",
+    "explanation": "Relative to untreated 15%, solids removal raises transmission to 75% (+60 points), and droplets removal to 25% (+10). Both therefore affect it, with the larger single-removal change for solids. Lower final transmission after droplet removal indicates more opacity remains, not a larger removed effect. Interaction is possible: removing droplets after solids raises 75→95, not 15→25.",
     "passage": {
       "id": "science-drill-plume-views",
       "title": "Why a volcanic plume looks opaque",
@@ -7155,16 +7155,16 @@
     "subject": "science",
     "category": "Evaluation of models",
     "difficulty": "medium",
-    "stem": "Which other row fits f = 10 cm?",
-    "questionText": "Which other row fits f = 10 cm?",
+    "stem": "Which statement identifies all of the other three rows that fit f = 10 cm?",
+    "questionText": "Which statement identifies all of the other three rows that fit f = 10 cm?",
     "choices": [
-      "u = 60, v = 12",
-      "u = 15, v = 30",
+      "Only the u = 60 cm, v = 12 cm row",
+      "Only the u = 15 cm, v = 30 cm row",
       "All three other rows",
-      "u = 30, v = 15"
+      "Only the u = 30 cm, v = 15 cm row"
     ],
     "answer": 2,
-    "explanation": "For 15/30 and 30/15, reciprocal sums are 1/10. For 60/12, 1/60+5/60 = 6/60 = 1/10. All rows match.",
+    "explanation": "Test each remaining row using the sum of reciprocals: 1/15 + 1/30 = 1/10; swapping 15 and 30 gives the same sum; and 1/60 + 1/12 = 6/60 = 1/10. All three fit f = 10 cm. Each “only” option omits two rows that also fit, so it is incomplete.",
     "passage": {
       "id": "science-drill-lens",
       "title": "Testing a thin-lens equation",
@@ -7513,12 +7513,12 @@
     "questionText": "Which experiment best tests whether nutrient competition contributes to the reduction?",
     "choices": [
       "Increase nutrient supply in both separate and mixed cultures while keeping other conditions fixed.",
-      "Change only mixed-culture temperature and nutrient supply.",
-      "Remove all nutrients from every flask and measure immediately.",
-      "Measure the color of empty flasks."
+      "Increase nutrients only in the mixed cultures and also extend their growth period.",
+      "Compare a mixed high-nutrient culture with a separate low-nutrient culture only.",
+      "Repeat separate and mixed cultures with less light but the same nutrient supply."
     ],
     "answer": 0,
-    "explanation": "Repeating separate and mixed comparisons at a higher common nutrient level tests whether the mixed-culture reduction weakens when the shared limiting resource is more available.",
+    "explanation": "Test the proposed limiting resource by repeating both separate and mixed cultures at a higher common nutrient level. If the mixed-culture disadvantage shrinks, that supports nutrient competition. Changing only mixed-culture conditions or using unmatched nutrient levels confounds the comparison; changing light alone tests a different possible limitation.",
     "passage": {
       "id": "science-drill-competition-model",
       "title": "Two algae species share a nutrient",
@@ -7542,13 +7542,13 @@
     "stem": "What conclusion is narrower than claiming C is the only possible mechanism?",
     "questionText": "What conclusion is narrower than claiming C is the only possible mechanism?",
     "choices": [
-      "A necessarily eats B.",
-      "B can never grow with A.",
-      "The species have identical final densities.",
+      "The mixed culture proves that B’s cells cannot reproduce in the presence of A.",
+      "The lower final total proves that nutrient competition is the only interaction operating.",
+      "B is unaffected by A because its mixed-culture count exceeds its starting count.",
       "The mixed culture data support an interaction reducing final densities, consistent with competition."
     ],
     "answer": 3,
-    "explanation": "A falls from 900 to 800 and B from 700 to 200 in mixed culture. Those reductions fit C, but the density measurements alone do not rule out every other interaction mechanism.",
+    "explanation": "Relative to separate cultures, final A falls 900→800 and final B falls 700→200 cells/mL. Those changes support an interaction consistent with competition, while B’s increase from its starting 100 does not mean A had no effect. Counts alone do not identify the only mechanism or show that reproduction stopped.",
     "passage": {
       "id": "science-drill-competition-model",
       "title": "Two algae species share a nutrient",
@@ -7638,12 +7638,12 @@
     "questionText": "Why does L’s oxygen increase not show that respiration stopped?",
     "choices": [
       "Photosynthesis can produce more oxygen than respiration consumes.",
-      "Respiration produces all the oxygen in light.",
-      "Respiration never occurs in plants.",
-      "The container contains no leaves."
+      "The final oxygen concentration directly measures the photosynthetic production alone.",
+      "A positive net change means respiration is slower in light than in darkness.",
+      "Respiration must consume exactly the initial 8.0 mg/L before photosynthesis can produce oxygen."
     ],
     "answer": 0,
-    "explanation": "Both processes may occur in light. The net +2.5 mg/L only shows production exceeded consumption; it does not separately measure either gross rate.",
+    "explanation": "A net change is production minus consumption. L’s +2.5 mg/L can occur with positive respiration whenever photosynthetic production is greater. The final concentration includes the initial 8.0 mg/L, and the net value cannot identify the separate rates or compare light and dark respiration without another assumption.",
     "passage": {
       "id": "science-drill-leaf-oxygen",
       "title": "Leaves, light, and oxygen",
@@ -7703,12 +7703,12 @@
     "questionText": "What does the unchanged no-leaf control help show?",
     "choices": [
       "The measured oxygen change requires leaves under these conditions.",
-      "Light always consumes oxygen.",
-      "The detector reads zero without leaves.",
-      "Every living organism photosynthesizes."
+      "Light by itself produced the same oxygen increase seen with leaves.",
+      "The detector must read zero whenever no leaves are present.",
+      "The light and dark leaf containers had the same gross oxygen production."
     ],
     "answer": 0,
-    "explanation": "C stays at 8.0 mg/L under light, while leaf-containing L rises to 10.5. This helps exclude a comparable light-only or detector drift change in that control.",
+    "explanation": "The light-exposed control remains at 8.0 mg/L while the light-exposed leaf container rises to 10.5. That comparison supports a leaf-associated increase rather than an equivalent light-only or detector-drift increase. The control does not determine gross production in the dark, and its oxygen reading is 8.0, not zero.",
     "passage": {
       "id": "science-drill-leaf-oxygen",
       "title": "Leaves, light, and oxygen",
@@ -7801,12 +7801,12 @@
     "questionText": "Which statement correctly distinguishes atoms and molecules in the reaction?",
     "choices": [
       "Atoms are conserved, but the total number of molecules can change.",
-      "Molecule count must be conserved exactly.",
-      "Oxygen atoms disappear.",
-      "Hydrogen atoms turn into oxygen atoms."
+      "Both the number of atoms and the number of molecules stay fixed in a sealed reaction.",
+      "Hydrogen atom count is conserved only if leftover hydrogen molecules are excluded.",
+      "The six product molecules contain all the atoms that were initially present."
     ],
     "answer": 0,
-    "explanation": "Initial molecule count is 8+3 = 11; afterward it is 6 water + 2 H₂ = 8. Hydrogen and oxygen atom totals are unchanged even though molecules are regrouped.",
+    "explanation": "Initially there are 16 hydrogen and 6 oxygen atoms in 11 molecules. After reaction, 6 water molecules contain 12 hydrogen and 6 oxygen atoms, and 2 leftover hydrogen molecules contain the remaining 4 hydrogen atoms: 8 molecules, same atoms. Regrouping changes molecule count; excluding leftovers would break the atom inventory.",
     "passage": {
       "id": "science-drill-molecule-balance",
       "title": "Combining two gases",
@@ -7957,13 +7957,13 @@
     "stem": "If the same mass were heated at twice the power with identical insulation, how would the melting plateau duration be expected to change?",
     "questionText": "If the same mass were heated at twice the power with identical insulation, how would the melting plateau duration be expected to change?",
     "choices": [
-      "It would require no energy.",
-      "It would remain exactly 4 min.",
+      "It would fall to one-quarter as long.",
+      "It would remain exactly 4 min because the melting temperature is unchanged.",
       "It would be half as long.",
       "It would double."
     ],
     "answer": 2,
-    "explanation": "The energy needed to melt the same mass is unchanged. Twice the energy supplied per minute supplies that amount in half the time: about 2 min instead of the original 4 min.",
+    "explanation": "Melting the same mass requires the same energy. With twice the power, time = energy/power is halved, from 4 to about 2 min. The unchanged melting temperature does not imply unchanged duration; doubling power does not double duration or quarter it.",
     "passage": {
       "id": "science-drill-phase-change",
       "title": "Heating an initially frozen material",
@@ -8087,13 +8087,13 @@
     "stem": "If pulling force equals 1 N while friction stays 1 N, what does the model predict for an already moving cart?",
     "questionText": "If pulling force equals 1 N while friction stays 1 N, what does the model predict for an already moving cart?",
     "choices": [
-      "An immediate reversal of velocity",
-      "Increasing acceleration",
+      "Constant positive acceleration because a pulling force still acts",
+      "Negative acceleration equal to the friction force divided by cart mass",
       "Zero acceleration",
-      "Zero mass"
+      "An immediate stop because zero net force requires zero velocity"
     ],
     "answer": 2,
-    "explanation": "Equal opposing forces give zero net force and therefore zero acceleration. An already moving cart can keep constant velocity; zero acceleration is not necessarily zero speed.",
+    "explanation": "For an already moving cart, equal 1 N forces in opposite directions give zero net force, so a = Fnet/m = 0. Its velocity can remain nonzero and constant. Considering only the pull or only friction misses the cancellation; zero acceleration is not an immediate stop.",
     "passage": {
       "id": "science-drill-force",
       "title": "A cart on a horizontal track",
@@ -8277,13 +8277,13 @@
     "stem": "If 18 of 80 offspring are white, what is the soundest interpretation?",
     "questionText": "If 18 of 80 offspring are white, what is the soundest interpretation?",
     "choices": [
-      "White flowers must change genotype when counted.",
+      "The 18 white offspring show the parents contributed the a allele less than half the time in every cross.",
       "A finite random sample can differ from the 20-white expectation.",
-      "The inheritance model is conclusively impossible.",
-      "Each parent stopped contributing alleles."
+      "The model predicts 18 rather than 20 because observed counts replace expected probabilities.",
+      "The two-offspring difference establishes a survival advantage for the A allele."
     ],
     "answer": 1,
-    "explanation": "The 1/4 expectation gives 20 white among 80, but random allele contributions can yield a nearby observed count such as 18. One small deviation is not conclusive disproof.",
+    "explanation": "The model predicts an expected count, 80×1/4 = 20, rather than an exact outcome in every finite sample. Eighteen white offspring can occur by random inheritance. One small deviation does not establish unequal parental probabilities or survival differences, and observation does not retroactively change the model’s probability.",
     "passage": {
       "id": "science-drill-genetics",
       "title": "An inherited pigment enzyme",
@@ -8405,13 +8405,13 @@
     "stem": "A model predicts response percentage always rises as frequency rises at a fixed intensity. Which result challenges that model?",
     "questionText": "A model predicts response percentage always rises as frequency rises at a fixed intensity. Which result challenges that model?",
     "choices": [
-      "Every group has 50 insects.",
-      "The no-tone control is 4%.",
+      "At 50 dB response rises from 8% at 10 kHz to 30% at 20 kHz.",
+      "At 70 dB response rises from 60% at 20 kHz to 94% at 40 kHz.",
       "At 50 dB response falls from 70% at 40 kHz to 54% at 60 kHz.",
-      "At 30 dB response is 4% at 10 kHz."
+      "At 40 kHz response rises from 30% at 30 dB to 94% at 70 dB."
     ],
     "answer": 2,
-    "explanation": "Increasing frequency from 40 to 60 kHz at 50 dB decreases response from 70% to 54%. This directly contradicts the claimed always-increasing frequency relation.",
+    "explanation": "To test an always-increasing frequency claim, hold intensity fixed and seek a decrease as frequency rises. At 50 dB, 40→60 kHz gives 70%→54%, a counterexample. The other fixed-intensity comparisons rise; changing intensity at 40 kHz tests a different variable.",
     "passage": {
       "id": "science-exam-insect-sound",
       "title": "Passage 1: Insect responses to sound",
@@ -8441,13 +8441,13 @@
     "stem": "Which feature of a tone changes when frequency changes from 20 to 40 kHz?",
     "questionText": "Which feature of a tone changes when frequency changes from 20 to 40 kHz?",
     "choices": [
-      "Its duration necessarily doubles.",
-      "Its intensity must fall to zero.",
-      "Its propagation speed must double in the same air.",
+      "Its number of oscillations during the 0.10 s tone remains unchanged.",
+      "Its intensity in decibels necessarily doubles.",
+      "Its speed in the same air doubles.",
       "Its number of oscillations per second doubles."
     ],
     "answer": 3,
-    "explanation": "Frequency is oscillations per second. 40 kHz is twice 20 kHz; the tones still last 0.10 s and intensity is controlled separately.",
+    "explanation": "Frequency counts oscillations per second, so 20→40 kHz doubles that count (and halves the period). With duration fixed, total oscillations also double. Frequency does not require doubling intensity, and wave speed in the same air is not doubled by this change.",
     "passage": {
       "id": "science-exam-insect-sound",
       "title": "Passage 1: Insect responses to sound",
@@ -8477,13 +8477,13 @@
     "stem": "Why use insects that have not heard an earlier experimental tone?",
     "questionText": "Why use insects that have not heard an earlier experimental tone?",
     "choices": [
-      "To force every response to equal the no-tone control",
-      "To remove frequency as a variable",
-      "To double tone duration",
+      "To make the no-tone control unnecessary",
+      "To remove differences among individual insects from the data",
+      "To keep sound intensity identical across all frequency conditions",
       "To reduce habituation or prior-exposure effects on the measured response"
     ],
     "answer": 3,
-    "explanation": "Each group receives one tone so its response is less likely to reflect learning or habituation from earlier tones. Reusing one group in a fixed sequence could confound frequency/intensity with exposure history.",
+    "explanation": "An earlier tone can cause habituation or another exposure-history effect. New groups avoid systematically combining the intended tone condition with prior treatment. New insects do not eliminate individual variation, replace a control, or hold an intentionally varied intensity constant.",
     "passage": {
       "id": "science-exam-insect-sound",
       "title": "Passage 1: Insect responses to sound",
@@ -8715,12 +8715,12 @@
     "questionText": "Which description matches the layer order and stated mixing principle?",
     "choices": [
       "Greater-density water lies below lower-density water, favoring stable layering.",
-      "Salt concentration is zero at the surface.",
-      "The least dense water is at the bottom.",
-      "Every layer has identical density."
+      "Surface and deep water would exchange positions because the deeper layer is denser.",
+      "The constant salt concentration below 50 m means density is identical there.",
+      "Temperature and salinity changes cancel so the layers have no density gradient."
     ],
     "answer": 0,
-    "explanation": "Density rises from 1.023 at 0 m to 1.029 at 200 m. The supplied principle says this heavier-below-lighter arrangement resists mixing.",
+    "explanation": "Read density directly: it rises downward from 1.023 to 1.029 g/cm³. Under the supplied principle, denser water underneath lighter water resists mixing. Constant salinity at several depths does not mean constant density because temperature differs, and the measured gradient is not canceled.",
     "passage": {
       "id": "science-exam-ocean",
       "title": "Passage 2: Layers of seawater",
@@ -8768,13 +8768,13 @@
     "stem": "Why can the 20 m versus 50 m density change not isolate the effect of salt alone?",
     "questionText": "Why can the 20 m versus 50 m density change not isolate the effect of salt alone?",
     "choices": [
-      "No density was measured.",
+      "Depth itself was the only property that changed between the samples.",
       "Temperature also changes between those depths.",
-      "Salt is unchanged between those depths.",
-      "Depth values are expressed in meters."
+      "The salt concentration stayed fixed at 35 g/kg in both samples.",
+      "The observations establish salt as the sole cause because density increased."
     ],
     "answer": 1,
-    "explanation": "From 20 to 50 m, salt rises from 34 to 35 g/kg while temperature falls from 22 to 15°C. Both stated factors favor a density increase, so this comparison cannot separate their contributions.",
+    "explanation": "At 20→50 m, salinity rises 34→35 g/kg and temperature falls 22→15°C. Both laboratory relationships predict greater density, so the observation cannot isolate the salt contribution. This is a two-factor change, unlike the 50→100 m comparison at fixed salinity.",
     "passage": {
       "id": "science-exam-ocean",
       "title": "Passage 2: Layers of seawater",
@@ -8823,12 +8823,12 @@
     "questionText": "What response was measured?",
     "choices": [
       "Iron mass lost after 7 days",
-      "Initial strip identity",
-      "Starting water volume",
-      "Number of pH units changed"
+      "Mass of corrosion products remaining on each strip",
+      "Initial mass of coating applied before immersion",
+      "Change in hydrogen-ion concentration over seven days"
     ],
     "answer": 0,
-    "explanation": "The table reports mean iron loss in mg after removing corrosion products: 80, 30, 4, 3, or 35. Surface and pH are treatment factors.",
+    "explanation": "The response is loss of original iron mass after the same corrosion-product removal procedure, measured in mg. It is not the mass of rust left on the strip or the coating’s initial mass. pH is a controlled treatment condition, not the response listed in the final column.",
     "passage": {
       "id": "science-exam-corrosion",
       "title": "Passage 3: A metal coating and acidic water",
@@ -8882,12 +8882,12 @@
     "questionText": "Which result supports the idea that coating continuity matters for protection?",
     "choices": [
       "Scratched coating at pH 4 loses 35 mg, compared with 4 mg for intact coating at the same pH.",
-      "Both pH values are whole numbers.",
-      "Every study lasts 7 days.",
-      "Bare strips lose 30 mg at pH 7."
+      "Bare strips lose 80 mg at pH 4 and 30 mg at pH 7.",
+      "Intact-coated strips lose 4 mg at pH 4 and 3 mg at pH 7.",
+      "Bare strips at pH 7 lose 30 mg while scratched strips at pH 4 lose 35 mg."
     ],
     "answer": 0,
-    "explanation": "The scratched and intact pH 4 conditions have different continuity but the same stated immersion conditions. Loss rises from 4 to 35 mg with a scratch, consistent with reduced protection.",
+    "explanation": "Compare intact versus scratched coating at the same pH 4: iron loss rises 4→35 mg when continuity is broken. The first two alternatives vary pH within one surface condition; the last varies both surface and pH. They cannot isolate coating continuity as directly.",
     "passage": {
       "id": "science-exam-corrosion",
       "title": "Passage 3: A metal coating and acidic water",
@@ -8946,12 +8946,12 @@
     "questionText": "Which added condition would best test whether scratching reduces protection at pH 7 as well?",
     "choices": [
       "Scratched coating, pH 7, under the same 7-day procedure",
-      "Bare iron, pH 4, at a new temperature",
-      "Intact coating, pH 7, for only 1 day",
-      "A different metal, pH 7, with a thicker coating"
+      "Bare iron at pH 7, under the same seven-day procedure",
+      "Intact coating at pH 7, repeated under the same seven-day procedure",
+      "Scratched coating at pH 4, under the same seven-day procedure"
     ],
     "answer": 0,
-    "explanation": "Study 1 already has intact-coated pH 7 strips losing 3 mg. Adding scratched-coated pH 7 strips with the same procedure creates the missing direct continuity comparison at that pH.",
+    "explanation": "The missing comparison is intact versus scratched at pH 7, with the other conditions fixed. Intact pH 7 already exists, so add scratched pH 7. Repeating bare or intact strips does not introduce a scratch, while scratching only at pH 4 repeats the existing test at the wrong pH.",
     "passage": {
       "id": "science-exam-corrosion",
       "title": "Passage 3: A metal coating and acidic water",
@@ -9009,13 +9009,13 @@
     "stem": "Which feature is allowed by both explanations?",
     "questionText": "Which feature is allowed by both explanations?",
     "choices": [
-      "Liquid is required below −20°C",
-      "Water absorption is required for all dust motion",
+      "A water-related absorption signal is necessary during every new streak.",
+      "New streaks require surface temperatures above −20°C.",
       "Downhill streak formation",
-      "No influence of solar heating"
+      "All new streaks must form on slopes with exactly the same angle."
     ],
     "answer": 2,
-    "explanation": "Both L and D predict downhill streaks and allow solar heating to affect timing. Downhill orientation alone cannot distinguish liquid from dust.",
+    "explanation": "Both viewpoints allow material or a darkening front to follow a slope downhill. The water and −20°C requirements belong to L alone. Neither scientist requires an identical slope angle for all events, and the measured angles differ.",
     "passage": {
       "id": "science-exam-slope-streaks",
       "title": "Passage 4: Dark streaks on a dry planet",
@@ -9076,13 +9076,13 @@
     "stem": "Why is the absence of water-related absorption relevant given the stated instrument capability?",
     "questionText": "Why is the absence of water-related absorption relevant given the stated instrument capability?",
     "choices": [
-      "Absorption was not checked in any event.",
-      "Every dry particle must contain visible liquid.",
+      "It shows that the surface temperature must have been measured incorrectly.",
+      "It distinguishes the explanations even if any liquid present was below the stated detection threshold.",
       "Liquid sufficient under L’s model should have been detectable.",
-      "The instrument measures slope instead of absorption."
+      "It establishes that solar heating had no influence on event timing."
     ],
     "answer": 2,
-    "explanation": "The passage says any liquid amount sufficient for L’s proposed streaks would be detected. All four events report no absorption, challenging that specific liquid model.",
+    "explanation": "The key premise is that enough surface liquid to make L’s streaks would be detectable. A missing signal therefore challenges that model rather than merely indicating an insensitive instrument. It does not disprove the temperature measurements or the solar influence both scientists allow. Without the stated detection capability, absence alone would be less decisive.",
     "passage": {
       "id": "science-exam-slope-streaks",
       "title": "Passage 4: Dark streaks on a dry planet",
@@ -9112,13 +9112,13 @@
     "stem": "Which conclusion is justified by the table?",
     "questionText": "Which conclusion is justified by the table?",
     "choices": [
-      "Solar heating cannot affect dust motion.",
+      "D is supported specifically because all observed slopes have identical angles.",
       "D is consistent with these events, while the specified L model faces contradictory observations.",
-      "Every possible liquid mechanism on every planet is disproved.",
-      "Slope determines temperature exactly."
+      "The data exclude any mechanism involving any liquid, regardless of its predictions.",
+      "L is consistent with all events because a temperature threshold applies only after a streak forms."
     ],
     "answer": 1,
-    "explanation": "D allows below-threshold streaks and no water absorption, both observed. The data challenge L’s specific requirements but do not rule out every imaginable liquid mechanism elsewhere.",
+    "explanation": "D allows sub−20°C events without a water signal, as observed. L requires warmer conditions and detectable sufficient liquid; C and D violate the temperature requirement and all events lack the required signal. This tests those stated models, not every possible liquid mechanism or a rule about identical slopes.",
     "passage": {
       "id": "science-exam-slope-streaks",
       "title": "Passage 4: Dark streaks on a dry planet",
@@ -9148,13 +9148,13 @@
     "stem": "Which measurement would most directly test the proposed physical movement during a new event?",
     "questionText": "Which measurement would most directly test the proposed physical movement during a new event?",
     "choices": [
-      "Measuring only a distant flat plain",
+      "Higher-resolution temperature measurements taken only before each event",
       "Before-and-after high-resolution images locating displaced surface material",
-      "Renaming the slope directions",
-      "Counting letters in event labels"
+      "Repeated absorption measurements from a distant flat plain",
+      "A larger sample of slope angles without before-and-after surface images"
     ],
     "answer": 1,
-    "explanation": "Tracking material positions across an event tests whether surface material moved downhill. The current table reports conditions and absorption, not detailed displacement.",
+    "explanation": "The mechanism concerns physical displacement, so images that locate the same surface features before and after an event test whether they moved downhill. Temperatures, distant absorption readings, and additional slope angles characterize conditions, but do not directly track movement during the event.",
     "passage": {
       "id": "science-exam-slope-streaks",
       "title": "Passage 4: Dark streaks on a dry planet",
@@ -9184,13 +9184,13 @@
     "stem": "If a new event at −10°C showed detectable water-related absorption, how would it affect the comparison?",
     "questionText": "If a new event at −10°C showed detectable water-related absorption, how would it affect the comparison?",
     "choices": [
-      "It would make dust avalanches physically impossible everywhere.",
-      "It would violate L’s temperature requirement.",
+      "It would establish that water caused every earlier streak without a detected signal.",
+      "It would challenge L because −10°C is below its −20°C requirement.",
       "It would be compatible with L but would not by itself prove liquid caused the streak.",
-      "It would prove all earlier temperatures were wrong."
+      "It would contradict D because D explicitly requires water-related absorption to be absent."
     ],
     "answer": 2,
-    "explanation": "−10°C is above L’s −20°C threshold and detectable water matches L’s prediction. Association is supportive; it does not alone exclude coincident water and dust or prove causation.",
+    "explanation": "−10°C is warmer than −20°C, and the detected absorption matches L’s prediction. Compatibility does not establish cause or retroactively explain earlier events. D says water absorption is not required, not that water can never coexist with a dust avalanche, so its presence alone does not exclude D.",
     "passage": {
       "id": "science-exam-slope-streaks",
       "title": "Passage 4: Dark streaks on a dry planet",
@@ -9282,13 +9282,13 @@
     "stem": "Why give all colors the same incident photon rate?",
     "questionText": "Why give all colors the same incident photon rate?",
     "choices": [
-      "To eliminate respiration",
-      "To make all absorption percentages equal",
+      "To make the absorbed photon rates equal at every wavelength",
+      "To keep the energy of each supplied photon identical across wavelengths",
       "To compare wavelength effects without also changing the number of supplied photons per second",
-      "To make every wavelength blue"
+      "To hold gross oxygen production constant while wavelength varied"
     ],
     "answer": 2,
-    "explanation": "The experiment varies wavelength; equal incident photon rates prevent input photon number from changing simultaneously. Absorption and oxygen can still differ.",
+    "explanation": "Equal incident photon rate holds supplied photon number per second fixed, isolating wavelength from that input. Different absorption fractions still mean different absorbed photon rates; photon energy changes with wavelength; and oxygen production is the response, not a controlled quantity.",
     "passage": {
       "id": "science-exam-light-colors",
       "title": "Passage 5: Light colors and leaf disks",
@@ -9354,13 +9354,13 @@
     "stem": "How can far-red net oxygen be zero despite the stated respiration?",
     "questionText": "How can far-red net oxygen be zero despite the stated respiration?",
     "choices": [
-      "The leaves contain no living cells.",
-      "Gross production is necessarily zero.",
-      "Respiration must stop whenever oxygen net change is zero.",
+      "The respiration rate is zero because no net oxygen leaves the leaves.",
+      "Gross production is zero and respiration is 1 µmol/min.",
+      "Gross production and respiration are both 0.5 µmol/min.",
       "Gross production is 1 µmol/min, equal to consumption."
     ],
     "answer": 3,
-    "explanation": "Net = gross−respiration. With net 0 and respiration 1, gross must be 1 µmol/min. A zero net rate can hide equal positive opposing rates.",
+    "explanation": "Use the stated mass balance: net = gross − respiration. With net 0 and respiration fixed at 1 µmol/min, gross must also be 1. A zero net change does not mean no processes occur; 0.5/0.5 violates the given respiration rate, and 0/1 would give −1 net.",
     "passage": {
       "id": "science-exam-light-colors",
       "title": "Passage 5: Light colors and leaf disks",
@@ -9390,13 +9390,13 @@
     "stem": "What limitation prevents concluding that wavelength acts only through absorption percentage?",
     "questionText": "What limitation prevents concluding that wavelength acts only through absorption percentage?",
     "choices": [
-      "Every treatment used the same leaf area.",
-      "Net oxygen can be expressed per minute.",
+      "The leaf area was the same in every wavelength treatment.",
+      "The dark treatment establishes the assumed respiratory oxygen consumption.",
       "Wavelength and absorption differ together, and no independent absorption manipulation was made.",
-      "The dark treatment was measured."
+      "The red and blue treatments have different net oxygen release."
     ],
     "answer": 2,
-    "explanation": "Each wavelength has its own absorption percentage, so the study links them but does not vary absorption independently at a fixed wavelength. Other wavelength-dependent effects are not excluded.",
+    "explanation": "Wavelength and absorption percentage vary together, so the table cannot assign all wavelength effects specifically to absorption. An independent absorption manipulation at fixed wavelength would help separate those factors. Equal area and a dark respiration comparison are controls; a red/blue response difference by itself does not distinguish the proposed causal routes.",
     "passage": {
       "id": "science-exam-light-colors",
       "title": "Passage 5: Light colors and leaf disks",
@@ -9609,12 +9609,12 @@
     "questionText": "Can the shown unloading curve determine the residual extension after loading to 80 N?",
     "choices": [
       "No; the unloading trial began at 60 N, not 80 N.",
-      "Yes, exactly 7 mm",
-      "Yes, exactly 3 mm",
-      "Yes, exactly 1 mm"
+      "Yes; the loading extension at 80 N equals the residual extension at zero force.",
+      "Yes; scale the 60 N residual extension by the ratio 80/60.",
+      "Yes; the 1 mm residual after 60 N must apply after any higher maximum force."
     ],
     "answer": 0,
-    "explanation": "The plotted unloading path applies specifically after a maximum load of 60 N. Loading reaches 80 N, but no unloading-from-80 trial is supplied, so its residual extension is unknown.",
+    "explanation": "Residual extension must be read after unloading from the specified maximum load. The only unloading curve begins at 60 N and ends at 1 mm, while the 80 N point is still loaded. No rule makes residual deformation proportional to maximum force or constant above 60 N, so none supplies the unmeasured unloading-from-80 result.",
     "passage": {
       "id": "science-exam-wire-strain",
       "title": "Passage 6: Stretching a metal wire",
@@ -9656,13 +9656,13 @@
     "stem": "Which comparison isolates water amount at 30°C?",
     "questionText": "Which comparison isolates water amount at 30°C?",
     "choices": [
-      "Sterile versus nonsterile only at different temperatures",
       "15°C/20 mL versus 30°C/50 mL",
+      "Sterile versus nonsterile at 30°C/50 mL",
       "30°C/20 mL versus 30°C/50 mL",
       "15°C/50 mL versus 30°C/50 mL"
     ],
     "answer": 2,
-    "explanation": "Holding temperature at 30°C while changing water from 20 to 50 mL compares CO₂ values of 55 and 100 mg. The other listed comparisons change an additional factor.",
+    "explanation": "To isolate water, hold temperature at the requested 30°C and compare 20 with 50 mL: CO₂ is 55 versus 100 mg. Changing temperature as well confounds the comparison. Sterile versus nonsterile changes microbial status, and two 50 mL treatments test temperature rather than water.",
     "passage": {
       "id": "science-exam-compost",
       "title": "Passage 7: Decomposition in soil mixtures",
@@ -9756,13 +9756,13 @@
     "stem": "Which statement links decomposition to conservation of carbon?",
     "questionText": "Which statement links decomposition to conservation of carbon?",
     "choices": [
-      "A CO₂ measurement proves all litter disappeared.",
-      "Microbes turn oxygen atoms into carbon atoms.",
+      "The carbon in CO₂ establishes the total dry litter mass lost without knowing its composition.",
+      "The oxygen in CO₂ provides new carbon as decomposition proceeds.",
       "Some carbon originally in organic material can leave the material as CO₂.",
-      "CO₂ carbon must be newly created from nothing."
+      "Every carbon atom in the collected CO₂ must come from the added litter rather than the soil."
     ],
     "answer": 2,
-    "explanation": "Microbial breakdown rearranges existing organic carbon into products including CO₂. Carbon atoms are conserved; CO₂ production alone does not show all initial litter was consumed.",
+    "explanation": "Decomposition can transfer existing organic carbon into CO₂ without creating carbon atoms. The soil also contains possible carbon sources, so the experiment does not trace every CO₂ atom specifically to the added litter. CO₂ mass alone does not give total litter mass loss because composition, other products, and final litter mass were not measured.",
     "passage": {
       "id": "science-exam-compost",
       "title": "Passage 7: Decomposition in soil mixtures",

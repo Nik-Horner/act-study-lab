@@ -71,7 +71,7 @@
           "good": false
         }
       ],
-      "tip": "Trust your ear on pairings: read each choice into the sentence, and if it sounds slightly off, it is. Idiom questions reward fluent reading, not memorized rules."
+      "tip": "Compare the entire construction with a known standard example. Meaning and grammatical role are stronger evidence than whether an unfamiliar phrase sounds impressive."
     },
     {
       "heading": "Watch for words that sound smart but miss",
@@ -100,6 +100,27 @@
         "Read the sentence and nearby context. Define each candidate, eliminate mismatches, then substitute the best choice and reread."
       ],
       "tip": "Four interchangeable-looking words and no punctuation differences means word choice. Slow down and read for meaning, not grammar."
+    },
+    {
+      "heading": "Advanced transfer: degree, certainty, and connotation",
+      "body": [
+        "Sophisticated choices often differ in how much they claim. Tentative means provisional, inconclusive means not settling the question, and false means incorrect. Uncertainty does not establish falsity.",
+        "Match the exact claim and attitude supported by context. Favor language that preserves limitations, distinguishes association from causation, and avoids adding approval or blame that the passage has not established."
+      ],
+      "examples": [
+        {
+          "text": "The early results were promising but provisional; the trial had not yet been replicated.",
+          "label": "Provisional preserves the need for confirmation without denying the early result.",
+          "good": true
+        },
+        {
+          "text": "The early results were definitive; the trial had not yet been replicated.",
+          "label": "Definitive overstates certainty despite the stated limitation.",
+          "good": false
+        }
+      ],
+      "tip": "Check whether a choice changes the strength, scope, or attitude of the claim.",
+      "teachingRevision": 2
     }
   ],
   "check": [

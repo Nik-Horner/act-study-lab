@@ -4,7 +4,7 @@
     {
       "id": "test-patterns-001",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence grammatically complete and correct?",
       "stem": "A mural [[was]] painted across the gym's back wall celebrates the school's first state championship.",
       "choices": [
@@ -20,7 +20,7 @@
       "id": "test-patterns-002",
       "category": "CSE",
       "difficulty": "medium",
-      "questionText": "Which choice best completes the sentence?",
+      "questionText": "Which choice most concisely completes the sentence while preserving its meaning?",
       "stem": "In the lobby stood a marble statue, [[it was]] a gift from the graduating class of 1998.",
       "choices": [
         "NO CHANGE",
@@ -29,13 +29,13 @@
         "DELETE the underlined portion."
       ],
       "answer": 3,
-      "explanation": "Deleting the words leaves 'a marble statue, a gift from the graduating class of 1998', a clean appositive that needs no extra words. 'it was' splices two complete sentences with only a comma, and 'which it was' stacks the extra subject 'it' inside the relative clause. 'it being' adds two words the appositive does not need; the ACT treats 'being' phrasings as wordy and nonstandard, so the trimmed version wins."
+      "explanation": "Deleting 'it was' leaves the appositive 'a gift from the graduating class of 1998,' which renames statue. 'It was' creates a comma splice; 'which it was' doubles the subject inside the relative clause. 'It being' can introduce an absolute phrase, but it adds unnecessary words here, so the concise appositive meets the stated goal."
     },
     {
       "id": "test-patterns-003",
       "category": "CSE",
-      "difficulty": "hard",
-      "questionText": "Which choice makes the sentence grammatically acceptable?",
+      "difficulty": "medium",
+      "questionText": "Which choice most concisely describes the obsidian without changing the sentence's meaning?",
       "stem": "The geologist passed around a chunk of obsidian, [[which it was]] smooth and nearly black, so each student could feel its glassy edge.",
       "choices": [
         "NO CHANGE",
@@ -44,7 +44,7 @@
         "DELETE the underlined portion."
       ],
       "answer": 3,
-      "explanation": "With the words deleted, 'a chunk of obsidian, smooth and nearly black,' tucks the description neatly between commas. 'which it was' doubles the subject of the clause, 'it was' creates a comma splice mid-sentence, and 'being that it was' is a nonstandard, wordy construction."
+      "explanation": "Deleting 'which it was' leaves the adjective phrase 'smooth and nearly black' beside obsidian. 'Which it was' doubles the relative-clause subject; 'it was' creates a comma splice. 'Being that it was' changes a description into a wordy causal construction, which the sentence does not need."
     },
     {
       "id": "test-patterns-004",
@@ -79,7 +79,7 @@
     {
       "id": "test-patterns-006",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice results in a complete sentence?",
       "stem": "The expedition's hand-drawn map, sketched in fading ink, [[showing]] the river's original course before the dam changed it.",
       "choices": [
@@ -124,7 +124,7 @@
     {
       "id": "test-patterns-009",
       "category": "KLA",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice best maintains the formal tone of the essay?",
       "stem": "The curator restored the tapestry's border with thread dyed to match the original [[indigo, which everyone agreed was a super cool touch.]]",
       "choices": [
@@ -154,7 +154,7 @@
     {
       "id": "test-patterns-011",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice most clearly identifies which instruments the students built and what they built them from?",
       "stem": "For the spring showcase, the physics club built [[several instruments out of inexpensive materials]].",
       "choices": [
@@ -169,7 +169,7 @@
     {
       "id": "test-patterns-012",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice most specifically describes where the mural was painted and what it depicts?",
       "stem": "Over the summer, a team of local artists completed a mural [[in a downtown location with a community theme]].",
       "choices": [
@@ -214,7 +214,7 @@
     {
       "id": "test-patterns-015",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "The writer wants to make clear that walk-in flu shots are available only on Fridays, not that flu shots are the clinic's only offering. The best placement for the underlined word would be:",
       "stem": "The clinic [[only]] offers flu shots without an appointment on Fridays.",
       "choices": [
@@ -244,7 +244,7 @@
     {
       "id": "test-patterns-017",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "The writer wants to make clear that the canoes, not the cedar planks, were donated. The best placement for the underlined word would be:",
       "stem": "Every spring, the rowing club restores [[donated]] canoes with cedar planks from a local mill.",
       "choices": [
@@ -260,7 +260,7 @@
       "id": "test-patterns-018",
       "category": "CSE",
       "difficulty": "medium",
-      "questionText": "The writer wants to make clear that the students should label the slides quickly, not that the teacher asked quickly. The best placement for the underlined word would be:",
+      "questionText": "Which placement makes clear that quickly modifies the labeling while keeping the verb label directly beside its object their slides?",
       "stem": "Before the bell, the biology teacher asked the students [[quickly]] to label their slides.",
       "choices": [
         "where it is now",
@@ -269,22 +269,22 @@
         "after the word slides (ending the sentence with a period)"
       ],
       "answer": 3,
-      "explanation": "Ending the sentence with 'to label their slides quickly' ties the adverb to the labeling. Where it is now the adverb could describe the asking, 'asked quickly the students' says the asking was fast, and 'label quickly their slides' wedges the adverb into an unnatural position."
+      "explanation": "'To label their slides quickly' unambiguously modifies labeling and keeps label beside its object, their slides. The original and placement after asked can modify the asking. 'Label quickly their slides' separates label from its object, failing the stated editing goal; adverbs do not universally have to end a sentence."
     },
     {
       "id": "test-patterns-019",
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence idiomatically correct?",
-      "stem": "The documentary offers rare insight [[on]] the daily routines of a deep-sea research crew.",
+      "stem": "The documentary offers rare insight [[at]] the daily routines of a deep-sea research crew.",
       "choices": [
         "NO CHANGE",
         "into",
-        "at",
-        "for"
+        "from between",
+        "for to"
       ],
       "answer": 1,
-      "explanation": "English pairs 'insight' with 'into': the film offers 'insight into the daily routines'. 'insight on', 'insight at', and 'insight for' all break the fixed idiom."
+      "explanation": "'Insight into the daily routines' is the appropriate construction for understanding a subject. 'At' does not fit; 'from between' and 'for to' are malformed prepositional combinations here. Other contexts may use 'insight on'; the rule concerns this construction, not a blanket ban."
     },
     {
       "id": "test-patterns-020",
@@ -304,7 +304,7 @@
     {
       "id": "test-patterns-021",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence idiomatically correct?",
       "stem": "All semester, Dario was so preoccupied [[on perfecting]] his robotics entry that he nearly missed the scholarship deadline.",
       "choices": [
@@ -349,7 +349,7 @@
     {
       "id": "test-patterns-024",
       "category": "POW",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which transition word provides the most logical opening for the second sentence?",
       "stem": "The team lost its first five matches this spring. [[Still,]] season-ticket sales kept climbing.",
       "choices": [
@@ -360,6 +360,36 @@
       ],
       "answer": 0,
       "explanation": "'Still,' captures the surprise that sales climbed despite a losing record, so the original is already right. 'Consequently,' claims the losses caused sales to rise, 'For example,' promises an illustration of the losing streak that never comes, and 'Similarly,' asserts a likeness between losing and climbing sales that does not exist."
+    },
+    {
+      "stem": "The proposal is designed to improve access for residents who work nights. Its final sentence reads: The library [[will extend its hours, it]] will remain open until midnight on weekdays.",
+      "questionText": "Which choice both fixes the clause boundary and explicitly presents the late closing as the explanation of the change?",
+      "choices": [
+        "NO CHANGE",
+        "will extend its hours: it",
+        "will extend its hours because it will",
+        "will extend its hours; because it"
+      ],
+      "answer": 1,
+      "explanation": "The colon introduces the explanatory clause after the complete statement The library will extend its hours. The unchanged words already supply will remain, so the third choice would produce it will will remain. The original is a comma splice, and the semicolon before because strands a dependent clause.",
+      "id": "test-patterns-transfer-01",
+      "category": "CSE",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "A report says the survey included 120 volunteer cyclists on one protected route and measured their reported sense of safety. [[The route made cycling safer for everyone in the city.]]",
+      "questionText": "Which revision most precisely preserves the evidence without extending the claim beyond what was measured?",
+      "choices": [
+        "The route proved that protected lanes prevent accidents across the city.",
+        "All cyclists in the city were safer, according to 120 volunteers.",
+        "The survey suggested that the 120 volunteers felt safer on the protected route.",
+        "The route was safer, and volunteer cyclists supported building more lanes."
+      ],
+      "answer": 2,
+      "explanation": "The keyed choice retains the volunteer sample, the specific route, and the self-reported feeling. The first two turn a narrow perception survey into proof of safety for everyone; the final choice asserts actual safety and an opinion about more lanes that the report never measured. A confident, short conclusion cannot replace an appropriately limited one.",
+      "id": "test-patterns-transfer-02",
+      "category": "CSE",
+      "difficulty": "hard"
     }
   ]
 }

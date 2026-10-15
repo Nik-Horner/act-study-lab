@@ -66,7 +66,7 @@
     {
       "heading": "Apostrophes: possession vs. contraction",
       "body": [
-        "For singular possession, add ’s: the dog’s leash. For a plural already ending in s, add an apostrophe: the dogs’ leashes. A plain plural takes no apostrophe.",
+        "For singular possession, add ’s: the dog’s leash. For a plural already ending in s, add an apostrophe: the dogs’ leashes. A plain plural takes no apostrophe. Irregular plurals also take ’s: children’s books, women’s coats.",
         "Pronouns that show ownership need no apostrophe: its, whose, their. A contraction shortens words: it’s = it is/it has; who’s = who is/who has; they’re = they are."
       ],
       "examples": [
@@ -109,12 +109,33 @@
         "When choices change marks, label the material on both sides. A semicolon joins independent clauses; a colon or dash can introduce an explanation after a complete clause, including another complete clause.",
         "Remember that semicolons also separate list items containing commas. For apostrophe choices, check whether the word shows ownership, shortens two words, or simply means more than one."
       ],
-      "tip": "Two choices that do the same grammatical job (a colon and a single dash, or a period and a semicolon) cancel each other out: the answer is one of the others."
+      "tip": "Insert every choice in the full sentence. Marks that can do similar jobs may differ in capitalization, surrounding punctuation, or meaning; do not eliminate them just because they look equivalent."
+    },
+    {
+      "heading": "Advanced transfer: internal list commas and explanatory colons",
+      "body": [
+        "When list items already contain commas, semicolons can mark the boundaries between whole items. The final semicolon may come before and because it separates list items rather than clauses.",
+        "For a colon, temporarily remove parenthetical material and test the introduction. It must still be complete. The explanation after the colon can be a phrase, a list, or a complete clause; it need not start with for example."
+      ],
+      "examples": [
+        {
+          "text": "The team visited Salem, Oregon; Reno, Nevada; and Provo, Utah.",
+          "label": "Each semicolon separates an entire city-state pair.",
+          "good": true
+        },
+        {
+          "text": "The team visited: Salem, Oregon; Reno, Nevada; and Provo, Utah.",
+          "label": "The colon splits visited from the objects needed to complete its introduction.",
+          "good": false
+        }
+      ],
+      "tip": "First identify the level of the boundary: words inside an item, whole list items, or complete clauses.",
+      "teachingRevision": 2
     }
   ],
   "check": [
     {
-      "stem": "The trail was steep[[; but]] the view at the top was worth the climb.",
+      "stem": "The trail was steep[[; although]] the view at the top was worth the climb.",
       "questionText": "Which choice is correct?",
       "choices": [
         "NO CHANGE",
@@ -123,7 +144,7 @@
         ", but,"
       ],
       "answer": 2,
-      "explanation": "These two simple independent clauses are joined by 'but', so ', but' is the appropriate clause boundary here. The semicolon-list exception does not apply because this sentence is not a list. ': but' does not introduce an explanation or list here, and ', but,' adds an unnecessary comma between 'but' and its clause."
+      "explanation": "', but' coordinates the contrasting independent clauses. '; although' places a dependent clause after a semicolon; ': but' does not introduce an explanation of steepness; ', but,' adds an unnecessary comma between but and the following clause. A semicolon may precede a conjunction in some complex constructions, so that is not a universal prohibition."
     },
     {
       "stem": "She brought three things to the audition[[; a monologue,]] a headshot, and her nerves.",
@@ -138,7 +159,7 @@
       "explanation": "'She brought three things to the audition' stands alone, and the list explains 'three things,' so ': a monologue,' is correct. The semicolon in '; a monologue,' demands a complete clause after it and gets a list instead. '. A monologue,' strands the list as a sentence fragment. ', a monologue;' plants a semicolon between 'a monologue' and 'a headshot,' splitting list items that plain commas should separate."
     },
     {
-      "stem": "The cat licked [[it's]] paws and curled up by the fire.",
+      "stem": "The observatory opened [[it's]] doors before sunset.",
       "questionText": "Which choice is correct?",
       "choices": [
         "NO CHANGE",
@@ -147,7 +168,7 @@
         "its"
       ],
       "answer": 3,
-      "explanation": "The possessive pronoun 'its' takes no apostrophe, so 'its' is correct. 'It's' expands to 'it is,' and 'the cat licked it is paws' is nonsense; spelling out 'it is' fails the same test. 'Its'' is not an English word."
+      "explanation": "The possessive pronoun 'its' shows whose doors opened and takes no apostrophe. 'It's' means 'it is' or 'it has,' neither of which fits before doors; the spelled-out 'it is' fails for the same reason. 'Its'' is not a possessive form."
     }
   ]
 }

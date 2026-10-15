@@ -81,7 +81,7 @@
     {
       "heading": "Listing commas",
       "body": [
-        "Separate three or more list items with commas. Two ordinary items joined by and do not need a comma between them. If and joins two complete thoughts, use the clause-joining comma rule instead.",
+        "Separate three or more list items with commas. The final serial comma before and is a style choice unless clarity requires it. Two ordinary items joined by and do not need a comma; if and joins complete thoughts, check the clause boundary instead.",
         "For two adjectives, try swapping them or inserting and. “Old, limping dog” passes: both words describe dog separately. “Three large dogs” does not: three tells how many large dogs. Those adjectives work together without a comma."
       ],
       "examples": [
@@ -130,6 +130,27 @@
         "For a name, decide whether it identifies or adds detail. For a paired interruption, cross it out and reread. Reject a lone comma separating subject and verb. Judge each full sentence rather than choosing by how many commas it has."
       ],
       "tip": "Same words, different commas: that is a comma question. Name every comma's job or cut the comma."
+    },
+    {
+      "heading": "Advanced transfer: restriction depends on the argument",
+      "body": [
+        "Do not decide whether a clause is essential just from who or which. Determine whether it narrows a set or adds information about an already identified member.",
+        "A long subject is still one subject. Keep its restrictive clauses attached, and do not place a comma before its main verb unless that mark closes an interruption opened earlier."
+      ],
+      "examples": [
+        {
+          "text": "Of the twelve jars, the jars that had cracked lids were discarded.",
+          "label": "That had cracked lids selects a subset; no enclosing commas.",
+          "good": true
+        },
+        {
+          "text": "Of the twelve jars, the jars that had cracked lids, were discarded.",
+          "label": "The lone comma separates the complete subject from were discarded.",
+          "good": false
+        }
+      ],
+      "tip": "State whether the writer means all the items or only a subset, then locate the real subject-verb boundary.",
+      "teachingRevision": 2
     }
   ],
   "check": [
@@ -167,7 +188,7 @@
         ", and onion rings,"
       ],
       "answer": 1,
-      "explanation": "The list needs a comma before 'and' and nothing after it: 'coconut shrimp, hot wings, and onion rings to share.' NO CHANGE puts a comma after 'and' with nothing non-essential following it, so that comma has no job. Both choices ending in 'onion rings,' insert a jobless comma between the list and 'to share.'"
+      "explanation": "The offered correct version uses a serial comma before and without inserting a comma after it. A serial comma is not universally mandatory, but punctuation must remain coherent. The other choices insert a comma between and and its object, or add an unnecessary comma between onion rings and to share."
     }
   ]
 }

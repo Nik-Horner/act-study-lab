@@ -28,6 +28,8 @@ export interface Passage {
 export interface Question {
   assessment?: boolean;
   replacementId?: string;
+  lessonSections?: number[];
+  teachingSections?: number[];
   id: string;
   topic: string;
   subject: Subject;

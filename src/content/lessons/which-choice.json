@@ -70,6 +70,27 @@
         "State the goal, test each option against it, then read your choice in context. NO CHANGE competes on the same terms."
       ],
       "tip": "If two choices both sound good, reread the goal. Exactly one of them does the stated job, and the goal words break the tie."
+    },
+    {
+      "heading": "Advanced transfer: a whole-essay goal and an earned conclusion",
+      "body": [
+        "For an essay-level goal, summarize the argument or narrative arc before choosing a local revision. A conclusion may echo an opening image with a changed meaning rather than simply repeat the thesis.",
+        "Test every part of the goal: linking an image, showing a change, and maintaining tone are separate demands. An on-topic sentence can still fail because it introduces a new claim, merely summarizes facts, or overstates the change."
+      ],
+      "examples": [
+        {
+          "text": "Opening: a locked gate marks a neglected park. After residents restore it, the conclusion says, 'Now the gate stands open as neighbors gather beneath the repaired lights.'",
+          "label": "The returned gate image demonstrates the change from exclusion to shared use.",
+          "good": true
+        },
+        {
+          "text": "Conclusion: 'Parks require mowing, lighting, and careful long-term budgeting.'",
+          "label": "Related to parks, but it introduces maintenance advice instead of completing the story’s opening image.",
+          "good": false
+        }
+      ],
+      "tip": "State the essay’s starting image, the change it develops, and what the conclusion must make the reader understand.",
+      "teachingRevision": 2
     }
   ],
   "check": [

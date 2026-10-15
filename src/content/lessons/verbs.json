@@ -90,6 +90,27 @@
         "Cross out phrases between subject and verb. Match one or more than one, check when the event happens, and use the past-participle form after have/has/had. A choice can pass one check and fail another."
       ],
       "tip": "If two choices commit the same error, such as two plural verbs for a singular subject, eliminate both at once. The right answer must stand apart from every other choice."
+    },
+    {
+      "heading": "Advanced transfer: inverted subjects and changes in time",
+      "body": [
+        "A subject can come after its verb: Inside the case lies a manuscript. Locate the head noun, not the nearby plural inside a phrase or relative clause.",
+        "A shift in tense is justified when time changes. A historical account can use past tense for a discovery and present tense for a fact still true. Keep the sentence's claim, its time signals, and agreement together."
+      ],
+      "examples": [
+        {
+          "text": "Among the drawings recovered from the attic lies a map that still shows the old boundary.",
+          "label": "Map controls lies despite drawings; still shows expresses the map’s continuing content.",
+          "good": true
+        },
+        {
+          "text": "Among the drawings recovered from the attic lie a map that still shows the old boundary.",
+          "label": "The plural verb is attracted to drawings instead of agreeing with map.",
+          "good": false
+        }
+      ],
+      "tip": "Find the head subject first; determine the time of the specific claim second.",
+      "teachingRevision": 2
     }
   ],
   "check": [

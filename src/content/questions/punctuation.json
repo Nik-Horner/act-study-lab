@@ -199,37 +199,37 @@
     {
       "id": "punctuation-014",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The actors rehearsed for weeks[[,]] consequently, opening night went off without a hitch.",
       "choices": [
         "NO CHANGE",
-        ":",
+        "; because",
         " ",
         ";"
       ],
       "answer": 3,
-      "explanation": "'Consequently' is a conjunctive adverb, so a semicolon must come before it when it links two independent clauses. The original comma is a splice, a colon would need the second clause to explain the first rather than state its result, and deleting the punctuation fuses the clauses into a run-on."
+      "explanation": "'Consequently' is a conjunctive adverb, so a semicolon must come before it when it links two independent clauses. The original comma is a splice, '; because' makes the second part dependent and strands it after a semicolon, and deleting the punctuation fuses the clauses into a run-on."
     },
     {
       "id": "punctuation-015",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The hikers reached the summit at noon[[;]] exhausted but triumphant, they snapped a photo.",
       "choices": [
         "NO CHANGE",
         " when",
         ",",
-        ":"
+        "; because"
       ],
       "answer": 0,
-      "explanation": "Both sides are independent clauses ('they snapped a photo' has its own subject and verb), so a semicolon is correct. A comma creates a splice, a colon would need the second clause to explain the first, and 'when' garbles the sentence, stranding 'they snapped a photo' after the comma."
+      "explanation": "Both sides are independent clauses ('they snapped a photo' has its own subject and verb), so a semicolon is correct. A comma creates a splice, '; because' wrongly places a dependent clause after a semicolon, and 'when' garbles the sentence, stranding 'they snapped a photo' after the comma."
     },
     {
       "id": "punctuation-016",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The novel's first chapter[[, which runs sixty pages]] sets up every later plot twist.",
       "choices": [
@@ -439,37 +439,37 @@
     {
       "id": "punctuation-030",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The bridge was closed for repairs[[,]] therefore, commuters took the long detour.",
       "choices": [
         "NO CHANGE",
-        ":",
+        "; because",
         ";",
         " "
       ],
-      "explanation": "'Therefore' is a conjunctive adverb, so a semicolon must come before it when it links two independent clauses. The original comma is a splice, a colon would need the second clause to explain the first rather than state its result, and deleting the punctuation fuses the clauses into a run-on.",
+      "explanation": "'Therefore' is a conjunctive adverb, so a semicolon must come before it when it links two independent clauses. The original comma is a splice, '; because' makes the second part dependent and strands it after a semicolon, and deleting the punctuation fuses the clauses into a run-on.",
       "answer": 2
     },
     {
       "id": "punctuation-031",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The orchestra finished the symphony at midnight[[;]] breathless but proud, the musicians took their bows.",
       "choices": [
         "NO CHANGE",
-        ":",
+        "; because",
         " as",
         ","
       ],
-      "explanation": "Both sides are independent clauses ('the musicians took their bows' has its own subject and verb), so a semicolon is correct. A comma creates a splice, a colon would need the second clause to explain the first, and 'as' garbles the sentence, stranding 'the musicians took their bows' after the comma.",
+      "explanation": "Both sides are independent clauses ('the musicians took their bows' has its own subject and verb), so a semicolon is correct. A comma creates a splice, '; because' wrongly places a dependent clause after a semicolon, and 'as' garbles the sentence, stranding 'the musicians took their bows' after the comma.",
       "answer": 0
     },
     {
       "id": "punctuation-032",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The town's oldest diner[[, which opened in 1948]] still serves its original pancake recipe.",
       "choices": [
@@ -480,6 +480,36 @@
       ],
       "explanation": "The nonessential clause needs a matching pair of commas around it. The original opens with a comma but never closes it, dropping the marks removes punctuation the interruption needs, and the dash-then-semicolon option mismatches the marks and adds a stray semicolon.",
       "answer": 3
+    },
+    {
+      "stem": "Three researchers led the fieldwork: Ada Chen, a botanist[[, Luis]] Mora, a soil chemist; and Nia Ford, a hydrologist.",
+      "questionText": "Which choice clearly separates the first two list items?",
+      "choices": [
+        "NO CHANGE",
+        "; Luis",
+        ": Luis",
+        ". Luis"
+      ],
+      "answer": 1,
+      "explanation": "Each item contains a name and an appositive job description separated by a comma. A semicolon before Luis separates the whole Ada Chen item from the Luis Mora item and matches the later semicolon before and. A comma blurs item boundaries; a colon mislabels Luis as an explanation of botanist; a period strands the remaining list.",
+      "id": "punctuation-transfer-01",
+      "category": "CSE",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "The revised method offered one advantage that the earlier trials had not achieved[[; because]] every sample could be tested without opening its container.",
+      "questionText": "Which choice correctly introduces the explanation of that advantage?",
+      "choices": [
+        "NO CHANGE",
+        ",",
+        "; which",
+        ":"
+      ],
+      "answer": 3,
+      "explanation": "The introduction is a complete clause, and every sample could be tested without opening its container explains the one advantage. A colon introduces that explanation. '; because' and '; which' both put dependent material after a semicolon; a comma alone splices two independent clauses.",
+      "id": "punctuation-transfer-02",
+      "category": "CSE",
+      "difficulty": "hard"
     }
   ]
 }

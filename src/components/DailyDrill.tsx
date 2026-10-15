@@ -6,6 +6,7 @@ import type { Question } from "@/lib/act/types";
 import { QUESTION_TARGET_SECONDS, answerPacing } from "@/lib/question-pacing";
 import { renderStem, fmtTime } from "@/lib/format";
 import { QuestionView } from "./act/QuestionView";
+import { displayChoiceOrder } from "@/lib/act/choice-order";
 import { useQuestionNavigation } from "./act/useQuestionNavigation";
 import { Card } from "./ui/Card";
 import { Button } from "./ui/Button";
@@ -88,7 +89,12 @@ export function DailyDrill({
       const n = ["1", "2", "3", "4"].indexOf(e.key);
       if (!revealed && !saving && !failed && (i >= 0 || n >= 0)) {
         e.preventDefault();
-        void submit(i >= 0 ? i : n);
+        const position = i >= 0 ? i : n;
+        void submit(
+          q.subject === "reading"
+            ? displayChoiceOrder(q as Question)[position]
+            : position,
+        );
       }
     }
     window.addEventListener("keydown", key);

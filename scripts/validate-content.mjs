@@ -22,6 +22,7 @@ const lessons = [
 const questions = [
   ...read("math-questions"),
   ...read("math-extra-questions"),
+  ...read("math-method-questions"),
   ...read("science-questions"),
 ];
 const exams = ["math", "science"].flatMap((subject) =>

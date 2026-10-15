@@ -126,15 +126,15 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "The final results were [[different than]] the team's earlier prediction.",
+      "stem": "The final results were [[different with]] the team's earlier prediction.",
       "choices": [
         "NO CHANGE",
-        "different to",
+        "different of",
         "different from",
         "differently than"
       ],
       "answer": 2,
-      "explanation": "Before a noun phrase like 'the team's earlier prediction,' standard written English pairs 'different' with 'from.' 'Different than' and 'different to' are nonstandard, and the adverb 'differently' cannot follow the linking verb 'were.'"
+      "explanation": "'Different from' correctly links the adjective to the prediction being compared. 'With' and 'of' do not fit this construction; 'differently' is an adverb where the linking verb 'were' needs an adjective. 'Different than' can occur in standard American English and is not an offered error here."
     },
     {
       "id": "misc-grammar-010",
@@ -164,7 +164,7 @@
         "it's"
       ],
       "answer": 0,
-      "explanation": "The possessive of 'it' is 'its' with no apostrophe, so NO CHANGE is correct. 'It's' means 'it is,' 'its'' is not a word, and 'their' is plural for one dog."
+      "explanation": "The dog is referred to as 'it,' so the possessive 'its' agrees and NO CHANGE is correct. 'It's' means 'it is' or 'it has'; 'its'' is not a possessive form. Singular 'they' is valid for a person, but 'their' does not preserve this sentence's intended reference to the dog as 'it'."
     },
     {
       "id": "misc-grammar-012",
@@ -199,7 +199,7 @@
     {
       "id": "misc-grammar-014",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "Honesty is the guiding [[principal]] that shapes every decision she makes.",
       "choices": [
@@ -214,7 +214,7 @@
     {
       "id": "misc-grammar-015",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "I would rather hike the long trail [[than take]] the crowded shuttle.",
       "choices": [
@@ -229,7 +229,7 @@
     {
       "id": "misc-grammar-016",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "She is more interested in painting [[than to study]] history.",
       "choices": [
@@ -454,7 +454,7 @@
     {
       "id": "misc-grammar-031",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
       "stem": "The chef chose a side dish that would [[compliment]] the rich flavor of the duck.",
       "choices": [
@@ -469,17 +469,47 @@
     {
       "id": "misc-grammar-032",
       "category": "CSE",
-      "difficulty": "hard",
+      "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "This blend of tea tastes noticeably [[different than]] the one we tried last week.",
+      "stem": "This blend of tea tastes noticeably [[different with]] the one we tried last week.",
       "choices": [
         "NO CHANGE",
         "differently from",
         "different from",
-        "different to"
+        "different of"
       ],
       "answer": 2,
-      "explanation": "Standard written English pairs 'different' with 'from,' and an adjective is needed after 'tastes.' 'Different than' and 'different to' are nonstandard, and the adverb 'differently' wrongly modifies the linking verb."
+      "explanation": "The linking verb 'tastes' needs the adjective 'different,' and 'from' introduces the other blend. 'With' and 'of' do not fit this construction; 'differently' would describe how something tastes rather than the tea's flavor. Do not treat every occurrence of American 'different than' as an error."
+    },
+    {
+      "stem": "The restoration budget for the mural was larger than [[the sculpture]].",
+      "questionText": "Which choice makes the comparison logically consistent?",
+      "choices": [
+        "NO CHANGE",
+        "restoring the sculpture",
+        "the sculpture cost",
+        "that for the sculpture"
+      ],
+      "answer": 3,
+      "explanation": "'That for the sculpture' means the restoration budget for the sculpture, so one budget is compared with another. The sculpture is an object, restoring the sculpture is an activity, and the sculpture cost adds a competing verb instead of the corresponding budget. Compare budgets with budgets.",
+      "id": "misc-grammar-transfer-01",
+      "category": "CSE",
+      "difficulty": "hard"
+    },
+    {
+      "stem": "Under the new lights, the repaired surface looked [[smoothly]], though the conservator had applied the final coat unevenly.",
+      "questionText": "Which choice supplies the form required by looked in this sentence?",
+      "choices": [
+        "NO CHANGE",
+        "smooth",
+        "more smoothly",
+        "smoothness"
+      ],
+      "answer": 1,
+      "explanation": "Looked functions as a linking verb meaning appeared, so the adjective smooth describes surface. Smoothly and more smoothly are adverbs; smoothness is a noun. Unevenly appropriately describes the action applied in the later clause and does not require the earlier description to be an adverb.",
+      "id": "misc-grammar-transfer-02",
+      "category": "CSE",
+      "difficulty": "hard"
     }
   ]
 }

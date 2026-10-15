@@ -105,7 +105,7 @@ test("retired Reading mistakes can be resolved with independent replacements and
 });
 test("completed-section misses receive active skill practice without revealing held-out questions", async () => {
   const { getExamQuestions } = await import("../src/lib/act/content");
-  const { practiceForMisses } = await import("../src/lib/act/progress-model");
+  const { practiceForMisses } = await import("../src/lib/act/question-method");
   for (const id of ["reading-1", "math-1", "science-1"]) {
     const missed = getExamQuestions(id)[0];
     const active = getQuestions().filter((q) => q.subject === missed.subject);

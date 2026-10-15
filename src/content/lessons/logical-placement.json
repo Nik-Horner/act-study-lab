@@ -31,17 +31,17 @@
       ],
       "examples": [
         {
-          "text": "Cause: 'The dam cracked overnight.' Effect: 'By morning, the valley was underwater.'",
-          "label": "cause sits right before its effect",
+          "text": "'The valley was underwater by morning. A crack in the dam overnight explained the flooding.'",
+          "label": "Effect first, then a clearly signaled explanation: also coherent",
           "good": true
         },
         {
-          "text": "'By morning, the valley was underwater. The dam cracked overnight.'",
-          "label": "the result appears before its cause",
+          "text": "'As a result, the valley was underwater. Only later does the paragraph introduce any cause.'",
+          "label": "A result connector needs an established cause to refer to",
           "good": false
         }
       ],
-      "tip": "If a sentence states a result, its cause must already be on the page."
+      "tip": "For a chronological cause-and-effect explanation, keep causes before results. Flashbacks can explain an effect afterward when the wording clearly signals the shift."
     },
     {
       "heading": "Use pronouns and references as anchors",
@@ -61,7 +61,7 @@
           "good": false
         }
       ],
-      "tip": "For every 'it,' 'they,' 'this,' or 'these,' the noun it names must sit in an earlier sentence."
+      "tip": "Find the intended referent and choose the position that makes it clear. An essay may already have introduced the noun in an earlier paragraph."
     },
     {
       "heading": "How to spot these questions",
@@ -70,6 +70,27 @@
         "Read the preceding sentence, the moved sentence, and the following sentence together. Both links must work; a good connection on only one side is not enough."
       ],
       "tip": "The clue lives inside the movable sentence. Find its anchor before you look at the answer choices."
+    },
+    {
+      "heading": "Advanced transfer: paragraph boundaries and transitions",
+      "body": [
+        "A paragraph break should mark a change in the job the writing performs: for example, from explaining a method to evaluating its limitations. A new fact alone does not require a new paragraph.",
+        "For placement across paragraphs, test both links. A sentence may close the previous argument and introduce the next, so it needs to refer accurately backward while preparing the new focus. Follow rhetorical function as well as time."
+      ],
+      "examples": [
+        {
+          "text": "A paragraph explains how an archive scans maps. The next sentence begins, 'Access, however, posed a different problem: few residents had reliable internet.'",
+          "label": "A paragraph break before Access marks a shift from making digital copies to who can use them.",
+          "good": true
+        },
+        {
+          "text": "Breaking after 'Access, however, posed a different problem' and before the explanation of that problem.",
+          "label": "That break separates the new topic from the explanation that develops it.",
+          "good": false
+        }
+      ],
+      "tip": "Label each paragraph’s job in a few words before testing a sentence position.",
+      "teachingRevision": 2
     }
   ],
   "check": [

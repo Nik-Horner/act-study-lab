@@ -21,7 +21,7 @@
           "good": false
         }
       ],
-      "tip": "Ask: does another word in the sentence already say this? If yes, the repeat is redundant. Check prefixes too: re- means again, pre- means before."
+      "tip": "Ask whether the words add meaning needed here. A repeated idea may be removable, while a time, contrast, or degree word can carry a real distinction."
     },
     {
       "heading": "Cutting wordiness",
@@ -89,7 +89,28 @@
         "Look for choices with similar meaning but different lengths, repeated ideas, or an OMIT/DELETE option.",
         "Test deletion and the shortest plausible choice. Keep it only if the full sentence stays grammatical, clear, and complete in meaning."
       ],
-      "tip": "When all four choices mean the same thing, the answer is almost never NO CHANGE on a long underline. Start short and work up."
+      "tip": "When choices preserve the same meaning and grammar, prefer the concise one. NO CHANGE can be correct even for a long underline."
+    },
+    {
+      "heading": "Advanced transfer: redundancy across a paragraph",
+      "body": [
+        "A detail can repeat an earlier sentence even if the words differ. Compare its contribution with the whole paragraph, then retain any new contrast, condition, or limitation.",
+        "The shortest option can distort a finding by removing who was studied, the comparison, or the degree of certainty. Cut repeated wording while preserving those facts; an efficient sentence can still need a qualifying phrase."
+      ],
+      "examples": [
+        {
+          "text": "The survey included only registered participants. Their average travel time fell by six minutes.",
+          "label": "The second sentence adds the result without repeating the sample restriction.",
+          "good": true
+        },
+        {
+          "text": "The survey included only registered participants. The registered participants who had registered for the survey were included.",
+          "label": "The second sentence restates the sample without supplying a new result.",
+          "good": false
+        }
+      ],
+      "tip": "Before cutting, name the new information and the qualification that must survive.",
+      "teachingRevision": 2
     }
   ],
   "check": [

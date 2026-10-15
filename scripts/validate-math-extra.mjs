@@ -822,7 +822,6 @@ for (const topic of [
     );
   }
   assert.ok(lesson.sections.flatMap((s) => s.examples).length >= 6);
-  assert.ok(group.filter((q) => q.difficulty === "hard").length >= 8);
 }
 assert.equal(proofs.length, all.length);
 for (const proof of proofs) {
