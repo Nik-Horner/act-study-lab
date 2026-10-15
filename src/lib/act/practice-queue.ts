@@ -1,6 +1,7 @@
 import type { Question, Subject } from "./types";
 import { subjectBaseline, type StudyState } from "./progress-model";
 import { QUESTION_TARGET_SECONDS } from "../question-pacing";
+import { exposureRank, seenPassages } from "./question-exposure";
 
 export function practiceStage(
   questions: Question[],
@@ -61,6 +62,7 @@ export function selectPracticeSet(
           : [4, 5, 3];
   const levels = ["easy", "medium", "hard"] as const;
   const seen = new Set(state.answers.map((a) => a.questionId));
+  const priorPassages = seenPassages(seen, questions);
   const selected: Question[] = [];
   const used = new Set<string>();
   const topics = new Map<string, number>();
@@ -82,8 +84,10 @@ export function selectPracticeSet(
       if (q.passage) passages.add(q.passage.id);
     }
   };
-  for (const repeated of [false, true]) {
-    const pool = active.filter((q) => seen.has(q.id) === repeated);
+  for (const rank of [0, 1, 2]) {
+    const pool = active.filter(
+      (q) => exposureRank(q, seen, priorPassages) === rank,
+    );
     levels.forEach((level, i) =>
       take(
         pool.filter((q) => q.difficulty === level),

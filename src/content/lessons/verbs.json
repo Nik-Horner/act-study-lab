@@ -21,13 +21,15 @@
           "good": false
         }
       ],
-      "tip": "Cross out every 'of ...' phrase between the subject and the verb, then read what remains: 'The list ... was longer.' The subject is what survives the cut."
+      "tip": "Locate the head of the full subject, including when the subject follows the verb. Set aside intervening modifiers, then check number and tense against that actual subject.",
+      "teachingRevision": 3
     },
     {
       "heading": "Collective nouns and indefinite pronouns",
       "body": [
         "Each, everyone, everybody, either, neither, and one take singular agreement, even with a plural phrase afterward: “Each of the players is ready.”",
-        "A collective noun acting as a single unit also takes singular agreement: “The committee votes tomorrow.” Check how the group functions in context."
+        "A collective noun acting as a single unit also takes singular agreement: “The committee votes tomorrow.” Check how the group functions in context.",
+        "With either X or Y and neither X nor Y, the nearer subject controls agreement: either the guides or the curator is speaking; either the curator or the guides are speaking."
       ],
       "examples": [
         {
@@ -39,9 +41,15 @@
           "text": "Everyone on the committees have signed the form.",
           "label": "'Everyone' wrongly treated as plural",
           "good": false
+        },
+        {
+          "text": "Neither the assistant nor the visiting researchers have the final report.",
+          "label": "The nearer subject researchers is plural, so have agrees.",
+          "good": true
         }
       ],
-      "tip": "'Each,' 'every,' and 'one' are always singular, no matter what plural noun follows. 'Each of the dogs barks.'"
+      "tip": "When each, everyone, every one, either, or neither is the subject, use singular agreement. In either/or and neither/nor pairs, use the nearer subject instead.",
+      "teachingRevision": 3
     },
     {
       "heading": "Keep tense consistent",
@@ -67,7 +75,8 @@
       "heading": "Irregular verbs: past vs. past participle",
       "body": [
         "After have, has, or had, use a special verb form called the past participle: had run, swum, drunk, begun, sung, rung, written, broken.",
-        "Compare the simple past: ran, swam, drank, began, sang, rang, wrote, broke. A form such as sung needs its helping verb to serve as the main verb."
+        "Compare the simple past: ran, swam, drank, began, sang, rang, wrote, broke. A form such as sung needs its helping verb to serve as the main verb.",
+        "Lay means place an object: lay, laid, have laid. Lie means recline: lie, lay, have lain. Check whether the verb takes an object before selecting its form."
       ],
       "examples": [
         {
@@ -79,9 +88,15 @@
           "text": "By Friday she had ran twelve miles.",
           "label": "Simple past 'ran' wrongly used after 'had'",
           "good": false
+        },
+        {
+          "text": "The patient lay down while the assistant laid a tray beside the bed.",
+          "label": "Lay is past-tense reclining; laid places the object tray.",
+          "good": true
         }
       ],
-      "tip": "After 'have/has/had,' use the participle: 'had run,' 'had swum,' 'had begun.' Never 'had ran,' 'had swam,' 'had began.'"
+      "tip": "After 'have/has/had,' use the participle: 'had run,' 'had swum,' 'had begun.' Never 'had ran,' 'had swam,' 'had began.'",
+      "teachingRevision": 3
     },
     {
       "heading": "How to spot these questions",
@@ -107,10 +122,15 @@
           "text": "Among the drawings recovered from the attic lie a map that still shows the old boundary.",
           "label": "The plural verb is attracted to drawings instead of agreeing with map.",
           "good": false
+        },
+        {
+          "text": "In 1986, the survey team recorded the river’s course. The river still follows that course today.",
+          "label": "Recorded belongs to the historical survey; follows states the river’s continuing present course.",
+          "good": true
         }
       ],
       "tip": "Find the head subject first; determine the time of the specific claim second.",
-      "teachingRevision": 2
+      "teachingRevision": 3
     }
   ],
   "check": [

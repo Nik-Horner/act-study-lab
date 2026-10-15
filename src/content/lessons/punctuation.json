@@ -47,7 +47,8 @@
       "heading": "Dashes: pairs and the colon substitute",
       "body": [
         "After a complete clause, a single dash can introduce an explanation or list, much like a colon.",
-        "A pair of dashes can enclose an interruption. Use matching opening and closing marks; do not start an interruption with a dash and close it with a comma."
+        "A pair of dashes can enclose an interruption. Use matching opening and closing marks; do not start an interruption with a dash and close it with a comma.",
+        "Commas and parentheses also enclose nonessential interruptions. Match the opening and closing marks, and keep a restrictive identifying clause attached without enclosing punctuation."
       ],
       "examples": [
         {
@@ -59,9 +60,15 @@
           "text": "My oldest friend — we met in third grade, moved away last year.",
           "label": "Dash opens, comma closes: mismatched",
           "good": false
+        },
+        {
+          "text": "The translator, who had studied the dialect for years, recognized the phrase.",
+          "label": "A matched pair of commas encloses added information about an identified translator.",
+          "good": true
         }
       ],
-      "tip": "Interrupting dashes travel in pairs. A dash must close with a dash, not a comma."
+      "tip": "Interrupting dashes travel in pairs. A dash must close with a dash, not a comma.",
+      "teachingRevision": 3
     },
     {
       "heading": "Apostrophes: possession vs. contraction",
@@ -79,9 +86,15 @@
           "text": "The committee published it's report.",
           "label": "'It's' means 'it is,' which fails here",
           "good": false
+        },
+        {
+          "text": "The people’s representative collected the residents’ signatures.",
+          "label": "People is an irregular plural, so people’s takes ’s; residents already ends in s, so add only an apostrophe.",
+          "good": true
         }
       ],
-      "tip": "Expand the contraction. If 'it is' or 'who is' makes sense, use the apostrophe; if not, use the possessive."
+      "tip": "Expand it’s as it is or it has, and who’s as who is or who has. Keep the contraction only when the expansion fits; otherwise test the appropriate possessive or plain word.",
+      "teachingRevision": 3
     },
     {
       "heading": "Quotation marks and surrounding punctuation",
@@ -127,10 +140,15 @@
           "text": "The team visited: Salem, Oregon; Reno, Nevada; and Provo, Utah.",
           "label": "The colon splits visited from the objects needed to complete its introduction.",
           "good": false
+        },
+        {
+          "text": "The field test had one requirement that earlier trials had not met: every sensor had to work without a cable.",
+          "label": "The complete introductory clause is followed by a colon introducing its requirement, expressed as another complete clause.",
+          "good": true
         }
       ],
       "tip": "First identify the level of the boundary: words inside an item, whole list items, or complete clauses.",
-      "teachingRevision": 2
+      "teachingRevision": 3
     }
   ],
   "check": [

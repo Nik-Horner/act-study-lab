@@ -23,12 +23,23 @@ const questions = [
   ...read("math-questions"),
   ...read("math-extra-questions"),
   ...read("math-method-questions"),
+  ...read("math-skill-questions"),
   ...read("science-questions"),
 ];
+const englishSkillQuestions = read("english-skill-questions");
+assert.equal(read("math-skill-questions").length, 80, "Focused Math bank");
+assert.equal(englishSkillQuestions.length, 93, "Focused English bank");
 const exams = ["math", "science"].flatMap((subject) =>
   read(`${subject}-exams`),
 );
 const topicMap = new Map(topics.map((topic) => [topic.slug, topic]));
+const structuralTopics = new Map([
+  ...topicMap,
+  ...read("topics").topics.map((topic) => [
+    topic.slug,
+    { ...topic, subject: "english" },
+  ]),
+]);
 const questionMap = new Map(
   questions.map((question) => [question.id, question]),
 );
@@ -39,12 +50,17 @@ assert.equal(questionMap.size, questions.length, "Question ids must be unique");
 const allIds = new Set();
 for (const question of [
   ...questions,
+  ...englishSkillQuestions.map((question) => ({
+    ...question,
+    subject: question.subject ?? "english",
+  })),
   ...lessons.flatMap((lesson) => lesson.check),
 ]) {
   assert(!allIds.has(question.id), `Duplicate id ${question.id}`);
   allIds.add(question.id);
-  assert(topicMap.has(question.topic), `${question.id}: topic`);
-  assert.equal(topicMap.get(question.topic).subject, question.subject);
+  assert(structuralTopics.has(question.topic), `${question.id}: topic`);
+  assert.equal(structuralTopics.get(question.topic).subject, question.subject);
+  assert(question.stem.trim(), `${question.id}: missing task context`);
   assert(["easy", "medium", "hard"].includes(question.difficulty));
   assert.equal(
     question.choices.length,
@@ -141,5 +157,5 @@ for (const question of [
   passages.set(question.passage.id, value);
 }
 console.log(
-  `Content validated: ${topics.length} deep lessons; ${questions.length - reserved.size} drills; ${reserved.size} timed section questions; ${lessons.reduce((count, lesson) => count + lesson.check.length, 0)} quick checks. All ${allIds.size} items have four unique choices and valid references.`,
+  `Content validated: ${topics.length} deep Math/Science lessons; ${questions.length - reserved.size} Math/Science drills (including 80 focused Math additions); ${englishSkillQuestions.length} focused English additions; ${reserved.size} timed section questions; ${lessons.reduce((count, lesson) => count + lesson.check.length, 0)} quick checks. All ${allIds.size} items have four unique choices and valid references.`,
 );

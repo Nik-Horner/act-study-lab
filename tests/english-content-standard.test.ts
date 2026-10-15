@@ -48,8 +48,8 @@ function correction(examId: string, number: number) {
 }
 
 test("every English question and check has a current individual editorial proof", () => {
-  assert.equal(ledger.proofRecords.length, 665);
-  assert.equal(new Set(ledger.proofRecords.map((p) => p.id)).size, 665);
+  assert.equal(ledger.proofRecords.length, 758);
+  assert.equal(new Set(ledger.proofRecords.map((p) => p.id)).size, 758);
   for (const proof of ledger.proofRecords) {
     const source = read(proof.source);
     let question;
@@ -96,12 +96,11 @@ test("every English question and check has a current individual editorial proof"
 test("advanced English teaching precedes independent contextual transfer practice", () => {
   for (const topic of getTopics()) {
     const lesson = getLesson(topic.slug);
-    const appended = lesson.sections.at(-1)!;
+    const appended = lesson.sections.find((section) =>
+      section.heading.startsWith("Advanced transfer:"),
+    )!;
     assert.match(appended.heading, /^Advanced transfer:/);
-    assert.equal(
-      (appended as { teachingRevision?: number }).teachingRevision,
-      2,
-    );
+    assert((appended as { teachingRevision?: number }).teachingRevision! >= 2);
     const questions = getQuestions(topic.slug).filter((q) =>
       q.id.includes("-transfer-"),
     );

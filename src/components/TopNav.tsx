@@ -15,7 +15,7 @@ export async function TopNav() {
       <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3.5">
         <Link
           href={user ? "/dashboard" : "/"}
-          className="flex items-center gap-2 font-semibold"
+          className="flex min-h-11 items-center gap-2 font-semibold"
         >
           <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">
             36

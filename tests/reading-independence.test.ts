@@ -14,6 +14,7 @@ import {
   getQuestions,
 } from "../src/lib/act/content";
 import { DAILY_CURRICULUM } from "../src/lib/daily-curriculum";
+import { dailyScopes } from "../src/lib/daily-plan";
 
 const normalize = (text: string) =>
   text
@@ -33,7 +34,13 @@ const instruction = lessons
 
 test("Reading assessment uses original passages with no teaching, check, or exam exposure", () => {
   const passages = new Map(practice.map((q) => [q.passage.id, q.passage]));
-  assert.equal(passages.size, 24);
+  assert.equal(passages.size, 48);
+  const extendedPassages = new Set([
+    "reading-practice-v3-p13",
+    "reading-practice-v3-p15",
+    "reading-practice-v3-p21",
+    "reading-practice-v3-p22",
+  ]);
   const otherPassages = new Set(
     legacy.map((q) => normalize(q.passage.context)),
   );
@@ -52,9 +59,9 @@ test("Reading assessment uses original passages with no teaching, check, or exam
       );
     }
     const unit = practice.filter((q) => q.passage.id === id);
-    assert.equal(unit.length, 6);
+    assert.equal(unit.length, extendedPassages.has(id) ? 7 : 6);
     assert.equal(new Set(unit.map((q) => q.topic)).size, 6);
-    assert.equal(new Set(unit.map((q) => normalize(q.questionText))).size, 6);
+    assert.equal(new Set(unit.map((q) => normalize(q.questionText))).size, unit.length);
     for (const q of unit) {
       assert.equal(q.passage.context, passage.context);
       assert.equal(new Set(q.choices.map(normalize)).size, 4);
@@ -84,14 +91,33 @@ test("daily and standalone Reading use the same independent pool with every diff
   for (const lesson of lessons) {
     const expected = practice.filter((q) => q.topic === lesson.slug);
     const active = getQuestions(lesson.slug);
-    assert.equal(active.length, 24);
+    assert.equal(active.length, ["reading-details", "reading-craft"].includes(lesson.slug) ? 50 : 48);
     assert.deepEqual(
       active.map((q) => q.id),
       expected.map((q) => q.id),
     );
     for (const difficulty of ["easy", "medium", "hard"]) {
-      assert.equal(active.filter((q) => q.difficulty === difficulty).length, 8);
+      assert.equal(
+        active.filter((q) => q.difficulty === difficulty).length,
+        (lesson.slug === "reading-details" && difficulty === "medium") ||
+          (lesson.slug === "reading-craft" && difficulty === "hard") ? 18 : 16,
+      );
     }
+    const focused = dailyScopes("reading").filter((scope) => scope.topic.slug === lesson.slug);
+    assert.equal(focused.length, 4, "each topic has four distinct taught skills");
+    assert.deepEqual(
+      [...new Set(focused.flatMap(({ scope }) => scope.practice))].sort((a, b) => a - b),
+      Array.from({ length: active.length }, (_, i) => i),
+      "Daily skills must include the full independent assessment pool",
+    );
+    for (const { scope } of focused) {
+      assert(scope.practice.length >= 2, "each method needs fresh transfer choices");
+      for (const index of scope.practice) {
+        assert.equal(active[index].skillId, scope.skillId);
+        assert(active[index].teachingSections?.every((i) => scope.sections.includes(i)));
+      }
+    }
+    // These published positions remain the migration reference for older plans.
     const scopes = DAILY_CURRICULUM[lesson.slug];
     assert.deepEqual(
       [...new Set(scopes.flatMap((scope) => scope.practice))].sort(
@@ -103,7 +129,7 @@ test("daily and standalone Reading use the same independent pool with every diff
       assert.equal(
         new Set(scope.practice.map((index) => active[index].difficulty)).size,
         3,
-        "every teaching scope must offer all difficulties for personalized selection",
+        "historical scope difficulty availability stays stable",
       );
       assert(
         scope.practice.every((index) => active[index]?.id.startsWith("RP-")),
@@ -114,13 +140,11 @@ test("daily and standalone Reading use the same independent pool with every diff
 
 test("legacy answers remain resolvable while exposed questions do not count as independent assessments", () => {
   const all = new Map(getAllQuestions().map((q) => [q.id, q]));
-  assert.equal(new Set(practice.map((q) => q.id)).size, 144);
+  assert.equal(new Set(practice.map((q) => q.id)).size, 292);
   for (const q of oldPractice) {
-    assert.deepEqual(
-      getQuestion(q.id),
-      q,
-      `${q.id}: historical answer changed`,
-    );
+    const historical = getQuestion(q.id)!;
+    for (const key of Object.keys(q) as (keyof typeof q)[])
+      assert.deepEqual(historical[key], q[key], `${q.id}: historical ${key} changed`);
     assert.equal(all.get(q.id)?.assessment, false, `${q.id}: exposed evidence`);
     const pool = oldPractice.filter((item) => item.topic === q.topic);
     const position = pool.findIndex((item) => item.id === q.id);

@@ -1,0 +1,4787 @@
+{
+  "version": 1,
+  "source": "https://www.act.org/content/act/en/college-and-career-readiness/standards/english-standards.html",
+  "notes": "Authored subskill requirements, not topic-only inference. Worked examples, skill activities, lesson checks and independent drills use separate stimuli. Reporting categories follow ACT; difficulty labels are editorial, not calibrated scores.",
+  "topics": {
+    "sentence-structure": {
+      "skills": {
+        "clause-recognition": {
+          "title": "Recognize an independent or dependent clause",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "While the instruments recorded the vibration",
+            "prompt": "What prevents this word group from standing alone?",
+            "choices": [
+              "It has no subject",
+              "While makes its clause dependent",
+              "Recorded is not a verb"
+            ],
+            "answer": 1,
+            "explanation": "Instruments is the subject and recorded is a finite verb. While makes that complete subject-verb clause dependent on another statement."
+          }
+        },
+        "finite-main-verb": {
+          "title": "Supply a finite main verb",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The ceramic bowl, decorated with three blue circles, ___ on the upper shelf.",
+            "prompt": "Which choice supplies the main predicate?",
+            "choices": [
+              "displaying",
+              "which was displayed",
+              "was displayed"
+            ],
+            "answer": 2,
+            "explanation": "Bowl needs a finite main verb. Was displayed supplies it; displaying is nonfinite and which was displayed creates another modifying clause. The participle decorated does not supply the main predicate."
+          }
+        },
+        "dependent-boundary": {
+          "title": "Attach dependent clauses without a fragment",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            1,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 3
+            }
+          ],
+          "activity": {
+            "evidenceText": "Unless the second test confirms the reading ___ the engineer will leave the device offline.",
+            "prompt": "Which boundary completes the conditional sentence?",
+            "choices": [
+              ";",
+              ". The",
+              ","
+            ],
+            "answer": 2,
+            "explanation": "Unless introduces a dependent condition. A comma attaches it to the main clause beginning the engineer; a semicolon cannot follow the dependent clause, and a period strands it as a fragment."
+          }
+        },
+        "independent-boundary": {
+          "title": "Join independent clauses and preserve the relationship",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            2,
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The cooling system failed during the night ___ the specimen could not be kept at the required temperature.",
+            "prompt": "Which choice both joins the clauses and states the consequence?",
+            "choices": [
+              ", so",
+              ", however",
+              " so,"
+            ],
+            "answer": 0,
+            "explanation": "Each side has its own subject and verb. Comma plus so supplies a correct coordinating boundary and the result relationship; however between commas still creates a splice, and so, puts the comma on the wrong side."
+          }
+        },
+        "conjunctive-adverb": {
+          "title": "Punctuate however between complete clauses",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            2,
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The survey was short ___ however, every response required a detailed explanation.",
+            "prompt": "Which boundary belongs before however?",
+            "choices": [
+              ",",
+              ";",
+              " and"
+            ],
+            "answer": 1,
+            "explanation": "The survey was short and every response required a detailed explanation are independent clauses. However is a conjunctive adverb, so a semicolon or period belongs before it; neither a comma alone nor and however supplies the offered standard construction."
+          }
+        },
+        "nested-main-clause": {
+          "title": "Find the main clause inside layered modifiers",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            1,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The guidelines, which the panel revised after two reviewers objected, ___ the minimum training each volunteer must complete.",
+            "prompt": "Which choice supplies the main verb without adding another subordinate clause?",
+            "choices": [
+              "specifying",
+              "that specify",
+              "specify"
+            ],
+            "answer": 2,
+            "explanation": "Guidelines is the main plural subject; specify supplies its finite main verb. Revised, objected and must complete belong to embedded clauses. Specifying lacks a finite verb, and that specify starts yet another subordinate clause."
+          }
+        },
+        "reason-versus-concession": {
+          "title": "Distinguish an explanatory reason from a concession",
+          "reportingCategory": "CSE",
+          "sections": [
+            2,
+            6
+          ],
+          "workedExamples": [
+            {
+              "section": 6,
+              "example": 0
+            },
+            {
+              "section": 6,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The team kept the uneven stitch marks. Those marks were the only surviving evidence of how the sail had been repaired at sea.",
+            "prompt": "Which connection most clearly states the team’s reason for keeping the marks?",
+            "choices": [
+              "The team kept the marks because they preserved evidence of the repair.",
+              "The team kept the marks although they preserved evidence of the repair.",
+              "The team kept the marks; because they preserved evidence of the repair."
+            ],
+            "answer": 0,
+            "explanation": "Because makes the evidence the motive for preservation. Although would present that evidence as an obstacle; the semicolon cannot introduce the dependent because-clause."
+          }
+        }
+      },
+      "questionSkills": {
+        "daily-clauses-1": [
+          "clause-recognition"
+        ],
+        "daily-clauses-2": [
+          "clause-recognition"
+        ],
+        "daily-clauses-3": [
+          "clause-recognition"
+        ],
+        "daily-clauses-4": [
+          "clause-recognition"
+        ],
+        "daily-clauses-5": [
+          "clause-recognition"
+        ],
+        "daily-clauses-6": [
+          "clause-recognition"
+        ],
+        "sentence-structure-005": [
+          "finite-main-verb"
+        ],
+        "sentence-structure-011": [
+          "finite-main-verb"
+        ],
+        "sentence-structure-017": [
+          "finite-main-verb"
+        ],
+        "sentence-structure-018": [
+          "finite-main-verb"
+        ],
+        "sentence-structure-020": [
+          "finite-main-verb"
+        ],
+        "sentence-structure-021": [
+          "finite-main-verb"
+        ],
+        "sentence-structure-022": [
+          "finite-main-verb"
+        ],
+        "daily-fragments-1": [
+          "finite-main-verb"
+        ],
+        "daily-fragments-2": [
+          "finite-main-verb"
+        ],
+        "daily-fragments-3": [
+          "finite-main-verb"
+        ],
+        "daily-fragments-4": [
+          "finite-main-verb"
+        ],
+        "daily-fragments-5": [
+          "finite-main-verb"
+        ],
+        "daily-fragments-6": [
+          "finite-main-verb"
+        ],
+        "sentence-structure-001": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-003": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-007": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-009": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-013": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-015": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-019": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-030": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-033": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-037": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-002": [
+          "independent-boundary"
+        ],
+        "sentence-structure-004": [
+          "independent-boundary"
+        ],
+        "sentence-structure-006": [
+          "independent-boundary"
+        ],
+        "sentence-structure-008": [
+          "independent-boundary"
+        ],
+        "sentence-structure-010": [
+          "independent-boundary"
+        ],
+        "sentence-structure-012": [
+          "independent-boundary"
+        ],
+        "sentence-structure-016": [
+          "independent-boundary"
+        ],
+        "sentence-structure-023": [
+          "independent-boundary"
+        ],
+        "sentence-structure-024": [
+          "independent-boundary"
+        ],
+        "sentence-structure-025": [
+          "independent-boundary"
+        ],
+        "sentence-structure-026": [
+          "independent-boundary"
+        ],
+        "sentence-structure-027": [
+          "independent-boundary"
+        ],
+        "sentence-structure-028": [
+          "independent-boundary"
+        ],
+        "sentence-structure-029": [
+          "independent-boundary"
+        ],
+        "sentence-structure-031": [
+          "independent-boundary"
+        ],
+        "sentence-structure-032": [
+          "independent-boundary"
+        ],
+        "sentence-structure-034": [
+          "independent-boundary"
+        ],
+        "sentence-structure-035": [
+          "independent-boundary"
+        ],
+        "sentence-structure-036": [
+          "independent-boundary"
+        ],
+        "sentence-structure-038": [
+          "independent-boundary"
+        ],
+        "sentence-structure-014": [
+          "conjunctive-adverb"
+        ],
+        "sentence-structure-transfer-01": [
+          "nested-main-clause"
+        ],
+        "sentence-structure-transfer-02": [
+          "reason-versus-concession"
+        ],
+        "english-skill-sentence-structure-conjunctive-adverb-01": [
+          "conjunctive-adverb"
+        ],
+        "english-skill-sentence-structure-conjunctive-adverb-02": [
+          "conjunctive-adverb"
+        ],
+        "english-skill-sentence-structure-nested-main-clause-01": [
+          "nested-main-clause"
+        ],
+        "english-skill-sentence-structure-nested-main-clause-02": [
+          "nested-main-clause"
+        ],
+        "english-skill-sentence-structure-reason-versus-concession-01": [
+          "reason-versus-concession"
+        ],
+        "english-skill-sentence-structure-reason-versus-concession-02": [
+          "reason-versus-concession"
+        ]
+      },
+      "checkSkills": {
+        "sentence-structure-daily-check-2": [
+          "dependent-boundary"
+        ],
+        "sentence-structure-daily-check-1": [
+          "independent-boundary"
+        ],
+        "sentence-structure-daily-check-3": [
+          "independent-boundary"
+        ]
+      }
+    },
+    "commas": {
+      "skills": {
+        "identifying-name": {
+          "title": "Decide whether a name identifies or adds information",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            },
+            {
+              "section": 2,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The museum employs three guides. Guide ___ leads the evening tours.",
+            "prompt": "Which choice identifies the guide without treating her name as an interruption?",
+            "choices": [
+              ", Beatriz,",
+              " Beatriz",
+              " Beatriz,"
+            ],
+            "answer": 1,
+            "explanation": "The name identifies one of several guides, so it stays attached without commas. Paired commas would treat it as added information about someone already identified; a single trailing comma splits the subject from its verb."
+          }
+        },
+        "intro-and-coordination": {
+          "title": "Mark introductory clauses and coordinated statements",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "After the rehearsal ended ___ the stage manager checked every exit.",
+            "prompt": "Which choice marks the end of the introductory clause?",
+            "choices": [
+              ",",
+              ";",
+              ""
+            ],
+            "answer": 0,
+            "explanation": "After makes the opening clause dependent, so a comma separates it from the following main clause. A semicolon would treat it as independent; omitting the comma obscures the boundary after the introductory clause."
+          }
+        },
+        "nonessential-interruption": {
+          "title": "Enclose nonessential interruptions with paired commas",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The final photograph ___ remained on display after the other pieces were returned.",
+            "prompt": "Which choice adds the description as a balanced interruption?",
+            "choices": [
+              " taken at dawn,",
+              ", taken at dawn,",
+              ", taken at dawn"
+            ],
+            "answer": 1,
+            "explanation": "The photograph remained is the main clause. The optional description taken at dawn requires both opening and closing commas; either single-comma alternative leaves an unbalanced interruption."
+          }
+        },
+        "adjective-and-series": {
+          "title": "Separate list items and coordinate adjectives",
+          "reportingCategory": "CSE",
+          "sections": [
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            },
+            {
+              "section": 3,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The technician wore a clean ___ white cotton coat while handling the samples.",
+            "prompt": "Which choice keeps the cumulative modifiers together?",
+            "choices": [
+              ",",
+              ";",
+              ""
+            ],
+            "answer": 2,
+            "explanation": "White identifies the color of the cotton coat, and clean describes that combined phrase. These cumulative modifiers do not form a simple coordinate list; neither a comma nor a semicolon belongs at the blank."
+          }
+        },
+        "city-state": {
+          "title": "Enclose a state following a city within a sentence",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 3
+            }
+          ],
+          "activity": {
+            "evidenceText": "The exhibition will travel to Albany ___ New York ___ before opening in Boston.",
+            "prompt": "Which pair of marks correctly sets off the state?",
+            "choices": [
+              "comma; comma",
+              "no mark; comma",
+              "comma; no mark"
+            ],
+            "answer": 0,
+            "explanation": "When a state follows a city inside a sentence, set it off with commas on both sides: Albany, New York, before opening. Either one-sided option leaves the state only partly set off."
+          }
+        },
+        "restrictive-boundary": {
+          "title": "Keep restrictive clauses attached to their nouns",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            4,
+            6
+          ],
+          "workedExamples": [
+            {
+              "section": 6,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "Of the sixty folders, ten contained damaged photographs. The folders that contained damaged photographs ___ were moved to the conservation room.",
+            "prompt": "Which punctuation preserves the restrictive subject and its verb?",
+            "choices": [
+              "a comma",
+              "a semicolon",
+              "no punctuation"
+            ],
+            "answer": 2,
+            "explanation": "The that-clause identifies the ten affected folders. It is part of the subject, so no mark separates that full subject from were moved. A comma or semicolon would break the subject-verb connection."
+          }
+        },
+        "matching-dash": {
+          "title": "Close a complex dash interruption before the main predicate",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            6
+          ],
+          "workedExamples": [
+            {
+              "section": 6,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The painting—an unsigned landscape that the museum acquired in 1938 ___ has finally been attributed to its creator.",
+            "prompt": "Which mark closes the interruption?",
+            "choices": [
+              "a dash",
+              "a comma",
+              "a colon"
+            ],
+            "answer": 0,
+            "explanation": "The opening dash introduces an added description. A matching dash closes it before has finally been attributed, the painting’s main predicate. A comma or colon would not match the opening delimiter."
+          }
+        },
+        "subject-verb-boundary": {
+          "title": "Keep a restrictive subject attached to its main verb",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The parcels that arrived before noon ___ are waiting in the front office.",
+            "prompt": "Which punctuation belongs before the main verb?",
+            "choices": [
+              "a comma",
+              "no mark",
+              "a semicolon"
+            ],
+            "answer": 1,
+            "explanation": "The that-clause identifies the parcels and remains inside the subject. No mark separates that full subject from are waiting; a comma or semicolon would break the subject-verb connection."
+          }
+        }
+      },
+      "questionSkills": {
+        "commas-001": [
+          "identifying-name"
+        ],
+        "commas-002": [
+          "identifying-name"
+        ],
+        "commas-005": [
+          "identifying-name"
+        ],
+        "commas-006": [
+          "identifying-name"
+        ],
+        "commas-007": [
+          "identifying-name"
+        ],
+        "commas-018": [
+          "identifying-name"
+        ],
+        "commas-019": [
+          "identifying-name"
+        ],
+        "commas-022": [
+          "identifying-name"
+        ],
+        "commas-023": [
+          "identifying-name"
+        ],
+        "commas-029": [
+          "identifying-name"
+        ],
+        "commas-003": [
+          "intro-and-coordination"
+        ],
+        "commas-004": [
+          "intro-and-coordination"
+        ],
+        "commas-008": [
+          "intro-and-coordination"
+        ],
+        "commas-017": [
+          "intro-and-coordination"
+        ],
+        "commas-021": [
+          "intro-and-coordination"
+        ],
+        "commas-009": [
+          "nonessential-interruption"
+        ],
+        "commas-012": [
+          "nonessential-interruption"
+        ],
+        "commas-014": [
+          "nonessential-interruption"
+        ],
+        "commas-026": [
+          "nonessential-interruption"
+        ],
+        "commas-028": [
+          "nonessential-interruption"
+        ],
+        "commas-030": [
+          "nonessential-interruption"
+        ],
+        "commas-010": [
+          "adjective-and-series"
+        ],
+        "commas-011": [
+          "adjective-and-series"
+        ],
+        "commas-015": [
+          "adjective-and-series"
+        ],
+        "commas-016": [
+          "adjective-and-series"
+        ],
+        "commas-020": [
+          "adjective-and-series"
+        ],
+        "commas-025": [
+          "adjective-and-series"
+        ],
+        "commas-031": [
+          "adjective-and-series"
+        ],
+        "commas-032": [
+          "adjective-and-series"
+        ],
+        "commas-024": [
+          "city-state"
+        ],
+        "commas-transfer-01": [
+          "restrictive-boundary"
+        ],
+        "commas-transfer-02": [
+          "matching-dash"
+        ],
+        "commas-013": [
+          "subject-verb-boundary"
+        ],
+        "commas-027": [
+          "subject-verb-boundary"
+        ],
+        "english-skill-commas-city-state-01": [
+          "city-state"
+        ],
+        "english-skill-commas-city-state-02": [
+          "city-state"
+        ],
+        "english-skill-commas-restrictive-boundary-01": [
+          "restrictive-boundary"
+        ],
+        "english-skill-commas-restrictive-boundary-02": [
+          "restrictive-boundary"
+        ],
+        "english-skill-commas-matching-dash-01": [
+          "matching-dash"
+        ],
+        "english-skill-commas-matching-dash-02": [
+          "matching-dash"
+        ],
+        "english-skill-commas-subject-verb-boundary-01": [
+          "subject-verb-boundary"
+        ]
+      },
+      "checkSkills": {
+        "commas-daily-check-1": [
+          "identifying-name"
+        ],
+        "commas-daily-check-2": [
+          "identifying-name"
+        ],
+        "commas-daily-check-3": [
+          "adjective-and-series"
+        ]
+      }
+    },
+    "punctuation": {
+      "skills": {
+        "possessive-pronoun": {
+          "title": "Distinguish possessive pronouns from contractions",
+          "reportingCategory": "CSE",
+          "sections": [
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The seed capsule split when its outer layer dried.",
+            "prompt": "Why is its appropriate before outer layer?",
+            "choices": [
+              "It shortens it is.",
+              "It identifies the capsule as the owner without a contraction.",
+              "It means more than one capsule."
+            ],
+            "answer": 1,
+            "explanation": "Its is the possessive pronoun showing whose outer layer dried. It does not expand to it is and does not form a plural. In a drill, expanding an apostrophe form is a useful way to test the competing contraction."
+          }
+        },
+        "possessive-noun": {
+          "title": "Form regular and irregular plural possessives",
+          "reportingCategory": "CSE",
+          "sections": [
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The labels on the two ___ containers had faded.",
+            "prompt": "Which form shows that two researchers own the containers?",
+            "choices": [
+              "researcher's",
+              "researchers",
+              "researchers'"
+            ],
+            "answer": 2,
+            "explanation": "More than one researcher owns the containers, so use the regular plural researchers followed by an apostrophe. Researcher’s is singular possession; researchers alone is a plain plural."
+          }
+        },
+        "quotation-tag": {
+          "title": "Punctuate quotations before a reporting phrase",
+          "reportingCategory": "CSE",
+          "sections": [
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "“Leave the sample sealed ___ the supervisor said.",
+            "prompt": "Which ending correctly connects the quotation to its reporting phrase?",
+            "choices": [
+              ",”",
+              "”.",
+              "”;"
+            ],
+            "answer": 0,
+            "explanation": "A comma goes inside the closing quotation mark when the reporting phrase continues the same sentence: sealed,” the supervisor said. The period would incorrectly end the quotation before the lower-case reporting tag; a semicolon does not attach that tag."
+          }
+        },
+        "clause-boundary": {
+          "title": "Separate independent clauses without a splice",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The conservation lab was closed ___ the curator inspected the object in a temporary workspace.",
+            "prompt": "Which choice correctly shows the result and joins both clauses?",
+            "choices": [
+              ", so",
+              ", therefore",
+              ","
+            ],
+            "answer": 0,
+            "explanation": "Comma plus so coordinates the independent clauses and states the result. Therefore is an adverb rather than a coordinating conjunction, so the comma alternative with therefore and the comma alone both create splices."
+          }
+        },
+        "colon-introduction": {
+          "title": "Introduce a list or elaboration after a complete clause",
+          "reportingCategory": "CSE",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The emergency kit contained the following items ___ a flashlight, a whistle, and a blanket.",
+            "prompt": "Which mark correctly introduces the list?",
+            "choices": [
+              "a semicolon",
+              "a colon",
+              "a comma"
+            ],
+            "answer": 1,
+            "explanation": "The emergency kit contained the following items is a complete clause. A colon introduces the list explaining those items. A semicolon would need a complete following clause; a comma alone does not perform the offered list-introduction job."
+          }
+        },
+        "matching-interruption": {
+          "title": "Balance commas or dashes around added clauses",
+          "reportingCategory": "CSE",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The restored manuscript, which had remained unread for a century ___ contains the author’s earliest surviving sketch.",
+            "prompt": "Which mark closes the nonessential clause?",
+            "choices": [
+              "a dash",
+              "a semicolon",
+              "a comma"
+            ],
+            "answer": 2,
+            "explanation": "The comma after manuscript opens a nonessential which-clause. A second comma must close it before contains, the main verb. A dash would mismatch the opener; a semicolon cannot divide this subject from its predicate."
+          }
+        },
+        "explanatory-dash": {
+          "title": "Use a dash to introduce an explanation",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "Only one route remained open ___ the narrow footpath along the ridge.",
+            "prompt": "Which choice introduces the explanation after the complete clause?",
+            "choices": [
+              "a dash",
+              "a semicolon",
+              "a comma followed by and"
+            ],
+            "answer": 0,
+            "explanation": "A dash can introduce the phrase identifying the one open route. The footpath phrase is not an independent clause for a semicolon, and comma plus and would wrongly try to coordinate it with a complete clause."
+          }
+        },
+        "complex-list": {
+          "title": "Separate list items that already contain commas",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            6
+          ],
+          "workedExamples": [
+            {
+              "section": 6,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The panel included Inez Ruiz, a historian ___ Pavel Sen, an architect ___ and Dana Li, a curator.",
+            "prompt": "Which pair of marks clearly separates the three people and their descriptions?",
+            "choices": [
+              "comma; comma",
+              "semicolon; semicolon",
+              "colon; comma"
+            ],
+            "answer": 1,
+            "explanation": "Each whole item contains a name and an appositive role, so semicolons separate the items without confusing those boundaries with internal commas. The final semicolon may precede and because it separates list items rather than clauses."
+          }
+        },
+        "complex-elaboration": {
+          "title": "Introduce a complete-clause elaboration with a colon",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            6
+          ],
+          "workedExamples": [
+            {
+              "section": 6,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The redesign solved the problem that had stopped every earlier trial ___ the lid could now be opened without disturbing the seal.",
+            "prompt": "Which mark explicitly introduces what the solution was?",
+            "choices": [
+              "a comma",
+              "a semicolon followed by because",
+              "a colon"
+            ],
+            "answer": 2,
+            "explanation": "The introduction is a complete clause, and the following complete clause identifies its solution, so a colon introduces the elaboration. A comma would splice the clauses; semicolon plus because would strand a dependent clause."
+          }
+        }
+      },
+      "questionSkills": {
+        "punctuation-001": [
+          "possessive-pronoun"
+        ],
+        "punctuation-002": [
+          "possessive-pronoun"
+        ],
+        "punctuation-003": [
+          "possessive-pronoun"
+        ],
+        "punctuation-017": [
+          "possessive-pronoun"
+        ],
+        "punctuation-018": [
+          "possessive-pronoun"
+        ],
+        "punctuation-019": [
+          "possessive-pronoun"
+        ],
+        "punctuation-009": [
+          "possessive-noun"
+        ],
+        "punctuation-010": [
+          "possessive-noun"
+        ],
+        "punctuation-025": [
+          "possessive-noun"
+        ],
+        "punctuation-026": [
+          "possessive-noun"
+        ],
+        "punctuation-004": [
+          "quotation-tag"
+        ],
+        "punctuation-020": [
+          "quotation-tag"
+        ],
+        "punctuation-005": [
+          "clause-boundary"
+        ],
+        "punctuation-013": [
+          "clause-boundary"
+        ],
+        "punctuation-014": [
+          "clause-boundary"
+        ],
+        "punctuation-015": [
+          "clause-boundary"
+        ],
+        "punctuation-021": [
+          "clause-boundary"
+        ],
+        "punctuation-029": [
+          "clause-boundary"
+        ],
+        "punctuation-030": [
+          "clause-boundary"
+        ],
+        "punctuation-031": [
+          "clause-boundary"
+        ],
+        "punctuation-006": [
+          "colon-introduction"
+        ],
+        "punctuation-007": [
+          "colon-introduction"
+        ],
+        "punctuation-008": [
+          "colon-introduction"
+        ],
+        "punctuation-022": [
+          "colon-introduction"
+        ],
+        "punctuation-023": [
+          "colon-introduction"
+        ],
+        "punctuation-024": [
+          "colon-introduction"
+        ],
+        "punctuation-011": [
+          "matching-interruption"
+        ],
+        "punctuation-016": [
+          "matching-interruption"
+        ],
+        "punctuation-027": [
+          "matching-interruption"
+        ],
+        "punctuation-032": [
+          "matching-interruption"
+        ],
+        "punctuation-012": [
+          "explanatory-dash"
+        ],
+        "punctuation-028": [
+          "explanatory-dash"
+        ],
+        "punctuation-transfer-01": [
+          "complex-list"
+        ],
+        "punctuation-transfer-02": [
+          "complex-elaboration"
+        ],
+        "english-skill-punctuation-quotation-tag-01": [
+          "quotation-tag"
+        ],
+        "english-skill-punctuation-explanatory-dash-01": [
+          "explanatory-dash"
+        ],
+        "english-skill-punctuation-complex-list-01": [
+          "complex-list"
+        ],
+        "english-skill-punctuation-complex-list-02": [
+          "complex-list"
+        ],
+        "english-skill-punctuation-complex-elaboration-01": [
+          "complex-elaboration"
+        ],
+        "english-skill-punctuation-complex-elaboration-02": [
+          "complex-elaboration"
+        ]
+      },
+      "checkSkills": {
+        "punctuation-daily-check-3": [
+          "possessive-pronoun"
+        ],
+        "punctuation-daily-check-1": [
+          "clause-boundary"
+        ],
+        "punctuation-daily-check-2": [
+          "colon-introduction"
+        ]
+      }
+    },
+    "verbs": {
+      "skills": {
+        "head-subject": {
+          "title": "Agree with the head noun across intervening phrases",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The condition of the shelves nearest the windows ___ the conservator.",
+            "prompt": "Which verb agrees with the main subject?",
+            "choices": [
+              "concern",
+              "concerns",
+              "have concerned"
+            ],
+            "answer": 1,
+            "explanation": "Condition is the singular head subject; shelves and windows are embedded in modifying phrases. Concerns agrees with condition, while concern and have concerned are plural forms."
+          }
+        },
+        "indefinite-subject": {
+          "title": "Use singular agreement with each, every, neither and everyone",
+          "reportingCategory": "CSE",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "Every one of the sealed crates has an inspection label.",
+            "prompt": "Which words control has?",
+            "choices": [
+              "every one",
+              "sealed crates",
+              "inspection label"
+            ],
+            "answer": 0,
+            "explanation": "Every one is the singular subject. Crates belongs to an of-phrase and label is the object, so neither controls the verb. This subject check can then guide verb-form choices in other sentences."
+          }
+        },
+        "tense-sequence": {
+          "title": "Preserve the time relationship among events",
+          "reportingCategory": "CSE",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The crew inspected the hinges, tightened the bolts, and ___ the gate before leaving.",
+            "prompt": "Which form continues the sequence of completed actions?",
+            "choices": [
+              "closing",
+              "closes",
+              "closed"
+            ],
+            "answer": 2,
+            "explanation": "Inspected and tightened establish a completed past-tense sequence, so closed continues it. Closing has no finite auxiliary; closes introduces an unjustified present-tense shift."
+          }
+        },
+        "past-participle": {
+          "title": "Use a past participle after have, has or had",
+          "reportingCategory": "CSE",
+          "sections": [
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "By the time the visitors arrived, the curator had ___ the fragile pages in protective sleeves.",
+            "prompt": "Which form follows had?",
+            "choices": [
+              "putting",
+              "put",
+              "puts"
+            ],
+            "answer": 1,
+            "explanation": "Put is the past participle as well as the simple past of put, so had put is correct. Putting would need been after had; puts is a present form and cannot follow had."
+          }
+        },
+        "nearer-subject": {
+          "title": "Agree with the nearer subject in either/or and neither/nor",
+          "reportingCategory": "CSE",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "Neither the inspectors nor the building manager ___ the authority to approve the repair alone.",
+            "prompt": "Which form agrees with the nearer subject?",
+            "choices": [
+              "has",
+              "have",
+              "are having"
+            ],
+            "answer": 0,
+            "explanation": "The nearer subject is singular manager, so has agrees. Inspectors is farther from the verb and does not control this neither/nor construction."
+          }
+        },
+        "lay-lie": {
+          "title": "Distinguish placing an object from reclining",
+          "reportingCategory": "CSE",
+          "sections": [
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "After the long walk, the guide ___ down beside the stream.",
+            "prompt": "Which form means reclined in the past?",
+            "choices": [
+              "laid",
+              "lain",
+              "lay"
+            ],
+            "answer": 2,
+            "explanation": "The guide reclined and placed no object, so the past tense of lie is lay. Laid is the past of lay meaning place an object; lain is a participle that needs a form of have."
+          }
+        },
+        "inverted-subject": {
+          "title": "Locate a subject that follows its verb",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "Beside the storage cabinets ___ a machine that measures the thickness of each sheet.",
+            "prompt": "Which form agrees with the inverted subject?",
+            "choices": [
+              "stand",
+              "stands",
+              "have stood"
+            ],
+            "answer": 1,
+            "explanation": "The subject after the verb is singular machine, not cabinets. Stands agrees with machine; stand and have stood are plural."
+          }
+        },
+        "paragraph-time": {
+          "title": "Distinguish a historical event from a continuing fact",
+          "reportingCategory": "CSE",
+          "sections": [
+            2,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "In 1974, the engineer recorded a small vibration in the tower. The tower still ___ slightly in strong winds today.",
+            "prompt": "Which verb preserves the shift to a current fact?",
+            "choices": [
+              "sways",
+              "swayed",
+              "had swayed"
+            ],
+            "answer": 0,
+            "explanation": "Still and today identify an ongoing present condition, so sways fits. The earlier recorded belongs to 1974 and does not force the next sentence into the past."
+          }
+        }
+      },
+      "questionSkills": {
+        "verbs-002": [
+          "head-subject"
+        ],
+        "verbs-006": [
+          "head-subject"
+        ],
+        "verbs-007": [
+          "head-subject"
+        ],
+        "verbs-008": [
+          "head-subject"
+        ],
+        "verbs-017": [
+          "head-subject"
+        ],
+        "verbs-022": [
+          "head-subject"
+        ],
+        "verbs-029": [
+          "head-subject"
+        ],
+        "verbs-001": [
+          "indefinite-subject"
+        ],
+        "verbs-005": [
+          "indefinite-subject"
+        ],
+        "verbs-018": [
+          "indefinite-subject"
+        ],
+        "verbs-021": [
+          "indefinite-subject"
+        ],
+        "verbs-023": [
+          "indefinite-subject"
+        ],
+        "verbs-003": [
+          "tense-sequence"
+        ],
+        "verbs-009": [
+          "tense-sequence"
+        ],
+        "verbs-010": [
+          "tense-sequence"
+        ],
+        "verbs-016": [
+          "tense-sequence"
+        ],
+        "verbs-019": [
+          "tense-sequence"
+        ],
+        "verbs-024": [
+          "tense-sequence"
+        ],
+        "verbs-025": [
+          "tense-sequence"
+        ],
+        "verbs-032": [
+          "tense-sequence"
+        ],
+        "verbs-004": [
+          "past-participle"
+        ],
+        "verbs-011": [
+          "past-participle"
+        ],
+        "verbs-015": [
+          "past-participle"
+        ],
+        "verbs-020": [
+          "past-participle"
+        ],
+        "verbs-026": [
+          "past-participle"
+        ],
+        "verbs-031": [
+          "past-participle"
+        ],
+        "verbs-012": [
+          "nearer-subject"
+        ],
+        "verbs-014": [
+          "nearer-subject"
+        ],
+        "verbs-027": [
+          "nearer-subject"
+        ],
+        "verbs-030": [
+          "nearer-subject"
+        ],
+        "verbs-013": [
+          "lay-lie"
+        ],
+        "verbs-028": [
+          "lay-lie"
+        ],
+        "verbs-transfer-01": [
+          "inverted-subject"
+        ],
+        "verbs-transfer-02": [
+          "paragraph-time"
+        ],
+        "english-skill-verbs-lay-lie-01": [
+          "lay-lie"
+        ],
+        "english-skill-verbs-inverted-subject-01": [
+          "inverted-subject"
+        ],
+        "english-skill-verbs-inverted-subject-02": [
+          "inverted-subject"
+        ],
+        "english-skill-verbs-paragraph-time-01": [
+          "paragraph-time"
+        ],
+        "english-skill-verbs-paragraph-time-02": [
+          "paragraph-time"
+        ]
+      },
+      "checkSkills": {
+        "verbs-daily-check-1": [
+          "head-subject"
+        ],
+        "verbs-daily-check-2": [
+          "indefinite-subject"
+        ],
+        "verbs-daily-check-3": [
+          "tense-sequence"
+        ]
+      }
+    },
+    "pronouns": {
+      "skills": {
+        "pronoun-case": {
+          "title": "Choose subject and object forms, including compounds",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The lead researcher invited Suri and ___ to present the results.",
+            "prompt": "Which form is part of the direct object of invited?",
+            "choices": [
+              "I",
+              "myself",
+              "me"
+            ],
+            "answer": 2,
+            "explanation": "Invited takes an object: invited me. Adding Suri and does not change the required case. I is a subject form; myself has no matching first-person subject to reflect back to."
+          }
+        },
+        "relative-case": {
+          "title": "Find who or whom’s job inside its own clause",
+          "reportingCategory": "CSE",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 1
+            },
+            {
+              "section": 1,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The grant will support ___ the board selects after the final interviews.",
+            "prompt": "Which form is the object of selects?",
+            "choices": [
+              "whoever",
+              "whomever",
+              "whose"
+            ],
+            "answer": 1,
+            "explanation": "The board selects him or her, so whomever fills the object position inside the clause. Whoever is a subject form; whose is possessive. The pronoun’s own clause determines case."
+          }
+        },
+        "antecedent-agreement": {
+          "title": "Match the pronoun to the owning or replaced noun",
+          "reportingCategory": "CSE",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The board sent the managers its revised plan before the office closed.",
+            "prompt": "Which noun determines the possessive its?",
+            "choices": [
+              "the managers",
+              "the office",
+              "the board"
+            ],
+            "answer": 2,
+            "explanation": "The board owns the revised plan. Managers and office are nearby nouns, but they do not supply the intended owner; identify the antecedent before choosing a possessive form in a new sentence."
+          }
+        },
+        "clear-reference": {
+          "title": "Replace an ambiguous pronoun with its intended noun",
+          "reportingCategory": "CSE",
+          "sections": [
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "Nora placed the trophy beside the vase, and it fell from the shelf. The writer means that the trophy fell.",
+            "prompt": "Which replacement makes that meaning explicit?",
+            "choices": [
+              "the trophy",
+              "this object",
+              "the vase"
+            ],
+            "answer": 0,
+            "explanation": "The trophy states the intended referent. This object could still name either nearby object, and the vase changes the intended event."
+          }
+        },
+        "embedded-relative": {
+          "title": "Find a relative pronoun’s subject role through reporting language",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The pilot ___ the investigators believe reported the fault first will testify tomorrow.",
+            "prompt": "Which pronoun is the subject of reported?",
+            "choices": [
+              "whom",
+              "whose",
+              "who"
+            ],
+            "answer": 2,
+            "explanation": "The pilot reported the fault, so who is the subject of reported. The investigators believe is embedded reporting language and does not turn that subject into an object. Whose is possessive."
+          }
+        },
+        "distant-reference": {
+          "title": "Track the exact antecedent across clauses and nearby plurals",
+          "reportingCategory": "CSE",
+          "sections": [
+            2,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "Several students examined the telescope before the guide closed ___ protective cover.",
+            "prompt": "Which pronoun shows that the cover belongs to the telescope?",
+            "choices": [
+              "its",
+              "their",
+              "it's"
+            ],
+            "answer": 0,
+            "explanation": "The telescope, not the nearby students, owns the cover. Its supplies singular possession; their points to a plural owner, and it’s is a contraction."
+          }
+        }
+      },
+      "questionSkills": {
+        "pronouns-001": [
+          "pronoun-case"
+        ],
+        "pronouns-002": [
+          "pronoun-case"
+        ],
+        "pronouns-003": [
+          "pronoun-case"
+        ],
+        "pronouns-004": [
+          "pronoun-case"
+        ],
+        "pronouns-005": [
+          "pronoun-case"
+        ],
+        "pronouns-006": [
+          "pronoun-case"
+        ],
+        "pronouns-015": [
+          "pronoun-case"
+        ],
+        "pronouns-017": [
+          "pronoun-case"
+        ],
+        "pronouns-018": [
+          "pronoun-case"
+        ],
+        "pronouns-019": [
+          "pronoun-case"
+        ],
+        "pronouns-020": [
+          "pronoun-case"
+        ],
+        "pronouns-021": [
+          "pronoun-case"
+        ],
+        "pronouns-007": [
+          "relative-case"
+        ],
+        "pronouns-008": [
+          "relative-case"
+        ],
+        "pronouns-014": [
+          "relative-case"
+        ],
+        "pronouns-016": [
+          "relative-case"
+        ],
+        "pronouns-022": [
+          "relative-case"
+        ],
+        "pronouns-023": [
+          "relative-case"
+        ],
+        "pronouns-030": [
+          "relative-case"
+        ],
+        "pronouns-031": [
+          "relative-case"
+        ],
+        "pronouns-009": [
+          "antecedent-agreement"
+        ],
+        "pronouns-010": [
+          "antecedent-agreement"
+        ],
+        "pronouns-011": [
+          "antecedent-agreement"
+        ],
+        "pronouns-012": [
+          "antecedent-agreement"
+        ],
+        "pronouns-013": [
+          "antecedent-agreement"
+        ],
+        "pronouns-024": [
+          "antecedent-agreement"
+        ],
+        "pronouns-025": [
+          "antecedent-agreement"
+        ],
+        "pronouns-026": [
+          "antecedent-agreement"
+        ],
+        "pronouns-028": [
+          "antecedent-agreement"
+        ],
+        "pronouns-029": [
+          "antecedent-agreement"
+        ],
+        "pronouns-027": [
+          "clear-reference"
+        ],
+        "pronouns-032": [
+          "clear-reference"
+        ],
+        "pronouns-transfer-01": [
+          "embedded-relative"
+        ],
+        "pronouns-transfer-02": [
+          "distant-reference"
+        ],
+        "english-skill-pronouns-clear-reference-01": [
+          "clear-reference"
+        ],
+        "english-skill-pronouns-embedded-relative-01": [
+          "embedded-relative"
+        ],
+        "english-skill-pronouns-embedded-relative-02": [
+          "embedded-relative"
+        ],
+        "english-skill-pronouns-distant-reference-01": [
+          "distant-reference"
+        ],
+        "english-skill-pronouns-distant-reference-02": [
+          "distant-reference"
+        ]
+      },
+      "checkSkills": {
+        "pronouns-daily-check-1": [
+          "pronoun-case"
+        ],
+        "pronouns-daily-check-2": [
+          "relative-case"
+        ],
+        "pronouns-daily-check-3": [
+          "antecedent-agreement"
+        ]
+      }
+    },
+    "modifiers": {
+      "skills": {
+        "opening-description": {
+          "title": "Attach an opening description to the logical subject",
+          "reportingCategory": "CSE",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "Eager to test the new telescope, ___.",
+            "prompt": "Which main clause gives the opening phrase a logical subject?",
+            "choices": [
+              "the astronomer prepared a list of targets",
+              "the observation list grew longer",
+              "preparing the targets took all afternoon"
+            ],
+            "answer": 0,
+            "explanation": "The astronomer can be eager and is the subject of the keyed clause. A list and the act of preparing cannot feel eager, so those choices dangle the opening modifier."
+          }
+        },
+        "close-attachment": {
+          "title": "Place a description beside its intended referent",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The writer means the diagram is printed on recycled paper. The original sentence is: The engineer sent a diagram to the client printed on recycled paper.",
+            "prompt": "Which version makes the intended attachment clear?",
+            "choices": [
+              "The engineer sent a diagram to the printed client.",
+              "The engineer sent a diagram printed on recycled paper to the client.",
+              "The engineer printed the client on recycled paper with a diagram."
+            ],
+            "answer": 1,
+            "explanation": "Printed on recycled paper must describe diagram, so it belongs beside diagram. The other placements make client the object printed or garble the intended relationship."
+          }
+        },
+        "limiter-scope": {
+          "title": "Place a limiting word next to the intended target",
+          "reportingCategory": "CSE",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The guide answered questions from adults and children, but accepted donations from adults alone.",
+            "prompt": "Which version clearly limits the donors, rather than the activity?",
+            "choices": [
+              "The guide only accepted donations from adults.",
+              "The guide accepted only donations from adults.",
+              "The guide accepted donations only from adults."
+            ],
+            "answer": 2,
+            "explanation": "Only from adults limits the group allowed to donate. Only accepted can limit the action; only donations limits the things accepted. The surrounding sentence requires a distinction between the donors and the people whose questions were answered."
+          }
+        },
+        "passive-opener": {
+          "title": "Use a passive main clause without dangling its opening modifier",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "After being weighed and photographed, ___.",
+            "prompt": "Which choice makes the objects receiving those actions the main subject?",
+            "choices": [
+              "the field team stored the stones",
+              "the stones were stored in separate boxes",
+              "storing the stones took the field team an hour"
+            ],
+            "answer": 1,
+            "explanation": "The stones were weighed and photographed; the keyed passive clause keeps stones as its subject. The field team and the activity of storing do not name the objects receiving the opening actions."
+          }
+        },
+        "timing-scope": {
+          "title": "Distinguish a time limit from a limit on items or actions",
+          "reportingCategory": "CSE",
+          "sections": [
+            2,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The archive permits all registered readers to view the letters, but only after completing an orientation.",
+            "prompt": "Which sentence most clearly restricts when access is permitted?",
+            "choices": [
+              "Readers may view the letters only after orientation.",
+              "Only readers may view the letters after orientation.",
+              "Readers may view only the letters after orientation."
+            ],
+            "answer": 0,
+            "explanation": "Only after orientation restricts the condition or time of viewing. Only readers restricts who may view; only the letters restricts what they may view. Neither expresses the stated timing requirement."
+          }
+        }
+      },
+      "questionSkills": {
+        "modifiers-001": [
+          "opening-description"
+        ],
+        "modifiers-002": [
+          "opening-description"
+        ],
+        "modifiers-003": [
+          "opening-description"
+        ],
+        "modifiers-004": [
+          "opening-description"
+        ],
+        "modifiers-005": [
+          "opening-description"
+        ],
+        "modifiers-007": [
+          "opening-description"
+        ],
+        "modifiers-008": [
+          "opening-description"
+        ],
+        "modifiers-009": [
+          "opening-description"
+        ],
+        "modifiers-010": [
+          "opening-description"
+        ],
+        "modifiers-012": [
+          "opening-description"
+        ],
+        "modifiers-014": [
+          "opening-description"
+        ],
+        "modifiers-016": [
+          "opening-description"
+        ],
+        "modifiers-017": [
+          "opening-description"
+        ],
+        "modifiers-018": [
+          "opening-description"
+        ],
+        "modifiers-019": [
+          "opening-description"
+        ],
+        "modifiers-020": [
+          "opening-description"
+        ],
+        "modifiers-022": [
+          "opening-description"
+        ],
+        "modifiers-023": [
+          "opening-description"
+        ],
+        "modifiers-024": [
+          "opening-description"
+        ],
+        "modifiers-027": [
+          "opening-description"
+        ],
+        "modifiers-028": [
+          "opening-description"
+        ],
+        "modifiers-030": [
+          "opening-description"
+        ],
+        "modifiers-031": [
+          "opening-description"
+        ],
+        "modifiers-032": [
+          "opening-description"
+        ],
+        "modifiers-011": [
+          "close-attachment"
+        ],
+        "modifiers-015": [
+          "close-attachment"
+        ],
+        "modifiers-021": [
+          "close-attachment"
+        ],
+        "modifiers-025": [
+          "close-attachment"
+        ],
+        "modifiers-029": [
+          "close-attachment"
+        ],
+        "modifiers-013": [
+          "limiter-scope"
+        ],
+        "modifiers-026": [
+          "limiter-scope"
+        ],
+        "modifiers-006": [
+          "passive-opener"
+        ],
+        "modifiers-transfer-01": [
+          "passive-opener"
+        ],
+        "modifiers-transfer-02": [
+          "timing-scope"
+        ],
+        "english-skill-modifiers-limiter-scope-01": [
+          "limiter-scope"
+        ],
+        "english-skill-modifiers-passive-opener-01": [
+          "passive-opener"
+        ],
+        "english-skill-modifiers-timing-scope-01": [
+          "timing-scope"
+        ],
+        "english-skill-modifiers-timing-scope-02": [
+          "timing-scope"
+        ]
+      },
+      "checkSkills": {
+        "modifiers-daily-check-1": [
+          "opening-description"
+        ],
+        "modifiers-daily-check-2": [
+          "opening-description"
+        ],
+        "modifiers-daily-check-3": [
+          "limiter-scope"
+        ]
+      }
+    },
+    "parallel-structure": {
+      "skills": {
+        "series-forms": {
+          "title": "Keep coordinated nouns, adjectives, verbs and clauses parallel",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            },
+            {
+              "section": 0,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The exhibition is informative, accessible, and ___.",
+            "prompt": "Which choice continues the adjective series?",
+            "choices": [
+              "engaging",
+              "it engages visitors",
+              "with engaging displays"
+            ],
+            "answer": 0,
+            "explanation": "Informative and accessible are adjectives describing exhibition, so engaging matches their role. A complete clause and a prepositional phrase do not continue the adjective series."
+          }
+        },
+        "parallel-comparison": {
+          "title": "Compare corresponding activities in matching constructions",
+          "reportingCategory": "CSE",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "Editing the recording required more concentration than ___ it.",
+            "prompt": "Which form matches the activity being compared?",
+            "choices": [
+              "to play",
+              "playing",
+              "when we played"
+            ],
+            "answer": 1,
+            "explanation": "Editing and playing are gerunds naming the two activities. To play changes the established form; when we played gives a time clause rather than the corresponding activity."
+          }
+        },
+        "shared-preposition": {
+          "title": "Coordinate objects under a shared preposition or infinitive",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The workshop teaches students how to measure angles and ___ distances accurately.",
+            "prompt": "Which choice can share how to with measure?",
+            "choices": [
+              "measuring",
+              "they measure",
+              "measure"
+            ],
+            "answer": 2,
+            "explanation": "How to can govern both measure angles and measure distances. Measuring changes to a gerund; they measure introduces a complete clause. Optional repeated wording is not required when the construction is shared."
+          }
+        },
+        "paired-connectors": {
+          "title": "Balance the structures joined by paired connectors",
+          "reportingCategory": "CSE",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The trainees must either complete the online module or ___.",
+            "prompt": "Which choice matches the verb phrase after either?",
+            "choices": [
+              "a workshop is attended",
+              "attend the workshop",
+              "attending the workshop"
+            ],
+            "answer": 1,
+            "explanation": "Either joins complete the online module with attend the workshop, both verb phrases governed by must. A passive clause and a gerund do not match that construction."
+          }
+        },
+        "complex-paired-actions": {
+          "title": "Balance longer requests inside not only/but also",
+          "reportingCategory": "CSE",
+          "sections": [
+            2,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The agreement requires the museum not only to insure the collection but also ___.",
+            "prompt": "Which ending keeps both requirements as parallel actions?",
+            "choices": [
+              "to publish a complete condition report",
+              "a complete condition report",
+              "that a complete condition report is published"
+            ],
+            "answer": 0,
+            "explanation": "To insure and to publish are parallel infinitive requirements imposed on the museum. A noun phrase and a that-clause do not continue the same paired construction."
+          }
+        },
+        "parallel-degree": {
+          "title": "Match how well criteria in a complex series",
+          "reportingCategory": "CSE",
+          "sections": [
+            0,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The judges considered how clearly the students stated the problem, how carefully they tested the model, and ___.",
+            "prompt": "Which ending supplies another degree-of-quality criterion?",
+            "choices": [
+              "whether they cited sources",
+              "their sources",
+              "how accurately they documented the sources"
+            ],
+            "answer": 2,
+            "explanation": "The first two criteria ask how well something was done. How accurately continues that structure; whether asks a yes/no question, and their sources merely names a thing."
+          }
+        }
+      },
+      "questionSkills": {
+        "parallel-structure-001": [
+          "series-forms"
+        ],
+        "parallel-structure-002": [
+          "series-forms"
+        ],
+        "parallel-structure-003": [
+          "series-forms"
+        ],
+        "parallel-structure-004": [
+          "series-forms"
+        ],
+        "parallel-structure-005": [
+          "series-forms"
+        ],
+        "parallel-structure-006": [
+          "series-forms"
+        ],
+        "parallel-structure-008": [
+          "series-forms"
+        ],
+        "parallel-structure-014": [
+          "series-forms"
+        ],
+        "parallel-structure-017": [
+          "series-forms"
+        ],
+        "parallel-structure-018": [
+          "series-forms"
+        ],
+        "parallel-structure-019": [
+          "series-forms"
+        ],
+        "parallel-structure-020": [
+          "series-forms"
+        ],
+        "parallel-structure-021": [
+          "series-forms"
+        ],
+        "parallel-structure-022": [
+          "series-forms"
+        ],
+        "parallel-structure-024": [
+          "series-forms"
+        ],
+        "parallel-structure-030": [
+          "series-forms"
+        ],
+        "parallel-structure-009": [
+          "parallel-comparison"
+        ],
+        "parallel-structure-010": [
+          "parallel-comparison"
+        ],
+        "parallel-structure-016": [
+          "parallel-comparison"
+        ],
+        "parallel-structure-025": [
+          "parallel-comparison"
+        ],
+        "parallel-structure-032": [
+          "parallel-comparison"
+        ],
+        "parallel-structure-007": [
+          "shared-preposition"
+        ],
+        "parallel-structure-012": [
+          "shared-preposition"
+        ],
+        "parallel-structure-023": [
+          "shared-preposition"
+        ],
+        "parallel-structure-027": [
+          "shared-preposition"
+        ],
+        "parallel-structure-011": [
+          "paired-connectors"
+        ],
+        "parallel-structure-013": [
+          "paired-connectors"
+        ],
+        "parallel-structure-015": [
+          "paired-connectors"
+        ],
+        "parallel-structure-026": [
+          "paired-connectors"
+        ],
+        "parallel-structure-028": [
+          "paired-connectors"
+        ],
+        "parallel-structure-029": [
+          "paired-connectors"
+        ],
+        "parallel-structure-031": [
+          "paired-connectors"
+        ],
+        "parallel-structure-transfer-01": [
+          "complex-paired-actions"
+        ],
+        "parallel-structure-transfer-02": [
+          "parallel-degree"
+        ],
+        "english-skill-parallel-structure-complex-paired-actions-01": [
+          "complex-paired-actions"
+        ],
+        "english-skill-parallel-structure-complex-paired-actions-02": [
+          "complex-paired-actions"
+        ],
+        "english-skill-parallel-structure-parallel-degree-01": [
+          "parallel-degree"
+        ],
+        "english-skill-parallel-structure-parallel-degree-02": [
+          "parallel-degree"
+        ]
+      },
+      "checkSkills": {
+        "parallel-structure-daily-check-1": [
+          "series-forms"
+        ],
+        "parallel-structure-daily-check-3": [
+          "series-forms"
+        ],
+        "parallel-structure-daily-check-2": [
+          "parallel-comparison"
+        ]
+      }
+    },
+    "misc-grammar": {
+      "skills": {
+        "confused-forms": {
+          "title": "Distinguish contractions, possession and common sound-alike meanings",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The reviewer offered a ___ about a color scheme that would ___ the existing exhibits.",
+            "prompt": "Which pair preserves the intended meanings?",
+            "choices": [
+              "complement; compliment",
+              "compliment; complement",
+              "compliment; compliment"
+            ],
+            "answer": 1,
+            "explanation": "A compliment is praise, while complement means suit or complete something. The sentence says the reviewer praised a color scheme that would go well with the exhibits, so the second pair fits both roles."
+          }
+        },
+        "comparison-and-sequence": {
+          "title": "Distinguish than from then and match comparison forms",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The researcher would rather check the records ___ guess at the missing measurements.",
+            "prompt": "Which word creates the comparison?",
+            "choices": [
+              "than",
+              "then",
+              "as"
+            ],
+            "answer": 0,
+            "explanation": "Rather pairs with than to compare check with guess. Then marks sequence, not preference; as does not complete the rather...than construction."
+          }
+        },
+        "modal-have": {
+          "title": "Use have rather than of after a modal verb",
+          "reportingCategory": "CSE",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "With a clearer label, the courier might ___ delivered the package to the right office.",
+            "prompt": "Which word completes the verb phrase?",
+            "choices": [
+              "of",
+              "had",
+              "have"
+            ],
+            "answer": 2,
+            "explanation": "Might requires have before the participle delivered in this construction. Of imitates the sound of might’ve but is not a verb; might had is not a valid auxiliary sequence."
+          }
+        },
+        "count-and-mass": {
+          "title": "Match fewer/number/many and less/amount/much to the noun",
+          "reportingCategory": "CSE",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The revised procedure creates ___ waste and requires ___ disposable containers.",
+            "prompt": "Which pair matches the mass noun and the countable noun?",
+            "choices": [
+              "less; fewer",
+              "fewer; less",
+              "many; much"
+            ],
+            "answer": 0,
+            "explanation": "Waste is treated as a mass, so less applies. Containers are separate countable objects, so fewer applies. The other pairs attach count forms to mass nouns or mass forms to count nouns."
+          }
+        },
+        "preposition-construction": {
+          "title": "Choose the preposition required by the full construction",
+          "reportingCategory": "CSE",
+          "sections": [
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The revised design is preferable ___ the original because its parts can be replaced separately.",
+            "prompt": "Which preposition completes the standard comparison?",
+            "choices": [
+              "than",
+              "to",
+              "from"
+            ],
+            "answer": 1,
+            "explanation": "Preferable pairs with to when comparing two options. Than is used after comparative forms such as better, but not in preferable to; from does not fit the construction."
+          }
+        },
+        "logical-comparison": {
+          "title": "Compare an attribute with the corresponding attribute",
+          "reportingCategory": "CSE",
+          "sections": [
+            1,
+            6
+          ],
+          "workedExamples": [
+            {
+              "section": 6,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The height of the new cabinet is greater than ___.",
+            "prompt": "Which choice compares height with height?",
+            "choices": [
+              "the old cabinet",
+              "building the old cabinet",
+              "that of the old cabinet"
+            ],
+            "answer": 2,
+            "explanation": "That of the old cabinet means the height of the old cabinet. The other choices compare a height with an entire object or the activity of building it."
+          }
+        },
+        "adjective-adverb": {
+          "title": "Use an adjective after a linking verb and an adverb for an action",
+          "reportingCategory": "CSE",
+          "sections": [
+            6
+          ],
+          "workedExamples": [
+            {
+              "section": 6,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The ink looked ___ on the first proof, although the printer had applied it evenly.",
+            "prompt": "Which form describes the ink’s appearance?",
+            "choices": [
+              "pale",
+              "palely",
+              "paleness"
+            ],
+            "answer": 0,
+            "explanation": "Looked means appeared here, so the adjective pale describes ink. Palely is an adverb and paleness is a noun. Evenly correctly describes the action applied in the second clause."
+          }
+        },
+        "comparison-forms": {
+          "title": "Choose comparative or superlative adjective and adverb forms",
+          "reportingCategory": "CSE",
+          "sections": [
+            7
+          ],
+          "workedExamples": [
+            {
+              "section": 7,
+              "example": 0
+            },
+            {
+              "section": 7,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The committee compared five plans and selected the one requiring the smallest budget.",
+            "prompt": "Which sentence uses the appropriate form for that entire set?",
+            "choices": [
+              "It selected the cheaper of all five plans.",
+              "It selected the most cheapest plan.",
+              "It selected the cheapest of the five plans."
+            ],
+            "answer": 2,
+            "explanation": "Cheapest is the superlative selecting the minimum within a set of five. Cheaper is comparative, and most cheapest doubles the superlative marking."
+          }
+        },
+        "voice-and-focus": {
+          "title": "Choose voice to preserve paragraph focus and the known actor",
+          "reportingCategory": "CSE",
+          "sections": [
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            },
+            {
+              "section": 3,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "A report follows the history of an old key. It says the key was found during renovation but does not identify who found it.",
+            "prompt": "Which sentence preserves that focus without inventing an actor?",
+            "choices": [
+              "The curator found the key during renovation.",
+              "The key was found during renovation.",
+              "The builders deliberately hid the key during renovation."
+            ],
+            "answer": 1,
+            "explanation": "The passive sentence keeps the key as the subject and states only the known discovery. The other choices invent a discoverer or change finding into deliberate concealment. Passive voice can be the most accurate choice."
+          }
+        }
+      },
+      "questionSkills": {
+        "misc-grammar-001": [
+          "confused-forms"
+        ],
+        "misc-grammar-005": [
+          "confused-forms"
+        ],
+        "misc-grammar-006": [
+          "confused-forms"
+        ],
+        "misc-grammar-007": [
+          "confused-forms"
+        ],
+        "misc-grammar-011": [
+          "confused-forms"
+        ],
+        "misc-grammar-012": [
+          "confused-forms"
+        ],
+        "misc-grammar-013": [
+          "confused-forms"
+        ],
+        "misc-grammar-014": [
+          "confused-forms"
+        ],
+        "misc-grammar-017": [
+          "confused-forms"
+        ],
+        "misc-grammar-020": [
+          "confused-forms"
+        ],
+        "misc-grammar-022": [
+          "confused-forms"
+        ],
+        "misc-grammar-023": [
+          "confused-forms"
+        ],
+        "misc-grammar-024": [
+          "confused-forms"
+        ],
+        "misc-grammar-031": [
+          "confused-forms"
+        ],
+        "misc-grammar-002": [
+          "comparison-and-sequence"
+        ],
+        "misc-grammar-015": [
+          "comparison-and-sequence"
+        ],
+        "misc-grammar-016": [
+          "comparison-and-sequence"
+        ],
+        "misc-grammar-018": [
+          "comparison-and-sequence"
+        ],
+        "misc-grammar-028": [
+          "comparison-and-sequence"
+        ],
+        "misc-grammar-003": [
+          "modal-have"
+        ],
+        "misc-grammar-019": [
+          "modal-have"
+        ],
+        "misc-grammar-004": [
+          "count-and-mass"
+        ],
+        "misc-grammar-008": [
+          "count-and-mass"
+        ],
+        "misc-grammar-021": [
+          "count-and-mass"
+        ],
+        "misc-grammar-025": [
+          "count-and-mass"
+        ],
+        "misc-grammar-026": [
+          "count-and-mass"
+        ],
+        "misc-grammar-009": [
+          "preposition-construction"
+        ],
+        "misc-grammar-010": [
+          "preposition-construction"
+        ],
+        "misc-grammar-027": [
+          "preposition-construction"
+        ],
+        "misc-grammar-029": [
+          "preposition-construction"
+        ],
+        "misc-grammar-030": [
+          "preposition-construction"
+        ],
+        "misc-grammar-032": [
+          "preposition-construction"
+        ],
+        "misc-grammar-transfer-01": [
+          "logical-comparison"
+        ],
+        "misc-grammar-transfer-02": [
+          "adjective-adverb"
+        ],
+        "english-skill-misc-grammar-modal-have-01": [
+          "modal-have"
+        ],
+        "english-skill-misc-grammar-logical-comparison-01": [
+          "logical-comparison"
+        ],
+        "english-skill-misc-grammar-logical-comparison-02": [
+          "logical-comparison"
+        ],
+        "english-skill-misc-grammar-adjective-adverb-01": [
+          "adjective-adverb"
+        ],
+        "english-skill-misc-grammar-adjective-adverb-02": [
+          "adjective-adverb"
+        ],
+        "english-skill-misc-grammar-comparison-forms-01": [
+          "comparison-forms"
+        ],
+        "english-skill-misc-grammar-comparison-forms-02": [
+          "comparison-forms"
+        ],
+        "english-skill-misc-grammar-comparison-forms-03": [
+          "comparison-forms"
+        ],
+        "english-skill-misc-grammar-voice-and-focus-01": [
+          "voice-and-focus"
+        ],
+        "english-skill-misc-grammar-voice-and-focus-02": [
+          "voice-and-focus"
+        ],
+        "english-skill-misc-grammar-voice-and-focus-03": [
+          "voice-and-focus"
+        ]
+      },
+      "checkSkills": {
+        "misc-grammar-daily-check-1": [
+          "confused-forms"
+        ],
+        "misc-grammar-daily-check-3": [
+          "confused-forms"
+        ],
+        "misc-grammar-daily-check-2": [
+          "count-and-mass"
+        ]
+      }
+    },
+    "add-delete": {
+      "skills": {
+        "support-and-explanation": {
+          "title": "Keep details that explain, support or prepare the next idea",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "A paragraph argues that the town should repair a leaking water main. It has just explained how much water is lost. Proposed addition: “The leak also reduces pressure at the fire station during peak use.”",
+            "prompt": "Should the writer add this sentence?",
+            "choices": [
+              "Yes, because it supplies another consequence supporting the repair.",
+              "No, because it repeats the amount of water lost.",
+              "Yes, because it tells crews exactly how to repair the pipe."
+            ],
+            "answer": 0,
+            "explanation": "The sentence adds a distinct consequence, reduced pressure at a relevant public facility, which supports the repair argument. It does not repeat a quantity or explain the repair procedure; both verdict and reason must be true."
+          }
+        },
+        "irrelevant-tangent": {
+          "title": "Delete true details that do not serve the local purpose",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "A paragraph explains how to focus a telescope, moving from the coarse adjustment to the fine adjustment. Proposed addition: “The telescope’s inventor had three children and owned a shop.”",
+            "prompt": "Should the writer add the sentence here?",
+            "choices": [
+              "Yes, because any fact about the inventor explains focusing.",
+              "No, because the biographical detail interrupts the focusing procedure.",
+              "No, because it contradicts the claim that telescopes can be focused."
+            ],
+            "answer": 1,
+            "explanation": "The local purpose is to explain a procedure. The biography does not supply a step, so it should be omitted here. It does not contradict the procedure, and a shared topic alone does not establish relevance."
+          }
+        },
+        "repeated-information": {
+          "title": "Delete a sentence that adds no new information",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "A paragraph already says that the new lamps use half as much electricity as the old ones. Proposed addition: “Their electricity use is fifty percent lower than that of the lamps they replaced.”",
+            "prompt": "What does the addition contribute?",
+            "choices": [
+              "A new cause of the energy savings",
+              "A specific maintenance requirement",
+              "The same energy-use comparison in different words"
+            ],
+            "answer": 2,
+            "explanation": "Half as much and fifty percent lower express the same comparison. The sentence adds neither a cause nor a maintenance requirement, so keeping it would repeat information rather than develop the paragraph."
+          }
+        },
+        "background-for-argument": {
+          "title": "Keep background needed to understand a later consequence",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "An essay explains why a library kept printed catalogues after launching a website. The next paragraph describes readers who rely on weekly visits to the library. Proposed background: “Several villages served by the library have no reliable internet access.”",
+            "prompt": "Why does this detail belong before that discussion?",
+            "choices": [
+              "It proves that printed catalogues are always more accurate.",
+              "It anticipates why the website alone would not meet those readers’ needs.",
+              "It repeats the fact that the library launched a website."
+            ],
+            "answer": 1,
+            "explanation": "The lack of access explains why later readers still need a way to locate materials during library visits. It neither establishes universal accuracy nor repeats the website launch; it supplies needed background for the argument."
+          }
+        },
+        "plausible-but-irrelevant": {
+          "title": "Reject an appealing detail that interrupts the mechanism-to-result link",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "A paragraph explains how an insulated storage box slows temperature changes, then reports more stable readings. Proposed insertion between those points: “The manufacturer recently won an award for its office garden.”",
+            "prompt": "Should the detail be included here?",
+            "choices": [
+              "Yes, because the award proves the box insulates effectively.",
+              "Yes, because it defines what insulation means.",
+              "No, because it does not explain either the box’s mechanism or the readings."
+            ],
+            "answer": 2,
+            "explanation": "The award concerns the manufacturer but supplies no evidence about insulation and no definition of the mechanism. It interrupts the link between the explanation and its measured result."
+          }
+        }
+      },
+      "questionSkills": {
+        "add-delete-002": [
+          "support-and-explanation"
+        ],
+        "add-delete-003": [
+          "support-and-explanation"
+        ],
+        "add-delete-005": [
+          "support-and-explanation"
+        ],
+        "add-delete-008": [
+          "support-and-explanation"
+        ],
+        "add-delete-010": [
+          "support-and-explanation"
+        ],
+        "add-delete-012": [
+          "support-and-explanation"
+        ],
+        "add-delete-015": [
+          "support-and-explanation"
+        ],
+        "add-delete-018": [
+          "support-and-explanation"
+        ],
+        "add-delete-019": [
+          "support-and-explanation"
+        ],
+        "add-delete-021": [
+          "support-and-explanation"
+        ],
+        "add-delete-024": [
+          "support-and-explanation"
+        ],
+        "add-delete-026": [
+          "support-and-explanation"
+        ],
+        "add-delete-028": [
+          "support-and-explanation"
+        ],
+        "add-delete-031": [
+          "support-and-explanation"
+        ],
+        "add-delete-001": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-004": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-006": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-009": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-011": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-014": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-016": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-017": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-020": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-022": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-025": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-027": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-030": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-032": [
+          "irrelevant-tangent"
+        ],
+        "add-delete-007": [
+          "repeated-information"
+        ],
+        "add-delete-013": [
+          "repeated-information"
+        ],
+        "add-delete-023": [
+          "repeated-information"
+        ],
+        "add-delete-029": [
+          "repeated-information"
+        ],
+        "add-delete-transfer-01": [
+          "background-for-argument"
+        ],
+        "add-delete-transfer-02": [
+          "plausible-but-irrelevant"
+        ],
+        "english-skill-add-delete-background-for-argument-01": [
+          "background-for-argument"
+        ],
+        "english-skill-add-delete-background-for-argument-02": [
+          "background-for-argument"
+        ],
+        "english-skill-add-delete-plausible-but-irrelevant-01": [
+          "plausible-but-irrelevant"
+        ],
+        "english-skill-add-delete-plausible-but-irrelevant-02": [
+          "plausible-but-irrelevant"
+        ]
+      },
+      "checkSkills": {
+        "add-delete-daily-check-1": [
+          "support-and-explanation"
+        ],
+        "add-delete-daily-check-3": [
+          "support-and-explanation"
+        ],
+        "add-delete-daily-check-2": [
+          "irrelevant-tangent"
+        ]
+      }
+    },
+    "logical-placement": {
+      "skills": {
+        "chronology": {
+          "title": "Place a step where its time and prerequisite cues fit",
+          "reportingCategory": "POW",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "[1] Connect the sensor to the recorder. [2] Begin the measurement. [3] Save the completed file. Sentence: “Before beginning, set the recorder to the required sampling rate.”",
+            "prompt": "Where should the sentence go?",
+            "choices": [
+              "After sentence 1",
+              "After sentence 2",
+              "After sentence 3"
+            ],
+            "answer": 0,
+            "explanation": "Before beginning requires the setting to be adjusted before measurement starts. After sentence 1 supplies the connected recorder and precedes sentence 2; the later positions adjust it only after data collection has begun or ended."
+          }
+        },
+        "causal-chain": {
+          "title": "Place a cause, finding or consequence beside the idea it develops",
+          "reportingCategory": "POW",
+          "sections": [
+            1,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "[1] A test revealed that the seal leaked under pressure. [2] The team replaced the damaged gasket. [3] The second test showed no leak. Sentence: “That flaw explained why the earlier readings had drifted.”",
+            "prompt": "Where does the sentence best connect the finding to the response?",
+            "choices": [
+              "After sentence 2",
+              "After sentence 1",
+              "After sentence 3"
+            ],
+            "answer": 1,
+            "explanation": "That flaw refers to the leak in sentence 1 and interprets its significance before sentence 2 describes the repair. The later positions separate the explanation from the finding and report the response before its reasoning."
+          }
+        },
+        "reference-anchor": {
+          "title": "Place a sentence beside the referent needed by this, they or those",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "[1] Volunteers uncovered two painted signs beneath the newer boards. [2] The museum plans to display the cleaned signs next month. Sentence: “These discoveries changed the team’s estimate of the building’s age.”",
+            "prompt": "Where does the sentence best establish the reference before moving to future plans?",
+            "choices": [
+              "Before sentence 1",
+              "After sentence 2",
+              "After sentence 1"
+            ],
+            "answer": 2,
+            "explanation": "These discoveries refers to finding the signs in sentence 1. Immediately afterward it explains that discovery’s significance before the paragraph moves to the future display; earlier it lacks a referent, and later it interrupts the shift to plans."
+          }
+        },
+        "paragraph-purpose": {
+          "title": "Divide paragraphs when the writing changes its job",
+          "reportingCategory": "POW",
+          "sections": [
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "[1] The report explains how the filtering system removes sediment. [2] It describes the layers of mesh and gravel. [3] Yet maintaining the system costs more than the original estimate. [4] The council will need to budget for replacement mesh each year.",
+            "prompt": "Where should a new paragraph mark the shift from operation to cost?",
+            "choices": [
+              "Before sentence 3",
+              "Before sentence 2",
+              "Before sentence 4"
+            ],
+            "answer": 0,
+            "explanation": "Sentences 1–2 explain the mechanism; sentence 3 introduces cost, developed in sentence 4. The other breaks divide the explanation or separate the new cost claim from its support."
+          }
+        },
+        "argument-bridge": {
+          "title": "Bridge a problem to the decision it motivates",
+          "reportingCategory": "POW",
+          "sections": [
+            1,
+            2,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "Paragraph A explains that a brighter display made the text readable but overheated the battery. Paragraph B describes the team lowering the brightness and adding a larger typeface. Sentence: “Making the words visible would matter little if the device stopped working.”",
+            "prompt": "Where does that sentence best motivate the revised design?",
+            "choices": [
+              "At the start of paragraph A",
+              "Between paragraphs A and B",
+              "After the solution at the end of B"
+            ],
+            "answer": 1,
+            "explanation": "After A the sentence interprets the visibility/overheating tradeoff, then prepares the change in B. Before A it lacks the established problem; after B it no longer explains the decision before that decision is introduced."
+          }
+        },
+        "whole-paragraph-order": {
+          "title": "Organize a complete essay by paragraph purpose and reference",
+          "reportingCategory": "POW",
+          "sections": [
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            },
+            {
+              "section": 5,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "A: The new timetable answered that objection by adding an early trip. B: Parents argued that the proposed route would leave children waiting too long. C: The council proposed changing the bus route. D: The council adopted the timetable after testing it for a week.",
+            "prompt": "Which order presents the proposal, objection, response and decision?",
+            "choices": [
+              "B, C, A, D",
+              "C, B, A, D",
+              "C, A, D, B"
+            ],
+            "answer": 1,
+            "explanation": "The proposal must precede the objection; that objection in A points back to B. The tested response then leads to the adoption in D. The other orders either introduce criticism before the proposal or respond before the criticism appears."
+          }
+        }
+      },
+      "questionSkills": {
+        "logical-placement-001": [
+          "chronology"
+        ],
+        "logical-placement-002": [
+          "chronology"
+        ],
+        "logical-placement-005": [
+          "chronology"
+        ],
+        "logical-placement-013": [
+          "chronology"
+        ],
+        "logical-placement-017": [
+          "chronology"
+        ],
+        "logical-placement-018": [
+          "chronology"
+        ],
+        "logical-placement-019": [
+          "chronology"
+        ],
+        "logical-placement-029": [
+          "chronology"
+        ],
+        "logical-placement-003": [
+          "causal-chain"
+        ],
+        "logical-placement-007": [
+          "causal-chain"
+        ],
+        "logical-placement-009": [
+          "causal-chain"
+        ],
+        "logical-placement-011": [
+          "causal-chain"
+        ],
+        "logical-placement-012": [
+          "causal-chain"
+        ],
+        "logical-placement-016": [
+          "causal-chain"
+        ],
+        "logical-placement-020": [
+          "causal-chain"
+        ],
+        "logical-placement-022": [
+          "causal-chain"
+        ],
+        "logical-placement-024": [
+          "causal-chain"
+        ],
+        "logical-placement-025": [
+          "causal-chain"
+        ],
+        "logical-placement-027": [
+          "causal-chain"
+        ],
+        "logical-placement-028": [
+          "causal-chain"
+        ],
+        "logical-placement-032": [
+          "causal-chain"
+        ],
+        "logical-placement-004": [
+          "reference-anchor"
+        ],
+        "logical-placement-006": [
+          "reference-anchor"
+        ],
+        "logical-placement-008": [
+          "reference-anchor"
+        ],
+        "logical-placement-010": [
+          "reference-anchor"
+        ],
+        "logical-placement-014": [
+          "reference-anchor"
+        ],
+        "logical-placement-015": [
+          "reference-anchor"
+        ],
+        "logical-placement-021": [
+          "reference-anchor"
+        ],
+        "logical-placement-023": [
+          "reference-anchor"
+        ],
+        "logical-placement-026": [
+          "reference-anchor"
+        ],
+        "logical-placement-030": [
+          "reference-anchor"
+        ],
+        "logical-placement-031": [
+          "reference-anchor"
+        ],
+        "logical-placement-transfer-01": [
+          "paragraph-purpose"
+        ],
+        "logical-placement-transfer-02": [
+          "argument-bridge"
+        ],
+        "english-skill-logical-placement-paragraph-purpose-01": [
+          "paragraph-purpose"
+        ],
+        "english-skill-logical-placement-paragraph-purpose-02": [
+          "paragraph-purpose"
+        ],
+        "english-skill-logical-placement-argument-bridge-01": [
+          "argument-bridge"
+        ],
+        "english-skill-logical-placement-argument-bridge-02": [
+          "argument-bridge"
+        ],
+        "english-skill-logical-placement-whole-paragraph-order-01": [
+          "whole-paragraph-order"
+        ],
+        "english-skill-logical-placement-whole-paragraph-order-02": [
+          "whole-paragraph-order"
+        ],
+        "english-skill-logical-placement-whole-paragraph-order-03": [
+          "whole-paragraph-order"
+        ]
+      },
+      "checkSkills": {
+        "logical-placement-daily-check-1": [
+          "chronology"
+        ],
+        "logical-placement-daily-check-2": [
+          "reference-anchor"
+        ],
+        "logical-placement-daily-check-3": [
+          "reference-anchor"
+        ]
+      }
+    },
+    "redundancy": {
+      "skills": {
+        "local-repetition": {
+          "title": "Remove meaning repeated inside a phrase",
+          "reportingCategory": "KLA",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The new antenna can ___ signals from stations beyond the mountain.",
+            "prompt": "Which choice preserves the meaning with the least repetition?",
+            "choices": [
+              "receive incoming signals coming in",
+              "receive",
+              "receive and take in"
+            ],
+            "answer": 1,
+            "explanation": "Receive already conveys taking something in. The first option repeats incoming and coming in; the last repeats the verb’s meaning. The sentence already supplies the object signals after the blank."
+          }
+        },
+        "wordy-connector": {
+          "title": "Replace a wordy connector without changing its logical role",
+          "reportingCategory": "KLA",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The laboratory delayed opening ___ the ventilation system had not passed inspection.",
+            "prompt": "Which choice expresses the cause most concisely?",
+            "choices": [
+              "because",
+              "for the reason that",
+              "owing to the fact that"
+            ],
+            "answer": 0,
+            "explanation": "Because directly states the reason the lab delayed opening. The other phrases express the same cause with more words and no useful added meaning."
+          }
+        },
+        "delete-tangent": {
+          "title": "Delete an irrelevant detail while retaining a complete sentence",
+          "reportingCategory": "KLA",
+          "sections": [
+            2,
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The engineer tested the emergency lights, ___, before signing the report.",
+            "prompt": "Which insertion best preserves the sentence’s focus on the safety inspection?",
+            "choices": [
+              "and she had bought new shoes",
+              "which had been inspected last year by her neighbor’s cousin",
+              "OMIT both commas and the inserted phrase"
+            ],
+            "answer": 2,
+            "explanation": "The main sentence needs no personal aside: The engineer tested the emergency lights before signing the report. The other choices add unrelated background and disrupt the inspection’s focus."
+          }
+        },
+        "preserve-limits": {
+          "title": "Retain the sample and measured outcome while tightening a claim",
+          "reportingCategory": "KLA",
+          "sections": [
+            0,
+            1,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The survey asked forty volunteers whether the new labels were easier to read. Thirty-two said yes.",
+            "prompt": "Which summary preserves what was actually measured?",
+            "choices": [
+              "The labels improved reading for every visitor.",
+              "Thirty-two of the forty volunteers reported that the labels were easier to read.",
+              "Most people can now read labels accurately."
+            ],
+            "answer": 1,
+            "explanation": "The keyed summary keeps both the volunteer sample and the self-reported outcome. The other choices generalize to visitors or people beyond the sample and replace a reported opinion with demonstrated reading improvement."
+          }
+        },
+        "paragraph-repetition": {
+          "title": "Check for repeated information across sentences",
+          "reportingCategory": "KLA",
+          "sections": [
+            0,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The archive requires appointments for weekday visits. Visitors can request an appointment online. The final sentence must add useful information.",
+            "prompt": "Which choice develops the paragraph rather than restating its opening?",
+            "choices": [
+              "Reading rooms provide adjustable lamps for examining faint handwriting.",
+              "A weekday visit requires an appointment.",
+              "Visitors must have made an appointment if they visit on a weekday."
+            ],
+            "answer": 0,
+            "explanation": "The first choice adds a practical detail about working in the reading room. The other two express the opening appointment rule again in different words."
+          }
+        }
+      },
+      "questionSkills": {
+        "redundancy-001": [
+          "local-repetition"
+        ],
+        "redundancy-002": [
+          "local-repetition"
+        ],
+        "redundancy-003": [
+          "local-repetition"
+        ],
+        "redundancy-005": [
+          "local-repetition"
+        ],
+        "redundancy-006": [
+          "local-repetition"
+        ],
+        "redundancy-007": [
+          "local-repetition"
+        ],
+        "redundancy-008": [
+          "local-repetition"
+        ],
+        "redundancy-010": [
+          "local-repetition"
+        ],
+        "redundancy-012": [
+          "local-repetition"
+        ],
+        "redundancy-013": [
+          "local-repetition"
+        ],
+        "redundancy-014": [
+          "local-repetition"
+        ],
+        "redundancy-016": [
+          "local-repetition"
+        ],
+        "redundancy-017": [
+          "local-repetition"
+        ],
+        "redundancy-018": [
+          "local-repetition"
+        ],
+        "redundancy-020": [
+          "local-repetition"
+        ],
+        "redundancy-022": [
+          "local-repetition"
+        ],
+        "redundancy-024": [
+          "local-repetition"
+        ],
+        "redundancy-025": [
+          "local-repetition"
+        ],
+        "redundancy-026": [
+          "local-repetition"
+        ],
+        "redundancy-027": [
+          "local-repetition"
+        ],
+        "redundancy-028": [
+          "local-repetition"
+        ],
+        "redundancy-029": [
+          "local-repetition"
+        ],
+        "redundancy-030": [
+          "local-repetition"
+        ],
+        "redundancy-031": [
+          "local-repetition"
+        ],
+        "redundancy-004": [
+          "wordy-connector"
+        ],
+        "redundancy-009": [
+          "wordy-connector"
+        ],
+        "redundancy-011": [
+          "wordy-connector"
+        ],
+        "redundancy-019": [
+          "wordy-connector"
+        ],
+        "redundancy-021": [
+          "wordy-connector"
+        ],
+        "redundancy-023": [
+          "wordy-connector"
+        ],
+        "redundancy-015": [
+          "delete-tangent"
+        ],
+        "redundancy-032": [
+          "delete-tangent"
+        ],
+        "redundancy-transfer-01": [
+          "preserve-limits"
+        ],
+        "redundancy-transfer-02": [
+          "paragraph-repetition"
+        ],
+        "english-skill-redundancy-delete-tangent-01": [
+          "delete-tangent"
+        ],
+        "english-skill-redundancy-preserve-limits-01": [
+          "preserve-limits"
+        ],
+        "english-skill-redundancy-preserve-limits-02": [
+          "preserve-limits"
+        ],
+        "english-skill-redundancy-paragraph-repetition-01": [
+          "paragraph-repetition"
+        ],
+        "english-skill-redundancy-paragraph-repetition-02": [
+          "paragraph-repetition"
+        ]
+      },
+      "checkSkills": {
+        "redundancy-daily-check-1": [
+          "local-repetition"
+        ],
+        "redundancy-daily-check-2": [
+          "wordy-connector"
+        ],
+        "redundancy-daily-check-3": [
+          "delete-tangent"
+        ]
+      }
+    },
+    "transitions": {
+      "skills": {
+        "contrast": {
+          "title": "Mark a reversal, limitation or unexpected outcome",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The volunteers expected the repairs to take a weekend. ___ hidden damage kept the building closed for six months.",
+            "prompt": "Which transition signals the reversal of that expectation?",
+            "choices": [
+              "For example,",
+              "Instead,",
+              "Similarly,"
+            ],
+            "answer": 1,
+            "explanation": "Instead marks the contrast between the expected short repair and the actual long closure. The second statement is not an example of a weekend repair or a similar outcome."
+          }
+        },
+        "cause-effect": {
+          "title": "State a conclusion or result supported by the preceding idea",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The only bridge into the district was closed for inspection. ___ deliveries arrived by ferry for the next three days.",
+            "prompt": "Which transition marks the result?",
+            "choices": [
+              "Consequently,",
+              "For instance,",
+              "Likewise,"
+            ],
+            "answer": 0,
+            "explanation": "The ferry deliveries result from the bridge closure, so Consequently expresses cause and effect. They are neither an example of an inspection nor a parallel event."
+          }
+        },
+        "time-sequence": {
+          "title": "Distinguish ordered steps from simultaneous actions",
+          "reportingCategory": "POW",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 3
+            }
+          ],
+          "activity": {
+            "evidenceText": "The technician placed the sample in the bath. ___ it warmed, she prepared the second instrument.",
+            "prompt": "Which choice shows that the preparation occurred during the warming?",
+            "choices": [
+              "Afterward,",
+              "Therefore,",
+              "While"
+            ],
+            "answer": 2,
+            "explanation": "While introduces the simultaneous warming interval. Afterward would put preparation later; Therefore would claim the warming caused the preparation instead of locating it in time."
+          }
+        },
+        "addition-comparison": {
+          "title": "Add a separate point or mark a parallel situation",
+          "reportingCategory": "POW",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The new roof reduced winter heat loss. ___ it blocked much of the traffic noise from the street.",
+            "prompt": "Which transition adds a separate benefit?",
+            "choices": [
+              "Moreover,",
+              "In other words,",
+              "Nevertheless,"
+            ],
+            "answer": 0,
+            "explanation": "Noise reduction is another benefit rather than a restatement of heat loss or a contrast with it. Moreover adds that independent supporting point."
+          }
+        },
+        "example-correction": {
+          "title": "Distinguish an example from a corrected misconception",
+          "reportingCategory": "POW",
+          "sections": [
+            1,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 4
+            },
+            {
+              "section": 1,
+              "example": 5
+            }
+          ],
+          "activity": {
+            "evidenceText": "Visitors often assume the tower was built as a watchpost. ___ it originally stored grain for the winter.",
+            "prompt": "Which transition introduces the correction?",
+            "choices": [
+              "For example,",
+              "In fact,",
+              "Likewise,"
+            ],
+            "answer": 1,
+            "explanation": "In fact introduces the actual use in correction of the visitors’ assumption. Grain storage is not an example of a watchpost or a similar use."
+          }
+        },
+        "paragraph-concession": {
+          "title": "Weigh positive evidence against a separate obstacle",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The trial produced accurate readings, and every operator found the controls simple. ___ the hospital postponed purchasing the device because replacement parts were unavailable.",
+            "prompt": "Which transition accurately concedes the favorable evidence before the obstacle?",
+            "choices": [
+              "As a result,",
+              "In other words,",
+              "Nevertheless,"
+            ],
+            "answer": 2,
+            "explanation": "Nevertheless concedes accuracy and ease of use, then introduces the independent parts problem that blocked purchase. The favorable evidence did not cause postponement, and postponement does not restate it."
+          }
+        },
+        "paragraph-addition": {
+          "title": "Add a new accessibility measure without treating it as a restatement",
+          "reportingCategory": "POW",
+          "sections": [
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "One paragraph describes lower display cases that seated visitors can see. The next explains tactile models for visitors who cannot see the objects.",
+            "prompt": "Which opening best links the second measure to the first?",
+            "choices": [
+              "In addition,",
+              "In other words,",
+              "Conversely,"
+            ],
+            "answer": 0,
+            "explanation": "The tactile models supply another way of improving access, so In addition fits. They do not restate the height change, and they do not reverse it."
+          }
+        }
+      },
+      "questionSkills": {
+        "transitions-001": [
+          "contrast"
+        ],
+        "transitions-004": [
+          "contrast"
+        ],
+        "transitions-005": [
+          "contrast"
+        ],
+        "transitions-006": [
+          "contrast"
+        ],
+        "transitions-008": [
+          "contrast"
+        ],
+        "transitions-009": [
+          "contrast"
+        ],
+        "transitions-013": [
+          "contrast"
+        ],
+        "transitions-015": [
+          "contrast"
+        ],
+        "transitions-023": [
+          "contrast"
+        ],
+        "transitions-026": [
+          "contrast"
+        ],
+        "transitions-002": [
+          "cause-effect"
+        ],
+        "transitions-007": [
+          "cause-effect"
+        ],
+        "transitions-003": [
+          "time-sequence"
+        ],
+        "transitions-010": [
+          "time-sequence"
+        ],
+        "transitions-012": [
+          "time-sequence"
+        ],
+        "transitions-016": [
+          "time-sequence"
+        ],
+        "transitions-019": [
+          "time-sequence"
+        ],
+        "transitions-024": [
+          "time-sequence"
+        ],
+        "transitions-027": [
+          "time-sequence"
+        ],
+        "transitions-032": [
+          "time-sequence"
+        ],
+        "transitions-014": [
+          "addition-comparison"
+        ],
+        "transitions-017": [
+          "addition-comparison"
+        ],
+        "transitions-018": [
+          "addition-comparison"
+        ],
+        "transitions-022": [
+          "addition-comparison"
+        ],
+        "transitions-025": [
+          "addition-comparison"
+        ],
+        "transitions-031": [
+          "addition-comparison"
+        ],
+        "transitions-011": [
+          "example-correction"
+        ],
+        "transitions-020": [
+          "example-correction"
+        ],
+        "transitions-021": [
+          "example-correction"
+        ],
+        "transitions-028": [
+          "example-correction"
+        ],
+        "transitions-029": [
+          "example-correction"
+        ],
+        "transitions-030": [
+          "example-correction"
+        ],
+        "transitions-transfer-01": [
+          "paragraph-concession"
+        ],
+        "transitions-transfer-02": [
+          "paragraph-addition"
+        ],
+        "english-skill-transitions-cause-effect-01": [
+          "cause-effect"
+        ],
+        "english-skill-transitions-paragraph-concession-01": [
+          "paragraph-concession"
+        ],
+        "english-skill-transitions-paragraph-concession-02": [
+          "paragraph-concession"
+        ],
+        "english-skill-transitions-paragraph-addition-01": [
+          "paragraph-addition"
+        ],
+        "english-skill-transitions-paragraph-addition-02": [
+          "paragraph-addition"
+        ]
+      },
+      "checkSkills": {
+        "transitions-daily-check-2": [
+          "cause-effect"
+        ],
+        "transitions-daily-check-3": [
+          "time-sequence"
+        ],
+        "transitions-daily-check-1": [
+          "addition-comparison"
+        ]
+      }
+    },
+    "which-choice": {
+      "skills": {
+        "specific-detail": {
+          "title": "Select concrete evidence that demonstrates the stated quality",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The writer wants to emphasize how carefully the conservator worked.",
+            "prompt": "Which detail most directly demonstrates that quality?",
+            "choices": [
+              "The museum opened at ten each morning.",
+              "She worked in the museum’s largest room.",
+              "She checked each stitch under magnification before moving to the next."
+            ],
+            "answer": 2,
+            "explanation": "Inspecting every stitch under magnification demonstrates careful work through a concrete action. The room size and opening time concern the setting rather than the quality the question asks to emphasize."
+          }
+        },
+        "introduction-conclusion": {
+          "title": "Match an opening or conclusion to the paragraph’s actual point",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "A paragraph explains how local volunteers kept a small ferry service running after its funding ended. It details donated fuel, repaired engines, and shared shifts.",
+            "prompt": "Which conclusion best returns to that point?",
+            "choices": [
+              "The volunteers’ shared effort kept the river crossing open.",
+              "Ferries can carry both bicycles and motor vehicles.",
+              "The river is deeper near its western bank."
+            ],
+            "answer": 0,
+            "explanation": "The shared effort conclusion synthesizes the fuel, repairs, and shifts. The other details may concern ferries or the river but do not conclude the paragraph’s explanation of how the service survived."
+          }
+        },
+        "tone": {
+          "title": "Match the attitude and register established by the passage",
+          "reportingCategory": "POW",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "An essay remembers a demolished neighborhood theater with quiet regret.",
+            "prompt": "Which sentence best maintains that attitude?",
+            "choices": [
+              "The site could become an exciting new shopping complex.",
+              "Dust settled where the ticket window had once glowed on winter evenings.",
+              "The old theater was totally awesome back in the day."
+            ],
+            "answer": 1,
+            "explanation": "The subdued image of dust replacing the lit ticket window supports quiet regret. The shopping proposal changes to optimism about redevelopment; the final choice uses slang that clashes with the reflective tone."
+          }
+        },
+        "support-two-claims": {
+          "title": "Supply evidence for every part of a two-part claim",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The paragraph claims that a new bus lane shortened journeys without reducing the number of stops.",
+            "prompt": "Which evidence supports both parts?",
+            "choices": [
+              "Passengers preferred the new seats.",
+              "The route still served all twelve stops, and average travel time fell by nine minutes.",
+              "The route attracted more riders after fares were reduced."
+            ],
+            "answer": 1,
+            "explanation": "All twelve stops supports unchanged access, and a nine-minute reduction supports shorter journeys. The other choices give satisfaction or ridership evidence without establishing both requested outcomes."
+          }
+        },
+        "essay-image": {
+          "title": "Return to an opening image in a conclusion supported by the full essay",
+          "reportingCategory": "POW",
+          "sections": [
+            2,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "An essay opens with an unfinished family recipe written on a stained card. The writer learns the missing steps from several relatives, then cooks the dish with a younger cousin.",
+            "prompt": "Which conclusion best develops that opening image and the essay’s shared inheritance?",
+            "choices": [
+              "The card’s empty lines now held all our handwriting, and my cousin reached for the pen.",
+              "The dish contained rice, onions, and several common spices.",
+              "The card should be stored in a protective sleeve to prevent more stains."
+            ],
+            "answer": 0,
+            "explanation": "Shared handwriting and the cousin reaching for the pen develop the unfinished recipe image into ongoing family transmission. The other choices offer ingredients or storage advice without completing the essay’s meaning."
+          }
+        },
+        "qualified-dual-evidence": {
+          "title": "Support a compound claim without substituting related details",
+          "reportingCategory": "POW",
+          "sections": [
+            0,
+            1,
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "A paragraph claims that moving a clinic to a transit hub improved attendance without increasing patients’ travel costs.",
+            "prompt": "Which finding directly supports both outcomes?",
+            "choices": [
+              "The new building has brighter rooms and a larger waiting area.",
+              "The clinic extended its hours and added two doctors.",
+              "Missed appointments fell, while patients’ average fares remained unchanged."
+            ],
+            "answer": 2,
+            "explanation": "Fewer missed appointments supports attendance; unchanged fares supports the travel-cost limit. Facilities, staffing, and hours are relevant to a clinic but do not establish the two outcomes in the claim."
+          }
+        },
+        "whole-essay-goal": {
+          "title": "Evaluate whether the whole essay achieves a specified purpose",
+          "reportingCategory": "POW",
+          "sections": [
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            },
+            {
+              "section": 5,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "Paragraph 1 describes a flooded reading room and the damaged books. Paragraph 2 explains why shelves on the ground floor were vulnerable. Paragraph 3 describes raising the shelves and moving rare volumes upstairs.",
+            "prompt": "Would this essay meet the goal of explaining why the library changed its storage arrangements?",
+            "choices": [
+              "Yes, because the damage and the explanation of vulnerability motivate the later changes.",
+              "No, because it never gives a history of the library’s architects.",
+              "Yes, because it compares the writing styles of the damaged books."
+            ],
+            "answer": 0,
+            "explanation": "The essay connects the problem and its cause to the revised storage, which meets the specified explanatory goal. An architectural history is unnecessary, and the text does not compare literary styles."
+          }
+        }
+      },
+      "questionSkills": {
+        "which-choice-001": [
+          "specific-detail"
+        ],
+        "which-choice-002": [
+          "specific-detail"
+        ],
+        "which-choice-003": [
+          "specific-detail"
+        ],
+        "which-choice-004": [
+          "specific-detail"
+        ],
+        "which-choice-005": [
+          "specific-detail"
+        ],
+        "which-choice-006": [
+          "specific-detail"
+        ],
+        "which-choice-011": [
+          "specific-detail"
+        ],
+        "which-choice-013": [
+          "specific-detail"
+        ],
+        "which-choice-014": [
+          "specific-detail"
+        ],
+        "which-choice-017": [
+          "specific-detail"
+        ],
+        "which-choice-018": [
+          "specific-detail"
+        ],
+        "which-choice-019": [
+          "specific-detail"
+        ],
+        "which-choice-020": [
+          "specific-detail"
+        ],
+        "which-choice-021": [
+          "specific-detail"
+        ],
+        "which-choice-022": [
+          "specific-detail"
+        ],
+        "which-choice-027": [
+          "specific-detail"
+        ],
+        "which-choice-029": [
+          "specific-detail"
+        ],
+        "which-choice-030": [
+          "specific-detail"
+        ],
+        "which-choice-007": [
+          "introduction-conclusion"
+        ],
+        "which-choice-008": [
+          "introduction-conclusion"
+        ],
+        "which-choice-012": [
+          "introduction-conclusion"
+        ],
+        "which-choice-023": [
+          "introduction-conclusion"
+        ],
+        "which-choice-024": [
+          "introduction-conclusion"
+        ],
+        "which-choice-028": [
+          "introduction-conclusion"
+        ],
+        "which-choice-009": [
+          "tone"
+        ],
+        "which-choice-015": [
+          "tone"
+        ],
+        "which-choice-025": [
+          "tone"
+        ],
+        "which-choice-031": [
+          "tone"
+        ],
+        "which-choice-010": [
+          "support-two-claims"
+        ],
+        "which-choice-016": [
+          "support-two-claims"
+        ],
+        "which-choice-026": [
+          "support-two-claims"
+        ],
+        "which-choice-032": [
+          "support-two-claims"
+        ],
+        "which-choice-transfer-01": [
+          "essay-image"
+        ],
+        "which-choice-transfer-02": [
+          "qualified-dual-evidence"
+        ],
+        "english-skill-which-choice-essay-image-01": [
+          "essay-image"
+        ],
+        "english-skill-which-choice-essay-image-02": [
+          "essay-image"
+        ],
+        "english-skill-which-choice-qualified-dual-evidence-01": [
+          "qualified-dual-evidence"
+        ],
+        "english-skill-which-choice-qualified-dual-evidence-02": [
+          "qualified-dual-evidence"
+        ],
+        "english-skill-which-choice-whole-essay-goal-01": [
+          "whole-essay-goal"
+        ],
+        "english-skill-which-choice-whole-essay-goal-02": [
+          "whole-essay-goal"
+        ],
+        "english-skill-which-choice-whole-essay-goal-03": [
+          "whole-essay-goal"
+        ]
+      },
+      "checkSkills": {
+        "which-choice-daily-check-1": [
+          "specific-detail"
+        ],
+        "which-choice-daily-check-2": [
+          "specific-detail"
+        ],
+        "which-choice-daily-check-3": [
+          "introduction-conclusion"
+        ]
+      }
+    },
+    "word-choice": {
+      "skills": {
+        "significance": {
+          "title": "Distinguish significance from mere visibility or historical connection",
+          "reportingCategory": "KLA",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The quiet agreement attracted little attention at first but permanently changed how the region shared water.",
+            "prompt": "Which adjective most precisely conveys its lasting importance?",
+            "choices": [
+              "historic",
+              "noticeable",
+              "noisy"
+            ],
+            "answer": 0,
+            "explanation": "Historic means historically important, matching the lasting change. Noticeable concerns how easily something attracts attention, which the first clause limits; noisy describes sound rather than significance."
+          }
+        },
+        "action-and-group-meaning": {
+          "title": "Choose words that preserve the exact action or group relationship",
+          "reportingCategory": "KLA",
+          "sections": [
+            0,
+            3,
+            6
+          ],
+          "workedExamples": [
+            {
+              "section": 6,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "A reader says consensus and compromise always mean the same thing.",
+            "prompt": "Which distinction corrects that misunderstanding?",
+            "choices": [
+              "A compromise involves concessions; a consensus is general agreement.",
+              "A consensus is a disagreement; a compromise is a measurement.",
+              "A compromise always means that everyone got the original plan unchanged."
+            ],
+            "answer": 0,
+            "explanation": "Compromise describes reaching an agreement through concessions, while consensus means general agreement and need not involve concessions. The other statements reverse or erase those distinctions."
+          }
+        },
+        "word-form-and-idiom": {
+          "title": "Match the word’s grammatical job and the construction it governs",
+          "reportingCategory": "CSE",
+          "sections": [
+            2,
+            7
+          ],
+          "workedExamples": [
+            {
+              "section": 7,
+              "example": 0
+            },
+            {
+              "section": 7,
+              "example": 1
+            }
+          ],
+          "activity": {
+            "evidenceText": "The editor will ___ several questions about the proposal before offering final ___.",
+            "prompt": "Which pair matches the required verb and noun?",
+            "choices": [
+              "rise; advise",
+              "raise; advice",
+              "raise; advise"
+            ],
+            "answer": 1,
+            "explanation": "Raise takes questions as an object, and advice is the noun for guidance. Rise does not take that object, while advise is the verb rather than the noun required after final."
+          }
+        },
+        "formal-tone": {
+          "title": "Choose precise wording appropriate to a formal report",
+          "reportingCategory": "KLA",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "An audit found that average processing time fell after a change to the application system.",
+            "prompt": "Which wording fits that measured formal tone?",
+            "choices": [
+              "The change seriously crushed the old delays.",
+              "The change made delays way less annoying.",
+              "The change reduced average processing time."
+            ],
+            "answer": 2,
+            "explanation": "Reduced average processing time states a precise, measured result. Crushed and way less annoying add colloquial intensity or an unsupported reaction instead of maintaining the report’s register."
+          }
+        },
+        "reference-and-meaning": {
+          "title": "Distinguish references, conclusions, rules and timing",
+          "reportingCategory": "KLA",
+          "sections": [
+            0,
+            8
+          ],
+          "workedExamples": [
+            {
+              "section": 8,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The passage hints at an older myth without naming it, and the reader recognizes the connection from a repeated image.",
+            "prompt": "Which pair names the writer’s reference and the reader’s act?",
+            "choices": [
+              "illusion; implies",
+              "allusion; infers",
+              "allusion; eludes"
+            ],
+            "answer": 1,
+            "explanation": "An allusion is an indirect reference; the reader infers the connection from evidence. An illusion is a false impression, imply describes the act of suggesting, and elude means escape."
+          }
+        },
+        "attitude-and-belief": {
+          "title": "Preserve the distinction between judgment, belief and inventiveness",
+          "reportingCategory": "KLA",
+          "sections": [
+            0,
+            3,
+            9
+          ],
+          "workedExamples": [
+            {
+              "section": 9,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The reviewer was impartial, but she did not automatically believe every claim the team made.",
+            "prompt": "Which pair accurately describes her impartiality and the claims she found believable?",
+            "choices": [
+              "uninterested; credulous",
+              "disinterested; credible",
+              "ingenious; incredulous"
+            ],
+            "answer": 1,
+            "explanation": "Disinterested means impartial in judgment; credible describes claims that are believable. Uninterested means not interested, credulous describes an overly trusting person, and the final pair does not express the stated distinctions."
+          }
+        },
+        "earned-satisfaction": {
+          "title": "Distinguish earned satisfaction from excessive self-regard",
+          "reportingCategory": "KLA",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "A student is pleased with a hard-earned result, thanks a teammate for help, and recognizes that some parts still need improvement.",
+            "prompt": "Which added statement would change that justified satisfaction into arrogance?",
+            "choices": [
+              "Nobody else in the group could ever do work as good as mine.",
+              "My teammate helped me understand the hardest part.",
+              "I still need to check the parts that did not work well."
+            ],
+            "answer": 0,
+            "explanation": "The first statement claims superiority over everyone else without support. Thanking a teammate and acknowledging remaining flaws are consistent with justified satisfaction rather than excessive self-regard."
+          }
+        },
+        "preposition-idiom": {
+          "title": "Use the preposition required by the complete expression",
+          "reportingCategory": "CSE",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The conservation course focuses on preventing damage rather than repairing it later.",
+            "prompt": "Which word governs the preposition on in this construction?",
+            "choices": [
+              "course",
+              "focuses",
+              "damage"
+            ],
+            "answer": 1,
+            "explanation": "The expression is focuses on: focuses governs the preposition introducing the subject of attention. Course names what does the focusing, and damage belongs to the later -ing phrase rather than determining this preposition."
+          }
+        },
+        "certainty": {
+          "title": "Choose a word that preserves the evidence’s degree of certainty",
+          "reportingCategory": "KLA",
+          "sections": [
+            0,
+            3,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The report describes results from one village and explicitly says that other villages have not yet been studied.",
+            "prompt": "Which conclusion respects that limit?",
+            "choices": [
+              "The same pattern has been proved in every village.",
+              "The reported pattern occurred in the studied village; a wider pattern has not yet been established.",
+              "The report must be false because it studied only one village."
+            ],
+            "answer": 1,
+            "explanation": "The middle choice preserves the stated observation and the limit on generalization. Studying one place does not prove the result everywhere, but limited scope does not make the reported observation false."
+          }
+        },
+        "conditional-meaning": {
+          "title": "Use wording that preserves a stated condition",
+          "reportingCategory": "KLA",
+          "sections": [
+            0,
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "A construction permit is contingent on an inspection confirming that the foundation meets the code. The inspection finds a defect.",
+            "prompt": "What follows from the stated condition?",
+            "choices": [
+              "The permit must be issued regardless of the defect.",
+              "The inspection is irrelevant to the permit.",
+              "The condition for issuing the permit has not been met."
+            ],
+            "answer": 2,
+            "explanation": "Contingent on makes a satisfactory inspection a prerequisite. A defect means the stated requirement has not been satisfied; it does not guarantee the permit or make the inspection irrelevant."
+          }
+        }
+      },
+      "questionSkills": {
+        "word-choice-003": [
+          "significance"
+        ],
+        "word-choice-012": [
+          "significance"
+        ],
+        "word-choice-006": [
+          "action-and-group-meaning"
+        ],
+        "word-choice-007": [
+          "action-and-group-meaning"
+        ],
+        "word-choice-008": [
+          "action-and-group-meaning"
+        ],
+        "word-choice-009": [
+          "action-and-group-meaning"
+        ],
+        "word-choice-013": [
+          "action-and-group-meaning"
+        ],
+        "word-choice-014": [
+          "action-and-group-meaning"
+        ],
+        "word-choice-015": [
+          "action-and-group-meaning"
+        ],
+        "word-choice-001": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-002": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-004": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-005": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-010": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-011": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-017": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-018": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-019": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-021": [
+          "word-form-and-idiom"
+        ],
+        "word-choice-020": [
+          "formal-tone"
+        ],
+        "word-choice-022": [
+          "reference-and-meaning"
+        ],
+        "word-choice-023": [
+          "reference-and-meaning"
+        ],
+        "word-choice-024": [
+          "reference-and-meaning"
+        ],
+        "word-choice-025": [
+          "reference-and-meaning"
+        ],
+        "word-choice-027": [
+          "reference-and-meaning"
+        ],
+        "word-choice-028": [
+          "reference-and-meaning"
+        ],
+        "word-choice-029": [
+          "reference-and-meaning"
+        ],
+        "word-choice-016": [
+          "attitude-and-belief"
+        ],
+        "word-choice-026": [
+          "attitude-and-belief"
+        ],
+        "word-choice-030": [
+          "attitude-and-belief"
+        ],
+        "word-choice-031": [
+          "attitude-and-belief"
+        ],
+        "word-choice-032": [
+          "attitude-and-belief"
+        ],
+        "word-choice-transfer-01": [
+          "certainty"
+        ],
+        "word-choice-transfer-02": [
+          "conditional-meaning"
+        ],
+        "english-skill-word-choice-significance-01": [
+          "significance"
+        ],
+        "english-skill-word-choice-formal-tone-01": [
+          "formal-tone"
+        ],
+        "english-skill-word-choice-formal-tone-02": [
+          "formal-tone"
+        ],
+        "english-skill-word-choice-earned-satisfaction-01": [
+          "earned-satisfaction"
+        ],
+        "english-skill-word-choice-earned-satisfaction-02": [
+          "earned-satisfaction"
+        ],
+        "english-skill-word-choice-earned-satisfaction-03": [
+          "earned-satisfaction"
+        ],
+        "english-skill-word-choice-preposition-idiom-01": [
+          "preposition-idiom"
+        ],
+        "english-skill-word-choice-preposition-idiom-02": [
+          "preposition-idiom"
+        ],
+        "english-skill-word-choice-preposition-idiom-03": [
+          "preposition-idiom"
+        ],
+        "english-skill-word-choice-certainty-01": [
+          "certainty"
+        ],
+        "english-skill-word-choice-certainty-02": [
+          "certainty"
+        ],
+        "english-skill-word-choice-conditional-meaning-01": [
+          "conditional-meaning"
+        ],
+        "english-skill-word-choice-conditional-meaning-02": [
+          "conditional-meaning"
+        ]
+      },
+      "checkSkills": {
+        "word-choice-daily-check-2": [
+          "formal-tone"
+        ],
+        "word-choice-daily-check-1": [
+          "earned-satisfaction"
+        ],
+        "word-choice-daily-check-3": [
+          "preposition-idiom"
+        ]
+      }
+    },
+    "test-patterns": {
+      "skills": {
+        "cut-or-keep": {
+          "title": "Test deletion while preserving the required main predicate",
+          "reportingCategory": "CSE",
+          "sections": [
+            0
+          ],
+          "workedExamples": [
+            {
+              "section": 0,
+              "example": 0
+            },
+            {
+              "section": 0,
+              "example": 2
+            },
+            {
+              "section": 0,
+              "example": 3
+            }
+          ],
+          "activity": {
+            "evidenceText": "The new entrance, which the team opened in June, provides step-free access to the gallery.",
+            "prompt": "If provides is deleted, what happens?",
+            "choices": [
+              "The sentence becomes more concise without losing grammar.",
+              "The sentence loses its main verb and becomes a fragment.",
+              "The which-clause becomes an independent sentence."
+            ],
+            "answer": 1,
+            "explanation": "Provides is the main verb for entrance. Opened belongs to the embedded which-clause and cannot replace it, so deletion leaves a fragment. A shorter answer is useful only if required structure survives."
+          }
+        },
+        "tone-and-concision": {
+          "title": "Remove an informal aside from a formal passage",
+          "reportingCategory": "KLA",
+          "sections": [
+            0,
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The geological report states: “The sample contained three distinct layers, which was pretty amazing, honestly.”",
+            "prompt": "Which ending preserves the formal result without an unnecessary aside?",
+            "choices": [
+              "layers.",
+              "layers—wild, right?",
+              "layers, which everyone thought was super cool."
+            ],
+            "answer": 0,
+            "explanation": "Ending at layers keeps the measured finding and the formal register. The other choices retain a conversational reaction that the report does not need."
+          }
+        },
+        "multi-part-goal": {
+          "title": "Satisfy every requirement in an editing goal",
+          "reportingCategory": "POW",
+          "sections": [
+            2
+          ],
+          "workedExamples": [
+            {
+              "section": 2,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The writer must identify which metals the sculpture used and where they came from.",
+            "prompt": "Which addition meets both requirements?",
+            "choices": [
+              "metals that gave the sculpture an unusually bright surface",
+              "copper and tin salvaged from the old shipyard",
+              "copper and tin that took six months to shape"
+            ],
+            "answer": 1,
+            "explanation": "Copper and tin names the materials, and the old shipyard supplies their source. The first names neither; the last names the materials but substitutes a time requirement for their source."
+          }
+        },
+        "modifier-target": {
+          "title": "Place the modifier where its intended scope is clear",
+          "reportingCategory": "CSE",
+          "sections": [
+            3
+          ],
+          "workedExamples": [
+            {
+              "section": 3,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The guide described photographs of the harbor that were faded. The writer wants faded to describe photographs without separating the noun from its modifier.",
+            "prompt": "Which phrase is clearest?",
+            "choices": [
+              "faded guide’s photographs of the harbor",
+              "photographs of faded harbor",
+              "faded photographs of the harbor"
+            ],
+            "answer": 2,
+            "explanation": "Faded directly modifies photographs in the keyed phrase. The other versions attach it to the guide or harbor rather than the photographs."
+          }
+        },
+        "idiomatic-preposition": {
+          "title": "Choose a complete idiomatic construction",
+          "reportingCategory": "CSE",
+          "sections": [
+            4
+          ],
+          "workedExamples": [
+            {
+              "section": 4,
+              "example": 0
+            },
+            {
+              "section": 4,
+              "example": 1
+            },
+            {
+              "section": 4,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The curator was preoccupied ___ arranging the exhibition and was capable ___ completing it before Friday.",
+            "prompt": "Which pair completes both constructions?",
+            "choices": [
+              "on; to",
+              "with; of",
+              "at; for"
+            ],
+            "answer": 1,
+            "explanation": "Preoccupied with introduces what holds attention; capable of takes the following -ing form. The other preposition pairs do not fit those constructions."
+          }
+        },
+        "keep-logical-connector": {
+          "title": "Keep a correct conjunction when it preserves the intended relationship",
+          "reportingCategory": "CSE",
+          "sections": [
+            1
+          ],
+          "workedExamples": [
+            {
+              "section": 1,
+              "example": 0
+            }
+          ],
+          "activity": {
+            "evidenceText": "The new route is longer, ___ it avoids the flooded road.",
+            "prompt": "Which conjunction correctly marks the tradeoff?",
+            "choices": [
+              "but",
+              "therefore,",
+              "and,"
+            ],
+            "answer": 0,
+            "explanation": "But coordinates the clauses and states the contrast between extra distance and avoiding flooding. Therefore between commas creates a splice and implies the wrong consequence; and, adds an unnecessary comma."
+          }
+        },
+        "exact-span": {
+          "title": "Check the exact replacement span and the explanatory boundary",
+          "reportingCategory": "CSE",
+          "sections": [
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 0
+            },
+            {
+              "section": 5,
+              "example": 2
+            }
+          ],
+          "activity": {
+            "evidenceText": "The report [[made one point, it]] showed that the two instruments measured different quantities.",
+            "prompt": "Which replacement both fixes the join and introduces the explanation without duplicating unchanged words?",
+            "choices": [
+              "made one point: it",
+              "made one point because it showed",
+              "made one point; because it"
+            ],
+            "answer": 0,
+            "explanation": "Made one point: it yields a complete introduction followed by its explanation. The second option repeats showed from outside the underline; the third puts a dependent because-clause after a semicolon."
+          }
+        },
+        "evidence-scope": {
+          "title": "Preserve the sample, measure and uncertainty in an evidence-based claim",
+          "reportingCategory": "KLA",
+          "sections": [
+            5
+          ],
+          "workedExamples": [
+            {
+              "section": 5,
+              "example": 3
+            }
+          ],
+          "activity": {
+            "evidenceText": "Sixty volunteers rated a new map; forty-eight said it was easier to follow. No timed navigation task was used.",
+            "prompt": "Which conclusion stays within that evidence?",
+            "choices": [
+              "The map made every traveler navigate faster.",
+              "Forty-eight volunteers reported that the map was easier to follow.",
+              "All volunteers completed routes more accurately."
+            ],
+            "answer": 1,
+            "explanation": "The keyed choice retains both the sample and the self-reported measure. The other statements generalize to everyone or claim timed/accuracy outcomes that the study did not test."
+          }
+        }
+      },
+      "questionSkills": {
+        "test-patterns-001": [
+          "cut-or-keep"
+        ],
+        "test-patterns-002": [
+          "cut-or-keep"
+        ],
+        "test-patterns-003": [
+          "cut-or-keep"
+        ],
+        "test-patterns-004": [
+          "cut-or-keep"
+        ],
+        "test-patterns-005": [
+          "cut-or-keep"
+        ],
+        "test-patterns-006": [
+          "cut-or-keep"
+        ],
+        "test-patterns-007": [
+          "cut-or-keep"
+        ],
+        "test-patterns-008": [
+          "tone-and-concision"
+        ],
+        "test-patterns-009": [
+          "tone-and-concision"
+        ],
+        "test-patterns-010": [
+          "tone-and-concision"
+        ],
+        "test-patterns-011": [
+          "multi-part-goal"
+        ],
+        "test-patterns-012": [
+          "multi-part-goal"
+        ],
+        "test-patterns-013": [
+          "multi-part-goal"
+        ],
+        "test-patterns-014": [
+          "multi-part-goal"
+        ],
+        "test-patterns-015": [
+          "modifier-target"
+        ],
+        "test-patterns-016": [
+          "modifier-target"
+        ],
+        "test-patterns-017": [
+          "modifier-target"
+        ],
+        "test-patterns-018": [
+          "modifier-target"
+        ],
+        "test-patterns-019": [
+          "idiomatic-preposition"
+        ],
+        "test-patterns-020": [
+          "idiomatic-preposition"
+        ],
+        "test-patterns-021": [
+          "idiomatic-preposition"
+        ],
+        "test-patterns-022": [
+          "keep-logical-connector"
+        ],
+        "test-patterns-023": [
+          "keep-logical-connector"
+        ],
+        "test-patterns-024": [
+          "keep-logical-connector"
+        ],
+        "test-patterns-transfer-01": [
+          "exact-span"
+        ],
+        "test-patterns-transfer-02": [
+          "evidence-scope"
+        ],
+        "english-skill-test-patterns-exact-span-01": [
+          "exact-span",
+          "keep-logical-connector"
+        ],
+        "english-skill-test-patterns-exact-span-02": [
+          "exact-span"
+        ],
+        "english-skill-test-patterns-evidence-scope-01": [
+          "evidence-scope"
+        ],
+        "english-skill-test-patterns-evidence-scope-02": [
+          "evidence-scope"
+        ]
+      },
+      "checkSkills": {
+        "test-patterns-daily-check-1": [
+          "cut-or-keep"
+        ],
+        "test-patterns-daily-check-2": [
+          "multi-part-goal"
+        ],
+        "test-patterns-daily-check-3": [
+          "keep-logical-connector"
+        ]
+      }
+    }
+  },
+  "counts": {
+    "topics": 15,
+    "skills": 106,
+    "questions": 613,
+    "checks": 45
+  }
+}

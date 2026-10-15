@@ -455,7 +455,26 @@ export function getTopicStats(
     verified.length / fresh.length >= required.accuracy &&
     verified.filter(
       (answer) => topicQuestions.get(answer.questionId)!.difficulty === "hard",
-    ).length >= required.hard;
+    ).length >= required.hard &&
+    [
+      ...new Set(
+        [...topicQuestions.values()]
+          .filter((q) => q.assessment !== false && q.skillId)
+          .map((q) => q.skillId!),
+      ),
+    ].every((skill) =>
+      [...first.values()].some((answer) => {
+        const question = topicQuestions.get(answer.questionId)!;
+        return (
+          question.skillId === skill &&
+          answer.chosen === question.answer &&
+          latest.get(answer.questionId)?.chosen === question.answer &&
+          answer.confidence !== "low" &&
+          answer.elapsedMs > 0 &&
+          answer.elapsedMs <= QUESTION_TARGET_SECONDS[question.subject] * 1000
+        );
+      }),
+    );
   return {
     attempted: relevant.length,
     correct,

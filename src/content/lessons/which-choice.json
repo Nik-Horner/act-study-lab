@@ -79,18 +79,38 @@
       ],
       "examples": [
         {
-          "text": "Opening: a locked gate marks a neglected park. After residents restore it, the conclusion says, 'Now the gate stands open as neighbors gather beneath the repaired lights.'",
-          "label": "The returned gate image demonstrates the change from exclusion to shared use.",
+          "text": "Opening: a grandmother's worn quilt has a new patch in every generation. After the essay traces the family members who repaired it, the conclusion says, 'The newest stitches are mine, but the pattern still carries all of their hands.'",
+          "label": "The quilt image returns with a changed meaning: inherited craft continues through the writer.",
           "good": true
         },
         {
-          "text": "Conclusion: 'Parks require mowing, lighting, and careful long-term budgeting.'",
-          "label": "Related to parks, but it introduces maintenance advice instead of completing the story’s opening image.",
+          "text": "Conclusion: 'Good-quality cotton thread can be expensive, so compare prices before buying it.'",
+          "label": "The practical advice concerns quilting but abandons the essay’s image and family meaning.",
           "good": false
         }
       ],
       "tip": "State the essay’s starting image, the change it develops, and what the conclusion must make the reader understand.",
       "teachingRevision": 2
+    },
+    {
+      "heading": "Whole-essay purpose: test the requested goal against the whole text",
+      "body": [
+        "Break the proposed goal into its required parts, then summarize what each paragraph actually contributes. A shared subject does not prove that an essay explains a mechanism, compares alternatives, or supports an argument.",
+        "Check whether the text develops those required parts across its paragraphs. One passing mention is insufficient for a sustained comparison. Judge every answer’s verdict and reason against the actual essay; missing details matter only if the specified goal requires them."
+      ],
+      "examples": [
+        {
+          "text": "Goal: explain how a garden’s funding changed. Paragraph 1: Membership fees paid the first year’s rent. Paragraph 2: When the rent increased, the organizers began selling seedlings. Paragraph 3: The sales now cover rent while fees buy shared tools. This essay meets the goal.",
+          "label": "The paragraphs trace the original source, the pressure for change and the new division of costs.",
+          "good": true
+        },
+        {
+          "text": "Goal: compare two ways of preserving a mural. Paragraph 1 recounts the artist’s childhood. Paragraph 2 describes the painting of the mural. Paragraph 3 mentions that a protective coating was added, then returns to the artist’s later career. This essay does not meet the comparison goal.",
+          "label": "One coating is mentioned, but the text never develops two methods or their relative strengths.",
+          "good": true
+        }
+      ],
+      "teachingRevision": 3
     }
   ],
   "check": [

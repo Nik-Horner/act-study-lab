@@ -426,30 +426,30 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "Redwood trees are one of the tallest types of trees in the [[world; some]] have grown as tall as 350 feet.",
+      "stem": "The clockmaker had replaced the worn spring[[; the pendulum]] now swung steadily even when the workshop grew cold.",
       "choices": [
         "NO CHANGE",
-        "world some",
-        "world; since some",
-        "world, some"
+        " the pendulum",
+        "; because the pendulum",
+        ", the pendulum"
       ],
       "answer": 0,
-      "explanation": "The semicolon joins independent statements about redwoods and their measured heights. 'World some' supplies no boundary; 'world, some' creates a comma splice; 'world; since some' places a dependent since-clause after the semicolon."
+      "explanation": "The clockmaker had replaced the worn spring and the pendulum now swung steadily are independent clauses, so a semicolon joins them. Removing the boundary creates a run-on, a comma alone creates a splice, and '; because' strands a dependent clause after the semicolon. The reference to temperature changes does not alter the main clause boundary."
     },
     {
       "id": "sentence-structure-030",
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "While the ancient Egyptian pyramids were built over 4000 years [[ago, still standing]] today and attract millions of tourists to Egypt each year.",
+      "stem": "Although the orchestra had rehearsed the difficult entrance until each player knew it by heart[[, entering too soon]] when the guest conductor gave an unfamiliar cue.",
       "choices": [
         "NO CHANGE",
-        "ago; they still stand",
-        "ago, they still stand",
-        "ago, they still standing"
+        "; several players still entered too soon",
+        ", several players still entered too soon",
+        ", several players still entering too soon"
       ],
       "answer": 2,
-      "explanation": "The 'While...' opener is dependent, so it needs an independent clause with a subject and verb: 'ago, they still stand today and attract...' NO CHANGE and 'they still standing' lack a proper main verb, and a semicolon can't follow the dependent opener."
+      "explanation": "Although makes the opening clause dependent. The keyed choice supplies the complete main clause several players still entered too soon after a comma. Entering and still entering do not provide its finite main verb; a semicolon cannot separate the dependent opener from its main clause."
     },
     {
       "id": "sentence-structure-031",

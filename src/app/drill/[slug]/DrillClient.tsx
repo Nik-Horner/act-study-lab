@@ -17,6 +17,11 @@ import { ButtonLink } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { Card } from "@/components/ui/Card";
+import {
+  getLearningSkill,
+  getQuestionTeaching,
+  skillHref,
+} from "@/lib/learning-skills";
 
 const TARGET_SEC = 42;
 
@@ -38,6 +43,7 @@ type OriginalDrillProps =
   | { mode: "misses"; pool: PoolItem[] };
 
 type DrillClientProps = OriginalDrillProps & {
+  skillId?: string;
   ownerId?: string;
   answeredQuestionIds?: string[];
   currentScore?: number | null;
@@ -275,7 +281,9 @@ export function DrillClient(props: DrillClientProps) {
         ? "Weak-Topics Drill"
         : "Review Your Misses";
   const backHref =
-    props.mode === "topic" ? `/learn/${props.slug}` : "/dashboard";
+    props.mode === "topic"
+      ? `/learn/${props.slug}${props.skillId ? `?skill=${encodeURIComponent(props.skillId)}` : ""}`
+      : "/dashboard";
 
   if (items.length === 0) {
     return <EmptyState mode={props.mode} backHref={backHref} />;
@@ -298,6 +306,9 @@ export function DrillClient(props: DrillClientProps) {
         </ButtonLink>
       </Card>
     );
+  const teaching = getQuestionTeaching(current.topicSlug, current.question.id);
+  const method =
+    teaching && getLearningSkill(current.topicSlug, teaching.skillId);
 
   const status = props.mode === "topic" ? topicStatus(progress) : "none";
   const accuracyPct =
@@ -369,18 +380,18 @@ export function DrillClient(props: DrillClientProps) {
       {!props.daily && props.mode !== "misses" && (
         <p className="text-sm text-ink-soft">
           {props.targetScore ? `Goal ${props.targetScore} · ` : ""}
-          {
-            {
-              foundation: "Foundation practice",
-              challenge: "Challenge practice",
-              balanced: "Mixed difficulty",
-            }[
-              englishDrillLevel(
-                props.currentScore ?? null,
-                props.targetScore ?? null,
-              )
-            ]
-          }
+          {props.skillId
+            ? "Focused skill practice"
+            : {
+                foundation: "Foundation practice",
+                challenge: "Challenge practice",
+                balanced: "Mixed difficulty",
+              }[
+                englishDrillLevel(
+                  props.currentScore ?? null,
+                  props.targetScore ?? null,
+                )
+              ]}
           {
             " · New questions first. Previously answered questions are labeled for review."
           }
@@ -460,6 +471,11 @@ export function DrillClient(props: DrillClientProps) {
             <p className="text-sm text-ink-soft">
               {current.question.explanation}
             </p>
+            {method && (
+              <ButtonLink href={skillHref(method)} variant="ghost" size="sm">
+                Review this method: {method.title}
+              </ButtonLink>
+            )}
             <p
               className={`text-xs ${answerSec <= TARGET_SEC ? "text-good" : "text-warn"}`}
             >

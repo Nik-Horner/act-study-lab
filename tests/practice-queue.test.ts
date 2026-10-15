@@ -9,6 +9,7 @@ import {
   type StudyState,
 } from "../src/lib/act/progress-model";
 import type { Question } from "../src/lib/act/types";
+import { getQuestions } from "../src/lib/act/content";
 const bank = Array.from(
   { length: 36 },
   (_, i) =>
@@ -136,4 +137,28 @@ test("recent independent difficulty overrides a reported high baseline when foun
       .length,
     6,
   );
+});
+
+test("Reading prioritizes new passages even when the earlier answer was in another topic", () => {
+  const all = getQuestions().filter((q) => q.subject === "reading");
+  const old = all.find((q) => q.topic === "reading-main-idea")!;
+  const s = state(34, 36);
+  s.profile.readingBaseline = 34;
+  s.answers = [
+    {
+      id: "other-skill",
+      questionId: old.id,
+      chosen: old.answer,
+      elapsedMs: 1000,
+      confidence: "high",
+      cause: null,
+      at: "2026-10-14T12:00:00Z",
+      mode: "drill",
+    },
+  ];
+  const detail = all.filter((q) => q.topic === "reading-details");
+  assert(detail.some((q) => q.passage?.id === old.passage?.id));
+  const set = selectPracticeSet(detail, s, "reading");
+  assert(set.every((q) => q.passage?.id !== old.passage?.id));
+  assert.equal(new Set(set.map((q) => q.passage?.id)).size, set.length);
 });

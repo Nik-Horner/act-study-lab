@@ -14,6 +14,8 @@ import scienceLegacyChecks from "@/content/science-legacy-checks.json";
 import mathQuestions from "@/content/math-questions.json";
 import mathExtraQuestions from "@/content/math-extra-questions.json";
 import mathMethodQuestions from "@/content/math-method-questions.json";
+import mathSkillQuestions from "@/content/math-skill-questions.json";
+import { getQuestionTeaching, mathSkills } from "../learning-skills";
 import scienceQuestions from "@/content/science-questions.json";
 import mathExams from "@/content/math-exams.json";
 import scienceExams from "@/content/science-exams.json";
@@ -31,6 +33,7 @@ const questions = [
   ...mathQuestions,
   ...mathExtraQuestions,
   ...mathMethodQuestions,
+  ...mathSkillQuestions,
   ...scienceQuestions,
   ...readingQuestions,
   ...readingPractice,
@@ -50,7 +53,8 @@ const readingReplacements = new Map(
   }),
 );
 export function getPracticeReplacement(id: string) {
-  return readingReplacements.get(id);
+  const question = readingReplacements.get(id);
+  return question ? withTeaching(question) : undefined;
 }
 export const SUBJECT_LABELS: Record<Subject, string> = {
   math: "Math",
@@ -68,36 +72,55 @@ export function getLesson(slug: string) {
   if (!lesson) throw new Error("Unknown lesson");
   return {
     ...lesson,
-    sections: lesson.sections.map((section, index) => ({
-      ...section,
-      activity: (
-        lessonActivities as Record<
-          string,
-          NonNullable<Lesson["sections"][number]["activity"]>[]
-        >
-      )[slug]?.[index],
-      evidence: (section.evidenceIds ?? []).map((id) => {
-        const passage =
-          scienceTeaching.find((p) => p.id === id) ??
-          questions.find((q) => !reserved.has(q.id) && q.passage?.id === id)
-            ?.passage;
-        if (!passage) throw new Error(`Missing lesson evidence: ${id}`);
-        return passage;
-      }),
-    })),
+    sections: [
+      ...lesson.sections.map((section, index) => ({
+        ...section,
+        activity: (
+          lessonActivities as Record<
+            string,
+            NonNullable<Lesson["sections"][number]["activity"]>[]
+          >
+        )[slug]?.[index],
+        evidence: (section.evidenceIds ?? []).map((id) => {
+          const passage =
+            scienceTeaching.find((p) => p.id === id) ??
+            questions.find((q) => !reserved.has(q.id) && q.passage?.id === id)
+              ?.passage;
+          if (!passage) throw new Error(`Missing lesson evidence: ${id}`);
+          return passage;
+        }),
+      })),
+      ...mathSkills
+        .filter((skill) => skill.topic === slug)
+        .map((skill) => ({
+          ...skill.section,
+          skillId: skill.id,
+        })),
+    ],
   };
+}
+function withTeaching(question: Question): Question {
+  const teaching = getQuestionTeaching(question.topic, question.id);
+  return teaching
+    ? { ...question, ...teaching, lessonSections: teaching.teachingSections }
+    : question;
 }
 export function getAllQuestions() {
   return [
-    ...questions.map((q) =>
-      q.subject === "reading" && !reserved.has(q.id) && !activeReading.has(q.id)
+    ...questions.map((source) => {
+      const q = withTeaching(source);
+      return q.subject === "reading" &&
+        !reserved.has(q.id) &&
+        !activeReading.has(q.id)
         ? {
             ...q,
             assessment: false,
             replacementId: getPracticeReplacement(q.id)?.id,
           }
-        : q,
-    ),
+        : reserved.has(q.id)
+          ? { ...q, assessment: false }
+          : q;
+    }),
     ...lessons
       .flatMap((l) => l.check)
       .map((q) => ({ ...q, assessment: false })),
@@ -109,19 +132,21 @@ export function getAllQuestions() {
   ] as Question[];
 }
 export function getQuestion(id: string) {
-  return (
+  const question =
     questions.find((q) => q.id === id) ??
     lessons.flatMap((l) => l.check).find((q) => q.id === id) ??
-    (scienceLegacyChecks.find((q) => q.id === id) as Question | undefined)
-  );
+    (scienceLegacyChecks.find((q) => q.id === id) as Question | undefined);
+  return question ? withTeaching(question) : undefined;
 }
 export function getQuestions(slug?: string) {
-  return questions.filter(
-    (q) =>
-      !reserved.has(q.id) &&
-      (q.subject !== "reading" || activeReading.has(q.id)) &&
-      (!slug || q.topic === slug),
-  );
+  return questions
+    .filter(
+      (q) =>
+        !reserved.has(q.id) &&
+        (q.subject !== "reading" || activeReading.has(q.id)) &&
+        (!slug || q.topic === slug),
+    )
+    .map(withTeaching);
 }
 export function getExams(subject?: Subject) {
   return exams.filter((e) => !subject || e.subject === subject);

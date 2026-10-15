@@ -34,6 +34,7 @@ import questionsTransitions from "@/content/questions/transitions.json";
 import questionsVerbs from "@/content/questions/verbs.json";
 import questionsWhichChoice from "@/content/questions/which-choice.json";
 import questionsWordChoice from "@/content/questions/word-choice.json";
+import skillQuestions from "@/content/english-skill-questions.json";
 
 import exam1 from "@/content/exams/exam-1.json";
 import exam2 from "@/content/exams/exam-2.json";
@@ -226,7 +227,10 @@ export function getQuestions(slug: string): Question[] {
   if (!isLessonSlug(slug)) {
     throw new Error(`Unknown question bank slug: ${slug}`);
   }
-  return questionBanks[slug].questions;
+  return [
+    ...questionBanks[slug].questions,
+    ...skillQuestions.filter((question) => question.topic === slug),
+  ] as Question[];
 }
 
 export function getExam(examId: string): Exam {

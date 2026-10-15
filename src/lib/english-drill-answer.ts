@@ -1,4 +1,5 @@
-import { getQuestions, getTopic } from "./content";
+import { getTopic } from "./content";
+import { englishDailyQuestions } from "./english-daily-content";
 
 export const ENGLISH_PRACTICE_ID = "practice:english";
 export const ANSWER_ID =
@@ -15,7 +16,7 @@ export function validateEnglishDrillAnswer(value: unknown) {
     !getTopic(body.topicSlug)
   )
     return null;
-  const question = getQuestions(body.topicSlug).find(
+  const question = englishDailyQuestions(body.topicSlug).find(
     (q) => q.id === body.questionId,
   );
   if (

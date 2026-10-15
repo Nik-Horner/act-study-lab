@@ -26,7 +26,8 @@
           "good": false
         }
       ],
-      "tip": "Read it aloud. If you can stop talking, it is an independent clause. If you feel forced to keep going, it is dependent or a phrase."
+      "tip": "Find the subject and a finite verb first. Then check whether a word such as because, although, if, when, or while makes that clause dependent. A pause or a period does not prove independence.",
+      "teachingRevision": 3
     },
     {
       "heading": "Sentence fragments",
@@ -132,6 +133,27 @@
       ],
       "tip": "Bracket each inserted clause, read the main sentence, then restore the clauses and test the meaning.",
       "teachingRevision": 2
+    },
+    {
+      "heading": "Reason and concession express different relationships",
+      "body": [
+        "Choose because or since when a dependent fact explains why the main action happened. Choose although or even though when the main statement holds despite that fact. Use the stated purpose and surrounding context; a positive or negative detail alone does not decide the relationship.",
+        "Both types of connector introduce dependent clauses. An opening dependent clause takes a comma before its main clause. A semicolon needs an independent clause on each side, so it cannot introduce a because-clause or although-clause by itself."
+      ],
+      "examples": [
+        {
+          "text": "The interviews required a quiet setting. Because the library's recording room blocked traffic noise, the researcher reserved it for the interviews.",
+          "label": "Blocking traffic noise satisfies the stated requirement and explains the reservation. Because makes that motive explicit.",
+          "good": true
+        },
+        {
+          "text": "Although the library's recording room blocked traffic noise, its air conditioner produced a low hum that the microphone captured.",
+          "label": "Blocking outside noise would suggest a clean recording, yet an internal hum remained. Although concedes the benefit while the main clause states a limitation.",
+          "good": true
+        }
+      ],
+      "tip": "Test the relationship by paraphrasing because as for the reason that and although as despite the fact that. Then check that the dependent clause attaches to a complete main clause.",
+      "teachingRevision": 3
     }
   ],
   "check": [

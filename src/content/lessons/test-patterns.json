@@ -7,7 +7,8 @@
       "heading": "The cut test",
       "body": [
         "Test DELETE by reading what remains. Removing an extra verb can leave a describing phrase: “a banner strung across the street.” Removing “it was” can leave a phrase that renames a noun: “an oak, the oldest tree.”",
-        "It can also remove an irrelevant or mismatched aside. Keep the cut only if the sentence retains its main verb, subject, and needed meaning."
+        "It can also remove an irrelevant or mismatched aside. Keep the cut only if the sentence retains its main verb, subject, and needed meaning.",
+        "Before cutting a verb, locate its subject, which can follow it: Beyond the doorway stands a guard."
       ],
       "examples": [
         {
@@ -24,15 +25,22 @@
           "text": "The ledger, kept in the captain's own hand, the cargo of every voyage. (after cutting 'lists')",
           "label": "this cut removed the only main verb and left a fragment",
           "good": false
+        },
+        {
+          "text": "Beside the loading bay stands a crane that moves the largest crates.",
+          "label": "The inverted subject crane is singular; stands agrees with it and must remain as the main verb.",
+          "good": true
         }
       ],
-      "tip": "Read the sentence with the underlined words gone. Complete and cleaner: cut. Missing a subject or verb: trap."
+      "tip": "Read the sentence with the underlined words gone. Complete and cleaner: cut. Missing a subject or verb: trap.",
+      "teachingRevision": 3
     },
     {
       "heading": "Don't fear NO CHANGE",
       "body": [
         "Judge NO CHANGE by the same grammar, meaning, and purpose checks as every alternative. Identify a specific improvement before replacing it.",
-        "Comma + but or so can already join two complete thoughts. Replacing that word with however or nevertheless between commas can leave two sentences joined by only commas, creating a comma splice."
+        "Comma + but or so can already join two complete thoughts. Replacing that word with however or nevertheless between commas can leave two sentences joined by only commas, creating a comma splice.",
+        "Use but for contrast, so for a result, and still for an unexpected outcome in a new sentence."
       ],
       "examples": [
         {
@@ -46,13 +54,15 @@
           "good": false
         }
       ],
-      "tip": "NO CHANGE needs evidence too: check correctness, meaning, and the question’s goal. 'It sounds plain' is not an error."
+      "tip": "NO CHANGE needs evidence too: check correctness, meaning, and the question’s goal. 'It sounds plain' is not an error.",
+      "teachingRevision": 3
     },
     {
       "heading": "Read the goal like a contract",
       "body": [
         "Break the goal into requirements. If it asks which instruments were built and what they were made from, the choice must answer both.",
-        "Check each requirement against the actual wording. A specific, vivid choice that meets only one requirement still fails."
+        "Check each requirement against the actual wording. A specific, vivid choice that meets only one requirement still fails.",
+        "For a formal passage, keep precise factual wording and remove a conversational reaction that the task does not call for."
       ],
       "examples": [
         {
@@ -64,9 +74,15 @@
           "text": "Goal: name which trees were planted and where. 'sugar maples and river birches that arrived as bare-root saplings'",
           "label": "names the trees, skips the place. One box. Trap.",
           "good": false
+        },
+        {
+          "text": "Formal report: “The second trial reduced the error rate.” Reject “The second trial totally crushed the problem.”",
+          "label": "The first states a measured result; the casual exaggeration changes the report’s register and certainty.",
+          "good": true
         }
       ],
-      "tip": "Count the requirements in the question. The right answer proves every one; the tempting wrong answer proves one."
+      "tip": "Count the requirements in the question. The right answer proves every one; the tempting wrong answer proves one.",
+      "teachingRevision": 3
     },
     {
       "heading": "Point the modifier",
@@ -104,6 +120,11 @@
           "text": "The drone is capable to fly in high winds.",
           "label": "'capable' takes 'of' + -ing: 'capable of flying'",
           "good": false
+        },
+        {
+          "text": "Preoccupied with checking the measurements, the team overlooked the delivery notice.",
+          "label": "Preoccupied with introduces what occupies the team’s attention.",
+          "good": true
         }
       ],
       "tip": "Six pairs: make for, insight into, capable of, comply with, preoccupied with, different from. Say them until each sounds like one word."
@@ -111,8 +132,9 @@
     {
       "heading": "Advanced transfer: prove meaning before using a shortcut",
       "body": [
-        "A strong final check names why the chosen option works and what specifically disqualifies the closest alternative. Length, sophistication, and answer patterns are clues, not proofs.",
-        "Read beyond the underline. A correct replacement can still duplicate an unchanged subject, lose a needed qualification, or fail a second requirement in the question. Test the exact span the interface will replace, including punctuation already outside it."
+        "Before choosing, test the exact marked span. A replacement can duplicate an unchanged subject or verb, omit a limitation, or fail a second requirement in the question.",
+        "A colon follows a complete clause and introduces an explanation. Preserve the words and punctuation already outside the marked span.",
+        "For an evidence claim, retain the sample, measured outcome and uncertainty. A rating survey does not prove better performance or a result for everyone."
       ],
       "examples": [
         {
@@ -124,10 +146,20 @@
           "text": "Replacing the same span with 'residents because it will'.",
           "label": "The complete sentence would say it will will cut fares; a correct phrase alone can still fail its context.",
           "good": false
+        },
+        {
+          "text": "The investigation established one fact: the two valves opened at different pressures.",
+          "label": "The complete introduction precedes a colon and a complete explanatory clause.",
+          "good": true
+        },
+        {
+          "text": "Eighty volunteers rated the prototype; sixty found its controls easier to use. A precise conclusion is “Sixty volunteers reported that the controls were easier to use.”",
+          "label": "The conclusion preserves the surveyed group and the reported measure instead of claiming that everyone performed better.",
+          "good": true
         }
       ],
       "tip": "Insert the exact words, reread the whole sentence, and explain the closest distractor’s error.",
-      "teachingRevision": 2
+      "teachingRevision": 3
     }
   ],
   "check": [
@@ -136,15 +168,15 @@
       "category": "CSE",
       "difficulty": "hard",
       "questionText": "Which choice makes the sentence grammatically complete and correct?",
-      "stem": "A telescope [[was]] mounted on the observatory's roof tracks the brightness of a single variable star.",
+      "stem": "The passengers who used the station every day [[they]] remembered the old clock above the ticket office.",
       "choices": [
         "NO CHANGE",
-        "is",
-        "had been",
+        "who",
+        "having",
         "DELETE the underlined portion."
       ],
       "answer": 3,
-      "explanation": "Deleting the verb leaves 'A telescope mounted on the observatory's roof tracks the brightness of a single variable star', where 'mounted' is a participial phrase describing the telescope. 'was', 'is', and 'had been' each give the sentence two competing main verbs ('was mounted ... tracks')."
+      "explanation": "The full subject is The passengers who used the station every day. Deleting they lets that subject connect to remembered, the main verb. Who would start another dependent clause, and having would turn remembered into a nonfinite phrase; neither supplies the main predicate the subject needs."
     },
     {
       "id": "test-patterns-check-002",

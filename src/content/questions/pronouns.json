@@ -21,7 +21,7 @@
       "category": "CSE",
       "difficulty": "easy",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "The coach handed the trophy to Devon and [[I]] after the final whistle.",
+      "stem": "During the appeal, the board sent its revised decision to [[I]] and the other applicants.",
       "choices": [
         "NO CHANGE",
         "mine",
@@ -29,7 +29,7 @@
         "me"
       ],
       "answer": 3,
-      "explanation": "As the object of the preposition 'to,' the objective 'me' is correct (drop 'Devon and' and you hear 'to me'). 'I' is subjective, 'myself' lacks an antecedent, and 'mine' is possessive."
+      "explanation": "The pronoun is an object of to, so use me: the board sent the decision to me. Coordinating the other applicants does not change that case. I is a subject form; mine is possessive; myself lacks a matching first-person subject."
     },
     {
       "id": "pronouns-003",

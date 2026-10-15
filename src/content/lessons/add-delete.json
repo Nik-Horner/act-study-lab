@@ -59,9 +59,15 @@
           "text": "Kept, because it introduces the essay's main argument.",
           "label": "wrong if the sentence is a minor detail, not the thesis",
           "good": false
+        },
+        {
+          "text": "Earlier: “The process removes ninety percent of the sediment.” Proposed addition: “Only ten percent of the sediment remains afterward.” Delete the addition if no contrast or new consequence is developed.",
+          "label": "The second statement expresses the same result in complementary percentages instead of adding new support.",
+          "good": true
         }
       ],
-      "tip": "Split every choice into verdict and reason, and confirm both before you pick it."
+      "tip": "Split every choice into verdict and reason, and confirm both before you pick it.",
+      "teachingRevision": 3
     },
     {
       "heading": "How to spot these questions",

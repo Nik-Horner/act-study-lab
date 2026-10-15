@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import { randomUUID } from "node:crypto";
 import { getQuestions } from "../src/lib/content";
 import { validateEnglishDrillAnswer } from "../src/lib/english-drill-answer";
+import foundations from "../src/content/english-foundation-drills.json";
 
 const question = getQuestions("commas")[0];
 const input = {
@@ -56,4 +57,19 @@ test("answers require an immutable submission ID and an actual choice", () => {
     { ...input, answerId: "invalid", chosen: question.answer },
   ])
     assert.equal(validateEnglishDrillAnswer(value), null);
+});
+test("focused foundation drills grade authoritatively and cannot move to another topic", () => {
+  for (const question of foundations) {
+    const value = {
+      answerId: randomUUID(),
+      topicSlug: question.topic,
+      questionId: question.id,
+      chosen: question.answer,
+    };
+    assert.equal(validateEnglishDrillAnswer(value)?.correct, true, question.id);
+    assert.equal(
+      validateEnglishDrillAnswer({ ...value, topicSlug: "commas" }),
+      null,
+    );
+  }
 });

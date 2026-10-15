@@ -32,6 +32,10 @@ import { buildStudyPlan, localDate } from "@/lib/act/plan";
 import { daysUntil } from "@/lib/format";
 import { practiceStage, selectPracticeSet } from "@/lib/act/practice-queue";
 import { practiceForMisses } from "@/lib/act/question-method";
+import { getLearningSkill, getLearningSkills } from "@/lib/learning-skills";
+import { SkillCatalog } from "../SkillCatalog";
+import { SkillLesson } from "../SkillLesson";
+import { seenPassages } from "@/lib/act/question-exposure";
 import { Card } from "../ui/Card";
 import { Button, ButtonLink } from "../ui/Button";
 import { Badge } from "../ui/Badge";
@@ -222,13 +226,15 @@ export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
           className="min-w-28 flex-1"
         />
         <div className="flex w-full flex-wrap gap-2 lg:w-auto">
+          <ButtonLink size="sm" href={`/learn?subject=${subject}`}>
+            Browse {SUBJECT_LABELS[subject]} skill course
+          </ButtonLink>
           <ButtonLink
             size="sm"
-            href={`/drill/${subject === "math" ? "hard" : "mixed"}?subject=${subject}`}
+            variant="ghost"
+            href={`/drill/mixed?subject=${subject}`}
           >
-            {subject === "math"
-              ? "Start a hard Math set"
-              : `Start a ${SUBJECT_LABELS[subject]} diagnostic`}
+            Mixed diagnostic
           </ButtonLink>
           <ButtonLink
             size="sm"
@@ -342,7 +348,9 @@ export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
         <div className="mb-3 flex items-baseline justify-between gap-3">
           <h2 className="section-label">{SUBJECT_LABELS[subject]} topics</h2>
           <span className="text-xs text-ink-soft">
-            {subject === "reading" ? "24" : "32"} practice questions per topic
+            {getLearningSkills(undefined, subject).length} skills ·{" "}
+            {getQuestions().filter((q) => q.subject === subject).length}{" "}
+            practice questions
           </span>
         </div>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -507,9 +515,44 @@ export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
     </div>
   );
 }
-export function LessonView({ slug }: { slug: string }) {
-  const topic = getTopic(slug)!,
-    lesson = getLesson(slug);
+export function LessonView({
+  slug,
+  skillId,
+  reference = false,
+}: {
+  slug: string;
+  skillId?: string;
+  reference?: boolean;
+}) {
+  const topic = getTopic(slug)!;
+  const full = getLesson(slug);
+  const skills = getLearningSkills(slug);
+  const skill = skillId && getLearningSkill(slug, skillId);
+  if (skill) return <SkillLesson skill={skill} full={full} />;
+  if (skills.length && !reference)
+    return (
+      <div className="mx-auto max-w-5xl space-y-7">
+        <Link
+          href={`/learn?subject=${topic.subject}`}
+          className="inline-flex min-h-11 items-center text-sm text-brand underline"
+        >
+          All {SUBJECT_LABELS[topic.subject]} skills by ACT category
+        </Link>
+        <h1 className="text-3xl font-semibold">{full.title}</h1>
+        <p className="text-ink-soft">
+          Choose a specific method. Learn it, try a different example, then
+          drill the same skill.
+        </p>
+        <SkillCatalog skills={skills} />
+        <ButtonLink variant="ghost" href={`/learn/${slug}?reference=1`}>
+          Read the complete topic reference
+        </ButtonLink>
+      </div>
+    );
+  const lesson = {
+    ...full,
+    sections: full.sections.filter((section) => !section.skillId),
+  };
   const contents = (
     <>
       {lesson.sections.map((s, i) => (
@@ -774,6 +817,20 @@ function PracticeSet({
         subject={q.subject}
         savedTime={revealed ? sessionRecords.at(-1)?.elapsedMs : undefined}
       />
+      {q.subject === "reading" && q.passage && (
+        <p className="text-sm text-ink-soft">
+          {seenPassages(
+            state.answers
+              .filter(
+                (answer) =>
+                  !sessionRecords.some((record) => record.id === answer.id),
+              )
+              .map((answer) => answer.questionId),
+          ).has(q.passage.id)
+            ? "Familiar passage · another question on a text you have practiced."
+            : "New passage for your practice history."}
+        </p>
+      )}
       <QuestionView
         {...navigation}
         q={q}
@@ -864,28 +921,53 @@ function PracticeSet({
   );
 }
 export function DrillView({ slug }: { slug: string }) {
+  const skillId = useSearchParams().get("skill") ?? undefined;
   const subject = asSubject(
     useSearchParams().get("subject") ?? getTopic(slug)?.subject,
   );
-  return <DrillSession key={slug + subject} slug={slug} subject={subject} />;
+  return (
+    <DrillSession
+      key={slug + subject + (skillId ?? "")}
+      slug={slug}
+      subject={subject}
+      skillId={skillId}
+    />
+  );
 }
-function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
+function DrillSession({
+  slug,
+  subject,
+  skillId,
+}: {
+  slug: string;
+  subject: Subject;
+  skillId?: string;
+}) {
   const { state, ready, storageError, userId } = useProgress();
   const [queue, setQueue] = useState<Question[] | null>(null);
   const [setNumber, setSetNumber] = useState(0);
   if (!ready) return <Loading />;
   if (!userId) return <AccountUnavailable error={storageError} />;
   const topic = getTopic(slug);
+  const skill = skillId && getLearningSkill(slug, skillId);
+  if (topic && !skill && getLearningSkills(slug).length)
+    return (
+      <div className="mx-auto max-w-5xl space-y-7">
+        <h1 className="text-3xl font-semibold">Choose a {topic.title} skill</h1>
+        <SkillCatalog skills={getLearningSkills(slug)} drill />
+      </div>
+    );
   const titles: Record<string, string> = {
     mixed: "Mixed diagnostic",
     hard: "Hard questions",
     misses: "Mistake review",
     weak: "Weak topics",
   };
-  const title = topic?.title ?? titles[slug];
+  const title = skill ? skill.title : (topic?.title ?? titles[slug]);
   function start() {
     const all = getAllQuestions();
     let qs = getQuestions(topic?.slug).filter((q) => q.subject === subject);
+    if (skill) qs = qs.filter((q) => q.skillId === skill.id);
     if (slug === "misses") {
       const ids = new Set(
         getTopics(subject).flatMap(
@@ -937,19 +1019,21 @@ function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
           <p className="prose-study mt-2 text-sm text-ink-soft">
             {slug === "misses"
               ? "Review missed drill questions and solve fresh questions on skills missed in timed sections or older lessons. Original section answers remain in your results."
-              : `${practiceStage(
-                  getQuestions(topic?.slug).filter(
-                    (q) => q.subject === subject,
-                  ),
-                  state,
-                  subject,
-                )} practice for your target of ${state.profile.targetScore ?? 36}. New questions come first; difficulty adjusts to your baseline and recent independent work.`}
+              : skill
+                ? "Practice the method from this lesson on separate questions. New questions and new Reading passages come first."
+                : `${practiceStage(
+                    getQuestions(topic?.slug).filter(
+                      (q) => q.subject === subject,
+                    ),
+                    state,
+                    subject,
+                  )} practice for your target of ${state.profile.targetScore ?? 36}. New questions come first; difficulty adjusts to your baseline and recent independent work.`}
           </p>
           <div className="my-6 grid gap-4 border-y border-border py-5 sm:grid-cols-3">
             <div>
               <p className="text-sm font-semibold">
                 {topic
-                  ? `12-question sets · ${getQuestions(slug).length} available`
+                  ? `Up to 12 questions · ${skill ? skill.questionIds.length : getQuestions(slug).length} available`
                   : slug === "misses"
                     ? "Your missed questions"
                     : "12 focused questions"}
@@ -977,7 +1061,10 @@ function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
               <Arrow />
             </Button>
             {topic && (
-              <ButtonLink href={`/learn/${topic.slug}`} variant="ghost">
+              <ButtonLink
+                href={`/learn/${topic.slug}${skill ? `?skill=${encodeURIComponent(skill.id)}` : ""}`}
+                variant="ghost"
+              >
                 Review the lesson
               </ButtonLink>
             )}

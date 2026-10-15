@@ -17,6 +17,7 @@ import {
   refreshDailyContent,
 } from "../src/lib/daily-plan";
 import { blockUnits } from "../src/lib/daily-flow";
+import { getLearningSkills } from "../src/lib/learning-skills";
 const settings: StudySettings = {
   scores: { english: 34, math: 34, reading: 33, science: 27 },
   minutesPerDay: 75,
@@ -32,14 +33,18 @@ test("every non-English concept has an authored prediction, valid feedback, and 
   let count = 0;
   for (const topic of getTopics()) {
     const lesson = getLesson(topic.slug);
+    const original = activities[topic.slug as keyof typeof activities];
+    const focused = getLearningSkills(topic.slug).filter((skill) => skill.subject === "math");
     assert.equal(
-      activities[topic.slug as keyof typeof activities].length,
       lesson.sections.length,
+      original.length + focused.length,
+      `${topic.slug}: retain historical concepts and append exact Math methods`,
     );
+    assert.deepEqual(lesson.sections.slice(0, original.length).map((section) => section.activity), original);
     for (const section of lesson.sections) {
       const activity = section.activity!;
       assert(activity, `${topic.slug}: ${section.heading}`);
-      assert(activity.prompt.length > 15);
+      assert(activity.prompt.trim(), `${topic.slug}: missing prediction task`);
       assert(activity.explanation.length > 30);
       assert(activity.choices.length >= 2);
       assert.equal(new Set(activity.choices).size, activity.choices.length);
@@ -56,7 +61,7 @@ test("every non-English concept has an authored prediction, valid feedback, and 
       count++;
     }
   }
-  assert.equal(count, 141);
+  assert.equal(count, 284, "141 retained concepts and 143 focused Math methods");
 });
 test("worked predictions use correct geometry, trig, weighting, and interpolation", () => {
   const answer = (slug: keyof typeof activities, i: number) =>
@@ -178,6 +183,7 @@ test("saved feedback focus returns ahead of unrelated unread math", () => {
   );
   assert.equal(
     blockUnits(plan.blocks.find((b) => b.subject === "math")!)[0].courseId,
-    "math:math-trigonometry:scope:2",
+    "math:math-trigonometry:skill:math-trigonometry-wave-features",
   );
+  assert(blockUnits(plan.blocks.find((b) => b.subject === "math")!)[0].questions.every((q) => q.skillId === "math-trigonometry-wave-features"));
 });

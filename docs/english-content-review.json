@@ -468,7 +468,19 @@
         "SST 701",
         "SST 602"
       ],
-      "review": "Authored independently from lesson examples; all four choices resolved in explanation."
+      "review": "Authored independently from lesson examples; all four choices resolved in explanation.",
+      "additionalMethodSectionIndex": 6,
+      "questionTeaching": {
+        "sentence-structure-transfer-01": [
+          0,
+          1,
+          5
+        ],
+        "sentence-structure-transfer-02": [
+          2,
+          6
+        ]
+      }
     },
     {
       "topic": "commas",
@@ -654,11 +666,15 @@
     "lessons": 15,
     "advancedSectionsAdded": 15,
     "advancedWorkedExamplesAdded": 30,
-    "topicQuestions": 508,
+    "topicQuestions": 601,
     "advancedQuestionsAdded": 30,
     "foundationQuestions": 12,
     "lessonChecks": 45,
-    "examQuestions": 100
+    "examQuestions": 100,
+    "independentSkillQuestionsAdded": 93,
+    "questionAndCheckProofs": 758,
+    "skills": 106,
+    "skillActivities": 106
   },
   "limits": [
     "Editorial review and original content are not official ACT calibration.",
@@ -1343,7 +1359,7 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "Kept, because it continues the explanation of how the bridge's load is carried to the ground.",
-      "rationale": "The sentence follows the load from the towers down to the anchorages, advancing the explanation of how the bridge stays up, so it is kept.",
+      "rationale": "The sentence follows the load from the towers down through the supports to the foundations, advancing the explanation of how the bridge stays up, so it is kept.",
       "contentSha256": "2fa7907f526237b26c6b93f42cc48f52920bf839c3dc652b0a4c0f594bc989c9"
     },
     {
@@ -1533,7 +1549,7 @@
       "answerIndex": 0,
       "verifiedAnswer": "Yes, because it provides needed context for why losing this crossing would particularly burden the nondriving residents.",
       "rationale": "The four-mile alternative explains the practical cost of losing pedestrian access and anticipates why the later nondriving detail matters.",
-      "contentSha256": "9d14718d6a0da104fe1390d5805e52d2b3634976f7b6c415abbdd864c68bebc4"
+      "contentSha256": "bb6656741ac3eac8c2a2fabf5fb0689172180da5c58cd340fefb557f73bf2acf"
     },
     {
       "id": "add-delete-transfer-02",
@@ -2467,9 +2483,9 @@
       "source": "src/content/questions/modifiers.json",
       "status": "reviewed",
       "answerIndex": 3,
-      "verifiedAnswer": "Devon took a quick nap",
-      "rationale": "The opener 'Exhausted after the long shift' describes a person, so the subject after the comma must be 'Devon'; a nap and 'it' cannot work a shift, and the passive original dangles the modifier.",
-      "contentSha256": "0badc136c810797e4fcf6dd27bd5e9663748ce14003b708abb15e51438e91b13"
+      "verifiedAnswer": "the iron gate needed careful treatment",
+      "rationale": "Pocked with rust describes the iron gate, so gate must be the subject after the opening description.",
+      "contentSha256": "eb57a8ff29b9dabf9a883b2af0a3ca7d83f88d313a53a4593589726b820c05c8"
     },
     {
       "id": "modifiers-002",
@@ -2512,9 +2528,9 @@
       "source": "src/content/questions/modifiers.json",
       "status": "reviewed",
       "answerIndex": 3,
-      "verifiedAnswer": "the accountant found an error in the totals",
-      "rationale": "'While reviewing the budget' describes the person reviewing, so 'the accountant' must follow the comma; an error, the totals, and 'there' cannot review a budget, so those choices dangle the modifier.",
-      "contentSha256": "4afaedb7447d441e80e6b7ce478a5fcab2f1a50a651c7e1dc57737f038cc01b8"
+      "verifiedAnswer": "the water samples were compared by the technician",
+      "rationale": "The water samples were collected at different depths, so they must be the subject of the main clause.",
+      "contentSha256": "ade764e7b6f41afe06abfce62c87172f494f68b82f08f994e76af8146107a1dc"
     },
     {
       "id": "modifiers-007",
@@ -2557,9 +2573,9 @@
       "source": "src/content/questions/modifiers.json",
       "status": "reviewed",
       "answerIndex": 2,
-      "verifiedAnswer": "with the smudged label to the courier",
-      "rationale": "Place 'with the smudged label' beside 'package,' the object identified in the question.",
-      "contentSha256": "2f3441f4e3c9e4c99a27fdf9f0469be9f09c2c5edae9304fb2056b2e2887d905"
+      "verifiedAnswer": "on the eastern wall using a laser",
+      "rationale": "On the eastern wall must identify the beam’s location, while using a laser states the measuring tool.",
+      "contentSha256": "838b0d18a3ad283ef6aa384435e62f42424d76dc0d199dc0013a64da09e63fe0"
     },
     {
       "id": "modifiers-012",
@@ -2719,9 +2735,9 @@
       "source": "src/content/questions/modifiers.json",
       "status": "reviewed",
       "answerIndex": 1,
-      "verifiedAnswer": "with the torn cover to the librarian",
-      "rationale": "'With the torn cover' describes the novel, so it must sit beside 'novel,' giving 'the novel with the torn cover to the librarian.' 'To the librarian with the torn cover,' 'to the librarian, who had a torn cover,' and 'to the torn-cover librarian' all hand the cover to the librarian, a person who has no cover.",
-      "contentSha256": "5ae4cdeed22ae95da0f74a016e6cdfc4316526eb78a85e9ef17254574aed2378"
+      "verifiedAnswer": "that was made of brass beside a portrait",
+      "rationale": "That was made of brass must directly follow astrolabe to identify the material of the instrument.",
+      "contentSha256": "ef2361f8da3fec14f0e472e71ba1374d07634d936c25ec76ace1b4658e49dac0"
     },
     {
       "id": "modifiers-030",
@@ -2773,9 +2789,9 @@
       "source": "src/content/questions/parallel-structure.json",
       "status": "reviewed",
       "answerIndex": 3,
-      "verifiedAnswer": "riding",
-      "rationale": "The series 'hiking, swimming, and ___' is built from gerunds, so 'riding' matches.",
-      "contentSha256": "8841322f3fb6c66cf6def05cfcd0048fd1d1725d47694c746a6f03b840aef61a"
+      "verifiedAnswer": "adjusting",
+      "rationale": "The preposition for governs a series of actions named by gerunds: measuring, recording, and adjusting.",
+      "contentSha256": "ec3ac6ab539c377269793b6e7970582fbb07e61d70ff02a59acbbdd613e884d5"
     },
     {
       "id": "parallel-structure-002",
@@ -3089,8 +3105,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "me",
-      "rationale": "As the object of the preposition 'to,' the objective 'me' is correct (drop 'Devon and' and you hear 'to me').",
-      "contentSha256": "b814392b39a503e1b5f14bdda5244a193595084fe82d19927c3d9493814d271b"
+      "rationale": "The pronoun is an object of to, so use me: the board sent the decision to me.",
+      "contentSha256": "78bcc4d342e27c20332f33a664e44fa4d08d2748fee8648e24e742b8bdbc825f"
     },
     {
       "id": "pronouns-003",
@@ -3493,9 +3509,9 @@
       "source": "src/content/questions/punctuation.json",
       "status": "reviewed",
       "answerIndex": 1,
-      "verifiedAnswer": ", but",
-      "rationale": "A comma plus the conjunction 'but' correctly joins two contrasting independent clauses.",
-      "contentSha256": "e246d0be9bcfad14c11a5fa138eec194735a7c1c4aa928bbb1106034ef5804c4"
+      "verifiedAnswer": ", so",
+      "rationale": "The revised label is a consequence of the discovery, so comma plus so both coordinates the independent clauses and states the result.",
+      "contentSha256": "47ccd266de231e94c0299c0d13d7b3fd41622f896cfc6830d2ef2c1aa0fc6f92"
     },
     {
       "id": "punctuation-014",
@@ -4249,18 +4265,18 @@
       "source": "src/content/questions/sentence-structure.json",
       "status": "reviewed",
       "answerIndex": 0,
-      "verifiedAnswer": "world; some",
-      "rationale": "The semicolon joins independent statements about redwoods and their measured heights.",
-      "contentSha256": "908d401eddf4877176e93e36b86047042b632fb022a8cbe41aa62a501b1d4b33"
+      "verifiedAnswer": "; the pendulum",
+      "rationale": "The clockmaker had replaced the worn spring and the pendulum now swung steadily are independent clauses, so a semicolon joins them.",
+      "contentSha256": "c16508b80c9241a6241dd36c416e08f17f2acdd42991dc980c1f3ff3410f208f"
     },
     {
       "id": "sentence-structure-030",
       "source": "src/content/questions/sentence-structure.json",
       "status": "reviewed",
       "answerIndex": 2,
-      "verifiedAnswer": "ago, they still stand",
-      "rationale": "The 'While...' opener is dependent, so it needs an independent clause with a subject and verb: 'ago, they still stand today and attract...' NO CHANGE and 'they still standing' lack a proper main verb, and a semicolon can't follow the dependent opener.",
-      "contentSha256": "88b516ae46350b7352b27e3d00886d27912c012fa29b95700fb1ec168feab372"
+      "verifiedAnswer": ", several players still entered too soon",
+      "rationale": "Although makes the opening clause dependent.",
+      "contentSha256": "fd010f06f28a3eeb53f94b53b8c2f4cea3174f71730a7188d42f31ccde203fdd"
     },
     {
       "id": "sentence-structure-031",
@@ -5493,7 +5509,7 @@
       "answerIndex": 2,
       "verifiedAnswer": "The door I had found locked now stood open, and neighbors waited together for their turn at the eyepiece.",
       "rationale": "The locked-to-open door echoes the essay's starting image, and neighbors taking turns shows the shared role created by the volunteers.",
-      "contentSha256": "78bac661b275cd427168b7e26683d4fcbf7fc41db7192d060cbd06a68c85c283"
+      "contentSha256": "4f449502bd3543b5e2ed79772cf4ab155cf2eb1afc358bdb099024ab66334269"
     },
     {
       "id": "which-choice-transfer-02",
@@ -5681,8 +5697,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "improved",
-      "rationale": "'Improved' means got better, which fits cleaner air.",
-      "contentSha256": "6d077080b4550724dddabaede2b095f642f17ddde2a8d591a2f9001406186495"
+      "rationale": "Improved is the precise, neutral verb appropriate for the municipal report.",
+      "contentSha256": "e1de204b7f3e2836d38b47f32fd1d9e29a3b34a78e431ceea5472fb3585e4ca8"
     },
     {
       "id": "word-choice-021",
@@ -5860,9 +5876,9 @@
       "source": "src/content/lessons/commas.json",
       "status": "reviewed",
       "answerIndex": 1,
-      "verifiedAnswer": ", and onion rings",
-      "rationale": "The offered correct version uses a serial comma before and without inserting a comma after it.",
-      "contentSha256": "2af6629650c26761933dd8a162f1e3d9ca1e095987bba783c6db1775c7596e8a"
+      "verifiedAnswer": ", and access to public transit",
+      "rationale": "The three objects of about are morning traffic, evening noise, and access to public transit.",
+      "contentSha256": "fa66142526e4dd85c07aa9a70bb1eff3dd31b4f9d84389ac9122eb6624e94901"
     },
     {
       "id": "lesson:logical-placement:check:0",
@@ -5996,8 +6012,8 @@
       "status": "reviewed",
       "answerIndex": 1,
       "verifiedAnswer": "its",
-      "rationale": "The antecedent is 'each,' which is singular — 'of the branch offices' is a prepositional phrase that does not change the number — so the singular possessive 'its' agrees.",
-      "contentSha256": "771d798aa4df0f6e65d3e12984d6569280f278f9084bdf06783898cb24287e1e"
+      "rationale": "The survey belongs to the transit authority acting as a single organization, so its is the appropriate possessive.",
+      "contentSha256": "44e9da6c8e1df4023a0102dfeec39bcd3954a63605ce2194f7b36708324a88f5"
     },
     {
       "id": "lesson:punctuation:check:0",
@@ -6040,9 +6056,9 @@
       "source": "src/content/lessons/redundancy.json",
       "status": "reviewed",
       "answerIndex": 1,
-      "verifiedAnswer": "because",
-      "rationale": "'Because' delivers the full meaning in one word: 'We canceled the picnic because it was raining.' 'Due to the fact that,' 'on account of the fact that,' and 'owing to the fact that' all bury that one word under empty padding.",
-      "contentSha256": "b50b94882ae70bd5ca5c128a21b74f101506d56af8ff75f4078fd73472953d9c"
+      "verifiedAnswer": "if",
+      "rationale": "If states the condition directly and preserves the subject and finite verb of the following clause.",
+      "contentSha256": "a61a52d62c751f0466a3abb9648c4d397bab7346b1c52f9552eb0637364cadf1"
     },
     {
       "id": "lesson:redundancy:check:2",
@@ -6086,8 +6102,8 @@
       "status": "reviewed",
       "answerIndex": 3,
       "verifiedAnswer": "DELETE the underlined portion.",
-      "rationale": "Deleting the verb leaves 'A telescope mounted on the observatory's roof tracks the brightness of a single variable star', where 'mounted' is a participial phrase describing the telescope.",
-      "contentSha256": "fd04286d8463ca657ddb592e913890c098a1212ccfc9686780668a7a0514dc17"
+      "rationale": "The full subject is The passengers who used the station every day.",
+      "contentSha256": "b0be9586ba1bd8f5977ce0da92fab04d9c1953a1aa4e7e4791a1f47a05391309"
     },
     {
       "id": "lesson:test-patterns:check:1",
@@ -7222,6 +7238,843 @@
       "verifiedAnswer": "Public memory of his name faded almost completely.",
       "rationale": "'Public memory of his name faded almost completely' establishes personal obscurity against which however introduces the later success of forecasting.",
       "contentSha256": "78263d06fcd182cd3022a110fb574622e8d4586d44be89b9a7314321daf632a5"
+    },
+    {
+      "id": "english-skill-sentence-structure-conjunctive-adverb-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "; nevertheless,",
+      "rationale": "Each trial has its own subject and finite verb.",
+      "contentSha256": "3ac48801536086d7ed4c867ace70c2d5f60a6c1d1b2826a9bf84672a29fa0dac"
+    },
+    {
+      "id": "english-skill-sentence-structure-conjunctive-adverb-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "however,",
+      "rationale": "Here however interrupts one clause between its subject, the handwritten notes, and its predicate, remained difficult.",
+      "contentSha256": "89f617ce1a1d43161b98362d2bfb3c3b7186315c5ded1eb10501ef525bd94236"
+    },
+    {
+      "id": "english-skill-sentence-structure-nested-main-clause-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "describes",
+      "rationale": "Series is the singular main subject, and describes supplies its finite main verb.",
+      "contentSha256": "38c312b60fcfe1a946cc2dc9c9e22c5c6d83cbaec1f04f41641268454969dfba"
+    },
+    {
+      "id": "english-skill-sentence-structure-nested-main-clause-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "was accepted",
+      "rationale": "The recommendation was accepted is the main clause.",
+      "contentSha256": "163fdf7f56a470512cebc537976c088d434177177f6d57dbc060eaa22d5853e2"
+    },
+    {
+      "id": "english-skill-sentence-structure-reason-versus-concession-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "because those holes recorded",
+      "rationale": "Because makes the holes’ evidence the motive for preserving them, matching the first sentence.",
+      "contentSha256": "70443d2d1ce700085a403199653a17993b43cefa9474b42cdab5e1174c04bbee"
+    },
+    {
+      "id": "english-skill-sentence-structure-reason-versus-concession-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "because it was the only engine that could move the boat through the shallow channel",
+      "rationale": "The unique ability to navigate the channel explains why the town kept the engine despite its expense.",
+      "contentSha256": "e46d7beeca04c374c47a6699c4e5cb10cf53f13d852ca9499865a17e72867309"
+    },
+    {
+      "id": "english-skill-commas-city-state-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": ", Minnesota, will",
+      "rationale": "A state following a city is set off with commas on both sides when the sentence continues: Duluth, Minnesota, will.",
+      "contentSha256": "1ee03c4d325ef627ccbd1eb344793bc96452db427b4caf1d7c49300e5190c073"
+    },
+    {
+      "id": "english-skill-commas-city-state-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "Oregon, to",
+      "rationale": "The comma after Eugene opens the state designation, and Oregon, supplies its closing comma before the sentence continues with to Tucson.",
+      "contentSha256": "98f1342f79c55353c688e44d19165bcc6f72214d7a7e67ab98b41a902dd07a19"
+    },
+    {
+      "id": "english-skill-commas-restrictive-boundary-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": " produced",
+      "rationale": "The that-clause identifies which samples produced inconsistent readings, so it remains part of the subject.",
+      "contentSha256": "913f82ffbd0659a01b987fe20ddf086ac6c6f4627af7e5013b23966f1f2e4009"
+    },
+    {
+      "id": "english-skill-commas-restrictive-boundary-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "that name the destination",
+      "rationale": "The clause selects the letters that belong in the case, rather than adding information about all the letters.",
+      "contentSha256": "5c6490523195362c43a2390eef08abe47ea11bfebcb73e7e520a7220ab55bce2"
+    },
+    {
+      "id": "english-skill-commas-matching-dash-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "—remained",
+      "rationale": "The dash after route opens an interruption, so a second dash closes it before remained.",
+      "contentSha256": "edb96de2fb67706e9600a572e2d6b2b8a30e363055b638250492a383fff9349b"
+    },
+    {
+      "id": "english-skill-commas-matching-dash-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "—contains",
+      "rationale": "The two dashes enclose already missing several leaves when the library acquired it.",
+      "contentSha256": "3c61ccf654f7a926097daf5a8cb898061d3da10f76802a2d5f3558af65a83948"
+    },
+    {
+      "id": "english-skill-commas-subject-verb-boundary-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": " explain",
+      "rationale": "The subject is instructions that accompany each of the replacement filters, and explain is its main verb.",
+      "contentSha256": "173198cec33aed3073b16a1a1affafa29bde0593596d58684b8c88de5881987d"
+    },
+    {
+      "id": "english-skill-punctuation-quotation-tag-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": ",”",
+      "rationale": "A comma belongs inside the closing quotation mark before the reporting phrase announced the technician.",
+      "contentSha256": "f49ae0ee13132909a4c05a953cc3fda36864848cf079d2d5ce56af1bccb59594"
+    },
+    {
+      "id": "english-skill-punctuation-explanatory-dash-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "—",
+      "rationale": "The introduction is a complete clause, and the following phrase names its one source, so a dash can introduce that explanation.",
+      "contentSha256": "e256314ab76a1b7fdd35fac49f3f29595a6c11828d1f8265d6512b64047a346c"
+    },
+    {
+      "id": "english-skill-punctuation-complex-list-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": ";",
+      "rationale": "Each guest’s name has an attached descriptive clause containing a comma.",
+      "contentSha256": "024cd41fc66c7b42209afc51530c736a157acb2f2255d8383faba3de6839e964"
+    },
+    {
+      "id": "english-skill-punctuation-complex-list-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "; and",
+      "rationale": "The semicolons separate three photograph-and-object pairings, each of which contains an internal comma.",
+      "contentSha256": "d0c9b6422aa80ca3cd48d6b2903869c536a89e76b9b34e51ff4d5a69e225dbac"
+    },
+    {
+      "id": "english-skill-punctuation-complex-elaboration-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": ":",
+      "rationale": "The clause before the mark is complete; the following clause identifies what resolved the uncertainty.",
+      "contentSha256": "eb4aa376450125965beef9b67532849d0c3a248eafff7ad4f781cc4609f4acfa"
+    },
+    {
+      "id": "english-skill-punctuation-complex-elaboration-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": " whether",
+      "rationale": "Was requires the complement whether the revised roof could support the weight.",
+      "contentSha256": "e66901e74b60934843a63fd75731dedb4bccdd3eb98655bade715afdac897130"
+    },
+    {
+      "id": "english-skill-verbs-lay-lie-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "lain",
+      "rationale": "The sign rested somewhere and placed no object.",
+      "contentSha256": "13f0829a9f26b49edde9c94e63878028fbbfd2329be6cd8f3c8d60e231aed0b4"
+    },
+    {
+      "id": "english-skill-verbs-inverted-subject-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "runs",
+      "rationale": "The main subject follows the verb: a single line is singular, so runs agrees.",
+      "contentSha256": "4e065d8453d904682e8abe89747eab80b9e136ad682424a1563dab9ecb604d26"
+    },
+    {
+      "id": "english-skill-verbs-inverted-subject-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "are",
+      "rationale": "The inverted subject is two fragments, so are agrees.",
+      "contentSha256": "bf43e5fb650b9c8ee49ce88400a1c8b2d66d458cb406d07324630839fc05b46a"
+    },
+    {
+      "id": "english-skill-verbs-paragraph-time-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "records",
+      "rationale": "Still and today establish a present, continuing function, so records fits.",
+      "contentSha256": "bbe5e93c277d44da63f7558047208697b9349be368e06dc63de3121176fbcf24"
+    },
+    {
+      "id": "english-skill-verbs-paragraph-time-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "nests",
+      "rationale": "The biologist now explains a current general pattern, and singular species takes nests.",
+      "contentSha256": "a7d0988a3641302ef5b77f6487b67c101d7641ed72591f82de9033ff996d954d"
+    },
+    {
+      "id": "english-skill-pronouns-clear-reference-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "Mara showed Elise the sketch that Elise had made during the walk.",
+      "rationale": "Repeating Elise identifies the intended artist.",
+      "contentSha256": "ce8aa5c082590839eef2661d4e983bc522bae683f418403c447e9ecf29413bd6"
+    },
+    {
+      "id": "english-skill-pronouns-embedded-relative-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "who",
+      "rationale": "The restorer preserved the surface, so who is the subject of preserved.",
+      "contentSha256": "473164c1cc9bf9af633f4a31e3dedece7ced22b01b34e975f46aae8652fa1a17"
+    },
+    {
+      "id": "english-skill-pronouns-embedded-relative-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "whomever",
+      "rationale": "The jury recommends him or her, so whomever is the object inside that clause.",
+      "contentSha256": "8277693bafefd2f7ce5e8f88e3e9028e93b775f6398050226ebe5029d94c6c69"
+    },
+    {
+      "id": "english-skill-pronouns-distant-reference-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "its",
+      "rationale": "The lock belongs to the singular chest, not the nearby archivists or hinges, so its supplies the possessive reference.",
+      "contentSha256": "dce542f766052870bf6f87d4d0fb5e8ed37b15765a264e3a64c423e8869368d3"
+    },
+    {
+      "id": "english-skill-pronouns-distant-reference-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "it",
+      "rationale": "The object reconstructed is the singular mosaic, so it is the correct object pronoun.",
+      "contentSha256": "8741b61b008fb366ec037f520c83c9fa1f63489f003ea723589d8986d1e3b9aa"
+    },
+    {
+      "id": "english-skill-modifiers-limiter-scope-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "approved loans of only replicas",
+      "rationale": "Of only replicas places the limiter directly with the class of objects, matching the contrast with originals.",
+      "contentSha256": "98ed5872362ca20ab69c282ded31aa1dd8d8c74b69daaa2b00b95304cbf26220"
+    },
+    {
+      "id": "english-skill-modifiers-passive-opener-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "the labels were stored by the staff in a dark drawer",
+      "rationale": "The labels were printed with the special ink, so the keyed passive clause makes labels its subject.",
+      "contentSha256": "cd581eab61edae3f9b4efe44db49bb9a6ba26d1063850513af71a0bcf80f3f8a"
+    },
+    {
+      "id": "english-skill-modifiers-timing-scope-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "The exit may be opened only after the platform stops.",
+      "rationale": "Only after the platform stops directly limits when the exit may open.",
+      "contentSha256": "cd1257b016c689b5e159eb157feac824a505fcf9f4d70957c78b0a3ce2e981a3"
+    },
+    {
+      "id": "english-skill-modifiers-timing-scope-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "Equipment may leave the laboratory only after its inventory number has been recorded.",
+      "rationale": "Only after attaches the limit to the required prior event.",
+      "contentSha256": "c68c371acd4729d58cb7b06e9e53a08a4c5ecad0aa177f0078b2f4e5326406fd"
+    },
+    {
+      "id": "english-skill-parallel-structure-complex-paired-actions-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "to assess how drainage will change",
+      "rationale": "The paired obligations after requires the developer are to replace and to assess.",
+      "contentSha256": "c43c18789e98f148a3b49dd6e4f9da6420e2691e14534f6fa14755d8bd0cbd70"
+    },
+    {
+      "id": "english-skill-parallel-structure-complex-paired-actions-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "for its explanation of where the evidence remained uncertain",
+      "rationale": "Not only for the reconstruction balances with but also for the explanation.",
+      "contentSha256": "fa2fdf47b2adb27ab7812381acd5f32811d435e3c8b1c1a977651dc08b0a6d84"
+    },
+    {
+      "id": "english-skill-parallel-structure-parallel-degree-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "how accurately its map represented the turns",
+      "rationale": "How accurately asks how well the map represents the turns, matching how completely and how clearly.",
+      "contentSha256": "26bd3d171d8754491083f7bc74e804e966695822b4f5e6a6f0d9f940b17d102d"
+    },
+    {
+      "id": "english-skill-parallel-structure-parallel-degree-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "how consistently it returned messages within the promised time",
+      "rationale": "How promptly and how consistently both evaluate degree or reliability.",
+      "contentSha256": "68c0413b6ef4c95dfcebddb838543075889b11e11af45836986a9799c3651918"
+    },
+    {
+      "id": "english-skill-misc-grammar-modal-have-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "would have taken",
+      "rationale": "Would have followed by the participle taken is the correct construction.",
+      "contentSha256": "c7f17bf6627b431445563910855d235cf265843158f03b65ac577c031abd5727"
+    },
+    {
+      "id": "english-skill-misc-grammar-logical-comparison-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "that of the old sensor",
+      "rationale": "That of the old sensor replaces the response time of the old sensor, so the sentence compares one response time with another.",
+      "contentSha256": "729f9ea555d92088c2a9154d230d84487263409ba2f5a7aea4e7a2b5624ca655"
+    },
+    {
+      "id": "english-skill-misc-grammar-logical-comparison-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "the paper in the second notebook",
+      "rationale": "The sentence compares the durability of paper, so it must compare the paper in one notebook with the paper in the other.",
+      "contentSha256": "255bb30c0613b8b2960092b41a773ebc3fa5dbc33d5099e479ea580e101b4b3b"
+    },
+    {
+      "id": "english-skill-misc-grammar-adjective-adverb-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "faint",
+      "rationale": "Sounded is a linking verb meaning appeared to the ear, so faint describes the recording’s quality.",
+      "contentSha256": "296140a585226d113af57c1daf0a7d1c8b7bc92d88cfdb6675df1c952420a5b5"
+    },
+    {
+      "id": "english-skill-misc-grammar-adjective-adverb-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "carefully",
+      "rationale": "Turned is an action verb here, so the adverb carefully describes how the assistant turned each page.",
+      "contentSha256": "7c02c0630348cabfac28be021efbbe58c1734b4c8b459284830cadf7c65a6613"
+    },
+    {
+      "id": "english-skill-add-delete-background-for-argument-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "Yes, because it gives background needed to understand how the later visitors use the panels.",
+      "rationale": "The definition supplies the missing connection between raised lettering and finger-tracing in the next paragraph.",
+      "contentSha256": "6fd9b0db73a41b550b22c1bbf45af586cf03cbabd12f43936aaab90f1f7b27b1"
+    },
+    {
+      "id": "english-skill-add-delete-background-for-argument-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "Yes, because it describes the accessibility feature that explains the families’ preference.",
+      "rationale": "The step-free feature explains the later preference of families whose children use wheelchairs.",
+      "contentSha256": "df0b8421bb1b4f6da18215cd611638bc863eb7c4f1a5d9b0a95d857fc49d7513"
+    },
+    {
+      "id": "english-skill-add-delete-plausible-but-irrelevant-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "No, because the family’s connection to boxes does not explain the preservation method or its result.",
+      "rationale": "The family shop establishes a biographical connection to boxes but says nothing about absorbent materials, the source or design of the boxes used, or their performance in humidity.",
+      "contentSha256": "6ee305dd2518db05ac0e0d67abd7a3078da2d4dbd13160d00b33fc51d88a838b"
+    },
+    {
+      "id": "english-skill-add-delete-plausible-but-irrelevant-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "No, because it distracts from the sign-design comparison without helping explain the measured response.",
+      "rationale": "Producing calendars establishes another product, not evidence about the arrow’s design, visitors’ response, or why hesitation fell.",
+      "contentSha256": "4727585f8dc14c30fc71361b41d5d5054cec87c59cf35725d443133c01868ad2"
+    },
+    {
+      "id": "english-skill-logical-placement-paragraph-purpose-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "Before sentence 4",
+      "rationale": "Sentences 1–3 tell the recovery sequence.",
+      "contentSha256": "cb9763dff6a3b6a529330df43489c9cc279e1a3b153177735f79175df8ad6b39"
+    },
+    {
+      "id": "english-skill-logical-placement-paragraph-purpose-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "Before sentence 4",
+      "rationale": "Sentence 4 announces the maintenance challenge after the features in 1–3; 5–6 explain that challenge.",
+      "contentSha256": "d93887eaac233ce81a6fe27e44ea31adac0ea6d5083e2e60def8611f488ec605"
+    },
+    {
+      "id": "english-skill-logical-placement-argument-bridge-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "Between A and B",
+      "rationale": "Between the paragraphs, the sentence interprets the tradeoff established in A and motivates the solution in B.",
+      "contentSha256": "bece85808b3f2ee6c1a76ffdf40e1b82f1d857404acbb091bad55b394184bc7b"
+    },
+    {
+      "id": "english-skill-logical-placement-argument-bridge-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "At the end of Paragraph A",
+      "rationale": "After A, the sentence evaluates the difficulty the residents encountered and establishes the communication goal that B’s revision meets.",
+      "contentSha256": "a697cc9bc56905f20c9816aefc89a3fc5d365ed8934afc2f0b69127bcf0ad897"
+    },
+    {
+      "id": "english-skill-redundancy-delete-tangent-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "OMIT the underlined portion",
+      "rationale": "The childhood association contributes nothing to the preparation task.",
+      "contentSha256": "8e7e37b287f798f980203a07137e279dcc42107bc6eb55cfbb92a32844e4f1d9"
+    },
+    {
+      "id": "english-skill-redundancy-preserve-limits-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "Fifty-six of the seventy surveyed participants reported that the notes were useful.",
+      "rationale": "The keyed sentence keeps both the measured count and the surveyed group.",
+      "contentSha256": "569a5969e88b2ddff00760eef0ebd6375ddb2ad37c42f1bd4b8147d25ae0c9cf"
+    },
+    {
+      "id": "english-skill-redundancy-preserve-limits-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "No additional tearing was observed in the three books during the trial.",
+      "rationale": "The keyed sentence reports the observation in the actual three-book trial.",
+      "contentSha256": "8d86eeaeecdd3563c99ee92cff361fac1555b963b6749eda7c4ae0a6b1913107"
+    },
+    {
+      "id": "english-skill-redundancy-paragraph-repetition-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "Visitors who need to change their time can exchange the ticket at the front desk.",
+      "rationale": "The exchange procedure adds a new action relevant to timed admission.",
+      "contentSha256": "57c5044bb5ec1e61894ed1c3ae54e3ecf22f19acb47d8c980750a0eaf099ce43"
+    },
+    {
+      "id": "english-skill-redundancy-paragraph-repetition-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "A repair stand beside the entrance provides a pump and basic tools.",
+      "rationale": "The repair stand adds practical information for cyclists.",
+      "contentSha256": "de6acee3c6ec6e7e82a948c8a3e44abaaa29523c784a8a8692114f7cb20c5234"
+    },
+    {
+      "id": "english-skill-transitions-cause-effect-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "As a result,",
+      "rationale": "The cooling failure violated the transport condition, causing exclusion, so As a result marks that consequence.",
+      "contentSha256": "e3a45df1973028063d8624ced24815ca4bc3aaf193f28e2cd4aaccdb7155ea12"
+    },
+    {
+      "id": "english-skill-transitions-paragraph-concession-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "Even so,",
+      "rationale": "Even so concedes the favorable evidence before the staffing obstacle.",
+      "contentSha256": "3f426dd60592d8d09507259fffcca5abf17b24d717349332f5c60691d7d2fe13"
+    },
+    {
+      "id": "english-skill-transitions-paragraph-concession-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "Nevertheless,",
+      "rationale": "Nevertheless acknowledges the success in ordinary rain while introducing a remaining weakness under more severe conditions.",
+      "contentSha256": "f6d7d742a2d9f5a0f913ad1d558ac8ee5b2f8f45051e2d11666c34f0ea6f5cb6"
+    },
+    {
+      "id": "english-skill-transitions-paragraph-addition-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "Moreover,",
+      "rationale": "Portable stools add a separate response to fatigue rather than rephrasing the fixed benches.",
+      "contentSha256": "ec7d3312125b2fad4f0875a61c38343c08697e28cee97674f051c85e7e3bd0db"
+    },
+    {
+      "id": "english-skill-transitions-paragraph-addition-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "In addition,",
+      "rationale": "In addition directly signals a separate measure serving the same goal.",
+      "contentSha256": "9005f2c3c3491497c4b87288675b1bff738b14f561cdbcd0d0480bf16b3c8f2e"
+    },
+    {
+      "id": "english-skill-which-choice-essay-image-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "Beside the old pale lines, we began a new set of marks together.",
+      "rationale": "The new shared marks return to the workbench image while showing the writer now helps another learner.",
+      "contentSha256": "0c70a9c3c081615e5b39f825b375cf7e6e02803aac7273bb33194d55e415a5c2"
+    },
+    {
+      "id": "english-skill-which-choice-essay-image-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "The chairs scraped again, but this time every movement made room for someone else.",
+      "rationale": "The chair sound returns from the uncertain first rehearsal, now interpreted as an act of inclusion after the group learned cooperation.",
+      "contentSha256": "4840dd091d1164fbf2f5ada6e8857e2001a6bd65adefd7493e189496cdc4f169"
+    },
+    {
+      "id": "english-skill-which-choice-qualified-dual-evidence-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "Errors fell, and applications from residents without home internet who used the library assistance desk remained at their previous level.",
+      "rationale": "The key directly supports fewer errors and sustained participation by the specified group without home internet.",
+      "contentSha256": "e181f8f2faf26deae81ee530e90891332d43429270c4b78c212e455e2cc68c6e"
+    },
+    {
+      "id": "english-skill-which-choice-qualified-dual-evidence-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "After two winters the pigment showed less fading than on the untreated test panel, while close-up photographs still showed each ridge of paint.",
+      "rationale": "The comparison with an untreated panel supports improved preservation, and visible paint ridges support retaining the brushwork’s texture.",
+      "contentSha256": "509318c81009728e3d2e313ce67566a87d13512b9112f644460c49c241a3b47e"
+    },
+    {
+      "id": "english-skill-word-choice-significance-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "notorious",
+      "rationale": "Notorious means widely known for something bad, matching repeated violations and reckless treatment.",
+      "contentSha256": "c4c84e729e17fcfbf5b1253f325bad38ad95fa24c697260106846e0f0eef3601"
+    },
+    {
+      "id": "english-skill-word-choice-formal-tone-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "reduced water penetration",
+      "rationale": "Reduced water penetration states the measured result neutrally.",
+      "contentSha256": "464c6fe65390f0336d20bbe54d5e8436c6348e301381fed64331aa6fad0d114e"
+    },
+    {
+      "id": "english-skill-word-choice-formal-tone-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "increases the number of visitors we can accommodate",
+      "rationale": "Increases the number of visitors we can accommodate preserves the capacity claim in precise formal language.",
+      "contentSha256": "10d2650664b77d78720cfe56daa8556c2c674286c9bf9403c9e4a555bcee2efb"
+    },
+    {
+      "id": "english-skill-word-choice-earned-satisfaction-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "satisfaction",
+      "rationale": "Satisfaction names pleasure in completing the work and fits the writer’s acknowledgment of further learning.",
+      "contentSha256": "2681647c51651338e868564373cb327a315b39e1be9b7f5c76723c77eed26c60"
+    },
+    {
+      "id": "english-skill-word-choice-earned-satisfaction-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "I was proud of the repair and grateful for the help that made it possible.",
+      "rationale": "The first sentence preserves earned pleasure and gratitude without minimizing the work or ignoring remaining flaws.",
+      "contentSha256": "c88294d2541e48a05aba354acfa822468d501d0e150513cd6503c62865f1b484"
+    },
+    {
+      "id": "english-skill-word-choice-earned-satisfaction-03",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "She took pride in the result without forgetting the work they had shared.",
+      "rationale": "The key combines pleasure in an accurate result with acknowledgment of help.",
+      "contentSha256": "09ad6c6a067f36e76ae0384de9b1ea0c0af998ef47491b1d515b4d68b48f7762"
+    },
+    {
+      "id": "english-skill-word-choice-preposition-idiom-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "from touching",
+      "rationale": "Prohibit someone from doing something is the standard construction, so from touching fits.",
+      "contentSha256": "47bceb4566ef311e9b0e2a035c5a9993c9c376ad922284beb9537c9d37126de9"
+    },
+    {
+      "id": "english-skill-word-choice-preposition-idiom-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "of recording",
+      "rationale": "Capable of is followed by an -ing form, giving capable of recording.",
+      "contentSha256": "cbc6ed57e5bef766585434025698d0c6d7e147a0d210d2674ae42411253f9ad1"
+    },
+    {
+      "id": "english-skill-word-choice-preposition-idiom-03",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "on",
+      "rationale": "Focuses on introduces the subject receiving attention.",
+      "contentSha256": "4362b2f5ccec4ea7c83f8149dfd976866867e0453d19e7911cffe90dc7d41789"
+    },
+    {
+      "id": "english-skill-word-choice-certainty-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "provisional",
+      "rationale": "Provisional means subject to confirmation, matching the explicit warning about a larger trial.",
+      "contentSha256": "0710357df920e7ea4b688b56dbe04ae2bdebe8f3398e82fdab527b6996b8dc0e"
+    },
+    {
+      "id": "english-skill-word-choice-certainty-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "unresolved",
+      "rationale": "Unresolved means the available records do not settle the explanation.",
+      "contentSha256": "8eb0ba35b6a7ac9865e6ea8de2c3b49cd1e44a88f98ab1089101ed0c7163aacf"
+    },
+    {
+      "id": "english-skill-word-choice-conditional-meaning-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "contingent on",
+      "rationale": "Contingent on makes monitoring a necessary condition, matching the agreement’s requirement before release.",
+      "contentSha256": "9d9394de97db29aeef88970addbb4a0f0bac6ebb749d354a0bbd9abf3c9757f1"
+    },
+    {
+      "id": "english-skill-word-choice-conditional-meaning-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "conditional on",
+      "rationale": "Conditional on preserves only if: the specified finding must occur before replacement is required.",
+      "contentSha256": "b9de3de4dec36c268ad700f63cdf1f3877a10b47ac064604b3c27714d7e4c8b6"
+    },
+    {
+      "id": "english-skill-test-patterns-exact-span-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "rose; therefore,",
+      "rationale": "Rose; therefore, correctly joins the independent clauses around the conjunctive adverb.",
+      "contentSha256": "2cd6f0f015db2fb183eb2b9003865209b0923579be2cbbcb3477b9915a89748a"
+    },
+    {
+      "id": "english-skill-test-patterns-exact-span-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "identified",
+      "rationale": "Identified must remain attached to its object a new source of contamination.",
+      "contentSha256": "2e817f88d11864a03072d1a9e1b06de58413fd3b8b95276aa027b07cf236414e"
+    },
+    {
+      "id": "english-skill-test-patterns-evidence-scope-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "Thirty of the forty interviewed volunteers said the signs were clearer.",
+      "rationale": "The key retains the actual volunteer group, count and clarity rating.",
+      "contentSha256": "d220ad48319141855a3bd4f39430b23d63b03564323448e1ff0a790eb877b366"
+    },
+    {
+      "id": "english-skill-test-patterns-evidence-scope-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "Later comments reported fewer difficulties, but the comparison alone does not establish that the model caused the change.",
+      "rationale": "The key reports the descriptive difference while preserving the limitation on causal comparison.",
+      "contentSha256": "72b140db9568c5216df528571d26d10377231881716aaa1d18978a163caea4ad"
+    },
+    {
+      "id": "english-skill-which-choice-whole-essay-goal-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "Yes, because it connects the risks of handling and the limits of copies to a policy offering both digital and supervised access.",
+      "rationale": "The essay develops the risks, the benefits and limits of copies, and the supports and supervision used with originals.",
+      "contentSha256": "49e1628f1b7525f9e41139df85ce3544cccdb9a442a28c4bbeb393aa530a3e7e"
+    },
+    {
+      "id": "english-skill-which-choice-whole-essay-goal-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "No, because it mainly develops Lena’s experience and the community response, without evaluating the environmental tradeoffs of both methods.",
+      "rationale": "The essay develops participation and community ties, while dredging receives a budget mention rather than an environmental comparison.",
+      "contentSha256": "4e6dc84e9fcda7db34e8fb276285999cf42ce0c0be4112eb9bce801da5699beb"
+    },
+    {
+      "id": "english-skill-which-choice-whole-essay-goal-03",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "Yes, because the initial display attracts only brief attention, while teaching and demonstrations give the restored loom an ongoing role.",
+      "rationale": "The initial display and the later teaching provide the contrast supporting meaningful uses as well as equipment preservation.",
+      "contentSha256": "e2ca83be70490a8c21db25bfc82c92c34645d1d26d37b9c971ab557cece90726"
+    },
+    {
+      "id": "english-skill-logical-placement-whole-paragraph-order-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "B, D, A, C",
+      "rationale": "B establishes the dust-versus-ventilation problem.",
+      "contentSha256": "285b04db887ae18a489ff986c5e7d9c084f36198345f646078a844cafb3e7468"
+    },
+    {
+      "id": "english-skill-logical-placement-whole-paragraph-order-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "C, A, B, D",
+      "rationale": "C introduces the proposal needed by that proposal in A.",
+      "contentSha256": "850509e968727b0233571c5c523cf4533558e6d0bf446ec359a5b40b834e175e"
+    },
+    {
+      "id": "english-skill-logical-placement-whole-paragraph-order-03",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "C, D, B, A",
+      "rationale": "C introduces the patterned punctures and the question they raise.",
+      "contentSha256": "4357bac8751fcea7f9af21bf1c8e91838950ad88a182d2a5ae0f31c166bf92c2"
+    },
+    {
+      "id": "english-skill-misc-grammar-comparison-forms-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "more accurate",
+      "rationale": "Than introduces a direct comparison between two models, and the linking verb was needs an adjective.",
+      "contentSha256": "338a6e51456809a20215e35f5b3339f150299c4a86253dcfdbaf16ca676bc58b"
+    },
+    {
+      "id": "english-skill-misc-grammar-comparison-forms-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 1,
+      "verifiedAnswer": "most feasible",
+      "rationale": "Most feasible is the superlative selecting one proposal from all four.",
+      "contentSha256": "cdd6faab12850c1e36eb26f5cfee20c0b6b305cd99e1f08b2e5d368b3ee8dd09"
+    },
+    {
+      "id": "english-skill-misc-grammar-comparison-forms-03",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "more carefully",
+      "rationale": "Recorded is an action verb, so more carefully is the comparative adverb describing its manner.",
+      "contentSha256": "c486fc5e8b56e416a08a5355c15564b1f5ce97e5b2a49f5839d500b8e0975aed"
+    },
+    {
+      "id": "english-skill-misc-grammar-voice-and-focus-01",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 3,
+      "verifiedAnswer": "The telescope was restored by an engineer before the exhibition opened.",
+      "rationale": "The passive revision keeps telescope as the subject, continuing the paragraph’s focus, and retains the engineer and timing.",
+      "contentSha256": "66ba67280fd8dbef452f52f7805a6ab8d0f41398adc430f0a86f7ebb3a22b1de"
+    },
+    {
+      "id": "english-skill-misc-grammar-voice-and-focus-02",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 0,
+      "verifiedAnswer": "Lin left the valve open during the final check.",
+      "rationale": "Lin left makes the documented actor the subject and states the action directly.",
+      "contentSha256": "823da5a83ecffb41c480611562cee8e3818db6536d94d2cb5d958b2e9efdce3b"
+    },
+    {
+      "id": "english-skill-misc-grammar-voice-and-focus-03",
+      "source": "src/content/english-skill-questions.json",
+      "status": "reviewed",
+      "answerIndex": 2,
+      "verifiedAnswer": "reported the findings",
+      "rationale": "Examined, checked and reported form a parallel active sequence with researcher as their shared subject.",
+      "contentSha256": "8625cd7a1b9d4d40c71083d29203f550e1a06f4983fa35ec78998815a1f82f52"
     }
   ],
   "verifiedDelta": {
@@ -7760,5 +8613,1858 @@
         "reason": "Isolated single-rule or explicitly summarized context; useful guided practice without evidence of advanced transfer."
       }
     ]
+  },
+  "alignmentReview": {
+    "source": "src/content/english-prerequisites.json",
+    "counts": {
+      "topics": 15,
+      "skills": 106,
+      "questions": 613,
+      "checks": 45
+    },
+    "newIndependentQuestions": 93,
+    "questionProofCount": 758,
+    "method": "Explicit authored skill-to-question/check/section coordinates. Each skill activity and each added drill was separately keyed and its competing choices reviewed. Three active independent drill IDs per primary skill are a content floor, not a mastery or score guarantee.",
+    "resolvedNearCopies": [
+      {
+        "drill": "sentence-structure-029",
+        "formerWorkedContext": "Redwoods and a 350-foot height",
+        "newDemand": "Clause boundary following a clock repair"
+      },
+      {
+        "drill": "sentence-structure-030",
+        "formerCheckContext": "Egyptian pyramids surviving 4,000 years",
+        "newDemand": "Supply a finite main clause after a rehearsal concession"
+      },
+      {
+        "drill": "modifiers-006",
+        "formerWorkedContext": "Accountant reviewing a budget",
+        "newDemand": "Attach a passive collection opener to water samples"
+      },
+      {
+        "drill": "modifiers-001",
+        "formerWorkedContext": "Exhausted Devon taking a nap",
+        "newDemand": "Attach an inanimate rust description to an iron gate"
+      },
+      {
+        "drill": "parallel-structure-001",
+        "formerWorkedContext": "Weekend hiking/swimming/biking",
+        "newDemand": "Coordinate conditional checklist actions under a preposition"
+      },
+      {
+        "drill": "punctuation-013",
+        "formerCheckContext": "Steep trail versus worthwhile view",
+        "newDemand": "Coordinate an evidence-driven change in a museum label"
+      },
+      {
+        "check": "commas-daily-check-3",
+        "formerWorkedContext": "Shrimp, wings and onion rings",
+        "newDemand": "Read a survey list inside a governing prepositional phrase"
+      },
+      {
+        "check": "test-patterns-daily-check-1",
+        "formerWorkedContext": "Telescope mounted on a roof supplies competing verbs",
+        "newDemand": "Remove a repeated subject after a relative clause"
+      }
+    ],
+    "skillProofs": [
+      {
+        "topic": "sentence-structure",
+        "skill": "clause-recognition",
+        "activityAnswer": "While makes its clause dependent",
+        "activityRationale": "Instruments is the subject and recorded is a finite verb. While makes that complete subject-verb clause dependent on another statement.",
+        "activitySha256": "732c71b94b296b778f8055c3b8cb7ec6c3314cd9356758bc25d4d66944a6d4f2",
+        "teachingSha256": "60af84ce19ccf442732aee9cd21ad4381ec140d775d87231f9673bb71992c1c9",
+        "workedSha256": "276f4225f1c8d030ba45361aa59e1be6425ad1cdc0bc6e9c3abf4cf51ea59ae8",
+        "questionIds": [
+          "daily-clauses-1",
+          "daily-clauses-2",
+          "daily-clauses-3",
+          "daily-clauses-4",
+          "daily-clauses-5",
+          "daily-clauses-6"
+        ]
+      },
+      {
+        "topic": "sentence-structure",
+        "skill": "finite-main-verb",
+        "activityAnswer": "was displayed",
+        "activityRationale": "Bowl needs a finite main verb. Was displayed supplies it; displaying is nonfinite and which was displayed creates another modifying clause. The participle decorated does not supply the main predicate.",
+        "activitySha256": "8c3805c6c158d6fd91f3c1a612638838e34a4386cf6d8c9cf1abf6920dcbf2de",
+        "teachingSha256": "c450b23b5352d80911a4386f24f9ae47d0b1af8e3470a05982c7d94f552600d4",
+        "workedSha256": "716d09b2492e3c7f1b982c9b64d1341bdb5e1e224939948223ce134d8f9ca834",
+        "questionIds": [
+          "sentence-structure-005",
+          "sentence-structure-011",
+          "sentence-structure-017",
+          "sentence-structure-018",
+          "sentence-structure-020",
+          "sentence-structure-021",
+          "sentence-structure-022",
+          "daily-fragments-1",
+          "daily-fragments-2",
+          "daily-fragments-3",
+          "daily-fragments-4",
+          "daily-fragments-5",
+          "daily-fragments-6"
+        ]
+      },
+      {
+        "topic": "sentence-structure",
+        "skill": "dependent-boundary",
+        "activityAnswer": ",",
+        "activityRationale": "Unless introduces a dependent condition. A comma attaches it to the main clause beginning the engineer; a semicolon cannot follow the dependent clause, and a period strands it as a fragment.",
+        "activitySha256": "7c9cd01d46abac5222202283cc1e45c421c1fedd1aae3f06e1acad08ca18063d",
+        "teachingSha256": "5fc130528b763b17d3364f1a4c58fd5f709e6bad030251940a38073fb2363831",
+        "workedSha256": "4d3b99d462369da8cea1e92f5b5cae3f0476264374d06e2f0867ab023d96eb68",
+        "questionIds": [
+          "sentence-structure-001",
+          "sentence-structure-003",
+          "sentence-structure-007",
+          "sentence-structure-009",
+          "sentence-structure-013",
+          "sentence-structure-015",
+          "sentence-structure-019",
+          "sentence-structure-030",
+          "sentence-structure-033",
+          "sentence-structure-037"
+        ]
+      },
+      {
+        "topic": "sentence-structure",
+        "skill": "independent-boundary",
+        "activityAnswer": ", so",
+        "activityRationale": "Each side has its own subject and verb. Comma plus so supplies a correct coordinating boundary and the result relationship; however between commas still creates a splice, and so, puts the comma on the wrong side.",
+        "activitySha256": "28db254cdb7750f4e5cd81fbc00889e2a354d8f0a7dcd27cd4284c5058b17ae8",
+        "teachingSha256": "3d2b5ee9195d0f2f89fed8f66d4267b0bda4f44b00104f08fe4bcf346c9278d0",
+        "workedSha256": "92e998a723589c43d670d040a4073a0fca7ffc70bb1ceff7d0e1fbaaa41bcbeb",
+        "questionIds": [
+          "sentence-structure-002",
+          "sentence-structure-004",
+          "sentence-structure-006",
+          "sentence-structure-008",
+          "sentence-structure-010",
+          "sentence-structure-012",
+          "sentence-structure-016",
+          "sentence-structure-023",
+          "sentence-structure-024",
+          "sentence-structure-025",
+          "sentence-structure-026",
+          "sentence-structure-027",
+          "sentence-structure-028",
+          "sentence-structure-029",
+          "sentence-structure-031",
+          "sentence-structure-032",
+          "sentence-structure-034",
+          "sentence-structure-035",
+          "sentence-structure-036",
+          "sentence-structure-038"
+        ]
+      },
+      {
+        "topic": "sentence-structure",
+        "skill": "conjunctive-adverb",
+        "activityAnswer": ";",
+        "activityRationale": "The survey was short and every response required a detailed explanation are independent clauses. However is a conjunctive adverb, so a semicolon or period belongs before it; neither a comma alone nor and however supplies the offered standard construction.",
+        "activitySha256": "57d88789a82706d7b52fff11d4a5a7c19543471de7b5bbc64dbd09f8da005d07",
+        "teachingSha256": "3d2b5ee9195d0f2f89fed8f66d4267b0bda4f44b00104f08fe4bcf346c9278d0",
+        "workedSha256": "f022c7cb8e34308e10fa6d54daa267115f342fbdc92fbc565af57bd1382941b5",
+        "questionIds": [
+          "sentence-structure-014",
+          "english-skill-sentence-structure-conjunctive-adverb-01",
+          "english-skill-sentence-structure-conjunctive-adverb-02"
+        ]
+      },
+      {
+        "topic": "sentence-structure",
+        "skill": "nested-main-clause",
+        "activityAnswer": "specify",
+        "activityRationale": "Guidelines is the main plural subject; specify supplies its finite main verb. Revised, objected and must complete belong to embedded clauses. Specifying lacks a finite verb, and that specify starts yet another subordinate clause.",
+        "activitySha256": "26d8da7a3067bf817427ea04269fd6db221c89194b718db79f8aab46e0871a25",
+        "teachingSha256": "38a8545c4833ab66e9a41d62cea77e5de85b448037f3d86fee1e5c4397e03acb",
+        "workedSha256": "54c25e36d1c00f1e23567efb3e8e241fde54514d0174f83eac2016d202d20a1d",
+        "questionIds": [
+          "sentence-structure-transfer-01",
+          "english-skill-sentence-structure-nested-main-clause-01",
+          "english-skill-sentence-structure-nested-main-clause-02"
+        ]
+      },
+      {
+        "topic": "sentence-structure",
+        "skill": "reason-versus-concession",
+        "activityAnswer": "The team kept the marks because they preserved evidence of the repair.",
+        "activityRationale": "Because makes the evidence the motive for preservation. Although would present that evidence as an obstacle; the semicolon cannot introduce the dependent because-clause.",
+        "activitySha256": "a8aafe524ebad22664c9183bcaaf001d8fd5376175b6827c45d05fb49e7379f5",
+        "teachingSha256": "f2477fc6fbaf9d8372748e42b55eab5ed67bf540d91c2c643597ec195d302951",
+        "workedSha256": "3e2906a8da0ffcf85bebb53482cbd965b3bf921c255546bfb54e94e579ac9bd2",
+        "questionIds": [
+          "sentence-structure-transfer-02",
+          "english-skill-sentence-structure-reason-versus-concession-01",
+          "english-skill-sentence-structure-reason-versus-concession-02"
+        ]
+      },
+      {
+        "topic": "commas",
+        "skill": "identifying-name",
+        "activityAnswer": " Beatriz",
+        "activityRationale": "The name identifies one of several guides, so it stays attached without commas. Paired commas would treat it as added information about someone already identified; a single trailing comma splits the subject from its verb.",
+        "activitySha256": "a9f36c8c21113772604b48966fd3169b6412f2bfa3b71ed46bc5563172b22792",
+        "teachingSha256": "3fba234745f8b485eb12be5b63677d32f354b947edbe2892122893eebdd62bd0",
+        "workedSha256": "a6fa932bbda0923a63d9b11ca2612a794750d661c4a9e4529e70b9c00f6e184c",
+        "questionIds": [
+          "commas-001",
+          "commas-002",
+          "commas-005",
+          "commas-006",
+          "commas-007",
+          "commas-018",
+          "commas-019",
+          "commas-022",
+          "commas-023",
+          "commas-029"
+        ]
+      },
+      {
+        "topic": "commas",
+        "skill": "intro-and-coordination",
+        "activityAnswer": ",",
+        "activityRationale": "After makes the opening clause dependent, so a comma separates it from the following main clause. A semicolon would treat it as independent; omitting the comma obscures the boundary after the introductory clause.",
+        "activitySha256": "184fc1f3d5881484f1a28e460009b54f509cb195d693e551a02c7da176153964",
+        "teachingSha256": "14e912580290a824fb30ad103e51c1e15dcfeef895c2e49bbbca5c6874c38f9b",
+        "workedSha256": "4291bd011c95bb1ee7ccd7166ebd0c7e489aeb9c8110bf23febe072e9b59ed69",
+        "questionIds": [
+          "commas-003",
+          "commas-004",
+          "commas-008",
+          "commas-017",
+          "commas-021"
+        ]
+      },
+      {
+        "topic": "commas",
+        "skill": "nonessential-interruption",
+        "activityAnswer": ", taken at dawn,",
+        "activityRationale": "The photograph remained is the main clause. The optional description taken at dawn requires both opening and closing commas; either single-comma alternative leaves an unbalanced interruption.",
+        "activitySha256": "d7d2aad8084f59b84dcc60ff8c97b39fbb815a78b4a899b47436f78cbbc7c2cb",
+        "teachingSha256": "c86d038aeeae49894e063846b3c0efdbc6952cb24c2c02a6356daa5554b046b6",
+        "workedSha256": "44ad06cb52091508ba1fa1145594110c6a161ae2dabbc166a83aa60cc9c66b6a",
+        "questionIds": [
+          "commas-009",
+          "commas-012",
+          "commas-014",
+          "commas-026",
+          "commas-028",
+          "commas-030"
+        ]
+      },
+      {
+        "topic": "commas",
+        "skill": "adjective-and-series",
+        "activityAnswer": "",
+        "activityRationale": "White identifies the color of the cotton coat, and clean describes that combined phrase. These cumulative modifiers do not form a simple coordinate list; neither a comma nor a semicolon belongs at the blank.",
+        "activitySha256": "647100308da60a43e36cdb7080dc09ea252434578133eb4eb2bccaac99c926e3",
+        "teachingSha256": "a26c6d532796435540922cf2442d712f22253fa5e2f08ba10a67665f0f0a1d74",
+        "workedSha256": "27b377d1b9653da9682c6a46cb4954eab1892d058bb980bd3ef5201a79e9d66d",
+        "questionIds": [
+          "commas-010",
+          "commas-011",
+          "commas-015",
+          "commas-016",
+          "commas-020",
+          "commas-025",
+          "commas-031",
+          "commas-032"
+        ]
+      },
+      {
+        "topic": "commas",
+        "skill": "city-state",
+        "activityAnswer": "comma; comma",
+        "activityRationale": "When a state follows a city inside a sentence, set it off with commas on both sides: Albany, New York, before opening. Either one-sided option leaves the state only partly set off.",
+        "activitySha256": "14410b27fb7c8d7321c1f84a10228a84f58fd78738a068116407b51f473d3004",
+        "teachingSha256": "8ee96fb54cdb9a71ef438cd0d89004b4e56f247202f66e8bb0635cff4df43cd8",
+        "workedSha256": "a783c3708eed1bcecd45660890c0d5b6d78928ef8088f25ad74a2f5bb77d0545",
+        "questionIds": [
+          "commas-024",
+          "english-skill-commas-city-state-01",
+          "english-skill-commas-city-state-02"
+        ]
+      },
+      {
+        "topic": "commas",
+        "skill": "restrictive-boundary",
+        "activityAnswer": "no punctuation",
+        "activityRationale": "The that-clause identifies the ten affected folders. It is part of the subject, so no mark separates that full subject from were moved. A comma or semicolon would break the subject-verb connection.",
+        "activitySha256": "5cd329f6009203f4f0d2ba878d07761d4d2b850e5bce9a077e8fe8829298464d",
+        "teachingSha256": "57ffe2a623c8f17b74c9ab4ac7f4b334c6b7697721c58c25af0a178563e51ad0",
+        "workedSha256": "a48776dd334ee760ce805a5ac4bedbfa34f988232ee453662f37d7edd9fad222",
+        "questionIds": [
+          "commas-transfer-01",
+          "english-skill-commas-restrictive-boundary-01",
+          "english-skill-commas-restrictive-boundary-02"
+        ]
+      },
+      {
+        "topic": "commas",
+        "skill": "matching-dash",
+        "activityAnswer": "a dash",
+        "activityRationale": "The opening dash introduces an added description. A matching dash closes it before has finally been attributed, the painting’s main predicate. A comma or colon would not match the opening delimiter.",
+        "activitySha256": "f4ea42d726ef518fb1c0ee910565b9766efdeb2fbcbc699128aebea3ba28ee2d",
+        "teachingSha256": "aee857c94e35722aca88454fb7d2433582c8df5225b3fec4daaeff05999c541e",
+        "workedSha256": "54afa21509cc47f0b3f5dece6acdc026cbed8b7142fbcd9cb653459a0ecfdff9",
+        "questionIds": [
+          "commas-transfer-02",
+          "english-skill-commas-matching-dash-01",
+          "english-skill-commas-matching-dash-02"
+        ]
+      },
+      {
+        "topic": "commas",
+        "skill": "subject-verb-boundary",
+        "activityAnswer": "no mark",
+        "activityRationale": "The that-clause identifies the parcels and remains inside the subject. No mark separates that full subject from are waiting; a comma or semicolon would break the subject-verb connection.",
+        "activitySha256": "320d89352e275c92e226ae9f5f5367fd809f2196611fc932f1aebcdd69dacc49",
+        "teachingSha256": "c86d038aeeae49894e063846b3c0efdbc6952cb24c2c02a6356daa5554b046b6",
+        "workedSha256": "843ea35d6073b2fa0e3720ffdfe30e1b895214d1b01e5346a21343cf973de169",
+        "questionIds": [
+          "commas-013",
+          "commas-027",
+          "english-skill-commas-subject-verb-boundary-01"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "possessive-pronoun",
+        "activityAnswer": "It identifies the capsule as the owner without a contraction.",
+        "activityRationale": "Its is the possessive pronoun showing whose outer layer dried. It does not expand to it is and does not form a plural. In a drill, expanding an apostrophe form is a useful way to test the competing contraction.",
+        "activitySha256": "0ea99af0fb6c979c84f22e0341c5864ed172247e0dc7e31ebc0f75daeb4b86b0",
+        "teachingSha256": "04e0f0a5723513c7d6a0e505bece0489d524510adbf162417f896ea9118e7946",
+        "workedSha256": "098675f22a071e23d3fd69d403048bba283d88abd012e372026d9faeb18ee181",
+        "questionIds": [
+          "punctuation-001",
+          "punctuation-002",
+          "punctuation-003",
+          "punctuation-017",
+          "punctuation-018",
+          "punctuation-019"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "possessive-noun",
+        "activityAnswer": "researchers'",
+        "activityRationale": "More than one researcher owns the containers, so use the regular plural researchers followed by an apostrophe. Researcher’s is singular possession; researchers alone is a plain plural.",
+        "activitySha256": "caed33c79d373bd09c832f3faa66f7c2290c9374a1d76c9500a55bc29f4cc419",
+        "teachingSha256": "04e0f0a5723513c7d6a0e505bece0489d524510adbf162417f896ea9118e7946",
+        "workedSha256": "04a6cc2215d001885984b88e71f54c48f130b12ea3a67828c047c9316016d8a5",
+        "questionIds": [
+          "punctuation-009",
+          "punctuation-010",
+          "punctuation-025",
+          "punctuation-026"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "quotation-tag",
+        "activityAnswer": ",”",
+        "activityRationale": "A comma goes inside the closing quotation mark when the reporting phrase continues the same sentence: sealed,” the supervisor said. The period would incorrectly end the quotation before the lower-case reporting tag; a semicolon does not attach that tag.",
+        "activitySha256": "43728a144886ef93a38b08e8e0393b712a0113af449194e8a52d61c638a7d9b0",
+        "teachingSha256": "7ab3829e551358e14ceb331ddb6e17d0782c209ffb9c3a9b52ff97435db045eb",
+        "workedSha256": "0ddac8766e2d4983af58d21cb799a01ec7bd3c2cb7f5e8efc12ef56f1bdf4565",
+        "questionIds": [
+          "punctuation-004",
+          "punctuation-020",
+          "english-skill-punctuation-quotation-tag-01"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "clause-boundary",
+        "activityAnswer": ", so",
+        "activityRationale": "Comma plus so coordinates the independent clauses and states the result. Therefore is an adverb rather than a coordinating conjunction, so the comma alternative with therefore and the comma alone both create splices.",
+        "activitySha256": "f79663a5c763b025d4d5a1c6d77b3ce1ab71b8f68b6dadb387281e09a5a0fd24",
+        "teachingSha256": "729a62f2bc41b9ed6f9d8415ce53e00485126df5d774bfc5962e62e8278c0a68",
+        "workedSha256": "0fac06e302ed935657c10b7faf09b7c1d786129910ec4af3b96fdb3011703aa6",
+        "questionIds": [
+          "punctuation-005",
+          "punctuation-013",
+          "punctuation-014",
+          "punctuation-015",
+          "punctuation-021",
+          "punctuation-029",
+          "punctuation-030",
+          "punctuation-031"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "colon-introduction",
+        "activityAnswer": "a colon",
+        "activityRationale": "The emergency kit contained the following items is a complete clause. A colon introduces the list explaining those items. A semicolon would need a complete following clause; a comma alone does not perform the offered list-introduction job.",
+        "activitySha256": "79211a9b6356328304e6608ea526e049e380470b8e222d70490aa5034d06a2a9",
+        "teachingSha256": "5d1a1f4a7cb5dcc98930cfd997ad27fbebef728d55348b497be76391a235aa8f",
+        "workedSha256": "0301a91a4c492d2ec095757c4bff3a2838cce241653fb28b5e6aceab68e5a78e",
+        "questionIds": [
+          "punctuation-006",
+          "punctuation-007",
+          "punctuation-008",
+          "punctuation-022",
+          "punctuation-023",
+          "punctuation-024"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "matching-interruption",
+        "activityAnswer": "a comma",
+        "activityRationale": "The comma after manuscript opens a nonessential which-clause. A second comma must close it before contains, the main verb. A dash would mismatch the opener; a semicolon cannot divide this subject from its predicate.",
+        "activitySha256": "1f998c65d4302b17b5ae8de4005ba6ecb0d23d4eb6f79fcba2f5282d17b20be2",
+        "teachingSha256": "a67b1c26e51c0f2306989c9632f460dc650d396732e0b65a48ce57b58cc283d1",
+        "workedSha256": "b9b39c9e9565921d570c767d2d4489742b8711df154df797d0c87901f65a7071",
+        "questionIds": [
+          "punctuation-011",
+          "punctuation-016",
+          "punctuation-027",
+          "punctuation-032"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "explanatory-dash",
+        "activityAnswer": "a dash",
+        "activityRationale": "A dash can introduce the phrase identifying the one open route. The footpath phrase is not an independent clause for a semicolon, and comma plus and would wrongly try to coordinate it with a complete clause.",
+        "activitySha256": "b69d220f93f6b5cc831a8e88057379337d8e4f554a656a90da543aaaa922eb17",
+        "teachingSha256": "e280b7926a7d16510e047b998dc35ea7ea37332d6644b862b0fad7040df13cda",
+        "workedSha256": "b5108ff9fec4bf6cbec07d5504d34b254b79a0f126cb416bdfba92bb7909a29f",
+        "questionIds": [
+          "punctuation-012",
+          "punctuation-028",
+          "english-skill-punctuation-explanatory-dash-01"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "complex-list",
+        "activityAnswer": "semicolon; semicolon",
+        "activityRationale": "Each whole item contains a name and an appositive role, so semicolons separate the items without confusing those boundaries with internal commas. The final semicolon may precede and because it separates list items rather than clauses.",
+        "activitySha256": "82573b755bf4496c71bc5fe6774a8e9314c1ce4b5045babf3bddd7a689efc01b",
+        "teachingSha256": "003b1c398c76f04cfe897dbea8df1ad1351f7cea2c9f6ed088816ad07952c606",
+        "workedSha256": "af223039d1b1e7f8020dc16a08b3c3f7a1dc98f20809c1a25740bd4b884adfa6",
+        "questionIds": [
+          "punctuation-transfer-01",
+          "english-skill-punctuation-complex-list-01",
+          "english-skill-punctuation-complex-list-02"
+        ]
+      },
+      {
+        "topic": "punctuation",
+        "skill": "complex-elaboration",
+        "activityAnswer": "a colon",
+        "activityRationale": "The introduction is a complete clause, and the following complete clause identifies its solution, so a colon introduces the elaboration. A comma would splice the clauses; semicolon plus because would strand a dependent clause.",
+        "activitySha256": "4efe624432ab6bcd29a8e6f3df49cfc9e6f78dba1426e01d431043b4b43e13d6",
+        "teachingSha256": "52e162b60f537c789b2c2d7d6eefe7e97db094582bfc6a05d97692236f1d3cf2",
+        "workedSha256": "598897b8c2befe6c90ecf801fb2e610dffcc14d875c59580530f76a8e8b36eb4",
+        "questionIds": [
+          "punctuation-transfer-02",
+          "english-skill-punctuation-complex-elaboration-01",
+          "english-skill-punctuation-complex-elaboration-02"
+        ]
+      },
+      {
+        "topic": "verbs",
+        "skill": "head-subject",
+        "activityAnswer": "concerns",
+        "activityRationale": "Condition is the singular head subject; shelves and windows are embedded in modifying phrases. Concerns agrees with condition, while concern and have concerned are plural forms.",
+        "activitySha256": "0b832d59bb21cad8274fcd01c4292d8b44696793f298e5169ce031d28f6bd1e2",
+        "teachingSha256": "83577bce1c5e3cbb717dd2da160075c72c04d949b5d006e7d6775f15f557bea3",
+        "workedSha256": "580e9f157d77c3a1a397b384075e0ad9656898e0dad7c292c2176690c9fb96ad",
+        "questionIds": [
+          "verbs-002",
+          "verbs-006",
+          "verbs-007",
+          "verbs-008",
+          "verbs-017",
+          "verbs-022",
+          "verbs-029"
+        ]
+      },
+      {
+        "topic": "verbs",
+        "skill": "indefinite-subject",
+        "activityAnswer": "every one",
+        "activityRationale": "Every one is the singular subject. Crates belongs to an of-phrase and label is the object, so neither controls the verb. This subject check can then guide verb-form choices in other sentences.",
+        "activitySha256": "905aa0665ee0c0b1d5cccbd9d834012d46790778debb800b8eef9af58b65e62d",
+        "teachingSha256": "612c33bf6b2b3c1c544ad506e6f449588c7d477eda21f7a2942bd4c8e7644302",
+        "workedSha256": "347866788e8f90ff4753129fd7ca698587b747d9f151d68ee24cc8902dceec77",
+        "questionIds": [
+          "verbs-001",
+          "verbs-005",
+          "verbs-018",
+          "verbs-021",
+          "verbs-023"
+        ]
+      },
+      {
+        "topic": "verbs",
+        "skill": "tense-sequence",
+        "activityAnswer": "closed",
+        "activityRationale": "Inspected and tightened establish a completed past-tense sequence, so closed continues it. Closing has no finite auxiliary; closes introduces an unjustified present-tense shift.",
+        "activitySha256": "8d8cb426cd3a124c4d4f9ea4501bba4ab6576cd03e9b065372606c3ef3701487",
+        "teachingSha256": "e9c84eb1ff00bdef8e413b8275d44a4f104ccc6222f09aa8612b5c58ab58e355",
+        "workedSha256": "05b1ca324b03b261b7bbdf5d0f4fea3578063a4031514b04b810e80f048d5a1a",
+        "questionIds": [
+          "verbs-003",
+          "verbs-009",
+          "verbs-010",
+          "verbs-016",
+          "verbs-019",
+          "verbs-024",
+          "verbs-025",
+          "verbs-032"
+        ]
+      },
+      {
+        "topic": "verbs",
+        "skill": "past-participle",
+        "activityAnswer": "put",
+        "activityRationale": "Put is the past participle as well as the simple past of put, so had put is correct. Putting would need been after had; puts is a present form and cannot follow had.",
+        "activitySha256": "606e2dfa3982f45043e5b605549b86d311fc1d95e9cacb8d7a1d2d77d317786c",
+        "teachingSha256": "324fc9ca941c075eae5eefbe522a806568f2b863b73582c19d5393a8cbf9e204",
+        "workedSha256": "38a0fb2e05ba64a19271a7df25b278023f7224110462ddd3364ecf3fdc84fe5e",
+        "questionIds": [
+          "verbs-004",
+          "verbs-011",
+          "verbs-015",
+          "verbs-020",
+          "verbs-026",
+          "verbs-031"
+        ]
+      },
+      {
+        "topic": "verbs",
+        "skill": "nearer-subject",
+        "activityAnswer": "has",
+        "activityRationale": "The nearer subject is singular manager, so has agrees. Inspectors is farther from the verb and does not control this neither/nor construction.",
+        "activitySha256": "c489546d822dd7fae612e9a82cfff8400ec192d950ed67427ad513f9652872ac",
+        "teachingSha256": "612c33bf6b2b3c1c544ad506e6f449588c7d477eda21f7a2942bd4c8e7644302",
+        "workedSha256": "4a5a1d0cfaa99c8d4d6ad0adadf39d5f17b06b33f2a5cd6018b34c50a71a130c",
+        "questionIds": [
+          "verbs-012",
+          "verbs-014",
+          "verbs-027",
+          "verbs-030"
+        ]
+      },
+      {
+        "topic": "verbs",
+        "skill": "lay-lie",
+        "activityAnswer": "lay",
+        "activityRationale": "The guide reclined and placed no object, so the past tense of lie is lay. Laid is the past of lay meaning place an object; lain is a participle that needs a form of have.",
+        "activitySha256": "1e5d60b6607e4b6677421791e7c1df9f227843da7e4eda4b3ba050ebc9b174e2",
+        "teachingSha256": "324fc9ca941c075eae5eefbe522a806568f2b863b73582c19d5393a8cbf9e204",
+        "workedSha256": "938a507d43553d7a4697b05c0e4f82cf5d1ca0cc641c274f2c63dd76485fccb1",
+        "questionIds": [
+          "verbs-013",
+          "verbs-028",
+          "english-skill-verbs-lay-lie-01"
+        ]
+      },
+      {
+        "topic": "verbs",
+        "skill": "inverted-subject",
+        "activityAnswer": "stands",
+        "activityRationale": "The subject after the verb is singular machine, not cabinets. Stands agrees with machine; stand and have stood are plural.",
+        "activitySha256": "b9453e89ef035ba646309abb7695e8efe24642b99c3a7794d88105887c712f9c",
+        "teachingSha256": "d912d3bd89041f8b593e4b17743c3fc7909ce637174bfb19f4a15002ab25f658",
+        "workedSha256": "281ddaf2c448ac9e6c3fa52ce2e74dc92c016aeca3443adea4b1b1b92ebfa5ae",
+        "questionIds": [
+          "verbs-transfer-01",
+          "english-skill-verbs-inverted-subject-01",
+          "english-skill-verbs-inverted-subject-02"
+        ]
+      },
+      {
+        "topic": "verbs",
+        "skill": "paragraph-time",
+        "activityAnswer": "sways",
+        "activityRationale": "Still and today identify an ongoing present condition, so sways fits. The earlier recorded belongs to 1974 and does not force the next sentence into the past.",
+        "activitySha256": "962602772b6f67189a206ab232601af6be35a686142cdee44a363c9be2558641",
+        "teachingSha256": "284a46e8a617a3e1262827f0fb80089ff65e4ea16729091a54f82026323386e7",
+        "workedSha256": "c5d92fd65d86b61f3a43da5bb48fed115d9280bf634db7d9ea460817346d6b00",
+        "questionIds": [
+          "verbs-transfer-02",
+          "english-skill-verbs-paragraph-time-01",
+          "english-skill-verbs-paragraph-time-02"
+        ]
+      },
+      {
+        "topic": "pronouns",
+        "skill": "pronoun-case",
+        "activityAnswer": "me",
+        "activityRationale": "Invited takes an object: invited me. Adding Suri and does not change the required case. I is a subject form; myself has no matching first-person subject to reflect back to.",
+        "activitySha256": "be3c9ea3d9eaf390a2ece8de667c54621e1f8d37aac3cb3a540df82063c31444",
+        "teachingSha256": "e94761cda09aaf34d67f8606e026feea4ceb60b91ac485ab3f37fe50b77dfab3",
+        "workedSha256": "ce690fcd6f565f84057dce5a80da6fae74a421df256455760ae66bd12e36175e",
+        "questionIds": [
+          "pronouns-001",
+          "pronouns-002",
+          "pronouns-003",
+          "pronouns-004",
+          "pronouns-005",
+          "pronouns-006",
+          "pronouns-015",
+          "pronouns-017",
+          "pronouns-018",
+          "pronouns-019",
+          "pronouns-020",
+          "pronouns-021"
+        ]
+      },
+      {
+        "topic": "pronouns",
+        "skill": "relative-case",
+        "activityAnswer": "whomever",
+        "activityRationale": "The board selects him or her, so whomever fills the object position inside the clause. Whoever is a subject form; whose is possessive. The pronoun’s own clause determines case.",
+        "activitySha256": "99b41d908eb0c0e439729113b9862a769fd2053923f8ce92df2037bce02b1fc0",
+        "teachingSha256": "499a2e4b1f85c29e132577d10bd99a1f1f7180bb326ab5f2a3f743d562433921",
+        "workedSha256": "75b4eac80c4b9b5e4bb720b81f3d7e2ad20bf7c0a0aeeee84cb105140f7c3f33",
+        "questionIds": [
+          "pronouns-007",
+          "pronouns-008",
+          "pronouns-014",
+          "pronouns-016",
+          "pronouns-022",
+          "pronouns-023",
+          "pronouns-030",
+          "pronouns-031"
+        ]
+      },
+      {
+        "topic": "pronouns",
+        "skill": "antecedent-agreement",
+        "activityAnswer": "the board",
+        "activityRationale": "The board owns the revised plan. Managers and office are nearby nouns, but they do not supply the intended owner; identify the antecedent before choosing a possessive form in a new sentence.",
+        "activitySha256": "434fea8581c26fd2629c7427d38ff68c69ac72fa22cabc23b76db5828dcde6c2",
+        "teachingSha256": "560453e3b269bf55c5c5f58a672abe2e149b43b6fb6e1375c468359fa4e40baf",
+        "workedSha256": "4f980949f8dc9965e5b61f410f81d240a47ab0f108cf5a9798f76f6fc913a357",
+        "questionIds": [
+          "pronouns-009",
+          "pronouns-010",
+          "pronouns-011",
+          "pronouns-012",
+          "pronouns-013",
+          "pronouns-024",
+          "pronouns-025",
+          "pronouns-026",
+          "pronouns-028",
+          "pronouns-029"
+        ]
+      },
+      {
+        "topic": "pronouns",
+        "skill": "clear-reference",
+        "activityAnswer": "the trophy",
+        "activityRationale": "The trophy states the intended referent. This object could still name either nearby object, and the vase changes the intended event.",
+        "activitySha256": "3e969d600a26d0726cbacb67fea0435ea945ed05e73e4d1a3629d3ac9fdc0e98",
+        "teachingSha256": "08771157a1506a5e5dd0bae9d897be735dcfc54f3bd02b529d45990b767fd366",
+        "workedSha256": "cde17d0ea4a62fab45113302ce96b64087c252ad6be9a5d8285f0de2e9b1f651",
+        "questionIds": [
+          "pronouns-027",
+          "pronouns-032",
+          "english-skill-pronouns-clear-reference-01"
+        ]
+      },
+      {
+        "topic": "pronouns",
+        "skill": "embedded-relative",
+        "activityAnswer": "who",
+        "activityRationale": "The pilot reported the fault, so who is the subject of reported. The investigators believe is embedded reporting language and does not turn that subject into an object. Whose is possessive.",
+        "activitySha256": "936288638f6075125e9b8fadd014b47538f41b23a0009adc61f0dc076010ad73",
+        "teachingSha256": "fc9714b4d06e1cac54c3b31747c9467fd0d1c113a806723cfba4652f8d572b5a",
+        "workedSha256": "4584db56cfeb43497036e2ba7afa6e320457c0c8c7231bbfc367ddc33a33c17f",
+        "questionIds": [
+          "pronouns-transfer-01",
+          "english-skill-pronouns-embedded-relative-01",
+          "english-skill-pronouns-embedded-relative-02"
+        ]
+      },
+      {
+        "topic": "pronouns",
+        "skill": "distant-reference",
+        "activityAnswer": "its",
+        "activityRationale": "The telescope, not the nearby students, owns the cover. Its supplies singular possession; their points to a plural owner, and it’s is a contraction.",
+        "activitySha256": "d69e48151fd2ac50afd235bcd5b7ba3ab8545a52363dbdd3989aa180d28ba619",
+        "teachingSha256": "d491b3dff49ec379fe10779064cabd4cebf93c247013c6feaf4bfc2446c38934",
+        "workedSha256": "6851eadb3008130134efb9b3d9fc866c82d3b330fadc6654536038e3cf4b7299",
+        "questionIds": [
+          "pronouns-transfer-02",
+          "english-skill-pronouns-distant-reference-01",
+          "english-skill-pronouns-distant-reference-02"
+        ]
+      },
+      {
+        "topic": "modifiers",
+        "skill": "opening-description",
+        "activityAnswer": "the astronomer prepared a list of targets",
+        "activityRationale": "The astronomer can be eager and is the subject of the keyed clause. A list and the act of preparing cannot feel eager, so those choices dangle the opening modifier.",
+        "activitySha256": "863316caeb6fff92a092a8ad8a2d3790baf9aa55487a4a6d218bea427193dcd4",
+        "teachingSha256": "f1766f2f416a74dde09651011faa6330d8b4e79c4057328dc51d5f89c1872659",
+        "workedSha256": "37ee78742100785379368867d03c7879fe2b336a023caa039175281822732ef7",
+        "questionIds": [
+          "modifiers-001",
+          "modifiers-002",
+          "modifiers-003",
+          "modifiers-004",
+          "modifiers-005",
+          "modifiers-007",
+          "modifiers-008",
+          "modifiers-009",
+          "modifiers-010",
+          "modifiers-012",
+          "modifiers-014",
+          "modifiers-016",
+          "modifiers-017",
+          "modifiers-018",
+          "modifiers-019",
+          "modifiers-020",
+          "modifiers-022",
+          "modifiers-023",
+          "modifiers-024",
+          "modifiers-027",
+          "modifiers-028",
+          "modifiers-030",
+          "modifiers-031",
+          "modifiers-032"
+        ]
+      },
+      {
+        "topic": "modifiers",
+        "skill": "close-attachment",
+        "activityAnswer": "The engineer sent a diagram printed on recycled paper to the client.",
+        "activityRationale": "Printed on recycled paper must describe diagram, so it belongs beside diagram. The other placements make client the object printed or garble the intended relationship.",
+        "activitySha256": "dbc942ec3c5236e22fa01fd9a84020255045c536ff344bacdad7a6fc5d0d940f",
+        "teachingSha256": "c1b69192ec6201524e07919b61a6dc715595204ae1f6da71756d4562f1352fd2",
+        "workedSha256": "deea4ea6b8aa90828ade9621df8af81574fd58bb96571257668e40f9402c864d",
+        "questionIds": [
+          "modifiers-011",
+          "modifiers-015",
+          "modifiers-021",
+          "modifiers-025",
+          "modifiers-029"
+        ]
+      },
+      {
+        "topic": "modifiers",
+        "skill": "limiter-scope",
+        "activityAnswer": "The guide accepted donations only from adults.",
+        "activityRationale": "Only from adults limits the group allowed to donate. Only accepted can limit the action; only donations limits the things accepted. The surrounding sentence requires a distinction between the donors and the people whose questions were answered.",
+        "activitySha256": "e5b2305ee1cd09b18b350da50ea8fc3444a86f2053d4100ac5398d0355c6dc84",
+        "teachingSha256": "a722748479629b50f7c29266c362d80be8bec8b99a91f5f4d254d0c8f4ccfe87",
+        "workedSha256": "26d8a291354fe98dd60f14557d5ee6a70a3f29758b9225a0996f8bc7ca80fd10",
+        "questionIds": [
+          "modifiers-013",
+          "modifiers-026",
+          "english-skill-modifiers-limiter-scope-01"
+        ]
+      },
+      {
+        "topic": "modifiers",
+        "skill": "passive-opener",
+        "activityAnswer": "the stones were stored in separate boxes",
+        "activityRationale": "The stones were weighed and photographed; the keyed passive clause keeps stones as its subject. The field team and the activity of storing do not name the objects receiving the opening actions.",
+        "activitySha256": "a58bda5633221b4685c02b5d7da30e209169b73cee772a1b0d542d24069640a8",
+        "teachingSha256": "ecc8cbcc56a201885a9587f41df675bc5512c1dff0d4f5ecfd2339ec423a9bd3",
+        "workedSha256": "48623c9f5348c21fd1db746d68444c335ec0ff071ad950fb5a1681f3790260cd",
+        "questionIds": [
+          "modifiers-006",
+          "modifiers-transfer-01",
+          "english-skill-modifiers-passive-opener-01"
+        ]
+      },
+      {
+        "topic": "modifiers",
+        "skill": "timing-scope",
+        "activityAnswer": "Readers may view the letters only after orientation.",
+        "activityRationale": "Only after orientation restricts the condition or time of viewing. Only readers restricts who may view; only the letters restricts what they may view. Neither expresses the stated timing requirement.",
+        "activitySha256": "04445e20a89952d9600043184e2b03fc12bdfefee95dabbb6b70b1befe19c748",
+        "teachingSha256": "38e1cc97b06767f5aa5ca877889ba4f2fe56f2599b76a719889b8036463ce618",
+        "workedSha256": "8a0ab86c8eb98d92f17d64ac14a5aabe64201532c9de281f9defc5dd01365940",
+        "questionIds": [
+          "modifiers-transfer-02",
+          "english-skill-modifiers-timing-scope-01",
+          "english-skill-modifiers-timing-scope-02"
+        ]
+      },
+      {
+        "topic": "parallel-structure",
+        "skill": "series-forms",
+        "activityAnswer": "engaging",
+        "activityRationale": "Informative and accessible are adjectives describing exhibition, so engaging matches their role. A complete clause and a prepositional phrase do not continue the adjective series.",
+        "activitySha256": "bcb04200c9be2488a18726f817eb45f960dcdeb4647b1dbda76971f638f0421e",
+        "teachingSha256": "49a6110a003528798e04e1b6913f61516ec58a02b67f4b60343dfdeafd5c1454",
+        "workedSha256": "568bc9b7d4f1b9c143c12bdd96e913cf7ff6b0d318db77270d44d24fd56ed3ef",
+        "questionIds": [
+          "parallel-structure-001",
+          "parallel-structure-002",
+          "parallel-structure-003",
+          "parallel-structure-004",
+          "parallel-structure-005",
+          "parallel-structure-006",
+          "parallel-structure-008",
+          "parallel-structure-014",
+          "parallel-structure-017",
+          "parallel-structure-018",
+          "parallel-structure-019",
+          "parallel-structure-020",
+          "parallel-structure-021",
+          "parallel-structure-022",
+          "parallel-structure-024",
+          "parallel-structure-030"
+        ]
+      },
+      {
+        "topic": "parallel-structure",
+        "skill": "parallel-comparison",
+        "activityAnswer": "playing",
+        "activityRationale": "Editing and playing are gerunds naming the two activities. To play changes the established form; when we played gives a time clause rather than the corresponding activity.",
+        "activitySha256": "1849e05504cfa8bb5225923dafe2cc95595b706acb563773dabefde441a49ed2",
+        "teachingSha256": "a6748dbc06eaadcde07d866600199734359ab3b42f829692d53f4dda03ff6f29",
+        "workedSha256": "705fa2b2f82c2bb9a4d89f41aef8175c69ffb4ebb998a8eb86af0354a99dc82e",
+        "questionIds": [
+          "parallel-structure-009",
+          "parallel-structure-010",
+          "parallel-structure-016",
+          "parallel-structure-025",
+          "parallel-structure-032"
+        ]
+      },
+      {
+        "topic": "parallel-structure",
+        "skill": "shared-preposition",
+        "activityAnswer": "measure",
+        "activityRationale": "How to can govern both measure angles and measure distances. Measuring changes to a gerund; they measure introduces a complete clause. Optional repeated wording is not required when the construction is shared.",
+        "activitySha256": "baf819a42215c4ffd5c14b4d098e7f8a6f96ee1f853b711e4523906fe00db04b",
+        "teachingSha256": "784333174ab5882cbf36923a1f326679ff7f63852849991f63bcff0e1958b31b",
+        "workedSha256": "2b288106dae89df033f01bd7b5380ac8cb4ff37afbc2141f89b5b223c6c18497",
+        "questionIds": [
+          "parallel-structure-007",
+          "parallel-structure-012",
+          "parallel-structure-023",
+          "parallel-structure-027"
+        ]
+      },
+      {
+        "topic": "parallel-structure",
+        "skill": "paired-connectors",
+        "activityAnswer": "attend the workshop",
+        "activityRationale": "Either joins complete the online module with attend the workshop, both verb phrases governed by must. A passive clause and a gerund do not match that construction.",
+        "activitySha256": "4b23057eec06e749b551dfcb8553a79b36d5980bb29d15994eaeb1392aecb1fc",
+        "teachingSha256": "4007546e988e6a71197b3caec7d4ffa5decfd2138926878e8e8328812d06c94c",
+        "workedSha256": "b2ddd7d4051d8a0a25337f8becdbd31676c94259ba67d06d7a81b329ecd316c4",
+        "questionIds": [
+          "parallel-structure-011",
+          "parallel-structure-013",
+          "parallel-structure-015",
+          "parallel-structure-026",
+          "parallel-structure-028",
+          "parallel-structure-029",
+          "parallel-structure-031"
+        ]
+      },
+      {
+        "topic": "parallel-structure",
+        "skill": "complex-paired-actions",
+        "activityAnswer": "to publish a complete condition report",
+        "activityRationale": "To insure and to publish are parallel infinitive requirements imposed on the museum. A noun phrase and a that-clause do not continue the same paired construction.",
+        "activitySha256": "20d682ad199c88052b98ab8a80f8c4082da1c51c3b7f7485d4e2bd5ae05f47d8",
+        "teachingSha256": "f860f761f21bae9c5ced07b273fe4fd76a38a8186b8d539c10022adef9d3d4cb",
+        "workedSha256": "baa5ea12fdee86274fdd1c44f61132e3ded21fc3c16771a1778ac1b4ebc366fc",
+        "questionIds": [
+          "parallel-structure-transfer-01",
+          "english-skill-parallel-structure-complex-paired-actions-01",
+          "english-skill-parallel-structure-complex-paired-actions-02"
+        ]
+      },
+      {
+        "topic": "parallel-structure",
+        "skill": "parallel-degree",
+        "activityAnswer": "how accurately they documented the sources",
+        "activityRationale": "The first two criteria ask how well something was done. How accurately continues that structure; whether asks a yes/no question, and their sources merely names a thing.",
+        "activitySha256": "1d5865cff6ac234a538e1b76d2d413eddd4bb60a1d1355473cff916ab9d328a7",
+        "teachingSha256": "29e225065d7df08024984242427d34e25af7855aa7468999e2f697bc2c5327f8",
+        "workedSha256": "a82b1aab3f47051093d0e521cc1d74436bd1cd7be3c7311dfbcfc3af6ea2ce29",
+        "questionIds": [
+          "parallel-structure-transfer-02",
+          "english-skill-parallel-structure-parallel-degree-01",
+          "english-skill-parallel-structure-parallel-degree-02"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "confused-forms",
+        "activityAnswer": "compliment; complement",
+        "activityRationale": "A compliment is praise, while complement means suit or complete something. The sentence says the reviewer praised a color scheme that would go well with the exhibits, so the second pair fits both roles.",
+        "activitySha256": "1fe291b8d07c4ba90a207948412927bb548a69a5e5daebda5d0dfb058211f423",
+        "teachingSha256": "6ca6b27e8e41ff9bb2864aa7f4d8066b36ee9ea6023a41d8604793774e1a15b8",
+        "workedSha256": "387e288746e6ba123384be29bf7e2c72cf15f592b6e14c329c38348f5beb4e45",
+        "questionIds": [
+          "misc-grammar-001",
+          "misc-grammar-005",
+          "misc-grammar-006",
+          "misc-grammar-007",
+          "misc-grammar-011",
+          "misc-grammar-012",
+          "misc-grammar-013",
+          "misc-grammar-014",
+          "misc-grammar-017",
+          "misc-grammar-020",
+          "misc-grammar-022",
+          "misc-grammar-023",
+          "misc-grammar-024",
+          "misc-grammar-031"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "comparison-and-sequence",
+        "activityAnswer": "than",
+        "activityRationale": "Rather pairs with than to compare check with guess. Then marks sequence, not preference; as does not complete the rather...than construction.",
+        "activitySha256": "ae0d6b2e506f349b327bf5b432eebaabc57ab7e487de882b9dc88c9e451ff011",
+        "teachingSha256": "6fd298f1fe7e3f44ba6510bb89e0cacc19369627d26582c85de5cf492691ce13",
+        "workedSha256": "cb2eab131143e4d5fbee956dc9755a987d6dc1400264e8d977374c37e0f1aba3",
+        "questionIds": [
+          "misc-grammar-002",
+          "misc-grammar-015",
+          "misc-grammar-016",
+          "misc-grammar-018",
+          "misc-grammar-028"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "modal-have",
+        "activityAnswer": "have",
+        "activityRationale": "Might requires have before the participle delivered in this construction. Of imitates the sound of might’ve but is not a verb; might had is not a valid auxiliary sequence.",
+        "activitySha256": "6e80a5ad3cc2931c95438bdbda7bc21f12c71682e0ff38618b92fe531dbc3738",
+        "teachingSha256": "928431143a440294cf96c71f0995c31d43aa4b9facfeb48c04932845cfd3eea4",
+        "workedSha256": "cb2eab131143e4d5fbee956dc9755a987d6dc1400264e8d977374c37e0f1aba3",
+        "questionIds": [
+          "misc-grammar-003",
+          "misc-grammar-019",
+          "english-skill-misc-grammar-modal-have-01"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "count-and-mass",
+        "activityAnswer": "less; fewer",
+        "activityRationale": "Waste is treated as a mass, so less applies. Containers are separate countable objects, so fewer applies. The other pairs attach count forms to mass nouns or mass forms to count nouns.",
+        "activitySha256": "5c43047fd040b1b779d266843634d7bc7f76bd39438a083e4838b69ad52ab9f6",
+        "teachingSha256": "6bc64c7f35671e4aaa9b7862cafa2623c641b9b2a124e07d71b3b83dba4d205d",
+        "workedSha256": "0a49ed6a646ac769e0371af7f9105b01d504d173404a7e546faf31db4605eeab",
+        "questionIds": [
+          "misc-grammar-004",
+          "misc-grammar-008",
+          "misc-grammar-021",
+          "misc-grammar-025",
+          "misc-grammar-026"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "preposition-construction",
+        "activityAnswer": "to",
+        "activityRationale": "Preferable pairs with to when comparing two options. Than is used after comparative forms such as better, but not in preferable to; from does not fit the construction.",
+        "activitySha256": "e4c09de5fe9385ed6796620e95101a3e2efbce4537e15fbb89df4bf254c58fb4",
+        "teachingSha256": "8baa760294b205d17ba76ba6172dc627beb3ac4e66bded84829cf6ca09e4b2f0",
+        "workedSha256": "a53b023f7d188f0bf683c3a6fcc9ac3bff7b7127114ffdc67a48e4f7586f4f6e",
+        "questionIds": [
+          "misc-grammar-009",
+          "misc-grammar-010",
+          "misc-grammar-027",
+          "misc-grammar-029",
+          "misc-grammar-030",
+          "misc-grammar-032"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "logical-comparison",
+        "activityAnswer": "that of the old cabinet",
+        "activityRationale": "That of the old cabinet means the height of the old cabinet. The other choices compare a height with an entire object or the activity of building it.",
+        "activitySha256": "abc8dc0f491a43d443f5335fdcb270d74afae320243e423c65bbb534796ed9c5",
+        "teachingSha256": "52a86a8cebc9b1683d073e87926f2c7b246e84cdd847626c4105fb35be443611",
+        "workedSha256": "0496740d308ac4449209074e0143de36d2dbc830bb8d473eee3ebba31406d3eb",
+        "questionIds": [
+          "misc-grammar-transfer-01",
+          "english-skill-misc-grammar-logical-comparison-01",
+          "english-skill-misc-grammar-logical-comparison-02"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "adjective-adverb",
+        "activityAnswer": "pale",
+        "activityRationale": "Looked means appeared here, so the adjective pale describes ink. Palely is an adverb and paleness is a noun. Evenly correctly describes the action applied in the second clause.",
+        "activitySha256": "a8b69edbd95701cd27957e55018005dde037ae7bd7231999db442f0f03270abb",
+        "teachingSha256": "4839a845f57d6bd28130241dc9c1b654ed646274cb0d7f185971322469447eeb",
+        "workedSha256": "87d3cfc4107b53a745c23abc7431c8f2d83c685d272abc29393640fe5f757b86",
+        "questionIds": [
+          "misc-grammar-transfer-02",
+          "english-skill-misc-grammar-adjective-adverb-01",
+          "english-skill-misc-grammar-adjective-adverb-02"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "comparison-forms",
+        "activityAnswer": "It selected the cheapest of the five plans.",
+        "activityRationale": "Cheapest is the superlative selecting the minimum within a set of five. Cheaper is comparative, and most cheapest doubles the superlative marking.",
+        "activitySha256": "0fa04834cccd31938fcb80b6257507bcd62d2849180255647b0dcc4855060a16",
+        "teachingSha256": "0a48c5a48b6f4e7c04ebd6621bd8becae30ce38adaf904b5f81d7100edf6389c",
+        "workedSha256": "9858bc74f5d3959a90db389c633db686041049a0df9b0b4386e3a0f3fb9efb24",
+        "questionIds": [
+          "english-skill-misc-grammar-comparison-forms-01",
+          "english-skill-misc-grammar-comparison-forms-02",
+          "english-skill-misc-grammar-comparison-forms-03"
+        ]
+      },
+      {
+        "topic": "misc-grammar",
+        "skill": "voice-and-focus",
+        "activityAnswer": "The key was found during renovation.",
+        "activityRationale": "The passive sentence keeps the key as the subject and states only the known discovery. The other choices invent a discoverer or change finding into deliberate concealment. Passive voice can be the most accurate choice.",
+        "activitySha256": "1a08376ec64d752c2379f510b3d7c7c66dc92d5b73dafb8eb151d5890031a67c",
+        "teachingSha256": "a99c53bfae061f896dd1e80f52cf7e65a911590fc703be01e36914b65eccebc8",
+        "workedSha256": "65a0b1c0bdeaa96f20f77308b02cadf78f03003304eb7cbd6bdaed3dcc7cee30",
+        "questionIds": [
+          "english-skill-misc-grammar-voice-and-focus-01",
+          "english-skill-misc-grammar-voice-and-focus-02",
+          "english-skill-misc-grammar-voice-and-focus-03"
+        ]
+      },
+      {
+        "topic": "add-delete",
+        "skill": "support-and-explanation",
+        "activityAnswer": "Yes, because it supplies another consequence supporting the repair.",
+        "activityRationale": "The sentence adds a distinct consequence, reduced pressure at a relevant public facility, which supports the repair argument. It does not repeat a quantity or explain the repair procedure; both verdict and reason must be true.",
+        "activitySha256": "9270e7a58cf10715a29685b630b0ef2b4023d6b1c6d761a3f048c95b218ec72e",
+        "teachingSha256": "61c1405a3298c44d75f244c47f73a9426141896800338cccdf1128480180709e",
+        "workedSha256": "2c96162334db734ee4b33d863a716ecf39318981ffdf53db2951b3d900cf8dc7",
+        "questionIds": [
+          "add-delete-002",
+          "add-delete-003",
+          "add-delete-005",
+          "add-delete-008",
+          "add-delete-010",
+          "add-delete-012",
+          "add-delete-015",
+          "add-delete-018",
+          "add-delete-019",
+          "add-delete-021",
+          "add-delete-024",
+          "add-delete-026",
+          "add-delete-028",
+          "add-delete-031"
+        ]
+      },
+      {
+        "topic": "add-delete",
+        "skill": "irrelevant-tangent",
+        "activityAnswer": "No, because the biographical detail interrupts the focusing procedure.",
+        "activityRationale": "The local purpose is to explain a procedure. The biography does not supply a step, so it should be omitted here. It does not contradict the procedure, and a shared topic alone does not establish relevance.",
+        "activitySha256": "66e503b3ab695249043845a7c77733894f91ccc9c59c7e578d7f094eea26cdf9",
+        "teachingSha256": "02c982388e9bb95cfefb2bf744aa1e634a2bf1c6d5c724989dccd774840aefd3",
+        "workedSha256": "91854cb529599483c521c7d8f0f1a487fe17e531c34a64414e2ff8303dee134f",
+        "questionIds": [
+          "add-delete-001",
+          "add-delete-004",
+          "add-delete-006",
+          "add-delete-009",
+          "add-delete-011",
+          "add-delete-014",
+          "add-delete-016",
+          "add-delete-017",
+          "add-delete-020",
+          "add-delete-022",
+          "add-delete-025",
+          "add-delete-027",
+          "add-delete-030",
+          "add-delete-032"
+        ]
+      },
+      {
+        "topic": "add-delete",
+        "skill": "repeated-information",
+        "activityAnswer": "The same energy-use comparison in different words",
+        "activityRationale": "Half as much and fifty percent lower express the same comparison. The sentence adds neither a cause nor a maintenance requirement, so keeping it would repeat information rather than develop the paragraph.",
+        "activitySha256": "e4434c882da777a5a586d6ecd88e0d6237922db9c6e5f3b13ed6329950558c72",
+        "teachingSha256": "02c982388e9bb95cfefb2bf744aa1e634a2bf1c6d5c724989dccd774840aefd3",
+        "workedSha256": "d9262e30518772aebb7cdb8f12b730d3959868d98cf0c48465a9af16e01eba8a",
+        "questionIds": [
+          "add-delete-007",
+          "add-delete-013",
+          "add-delete-023",
+          "add-delete-029"
+        ]
+      },
+      {
+        "topic": "add-delete",
+        "skill": "background-for-argument",
+        "activityAnswer": "It anticipates why the website alone would not meet those readers’ needs.",
+        "activityRationale": "The lack of access explains why later readers still need a way to locate materials during library visits. It neither establishes universal accuracy nor repeats the website launch; it supplies needed background for the argument.",
+        "activitySha256": "5d948438f6948bfc266de542be4a52da307c30ca1021ff172d29988d637eb6ea",
+        "teachingSha256": "959aa17e41d7f79c38d2b8c329b696d0d97baca0fc4de150c0bd1ea46e31bf5a",
+        "workedSha256": "8f01bae0ead292b5aa6362966969c6a1d9d82eab6a19ce0ffd1a1849ee54fc52",
+        "questionIds": [
+          "add-delete-transfer-01",
+          "english-skill-add-delete-background-for-argument-01",
+          "english-skill-add-delete-background-for-argument-02"
+        ]
+      },
+      {
+        "topic": "add-delete",
+        "skill": "plausible-but-irrelevant",
+        "activityAnswer": "No, because it does not explain either the box’s mechanism or the readings.",
+        "activityRationale": "The award concerns the manufacturer but supplies no evidence about insulation and no definition of the mechanism. It interrupts the link between the explanation and its measured result.",
+        "activitySha256": "aabb22ebaac38638ad1fb14600589f6163a2b840163df93fe10abff9f6e253cb",
+        "teachingSha256": "959aa17e41d7f79c38d2b8c329b696d0d97baca0fc4de150c0bd1ea46e31bf5a",
+        "workedSha256": "9751a716ade21a8c9de9c7fa2c21e5f9436c979b6c18fa19fcd18f005964a9ca",
+        "questionIds": [
+          "add-delete-transfer-02",
+          "english-skill-add-delete-plausible-but-irrelevant-01",
+          "english-skill-add-delete-plausible-but-irrelevant-02"
+        ]
+      },
+      {
+        "topic": "logical-placement",
+        "skill": "chronology",
+        "activityAnswer": "After sentence 1",
+        "activityRationale": "Before beginning requires the setting to be adjusted before measurement starts. After sentence 1 supplies the connected recorder and precedes sentence 2; the later positions adjust it only after data collection has begun or ended.",
+        "activitySha256": "c6d8ef9b7f63a8d2a6645a66da66f63ccc5d3aa3af5da156c87212918f5098be",
+        "teachingSha256": "eb9f79916994b3ae7470043d7e82bd7d6b3a75915cbe78448142214442fc6cef",
+        "workedSha256": "618d46efc25fc239fe2b10ab3b8850b8bb30621793350b4f817ca986be49c2ad",
+        "questionIds": [
+          "logical-placement-001",
+          "logical-placement-002",
+          "logical-placement-005",
+          "logical-placement-013",
+          "logical-placement-017",
+          "logical-placement-018",
+          "logical-placement-019",
+          "logical-placement-029"
+        ]
+      },
+      {
+        "topic": "logical-placement",
+        "skill": "causal-chain",
+        "activityAnswer": "After sentence 1",
+        "activityRationale": "That flaw refers to the leak in sentence 1 and interprets its significance before sentence 2 describes the repair. The later positions separate the explanation from the finding and report the response before its reasoning.",
+        "activitySha256": "009a5880b819737259bda68b8ae0fff88337be38230080d73096698ddab65064",
+        "teachingSha256": "4e77cf6ae6a1aa559e71253029ff0933b0dd7c488e5c42bcd622e465ce93cf24",
+        "workedSha256": "a6bf68a9b41fc0f2789942d4178c91c9375a72b19336d0879d7d45c9dc0ef60f",
+        "questionIds": [
+          "logical-placement-003",
+          "logical-placement-007",
+          "logical-placement-009",
+          "logical-placement-011",
+          "logical-placement-012",
+          "logical-placement-016",
+          "logical-placement-020",
+          "logical-placement-022",
+          "logical-placement-024",
+          "logical-placement-025",
+          "logical-placement-027",
+          "logical-placement-028",
+          "logical-placement-032"
+        ]
+      },
+      {
+        "topic": "logical-placement",
+        "skill": "reference-anchor",
+        "activityAnswer": "After sentence 1",
+        "activityRationale": "These discoveries refers to finding the signs in sentence 1. Immediately afterward it explains that discovery’s significance before the paragraph moves to the future display; earlier it lacks a referent, and later it interrupts the shift to plans.",
+        "activitySha256": "22f04d0ec31d251663b8b2a200fd37ce065a315630723ac52c76940a6cde8762",
+        "teachingSha256": "6bd4ae914ed1e574034705b47ee6e4ed4acc0d801e1b47fd1e3ecd43297b6f3b",
+        "workedSha256": "6b7b12c9ef7c373f2a0e2b1b921b89aba458d00f0cee99ec608659f4fe622134",
+        "questionIds": [
+          "logical-placement-004",
+          "logical-placement-006",
+          "logical-placement-008",
+          "logical-placement-010",
+          "logical-placement-014",
+          "logical-placement-015",
+          "logical-placement-021",
+          "logical-placement-023",
+          "logical-placement-026",
+          "logical-placement-030",
+          "logical-placement-031"
+        ]
+      },
+      {
+        "topic": "logical-placement",
+        "skill": "paragraph-purpose",
+        "activityAnswer": "Before sentence 3",
+        "activityRationale": "Sentences 1–2 explain the mechanism; sentence 3 introduces cost, developed in sentence 4. The other breaks divide the explanation or separate the new cost claim from its support.",
+        "activitySha256": "8c812a6eaf2e5ee6bc171cf2aa07771541279274975d60725b26245b444bf932",
+        "teachingSha256": "614766bcff1693c7ab2a8b53e44d2e5350996f93f81432068ab7d7f938b639a7",
+        "workedSha256": "1de8702ed6a1e623133e1881e6da62d016ff5c50c75eb03d902fec5e72655561",
+        "questionIds": [
+          "logical-placement-transfer-01",
+          "english-skill-logical-placement-paragraph-purpose-01",
+          "english-skill-logical-placement-paragraph-purpose-02"
+        ]
+      },
+      {
+        "topic": "logical-placement",
+        "skill": "argument-bridge",
+        "activityAnswer": "Between paragraphs A and B",
+        "activityRationale": "After A the sentence interprets the visibility/overheating tradeoff, then prepares the change in B. Before A it lacks the established problem; after B it no longer explains the decision before that decision is introduced.",
+        "activitySha256": "5a912b7aefd1e329d1182b36eb240766645fc424a45f05a2e342a23ff56bcd14",
+        "teachingSha256": "f1c9203b1d158f4cf1980a0d7c809faa2b5088b34647fcb8bf23c79717ef7d0d",
+        "workedSha256": "1de8702ed6a1e623133e1881e6da62d016ff5c50c75eb03d902fec5e72655561",
+        "questionIds": [
+          "logical-placement-transfer-02",
+          "english-skill-logical-placement-argument-bridge-01",
+          "english-skill-logical-placement-argument-bridge-02"
+        ]
+      },
+      {
+        "topic": "logical-placement",
+        "skill": "whole-paragraph-order",
+        "activityAnswer": "C, B, A, D",
+        "activityRationale": "The proposal must precede the objection; that objection in A points back to B. The tested response then leads to the adoption in D. The other orders either introduce criticism before the proposal or respond before the criticism appears.",
+        "activitySha256": "72f9fc2e9117ab0f77c0668ed4aef97588e42a886cc58ae416c8ec9cf2988b6c",
+        "teachingSha256": "85f568791ddf6a24a252b6cb6ba7fb857fb78081957a654bb9e344af39b99305",
+        "workedSha256": "6d9878bc37a2fd203831106af7aa6c60b56f4155f47a52095419f7f7b51adc62",
+        "questionIds": [
+          "english-skill-logical-placement-whole-paragraph-order-01",
+          "english-skill-logical-placement-whole-paragraph-order-02",
+          "english-skill-logical-placement-whole-paragraph-order-03"
+        ]
+      },
+      {
+        "topic": "redundancy",
+        "skill": "local-repetition",
+        "activityAnswer": "receive",
+        "activityRationale": "Receive already conveys taking something in. The first option repeats incoming and coming in; the last repeats the verb’s meaning. The sentence already supplies the object signals after the blank.",
+        "activitySha256": "94ce8f053e1b77b02bb23e106b7bd5eb75b00212d7cafc3ff22e631abc9e3bfd",
+        "teachingSha256": "6bbae4887542f417e1ceb08c30802d18c435d18836f6ed4fd346664965aa7604",
+        "workedSha256": "310449a61cb719e1a33b6ce9b8bdc0294d15784b04c246046dd4b14fe715fe58",
+        "questionIds": [
+          "redundancy-001",
+          "redundancy-002",
+          "redundancy-003",
+          "redundancy-005",
+          "redundancy-006",
+          "redundancy-007",
+          "redundancy-008",
+          "redundancy-010",
+          "redundancy-012",
+          "redundancy-013",
+          "redundancy-014",
+          "redundancy-016",
+          "redundancy-017",
+          "redundancy-018",
+          "redundancy-020",
+          "redundancy-022",
+          "redundancy-024",
+          "redundancy-025",
+          "redundancy-026",
+          "redundancy-027",
+          "redundancy-028",
+          "redundancy-029",
+          "redundancy-030",
+          "redundancy-031"
+        ]
+      },
+      {
+        "topic": "redundancy",
+        "skill": "wordy-connector",
+        "activityAnswer": "because",
+        "activityRationale": "Because directly states the reason the lab delayed opening. The other phrases express the same cause with more words and no useful added meaning.",
+        "activitySha256": "740127ab1167ddb55cc3484c2f1069cb4470374552c9ca782580cf91c12d9427",
+        "teachingSha256": "0b52e31286dc8aada130267a0aff9c47ad02f723f65607168be6e33b6eed827c",
+        "workedSha256": "8f6e6f18e0dc06cab547778e0872a20d60d4ab033f4e5834a4e6df368fcf0e00",
+        "questionIds": [
+          "redundancy-004",
+          "redundancy-009",
+          "redundancy-011",
+          "redundancy-019",
+          "redundancy-021",
+          "redundancy-023"
+        ]
+      },
+      {
+        "topic": "redundancy",
+        "skill": "delete-tangent",
+        "activityAnswer": "OMIT both commas and the inserted phrase",
+        "activityRationale": "The main sentence needs no personal aside: The engineer tested the emergency lights before signing the report. The other choices add unrelated background and disrupt the inspection’s focus.",
+        "activitySha256": "238288135a7c73f61b48815a0162beb66ae47e2692b85ba0112a7bb5398aa413",
+        "teachingSha256": "62852567fd6f747a2c9cfef1191d65f16f2c314802d64e207313b09c4b67ca7c",
+        "workedSha256": "3e45fb99822ca560eac1fb0d9b552d686db21fe63803e9f2ad6ed28f971022dd",
+        "questionIds": [
+          "redundancy-015",
+          "redundancy-032",
+          "english-skill-redundancy-delete-tangent-01"
+        ]
+      },
+      {
+        "topic": "redundancy",
+        "skill": "preserve-limits",
+        "activityAnswer": "Thirty-two of the forty volunteers reported that the labels were easier to read.",
+        "activityRationale": "The keyed summary keeps both the volunteer sample and the self-reported outcome. The other choices generalize to visitors or people beyond the sample and replace a reported opinion with demonstrated reading improvement.",
+        "activitySha256": "71487b4a268cd4b8074f744ea08793ce74d095b7f4e8ad73ff08d98815ddbfa0",
+        "teachingSha256": "7461f67c93f53503ed71145a3bbeee722f68a13368dd8b3444160257a7609a18",
+        "workedSha256": "f31753c5f186630fe4c0d4c9494da30af30a6f74cedb83b08b2dd23135a98da5",
+        "questionIds": [
+          "redundancy-transfer-01",
+          "english-skill-redundancy-preserve-limits-01",
+          "english-skill-redundancy-preserve-limits-02"
+        ]
+      },
+      {
+        "topic": "redundancy",
+        "skill": "paragraph-repetition",
+        "activityAnswer": "Reading rooms provide adjustable lamps for examining faint handwriting.",
+        "activityRationale": "The first choice adds a practical detail about working in the reading room. The other two express the opening appointment rule again in different words.",
+        "activitySha256": "2f12f7dbb0739cb140f4ee21155ae3cef574e913449b8f54f225c6326dbed96f",
+        "teachingSha256": "5a8d4679d1aa4aa29cbd008cd91129bd9f337247aa7231e0596af65955ab6b75",
+        "workedSha256": "54f70774adf7cc0d5ef14b1921d7863f97ca449656785208a07784efcaf106af",
+        "questionIds": [
+          "redundancy-transfer-02",
+          "english-skill-redundancy-paragraph-repetition-01",
+          "english-skill-redundancy-paragraph-repetition-02"
+        ]
+      },
+      {
+        "topic": "transitions",
+        "skill": "contrast",
+        "activityAnswer": "Instead,",
+        "activityRationale": "Instead marks the contrast between the expected short repair and the actual long closure. The second statement is not an example of a weekend repair or a similar outcome.",
+        "activitySha256": "07feaeb1d85a06ec04a7b5e6a0d0bae8a14dfb3596cbb60721f539043cf82d49",
+        "teachingSha256": "7702b881a227798a05b750f5db7876f7cd00275315ef92c29d899fbb428e06c3",
+        "workedSha256": "cf7c5741d9eef8005dcfb0398343dee352a6237f6e3cf0f393c4afcb1445a4b5",
+        "questionIds": [
+          "transitions-001",
+          "transitions-004",
+          "transitions-005",
+          "transitions-006",
+          "transitions-008",
+          "transitions-009",
+          "transitions-013",
+          "transitions-015",
+          "transitions-023",
+          "transitions-026"
+        ]
+      },
+      {
+        "topic": "transitions",
+        "skill": "cause-effect",
+        "activityAnswer": "Consequently,",
+        "activityRationale": "The ferry deliveries result from the bridge closure, so Consequently expresses cause and effect. They are neither an example of an inspection nor a parallel event.",
+        "activitySha256": "20ebb51c7f2ecd50bc58b9eaa2091f91eefdd0f80ace9c3d235dfb7c0262fdd4",
+        "teachingSha256": "491608b8bd339106af3a02756653db608050274d73ac7bf69d2f80b2356a9627",
+        "workedSha256": "a7063f08885cad3d924c7fbad29eafb5bacc068c92fbf455100c4e738d477e1a",
+        "questionIds": [
+          "transitions-002",
+          "transitions-007",
+          "english-skill-transitions-cause-effect-01"
+        ]
+      },
+      {
+        "topic": "transitions",
+        "skill": "time-sequence",
+        "activityAnswer": "While",
+        "activityRationale": "While introduces the simultaneous warming interval. Afterward would put preparation later; Therefore would claim the warming caused the preparation instead of locating it in time.",
+        "activitySha256": "0c55fb2b8f39529541b30ecbc8a1ed87cc65ee831357c032849425c598f3d0df",
+        "teachingSha256": "e7db04e93ec2bc664623a421b8343d40571db8922ea673b48abf185de794a659",
+        "workedSha256": "d199b917c2c936119b631b3e094dedd7eb77ef61995be224d0597991507cdf76",
+        "questionIds": [
+          "transitions-003",
+          "transitions-010",
+          "transitions-012",
+          "transitions-016",
+          "transitions-019",
+          "transitions-024",
+          "transitions-027",
+          "transitions-032"
+        ]
+      },
+      {
+        "topic": "transitions",
+        "skill": "addition-comparison",
+        "activityAnswer": "Moreover,",
+        "activityRationale": "Noise reduction is another benefit rather than a restatement of heat loss or a contrast with it. Moreover adds that independent supporting point.",
+        "activitySha256": "21e42b3688233fb4ff8ba05574d5a8ee1ec67b73f984162028f2922c285cc4fb",
+        "teachingSha256": "e7db04e93ec2bc664623a421b8343d40571db8922ea673b48abf185de794a659",
+        "workedSha256": "dd9e02f7d2e7b12eba9f78351833db9f9d29e5f6a840127c241343b689f7158d",
+        "questionIds": [
+          "transitions-014",
+          "transitions-017",
+          "transitions-018",
+          "transitions-022",
+          "transitions-025",
+          "transitions-031"
+        ]
+      },
+      {
+        "topic": "transitions",
+        "skill": "example-correction",
+        "activityAnswer": "In fact,",
+        "activityRationale": "In fact introduces the actual use in correction of the visitors’ assumption. Grain storage is not an example of a watchpost or a similar use.",
+        "activitySha256": "d2b7bf1fdd1ec70add17b7b0ec19b9abf28cc3e58536166260c104ccfea03485",
+        "teachingSha256": "709dd911424e44543bb349b471ebb80d9b6767fce2af513b2304b724991c063d",
+        "workedSha256": "ec0d917eb18e2451c4db132a26591a6a346bf8aed834ddfda0786589e90fc70a",
+        "questionIds": [
+          "transitions-011",
+          "transitions-020",
+          "transitions-021",
+          "transitions-028",
+          "transitions-029",
+          "transitions-030"
+        ]
+      },
+      {
+        "topic": "transitions",
+        "skill": "paragraph-concession",
+        "activityAnswer": "Nevertheless,",
+        "activityRationale": "Nevertheless concedes accuracy and ease of use, then introduces the independent parts problem that blocked purchase. The favorable evidence did not cause postponement, and postponement does not restate it.",
+        "activitySha256": "4926a7aca9a3b92ee30f52f792520c7282cc3fc16f7a60d679664e9f9b6dbd91",
+        "teachingSha256": "6e8261d3030a971c1715a1277ae6ad7ad0f512fdb252f444eda68f5be1e87caa",
+        "workedSha256": "2d51efbe4c4973707800f28f4fac66a4ca27aeba071255ce7850e720b783b219",
+        "questionIds": [
+          "transitions-transfer-01",
+          "english-skill-transitions-paragraph-concession-01",
+          "english-skill-transitions-paragraph-concession-02"
+        ]
+      },
+      {
+        "topic": "transitions",
+        "skill": "paragraph-addition",
+        "activityAnswer": "In addition,",
+        "activityRationale": "The tactile models supply another way of improving access, so In addition fits. They do not restate the height change, and they do not reverse it.",
+        "activitySha256": "f1480d2e7c362ee09f0d640b6ee7d5adfe102bf88b8b1e89d8b045bb77ae23c4",
+        "teachingSha256": "d7f81b07af3851f2c2c9a4887dc554ecc6d8848f186b24b83ed8fbeea8b90549",
+        "workedSha256": "2d51efbe4c4973707800f28f4fac66a4ca27aeba071255ce7850e720b783b219",
+        "questionIds": [
+          "transitions-transfer-02",
+          "english-skill-transitions-paragraph-addition-01",
+          "english-skill-transitions-paragraph-addition-02"
+        ]
+      },
+      {
+        "topic": "which-choice",
+        "skill": "specific-detail",
+        "activityAnswer": "She checked each stitch under magnification before moving to the next.",
+        "activityRationale": "Inspecting every stitch under magnification demonstrates careful work through a concrete action. The room size and opening time concern the setting rather than the quality the question asks to emphasize.",
+        "activitySha256": "177e95b02c454e1eb27fa81663ca7b2eb7986ba105c22c26ee79663aeae6dc1b",
+        "teachingSha256": "5f1b0e1c4f22c56bc712f0af62f475c93179574081e1c0e2801fd57eb6d6ae6d",
+        "workedSha256": "c81a7654474935e7390a6bf23451b06bfcab079673a61de141b8a9ca1350770f",
+        "questionIds": [
+          "which-choice-001",
+          "which-choice-002",
+          "which-choice-003",
+          "which-choice-004",
+          "which-choice-005",
+          "which-choice-006",
+          "which-choice-011",
+          "which-choice-013",
+          "which-choice-014",
+          "which-choice-017",
+          "which-choice-018",
+          "which-choice-019",
+          "which-choice-020",
+          "which-choice-021",
+          "which-choice-022",
+          "which-choice-027",
+          "which-choice-029",
+          "which-choice-030"
+        ]
+      },
+      {
+        "topic": "which-choice",
+        "skill": "introduction-conclusion",
+        "activityAnswer": "The volunteers’ shared effort kept the river crossing open.",
+        "activityRationale": "The shared effort conclusion synthesizes the fuel, repairs, and shifts. The other details may concern ferries or the river but do not conclude the paragraph’s explanation of how the service survived.",
+        "activitySha256": "8de627dd68e9ed92a93d0b753d30708994bac095e04971987095d1c485d92620",
+        "teachingSha256": "8602949cac4bd9ba52a861962e0843bd39bfdc77bad4cb501465509474349184",
+        "workedSha256": "6d25dc460e55014073e0031f53a2261bf6e9ea0108a45888cd99f5b354d0ce82",
+        "questionIds": [
+          "which-choice-007",
+          "which-choice-008",
+          "which-choice-012",
+          "which-choice-023",
+          "which-choice-024",
+          "which-choice-028"
+        ]
+      },
+      {
+        "topic": "which-choice",
+        "skill": "tone",
+        "activityAnswer": "Dust settled where the ticket window had once glowed on winter evenings.",
+        "activityRationale": "The subdued image of dust replacing the lit ticket window supports quiet regret. The shopping proposal changes to optimism about redevelopment; the final choice uses slang that clashes with the reflective tone.",
+        "activitySha256": "8fe445e4e086fd6b8c1c60b28b46c4587f881c99750c7ae086cbc35aea7ca029",
+        "teachingSha256": "06ad1a5d969885e87e41f4525caabf4a7363e3a66eb6368ad7f2023d790728e1",
+        "workedSha256": "6d25dc460e55014073e0031f53a2261bf6e9ea0108a45888cd99f5b354d0ce82",
+        "questionIds": [
+          "which-choice-009",
+          "which-choice-015",
+          "which-choice-025",
+          "which-choice-031"
+        ]
+      },
+      {
+        "topic": "which-choice",
+        "skill": "support-two-claims",
+        "activityAnswer": "The route still served all twelve stops, and average travel time fell by nine minutes.",
+        "activityRationale": "All twelve stops supports unchanged access, and a nine-minute reduction supports shorter journeys. The other choices give satisfaction or ridership evidence without establishing both requested outcomes.",
+        "activitySha256": "7d1079bc2a005d54a2b861d374f8e118fe82b3cb1286ea6fd53b8b46a7729bec",
+        "teachingSha256": "5f1b0e1c4f22c56bc712f0af62f475c93179574081e1c0e2801fd57eb6d6ae6d",
+        "workedSha256": "c81a7654474935e7390a6bf23451b06bfcab079673a61de141b8a9ca1350770f",
+        "questionIds": [
+          "which-choice-010",
+          "which-choice-016",
+          "which-choice-026",
+          "which-choice-032"
+        ]
+      },
+      {
+        "topic": "which-choice",
+        "skill": "essay-image",
+        "activityAnswer": "The card’s empty lines now held all our handwriting, and my cousin reached for the pen.",
+        "activityRationale": "Shared handwriting and the cousin reaching for the pen develop the unfinished recipe image into ongoing family transmission. The other choices offer ingredients or storage advice without completing the essay’s meaning.",
+        "activitySha256": "84870b6a518a75e3720b6cce0178085b16945b9687b933f1ef0abb39d5c124b2",
+        "teachingSha256": "835d1b1274871aaf49703f6a0a288f3825eed6803376d8ca3bb211de04d762ba",
+        "workedSha256": "44cacb566c12d47100d3bfb5464595a04285f150956166629c1676ced5ef9e2e",
+        "questionIds": [
+          "which-choice-transfer-01",
+          "english-skill-which-choice-essay-image-01",
+          "english-skill-which-choice-essay-image-02"
+        ]
+      },
+      {
+        "topic": "which-choice",
+        "skill": "qualified-dual-evidence",
+        "activityAnswer": "Missed appointments fell, while patients’ average fares remained unchanged.",
+        "activityRationale": "Fewer missed appointments supports attendance; unchanged fares supports the travel-cost limit. Facilities, staffing, and hours are relevant to a clinic but do not establish the two outcomes in the claim.",
+        "activitySha256": "ed741337254f05ab164437de413f02b5fcb12d5f48fae6e14500e08445c6e56d",
+        "teachingSha256": "d6381b3e9af4542f0b4db601e93f49711375e477dd485b91b9157a6e66cc3942",
+        "workedSha256": "44cacb566c12d47100d3bfb5464595a04285f150956166629c1676ced5ef9e2e",
+        "questionIds": [
+          "which-choice-transfer-02",
+          "english-skill-which-choice-qualified-dual-evidence-01",
+          "english-skill-which-choice-qualified-dual-evidence-02"
+        ]
+      },
+      {
+        "topic": "which-choice",
+        "skill": "whole-essay-goal",
+        "activityAnswer": "Yes, because the damage and the explanation of vulnerability motivate the later changes.",
+        "activityRationale": "The essay connects the problem and its cause to the revised storage, which meets the specified explanatory goal. An architectural history is unnecessary, and the text does not compare literary styles.",
+        "activitySha256": "22c5ad89cfac0b4614c47a7bc4db01486d51840127cbbdb1289b8f51a7a9b704",
+        "teachingSha256": "9f06561d546ef2d7f1403f5e0e8fcbd442d129058cc68e2279adad981ec86f08",
+        "workedSha256": "97636cce27d848be33d50972be339a9eefb4db8cbe915d4a03b5bac074940edf",
+        "questionIds": [
+          "english-skill-which-choice-whole-essay-goal-01",
+          "english-skill-which-choice-whole-essay-goal-02",
+          "english-skill-which-choice-whole-essay-goal-03"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "significance",
+        "activityAnswer": "historic",
+        "activityRationale": "Historic means historically important, matching the lasting change. Noticeable concerns how easily something attracts attention, which the first clause limits; noisy describes sound rather than significance.",
+        "activitySha256": "5e2ef5e6f5af0fd289f79da9850f844054548debae78205330fd177a4ca68c37",
+        "teachingSha256": "221af454af81abb92c70e66469f99256278c2a41cf4921e37d32e0fd319f7d60",
+        "workedSha256": "3baec7e74da3ba2f50e558d6d5b56f9838c94691ead471ab27ef6647170f1410",
+        "questionIds": [
+          "word-choice-003",
+          "word-choice-012",
+          "english-skill-word-choice-significance-01"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "action-and-group-meaning",
+        "activityAnswer": "A compromise involves concessions; a consensus is general agreement.",
+        "activityRationale": "Compromise describes reaching an agreement through concessions, while consensus means general agreement and need not involve concessions. The other statements reverse or erase those distinctions.",
+        "activitySha256": "14e00c98f7c745e56265ea0f056454520e3e8635b193e0713faa72af154966d4",
+        "teachingSha256": "62f78fe78009a02ef917be3e57d8836278d770ac772194f2eb0a6b2f9079d397",
+        "workedSha256": "ea48fd71a4148aaf9fecf7d45e6f28b4a0fba07d0dd6d2849008ea364b25a8ac",
+        "questionIds": [
+          "word-choice-006",
+          "word-choice-007",
+          "word-choice-008",
+          "word-choice-009",
+          "word-choice-013",
+          "word-choice-014",
+          "word-choice-015"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "word-form-and-idiom",
+        "activityAnswer": "raise; advice",
+        "activityRationale": "Raise takes questions as an object, and advice is the noun for guidance. Rise does not take that object, while advise is the verb rather than the noun required after final.",
+        "activitySha256": "7373f10891475c1eeb056b6ffd935e8e2409092f061378ee2e970809f98c42d4",
+        "teachingSha256": "643e824871c0abb215a90fc8ea2e4e6f5eeac28eda1df032015df11099c4f36a",
+        "workedSha256": "7ff4262a630be637ddda1cceacc782e3b637ac7d9628c9b08516ae5b3e739db9",
+        "questionIds": [
+          "word-choice-001",
+          "word-choice-002",
+          "word-choice-004",
+          "word-choice-005",
+          "word-choice-010",
+          "word-choice-011",
+          "word-choice-017",
+          "word-choice-018",
+          "word-choice-019",
+          "word-choice-021"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "formal-tone",
+        "activityAnswer": "The change reduced average processing time.",
+        "activityRationale": "Reduced average processing time states a precise, measured result. Crushed and way less annoying add colloquial intensity or an unsupported reaction instead of maintaining the report’s register.",
+        "activitySha256": "646842499531feba3c943e0fe6bf4ac8358902660c541585ca10374ca2217aff",
+        "teachingSha256": "60acb01c1d45db874cdd1a894d023f6ff240d849493feaea2512ca06cb12b466",
+        "workedSha256": "5dcb0519a8fffa515d5eaeabce1b2222ce405bb71f2c236a8c3b66e32c711899",
+        "questionIds": [
+          "word-choice-020",
+          "english-skill-word-choice-formal-tone-01",
+          "english-skill-word-choice-formal-tone-02"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "reference-and-meaning",
+        "activityAnswer": "allusion; infers",
+        "activityRationale": "An allusion is an indirect reference; the reader infers the connection from evidence. An illusion is a false impression, imply describes the act of suggesting, and elude means escape.",
+        "activitySha256": "e9a228714dae58070068eed18ba8c4e0d65165ff3ba1bb0397bc9510def0b6d1",
+        "teachingSha256": "b868afec8b474bfc7084d546a0104be7fbb3c3c3f4b89a3159b80d49b2d92740",
+        "workedSha256": "17901a2e634ad1bdfd378f2cf32f9974c94af66b42352752e407c848b6a95633",
+        "questionIds": [
+          "word-choice-022",
+          "word-choice-023",
+          "word-choice-024",
+          "word-choice-025",
+          "word-choice-027",
+          "word-choice-028",
+          "word-choice-029"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "attitude-and-belief",
+        "activityAnswer": "disinterested; credible",
+        "activityRationale": "Disinterested means impartial in judgment; credible describes claims that are believable. Uninterested means not interested, credulous describes an overly trusting person, and the final pair does not express the stated distinctions.",
+        "activitySha256": "8d1b1bd5f6f0f0da71c68c0ab797c98fb815f9236f22452a46a4f8f2d25dbbb3",
+        "teachingSha256": "46af8d55feaa7805cb0bd3b7f0b42d8c05a679eeb94ffb2e354bf3e8dd91df6b",
+        "workedSha256": "8b2b637b1cc5a9928350099aebedccc1be8ff9cdbb23d328ad558df8a390c92d",
+        "questionIds": [
+          "word-choice-016",
+          "word-choice-026",
+          "word-choice-030",
+          "word-choice-031",
+          "word-choice-032"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "earned-satisfaction",
+        "activityAnswer": "Nobody else in the group could ever do work as good as mine.",
+        "activityRationale": "The first statement claims superiority over everyone else without support. Thanking a teammate and acknowledging remaining flaws are consistent with justified satisfaction rather than excessive self-regard.",
+        "activitySha256": "d5f0ecb1652d2b2aad294a5250aa1d860f4ee625067c2ec699c45b251aa27ffd",
+        "teachingSha256": "221af454af81abb92c70e66469f99256278c2a41cf4921e37d32e0fd319f7d60",
+        "workedSha256": "e32b6a4984227714cf83c0a995562e81cb8480428acb38191606e2203c86f9a9",
+        "questionIds": [
+          "english-skill-word-choice-earned-satisfaction-01",
+          "english-skill-word-choice-earned-satisfaction-02",
+          "english-skill-word-choice-earned-satisfaction-03"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "preposition-idiom",
+        "activityAnswer": "focuses",
+        "activityRationale": "The expression is focuses on: focuses governs the preposition introducing the subject of attention. Course names what does the focusing, and damage belongs to the later -ing phrase rather than determining this preposition.",
+        "activitySha256": "1d6451e6a8c0af70fdfb2da1a3ca70ab69aaf93f08036103e8988173c4815942",
+        "teachingSha256": "8689eda677239c6e25f9742739bf92285a289255954cd88fb425422bacf22877",
+        "workedSha256": "c0e781a66078f11ac6ab1dfbbd197a564c95a6b69724047b94aaf691f5c9ea8a",
+        "questionIds": [
+          "english-skill-word-choice-preposition-idiom-01",
+          "english-skill-word-choice-preposition-idiom-02",
+          "english-skill-word-choice-preposition-idiom-03"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "certainty",
+        "activityAnswer": "The reported pattern occurred in the studied village; a wider pattern has not yet been established.",
+        "activityRationale": "The middle choice preserves the stated observation and the limit on generalization. Studying one place does not prove the result everywhere, but limited scope does not make the reported observation false.",
+        "activitySha256": "f2b75b99324f047fd921e13d5873b2adddbbb861975745af5ac90ce09b225c76",
+        "teachingSha256": "2f495d3e9e45c94f0ea33eed82f90b52dcb7d82fc0ff8e992b9f262d47a67569",
+        "workedSha256": "b1c9e1dea1624c99f1da2b79d5d0d1697546d590b6e717a19bd07edc74c687b3",
+        "questionIds": [
+          "word-choice-transfer-01",
+          "english-skill-word-choice-certainty-01",
+          "english-skill-word-choice-certainty-02"
+        ]
+      },
+      {
+        "topic": "word-choice",
+        "skill": "conditional-meaning",
+        "activityAnswer": "The condition for issuing the permit has not been met.",
+        "activityRationale": "Contingent on makes a satisfactory inspection a prerequisite. A defect means the stated requirement has not been satisfied; it does not guarantee the permit or make the inspection irrelevant.",
+        "activitySha256": "1889043542debc7ccfd8bb8adbd021f687e0007db975589566b2b732929b1f8a",
+        "teachingSha256": "b7e6742b12bcffdd81e013a33c5d39daa814d1544a44d9d9d19cb470831c61c3",
+        "workedSha256": "32e5a9d46a5e66bbe635f60330c9fefa3474154455e3dd7390e66aa31cb5da6e",
+        "questionIds": [
+          "word-choice-transfer-02",
+          "english-skill-word-choice-conditional-meaning-01",
+          "english-skill-word-choice-conditional-meaning-02"
+        ]
+      },
+      {
+        "topic": "test-patterns",
+        "skill": "cut-or-keep",
+        "activityAnswer": "The sentence loses its main verb and becomes a fragment.",
+        "activityRationale": "Provides is the main verb for entrance. Opened belongs to the embedded which-clause and cannot replace it, so deletion leaves a fragment. A shorter answer is useful only if required structure survives.",
+        "activitySha256": "5245659d63fdaf7c7b54b499ed9a858464e9d001c33a74d898c9b90e22af2d28",
+        "teachingSha256": "a695f3877f943fa4533aeea244940c0477d8f677137402d4e1c47df48be38f4e",
+        "workedSha256": "8b6f58343a6df7af86032edee0657c40556f26f54fdfb7f46dd27935c64dbdaf",
+        "questionIds": [
+          "test-patterns-001",
+          "test-patterns-002",
+          "test-patterns-003",
+          "test-patterns-004",
+          "test-patterns-005",
+          "test-patterns-006",
+          "test-patterns-007"
+        ]
+      },
+      {
+        "topic": "test-patterns",
+        "skill": "tone-and-concision",
+        "activityAnswer": "layers.",
+        "activityRationale": "Ending at layers keeps the measured finding and the formal register. The other choices retain a conversational reaction that the report does not need.",
+        "activitySha256": "45692775a2f5d44a471c6264e27fa60017a2a8d2b9cea7a1de4dee36e6babdb7",
+        "teachingSha256": "6b2a2533cc8ba1917341ddb50c3b39d5f1b59df706ca21eb07ca9c1170e40ecd",
+        "workedSha256": "78a93cb9690d6b859cbe382472b7702b9d9bcdefc62d48d7aac7e066ce5b5090",
+        "questionIds": [
+          "test-patterns-008",
+          "test-patterns-009",
+          "test-patterns-010"
+        ]
+      },
+      {
+        "topic": "test-patterns",
+        "skill": "multi-part-goal",
+        "activityAnswer": "copper and tin salvaged from the old shipyard",
+        "activityRationale": "Copper and tin names the materials, and the old shipyard supplies their source. The first names neither; the last names the materials but substitutes a time requirement for their source.",
+        "activitySha256": "85552536aa690bad080028d73a21c73e57d01b83b8e18442ad4fdc81f07a7eb6",
+        "teachingSha256": "b96f7ce9ba9819e316d19f8af206857a34016b17f387c565ba3a502cd6844dad",
+        "workedSha256": "f54cbc7a521621e508bc6dafea6c984617112fdd140d1d9095077f4fdf857ece",
+        "questionIds": [
+          "test-patterns-011",
+          "test-patterns-012",
+          "test-patterns-013",
+          "test-patterns-014"
+        ]
+      },
+      {
+        "topic": "test-patterns",
+        "skill": "modifier-target",
+        "activityAnswer": "faded photographs of the harbor",
+        "activityRationale": "Faded directly modifies photographs in the keyed phrase. The other versions attach it to the guide or harbor rather than the photographs.",
+        "activitySha256": "6094eca55a024549f1fb98ac03b9883fe4c737bfa931bf93c027f98b06babc0f",
+        "teachingSha256": "eb5529a91ffb07f471168ea87ec350f5b8cb1a7b5b6a634ef4f68d9347c8ed09",
+        "workedSha256": "5698eff05bde008f2c5701e8e28e4db085797e8583ccf4663bf872e454e77336",
+        "questionIds": [
+          "test-patterns-015",
+          "test-patterns-016",
+          "test-patterns-017",
+          "test-patterns-018"
+        ]
+      },
+      {
+        "topic": "test-patterns",
+        "skill": "idiomatic-preposition",
+        "activityAnswer": "with; of",
+        "activityRationale": "Preoccupied with introduces what holds attention; capable of takes the following -ing form. The other preposition pairs do not fit those constructions.",
+        "activitySha256": "7a8842d13db195bc8fe5885fbdac4a0391f6472e4afaae35645331a6bb7cebcc",
+        "teachingSha256": "ad7e6fb6e4bba26a04e0fd2a7f57d77c6c15dd790ef81b3acbf2baa99a206e91",
+        "workedSha256": "418b903a1921d8c55fc915f9acd09be95f37da47254aa20d8eb73270cef354bd",
+        "questionIds": [
+          "test-patterns-019",
+          "test-patterns-020",
+          "test-patterns-021"
+        ]
+      },
+      {
+        "topic": "test-patterns",
+        "skill": "keep-logical-connector",
+        "activityAnswer": "but",
+        "activityRationale": "But coordinates the clauses and states the contrast between extra distance and avoiding flooding. Therefore between commas creates a splice and implies the wrong consequence; and, adds an unnecessary comma.",
+        "activitySha256": "2e1080439175ff6c0898d548139a9d1585d673efa2956efaa6a2da39e044cd71",
+        "teachingSha256": "5cb4bfa801f3ddcd0f29829f9fab6940048dbc8ba52ad7daba3fd892cc0ce183",
+        "workedSha256": "d65f72aa87dab8887456fc1e1725b2b32548fb4e1dbde1a87652222ca2357446",
+        "questionIds": [
+          "test-patterns-022",
+          "test-patterns-023",
+          "test-patterns-024"
+        ]
+      },
+      {
+        "topic": "test-patterns",
+        "skill": "exact-span",
+        "activityAnswer": "made one point: it",
+        "activityRationale": "Made one point: it yields a complete introduction followed by its explanation. The second option repeats showed from outside the underline; the third puts a dependent because-clause after a semicolon.",
+        "activitySha256": "354d6d59e34a4e4742c3ad7fc4c18843d6a4b1d889a147219978e238f1b60959",
+        "teachingSha256": "7b8a602348f3a4ecaaa873eb04151e63b2c61cfcf18059d0082cbc8b84434b1d",
+        "workedSha256": "b6f578dff2edea457290ab12ed8738d4e7600e7572fa5c47f40e520aa2875c64",
+        "questionIds": [
+          "test-patterns-transfer-01",
+          "english-skill-test-patterns-exact-span-01",
+          "english-skill-test-patterns-exact-span-02"
+        ]
+      },
+      {
+        "topic": "test-patterns",
+        "skill": "evidence-scope",
+        "activityAnswer": "Forty-eight volunteers reported that the map was easier to follow.",
+        "activityRationale": "The keyed choice retains both the sample and the self-reported measure. The other statements generalize to everyone or claim timed/accuracy outcomes that the study did not test.",
+        "activitySha256": "87f43213e9001e077613342eb60b7f33a8cc01ff88abf8a6bb6354fb183226e9",
+        "teachingSha256": "7b8a602348f3a4ecaaa873eb04151e63b2c61cfcf18059d0082cbc8b84434b1d",
+        "workedSha256": "732863791953c747da46bf2cca1f4905d76730403afb279d245ebd0f30ead459",
+        "questionIds": [
+          "test-patterns-transfer-02",
+          "english-skill-test-patterns-evidence-scope-01",
+          "english-skill-test-patterns-evidence-scope-02"
+        ]
+      }
+    ],
+    "independentPeerReview": {
+      "scope": "All93 new question keys, full marked contexts and whole essays reviewed independently by the Math specialist.",
+      "keyResult": "All intended keys valid; one option lacked explicit evidence linking assistance-desk users to residents without home internet.",
+      "repairs": [
+        "The keyed desk-use evidence now explicitly identifies residents without home internet.",
+        "Sixteen option sets and their feedback were tightened: real scope/uniqueness errors, plausible unsupported inferences, qualified evidence, related word meanings and whole-essay interpretations replace cartoon distractors."
+      ],
+      "preserved": "All93 IDs and answer indices remain unchanged.",
+      "recheck": "The independent Math reviewer re-read all16 revised option sets against their full contexts and confirmed unique valid keys; no outstanding English content finding remained."
+    },
+    "lateTeachingRepair": {
+      "skill": "sentence-structure:reason-versus-concession",
+      "defect": "The skill previously selected the catalogue main-clause example also used by nested-main-clause; that example did not demonstrate an explanatory reason or a concession.",
+      "repair": "Appended source section 6 with teachingRevision 3, explicit because/although method and two worked contrasts. Selected only those examples for this skill; its existing independent try-it and three drill IDs/keys are unchanged.",
+      "preserved": "All prior section and example positions, question IDs, canonical answer indices, and saved course IDs.",
+      "sourceSection": 6,
+      "workedExamplesAdded": 2
+    }
   }
 }

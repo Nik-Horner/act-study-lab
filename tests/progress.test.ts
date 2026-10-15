@@ -10,6 +10,7 @@ import {
 } from "../src/lib/act/progress-model";
 import type { AnswerRecord, ExamAttempt } from "../src/lib/act/progress-model";
 import type { Question } from "../src/lib/act/types";
+import { getQuestions } from "../src/lib/act/content";
 
 const question = (
   id: string,
@@ -454,6 +455,91 @@ test("later independent success can establish mastery without repeating an old m
   assert.equal(stats.mastered, true);
   assert.deepEqual(stats.unresolvedIds, ["growth0"]);
 });
+
+test("a perfect hard-question streak on one primary skill cannot complete a topic containing other skills", () => {
+  const qs = [
+    ...Array.from({ length: 10 }, (_, i) => ({
+      ...question(`one-skill-${i}`, "hard"),
+      skillId: "linear-equations",
+    })),
+    { ...question("quadratic", "hard"), skillId: "quadratic-equations" },
+    { ...question("rational", "hard"), skillId: "rational-expressions" },
+    {
+      ...question("retired", "hard"),
+      skillId: "retired-skill",
+      assessment: false,
+    },
+  ];
+  const records = qs.slice(0, 10).map((q, i) => answer(`breadth-${i}`, q.id));
+  const narrow = getTopicStats("math-algebra", qs, records, 36);
+  assert.equal(narrow.unique, 10);
+  assert.equal(narrow.accuracy, 1);
+  assert.equal(narrow.mastered, false);
+  records.push(answer("quadratic-answer", "quadratic"));
+  assert.equal(getTopicStats("math-algebra", qs, records, 36).mastered, false);
+  records.push(answer("rational-answer", "rational"));
+  assert.equal(getTopicStats("math-algebra", qs, records, 36).mastered, true);
+});
+
+test("breadth requires independent secure work on each skill, and a later miss revokes older skill evidence", () => {
+  const qs = [
+    ...Array.from({ length: 10 }, (_, i) => ({
+      ...question(`recent-${i}`, "hard"),
+      skillId: "linear",
+    })),
+    ...["quadratic-old", "quadratic-fresh"].map((id) => ({
+      ...question(id, "hard"),
+      skillId: "quadratic",
+    })),
+    ...["rational-old", "rational-fresh"].map((id) => ({
+      ...question(id, "hard"),
+      skillId: "rational",
+    })),
+  ];
+  const at = (seconds: number) =>
+    new Date(Date.parse("2026-10-14T12:00:00Z") + seconds * 1000).toISOString();
+  const records = [
+    answer("quadratic-miss", "quadratic-old", 0, at(0)),
+    answer("rational-success", "rational-old", 1, at(1)),
+    ...qs
+      .slice(0, 10)
+      .map((q, i) => answer(`recent-answer-${i}`, q.id, 1, at(i + 2))),
+  ];
+  assert.equal(
+    getTopicStats("math-algebra", qs, records, 36).mastered,
+    false,
+    "Recent perfection on a different skill does not supply the missing prerequisite evidence",
+  );
+  records.push(answer("memorized-correction", "quadratic-old", 1, at(12)));
+  assert.equal(getTopicStats("math-algebra", qs, records, 36).mastered, false);
+  records.push(answer("quadratic-transfer", "quadratic-fresh", 1, at(13)));
+  assert.equal(getTopicStats("math-algebra", qs, records, 36).mastered, true);
+  records.push(answer("later-rational-miss", "rational-old", 0, at(14)));
+  assert.equal(
+    getTopicStats("math-algebra", qs, records, 36).mastered,
+    false,
+    "The skill evidence lies outside the latest ten new questions but its later miss still matters",
+  );
+  records.push(answer("rational-transfer", "rational-fresh", 1, at(15)));
+  assert.equal(getTopicStats("math-algebra", qs, records, 36).mastered, true);
+});
+
+test("authored Reading topics require transfer across their primary skills even for a lower score goal", () => {
+  const qs = getQuestions("reading-main-idea");
+  const primary = qs[0].skillId!;
+  const oneSkill = qs.filter((q) => q.skillId === primary);
+  assert(oneSkill.length >= 6 && oneSkill.some((q) => q.difficulty === "hard"));
+  const records = oneSkill.map((q, i) =>
+    answer(`reading-primary-${i}`, q.id, q.answer),
+  );
+  assert.equal(
+    getTopicStats("reading-main-idea", qs, records, 24).mastered,
+    false,
+  );
+  const all = qs.map((q, i) => answer(`reading-transfer-${i}`, q.id, q.answer));
+  assert.equal(getTopicStats("reading-main-idea", qs, all, 24).mastered, true);
+});
+
 test("loading defaults never borrow a particular student score or test calendar", () => {
   const state = createDefaultState(new Date("2027-03-11T12:00:00Z"));
   assert.equal(state.profile.testDate, "2027-03-11");

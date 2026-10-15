@@ -1,0 +1,2343 @@
+{
+  "skills": [
+    {
+      "skillId": "math-algebra-linear-equations",
+      "activityAnswer": "10",
+      "calculation": "(8+12)/(4-2)",
+      "expected": 10,
+      "workedSolution": "For 5(x−2)=3 x+14, distribute to get 5 x−10=3 x+14. Subtract 3 x and add 10: 2 x=24, so x=12. Check: both sides equal 50. With (x+2)/3−(x−1)/6=4, multiply every term by 6: 2(x+2)−(x−1)=24, giving x=19.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "fc17926c049d3c6781d0e963069e83b6868109b021f3cea5609e8d4cf23450af",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-linear-systems",
+      "activityAnswer": "1",
+      "calculation": "2*((11+7)/3)-11",
+      "expected": 1,
+      "workedSolution": "For 2 x+y=13 and x−y=2, add to get 3 x=15, so x=5 and y=3. If asked for xy, answer 15. In 2 a+b=7 and 4 a+2 b=14, the second equation repeats the first: every point on that line works. Replacing 14 by 15 would instead produce a contradiction.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "296176fad83e8b7610248901ba5b13f15398b0f374d87a6289ef1be8419af7f0",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-absolute-values",
+      "activityAnswer": "5",
+      "calculation": "(5+9)/2+(5-9)/2",
+      "expected": 5,
+      "workedSolution": "For |3 x+2|=10, solve 3 x+2=10 and 3 x+2=−10, giving x=8/3 and x=−4. For |x+1|≤4, write −4≤x+1≤4, so −5≤x≤3. An equation asks for boundary distances; a less-than inequality includes the numbers between the boundaries.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "ff5742c70b765c7320a7dbc28df9d67913e2f57510c8dae434935e07b47312d0",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-rational-equations",
+      "activityAnswer": "7",
+      "calculation": "12-5",
+      "expected": 7,
+      "workedSolution": "For 2/(x−1)+2/(x+1)=1, first exclude x=±1. Multiplying by x²−1 gives 4 x=x²−1, or x²−4 x−1=0. The roots are 2±√5, neither excluded, so their sum is 4. Cancellation never makes an originally forbidden input valid.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "c62ee97dbee9dddce28579eb351e6d0b9e0e4e347eff19ac9f6f02507818e4eb",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-quadratic-root-relations",
+      "activityAnswer": "42",
+      "calculation": "21+12+9",
+      "expected": 42,
+      "workedSolution": "Zeros 2 and 7 with p(0)=28 give p(x)=a(x−2)(x−7) and 14 a=28, so a=2. The roots sum to 9 and multiply to 14; their squares sum to 9²−2(14)=53. If two distinct positive integer roots multiply to 18, the pairs (1, 18), (2, 9), (3, 6) yield possible sums 19, 11, 9.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "3bc869f7d11bf6e9a3511df8f885f7d75fb262c885bd5aa695d46f9b9f7959fd",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-linear-inequalities",
+      "activityAnswer": "x<−3",
+      "calculation": "(15-6)/-3",
+      "expected": -3,
+      "workedSolution": "For −4(2 x−1)≤20, expand to −8 x+4≤20, so −8 x≤16. Dividing by −8 gives x≥−2. For −1<2 x+3≤9, subtract 3 throughout and divide by positive 2: −2<x≤3. The lower endpoint remains excluded while the upper stays included.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "8b95f4aeadb81e25070d2fd93edb44084cf035691194f45f1e24beb65ded3519",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-quadratic-formula",
+      "activityAnswer": "10",
+      "calculation": "(4*25)**0.5",
+      "expected": 10,
+      "workedSolution": "For x²−6 x+2=0, D=36−8=28, so x=(6±√28)/2=3±√7. Completing the square confirms (x−3)²=7. For 3 x²+kx+12=0 to have one real root, k²−144=0; if k is negative, k=−12, giving 3(x−2)².",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "438759685c4714d846cf1e481fe456d1fbfb2ad0ee9f2097ccfcf58b2a9c5fb0",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-polynomial-structure",
+      "activityAnswer": "3",
+      "calculation": "Math.max(2,3,-3)",
+      "expected": 3,
+      "workedSolution": "Expand (3 x−2)(x+4)=3 x²+10 x−8. For x³+x²−16 x−16, group x²(x+1)−16(x+1)=(x+1)(x−4)(x+4). The real zeros are −1, 4, −4. In x⁴−81=(x²−9)(x²+9), only x=±3 are real; x²=−9 has no real solution.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "a1b41adf1ab29ce867f298245d11f8987b41d009cf62ebcf493d20ca94e35d99",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-polynomial-remainders",
+      "activityAnswer": "−7",
+      "calculation": "2*(-1)**3+(-1)-4",
+      "expected": -7,
+      "workedSolution": "If P(x)=x³+2 x²−5, division by x+2 uses r=−2. Then P(−2)=−8+8−5=−5. Dividing by x−1 would instead leave P(1)=1+2−5=−2. The sign comes from the divisor, not from choosing whichever input is easier.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "982be74a881258ae923e9b03e5d4f6afacfc6211fef7e1d915095ae5f31ba21c",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-rational-expressions",
+      "activityAnswer": "5 x+2",
+      "calculation": "[2+3,2]",
+      "expected": [
+        5,
+        2
+      ],
+      "workedSolution": "For x≠±2, 1/(x+2)+4/(x−2)=[(x−2)+4(x+2)]/(x²−4)=(5 x+6)/(x²−4). For nonzero a, b with a≠2 b, the complex fraction(2/a+1/b)/(2/a−1/b)becomes[(2 b+a)/(ab)]/[(2 b−a)/(ab)]=(2 b+a)/(2 b−a). The subtraction order survives cancellation.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "09ef4210ceeeac1eb866b315aed04fd3dde47d81bc2fce3ca8339d546495abcf",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-sign-charts",
+      "activityAnswer": "−4<x<2",
+      "calculation": "[-5,-4,-3,0,1,3].map(x=>((x+4)/(x-2)<0)===(-4<x&&x<2))",
+      "expected": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "workedSolution": "For (x−1)/(x+3)≥0, critical inputs are −3 and 1. Test x=−4, 0, 2 to obtain positive, negative, positive. The solution is x<−3 or x≥1: 1 is included and −3 is not. For a quadratic product (x+2)(x−5)≤0, the negative region lies between its zeros, including both endpoints.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "b4c2365728ac1609ac4eacd713bb0da87d3bc2bf779395e8745347a72dfd7cfc",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-radical-equations",
+      "activityAnswer": "4 only",
+      "calculation": "(2*4+8)**0.5",
+      "expected": 4,
+      "workedSolution": "For √(3 x+4)=x, the original right side requires x≥0. Squaring gives x²−3 x−4=(x−4)(x+1)=0. Candidate 4 works because √16=4, but −1 fails because √1=1≠−1. The sign restriction lets you reject the extraneous candidate before unnecessary calculation.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "b7605429c633a0f4eb3ef42da0da4669243e4b44ca84d610b75d4418ccfc0201",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-exponent-rules",
+      "activityAnswer": "2",
+      "calculation": "(3+1)/2",
+      "expected": 2,
+      "workedSolution": "For (a⁻³b²)², distribute the outside power: a⁻⁶b⁴=b⁴/a⁶, with a≠0. In 4^(x−1)=32, rewrite 4=2² and 32=2⁵, giving 2 x−2=5 and x=7/2. The exponent applies to the whole grouped expression.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "4bd428000e7f39d194f620e2bff3cdf8ad8a434ab1b9f49992d2d6c8015c18b8",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-algebra-parameter-identities",
+      "activityAnswer": "5",
+      "calculation": "5",
+      "expected": 5,
+      "workedSolution": "For (k+4)x=0, k=−4 makes the equation true for every x. If instead the right side were 7, the same k would give no solution. In a(x−1)²+b=ax²−10 x+9, compare linear coefficients −2 a=−10 to find a=5, then constants a+b=9 give b=4.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "e7d9d8295c30e041a35e6563af3ce12874806614e6d42bfc0fadfcb53fdb8acb",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-domain-restrictions",
+      "activityAnswer": "x≤9 except−1",
+      "calculation": "[9-9,(-1)+1]",
+      "expected": [
+        0,
+        0
+      ],
+      "workedSolution": "For f(u)=1/(u−5) and g(x)=√(x+4), g requires x≥−4. The outer denominator requires √(x+4)≠5, excluding x=21. Thus the composition permits x≥−4 except 21. At the lower endpoint, g(−4)=0 and the denominator is −5, so the endpoint is allowed.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "04c670aec85eac15bc332a528d20fc436a6872296c8ca8374759695451d08e11",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-composition",
+      "activityAnswer": "27",
+      "calculation": "(2*3-1)**2+2",
+      "expected": 27,
+      "workedSolution": "Let f(x)=2 x−5 and g(x)=x²+1. Then f(g(3))=f(10)=15, while g(f(3))=g(1)=2. For f(f⁻¹(7)+4), first solve 2 t−5=7 to get t=6; the outer input is 10 and the final value is 15. The extra 4 sits between the two operations.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "096dc474196df7d27fb022b2465b68d652719f12bcb3943e7a911e8232fa194a",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-rates-and-differences",
+      "activityAnswer": "2",
+      "calculation": "((5**2-4*5)-(1**2-4*1))/(5-1)",
+      "expected": 2,
+      "workedSolution": "If f(x)=x²+3, outputs at 1 and 4 are 4 and 19, giving average rate(19−4)/(4−1)=5. Algebraically, f(x+h)−f(x)=(x+h)²+3−(x²+3)=2 xh+h². Dividing by h≠0 gives 2 x+h. The constant terms cancel, while the cross term 2 xh remains.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "885a83d8fb9a019c8af22067143002feb89864b580e58be096688ac023ec2714",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-inverse-branches",
+      "activityAnswer": "−5",
+      "calculation": "(-5+2)**2-1",
+      "expected": 8,
+      "workedSolution": "For f(x)=(x−4)²+2 with x≥4, finding f⁻¹(18) gives (x−4)²=16 and candidates 0 or 8. Only 8 is allowed; f(8)=18. For f(x)=(2 x+1)/(x−3), an inverse value 3 solves 2 x+1=3 x−9, giving 10, whose denominator 7 is nonzero.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "e801eafc23d46633c806ee318056561331ed9f14702ce96f326148dfe3584fd5",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-graph-transformations",
+      "activityAnswer": "4",
+      "calculation": "(9-1)/2",
+      "expected": 4,
+      "workedSolution": "Suppose f has vertex(6, −2) and g(x)=−2 f(3 x−3)+1. Solve 3 x−3=6 to find x=3; transform the output to−2(−2)+1=5. Thus g has vertex(3, 5). For a quadratic with zeros 2 and 8 and minimum−4, the original vertex is(5, −4) before any transformation.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "49eb1c5e194cd43b57604730e577dcfee3caf49741369b23dfc01d8ac08829b7",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-logarithm-equations",
+      "activityAnswer": "15",
+      "calculation": "2**4-1",
+      "expected": 15,
+      "workedSolution": "For log₂(x−2)+log₂(x+2)=5, require x>2. Combining gives log₂(x²−4)=5, hence x²=36. The allowed root is 6; −6 fails the original arguments. Separately, log₃(a)=2 and log₃(b)=4 imply log₃(ab)=6 by adding, not multiplying, the two logs.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "913d26bb24cec8670758d4b893c64d73448f71244edaf269545c032bdb17b2f2",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-arithmetic-indexing",
+      "activityAnswer": "11",
+      "calculation": "31+4*(26-31)",
+      "expected": 11,
+      "workedSolution": "If a₀=53 and a₁=46, the common difference is−7. Thus a₅=53+5(−7)=18. The list 53, 46, 39, 32, 25, 18 contains six terms but only five jumps. Using four jumps would give a₄=25, which is a different requested index.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "e91c28844000ddc5f038397f84c213f09021580eee019ec36b663f410e7869da",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-recursive-inputs",
+      "activityAnswer": "15",
+      "calculation": "(2**2)**2-1",
+      "expected": 15,
+      "workedSolution": "Let F(x, y)=2 x+y and a₀=3, with aₙ₊₁=F(aₙ, n+1). At n=0, a₁=F(3, 1)=7. At n=1, a₂=F(7, 2)=16. At n=2, a₃=F(16, 3)=35. The second input is 1, then 2, then 3; it does not stay fixed at the original index.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "541e7e9237deeb4b1339180f6cb54454f706a76bedbbfed4c52cd665f3b308cc",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-piecewise-evaluation",
+      "activityAnswer": "−5",
+      "calculation": "0**2-5",
+      "expected": -5,
+      "workedSolution": "For f(x)=2 x−3 when x<1 and f(x)=x²+4 when x≥1, input−2 uses the first branch and gives−7. Input 1 uses the second branch, giving 5, because the equality sign belongs to x≥1. The first branch’s value−1 at 1 is irrelevant: that branch is not defined there.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "a402fca126e1849373e6a764fdec9a840c3b6fdff8e0c59d409b0a98ed70f648",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-quadratic-range",
+      "activityAnswer": "y≥−7",
+      "calculation": "2*(-5+5)**2-7",
+      "expected": -7,
+      "workedSolution": "For f(x)=−4(x−3)²+11 on all real x, the squared contribution is at most zero after multiplication by−4. Thus the maximum is 11, reached at x=3, and the range is y≤11. The number 3 locates the vertex horizontally; it is not a range endpoint.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "bd8ee583a0eb0cc291c744b200b511606d853194af2f1a87b41b4f2718b24f11",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-rational-graphs",
+      "activityAnswer": "(8, 16)",
+      "calculation": "8+8",
+      "expected": 16,
+      "workedSolution": "For f(x)=(x²−49)/(x−7), cancellation leaves x+7 for x≠7, producing a hole at(7, 14). The function 1/(x−6) instead has a vertical asymptote at x=6. For g(x)=(x+4)/(x−2), rearranging gives x(y−1)=2 y+4; output y=1 would require 0=6, so it is never produced.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "6ebedbd0337f1cc50f2a15e6a0a306f09f9c8def8bbf7b5b5f3b11747632e82b",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-model-patterns",
+      "activityAnswer": "20",
+      "calculation": "160*0.5**(9/3)",
+      "expected": 20,
+      "workedSolution": "An exponential function has f(1)=21 and f(3)=189. The ratio 9 spans two steps, so b²=9 and b=3; the initial coefficient is a=7. In a quadratic table 1, 5, 13, 25 at inputs 0, 1, 2, 3, differences 4, 8, 12 have constant difference 4, so the next output is 25+16=41.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "f6a1c3abb8bfb5d6d996c9f7cda856514542027bb447290807abc3850786008a",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-even-odd-symmetry",
+      "activityAnswer": "2 x⁵−3 x",
+      "calculation": "[-2,-1,0,1,2].map(x=>2*(-x)**5-3*(-x)===-(2*x**5-3*x))",
+      "expected": [
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "workedSolution": "For f(x)=2 x⁶−x²+8, replacing x by−x leaves every term unchanged, so f is even. For g(x)=x⁵−4 x, every term changes sign, so g is odd. Adding a nonzero constant to g destroys odd symmetry even though its variable powers remain odd.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "85ae821c6ed29516d10e394c54ccb32f1d30de2dc5e333964a06ea9b69bc2ba6",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-zeros-and-intersections",
+      "activityAnswer": "4",
+      "calculation": "0+4",
+      "expected": 4,
+      "workedSolution": "The curves y=x² and y=3 x+4 intersect when x²−3 x−4=(x−4)(x+1)=0, giving inputs 4 and−1 with sum 3. For f(x)=(x−1)(x−6), a test input 3 gives a negative product, while outside inputs give positive products. Thus f(x)<0 for 1<x<6.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "86497cfcae7caa87489c6aad3a3e8a911a675b64760a31f02aec75283373c9f5",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-inverse-variation",
+      "activityAnswer": "8",
+      "calculation": "4*18/9",
+      "expected": 8,
+      "workedSolution": "If f(3)=20 and f varies inversely, k=3·20=60. Thus f(12)=60/12=5. The input became four times as large, so the output becomes one fourth as large. Using f(12)=80 would apply direct variation and increase both quantities.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "1e094645cbea01a71d2e1e4b6f963f7fb8d1481e2d731db916fa3c4e0062e88d",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-trapezoid-area",
+      "activityAnswer": "80",
+      "calculation": "(5+15)*8/2",
+      "expected": 80,
+      "workedSolution": "With bases 7 and 17 and perpendicular height 6, average the bases to 12 and multiply by 6: area 72 square units. A slanted side of length 10 does not replace the height. Computing 17·6=102 uses only the larger base and includes extra space outside the trapezoid.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "17f6bdb9d8fca826f01aa6e51b2db8852353abec62b92b6eca49652032ed674a",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-cylinder-surface",
+      "activityAnswer": "80π",
+      "calculation": "2*5*3+2*5**2",
+      "expected": 80,
+      "workedSolution": "For radius 2 and height 9, the curved area is 2π·2·9=36π. The two ends contribute 2π·2²=8π, so closed surface area is 44π square units. Leaving out the ends gives only the lateral area; π·2²·9=36π happens to have the same coefficient here but measures volume.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "165305edc598aefc4947d6c693c5dac67fc0f275de071fa4c2bc3126d7909a02",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-heron-area",
+      "activityAnswer": "12",
+      "calculation": "(9*4*4*1)**0.5",
+      "expected": 12,
+      "workedSolution": "A triangle with sides 10, 10, 12 has semiperimeter 16. Thus A=√(16·6·6·4)=√2304=48. Its altitude to base 12 is√(10²−6²)=8, independently confirming 12·8/2=48. Both approaches account for the perpendicular height rather than multiplying two arbitrary side lengths.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "d2798478b40a91957aa19349db7da66fcb75877b56426980a3aaaf4e08b49d9e",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-circle-segment-products",
+      "activityAnswer": "12",
+      "calculation": "4*15/5",
+      "expected": 12,
+      "workedSolution": "If crossing chords have parts 2 and 18 on one chord and 3 and x on the other, 36=3 x gives x=12. For a tangent paired with a secant whose outside is 4 and inside is 5, the whole is 9: tangent²=4·9=36, so the tangent is 6. Using 4·5 would incorrectly omit the outside part from the whole.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "ad0c286cc8fc83e18c227368b32e70b0ba7b20572e612f1e33f43567309d9ed5",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-circle-angles",
+      "activityAnswer": "59°",
+      "calculation": "118/2",
+      "expected": 59,
+      "workedSolution": "An inscribed angle intercepting a132° arc measures 66°. The central angle for that arc would measure 132°. In a cyclic quadrilateral, an interior angle 104° forces its opposite to 76°. The angles are opposite, not merely adjacent; an arbitrary quadrilateral need not have this supplementary relationship.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "0c9a6f3262b9a9e1a73603b4792dd75460a7cf77ae51056afebe04510efd3514",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-perpendicular-distance",
+      "activityAnswer": "2",
+      "calculation": "34/(8**2+15**2)**0.5",
+      "expected": 2,
+      "workedSolution": "To find the distance from(1, 2) to 5 x+12 y−3=0, substitute to obtain|5+24−3|/√169=26/13=2. Multiplying every line coefficient by the same nonzero constant changes neither the line nor the distance because numerator and denominator scale equally.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "7609701c829f3be8eea80e6e84654016d4b7195817283865871486dadeceb329",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-similarity-scaling",
+      "activityAnswer": "3: 5",
+      "calculation": "[27**(1/3),125**(1/3)]",
+      "expected": [
+        3,
+        5
+      ],
+      "workedSolution": "If similar triangles have area ratio 25: 64, their length ratio is 5: 8. A smaller perimeter 30 becomes 30·8/5=48. If similar solids have heights 3 and 6, their length factor is 2 and a smaller volume 11 becomes 11·2³=88. Multiplying a volume by 2 would scale only one dimension.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "949fb29c49a30d838b6550dffb56b293f414283183caed0410f3f24e831f1533",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-arc-and-sector",
+      "activityAnswer": "3π",
+      "calculation": "54/360*2*10",
+      "expected": 3,
+      "workedSolution": "For radius 8 and central angle 135°, the angle fraction is 3/8. Arc length is(3/8)(16π)=6π, while sector area is(3/8)(64π)=24π. These quantities use the same fraction but different whole-circle measures. The angle is also 3π/4 radians, giving the same results.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "98fc5a3e113d59ad677216b5aa4f39c01446ef3cc3a7031389148a1053a3bd0b",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-circle-right-triangles",
+      "activityAnswer": "240",
+      "calculation": "10*(26**2-10**2)**0.5",
+      "expected": 240,
+      "workedSolution": "A radius 10 circle with a chord 12 units long has half-chord 6, so center-to-chord distance is√(100−36)=8. If P lies 26 units from the center on the ray through the chord midpoint, beyond the chord, P’s perpendicular distance to the chord is 26−8=18; triangle PAB then has area 12·18/2=108. The center distance 26 is not its height.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "02fb4e59f266156b8df7c4303c6b46ff71ad3af7ff436b536f5ba1e9f7513506",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-polygon-angles",
+      "activityAnswer": "12",
+      "calculation": "360/30",
+      "expected": 12,
+      "workedSolution": "A regular 9-gon has total interior angle 7·180=1260° and each interior angle 1260/9=140°. Its exterior angle is 40°, confirming 140+40=180°. If each exterior angle were 24°, the regular polygon would have 360/24=15 sides, rather than 24 sides.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "70087a0479dc001451d8005099fa83daaef12c16bdbf30530bd7ba1b5dd78e7e",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-composite-area",
+      "activityAnswer": "20π",
+      "calculation": "6**2-4**2",
+      "expected": 20,
+      "workedSolution": "A 12-by-5 rectangle with a radius 4 quarter-circle removed has area 60−π(4²)/4=60−4π. For concentric radii 7 and 2, the ring area isπ(49−4)=45π. Squaring the radial width 5 instead would give 25π and describe a different circle rather than the ring.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "68a44d2228be70b5cf2d302cce8ed0bc56b52e835df19e2a2464c230a3398ebb",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-solid-volume",
+      "activityAnswer": "12π",
+      "calculation": "2**2*9/3",
+      "expected": 12,
+      "workedSolution": "A right triangular prism with base legs 5 and 12 and prism length 4 has base area 30 and volume 120. A cone with radius 6 and perpendicular height 5 has volumeπ·36·5/3=60π. The one-third factor distinguishes a cone from the corresponding cylinder; it does not replace the circular base-area formula.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "7032e36845faf7e0bee82c0e123112a72b61919644000f00a91a44326438cd21",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-sphere-surface",
+      "activityAnswer": "36π",
+      "calculation": "4*(6/2)**2",
+      "expected": 36,
+      "workedSolution": "For a sphere with diameter 10, the radius is 5. Surface area is 4π·25=100π square units, while volume is 500π/3 cubic units. Using 10 as the radius would quadruple the surface area because radius is squared.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "08c0c644c3afe71c3954c3d73bb9e53f9a7bbc381eabb462553d4115ce52ec5f",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-coordinate-area",
+      "activityAnswer": "30",
+      "calculation": "10*(7-1)/2",
+      "expected": 30,
+      "workedSolution": "A triangle with vertices(−3, 2), (5, 2), (1, 8) has horizontal base 8 and height 6, so its area 24. Vectors(4, 1), (−2, 3) span a parallelogram of area|4·3−1(−2)|=14. The associated triangle would have area 7; label which shape is requested.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "c9615bf6d38d3a801a8b66abd9a88588ff40290cffcb20f5e6bb0eb6aaa0d69c",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-coordinate-circles",
+      "activityAnswer": "7",
+      "calculation": "49**0.5",
+      "expected": 7,
+      "workedSolution": "The equation x²+y²−8 x+6 y+9=0 becomes(x−4)²+(y+3)²=16. Add 16 and 9 to complete the two squares, leaving−9+16+9=16 on the right. The center is(4, −3) and radius 4. Substitute(8, −3) to verify a point on the circle.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "13a4d56e811111e19d53f8a63e4df43e73e216bff36f8fa95ce7a79e68521cf3",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-midpoint-endpoints",
+      "activityAnswer": "(8, 5)",
+      "calculation": "[2*5-2,2*1-(-3)]",
+      "expected": [
+        8,
+        5
+      ],
+      "workedSolution": "If A=(−5, 6) and midpoint M=(3, 1), then B=(2·3−(−5), 2·1−6)=(11, −4). Checking the average of A and B gives((−5+11)/2, (6−4)/2)=(3, 1), recovering the stated midpoint.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "8e5634627313f331bd52bcc119cbe4867354c3b492f0fdfbe460fc2aca7b144c",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-perpendicular-lines",
+      "activityAnswer": "−3/7",
+      "calculation": "(7/3)*(-3/7)",
+      "expected": -1,
+      "workedSolution": "A line with slope−2/5 has perpendicular slope 5/2 because their product is−1. Through(1, 4), that perpendicular line has equation y−4=(5/2)(x−1). A vertical line x=3 is perpendicular to any horizontal line y=c; forcing a reciprocal formula with undefined slope is unnecessary.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "f46bf3c842393b176262fe3f1fb416438525fa2f541da3929c3e3acb558a3648",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-equilateral-area",
+      "activityAnswer": "4√3",
+      "calculation": "4**2/4",
+      "expected": 4,
+      "workedSolution": "For side 12, the altitude splits the base into lengths 6 and 6. Pythagoras gives height√(144−36)=6√3, so area 12·6√3/2=36√3. This also follows directly from 12²√3/4.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "e3aa99af387ddbb71b7e8e8ff833297562818a0c249342b26d4d379898e68ee8",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-angle-bisector",
+      "activityAnswer": "4",
+      "calculation": "10*6/(6+9)",
+      "expected": 4,
+      "workedSolution": "If AB=10, AC=15 and BC=20, the bisector gives BD: DC=2: 3. Five parts make 20, so each part is 4. Therefore BD=8 and DC=12. Check 8+12=20 and 8/12=10/15 before choosing the requested segment.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "80b4f1c9ccb5a419c79942345835ac5c5f3302a18c9b0a966943584e0c300de0",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-triangle-inequality",
+      "activityAnswer": "5",
+      "calculation": "[6,7,8,9,10].length",
+      "expected": 5,
+      "workedSolution": "With sides 7 and 12, the third side must satisfy 5<x<19. Integer values 6 through 18 give 13 possibilities. A length 5 or 19 meets a non-strict bound but makes a degenerate triangle; neither is permitted.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "bdac1d4ea69adb7dc12709576311b8f428784d12d5af3e29fdb9d3f7b0396639",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-rotations",
+      "activityAnswer": "(0, 3)",
+      "calculation": "[1-(2-1),1+(3-1)]",
+      "expected": [
+        0,
+        3
+      ],
+      "workedSolution": "Rotate P=(5, 1)90° counterclockwise about C=(2, −1). The displacement is(3, 2), which turns to(−2, 3). Adding the center gives(0, 2). The old and new displacements both have squared length 13, providing a quick geometric check.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "e9e1663c93f5f13c1dd084ce4d070a0182a698189f05bf89b3e56cd0169e423b",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-cone-surface",
+      "activityAnswer": "200π",
+      "calculation": "8*(8**2+15**2)**0.5+8**2",
+      "expected": 200,
+      "workedSolution": "For radius 6 and perpendicular height 8, slant height is 10. Curved area is 60π and the base is 36π, giving total 96π square units. Using h=8 in place of ℓ=10 would understate the curved area, while omitting the base gives only the lateral surface.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "c57ec3554c7ce5538d034dcf4884db1628ec9ef74d326cbb10dd4b82dac24c0f",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-box-surface",
+      "activityAnswer": "118",
+      "calculation": "2*(2*5+2*7+5*7)",
+      "expected": 118,
+      "workedSolution": "For a3-by-4-by-5 closed box, the distinct face areas are 12, 15, 20. Each occurs twice, giving 2(12+15+20)=94 square units. Its volume 60 cubic units is a different measure and cannot answer a surface-area question.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "465a2f83f9dc28a9e64872bc18d1a1d5f9afc1a99f22a2ec5cf4ddf85fd0ddcb",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-triangle-circle-radii",
+      "activityAnswer": "2",
+      "calculation": "(5*12/2)/((5+12+13)/2)",
+      "expected": 2,
+      "workedSolution": "A right triangle with legs 8 and 15 has hypotenuse 17, area 60 and semiperimeter 20. Its inradius is 60/20=3 and circumradius 17/2. Thus r/R=6/17. The centroid, where medians meet, is a different center and does not define either radius.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "d8e44c50073649cf8e93a5a99bea0c99bfff575289203518201bf47b5abaf1d5",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-centroid-medians",
+      "activityAnswer": "14",
+      "calculation": "21*2/3",
+      "expected": 14,
+      "workedSolution": "If a median has length 18, the centroid is 12 units from its vertex and 6 from the opposite midpoint. For vertices(0, 0), (9, 0), (0, 6), averaging gives centroid(3, 2). The median midpoint would instead divide its length 1: 1 and is generally not the centroid.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "28767a63d93692f041416b137dfacb89ec8ea7635e8fd1e5eabb6f253fb88679",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-right-triangle-ratios",
+      "activityAnswer": "7",
+      "calculation": "14*0.5",
+      "expected": 7,
+      "workedSolution": "If an acute angle has sine 8/17, a reference triangle has opposite 8 and hypotenuse 17, so the adjacent side is 15 and tangent 8/15. A viewer 32 meters from a tower whose top rises 32 meters above eye level has tangent 1, hence elevation 45°. With eye height 1.7 meters, total tower height is 33.7 meters.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "0992bd9c6e192c3730009a5488369bb96201624c17fa43a387f1c4f02b639a93",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-quadrant-reciprocals",
+      "activityAnswer": "−24/25",
+      "calculation": "-Math.sqrt(25**2-7**2)/25",
+      "expected": -0.96,
+      "workedSolution": "If tangent is−8/15 in Quadrant II, the reference hypotenuse is 17. Sine is 8/17, cosine−15/17 and cotangent−15/8. The positive sine and negative cosine produce the negative tangent; taking a reciprocal does not change its sign.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "c8980d8127677dbf28a9bb8808aa4f3ddab44615289196984791345cfb747573",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-double-angle",
+      "activityAnswer": "119/169",
+      "calculation": "1-2*(5/13)**2",
+      "expected": 0.7041420118343196,
+      "workedSolution": "If sine is 8/17 in Quadrant II, cosine is−15/17. Thus sin(2θ)=−240/289 and cos(2θ)=(225−64)/289=161/289. Separately, if sinθ−cosθ=2/5, its square is 4/25; therefore(sinθ+cosθ)²=2−4/25=46/25 without solving for θ.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "707460817b6f00337c6ed1c7e81a68bbf5581d795de2f025a357b4f81a3fc742",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-identity-rewrites",
+      "activityAnswer": "1",
+      "calculation": "(1-(4/5)**2)/(3/5)**2",
+      "expected": 1,
+      "workedSolution": "For cosθ≠0, (1−sin²θ)/cosθ becomes cos²θ/cosθ=cosθ. If θ is acute and sine 7/25, cosine is 24/25, so sin(π/2−θ)=24/25. Neither identity permits replacing sin²θ with sin(θ²) or splitting a square root across a subtraction.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "8c231f8b400b07347b9063d5c59eb1ca0746132adacd61f8784b03a9f9dab05e",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-radian-measure",
+      "activityAnswer": "3π",
+      "calculation": "5*3/5",
+      "expected": 3,
+      "workedSolution": "An angle 120° is 120π/180=2π/3 radians. On radius 9, its arc length is 9·2π/3=6π and its sector area is 81·2π/3/2=27π. These use the same angle but different dimensions; converting a radian angle a second time would introduce an extra factor.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "127b2d7f8ccf19019a86a329f0fb4b3c7cd8f32a8f32301267ef8740305f5e66",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-unit-circle-values",
+      "activityAnswer": "−1/2",
+      "calculation": "-0.5",
+      "expected": -0.5,
+      "workedSolution": "At 7π/4=315°, the reference angle isπ/4 in Quadrant IV. Thus cosine is√2/2 and sine−√2/2. A point(−1/2, −√3/2) is in Quadrant III with reference 60°, so its angle between 0° and 360° is 240°.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "ab19d2abf595024958d620c56e92650797c2448af11753b4cdcd16c63b76c1e7",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-wave-features",
+      "activityAnswer": "π/3 right",
+      "calculation": "1/3",
+      "expected": 0.3333333333333333,
+      "workedSolution": "For y=4 cos(2 x−π/2)+3, amplitude 4, range[−1, 7], periodπ and shiftπ/4 right. Conversely, an unshifted y=A cos(Bx)+D with A, B>0 and maximum 9, minimum 1 and periodπ has A=4, D=5, B=2. To reach y=3, solve cos(2 x)=−1/2; the first positive solution is x=π/3.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "17c3e4feb44239f32c73aaa44cc8fd43723b750afd7ad2336f401c5f2174eb92",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-cosine-law",
+      "activityAnswer": "√43",
+      "calculation": "6**2+7**2-2*6*7*0.5",
+      "expected": 43,
+      "workedSolution": "Sides 3 and 8 enclosing 120° give c²=9+64−48(−1/2)=97, so c=√97. The right-angle counterpart would be√73, smaller as expected. The side remains less than 3+8=11, satisfying the triangle inequality.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "284d812b590daa8404e13b989cfbad75f3671b7c9dd97b139f3afde54ed07ebe",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-sine-law",
+      "activityAnswer": "7√3",
+      "calculation": "7*(3**0.5/2)/0.5",
+      "expected": 12.12435565298214,
+      "workedSolution": "If A=45°, B=60° and a=8√2, then b=a sin 60°/sin 45°=8√3. In an SSA case A=30°, a=9, b=12, sine law gives sin B=2/3. Both B≈41.81° and B≈138.19° leave a positive third angle, so two different triangles fit.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "cb1e3f211ac60b7fbe704d6340fce48860cdde376c19e6eb6ad9d651bd5d43fb",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-included-angle-area",
+      "activityAnswer": "20",
+      "calculation": "5*16*0.5/2",
+      "expected": 20,
+      "workedSolution": "Sides 9 and 12 enclosing 30° give area 9·12·(1/2)/2=27. A rectangle using the two side lengths would have area 108, and a triangle using 12 as an assumed perpendicular height would give 54. The sine factor is what corrects the slanted side.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "1d3a3b9c7fa8b57befdc2d9f2fbd691aab0a925355a48ba100efe50872bd03e4",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-trigonometry-all-angle-solutions",
+      "activityAnswer": "6",
+      "calculation": "6",
+      "expected": 6,
+      "workedSolution": "For sin(2 x)=1/2 on 0≤x<2π, the inner angle spans 0≤2 x<4π. Its solutions areπ/6, 5π/6, 13π/6, 17π/6, so x=π/12, 5π/12, 13π/12, 17π/12. A single arcsine value would miss three valid answers.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "c85796ebde5909fefcc5dbb970bbfc8705b988fe15f592dbef36762040d8fb19",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-means-and-totals",
+      "activityAnswer": "20",
+      "calculation": "(4*18+28)/5",
+      "expected": 20,
+      "workedSolution": "Six scores average 14, so they total 84. Removing a score 9 leaves 75 across five scores, giving mean 15. If another four scores average 20, combining all original ten gives(84+80)/10=16.4. If every combined score is increased by 3, its new mean is 19.4; the same constant shifts every observation and the mean.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "4d0cb0722507c9ceb577994c8689ac56ff28d914512b8b77a2a9bbc092be6aeb",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-medians-and-outliers",
+      "activityAnswer": "9",
+      "calculation": "9",
+      "expected": 9,
+      "workedSolution": "For 2, 5, 8, 11, 14, the median is 8. Adding 100 produces six values with central 8 and 11, so the new median is 9.5. If instead five copies of 7 receive an added 100, both central values remain 7, while the new mean is 135/6=22.5. A median resists an outlier but is not guaranteed to stay unchanged.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "c9a87052dc8761bd2a75fbce49e536263d4d62191121f075d71ad1d06716ad5c",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-spread-transformations",
+      "activityAnswer": "20",
+      "calculation": "Math.abs(-5)*4",
+      "expected": 20,
+      "workedSolution": "The population 2, 6, 10 has mean 6 and squared deviations 16, 0, 16, giving variance 32/3 and standard deviation√(32/3). Under y=−3 x+5, variance becomes 9·32/3=96 and standard deviation becomes 3√(32/3). The reflection does not make standard deviation negative, and the shift 5 does not enter either spread calculation.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "af9221234207f9ed440005e041ba74e91f7bcd60f1157d422c308463a3e95a29",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-frequency-tables",
+      "activityAnswer": "55/3",
+      "calculation": "(10*3+20*2+40)/6",
+      "expected": 18.333333333333332,
+      "workedSolution": "A table has k scores 1, two scores 3 and two scores 7, with mean 3. The equation(k+20)/(k+4)=3 gives k=4, so there are 8 observations. If two people are chosen without replacement, equal-score pairs total C(4, 2)+C(2, 2)+C(2, 2)=8 out of C(8, 2)=28, giving 2/7. Counts, not distinct score labels, define the sample space.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "71c7c50776fce7936d605fa89a3c4425eb4fa6bc723bc6073c66b2c1bb1bbc4e",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-equally-likely-outcomes",
+      "activityAnswer": "1/18",
+      "calculation": "2/36",
+      "expected": 0.05555555555555555,
+      "workedSolution": "Two fair dice sum to 10 in(4, 6), (5, 5), (6, 4), so the chance is 3/36=1/12. For two cards chosen from 1 through 8, four are odd and four even, producing 16 odd-sum pairs among C(8, 2)=28, so the probability is 4/7. The sum-based outcomes are not uniformly distributed.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "7c6edc97c65856e8501cc54dfdaeed09e0ffe4b659274300fea7723f9798c8fb",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-unordered-groups",
+      "activityAnswer": "35",
+      "calculation": "7*6*5/(3*2*1)",
+      "expected": 35,
+      "workedSolution": "A committee requiring two of six writers and one of four editors can be chosen in C(6, 2)·C(4, 1)=15·4=60 ways. The writer pair has no first and second role, so 6·5 would count it twice. A four-person committee from ten people has C(10, 4)=210 possibilities.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "1cfad86e15e0db8e4b27f895752c4073573df3839655be7f845961d4044d5338",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-dependent-draws",
+      "activityAnswer": "10/21",
+      "calculation": "(5/7)*(4/6)",
+      "expected": 0.47619047619047616,
+      "workedSolution": "A bag has 4 red and 3 blue tokens. Red then blue has probability(4/7)(3/6)=2/7; blue then red also has 2/7, so different colors have 4/7. If one blue is already removed, the next-red probability is 4/6=2/3: the known removal is a condition, not another random event to multiply.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "737314f481f6a2fbb03a034492043f77fa950c9c434e5a8a70fbeaa13d5714cd",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-expected-value",
+      "activityAnswer": "1.60",
+      "calculation": "9*.4-2",
+      "expected": 1.6,
+      "workedSolution": "A game paying 10 with probability 1/3 and 0 otherwise, with a2 entry cost, has expected net gain 10/3−2=4/3. In a bag with 5 red and 3 blue, matching-color unordered pairs number C(5, 2)+C(3, 2)=13 out of C(8, 2)=28. If matching pays 4 and a game costs 1, expected net gain is 4·13/28−1=6/7.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "97d91b600beeb28c03d78ca6e901d70d17cb1c3c836a896ecab788af85623674",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-conditional-probability",
+      "activityAnswer": "6/20",
+      "calculation": "6/20",
+      "expected": 0.3,
+      "workedSolution": "Among 30 musicians, 18 sing; among 20 nonmusicians, 6 sing. If a singer is selected, 18 of the 24 eligible singers are musicians, giving 3/4. Selecting a musician instead would give singer probability 18/30=3/5. These are different questions even though the same overlap 18 appears.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "3fcfaf4187641e9ea977ead997d43664bb8a2ee8f2a88380ab67a9bcc5cd8975",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-independence",
+      "activityAnswer": "Independent, not disjoint",
+      "calculation": ".2*.5",
+      "expected": 0.1,
+      "workedSolution": "If P(A)=0.5, P(B)=0.6 and intersection 0.3, the product matches 0.3, so the events are independent. Their intersection is positive, so they are not disjoint. If the intersection were 0 instead, they would be disjoint but dependent because 0≠0.5·0.6.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "cd2427dcd6676ac876baad70ff7389b64a3d278002c0e20da57ee067ff9d8541",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-inclusive-union",
+      "activityAnswer": "0.8",
+      "calculation": ".6+.5-.3",
+      "expected": 0.8,
+      "workedSolution": "Among integers 1 through 24, eight are multiples of 3 and six are multiples of 4. Two multiples of 12 are in both groups. Thus a multiple of 3 or 4 occurs in 8+6−2=12 of 24 outcomes, probability 1/2. Counting 14 would double-count 12 and 24.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "c635c8647cbc83910adfd2a60f3c46b1b39c97467c519be1382477cf9111e71e",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-complements",
+      "activityAnswer": "15/16",
+      "calculation": "1-.5**4",
+      "expected": 0.9375,
+      "workedSolution": "For five independent trials with success probability 0.2, no success has probability 0.8⁵=0.32768. Therefore at least one success has probability 0.67232. For two fair dice, at least one 1 equals 1−(5/6)²=11/36; simply adding 1/6+1/6 counts the double-one outcome twice.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "b321a763bb46d7beb8934564dd397c9c6da5bcfaa0b7129008de06a6e911def8",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-exact-binomial-count",
+      "activityAnswer": "1/4",
+      "calculation": "4*.5**4",
+      "expected": 0.25,
+      "workedSolution": "Exactly two successes in five trials with p=0.4 has C(5, 2)=10 possible placements. Each placement has probability 0.4²·0.6³=0.03456, so the total is 0.3456. Counting one ordering alone misses nine equally specified placements.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "d9e624ff204bae02b6edb556336b6aa179dadff11f0b11cdd84939be12e6d7f2",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-first-success",
+      "activityAnswer": "3/16",
+      "calculation": ".75*.25",
+      "expected": 0.1875,
+      "workedSolution": "If each attempt succeeds with probability 0.3, first success on attempt 4 requires F, F, F, S, with probability 0.7³·0.3=0.1029. Exactly one success among four attempts would also include S, F, F, F and two other positions, giving a different event.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "559376870506e91f1d7ede9a81d7f0cc6b9b0089ee81e87fe06fad0e0e3d6618",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-ordered-choices",
+      "activityAnswer": "120",
+      "calculation": "6*5*4",
+      "expected": 120,
+      "workedSolution": "A four-character code using different letters from seven has 7·6·5·4=840 possibilities. A seven-letter alphabet with repeats allowed would give 7⁴=2401. Merely choosing an unordered four-letter group gives C(7, 4)=35 and loses the order needed for a code.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "31ceeaab8c29ed3fca953fec0977f3d8ce1ea4e1543824a064094bda023a3f03",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-repeated-permutations",
+      "activityAnswer": "3",
+      "calculation": "6/2",
+      "expected": 3,
+      "workedSolution": "The word PEPPER has six letters with three Ps and two Es. Its distinct arrangements number 6!/(3!2!)=60. Labeling the Ps separately would count each visible arrangement 3!times and labeling the Es would count another 2!times; dividing both removes those duplicate labels.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "5bc399aad97844777d11e4b6df08552e00700a459def889a4aea39521f4cb9a6",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-sampling-and-design",
+      "activityAnswer": "The sample may systematically differ from all residents",
+      "calculation": "true",
+      "expected": true,
+      "workedSolution": "If a school asks only students already attending tutoring whether tutoring is desirable, the sampling frame omits nonattenders and may overstate schoolwide interest. Randomly selecting from that attendee list still cannot represent students excluded from it. In a separate volunteer experiment, random treatment assignment can support a treatment comparison within the volunteers without proving a schoolwide effect.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "4aa6ae4e5c5f72bae06f92c50dc0e1f58a3d053d57aa9038e47c6f9951db4260",
+      "proofType": "conceptual"
+    },
+    {
+      "skillId": "math-statistics-probability-interquartile-range",
+      "activityAnswer": "21",
+      "calculation": "35-14",
+      "expected": 21,
+      "workedSolution": "If Q₁=11 and Q₃=27, the IQR is 16. The midpoint of those quartiles is 19, which describes a different summary. An extreme maximum can change the full range without changing either quartile, so IQR can be less sensitive to an outlier.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "7ed3e6cc01b39304f61dc21cfc8d7e1bdd74597953f99d7b60c1ef3930ed2222",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-statistics-probability-standardized-distance",
+      "activityAnswer": "3",
+      "calculation": "(91-70)/7",
+      "expected": 3,
+      "workedSolution": "A measurement 44 in a population with mean 50 and standard deviation 3 has z=(44−50)/3=−2. It lies two standard deviations below the mean. Dividing 44 by 3 would measure the score from zero, not from the mean; omitting the sign loses whether it is above or below.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "c09c7cc2eeb393785461ba335dac64d05fdb56256bc41890a9fc574dd0f84bc3",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-complex-products",
+      "activityAnswer": "5+5 i",
+      "calculation": "[1*3-2*(-1),1*(-1)+2*3]",
+      "expected": [
+        5,
+        5
+      ],
+      "workedSolution": "(2+3 i)(4−i)=8−2 i+12 i−3 i²=11+10 i. Also, (3−2 i)²=9−12 i+4 i²=5−12 i. The real correction has a minus sign because i²=−1; an algebraic square can remain complex even though a magnitude is real.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "bd76782ff7255111b21cf17ac548bd3f16e5f6c682e12ee7586acd34bed93355",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-complex-division",
+      "activityAnswer": "(1+3 i)/2",
+      "calculation": "[(2-1)/2,(2+1)/2]",
+      "expected": [
+        0.5,
+        1.5
+      ],
+      "workedSolution": "For(5+i)/(2−i), multiply by(2+i)/(2+i). The numerator is 10+7 i+i²=9+7 i and the denominator 4−i²=5. Thus the quotient is(9+7 i)/5. Using 2−i again would keep an imaginary denominator instead of rationalizing it.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "aaaf350b77c5e360d7e0e5ef9bfeef4e46f442f5b64013f2349a1552038aadf2",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-complex-magnitude",
+      "activityAnswer": "25",
+      "calculation": "(7**2+24**2)**0.5",
+      "expected": 25,
+      "workedSolution": "For z=−8+15 i, magnitude is√(64+225)=17, while|z|²=289. If w=3−4 i, then|z/w|=17/5 without needing a full complex division. The sum 8+15=23 is the distance along two coordinate legs, not the straight distance.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "70aab30a765c32582db0481dacaebd64e5f2482e11a17a231eb86e2cec228681",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-vector-components",
+      "activityAnswer": "√20",
+      "calculation": "(1+3)**2+(4-2)**2",
+      "expected": 20,
+      "workedSolution": "For u=(3, −1), v=(−2, 4), the vector 2 u−v=(6, −2)−(−2, 4)=(8, −6), whose magnitude is 10. Dividing by 10 gives unit direction(4/5, −3/5). Subtracting the two original magnitudes would not equal the magnitude of 2 u−v.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "8d538a831850fe3851a62bd4fee9c0bde76b293eb0c597b01f15c08794315778",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-dot-products",
+      "activityAnswer": "10",
+      "calculation": "4*5/2",
+      "expected": 10,
+      "workedSolution": "For u=(2, −5), v=(4, 3), the dot product is 8−15=−7. A vector(k, 4)perpendicular to(3, −6)must satisfy 3 k−24=0, giving k=8. A componentwise product(8, −15)is not the dot product until its entries are added.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "e67124e54c401134216c95f03b6df637f682a3d1c41699528a56df4c955e67a1",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-matrix-products",
+      "activityAnswer": "4×5",
+      "calculation": "[4,5]",
+      "expected": [
+        4,
+        5
+      ],
+      "workedSolution": "A 2×3 matrix times a3×4 matrix produces 2×4. For A with rows(1, 2), (3, 1)and B with columns(4, −1), (2, 5), the entry in row 2, column 1 of AB is 3·4+1(−1)=11. Using row 1 would instead compute a different product entry.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "7fff9ba69a689806624a67dc0ae527f3ab09cebb71829f6d0be78b71dd8d4a8e",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-matrix-powers",
+      "activityAnswer": "8",
+      "calculation": "2*4",
+      "expected": 8,
+      "workedSolution": "Let A have rows(1, 3), (0, 1). A² has rows(1, 6), (0, 1), and another multiplication gives A³ with upper-right 9. In general Aⁿhas upper-right 3 n. The sum of its four entries is 2+3 n. This rule follows from the actual row-column product, not from 3ⁿ.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "10dd65ca15f7fbfaf2a563b85d0060ebb7ad5bff7350004c0a165f60bab10832",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-matrix-inverses",
+      "activityAnswer": "2",
+      "calculation": "4*2-1*6",
+      "expected": 2,
+      "workedSolution": "For A with rows(2, 3), (1, 2), the determinant is 4−3=1. Its inverse has rows(2, −3), (−1, 2). The first product entry is 2·2+3(−1)=1 and the next is 2(−3)+3·2=0; the second row similarly gives 0, 1. A zero determinant would make division impossible.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "2c90dda6c6f27e0216eef79d7b36aee59d6a9f1d8d2c14689af881394c6ced5b",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-arithmetic-sequences",
+      "activityAnswer": "87",
+      "calculation": "6*(2+(2+5*5))/2",
+      "expected": 87,
+      "workedSolution": "If a₁=9 and d=−2, the eighth term is 9+7(−2)=−5. The first-eight sum is 8(9−5)/2=16. An arithmetic sequence whose first and last terms are 3 and 17 over eight terms instead has mean term 10 and total 80 even before its common difference is calculated.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "ad751b78058758d69329a66ac7d8709980a640d9416481191b9615ff78ae6a74",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-geometric-sequences",
+      "activityAnswer": "20",
+      "calculation": "10/(1-.5)",
+      "expected": 20,
+      "workedSolution": "For 8, 4, 2, …, ratio 1/2 gives fourth term 1, first-four sum 15 and infinite sum 16. If a₁=3 and a₄=81 with positive ratio, then 3 r³=81, so r=3 and a₆=3·3⁵=729. The first-to-fourth gap contains three multiplications.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "b96a69f5aa72022a089b829d5cada691061360a00c6d605a82e0580252d179a6",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-rational-exponents",
+      "activityAnswer": "36",
+      "calculation": "216**(2/3)",
+      "expected": 36,
+      "workedSolution": "For 27^(4/3), take the cube root 3 then the fourth power 81. If positive x satisfies x^(3/2)=64, raising both sides to 2/3 gives x=16; checking(√16)³=64 confirms it. In 2ⁿ·8²=2¹¹, rewrite 8²=2⁶ to get n=5.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "4fc83b77c1af3e3c5c7f3fd079a22f57b647262b702ea28f0518fd29380793b2",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-radical-rules",
+      "activityAnswer": "3√3",
+      "calculation": "75**.5-12**.5",
+      "expected": 5.196152422706632,
+      "workedSolution": "√98−√50=7√2−5√2=2√2. For√(16 x²), the simplified result is 4|x|: at x=−3 it equals 12, while 4 x would give−12. If√(x²)=9, both±9 work, so their sum is zero.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "676a7140a76974705fb2a4b7592b6fd189c614a9c2e8a9fc53078cfaf0fed0a1",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-scientific-notation",
+      "activityAnswer": "3×10³",
+      "calculation": "[9/3,-2-(-5)]",
+      "expected": [
+        3,
+        3
+      ],
+      "workedSolution": "(8×10⁻⁴)/(2×10³)=4×10⁻⁷. In(6×10⁵)(5×10⁻²), the first product is 30×10³, which normalizes to 3×10⁴. Shifting the coefficient from 30 to 3 divides it by 10, so the power of ten must increase by one.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "2433480eca151a7911f95ff060a8e412a1edd6024577696c1fcefec01914065f",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-remainders",
+      "activityAnswer": "5",
+      "calculation": "(2*4+3)%6",
+      "expected": 5,
+      "workedSolution": "If N=9 q+5, then 3 N+4=27 q+19=9(3 q+2)+1. The new remainder is 1, not the raw value 19. Equivalently, compute 3·5+4=19 and then reduce 19 modulo 9. This works without knowing the original integer N.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "cec385c4b57183585054060324214c616d3c961e24f7b5098d8fd273d08e7110",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-prime-factors",
+      "activityAnswer": "60",
+      "calculation": "2**2*3*5",
+      "expected": 60,
+      "workedSolution": "For 72=2³·3²and90=2·3²·5, the GCF is 2·3²=18 and the LCM is 2³·3²·5=360. Checking 360/72=5 and 360/90=4 confirms divisibility; 72·90/18 also gives 360. Multiplying the two numbers directly usually gives a common multiple larger than the least one.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "cae1700e62129b7811f6897cd49939528a5b825aab12fe588afbccf76c120395",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-signed-arithmetic",
+      "activityAnswer": "12",
+      "calculation": "Math.abs(-4)-(-2)**3",
+      "expected": 12,
+      "workedSolution": "|−6|−(−3)³=6−(−27)=33. In contrast, −3²=−9 because the square applies before the leading minus, while(−3)²=9. Writing the negative base in parentheses prevents a calculator entry from silently changing the intended grouping.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "4b9c6b721b2e8083a8d0d8bdbc01d00be335d80683af4902fad600ee099cf3e5",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-degree-radian-conversion",
+      "activityAnswer": "5π/3",
+      "calculation": "300/180",
+      "expected": 1.6666666666666667,
+      "workedSolution": "For 330°, multiply 330π/180 and reduce to 11π/6. Reversing the conversion gives(11π/6)(180/π)=330°. Since 330° is between 270° and 360°, the radian measure should lie between 3π/2 and 2π, which 11π/6 does.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "99928ce7492618cfd6cc02ba78a040f1b7e9353b241e22bb7a9147e55280ded2",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-origin-rotations",
+      "activityAnswer": "(7, 4)",
+      "calculation": "[7,-(-4)]",
+      "expected": [
+        7,
+        4
+      ],
+      "workedSolution": "Rotating(3, −5)90° counterclockwise gives(5, 3). Both points have squared radius 34. A clockwise turn would give(−5, −3), while changing both signs produces a180° turn to(−3, 5). These operations are distinct despite all preserving distance from the origin.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "a677098f31e05098f0206024c6765e12d0e13f62a55d3ee2c1c2b4c4192f200d",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-perfect-square-parity",
+      "activityAnswer": "7",
+      "calculation": "28*7",
+      "expected": 196,
+      "workedSolution": "For 45 n=3²·5·n to be a square, n needs an odd exponent of 5 and even exponents of other unpaired primes; the least choice is n=5, giving 225. But 3 n and 5 n cannot both be squares: the exponent of 3 in n must be odd for 3 n and even for 5 n, a contradiction. A decimal approximation is not a proof.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "c6e0c773239156f88bde93ab30630d365dcc6d309f2df45de863ab3cdc666ce7",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-ratio-parts",
+      "activityAnswer": "21",
+      "calculation": "77/(3+8)*3",
+      "expected": 21,
+      "workedSolution": "In a4: 7 split of 66 objects, there are 11 parts, each containing 6 objects. The first group has 24 and the second 42. Its fraction of the total is 4/11, not 4/7. Likewise, five twelfths of 72 is 72/12·5=30.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "76d67bda9ec0ad491bd26fc99061be4378d272bb0d31e9d893b54f4d4f62444c",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-percent-base",
+      "activityAnswer": "25%",
+      "calculation": "(100-80)/80*100",
+      "expected": 25,
+      "workedSolution": "An item costing 60 and selling for 75 has profit 15. Its markup is 15/60=25%, but its margin is 15/75=20%. For a weekly base 180 plus 6%of 2000 sales, total earnings are 180+120=300. The commission applies to sales, not to the fixed pay or the combined total.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "45f978e9a5e9c2ad805a1964cff19229d5b9fca7667d553b772cc8627291a2ba",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-percent-factors",
+      "activityAnswer": "200",
+      "calculation": "216/(1.2*.9)",
+      "expected": 200,
+      "workedSolution": "A price 300 raised 10%then reduced 25%becomes 300·1.10·0.75=247.50. If that final price were given instead, dividing 247.50 by 0.825 recovers 300. To undo a25%increase, an original 100 became 125 and must drop 25/125=20%; the reverse percentage uses the larger base.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "3a87982c8951060fc72a6b303e709c913d7b68b692a0f191f94958927e68833f",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-unit-factors",
+      "activityAnswer": "30000",
+      "calculation": "3*100**2",
+      "expected": 30000,
+      "workedSolution": "An 8-by-10 meter floor has area 80 m². A square tile of side 40 cm=0.4 m has area 0.16 m², so 500 tiles cover it. Buying 6%extra needs 530 tiles; packs of 24 require ceil(530/24)=23 packs. At 14 per pack the minimum cost is 322. Separately, 54 km/h·1000/3600=15 m/s; both distance and time units change.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "116b43e1cd5bac636fb95c86a2a1f64795927a92ce20d21021610620c541b968",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-weighted-mixtures",
+      "activityAnswer": "6",
+      "calculation": "(4*3+6*8)/(4+6)",
+      "expected": 6,
+      "workedSolution": "Mixing 3 liters at 10%and 7 at 30%gives(0.3+2.1)/10=24%. For 9 liters at 30%diluted to 15%, the solute remains 2.7 liters. Final volume must be 2.7/0.15=18, so 9 liters of water are added. An unweighted average ignores unequal amounts; final volume is different from added volume.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "b8a866376487724c7713da2452eed9abb8700db70feef3dfdacf002dc168df2f",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-average-speed",
+      "activityAnswer": "30 mph",
+      "calculation": "(60+60)/(60/20+60/60)",
+      "expected": 30,
+      "workedSolution": "A trip covers 90 miles at 45 mph and 60 miles at 60 mph. Its times are 2 and 1 hour, so average speed is 150/3=50 mph. The arithmetic mean 52.5 mph incorrectly assigns equal time to both legs. For equal distances, the slower leg takes longer and pulls the average toward the slower speed.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "0c5a92db73e80702f5ffe9207777b9641ef9a6be07c8f46fa74fb39198591c3e",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-combined-work",
+      "activityAnswer": "6 hours",
+      "calculation": "1/(1/8+1/24)",
+      "expected": 6,
+      "workedSolution": "A needs 10 hours and B needs 15 hours alone. If A works alone for 2 hours, it finishes 1/5 and leaves 4/5. Together their rate is 1/10+1/15=1/6 job/hour, so the remaining time is(4/5)/(1/6)=4.8 hours. Total elapsed time would be 6.8 hours, a different requested quantity.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "462b748adeeff3d1cb4bc2a4aaeb4e75df5743bf13ae1caf8b02ea539f607da3",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-changing-ratios",
+      "activityAnswer": "6",
+      "calculation": "6",
+      "expected": 6,
+      "workedSolution": "If original red: blue=3: 5, counts are 3 k, 5 k. Adding 8 reds and removing 4 blues to obtain 1: 1 gives 3 k+8=5 k−4, so k=6 and the original total 48. For a: b=3: 4 and b: c=6: 7, scale to 9: 12 and 12: 14, giving a: c=9: 14.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "d82a954826a31ab74f803602a868bec0164b07166cc08600e554b2ef6ee374ee",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-inverse-proportions",
+      "activityAnswer": "6",
+      "calculation": "4*60*15/600",
+      "expected": 6,
+      "workedSolution": "A reservoir fills in 3 hours at 16 liters per minute. Its volume is 3·60·16=2880 liters. A replacement pump supplies 720 liters per hour, so it needs 2880/720=4 hours. The new pump is slower than the old 960 liters per hour, so the longer time is reasonable.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "463903f91bca994564cfe0b068f5002ebf9a4ddcd949bd629344f6a3de515d43",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-relative-motion",
+      "activityAnswer": "3 hours",
+      "calculation": "84/(12+16)",
+      "expected": 3,
+      "workedSolution": "Two travelers 300 miles apart approaching at 60 and 90 mph meet after 300/150=2 hours. A 120-meter train crossing a280-meter bridge at 25 m/s requires 400/25=16 seconds from front entry to rear exit. Using just the bridge length would stop the clock when the front, not the rear, leaves.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "593304d9802a6e8e900a10a6b1329e64185a25dc710fc20798b14ec57cced903",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-essential-skills-fixed-and-repeated-payments",
+      "activityAnswer": "230",
+      "calculation": "30+5*40",
+      "expected": 230,
+      "workedSolution": "A 45 down payment followed by four 80 payments totals 45+4·80=365. Reporting 320 omits the down payment; multiplying(45+80)by 4 would repeat the initial payment four times. A short table labeling initial and repeated charges can prevent both mistakes.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "d8c7788a74c7f8133acfb7cc250ee42816755c9b543e9cbe2302e306e48ed0c4",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-linear-models",
+      "activityAnswer": "6",
+      "calculation": "(30-18)/(4-2)",
+      "expected": 6,
+      "workedSolution": "A rental costs 32 for 3 hours and 56 for 7 hours. The hourly rate is 24/4=6 and the fixed charge 32−18=14, giving C(h)=14+6 h. For a30 total, h=(30−14)/6=8/3 hours. If monthly income I retains 75%after savings and then pays 24 transportation, remaining spending is 0.75 I−24, preserving both the percentage and fixed amount.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "b07a4f17a2867a3e1b9f0d7d43d1cf205105878f47e448c256c9939f3d6d51f8",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-two-price-counts",
+      "activityAnswer": "20",
+      "calculation": "(320-4*50)/(10-4)",
+      "expected": 20,
+      "workedSolution": "A show sells 70 tickets: adults cost 11 and students 6, with total revenue 520. If a is adults, 11 a+6(70−a)=520. Thus 5 a=100 and a=20, leaving 50 students. Check 20+50=70 and 220+300=520. Using the average ticket price alone loses the integer-count relationship.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "a4587a7cb3c1f528186ab2e2d8018b2d2af1bd018942ad62a3fa2574a696bd35",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-quadratic-maxima",
+      "activityAnswer": "12",
+      "calculation": "-(3**2)+10*3-9",
+      "expected": 12,
+      "workedSolution": "With 40 meters fencing three sides of a rectangle, 2 x+y=40 and area x(40−2 x)peaks at x=10, y=20, area 200. If profit P(q)=−q²+12 q−8 is limited to 0≤q≤4, its unrestricted vertex 6 is forbidden; the allowed maximum is P(4)=24. A quadratic with vertex(h, k)and leading coefficient a is a(x−h)²+k.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "1694dd6dfbedb9364d121a481bf0d4a602edcea605e605e111304f0eb5bcd20b",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-ground-contact",
+      "activityAnswer": "7",
+      "calculation": "28/4",
+      "expected": 7,
+      "workedSolution": "For h(t)=−3 t²+18 t, factor−3 t(t−6)=0. The zeros are 0 and 6; the ball returns after 6 seconds. Its peak occurs halfway at t=3 with height 27, so the time 3 answers a different question. If launch height were nonzero, test the roots rather than assuming symmetry around zero.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "c555f4ca40d6a0388355e89bb2dcbabd3b45e91465ebca15f0ec0e147cd5fbdf",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-dimension-equations",
+      "activityAnswer": "5",
+      "calculation": "5*(5+4)",
+      "expected": 45,
+      "workedSolution": "If a rectangle’s sides are x and x+2 and its perimeter is 44, then 4 x+4=44 gives x=10 and area 120. If a square’s side increases by 3 and its area increases by 51, then(x+3)²−x²=6 x+9=51, giving x=7. Canceling the x² terms does not cancel the cross term 6 x.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "b488f39fccf01488340a1683f3dc692f01deeb64a31d23538578a31ba3825c49",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-exponential-models",
+      "activityAnswer": "405",
+      "calculation": "500*.9**2",
+      "expected": 405,
+      "workedSolution": "A 160-gram sample with half-life 5 days has 160(1/2)³=20 grams after 15 days. For A=500(1.3)ᵗand B=900(1.1)ᵗ, A>B means(13/11)ᵗ>1.8, giving t>ln 1.8/ln(13/11)≈3.52. The first whole period is 4; at 3, A=1098.5<B=1197.9, while at 4, A≈1428.05>B≈1317.69.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "5897232d1fc6ce7c644176e210de8f7da7ed294ab85977b164e355818c02318f",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-interest-periods",
+      "activityAnswer": "600(1.02)¹²",
+      "calculation": "[.08/4,4*3]",
+      "expected": [
+        0.02,
+        12
+      ],
+      "workedSolution": "At 800 principal and 5%annual simple interest for 3 years, interest is 120 and balance 920. Compounding semiannually for the same time instead uses 800(1.025)⁶. The exponent 6 counts two periods in each of three years; using 5%every half-year would double the stated annual rate.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "5a5948440b5a76b48ec695c314710f88be296826f9c669f88dc798831f7b6618",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-piecewise-costs",
+      "activityAnswer": "16",
+      "calculation": "6+2*(9-4)",
+      "expected": 16,
+      "workedSolution": "Shipping is 6 for up to 4 kilograms and 2 per kilogram beyond 4. A 7-kilogram parcel costs 6+2(7−4)=12. If the first 8 tickets cost 9 each and additional tickets 5 each, 11 tickets cost 8·9+3·5=87. Giving all tickets the lower additional rate would discard the first tier.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "10452cb4430c8e99cbd066d7842d5b9c13559a5bfa4550b2744d44a216d787b7",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-whole-number-thresholds",
+      "activityAnswer": "7",
+      "calculation": "Math.ceil((80-30)/8)",
+      "expected": 7,
+      "workedSolution": "A balance 40 plus 18 per week reaches at least 150 when w≥110/18, so first whole week 7 works. A budget 200 with fixed 70 plus 18 per item allows n≤130/18, giving at most 7 items. If one plan becomes cheaper only for n>5, the first whole count is 6, not 5.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "e15d0976404d8655cdf0d8d24c6fbc0eb58ddd9fda0845c69fb72e39a4af9803",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-resource-optima",
+      "activityAnswer": "20",
+      "calculation": "20",
+      "expected": 20,
+      "workedSolution": "If 2 x+y≤13 and x+2 y≤13, the objective 3 x+2 y is at most(4/3)13+(1/3)13=65/3. Since the profit is an integer, it is at most 21. The pair(5, 3)satisfies both limits and earns 21, proving optimality. A fractional intersection is not itself an allowed production count.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "babb75026fbb21ff16abcb424edfc3781f0c5b3620f1a56d12956667dc3a85ad",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-modeling-residual-fit",
+      "activityAnswer": "−1",
+      "calculation": "(6-(3+2*1))+(5-(3+2*2))",
+      "expected": -1,
+      "workedSolution": "For predictionŷ=1+3 x, observations at x=1, 2, 3 are 5, 6, 11. Predictions are 4, 7, 10, so residuals are 1, −1, 1 and their sum 1. Reversing the subtraction would reverse every sign. Each residual belongs to its own input, not to the average of all observations.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "d8072e11e9b651fd0125f957139cdd34ee72e8800b34adf61d6415b1b37b4ea3",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-linear-values",
+      "activityAnswer": "13",
+      "calculation": "((7-(-2))/3)*5-2",
+      "expected": 13,
+      "workedSolution": "If f(2)=9 and f(6)=21, the slope is(21−9)/(6−2)=3. Substituting 9=3·2+b gives b=3, so f(10)=33. Dividing 21 by 9 would compare outputs but does not recover the slope because the original line has a nonzero intercept.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "d3b9090d556e913c15224d1186af5f211265f8228495fba5a2b49aadbdc5ebd4",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-quadratic-vertex",
+      "activityAnswer": "(4, −3)",
+      "calculation": "[4,4**2-8*4+13]",
+      "expected": [
+        4,
+        -3
+      ],
+      "workedSolution": "For 3 x²−12 x+8, h=12/6=2 and k=12−24+8=−4. Completing the square gives 3(x−2)²−4, confirming vertex(2, −4). The square term vanishes at the vertex, making the minimum output−4 rather than the input 2.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "6d2aa48f5379bc3c05726ee61b335f82743b9a27beb8995ba5c706d8dcf65d15",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-pythagorean-lengths",
+      "activityAnswer": "8",
+      "calculation": "(17**2-15**2)**.5",
+      "expected": 8,
+      "workedSolution": "A rectangle has diagonal 25 and one side 7. The other side is√(25²−7²)=√576=24, so its area is 7·24=168. Adding 25²+7² would incorrectly treat the diagonal as a leg; multiplying 7 by 25 uses a diagonal in place of a rectangle side.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "edfc1684ca3005e38e56030ae407e6455ad45ffdbfe79ec6d2ff7ee1e14e34c1",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-powers-of-i",
+      "activityAnswer": "−i",
+      "calculation": "99%4",
+      "expected": 3,
+      "workedSolution": "The exponent 2037 equals 4·509+1, so i²⁰³⁷=i. The exponent 2040 has remainder 0 and gives 1. For i⁴¹+i⁴², the two remainders 1 and 2 give i−1. Reduce each exponent separately before adding complex values.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "cb6d83a95f56149f8bc91ae9bca5251c2e2f304f60f0ffbfaae272bd46083c5e",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-horizontal-asymptotes",
+      "activityAnswer": "y=4",
+      "calculation": "4/1",
+      "expected": 4,
+      "workedSolution": "For f(x)=(5 x−3)/(2 x+7), divide top and bottom by x: f(x)=(5−3/x)/(2+7/x), which approaches 5/2 as |x|grows. The horizontal asymptote is y=5/2. The denominator zero x=−7/2 is a different, vertical feature.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "2410f01844ce288a69c85e2e96f90c0270c5f1e3ca6e4b4ed76b2c56579bdcfa",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-matrix-systems",
+      "activityAnswer": "3",
+      "calculation": "(2*8-7)/3",
+      "expected": 3,
+      "workedSolution": "If A has rows(2, 1), (1, −1)and A(x, y)ᵀ=(11, 1)ᵀ, the equations are 2 x+y=11 and x−y=1. Adding yields 3 x=12, so x=4 and y=3. The original row outputs are 8+3=11 and 4−3=1, confirming both equations.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "b2e565ad5a87d0883303fdb1c421057afc4f61da4605d3e1fa4f962029d39923",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-matrix-addition",
+      "activityAnswer": "−3",
+      "calculation": "3*(-1)",
+      "expected": -3,
+      "workedSolution": "Let A have rows(1, −2), (3, 0)and B have rows(4, 1), (−1, 5). The matrix 2 A+B has rows(6, −3), (5, 5), because each entry is twice its A entry plus the matching B entry. For example, the lower-left entry is 2·3+(−1)=5.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "4637cd0c56ed9538a8a3b94d2f9928c2d79a4808cd40cfe9f6da37d55d76f937",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-rational-irrational",
+      "activityAnswer": "2+√3",
+      "calculation": "Number.isInteger(Math.sqrt(3))",
+      "expected": false,
+      "workedSolution": "√49=7 is rational, while√50=5√2 is irrational. The number 3+√2 must be irrational: if it were rational, subtracting rational 3 would make√2 rational, a contradiction. By contrast, √2·√8=√16=4 is rational, so the label of each factor alone does not determine the product.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "bba2d7a158f33d74114b8a0fab553e7328491039f2577ec694c3ae0edbc9eff0",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-number-quantity-integer-parity",
+      "activityAnswer": "n²+n",
+      "calculation": "[0,1,2,3,4,5].map(n=>(n*n+n)%2===0)",
+      "expected": [
+        true,
+        true,
+        true,
+        true,
+        true,
+        true
+      ],
+      "workedSolution": "For odd a=2 u+1 and odd b=2 v+1, their sum is 2(u+v+1), which is even. Their product is 2(2 uv+u+v)+1, which is odd. Also n²+n=n(n+1)is always even because one consecutive factor is divisible by 2.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "7b7642c9fc7c34b7f10f44e43cbb1ab747d37211807a7171523ec8deaf018fd7",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-coordinate-reflections",
+      "activityAnswer": "(−2, −3)",
+      "calculation": "[-2,2*1-5]",
+      "expected": [
+        -2,
+        -3
+      ],
+      "workedSolution": "Reflect(8, −3)across x=2 to obtain(2·2−8, −3)=(−4, −3). The two x-coordinates 8 and−4 average to 2, confirming the mirror. Across y=x, the original point would instead become(−3, 8), a different reflection.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "1ad6905fc54d776df352076e7a9af6957a8f912b19d8ed8cbf6dfa466efce85f",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-coordinate-dilations",
+      "activityAnswer": "(7, 5)",
+      "calculation": "[1+2*(4-1),1+2*(3-1)]",
+      "expected": [
+        7,
+        5
+      ],
+      "workedSolution": "Dilate P=(5, 1)by factor 3 about C=(1, −2). Its displacement is(4, 3), which scales to(12, 9); the image is(13, 7). The center itself stays fixed. A corresponding triangle’s area would multiply by 9 rather than by 3.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "cfbc694008adb14190e5d8d7effc25d3d2f502ea4dbb205983747687036c6294",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-angle-chains",
+      "activityAnswer": "65°",
+      "calculation": "(180-50)/2",
+      "expected": 65,
+      "workedSolution": "If one of two same-side interior angles between parallel lines is 112°, the other is 68°. An isosceles triangle with vertex angle 44° has two equal base angles x, so 2 x+44=180 and x=68°. The equality and supplementary relationships are different even when these examples produce the same value.",
+      "activityAnswerIndex": 2,
+      "sourceSha256": "236db0e1430d81912d6cc5964278d290096bae630d2f5ff4318d97146d601df1",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-triangle-congruence",
+      "activityAnswer": "The same three side lengths",
+      "calculation": "true",
+      "expected": true,
+      "workedSolution": "Two triangles each having side lengths 5, 7, 9 are congruent by SSS, even if one is rotated or reflected. Two triangles each with angles 40°, 60°, 80° need only be similar; one can be twice as large. Two sides and a nonincluded angle do not automatically resolve the sine-law ambiguous case.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "f02f6dd83ce2ed2d592b43915dde331cc46d29885a61bff2207648cbfb8e278f",
+      "proofType": "conceptual"
+    },
+    {
+      "skillId": "math-geometry-ellipse-features",
+      "activityAnswer": "10",
+      "calculation": "2*25**.5",
+      "expected": 10,
+      "workedSolution": "For(x−2)²/36+(y+1)²/16=1, the center is(2, −1), horizontal semiaxis 6 and vertical semiaxis 4. The major-axis length is 12 and its foci are(2±√20, −1). The denominators are squared semiaxis lengths, not the full axis lengths.",
+      "activityAnswerIndex": 1,
+      "sourceSha256": "589949eda968ef3cb3fe28ded11e364743db22f89b4e0a68414fdb6c0d172388",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-hyperbola-features",
+      "activityAnswer": "(−4, 0), (4, 0)",
+      "calculation": "[-(16**.5),16**.5]",
+      "expected": [
+        -4,
+        4
+      ],
+      "workedSolution": "For(x−1)²/9−(y+2)²/16=1, the center is(1, −2)and vertices are(−2, −2), (4, −2). Its asymptotes are y+2=±(4/3)(x−1). The larger denominator 16 does not make it open vertically; the positive x term determines the direction.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "54d9c210052f1470f0efdf58de1a172a1f17c4f3c9fcdec96b0bbd0a8f8a2053",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-geometry-parabola-focus",
+      "activityAnswer": "(0, 2)",
+      "calculation": "8/4",
+      "expected": 2,
+      "workedSolution": "In(y+1)²=12(x−2), the vertex is(2, −1)and 4 p=12 gives p=3. It opens right, with focus(5, −1)and directrix x=−1. The point(14, −1)would incorrectly treat 12 as the focal distance rather than four times that distance.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "662d8e5398ce2d4da64a7a2e1898a9846cb5ea50d3be8853d16f4adc111f824a",
+      "proofType": "calculation"
+    },
+    {
+      "skillId": "math-functions-function-definition",
+      "activityAnswer": "(1, 2), (2, 2), (3, 2)",
+      "calculation": "true",
+      "expected": true,
+      "workedSolution": "The pairs(0, 3), (1, 5), (2, 5)define a function: the shared output 5 is allowed because it belongs to different inputs. The pairs(0, 3), (0, 4), (2, 5)do not define a function, because input 0 would require two different outputs. The direction input→output matters.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "b4550e95980f7fa8ed511195dd804caa7778b19ffe4ebab1f763c8d521b69fa0",
+      "proofType": "conceptual"
+    },
+    {
+      "skillId": "math-geometry-regular-polygon-area",
+      "activityAnswer": "54√3",
+      "calculation": "36*3/2",
+      "expected": 54,
+      "workedSolution": "A regular square with side 8 has perimeter 32 and apothem 4. Its area is 32·4/2=64. Four center-to-side triangles each have base 8 and perpendicular height 4, so each contributes 16 and their sum 64 agrees with the square area 8². The apothem is perpendicular to a side, not a slanted center-to-vertex segment.",
+      "activityAnswerIndex": 0,
+      "sourceSha256": "2025024efccf732225e68b550c0134b5e036a15f8f8be5a1494f7692132cdb79",
+      "proofType": "calculation"
+    }
+  ],
+  "questions": [
+    {
+      "questionId": "math-functions-arithmetic-indexing-practice-1",
+      "calculation": "44+5*(38-44)",
+      "expected": 14,
+      "correctChoice": "14",
+      "solution": "The common difference is−6. Five jumps from index 0 give a₅=44+5(−6)=14. The 20 and 8 choices use four and six jumps; 44 is the unchanged starting term.",
+      "answerIndex": 2,
+      "sourceSha256": "2a7f5bd4a51c2927f89557ac7cae50fbc749a41d643cc600fe7daeacdbd3aa4c",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-recursive-inputs-practice-1",
+      "calculation": "(2**2+1)**2+2",
+      "expected": 27,
+      "correctChoice": "27",
+      "solution": "The first step is a₁=F(2, 1)=5. The second uses the new term and index: a₂=F(5, 2)=25+2=27. Keeping the second input at 1 would give 26.",
+      "answerIndex": 0,
+      "sourceSha256": "78481f1a7e99c928169d47397c4d63871a88dcd3203639ee4e77dfd78ecd3ae1",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-piecewise-evaluation-practice-1",
+      "calculation": "2*(-1)+1",
+      "expected": -1,
+      "correctChoice": "−1",
+      "solution": "The endpoint−1 belongs to the first branch because it includes equality. Thus f(−1)=2(−1)+1=−1. The 4 choice comes from applying the second branch outside its domain.",
+      "answerIndex": 0,
+      "sourceSha256": "d8a20897525350521e393147656c249294d51cedf8234f8a03c38d60d96ddba9",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-quadratic-range-practice-1",
+      "calculation": "-3*(2-2)**2+8",
+      "expected": 8,
+      "correctChoice": "y≤8",
+      "solution": "The square is nonnegative, so−3(x−2)²≤0. The largest output is 8, attained at x=2; outputs extend downward without bound. Therefore y≤8. The input 2 is not the range endpoint.",
+      "answerIndex": 3,
+      "sourceSha256": "7e3d88e433d15fde4b9686f75a657afd14c3b5239f84a910a1de7f54963e7fc7",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-even-odd-symmetry-practice-1",
+      "calculation": "[-2,-1,0,1,2].every(x=>5*(-x)**6+2*(-x)**2-1===5*x**6+2*x**2-1)",
+      "expected": true,
+      "correctChoice": "5 x⁶+2 x²−1",
+      "solution": "The polynomial 5 x⁶+2 x²−1 contains only even powers and a constant, so its output is unchanged under x→−x. The mixed-power alternatives fail that equality, and x³−x is odd instead.",
+      "answerIndex": 3,
+      "sourceSha256": "7c854800e075af67f18a60f4169c0401a85a208351307cf63c226fefcc3cb6e8",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-inverse-variation-practice-1",
+      "calculation": "6*14/12",
+      "expected": 7,
+      "correctChoice": "7",
+      "solution": "The constant product is 6·14=84. At input 12, the output is 84/12=7. Doubling a positive input halves the output in inverse variation; 28 would use direct variation.",
+      "answerIndex": 3,
+      "sourceSha256": "23c1a65810636e1a1a7d559e71ce3147fb1d07a7e0333e6c6eee5b9b33012ddb",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-linear-values-practice-1",
+      "calculation": "(-4-8)/(3-(-1))*(2-(-1))+8",
+      "expected": -1,
+      "correctChoice": "−1",
+      "solution": "The slope is(−4−8)/(3−(−1))=−3. Using the first point gives intercept 5, so f(2)=−6+5=−1. The 5 choice reports the intercept rather than the requested function value.",
+      "answerIndex": 3,
+      "sourceSha256": "3478ea31020f8a104024bd2bddc03eeed261f884f4a63da9530f6afea7bf8c83",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-quadratic-vertex-practice-1",
+      "calculation": "[3,-2*3**2+12*3-7]",
+      "expected": [
+        3,
+        11
+      ],
+      "correctChoice": "(3, 11)",
+      "solution": "The vertex input is−12/(2·−2)=3. Evaluating gives−18+36−7=11, so the vertex is(3, 11). Because the leading coefficient is negative, this is the maximum point.",
+      "answerIndex": 0,
+      "sourceSha256": "2df74e05cc58e95e7103930b4c8bcc8c8c5b26fd55d7bee91ed20f18c1a85a24",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-horizontal-asymptotes-practice-1",
+      "calculation": "7/2",
+      "expected": 3.5,
+      "correctChoice": "y=7/2",
+      "solution": "The numerator and denominator have equal degree, so the horizontal output limit is the ratio of leading coefficients 7/2. The line x=−1/2 is vertical, a different asymptote.",
+      "answerIndex": 1,
+      "sourceSha256": "17c57062734aa24e168bb9f9e6011a7a29d745c5271e4dd4d249db8a49fcffde",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-horizontal-asymptotes-practice-2",
+      "calculation": "0",
+      "expected": 0,
+      "correctChoice": "y=0",
+      "solution": "The denominator has higher degree than the numerator. Dividing by x³ shows every numerator term approaches zero while the denominator approaches 1, so the horizontal asymptote is y=0.",
+      "answerIndex": 3,
+      "sourceSha256": "230ad45319546ba6d3c7f3e4cd7c19c7d35cc976f72671f81c336ed4a3472fa3",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-functions-function-definition-practice-1",
+      "calculation": "true",
+      "expected": true,
+      "correctChoice": "(1, 4), (1, 4), (2, 6)",
+      "solution": "The relation(1, 4), (1, 4), (2, 6)assigns only one distinct output to each input. Repeating the identical pair(1, 4)does not create a second output. The other relations assign different outputs to one input, so they fail the function definition.",
+      "answerIndex": 0,
+      "sourceSha256": "cdf0e99cf20cd9b4675f37bc8b258d60a26475e2723dfcb94aeddf142ffc5f09",
+      "proofType": "conceptual"
+    },
+    {
+      "questionId": "math-functions-function-definition-practice-2",
+      "calculation": "[Math.sqrt(3+1),-Math.sqrt(3+1)]",
+      "expected": [
+        2,
+        -2
+      ],
+      "correctChoice": "Input 3 has outputs 2 and−2",
+      "solution": "At x=3, the relation assigns both+2 and−2. Two distinct outputs for one allowed input violate the function definition. Negative outputs and the single output 0 at x=−1 are not themselves forbidden.",
+      "answerIndex": 1,
+      "sourceSha256": "cf4a3e3c105e2d6473ef2144b88ecd6911ad4d2cc373d77382cd56f7c776fad1",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-trapezoid-area-practice-1",
+      "calculation": "(9+17)*6/2",
+      "expected": 78,
+      "correctChoice": "78",
+      "solution": "The average base is(9+17)/2=13. Multiply by height 6 to get 78 square units. The 54 and 102 choices use only one base; 156 omits the factor 1/2.",
+      "answerIndex": 3,
+      "sourceSha256": "298f9e52aa17c6374c5187aa2e4b6084bd3440bb0e17045fe886cadaa6c83e89",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-cylinder-surface-practice-1",
+      "calculation": "2*2*5+2*2**2",
+      "expected": 28,
+      "correctChoice": "28π",
+      "solution": "The curved surface contributes 2π·2·5=20π and the two ends contribute 2π·2²=8π. Their sum is 28π square units. The 20π choice omits the ends.",
+      "answerIndex": 1,
+      "sourceSha256": "9a3d67520301afacec0dd91a428eacd2163ae9c4ab391a151fc2ee2fb324d902",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-heron-area-practice-1",
+      "calculation": "Math.sqrt(18*5*5*8)",
+      "expected": 60,
+      "correctChoice": "60",
+      "solution": "The semiperimeter is 18. Heron gives√(18·5·5·8)=60. Equivalently, the altitude bisects base 10 into two 5-unit pieces and has length 12, so area 10·12/2=60.",
+      "answerIndex": 1,
+      "sourceSha256": "ab1f93757efe433c1d54e5ec289720f91c527f1f74c42725642e4fd886b93277",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-perpendicular-distance-practice-1",
+      "calculation": "Math.abs(3*1+4*(-1)-14)/Math.hypot(3,4)",
+      "expected": 3,
+      "correctChoice": "3",
+      "solution": "Use|3(1)+4(−1)−14|/√(3²+4²)=15/5=3. The 15 choice is the unnormalized numerator; the denominator is needed to convert it into a distance.",
+      "answerIndex": 0,
+      "sourceSha256": "9cb9451a16499fc38de1ec351b0c2cabeeec74d6f67e49e31bfb819158d82d9c",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-arc-and-sector-practice-1",
+      "calculation": "120/360*2*7",
+      "expected": 4.666666666666667,
+      "correctChoice": "14π/3",
+      "solution": "The angle is one third of a full turn. Its arc is one third of circumference 14π, giving 14π/3. The 49π/3 choice is sector area rather than arc length.",
+      "answerIndex": 2,
+      "sourceSha256": "93fdd8e58713fa6a2313798ff8701bd056eb3a28d892ffee92b376e8347be930",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-sphere-surface-practice-1",
+      "calculation": "4*6**2",
+      "expected": 144,
+      "correctChoice": "144π",
+      "solution": "Surface area is 4πr²=4π·36=144π square units. The 36π choice is a circular cross-section; 288π is the volume coefficient for this sphere.",
+      "answerIndex": 2,
+      "sourceSha256": "b7048f1f202a0292f7da3974091af73892d02ea713f4bfd0e9a8ef8edba1dfb9",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-midpoint-endpoints-practice-1",
+      "calculation": "[2*2-(-6),2*(-1)-5]",
+      "expected": [
+        10,
+        -7
+      ],
+      "correctChoice": "(10, −7)",
+      "solution": "Twice the midpoint minus the known endpoint gives(4−(−6), −2−5)=(10, −7). Averaging these two endpoints recovers(2, −1), confirming both coordinates.",
+      "answerIndex": 3,
+      "sourceSha256": "4fdffe67944421ff0ec14b66dbde91cf7b2a487d62642a8a96b1ae2afe746fba",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-perpendicular-lines-practice-1",
+      "calculation": "(5/6)*(-6/5)",
+      "expected": -1,
+      "correctChoice": "−6/5",
+      "solution": "Perpendicular slopes multiply to−1. The negative reciprocal of 5/6 is−6/5. Taking just the reciprocal or just the negative does not satisfy that product.",
+      "answerIndex": 1,
+      "sourceSha256": "61df86c8cd6942c410b6504c062c2c3df3d2fd3c89043f17c51da274ee9fe84e",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-equilateral-area-practice-1",
+      "calculation": "14**2/4",
+      "expected": 49,
+      "correctChoice": "49√3",
+      "solution": "The altitude is 7√3. Area is 14·7√3/2=49√3, same as 14²√3/4. The 98√3 choice omits the triangle half factor after finding its altitude.",
+      "answerIndex": 3,
+      "sourceSha256": "38f8ce4fb188b23387cc62cda170717df0671b57441f66ac5af8b4b43c2a2928",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-angle-bisector-practice-1",
+      "calculation": "15*8/(8+12)",
+      "expected": 6,
+      "correctChoice": "6",
+      "solution": "The angle-bisector theorem gives BD: DC=8: 12=2: 3. The 15-unit base has five ratio parts, so BD=15·2/5=6. The 9 choice is DC, and 7.5 assumes a median.",
+      "answerIndex": 3,
+      "sourceSha256": "67083d6d3af1300435558761775c0fd28de8e938ba4ea6ab3e43bc500ffcacac",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-triangle-inequality-practice-1",
+      "calculation": "[8,9,10,11,12,13,14,15,16].length",
+      "expected": 9,
+      "correctChoice": "9",
+      "solution": "The strict triangle bounds are 7<x<17. The integers 8 through 16 give nine possible lengths. Neither 7 nor 17 is allowed because it would flatten the triangle.",
+      "answerIndex": 1,
+      "sourceSha256": "623ce3e266501f021752b3d90aaec3b354eacd54498eb83a03765570f1ca5477",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-rotations-practice-1",
+      "calculation": "[2-(-1-1),1+(6-2)]",
+      "expected": [
+        4,
+        5
+      ],
+      "correctChoice": "(4, 5)",
+      "solution": "Subtract the center to get displacement(4, −2). Rotate it to(2, 4), then add(2, 1), giving(4, 5). The 2, 4 choice forgets the final translation, and 0, −3 turns clockwise.",
+      "answerIndex": 3,
+      "sourceSha256": "73476d8856df4daca582300c3afe81bb84a0e63d07e0886e37ffe6f06c709053",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-cone-surface-practice-1",
+      "calculation": "9*Math.hypot(9,12)+9**2",
+      "expected": 216,
+      "correctChoice": "216π",
+      "solution": "The slant height is√(9²+12²)=15. Curved area 135π plus base 81πgives216π. The 189π choice substitutes the perpendicular height for slant height; 324π comes from volume.",
+      "answerIndex": 1,
+      "sourceSha256": "bbd82a3fceb60a17fcfcecfe44f30980d0826a4f76f731fc14400d222cce7f42",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-box-surface-practice-1",
+      "calculation": "2*(3*4+3*8+4*8)",
+      "expected": 136,
+      "correctChoice": "136",
+      "solution": "The opposite-face pairs give 2(3·4+3·8+4·8)=2(12+24+32)=136 square units. The 68 choice counts only three faces; 96 is volume.",
+      "answerIndex": 0,
+      "sourceSha256": "212c96603ca545fec29c9410efab7b0226768b6489df62fb4693dced13360003",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-triangle-circle-radii-practice-1",
+      "calculation": "((7*24/2)/((7+24+25)/2))/(25/2)",
+      "expected": 0.24,
+      "correctChoice": "6/25",
+      "solution": "The hypotenuse is 25, area 84, and semiperimeter 28, so r=3. Its circumradius is 25/2. Thus r/R=3/(25/2)=6/25. Using 25 as the radius instead of the diameter gives 3/25.",
+      "answerIndex": 3,
+      "sourceSha256": "1f8b861d303e9dae52b42d6be32120faa34db13b26518973bcf7e7b8b4a544ef",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-centroid-medians-practice-1",
+      "calculation": "27*2/3",
+      "expected": 18,
+      "correctChoice": "18",
+      "solution": "The centroid is two thirds of the median from its vertex. Thus 27·2/3=18. The 9 choice is the remaining centroid-to-midpoint segment; 13.5 would simply bisect the median.",
+      "answerIndex": 0,
+      "sourceSha256": "3a36ecbba6a331b0850f7347fbe771db50d0eb25390d876350aaf79c08ae3c79",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-centroid-medians-practice-2",
+      "calculation": "[(-3+6+0)/3,(0+0+9)/3]",
+      "expected": [
+        1,
+        3
+      ],
+      "correctChoice": "(1, 3)",
+      "solution": "Average all three x-coordinates and all three y-coordinates: (−3+6+0)/3=1 and(0+0+9)/3=3. A midpoint of only two vertices is not the centroid.",
+      "answerIndex": 2,
+      "sourceSha256": "3b225e0829e5b1e95278aa0828e8f7924cceae8b1232cc32e5c55cb22deefa88",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-pythagorean-lengths-practice-1",
+      "calculation": "Math.sqrt(29**2-20**2)",
+      "expected": 21,
+      "correctChoice": "21",
+      "solution": "Since 29 is the hypotenuse, the other leg is√(29²−20²)=√441=21. Subtracting the lengths gives 9 but does not satisfy Pythagoras; adding their squares treats the hypotenuse as a leg.",
+      "answerIndex": 0,
+      "sourceSha256": "c6cc5f80953420187792d313065485f025435d8db03c70789ffaee938eaf5326",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-pythagorean-lengths-practice-2",
+      "calculation": "Math.hypot(9,40)",
+      "expected": 41,
+      "correctChoice": "41",
+      "solution": "The diagonal is the hypotenuse formed by perpendicular sides 9 and 40. Its length is√(81+1600)=41. A sum or difference of side lengths measures a different path, not the diagonal.",
+      "answerIndex": 0,
+      "sourceSha256": "80b51bf42e2454e28ba6ade18028970a0c1e7dcf190fb9e68e253606aa3e5dd8",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-coordinate-reflections-practice-1",
+      "calculation": "[2*3-7,-4]",
+      "expected": [
+        -1,
+        -4
+      ],
+      "correctChoice": "(−1, −4)",
+      "solution": "The reflected x-coordinate is 2·3−7=−1 and y stays−4. The two x-coordinates average to 3, the mirror line. The−7 choice reflects across the y-axis instead.",
+      "answerIndex": 1,
+      "sourceSha256": "b5dd7f8e98971e760cc2c474a926d522450f94b8c4874795d5a7958d12ded208",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-coordinate-reflections-practice-2",
+      "calculation": "[6,-2]",
+      "expected": [
+        6,
+        -2
+      ],
+      "correctChoice": "(6, −2)",
+      "solution": "Reflection across y=x swaps the two coordinates without negating them. Therefore(−2, 6)becomes(6, −2). The other operations are rotations, axis reflections, or no change.",
+      "answerIndex": 1,
+      "sourceSha256": "2c197dfc711442cb7769b85520bf7d12b2b8e4886ef3037be68f06093a868f24",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-coordinate-dilations-practice-1",
+      "calculation": "[3*2,3*(-1)]",
+      "expected": [
+        6,
+        -3
+      ],
+      "correctChoice": "(6, −3)",
+      "solution": "About the origin, the displacement is the original coordinate vector. Multiplying both components by 3 gives(6, −3). Adding 3 to each coordinate is a translation, not a dilation.",
+      "answerIndex": 0,
+      "sourceSha256": "8709af8e05771e64c3debc7bdd0f70f9d0f3319c4e47bba050a04006f1d7629c",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-coordinate-dilations-practice-2",
+      "calculation": "[1+0.5*(-2-1),2+0.5*(5-2)]",
+      "expected": [
+        -0.5,
+        3.5
+      ],
+      "correctChoice": "(−0.5, 3.5)",
+      "solution": "Relative to the center, the displacement is(−3, 3). Halve it to(−1.5, 1.5), then add(1, 2), giving(−0.5, 3.5). The−1, 2.5 choice incorrectly scales around the origin.",
+      "answerIndex": 2,
+      "sourceSha256": "6229a22bef964185d0e562c155325aa54bc16ca684fb3df15ce162b4c378d1b1",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-angle-chains-practice-1",
+      "calculation": "(180-10-18)/4",
+      "expected": 38,
+      "correctChoice": "38",
+      "solution": "Same-side interior angles are supplementary, so 3 x+10+x+18=180. Thus 4 x=152 and x=38. The 4 choice incorrectly sets the two angles equal, which would use the wrong relationship.",
+      "answerIndex": 2,
+      "sourceSha256": "f06ee2bc2c557baabeaafb94eb8fbf3daa1e6c3053fde01693d869fa9dc3ab42",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-angle-chains-practice-2",
+      "calculation": "(180-10-2*5)/5+10",
+      "expected": 42,
+      "correctChoice": "42°",
+      "solution": "The angle sum gives(x+10)+2(2 x+5)=180, so 5 x+20=180 and x=32. The requested vertex angle is 42°, not x itself or a base angle 69°.",
+      "answerIndex": 1,
+      "sourceSha256": "5068037bab68ead08e498a0f5eed5daf447a049a75c9530d9d151b7cae3d6ee1",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-triangle-congruence-practice-1",
+      "calculation": "true",
+      "expected": true,
+      "correctChoice": "SAS",
+      "solution": "The given angle lies between the two specified sides, so the side-angle-side criterion applies. SSS would require a third given side, AAA does not fix size, and SSA uses a nonincluded angle.",
+      "answerIndex": 3,
+      "sourceSha256": "b6f9aea3cb9d76c2943c3c934a4f6a5892d79abc267949e02a8afdc3cf2afac7",
+      "proofType": "conceptual"
+    },
+    {
+      "questionId": "math-geometry-triangle-congruence-practice-2",
+      "calculation": "true",
+      "expected": true,
+      "correctChoice": "Their hypotenuses and one corresponding leg",
+      "solution": "Right triangles with the same hypotenuse and one corresponding leg satisfy the hypotenuse-leg criterion. An acute angle alone fixes only shape, and area or perimeter alone does not determine all sides.",
+      "answerIndex": 2,
+      "sourceSha256": "45fa4978a32c620153943f5a4ca54a2943e5cb9cf5bac8e50e9ead7f366b4b0b",
+      "proofType": "conceptual"
+    },
+    {
+      "questionId": "math-geometry-ellipse-features-practice-1",
+      "calculation": "2*Math.sqrt(49)",
+      "expected": 14,
+      "correctChoice": "14",
+      "solution": "The larger denominator 49 gives a semimajor axis 7 along the x-direction. Doubling gives full major-axis length 14. The 8 choice is the minor-axis length, and 49 is a squared semiaxis.",
+      "answerIndex": 0,
+      "sourceSha256": "5efc42c9971cfcaec21766e718bf7844376182d04a8c90622fdc165aea182fd7",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-ellipse-features-practice-2",
+      "calculation": "Math.sqrt(100-64)",
+      "expected": 6,
+      "correctChoice": "(−6, 0), (6, 0)",
+      "solution": "The major axis is horizontal, with a=10 and b=8. Focal distance c=√(100−64)=6, so the foci are(±6, 0). The 10 and 8 distances are semiaxes, not focal distance.",
+      "answerIndex": 3,
+      "sourceSha256": "6cd268cd2232e80872ea11f02c92aeb621b19aae6ed74a1166ee2e67c384f19d",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-hyperbola-features-practice-1",
+      "calculation": "[2-Math.sqrt(25),2+Math.sqrt(25)]",
+      "expected": [
+        -3,
+        7
+      ],
+      "correctChoice": "(−3, −1), (7, −1)",
+      "solution": "The center is(2, −1). The positive x term makes it horizontal, and a=√25=5. Move 5 units left and right of the center to obtain(−3, −1)and(7, −1).",
+      "answerIndex": 1,
+      "sourceSha256": "06fdca84d9eaee8c891c85f0723f93967a6d5636f344408e6bdcfa756990ff0b",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-hyperbola-features-practice-2",
+      "calculation": "Math.sqrt(16)/Math.sqrt(9)",
+      "expected": 1.3333333333333333,
+      "correctChoice": "y=±(4/3)x",
+      "solution": "This is a horizontal hyperbola with a=3 and b=4. The asymptote slopes are±b/a=±4/3. The 16/9 choice uses squared denominators instead of their roots.",
+      "answerIndex": 0,
+      "sourceSha256": "4d727cbc8534bf70177f71555b7b753fe92533a1b24f20769038b1ee7f504d1a",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-parabola-focus-practice-1",
+      "calculation": "[1,-2+(-12/4)]",
+      "expected": [
+        1,
+        -5
+      ],
+      "correctChoice": "(1, −5)",
+      "solution": "The vertex is(1, −2)and 4 p=−12 gives p=−3. The focus is(h, k+p)=(1, −5), below the vertex. Using−12 directly as the focal distance gives the wrong point.",
+      "answerIndex": 0,
+      "sourceSha256": "c6f6848dccc046470055125f24421211f1707349fd323223e9691aad05a0126f",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-parabola-focus-practice-2",
+      "calculation": "-1-20/4",
+      "expected": -6,
+      "correctChoice": "x=−6",
+      "solution": "The vertex is(−1, 3), and p=20/4=5. A horizontal parabola has directrix x=h−p=−1−5=−6. The x=4 choice goes through the focus rather than the directrix.",
+      "answerIndex": 3,
+      "sourceSha256": "074881a134dd769846a0a64d37d07652a292947c7c6bb5f4800dac09f252ac67",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-regular-polygon-area-practice-1",
+      "calculation": "40*5/2",
+      "expected": 100,
+      "correctChoice": "100",
+      "solution": "Use area=(perimeter×apothem)/2=40·5/2=100. The 200 choice omits the triangle half factor after summing all central triangles. These measurements are consistent with a square of side 10.",
+      "answerIndex": 1,
+      "sourceSha256": "9bafab7c19c761e384b927c7800dfd80a12369965e4f02d403dfe13a18abd744",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-geometry-regular-polygon-area-practice-2",
+      "calculation": "6*10*5/2",
+      "expected": 150,
+      "correctChoice": "150√3",
+      "solution": "The perimeter is 6·10=60. Thus area=60·5√3/2=150√3. The 300√3 choice omits the half factor; the side alone is not the perpendicular apothem.",
+      "answerIndex": 2,
+      "sourceSha256": "72348a68cd1dc9694aa082517df604ddabb3ae841489bbed832b84f86dfb6e3d",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-complex-division-practice-1",
+      "calculation": "[(3*2+2)/5,(2*2-3)/5]",
+      "expected": [
+        1.6,
+        0.2
+      ],
+      "correctChoice": "(8+i)/5",
+      "solution": "Multiply numerator and denominator by 2−i. The numerator is 6−3 i+4 i−2 i²=8+i, and the denominator is 5. Therefore the quotient is(8+i)/5.",
+      "answerIndex": 3,
+      "sourceSha256": "b4a0e25c728fc7e65ba536181094cd05970b1438476a7ac1c4225b1f80942d24",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-complex-magnitude-practice-1",
+      "calculation": "Math.hypot(9,40)",
+      "expected": 41,
+      "correctChoice": "41",
+      "solution": "Magnitude is√(9²+40²)=√1681=41. The 49 choice adds absolute components; 31 subtracts them; 1681 is the squared magnitude rather than the magnitude.",
+      "answerIndex": 1,
+      "sourceSha256": "3d7aa3a8d804271f414400d4f9640a39c60071ce5a4185e4b772bf7a79502dc8",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-matrix-powers-practice-1",
+      "calculation": "35/5",
+      "expected": 7,
+      "correctChoice": "7",
+      "solution": "Repeated multiplication adds 5 to the upper-right entry each time, so Aⁿhas that entry 5 n. Solving 5 n=35 gives n=7. Powering the individual entry 5 would be a different operation.",
+      "answerIndex": 2,
+      "sourceSha256": "2188ffeb05e0f470a84d8e20948dc0937d615620cc215594466948a6ebf5fefa",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-scientific-notation-practice-1",
+      "calculation": "2.4*5*10**(6-3)",
+      "expected": 12000,
+      "correctChoice": "1.2×10⁴",
+      "solution": "Multiply coefficients 2.4·5=12 and add exponents 6−3=3, obtaining 12×10³. Normalize the coefficient to 1.2 and increase the exponent to 4.",
+      "answerIndex": 1,
+      "sourceSha256": "aed2bada1f76543e24cb5d7aecdb4a7bcc6c6d8f7c99f02254c83e1214db3ccf",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-remainders-practice-1",
+      "calculation": "(3*5+2)%8",
+      "expected": 1,
+      "correctChoice": "1",
+      "solution": "Write N=8 q+5. Then 3 N+2=24 q+17=8(3 q+2)+1, so the remainder is 1. The 17 choice is the raw remainder expression before reducing it again.",
+      "answerIndex": 3,
+      "sourceSha256": "0dbcb7a0569cea12e22783902be9b99728974ed03f90d25556b942db75478ef7",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-signed-arithmetic-practice-1",
+      "calculation": "Math.abs(-9)-(-3)**2",
+      "expected": 0,
+      "correctChoice": "0",
+      "solution": "The absolute value is 9 and the squared negative base is positive 9. Thus 9−9=0. Treating the square as−9 gives 18; leaving the absolute value negative would give−18.",
+      "answerIndex": 3,
+      "sourceSha256": "40909956999f8926df1609c5b433405acbad7aed6dde79950667c8aa5bd767ff",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-degree-radian-conversion-practice-1",
+      "calculation": "135/180",
+      "expected": 0.75,
+      "correctChoice": "3π/4",
+      "solution": "Multiply 135 byπ/180 to get 3π/4. Theπ/4 choice is only its 45° reference angle, not the full 135° rotation.",
+      "answerIndex": 0,
+      "sourceSha256": "a5be862d23e72447621c2c7c697320fd4b4be32ef271f3ea5d1215c28532c0d0",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-origin-rotations-practice-1",
+      "calculation": "[-(-5),-(-2)]",
+      "expected": [
+        5,
+        2
+      ],
+      "correctChoice": "(5, 2)",
+      "solution": "A 180° turn changes both coordinate signs: (−5, −2)becomes(5, 2). The other choices describe quarter-turns or a reflection rather than the stated half-turn.",
+      "answerIndex": 3,
+      "sourceSha256": "99cf8f76fca54da2ab81cb0732c45d464bfe2076d8e1770260dd6cce5d98f806",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-perfect-square-parity-practice-1",
+      "calculation": "75*3",
+      "expected": 225,
+      "correctChoice": "3",
+      "solution": "Factor 75=3·5². Its only odd prime exponent is the exponent of 3, so the least correcting factor is 3. Then 75·3=225=15². The 5 choice would make the exponent of 5 odd.",
+      "answerIndex": 3,
+      "sourceSha256": "204d4029530514678c4fe81a4f7177bc11a57440cf02bfc94c137c9f8fb978b3",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-powers-of-i-practice-1",
+      "calculation": "2024%4",
+      "expected": 0,
+      "correctChoice": "1",
+      "solution": "The exponent 2024 is divisible by 4, so the cycle position is 0 and the result is 1. Evenness alone does not determine the sign; the remainder modulo 4 does.",
+      "answerIndex": 3,
+      "sourceSha256": "cc20a2374846b52e2c45a1cdbd54a7469a322f4b782c2376062c17422ba16f22",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-powers-of-i-practice-2",
+      "calculation": "[Number(2028%4===0),-Number(2027%4===3)]",
+      "expected": [
+        1,
+        -1
+      ],
+      "correctChoice": "1−i",
+      "solution": "The exponents have remainders 3 and0 modulo4, so the two terms are−i and 1. Their sum is 1−i. Reduce each power separately before adding the complex values.",
+      "answerIndex": 1,
+      "sourceSha256": "e0946fa7739aa276a6512f25e08f7ce7bcf18633025b73614ebda86ed98346fb",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-matrix-systems-practice-1",
+      "calculation": "(-5+2*10)/5",
+      "expected": 3,
+      "correctChoice": "3",
+      "solution": "The rows give 2 x+y=10 and x−2 y=−5. Substitute y=10−2 x into the second: x−20+4 x=−5, so 5 x=15 and x=3. Then y=4 checks both rows.",
+      "answerIndex": 3,
+      "sourceSha256": "ca63352a65d05b95b1865bd107a76aefafa011970b60ed05ffbadddad0070516",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-matrix-systems-practice-2",
+      "calculation": "(2*17-6)/7",
+      "expected": 4,
+      "correctChoice": "4",
+      "solution": "The equations are x+3 y=17 and 2 x−y=6. Doubling the first and subtracting the second gives 7 y=28, so y=4. The corresponding x=5 checks both original row equations.",
+      "answerIndex": 0,
+      "sourceSha256": "cd328a0c215978a1addc697689046ea7df2194927b1ae67cb6ea8f6ee43f59b0",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-matrix-addition-practice-1",
+      "calculation": "-3+2*2",
+      "expected": 1,
+      "correctChoice": "1",
+      "solution": "Combine the matching entries: −3+2·2=1. A scalar multiplies every entry of B before addition; row-by-column multiplication would not compute A+2 B.",
+      "answerIndex": 1,
+      "sourceSha256": "b7f99f32890a9f5847f5e020774fbcf0eec385185217355ad609a156925a9205",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-matrix-addition-practice-2",
+      "calculation": "true",
+      "expected": true,
+      "correctChoice": "No: their row and column counts differ",
+      "solution": "Matrix addition requires matching dimensions so every entry has a corresponding entry. These matrices have different shapes. The inner-dimension rule concerns multiplication, not addition.",
+      "answerIndex": 1,
+      "sourceSha256": "dadeae4d3206f6b0002c27e028a0c6218e6ce4940f6d6045b13d022614d7e0e5",
+      "proofType": "conceptual"
+    },
+    {
+      "questionId": "math-number-quantity-rational-irrational-practice-1",
+      "calculation": "Math.sqrt(18)/Math.sqrt(2)",
+      "expected": 3,
+      "correctChoice": "√18/√2",
+      "solution": "The quotient√18/√2=√9=3 is rational. The sum√18+√2=4√2 and the other listed numbers are irrational. Dividing square roots here is valid because the denominator is positive.",
+      "answerIndex": 3,
+      "sourceSha256": "e0db189e04c3a8c806a7bdd454de01c6e6783b4275a966972f16a27b145ce096",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-rational-irrational-practice-2",
+      "calculation": "true",
+      "expected": true,
+      "correctChoice": "r+u",
+      "solution": "A rational sum r+u would make u=(r+u)−r rational, a contradiction. The expression u² can be rational, for instance when u=√2; r/r=1 and u−u=0 are rational.",
+      "answerIndex": 3,
+      "sourceSha256": "f6e358ba8c61b6314feb6dfcb33745b25bda3ecacb78499f78c51e4d8c9cb4dc",
+      "proofType": "conceptual"
+    },
+    {
+      "questionId": "math-number-quantity-integer-parity-practice-1",
+      "calculation": "[1,3,5,7].every(n=>(n*n+1)%2===0)",
+      "expected": true,
+      "correctChoice": "n²+1",
+      "solution": "An odd square is odd, and adding 1 makes it even. Adding 2 to an odd integer stays odd; 3 times an odd integer is odd; an odd square plus 2 is also odd.",
+      "answerIndex": 0,
+      "sourceSha256": "f494c60989fa4b744304fc0f895903e6ae5eb4457f86eb69e306677165b46076",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-number-quantity-integer-parity-practice-2",
+      "calculation": "true",
+      "expected": true,
+      "correctChoice": "One is even and the other is odd",
+      "solution": "Two even integers sum to even, and two odd integers also sum to even. An odd sum therefore requires opposite parities. Their product then includes an even factor, so it is even rather than odd.",
+      "answerIndex": 0,
+      "sourceSha256": "b1bc6bd29a19da5f82f9853595e1abcb467d1fa2f60736b69cf598cafdeb4fc8",
+      "proofType": "conceptual"
+    },
+    {
+      "questionId": "math-statistics-probability-independence-practice-1",
+      "calculation": ".25*.8",
+      "expected": 0.2,
+      "correctChoice": "Independent and not disjoint",
+      "solution": "The product 0.25·0.8=0.2 matches the intersection, so the events are independent. Their positive intersection means they can occur together and are not disjoint. Independence and mutual exclusion are different conditions.",
+      "answerIndex": 2,
+      "sourceSha256": "50db433e5dbb111eb57b71aea7313e617e64990ab0b50d7531da0287edcba89e",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-statistics-probability-exact-binomial-count-practice-1",
+      "calculation": "(5*4/2)*.5**5",
+      "expected": 0.3125,
+      "correctChoice": "5/16",
+      "solution": "There are C(5, 2)=10 placements of the two heads, each with probability(1/2)⁵=1/32. Thus the total is 10/32=5/16. One sequence alone or only five placements undercounts the event.",
+      "answerIndex": 1,
+      "sourceSha256": "6c381a321612bcf8e92e40aef2df762dede89f1632d792af052e17e81ef05816",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-statistics-probability-first-success-practice-1",
+      "calculation": "(2/3)**3*(1/3)",
+      "expected": 0.09876543209876543,
+      "correctChoice": "8/81",
+      "solution": "The required order is failure, failure, failure, success, with probability(2/3)³(1/3)=8/81. The 32/81 choice counts one success in any of four positions, not first success specifically on the fourth trial.",
+      "answerIndex": 0,
+      "sourceSha256": "f7017ec86ff57787f30dc35b2ee10dc0a2145c1019805bd83d5262074d855068",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-statistics-probability-ordered-choices-practice-1",
+      "calculation": "8*7",
+      "expected": 56,
+      "correctChoice": "56",
+      "solution": "Choose the first letter in 8 ways and the second in 7 ways, because repetition is forbidden. Multiply to get 56. The 64 choice permits repeats, and 28 counts unordered pairs.",
+      "answerIndex": 2,
+      "sourceSha256": "5a4390ad1787405dc2b1c35c6e7c7bbcaec448d03aeb4d54430174d6cd21e370",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-statistics-probability-repeated-permutations-practice-1",
+      "calculation": "(7*6*5*4*3*2)/(2*2)",
+      "expected": 1260,
+      "correctChoice": "1260",
+      "solution": "There are 7 letters, with two Ls and two Os. Divide the labeled count 7!by 2!for each repeated pair: 5040/(2·2)=1260. Dividing by only one repeat group gives 2520.",
+      "answerIndex": 3,
+      "sourceSha256": "f9b8755584a7592a46ec4187e01d32793c80be1403b40c4ff1a866b3532b3db8",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-statistics-probability-sampling-and-design-practice-1",
+      "calculation": "true",
+      "expected": true,
+      "correctChoice": "The frame excludes households without a listed landline",
+      "solution": "The random selection operates only within the directory, which omits some households. Those omitted households may have different habits. Increasing the sample or randomly choosing within the incomplete frame does not fix this coverage bias.",
+      "answerIndex": 2,
+      "sourceSha256": "f3845bbe0f0a0e1d91303ff0bf6b422a7c16d71906b190a5952a66abd9ab9382",
+      "proofType": "conceptual"
+    },
+    {
+      "questionId": "math-statistics-probability-interquartile-range-practice-1",
+      "calculation": "41-17",
+      "expected": 24,
+      "correctChoice": "24",
+      "solution": "The IQR is the distance Q₃−Q₁=41−17=24. The 29 choice averages the quartiles, and 58 adds them; neither is the width of the middle half.",
+      "answerIndex": 0,
+      "sourceSha256": "f20424292ea0377d71a13561d3783835e9bcad789fa06cceb371c9d3592e1a57",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-statistics-probability-standardized-distance-practice-1",
+      "calculation": "(90-120)/15",
+      "expected": -2,
+      "correctChoice": "−2",
+      "solution": "Subtract the mean and divide by the standard deviation: (90−120)/15=−2. The sign records that the value is below the mean. The−30 choice is the unstandardized difference.",
+      "answerIndex": 1,
+      "sourceSha256": "a380fd11ee9026b3ace6906d9ee9c50b0047a4d3baedd2e0e89bf0fea551966a",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-trigonometry-included-angle-area-practice-1",
+      "calculation": "9*14*.5/2",
+      "expected": 31.5,
+      "correctChoice": "31.5",
+      "solution": "The included-angle area formula gives 9·14·sin 30°/2=126·(1/2)/2=31.5. The 63 and 126 choices omit one or both half factors; 31.5√3 uses the wrong special-angle sine.",
+      "answerIndex": 1,
+      "sourceSha256": "8392b0fccbc47a16d7b0aab631999bdafd20f5a0a5796d9156d26c49cd1062aa",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-essential-skills-inverse-proportions-practice-1",
+      "calculation": "2.5*60*18/600",
+      "expected": 4.5,
+      "correctChoice": "4.5",
+      "solution": "The volume is 2.5·60·18=2700 liters. At 600 liters per hour, time is 2700/600=4.5 hours. The 0.075 choice omits the minute conversion, and 270 is the answer in minutes rather than hours.",
+      "answerIndex": 3,
+      "sourceSha256": "56f9a8e17f2a2181486122e81982cb6d8e8705fbb55fba14079a3e0ebae43c20",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-essential-skills-fixed-and-repeated-payments-practice-1",
+      "calculation": "80+6*45",
+      "expected": 350,
+      "correctChoice": "350",
+      "solution": "The six later payments total 6·45=270. Add the single 80 down payment to obtain 350. The 270 choice omits the initial payment; 750 repeats it six times.",
+      "answerIndex": 0,
+      "sourceSha256": "7cb1dd9f6573de3e29e877d00f5a5180f4d40db682aa4ef44dd3c3038545020a",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-modeling-two-price-counts-practice-1",
+      "calculation": "(820-8*80)/(14-8)",
+      "expected": 30,
+      "correctChoice": "30",
+      "solution": "Let abe adults. Then 14 a+8(80−a)=820, giving 6 a=180 and a=30. The other 50 tickets are children. Checking 420+400=820 verifies the count and revenue constraints.",
+      "answerIndex": 2,
+      "sourceSha256": "dbcfbee93b98be5157bccbc73e0f4b71331ddb48b517ac9d40e90e471e596987",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-modeling-ground-contact-practice-1",
+      "calculation": "45/5",
+      "expected": 9,
+      "correctChoice": "9",
+      "solution": "Ground contact requires−5 t(t−9)=0. The zero 0 is launch, and 9 is the later return. The 4.5 choice is the peak time, not ground contact.",
+      "answerIndex": 1,
+      "sourceSha256": "e152cd2fd7e29f9b0358bbca98da45f767e1479c3ea9ee55862ba7055f5f8908",
+      "proofType": "calculation"
+    },
+    {
+      "questionId": "math-modeling-residual-fit-practice-1",
+      "calculation": "(7-(5+3))+(13-(5+6))+(16-(5+9))",
+      "expected": 3,
+      "correctChoice": "3",
+      "solution": "Predictions are 8, 11, 14. The residuals are 7−8=−1, 13−11=2, and 16−14=2. Their sum is 3. Reversing the subtraction gives−3.",
+      "answerIndex": 1,
+      "sourceSha256": "be64889b0e461c8af2012287a27ed5a2af28738de091a9fb07c0913db7555177",
+      "proofType": "calculation"
+    }
+  ]
+}

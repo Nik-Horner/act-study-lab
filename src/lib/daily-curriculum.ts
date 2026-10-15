@@ -6,6 +6,9 @@
 import mathMethods from "@/content/math-method-questions.json";
 
 export interface DailyScope {
+  difficulty?: "easy" | "medium" | "hard";
+  skillId?: string;
+  reportingCategory?: string;
   title?: string;
   sections: number[];
   practice: number[];

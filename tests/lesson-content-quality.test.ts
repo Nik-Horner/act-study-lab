@@ -62,7 +62,7 @@ test("Reading keeps complete examples while making each concept short and specif
       "saved concept positions stay stable",
     );
     assert.equal(lesson.check.length, 3);
-    assert.equal(lesson.sections.flatMap((s) => s.examples ?? []).length, 6);
+    assert.equal(lesson.sections.flatMap((s) => s.examples ?? []).length, 7);
     for (const section of lesson.sections) {
       assert(section.body.join(" ").split(/\s+/).length <= 100);
       for (const paragraph of section.body) {
@@ -74,8 +74,18 @@ test("Reading keeps complete examples while making each concept short and specif
       }
       for (const example of section.examples ?? []) {
         const [passage, task] = example.text.split("\n\nQuestion:");
-        assert(passage.split(/\s+/).length >= 100, "preserve the full passage");
-        assert(task.includes("Supported answer:") && task.includes("Reason:"));
+        assert(
+          passage.split(/\s+/).length >= 30,
+          `${lesson.slug}: worked excerpts must supply the full local evidence`,
+        );
+        assert(task, `${lesson.slug}: worked example needs a concrete question`);
+        const choices = [...task.matchAll(/^[ABC]\. (.+)$/gm)].map((match) => match[1]);
+        assert.equal(choices.length, 3, `${lesson.slug}: worked task choices`);
+        assert.equal(new Set(choices).size, 3, `${lesson.slug}: distinct worked alternatives`);
+        const answer = task.match(/Supported answer: ([^\n]+)/)?.[1];
+        assert(answer && choices.includes(answer), `${lesson.slug}: supported answer must resolve the task`);
+        const reasoning = task.split("Reason:")[1];
+        assert(reasoning?.trim().length >= 100, `${lesson.slug}: explain the inference and distractor error`);
       }
     }
   }

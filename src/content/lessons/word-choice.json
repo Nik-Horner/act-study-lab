@@ -7,7 +7,8 @@
       "heading": "Precision: say exactly what you mean",
       "body": [
         "Use the exact meaning needed: notable = worthy of attention; noticeable = easy to perceive; notorious = famous for something bad.",
-        "Historic means historically important; historical means related to history or the past. Find the contextual clue that distinguishes the choices."
+        "Historic means historically important; historical means related to history or the past. Find the contextual clue that distinguishes the choices.",
+        "Pride can name earned satisfaction; arrogance and vanity imply excessive self-regard."
       ],
       "examples": [
         {
@@ -19,9 +20,15 @@
           "text": "The bridge collapse was a noticeable failure of engineering.",
           "label": "'noticeable' only means easy to see; it misses the infamy",
           "good": false
+        },
+        {
+          "text": "The apprentice took pride in a precise repair without claiming to be better than the other craftspeople.",
+          "label": "Pride fits earned satisfaction; arrogance would add a claim of superiority the context rejects.",
+          "good": true
         }
       ],
-      "tip": "Define each choice in your own words first, then match the definitions against the sentence. Exactly one should fit the clue in the sentence."
+      "tip": "Define each choice in your own words first, then match the definitions against the sentence. Exactly one should fit the clue in the sentence.",
+      "teachingRevision": 3
     },
     {
       "heading": "Tone: match the register of the passage",
@@ -41,7 +48,8 @@
           "good": false
         }
       ],
-      "tip": "Read the sentences around the underline before judging the choices. Pick the word that sounds like it belongs with them."
+      "tip": "Compare the choice’s level of formality and attitude with the surrounding passage. Preserve the writer’s measured, humorous, critical, or reflective voice.",
+      "teachingRevision": 3
     },
     {
       "heading": "Idiomatic phrasing",
@@ -91,7 +99,8 @@
           "good": false
         }
       ],
-      "tip": "Never pick a word because it sounds advanced. If you cannot define it and confirm the fit, it is probably the trap."
+      "tip": "Use the context to identify the needed meaning, then compare each word’s definition and grammatical role. An unfamiliar word can be correct; unfamiliarity alone is not evidence against it.",
+      "teachingRevision": 3
     },
     {
       "heading": "How to spot these questions",
@@ -105,7 +114,8 @@
       "heading": "Advanced transfer: degree, certainty, and connotation",
       "body": [
         "Sophisticated choices often differ in how much they claim. Tentative means provisional, inconclusive means not settling the question, and false means incorrect. Uncertainty does not establish falsity.",
-        "Match the exact claim and attitude supported by context. Favor language that preserves limitations, distinguishes association from causation, and avoids adding approval or blame that the passage has not established."
+        "Match the exact claim and attitude supported by context. Favor language that preserves limitations, distinguishes association from causation, and avoids adding approval or blame that the passage has not established.",
+        "Contingent on means dependent on a stated condition; it does not mean unrelated to that condition."
       ],
       "examples": [
         {
@@ -117,10 +127,95 @@
           "text": "The early results were definitive; the trial had not yet been replicated.",
           "label": "Definitive overstates certainty despite the stated limitation.",
           "good": false
+        },
+        {
+          "text": "Approval was contingent on an independent review, so a failed review could prevent the project from proceeding.",
+          "label": "Contingent on preserves a condition rather than implying approval was already guaranteed.",
+          "good": true
         }
       ],
       "tip": "Check whether a choice changes the strength, scope, or attitude of the claim.",
-      "teachingRevision": 2
+      "teachingRevision": 3
+    },
+    {
+      "heading": "Word meanings: actions, changes, and groups",
+      "body": [
+        "Anticipate means consider beforehand; ignore, neglect, and overlook mean fail to address. Persuasive means convincing; persistent means continuing; pervasive means widespread; permissive means lenient.",
+        "Adapt means modify to fit; adopt means take as one’s own. A whole comprises its parts; the parts compose the whole. A consensus is general agreement; a compromise involves concessions. Succinct means brief and clear; verbose and rambling suggest excess words."
+      ],
+      "examples": [
+        {
+          "text": "Before submitting her plan, Chen anticipated the objections and explained how the design addressed each one.",
+          "label": "Anticipated fits concerns addressed in advance; ignored would contradict the response.",
+          "good": true
+        },
+        {
+          "text": "The two laboratories compromised by each giving up part of its preferred schedule.",
+          "label": "Concessions make this a compromise; agreement alone would not imply concessions.",
+          "good": true
+        }
+      ],
+      "teachingRevision": 3
+    },
+    {
+      "heading": "Word meanings: sound-alike forms and idioms",
+      "body": [
+        "Raise takes an object: raise a question. Rise and arise do not take that object. Affect means influence; effect as a verb means bring about. Stationary means unmoving; stationery means writing supplies.",
+        "Advice is a noun; advise is a verb. Accept means receive or regard as true; except means exclude. Improve means become better; improvise means create without preparation. In standard phrasing, lower a voice, pay attention, make a promise, take part, and reach a conclusion."
+      ],
+      "examples": [
+        {
+          "text": "Please advise the interns before they raise questions about the revised schedule.",
+          "label": "Advise is the action of giving guidance; raise takes questions as its object.",
+          "good": true
+        },
+        {
+          "text": "The table remained stationary while the assistant gathered stationery from the cabinet.",
+          "label": "The adjective describes the unmoving table; the noun names the supplies.",
+          "good": true
+        }
+      ],
+      "teachingRevision": 3
+    },
+    {
+      "heading": "Word meanings: references, rules, and boundaries",
+      "body": [
+        "An allusion is an indirect reference; an illusion is a false impression. A speaker implies something; a listener infers it from evidence. Flaunt means display ostentatiously; flout means disregard a rule.",
+        "Principal can mean main or a school leader; principle means a rule or belief. Proceed means continue; precede means come before. Imminent means about to happen; eminent means distinguished; immanent means inherent. Illicit means unlawful; elicit means draw out a response; explicit means directly stated; implicit means suggested."
+      ],
+      "examples": [
+        {
+          "text": "The essay alludes to an older poem without naming it; its title provides enough evidence for readers to infer the connection.",
+          "label": "The writer makes an indirect reference, and readers draw the conclusion.",
+          "good": true
+        },
+        {
+          "text": "The memo explicitly states the rule, so ignoring it would flout the policy.",
+          "label": "Explicit signals a direct statement; flout means defy rather than display.",
+          "good": true
+        }
+      ],
+      "teachingRevision": 3
+    },
+    {
+      "heading": "Word meanings: judgment, invention, and belief",
+      "body": [
+        "Ingenious means inventive; ingenuous means innocently candid. Disinterested means impartial in a judgment; uninterested means lacking interest. Loath means reluctant; loathe means detest; loathsome means disgusting.",
+        "Barren soil does not support growth; bare soil is uncovered; bereft means deprived, usually followed by of. Credible means believable; credulous describes someone too ready to believe; incredulous means skeptical. Do not transfer a word about a person’s attitude to an account that must be believable."
+      ],
+      "examples": [
+        {
+          "text": "The review was credible because the disinterested evaluator checked the evidence without favoring either team.",
+          "label": "Credible describes the believable review; disinterested describes impartial judgment.",
+          "good": true
+        },
+        {
+          "text": "The engineer was loath to discard an ingenious design that still needed one repair.",
+          "label": "Loath means reluctant; ingenious evaluates the design’s inventiveness.",
+          "good": true
+        }
+      ],
+      "teachingRevision": 3
     }
   ],
   "check": [
