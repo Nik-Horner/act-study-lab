@@ -23,6 +23,7 @@ import {
   blockUnits,
   dailyReviewKey,
   dailyFocus,
+  dailyConcepts,
 } from "@/lib/daily-flow";
 import { ScoreChecks } from "./ScoreChecks";
 import { dailyDate } from "@/lib/daily-date";
@@ -450,8 +451,10 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                   <p className="font-semibold">{label(b.subject)}</p>
                   <p className="mt-1 text-sm text-ink-soft">
                     {blockUnits(b).length}{" "}
-                    {b.reviewOnly ? "review lessons" : "new lessons"} ·{" "}
-                    {blockUnits(b).length} drills · review
+                    {b.reviewOnly
+                      ? "skills to review"
+                      : `focused lesson${blockUnits(b).length === 1 ? "" : "s"}`}{" "}
+                    · {b.questions.length} questions · recap
                   </p>
                 </div>
                 <span className="text-sm text-ink-soft">~{b.minutes} min</span>
@@ -512,13 +515,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
   const LessonComponent =
     currentBlock?.subject === "english" ? DailyEnglishLesson : DailyLesson;
   const showLesson =
-    currentUnit &&
-    (revisitLesson ||
-      (current?.phase !== "review" &&
-        (!lessons.includes(currentUnit.id) ||
-          currentUnit.requiredConceptIndices?.some(
-            (i) => !lessons.includes(`${currentUnit.id}:concept:${i}`),
-          ))));
+    currentUnit && (revisitLesson || (!review && step?.kind === "lesson"));
   return (
     <div className="daily-workbench mx-auto max-w-6xl space-y-6">
       <ol
@@ -617,10 +614,16 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
                   </summary>
                   <div className="mt-5">
                     {step.block.subject === "english" ? (
-                      <EnglishLessonSections sections={unit.lesson.sections} />
+                      <EnglishLessonSections
+                        sections={dailyConcepts(unit).map(
+                          (i) => unit.lesson.sections[i],
+                        )}
+                      />
                     ) : (
                       <LessonSections
-                        sections={unit.lesson.sections}
+                        sections={dailyConcepts(unit).map(
+                          (i) => unit.lesson.sections[i],
+                        )}
                         idPrefix={`review-${unit.id}`}
                       />
                     )}

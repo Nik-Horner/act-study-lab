@@ -2,7 +2,8 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { dailyFocus, blockUnits } from "../src/lib/daily-flow";
 import { dailyScopes, makeDailyPlan } from "../src/lib/daily-plan";
-import { getQuestions } from "../src/lib/act/content";
+import { getLesson, getQuestions } from "../src/lib/act/content";
+import { focusLesson, getLearningSkills } from "../src/lib/learning-skills";
 import { QUESTION_TARGET_SECONDS } from "../src/lib/question-pacing";
 const settings = {
   scores: { english: 34, reading: 33, math: 34, science: null },
@@ -13,7 +14,7 @@ function fixture() {
   const block = plan.blocks.find((b) => b.subject === "math")!;
   const unit = blockUnits(block)[0];
   unit.questions = getQuestions(unit.topic)
-    .slice(0, 12)
+    .filter((q) => q.skillId === unit.skillId)
     .map((q) => ({ ...q, subject: "math" as const }));
   block.units = [unit];
   block.reviewQuestions = [];
@@ -30,9 +31,9 @@ function fixture() {
   );
   return { plan, block, unit, answers, answerTimes };
 }
-test("a single miss in twelve questions stays in review for a 36 goal", () => {
+test("a single miss stays in review despite other correct answers for a 36 goal", () => {
   const { plan, unit, answers } = fixture();
-  assert.equal(unit.questions.length, 12);
+  assert(unit.questions.length >= 2);
   const q = unit.questions[0];
   answers[q.id] = (q.answer + 1) % 4;
   assert(dailyFocus(plan, answers)!.math!.includes(unit.courseId ?? unit.id));
@@ -96,31 +97,39 @@ test("missing or invalid timing cannot clear a previously weak scope", () => {
     assert(dailyFocus(plan, answers, answerTimes)!.math!.includes(key));
   }
 });
-test("review answers only clear the scope they assess", () => {
+test("review answers only clear the primary skill they assess", () => {
   const { plan, block, unit, answerTimes } = fixture();
   const key = unit.courseId ?? unit.id;
+  const other = getLearningSkills(unit.topic).find(
+    (s) => s.id !== unit.skillId && s.questionIds.length >= 2,
+  )!;
+  const reviewKey = `math:${other.topic}:skill:${other.id}`;
   const reviewUnit = {
     ...unit,
-    id: `${unit.id}:review`,
-    courseId: `${key}:review`,
+    id: reviewKey,
+    courseId: reviewKey,
+    skillId: other.id,
+    lesson: focusLesson(getLesson(other.topic), other),
+    practiceIds: other.questionIds,
     questions: [],
   };
-  const [first, second] = unit.questions;
+  const [first, second] = getQuestions(other.topic).filter(
+    (q) => q.skillId === other.id,
+  );
   unit.questions = [];
   block.reviewUnits = [reviewUnit];
-  block.reviewQuestions = [first, second].map((question) => ({
-    ...question,
+  block.reviewQuestions = [first, second].map((q) => ({
+    ...q,
     reviewUnitId: reviewUnit.id,
   }));
-  plan.nextFocus = { math: [key, reviewUnit.courseId] };
+  plan.nextFocus = { math: [key, reviewKey] };
   const answers = { [first.id]: first.answer };
-  assert.deepEqual(dailyFocus(plan, answers, answerTimes)!.math, [
-    key,
-    reviewUnit.courseId,
-  ]);
+  const times = { ...answerTimes, [first.id]: 1000, [second.id]: 1000 };
+  assert.deepEqual(dailyFocus(plan, answers, times)!.math, [key, reviewKey]);
   answers[second.id] = second.answer;
-  assert.deepEqual(dailyFocus(plan, answers, answerTimes)!.math, [key]);
+  assert.deepEqual(dailyFocus(plan, answers, times)!.math, [key]);
 });
+
 test("new course plans prefer unseen matched questions across historical sessions", () => {
   const scopes = dailyScopes("math", settings);
   const geometry = scopes.find((s) => s.topic.slug === "math-geometry")!;
@@ -132,7 +141,7 @@ test("new course plans prefer unseen matched questions across historical session
     "2026-10-09",
     settings,
     0,
-    undefined,
+    { math: [geometry.id] },
     [],
     {},
     {
@@ -186,4 +195,59 @@ test("a worked-example answer is practice, not fresh evidence of repair", () => 
   plan.nextFocus = { math: [key] };
   const answers = { [first.id]: first.answer, [second.id]: second.answer };
   assert(dailyFocus(plan, answers, answerTimes)!.math!.includes(key));
+});
+
+test("legacy feedback returns to its authored wave method rather than an unrelated trig skill", () => {
+  const plan = makeDailyPlan(
+    "legacy-wave",
+    "2026-10-09",
+    settings,
+    0,
+    { math: ["math:math-trigonometry:scope:2"] },
+    [],
+    {},
+    { testDate: "2027-06-12", coveredUnits: [] },
+  );
+  const math = plan.blocks.find((b) => b.subject === "math")!;
+  const unit = blockUnits(math)[0];
+  assert.equal(unit.skillId, "math-trigonometry-wave-features");
+  math.units = [unit];
+  math.reviewQuestions = [];
+  unit.questions = getQuestions(unit.topic).filter(
+    (q) => q.skillId === unit.skillId,
+  );
+  const [first, second] = unit.questions;
+  const answers = { [first.id]: first.answer };
+  const times = { [first.id]: 1000, [second.id]: 1000 };
+  assert.deepEqual(dailyFocus(plan, answers, times)!.math, [unit.courseId!]);
+  answers[second.id] = second.answer;
+  assert.deepEqual(dailyFocus(plan, answers, times)!.math, []);
+});
+
+test("repairing one primary skill cannot clear another method inside the same legacy scope", () => {
+  const { plan, unit, answers, answerTimes } = fixture();
+  assert.equal(unit.skillId, "math-algebra-linear-equations");
+  plan.nextFocus = { math: ["math:math-algebra:scope:0"] };
+  assert.deepEqual(dailyFocus(plan, answers, answerTimes)!.math, [
+    "math:math-algebra:skill:math-algebra-linear-systems",
+  ]);
+});
+
+test("a legacy whole-topic weakness becomes explicit skill reviews rather than clearing from one narrow success", () => {
+  const { plan, unit, answers, answerTimes } = fixture();
+  plan.nextFocus = { math: [unit.topic] };
+  const remaining = dailyFocus(plan, answers, answerTimes)!.math!;
+  assert(!remaining.includes(unit.courseId!));
+  for (const skill of getLearningSkills(unit.topic).filter(
+    (s) => s.id !== unit.skillId,
+  ))
+    assert(
+      remaining.includes(`math:${unit.topic}:skill:${skill.id}`),
+      skill.id,
+    );
+  assert.deepEqual(
+    plan.nextFocus.math,
+    [unit.topic],
+    "Historical evidence is never mutated",
+  );
 });

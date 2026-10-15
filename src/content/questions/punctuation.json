@@ -186,15 +186,15 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "The trail was steep[[,]] the view at the top was worth the climb.",
+      "stem": "The restoration uncovered an earlier inscription[[,]] the team revised the museum label to reflect the new date.",
       "choices": [
         "NO CHANGE",
-        ", but",
-        " but,",
+        ", so",
+        " so,",
         ", therefore"
       ],
       "answer": 1,
-      "explanation": "A comma plus the conjunction 'but' correctly joins two contrasting independent clauses. NO CHANGE is a comma splice, ' but,' places the comma after the conjunction instead of before it, and ', therefore' both splices the clauses and reverses the contrast the sentence needs."
+      "explanation": "The revised label is a consequence of the discovery, so comma plus so both coordinates the independent clauses and states the result. The original and ', therefore' create comma splices; 'so,' puts the comma on the wrong side of the conjunction. This item concerns the logical consequence of new evidence, not the contrast used in the lesson check."
     },
     {
       "id": "punctuation-014",

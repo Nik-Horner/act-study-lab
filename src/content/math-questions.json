@@ -2725,16 +2725,16 @@
     "subject": "math",
     "category": "Essential skills",
     "difficulty": "medium",
-    "stem": "y varies inversely with positive x. When \\(x = 5, y = 12\\).",
-    "questionText": "What is y when \\(x = 8\\)?",
+    "stem": "A reservoir takes 5 hours to fill when a pump supplies 12 liters per minute. A replacement pump supplies 480 liters per hour. The reservoir volume is unchanged.",
+    "questionText": "How many hours does the replacement pump need to fill the reservoir?",
     "choices": [
-      "19.2",
-      "9",
-      "15",
+      "0.125",
+      "10/3",
+      "450",
       "7.5"
     ],
     "answer": 3,
-    "explanation": "Inverse variation means \\(xy = k\\). The given pair sets \\(k = 5(12) = 60\\), so at \\(x = 8, y = \\frac{60}{8} = 7.5\\). Increasing x should decrease y. The 19.2 answer uses direct variation and increases both quantities together."
+    "explanation": "First recover the volume using consistent time units:5 hours×60 minutes/hour×12 liters/minute=3600 liters. At 480 liters/hour, the replacement pump needs 3600/480=7.5 hours. The slower pump must take longer. The 450 choice is minutes rather than hours;0.125 omits the conversion from hours to minutes."
   },
   {
     "id": "math-essential-skills-d23",

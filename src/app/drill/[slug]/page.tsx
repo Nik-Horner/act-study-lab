@@ -12,16 +12,21 @@ import { createClient } from "@/lib/supabase/server";
 import { DrillClient, type PoolItem } from "./DrillClient";
 import { loadEnglishProgress } from "@/lib/english-progress-server";
 import { EnglishProgressError } from "@/components/EnglishProgressError";
+import { getLearningSkill, getLearningSkills } from "@/lib/learning-skills";
+import { SkillCatalog } from "@/components/SkillCatalog";
+import { englishDailyQuestions } from "@/lib/english-daily-content";
 
 export default async function DrillPage({
   params,
   searchParams,
 }: {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ subject?: string }>;
+  searchParams: Promise<{ subject?: string; skill?: string }>;
 }) {
   const { slug } = await params;
-  const { subject } = await searchParams;
+  const { subject, skill: skillId } = await searchParams;
+  const skill = skillId && getLearningSkill(slug, skillId);
+  if (skillId && !skill) notFound();
   if (
     getActTopic(slug) ||
     (["math", "science", "reading"].includes(subject ?? "") &&
@@ -41,6 +46,13 @@ export default async function DrillPage({
   const topic = getTopic(slug);
   if (!topic && slug !== "weak" && slug !== "misses") notFound();
   if (!user) return null;
+  if (topic && !skill && getLearningSkills(slug).length)
+    return (
+      <div className="mx-auto max-w-5xl space-y-7">
+        <h1 className="text-3xl font-semibold">Choose a {topic.title} skill</h1>
+        <SkillCatalog skills={getLearningSkills(slug)} drill />
+      </div>
+    );
   let history;
   let profile;
   try {
@@ -56,24 +68,33 @@ export default async function DrillPage({
     history = progress;
     profile = settings.data;
   } catch {
-    return <EnglishProgressError href={`/drill/${slug}`} />;
+    return (
+      <EnglishProgressError
+        href={`/drill/${slug}${skillId ? `?skill=${encodeURIComponent(skillId)}` : ""}`}
+      />
+    );
   }
 
   if (topic) {
-    const questions = getQuestions(slug);
+    const questions = skill
+      ? englishDailyQuestions(slug).filter((q) =>
+          skill.questionIds.includes(q.id),
+        )
+      : getQuestions(slug);
     const initialProgress = history.progress.find(
       (row) => row.topic_slug === slug,
     );
     return (
       <DrillClient
-        key={`${user.id}:${slug}`}
+        key={`${user.id}:${slug}:${skillId ?? ""}`}
         ownerId={user.id}
         answeredQuestionIds={history.answeredQuestionIds}
         currentScore={profile?.current_score ?? null}
         targetScore={profile?.target_score ?? null}
         mode="topic"
         slug={slug}
-        title={topic.title}
+        title={skill ? skill.title : topic.title}
+        skillId={skillId}
         questions={questions}
         initialProgress={initialProgress}
       />
@@ -128,7 +149,7 @@ export default async function DrillPage({
         if (!titleBySlug.has(miss.topic_slug)) continue;
         let bank = questionCache.get(miss.topic_slug);
         if (!bank) {
-          bank = getQuestions(miss.topic_slug);
+          bank = englishDailyQuestions(miss.topic_slug);
           questionCache.set(miss.topic_slug, bank);
         }
         const question = bank.find((q) => q.id === miss.question_id);

@@ -6,15 +6,15 @@
       "category": "CSE",
       "difficulty": "easy",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "On weekends Maria enjoys hiking, swimming, and [[to ride]] her bike.",
+      "stem": "The overnight checklist calls for measuring the water level, recording the pressure, and [[to adjust]] the flow rate when necessary.",
       "choices": [
         "NO CHANGE",
-        "a ride on",
-        "she rides",
-        "riding"
+        "an adjustment of",
+        "the operator adjusts",
+        "adjusting"
       ],
       "answer": 3,
-      "explanation": "The series 'hiking, swimming, and ___' is built from gerunds, so 'riding' matches. The infinitive 'to ride,' the clause 'she rides,' and the noun phrase 'a ride on' all break the parallel form."
+      "explanation": "The preposition for governs a series of actions named by gerunds: measuring, recording, and adjusting. To adjust switches to an infinitive; an adjustment of changes to a differently formed noun phrase; the operator adjusts introduces a finite clause. The keyed form preserves both the grammatical pattern and the conditional action."
     },
     {
       "id": "parallel-structure-002",

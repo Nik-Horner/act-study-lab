@@ -1,0 +1,1490 @@
+[
+  {
+    "id": "english-skill-sentence-structure-conjunctive-adverb-01",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The first trial used untreated cloth[[, nevertheless,]] the second used a water-resistant coating.",
+    "questionText": "Which choice correctly punctuates the contrast between independent clauses?",
+    "choices": [
+      "NO CHANGE",
+      "; nevertheless,",
+      " nevertheless,",
+      ", nevertheless;"
+    ],
+    "answer": 1,
+    "explanation": "Each trial has its own subject and finite verb. Nevertheless cannot coordinate those clauses with commas alone; a semicolon before it and a comma after it form the correct boundary. The other choices leave a splice or fuse the clauses."
+  },
+  {
+    "id": "english-skill-sentence-structure-conjunctive-adverb-02",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The archive had photographed every page; the handwritten notes, [[however,]] remained difficult to read because the ink had faded.",
+    "questionText": "Which choice correctly punctuates however in its actual position?",
+    "choices": [
+      "however",
+      "however;",
+      "however:",
+      "NO CHANGE"
+    ],
+    "answer": 3,
+    "explanation": "Here however interrupts one clause between its subject, the handwritten notes, and its predicate, remained difficult. The comma before the underline is already supplied, so however needs a closing comma. A semicolon or colon would split that subject from its verb."
+  },
+  {
+    "id": "english-skill-sentence-structure-nested-main-clause-01",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The series of reports that the laboratory issued after its two instruments, both of which had passed inspection, began disagreeing [[describing]] a fault in the comparison procedure.",
+    "questionText": "Which choice supplies the main predicate for series?",
+    "choices": [
+      "NO CHANGE",
+      "that describe",
+      "describes",
+      "having described"
+    ],
+    "answer": 2,
+    "explanation": "Series is the singular main subject, and describes supplies its finite main verb. Issued, had passed, and began belong to embedded clauses. The other choices supply nonfinite or dependent material instead of the missing predicate."
+  },
+  {
+    "id": "english-skill-sentence-structure-nested-main-clause-02",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The recommendation, although several reviewers questioned how the evidence had been collected, [[was accepted]] after a second panel examined the original records.",
+    "questionText": "Which choice leaves the recommendation with a complete main predicate?",
+    "choices": [
+      "NO CHANGE",
+      "having been accepted",
+      "which was accepted",
+      "accepting"
+    ],
+    "answer": 0,
+    "explanation": "The recommendation was accepted is the main clause. Although introduces an interrupting dependent clause, and after introduces a later time clause; neither replaces the recommendation’s main verb. Each alternative removes that finite main predicate."
+  },
+  {
+    "id": "english-skill-sentence-structure-reason-versus-concession-01",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The conservators wanted future researchers to see the object’s earlier repairs. They therefore left several old nail holes visible [[although those holes recorded]] how the frame had been altered over time.",
+    "questionText": "Which choice most clearly preserves the stated reason for leaving the holes visible?",
+    "choices": [
+      "NO CHANGE",
+      "unless those holes recorded",
+      "before those holes recorded",
+      "because those holes recorded"
+    ],
+    "answer": 3,
+    "explanation": "Because makes the holes’ evidence the motive for preserving them, matching the first sentence. Although treats it as a concession, unless makes it an exception, and before substitutes a time relationship for the stated reason."
+  },
+  {
+    "id": "english-skill-sentence-structure-reason-versus-concession-02",
+    "topic": "sentence-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The ferry’s old engine was expensive to maintain. The town nevertheless kept it in service [[because it was the only engine that could move the boat through the shallow channel]].",
+    "questionText": "Which choice best preserves the reason that outweighs the maintenance expense?",
+    "choices": [
+      "although it was the only engine that could move the boat through the shallow channel",
+      "NO CHANGE",
+      "unless it was the only engine that could move the boat through the shallow channel",
+      "and it was the only engine that could move the boat through the shallow channel"
+    ],
+    "answer": 1,
+    "explanation": "The unique ability to navigate the channel explains why the town kept the engine despite its expense. Because states that motive. Although would make the useful ability another obstacle; unless reverses the condition, and and merely adds a fact without explicitly stating the reason."
+  },
+  {
+    "id": "english-skill-commas-city-state-01",
+    "topic": "commas",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The workshops in Duluth[[ Minnesota will]] begin a week before the exhibition opens.",
+    "questionText": "Which choice correctly encloses the state within this sentence?",
+    "choices": [
+      "NO CHANGE",
+      ", Minnesota will",
+      ", Minnesota, will",
+      " Minnesota, will"
+    ],
+    "answer": 2,
+    "explanation": "A state following a city is set off with commas on both sides when the sentence continues: Duluth, Minnesota, will. Each alternative omits one or both of those marks."
+  },
+  {
+    "id": "english-skill-commas-city-state-02",
+    "topic": "commas",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "After moving from Eugene, [[Oregon, to]] Tucson, Arizona, the artist began using a warmer palette.",
+    "questionText": "Which choice correctly punctuates the first city-state pair?",
+    "choices": [
+      "NO CHANGE",
+      "Oregon to",
+      "Oregon; to",
+      "Oregon: to"
+    ],
+    "answer": 0,
+    "explanation": "The comma after Eugene opens the state designation, and Oregon, supplies its closing comma before the sentence continues with to Tucson. The other choices leave the designation unclosed or introduce a semicolon or colon inside the continuing phrase."
+  },
+  {
+    "id": "english-skill-commas-restrictive-boundary-01",
+    "topic": "commas",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The laboratory tested two batches. Only the first had been stored near a heat source. The samples that came from that first batch[[, produced]] inconsistent readings, whereas the remaining samples agreed closely.",
+    "questionText": "Which choice preserves the subset identified by the that-clause?",
+    "choices": [
+      "NO CHANGE",
+      " produced,",
+      ", produced,",
+      " produced"
+    ],
+    "answer": 3,
+    "explanation": "The that-clause identifies which samples produced inconsistent readings, so it remains part of the subject. No comma separates that full subject from produced. The alternatives either break that boundary or separate produced from its object."
+  },
+  {
+    "id": "english-skill-commas-restrictive-boundary-02",
+    "topic": "commas",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "Several letters describe the voyage, but only some name the ship’s destination. The letters [[that name the destination]] will appear in the first display case.",
+    "questionText": "Which choice preserves the distinction between the selected letters and the others?",
+    "choices": [
+      ", that name the destination,",
+      "NO CHANGE",
+      "—that name the destination—",
+      ", which name the destination,"
+    ],
+    "answer": 1,
+    "explanation": "The clause selects the letters that belong in the case, rather than adding information about all the letters. It therefore stays attached without enclosing punctuation. Each paired-mark alternative would make the clause nonessential and erase that selection."
+  },
+  {
+    "id": "english-skill-commas-matching-dash-01",
+    "topic": "commas",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The route—the one the surveyors marked after two earlier paths had washed away[[, remained]] passable through the winter.",
+    "questionText": "Which choice closes the inserted description before the main verb?",
+    "choices": [
+      "NO CHANGE",
+      "; remained",
+      "—remained",
+      ": remained"
+    ],
+    "answer": 2,
+    "explanation": "The dash after route opens an interruption, so a second dash closes it before remained. The main clause is the route remained passable. A comma mismatches the opener; a semicolon or colon would split the subject from its main predicate."
+  },
+  {
+    "id": "english-skill-commas-matching-dash-02",
+    "topic": "commas",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "Only the original manuscript—already missing several leaves when the library acquired it[[—contains]] the note in the author’s own handwriting.",
+    "questionText": "Which choice keeps the added description properly enclosed?",
+    "choices": [
+      "NO CHANGE",
+      ", contains",
+      " contains",
+      "; contains"
+    ],
+    "answer": 0,
+    "explanation": "The two dashes enclose already missing several leaves when the library acquired it. Removing or changing the closing dash leaves an unbalanced interruption. Contains is the main verb of manuscript, not part of the added description."
+  },
+  {
+    "id": "english-skill-commas-subject-verb-boundary-01",
+    "topic": "commas",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The instructions that accompany each of the replacement filters[[, explain]] how to install it safely.",
+    "questionText": "Which choice keeps the complete subject attached to its predicate?",
+    "choices": [
+      "NO CHANGE",
+      " explain,",
+      ", explain,",
+      " explain"
+    ],
+    "answer": 3,
+    "explanation": "The subject is instructions that accompany each of the replacement filters, and explain is its main verb. A comma must not separate that subject from explain or explain from its following object clause. The correct choice adds neither comma."
+  },
+  {
+    "id": "english-skill-punctuation-quotation-tag-01",
+    "topic": "punctuation",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "“The readings are ready[[”,]] announced the technician.",
+    "questionText": "Which choice correctly joins the quotation to its reporting phrase in American punctuation?",
+    "choices": [
+      "NO CHANGE",
+      ".”",
+      ";”",
+      ",”"
+    ],
+    "answer": 3,
+    "explanation": "A comma belongs inside the closing quotation mark before the reporting phrase announced the technician. The original puts it outside; a period would end the quoted sentence before the continuing tag, and a semicolon does not attach that tag."
+  },
+  {
+    "id": "english-skill-punctuation-explanatory-dash-01",
+    "topic": "punctuation",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The field team could identify only one source of the strange noise[[;]] a loose panel beneath the deck.",
+    "questionText": "Which choice correctly introduces the phrase naming that source?",
+    "choices": [
+      "NO CHANGE",
+      "—",
+      ", and",
+      "; because"
+    ],
+    "answer": 1,
+    "explanation": "The introduction is a complete clause, and the following phrase names its one source, so a dash can introduce that explanation. A semicolon needs an independent following clause; comma plus and and semicolon plus because do not attach this noun phrase correctly."
+  },
+  {
+    "id": "english-skill-punctuation-complex-list-01",
+    "topic": "punctuation",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The committee invited Rina Patel, who studies coastal erosion[[,]] Omar Reed, whose specialty is river sediments; and Mei Tan, who maps floodplains.",
+    "questionText": "Which choice makes the boundaries between the three guests clear?",
+    "choices": [
+      "NO CHANGE",
+      ":",
+      ".",
+      ";"
+    ],
+    "answer": 3,
+    "explanation": "Each guest’s name has an attached descriptive clause containing a comma. Semicolons therefore separate the complete guest entries, matching the semicolon before and Mei Tan. A comma blurs the entries; a colon makes the second guest an explanation of the first, and a period strands the remaining list."
+  },
+  {
+    "id": "english-skill-punctuation-complex-list-02",
+    "topic": "punctuation",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The exhibit pairs a photograph with a personal object: a street scene, with the photographer’s notebook; a harbor view, with a sailor’s compass[[; and]] a farmhouse, with the resident’s handwritten recipe.",
+    "questionText": "Which choice correctly separates the final complete list item?",
+    "choices": [
+      "NO CHANGE",
+      ", and",
+      ": and",
+      "; but"
+    ],
+    "answer": 0,
+    "explanation": "The semicolons separate three photograph-and-object pairings, each of which contains an internal comma. The final semicolon correctly precedes and; it is a list boundary rather than a conjunction between independent clauses. The alternatives blur the pairings or introduce an explanation or contrast the list does not need."
+  },
+  {
+    "id": "english-skill-punctuation-complex-elaboration-01",
+    "topic": "punctuation",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The revised instructions resolved the uncertainty that had delayed every earlier attempt[[,]] operators could stop the machine without erasing the stored measurements.",
+    "questionText": "Which choice explicitly introduces the resolution after a complete clause?",
+    "choices": [
+      "NO CHANGE",
+      "; because",
+      ":",
+      ", and,"
+    ],
+    "answer": 2,
+    "explanation": "The clause before the mark is complete; the following clause identifies what resolved the uncertainty. A colon introduces that elaboration. The original is a comma splice, semicolon plus because strands a dependent clause, and comma plus and comma inserts an unnecessary mark after the conjunction."
+  },
+  {
+    "id": "english-skill-punctuation-complex-elaboration-02",
+    "topic": "punctuation",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The committee’s final concern was[[ : whether]] the revised roof could support the weight of snow without an additional column.",
+    "questionText": "Which choice avoids separating the verb from its required complement?",
+    "choices": [
+      "NO CHANGE",
+      "; whether",
+      " whether",
+      ", whether"
+    ],
+    "answer": 2,
+    "explanation": "Was requires the complement whether the revised roof could support the weight. The words before the underline do not form a complete introduction for a colon. No punctuation belongs between was and that required complement; the semicolon and comma also break the same connection."
+  },
+  {
+    "id": "english-skill-verbs-lay-lie-01",
+    "topic": "verbs",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "After the repairs, the old sign had [[laid]] in storage for nearly a decade before the museum displayed it again.",
+    "questionText": "Which form means had rested in a place?",
+    "choices": [
+      "NO CHANGE",
+      "lay",
+      "lying",
+      "lain"
+    ],
+    "answer": 3,
+    "explanation": "The sign rested somewhere and placed no object. The participle of lie meaning rest is lain, so had lain is correct. Laid belongs to the transitive verb lay; lay is the simple past of lie; lying would require had been."
+  },
+  {
+    "id": "english-skill-verbs-inverted-subject-01",
+    "topic": "verbs",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "Across the margins of the three notebooks [[runs]] a single line of coded instructions that the curators are still trying to decipher.",
+    "questionText": "Which choice agrees with the inverted main subject?",
+    "choices": [
+      "NO CHANGE",
+      "run",
+      "have run",
+      "are running"
+    ],
+    "answer": 0,
+    "explanation": "The main subject follows the verb: a single line is singular, so runs agrees. Margins and notebooks are parts of the introductory phrase, and instructions is inside an of-phrase; none controls the main verb."
+  },
+  {
+    "id": "english-skill-verbs-inverted-subject-02",
+    "topic": "verbs",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "Beside the model, beneath a row of photographs that show the original site, [[is]] two fragments of the foundation.",
+    "questionText": "Which choice makes the main verb agree with its actual subject?",
+    "choices": [
+      "NO CHANGE",
+      "was",
+      "being",
+      "are"
+    ],
+    "answer": 3,
+    "explanation": "The inverted subject is two fragments, so are agrees. Model, row, site and foundation are singular nouns in other phrases or clauses, but none is the main subject. Being alone would not supply a finite main verb."
+  },
+  {
+    "id": "english-skill-verbs-paragraph-time-01",
+    "topic": "verbs",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "In 1962, the laboratory installed the instrument beside an open window. The instrument was moved into a sealed room ten years later. It still [[records]] pressure changes there today.",
+    "questionText": "Which choice preserves the paragraph’s shift from historical events to the instrument’s continuing work?",
+    "choices": [
+      "NO CHANGE",
+      "recorded",
+      "had recorded",
+      "recording"
+    ],
+    "answer": 0,
+    "explanation": "Still and today establish a present, continuing function, so records fits. Installed and was moved describe completed historical events. Recorded and had recorded would shift the current claim into the past; recording lacks a finite auxiliary."
+  },
+  {
+    "id": "english-skill-verbs-paragraph-time-02",
+    "topic": "verbs",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The biologist now explains that the species [[nests]] on rocky ledges, although the first published survey, completed in 1931, described it only in low marshes.",
+    "questionText": "Which choice preserves the distinction between a current account and the older survey?",
+    "choices": [
+      "nesting",
+      "had nested",
+      "NO CHANGE",
+      "nest"
+    ],
+    "answer": 2,
+    "explanation": "The biologist now explains a current general pattern, and singular species takes nests. The older survey’s described belongs to the dated past account. Had nested changes the time relationship, nesting lacks a finite main verb, and nest does not agree with the singular species."
+  },
+  {
+    "id": "english-skill-pronouns-clear-reference-01",
+    "topic": "pronouns",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "Mara showed Elise the sketch she had made during the walk. The writer intends to say that Elise, not Mara, made the sketch.",
+    "questionText": "Which revision makes that intended relationship explicit?",
+    "choices": [
+      "Mara showed Elise the sketch that Elise had made during the walk.",
+      "Mara showed Elise her sketch from the walk.",
+      "She showed Elise the sketch from the walk.",
+      "Mara showed her the sketch she had made during the walk."
+    ],
+    "answer": 0,
+    "explanation": "Repeating Elise identifies the intended artist. Her and she can still refer to either woman in the other choices, so those alternatives preserve the ambiguity rather than resolving it."
+  },
+  {
+    "id": "english-skill-pronouns-embedded-relative-01",
+    "topic": "pronouns",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The restorer [[whom]] the committee believes preserved the original surface will supervise the next project.",
+    "questionText": "Which choice gives the relative pronoun the role required inside its own clause?",
+    "choices": [
+      "NO CHANGE",
+      "whose",
+      "who",
+      "her"
+    ],
+    "answer": 2,
+    "explanation": "The restorer preserved the surface, so who is the subject of preserved. The committee believes is reporting language inside the larger construction; it does not make the pronoun an object. Whose is possessive, and her cannot introduce this relative clause."
+  },
+  {
+    "id": "english-skill-pronouns-embedded-relative-02",
+    "topic": "pronouns",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The panel will offer the residency to [[whoever]] the final jury recommends, provided that the candidate can begin in June.",
+    "questionText": "Which choice gives the pronoun the case required by recommends?",
+    "choices": [
+      "NO CHANGE",
+      "whomever",
+      "whose",
+      "whoever they"
+    ],
+    "answer": 1,
+    "explanation": "The jury recommends him or her, so whomever is the object inside that clause. The preceding to governs the whole clause, not a subject inside it. Whoever would be a subject form; whose is possessive; whoever they adds an unnecessary subject."
+  },
+  {
+    "id": "english-skill-pronouns-distant-reference-01",
+    "topic": "pronouns",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The committee asked three archivists to examine the chest. Although they found no maker’s mark on the hinges, the chest retained [[their]] original lock.",
+    "questionText": "Which choice correctly identifies what owns the lock?",
+    "choices": [
+      "NO CHANGE",
+      "it's",
+      "theirs",
+      "its"
+    ],
+    "answer": 3,
+    "explanation": "The lock belongs to the singular chest, not the nearby archivists or hinges, so its supplies the possessive reference. It’s is a contraction; theirs is a standalone possessive rather than a modifier before original lock."
+  },
+  {
+    "id": "english-skill-pronouns-distant-reference-02",
+    "topic": "pronouns",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "Several fragments were missing from the mosaic, but the curator could reconstruct [[it]] because an early photograph showed the complete design.",
+    "questionText": "Which choice correctly refers to the object being reconstructed?",
+    "choices": [
+      "NO CHANGE",
+      "them",
+      "it's",
+      "their"
+    ],
+    "answer": 0,
+    "explanation": "The object reconstructed is the singular mosaic, so it is the correct object pronoun. Them would refer to the fragments instead; it’s is a contraction; their is a possessive without a following noun. The intervening plural does not change the intended referent."
+  },
+  {
+    "id": "english-skill-modifiers-limiter-scope-01",
+    "topic": "modifiers",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The director approved loans of replicas, while original pieces had to stay in the gallery. She [[only approved loans of replicas]].",
+    "questionText": "Which choice most clearly limits the objects that could be loaned?",
+    "choices": [
+      "NO CHANGE",
+      "approved loans of only replicas",
+      "approved only loans of replicas",
+      "approved the only loans of replicas"
+    ],
+    "answer": 1,
+    "explanation": "Of only replicas places the limiter directly with the class of objects, matching the contrast with originals. Only approved can limit the action; approved only loans can limit the transaction type. The only loans introduces a uniqueness claim about available loans rather than clearly restricting the objects that may be loaned."
+  },
+  {
+    "id": "english-skill-modifiers-passive-opener-01",
+    "topic": "modifiers",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "Having been printed with ink that reacts to ultraviolet light, [[the staff stored the labels in a dark drawer]].",
+    "questionText": "Which choice makes the things that were printed the main subject?",
+    "choices": [
+      "NO CHANGE",
+      "the labels were stored by the staff in a dark drawer",
+      "storing the labels in a dark drawer protected the ink",
+      "the drawer provided storage for the labels"
+    ],
+    "answer": 1,
+    "explanation": "The labels were printed with the special ink, so the keyed passive clause makes labels its subject. The staff, the act of storing, and the drawer were not printed with that ink, leaving the opening description dangling in the other choices."
+  },
+  {
+    "id": "english-skill-modifiers-timing-scope-01",
+    "topic": "modifiers",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The emergency exit must remain closed while the platform is moving. It may be opened once the platform has stopped.",
+    "questionText": "Which sentence most clearly states the condition for opening the exit?",
+    "choices": [
+      "Only the exit may be opened after the platform stops.",
+      "The exit may only be opened after the platform stops.",
+      "The exit may be opened only after the platform stops.",
+      "The exit may be opened after the only platform stops."
+    ],
+    "answer": 2,
+    "explanation": "Only after the platform stops directly limits when the exit may open. The first limits which object may open; may only be opened can limit the action; the last suggests there is only one platform. The condition belongs with after."
+  },
+  {
+    "id": "english-skill-modifiers-timing-scope-02",
+    "topic": "modifiers",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "No equipment may leave the laboratory until its inventory number has been recorded, even if it has already been cleaned and packed.",
+    "questionText": "Which choice most clearly preserves that requirement?",
+    "choices": [
+      "Equipment may leave the laboratory only after its inventory number has been recorded.",
+      "Only equipment may leave the laboratory after its inventory number has been recorded.",
+      "Equipment may leave only the laboratory after its inventory number has been recorded.",
+      "Equipment only may leave the laboratory after its inventory number has been recorded."
+    ],
+    "answer": 0,
+    "explanation": "Only after attaches the limit to the required prior event. The other positions limit the subject or destination rather than making recording the necessary condition for departure. Cleaning and packing do not satisfy that condition."
+  },
+  {
+    "id": "english-skill-parallel-structure-complex-paired-actions-01",
+    "topic": "parallel-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The revised permit requires the developer not only to replace the damaged footpath before construction begins but also [[an assessment of how drainage will change]].",
+    "questionText": "Which choice keeps the two obligations parallel?",
+    "choices": [
+      "NO CHANGE",
+      "that drainage changes are assessed",
+      "to assess how drainage will change",
+      "drainage changes being assessed"
+    ],
+    "answer": 2,
+    "explanation": "The paired obligations after requires the developer are to replace and to assess. A noun phrase, a that-clause, and a passive -ing construction do not match the infinitive action established after not only."
+  },
+  {
+    "id": "english-skill-parallel-structure-complex-paired-actions-02",
+    "topic": "parallel-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The grant was awarded not only for the team’s careful reconstruction of the missing pages but also [[for its explanation of where the evidence remained uncertain]].",
+    "questionText": "Which choice maintains the paired prepositional structures?",
+    "choices": [
+      "NO CHANGE",
+      "it explained where the evidence remained uncertain",
+      "to explain where the evidence remained uncertain",
+      "its members explained where the evidence remained uncertain"
+    ],
+    "answer": 0,
+    "explanation": "Not only for the reconstruction balances with but also for the explanation. The alternatives switch to a finite clause or an infinitive rather than maintaining the same grammatical role. The longer embedded where-clause does not change that outer parallel structure."
+  },
+  {
+    "id": "english-skill-parallel-structure-parallel-degree-01",
+    "topic": "parallel-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The reviewers compared how completely each guide covered the route, how clearly it described the hazards, and [[whether its map was accurate]].",
+    "questionText": "Which choice continues the stated evaluation of degree rather than changing the final criterion to yes or no?",
+    "choices": [
+      "NO CHANGE",
+      "its map’s accuracy",
+      "how accurately its map represented the turns",
+      "to represent the turns accurately"
+    ],
+    "answer": 2,
+    "explanation": "How accurately asks how well the map represents the turns, matching how completely and how clearly. Whether changes the criterion to yes/no; the noun phrase and infinitive do not continue the established how-clause series."
+  },
+  {
+    "id": "english-skill-parallel-structure-parallel-degree-02",
+    "topic": "parallel-structure",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The evaluation considered how promptly the clinic answered calls and [[how consistently it returned messages within the promised time]].",
+    "questionText": "Which choice keeps both criteria as measures of quality?",
+    "choices": [
+      "whether any messages were ever returned",
+      "the clinic’s messages",
+      "returning its messages",
+      "NO CHANGE"
+    ],
+    "answer": 3,
+    "explanation": "How promptly and how consistently both evaluate degree or reliability. Whether any messages were ever returned asks merely if a response happened, while the noun and gerund alternatives change the structure rather than stating a parallel degree criterion."
+  },
+  {
+    "id": "english-skill-misc-grammar-modal-have-01",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "Had the map shown the closed road, the driver [[would of taken]] the eastern route.",
+    "questionText": "Which choice correctly forms the modal perfect?",
+    "choices": [
+      "NO CHANGE",
+      "would have taken",
+      "would had took",
+      "would of took"
+    ],
+    "answer": 1,
+    "explanation": "Would have followed by the participle taken is the correct construction. Of cannot replace the auxiliary have, and took is the simple past rather than the participle required after have."
+  },
+  {
+    "id": "english-skill-misc-grammar-logical-comparison-01",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The response time of the new sensor is shorter than [[the old sensor]].",
+    "questionText": "Which choice compares the same attribute on both sides?",
+    "choices": [
+      "NO CHANGE",
+      "that of the old sensor",
+      "operating the old sensor",
+      "the old sensor is built"
+    ],
+    "answer": 1,
+    "explanation": "That of the old sensor replaces the response time of the old sensor, so the sentence compares one response time with another. The other choices compare a time with a device or an activity, or introduce an incomplete clause."
+  },
+  {
+    "id": "english-skill-misc-grammar-logical-comparison-02",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The archive found that the paper in the first notebook was more durable than [[the second notebook]].",
+    "questionText": "Which choice logically completes the comparison?",
+    "choices": [
+      "NO CHANGE",
+      "the paper being used",
+      "writing in the second notebook",
+      "the paper in the second notebook"
+    ],
+    "answer": 3,
+    "explanation": "The sentence compares the durability of paper, so it must compare the paper in one notebook with the paper in the other. A whole notebook and the act of writing are not corresponding materials; the paper being used does not identify the second notebook’s paper."
+  },
+  {
+    "id": "english-skill-misc-grammar-adjective-adverb-01",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "Despite the guide’s enthusiastic description, the old recording sounded [[faintly]] through the damaged speaker.",
+    "questionText": "Which choice supplies the adjective describing the recording’s audible quality?",
+    "choices": [
+      "NO CHANGE",
+      "faintness",
+      "faint",
+      "faintest of"
+    ],
+    "answer": 2,
+    "explanation": "Sounded is a linking verb meaning appeared to the ear, so faint describes the recording’s quality. Faintly is an adverb, faintness is a noun, and faintest of leaves an incomplete comparison."
+  },
+  {
+    "id": "english-skill-misc-grammar-adjective-adverb-02",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "To avoid damaging the brittle pages, the assistant turned each one [[careful]] and supported its outer edge.",
+    "questionText": "Which choice correctly describes how the action was performed?",
+    "choices": [
+      "NO CHANGE",
+      "carefulness",
+      "more careful",
+      "carefully"
+    ],
+    "answer": 3,
+    "explanation": "Turned is an action verb here, so the adverb carefully describes how the assistant turned each page. Careful and more careful are adjectives; carefulness is a noun. This action use differs from a linking verb that describes its subject."
+  },
+  {
+    "id": "english-skill-add-delete-background-for-argument-01",
+    "topic": "add-delete",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "The museum replaced several printed labels with raised-letter panels. The change was not an attempt to shorten the descriptions: the wording remained almost identical. In the next paragraph, the writer describes visitors tracing the panels with their fingers to learn the names of objects. Proposed addition before that paragraph: [[Raised lettering can be read by touch.]]",
+    "questionText": "Should the writer add this sentence?",
+    "choices": [
+      "No, because the definition repeats the contrast between printed and raised-letter formats.",
+      "Yes, because it gives background needed to understand how the later visitors use the panels.",
+      "Yes, because it explains why the new panels could retain the same wording.",
+      "No, because how readers use the panels shifts attention away from the paragraph’s statement that the wording stayed the same."
+    ],
+    "answer": 1,
+    "explanation": "The definition supplies the missing connection between raised lettering and finger-tracing in the next paragraph. A difference in format does not already explain touch, and the definition does not explain the decision to retain the wording. Preparing the reader for the next paragraph is relevant even though the local discussion begins with unchanged text."
+  },
+  {
+    "id": "english-skill-add-delete-background-for-argument-02",
+    "topic": "add-delete",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "An essay argues that a school should preserve an open courtyard when adding classrooms. It has described the courtyard’s use during lessons. The next paragraph explains why families whose children use wheelchairs favored the existing route between the two wings. Proposed addition before that discussion: [[Unlike the corridors in the older wing, the courtyard path has no steps.]]",
+    "questionText": "Should the writer add this sentence?",
+    "choices": [
+      "Yes, because it describes the accessibility feature that explains the families’ preference.",
+      "Yes, because it establishes that outdoor routes require less supervision than indoor corridors.",
+      "No, because it repeats the paragraph’s account of how the courtyard was used during lessons.",
+      "No, because contrasting the older corridors shifts attention away from preserving the courtyard itself."
+    ],
+    "answer": 0,
+    "explanation": "The step-free feature explains the later preference of families whose children use wheelchairs. The sentence supplies no supervision comparison and does not repeat the courtyard’s lesson use. The contrast with a stepped alternative supports the argument for preserving the courtyard route rather than distracting from it."
+  },
+  {
+    "id": "english-skill-add-delete-plausible-but-irrelevant-01",
+    "topic": "add-delete",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "A paragraph explains how a collector kept fragile seed packets dry: she placed moisture-absorbing material in each box and checked it monthly. It then reports that no packets showed water damage during a humid summer. Proposed insertion between the method and the result: [[The collector’s grandfather had owned a shop that sold wooden boxes.]]",
+    "questionText": "Should the writer add the sentence here?",
+    "choices": [
+      "Yes, because the family shop provides a historical precedent for choosing moisture-absorbing storage materials.",
+      "No, because it repeats the paragraph’s explanation of how the moisture-absorbing material works.",
+      "No, because the family’s connection to boxes does not explain the preservation method or its result.",
+      "Yes, because it explains why the collector selected those particular boxes for a humid climate."
+    ],
+    "answer": 2,
+    "explanation": "The family shop establishes a biographical connection to boxes but says nothing about absorbent materials, the source or design of the boxes used, or their performance in humidity. It adds no mechanism or result and repeats no mechanism already explained. The relevant exclusion is its failure to advance this preservation explanation."
+  },
+  {
+    "id": "english-skill-add-delete-plausible-but-irrelevant-02",
+    "topic": "add-delete",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "A paragraph compares two evacuation signs by measuring how quickly visitors understood them. It explains that replacing a paragraph of instructions with one familiar arrow reduced hesitation at the junction. Proposed addition immediately before the measured result: [[The company that printed the arrow signs also produces decorative calendars.]]",
+    "questionText": "Should the writer add the sentence?",
+    "choices": [
+      "Yes, because the printer’s experience with other visual materials supports the comparison of how visitors read the signs.",
+      "No, because it distracts from the sign-design comparison without helping explain the measured response.",
+      "No, because it repeats the earlier explanation of how the printer developed the arrow.",
+      "Yes, because the printer’s wider range of products explains why the new sign reduced hesitation."
+    ],
+    "answer": 1,
+    "explanation": "Producing calendars establishes another product, not evidence about the arrow’s design, visitors’ response, or why hesitation fell. No earlier account of the printer’s development is given, so repetition is not the reason to delete. The detail is plausible background about the company but does not support the local design-to-result link."
+  },
+  {
+    "id": "english-skill-logical-placement-paragraph-purpose-01",
+    "topic": "logical-placement",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "[1] The first volunteers found the boat’s hull buried beneath reeds. [2] They spent the summer clearing the site and cataloguing its loose parts. [3] By autumn, they had moved the hull into a temporary shelter. [4] Restoring it required knowledge the volunteers did not yet have. [5] A local boatbuilder taught them how to identify weakened joints. [6] A conservator demonstrated how to slow further cracking.",
+    "questionText": "Where should a paragraph break distinguish the recovery of the boat from learning to restore it?",
+    "choices": [
+      "Before sentence 2",
+      "Before sentence 3",
+      "Before sentence 4",
+      "Before sentence 6"
+    ],
+    "answer": 2,
+    "explanation": "Sentences 1–3 tell the recovery sequence. Sentence 4 introduces the new problem of expertise, developed by the teaching in 5–6. The other breaks split one sequence or separate the new problem from part of its development."
+  },
+  {
+    "id": "english-skill-logical-placement-paragraph-purpose-02",
+    "topic": "logical-placement",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "[1] The website allowed visitors to search by street name. [2] Each result linked to a photograph and a brief description. [3] Users could also compare two dates side by side. [4] Keeping that service available posed a separate challenge. [5] The small archive had only one employee trained to update the files. [6] When she retired, volunteers had to learn the system before new records could be added.",
+    "questionText": "Where should a new paragraph mark the shift from the website’s features to sustaining them?",
+    "choices": [
+      "Before sentence 2",
+      "Before sentence 4",
+      "Before sentence 5",
+      "Before sentence 6"
+    ],
+    "answer": 1,
+    "explanation": "Sentence 4 announces the maintenance challenge after the features in 1–3; 5–6 explain that challenge. Beginning at 5 would leave the new topic sentence attached to the features rather than to its own development."
+  },
+  {
+    "id": "english-skill-logical-placement-argument-bridge-01",
+    "topic": "logical-placement",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "Paragraph A: The original display placed each photograph behind thick reflective glass. The glass protected the surface, but visitors could barely see the image beneath the glare. Paragraph B: The curator selected a nonreflective covering and moved the lights. The photographs remained protected, and their details became visible. Sentence to place: [[Protection that prevented people from seeing the object defeated the exhibit’s purpose.]]",
+    "questionText": "Where does the sentence best explain the reasoning before the revised display is introduced?",
+    "choices": [
+      "Before the first sentence of A",
+      "After the last sentence of B",
+      "Between A and B",
+      "Between the two sentences of B"
+    ],
+    "answer": 2,
+    "explanation": "Between the paragraphs, the sentence interprets the tradeoff established in A and motivates the solution in B. Before A it lacks the problem it evaluates; inside or after B it interrupts or follows the solution rather than preparing it."
+  },
+  {
+    "id": "english-skill-logical-placement-argument-bridge-02",
+    "topic": "logical-placement",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "Paragraph A: The town’s first flood notice used technical terms copied from an engineering report. Residents who read it disagreed about which streets needed to be evacuated. Paragraph B: The next notice named each affected street and paired it with a simple map. Residents could quickly identify whether the instruction applied to them. Sentence to place: [[Accuracy alone was insufficient if readers could not act on the information.]]",
+    "questionText": "Where does the sentence most effectively motivate the change in the second paragraph?",
+    "choices": [
+      "At the end of Paragraph A",
+      "At the start of Paragraph A",
+      "After the first sentence of Paragraph B",
+      "At the end of Paragraph B"
+    ],
+    "answer": 0,
+    "explanation": "After A, the sentence evaluates the difficulty the residents encountered and establishes the communication goal that B’s revision meets. The other positions state the lesson before the difficulty or postpone the reasoning until after the change."
+  },
+  {
+    "id": "english-skill-redundancy-delete-tangent-01",
+    "topic": "redundancy",
+    "category": "KLA",
+    "difficulty": "medium",
+    "stem": "The team replaced the corroded latch[[, which reminded the director of a gate at her childhood home,]] before opening the station to visitors.",
+    "questionText": "Which choice best preserves the focus on preparing the station for visitors?",
+    "choices": [
+      "NO CHANGE",
+      ", a latch resembling one from the director’s childhood,",
+      ", a detail that brought back the director’s childhood memories,",
+      "OMIT the underlined portion"
+    ],
+    "answer": 3,
+    "explanation": "The childhood association contributes nothing to the preparation task. Omitting it leaves a complete sentence about replacing the latch before opening; each other choice keeps the same unrelated personal tangent."
+  },
+  {
+    "id": "english-skill-redundancy-preserve-limits-01",
+    "topic": "redundancy",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "A survey asked seventy registered workshop participants whether the online notes were useful. Fifty-six said yes. The report does not include people who did not attend the workshop. [[The online notes were useful to everyone.]]",
+    "questionText": "Which revision most concisely preserves the actual result and its scope?",
+    "choices": [
+      "The notes improved everyone’s work.",
+      "Everyone who attended found the notes useful.",
+      "Fifty-six of the seventy surveyed participants reported that the notes were useful.",
+      "The notes were useful."
+    ],
+    "answer": 2,
+    "explanation": "The keyed sentence keeps both the measured count and the surveyed group. Everyone broadens the finding, the second choice changes fifty-six of seventy into all attendees, and the shortest option removes the group and reporting limit."
+  },
+  {
+    "id": "english-skill-redundancy-preserve-limits-02",
+    "topic": "redundancy",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "The archive tested a new support with three damaged books and observed no additional tearing during the trial. It has not yet tried the support with other bindings. [[The support prevents damage to books.]]",
+    "questionText": "Which revision removes overstatement while retaining what the trial showed?",
+    "choices": [
+      "No additional tearing was observed in the three books during the trial.",
+      "The support prevents all tearing in damaged books.",
+      "All bindings are now protected.",
+      "The three books prove that damage can be prevented."
+    ],
+    "answer": 0,
+    "explanation": "The keyed sentence reports the observation in the actual three-book trial. The alternatives generalize beyond the tested bindings or turn a limited observation into proof of prevention. Precision requires keeping those limits even when a shorter assertion sounds fluent."
+  },
+  {
+    "id": "english-skill-redundancy-paragraph-repetition-01",
+    "topic": "redundancy",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "Each ticket reserves a timed entry. Visitors must arrive within ten minutes of the printed time. [[The admission time is specified on every ticket.]]",
+    "questionText": "Which choice adds useful information instead of repeating what the paragraph already establishes?",
+    "choices": [
+      "NO CHANGE",
+      "Every ticket shows when the visitor should enter.",
+      "A time for admission is printed on each ticket.",
+      "Visitors who need to change their time can exchange the ticket at the front desk."
+    ],
+    "answer": 3,
+    "explanation": "The exchange procedure adds a new action relevant to timed admission. The other choices merely repeat that a time appears on the ticket, a fact already established by timed entry and printed time."
+  },
+  {
+    "id": "english-skill-redundancy-paragraph-repetition-02",
+    "topic": "redundancy",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "The reserve allows bicycles only on the paved loop. All other trails are reserved for walkers. [[Cyclists must remain on the paved loop.]]",
+    "questionText": "Which choice best develops the paragraph with new, relevant information?",
+    "choices": [
+      "NO CHANGE",
+      "A repair stand beside the entrance provides a pump and basic tools.",
+      "The paved loop is the only route cyclists may use.",
+      "Bicycles are permitted on the loop and nowhere else."
+    ],
+    "answer": 1,
+    "explanation": "The repair stand adds practical information for cyclists. The other three sentences restate the opening restriction, even though they use different words and grammatical forms."
+  },
+  {
+    "id": "english-skill-transitions-cause-effect-01",
+    "topic": "transitions",
+    "category": "POW",
+    "difficulty": "medium",
+    "stem": "The specimen had to remain frozen throughout transport. The truck’s cooling unit failed before it reached the laboratory. [[For example,]] the researchers excluded the thawed specimen from the comparison.",
+    "questionText": "Which transition most clearly marks the consequence of the failure?",
+    "choices": [
+      "NO CHANGE",
+      "Meanwhile,",
+      "As a result,",
+      "Nevertheless,"
+    ],
+    "answer": 2,
+    "explanation": "The cooling failure violated the transport condition, causing exclusion, so As a result marks that consequence. Exclusion is not an example of the failure, a simultaneous process, or a surprising reversal of it."
+  },
+  {
+    "id": "english-skill-transitions-paragraph-concession-01",
+    "topic": "transitions",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "The revised timetable shortened journeys and gave passengers a later evening departure. Surveys also showed strong support. [[Therefore,]] the agency delayed adopting it because it could not hire enough drivers to cover the additional shift.",
+    "questionText": "Which transition best introduces the independent staffing obstacle despite the benefits?",
+    "choices": [
+      "NO CHANGE",
+      "Even so,",
+      "For example,",
+      "In other words,"
+    ],
+    "answer": 1,
+    "explanation": "Even so concedes the favorable evidence before the staffing obstacle. Therefore would make the benefits cause the delay; the delay is neither an example of support nor a restatement of the improvements."
+  },
+  {
+    "id": "english-skill-transitions-paragraph-concession-02",
+    "topic": "transitions",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "The volunteers had repaired the roof and installed drainage around the archive. Those changes stopped water from entering during ordinary rain. [[In addition,]] a severe winter storm revealed that the building still needed a stronger barrier on its uphill side.",
+    "questionText": "Which transition best qualifies the earlier success with the new limitation?",
+    "choices": [
+      "NO CHANGE",
+      "For instance,",
+      "Consequently,",
+      "Nevertheless,"
+    ],
+    "answer": 3,
+    "explanation": "Nevertheless acknowledges the success in ordinary rain while introducing a remaining weakness under more severe conditions. The second event is not simply another improvement, an example of success, or a consequence caused by successful repairs."
+  },
+  {
+    "id": "english-skill-transitions-paragraph-addition-01",
+    "topic": "transitions",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "One paragraph describes benches placed at intervals so visitors who tire easily can rest along the route. The next begins: [[In other words,]] the museum provides lightweight stools that visitors may carry into rooms without benches.",
+    "questionText": "Which transition marks the second paragraph as another response to the same access problem?",
+    "choices": [
+      "NO CHANGE",
+      "Conversely,",
+      "Moreover,",
+      "As a result,"
+    ],
+    "answer": 2,
+    "explanation": "Portable stools add a separate response to fatigue rather than rephrasing the fixed benches. Moreover marks that addition. Conversely would reverse the first approach, and As a result would claim the benches caused the stool service."
+  },
+  {
+    "id": "english-skill-transitions-paragraph-addition-02",
+    "topic": "transitions",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "The first paragraph explains how adjustable lighting helps visitors read small labels. A second paragraph describes large-print copies available at the entrance. Its opening is [[Similarly,]] large-print copies give readers another way to examine the descriptions comfortably.",
+    "questionText": "Which choice most explicitly identifies the second paragraph as an additional measure, without asserting a causal link?",
+    "choices": [
+      "Therefore,",
+      "In addition,",
+      "In other words,",
+      "For that reason,"
+    ],
+    "answer": 1,
+    "explanation": "In addition directly signals a separate measure serving the same goal. Therefore and For that reason assert that the lighting caused the copies to be offered; In other words would restate lighting rather than add another format. Similarly can mark the shared purpose, but the question specifically asks for the explicit addition."
+  },
+  {
+    "id": "english-skill-which-choice-essay-image-01",
+    "topic": "which-choice",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "On my first day at the boatyard, I traced the pale lines on the workbench where other people had measured timber. They seemed like a code everyone understood except me. I kept my hands in my pockets and waited for instructions.\n\nOver the summer, the boatbuilder taught me to read those marks and to add my own. A mistaken measurement meant starting again, so I learned to check each length before lifting the saw. By August, I could cut the simple joints without asking her to stand beside me.\n\nThis spring a new apprentice joined us. When he hesitated at the bench, I recognized the look on his face. I moved the ruler between us and asked him where he thought the first mark should go.",
+    "questionText": "Which conclusion best returns to the opening image while developing the essay’s movement from uncertainty to shared knowledge?",
+    "choices": [
+      "Wooden boats require more maintenance than many owners expect.",
+      "The bench was made of a type of hardwood that resists damage.",
+      "I still made mistakes, and the boatbuilder sometimes had to correct them.",
+      "Beside the old pale lines, we began a new set of marks together."
+    ],
+    "answer": 3,
+    "explanation": "The new shared marks return to the workbench image while showing the writer now helps another learner. The maintenance and material details are tangential, and the reflection about mistakes does not complete the opening image or the transfer of knowledge."
+  },
+  {
+    "id": "english-skill-which-choice-essay-image-02",
+    "topic": "which-choice",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "At the first community rehearsal, the room was quiet enough to hear chairs scrape across the floor. Nobody wanted to play the opening note. I held the old trumpet my neighbor had lent me and watched the conductor count us in twice.\n\nFor weeks, we learned to listen for one another. The drummer softened his part so the flutes could be heard. The cellists showed me where my melody should end. What had sounded like separate exercises slowly became one piece.\n\nOn the evening of the performance, I saw a late arrival hesitate outside the rehearsal-room door. I waved her toward an empty chair, then waited for the conductor to raise her hands.",
+    "questionText": "Which final sentence most effectively recalls the opening sound image while showing the group’s changed relationship?",
+    "choices": [
+      "The chairs scraped again, but this time every movement made room for someone else.",
+      "Trumpets are made from brass tubing shaped into several loops.",
+      "The conductor had studied music in three different cities.",
+      "We hoped the hall would attract an even larger audience next year."
+    ],
+    "answer": 0,
+    "explanation": "The chair sound returns from the uncertain first rehearsal, now interpreted as an act of inclusion after the group learned cooperation. The other choices add instrument facts, biography, or a future hope without completing that changed opening image."
+  },
+  {
+    "id": "english-skill-which-choice-qualified-dual-evidence-01",
+    "topic": "which-choice",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "A paragraph argues that replacing paper forms with an assisted online service reduced application errors without excluding residents who lack home internet. It already explains how the website checks for missing fields.",
+    "questionText": "Which addition provides direct evidence for both parts of that claim?",
+    "choices": [
+      "Errors fell after the website began checking fields, and the assistance desk introduced longer opening hours.",
+      "Errors fell, and applications from residents without home internet who used the library assistance desk remained at their previous level.",
+      "Residents without home internet praised the help desk, and the new form had fewer pages than the paper version.",
+      "Application errors fell, and total submissions from all residents increased after the service opened."
+    ],
+    "answer": 1,
+    "explanation": "The key directly supports fewer errors and sustained participation by the specified group without home internet. Longer desk hours or positive feedback do not establish that the group continued applying, and an increase in total submissions could conceal a drop within that group. Both parts of the claim need direct evidence."
+  },
+  {
+    "id": "english-skill-which-choice-qualified-dual-evidence-02",
+    "topic": "which-choice",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "The writer claims that adding a protective covering made the outdoor mural last longer without hiding the texture of the original brushwork.",
+    "questionText": "Which finding best supports both parts?",
+    "choices": [
+      "The covering was applied by a conservator with twenty years of experience.",
+      "Visitors liked the mural’s colors more after the treatment.",
+      "After two winters the pigment showed less fading than on the untreated test panel, while close-up photographs still showed each ridge of paint.",
+      "The town spent less on the covering than it had spent commissioning the mural."
+    ],
+    "answer": 2,
+    "explanation": "The comparison with an untreated panel supports improved preservation, and visible paint ridges support retaining the brushwork’s texture. Experience, preference and cost are related facts but do not verify the two requested results."
+  },
+  {
+    "id": "english-skill-word-choice-significance-01",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "medium",
+    "stem": "The company’s repeated safety violations made the factory [[noticeable]] throughout the region for its reckless treatment of workers.",
+    "questionText": "Which word most precisely conveys the negative reputation established by the sentence?",
+    "choices": [
+      "NO CHANGE",
+      "notable",
+      "notorious",
+      "historic"
+    ],
+    "answer": 2,
+    "explanation": "Notorious means widely known for something bad, matching repeated violations and reckless treatment. Noticeable means easy to perceive; notable signals distinction without necessarily carrying blame; historic concerns importance in history rather than this specific negative reputation."
+  },
+  {
+    "id": "english-skill-word-choice-formal-tone-01",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "medium",
+    "stem": "A technical report states that the second coating reduced water penetration by twelve percent. It summarizes: The treatment [[did a pretty great job of keeping things dry]].",
+    "questionText": "Which choice preserves the report’s measured formal register?",
+    "choices": [
+      "NO CHANGE",
+      "reduced water penetration",
+      "totally defeated the water problem",
+      "made the samples way less soggy"
+    ],
+    "answer": 1,
+    "explanation": "Reduced water penetration states the measured result neutrally. The alternatives are conversational or overstate the result as complete defeat, going beyond the reported twelve-percent reduction."
+  },
+  {
+    "id": "english-skill-word-choice-formal-tone-02",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "medium",
+    "stem": "In a letter to the funding board, the director writes that the revised schedule [[lets us squeeze way more people in]].",
+    "questionText": "Which choice most appropriately preserves the meaning in a formal administrative letter?",
+    "choices": [
+      "NO CHANGE",
+      "is a crowd-packing miracle",
+      "means we can cram everybody in",
+      "increases the number of visitors we can accommodate"
+    ],
+    "answer": 3,
+    "explanation": "Increases the number of visitors we can accommodate preserves the capacity claim in precise formal language. The alternatives use slang, exaggeration, or an unsupported suggestion that everyone can be admitted."
+  },
+  {
+    "id": "english-skill-word-choice-earned-satisfaction-01",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "medium",
+    "stem": "After months of rehearsing a difficult solo, I finally played it without stopping. I felt [[arrogance]] at having completed the work, while knowing how much more I still had to learn.",
+    "questionText": "Which noun fits the modest satisfaction established by the context?",
+    "choices": [
+      "NO CHANGE",
+      "vanity",
+      "satisfaction",
+      "superiority"
+    ],
+    "answer": 2,
+    "explanation": "Satisfaction names pleasure in completing the work and fits the writer’s acknowledgment of further learning. Arrogance, vanity and superiority add excessive self-regard or a judgment of being above others that the sentence rejects."
+  },
+  {
+    "id": "english-skill-word-choice-earned-satisfaction-02",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "medium",
+    "stem": "The apprentice described her completed repair with justified pleasure, thanked the people who had taught her, and acknowledged the flaws she still intended to correct.",
+    "questionText": "Which sentence best preserves that balanced attitude?",
+    "choices": [
+      "I was proud of the repair and grateful for the help that made it possible.",
+      "I was relieved that the repair was finished, even if the result now seemed less important.",
+      "I owed the repair entirely to my teachers and could claim no credit for my own work.",
+      "I was pleased with the repair and preferred not to revisit the flaws that remained."
+    ],
+    "answer": 0,
+    "explanation": "The first sentence preserves earned pleasure and gratitude without minimizing the work or ignoring remaining flaws. Relief that the task is over is a different response; attributing everything to the teachers erases the apprentice’s contribution; avoiding the remaining flaws contradicts her stated intention to correct them."
+  },
+  {
+    "id": "english-skill-word-choice-earned-satisfaction-03",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "medium",
+    "stem": "The essay describes a student who quietly takes pleasure in an accurate translation and immediately credits a classmate for explaining the hardest phrase. The writer wants to preserve that response.",
+    "questionText": "Which sentence best fits?",
+    "choices": [
+      "She was chiefly relieved that she could stop working on the translation before class ended.",
+      "She credited her classmate with the entire translation and treated her own work as routine copying.",
+      "She enjoyed the praise for the translation and kept the classmate’s explanation to herself.",
+      "She took pride in the result without forgetting the work they had shared."
+    ],
+    "answer": 3,
+    "explanation": "The key combines pleasure in an accurate result with acknowledgment of help. Relief alone misses that satisfaction; giving away all credit understates the student’s work; keeping the explanation to herself contradicts her immediate acknowledgment of the classmate."
+  },
+  {
+    "id": "english-skill-word-choice-preposition-idiom-01",
+    "topic": "word-choice",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The regulations prohibit visitors [[to touch]] the exposed surface of the painting.",
+    "questionText": "Which choice completes the standard construction?",
+    "choices": [
+      "NO CHANGE",
+      "from touching",
+      "for touch",
+      "at touching"
+    ],
+    "answer": 1,
+    "explanation": "Prohibit someone from doing something is the standard construction, so from touching fits. The other prepositions or infinitive forms do not complete prohibit visitors in this sense."
+  },
+  {
+    "id": "english-skill-word-choice-preposition-idiom-02",
+    "topic": "word-choice",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The new equipment is capable [[of recording]] changes too small for the older instrument to detect.",
+    "questionText": "Which choice correctly completes capable?",
+    "choices": [
+      "NO CHANGE",
+      "to recording",
+      "for record",
+      "at record"
+    ],
+    "answer": 0,
+    "explanation": "Capable of is followed by an -ing form, giving capable of recording. The other offered constructions do not fit the adjective capable."
+  },
+  {
+    "id": "english-skill-word-choice-preposition-idiom-03",
+    "topic": "word-choice",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The final chapter focuses [[at]] the choices local residents made after the harbor closed.",
+    "questionText": "Which preposition completes the expression meaning concentrates its attention on?",
+    "choices": [
+      "NO CHANGE",
+      "to",
+      "for",
+      "on"
+    ],
+    "answer": 3,
+    "explanation": "Focuses on introduces the subject receiving attention. At, to and for do not complete this construction in the sentence."
+  },
+  {
+    "id": "english-skill-word-choice-certainty-01",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "The researchers tested the method on a small initial sample and explicitly warned that the result might change in a larger trial. The report described the finding as [[conclusive]].",
+    "questionText": "Which choice preserves the report’s stated uncertainty?",
+    "choices": [
+      "NO CHANGE",
+      "provisional",
+      "representative",
+      "reproducible"
+    ],
+    "answer": 1,
+    "explanation": "Provisional means subject to confirmation, matching the explicit warning about a larger trial. Representative would assert that the finding reflects a wider group; reproducible would assert that it can be obtained again. Neither has been established by this small initial test, while conclusive removes the stated uncertainty."
+  },
+  {
+    "id": "english-skill-word-choice-certainty-02",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "The records show that a delivery was delayed, but the missing logbook prevents the archivist from determining whether weather or a mechanical fault caused it. The cause therefore remains [[disproved]].",
+    "questionText": "Which word most accurately preserves what is and is not known?",
+    "choices": [
+      "NO CHANGE",
+      "established",
+      "unresolved",
+      "disputed"
+    ],
+    "answer": 2,
+    "explanation": "Unresolved means the available records do not settle the explanation. Established would claim a settled cause, while disputed would assert an active disagreement not described in the passage. The missing logbook neither disproves an explanation nor identifies which possible cause actually operated."
+  },
+  {
+    "id": "english-skill-word-choice-conditional-meaning-01",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "The exhibition agreement required the gallery to provide continuous humidity monitoring before the owner would release the drawings. The loan was [[inevitable regardless of]] that monitoring.",
+    "questionText": "Which phrase preserves the stated condition?",
+    "choices": [
+      "NO CHANGE",
+      "compatible with",
+      "facilitated by",
+      "contingent on"
+    ],
+    "answer": 3,
+    "explanation": "Contingent on makes monitoring a necessary condition, matching the agreement’s requirement before release. Compatible with would merely say the two can coexist; facilitated by would mean monitoring helps the loan proceed without expressing a requirement. Inevitable regardless of explicitly removes the condition."
+  },
+  {
+    "id": "english-skill-word-choice-conditional-meaning-02",
+    "topic": "word-choice",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "The supplier agreed to replace the damaged panel only if an inspection confirmed that the fault arose during manufacture. Replacement was therefore [[conditional on]] the inspection’s finding.",
+    "questionText": "Which choice most accurately preserves the agreement?",
+    "choices": [
+      "NO CHANGE",
+      "indifferent to",
+      "guaranteed despite",
+      "evidence against"
+    ],
+    "answer": 0,
+    "explanation": "Conditional on preserves only if: the specified finding must occur before replacement is required. The alternatives remove the condition or turn the finding into an opposing argument."
+  },
+  {
+    "id": "english-skill-test-patterns-exact-span-01",
+    "topic": "test-patterns",
+    "category": "CSE",
+    "difficulty": "hard",
+    "stem": "The outside temperature [[rose, therefore]] the team repeated the measurement in a cooled room.",
+    "questionText": "Which replacement supplies a correct boundary without duplicating words already outside the underline?",
+    "choices": [
+      "rose; therefore, the",
+      "rose, therefore,",
+      "rose; therefore,",
+      "rose; because"
+    ],
+    "answer": 2,
+    "explanation": "Rose; therefore, correctly joins the independent clauses around the conjunctive adverb. The first choice repeats the already supplied the; the second leaves a comma splice; the final choice strands a dependent because-clause after a semicolon."
+  },
+  {
+    "id": "english-skill-test-patterns-exact-span-02",
+    "topic": "test-patterns",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The investigation [[identified:]] a new source of contamination beneath the storage floor.",
+    "questionText": "Which choice removes the invalid punctuation without adding text already outside the marked span?",
+    "choices": [
+      "NO CHANGE",
+      "identified",
+      "identified a",
+      "identified;"
+    ],
+    "answer": 1,
+    "explanation": "Identified must remain attached to its object a new source of contamination. The introduction is incomplete without that object, so the colon and semicolon are invalid. Identified a would repeat the a already outside the underline."
+  },
+  {
+    "id": "english-skill-test-patterns-evidence-scope-01",
+    "topic": "test-patterns",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "A report interviewed forty boat owners who had volunteered for a harbor meeting. Thirty said the new signs were clearer. It did not test whether the signs changed navigation errors.",
+    "questionText": "Which summary stays within the report’s evidence?",
+    "choices": [
+      "The thirty volunteers made fewer navigation errors because they followed the revised signs.",
+      "Thirty of the forty volunteers found routes easier to plan because warnings had been removed from the signs.",
+      "The forty volunteers’ responses show that boat owners outside the meeting would also prefer the new signs.",
+      "Thirty of the forty interviewed volunteers said the signs were clearer."
+    ],
+    "answer": 3,
+    "explanation": "The key retains the actual volunteer group, count and clarity rating. The report measured neither navigation errors nor route-planning performance, and it gave no evidence that warnings were removed. It also does not establish that owners outside the volunteer group share its preference."
+  },
+  {
+    "id": "english-skill-test-patterns-evidence-scope-02",
+    "topic": "test-patterns",
+    "category": "KLA",
+    "difficulty": "hard",
+    "stem": "A museum compared visitor comments before and after installing a tactile model. The later comments mentioned fewer difficulties understanding the object’s shape. The report notes that the two groups visited on different days and were not otherwise compared.",
+    "questionText": "Which conclusion most accurately preserves the result and its limitations?",
+    "choices": [
+      "Later comments reported fewer difficulties, but the comparison alone does not establish that the model caused the change.",
+      "Later visitors found the shape easier because the model removed an ambiguity in the written labels.",
+      "Because the groups visited on different days, their comments cannot be compared even descriptively.",
+      "Fewer reported shape problems demonstrate that visitors needed the written labels less than before."
+    ],
+    "answer": 0,
+    "explanation": "The key reports the descriptive difference while preserving the limitation on causal comparison. The source does not identify an ambiguity in written labels or measure reliance on those labels. Different visiting groups limit causal conclusions, but they do not forbid describing the comments that each group actually made."
+  },
+  {
+    "id": "english-skill-which-choice-whole-essay-goal-01",
+    "topic": "which-choice",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "The archive once kept its travel journals behind a locked door. The paper was too brittle for frequent handling, and staff worried that opening the bindings would cause more pages to detach. Researchers could request access, but residents who simply wanted to read about their town rarely made an appointment.\n\nA volunteer suggested photographing the journals. The first set of images let many more readers search names and enlarge faded handwriting. Yet the copies also concealed details that mattered to some researchers: the pressure of a pen, a folded corner, and notes hidden beneath a later attachment could not always be seen.\n\nThe archive therefore kept the images freely available and established supervised sessions with the originals. Staff used supports beneath the covers and limited how far a binding could open. Readers who needed to examine a physical detail could explain that need in advance.\n\nOn Saturday mornings, residents now read the digital copies in the public room. In the adjoining room, a researcher may be studying a single original page with a staff member nearby. Neither form of access has entirely replaced the other.",
+    "questionText": "Suppose the writer’s goal was to explain how an archive balanced wider public access with protection of fragile materials. Does the essay achieve that goal?",
+    "choices": [
+      "Yes, because it develops a case for replacing handling of the originals with images that preserve the details researchers need.",
+      "No, because balancing the interests would require identifying one preferred access method, whereas the essay keeps both methods in use.",
+      "Yes, because it connects the risks of handling and the limits of copies to a policy offering both digital and supervised access.",
+      "No, because the later emphasis on public reading leaves the initial problem of fragile bindings without a practical response."
+    ],
+    "answer": 2,
+    "explanation": "The essay develops the risks, the benefits and limits of copies, and the supports and supervision used with originals. Keeping both methods is the balancing policy, not a failure to choose. The text explicitly says copies cannot preserve every needed physical detail and describes practical protection for the bindings."
+  },
+  {
+    "id": "english-skill-which-choice-whole-essay-goal-02",
+    "topic": "which-choice",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "When the harbor association announced a cleanup, Lena expected to spend one morning collecting bottles. She arrived with a borrowed pair of gloves and found only six other volunteers beside the water. The organizer handed her a map and asked which stretch she wanted to cover.\n\nOver the next month, Lena returned each weekend. She learned the names of shopkeepers who brought water for the volunteers and of residents who remembered when children had swum near the landing. A local contractor offered a truck, and a school group painted signs asking people to carry their rubbish away.\n\nThe association also discussed dredging sediment from the harbor floor, but the expense put that project beyond its immediate budget. The volunteers continued working along the shore, recording what they found and returning misplaced objects to nearby owners. By the final weekend, far more people came than the organizer had expected.\n\nLena stayed after the others left to fold the maps. The landing was quieter, and the familiar curve of the shoreline was visible again. What she remembered most, though, was how many neighbors she could now name.",
+    "questionText": "Suppose the writer’s primary goal was to compare the environmental advantages and disadvantages of shoreline collection and dredging. Does the essay achieve that goal?",
+    "choices": [
+      "No, because it mainly develops Lena’s experience and the community response, without evaluating the environmental tradeoffs of both methods.",
+      "Yes, because contrasting volunteer collection with unaffordable dredging shows the environmental strengths of the method the association selected.",
+      "Yes, because the cleared shoreline and returning residents establish the comparative environmental outcomes of both collection and dredging.",
+      "No, because it presents dredging as a completed project before the volunteers begin, making the two methods’ effects impossible to separate."
+    ],
+    "answer": 0,
+    "explanation": "The essay develops participation and community ties, while dredging receives a budget mention rather than an environmental comparison. Affordability does not by itself establish environmental advantages, and no completed dredging project or environmental outcome from dredging is reported. The final alternative invents that sequence."
+  },
+  {
+    "id": "english-skill-which-choice-whole-essay-goal-03",
+    "topic": "which-choice",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "The restoration committee’s first plan was simple: repair the village loom and display it behind a low barrier. Volunteers cleaned the frame, replaced a broken treadle, and found a weaver who could set the threads. At the reopening, people admired the machine, then moved quickly into the next room.\n\nThe weaver proposed a different use for the restored loom. Once a week she would teach a small group to work it, using the same basic pattern shown in the museum’s oldest cloth. Some members worried that lessons would turn a historical exhibit into an ordinary workshop. Others asked whether a machine nobody used could fully communicate the skill it represented.\n\nWithin a season, participants were demonstrating the process to visitors. They made small pieces to take home and wrote down the mistakes they had learned to correct. The committee kept the old cloth nearby, so each demonstration could connect a new piece with the earlier pattern.\n\nThe loom had not become a different machine. What changed was the role it played: visitors now returned to practice, to watch friends learn, or to explain a movement they had once found puzzling.",
+    "questionText": "Suppose the writer’s goal was to argue that reviving a craft requires meaningful uses as well as preserving its equipment. Does the essay achieve that goal?",
+    "choices": [
+      "Yes, because it shows how replacing the old pattern with new designs made the restored loom useful to contemporary weavers.",
+      "No, because the unchanged machine and pattern make the demonstrations an existing routine rather than a new use of the exhibit.",
+      "No, because it reports concerns about lessons without showing what participants actually do with the loom.",
+      "Yes, because the initial display attracts only brief attention, while teaching and demonstrations give the restored loom an ongoing role."
+    ],
+    "answer": 3,
+    "explanation": "The initial display and the later teaching provide the contrast supporting meaningful uses as well as equipment preservation. The pattern stays the same, so a new design is not the reason. Demonstrations, take-home pieces and shared corrections are described; they give the unchanged machine a changed role rather than leaving the goal undeveloped."
+  },
+  {
+    "id": "english-skill-logical-placement-whole-paragraph-order-01",
+    "topic": "logical-placement",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "Paragraph A: The revised trial placed temporary screens across two of the side openings. Workers checked the airflow each afternoon, recording both the amount of dust entering and the temperature inside the workshop. The screens could be moved without changing the historic frame.\n\nParagraph B: For years, fine dust entered the workshop through gaps that also provided its only ventilation. Workers wanted to protect the instruments without making the room too warm to use. Simply sealing every opening would have exchanged one problem for another.\n\nParagraph C: The readings showed much less dust and only a small temperature change. The team kept the movable screens and left the other openings clear. Its final report recommended checking both measures through another season rather than treating the first trial as a permanent solution.\n\nParagraph D: The first attempt used heavy curtains over every gap. They stopped much of the dust, but by midday the workshop became uncomfortable. After inspecting those results, the team decided that the next test should preserve more of the original ventilation.",
+    "questionText": "Which order most coherently presents the problem, an unsuccessful attempt, a revised test and its qualified outcome?",
+    "choices": [
+      "B, A, D, C",
+      "B, D, A, C",
+      "D, B, C, A",
+      "B, D, C, A"
+    ],
+    "answer": 1,
+    "explanation": "B establishes the dust-versus-ventilation problem. D describes the first attempt and the reason for revising it. A then supplies the revised test, whose readings and qualified outcome appear in C. The alternatives either introduce the revision before its motivation or report its result before the test."
+  },
+  {
+    "id": "english-skill-logical-placement-whole-paragraph-order-02",
+    "topic": "logical-placement",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "Paragraph A: Several residents objected to that proposal. They expected the smaller electric buses to slow traffic on the narrow street and worried that frequent departures would replace one kind of noise with another. The council agreed that those claims needed to be tested rather than dismissed.\n\nParagraph B: The pilot supplied a partial answer. Travel times on the street remained close to their previous level, while measurements near the stops showed less engine noise. Drivers also reported that boarding required less time when passengers could enter through either door.\n\nParagraph C: The council proposed replacing the large buses on the market route with smaller electric vehicles running more often. The aim was to retain capacity while making the stops beside the shops quieter. The proposal did not include widening the street.\n\nParagraph D: Those results favored the change, but the pilot had run only during the mild spring. The final recommendation called for another trial in winter and for reviewing the boarding pattern when holiday crowds returned. The council postponed a permanent decision until that evidence was available.",
+    "questionText": "Which order best develops a proposal, the objections it prompted, the pilot’s response and the remaining limitations?",
+    "choices": [
+      "A, C, B, D",
+      "C, B, A, D",
+      "C, A, B, D",
+      "C, A, D, B"
+    ],
+    "answer": 2,
+    "explanation": "C introduces the proposal needed by that proposal in A. A establishes the concerns the pilot addresses in B. D’s those results refers back to B and qualifies them with untested conditions before the final decision. The other orders separate those necessary references or introduce responses before the objections."
+  },
+  {
+    "id": "english-skill-logical-placement-whole-paragraph-order-03",
+    "topic": "logical-placement",
+    "category": "POW",
+    "difficulty": "hard",
+    "stem": "Paragraph A: The discovery changed the archive’s description of the map. It was no longer catalogued only as one surveyor’s final drawing. The paired sheets preserved evidence of a workshop process in which several people had helped turn a measured outline into repeated copies.\n\nParagraph B: Such holes can be part of a copying process. A worker places the pierced sheet over a fresh one and brushes powder through the openings, leaving a faint pattern to trace. That explanation accounted for both the repeated outlines and the fine residue found near the holes.\n\nParagraph C: At first the tiny punctures on the map seemed like insect damage. A conservator noticed, however, that they followed the drawn coastline too regularly. She asked whether the archive held any other sheet with the same pattern rather than treating the marks as random loss.\n\nParagraph D: The search produced an unfinished sheet whose coastline matched the first map exactly. Its fine powder marks lay where the punctures would have fallen. The team could now explain why two apparently different objects shared both an outline and a set of small surface traces.",
+    "questionText": "Which order best moves from an observation through corroborating evidence and explanation to the revised interpretation?",
+    "choices": [
+      "C, D, B, A",
+      "D, C, B, A",
+      "C, B, A, D",
+      "A, C, D, B"
+    ],
+    "answer": 0,
+    "explanation": "C introduces the patterned punctures and the question they raise. D supplies the matching sheet that corroborates a copying relationship. B explains the mechanism accounting for both objects, and A states how that evidence changes their interpretation. The alternatives begin with unsupported findings or reach an interpretation before the corroborating evidence."
+  },
+  {
+    "id": "english-skill-misc-grammar-comparison-forms-01",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The engineers compared only two sensors. The newer model was [[most accurate]] than the older one under the stated conditions.",
+    "questionText": "Which choice correctly forms the direct comparison?",
+    "choices": [
+      "NO CHANGE",
+      "more accurately",
+      "more accurate",
+      "most accurately"
+    ],
+    "answer": 2,
+    "explanation": "Than introduces a direct comparison between two models, and the linking verb was needs an adjective. More accurate is the comparative adjective; most accurate is superlative, while accurately is an adverb."
+  },
+  {
+    "id": "english-skill-misc-grammar-comparison-forms-02",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "After reviewing all four proposals, the committee selected the [[more feasible]] of the four for a full trial.",
+    "questionText": "Which choice correctly selects the extreme within the entire set?",
+    "choices": [
+      "NO CHANGE",
+      "most feasible",
+      "most feasibler",
+      "more feasibly"
+    ],
+    "answer": 1,
+    "explanation": "Most feasible is the superlative selecting one proposal from all four. More feasible is comparative, most feasibler doubles the marking, and feasibly is an adverb rather than the adjective needed to describe the proposal."
+  },
+  {
+    "id": "english-skill-misc-grammar-comparison-forms-03",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "In the second inspection, the assistant recorded the measurements [[more careful]] than she had during the first.",
+    "questionText": "Which form correctly compares how the action was performed?",
+    "choices": [
+      "NO CHANGE",
+      "most careful",
+      "carefuller",
+      "more carefully"
+    ],
+    "answer": 3,
+    "explanation": "Recorded is an action verb, so more carefully is the comparative adverb describing its manner. More careful and most careful are adjectives; carefuller is not the appropriate form. The sentence compares two inspections rather than selecting an extreme from a larger set."
+  },
+  {
+    "id": "english-skill-misc-grammar-voice-and-focus-01",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The paragraph follows the history of the telescope: it spent two years beside an open window, was moved into storage, and later returned to the gallery. The writer proposes: [[An engineer restored the telescope before the exhibition opened.]]",
+    "questionText": "Which revision keeps the telescope as the grammatical subject while preserving the stated event?",
+    "choices": [
+      "The engineer’s restoration preceded the exhibition.",
+      "Before the exhibition, restoration took place.",
+      "The engineer worked on restoring the telescope before the opening.",
+      "The telescope was restored by an engineer before the exhibition opened."
+    ],
+    "answer": 3,
+    "explanation": "The passive revision keeps telescope as the subject, continuing the paragraph’s focus, and retains the engineer and timing. The other sentences shift the subject to the engineer or an abstract event. Active voice is grammatical, but it does not meet this specified focus goal."
+  },
+  {
+    "id": "english-skill-misc-grammar-voice-and-focus-02",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The investigation established that technician Lin left the valve open during the final check. The report’s next sentence should make that documented responsibility explicit: [[The valve was left open during the final check.]]",
+    "questionText": "Which revision best puts the known responsible person in subject position?",
+    "choices": [
+      "Lin left the valve open during the final check.",
+      "The final check involved an open valve.",
+      "An open valve was found after the final check.",
+      "The valve remained open during the final check."
+    ],
+    "answer": 0,
+    "explanation": "Lin left makes the documented actor the subject and states the action directly. The other sentences omit responsibility or shift to discovering or describing a condition rather than identifying who left the valve open."
+  },
+  {
+    "id": "english-skill-misc-grammar-voice-and-focus-03",
+    "topic": "misc-grammar",
+    "category": "CSE",
+    "difficulty": "medium",
+    "stem": "The researcher examined the seals, checked the pressure gauges, and [[the findings were reported by her]] before the equipment was restarted.",
+    "questionText": "Which choice preserves the researcher as the shared subject throughout the action sequence?",
+    "choices": [
+      "NO CHANGE",
+      "her findings were reported",
+      "reported the findings",
+      "the findings she reported"
+    ],
+    "answer": 2,
+    "explanation": "Examined, checked and reported form a parallel active sequence with researcher as their shared subject. The passive alternatives change the subject inside that sequence, while the last choice does not supply the required coordinated main verb. This is a context-specific voice decision, not a ban on passive constructions."
+  }
+]

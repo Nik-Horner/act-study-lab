@@ -1,0 +1,1449 @@
+{
+  "math-algebra-d1": [
+    "math-algebra-linear-equations"
+  ],
+  "math-algebra-d7": [
+    "math-algebra-linear-equations"
+  ],
+  "math-algebra-d2": [
+    "math-algebra-linear-systems"
+  ],
+  "math-algebra-d8": [
+    "math-algebra-linear-systems"
+  ],
+  "math-algebra-d28": [
+    "math-algebra-linear-systems"
+  ],
+  "math-algebra-d31": [
+    "math-algebra-linear-systems"
+  ],
+  "math-algebra-d4": [
+    "math-algebra-absolute-values"
+  ],
+  "math-algebra-d18": [
+    "math-algebra-absolute-values"
+  ],
+  "math-algebra-d30": [
+    "math-algebra-absolute-values"
+  ],
+  "math-algebra-d3": [
+    "math-algebra-rational-equations"
+  ],
+  "math-algebra-d29": [
+    "math-algebra-rational-equations",
+    "math-algebra-quadratic-formula"
+  ],
+  "math-algebra-d5": [
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-algebra-d10": [
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-algebra-d19": [
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-algebra-d21": [
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-algebra-m5": [
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-algebra-d6": [
+    "math-algebra-linear-inequalities"
+  ],
+  "math-algebra-d32": [
+    "math-algebra-linear-inequalities"
+  ],
+  "math-algebra-d9": [
+    "math-algebra-quadratic-formula"
+  ],
+  "math-algebra-m1": [
+    "math-algebra-quadratic-formula"
+  ],
+  "math-algebra-m2": [
+    "math-algebra-quadratic-formula"
+  ],
+  "math-algebra-d11": [
+    "math-algebra-polynomial-structure"
+  ],
+  "math-algebra-d12": [
+    "math-algebra-polynomial-structure"
+  ],
+  "math-algebra-d27": [
+    "math-algebra-polynomial-structure"
+  ],
+  "math-algebra-d13": [
+    "math-algebra-polynomial-remainders"
+  ],
+  "math-algebra-m3": [
+    "math-algebra-polynomial-remainders"
+  ],
+  "math-algebra-d14": [
+    "math-algebra-rational-expressions"
+  ],
+  "math-algebra-d22": [
+    "math-algebra-rational-expressions"
+  ],
+  "math-algebra-d15": [
+    "math-algebra-sign-charts"
+  ],
+  "math-algebra-d25": [
+    "math-algebra-sign-charts"
+  ],
+  "math-algebra-m4": [
+    "math-algebra-sign-charts"
+  ],
+  "math-algebra-m6": [
+    "math-algebra-sign-charts",
+    "math-algebra-polynomial-structure",
+    "math-algebra-rational-expressions"
+  ],
+  "math-algebra-d16": [
+    "math-algebra-radical-equations"
+  ],
+  "math-algebra-d17": [
+    "math-algebra-radical-equations"
+  ],
+  "math-algebra-d20": [
+    "math-algebra-exponent-rules"
+  ],
+  "math-algebra-d26": [
+    "math-algebra-exponent-rules"
+  ],
+  "math-algebra-d23": [
+    "math-algebra-parameter-identities"
+  ],
+  "math-algebra-d24": [
+    "math-algebra-parameter-identities"
+  ],
+  "math-functions-d1": [
+    "math-functions-domain-restrictions"
+  ],
+  "math-functions-d10": [
+    "math-functions-domain-restrictions"
+  ],
+  "math-functions-d29": [
+    "math-functions-domain-restrictions"
+  ],
+  "math-functions-d9": [
+    "math-functions-composition"
+  ],
+  "math-functions-d32": [
+    "math-functions-composition",
+    "math-functions-inverse-branches"
+  ],
+  "math-functions-d2": [
+    "math-functions-rates-and-differences"
+  ],
+  "math-functions-d18": [
+    "math-functions-rates-and-differences"
+  ],
+  "math-functions-d31": [
+    "math-functions-rates-and-differences"
+  ],
+  "math-functions-d3": [
+    "math-functions-inverse-branches"
+  ],
+  "math-functions-d8": [
+    "math-functions-inverse-branches"
+  ],
+  "math-functions-d17": [
+    "math-functions-inverse-branches"
+  ],
+  "math-functions-m3": [
+    "math-functions-inverse-branches"
+  ],
+  "math-functions-d4": [
+    "math-functions-graph-transformations"
+  ],
+  "math-functions-d14": [
+    "math-functions-graph-transformations"
+  ],
+  "math-functions-d21": [
+    "math-functions-graph-transformations"
+  ],
+  "math-functions-m5": [
+    "math-functions-graph-transformations",
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-functions-d5": [
+    "math-functions-logarithm-equations"
+  ],
+  "math-functions-d16": [
+    "math-functions-logarithm-equations"
+  ],
+  "math-functions-d25": [
+    "math-functions-logarithm-equations"
+  ],
+  "math-functions-m2": [
+    "math-functions-logarithm-equations",
+    "math-functions-domain-restrictions",
+    "math-algebra-linear-equations"
+  ],
+  "math-functions-d6": [
+    "math-functions-arithmetic-indexing"
+  ],
+  "math-functions-m6": [
+    "math-functions-recursive-inputs"
+  ],
+  "math-functions-d7": [
+    "math-functions-piecewise-evaluation"
+  ],
+  "math-functions-d11": [
+    "math-functions-quadratic-range"
+  ],
+  "math-functions-d12": [
+    "math-functions-rational-graphs"
+  ],
+  "math-functions-d13": [
+    "math-functions-rational-graphs"
+  ],
+  "math-functions-d27": [
+    "math-functions-rational-graphs"
+  ],
+  "math-functions-d15": [
+    "math-functions-model-patterns"
+  ],
+  "math-functions-d20": [
+    "math-functions-model-patterns"
+  ],
+  "math-functions-d26": [
+    "math-functions-model-patterns"
+  ],
+  "math-functions-d30": [
+    "math-functions-model-patterns"
+  ],
+  "math-functions-d22": [
+    "math-functions-even-odd-symmetry"
+  ],
+  "math-functions-d19": [
+    "math-functions-zeros-and-intersections"
+  ],
+  "math-functions-d24": [
+    "math-functions-zeros-and-intersections"
+  ],
+  "math-functions-d28": [
+    "math-functions-zeros-and-intersections"
+  ],
+  "math-functions-m4": [
+    "math-functions-inverse-variation"
+  ],
+  "math-geometry-d1": [
+    "math-geometry-trapezoid-area"
+  ],
+  "math-geometry-d2": [
+    "math-geometry-cylinder-surface"
+  ],
+  "math-geometry-d3": [
+    "math-geometry-heron-area"
+  ],
+  "math-geometry-d4": [
+    "math-geometry-circle-segment-products"
+  ],
+  "math-geometry-d13": [
+    "math-geometry-circle-segment-products"
+  ],
+  "math-geometry-d29": [
+    "math-geometry-circle-segment-products"
+  ],
+  "math-geometry-d5": [
+    "math-geometry-circle-angles"
+  ],
+  "math-geometry-d28": [
+    "math-geometry-circle-angles"
+  ],
+  "math-geometry-d6": [
+    "math-geometry-perpendicular-distance"
+  ],
+  "math-geometry-d7": [
+    "math-geometry-similarity-scaling"
+  ],
+  "math-geometry-d8": [
+    "math-geometry-similarity-scaling"
+  ],
+  "math-geometry-d31": [
+    "math-geometry-similarity-scaling"
+  ],
+  "math-geometry-d9": [
+    "math-geometry-arc-and-sector"
+  ],
+  "math-geometry-d10": [
+    "math-geometry-circle-right-triangles"
+  ],
+  "math-geometry-d11": [
+    "math-geometry-circle-right-triangles"
+  ],
+  "math-geometry-d12": [
+    "math-geometry-circle-right-triangles"
+  ],
+  "math-geometry-d30": [
+    "math-geometry-circle-right-triangles"
+  ],
+  "math-geometry-m5": [
+    "math-geometry-circle-right-triangles",
+    "math-geometry-coordinate-area"
+  ],
+  "math-geometry-d14": [
+    "math-geometry-polygon-angles"
+  ],
+  "math-geometry-d15": [
+    "math-geometry-polygon-angles"
+  ],
+  "math-geometry-d16": [
+    "math-geometry-composite-area"
+  ],
+  "math-geometry-d25": [
+    "math-geometry-composite-area"
+  ],
+  "math-geometry-d17": [
+    "math-geometry-solid-volume"
+  ],
+  "math-geometry-d18": [
+    "math-geometry-solid-volume"
+  ],
+  "math-geometry-d19": [
+    "math-geometry-sphere-surface"
+  ],
+  "math-geometry-d20": [
+    "math-geometry-coordinate-area"
+  ],
+  "math-geometry-d24": [
+    "math-geometry-coordinate-area"
+  ],
+  "math-geometry-d21": [
+    "math-geometry-coordinate-circles"
+  ],
+  "math-geometry-m1": [
+    "math-geometry-coordinate-circles"
+  ],
+  "math-geometry-d22": [
+    "math-geometry-midpoint-endpoints"
+  ],
+  "math-geometry-d23": [
+    "math-geometry-perpendicular-lines"
+  ],
+  "math-geometry-d26": [
+    "math-geometry-equilateral-area"
+  ],
+  "math-geometry-d27": [
+    "math-geometry-angle-bisector"
+  ],
+  "math-geometry-d32": [
+    "math-geometry-triangle-inequality"
+  ],
+  "math-geometry-m2": [
+    "math-geometry-rotations"
+  ],
+  "math-geometry-m3": [
+    "math-geometry-cone-surface"
+  ],
+  "math-geometry-m4": [
+    "math-geometry-box-surface"
+  ],
+  "math-geometry-m6": [
+    "math-geometry-triangle-circle-radii"
+  ],
+  "math-trigonometry-d1": [
+    "math-trigonometry-right-triangle-ratios"
+  ],
+  "math-trigonometry-d6": [
+    "math-trigonometry-right-triangle-ratios"
+  ],
+  "math-trigonometry-d19": [
+    "math-trigonometry-right-triangle-ratios"
+  ],
+  "math-trigonometry-d25": [
+    "math-trigonometry-right-triangle-ratios"
+  ],
+  "math-trigonometry-d3": [
+    "math-trigonometry-quadrant-reciprocals"
+  ],
+  "math-trigonometry-d7": [
+    "math-trigonometry-quadrant-reciprocals"
+  ],
+  "math-trigonometry-d8": [
+    "math-trigonometry-quadrant-reciprocals"
+  ],
+  "math-trigonometry-d24": [
+    "math-trigonometry-quadrant-reciprocals"
+  ],
+  "math-trigonometry-d31": [
+    "math-trigonometry-quadrant-reciprocals"
+  ],
+  "math-trigonometry-d5": [
+    "math-trigonometry-double-angle"
+  ],
+  "math-trigonometry-d22": [
+    "math-trigonometry-double-angle"
+  ],
+  "math-trigonometry-d27": [
+    "math-trigonometry-double-angle"
+  ],
+  "math-trigonometry-d32": [
+    "math-trigonometry-double-angle"
+  ],
+  "math-trigonometry-m2": [
+    "math-trigonometry-double-angle",
+    "math-trigonometry-quadrant-reciprocals"
+  ],
+  "math-trigonometry-m6": [
+    "math-trigonometry-double-angle"
+  ],
+  "math-trigonometry-d9": [
+    "math-trigonometry-identity-rewrites"
+  ],
+  "math-trigonometry-d28": [
+    "math-trigonometry-identity-rewrites"
+  ],
+  "math-trigonometry-d10": [
+    "math-trigonometry-radian-measure"
+  ],
+  "math-trigonometry-d26": [
+    "math-trigonometry-radian-measure"
+  ],
+  "math-trigonometry-d11": [
+    "math-trigonometry-unit-circle-values"
+  ],
+  "math-trigonometry-d12": [
+    "math-trigonometry-unit-circle-values"
+  ],
+  "math-trigonometry-d23": [
+    "math-trigonometry-unit-circle-values"
+  ],
+  "math-trigonometry-m1": [
+    "math-trigonometry-unit-circle-values"
+  ],
+  "math-trigonometry-d4": [
+    "math-trigonometry-wave-features"
+  ],
+  "math-trigonometry-d13": [
+    "math-trigonometry-wave-features"
+  ],
+  "math-trigonometry-d14": [
+    "math-trigonometry-wave-features"
+  ],
+  "math-trigonometry-d15": [
+    "math-trigonometry-wave-features"
+  ],
+  "math-trigonometry-m5": [
+    "math-trigonometry-wave-features",
+    "math-trigonometry-unit-circle-values",
+    "math-trigonometry-all-angle-solutions"
+  ],
+  "math-trigonometry-d2": [
+    "math-trigonometry-cosine-law"
+  ],
+  "math-trigonometry-d16": [
+    "math-trigonometry-cosine-law"
+  ],
+  "math-trigonometry-m4": [
+    "math-trigonometry-cosine-law"
+  ],
+  "math-trigonometry-d18": [
+    "math-trigonometry-sine-law"
+  ],
+  "math-trigonometry-d30": [
+    "math-trigonometry-sine-law"
+  ],
+  "math-trigonometry-d17": [
+    "math-trigonometry-included-angle-area"
+  ],
+  "math-trigonometry-d20": [
+    "math-trigonometry-all-angle-solutions"
+  ],
+  "math-trigonometry-d21": [
+    "math-trigonometry-all-angle-solutions"
+  ],
+  "math-trigonometry-d29": [
+    "math-trigonometry-all-angle-solutions"
+  ],
+  "math-trigonometry-m3": [
+    "math-trigonometry-all-angle-solutions"
+  ],
+  "math-statistics-probability-d1": [
+    "math-statistics-probability-means-and-totals"
+  ],
+  "math-statistics-probability-d7": [
+    "math-statistics-probability-means-and-totals"
+  ],
+  "math-statistics-probability-d8": [
+    "math-statistics-probability-means-and-totals"
+  ],
+  "math-statistics-probability-d30": [
+    "math-statistics-probability-means-and-totals"
+  ],
+  "math-statistics-probability-d9": [
+    "math-statistics-probability-medians-and-outliers"
+  ],
+  "math-statistics-probability-d20": [
+    "math-statistics-probability-medians-and-outliers"
+  ],
+  "math-statistics-probability-d6": [
+    "math-statistics-probability-spread-transformations"
+  ],
+  "math-statistics-probability-d18": [
+    "math-statistics-probability-spread-transformations"
+  ],
+  "math-statistics-probability-d19": [
+    "math-statistics-probability-spread-transformations"
+  ],
+  "math-statistics-probability-m3": [
+    "math-statistics-probability-spread-transformations"
+  ],
+  "math-statistics-probability-d21": [
+    "math-statistics-probability-frequency-tables"
+  ],
+  "math-statistics-probability-d31": [
+    "math-statistics-probability-frequency-tables"
+  ],
+  "math-statistics-probability-m5": [
+    "math-statistics-probability-frequency-tables",
+    "math-statistics-probability-unordered-groups",
+    "math-algebra-linear-equations"
+  ],
+  "math-statistics-probability-d2": [
+    "math-statistics-probability-equally-likely-outcomes"
+  ],
+  "math-statistics-probability-d28": [
+    "math-statistics-probability-equally-likely-outcomes"
+  ],
+  "math-statistics-probability-d3": [
+    "math-statistics-probability-unordered-groups"
+  ],
+  "math-statistics-probability-d16": [
+    "math-statistics-probability-unordered-groups"
+  ],
+  "math-statistics-probability-d4": [
+    "math-statistics-probability-dependent-draws"
+  ],
+  "math-statistics-probability-d25": [
+    "math-statistics-probability-dependent-draws"
+  ],
+  "math-statistics-probability-d29": [
+    "math-statistics-probability-dependent-draws"
+  ],
+  "math-statistics-probability-d5": [
+    "math-statistics-probability-expected-value"
+  ],
+  "math-statistics-probability-d17": [
+    "math-statistics-probability-expected-value"
+  ],
+  "math-statistics-probability-m4": [
+    "math-statistics-probability-expected-value"
+  ],
+  "math-statistics-probability-m6": [
+    "math-statistics-probability-expected-value",
+    "math-statistics-probability-dependent-draws",
+    "math-statistics-probability-unordered-groups"
+  ],
+  "math-statistics-probability-d10": [
+    "math-statistics-probability-conditional-probability"
+  ],
+  "math-statistics-probability-m1": [
+    "math-statistics-probability-conditional-probability"
+  ],
+  "math-statistics-probability-d11": [
+    "math-statistics-probability-independence"
+  ],
+  "math-statistics-probability-d12": [
+    "math-statistics-probability-inclusive-union"
+  ],
+  "math-statistics-probability-d32": [
+    "math-statistics-probability-inclusive-union"
+  ],
+  "math-statistics-probability-d13": [
+    "math-statistics-probability-complements"
+  ],
+  "math-statistics-probability-d27": [
+    "math-statistics-probability-complements"
+  ],
+  "math-statistics-probability-d14": [
+    "math-statistics-probability-exact-binomial-count"
+  ],
+  "math-statistics-probability-d26": [
+    "math-statistics-probability-first-success"
+  ],
+  "math-statistics-probability-d15": [
+    "math-statistics-probability-ordered-choices"
+  ],
+  "math-statistics-probability-m2": [
+    "math-statistics-probability-repeated-permutations"
+  ],
+  "math-statistics-probability-d22": [
+    "math-statistics-probability-sampling-and-design"
+  ],
+  "math-statistics-probability-d23": [
+    "math-statistics-probability-interquartile-range"
+  ],
+  "math-statistics-probability-d24": [
+    "math-statistics-probability-standardized-distance"
+  ],
+  "math-number-quantity-d1": [
+    "math-number-quantity-complex-products"
+  ],
+  "math-number-quantity-d28": [
+    "math-number-quantity-complex-products"
+  ],
+  "math-number-quantity-d8": [
+    "math-number-quantity-complex-division"
+  ],
+  "math-number-quantity-d9": [
+    "math-number-quantity-complex-magnitude"
+  ],
+  "math-number-quantity-d2": [
+    "math-number-quantity-vector-components"
+  ],
+  "math-number-quantity-d16": [
+    "math-number-quantity-vector-components"
+  ],
+  "math-number-quantity-d31": [
+    "math-number-quantity-vector-components"
+  ],
+  "math-number-quantity-m2": [
+    "math-number-quantity-vector-components"
+  ],
+  "math-number-quantity-d17": [
+    "math-number-quantity-dot-products"
+  ],
+  "math-number-quantity-d18": [
+    "math-number-quantity-dot-products"
+  ],
+  "math-number-quantity-d3": [
+    "math-number-quantity-matrix-products"
+  ],
+  "math-number-quantity-d19": [
+    "math-number-quantity-matrix-products"
+  ],
+  "math-number-quantity-d20": [
+    "math-number-quantity-matrix-products"
+  ],
+  "math-number-quantity-m5": [
+    "math-number-quantity-matrix-powers",
+    "math-number-quantity-matrix-products"
+  ],
+  "math-number-quantity-d21": [
+    "math-number-quantity-matrix-inverses"
+  ],
+  "math-number-quantity-d22": [
+    "math-number-quantity-matrix-inverses"
+  ],
+  "math-number-quantity-m1": [
+    "math-number-quantity-matrix-inverses"
+  ],
+  "math-number-quantity-d10": [
+    "math-number-quantity-arithmetic-sequences"
+  ],
+  "math-number-quantity-d11": [
+    "math-number-quantity-arithmetic-sequences"
+  ],
+  "math-number-quantity-m3": [
+    "math-number-quantity-arithmetic-sequences"
+  ],
+  "math-number-quantity-d4": [
+    "math-number-quantity-geometric-sequences"
+  ],
+  "math-number-quantity-d12": [
+    "math-number-quantity-geometric-sequences"
+  ],
+  "math-number-quantity-d13": [
+    "math-number-quantity-geometric-sequences"
+  ],
+  "math-number-quantity-d29": [
+    "math-number-quantity-geometric-sequences"
+  ],
+  "math-number-quantity-d5": [
+    "math-number-quantity-rational-exponents"
+  ],
+  "math-number-quantity-d15": [
+    "math-number-quantity-rational-exponents"
+  ],
+  "math-number-quantity-d24": [
+    "math-number-quantity-rational-exponents"
+  ],
+  "math-number-quantity-d30": [
+    "math-number-quantity-rational-exponents"
+  ],
+  "math-number-quantity-d7": [
+    "math-number-quantity-radical-rules"
+  ],
+  "math-number-quantity-d32": [
+    "math-number-quantity-radical-rules"
+  ],
+  "math-number-quantity-d14": [
+    "math-number-quantity-scientific-notation"
+  ],
+  "math-number-quantity-d25": [
+    "math-number-quantity-remainders"
+  ],
+  "math-number-quantity-d26": [
+    "math-number-quantity-prime-factors"
+  ],
+  "math-number-quantity-m4": [
+    "math-number-quantity-prime-factors"
+  ],
+  "math-number-quantity-d23": [
+    "math-number-quantity-signed-arithmetic"
+  ],
+  "math-number-quantity-d6": [
+    "math-number-quantity-degree-radian-conversion"
+  ],
+  "math-number-quantity-d27": [
+    "math-number-quantity-origin-rotations"
+  ],
+  "math-number-quantity-m6": [
+    "math-number-quantity-perfect-square-parity",
+    "math-number-quantity-prime-factors"
+  ],
+  "math-essential-skills-d1": [
+    "math-essential-skills-ratio-parts"
+  ],
+  "math-essential-skills-d7": [
+    "math-essential-skills-ratio-parts"
+  ],
+  "math-essential-skills-d8": [
+    "math-essential-skills-percent-base"
+  ],
+  "math-essential-skills-d10": [
+    "math-essential-skills-percent-base"
+  ],
+  "math-essential-skills-d24": [
+    "math-essential-skills-percent-base"
+  ],
+  "math-essential-skills-d28": [
+    "math-essential-skills-percent-base"
+  ],
+  "math-essential-skills-d2": [
+    "math-essential-skills-percent-factors"
+  ],
+  "math-essential-skills-d9": [
+    "math-essential-skills-percent-factors"
+  ],
+  "math-essential-skills-d20": [
+    "math-essential-skills-percent-factors"
+  ],
+  "math-essential-skills-m1": [
+    "math-essential-skills-percent-factors"
+  ],
+  "math-essential-skills-d3": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-essential-skills-d11": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-essential-skills-d17": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-essential-skills-d18": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-essential-skills-d23": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-essential-skills-d30": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-essential-skills-m6": [
+    "math-essential-skills-unit-factors",
+    "math-essential-skills-percent-factors",
+    "math-modeling-whole-number-thresholds"
+  ],
+  "math-essential-skills-d4": [
+    "math-essential-skills-weighted-mixtures"
+  ],
+  "math-essential-skills-d14": [
+    "math-essential-skills-weighted-mixtures"
+  ],
+  "math-essential-skills-d19": [
+    "math-essential-skills-weighted-mixtures"
+  ],
+  "math-essential-skills-d27": [
+    "math-essential-skills-weighted-mixtures"
+  ],
+  "math-essential-skills-m4": [
+    "math-essential-skills-weighted-mixtures"
+  ],
+  "math-essential-skills-d5": [
+    "math-essential-skills-average-speed"
+  ],
+  "math-essential-skills-d16": [
+    "math-essential-skills-average-speed"
+  ],
+  "math-essential-skills-m2": [
+    "math-essential-skills-average-speed"
+  ],
+  "math-essential-skills-d6": [
+    "math-essential-skills-combined-work"
+  ],
+  "math-essential-skills-d13": [
+    "math-essential-skills-combined-work"
+  ],
+  "math-essential-skills-d15": [
+    "math-essential-skills-combined-work"
+  ],
+  "math-essential-skills-d32": [
+    "math-essential-skills-combined-work"
+  ],
+  "math-essential-skills-m3": [
+    "math-essential-skills-combined-work"
+  ],
+  "math-essential-skills-d21": [
+    "math-essential-skills-changing-ratios"
+  ],
+  "math-essential-skills-d26": [
+    "math-essential-skills-changing-ratios"
+  ],
+  "math-essential-skills-m5": [
+    "math-essential-skills-changing-ratios",
+    "math-algebra-linear-equations"
+  ],
+  "math-essential-skills-d22": [
+    "math-essential-skills-inverse-proportions",
+    "math-essential-skills-unit-factors",
+    "math-functions-inverse-variation"
+  ],
+  "math-essential-skills-d25": [
+    "math-essential-skills-relative-motion"
+  ],
+  "math-essential-skills-d31": [
+    "math-essential-skills-relative-motion"
+  ],
+  "math-essential-skills-d29": [
+    "math-essential-skills-fixed-and-repeated-payments"
+  ],
+  "math-modeling-d1": [
+    "math-modeling-linear-models"
+  ],
+  "math-modeling-d7": [
+    "math-modeling-linear-models"
+  ],
+  "math-modeling-d8": [
+    "math-modeling-linear-models"
+  ],
+  "math-modeling-d12": [
+    "math-modeling-linear-models"
+  ],
+  "math-modeling-d19": [
+    "math-modeling-linear-models"
+  ],
+  "math-modeling-d21": [
+    "math-modeling-linear-models"
+  ],
+  "math-modeling-d28": [
+    "math-modeling-linear-models"
+  ],
+  "math-modeling-d5": [
+    "math-modeling-two-price-counts"
+  ],
+  "math-modeling-d3": [
+    "math-modeling-quadratic-maxima"
+  ],
+  "math-modeling-d4": [
+    "math-modeling-quadratic-maxima"
+  ],
+  "math-modeling-d9": [
+    "math-modeling-quadratic-maxima"
+  ],
+  "math-modeling-d11": [
+    "math-modeling-quadratic-maxima"
+  ],
+  "math-modeling-d13": [
+    "math-modeling-quadratic-maxima"
+  ],
+  "math-modeling-d31": [
+    "math-modeling-quadratic-maxima"
+  ],
+  "math-modeling-m2": [
+    "math-modeling-quadratic-maxima",
+    "math-functions-quadratic-vertex"
+  ],
+  "math-modeling-d10": [
+    "math-modeling-ground-contact"
+  ],
+  "math-modeling-d14": [
+    "math-modeling-dimension-equations"
+  ],
+  "math-modeling-d20": [
+    "math-modeling-dimension-equations"
+  ],
+  "math-modeling-d25": [
+    "math-modeling-dimension-equations"
+  ],
+  "math-modeling-d2": [
+    "math-modeling-exponential-models"
+  ],
+  "math-modeling-d15": [
+    "math-modeling-exponential-models"
+  ],
+  "math-modeling-d16": [
+    "math-modeling-exponential-models"
+  ],
+  "math-modeling-d17": [
+    "math-modeling-exponential-models"
+  ],
+  "math-modeling-d29": [
+    "math-modeling-exponential-models"
+  ],
+  "math-modeling-m6": [
+    "math-modeling-exponential-models",
+    "math-functions-logarithm-equations"
+  ],
+  "math-modeling-d26": [
+    "math-modeling-interest-periods"
+  ],
+  "math-modeling-d27": [
+    "math-modeling-interest-periods"
+  ],
+  "math-modeling-m1": [
+    "math-modeling-interest-periods"
+  ],
+  "math-modeling-d22": [
+    "math-modeling-piecewise-costs"
+  ],
+  "math-modeling-d32": [
+    "math-modeling-piecewise-costs"
+  ],
+  "math-modeling-d6": [
+    "math-modeling-whole-number-thresholds"
+  ],
+  "math-modeling-d18": [
+    "math-modeling-whole-number-thresholds"
+  ],
+  "math-modeling-d23": [
+    "math-modeling-whole-number-thresholds"
+  ],
+  "math-modeling-d30": [
+    "math-modeling-whole-number-thresholds"
+  ],
+  "math-modeling-m3": [
+    "math-modeling-whole-number-thresholds"
+  ],
+  "math-modeling-d24": [
+    "math-modeling-resource-optima"
+  ],
+  "math-modeling-m5": [
+    "math-modeling-resource-optima",
+    "math-algebra-linear-systems"
+  ],
+  "math-modeling-m4": [
+    "math-modeling-residual-fit"
+  ],
+  "math-functions-d23": [
+    "math-functions-linear-values"
+  ],
+  "math-functions-m1": [
+    "math-functions-quadratic-vertex"
+  ],
+  "math-essential-skills-d12": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-exam-1-q01": [
+    "math-essential-skills-ratio-parts"
+  ],
+  "math-exam-1-q02": [
+    "math-algebra-linear-equations"
+  ],
+  "math-exam-1-q03": [
+    "math-essential-skills-ratio-parts"
+  ],
+  "math-exam-1-q04": [
+    "math-statistics-probability-medians-and-outliers"
+  ],
+  "math-exam-1-q05": [
+    "math-geometry-pythagorean-lengths"
+  ],
+  "math-exam-1-q06": [
+    "math-functions-linear-values"
+  ],
+  "math-exam-1-q07": [
+    "math-number-quantity-scientific-notation"
+  ],
+  "math-exam-1-q08": [
+    "math-algebra-linear-systems"
+  ],
+  "math-exam-1-q09": [
+    "math-essential-skills-percent-base"
+  ],
+  "math-exam-1-q10": [
+    "math-geometry-arc-and-sector"
+  ],
+  "math-exam-1-q11": [
+    "math-statistics-probability-means-and-totals"
+  ],
+  "math-exam-1-q12": [
+    "math-algebra-quadratic-formula"
+  ],
+  "math-exam-1-q13": [
+    "math-functions-linear-values"
+  ],
+  "math-exam-1-q14": [
+    "math-geometry-similarity-scaling"
+  ],
+  "math-exam-1-q15": [
+    "math-trigonometry-right-triangle-ratios"
+  ],
+  "math-exam-1-q16": [
+    "math-number-quantity-complex-magnitude"
+  ],
+  "math-exam-1-q17": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-exam-1-q18": [
+    "math-statistics-probability-dependent-draws"
+  ],
+  "math-exam-1-q19": [
+    "math-modeling-exponential-models"
+  ],
+  "math-exam-1-q20": [
+    "math-algebra-rational-equations"
+  ],
+  "math-exam-1-q21": [
+    "math-geometry-circle-right-triangles"
+  ],
+  "math-exam-1-q22": [
+    "math-functions-composition"
+  ],
+  "math-exam-1-q23": [
+    "math-number-quantity-matrix-inverses"
+  ],
+  "math-exam-1-q24": [
+    "math-statistics-probability-ordered-choices"
+  ],
+  "math-exam-1-q25": [
+    "math-modeling-linear-models"
+  ],
+  "math-exam-1-q26": [
+    "math-algebra-sign-charts"
+  ],
+  "math-exam-1-q27": [
+    "math-functions-quadratic-vertex"
+  ],
+  "math-exam-1-q28": [
+    "math-geometry-coordinate-area"
+  ],
+  "math-exam-1-q29": [
+    "math-trigonometry-quadrant-reciprocals"
+  ],
+  "math-exam-1-q30": [
+    "math-statistics-probability-exact-binomial-count"
+  ],
+  "math-exam-1-q31": [
+    "math-number-quantity-powers-of-i"
+  ],
+  "math-exam-1-q32": [
+    "math-essential-skills-relative-motion"
+  ],
+  "math-exam-1-q33": [
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-exam-1-q34": [
+    "math-geometry-arc-and-sector"
+  ],
+  "math-exam-1-q35": [
+    "math-functions-inverse-branches"
+  ],
+  "math-exam-1-q36": [
+    "math-trigonometry-sine-law"
+  ],
+  "math-exam-1-q37": [
+    "math-statistics-probability-exact-binomial-count"
+  ],
+  "math-exam-1-q38": [
+    "math-number-quantity-dot-products"
+  ],
+  "math-exam-1-q39": [
+    "math-modeling-exponential-models"
+  ],
+  "math-exam-1-q40": [
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-exam-1-q41": [
+    "math-geometry-equilateral-area"
+  ],
+  "math-exam-1-q42": [
+    "math-trigonometry-all-angle-solutions"
+  ],
+  "math-exam-1-q43": [
+    "math-functions-rational-graphs"
+  ],
+  "math-exam-1-q44": [
+    "math-statistics-probability-expected-value"
+  ],
+  "math-exam-1-q45": [
+    "math-modeling-resource-optima"
+  ],
+  "math-exam-2-q01": [
+    "math-statistics-probability-means-and-totals"
+  ],
+  "math-exam-2-q02": [
+    "math-essential-skills-ratio-parts"
+  ],
+  "math-exam-2-q03": [
+    "math-algebra-linear-equations"
+  ],
+  "math-exam-2-q04": [
+    "math-geometry-coordinate-area"
+  ],
+  "math-exam-2-q05": [
+    "math-functions-linear-values"
+  ],
+  "math-exam-2-q06": [
+    "math-number-quantity-rational-exponents"
+  ],
+  "math-exam-2-q07": [
+    "math-trigonometry-unit-circle-values"
+  ],
+  "math-exam-2-q08": [
+    "math-modeling-linear-models"
+  ],
+  "math-exam-2-q09": [
+    "math-algebra-linear-equations"
+  ],
+  "math-exam-2-q10": [
+    "math-statistics-probability-means-and-totals"
+  ],
+  "math-exam-2-q11": [
+    "math-geometry-coordinate-area"
+  ],
+  "math-exam-2-q12": [
+    "math-essential-skills-percent-factors"
+  ],
+  "math-exam-2-q13": [
+    "math-number-quantity-complex-products"
+  ],
+  "math-exam-2-q14": [
+    "math-functions-piecewise-evaluation"
+  ],
+  "math-exam-2-q15": [
+    "math-trigonometry-right-triangle-ratios"
+  ],
+  "math-exam-2-q16": [
+    "math-modeling-linear-models"
+  ],
+  "math-exam-2-q17": [
+    "math-algebra-quadratic-formula"
+  ],
+  "math-exam-2-q18": [
+    "math-statistics-probability-dependent-draws"
+  ],
+  "math-exam-2-q19": [
+    "math-geometry-polygon-angles"
+  ],
+  "math-exam-2-q20": [
+    "math-essential-skills-average-speed"
+  ],
+  "math-exam-2-q21": [
+    "math-number-quantity-matrix-inverses"
+  ],
+  "math-exam-2-q22": [
+    "math-functions-rates-and-differences"
+  ],
+  "math-exam-2-q23": [
+    "math-modeling-two-price-counts"
+  ],
+  "math-exam-2-q24": [
+    "math-trigonometry-unit-circle-values"
+  ],
+  "math-exam-2-q25": [
+    "math-algebra-rational-expressions"
+  ],
+  "math-exam-2-q26": [
+    "math-statistics-probability-unordered-groups"
+  ],
+  "math-exam-2-q27": [
+    "math-functions-composition"
+  ],
+  "math-exam-2-q28": [
+    "math-geometry-circle-angles"
+  ],
+  "math-exam-2-q29": [
+    "math-number-quantity-geometric-sequences"
+  ],
+  "math-exam-2-q30": [
+    "math-essential-skills-unit-factors"
+  ],
+  "math-exam-2-q31": [
+    "math-modeling-exponential-models"
+  ],
+  "math-exam-2-q32": [
+    "math-algebra-quadratic-formula"
+  ],
+  "math-exam-2-q33": [
+    "math-statistics-probability-exact-binomial-count"
+  ],
+  "math-exam-2-q34": [
+    "math-trigonometry-cosine-law"
+  ],
+  "math-exam-2-q35": [
+    "math-geometry-centroid-medians"
+  ],
+  "math-exam-2-q36": [
+    "math-functions-logarithm-equations"
+  ],
+  "math-exam-2-q37": [
+    "math-number-quantity-complex-magnitude"
+  ],
+  "math-exam-2-q38": [
+    "math-essential-skills-combined-work"
+  ],
+  "math-exam-2-q39": [
+    "math-algebra-quadratic-root-relations"
+  ],
+  "math-exam-2-q40": [
+    "math-statistics-probability-spread-transformations"
+  ],
+  "math-exam-2-q41": [
+    "math-geometry-triangle-circle-radii"
+  ],
+  "math-exam-2-q42": [
+    "math-functions-horizontal-asymptotes"
+  ],
+  "math-exam-2-q43": [
+    "math-number-quantity-matrix-systems"
+  ],
+  "math-exam-2-q44": [
+    "math-trigonometry-double-angle"
+  ],
+  "math-exam-2-q45": [
+    "math-modeling-resource-optima"
+  ],
+  "math-functions-arithmetic-indexing-practice-1": [
+    "math-functions-arithmetic-indexing"
+  ],
+  "math-functions-recursive-inputs-practice-1": [
+    "math-functions-recursive-inputs"
+  ],
+  "math-functions-piecewise-evaluation-practice-1": [
+    "math-functions-piecewise-evaluation"
+  ],
+  "math-functions-quadratic-range-practice-1": [
+    "math-functions-quadratic-range"
+  ],
+  "math-functions-even-odd-symmetry-practice-1": [
+    "math-functions-even-odd-symmetry"
+  ],
+  "math-functions-inverse-variation-practice-1": [
+    "math-functions-inverse-variation"
+  ],
+  "math-functions-linear-values-practice-1": [
+    "math-functions-linear-values"
+  ],
+  "math-functions-quadratic-vertex-practice-1": [
+    "math-functions-quadratic-vertex"
+  ],
+  "math-functions-horizontal-asymptotes-practice-1": [
+    "math-functions-horizontal-asymptotes"
+  ],
+  "math-functions-horizontal-asymptotes-practice-2": [
+    "math-functions-horizontal-asymptotes"
+  ],
+  "math-functions-function-definition-practice-1": [
+    "math-functions-function-definition"
+  ],
+  "math-functions-function-definition-practice-2": [
+    "math-functions-function-definition"
+  ],
+  "math-geometry-trapezoid-area-practice-1": [
+    "math-geometry-trapezoid-area"
+  ],
+  "math-geometry-cylinder-surface-practice-1": [
+    "math-geometry-cylinder-surface"
+  ],
+  "math-geometry-heron-area-practice-1": [
+    "math-geometry-heron-area"
+  ],
+  "math-geometry-perpendicular-distance-practice-1": [
+    "math-geometry-perpendicular-distance"
+  ],
+  "math-geometry-arc-and-sector-practice-1": [
+    "math-geometry-arc-and-sector"
+  ],
+  "math-geometry-sphere-surface-practice-1": [
+    "math-geometry-sphere-surface"
+  ],
+  "math-geometry-midpoint-endpoints-practice-1": [
+    "math-geometry-midpoint-endpoints"
+  ],
+  "math-geometry-perpendicular-lines-practice-1": [
+    "math-geometry-perpendicular-lines"
+  ],
+  "math-geometry-equilateral-area-practice-1": [
+    "math-geometry-equilateral-area"
+  ],
+  "math-geometry-angle-bisector-practice-1": [
+    "math-geometry-angle-bisector"
+  ],
+  "math-geometry-triangle-inequality-practice-1": [
+    "math-geometry-triangle-inequality"
+  ],
+  "math-geometry-rotations-practice-1": [
+    "math-geometry-rotations"
+  ],
+  "math-geometry-cone-surface-practice-1": [
+    "math-geometry-cone-surface"
+  ],
+  "math-geometry-box-surface-practice-1": [
+    "math-geometry-box-surface"
+  ],
+  "math-geometry-triangle-circle-radii-practice-1": [
+    "math-geometry-triangle-circle-radii"
+  ],
+  "math-geometry-centroid-medians-practice-1": [
+    "math-geometry-centroid-medians"
+  ],
+  "math-geometry-centroid-medians-practice-2": [
+    "math-geometry-centroid-medians"
+  ],
+  "math-geometry-pythagorean-lengths-practice-1": [
+    "math-geometry-pythagorean-lengths"
+  ],
+  "math-geometry-pythagorean-lengths-practice-2": [
+    "math-geometry-pythagorean-lengths"
+  ],
+  "math-geometry-coordinate-reflections-practice-1": [
+    "math-geometry-coordinate-reflections"
+  ],
+  "math-geometry-coordinate-reflections-practice-2": [
+    "math-geometry-coordinate-reflections"
+  ],
+  "math-geometry-coordinate-dilations-practice-1": [
+    "math-geometry-coordinate-dilations"
+  ],
+  "math-geometry-coordinate-dilations-practice-2": [
+    "math-geometry-coordinate-dilations"
+  ],
+  "math-geometry-angle-chains-practice-1": [
+    "math-geometry-angle-chains"
+  ],
+  "math-geometry-angle-chains-practice-2": [
+    "math-geometry-angle-chains"
+  ],
+  "math-geometry-triangle-congruence-practice-1": [
+    "math-geometry-triangle-congruence"
+  ],
+  "math-geometry-triangle-congruence-practice-2": [
+    "math-geometry-triangle-congruence"
+  ],
+  "math-geometry-ellipse-features-practice-1": [
+    "math-geometry-ellipse-features"
+  ],
+  "math-geometry-ellipse-features-practice-2": [
+    "math-geometry-ellipse-features"
+  ],
+  "math-geometry-hyperbola-features-practice-1": [
+    "math-geometry-hyperbola-features"
+  ],
+  "math-geometry-hyperbola-features-practice-2": [
+    "math-geometry-hyperbola-features"
+  ],
+  "math-geometry-parabola-focus-practice-1": [
+    "math-geometry-parabola-focus"
+  ],
+  "math-geometry-parabola-focus-practice-2": [
+    "math-geometry-parabola-focus"
+  ],
+  "math-geometry-regular-polygon-area-practice-1": [
+    "math-geometry-regular-polygon-area"
+  ],
+  "math-geometry-regular-polygon-area-practice-2": [
+    "math-geometry-regular-polygon-area"
+  ],
+  "math-number-quantity-complex-division-practice-1": [
+    "math-number-quantity-complex-division"
+  ],
+  "math-number-quantity-complex-magnitude-practice-1": [
+    "math-number-quantity-complex-magnitude"
+  ],
+  "math-number-quantity-matrix-powers-practice-1": [
+    "math-number-quantity-matrix-powers"
+  ],
+  "math-number-quantity-scientific-notation-practice-1": [
+    "math-number-quantity-scientific-notation"
+  ],
+  "math-number-quantity-remainders-practice-1": [
+    "math-number-quantity-remainders"
+  ],
+  "math-number-quantity-signed-arithmetic-practice-1": [
+    "math-number-quantity-signed-arithmetic"
+  ],
+  "math-number-quantity-degree-radian-conversion-practice-1": [
+    "math-number-quantity-degree-radian-conversion"
+  ],
+  "math-number-quantity-origin-rotations-practice-1": [
+    "math-number-quantity-origin-rotations"
+  ],
+  "math-number-quantity-perfect-square-parity-practice-1": [
+    "math-number-quantity-perfect-square-parity"
+  ],
+  "math-number-quantity-powers-of-i-practice-1": [
+    "math-number-quantity-powers-of-i"
+  ],
+  "math-number-quantity-powers-of-i-practice-2": [
+    "math-number-quantity-powers-of-i"
+  ],
+  "math-number-quantity-matrix-systems-practice-1": [
+    "math-number-quantity-matrix-systems"
+  ],
+  "math-number-quantity-matrix-systems-practice-2": [
+    "math-number-quantity-matrix-systems"
+  ],
+  "math-number-quantity-matrix-addition-practice-1": [
+    "math-number-quantity-matrix-addition"
+  ],
+  "math-number-quantity-matrix-addition-practice-2": [
+    "math-number-quantity-matrix-addition"
+  ],
+  "math-number-quantity-rational-irrational-practice-1": [
+    "math-number-quantity-rational-irrational"
+  ],
+  "math-number-quantity-rational-irrational-practice-2": [
+    "math-number-quantity-rational-irrational"
+  ],
+  "math-number-quantity-integer-parity-practice-1": [
+    "math-number-quantity-integer-parity"
+  ],
+  "math-number-quantity-integer-parity-practice-2": [
+    "math-number-quantity-integer-parity"
+  ],
+  "math-statistics-probability-independence-practice-1": [
+    "math-statistics-probability-independence"
+  ],
+  "math-statistics-probability-exact-binomial-count-practice-1": [
+    "math-statistics-probability-exact-binomial-count"
+  ],
+  "math-statistics-probability-first-success-practice-1": [
+    "math-statistics-probability-first-success"
+  ],
+  "math-statistics-probability-ordered-choices-practice-1": [
+    "math-statistics-probability-ordered-choices"
+  ],
+  "math-statistics-probability-repeated-permutations-practice-1": [
+    "math-statistics-probability-repeated-permutations"
+  ],
+  "math-statistics-probability-sampling-and-design-practice-1": [
+    "math-statistics-probability-sampling-and-design"
+  ],
+  "math-statistics-probability-interquartile-range-practice-1": [
+    "math-statistics-probability-interquartile-range"
+  ],
+  "math-statistics-probability-standardized-distance-practice-1": [
+    "math-statistics-probability-standardized-distance"
+  ],
+  "math-trigonometry-included-angle-area-practice-1": [
+    "math-trigonometry-included-angle-area"
+  ],
+  "math-essential-skills-inverse-proportions-practice-1": [
+    "math-essential-skills-inverse-proportions"
+  ],
+  "math-essential-skills-fixed-and-repeated-payments-practice-1": [
+    "math-essential-skills-fixed-and-repeated-payments"
+  ],
+  "math-modeling-two-price-counts-practice-1": [
+    "math-modeling-two-price-counts"
+  ],
+  "math-modeling-ground-contact-practice-1": [
+    "math-modeling-ground-contact"
+  ],
+  "math-modeling-residual-fit-practice-1": [
+    "math-modeling-residual-fit"
+  ]
+}

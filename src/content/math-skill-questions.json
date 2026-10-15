@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "math-functions-arithmetic-indexing-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "An arithmetic sequence has a₀=44 and a₁=38.",
+    "questionText": "What is a₅?",
+    "choices": [
+      "44",
+      "8",
+      "14",
+      "20"
+    ],
+    "answer": 2,
+    "explanation": "The common difference is−6. Five jumps from index 0 give a₅=44+5(−6)=14. The 20 and 8 choices use four and six jumps; 44 is the unchanged starting term."
+  },
+  {
+    "id": "math-functions-recursive-inputs-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "F(x, y)=x²+y. Let a₀=2 and aₙ₊₁=F(aₙ, n+1)for n≥0.",
+    "questionText": "What is a₂?",
+    "choices": [
+      "27",
+      "29",
+      "25",
+      "26"
+    ],
+    "answer": 0,
+    "explanation": "The first step is a₁=F(2, 1)=5. The second uses the new term and index: a₂=F(5, 2)=25+2=27. Keeping the second input at 1 would give 26."
+  },
+  {
+    "id": "math-functions-piecewise-evaluation-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "easy",
+    "stem": "f(x)=2 x+1 for x≤−1, and f(x)=x²+3 for x>−1.",
+    "questionText": "What is f(−1)?",
+    "choices": [
+      "−1",
+      "4",
+      "1",
+      "−3"
+    ],
+    "answer": 0,
+    "explanation": "The endpoint−1 belongs to the first branch because it includes equality. Thus f(−1)=2(−1)+1=−1. The 4 choice comes from applying the second branch outside its domain."
+  },
+  {
+    "id": "math-functions-quadratic-range-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "easy",
+    "stem": "f(x)=−3(x−2)²+8 for all real x.",
+    "questionText": "Which statement describes its range?",
+    "choices": [
+      "y≥2",
+      "y≤2",
+      "y≥8",
+      "y≤8"
+    ],
+    "answer": 3,
+    "explanation": "The square is nonnegative, so−3(x−2)²≤0. The largest output is 8, attained at x=2; outputs extend downward without bound. Therefore y≤8. The input 2 is not the range endpoint."
+  },
+  {
+    "id": "math-functions-even-odd-symmetry-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "Each polynomial is defined on all real numbers.",
+    "questionText": "Which is an even function?",
+    "choices": [
+      "x³+4",
+      "x²−3 x",
+      "x³−x",
+      "5 x⁶+2 x²−1"
+    ],
+    "answer": 3,
+    "explanation": "The polynomial 5 x⁶+2 x²−1 contains only even powers and a constant, so its output is unchanged under x→−x. The mixed-power alternatives fail that equality, and x³−x is odd instead."
+  },
+  {
+    "id": "math-functions-inverse-variation-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "f varies inversely with its positive input, and f(6)=14.",
+    "questionText": "What is f(12)?",
+    "choices": [
+      "2",
+      "28",
+      "20",
+      "7"
+    ],
+    "answer": 3,
+    "explanation": "The constant product is 6·14=84. At input 12, the output is 84/12=7. Doubling a positive input halves the output in inverse variation; 28 would use direct variation."
+  },
+  {
+    "id": "math-functions-linear-values-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "A linear function satisfies f(−1)=8 and f(3)=−4.",
+    "questionText": "What is f(2)?",
+    "choices": [
+      "2",
+      "−6",
+      "5",
+      "−1"
+    ],
+    "answer": 3,
+    "explanation": "The slope is(−4−8)/(3−(−1))=−3. Using the first point gives intercept 5, so f(2)=−6+5=−1. The 5 choice reports the intercept rather than the requested function value."
+  },
+  {
+    "id": "math-functions-quadratic-vertex-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "f(x)=−2 x²+12 x−7.",
+    "questionText": "What is its vertex?",
+    "choices": [
+      "(3, 11)",
+      "(3, −7)",
+      "(−3, 11)",
+      "(6, 11)"
+    ],
+    "answer": 0,
+    "explanation": "The vertex input is−12/(2·−2)=3. Evaluating gives−18+36−7=11, so the vertex is(3, 11). Because the leading coefficient is negative, this is the maximum point."
+  },
+  {
+    "id": "math-functions-horizontal-asymptotes-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "f(x)=(7 x−4)/(2 x+1).",
+    "questionText": "What is the horizontal asymptote?",
+    "choices": [
+      "y=0",
+      "y=7/2",
+      "y=−4",
+      "x=−1/2"
+    ],
+    "answer": 1,
+    "explanation": "The numerator and denominator have equal degree, so the horizontal output limit is the ratio of leading coefficients 7/2. The line x=−1/2 is vertical, a different asymptote."
+  },
+  {
+    "id": "math-functions-horizontal-asymptotes-practice-2",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "f(x)=(3 x²+2)/(x³−1).",
+    "questionText": "What is the horizontal asymptote?",
+    "choices": [
+      "x=1",
+      "y=2",
+      "y=3",
+      "y=0"
+    ],
+    "answer": 3,
+    "explanation": "The denominator has higher degree than the numerator. Dividing by x³ shows every numerator term approaches zero while the denominator approaches 1, so the horizontal asymptote is y=0."
+  },
+  {
+    "id": "math-functions-function-definition-practice-1",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "easy",
+    "stem": "Consider relations represented by the listed ordered pairs.",
+    "questionText": "Which relation defines y as a function of x?",
+    "choices": [
+      "(1, 4), (1, 4), (2, 6)",
+      "(1, 4), (1, 5), (2, 6)",
+      "(2, 3), (2, 4), (3, 5)",
+      "(3, 1), (3, 2), (3, 4)"
+    ],
+    "answer": 0,
+    "explanation": "The relation(1, 4), (1, 4), (2, 6)assigns only one distinct output to each input. Repeating the identical pair(1, 4)does not create a second output. The other relations assign different outputs to one input, so they fail the function definition."
+  },
+  {
+    "id": "math-functions-function-definition-practice-2",
+    "topic": "math-functions",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "A relation assigns y=±√(x+1)to each real x≥−1.",
+    "questionText": "Why does this relation fail to define one function y of x?",
+    "choices": [
+      "Input−1 has output 0",
+      "Input 3 has outputs 2 and−2",
+      "A function can never have negative outputs",
+      "The square root is undefined at x=3"
+    ],
+    "answer": 1,
+    "explanation": "At x=3, the relation assigns both+2 and−2. Two distinct outputs for one allowed input violate the function definition. Negative outputs and the single output 0 at x=−1 are not themselves forbidden."
+  },
+  {
+    "id": "math-geometry-trapezoid-area-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A trapezoid has parallel bases 9 and 17 and perpendicular height 6.",
+    "questionText": "What is its area?",
+    "choices": [
+      "102",
+      "156",
+      "54",
+      "78"
+    ],
+    "answer": 3,
+    "explanation": "The average base is(9+17)/2=13. Multiply by height 6 to get 78 square units. The 54 and 102 choices use only one base; 156 omits the factor 1/2."
+  },
+  {
+    "id": "math-geometry-cylinder-surface-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A closed right circular cylinder has radius 2 and height 5.",
+    "questionText": "What is its total surface area?",
+    "choices": [
+      "20π",
+      "28π",
+      "40π",
+      "48π"
+    ],
+    "answer": 1,
+    "explanation": "The curved surface contributes 2π·2·5=20π and the two ends contribute 2π·2²=8π. Their sum is 28π square units. The 20π choice omits the ends."
+  },
+  {
+    "id": "math-geometry-heron-area-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A triangle has side lengths 13, 13, and 10.",
+    "questionText": "What is its area?",
+    "choices": [
+      "50",
+      "60",
+      "65",
+      "120"
+    ],
+    "answer": 1,
+    "explanation": "The semiperimeter is 18. Heron gives√(18·5·5·8)=60. Equivalently, the altitude bisects base 10 into two 5-unit pieces and has length 12, so area 10·12/2=60."
+  },
+  {
+    "id": "math-geometry-perpendicular-distance-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "The line is 3 x+4 y−14=0 and the point is(1, −1).",
+    "questionText": "What is the perpendicular distance from the point to the line?",
+    "choices": [
+      "3",
+      "15",
+      "5",
+      "1"
+    ],
+    "answer": 0,
+    "explanation": "Use|3(1)+4(−1)−14|/√(3²+4²)=15/5=3. The 15 choice is the unnormalized numerator; the denominator is needed to convert it into a distance."
+  },
+  {
+    "id": "math-geometry-arc-and-sector-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A circle has radius 7 and central angle 120°.",
+    "questionText": "What is the length of the intercepted minor arc?",
+    "choices": [
+      "28π/3",
+      "7π/3",
+      "14π/3",
+      "49π/3"
+    ],
+    "answer": 2,
+    "explanation": "The angle is one third of a full turn. Its arc is one third of circumference 14π, giving 14π/3. The 49π/3 choice is sector area rather than arc length."
+  },
+  {
+    "id": "math-geometry-sphere-surface-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A sphere has radius 6.",
+    "questionText": "What is its surface area?",
+    "choices": [
+      "36π",
+      "72π",
+      "144π",
+      "288π"
+    ],
+    "answer": 2,
+    "explanation": "Surface area is 4πr²=4π·36=144π square units. The 36π choice is a circular cross-section; 288π is the volume coefficient for this sphere."
+  },
+  {
+    "id": "math-geometry-midpoint-endpoints-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A segment has endpoint(−6, 5)and midpoint(2, −1).",
+    "questionText": "What is the other endpoint?",
+    "choices": [
+      "(4, −2)",
+      "(−10, 7)",
+      "(−2, 2)",
+      "(10, −7)"
+    ],
+    "answer": 3,
+    "explanation": "Twice the midpoint minus the known endpoint gives(4−(−6), −2−5)=(10, −7). Averaging these two endpoints recovers(2, −1), confirming both coordinates."
+  },
+  {
+    "id": "math-geometry-perpendicular-lines-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "easy",
+    "stem": "A line has slope 5/6.",
+    "questionText": "What is the slope of a perpendicular nonvertical line?",
+    "choices": [
+      "6/5",
+      "−6/5",
+      "−5/6",
+      "5/6"
+    ],
+    "answer": 1,
+    "explanation": "Perpendicular slopes multiply to−1. The negative reciprocal of 5/6 is−6/5. Taking just the reciprocal or just the negative does not satisfy that product."
+  },
+  {
+    "id": "math-geometry-equilateral-area-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "An equilateral triangle has side 14.",
+    "questionText": "What is its area?",
+    "choices": [
+      "98√3",
+      "49",
+      "196√3",
+      "49√3"
+    ],
+    "answer": 3,
+    "explanation": "The altitude is 7√3. Area is 14·7√3/2=49√3, same as 14²√3/4. The 98√3 choice omits the triangle half factor after finding its altitude."
+  },
+  {
+    "id": "math-geometry-angle-bisector-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "In triangle ABC, AB=8, AC=12, and BC=15. The bisector from A meets BC at D.",
+    "questionText": "What is BD?",
+    "choices": [
+      "9",
+      "7.5",
+      "10",
+      "6"
+    ],
+    "answer": 3,
+    "explanation": "The angle-bisector theorem gives BD: DC=8: 12=2: 3. The 15-unit base has five ratio parts, so BD=15·2/5=6. The 9 choice is DC, and 7.5 assumes a median."
+  },
+  {
+    "id": "math-geometry-triangle-inequality-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A triangle has sides 5 and 12 and an integer third side x.",
+    "questionText": "How many values of x are possible?",
+    "choices": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "answer": 1,
+    "explanation": "The strict triangle bounds are 7<x<17. The integers 8 through 16 give nine possible lengths. Neither 7 nor 17 is allowed because it would flatten the triangle."
+  },
+  {
+    "id": "math-geometry-rotations-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Point P=(6, −1)is rotated 90° counterclockwise about C=(2, 1).",
+    "questionText": "What is its image?",
+    "choices": [
+      "(0, −3)",
+      "(2, 4)",
+      "(1, 6)",
+      "(4, 5)"
+    ],
+    "answer": 3,
+    "explanation": "Subtract the center to get displacement(4, −2). Rotate it to(2, 4), then add(2, 1), giving(4, 5). The 2, 4 choice forgets the final translation, and 0, −3 turns clockwise."
+  },
+  {
+    "id": "math-geometry-cone-surface-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A closed right circular cone has radius 9 and perpendicular height 12.",
+    "questionText": "What is its total surface area?",
+    "choices": [
+      "189π",
+      "216π",
+      "324π",
+      "135π"
+    ],
+    "answer": 1,
+    "explanation": "The slant height is√(9²+12²)=15. Curved area 135π plus base 81πgives216π. The 189π choice substitutes the perpendicular height for slant height; 324π comes from volume."
+  },
+  {
+    "id": "math-geometry-box-surface-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A closed rectangular box has side lengths 3, 4, and 8.",
+    "questionText": "What is its surface area?",
+    "choices": [
+      "136",
+      "272",
+      "68",
+      "96"
+    ],
+    "answer": 0,
+    "explanation": "The opposite-face pairs give 2(3·4+3·8+4·8)=2(12+24+32)=136 square units. The 68 choice counts only three faces; 96 is volume."
+  },
+  {
+    "id": "math-geometry-triangle-circle-radii-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "hard",
+    "stem": "A right triangle has legs 7 and 24. Its inradius is r and its circumradius is R.",
+    "questionText": "What is r/R?",
+    "choices": [
+      "3/25",
+      "12/25",
+      "25/6",
+      "6/25"
+    ],
+    "answer": 3,
+    "explanation": "The hypotenuse is 25, area 84, and semiperimeter 28, so r=3. Its circumradius is 25/2. Thus r/R=3/(25/2)=6/25. Using 25 as the radius instead of the diameter gives 3/25."
+  },
+  {
+    "id": "math-geometry-centroid-medians-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A triangle has a median of length 27 from vertex A to the opposite midpoint.",
+    "questionText": "How far is the centroid from A along that median?",
+    "choices": [
+      "18",
+      "54",
+      "9",
+      "13.5"
+    ],
+    "answer": 0,
+    "explanation": "The centroid is two thirds of the median from its vertex. Thus 27·2/3=18. The 9 choice is the remaining centroid-to-midpoint segment; 13.5 would simply bisect the median."
+  },
+  {
+    "id": "math-geometry-centroid-medians-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A triangle has vertices(−3, 0), (6, 0), (0, 9).",
+    "questionText": "What are its centroid coordinates?",
+    "choices": [
+      "(3, 4.5)",
+      "(−1, 3)",
+      "(1, 3)",
+      "(3, 9)"
+    ],
+    "answer": 2,
+    "explanation": "Average all three x-coordinates and all three y-coordinates: (−3+6+0)/3=1 and(0+0+9)/3=3. A midpoint of only two vertices is not the centroid."
+  },
+  {
+    "id": "math-geometry-pythagorean-lengths-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A right triangle has hypotenuse 29 and a leg 20.",
+    "questionText": "What is its other leg?",
+    "choices": [
+      "21",
+      "√1241",
+      "49",
+      "9"
+    ],
+    "answer": 0,
+    "explanation": "Since 29 is the hypotenuse, the other leg is√(29²−20²)=√441=21. Subtracting the lengths gives 9 but does not satisfy Pythagoras; adding their squares treats the hypotenuse as a leg."
+  },
+  {
+    "id": "math-geometry-pythagorean-lengths-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A rectangle has side lengths 9 and 40.",
+    "questionText": "What is its diagonal length?",
+    "choices": [
+      "41",
+      "49",
+      "√1519",
+      "31"
+    ],
+    "answer": 0,
+    "explanation": "The diagonal is the hypotenuse formed by perpendicular sides 9 and 40. Its length is√(81+1600)=41. A sum or difference of side lengths measures a different path, not the diagonal."
+  },
+  {
+    "id": "math-geometry-coordinate-reflections-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Point(7, −4)is reflected across the line x=3.",
+    "questionText": "What is its image?",
+    "choices": [
+      "(−7, −4)",
+      "(−1, −4)",
+      "(−1, 4)",
+      "(7, 10)"
+    ],
+    "answer": 1,
+    "explanation": "The reflected x-coordinate is 2·3−7=−1 and y stays−4. The two x-coordinates average to 3, the mirror line. The−7 choice reflects across the y-axis instead."
+  },
+  {
+    "id": "math-geometry-coordinate-reflections-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "easy",
+    "stem": "Point(−2, 6)is reflected across y=x.",
+    "questionText": "What is its image?",
+    "choices": [
+      "(−6, −2)",
+      "(6, −2)",
+      "(−2, −6)",
+      "(−2, 6)"
+    ],
+    "answer": 1,
+    "explanation": "Reflection across y=x swaps the two coordinates without negating them. Therefore(−2, 6)becomes(6, −2). The other operations are rotations, axis reflections, or no change."
+  },
+  {
+    "id": "math-geometry-coordinate-dilations-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Point(2, −1)is dilated by factor 3 about the origin.",
+    "questionText": "What is its image?",
+    "choices": [
+      "(6, −3)",
+      "(2, −1)",
+      "(3, −1.5)",
+      "(5, 2)"
+    ],
+    "answer": 0,
+    "explanation": "About the origin, the displacement is the original coordinate vector. Multiplying both components by 3 gives(6, −3). Adding 3 to each coordinate is a translation, not a dilation."
+  },
+  {
+    "id": "math-geometry-coordinate-dilations-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Point(−2, 5)is dilated by factor 1/2 about center(1, 2).",
+    "questionText": "What is its image?",
+    "choices": [
+      "(−5, 8)",
+      "(−1, 2.5)",
+      "(−0.5, 3.5)",
+      "(−1.5, 1.5)"
+    ],
+    "answer": 2,
+    "explanation": "Relative to the center, the displacement is(−3, 3). Halve it to(−1.5, 1.5), then add(1, 2), giving(−0.5, 3.5). The−1, 2.5 choice incorrectly scales around the origin."
+  },
+  {
+    "id": "math-geometry-angle-chains-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Two parallel lines are cut by a transversal. Two same-side interior angles are(3 x+10)° and(x+18)°.",
+    "questionText": "What is x?",
+    "choices": [
+      "124",
+      "4",
+      "38",
+      "56"
+    ],
+    "answer": 2,
+    "explanation": "Same-side interior angles are supplementary, so 3 x+10+x+18=180. Thus 4 x=152 and x=38. The 4 choice incorrectly sets the two angles equal, which would use the wrong relationship."
+  },
+  {
+    "id": "math-geometry-angle-chains-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "An isosceles triangle has vertex angle(x+10)° and each base angle(2 x+5)°.",
+    "questionText": "What is its vertex angle?",
+    "choices": [
+      "138°",
+      "42°",
+      "32°",
+      "69°"
+    ],
+    "answer": 1,
+    "explanation": "The angle sum gives(x+10)+2(2 x+5)=180, so 5 x+20=180 and x=32. The requested vertex angle is 42°, not x itself or a base angle 69°."
+  },
+  {
+    "id": "math-geometry-triangle-congruence-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Each of two triangles has sides 5 and 7 with an included angle 60°.",
+    "questionText": "Which criterion directly proves congruence from these givens?",
+    "choices": [
+      "AAA",
+      "SSA",
+      "SSS",
+      "SAS"
+    ],
+    "answer": 3,
+    "explanation": "The given angle lies between the two specified sides, so the side-angle-side criterion applies. SSS would require a third given side, AAA does not fix size, and SSA uses a nonincluded angle."
+  },
+  {
+    "id": "math-geometry-triangle-congruence-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Two right triangles are being compared.",
+    "questionText": "Which additional matching data guarantee congruence?",
+    "choices": [
+      "Their areas",
+      "Their perimeters",
+      "Their hypotenuses and one corresponding leg",
+      "One corresponding acute angle"
+    ],
+    "answer": 2,
+    "explanation": "Right triangles with the same hypotenuse and one corresponding leg satisfy the hypotenuse-leg criterion. An acute angle alone fixes only shape, and area or perimeter alone does not determine all sides."
+  },
+  {
+    "id": "math-geometry-ellipse-features-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "An ellipse has equation(x+3)²/49+(y−2)²/16=1.",
+    "questionText": "What is its major-axis length?",
+    "choices": [
+      "14",
+      "49",
+      "7",
+      "8"
+    ],
+    "answer": 0,
+    "explanation": "The larger denominator 49 gives a semimajor axis 7 along the x-direction. Doubling gives full major-axis length 14. The 8 choice is the minor-axis length, and 49 is a squared semiaxis."
+  },
+  {
+    "id": "math-geometry-ellipse-features-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "An ellipse has equation x²/100+y²/64=1.",
+    "questionText": "Where are its foci?",
+    "choices": [
+      "(0, −6), (0, 6)",
+      "(−8, 0), (8, 0)",
+      "(−10, 0), (10, 0)",
+      "(−6, 0), (6, 0)"
+    ],
+    "answer": 3,
+    "explanation": "The major axis is horizontal, with a=10 and b=8. Focal distance c=√(100−64)=6, so the foci are(±6, 0). The 10 and 8 distances are semiaxes, not focal distance."
+  },
+  {
+    "id": "math-geometry-hyperbola-features-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A hyperbola has equation(x−2)²/25−(y+1)²/9=1.",
+    "questionText": "Where are its vertices?",
+    "choices": [
+      "(2, −4), (2, 2)",
+      "(−3, −1), (7, −1)",
+      "(−23, −1), (27, −1)",
+      "(−5, 0), (5, 0)"
+    ],
+    "answer": 1,
+    "explanation": "The center is(2, −1). The positive x term makes it horizontal, and a=√25=5. Move 5 units left and right of the center to obtain(−3, −1)and(7, −1)."
+  },
+  {
+    "id": "math-geometry-hyperbola-features-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "The hyperbola is x²/9−y²/16=1.",
+    "questionText": "What are its asymptotes?",
+    "choices": [
+      "y=±(4/3)x",
+      "y=±(16/9)x",
+      "y=±4 x",
+      "y=±(3/4)x"
+    ],
+    "answer": 0,
+    "explanation": "This is a horizontal hyperbola with a=3 and b=4. The asymptote slopes are±b/a=±4/3. The 16/9 choice uses squared denominators instead of their roots."
+  },
+  {
+    "id": "math-geometry-parabola-focus-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A parabola has equation(x−1)²=−12(y+2).",
+    "questionText": "What is its focus?",
+    "choices": [
+      "(1, −5)",
+      "(1, −14)",
+      "(−2, −2)",
+      "(1, 1)"
+    ],
+    "answer": 0,
+    "explanation": "The vertex is(1, −2)and 4 p=−12 gives p=−3. The focus is(h, k+p)=(1, −5), below the vertex. Using−12 directly as the focal distance gives the wrong point."
+  },
+  {
+    "id": "math-geometry-parabola-focus-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A parabola has equation(y−3)²=20(x+1).",
+    "questionText": "What is its directrix?",
+    "choices": [
+      "y=−2",
+      "x=−21",
+      "x=4",
+      "x=−6"
+    ],
+    "answer": 3,
+    "explanation": "The vertex is(−1, 3), and p=20/4=5. A horizontal parabola has directrix x=h−p=−1−5=−6. The x=4 choice goes through the focus rather than the directrix."
+  },
+  {
+    "id": "math-geometry-regular-polygon-area-practice-1",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A regular polygon has perimeter 40 and apothem 5.",
+    "questionText": "What is its area?",
+    "choices": [
+      "8",
+      "100",
+      "200",
+      "50"
+    ],
+    "answer": 1,
+    "explanation": "Use area=(perimeter×apothem)/2=40·5/2=100. The 200 choice omits the triangle half factor after summing all central triangles. These measurements are consistent with a square of side 10."
+  },
+  {
+    "id": "math-geometry-regular-polygon-area-practice-2",
+    "topic": "math-geometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "A regular hexagon has side 10 and apothem 5√3.",
+    "questionText": "What is its area?",
+    "choices": [
+      "50√3",
+      "75√3",
+      "150√3",
+      "300√3"
+    ],
+    "answer": 2,
+    "explanation": "The perimeter is 6·10=60. Thus area=60·5√3/2=150√3. The 300√3 choice omits the half factor; the side alone is not the perpendicular apothem."
+  },
+  {
+    "id": "math-number-quantity-complex-division-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "i²=−1.",
+    "questionText": "What is(3+2 i)/(2+i)?",
+    "choices": [
+      "(8+7 i)/5",
+      "8+i",
+      "(4+i)/5",
+      "(8+i)/5"
+    ],
+    "answer": 3,
+    "explanation": "Multiply numerator and denominator by 2−i. The numerator is 6−3 i+4 i−2 i²=8+i, and the denominator is 5. Therefore the quotient is(8+i)/5."
+  },
+  {
+    "id": "math-number-quantity-complex-magnitude-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "z=9−40 i.",
+    "questionText": "What is|z|?",
+    "choices": [
+      "31",
+      "41",
+      "49",
+      "1681"
+    ],
+    "answer": 1,
+    "explanation": "Magnitude is√(9²+40²)=√1681=41. The 49 choice adds absolute components; 31 subtracts them; 1681 is the squared magnitude rather than the magnitude."
+  },
+  {
+    "id": "math-number-quantity-matrix-powers-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "A has rows(1, 5), (0, 1). For a positive integer n, Aⁿhas rows(1, 35), (0, 1).",
+    "questionText": "What is n?",
+    "choices": [
+      "125",
+      "32",
+      "7",
+      "35"
+    ],
+    "answer": 2,
+    "explanation": "Repeated multiplication adds 5 to the upper-right entry each time, so Aⁿhas that entry 5 n. Solving 5 n=35 gives n=7. Powering the individual entry 5 would be a different operation."
+  },
+  {
+    "id": "math-number-quantity-scientific-notation-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "Evaluate(2.4×10⁶)(5×10⁻³).",
+    "questionText": "Which is the result in scientific notation?",
+    "choices": [
+      "7.4×10³",
+      "1.2×10⁴",
+      "1.2×10³",
+      "12×10⁹"
+    ],
+    "answer": 1,
+    "explanation": "Multiply coefficients 2.4·5=12 and add exponents 6−3=3, obtaining 12×10³. Normalize the coefficient to 1.2 and increase the exponent to 4."
+  },
+  {
+    "id": "math-number-quantity-remainders-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "Integer N leaves remainder 5 when divided by 8.",
+    "questionText": "What remainder does 3 N+2 leave when divided by 8?",
+    "choices": [
+      "5",
+      "17",
+      "7",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "Write N=8 q+5. Then 3 N+2=24 q+17=8(3 q+2)+1, so the remainder is 1. The 17 choice is the raw remainder expression before reducing it again."
+  },
+  {
+    "id": "math-number-quantity-signed-arithmetic-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "easy",
+    "stem": "Evaluate|−9|−(−3)².",
+    "questionText": "What is the value?",
+    "choices": [
+      "18",
+      "−18",
+      "6",
+      "0"
+    ],
+    "answer": 3,
+    "explanation": "The absolute value is 9 and the squared negative base is positive 9. Thus 9−9=0. Treating the square as−9 gives 18; leaving the absolute value negative would give−18."
+  },
+  {
+    "id": "math-number-quantity-degree-radian-conversion-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "easy",
+    "stem": "An angle measures 135°.",
+    "questionText": "What is its radian measure?",
+    "choices": [
+      "3π/4",
+      "4π/3",
+      "3π/2",
+      "π/4"
+    ],
+    "answer": 0,
+    "explanation": "Multiply 135 byπ/180 to get 3π/4. Theπ/4 choice is only its 45° reference angle, not the full 135° rotation."
+  },
+  {
+    "id": "math-number-quantity-origin-rotations-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "easy",
+    "stem": "Point(−5, −2)is rotated 180° about the origin.",
+    "questionText": "What is its image?",
+    "choices": [
+      "(−5, 2)",
+      "(−2, 5)",
+      "(2, −5)",
+      "(5, 2)"
+    ],
+    "answer": 3,
+    "explanation": "A 180° turn changes both coordinate signs: (−5, −2)becomes(5, 2). The other choices describe quarter-turns or a reflection rather than the stated half-turn."
+  },
+  {
+    "id": "math-number-quantity-perfect-square-parity-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "n is a positive integer.",
+    "questionText": "What is the least n for which 75 n is a perfect square?",
+    "choices": [
+      "5",
+      "15",
+      "75",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "Factor 75=3·5². Its only odd prime exponent is the exponent of 3, so the least correcting factor is 3. Then 75·3=225=15². The 5 choice would make the exponent of 5 odd."
+  },
+  {
+    "id": "math-number-quantity-powers-of-i-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "easy",
+    "stem": "i²=−1.",
+    "questionText": "What is i²⁰²⁴?",
+    "choices": [
+      "−1",
+      "i",
+      "−i",
+      "1"
+    ],
+    "answer": 3,
+    "explanation": "The exponent 2024 is divisible by 4, so the cycle position is 0 and the result is 1. Evenness alone does not determine the sign; the remainder modulo 4 does."
+  },
+  {
+    "id": "math-number-quantity-powers-of-i-practice-2",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "easy",
+    "stem": "i²=−1.",
+    "questionText": "What is i²⁰²⁷+i²⁰²⁸?",
+    "choices": [
+      "0",
+      "1−i",
+      "1+i",
+      "−1−i"
+    ],
+    "answer": 1,
+    "explanation": "The exponents have remainders 3 and0 modulo4, so the two terms are−i and 1. Their sum is 1−i. Reduce each power separately before adding the complex values."
+  },
+  {
+    "id": "math-number-quantity-matrix-systems-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "A has rows(2, 1), (1, −2), and A(x, y)ᵀ=(10, −5)ᵀ.",
+    "questionText": "What is x?",
+    "choices": [
+      "4",
+      "5",
+      "2",
+      "3"
+    ],
+    "answer": 3,
+    "explanation": "The rows give 2 x+y=10 and x−2 y=−5. Substitute y=10−2 x into the second: x−20+4 x=−5, so 5 x=15 and x=3. Then y=4 checks both rows."
+  },
+  {
+    "id": "math-number-quantity-matrix-systems-practice-2",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "A has rows(1, 3), (2, −1), and A(x, y)ᵀ=(17, 6)ᵀ.",
+    "questionText": "What is y?",
+    "choices": [
+      "4",
+      "6",
+      "8",
+      "2"
+    ],
+    "answer": 0,
+    "explanation": "The equations are x+3 y=17 and 2 x−y=6. Doubling the first and subtracting the second gives 7 y=28, so y=4. The corresponding x=5 checks both original row equations."
+  },
+  {
+    "id": "math-number-quantity-matrix-addition-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "A has rows(2, −3), (4, 1)and B has rows(5, 2), (−1, 6).",
+    "questionText": "What is the entry in row 1, column 2 of A+2 B?",
+    "choices": [
+      "−1",
+      "1",
+      "−5",
+      "7"
+    ],
+    "answer": 1,
+    "explanation": "Combine the matching entries: −3+2·2=1. A scalar multiplies every entry of B before addition; row-by-column multiplication would not compute A+2 B."
+  },
+  {
+    "id": "math-number-quantity-matrix-addition-practice-2",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "easy",
+    "stem": "A is 2×3 and B is 3×2.",
+    "questionText": "Can A+B be formed?",
+    "choices": [
+      "Yes: it is 2×3",
+      "No: their row and column counts differ",
+      "Yes: it is 2×2",
+      "Yes: it is 3×3"
+    ],
+    "answer": 1,
+    "explanation": "Matrix addition requires matching dimensions so every entry has a corresponding entry. These matrices have different shapes. The inner-dimension rule concerns multiplication, not addition."
+  },
+  {
+    "id": "math-number-quantity-rational-irrational-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "Consider the following real numbers.",
+    "questionText": "Which is rational?",
+    "choices": [
+      "√18+√2",
+      "2+√2",
+      "√2",
+      "√18/√2"
+    ],
+    "answer": 3,
+    "explanation": "The quotient√18/√2=√9=3 is rational. The sum√18+√2=4√2 and the other listed numbers are irrational. Dividing square roots here is valid because the denominator is positive."
+  },
+  {
+    "id": "math-number-quantity-rational-irrational-practice-2",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "r is a nonzero rational number and u is irrational.",
+    "questionText": "Which expression must be irrational?",
+    "choices": [
+      "u²",
+      "r/r",
+      "u−u",
+      "r+u"
+    ],
+    "answer": 3,
+    "explanation": "A rational sum r+u would make u=(r+u)−r rational, a contradiction. The expression u² can be rational, for instance when u=√2; r/r=1 and u−u=0 are rational."
+  },
+  {
+    "id": "math-number-quantity-integer-parity-practice-1",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "n is an odd integer.",
+    "questionText": "Which expression is always even?",
+    "choices": [
+      "n²+1",
+      "n+2",
+      "3 n",
+      "n²+2"
+    ],
+    "answer": 0,
+    "explanation": "An odd square is odd, and adding 1 makes it even. Adding 2 to an odd integer stays odd; 3 times an odd integer is odd; an odd square plus 2 is also odd."
+  },
+  {
+    "id": "math-number-quantity-integer-parity-practice-2",
+    "topic": "math-number-quantity",
+    "subject": "math",
+    "category": "Number & Quantity",
+    "difficulty": "medium",
+    "stem": "Two integers have an odd sum.",
+    "questionText": "What must be true?",
+    "choices": [
+      "One is even and the other is odd",
+      "Both are even",
+      "Their product is odd",
+      "Both are odd"
+    ],
+    "answer": 0,
+    "explanation": "Two even integers sum to even, and two odd integers also sum to even. An odd sum therefore requires opposite parities. Their product then includes an even factor, so it is even rather than odd."
+  },
+  {
+    "id": "math-statistics-probability-independence-practice-1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics & Probability",
+    "difficulty": "medium",
+    "stem": "P(A)=0.25, P(B)=0.8, and P(A and B)=0.2.",
+    "questionText": "Which description is correct?",
+    "choices": [
+      "Both independent and disjoint",
+      "Neither independent nor disjoint",
+      "Independent and not disjoint",
+      "Disjoint and not independent"
+    ],
+    "answer": 2,
+    "explanation": "The product 0.25·0.8=0.2 matches the intersection, so the events are independent. Their positive intersection means they can occur together and are not disjoint. Independence and mutual exclusion are different conditions."
+  },
+  {
+    "id": "math-statistics-probability-exact-binomial-count-practice-1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics & Probability",
+    "difficulty": "medium",
+    "stem": "A fair coin is tossed five independent times.",
+    "questionText": "What is the probability of exactly two heads?",
+    "choices": [
+      "5/32",
+      "5/16",
+      "1/2",
+      "1/32"
+    ],
+    "answer": 1,
+    "explanation": "There are C(5, 2)=10 placements of the two heads, each with probability(1/2)⁵=1/32. Thus the total is 10/32=5/16. One sequence alone or only five placements undercounts the event."
+  },
+  {
+    "id": "math-statistics-probability-first-success-practice-1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics & Probability",
+    "difficulty": "medium",
+    "stem": "Independent trials each succeed with probability 1/3.",
+    "questionText": "What is the probability the first success occurs on trial 4?",
+    "choices": [
+      "8/81",
+      "8/27",
+      "32/81",
+      "1/81"
+    ],
+    "answer": 0,
+    "explanation": "The required order is failure, failure, failure, success, with probability(2/3)³(1/3)=8/81. The 32/81 choice counts one success in any of four positions, not first success specifically on the fourth trial."
+  },
+  {
+    "id": "math-statistics-probability-ordered-choices-practice-1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics & Probability",
+    "difficulty": "medium",
+    "stem": "A code has two different letters selected from an eight-letter alphabet. Order matters.",
+    "questionText": "How many codes are possible?",
+    "choices": [
+      "28",
+      "16",
+      "56",
+      "64"
+    ],
+    "answer": 2,
+    "explanation": "Choose the first letter in 8 ways and the second in 7 ways, because repetition is forbidden. Multiply to get 56. The 64 choice permits repeats, and 28 counts unordered pairs."
+  },
+  {
+    "id": "math-statistics-probability-repeated-permutations-practice-1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics & Probability",
+    "difficulty": "medium",
+    "stem": "The letters of BALLOON are rearranged using every letter exactly once.",
+    "questionText": "How many distinct arrangements are possible?",
+    "choices": [
+      "5040",
+      "2520",
+      "630",
+      "1260"
+    ],
+    "answer": 3,
+    "explanation": "There are 7 letters, with two Ls and two Os. Divide the labeled count 7!by 2!for each repeated pair: 5040/(2·2)=1260. Dividing by only one repeat group gives 2520."
+  },
+  {
+    "id": "math-statistics-probability-sampling-and-design-practice-1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics & Probability",
+    "difficulty": "medium",
+    "stem": "Researchers randomly select 400 households from a directory listing only landline numbers to estimate habits of all households.",
+    "questionText": "What is the clearest limitation?",
+    "choices": [
+      "400 responses automatically remove all selection bias",
+      "A descriptive survey is invalid unless it proves causation",
+      "The frame excludes households without a listed landline",
+      "Random samples can never support population estimates"
+    ],
+    "answer": 2,
+    "explanation": "The random selection operates only within the directory, which omits some households. Those omitted households may have different habits. Increasing the sample or randomly choosing within the incomplete frame does not fix this coverage bias."
+  },
+  {
+    "id": "math-statistics-probability-interquartile-range-practice-1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics & Probability",
+    "difficulty": "easy",
+    "stem": "A data set has first quartile 17 and third quartile 41.",
+    "questionText": "What is its interquartile range?",
+    "choices": [
+      "24",
+      "29",
+      "58",
+      "41"
+    ],
+    "answer": 0,
+    "explanation": "The IQR is the distance Q₃−Q₁=41−17=24. The 29 choice averages the quartiles, and 58 adds them; neither is the width of the middle half."
+  },
+  {
+    "id": "math-statistics-probability-standardized-distance-practice-1",
+    "topic": "math-statistics-probability",
+    "subject": "math",
+    "category": "Statistics & Probability",
+    "difficulty": "medium",
+    "stem": "A distribution has mean 120 and standard deviation 15. An observation is 90.",
+    "questionText": "What is its standardized distance?",
+    "choices": [
+      "−30",
+      "−2",
+      "2",
+      "6"
+    ],
+    "answer": 1,
+    "explanation": "Subtract the mean and divide by the standard deviation: (90−120)/15=−2. The sign records that the value is below the mean. The−30 choice is the unstandardized difference."
+  },
+  {
+    "id": "math-trigonometry-included-angle-area-practice-1",
+    "topic": "math-trigonometry",
+    "subject": "math",
+    "category": "Geometry",
+    "difficulty": "medium",
+    "stem": "Two sides of a triangle have lengths 9 and 14, and their included angle is 30°.",
+    "questionText": "What is its area?",
+    "choices": [
+      "31.5√3",
+      "31.5",
+      "63",
+      "126"
+    ],
+    "answer": 1,
+    "explanation": "The included-angle area formula gives 9·14·sin 30°/2=126·(1/2)/2=31.5. The 63 and 126 choices omit one or both half factors; 31.5√3 uses the wrong special-angle sine."
+  },
+  {
+    "id": "math-essential-skills-inverse-proportions-practice-1",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Integrating Essential Skills",
+    "difficulty": "medium",
+    "stem": "A reservoir fills in 2.5 hours at 18 liters per minute. A replacement pump supplies 600 liters per hour.",
+    "questionText": "How many hours does the replacement pump need for the same volume?",
+    "choices": [
+      "25/18",
+      "0.075",
+      "270",
+      "4.5"
+    ],
+    "answer": 3,
+    "explanation": "The volume is 2.5·60·18=2700 liters. At 600 liters per hour, time is 2700/600=4.5 hours. The 0.075 choice omits the minute conversion, and 270 is the answer in minutes rather than hours."
+  },
+  {
+    "id": "math-essential-skills-fixed-and-repeated-payments-practice-1",
+    "topic": "math-essential-skills",
+    "subject": "math",
+    "category": "Integrating Essential Skills",
+    "difficulty": "easy",
+    "stem": "A purchase requires 80 down followed by six payments of 45. There are no additional charges.",
+    "questionText": "What is the total payment?",
+    "choices": [
+      "350",
+      "750",
+      "125",
+      "270"
+    ],
+    "answer": 0,
+    "explanation": "The six later payments total 6·45=270. Add the single 80 down payment to obtain 350. The 270 choice omits the initial payment; 750 repeats it six times."
+  },
+  {
+    "id": "math-modeling-two-price-counts-practice-1",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Algebra",
+    "difficulty": "medium",
+    "stem": "A show sells 80 tickets. Adults pay 14 and children 8, totaling 820.",
+    "questionText": "How many adult tickets are sold?",
+    "choices": [
+      "40",
+      "20",
+      "30",
+      "50"
+    ],
+    "answer": 2,
+    "explanation": "Let abe adults. Then 14 a+8(80−a)=820, giving 6 a=180 and a=30. The other 50 tickets are children. Checking 420+400=820 verifies the count and revenue constraints."
+  },
+  {
+    "id": "math-modeling-ground-contact-practice-1",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "An object has modeled height h(t)=−5 t²+45 t for t≥0.",
+    "questionText": "How many seconds after launch does it first return to ground level?",
+    "choices": [
+      "0",
+      "9",
+      "4.5",
+      "45"
+    ],
+    "answer": 1,
+    "explanation": "Ground contact requires−5 t(t−9)=0. The zero 0 is launch, and 9 is the later return. The 4.5 choice is the peak time, not ground contact."
+  },
+  {
+    "id": "math-modeling-residual-fit-practice-1",
+    "topic": "math-modeling",
+    "subject": "math",
+    "category": "Functions",
+    "difficulty": "medium",
+    "stem": "A model predicts ŷ=5+3 x. Observed outputs at x=1, 2, 3 are 7, 13, 16, respectively.",
+    "questionText": "What is the sum of residuals using observed minus predicted?",
+    "choices": [
+      "2",
+      "3",
+      "−3",
+      "0"
+    ],
+    "answer": 1,
+    "explanation": "Predictions are 8, 11, 14. The residuals are 7−8=−1, 13−11=2, and 16−14=2. Their sum is 3. Reversing the subtraction gives−3."
+  }
+]

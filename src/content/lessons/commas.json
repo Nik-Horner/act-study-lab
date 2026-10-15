@@ -7,7 +7,8 @@
       "heading": "Common jobs of a comma",
       "body": [
         "Use a comma plus a connecting word such as and or but to join two complete thoughts. A comma also separates an introductory clause, phrase, or word. Paired commas enclose extra information. Other commas separate list items or two adjectives that each describe the same noun.",
-        "Commas also introduce many quotations and mark direct address: “Maya, bring your notes.” Do not insert a lone comma between subject and verb or verb and object just because you pause there."
+        "Commas also introduce many quotations and mark direct address: “Maya, bring your notes.” Do not insert a lone comma between subject and verb or verb and object just because you pause there.",
+        "In an address within a sentence, a state following a city is enclosed: Austin, Texas, hosted the meeting."
       ],
       "examples": [
         {
@@ -24,9 +25,15 @@
           "text": "The team's strongest swimmer, broke the school record.",
           "label": "Wrong: this comma splits subject and verb",
           "good": false
+        },
+        {
+          "text": "The conference in Spokane, Washington, begins in June.",
+          "label": "The state is set off on both sides within the sentence.",
+          "good": true
         }
       ],
-      "tip": "For an opening phrase, check the boundary: 'After a long day at school, Maya rested.' The phrase is introductory even though it has no subject and verb."
+      "tip": "For an opening phrase, check the boundary: 'After a long day at school, Maya rested.' The phrase is introductory even though it has no subject and verb.",
+      "teachingRevision": 3
     },
     {
       "heading": "Unnecessary information commas",
@@ -147,10 +154,15 @@
           "text": "Of the twelve jars, the jars that had cracked lids, were discarded.",
           "label": "The lone comma separates the complete subject from were discarded.",
           "good": false
+        },
+        {
+          "text": "The new lens—a design that the optics team had tested in three earlier prototypes—remained clear in cold weather.",
+          "label": "The two dashes enclose the added description; lens remained is the main clause.",
+          "good": true
         }
       ],
       "tip": "State whether the writer means all the items or only a subset, then locate the real subject-verb boundary.",
-      "teachingRevision": 2
+      "teachingRevision": 3
     }
   ],
   "check": [
@@ -180,15 +192,15 @@
     },
     {
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "The group at the picnic table ordered coconut shrimp, hot wings[[, and, onion rings]] to share.",
+      "stem": "The survey asks residents about morning traffic, evening noise[[, and, access to public transit]] near their homes.",
       "choices": [
         "NO CHANGE",
-        ", and onion rings",
-        " and onion rings,",
-        ", and onion rings,"
+        ", and access to public transit",
+        " and access to public transit,",
+        ", and access to public transit,"
       ],
       "answer": 1,
-      "explanation": "The offered correct version uses a serial comma before and without inserting a comma after it. A serial comma is not universally mandatory, but punctuation must remain coherent. The other choices insert a comma between and and its object, or add an unnecessary comma between onion rings and to share."
+      "explanation": "The three objects of about are morning traffic, evening noise, and access to public transit. The keyed choice uses a serial comma and keeps and beside its object. The other choices insert an unnecessary comma after and or between transit and near their homes. A serial comma is a style choice, but every offered alternative must fit the complete sentence."
     }
   ]
 }

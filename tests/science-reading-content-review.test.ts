@@ -1,9 +1,22 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import science from "../src/content/science-questions.json";
 import reading from "../src/content/reading-questions.json";
 import review from "../docs/science-reading-content-review.json";
 import activities from "../src/content/lesson-activities.json";
+import readingLessons from "../src/content/reading-lessons.json";
+
+function sorted(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(sorted);
+  if (value && typeof value === "object")
+    return Object.fromEntries(
+      Object.entries(value)
+        .sort(([a], [b]) => a.localeCompare(b))
+        .map(([key, nested]) => [key, sorted(nested)]),
+    );
+  return value;
+}
 
 const all = [...science, ...reading];
 function question(id: string) {
@@ -14,7 +27,9 @@ function question(id: string) {
 
 test("reviewed content preserves the historical grading contract for every original item", () => {
   const original = [
-    ...science.filter((item) => !("standards" in item)),
+    ...science.filter((item) =>
+      review.items.some((previous) => previous.id === item.id),
+    ),
     ...reading.filter((item) => item.id.startsWith("RE-")),
   ];
   assert.equal(original.length, 344);
@@ -116,21 +131,47 @@ test("Reading forms give specific evidence and address their competing interpret
   assert(music.every((item) => !item.passage.context.includes("our aunt")));
 });
 
-test("all reviewed formative applications preserve their section and correct-answer contracts", () => {
+test("formative slots preserve grading positions and explicitly revised teaching retains its own evidence", () => {
   const reviewed = review.formativeReview.items;
+  const revisions = new Map(
+    review.formativeReview.subsequentTeachingRevisions.items.map((item) => [
+      item.id,
+      item,
+    ]),
+  );
   assert.equal(reviewed.length, 85);
   assert.equal(new Set(reviewed.map((item) => item.id)).size, 85);
+  assert.equal(revisions.size, 8);
   for (const previous of reviewed) {
     const [slug, position] = previous.id.split(":");
     const activity =
       activities[slug as keyof typeof activities][Number(position)];
     assert(activity, previous.id);
     assert.equal(activity.answer, previous.answerIndex, previous.id);
-    assert.equal(
-      activity.choices[activity.answer],
-      previous.answerText,
-      previous.id,
-    );
+    const revision = revisions.get(previous.id);
+    if (revision) {
+      assert.equal(revision.previousAnswerIndex, previous.answerIndex);
+      assert.equal(revision.previousAnswerText, previous.answerText);
+      assert.equal(revision.answerIndex, previous.answerIndex);
+      assert.equal(activity.choices[activity.answer], revision.answerText);
+      const section = readingLessons.find((lesson) => lesson.slug === slug)!
+        .sections[Number(position)];
+      assert.equal(section.teachingRevision, revision.teachingRevision);
+      assert(revision.teachingRevision >= 3);
+      assert.equal(
+        createHash("sha256")
+          .update(JSON.stringify(sorted(activity)))
+          .digest("hex"),
+        revision.contentSha256,
+        `${previous.id}: replacement teaching changed after review`,
+      );
+    } else {
+      assert.equal(
+        activity.choices[activity.answer],
+        previous.answerText,
+        previous.id,
+      );
+    }
     assert.equal(
       new Set(activity.choices).size,
       activity.choices.length,

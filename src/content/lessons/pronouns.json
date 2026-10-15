@@ -7,7 +7,8 @@
       "heading": "Subjective vs. objective case",
       "body": [
         "Use I, he, she, we, they, or who as a subject: the person or thing doing or being something. Use me, him, her, us, them, or whom as an object: the person or thing receiving an action or following a word such as to or with.",
-        "In a compound phrase, remove the other name to check case: “went to Maria and I” becomes “went to I,” so use me. After a preposition, use the object form: between you and me."
+        "In a compound phrase, remove the other name to check case: “went to Maria and I” becomes “went to I,” so use me. After a preposition, use the object form: between you and me.",
+        "Use a reflexive such as myself only when it refers back to the matching subject: I checked it myself."
       ],
       "examples": [
         {
@@ -26,7 +27,8 @@
           "good": false
         }
       ],
-      "tip": "Cover the other noun and the conjunction, then read the pronoun by itself. Your ear will catch the error."
+      "tip": "Identify whether the pronoun is the subject, an object of a verb, or an object of a preposition. Remove the other coordinated name to see that grammatical role more clearly.",
+      "teachingRevision": 3
     },
     {
       "heading": "Who vs. whom",
@@ -51,7 +53,8 @@
           "good": true
         }
       ],
-      "tip": "Replace the clause with he/him. He = who, him = whom."
+      "tip": "Inside the pronoun’s own clause, test whether it performs the verb’s action (he/who) or receives it (him/whom). A nearby verb or preposition outside that clause does not decide its case.",
+      "teachingRevision": 3
     },
     {
       "heading": "Pronoun-antecedent agreement",
@@ -96,7 +99,8 @@
           "good": false
         }
       ],
-      "tip": "If you have to pause and ask 'which one?', pick the choice that names the noun outright."
+      "tip": "Name the intended referent, then test whether the choice points to it unambiguously. A specific noun helps only if it names the correct person or thing.",
+      "teachingRevision": 3
     },
     {
       "heading": "How to spot these questions",
@@ -104,7 +108,8 @@
         "I/me or who/whom choices ask about the pronoun’s job. Its/their asks what it refers to. It’s and they’re are contractions: shortened forms of it is and they are. A specific noun may make an unclear reference clear.",
         "Find the noun being replaced, check the pronoun’s job, and make sure its reference is clear. Expand a contraction into its full words before deciding it shows ownership."
       ],
-      "tip": "On ambiguity questions, the one choice that repeats the noun usually wins. Clarity beats brevity when a pronoun could point two ways."
+      "tip": "When a pronoun could refer to two nouns, choose wording that identifies the intended one. Do not choose a repeated noun merely because it is repeated.",
+      "teachingRevision": 3
     },
     {
       "heading": "Advanced transfer: embedded clauses and precise reference",
@@ -122,10 +127,15 @@
           "text": "The conservator whom the curator believes restored the frame will speak.",
           "label": "Whom cannot be the subject of restored; the intervening words do not change its job.",
           "good": false
+        },
+        {
+          "text": "Three assistants moved the telescope, but its lens cap stayed in the case.",
+          "label": "Its refers to telescope rather than the nearby plural assistants; the cap belongs to the instrument.",
+          "good": true
         }
       ],
       "tip": "Locate the pronoun’s own verb before looking at the closest verb or preposition.",
-      "teachingRevision": 2
+      "teachingRevision": 3
     }
   ],
   "check": [
@@ -155,7 +165,7 @@
     },
     {
       "questionText": "Which choice is correct?",
-      "stem": "Each of the branch offices manages [[their]] own budget.",
+      "stem": "The transit authority changed the bus route after reviewing [[their]] passenger survey.",
       "choices": [
         "NO CHANGE",
         "its",
@@ -163,7 +173,7 @@
         "they're"
       ],
       "answer": 1,
-      "explanation": "The antecedent is 'each,' which is singular — 'of the branch offices' is a prepositional phrase that does not change the number — so the singular possessive 'its' agrees. 'Their' is plural, 'it's' means 'it is,' and 'they're' means 'they are'; neither contraction can show possession."
+      "explanation": "The survey belongs to the transit authority acting as a single organization, so its is the appropriate possessive. Their does not preserve that singular institutional reference; it's means it is or it has, and they're means they are. Expanding either contraction produces an ungrammatical sentence before passenger survey."
     }
   ]
 }

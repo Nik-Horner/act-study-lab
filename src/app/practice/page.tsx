@@ -9,6 +9,15 @@ export default function PracticePage() {
         focus on something extra.
       </p>
       <Card className="divide-y divide-border">
+        <Link
+          href="/learn?subject=math"
+          className="flex min-h-14 items-center justify-between gap-4 px-5 py-4 font-semibold hover:text-brand"
+        >
+          Browse ACT skill courses
+          <span className="text-sm font-normal text-ink-soft">
+            Categories → lessons → matched drills
+          </span>
+        </Link>
         {["english", "reading", "math", "science"].map((subject) => (
           <Link
             key={subject}

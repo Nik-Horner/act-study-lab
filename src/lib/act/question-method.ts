@@ -6,8 +6,14 @@ import {
   getPracticeReplacement,
 } from "./content";
 import type { Question } from "./types";
+import {
+  getLearningSkill,
+  getLearningSkillById,
+  skillHref,
+} from "../learning-skills";
 
 function methodSections(question: Question) {
+  question = getPracticeReplacement(question.id) ?? question;
   const index = getQuestions(question.topic).findIndex(
     (q) => q.id === (getPracticeReplacement(question.id)?.id ?? question.id),
   );
@@ -26,10 +32,16 @@ function methodSections(question: Question) {
 
 export function questionMethod(question: Question) {
   if (!getTopic(question.topic)) return null;
+  const source = getPracticeReplacement(question.id) ?? question;
+  const skill =
+    source.skillId &&
+    (getLearningSkill(source.topic, source.skillId) ??
+      getLearningSkillById(source.skillId));
+  if (skill) return { href: skillHref(skill), label: skill.title };
   const lesson = getLesson(question.topic);
   const section = methodSections(question)[0];
   return {
-    href: `/learn/${question.topic}${section === undefined ? "" : `#lesson-section-${section}`}`,
+    href: `/learn/${question.topic}?reference=1${section === undefined ? "" : `#lesson-section-${section}`}`,
     label:
       section === undefined
         ? lesson.title
@@ -43,7 +55,13 @@ export function practiceForMisses(
   missed: ReadonlySet<string>,
 ) {
   const methods = new Map<string, Set<number> | null>();
+  const skills = new Set<string>();
   for (const question of all.filter((q) => missed.has(q.id))) {
+    const source = getPracticeReplacement(question.id) ?? question;
+    if (source.skillId) {
+      skills.add(`${source.subject}:${source.skillId}`);
+      continue;
+    }
     const sections = methodSections(question);
     if (!sections.length) methods.set(question.topic, null);
     else if (methods.get(question.topic) !== null) {
@@ -54,8 +72,9 @@ export function practiceForMisses(
   }
   return active.filter(
     (q) =>
-      methods.has(q.topic) &&
-      (methods.get(q.topic) === null ||
-        methodSections(q).some((i) => methods.get(q.topic)!.has(i))),
+      skills.has(`${q.subject}:${q.skillId}`) ||
+      (methods.has(q.topic) &&
+        (methods.get(q.topic) === null ||
+          methodSections(q).some((i) => methods.get(q.topic)!.has(i)))),
   );
 }

@@ -7,7 +7,9 @@
       "heading": "Commonly confused word pairs",
       "body": [
         "Match the word’s job: their = belonging to them; there = place; they’re = they are. Your and its show ownership; you’re = you are; it’s = it is or it has.",
-        "Affect usually means influence; effect usually means result. Accept means receive; except means other than. Whose shows ownership; who’s means who is or who has. Expand shortened forms to test them."
+        "Affect usually means influence; effect usually means result. Accept means receive; except means other than. Whose shows ownership; who’s means who is or who has. Expand shortened forms to test them.",
+        "Principle means a rule; principal can mean main. Complement completes or suits something; compliment praises it.",
+        "Past can be a preposition; passed is a past-tense verb."
       ],
       "examples": [
         {
@@ -19,9 +21,15 @@
           "text": "The storm will effect traffic, and it's main affect is delay.",
           "label": "All three swapped: effect for affect, it's for its, affect for effect",
           "good": false
+        },
+        {
+          "text": "The cool sauce complements the hot dish; the chef accepted the diner’s compliment.",
+          "label": "Complement means go well with; compliment means praise.",
+          "good": true
         }
       ],
-      "tip": "Expand every apostrophe form out loud: it's = it is, they're = they are, who's = who is. If the expanded sentence works, keep the apostrophe; if not, you need the possessive."
+      "tip": "Expand every apostrophe form out loud: it's = it is, they're = they are, who's = who is. If the expanded sentence works, keep the apostrophe; if not, you need the possessive.",
+      "teachingRevision": 3
     },
     {
       "heading": "Than vs. then, and could have vs. could of",
@@ -41,7 +49,8 @@
           "good": false
         }
       ],
-      "tip": "See 'could of,' 'should of,' or 'would of' in any choice? Eliminate it instantly. The ACT never rewards 'of' after a helping verb."
+      "tip": "The verb phrases are could have, should have, and would have. Of cannot replace have in those auxiliary-plus-participle constructions.",
+      "teachingRevision": 3
     },
     {
       "heading": "Countable vs. non-countable words",
@@ -67,7 +76,8 @@
       "heading": "Active vs. passive voice",
       "body": [
         "Active voice makes the actor the subject: “The committee approved the plan.” Passive voice makes the receiver the subject: “The plan was approved.”",
-        "Passive voice is grammatical. Prefer the clearer, more concise choice when meaning and emphasis stay appropriate; do not reject passive voice automatically."
+        "Passive voice is grammatical. Prefer the clearer, more concise choice when meaning and emphasis stay appropriate; do not reject passive voice automatically.",
+        "Avoid an unmotivated voice shift inside a sequence of one actor’s actions; keep that actor as the shared subject."
       ],
       "examples": [
         {
@@ -79,15 +89,23 @@
           "text": "The plan was approved by the committee.",
           "label": "Grammatical passive: use it when the plan is the focus",
           "good": true
+        },
+        {
+          "text": "The technician sorted the samples, checked their labels, and recorded their masses.",
+          "label": "The shared actor remains the subject throughout the active verb sequence.",
+          "good": true
         }
       ],
-      "tip": "Choose voice to serve the passage: actor first for emphasis on responsibility, receiver first when it is the continuing topic."
+      "tip": "Choose voice to serve the passage: actor first for emphasis on responsibility, receiver first when it is the continuing topic.",
+      "teachingRevision": 3
     },
     {
       "heading": "Prepositional idioms",
       "body": [
         "Learn standard pairings in context: interested in, capable of, depend on, comply with, consist of, responsible for, prefer X to Y, and different from.",
-        "Agree with a person or opinion; agree to a plan or terms. When choices vary only the preposition, check the phrase’s intended meaning and construction."
+        "Agree with a person or opinion; agree to a plan or terms. When choices vary only the preposition, check the phrase’s intended meaning and construction.",
+        "Prefer X to Y and rather X than Y. Compare matching forms: interested in drawing more than in painting.",
+        "Divide items among recipients."
       ],
       "examples": [
         {
@@ -99,9 +117,15 @@
           "text": "Her method differs of mine, but I agree at her goal.",
           "label": "These prepositions do not fit the intended constructions",
           "good": false
+        },
+        {
+          "text": "The device is capable of recording changes while complying with the laboratory’s rules.",
+          "label": "Capable of takes an -ing form; comply with introduces the rule.",
+          "good": true
         }
       ],
-      "tip": "Learn the complete construction. Different from is standard, and different than also occurs in American English; do not invent an error based on a disputed blanket ban."
+      "tip": "Learn the complete construction. Different from is standard, and different than also occurs in American English; do not invent an error based on a disputed blanket ban.",
+      "teachingRevision": 3
     },
     {
       "heading": "How to spot these questions",
@@ -109,7 +133,8 @@
         "Identify the change: sound-alike, countable/mass word, preposition, or voice.",
         "Expand shortened words, check whether the noun can be counted, test the usual word pairing, or compare clarity and meaning. Use the rule that matches the question instead of choosing only by familiarity."
       ],
-      "tip": "One word changing across all four choices means a rule question, not a style question. Find the rule, and three choices eliminate themselves."
+      "tip": "Check what changes: grammatical role, meaning, word pairing, or tone. Apply that specific test; a one-word change can concern style as well as grammar.",
+      "teachingRevision": 3
     },
     {
       "heading": "Advanced transfer: comparisons and adjective/adverb roles",
@@ -127,10 +152,35 @@
           "text": "The north wing's roof is steeper than the south wing.",
           "label": "The wording compares a roof with an entire wing instead of the corresponding roof.",
           "good": false
+        },
+        {
+          "text": "The recording sounded faint even though the engineer had labeled every track clearly.",
+          "label": "Faint describes recording after the linking verb sounded; clearly modifies the action labeled.",
+          "good": true
         }
       ],
       "tip": "Ask what is being compared and what the describing word actually modifies.",
-      "teachingRevision": 2
+      "teachingRevision": 3
+    },
+    {
+      "heading": "Use comparative and superlative forms for the stated comparison",
+      "body": [
+        "Use a comparative when directly comparing two: clearer than, the better of the two. Use a superlative to select the extreme within a set of three or more: the clearest of five. Avoid doubled forms such as more clearer or most easiest.",
+        "Good/better/best and bad/worse/worst are irregular. Longer adjectives often use more or most. For an action, compare adverbs: she explained it more clearly, not more clear. The group size and the word’s grammatical job both matter."
+      ],
+      "examples": [
+        {
+          "text": "Of the two drafts, the second is clearer. Of the six submitted drafts, it is the clearest.",
+          "label": "The comparison is between two in the first sentence and selects the extreme of a larger set in the second.",
+          "good": true
+        },
+        {
+          "text": "The technician measured the second sample more carefully than the first.",
+          "label": "More carefully is a comparative adverb describing measured; more careful would be an adjective.",
+          "good": true
+        }
+      ],
+      "teachingRevision": 3
     }
   ],
   "check": [

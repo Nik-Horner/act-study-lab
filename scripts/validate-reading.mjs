@@ -19,12 +19,13 @@ assert.equal(exams.length, 2);
 const all = [...questions, ...practice, ...lessons.flatMap((l) => l.check)],
   ids = new Set(all.map((q) => q.id)),
   heldout = new Set(exams.flatMap((e) => e.questionIds));
-assert.equal(ids.size, 378);
-assert.equal(practice.length, 144);
+assert.equal(ids.size, 526);
+assert.equal(all.length, ids.size, "Reading item IDs must be unique");
+assert.equal(practice.length, 292);
 assert.equal(questions.length, 216);
 assert.equal(heldout.size, 72);
 const oldIds = new Set(
-  ["math-questions", "math-extra-questions", "science-questions"]
+  ["math-questions", "math-extra-questions", "math-method-questions", "math-skill-questions", "english-skill-questions", "science-questions"]
     .flatMap((name) => read(name))
     .map((q) => q.id),
 );
@@ -73,7 +74,7 @@ for (const topic of topics) {
       );
     }
   }
-  assert.equal(lesson.sections.flatMap((s) => s.examples ?? []).length, 6);
+  assert.equal(lesson.sections.flatMap((s) => s.examples ?? []).length, 7);
   assert.equal(lesson.check.length, 3);
   for (const check of lesson.check)
     assert(!questions.some((q) => q.id === check.id));
@@ -148,23 +149,39 @@ const priorPassages = new Set(
   questions.map((q) => normalize(q.passage.context)),
 );
 const newPassages = new Map(practice.map((q) => [q.passage.id, q.passage]));
-assert.equal(newPassages.size, 24);
+assert.equal(newPassages.size, 48);
+const extendedTopics = new Set(["reading-details", "reading-craft"]);
+const extendedPassages = new Set([
+  "reading-practice-v3-p13",
+  "reading-practice-v3-p15",
+  "reading-practice-v3-p21",
+  "reading-practice-v3-p22",
+]);
 for (const topic of topics) {
   const pool = practice.filter((q) => q.topic === topic.slug);
   assert.equal(
     pool.length,
-    24,
-    `${topic.slug}: preserve daily scope pool positions`,
+    extendedTopics.has(topic.slug) ? 50 : 48,
+    `${topic.slug}: full independent skill pool`,
   );
   for (const difficulty of ["easy", "medium", "hard"])
-    assert.equal(pool.filter((q) => q.difficulty === difficulty).length, 8);
+    assert.equal(
+      pool.filter((q) => q.difficulty === difficulty).length,
+      (topic.slug === "reading-details" && difficulty === "medium") ||
+        (topic.slug === "reading-craft" && difficulty === "hard") ? 18 : 16,
+      `${topic.slug}: ${difficulty} coverage`,
+    );
 }
 for (const [id, passage] of newPassages) {
   const text = normalize(passage.context);
   const words = text.split(" ");
   assert(words.length >= 180, `${id}: practice needs a complete passage`);
   assert(!priorPassages.has(text), `${id}: reused legacy or exam passage`);
-  assert.equal(practice.filter((q) => q.passage.id === id).length, 6);
+  const unit = practice.filter((q) => q.passage.id === id);
+  assert.equal(unit.length, extendedPassages.has(id) ? 7 : 6);
+  assert.equal(new Set(unit.map((q) => q.topic)).size, 6);
+  assert.equal(new Set(unit.map((q) => normalize(q.questionText))).size, unit.length);
+  assert(unit.every((q) => JSON.stringify(q.passage) === JSON.stringify(passage)), `${id}: shared passage data`);
   for (let i = 0; i <= words.length - 18; i++)
     assert(
       !instruction.includes(words.slice(i, i + 18).join(" ")),
@@ -172,5 +189,5 @@ for (const [id, passage] of newPassages) {
     );
 }
 console.log(
-  "Reading validated: 6 lessons with teaching methods and worked reasoning, 144 independent focused drills on 24 new passages across three difficulties, 144 legacy practice records retained for history, 18 teaching checks, 2 full 36-question/40-minute forms with 4 substantial passages each.",
+  "Reading validated: 6 lessons with 7 worked examples each, 292 independent focused drills on 48 new passages across three difficulties, 144 legacy practice records retained for history, 18 teaching checks, 2 full 36-question/40-minute forms with 4 substantial passages each.",
 );

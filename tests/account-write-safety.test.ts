@@ -304,7 +304,9 @@ test("failed English reads render a reload alert instead of cleared misses or ze
     }) => Promise<ReactElement>;
     const result = await page({
       params: Promise.resolve({ slug }),
-      searchParams: Promise.resolve({}),
+      searchParams: Promise.resolve<Record<string, string>>(
+        slug === "commas" ? { skill: "identifying-name" } : {},
+      ),
     });
     const html = renderToStaticMarkup(result);
     assert.match(html, /role="alert"/);

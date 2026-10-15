@@ -56,7 +56,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             href="https://github.com/Nik-Horner"
             target="_blank"
             rel="noreferrer"
-            className="hover:text-ink-soft"
+            className="inline-flex min-h-11 items-center hover:text-ink-soft"
           >
             Nik Horner
           </a>

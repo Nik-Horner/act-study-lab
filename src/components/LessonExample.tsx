@@ -3,7 +3,7 @@ import { useState } from "react";
 import { MathText } from "./MathText";
 import type { Lesson } from "@/lib/act/types";
 import { Button } from "./ui/Button";
-/** Reveal the reasoning only after the learner has made a prediction. */
+/** Worked reasoning is teaching; the separate activity supplies the new task. */
 export function LessonExample({
   example,
   classify,
@@ -12,11 +12,10 @@ export function LessonExample({
   classify: boolean;
 }) {
   const [prediction, setPrediction] = useState<boolean | null>(null);
-  const [revealed, setRevealed] = useState(false);
   const marker = example.text.indexOf("\n\nSupported answer:");
   const prompt = marker >= 0 ? example.text.slice(0, marker) : example.text;
   const solution = marker >= 0 ? example.text.slice(marker + 2) : null;
-  const show = revealed || prediction !== null;
+  const show = !!solution || prediction !== null;
   const correct = prediction === example.good;
   const tone = classify && prediction !== null ? correct : example.good;
   return (
@@ -27,7 +26,7 @@ export function LessonExample({
         {classify
           ? "Can this stand alone as a complete sentence?"
           : solution
-            ? "Try the worked example"
+            ? "Worked example"
             : example.label}
       </p>
       <div className="whitespace-pre-line leading-relaxed text-ink">
@@ -44,17 +43,6 @@ export function LessonExample({
             onClick={() => setPrediction(false)}
           >
             Fragment
-          </Button>
-        </div>
-      )}
-      {!show && solution && (
-        <div className="mt-4 space-y-3">
-          <p className="text-ink-soft">
-            Find the answer and the specific evidence that supports it before
-            revealing the reasoning.
-          </p>
-          <Button size="sm" variant="ghost" onClick={() => setRevealed(true)}>
-            Reveal answer and reasoning
           </Button>
         </div>
       )}

@@ -1,0 +1,2184 @@
+[
+  {
+    "id": "reading-main-idea-thesis",
+    "topic": "reading-main-idea",
+    "title": "Find the controlling claim rather than only a subject",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [1],
+    "questionIds": [
+      "RP-02-1",
+      "RP-11-1",
+      "RP-04-1",
+      "RP-20-1",
+      "RP-05-1",
+      "RP-24-1",
+      "RP-V3-02-1",
+      "RP-V3-04-1",
+      "RP-V3-06-1",
+      "RP-V3-09-1",
+      "RP-V3-10-1",
+      "RP-V3-11-1",
+      "RP-V3-12-1",
+      "RP-V3-13-1",
+      "RP-V3-16-1",
+      "RP-V3-17-1",
+      "RP-V3-18-1",
+      "RP-V3-19-1",
+      "RP-V3-20-1",
+      "RP-V3-21-1",
+      "RP-V3-23-1",
+      "RP-V3-24-1"
+    ]
+  },
+  {
+    "id": "reading-main-idea-movement",
+    "topic": "reading-main-idea",
+    "title": "Preserve the passage’s argumentative movement",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [2],
+    "questionIds": ["RP-09-1", "RP-10-1", "RP-07-1", "RP-15-1", "RP-08-1"]
+  },
+  {
+    "id": "reading-main-idea-scope",
+    "topic": "reading-main-idea",
+    "title": "Match a summary to its scope and qualifications",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [3],
+    "questionIds": [
+      "RP-17-1",
+      "RP-18-1",
+      "RP-19-1",
+      "RP-13-1",
+      "RP-06-1",
+      "RP-14-1",
+      "RP-22-1",
+      "RP-23-1",
+      "RP-16-1",
+      "RP-V3-03-1",
+      "RP-V3-07-1"
+    ]
+  },
+  {
+    "id": "reading-main-idea-narrative-change",
+    "topic": "reading-main-idea",
+    "title": "Trace a specific narrative change without overgeneralizing",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [4],
+    "questionIds": [
+      "RP-01-1",
+      "RP-03-1",
+      "RP-12-1",
+      "RP-21-1",
+      "RP-V3-01-1",
+      "RP-V3-05-1",
+      "RP-V3-08-1",
+      "RP-V3-14-1",
+      "RP-V3-15-1",
+      "RP-V3-22-1"
+    ]
+  },
+  {
+    "id": "reading-details-locate",
+    "topic": "reading-details",
+    "title": "Locate the exact actor, action, and requested fact",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [1],
+    "questionIds": [
+      "RP-02-2",
+      "RP-04-2",
+      "RP-12-2",
+      "RP-20-2",
+      "RP-21-2",
+      "RP-14-2",
+      "RP-07-2",
+      "RP-V3-01-2",
+      "RP-V3-03-2",
+      "RP-V3-04-2",
+      "RP-V3-05-2",
+      "RP-V3-06-2",
+      "RP-V3-08-2",
+      "RP-V3-10-2",
+      "RP-V3-20-2",
+      "RP-V3-24-2"
+    ]
+  },
+  {
+    "id": "reading-details-sequence-cause",
+    "topic": "reading-details",
+    "title": "Separate the stated sequence and explanation",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [2],
+    "questionIds": [
+      "RP-01-2",
+      "RP-09-2",
+      "RP-03-2",
+      "RP-11-2",
+      "RP-19-2",
+      "RP-05-2",
+      "RP-15-2",
+      "RP-V3-02-2",
+      "RP-V3-09-2",
+      "RP-V3-11-2",
+      "RP-V3-13-2",
+      "RP-V3-14-2",
+      "RP-V3-15-2",
+      "RP-V3-23-2"
+    ]
+  },
+  {
+    "id": "reading-details-unit-condition",
+    "topic": "reading-details",
+    "title": "Keep the speaker, unit, denominator, and condition",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [3],
+    "questionIds": [
+      "RP-17-2",
+      "RP-10-2",
+      "RP-18-2",
+      "RP-13-2",
+      "RP-06-2",
+      "RP-23-2",
+      "RP-08-2",
+      "RP-16-2",
+      "RP-24-2",
+      "RP-V3-07-2",
+      "RP-V3-12-2",
+      "RP-V3-16-2",
+      "RP-V3-17-2",
+      "RP-V3-18-2",
+      "RP-V3-19-2",
+      "RP-V3-21-2",
+      "RP-V3-22-2"
+    ]
+  },
+  {
+    "id": "reading-details-paraphrase",
+    "topic": "reading-details",
+    "title": "Preserve the meaning and strength of a paraphrase",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [4],
+    "questionIds": ["RP-22-2", "RP-V3-13-7", "RP-V3-21-7"]
+  },
+  {
+    "id": "reading-inference-evidence-link",
+    "topic": "reading-inference",
+    "title": "Build the smallest conclusion from a specific clue",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [1],
+    "questionIds": [
+      "RP-09-3",
+      "RP-03-3",
+      "RP-20-3",
+      "RP-05-3",
+      "RP-15-3",
+      "RP-23-3",
+      "RP-08-3",
+      "RP-16-3",
+      "RP-V3-01-3",
+      "RP-V3-02-3",
+      "RP-V3-05-3",
+      "RP-V3-06-3",
+      "RP-V3-07-3",
+      "RP-V3-08-3",
+      "RP-V3-10-3",
+      "RP-V3-14-3",
+      "RP-V3-15-3",
+      "RP-V3-17-3",
+      "RP-V3-20-3",
+      "RP-V3-21-3",
+      "RP-V3-22-3"
+    ]
+  },
+  {
+    "id": "reading-inference-limits",
+    "topic": "reading-inference",
+    "title": "Separate a supported inference from a plausible added story",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [2],
+    "questionIds": [
+      "RP-17-3",
+      "RP-02-3",
+      "RP-10-3",
+      "RP-18-3",
+      "RP-04-3",
+      "RP-13-3",
+      "RP-21-3",
+      "RP-06-3",
+      "RP-24-3",
+      "RP-V3-03-3",
+      "RP-V3-04-3",
+      "RP-V3-09-3",
+      "RP-V3-12-3",
+      "RP-V3-18-3",
+      "RP-V3-19-3",
+      "RP-V3-23-3"
+    ]
+  },
+  {
+    "id": "reading-inference-attitude",
+    "topic": "reading-inference",
+    "title": "Infer an attitude while preserving mixed feelings",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [3],
+    "questionIds": ["RP-01-3", "RP-11-3", "RP-12-3", "RP-14-3", "RP-V3-16-3"]
+  },
+  {
+    "id": "reading-inference-counterexample",
+    "topic": "reading-inference",
+    "title": "Test a claim with an explicit contradiction or alternative",
+    "reportingCategory": "Key Ideas and Details",
+    "sections": [4],
+    "questionIds": [
+      "RP-19-3",
+      "RP-22-3",
+      "RP-07-3",
+      "RP-V3-11-3",
+      "RP-V3-13-3",
+      "RP-V3-24-3"
+    ]
+  },
+  {
+    "id": "reading-vocabulary-local-sense",
+    "topic": "reading-vocabulary",
+    "title": "Choose the word’s local sense and grammatical role",
+    "reportingCategory": "Craft and Structure",
+    "sections": [1],
+    "questionIds": [
+      "RP-01-4",
+      "RP-02-4",
+      "RP-10-4",
+      "RP-03-4",
+      "RP-04-4",
+      "RP-12-4",
+      "RP-20-4",
+      "RP-13-4",
+      "RP-06-4",
+      "RP-14-4",
+      "RP-22-4",
+      "RP-15-4",
+      "RP-08-4",
+      "RP-16-4",
+      "RP-V3-01-4",
+      "RP-V3-03-4",
+      "RP-V3-07-4",
+      "RP-V3-08-4",
+      "RP-V3-11-4",
+      "RP-V3-12-4",
+      "RP-V3-14-4",
+      "RP-V3-18-4",
+      "RP-V3-19-4",
+      "RP-V3-21-4",
+      "RP-V3-24-4"
+    ]
+  },
+  {
+    "id": "reading-vocabulary-contrast-clue",
+    "topic": "reading-vocabulary",
+    "title": "Use a neighboring contrast or example to define a word",
+    "reportingCategory": "Craft and Structure",
+    "sections": [2],
+    "questionIds": [
+      "RP-18-4",
+      "RP-19-4",
+      "RP-07-4",
+      "RP-V3-02-4",
+      "RP-V3-05-4",
+      "RP-V3-06-4",
+      "RP-V3-10-4"
+    ]
+  },
+  {
+    "id": "reading-vocabulary-figurative",
+    "topic": "reading-vocabulary",
+    "title": "Follow the target of a figurative action",
+    "reportingCategory": "Craft and Structure",
+    "sections": [3],
+    "questionIds": ["RP-05-4", "RP-21-4", "RP-23-4", "RP-V3-20-4", "RP-V3-22-4"]
+  },
+  {
+    "id": "reading-vocabulary-paragraph-fit",
+    "topic": "reading-vocabulary",
+    "title": "Verify the substitute against the paragraph’s claim",
+    "reportingCategory": "Craft and Structure",
+    "sections": [4],
+    "questionIds": [
+      "RP-09-4",
+      "RP-17-4",
+      "RP-11-4",
+      "RP-24-4",
+      "RP-V3-04-4",
+      "RP-V3-09-4",
+      "RP-V3-13-4",
+      "RP-V3-15-4",
+      "RP-V3-16-4",
+      "RP-V3-17-4",
+      "RP-V3-23-4"
+    ]
+  },
+  {
+    "id": "reading-craft-function",
+    "topic": "reading-craft",
+    "title": "Explain a detail’s job in its surrounding argument",
+    "reportingCategory": "Craft and Structure",
+    "sections": [1],
+    "questionIds": [
+      "RP-01-5",
+      "RP-17-5",
+      "RP-02-5",
+      "RP-10-5",
+      "RP-18-5",
+      "RP-03-5",
+      "RP-11-5",
+      "RP-04-5",
+      "RP-20-5",
+      "RP-05-5",
+      "RP-13-5",
+      "RP-06-5",
+      "RP-14-5",
+      "RP-22-5",
+      "RP-15-5",
+      "RP-23-5",
+      "RP-08-5",
+      "RP-16-5",
+      "RP-V3-01-5",
+      "RP-V3-02-5",
+      "RP-V3-03-5",
+      "RP-V3-04-5",
+      "RP-V3-05-5",
+      "RP-V3-06-5",
+      "RP-V3-07-5",
+      "RP-V3-08-5",
+      "RP-V3-09-5",
+      "RP-V3-10-5",
+      "RP-V3-11-5",
+      "RP-V3-12-5",
+      "RP-V3-13-5",
+      "RP-V3-14-5",
+      "RP-V3-15-5",
+      "RP-V3-17-5",
+      "RP-V3-20-5",
+      "RP-V3-21-5"
+    ]
+  },
+  {
+    "id": "reading-craft-tone",
+    "topic": "reading-craft",
+    "title": "Match the direction and intensity of the writer’s tone",
+    "reportingCategory": "Craft and Structure",
+    "sections": [2],
+    "questionIds": ["RP-21-5", "RP-V3-15-7", "RP-V3-22-7"]
+  },
+  {
+    "id": "reading-craft-perspective",
+    "topic": "reading-craft",
+    "title": "Track speakers, concessions, and structural shifts",
+    "reportingCategory": "Craft and Structure",
+    "sections": [3],
+    "questionIds": [
+      "RP-07-5",
+      "RP-V3-16-5",
+      "RP-V3-18-5",
+      "RP-V3-23-5",
+      "RP-V3-24-5"
+    ]
+  },
+  {
+    "id": "reading-craft-imagery",
+    "topic": "reading-craft",
+    "title": "Explain an image’s effect without importing extra properties",
+    "reportingCategory": "Craft and Structure",
+    "sections": [4],
+    "questionIds": [
+      "RP-09-5",
+      "RP-19-5",
+      "RP-12-5",
+      "RP-24-5",
+      "RP-V3-19-5",
+      "RP-V3-22-5"
+    ]
+  },
+  {
+    "id": "reading-integration-positions",
+    "topic": "reading-integration",
+    "title": "Compare the writers’ shared aims and exact differences",
+    "reportingCategory": "Integration of Knowledge and Ideas",
+    "sections": [1],
+    "questionIds": [
+      "RP-11-6",
+      "RP-04-6",
+      "RP-20-6",
+      "RP-07-6",
+      "RP-23-6",
+      "RP-16-6",
+      "RP-V3-04-6",
+      "RP-V3-16-6",
+      "RP-V3-20-6",
+      "RP-V3-24-6"
+    ]
+  },
+  {
+    "id": "reading-integration-combine",
+    "topic": "reading-integration",
+    "title": "Combine sources or distant details without inventing a verdict",
+    "reportingCategory": "Integration of Knowledge and Ideas",
+    "sections": [2],
+    "questionIds": [
+      "RP-01-6",
+      "RP-09-6",
+      "RP-17-6",
+      "RP-02-6",
+      "RP-03-6",
+      "RP-19-6",
+      "RP-12-6",
+      "RP-05-6",
+      "RP-13-6",
+      "RP-21-6",
+      "RP-14-6",
+      "RP-22-6",
+      "RP-V3-01-6",
+      "RP-V3-02-6",
+      "RP-V3-03-6",
+      "RP-V3-05-6",
+      "RP-V3-06-6",
+      "RP-V3-07-6",
+      "RP-V3-08-6",
+      "RP-V3-09-6",
+      "RP-V3-11-6",
+      "RP-V3-14-6",
+      "RP-V3-15-6",
+      "RP-V3-18-6",
+      "RP-V3-19-6",
+      "RP-V3-22-6",
+      "RP-V3-23-6"
+    ]
+  },
+  {
+    "id": "reading-integration-graphic",
+    "topic": "reading-integration",
+    "title": "Match a graphic’s values, units, and comparison base",
+    "reportingCategory": "Integration of Knowledge and Ideas",
+    "sections": [3],
+    "questionIds": [
+      "RP-18-6",
+      "RP-08-6",
+      "RP-V3-12-6",
+      "RP-V3-17-6",
+      "RP-V3-21-6"
+    ]
+  },
+  {
+    "id": "reading-integration-limits",
+    "topic": "reading-integration",
+    "title": "Keep the combined conclusion within every source’s limits",
+    "reportingCategory": "Integration of Knowledge and Ideas",
+    "sections": [4],
+    "questionIds": [
+      "RP-10-6",
+      "RP-06-6",
+      "RP-15-6",
+      "RP-24-6",
+      "RP-V3-10-6",
+      "RP-V3-13-6"
+    ]
+  },
+  {
+    "id": "science-data-reading-locate",
+    "topic": "science-data-reading",
+    "title": "Read the requested quantity, sample, and unit",
+    "reportingCategory": "Data interpretation",
+    "sections": [0],
+    "questionIds": [
+      "science-data-reading-1",
+      "science-data-reading-4",
+      "science-data-reading-8",
+      "science-data-reading-13",
+      "science-data-reading-21",
+      "science-data-reading-22",
+      "science-data-reading-29"
+    ],
+    "body": [
+      "Name the quantity requested, its unit, and the treatment or time. Match the table column or graph axis before comparing values. In a graph, use the legend to select the correct series.",
+      "A final amount, a change, and a rate answer different questions. Reading the largest number without its label can select the wrong quantity."
+    ],
+    "workedExamples": [
+      {
+        "section": 0,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A thermometer table lists elapsed time and temperature. Which column answers “how warm at 4 min”?",
+      "choices": [
+        "Temperature (°C)",
+        "Elapsed time (min)",
+        "Trial number",
+        "Sample volume (mL)"
+      ],
+      "answer": 0,
+      "explanation": "The question asks for temperature at a specified time. Time selects the row; temperature is the requested output.",
+      "evidenceText": "Trial 1: at 4 min the sample is 32°C and has volume 50 mL."
+    }
+  },
+  {
+    "id": "science-data-reading-changes",
+    "topic": "science-data-reading",
+    "title": "Subtract baselines and keep the fraction denominator",
+    "reportingCategory": "Data interpretation",
+    "sections": [1],
+    "questionIds": [
+      "science-data-reading-2",
+      "science-data-reading-15",
+      "science-data-reading-19",
+      "science-data-reading-20",
+      "science-data-reading-24"
+    ],
+    "body": [
+      "Change = final − initial. Amount removed = initial − final. Fraction removed divides the removed amount by the initial amount; fraction remaining divides the final amount by the initial amount.",
+      "Percentage-point change subtracts percentages. Relative percent change divides that difference by the original percentage. A rate additionally divides a change by elapsed time."
+    ],
+    "workedExamples": [
+      {
+        "section": 1,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A sample falls from 50 to 20 mg/L. What percentage of its initial concentration was removed?",
+      "choices": ["30%", "40%", "60%", "150%"],
+      "answer": 2,
+      "explanation": "Removal is 50−20 = 30 mg/L. Divide by the initial 50, not the remaining 20: 30/50 = 60%.",
+      "evidenceText": "Concentration: initial 50 mg/L; final 20 mg/L; volume unchanged."
+    }
+  },
+  {
+    "id": "science-data-reading-constraints",
+    "topic": "science-data-reading",
+    "title": "Check every threshold, including equality",
+    "reportingCategory": "Data interpretation",
+    "sections": [2],
+    "questionIds": ["science-data-reading-3", "science-data-reading-16"],
+    "body": [
+      "Turn every requirement into a separate test. “At least” includes equality; “greater than” does not. Eliminate a candidate as soon as it fails a required condition.",
+      "Write ratios in the requested direction. Output per area means output/area. Reversing numerator and denominator changes both the units and the ranking."
+    ],
+    "workedExamples": [
+      {
+        "section": 2,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Which water sample meets BOTH temperature below 25°C and oxygen at least 6 mg/L?",
+      "choices": ["Sample N", "Sample O", "All three", "Sample M"],
+      "answer": 3,
+      "explanation": "M has 24°C and 6 mg/L and passes both. N fails the strict temperature limit; O fails the oxygen minimum.",
+      "evidenceText": "M: 24°C, 6 mg/L. N: 25°C, 8 mg/L. O: 22°C, 5 mg/L."
+    }
+  },
+  {
+    "id": "science-data-reading-normalize",
+    "topic": "science-data-reading",
+    "title": "Normalize counts, areas, and volumes before ranking",
+    "reportingCategory": "Data interpretation",
+    "sections": [3],
+    "questionIds": [
+      "science-data-reading-7",
+      "science-data-reading-9",
+      "science-data-reading-10",
+      "science-data-reading-11",
+      "science-data-reading-12",
+      "science-data-reading-14",
+      "science-data-reading-17",
+      "science-data-reading-18"
+    ],
+    "body": [
+      "Counts measure totals; densities measure counts per area or volume. Divide before ranking samples of unequal sizes. If every sample has the same size, counts and densities rank them alike.",
+      "A percentage needs its own denominator. Percent germinated uses all starting seeds; mean root length might include only seedlings that sprouted. Read the study definition."
+    ],
+    "workedExamples": [
+      {
+        "section": 3,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Which pool has the greater insect density?",
+      "choices": [
+        "Pool U",
+        "Pool V",
+        "Equal densities",
+        "Cannot compare different volumes"
+      ],
+      "answer": 0,
+      "explanation": "U has 24/3 = 8 insects/L; V has 30/6 = 5 insects/L. Dividing by volume makes the samples comparable.",
+      "evidenceText": "U: 24 insects in 3 L. V: 30 insects in 6 L."
+    }
+  },
+  {
+    "id": "science-data-reading-rates",
+    "topic": "science-data-reading",
+    "title": "Compare interval changes and distinguish period from duration",
+    "reportingCategory": "Data interpretation",
+    "sections": [4],
+    "questionIds": ["science-data-reading-5", "science-data-reading-23"],
+    "body": [
+      "For a measured change, subtract the two outputs and divide by the elapsed interval if the question asks for a rate. Equal total changes over unequal intervals give different rates.",
+      "A repeating period is the interval between matching events, such as successive peaks; the duration of one isolated dip is not a repeat period. A record containing only one event cannot establish the time until its repetition."
+    ],
+    "workedExamples": [
+      {
+        "section": 4,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A population rises from 120 at hour 2 to 180 at hour 5. What is its average increase per hour?",
+      "choices": [
+        "60 organisms/h",
+        "20 organisms/h",
+        "30 organisms/h",
+        "36 organisms/h"
+      ],
+      "answer": 1,
+      "explanation": "Use change divided by elapsed time: (180−120)/(5−2) = 60/3 = 20 organisms/h.",
+      "evidenceText": "Population: hour 2 = 120; hour 5 = 180."
+    }
+  },
+  {
+    "id": "science-data-reading-supplied-model",
+    "topic": "science-data-reading",
+    "title": "Calculate a supplied model before comparing outputs",
+    "reportingCategory": "Data interpretation",
+    "sections": [5],
+    "questionIds": [
+      "science-data-reading-6",
+      "science-data-reading-25",
+      "science-data-reading-26",
+      "science-data-reading-27",
+      "science-data-reading-28"
+    ],
+    "body": [
+      "Write the supplied rule with the column names beside its inputs. Calculate the requested output for every candidate, keeping its units, before ranking results. The largest single input need not give the largest product or ratio.",
+      "If the question changes an input, recompute from the rule while keeping the stated constants fixed. A temperature change, final temperature, and energy amount are different outputs."
+    ],
+    "workedExamples": [
+      {
+        "section": 5,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "For the supplied output P = VI, which device has greater power?",
+      "choices": ["D, 36 mW", "E, 30 mW", "E, 60 mW"],
+      "answer": 0,
+      "explanation": "D gives 4×9 = 36 mW; E gives 6×5 = 30 mW. Compare products rather than voltage alone.",
+      "evidenceText": "D: 4 V, 9 mA. E: 6 V, 5 mA. Voltage × current in these units gives mW."
+    }
+  },
+  {
+    "id": "science-data-reading-mixing",
+    "topic": "science-data-reading",
+    "title": "Combine flows and use weighted concentration",
+    "reportingCategory": "Data interpretation",
+    "sections": [5],
+    "questionIds": [
+      "science-data-reading-30",
+      "science-data-reading-31",
+      "science-data-reading-32"
+    ],
+    "body": [
+      "Compute the quantity requested before ranking samples. A supplied equation may require multiplying two columns, subtracting a baseline, or dividing by another quantity. Keep units through the calculation; the largest individual input need not give the largest output.",
+      "When streams mix, add pollutant mass flows and divide by total water flow. Weight concentration by flow rather than averaging concentrations equally. Match sample, time, and units when combining presentations."
+    ],
+    "workedExamples": [
+      {
+        "section": 5,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A supplies 12 L/s at 2 mg/L and B supplies 4 L/s at 10 mg/L. What concentration follows complete mixing?",
+      "choices": ["6 mg/L", "8 mg/L", "4 mg/L", "12 mg/L"],
+      "answer": 2,
+      "explanation": "Mass flow is 12×2+4×10 = 64 mg/s. Water flow is 16 L/s. The flow-weighted concentration is 64/16 = 4 mg/L.",
+      "evidenceText": "The solute is conserved and both streams are completely mixed."
+    }
+  },
+  {
+    "id": "science-data-reading-calibration",
+    "topic": "science-data-reading",
+    "title": "Chain calibration, dilution, and a changed flow",
+    "reportingCategory": "Data interpretation",
+    "sections": [5, 6],
+    "questionIds": [
+      "science-data-reading-transfer-v2-33",
+      "science-data-calibration-v3-34"
+    ],
+    "body": [
+      "Follow the whole measurement chain: signal → calibrated concentration in the measured liquid → original concentration after undoing dilution → mass carried per time. Keep the sample identity and units at every step.",
+      "A flow change affects mass per time even if concentration stays fixed. Compare the requested final quantities only after each sample’s own corrections are complete."
+    ],
+    "workedExamples": [
+      {
+        "section": 6,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "After its flow is halved, how much pollutant does Stream A carry each second?",
+      "choices": ["9 mg/s", "18 mg/s", "36 mg/s"],
+      "answer": 1,
+      "explanation": "Signal 2 gives C = 3×2 = 6 mg/L in the diluted liquid; threefold dilution means original C = 18 mg/L. New flow is 1 L/s, so mass flow is 18 mg/s.",
+      "evidenceText": "Calibration C = 3S mg/L. A has S = 2 after threefold dilution and original flow 2 L/s; no solute is lost. Only flow is halved."
+    }
+  },
+  {
+    "id": "science-trends-interpolation-interpolate",
+    "topic": "science-trends-interpolation",
+    "title": "Interpolate between the nearest bounding measurements",
+    "reportingCategory": "Data interpretation",
+    "sections": [1],
+    "questionIds": [
+      "science-trends-interpolation-1",
+      "science-trends-interpolation-3",
+      "science-trends-interpolation-5",
+      "science-trends-interpolation-6",
+      "science-trends-interpolation-8",
+      "science-trends-interpolation-11",
+      "science-trends-interpolation-14",
+      "science-trends-interpolation-20",
+      "science-trends-interpolation-23",
+      "science-trends-interpolation-29"
+    ],
+    "body": [
+      "Interpolation estimates an output between measured inputs. For a straight segment, find the fraction of the horizontal gap traveled and apply that fraction to the vertical change.",
+      "Use the nearest bounding points rather than averaging every measurement. If the question supplies a different model, follow that model instead."
+    ],
+    "workedExamples": [
+      {
+        "section": 1,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Using straight-line interpolation, estimate the temperature at 7 min.",
+      "choices": ["30°C", "35°C", "45°C", "40°C"],
+      "answer": 3,
+      "explanation": "Seven minutes is halfway from 5 to 9 min, so use the midpoint of 46 and 34: (46+34)/2 = 40°C.",
+      "evidenceText": "A different sample is 46°C at 5 min and 34°C at 9 min."
+    }
+  },
+  {
+    "id": "science-trends-interpolation-interval-rates",
+    "topic": "science-trends-interpolation",
+    "title": "Compare changes using the actual interval lengths",
+    "reportingCategory": "Data interpretation",
+    "sections": [0],
+    "questionIds": [
+      "science-trends-interpolation-2",
+      "science-trends-interpolation-15",
+      "science-trends-interpolation-21",
+      "science-trends-interpolation-24",
+      "science-trends-interpolation-30"
+    ],
+    "body": [
+      "For equal input intervals, compare successive output changes. For unequal intervals, divide each change by its interval length before comparing rates.",
+      "Direction and rate are separate. A temperature can keep falling while its cooling slows. Use the signed slope for direction and its magnitude for speed of change."
+    ],
+    "workedExamples": [
+      {
+        "section": 0,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Which interval has the greater average cooling rate in magnitude?",
+      "choices": [
+        "2–8 min",
+        "0–2 min",
+        "They are equal",
+        "Neither interval, because only instantaneous rates can be compared"
+      ],
+      "answer": 1,
+      "explanation": "Compare temperature change divided by interval length: the first magnitude is 16/2 = 8°C/min and the second is 18/6 = 3°C/min. The second total drop is larger, but it takes three times as long. Falling in both intervals does not make the rates equal, and average rates can be compared without instantaneous measurements.",
+      "evidenceText": "At 0, 2, and 8 min, a sample is 70, 54, and 36°C."
+    }
+  },
+  {
+    "id": "science-trends-interpolation-tested-range",
+    "topic": "science-trends-interpolation",
+    "title": "Limit maxima and predictions to the tested domain",
+    "reportingCategory": "Data interpretation",
+    "sections": [2],
+    "questionIds": [
+      "science-trends-interpolation-4",
+      "science-trends-interpolation-7",
+      "science-trends-interpolation-12",
+      "science-trends-interpolation-17",
+      "science-trends-interpolation-27"
+    ],
+    "body": [
+      "A tested maximum is the largest measured result, not necessarily the exact optimum. Measurements on either side of a peak can narrow the search without locating every untested point.",
+      "Beyond the observed range, a prediction is extrapolation. A plateau does not prove a permanent limit, and an increasing segment does not justify “always increases.”"
+    ],
+    "workedExamples": [
+      {
+        "section": 2,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A response is 4, 11, and 8 at doses 1, 3, and 5. Which claim is supported?",
+      "choices": [
+        "Dose 3 has the largest measured response",
+        "The true maximum must occur exactly at dose 3",
+        "Response increases throughout the interval from dose 1 to dose 5",
+        "The response at dose 4 is known to be exactly 9.5"
+      ],
+      "answer": 0,
+      "explanation": "Among the three measured outputs, 11 at dose 3 is largest. The fall to 8 at dose 5 contradicts a continuously increasing claim. No measurements locate an exact overall optimum or establish a straight-line value of 9.5 at dose 4; those add claims beyond the observations.",
+      "evidenceText": "All three doses are measured in the same units under the same conditions."
+    }
+  },
+  {
+    "id": "science-trends-interpolation-equation",
+    "topic": "science-trends-interpolation",
+    "title": "Separate slope, intercept, ratios, and direct proportion",
+    "reportingCategory": "Data interpretation",
+    "sections": [3],
+    "questionIds": [
+      "science-trends-interpolation-9",
+      "science-trends-interpolation-10",
+      "science-trends-interpolation-25",
+      "science-trends-interpolation-26"
+    ],
+    "body": [
+      "Slope is output change divided by input change. An intercept is the predicted output at input zero; a nonzero intercept prevents absolute outputs from being directly proportional to inputs.",
+      "When a question asks for an added amount, subtract the baseline before comparing ratios. An equation may describe a range rather than every possible condition."
+    ],
+    "workedExamples": [
+      {
+        "section": 3,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "For T = 18−3d, what is the temperature change per meter?",
+      "choices": ["18°C/m", "−3°C/m", "3 m/°C", "−18°C/m"],
+      "answer": 1,
+      "explanation": "The coefficient of d is the slope: each additional meter lowers temperature by 3°C. The 18°C intercept is the value at zero depth.",
+      "evidenceText": "Temperature T is in °C and depth d is in meters."
+    }
+  },
+  {
+    "id": "science-trends-interpolation-nonlinear",
+    "topic": "science-trends-interpolation",
+    "title": "Use the stated nonlinear model and the requested output",
+    "reportingCategory": "Data interpretation",
+    "sections": [4],
+    "questionIds": [
+      "science-trends-interpolation-18",
+      "science-trends-interpolation-19",
+      "science-trends-interpolation-22"
+    ],
+    "body": [
+      "A straight segment and a nonlinear equation are different assumptions. Substitute the requested input into the stated equation rather than silently replacing it with a line.",
+      "For a squared relationship, changing an input by a factor changes its square by that factor squared. Check whether the equation predicts distance, squared distance, or time."
+    ],
+    "workedExamples": [
+      {
+        "section": 4,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "For x² = 9t, what distance is predicted at 16 min?",
+      "choices": ["4 mm", "36 mm", "12 mm", "144 mm"],
+      "answer": 2,
+      "explanation": "Substitute t = 16: x² = 144. The nonnegative distance is √144 = 12 mm; 144 is squared distance.",
+      "evidenceText": "The supplied model uses x in mm and t in minutes."
+    }
+  },
+  {
+    "id": "science-trends-interpolation-turning-plateau",
+    "topic": "science-trends-interpolation",
+    "title": "Distinguish turning points, plateaus, and later evidence",
+    "reportingCategory": "Data interpretation",
+    "sections": [5],
+    "questionIds": [
+      "science-trends-interpolation-13",
+      "science-trends-interpolation-16",
+      "science-trends-interpolation-28",
+      "science-trends-interpolation-31",
+      "science-trends-interpolation-32"
+    ],
+    "body": [
+      "Compare successive changes to distinguish a plateau, a turning point, and a steady trend. A turning point reverses direction; a plateau has little further change.",
+      "Check whether an instrument saturates before explaining a flat signal as a biological limit. Different measured responses can have different peaks or directions."
+    ],
+    "workedExamples": [
+      {
+        "section": 5,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Which series has a turning point rather than only slowing growth?",
+      "choices": ["2, 7, 10, 11", "2, 4, 6, 8", "8, 6, 4, 2", "2, 7, 10, 6"],
+      "answer": 3,
+      "explanation": "The selected series rises to 10 and then falls to 6, so its direction reverses. Smaller positive increases alone do not create a turning point.",
+      "evidenceText": "All series have equal input spacing."
+    }
+  },
+  {
+    "id": "science-experimental-design-variables-control",
+    "topic": "science-experimental-design",
+    "title": "Identify a variable and its matched baseline control",
+    "reportingCategory": "Scientific investigation",
+    "sections": [0],
+    "questionIds": [
+      "science-experimental-design-1",
+      "science-experimental-design-2",
+      "science-experimental-design-8",
+      "science-experimental-design-9",
+      "science-experimental-design-14",
+      "science-experimental-design-18",
+      "science-experimental-design-19",
+      "science-experimental-design-23",
+      "science-experimental-design-transfer-v2-35"
+    ],
+    "body": [
+      "The independent variable is deliberately changed; the dependent variable is measured. Controlled variables are held fixed. A control group supplies the comparison needed for the stated question.",
+      "A zero-dose group can still contain naturally occurring material. A vehicle-only group receives the inactive carrier so that its effect is separated from the active ingredient."
+    ],
+    "workedExamples": [
+      {
+        "section": 0,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "To test the active drug dissolved in oil, what should the comparison group receive?",
+      "choices": [
+        "No oil and no drug",
+        "Twice the oil without drug",
+        "The same oil without the drug",
+        "A different drug in water"
+      ],
+      "answer": 2,
+      "explanation": "An oil-only control holds the carrier constant. Comparing against no oil changes both drug presence and carrier presence.",
+      "evidenceText": "The outcome is measured after equal times, with otherwise matched groups."
+    }
+  },
+  {
+    "id": "science-experimental-design-confounds",
+    "topic": "science-experimental-design",
+    "title": "Remove the second factor that changes with treatment",
+    "reportingCategory": "Scientific investigation",
+    "sections": [1],
+    "questionIds": [
+      "science-experimental-design-3",
+      "science-experimental-design-4",
+      "science-experimental-design-5",
+      "science-experimental-design-10",
+      "science-experimental-design-15",
+      "science-experimental-design-31"
+    ],
+    "body": [
+      "A confound is another relevant factor that changes alongside the treatment. A result from two simultaneous changes cannot identify either change as the sole cause.",
+      "Split one source material among separate units, assign treatments randomly, and keep other relevant conditions comparable. More repeats alone do not repair a built-in confound."
+    ],
+    "workedExamples": [
+      {
+        "section": 1,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Heated pots receive more water than cool pots. Which change most directly isolates heating?",
+      "choices": [
+        "Use the same water amount in both groups",
+        "Measure the pots more often",
+        "Add more heated pots only",
+        "Use a more precise thermometer in both groups"
+      ],
+      "answer": 0,
+      "explanation": "Heating and water amount currently vary together. Giving both groups the same water isolates heating. More measurements, more heated pots, or a more precise thermometer can improve sampling or precision while leaving the water confound intact.",
+      "evidenceText": "All other conditions are already held constant."
+    }
+  },
+  {
+    "id": "science-experimental-design-matched-comparison",
+    "topic": "science-experimental-design",
+    "title": "Choose the comparison that tests the stated factor",
+    "reportingCategory": "Scientific investigation",
+    "sections": [2],
+    "questionIds": [
+      "science-experimental-design-6",
+      "science-experimental-design-20",
+      "science-experimental-design-22",
+      "science-experimental-design-24"
+    ],
+    "body": [
+      "Translate the hypothesis into the one factor that must differ. Keep the response definition and endpoint matched. A no-treatment control tests adding a treatment; equal treatment amounts with different forms can isolate a property such as surface area.",
+      "A group mean describes the tested group, not every individual. Keep a conclusion within the tested population, time, and conditions; a well-controlled comparison does not establish all environments."
+    ],
+    "workedExamples": [
+      {
+        "section": 2,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "To test whether stirring changes dissolving time, which pair is best?",
+      "choices": [
+        "Stirred hot water versus unstirred cold water",
+        "Equal masses and water temperatures; stirred versus unstirred",
+        "Stirred water with twice the solid versus unstirred water with the original solid mass",
+        "Two stirred cups at different temperatures"
+      ],
+      "answer": 1,
+      "explanation": "Compare stirred and unstirred cups at the same solid mass and water temperature. Equal water volumes and a shared endpoint complete the control. Changing temperature or mass with stirring mixes causes, while two stirred cups do not test stirring at all.",
+      "evidenceText": "All cups contain equal water volumes, and dissolving time uses the same endpoint in every cup."
+    }
+  },
+  {
+    "id": "science-experimental-design-replication",
+    "topic": "science-experimental-design",
+    "title": "Count independently treated units and within-unit readings",
+    "reportingCategory": "Scientific investigation",
+    "sections": [3],
+    "questionIds": [
+      "science-experimental-design-7",
+      "science-experimental-design-11",
+      "science-experimental-design-16",
+      "science-experimental-design-30"
+    ],
+    "body": [
+      "The experimental unit is the object or group independently assigned a treatment. Multiple readings of the same object are repeated measurements, not extra independent treatment units.",
+      "Replication estimates consistency across units. Random assignment reduces systematic starting differences; neither automatically removes an uncontrolled treatment difference."
+    ],
+    "workedExamples": [
+      {
+        "section": 3,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Three independently treated trays each contain 12 seedlings. How many experimental units received treatment independently?",
+      "choices": ["12", "36", "3", "15"],
+      "answer": 2,
+      "explanation": "Treatment was assigned to trays, so the independent units are the three trays. More seedlings improve sampling within a tray but do not create more treatment assignments.",
+      "evidenceText": "One treatment is applied to an entire tray; individual seedlings are not assigned separate treatments."
+    }
+  },
+  {
+    "id": "science-experimental-design-bias-order",
+    "topic": "science-experimental-design",
+    "title": "Distinguish blinding, assignment, and exposure history",
+    "reportingCategory": "Scientific investigation",
+    "sections": [4],
+    "questionIds": [
+      "science-experimental-design-12",
+      "science-experimental-design-28",
+      "science-experimental-design-29"
+    ],
+    "body": [
+      "Random assignment addresses starting-group differences. Blinding hides labels from scorers to reduce expectation bias. Counterbalancing varies treatment order; fresh groups or adequate recovery address carryover. These are different design decisions.",
+      "Identify the suspected bias first, then choose the change that directly targets it. More observations in the same fixed order do not test whether order caused the difference."
+    ],
+    "workedExamples": [
+      {
+        "section": 4,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "Which change most directly tests whether receiving A first affected the later B response?",
+      "choices": [
+        "Score the same A→B videos without labels",
+        "Assign another group to B→A",
+        "Record A→B at twice the frame rate"
+      ],
+      "answer": 1,
+      "explanation": "Reversing order creates the missing comparison. Blinding targets scoring expectations, and a faster recording leaves the same exposure order in place.",
+      "evidenceText": "All animals currently receive A before B. Treatment durations and scoring procedures are otherwise matched."
+    }
+  },
+  {
+    "id": "science-experimental-design-interaction",
+    "topic": "science-experimental-design",
+    "title": "Compare treatment effects across contexts",
+    "reportingCategory": "Scientific investigation",
+    "sections": [5],
+    "questionIds": [
+      "science-experimental-design-13",
+      "science-experimental-design-26",
+      "science-experimental-design-32",
+      "science-experimental-design-transfer-v2-34"
+    ],
+    "body": [
+      "To estimate one factor’s effect, hold the other fixed. Compare those effects across the other factor’s levels to test context dependence. When groups start at different values, compare each group’s before-to-after change before comparing the groups.",
+      "A useful follow-up includes missing matched conditions. Changing duration, sample type, and treatment together creates a new confound instead of resolving the old one."
+    ],
+    "workedExamples": [
+      {
+        "section": 5,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "Which condition has the larger treatment-minus-control effect?",
+      "choices": [
+        "Low light: +5 units",
+        "High light: +9 units",
+        "The effects are equal"
+      ],
+      "answer": 0,
+      "explanation": "Low light gives 8−3 = 5; high light gives 11−9 = 2. A larger final treated value need not mean a larger treatment effect.",
+      "evidenceText": "Low light: control 3, treated 8. High light: control 9, treated 11. All values use the same response unit."
+    }
+  },
+  {
+    "id": "science-experimental-design-measurement",
+    "topic": "science-experimental-design",
+    "title": "Define the response and distinguish accuracy from resolution",
+    "reportingCategory": "Scientific investigation",
+    "sections": [6],
+    "questionIds": [
+      "science-experimental-design-21",
+      "science-experimental-design-25",
+      "science-experimental-design-transfer-v2-33"
+    ],
+    "body": [
+      "An operational definition specifies exactly how a response is measured. Precision means repeated values cluster together; accuracy means they are near an accepted reference. A tightly clustered offset can be precise yet inaccurate.",
+      "Repetition can reduce random uncertainty in a mean, but it does not remove a systematic calibration error. Test an accepted standard, correct the offset, and use an instrument fine enough to resolve the proposed difference."
+    ],
+    "workedExamples": [
+      {
+        "section": 6,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A ruler marked only every 1 cm is used to compare lengths expected to differ by 0.2 cm. What is the most direct improvement?",
+      "choices": [
+        "Read the same coarse mark more times",
+        "Use a ruler with finer graduations",
+        "Measure twice as many samples with the same coarse ruler",
+        "Use a calibrated ruler with the same 1 cm graduations"
+      ],
+      "answer": 1,
+      "explanation": "Finer graduations directly improve resolution of the expected 0.2 cm difference. Repetition or more samples does not give an individual reading finer marks. Calibration addresses systematic accuracy, but a calibrated ruler with the same coarse graduations still has the stated resolution limit.",
+      "evidenceText": "The study otherwise uses independent replicates and consistent measurement endpoints."
+    }
+  },
+  {
+    "id": "science-experimental-design-scope",
+    "topic": "science-experimental-design",
+    "title": "Keep conclusions within the measured groups and conditions",
+    "reportingCategory": "Scientific investigation",
+    "sections": [1, 2],
+    "questionIds": [
+      "science-experimental-design-17",
+      "science-experimental-design-27"
+    ],
+    "body": [
+      "A controlled comparison supports a conclusion about its tested units, response, duration, and conditions. A mean is a group summary, not a claim that each unit changed by exactly that amount.",
+      "Separate observed differences from unmeasured mechanisms or future settings. Keeping conditions matched strengthens the test without making its result universal."
+    ],
+    "workedExamples": [
+      {
+        "section": 2,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "Which conclusion stays within the study?",
+      "choices": [
+        "Every treated seedling gained exactly 2 g",
+        "The treatment had the larger mean mass under the tested conditions",
+        "The treatment will have the same effect in every soil"
+      ],
+      "answer": 1,
+      "explanation": "The means differ by 2 g in the stated experiment. Means do not give every individual result, and one soil/time combination does not establish every soil.",
+      "evidenceText": "One species in one soil for 10 days: control mean final mass 5 g, treated mean 7 g. Individual values were not identical."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-prediction",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Translate each mechanism into its stated prediction",
+    "reportingCategory": "Evaluation of models",
+    "sections": [0],
+    "questionIds": [
+      "science-conflicting-viewpoints-2",
+      "science-conflicting-viewpoints-5",
+      "science-conflicting-viewpoints-9",
+      "science-conflicting-viewpoints-14",
+      "science-conflicting-viewpoints-15",
+      "science-conflicting-viewpoints-19",
+      "science-conflicting-viewpoints-24"
+    ],
+    "body": [
+      "Name the phenomenon, then write cause → expected observation for each viewpoint. Keep reported facts separate from proposed mechanisms. A group’s most common response is its mode, not a claim that every individual responded identically. A mode can also be fewer than half the observations.",
+      "A shared prediction cannot distinguish explanations. Seek a condition where predicted outcomes differ rather than merely a fact mentioned by one author."
+    ],
+    "workedExamples": [
+      {
+        "section": 0,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "F proposes trapped air; G proposes newly formed oxygen. Which observation alone is shared and therefore weak for separating them?",
+      "choices": [
+        "Gas is mostly oxygen absent initially",
+        "Bubbling persists after dissolved air is removed",
+        "Bubbling requires a light-driven reaction",
+        "Bubbles are visible"
+      ],
+      "answer": 3,
+      "explanation": "Both mechanisms can produce visible bubbles. Their chemical source, not the presence of bubbles, is the disagreement.",
+      "evidenceText": "Both accounts explicitly predict visible bubbles, but propose different gas sources."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-causal-control",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Test a mechanism without changing the competing cause",
+    "reportingCategory": "Evaluation of models",
+    "sections": [1],
+    "questionIds": [
+      "science-conflicting-viewpoints-1",
+      "science-conflicting-viewpoints-3",
+      "science-conflicting-viewpoints-8",
+      "science-conflicting-viewpoints-10",
+      "science-conflicting-viewpoints-12",
+      "science-conflicting-viewpoints-28",
+      "science-conflicting-viewpoints-29",
+      "science-conflicting-viewpoints-30",
+      "science-conflicting-viewpoints-31"
+    ],
+    "body": [
+      "A removal-and-restoration comparison is strongest when the manipulation leaves the competing cause unchanged. Otherwise the intervention may change both explanations at once.",
+      "A result can favor a causal contribution without proving every molecular detail or eliminating every alternative. State the supported link at the level actually tested."
+    ],
+    "workedExamples": [
+      {
+        "section": 1,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "An inhibitor lowers light output, but also blocks oxygen supply. Why is a chemical-only conclusion uncertain?",
+      "choices": [
+        "The chemical process must be the only cause because light output decreased",
+        "Oxygen supply changed along with the chemical process",
+        "The oxygen mechanism must be correct because oxygen delivery decreased",
+        "Repeating the same manipulation would separate the two mechanisms"
+      ],
+      "answer": 1,
+      "explanation": "The manipulation changes both a chemical process and oxygen delivery, each relevant to a competing explanation. The fall in light output therefore cannot be assigned uniquely to either. Repeating that confounded manipulation does not separate them; a control preserving oxygen delivery while inhibiting the chemical would be more informative.",
+      "evidenceText": "One hypothesis requires the inhibited chemical; the competing hypothesis requires oxygen delivery."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-feasibility",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Distinguish feasible transport from the route that occurred",
+    "reportingCategory": "Evaluation of models",
+    "sections": [2],
+    "questionIds": [
+      "science-conflicting-viewpoints-6",
+      "science-conflicting-viewpoints-7",
+      "science-conflicting-viewpoints-11",
+      "science-conflicting-viewpoints-26",
+      "science-conflicting-viewpoints-27"
+    ],
+    "body": [
+      "Showing that a process can occur establishes feasibility; it does not show that it caused one historical event. A necessary condition must be met, but meeting it is not sufficient proof.",
+      "Choose evidence that documents the disputed event or eliminates a required condition. Avoid converting “possible” into “definitely happened.”"
+    ],
+    "workedExamples": [
+      {
+        "section": 2,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Rock fragments survive both river transport and glacier transport. What follows about a particular deposit?",
+      "choices": [
+        "The river route is established",
+        "The glacier route is established",
+        "Both routes remain possible",
+        "Neither route can occur"
+      ],
+      "answer": 2,
+      "explanation": "Survival demonstrates that either process could deliver fragments. Evidence about the particular deposit is still required to choose its actual history.",
+      "evidenceText": "No transport traces or historical observations are supplied."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-matched-condition",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Compare viewpoints under one matched condition",
+    "reportingCategory": "Evaluation of models",
+    "sections": [3],
+    "questionIds": [
+      "science-conflicting-viewpoints-18",
+      "science-conflicting-viewpoints-20",
+      "science-conflicting-viewpoints-21",
+      "science-conflicting-viewpoints-22"
+    ],
+    "body": [
+      "Hold a competing factor fixed while testing the claimed factor. In a two-factor table, compare rows or columns differing in only the relevant condition. When comparing proportions, identify each sample denominator; a larger count need not mean a larger fraction.",
+      "A predicted relationship can match while its internal mechanism remains untested. Distinguish the response pattern from an explanation of how it occurs."
+    ],
+    "workedExamples": [
+      {
+        "section": 3,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "To test a humidity-driven explanation against a light-driven one, which comparison isolates humidity?",
+      "choices": [
+        "Different light and humidity",
+        "Same humidity, different light",
+        "Same light and humidity",
+        "Same light, different humidity"
+      ],
+      "answer": 3,
+      "explanation": "Hold light fixed and change humidity so that a response difference targets humidity. Changing both factors mixes the predictions.",
+      "evidenceText": "Other relevant conditions and measurement time remain constant."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-separating-test",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Choose evidence or cue settings that separate predictions",
+    "reportingCategory": "Evaluation of models",
+    "sections": [4],
+    "questionIds": [
+      "science-conflicting-viewpoints-4",
+      "science-conflicting-viewpoints-13",
+      "science-conflicting-viewpoints-16"
+    ],
+    "body": [
+      "Two explanations may agree under ordinary conditions. Change one cue or input while keeping the alternative cue fixed to create different predicted outcomes.",
+      "For three viewpoints, compare the pair named in the question first. Evidence that rejects one explanation may remain consistent with two others."
+    ],
+    "workedExamples": [
+      {
+        "section": 4,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Both models predict 6 at setting A but predict 9 and 15 at B. Which setting is more informative?",
+      "choices": [
+        "B",
+        "A",
+        "Either is equally separating",
+        "Neither, because a model must match every setting before it can be tested"
+      ],
+      "answer": 0,
+      "explanation": "At B the models make different predictions, 9 and 15, so an adequate measurement can distinguish them. Both predict 6 at A; measuring that shared prediction more precisely does not separate them. A model need not first be shown correct at all settings before an informative test is possible.",
+      "evidenceText": "The two settings are equally measurable and within both models’ stated ranges."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-joint-evidence",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Check the separate components of a combined mechanism",
+    "reportingCategory": "Evaluation of models",
+    "sections": [6],
+    "questionIds": [
+      "science-conflicting-viewpoints-23",
+      "science-conflicting-viewpoints-32"
+    ],
+    "body": [
+      "Split a compound explanation into its requirements, match each to evidence, and look for a contradiction. Shared evidence, separating evidence, and unmeasured conditions serve different roles.",
+      "When new information changes a background condition, carry it into each model’s prediction. Support requires the complete claim to fit, not just one convenient observation."
+    ],
+    "workedExamples": [
+      {
+        "section": 6,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A model claims germination needs both dry soil and warmth. Germination occurs in warm wet soil. Which claim is contradicted by this observation?",
+      "choices": [
+        "Warmth is necessary",
+        "Dry soil alone is sufficient",
+        "Dry soil is necessary",
+        "Warmth and dry soil together are sufficient"
+      ],
+      "answer": 2,
+      "explanation": "Germination in wet soil is a counterexample to dry soil being necessary. Warmth is present, so its necessity is not contradicted. A result under a different set of conditions also does not disprove that dry soil alone, or warm dry soil, could be sufficient; necessity and sufficiency are distinct claims.",
+      "evidenceText": "The germination observation and soil moisture measurement are reliable."
+    }
+  },
+  {
+    "id": "science-models-evidence-substitution",
+    "topic": "science-models-evidence",
+    "title": "Compute the exact prediction and compare every row",
+    "reportingCategory": "Evaluation of models",
+    "sections": [0],
+    "questionIds": [
+      "science-models-evidence-1",
+      "science-models-evidence-2",
+      "science-models-evidence-8",
+      "science-models-evidence-9",
+      "science-models-evidence-13",
+      "science-models-evidence-14",
+      "science-models-evidence-15",
+      "science-models-evidence-28"
+    ],
+    "body": [
+      "A model is a specified rule, not merely a direction of change. Substitute the input and compare predicted with observed output under the same conditions and units.",
+      "One point where two models agree does not separate them. Use another input where their numerical predictions differ."
+    ],
+    "workedExamples": [
+      {
+        "section": 0,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Model R predicts y = 4x+2. What is its prediction at x = 3?",
+      "choices": ["14", "12", "18", "9"],
+      "answer": 0,
+      "explanation": "Substitute into the complete expression: 4×3+2 = 14. Omitting the intercept gives 12, which is a different model.",
+      "evidenceText": "x and y are dimensionless measured quantities."
+    }
+  },
+  {
+    "id": "science-models-evidence-multiplicative",
+    "topic": "science-models-evidence",
+    "title": "Distinguish fixed additions from repeated factors",
+    "reportingCategory": "Evaluation of models",
+    "sections": [1],
+    "questionIds": [
+      "science-models-evidence-4",
+      "science-models-evidence-5",
+      "science-models-evidence-6",
+      "science-models-evidence-7"
+    ],
+    "body": [
+      "Linear change adds equal amounts over equal input steps. Exponential change multiplies by an equal factor; direct proportion also requires a constant output/input ratio and zero intercept.",
+      "Write intermediate steps to avoid counting growth intervals incorrectly. A constant percentage change need not give constant absolute differences."
+    ],
+    "workedExamples": [
+      {
+        "section": 1,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A substance retains one third each hour. Starting at 81 mg, how much remains after 3 h?",
+      "choices": ["27 mg", "9 mg", "3 mg", "78 mg"],
+      "answer": 2,
+      "explanation": "Apply the factor three times: 81→27→9→3 mg. Subtracting 3 mg per hour would model a different process.",
+      "evidenceText": "The same one-hour retention factor applies in each interval."
+    }
+  },
+  {
+    "id": "science-models-evidence-domain",
+    "topic": "science-models-evidence",
+    "title": "Challenge a model inside its stated conditions",
+    "reportingCategory": "Evaluation of models",
+    "sections": [2],
+    "questionIds": ["science-models-evidence-3", "science-models-evidence-17"],
+    "body": [
+      "Test a claim within its stated input range and relevant conditions. A mismatch there challenges the model; a result outside that domain may instead reveal that the model cannot be extended.",
+      "Matching measured data supports the rule under tested conditions. It does not prove every material, time period, or untested environment."
+    ],
+    "workedExamples": [
+      {
+        "section": 2,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A model applies at 10–30°C. Which observation tests its claim most directly?",
+      "choices": [
+        "A mismatch at 50°C",
+        "An unmeasured prediction at 0°C",
+        "A result from a different material outside its scope",
+        "A reproducible mismatch at 22°C"
+      ],
+      "answer": 3,
+      "explanation": "Twenty-two degrees lies within the stated domain and holds the modeled material fixed. The other choices test an unsupported extension.",
+      "evidenceText": "All other model conditions are met for the 22°C trial."
+    }
+  },
+  {
+    "id": "science-models-evidence-factor",
+    "topic": "science-models-evidence",
+    "title": "Apply exponents and reciprocal factor changes",
+    "reportingCategory": "Evaluation of models",
+    "sections": [3],
+    "questionIds": [
+      "science-models-evidence-10",
+      "science-factor-transfer-v3-36"
+    ],
+    "body": [
+      "Treat each changed factor separately, including exponents and denominator effects, then multiply the factors. Hold all unchanged quantities fixed.",
+      "Use units to identify the actual output. A reciprocal equation predicts the reciprocal first; a squared equation predicts a square before taking a root."
+    ],
+    "workedExamples": [
+      {
+        "section": 3,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "For R = kL/A, length doubles and area quadruples. What happens to resistance R?",
+      "choices": [
+        "It halves",
+        "It doubles",
+        "It quadruples",
+        "It stays unchanged"
+      ],
+      "answer": 0,
+      "explanation": "The length change gives ×2 and the area change gives ÷4. Together, 2/4 = 1/2, with k held constant.",
+      "evidenceText": "The same material and temperature keep k constant."
+    }
+  },
+  {
+    "id": "science-models-evidence-separate-predictions",
+    "topic": "science-models-evidence",
+    "title": "Choose inputs where the model predictions diverge",
+    "reportingCategory": "Evaluation of models",
+    "sections": [0, 6],
+    "questionIds": ["science-models-evidence-11", "science-models-evidence-12"],
+    "body": [
+      "Calculate each model’s prediction at the same candidate input. A point of agreement cannot separate them even if it is measured very precisely. Choose a valid input where their predictions differ.",
+      "Keep the test inside the stated domains and its measurement resolution adequate for the difference. Repeating a shared prediction can check consistency without deciding which rule is right."
+    ],
+    "workedExamples": [
+      {
+        "section": 6,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "Which input separates the predictions?",
+      "choices": [
+        "x = 1",
+        "x = 2",
+        "Both give identical predictions at every x"
+      ],
+      "answer": 1,
+      "explanation": "At x = 1 both give 5. At x = 2, A gives 7 and B gives 9, so that setting can separate them.",
+      "evidenceText": "Model A: y = 2x+3. Model B: y = 4x+1. Both apply at x = 1 and x = 2, and output can be resolved to 0.1 unit."
+    }
+  },
+  {
+    "id": "science-models-evidence-saturation",
+    "topic": "science-models-evidence",
+    "title": "Identify the limit of a saturating model",
+    "reportingCategory": "Evaluation of models",
+    "sections": [5],
+    "questionIds": [
+      "science-models-evidence-16",
+      "science-saturation-transfer-v3-35"
+    ],
+    "body": [
+      "A saturating model approaches a limit while a proportional model grows without bound. Choose a valid input where their predictions differ enough to measure.",
+      "Account for rounding and measurement uncertainty when judging a mismatch. Do not invent statistical significance from means alone; a meaningful comparison needs appropriate information about variability."
+    ],
+    "workedExamples": [
+      {
+        "section": 5,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "For q = 8C/(3+C), what value is approached as positive C becomes very large?",
+      "choices": ["3", "11", "8", "No finite limit"],
+      "answer": 2,
+      "explanation": "Divide by C: q = 8/(3/C+1). The 3/C term approaches zero, so q approaches 8 from below.",
+      "evidenceText": "C is positive; the model is assumed applicable at large C for this question."
+    }
+  },
+  {
+    "id": "science-models-evidence-background",
+    "topic": "science-models-evidence",
+    "title": "Correct the baseline before computing a decay fraction",
+    "reportingCategory": "Evaluation of models",
+    "sections": [4],
+    "questionIds": [
+      "science-models-evidence-23",
+      "science-models-evidence-24",
+      "science-models-evidence-25",
+      "science-models-evidence-26",
+      "science-models-evidence-27"
+    ],
+    "body": [
+      "Identify raw totals versus the signal of interest. Subtract a background before comparing the corrected signal, and add it back if the question asks for a raw future reading.",
+      "Net biological change likewise combines gains and losses. A zero net change may hide equal nonzero production and consumption."
+    ],
+    "workedExamples": [
+      {
+        "section": 4,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Raw readings are 255 then 130 with constant background 5. What happens to the corrected signal?",
+      "choices": [
+        "It halves from 255 to 127.5",
+        "It halves from 250 to 125",
+        "It falls from 260 to 135",
+        "It falls from 255 to 130"
+      ],
+      "answer": 1,
+      "explanation": "Subtract background from each reading: 255−5 = 250 and 130−5 = 125. The corrected signal halves. Halving the initial raw reading gives 127.5 rather than the observed corrected value; adding background gives 260 and 135; leaving both raw values unchanged omits the correction.",
+      "evidenceText": "The detector background remains 5 counts/min throughout."
+    }
+  },
+  {
+    "id": "science-models-evidence-combined-experiments",
+    "topic": "science-models-evidence",
+    "title": "Use all experiments and choose a matched follow-up",
+    "reportingCategory": "Evaluation of models",
+    "sections": [6],
+    "questionIds": [
+      "science-models-evidence-29",
+      "science-models-evidence-30",
+      "science-models-evidence-31",
+      "science-models-evidence-32",
+      "science-models-evidence-transfer-v2-33",
+      "science-models-evidence-transfer-v2-34"
+    ],
+    "body": [
+      "A model must fit all relevant observations under matched conditions. A second table can change the interpretation of the first, such as revealing a shared offset or a nutrient-dependent effect.",
+      "Choose a follow-up that separates explanations while preserving controls. Merely repeating an agreement point improves measurement consistency but may not test the disputed mechanism."
+    ],
+    "workedExamples": [
+      {
+        "section": 6,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Model A fits Experiment 1 but contradicts reliable Experiment 2 under its own stated conditions. What is justified?",
+      "choices": [
+        "Its first success is sufficient to retain the original claim unchanged",
+        "Its original stated claim remains valid if Experiment 2 is omitted from the fit",
+        "A model that fits Experiment 2 must automatically explain Experiment 1",
+        "The model needs revision despite its first success"
+      ],
+      "answer": 3,
+      "explanation": "Both experiments are reliable and satisfy the stated conditions, so the second contradiction requires revision despite the first success. Omitting a contradictory in-scope test does not repair the claim. A competing model must also face both datasets; fitting one does not automatically establish a fit to the other.",
+      "evidenceText": "Both experiments satisfy the model’s stated conditions and use adequate measurements."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-acidity",
+    "topic": "science-scientific-foundations",
+    "title": "Read logarithmic pH separately from enzyme performance",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [0],
+    "questionIds": [
+      "science-scientific-foundations-1",
+      "science-scientific-foundations-2",
+      "science-scientific-foundations-3"
+    ],
+    "body": [
+      "At 25°C, pH 7 is neutral; lower pH is more acidic. Each one-unit decrease represents ten times the hydrogen-ion concentration. Do not read the scale as linear.",
+      "Enzymes catalyze reactions without being consumed overall. Activity depends on conditions such as pH and temperature; greater acidity does not necessarily mean greater activity."
+    ],
+    "workedExamples": [
+      {
+        "section": 0,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A solution changes from pH 5 to pH 6. What happens to hydrogen-ion concentration?",
+      "choices": [
+        "It increases tenfold",
+        "It decreases tenfold",
+        "It decreases by one concentration unit",
+        "It doubles"
+      ],
+      "answer": 1,
+      "explanation": "A one-unit rise in pH means one tenth the hydrogen-ion concentration. The logarithmic direction reverses the change in acidity.",
+      "evidenceText": "Assume the usual aqueous pH interpretation at the same temperature."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-matter",
+    "topic": "science-scientific-foundations",
+    "title": "Conserve atoms and account for limiting reactants and leftovers",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [1],
+    "questionIds": [
+      "science-scientific-foundations-4",
+      "science-scientific-foundations-5",
+      "science-scientific-foundations-13",
+      "science-scientific-foundations-14",
+      "science-scientific-foundations-15",
+      "science-scientific-foundations-16",
+      "science-scientific-foundations-17"
+    ],
+    "body": [
+      "A chemical reaction rearranges atoms. Balance each element across products and leftovers; total molecule count need not remain fixed. Use the required reactant ratio to find what runs out first.",
+      "No material crossing a closed system’s boundary means its total mass remains constant, even if gas forms. An open container can lose measured mass when material escapes."
+    ],
+    "workedExamples": [
+      {
+        "section": 1,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "For N₂ + 3 H₂ → 2 NH₃, what forms from 2 N₂ and 9 H₂ molecules?",
+      "choices": [
+        "4 NH₃ with 3 H₂ left",
+        "6 NH₃ with no reactant left",
+        "2 NH₃ with 6 H₂ left"
+      ],
+      "answer": 0,
+      "explanation": "Two N₂ use six H₂ and form four NH₃, leaving three H₂. Nitrogen is the limiting reactant.",
+      "evidenceText": "Assume complete reaction of the limiting reactant and no material loss. Molecule counts are a simplified model."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-ohms-law",
+    "topic": "science-scientific-foundations",
+    "title": "Apply Ohm’s law under the stated circuit conditions",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [2],
+    "questionIds": [
+      "science-scientific-foundations-6",
+      "science-scientific-foundations-7"
+    ],
+    "body": [
+      "Use V = IR for the stated resistor conditions. Find R from V/I or current from V/R, retaining volts, amperes, and ohms. Do not multiply when the unknown requires division.",
+      "For identical resistors in series, resistances add. At fixed voltage, doubling total resistance halves current; do not apply a series rule to an unspecified parallel arrangement."
+    ],
+    "workedExamples": [
+      {
+        "section": 2,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "At 9 V across a fixed 30 Ω resistor, what current follows?",
+      "choices": ["0.30 A", "3.33 A", "270 A"],
+      "answer": 0,
+      "explanation": "I = V/R = 9/30 = 0.30 A. The other operations reverse or multiply the quantities.",
+      "evidenceText": "The resistor obeys V = IR and its temperature is unchanged."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-net-force",
+    "topic": "science-scientific-foundations",
+    "title": "Combine force directions before applying F = ma",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [2],
+    "questionIds": [
+      "science-scientific-foundations-23",
+      "science-scientific-foundations-24",
+      "science-scientific-foundations-25",
+      "science-scientific-foundations-26",
+      "science-scientific-foundations-27"
+    ],
+    "body": [
+      "Combine force directions to obtain net force before using Fnet = ma. Opposing magnitudes subtract; a stated pulling force is not automatically the net force.",
+      "Zero net force means zero acceleration, not necessarily zero velocity. For the same net force, increasing mass reduces acceleration in inverse proportion."
+    ],
+    "workedExamples": [
+      {
+        "section": 2,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "What acceleration follows for the moving cart?",
+      "choices": ["5 m/s² forward", "4 m/s² forward", "1 m/s² forward"],
+      "answer": 1,
+      "explanation": "Net force is 20−4 = 16 N forward. Divide by mass 4 kg to get 4 m/s². Using only the pull gives 5; friction alone does not give the net acceleration.",
+      "evidenceText": "A 4 kg cart has a 20 N forward pull and 4 N opposing friction. Use Fnet = ma."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-net-oxygen",
+    "topic": "science-scientific-foundations",
+    "title": "Separate cellular respiration, gross production, and net change",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [3],
+    "questionIds": [
+      "science-scientific-foundations-8",
+      "science-scientific-foundations-9",
+      "science-scientific-foundations-10",
+      "science-scientific-foundations-11",
+      "science-scientific-foundations-12",
+      "science-scientific-foundations-transfer-v2-37"
+    ],
+    "body": [
+      "Chloroplasts in plants perform photosynthesis, using light to build sugars from carbon dioxide and water and releasing oxygen. Cellular respiration uses fuel to release usable energy; plants also respire.",
+      "Net change = production − consumption. Add consumption back to recover gross production only when the stated assumptions allow it. Zero net output can conceal two active processes."
+    ],
+    "workedExamples": [
+      {
+        "section": 3,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "Leaves use 4 units of oxygen per hour and show a net gain of 9 in light. With unchanged respiration, what is gross production?",
+      "choices": ["5", "13", "9", "36"],
+      "answer": 1,
+      "explanation": "Net production equals gross minus consumption. Add back the 4 consumed: gross = 9+4 = 13 units per hour.",
+      "evidenceText": "The comparison assumes equal time, sample amount, and respiration rate."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-heat-phase",
+    "topic": "science-scientific-foundations",
+    "title": "Separate heat input, temperature, and phase-change duration",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [4],
+    "questionIds": [
+      "science-scientific-foundations-18",
+      "science-scientific-foundations-19",
+      "science-scientific-foundations-20",
+      "science-scientific-foundations-21",
+      "science-scientific-foundations-22"
+    ],
+    "body": [
+      "During a phase-change plateau, added energy can change phase while temperature stays approximately fixed. The plateau’s temperature and its duration answer different questions.",
+      "For the same mass and phase change with comparable losses, the required energy is fixed. Time equals required energy divided by net power, so doubling power halves duration. A melting temperature alone does not identify a substance uniquely."
+    ],
+    "workedExamples": [
+      {
+        "section": 4,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A melting plateau lasts 10 min at the stated net power. With the same mass and twice that power, about how long should it last?",
+      "choices": ["5 min", "10 min", "20 min"],
+      "answer": 0,
+      "explanation": "The same phase change requires the same energy. Twice the energy per minute supplies it in half the time: 10/2 = 5 min. The melting temperature can remain unchanged while duration changes.",
+      "evidenceText": "No material is lost, the sample fully melts, and heat-loss conditions remain comparable."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-inheritance",
+    "topic": "science-scientific-foundations",
+    "title": "Use genotype probabilities without guaranteeing finite counts",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [5],
+    "questionIds": [
+      "science-scientific-foundations-28",
+      "science-scientific-foundations-29",
+      "science-scientific-foundations-30",
+      "science-scientific-foundations-31",
+      "science-scientific-foundations-32"
+    ],
+    "body": [
+      "Apply the stated dominance rule to allele combinations, then separate genotype from phenotype. A dominant phenotype can result from two different genotypes.",
+      "Expected offspring fractions are probabilities, not guaranteed exact finite counts. Multiply the fraction by sample size for an expected count and allow random variation unless a question states otherwise."
+    ],
+    "workedExamples": [
+      {
+        "section": 5,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "For Cc × Cc with C completely dominant, how many recessive-phenotype offspring are expected among 160?",
+      "choices": ["40", "80", "120"],
+      "answer": 0,
+      "explanation": "The combinations are CC, Cc, Cc, cc; only one of four is recessive. Expected count is 160×1/4 = 40, not a guarantee that a real sample equals 40.",
+      "evidenceText": "Each parent contributes either allele with equal probability; genotype does not affect survival in this model."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-group-response",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Interpret the group mode without assuming unanimity",
+    "reportingCategory": "Evaluation of models",
+    "sections": [0],
+    "questionIds": [
+      "science-conflicting-viewpoints-17",
+      "science-group-response-v3-33"
+    ],
+    "body": [
+      "A group’s mode is the most frequent response category. It need not describe every individual and can be fewer than half the observations. A majority specifically requires more than half.",
+      "Compare viewpoint predictions with the group statistic actually reported. Do not turn “most common” into unanimity or assume a small lead establishes an unreported mechanism."
+    ],
+    "workedExamples": [
+      {
+        "section": 0,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "Which summary is accurate?",
+      "choices": [
+        "Every animal chose west",
+        "West was a majority at 7 of 18",
+        "West was the mode, although fewer than half chose it"
+      ],
+      "answer": 2,
+      "explanation": "Seven is the largest category count, but 7/18 is below one-half. The other directions retain 11 observations.",
+      "evidenceText": "Direction counts: west 7, north 6, east 3, south 2. Each animal contributes one observation."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-sample-proportion",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Compare proportions using the stated sample denominators",
+    "reportingCategory": "Evaluation of models",
+    "sections": [3],
+    "questionIds": [
+      "science-conflicting-viewpoints-25",
+      "science-proportion-viewpoints-v3-34"
+    ],
+    "body": [
+      "Compare the marked count with the total scored in the same sample. Fractions and percentages normalize unequal sample sizes; a larger marked count may still be a smaller fraction.",
+      "Use the same scoring definition and distinguish a descriptive difference from statistical significance. Counts and sample sizes alone do not supply a confidence interval or prove a mechanism."
+    ],
+    "workedExamples": [
+      {
+        "section": 3,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "Which sample has the larger marked proportion?",
+      "choices": [
+        "K: 25%, compared with L’s 20%",
+        "L, because 12 marked items exceeds 10",
+        "The proportions cannot be compared"
+      ],
+      "answer": 0,
+      "explanation": "K is 10/40 = 25%; L is 12/60 = 20%. Unequal sample sizes can be normalized, and the larger count need not give the larger fraction.",
+      "evidenceText": "K: 10 marked of 40 scored. L: 12 marked of 60 scored. The same scoring rule is used."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-waves-transfer",
+    "topic": "science-scientific-foundations",
+    "title": "Use frequency and wavelength without assuming equal speed across media",
+    "reportingCategory": "Scientific foundations",
+    "sections": [6],
+    "questionIds": [
+      "science-waves-transfer-v3-01",
+      "science-waves-transfer-v3-02"
+    ],
+    "body": [
+      "Use v = fλ, with frequency in cycles per second and wavelength in distance per cycle. At unchanged wave speed, higher frequency requires shorter wavelength.",
+      "A common source frequency does not mean wave speed is identical in different media. Compute each stated case instead of carrying a constant-speed assumption beyond its conditions."
+    ],
+    "workedExamples": [
+      {
+        "section": 6,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "At a fixed speed of 21 m/s, what wavelength accompanies frequency 7 Hz?",
+      "choices": ["3 m", "7 m", "147 m"],
+      "answer": 0,
+      "explanation": "Wavelength = speed/frequency = 21/7 = 3 m. The cycle unit cancels; multiplying would compute the wrong quantity.",
+      "evidenceText": "Use v = fλ. The medium and its wave speed remain unchanged."
+    }
+  },
+  {
+    "id": "science-conflicting-viewpoints-detection",
+    "topic": "science-conflicting-viewpoints",
+    "title": "Compare a required signal with the actual detection threshold",
+    "reportingCategory": "Evaluation of models and evidence",
+    "sections": [5],
+    "questionIds": [
+      "science-detection-transfer-v3-01",
+      "science-detection-transfer-v3-02"
+    ],
+    "body": [
+      "Translate the model’s required or predicted signal into a number, then compare it with the detector’s reliable threshold. A nondetection can mean zero or a nonzero value below the threshold.",
+      "Nondetection challenges a required signal only when the method would reliably have detected that signal under the stated conditions. Rejecting one prediction does not by itself prove the alternative mechanism."
+    ],
+    "workedExamples": [
+      {
+        "section": 5,
+        "example": 0
+      }
+    ],
+    "activity": {
+      "prompt": "A model requires a signal of at least 3 units. A reliable sensor detects 1 unit or more, yet an independently verified event gives no detection. What follows?",
+      "choices": [
+        "The required-signal prediction is challenged",
+        "The alternative mechanism is proved",
+        "Any positive signal must have been exactly 3 units"
+      ],
+      "answer": 0,
+      "explanation": "A signal meeting the 3-unit requirement would exceed the 1-unit threshold. The event therefore challenges that requirement, while not proving an untested alternative.",
+      "evidenceText": "Other stated model conditions hold, and the detection threshold is reliable."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-seasons",
+    "topic": "science-scientific-foundations",
+    "title": "Explain opposite seasonal daylight using axial tilt",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [7],
+    "questionIds": [
+      "science-scientific-foundations-transfer-v2-33",
+      "science-season-transfer-v3-36"
+    ],
+    "body": [
+      "Earth’s axial tilt changes the angle and duration of sunlight in opposite hemispheres during its orbit. Rotation gives day and night; revolution supplies the yearly cycle.",
+      "A single Earth–Sun distance at a given date does not by itself explain opposite seasonal daylight changes north and south. Match the proposed mechanism to the pattern, not merely to a change that happens during a year."
+    ],
+    "workedExamples": [
+      {
+        "section": 7,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "Matched northern and southern latitudes have opposite changes in daylight over six months. Which mechanism explains the contrast?",
+      "choices": [
+        "The changing orientation of Earth’s tilted axis toward the Sun",
+        "A shared Earth–Sun distance change by itself",
+        "The changing illuminated fraction of the Moon"
+      ],
+      "answer": 0,
+      "explanation": "Axial tilt changes each hemisphere’s illumination geometry over the orbit. A shared distance change alone does not explain opposite hemisphere day lengths, and lunar phase does not produce the seasonal pattern.",
+      "evidenceText": "Each location keeps its latitude; Earth rotates throughout. Northern daylight changes 16→8 h while southern daylight changes 8→16 h."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-relative-order",
+    "topic": "science-scientific-foundations",
+    "title": "Order rock events using superposition and cross-cutting",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [7],
+    "questionIds": [
+      "science-scientific-foundations-transfer-v2-34",
+      "science-rock-order-transfer-v3-37"
+    ],
+    "body": [
+      "In an undisturbed sequence, a lower sedimentary layer formed before a layer above it. A feature cutting a rock formed after the rock it cuts.",
+      "Combine the relations into one order and retain only what is established. Relative sequence does not supply numerical ages, and an absence of cutting needs an explicit depositional relationship before it establishes an order."
+    ],
+    "workedExamples": [
+      {
+        "section": 7,
+        "example": 2
+      }
+    ],
+    "activity": {
+      "prompt": "An intrusion cuts Layer M but is itself cut by Fault F. What is the order?",
+      "choices": ["M, intrusion, F", "F, M, intrusion", "Intrusion, F, M"],
+      "answer": 0,
+      "explanation": "The intrusion is later than M because it cuts M. F is later than the intrusion because it cuts the intrusion. Combine those relations as M → intrusion → F.",
+      "evidenceText": "All three observed cross-cutting relationships are preserved; no later overturning is reported."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-water-processes",
+    "topic": "science-scientific-foundations",
+    "title": "Distinguish weathering, erosion, evaporation, and condensation",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [7],
+    "questionIds": [
+      "science-scientific-foundations-transfer-v2-35",
+      "science-water-process-transfer-v3-38"
+    ],
+    "body": [
+      "Weathering breaks material down in place. Erosion transports it; deposition settles transported material. Identify what actually happens rather than choosing a process merely because water is present.",
+      "Evaporation changes liquid water to vapor; condensation changes vapor into liquid droplets. Name each stage of a sequence separately before combining the labels."
+    ],
+    "workedExamples": [
+      {
+        "section": 7,
+        "example": 3
+      }
+    ],
+    "activity": {
+      "prompt": "Water vapor becomes droplets on a cool pane while a nearby stream moves loose sand. Which pair names the events?",
+      "choices": [
+        "Condensation; erosion",
+        "Evaporation; weathering",
+        "Condensation; deposition"
+      ],
+      "answer": 0,
+      "explanation": "Vapor-to-liquid droplets are condensation. Sand in transport is erosion; settling would be deposition and in-place breakdown would be weathering.",
+      "evidenceText": "The sand remains moving during the observation; the pane droplets form from water vapor."
+    }
+  },
+  {
+    "id": "science-scientific-foundations-atomic-identity",
+    "topic": "science-scientific-foundations",
+    "title": "Keep element, isotope, and ionic charge separate",
+    "reportingCategory": "Scientific knowledge",
+    "sections": [1],
+    "questionIds": [
+      "science-scientific-foundations-transfer-v2-36",
+      "science-atomic-transfer-v3-38"
+    ],
+    "body": [
+      "Protons identify the element. Changing neutron count makes another isotope of the same element; changing electron count changes charge without changing the nucleus.",
+      "Net charge equals proton count minus electron count. Name element identity, isotope, and ion charge separately rather than treating any changed particle count as a new element."
+    ],
+    "workedExamples": [
+      {
+        "section": 1,
+        "example": 2
+      }
+    ],
+    "activity": {
+      "prompt": "An atom with 8 protons loses 2 of its 8 electrons without nuclear change. What results?",
+      "choices": [
+        "A different element with 6 protons",
+        "A 2+ ion of the same element",
+        "A neutral isotope with 2 fewer neutrons"
+      ],
+      "answer": 1,
+      "explanation": "Eight protons remain, so the element stays the same. Eight positive charges minus six negative charges gives +2. No neutron change is stated.",
+      "evidenceText": "Only electrons are lost; the nucleus and neutron count stay fixed."
+    }
+  },
+  {
+    "id": "science-models-evidence-reciprocal",
+    "topic": "science-models-evidence",
+    "title": "Solve a reciprocal model before interpreting its result",
+    "reportingCategory": "Evaluation of models",
+    "sections": [3],
+    "questionIds": [
+      "science-models-evidence-18",
+      "science-models-evidence-19",
+      "science-models-evidence-20",
+      "science-models-evidence-21",
+      "science-models-evidence-22"
+    ],
+    "body": [
+      "In an equation involving reciprocal distances, combine and isolate reciprocals first, then invert to recover a distance. Keep the unknown’s units: 1/v is not v.",
+      "Check the model’s stated domain. If a rearrangement gives 1/v = 0, no finite v satisfies it. Read comparisons within the recorded range rather than inventing an unmeasured screen position."
+    ],
+    "workedExamples": [
+      {
+        "section": 3,
+        "example": 1
+      }
+    ],
+    "activity": {
+      "prompt": "For 1/f = 1/u + 1/v with f = 8 cm and u = 24 cm, what is v?",
+      "choices": ["12 cm", "16 cm", "32 cm"],
+      "answer": 0,
+      "explanation": "1/v = 1/8−1/24 = 2/24 = 1/12, so v = 12 cm. Subtract reciprocals rather than distances, then invert.",
+      "evidenceText": "All distances use centimeters. The supplied model applies and a finite real image is formed."
+    }
+  }
+]

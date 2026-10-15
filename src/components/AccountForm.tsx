@@ -190,7 +190,7 @@ export function AccountForm({
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
               placeholder="Optional"
-              className="w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
+              className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
             />
           </div>
           <fieldset>
@@ -286,7 +286,7 @@ export function AccountForm({
               required
               value={testDate}
               onChange={(e) => setTestDate(e.target.value)}
-              className="w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
+              className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
             />
           </div>
           <details className="border-t border-border pt-2">

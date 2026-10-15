@@ -290,16 +290,16 @@
       "id": "word-choice-020",
       "category": "KLA",
       "difficulty": "easy",
-      "questionText": "Which choice is the most precise and idiomatic in context?",
-      "stem": "Fewer cars on the road meant the air quality [[improvised]] noticeably over the winter.",
+      "questionText": "Which choice most precisely maintains the formal, measured tone of the report?",
+      "stem": "A municipal report describes a measured reduction in airborne particles after traffic restrictions. It states: Air quality [[got a whole lot better]] over the winter.",
       "choices": [
         "NO CHANGE",
         "improved",
-        "imported",
-        "implored"
+        "got way cleaner",
+        "was totally transformed"
       ],
       "answer": 1,
-      "explanation": "'Improved' means got better, which fits cleaner air. 'Improvised' means made up on the spot, 'imported' means brought in from abroad, and 'implored' means begged, none of which describe air quality."
+      "explanation": "Improved is the precise, neutral verb appropriate for the municipal report. Got a whole lot better and got way cleaner are conversational. Was totally transformed overstates the measured reduction by implying a complete change. The formal choice preserves the observation without adding an unsupported degree of certainty."
     },
     {
       "id": "word-choice-021",

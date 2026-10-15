@@ -91,6 +91,26 @@
       ],
       "tip": "Label each paragraph’s job in a few words before testing a sentence position.",
       "teachingRevision": 2
+    },
+    {
+      "heading": "Order whole paragraphs by their roles in the essay",
+      "body": [
+        "Summarize each paragraph’s job: introduce a problem, present an attempted solution, explain its failure, describe a revised approach, or evaluate the outcome. Put needed background before a paragraph that relies on it.",
+        "Then check the actual links: this approach needs an introduced approach; that objection needs an earlier objection. A coherent chronology can still fail an argumentative goal if it separates evidence from the claim it supports. Test the full proposed order, not just the first pair."
+      ],
+      "examples": [
+        {
+          "text": "A: A modified filter finally kept the tank clear. B: The first filter clogged during a trial. C: Workers needed a way to remove sediment. D: The team enlarged the filter after inspecting the clog. For a problem–test–revision–outcome explanation, order C, B, D, A.",
+          "label": "The need introduces the test, the failure motivates the revision, and the result follows that revision.",
+          "good": true
+        },
+        {
+          "text": "A: Critics argue that the proposed bridge would block the view. B: A trial installation shows the supports sit below the main sightline. C: The town proposes a pedestrian bridge across the inlet. D: The essay recommends proceeding with the lower supports. For proposal–objection–response–recommendation, order C, A, B, D.",
+          "label": "The response needs the introduced objection; the recommendation follows evidence rather than preceding it.",
+          "good": true
+        }
+      ],
+      "teachingRevision": 3
     }
   ],
   "check": [

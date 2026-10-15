@@ -482,7 +482,7 @@
       "explanation": "The surrounding sentences explain the sensing-and-signaling cycle, so a historical note about an 1883 patent interrupts that explanation and should be deleted. It does not describe the sensor's reading or the signaling step, and it does not repeat the heater sentence, so the 'Kept' reasons and the other 'Deleted' reason all misstate its content."
     },
     {
-      "stem": "A paragraph explains why a town restored a footbridge rather than demolish it. The bridge is the only pedestrian route between a housing complex and a clinic. The paragraph later notes that many residents of the complex do not drive. Proposed addition after the route description: [[The next nearest crossing is four miles upstream.]]",
+      "stem": "The council proposed removing the footbridge after an inspection found loose bolts in its deck. Residents of the housing complex on the east bank objected. The bridge leads directly to the neighborhood clinic, and many of the complex's older residents do not drive. A repair would close the crossing for two days; removal would eliminate it permanently. At the next meeting, council members asked whether the less expensive removal plan would also impose costs on residents.\n\nThe writer is considering adding this sentence after the statement that many residents do not drive: [[The next nearest crossing is four miles upstream.]]",
       "questionText": "Should the writer add the sentence?",
       "choices": [
         "Yes, because it provides needed context for why losing this crossing would particularly burden the nondriving residents.",

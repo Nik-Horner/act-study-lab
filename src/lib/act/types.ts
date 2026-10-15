@@ -26,6 +26,8 @@ export interface Passage {
   graph?: Graph;
 }
 export interface Question {
+  skillId?: string;
+  skillIds?: string[];
   assessment?: boolean;
   replacementId?: string;
   lessonSections?: number[];
@@ -47,6 +49,7 @@ export interface Lesson {
   title: string;
   intro: string;
   sections: {
+    skillId?: string;
     teachingRevision?: number;
     activity?: {
       prompt: string;

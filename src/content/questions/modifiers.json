@@ -6,15 +6,15 @@
       "category": "CSE",
       "difficulty": "easy",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "Exhausted after the long shift, [[a quick nap was taken by Devon]].",
+      "stem": "Pocked with rust after decades outdoors, [[the conservator inspected the iron gate]].",
       "choices": [
         "NO CHANGE",
-        "the quick nap refreshed Devon",
-        "it was time for a nap",
-        "Devon took a quick nap"
+        "an inspection revealed the iron gate needed treatment",
+        "there was damage to the iron gate",
+        "the iron gate needed careful treatment"
       ],
       "answer": 3,
-      "explanation": "The opener 'Exhausted after the long shift' describes a person, so the subject after the comma must be 'Devon'; a nap and 'it' cannot work a shift, and the passive original dangles the modifier."
+      "explanation": "Pocked with rust describes the iron gate, so gate must be the subject after the opening description. The keyed choice supplies that subject. A conservator, an inspection, and there do not name the rusty object being described."
     },
     {
       "id": "modifiers-002",
@@ -81,15 +81,15 @@
       "category": "CSE",
       "difficulty": "medium",
       "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "While reviewing the budget, [[an error in the totals was found by the accountant]].",
+      "stem": "Having been collected at three different depths, [[the technician compared the water samples]].",
       "choices": [
         "NO CHANGE",
-        "there was an error in the totals",
-        "the totals turned out to contain an error",
-        "the accountant found an error in the totals"
+        "there were differences among the water samples",
+        "a comparison of the water samples was made",
+        "the water samples were compared by the technician"
       ],
       "answer": 3,
-      "explanation": "'While reviewing the budget' describes the person reviewing, so 'the accountant' must follow the comma; an error, the totals, and 'there' cannot review a budget, so those choices dangle the modifier."
+      "explanation": "The water samples were collected at different depths, so they must be the subject of the main clause. The passive keyed choice correctly keeps samples as that subject. The original attaches the opener to the technician, and the other choices make there or a comparison the subject rather than the collected material."
     },
     {
       "id": "modifiers-007",
@@ -155,16 +155,16 @@
       "id": "modifiers-011",
       "category": "CSE",
       "difficulty": "medium",
-      "questionText": "Which choice most clearly indicates that the package has the smudged label?",
-      "stem": "She handed the package [[to the courier with the smudged label]].",
+      "questionText": "Which choice most clearly states that the beam was on the eastern wall and the laser was the measuring tool?",
+      "stem": "The technician measured the beam [[with a laser on the eastern wall]].",
       "choices": [
         "NO CHANGE",
-        "to the courier, who had a smudged label",
-        "with the smudged label to the courier",
-        "to the smudged-label courier"
+        "with a laser that was on the eastern wall",
+        "on the eastern wall using a laser",
+        "using the eastern wall with a laser"
       ],
       "answer": 2,
-      "explanation": "Place 'with the smudged label' beside 'package,' the object identified in the question. The keyed wording clearly describes the package; the other choices attach the description to the courier. Modifier questions depend on the intended meaning, not whether a person could ever wear a label."
+      "explanation": "On the eastern wall must identify the beam’s location, while using a laser states the measuring tool. The keyed wording separates those roles. The original and the next choice locate the laser on the wall; the final choice makes the wall itself something used for measuring rather than clearly locating the beam."
     },
     {
       "id": "modifiers-012",
@@ -425,16 +425,16 @@
       "id": "modifiers-029",
       "category": "CSE",
       "difficulty": "medium",
-      "questionText": "Which choice makes the sentence most grammatically acceptable?",
-      "stem": "She returned the novel [[to the librarian with the torn cover]].",
+      "questionText": "Which choice most clearly indicates that the astrolabe, rather than the portrait, was made of brass?",
+      "stem": "The museum displayed the astrolabe [[beside a portrait that was made of brass]].",
       "choices": [
         "NO CHANGE",
-        "with the torn cover to the librarian",
-        "to the torn-cover librarian",
-        "to the librarian, who had a torn cover"
+        "that was made of brass beside a portrait",
+        "beside the brass-made portrait",
+        "beside a portrait, which was made of brass"
       ],
       "answer": 1,
-      "explanation": "'With the torn cover' describes the novel, so it must sit beside 'novel,' giving 'the novel with the torn cover to the librarian.' 'To the librarian with the torn cover,' 'to the librarian, who had a torn cover,' and 'to the torn-cover librarian' all hand the cover to the librarian, a person who has no cover."
+      "explanation": "That was made of brass must directly follow astrolabe to identify the material of the instrument. Each other choice attaches brass to portrait. The correct position follows the intended referent specified by the question, not an assumption that only one object could ever be made of brass."
     },
     {
       "id": "modifiers-030",

@@ -17,8 +17,13 @@ import {
   dailyFocus,
   dailyReviewKey,
   readingConceptProgress,
+  dailyConcepts,
 } from "@/lib/daily-flow";
 import type { Json } from "@/lib/supabase/database.types";
+import {
+  ENGLISH_PRACTICE_ID,
+  validateEnglishDrillAnswer,
+} from "@/lib/english-drill-answer";
 async function load(fullHistory = false) {
   const db = await createClient();
   const {
@@ -81,6 +86,7 @@ async function load(fullHistory = false) {
       .select("answers")
       .eq("user_id", user.id)
       .in("exam_id", [
+        ENGLISH_PRACTICE_ID,
         "daily:english",
         "practice:math",
         "practice:reading",
@@ -104,6 +110,12 @@ async function load(fullHistory = false) {
         ),
       };
     for (const row of page.data ?? []) {
+      const english = validateEnglishDrillAnswer(row.answers);
+      if (english) {
+        seen.add(english.questionId);
+        priorSeen.add(english.questionId);
+        continue;
+      }
       const record = row.answers as unknown as {
         kind?: string;
         dailyPlanId?: string;
@@ -278,61 +290,7 @@ async function load(fullHistory = false) {
         ]),
       ],
     };
-    const fresh = makeDailyPlan(
-      user.id,
-      today,
-      {
-        ...settings,
-        includeScience: plan.blocks.some(
-          (block) => block.subject === "science",
-        ),
-      },
-      plan.sequence,
-      plan.nextFocus,
-      Object.keys(answers),
-      {},
-      { ...updatedCourse, answeredQuestions: Object.keys(answers) },
-    );
-    fresh.blocks = fresh.blocks.map((block) => {
-      const old = plan.blocks.find((item) => item.subject === block.subject)!;
-      const units = blockUnits(block).map((unit) => {
-        const active = blockUnits(old).find((item) => item.id === unit.id);
-        return active &&
-          (active.questions.some(
-            (question) => answers[question.id] !== undefined,
-          ) ||
-            lessons.some(
-              (key) =>
-                key === active.id || key.startsWith(`${active.id}:concept:`),
-            ))
-          ? active
-          : unit;
-      });
-      const questions = [
-        ...units.flatMap((unit) => unit.questions),
-        ...(block.reviewQuestions ?? []),
-      ];
-      const activeIds = new Set(questions.map((question) => question.id));
-      const historicalQuestions = [
-        ...old.questions,
-        ...(old.historicalQuestions ?? []),
-      ].filter(
-        (question, i, all) =>
-          answers[question.id] !== undefined &&
-          !activeIds.has(question.id) &&
-          all.findIndex((item) => item.id === question.id) === i,
-      );
-      return {
-        ...block,
-        units,
-        questions,
-        historicalQuestions,
-        topic: units[0].topic,
-        title: units[0].title,
-        lesson: units[0].lesson,
-      };
-    });
-    const upgraded = refreshDailyContent(fresh, answers);
+    const upgraded = { ...plan, course: updatedCourse, plannerVersion: 2 };
     const { error: refreshError } = await db
       .from("exam_attempts")
       .update({ answers: upgraded as unknown as Json })
@@ -353,6 +311,26 @@ async function load(fullHistory = false) {
         ...blockUnits(block).map((u) => u.id),
         dailyReviewKey(block),
       );
+  if (
+    saved &&
+    !plan.complete &&
+    plan.course &&
+    (last?.plannerVersion ?? 0) < 2
+  ) {
+    const { error: migrationError } = await db
+      .from("exam_attempts")
+      .update({ answers: plan as unknown as Json })
+      .eq("id", plan.id)
+      .eq("user_id", user.id);
+    if (migrationError)
+      return {
+        error: Response.json(
+          { error: "Your focused daily lesson could not refresh. Retry." },
+          { status: 503 },
+        ),
+      };
+    return load();
+  }
   const clock = checks?.find(
     (c) => c.item_key === `daily-clock:${today}`,
   )?.checked_at;
@@ -546,27 +524,28 @@ export async function POST(request: Request) {
       const unit = plan.blocks
         .flatMap(blockUnits)
         .find((u) => u.id === body.unitId);
+      const concepts = unit ? dailyConcepts(unit) : [];
+      const position = concepts.indexOf(body.index);
       if (
         !unit ||
         !Number.isInteger(body.index) ||
-        body.index < 0 ||
-        body.index >= unit.lesson.sections.length ||
-        unit.lesson.sections
-          .slice(0, body.index)
-          .some((_, i) => !ctx.lessons.includes(`${unit.id}:concept:${i}`))
+        position < 0 ||
+        concepts
+          .slice(0, position)
+          .some((i) => !ctx.lessons.includes(`${unit.id}:concept:${i}`))
       )
         return Response.json(
           { error: "Continue through the lesson in order." },
           { status: 409 },
         );
-      if (body.index === unit.lesson.sections.length - 1) keys.push(unit.id);
+      if (position === concepts.length - 1) keys.push(unit.id);
     }
     if (body.action === "lesson" && !ctx.lessons.includes(key)) {
       const unit = plan.blocks.flatMap(blockUnits).find((u) => u.id === key);
       if (
         !unit ||
-        unit.lesson.sections.some(
-          (_, i) => !ctx.lessons.includes(`${unit.id}:concept:${i}`),
+        dailyConcepts(unit).some(
+          (i) => !ctx.lessons.includes(`${unit.id}:concept:${i}`),
         )
       )
         return Response.json(
@@ -666,6 +645,7 @@ export async function POST(request: Request) {
     ctx.answerTimes[q.id] = event.elapsedMs;
     ctx.uncertainAnswers[q.id] = event.confidence === "low";
   } else return Response.json({ error: "Unknown action." }, { status: 400 });
+  ctx.lessons = readingConceptProgress(plan, ctx.lessons);
   if (dailyComplete(plan, ctx.answers, ctx.lessons)) {
     const { error } = await db
       .from("exam_attempts")

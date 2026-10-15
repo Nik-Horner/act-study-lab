@@ -13,7 +13,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "For the lowest outlet dust, compare 6, 3, and 9 mg/m³: choose Vent Y. Its 45 m³/min airflow answers a different question.",
+            "text": "The table gives outlet dust X = 6, Y = 3, Z = 9 mg/m³ and airflow X = 80, Y = 45, Z = 120 m³/min. For the lowest outlet dust, compare only 6, 3, and 9: choose Y. The airflow values answer a different question.",
             "good": true
           }
         ],
@@ -45,7 +45,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "Need airflow ≥70 m³/min and outlet dust ≤7 mg/m³. X passes both (80, 6); Y fails airflow; Z fails dust.",
+            "text": "Need airflow ≥70 m³/min and outlet dust ≤7 mg/m³. X has (80, 6), Y has (45, 3), and Z has (120, 9). X passes both; Y fails airflow despite clean output; Z fails dust despite high flow. Equality would pass either inclusive threshold.",
             "good": true
           }
         ],
@@ -77,7 +77,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "At 2 and 5 days, Group U measures 5 and 14 cm. Change = 9 cm; average growth = 9/3 = 3 cm/day.",
+            "text": "At days 2 and 5, Group U measures 5 and 14 cm: change = 9 cm and average growth = 9/3 = 3 cm/day. Separately, a repeated signal peaks at 2 h and 7 h, giving period 5 h. If only the first peak were recorded, its duration would not establish a repeat period.",
             "good": true
           }
         ],
@@ -87,13 +87,18 @@
       {
         "heading": "Combine data with matched units and weights",
         "body": [
-          "When streams mix, add pollutant mass flows and divide by total water flow. Weight concentration by flow rather than averaging concentrations equally.",
-          "Across presentations, match sample identity, treatment, time, and units. A calibration converts a measured signal to the requested quantity; a second correction, such as dilution, must be applied afterward."
+          "Compute the quantity requested before ranking samples. A supplied equation may require multiplying two columns, subtracting a baseline, or dividing by another quantity. Keep units through the calculation; the largest individual input need not give the largest output.",
+          "When streams mix, add pollutant mass flows and divide by total water flow. Weight concentration by flow rather than averaging concentrations equally. Match sample, time, and units when combining presentations."
         ],
         "examples": [
           {
             "label": "Worked example",
             "text": "A supplies 20 L/s at 3 mg/L and B supplies 5 L/s at 13 mg/L. Mixed concentration = (20×3+5×13)/25 = 5 mg/L.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Calculate a supplied model before comparing outputs",
+            "text": "A detector’s output is defined as voltage × current. Device A supplies 3 V at 8 mA; B supplies 5 V at 4 mA.\n\nQuestion: Which has the larger output?\n\nSupported answer: A: 24 mW, compared with B’s 20 mW.\n\nReason: Multiply within each device before ranking: 3×8 = 24 and 5×4 = 20. Greater voltage alone does not establish greater power.",
             "good": true
           }
         ],
@@ -289,7 +294,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "Signal 0, 24, 40, 48, 51 rises by 24, 16, 8, 3 units: it approaches a plateau. It has not started falling.",
+            "text": "At equally spaced times, signal values 0, 24, 40, 48, 51 rise by 24, 16, 8, and 3 units. The rise slows toward a plateau; it has not reversed. A later drop would make a turning point. Check the detector range before attributing a flat signal to the material itself.",
             "good": true
           }
         ],
@@ -430,13 +435,18 @@
       {
         "heading": "Match the comparison to the hypothesis",
         "body": [
-          "Translate the hypothesis into the one factor that must differ between groups. Use the same response definition and endpoint so the results can be compared.",
-          "A no-treatment control asks whether adding a treatment matters; equal treatment amounts with different forms can isolate a property such as surface area."
+          "Translate the hypothesis into the one factor that must differ. Keep the response definition and endpoint matched. A no-treatment control tests adding a treatment; equal treatment amounts with different forms can isolate a property such as surface area.",
+          "A group mean describes the tested group, not every individual. Keep a conclusion within the tested population, time, and conditions; a well-controlled comparison does not establish all environments."
         ],
         "examples": [
           {
             "label": "Worked example",
             "text": "Equal 2 g catalyst portions are intact or powdered. Same solution and gas-volume endpoint: the comparison isolates surface area; adding a no-catalyst group tests a separate question.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Keep conclusions within the measured groups and conditions",
+            "text": "Six treated panels gain 4 W on average under one lamp; six controls gain 1 W. Individual changes vary.\n\nQuestion: What does the comparison support?\n\nSupported answer: A larger mean gain with treatment under the tested lamp conditions.\n\nReason: The group difference does not say every treated panel gained 4 W or predict all sunlight conditions. Both scope and unit of summary remain part of the conclusion.",
             "good": true
           }
         ],
@@ -470,6 +480,11 @@
             "label": "Worked example",
             "text": "Randomly assign insects to tones, then score unlabeled videos. Randomization addresses initial group differences; blinding addresses expectations during scoring.",
             "good": true
+          },
+          {
+            "label": "Worked method: Distinguish blinding, assignment, and exposure history",
+            "text": "Volunteers are assigned randomly to A→B or B→A. A scorer receives unlabeled recordings from both sequences.\n\nQuestion: Which design element tests an order effect, and which addresses scoring expectations?\n\nSupported answer: The two treatment sequences test order; unlabeled scoring addresses expectations.\n\nReason: Random assignment does not itself hide labels. Blinding does not change exposure order. The stated alternatives separate their jobs.",
+            "good": true
           }
         ],
         "evidenceIds": ["science-teaching-experimental-design-5"],
@@ -478,13 +493,18 @@
       {
         "heading": "Use a two-factor comparison and test interactions",
         "body": [
-          "To estimate one factor’s effect, hold the other factor fixed. Then compare those effects across levels of the other factor to see whether the response depends on context.",
-          "A useful follow-up includes the missing matched conditions. Changing the duration, sample type, and treatment together creates a new confound instead of resolving the old one."
+          "To estimate one factor’s effect, hold the other fixed. Compare those effects across the other factor’s levels to test context dependence. When groups start at different values, compare each group’s before-to-after change before comparing the groups.",
+          "A useful follow-up includes missing matched conditions. Changing duration, sample type, and treatment together creates a new confound instead of resolving the old one."
         ],
         "examples": [
           {
             "label": "Worked example",
             "text": "At low light, feeding raises growth 2→5 mm (effect +3). At high light, 4→11 mm (effect +7). The feeding effect is 4 mm larger at high light.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Compare treatment effects across contexts",
+            "text": "At cool temperature, control growth is 4 mm and treated growth 7 mm. At warm temperature, control is 8 mm and treated growth 10 mm.\n\nQuestion: Is the treatment effect the same at both temperatures?\n\nSupported answer: No: +3 mm when cool and +2 mm when warm.\n\nReason: Compare treatment minus its matched control, not the final 7 and 10 alone. The warmer treatment has a larger final value but a smaller treatment effect.",
             "good": true
           }
         ],
@@ -607,13 +627,18 @@
       {
         "heading": "Map each proposed cause to its prediction",
         "body": [
-          "Name the phenomenon being explained, then write cause → expected observation for each viewpoint. Keep reported facts separate from proposed mechanisms.",
-          "A shared prediction cannot distinguish the explanations. Look for a condition in which the predicted outcomes differ rather than merely a fact mentioned by one author."
+          "Name the phenomenon, then write cause → expected observation for each viewpoint. Keep reported facts separate from proposed mechanisms. A group’s most common response is its mode, not a claim that every individual responded identically. A mode can also be fewer than half the observations.",
+          "A shared prediction cannot distinguish explanations. Seek a condition where predicted outcomes differ rather than merely a fact mentioned by one author."
         ],
         "examples": [
           {
             "label": "Worked example",
-            "text": "D says white lake water comes from suspended clay; E says it comes from dissolved salt. Both predict pale water. Filtering out solids should matter under D, not under E alone.",
+            "text": "D says pale lake water comes from suspended clay; E says it comes from dissolved salt. Both allow pale water. A validated filter removes clay while leaving dissolved salt unchanged: loss of cloudiness after filtering favors D’s mechanism more than E’s. Pale color alone is shared and cannot separate them.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Interpret the group mode without assuming unanimity",
+            "text": "Twenty animals choose north 8 times, east 7, south 3, and west 2.\n\nQuestion: Is north a majority or only the mode?\n\nSupported answer: North is the mode at 8/20 = 40%, not a majority.\n\nReason: Eight is the largest category count but below half of 20. The other 12 animals show why the summary is not a statement about every animal.",
             "good": true
           }
         ],
@@ -655,13 +680,18 @@
       {
         "heading": "Use the same condition for competing predictions",
         "body": [
-          "Hold a competing factor fixed while testing the claimed factor. In a two-factor table, compare rows or columns that differ in only the relevant condition.",
-          "A model can be supported on the observed pattern while its internal mechanism remains untested. Distinguish a predicted relationship from an explanation of how it occurs."
+          "Hold a competing factor fixed while testing the claimed factor. In a two-factor table, compare rows or columns differing in only the relevant condition. When comparing proportions, identify each sample denominator; a larger count need not mean a larger fraction.",
+          "A predicted relationship can match while its internal mechanism remains untested. Distinguish the response pattern from an explanation of how it occurs."
         ],
         "examples": [
           {
             "label": "Worked example",
             "text": "A pigment account predicts a salt effect; B predicts a temperature effect. At 20°C, low and high salt both give score 4; at 35°C both give 9. This pattern supports temperature dependence.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Compare proportions using the stated sample denominators",
+            "text": "Layer A: 6 marked fossils out of 30. Layer B: 9 marked out of 90.\n\nQuestion: Which has the larger marked fraction?\n\nSupported answer: A: 20%, compared with B’s 10%.\n\nReason: Use 6/30 and 9/90, not the marked counts 6 and 9 alone. The comparison is descriptive; no significance test is supplied.",
             "good": true
           }
         ],
@@ -826,7 +856,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "L predicts x = 3F; M predicts x = F+4. At F = 2 both give 6 cm. At F = 4, L gives 12 and M gives 8, so that input separates them.",
+            "text": "Model G predicts y = 5t−2, with t in seconds and y in centimeters. At t = 1, 2, and 4, its predictions are 3, 8, and 18 cm. A measured value of 20 cm at t = 4 is 2 cm above the prediction. Substitute the full input, keep the intercept, and compare at the same t before deciding whether a row matches.",
             "good": true
           }
         ],
@@ -876,6 +906,11 @@
             "label": "Worked example",
             "text": "For u = ka²/b, tripling a gives ×9; halving b gives ×2. Together u becomes 18 times as large if k stays fixed.",
             "good": true
+          },
+          {
+            "label": "Worked method: Solve and interpret a supplied reciprocal model",
+            "text": "A lens model is 1/f = 1/u + 1/v. Here f = 12 cm and u = 36 cm.\n\nQuestion: What is v?\n\nSupported answer: 18 cm.\n\nReason: First isolate 1/v = 1/12−1/36 = 2/36 = 1/18. Then invert to obtain v = 18 cm. Adding distances or stopping at the reciprocal would answer a different question.",
+            "good": true
           }
         ],
         "evidenceIds": ["science-teaching-models-evidence-4"],
@@ -923,6 +958,11 @@
           {
             "label": "Worked example",
             "text": "Model A predicts extra light always increases growth. At high nutrients growth rises 4→10; at low nutrients it stays 3→3. The combined pattern challenges “always” and motivates a matched nutrient-by-light experiment.",
+            "good": true
+          },
+          {
+            "label": "Worked example",
+            "text": "L predicts x = 3F; M predicts x = F+4. At F = 2 both give 6 cm. At F = 4, L gives 12 and M gives 8, so that input separates them.",
             "good": true
           }
         ],
@@ -1035,7 +1075,7 @@
         "examples": [
           {
             "label": "Worked example",
-            "text": "A change from pH 8 to pH 5 means 10³ = 1000 times the hydrogen-ion concentration. The activity table must still be read separately to find the enzyme’s tested maximum.",
+            "text": "A change from pH 8 to pH 5 means 10³ = 1000 times the hydrogen-ion concentration. Separately, an enzyme gives 3, 7, and 2 units of product at pH 4, 6, and 8. Its highest tested activity is at pH 6, not at the greatest acidity (pH 4). Logarithmic concentration and measured activity are different comparisons.",
             "good": true
           }
         ],
@@ -1053,6 +1093,16 @@
             "label": "Worked example",
             "text": "4 H₂ and 3 O₂ can form 4 H₂O with 1 O₂ left. There are 8 hydrogen atoms and 6 oxygen atoms before and after, but the number of molecules changes.",
             "good": true
+          },
+          {
+            "label": "Worked method: Conserve atoms and account for limiting reactants and leftovers",
+            "text": "The reaction is 2 H₂ + O₂ → 2 H₂O. Start with 10 H₂ and 4 O₂ molecules.\n\nQuestion: What forms and what remains?\n\nSupported answer: 8 H₂O form and 2 H₂ remain.\n\nReason: Four O₂ require eight H₂; oxygen runs out first. Include the two leftover H₂ when checking the original 20 hydrogen atoms.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Keep element, isotope, and ionic charge separate",
+            "text": "A has 9 protons, 10 neutrons, and 9 electrons. B has 9 protons, 11 neutrons, and 10 electrons.\n\nQuestion: How are they related?\n\nSupported answer: They are isotopes of one element, and B is a 1− ion.\n\nReason: The same nine protons fix identity; the extra neutron changes isotope. B has one extra electron relative to its proton count.",
+            "good": true
           }
         ],
         "evidenceIds": ["science-teaching-scientific-foundations-2"],
@@ -1068,6 +1118,11 @@
           {
             "label": "Worked example",
             "text": "A 3 kg cart has 12 N forward and 3 N backward: net = 9 N, so acceleration = 3 m/s². Force directions must be combined before division.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Apply Ohm’s law under the stated circuit conditions",
+            "text": "A constant-temperature resistor carries 0.2 A at 12 V.\n\nQuestion: What current follows if an identical resistor is added in series at the same voltage?\n\nSupported answer: 0.1 A.\n\nReason: The first resistor is 12/0.2 = 60 Ω. Series total is 120 Ω, so 12/120 = 0.1 A.",
             "good": true
           }
         ],
@@ -1110,7 +1165,8 @@
         "heading": "Inheritance and population proportions",
         "body": [
           "Genes have variants called alleles. Genotype is the allele combination; phenotype is the expressed trait. Use the dominance rule stated in the problem rather than assuming every trait is simply dominant or recessive.",
-          "A Punnett square gives expected probabilities, not exact guaranteed offspring counts. Natural selection changes existing variant frequencies when survival or reproduction differs; it need not require a new mutation in each generation."
+          "A Punnett square gives expected probabilities, not exact guaranteed offspring counts. Natural selection changes existing variant frequencies when survival or reproduction differs; it need not require a new mutation in each generation.",
+          "Equal multiplication of two population counts preserves their proportions; a larger final count does not by itself imply a larger fraction."
         ],
         "examples": [
           {
@@ -1148,6 +1204,21 @@
           {
             "label": "Worked example",
             "text": "Layer U lies below V and a fault cuts both. U formed before V; the fault formed after both. These relations give an order, not numerical ages.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Explain opposite seasonal daylight using axial tilt",
+            "text": "At matched northern and southern latitudes, the north has longer daylight in June while the south has shorter daylight.\n\nQuestion: Which annual mechanism matches that contrast?\n\nSupported answer: Axial tilt changes which hemisphere is tilted toward the Sun.\n\nReason: A shared change in distance would affect both at once and does not explain opposite daylight durations. Earth continues rotating in both observations.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Order rock events using superposition and cross-cutting",
+            "text": "Layer A lies below B; a fault cuts both A and B.\n\nQuestion: What order follows?\n\nSupported answer: A formed, then B, then the fault.\n\nReason: Superposition orders the layers; the cross-cutting relation places the fault after both. No number of years is supplied.",
+            "good": true
+          },
+          {
+            "label": "Worked method: Distinguish weathering, erosion, evaporation, and condensation",
+            "text": "A rock cracks in place, runoff carries the fragments downhill, and they settle when flow slows.\n\nQuestion: Which processes occur in order?\n\nSupported answer: Weathering, erosion, deposition.\n\nReason: Breakdown, movement, and settling are different events. Water can participate in more than one without making their names interchangeable.",
             "good": true
           }
         ],

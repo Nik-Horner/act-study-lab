@@ -11,15 +11,26 @@ import { topicStatus } from "@/lib/mastery";
 import { QuickCheck } from "./QuickCheck";
 import { loadEnglishProgress } from "@/lib/english-progress-server";
 import { EnglishProgressError } from "@/components/EnglishProgressError";
+import { getLearningSkill, getLearningSkills } from "@/lib/learning-skills";
+import { SkillCatalog } from "@/components/SkillCatalog";
+import { SkillLesson } from "@/components/SkillLesson";
+import type { Lesson as ActLesson } from "@/lib/act/types";
 
 export default async function LearnPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ topic: string }>;
+  searchParams: Promise<{ skill?: string; reference?: string }>;
 }) {
   const { topic: slug } = await params;
+  const { skill: skillId, reference } = await searchParams;
+  if (skillId && !getLearningSkill(slug, skillId)) notFound();
 
-  if (getActTopic(slug)) return <LessonView slug={slug} />;
+  if (getActTopic(slug))
+    return (
+      <LessonView slug={slug} skillId={skillId} reference={reference === "1"} />
+    );
   const topic = getTopic(slug);
   if (!topic) notFound();
 
@@ -29,6 +40,26 @@ export default async function LearnPage({
   } catch {
     notFound();
   }
+  const skills = getLearningSkills(slug);
+  const skill = skillId && getLearningSkill(slug, skillId);
+  if (skill) return <SkillLesson skill={skill} full={lesson as ActLesson} />;
+  if (skills.length && reference !== "1")
+    return (
+      <div className="mx-auto max-w-5xl space-y-7">
+        <ButtonLink href="/learn?subject=english" variant="ghost">
+          English skill course
+        </ButtonLink>
+        <h1 className="text-3xl font-semibold">{lesson.title}</h1>
+        <p className="text-ink-soft">
+          Choose the rule you want to learn. Each lesson links to its own
+          matched drill.
+        </p>
+        <SkillCatalog skills={skills} />
+        <ButtonLink variant="ghost" href={`/learn/${slug}?reference=1`}>
+          Read the complete topic reference
+        </ButtonLink>
+      </div>
+    );
 
   const supabase = await createClient();
   const {
@@ -52,7 +83,9 @@ export default async function LearnPage({
       <div>
         <div className="mb-2 flex flex-wrap items-center gap-2">
           <Badge tone="brand">{topic.category}</Badge>
-          {status === "mastered" && <Badge tone="good">Mastered</Badge>}
+          {status === "mastered" && (
+            <Badge tone="good">Practice milestone</Badge>
+          )}
           {status === "practicing" && <Badge tone="warn">Practicing</Badge>}
         </div>
         <h1 className="text-2xl font-semibold text-ink">{lesson.title}</h1>

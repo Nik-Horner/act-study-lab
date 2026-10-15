@@ -1,4 +1,3 @@
-import { DAILY_CURRICULUM } from "../src/lib/daily-curriculum";
 import format5Fixtures from "./fixtures/daily-format5.json";
 import { test } from "node:test";
 import assert from "node:assert/strict";
@@ -23,6 +22,7 @@ import {
   getExams,
   getLesson,
   getQuestion,
+  getQuestions,
 } from "../src/lib/act/content";
 import {
   blockUnits,
@@ -30,20 +30,60 @@ import {
   dailyFocus,
   dailyReviewKey,
   readingConceptProgress,
+  dailyConcepts,
 } from "../src/lib/daily-flow";
 import { getLesson as englishLesson } from "../src/lib/content";
+import {
+  focusLesson,
+  getLearningSkill,
+  getLearningSkills,
+  getQuestionTeaching,
+} from "../src/lib/learning-skills";
+import { englishDailyQuestions } from "../src/lib/english-daily-content";
+import legacyFixtures from "./fixtures/focused-curriculum-legacy.json";
 import { validateStudySettings } from "../src/lib/account-settings";
 const settings = {
   scores: { english: 32, math: 34, reading: null, science: 27 },
   minutesPerDay: 75,
 };
+function planAtSkill(
+  subject: (typeof DAILY_SUBJECTS)[number],
+  skillId: string,
+  minutesPerDay = 90,
+) {
+  const position = dailyScopes(subject).findIndex(
+    (s) => s.scope.skillId === skillId,
+  );
+  assert(position >= 0, skillId);
+  return makeDailyPlan(
+    "focused-fixture",
+    "2026-10-14",
+    {
+      ...settings,
+      minutesPerDay,
+      scores: { ...settings.scores, [subject]: null },
+    },
+    0,
+    undefined,
+    [],
+    { [subject]: position },
+  );
+}
+const courseIds = () =>
+  DAILY_SUBJECTS.flatMap((subject) =>
+    dailyScopes(subject).map((scope) => scope.id),
+  );
+const addDays = (date: string, days: number) =>
+  new Date(Date.parse(date) + days * 86400000).toISOString().slice(0, 10);
 test("larger-budget coverage preserves an already saved session on the final study day", () => {
   const original = { ...settings, minutesPerDay: 60 };
   const all = DAILY_SUBJECTS.flatMap((subject) =>
     dailyScopes(subject).map((scope) => scope.id),
   );
   const missing = dailyScopes("english")
-    .slice(9, 15)
+    .filter((scope) =>
+      ["sentence-structure", "commas"].includes(scope.topic.slug),
+    )
     .map((scope) => scope.id);
   const course = {
     testDate: "2026-10-17",
@@ -76,46 +116,27 @@ test("larger-budget coverage preserves an already saved session on the final stu
     90,
   );
 });
-test("Reading scopes teach each section once and have distinct lesson titles", () => {
-  for (const topic of new Set(
-    dailyScopes("reading").map((s) => s.topic.slug),
-  )) {
-    const sections = DAILY_CURRICULUM[topic].flatMap((s) => s.sections);
-    assert.equal(new Set(sections).size, sections.length, topic);
-    assert.deepEqual(
-      [...sections].sort(),
-      getLesson(topic).sections.map((_, i) => i),
-    );
-  }
-  const titles = new Set<string>();
-  for (let reading = 0; reading < dailyScopes("reading").length; reading++) {
-    const plan = makeDailyPlan(
-      "reading-titles",
-      "2026-10-14",
-      settings,
-      reading,
-      undefined,
-      [],
-      { reading },
-    );
-    const unit = blockUnits(
-      plan.blocks.find((b) => b.subject === "reading")!,
-    )[0];
-    assert(!titles.has(unit.title), unit.title);
-    titles.add(unit.title);
+test("Reading skills have distinct titles and explicitly matched Daily teaching", () => {
+  const scopes = dailyScopes("reading");
+  assert.equal(new Set(scopes.map((s) => s.id)).size, scopes.length);
+  assert.equal(new Set(scopes.map((s) => s.scope.title)).size, scopes.length);
+  for (const { topic, scope } of scopes) {
+    const skill = getLearningSkill(topic.slug, scope.skillId!)!;
+    assert.equal(scope.title, skill.title);
+    assert(scope.practice.length >= 2);
+    for (const position of scope.practice) {
+      const q = getQuestions(topic.slug)[position];
+      assert.equal(q.skillId, skill.id);
+      assert(q.teachingSections!.every((i) => scope.sections.includes(i)));
+    }
   }
 });
-test("refreshing a saved Reading lesson preserves concept positions and answers", () => {
-  const plan = makeDailyPlan(
-    "reading-saved",
-    "2026-10-14",
-    settings,
-    0,
-    undefined,
-    [],
-    { reading: 1 },
-  );
-  const unit = blockUnits(plan.blocks.find((b) => b.subject === "reading")!)[0];
+
+test("refreshing Reading preserves saved concept positions and answers while focusing the visible method", () => {
+  const plan = planAtSkill("reading", "reading-main-idea-movement");
+  const block = plan.blocks.find((b) => b.subject === "reading")!;
+  const unit = blockUnits(block)[0];
+  block.units = [unit];
   const full = getLesson(unit.topic);
   unit.sectionIndices = [1, 2, 3];
   unit.lesson.sections = unit.sectionIndices.map((i) => full.sections[i]);
@@ -123,57 +144,58 @@ test("refreshing a saved Reading lesson preserves concept positions and answers"
     plan.blocks.flatMap((b) => b.questions).map((q) => [q.id, q.answer]),
   );
   const refreshed = refreshDailyContent(plan, answers);
-  const saved = blockUnits(
-    refreshed.blocks.find((b) => b.subject === "reading")!,
-  )[0];
+  const reading = refreshed.blocks.find((b) => b.subject === "reading")!;
+  const saved = blockUnits(reading)[0];
   assert.equal(refreshed.id, plan.id);
   assert.equal(saved.id, unit.id);
-  assert.equal(saved.title, `${full.title}: ${full.sections[2].heading}`);
-  const progress = readingConceptProgress(
-    {
-      ...refreshed,
-      course: {
-        testDate: "2026-10-17",
-        coveredUnits: [`reading:${unit.topic}:scope:0`],
-      },
-    },
-    [],
+  assert.equal(
+    saved.title,
+    getLearningSkill(saved.topic, saved.skillId!)!.title,
   );
-  assert(progress.includes(`${unit.id}:concept:0`));
-  assert(!progress.includes(`${unit.id}:concept:1`));
-  assert(!progress.includes(unit.id));
+  assert.deepEqual(saved.sectionIndices, [1, 2, 3]);
+  assert.deepEqual(dailyConcepts(saved), [1]);
+  assert.deepEqual(
+    saved.questions.map((q) => q.id),
+    unit.questions.map((q) => q.id),
+  );
   assert.deepEqual(readingConceptProgress(refreshed, []), []);
-  const reading = refreshed.blocks.find((b) => b.subject === "reading")!;
   const earlier = {
     ...saved,
     id: `${saved.id}:earlier`,
-    sectionIndices: [1],
-    lesson: { ...saved.lesson, sections: [full.sections[1]] },
+    sectionIndices: [2],
+    focusedConceptIndices: [0],
+    lesson: { ...saved.lesson, sections: [full.sections[2]] },
   };
   const sameSession = {
     ...refreshed,
     blocks: [{ ...reading, units: [earlier, saved] }],
   };
   assert(
-    readingConceptProgress(sameSession, [earlier.id]).includes(
-      `${saved.id}:concept:0`,
+    readingConceptProgress(sameSession, [`${earlier.id}:concept:0`]).includes(
+      `${saved.id}:concept:1`,
     ),
   );
   assert(
-    !readingConceptProgress(sameSession, []).includes(`${saved.id}:concept:0`),
+    !readingConceptProgress(sameSession, []).includes(`${saved.id}:concept:1`),
   );
-  const requiredSession = {
+  assert(
+    !readingConceptProgress(sameSession, [earlier.id]).includes(
+      `${saved.id}:concept:1`,
+    ),
+    "An old unit completion alone does not prove which current method was visible",
+  );
+  const required = {
     ...refreshed,
     blocks: [
       {
         ...reading,
-        units: [earlier, { ...saved, requiredConceptIndices: [0] }],
+        units: [earlier, { ...saved, requiredConceptIndices: [1] }],
       },
     ],
   };
   assert(
-    !readingConceptProgress(requiredSession, [earlier.id]).includes(
-      `${saved.id}:concept:0`,
+    !readingConceptProgress(required, [earlier.id]).includes(
+      `${saved.id}:concept:1`,
     ),
   );
   assert.deepEqual(
@@ -186,12 +208,8 @@ test("refreshing a saved Reading lesson preserves concept positions and answers"
     ),
     [],
   );
-  assert.deepEqual(saved.sectionIndices, [1, 2, 3]);
-  assert.deepEqual(
-    saved.questions.map((q) => q.id),
-    unit.questions.map((q) => q.id),
-  );
 });
+
 test("one total budget covers all four subjects with more time for lower baselines", () => {
   for (const budget of [60, 75, 90]) {
     const minutes = dailyBudget(budget, settings.scores);
@@ -267,7 +285,7 @@ test("daily program includes substantial lesson content and original practice in
   );
   for (const b of plan.blocks) {
     assert(b.lesson.sections[0].body.length);
-    assert(b.questions.length >= 3);
+    assert(b.questions.length >= 2);
     assert.equal(
       new Set(b.questions.map((q) => q.id)).size,
       b.questions.length,
@@ -398,21 +416,46 @@ test("turning Science off preserves saved work and takes effect in the next sess
     "Legacy repair must keep the saved session's subjects",
   );
 });
-test("categories progress once per completed program and IDs are account scoped", () => {
-  const a = makeDailyPlan("qa", "2026-10-06", settings, 0),
-    b = makeDailyPlan("qa", "2026-10-07", settings, 1);
-  assert(
-    a.blocks.every(
-      (block, i) => blockUnits(block)[0].id !== blockUnits(b.blocks[i])[0].id,
-    ),
+test("completed course units advance once and plan IDs are account scoped", () => {
+  const first = makeDailyPlan("qa", "2026-10-06", settings, 0);
+  const coveredUnits = first.blocks
+    .flatMap(blockUnits)
+    .map((u) => u.courseId ?? u.id);
+  const sequential = selectDailyPlan(
+    { ...first, complete: true },
+    "qa",
+    "2026-10-07",
+    settings,
   );
-  assert.notEqual(a.id, makeDailyPlan("another", "2026-10-06", settings, 0).id);
+  assert(
+    sequential.blocks
+      .flatMap(blockUnits)
+      .every((unit) => !coveredUnits.includes(unit.courseId ?? unit.id)),
+    "The legacy numeric cursor must also advance past the units just taught",
+  );
+  const next = selectDailyPlan(
+    { ...first, complete: true },
+    "qa",
+    "2026-10-07",
+    settings,
+    false,
+    { testDate: "2027-06-12", coveredUnits },
+  );
+  for (const b of next.blocks)
+    assert(
+      blockUnits(b).every((u) => !coveredUnits.includes(u.courseId ?? u.id)),
+    );
+  assert.notEqual(
+    first.id,
+    makeDailyPlan("another", first.date, settings, 0).id,
+  );
   assert.match(
-    a.id,
+    first.id,
     /^[\da-f]{8}-[\da-f]{4}-4[\da-f]{3}-a[\da-f]{3}-[\da-f]{12}$/,
   );
   assert.equal(dailyId("same"), dailyId("same"));
 });
+
 test("completion requires all lessons and answered questions including incorrect choices", () => {
   const p = makeDailyPlan("qa", "2026-10-06", settings, 0);
   const a = Object.fromEntries(
@@ -438,7 +481,7 @@ test("all category rotations retain real questions and lessons", () => {
   for (let i = 0; i < 45; i++) {
     const p = makeDailyPlan("qa", "2026-10-06", settings, i);
     for (const b of p.blocks) {
-      assert(b.questions.length >= 3);
+      assert(b.questions.length >= 2);
       assert(b.lesson.sections.length);
     }
   }
@@ -495,25 +538,24 @@ test("moving on creates today's plan without mutating unfinished work or bypassi
   );
 });
 
-test("saved sessions regain complete lessons without losing answered questions or changing the plan ID", () => {
-  const p = makeDailyPlan("qa", "2026-10-06", settings, 0);
-  const legacy = {
-    ...p,
-    formatVersion: undefined,
-    blocks: p.blocks.map((b) => ({
-      ...b,
-      lesson: { ...b.lesson, sections: b.lesson.sections.slice(0, 1) },
-    })),
-  };
-  const restored = restoreDailyTeaching(legacy, {});
-  assert.equal(restored.id, p.id);
-  assert.equal(restored.date, p.date);
-  for (const b of restored.blocks)
-    assert.deepEqual(
-      b.lesson.sections,
-      p.blocks.find((x) => x.subject === b.subject)!.lesson.sections,
+test("older sessions regain focused teaching without losing answered history or changing the plan ID", () => {
+  const fixture = format5Fixtures.cases[0];
+  const legacy = structuredClone(fixture.plan) as unknown as DailyPlan;
+  const answers = fixture.answers as unknown as Record<string, number>;
+  const restored = restoreDailyTeaching(legacy, answers, fixture.settings);
+  assert.equal(restored.id, legacy.id);
+  assert.equal(restored.date, legacy.date);
+  assert.deepEqual(restored.blocks.slice(1), legacy.blocks.slice(1));
+  assert(restored.blocks[0].lesson.sections.some((s) => s.body.length));
+  for (const id of Object.keys(answers))
+    assert(
+      [
+        ...restored.blocks[0].questions,
+        ...(restored.blocks[0].historicalQuestions ?? []),
+      ].some((q) => q.id === id),
     );
 });
+
 test("upgrading a saved Reading session removes untaught future skills while retaining saved answers", () => {
   const p = makeDailyPlan("qa", "2026-10-06", settings, 0);
   const wrong = getQuestion("RD-01-3")!;
@@ -584,67 +626,83 @@ test("each segment advances lesson, matching drill, next lesson and final review
   assert(dailyComplete(p, answers, lessons));
 });
 
-test("missed review skills return in the next session with fresh practice", () => {
-  const p = makeDailyPlan("qa", "2026-10-06", settings, 0);
-  const answers = Object.fromEntries(
-    p.blocks.flatMap((b) => b.questions.map((q) => [q.id, q.answer])),
+test("missed review skills return as targeted fresh practice while the course advances", () => {
+  const first = makeDailyPlan(
+    "qa",
+    "2026-10-06",
+    { ...settings, minutesPerDay: 90 },
+    0,
   );
-  const missed = p.blocks[2].reviewQuestions![0];
+  const answers = Object.fromEntries(
+    first.blocks.flatMap((b) => b.questions.map((q) => [q.id, q.answer])),
+  );
+  const missed = first.blocks[2].reviewQuestions![0];
   answers[missed.id] = (missed.answer + 1) % 4;
-  const nextFocus = dailyFocus(p, answers);
-  assert.deepEqual(nextFocus?.math, [blockUnits(p.blocks[2])[0].id]);
-  assert.deepEqual(nextFocus?.english, []);
+  const focus = dailyFocus(first, answers);
+  const expected = `math:${missed.topic}:skill:${missed.skillId}`;
+  assert(focus!.math!.includes(expected));
+  assert.deepEqual(focus?.english, []);
+  const coveredUnits = first.blocks
+    .flatMap(blockUnits)
+    .map((u) => u.courseId ?? u.id);
   const next = selectDailyPlan(
-    { ...p, complete: true, completedDate: p.date, nextFocus },
+    { ...first, complete: true, nextFocus: focus },
     "qa",
     "2026-10-07",
-    settings,
+    { ...settings, minutesPerDay: 90 },
+    false,
+    {
+      testDate: "2027-06-12",
+      coveredUnits,
+      seenQuestions: Object.keys(answers),
+    },
   );
-  assert.equal(blockUnits(next.blocks[2])[0].topic, missed.topic);
+  const math = next.blocks.find((b) => b.subject === "math")!;
   assert(
-    !p.blocks[2].questions.some(
-      (q) =>
-        q.id ===
-        blockUnits(next.blocks[2])[0].questions.find(
-          (q) => q.phase === "drill",
-        )!.id,
-    ),
+    blockUnits(math).every((u) => !coveredUnits.includes(u.courseId ?? u.id)),
+  );
+  const reviewed = math.reviewUnits!.find((u) => u.skillId === missed.skillId)!;
+  assert(reviewed);
+  const fresh = math.reviewQuestions!.filter(
+    (q) => q.reviewUnitId === reviewed.id,
+  );
+  assert(fresh.length);
+  assert(fresh.every((q) => q.skillId === missed.skillId));
+  assert(
+    !Object.hasOwn(answers, fresh[0].id),
+    "The remaining fresh transfer question precedes retention review",
   );
 });
 
-test("saved sessions load corrected lessons and real worked-example evidence without changing progress IDs", () => {
-  const p = makeDailyPlan("qa", "2026-10-06", settings, 0);
-  const old = {
-    ...p,
-    blocks: p.blocks.map((b) =>
-      b.subject === "science"
-        ? {
-            ...b,
-            units: blockUnits(b).map((u) => ({
-              ...u,
-              lesson: {
-                ...u.lesson,
-                sections: u.lesson.sections.map((s) => ({
-                  ...s,
-                  evidence: undefined,
-                })),
-              },
-            })),
-          }
-        : b,
-    ),
-  };
-  const updated = refreshDailyContent(old);
-  assert.equal(updated.id, p.id);
+test("saved sessions regain their exact Science worked method without changing progress IDs", () => {
+  const plan = makeDailyPlan("qa", "2026-10-06", settings, 0);
+  const science = plan.blocks.find((b) => b.subject === "science")!;
+  for (const unit of blockUnits(science)) {
+    unit.lesson = structuredClone(unit.lesson);
+    unit.lesson.sections.forEach((section) => {
+      section.body = ["Obsolete teaching snapshot"];
+      section.examples = [];
+      section.activity = undefined;
+    });
+  }
+  const updated = refreshDailyContent(plan);
+  assert.equal(updated.id, plan.id);
   assert.deepEqual(
     updated.blocks.flatMap((b) => b.questions.map((q) => q.id)),
-    p.blocks.flatMap((b) => b.questions.map((q) => q.id)),
+    plan.blocks.flatMap((b) => b.questions.map((q) => q.id)),
   );
-  assert.equal(
-    blockUnits(updated.blocks.find((b) => b.subject === "science")!)[0].lesson
-      .sections[0].evidence?.[0].id,
-    "science-teaching-data-reading-1",
-  );
+  for (const unit of blockUnits(
+    updated.blocks.find((b) => b.subject === "science")!,
+  )) {
+    const visible = dailyConcepts(unit).map((i) => unit.lesson.sections[i]);
+    assert(
+      visible.some(
+        (s) => s.body.length && (s.examples?.length || s.evidence?.length),
+      ),
+    );
+    assert(visible.some((s) => s.activity));
+    assert(!visible.some((s) => s.body.includes("Obsolete teaching snapshot")));
+  }
 });
 
 test("daily scopes preserve complete curriculum coverage and fit each displayed budget", () => {
@@ -667,113 +725,114 @@ test("daily scopes preserve complete curriculum coverage and fit each displayed 
     }
 });
 
-test("every full lesson section has a scheduled teaching scope", () => {
-  for (const [topic, scopes] of Object.entries(DAILY_CURRICULUM)) {
-    const full =
-      topic.startsWith("math-") ||
-      topic.startsWith("science-") ||
-      topic.startsWith("reading-")
-        ? getLesson(topic)
-        : englishLesson(topic);
-    assert(full);
-    const coverage = new Set(scopes.flatMap((s) => s.sections));
-    full.sections.forEach((_, i) =>
-      assert(coverage.has(i), `${topic}: section ${i} missing`),
-    );
-    scopes.forEach((s) => {
-      assert(s.practice.length >= 3);
-      assert.equal(new Set(s.practice).size, s.practice.length);
-    });
-  }
-});
-
-test("clause and fragment drills never introduce untaught joining punctuation", () => {
-  const english = makeDailyPlan("alignment", "2026-10-06", settings, 0)
-    .blocks[0];
-  const units = blockUnits(english);
-  assert.deepEqual(units[0].sectionIndices, [0]);
-  assert.deepEqual(units[1].sectionIndices, [1]);
-  assert(units[0].questions.every((q) => q.id.startsWith("daily-clauses-")));
-  assert(units[1].questions.every((q) => q.id.startsWith("daily-fragments-")));
-  assert(
-    english.reviewQuestions!.every(
-      (q) =>
-        q.id.startsWith("daily-clauses-") ||
-        q.id.startsWith("daily-fragments-"),
-    ),
-  );
-  assert(
-    !english.questions.some((q) =>
-      q.questionText.includes("grammatically acceptable"),
-    ),
-  );
-});
-
-test("English core and transfer scopes preserve original IDs and teach their own independent questions", () => {
-  const scopes = dailyScopes("english");
-  assert.equal(scopes.length, 30);
-  assert.equal(scopes[0].id, "english:sentence-structure:original:0");
-  assert.equal(scopes[2].id, "english:sentence-structure:original:2");
-  assert(scopes.slice(0, 16).every((s) => !s.scope.title));
-  assert(
-    scopes
-      .slice(16)
-      .every((s) => s.scope.title?.startsWith("Advanced transfer:")),
-  );
-  for (let position = 0; position < scopes.length; position++) {
-    const block = makeDailyPlan(
-      "alignment",
-      "2026-10-06",
-      { ...settings, minutesPerDay: 90 },
-      0,
-      undefined,
-      [],
-      { english: position },
-    ).blocks[0];
-    for (const unit of blockUnits(block)) {
-      if (unit.questions.some((q) => !q.id.startsWith("daily-"))) {
-        const original = englishLesson(unit.topic);
-        const advanced = unit.questions.every((q) =>
-          /-transfer-0[12]$/.test(q.id),
+test("every authored primary skill has a Daily scope with its explicit prerequisites and independent question pool", () => {
+  for (const subject of DAILY_SUBJECTS) {
+    const scopes = dailyScopes(subject);
+    for (const skill of getLearningSkills(undefined, subject))
+      assert(
+        scopes.some(
+          (s) => s.topic.slug === skill.topic && s.scope.skillId === skill.id,
+        ),
+        `${subject}:${skill.id} is unreachable in Daily Study`,
+      );
+    for (const { topic, scope } of scopes) {
+      const full =
+        subject === "english"
+          ? englishLesson(topic.slug)
+          : getLesson(topic.slug);
+      const bank =
+        subject === "english"
+          ? englishDailyQuestions(topic.slug)
+          : getQuestions(topic.slug);
+      assert(
+        scope.practice.length >= 2,
+        `${scope.skillId}: needs distinct drill and review questions`,
+      );
+      assert.equal(new Set(scope.practice).size, scope.practice.length);
+      for (const i of scope.sections)
+        assert(
+          full.sections[i],
+          `${scope.skillId}: missing source section ${i}`,
         );
-        if (advanced) {
-          assert.deepEqual(unit.lesson.sections, original.sections.slice(-1));
-          assert.deepEqual(unit.lesson.check, []);
-        } else if (unit.topic === "sentence-structure") {
-          assert.deepEqual(unit.lesson.sections, original.sections.slice(2, 5));
-          assert.deepEqual(unit.lesson.check, []);
-        } else {
-          assert.deepEqual(
-            unit.lesson.sections,
-            original.sections.slice(0, -1),
-          );
-          assert.deepEqual(unit.lesson.check, original.check);
-        }
+      for (const i of scope.practice) {
+        const teaching = getQuestionTeaching(topic.slug, bank[i].id)!;
+        assert.equal(teaching.skillId, scope.skillId);
+        assert(
+          teaching.teachingSections.every((source) =>
+            scope.sections.includes(source),
+          ),
+          bank[i].id,
+        );
       }
     }
   }
 });
 
-test("high-goal English courses prioritize transfer while unknown and lower baselines start with core teaching", () => {
+test("clause recognition and finite-verb repair only assign questions supported by their taught prerequisites", () => {
+  for (const skillId of ["clause-recognition", "finite-main-verb"]) {
+    const plan = planAtSkill("english", skillId);
+    const unit = blockUnits(plan.blocks[0])[0];
+    assert.equal(unit.skillId, skillId);
+    for (const q of unit.questions) {
+      const teaching = getQuestionTeaching(unit.topic, q.id)!;
+      assert.equal(teaching.skillId, skillId);
+      assert(
+        teaching.teachingSections.every((i) =>
+          unit.sectionIndices!.includes(i),
+        ),
+      );
+    }
+    if (skillId === "clause-recognition") {
+      assert.deepEqual(unit.sectionIndices, [0]);
+      assert(unit.questions.every((q) => q.id.startsWith("daily-clauses-")));
+      assert(
+        !unit.questions.some((q) =>
+          q.questionText.includes("grammatically acceptable"),
+        ),
+      );
+    }
+  }
+});
+
+test("English Daily scopes use precise primary skills and keep broad legacy checks out of focused lessons", () => {
+  const scopes = dailyScopes("english");
+  assert.equal(new Set(scopes.map((s) => s.id)).size, scopes.length);
+  for (const { topic, scope, id } of scopes) {
+    assert.equal(id, `english:${topic.slug}:skill:${scope.skillId}`);
+    const skill = getLearningSkill(topic.slug, scope.skillId!)!;
+    const focused = focusLesson(
+      { ...englishLesson(topic.slug), check: [] },
+      {
+        ...skill,
+        sections: scope.sections,
+      },
+    );
+    assert.equal(focused.title, scope.title);
+    assert.deepEqual(focused.check, []);
+    assert(focused.sections.some((s) => s.body.length));
+    assert(
+      focused.sections.some((s) => s.activity),
+      `${id}: needs a separate try-it`,
+    );
+  }
+});
+
+test("English course difficulty follows the baseline and goal without assuming an unknown score", () => {
   for (const english of [null, 20, 32]) {
     const plan = makeDailyPlan(
       "english-level",
       "2026-10-14",
-      {
-        ...settings,
-        scores: { ...settings.scores, english },
-      },
+      { ...settings, scores: { ...settings.scores, english } },
       0,
       undefined,
       [],
       {},
-      { testDate: "2026-11-17", targetScore: 36, coveredUnits: [] },
+      { testDate: "2027-06-12", targetScore: 36, coveredUnits: [] },
     );
     const unit = blockUnits(plan.blocks[0])[0];
-    assert.equal(
-      unit.questions.every((q) => /-transfer-0[12]$/.test(q.id)),
-      english === 32,
-    );
+    if (english === 32) assert.equal(unit.questions[0].difficulty, "hard");
+    else if (english === 20) assert.equal(unit.questions[0].difficulty, "easy");
+    else assert.equal(unit.skillId, "clause-recognition");
   }
 });
 
@@ -790,58 +849,69 @@ test("English repair preserves non-English work and historical answers in a save
     old.minutes,
   );
 });
-test("older English plans migrate at the same core curriculum position after transfer scopes are appended", () => {
-  const scopes = dailyScopes("english");
-  for (const topic of ["commas", "misc-grammar", "logical-placement"]) {
-    const position = scopes.findIndex((s) => s.topic.slug === topic);
-    const plan = makeDailyPlan(
-      "legacy-core",
-      "2026-10-06",
-      { ...settings, minutesPerDay: 90 },
-      0,
-      undefined,
-      [],
-      { english: position },
+test("saved broad English plans migrate to their pending skill while retaining original answer and concept positions", () => {
+  const fixture = legacyFixtures.cases.find(
+    (f) => f.subject === "english" && f.partial,
+  )!;
+  const plan = structuredClone(fixture.plan) as unknown as DailyPlan;
+  const answers = fixture.answers as Record<string, number>;
+  const previous = blockUnits(plan.blocks[0]);
+  const refreshed = refreshDailyContent(plan, answers);
+  for (const unit of blockUnits(refreshed.blocks[0])) {
+    const original = previous.find((u) => u.id === unit.id)!;
+    assert(original);
+    assert.deepEqual(
+      unit.sectionIndices!.slice(0, original.sectionIndices!.length),
+      original.sectionIndices,
     );
-    plan.formatVersion = 5;
-    const migrated = restoreDailyTeaching(
-      plan,
-      {},
-      { ...settings, minutesPerDay: 90 },
+    assert(unit.skillId);
+    assert(
+      unit.questions
+        .filter((q) => !Object.hasOwn(answers, q.id))
+        .every((q) => q.skillId === unit.skillId),
     );
-    assert.equal(migrated.curriculumPositions?.english, position, topic);
-    assert.equal(blockUnits(migrated.blocks[0])[0].topic, topic);
-    assert.equal(migrated.id, plan.id);
   }
+  for (const id of Object.keys(answers))
+    assert(refreshed.blocks[0].questions.some((q) => q.id === id));
+  assert.equal(refreshed.id, plan.id);
+  assert.deepEqual(refreshDailyContent(refreshed, answers), refreshed);
 });
 
-test("a deferred whole lesson remains next in the course instead of being skipped", () => {
-  let plan = makeDailyPlan(
-    "cursor",
-    "2026-10-06",
-    { ...settings, minutesPerDay: 60 },
-    0,
+test("the smallest budget eventually covers every English skill without skipping deferred lessons", () => {
+  const scopes = dailyScopes("english");
+  const covered = new Set(
+    courseIds().filter((id) => !id.startsWith("english:")),
   );
-  const seen = new Set<string>();
-  for (let day = 0; day < 40; day++) {
-    blockUnits(plan.blocks[0]).forEach((u) => seen.add(u.topic));
-    plan = { ...plan, complete: true, completedDate: plan.date };
-    const nextDate = new Date(Date.UTC(2026, 9, 7 + day))
-      .toISOString()
-      .slice(0, 10);
-    plan = selectDailyPlan(plan, "cursor", nextDate, {
-      ...settings,
-      minutesPerDay: 60,
-    });
+  const start = "2026-10-06";
+  const testDate = addDays(start, scopes.length + 2);
+  for (
+    let day = 0;
+    day < scopes.length && scopes.some((s) => !covered.has(s.id));
+    day++
+  ) {
+    const plan = makeDailyPlan(
+      "cursor",
+      addDays(start, day),
+      { ...settings, minutesPerDay: 60 },
+      day,
+      undefined,
+      [],
+      {},
+      { testDate, coveredUnits: [...covered] },
+    );
     assert.equal(
       plan.blocks.reduce((n, b) => n + b.minutes, 0),
       60,
     );
+    const english = plan.blocks[0];
+    assert(estimateDailyBlock(english) <= english.minutes);
+    for (const unit of blockUnits(english)) {
+      const id = unit.courseId ?? unit.id;
+      assert(!covered.has(id), `${id} repeated before the course finished`);
+      covered.add(id);
+    }
   }
-  assert(seen.has("commas"));
-  assert(seen.has("punctuation"));
-  assert(seen.has("logical-placement"));
-  assert.equal(seen.size, 14);
+  for (const scope of scopes) assert(covered.has(scope.id), scope.id);
 });
 
 test("actual format-5 saved plans retain their budget, other subjects, answered history and deferred English position", () => {
@@ -873,7 +943,7 @@ test("actual format-5 saved plans retain their budget, other subjects, answered 
   }
 });
 
-test("a migration-only foundation refresher does not skip an original lesson that cannot fit", () => {
+test("a compact focused migration fits a small saved allocation and replaces an obsolete cursor without skipping its taught unit", () => {
   const old = structuredClone(
     format5Fixtures.cases[1].plan,
   ) as unknown as DailyPlan;
@@ -884,29 +954,27 @@ test("a migration-only foundation refresher does not skip an original lesson tha
     {},
     format5Fixtures.cases[1].settings,
   );
-  assert.equal(blockUnits(updated.blocks[0])[0].title, "Clauses and phrases");
+  assert(blockUnits(updated.blocks[0])[0].skillId);
   assert(estimateDailyBlock(updated.blocks[0]) <= 5);
   assert.equal(
     updated.nextCurriculumPositions?.english,
-    updated.curriculumPositions?.english,
+    updated.curriculumPositions!.english! +
+      blockUnits(updated.blocks[0]).length,
   );
   assert.equal(updated.nextCurriculumPositions?.science, 17);
 });
 
 test("saved interpolation prerequisites append without changing prior completion positions", () => {
-  const plan = makeDailyPlan(
-    "prerequisite",
-    "2026-10-07",
-    settings,
-    0,
-    undefined,
-    [],
-    { science: 7 },
+  const plan = planAtSkill(
+    "science",
+    "science-trends-interpolation-interpolate",
   );
   const block = plan.blocks.find((b) => b.subject === "science")!;
   plan.blocks = [block];
   const unit = blockUnits(block)[0];
-  assert.equal(unit.topic, "science-trends-interpolation");
+  block.units = [unit];
+  unit.id = "science:science-trends-interpolation:scope:legacy";
+  unit.skillId = undefined;
   unit.sectionIndices = [5, 6];
   unit.lesson = {
     ...unit.lesson,
@@ -915,51 +983,51 @@ test("saved interpolation prerequisites append without changing prior completion
       getLesson(unit.topic).sections[6],
     ],
   };
+  unit.questions = [
+    "science-trends-interpolation-3",
+    "science-trends-interpolation-6",
+  ].map((id) => ({ ...getQuestion(id)!, phase: "drill" as const }));
+  unit.practiceIds = unit.questions.map((q) => q.id);
+  block.questions = unit.questions;
+  block.reviewQuestions = [];
   const answers = { [unit.questions[0].id]: unit.questions[0].answer };
   const completed = [unit.id, `${unit.id}:concept:0`, `${unit.id}:concept:1`];
   const updated = refreshDailyContent(plan, answers);
   const repaired = blockUnits(updated.blocks[0])[0];
   assert.deepEqual(repaired.sectionIndices, [5, 6, 1]);
   assert.deepEqual(repaired.requiredConceptIndices, [2]);
-  const step = dailyStep(updated, answers, completed);
-  assert.equal(step.kind, "lesson");
-  assert.equal(step.kind === "lesson" && step.unit.id, unit.id);
+  assert.equal(dailyStep(updated, answers, completed).kind, "lesson");
   completed.push(`${unit.id}:concept:2`);
   assert.equal(dailyStep(updated, answers, completed).kind, "drill");
-  assert.deepEqual(
-    refreshDailyContent(updated, answers).blocks[0].units,
-    updated.blocks[0].units,
-  );
+  assert.deepEqual(refreshDailyContent(updated, answers), updated);
 });
 
-test("saved circle drills require the newly added formula even after lesson completion", () => {
-  const plan = makeDailyPlan(
-    "circle",
-    "2026-10-07",
-    settings,
-    0,
-    undefined,
-    [],
-    { math: 10 },
-  );
+test("a revised circle method requires a new checkpoint even after its old lesson was completed", () => {
+  const plan = planAtSkill("math", "math-geometry-arc-and-sector");
   const block = plan.blocks.find((b) => b.subject === "math")!;
   plan.blocks = [block];
   const unit = blockUnits(block)[0];
-  assert.equal(unit.topic, "math-geometry");
+  block.units = [unit];
+  const source = unit.sectionIndices![0];
   unit.lesson = structuredClone(unit.lesson);
   delete unit.lesson.sections[0].teachingRevision;
-  unit.lesson.sections[0].body = unit.lesson.sections[0].body.slice(0, 2);
+  unit.lesson.sections[0].body = [
+    "An older method without the central-angle fraction.",
+  ];
   const updated = refreshDailyContent(plan);
   const repaired = blockUnits(updated.blocks[0])[0];
-  assert.deepEqual(repaired.sectionIndices, [3, 3]);
+  assert.deepEqual(repaired.sectionIndices, [source, source]);
   assert.deepEqual(repaired.requiredConceptIndices, [1]);
+  assert.deepEqual(dailyConcepts(repaired), [1]);
   assert.equal(
     dailyStep(updated, {}, [unit.id, `${unit.id}:concept:0`]).kind,
     "lesson",
   );
-  assert(
-    repaired.lesson.sections[1].body.some((p) => p.includes("arc length")),
+  assert.deepEqual(
+    repaired.lesson.sections[1].body,
+    getLesson(unit.topic).sections[source].body,
   );
+  assert.deepEqual(refreshDailyContent(updated), updated);
 });
 
 test("editorial lesson updates refresh in place without requiring duplicate concepts", () => {
@@ -1157,29 +1225,29 @@ test("misses become review questions while the next day teaches uncovered scopes
   );
 });
 
-test("the expanded course covers every authored scope with sufficient days without repeating new lessons or exceeding the budget", () => {
+test("the complete focused curriculum finishes with sufficient days without repeating new lessons or exceeding the budget", () => {
+  const total = courseIds();
+  const days =
+    Math.max(...DAILY_SUBJECTS.map((subject) => dailyScopes(subject).length)) +
+    5;
+  const start = "2026-10-08";
   for (const minutesPerDay of [75, 90]) {
     const covered = new Set<string>();
-    DAILY_SUBJECTS.forEach((subject) =>
-      dailyScopes(subject)
-        .slice(0, 2)
-        .forEach((scope) => covered.add(scope.id)),
-    );
     let focus: DailyPlan["nextFocus"];
-    for (let day = 8; day < 24; day++) {
+    for (let day = 0; day < days && covered.size < total.length; day++) {
       const plan = makeDailyPlan(
         "deadline",
-        `2026-10-${String(day).padStart(2, "0")}`,
+        addDays(start, day),
         { ...settings, minutesPerDay },
         day,
         focus,
         [],
         {},
-        { testDate: "2026-10-24", coveredUnits: [...covered] },
+        { testDate: addDays(start, days), coveredUnits: [...covered] },
       );
       const refreshed = refreshDailyContent(plan);
       assert.equal(
-        refreshed.blocks.reduce((sum, block) => sum + block.minutes, 0),
+        refreshed.blocks.reduce((sum, b) => sum + b.minutes, 0),
         minutesPerDay,
       );
       for (const block of refreshed.blocks) {
@@ -1194,32 +1262,30 @@ test("the expanded course covers every authored scope with sufficient days witho
           covered.add(id);
         }
       }
-      const wrong = Object.fromEntries(
-        refreshed.blocks
-          .flatMap((block) => block.questions)
-          .map((question) => [question.id, (question.answer + 1) % 4]),
+      focus = dailyFocus(
+        refreshed,
+        Object.fromEntries(
+          refreshed.blocks
+            .flatMap((b) => b.questions)
+            .map((q) => [q.id, (q.answer + 1) % 4]),
+        ),
       );
-      focus = dailyFocus(refreshed, wrong);
     }
-    for (const subject of DAILY_SUBJECTS)
-      for (const scope of dailyScopes(subject))
-        assert(covered.has(scope.id), `${minutesPerDay}: ${scope.id} missing`);
+    for (const id of total)
+      assert(covered.has(id), `${minutesPerDay}: ${id} missing`);
   }
 });
 
-test("a close test date changes daily coverage; impossible budgets are reported honestly", () => {
-  const coveredUnits = DAILY_SUBJECTS.flatMap((subject) =>
-    dailyScopes(subject)
-      .slice(0, 2)
-      .map((scope) => scope.id),
-  );
-  const close = { testDate: "2026-10-17", coveredUnits };
-  const far = { ...close, testDate: "2026-11-17" };
+test("a near test date reports the focused curriculum shortfall while a sufficient horizon forecasts real coverage", () => {
+  const coveredUnits: string[] = [];
+  const start = "2026-10-08";
+  const close = { testDate: addDays(start, 2), coveredUnits };
+  const far = { testDate: addDays(start, 180), coveredUnits };
   const nearPlan = makeDailyPlan(
     "date",
-    "2026-10-08",
+    start,
     settings,
-    1,
+    0,
     undefined,
     [],
     {},
@@ -1227,9 +1293,9 @@ test("a close test date changes daily coverage; impossible budgets are reported 
   );
   const farPlan = makeDailyPlan(
     "date",
-    "2026-10-08",
+    start,
     settings,
-    1,
+    0,
     undefined,
     [],
     {},
@@ -1239,43 +1305,30 @@ test("a close test date changes daily coverage; impossible budgets are reported 
     nearPlan.blocks.flatMap(blockUnits).length >
       farPlan.blocks.flatMap(blockUnits).length,
   );
-  const adequateSettings = { ...settings, minutesPerDay: 90 };
-  const adequatePlan = makeDailyPlan(
-    "date",
-    "2026-10-08",
-    adequateSettings,
-    1,
-    undefined,
-    [],
-    {},
-    close,
-  );
-  const adequate = dailyCoverage(
-    adequatePlan,
-    adequateSettings,
-    close,
-    adequatePlan.date,
-  );
+  for (const minutesPerDay of [60, 75, 90]) {
+    const study = { ...settings, minutesPerDay };
+    const plan = makeDailyPlan(
+      "date",
+      start,
+      study,
+      0,
+      undefined,
+      [],
+      {},
+      close,
+    );
+    const shortfall = dailyCoverage(plan, study, close, start);
+    assert.equal(shortfall.onTrack, false);
+    assert.equal(shortfall.finishDate, null);
+    assert.equal(shortfall.requiredMinutes, null);
+    assert.equal(
+      dailyCoverage(plan, study, close, close.testDate).onTrack,
+      false,
+    );
+  }
+  const adequate = dailyCoverage(farPlan, settings, far, start);
   assert(adequate.onTrack);
-  assert(adequate.finishDate! < close.testDate);
-  const shortSettings = { ...settings, minutesPerDay: 60 };
-  const shortPlan = makeDailyPlan(
-    "date",
-    "2026-10-08",
-    shortSettings,
-    1,
-    undefined,
-    [],
-    {},
-    close,
-  );
-  const short = dailyCoverage(shortPlan, shortSettings, close, shortPlan.date);
-  assert.equal(short.onTrack, false);
-  assert.equal(short.requiredMinutes, 90);
-  assert.equal(
-    dailyCoverage(shortPlan, shortSettings, close, "2026-10-17").onTrack,
-    false,
-  );
+  assert(adequate.finishDate! < far.testDate);
 });
 
 test("a larger budget cannot add another session after today's completed lesson", () => {
@@ -1335,5 +1388,135 @@ test("upgrading a session never lets its saved answers satisfy newly assigned we
   assert(
     next.nextFocus?.math?.includes(scope.id),
     "exhausted reviews must stay queued for another session",
+  );
+});
+
+test("answering focused drills never promotes scheduled review questions on a later refresh", () => {
+  const modern = refreshDailyContent(
+    makeDailyPlan(
+      "stable-modern",
+      "2026-10-14",
+      settings,
+      0,
+      undefined,
+      [],
+      {},
+      { testDate: "2027-06-12", targetScore: 36, coveredUnits: [] },
+    ),
+  );
+  const fixture = legacyFixtures.cases.find(
+    (c) => c.subject === "math" && c.partial,
+  )!;
+  const migrated = refreshDailyContent(
+    fixture.plan as unknown as DailyPlan,
+    fixture.answers as unknown as Record<string, number>,
+  );
+  for (const plan of [modern, migrated]) {
+    const assignment = (p: DailyPlan) =>
+      p.blocks.map((block) => ({
+        subject: block.subject,
+        units: blockUnits(block).map((unit) => ({
+          id: unit.id,
+          questions: unit.questions.map((q) => q.id),
+          sourceIndices: unit.sectionIndices,
+          visible: dailyConcepts(unit),
+          required: unit.requiredConceptIndices,
+        })),
+        review: block.reviewQuestions?.map((q) => q.id),
+      }));
+    const baseline = assignment(plan);
+    const answers: Record<string, number> = {};
+    for (const block of plan.blocks) {
+      for (const unit of blockUnits(block)) {
+        for (const q of unit.questions) {
+          answers[q.id] = q.answer;
+          assert.deepEqual(
+            assignment(refreshDailyContent(plan, answers)),
+            baseline,
+            `${unit.id}: answering ${q.id} cannot change the next visible assignment`,
+          );
+        }
+      }
+    }
+  }
+});
+
+test("identical repaired Reading methods inherit a real visible completion without repeating the lesson", () => {
+  const fixture = legacyFixtures.cases.find(
+    (c) => c.subject === "math" && c.partial,
+  )!;
+  const plan = refreshDailyContent(
+    fixture.plan as unknown as DailyPlan,
+    fixture.answers as unknown as Record<string, number>,
+  );
+  const reading = plan.blocks.find((b) => b.subject === "reading")!;
+  plan.blocks = [reading];
+  const [first, next] = blockUnits(reading);
+  assert.equal(first.skillId, next.skillId);
+  const source = dailyConcepts(first)[0],
+    target = dailyConcepts(next)[0];
+  assert.deepEqual(first.lesson.sections[source], next.lesson.sections[target]);
+  const completed = [first.id, `${first.id}:concept:${source}`];
+  const answers = Object.fromEntries(
+    first.questions.map((q) => [q.id, q.answer]),
+  );
+  const restored = readingConceptProgress(plan, completed);
+  assert(restored.includes(`${next.id}:concept:${target}`));
+  assert(restored.includes(next.id));
+  const step = dailyStep(plan, answers, restored);
+  assert.equal(step.kind, "drill");
+  assert(step.kind === "drill");
+  assert.equal(step.unit.id, next.id);
+  assert.equal(step.question.skillId, first.skillId);
+  assert(
+    !readingConceptProgress(plan, [first.id]).includes(
+      `${next.id}:concept:${target}`,
+    ),
+  );
+
+  const check = (mutate: (copy: DailyPlan) => void) => {
+    const copy = structuredClone(plan);
+    mutate(copy);
+    assert(
+      !readingConceptProgress(copy, completed).includes(
+        `${next.id}:concept:${target}`,
+      ),
+    );
+  };
+  check((p) => {
+    blockUnits(p.blocks[0])[0].focusedConceptIndices = [0];
+  });
+  check((p) => {
+    blockUnits(p.blocks[0])[0].skillId = "reading-main-idea-thesis";
+  });
+  check((p) => {
+    blockUnits(p.blocks[0])[0].lesson.sections[source].teachingRevision = 2;
+  });
+  check((p) => {
+    blockUnits(p.blocks[0])[0].sectionIndices![source] = 1;
+  });
+
+  const covered = structuredClone(plan);
+  covered.blocks[0].units = [blockUnits(covered.blocks[0])[1]];
+  covered.course = { testDate: "2027-06-12", coveredUnits: [first.courseId!] };
+  const targetUnit = blockUnits(covered.blocks[0])[0];
+  assert(
+    !readingConceptProgress(covered, []).includes(
+      `${next.id}:concept:${target}`,
+    ),
+    "Past course coverage cannot satisfy newly required teaching",
+  );
+  targetUnit.requiredConceptIndices = [];
+  assert(
+    readingConceptProgress(covered, []).includes(
+      `${next.id}:concept:${target}`,
+    ),
+  );
+  targetUnit.skillId = "reading-main-idea-thesis";
+  assert(
+    !readingConceptProgress(covered, []).includes(
+      `${next.id}:concept:${target}`,
+    ),
+    "A different skill using the same reference section still needs its own activity",
   );
 });

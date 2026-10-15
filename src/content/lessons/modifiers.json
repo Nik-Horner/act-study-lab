@@ -81,7 +81,8 @@
           "good": false
         }
       ],
-      "tip": "Same words, shuffled order? It's a modifier question. Put the doer right after the comma."
+      "tip": "For an opening description, identify the main clause’s subject and test whether that subject performs or receives the described action. For an internal modifier, check its intended referent and scope.",
+      "teachingRevision": 3
     },
     {
       "heading": "Advanced transfer: scope and the actual main subject",
@@ -99,10 +100,15 @@
           "text": "After being catalogued by two volunteers, the folders protected the letters.",
           "label": "The opener wrongly makes folders the things catalogued.",
           "good": false
+        },
+        {
+          "text": "The studio released the recording only after every performer approved the final mix.",
+          "label": "Only after restricts the condition for release, not which recording was released or which person approved it.",
+          "good": true
         }
       ],
       "tip": "Name what happened to the main subject and what the limiting word is intended to restrict.",
-      "teachingRevision": 2
+      "teachingRevision": 3
     }
   ],
   "check": [

@@ -26,8 +26,8 @@
     {
       "heading": "Transition words by category",
       "body": [
-        "Addition: also, furthermore, moreover, similarly, likewise. Contrast: however, but, yet, nevertheless, although. Cause/result: therefore, thus, consequently, so. Time: first, then, meanwhile, afterward. Example/emphasis: for example, for instance, indeed, in other words.",
-        "Check grammar as well as meaning. But and yet can join complete thoughts with a comma. Although makes its clause depend on another. However and therefore cannot join two complete thoughts with a comma alone; use a period or semicolon."
+        "Addition: also, moreover. Comparison: similarly, likewise. Contrast or concession: however, yet, nevertheless. Result: therefore, consequently, so. Time: then, meanwhile, afterward. Example: for instance. In other words restates; in fact can correct a misconception.",
+        "Check syntax as well as meaning. But and yet can join clauses with a comma; although makes its clause dependent. However and therefore need a period or semicolon when they connect independent clauses."
       ],
       "examples": [
         {
@@ -44,9 +44,25 @@
           "text": "Sales rose all spring. However, online orders doubled.",
           "label": "'However' promises a clash, but the second idea supports the first",
           "good": false
+        },
+        {
+          "text": "The sealant needed an hour to dry. Meanwhile, the team cleaned the spare panels.",
+          "label": "Meanwhile locates another activity during the drying interval; it does not say the drying caused the cleaning.",
+          "good": true
+        },
+        {
+          "text": "Many visitors assume the chamber is underground. In fact, it sits above the original roofline.",
+          "label": "In fact introduces a correction of the stated misconception.",
+          "good": true
+        },
+        {
+          "text": "The redesign reduced unnecessary movement. For instance, the operator could reach both controls without leaving the seat.",
+          "label": "For instance introduces a concrete illustration of the broader improvement.",
+          "good": true
         }
       ],
-      "tip": "Sort the four choices into addition, contrast, cause/effect, and sequence. The right bucket usually has only one choice in it."
+      "tip": "Name the relationship between the full ideas, then test each candidate’s meaning and syntax. The number of choices in a category does not determine the answer.",
+      "teachingRevision": 3
     },
     {
       "heading": "Watch for the contrast trap and 'no transition'",
@@ -66,7 +82,8 @@
           "good": false
         }
       ],
-      "tip": "If the second idea fights the first, pick contrast. If it agrees, pick addition. If neither, consider dropping the transition."
+      "tip": "Agreement alone does not mean addition: the second statement may illustrate, restate, or result from the first. Specify the relationship before choosing or deleting a transition.",
+      "teachingRevision": 3
     },
     {
       "heading": "How to spot these questions",

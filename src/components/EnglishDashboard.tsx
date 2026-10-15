@@ -164,6 +164,9 @@ export default async function EnglishDashboard() {
   return (
     <div className="mx-auto max-w-5xl space-y-10">
       <SubjectNav subject="english" />
+      <ButtonLink href="/learn?subject=english">
+        Browse English skills by ACT category
+      </ButtonLink>
       {/* Hero */}
       <section className="flex flex-wrap items-center justify-between gap-6 rounded-2xl border border-border bg-bg-soft p-6 shadow-[var(--shadow-card)]">
         <div>

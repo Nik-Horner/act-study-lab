@@ -1316,8 +1316,8 @@
       "source": "math-questions.json",
       "key": "7.5",
       "answerIndex": 3,
-      "sourceSha256": "ae50e35aac984ca6d0d8e6872d562136f2fd75efa91a36cfd39fae9ec57141f1",
-      "solution": "Inverseproductxy=60; y60/8=7.5."
+      "sourceSha256": "06784100b8d658fa5e6b6c6efb237fadb8387daaf54d4d6e12c1b6953df85067",
+      "solution": "5 hours at12liters/minute gives5·60·12=3600liters. At480liters/hour,the replacement pump takes7.5hours. Original keytext7.5and answerindex3preserved."
     },
     {
       "id": "math-essential-skills-d23",

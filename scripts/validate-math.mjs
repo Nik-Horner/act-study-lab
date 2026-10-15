@@ -1186,7 +1186,7 @@ const answerChecks = [
   {
     id: "math-essential-skills-d22",
     correct: "7.5",
-    calculate: () => (5 * 12) / 8,
+    calculate: () => (5 * 60 * 12) / 480,
     expected: 7.5,
   },
   {

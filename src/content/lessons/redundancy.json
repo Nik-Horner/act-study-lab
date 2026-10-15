@@ -41,7 +41,8 @@
           "good": false
         }
       ],
-      "tip": "Any choice containing 'the fact that' is almost never the answer. 'Due to the fact that,' 'in order to,' and 'at this point in time' are red flags for a shorter choice."
+      "tip": "Compare a wordy phrase with a shorter equivalent, but preserve its logical role and any needed emphasis. A phrase is removable because it adds nothing here, not because its wording is always forbidden.",
+      "teachingRevision": 3
     },
     {
       "heading": "When DELETE is an option",
@@ -61,7 +62,8 @@
           "good": true
         }
       ],
-      "tip": "When OMIT or DELETE appears, test it first. It is the shortest choice, so it wins unless cutting it breaks the grammar or loses needed information."
+      "tip": "Test deletion in the full sentence. Keep the cut only when the remaining grammar, necessary meaning, focus, and tone still satisfy the question.",
+      "teachingRevision": 3
     },
     {
       "heading": "Cutting irrelevant detail",
@@ -127,16 +129,16 @@
       "explanation": "The prefix re- in 'reconvene' already means again, so 'reconvene' alone says everything the sentence needs. 'Reconvene again,' 'reconvene once more,' and 'meet again to reconvene' each repeat the idea of meeting another time."
     },
     {
-      "stem": "We canceled the picnic [[due to the fact that]] it was raining.",
+      "stem": "The machine can restart [[in the event that]] the backup battery has enough charge.",
       "questionText": "Which choice is correct?",
       "choices": [
         "NO CHANGE",
-        "because",
-        "on account of the fact that",
-        "owing to the fact that"
+        "if",
+        "in the case in which",
+        "on the condition that it is the case that"
       ],
       "answer": 1,
-      "explanation": "'Because' delivers the full meaning in one word: 'We canceled the picnic because it was raining.' 'Due to the fact that,' 'on account of the fact that,' and 'owing to the fact that' all bury that one word under empty padding."
+      "explanation": "If states the condition directly and preserves the subject and finite verb of the following clause. The other choices express the same condition with unnecessary phrasing. The word before the clause must express a condition, not the reason or result in the worked example."
     },
     {
       "stem": "The astronomer studied distant galaxies[[, and she also enjoyed gardening,]] for over thirty years.",

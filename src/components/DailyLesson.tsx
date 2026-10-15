@@ -5,6 +5,8 @@ import type { DailyUnit } from "@/lib/daily-plan";
 import { LessonSections } from "./LessonSections";
 import { Button } from "./ui/Button";
 import { LessonActivity } from "./LessonActivity";
+import { dailyConcepts } from "@/lib/daily-flow";
+import { reportingCategoryName } from "@/lib/learning-skills";
 export function DailyLesson({
   unit,
   completed,
@@ -20,13 +22,15 @@ export function DailyLesson({
   onAdvance: (index: number, last: boolean) => Promise<boolean>;
   onBack: () => void;
 }) {
-  const first = unit.lesson.sections.findIndex(
-    (_, i) => !completed.includes(`${unit.id}:concept:${i}`),
+  const visible = dailyConcepts(unit);
+  const first = visible.find(
+    (i) => !completed.includes(`${unit.id}:concept:${i}`),
   );
   const [index, setIndex] = useState(
-    revisiting ? 0 : first < 0 ? unit.lesson.sections.length - 1 : first,
+    revisiting ? visible[0] : (first ?? visible[visible.length - 1]),
   );
-  const last = index === unit.lesson.sections.length - 1;
+  const position = visible.indexOf(index);
+  const last = position === visible.length - 1;
   const [checkedIndex, setCheckedIndex] = useState(-1);
   const [phase, setPhase] = useState<"learn" | "practice">("learn");
   const section = unit.lesson.sections[index];
@@ -41,16 +45,21 @@ export function DailyLesson({
         <h1 className="text-2xl font-semibold sm:text-3xl">
           {unit.title.replace(/^\d+\.\s*/, "")}
         </h1>
+        {unit.reportingCategory && (
+          <p className="mt-2 text-sm text-ink-soft">
+            {reportingCategoryName(unit.reportingCategory)}
+          </p>
+        )}
         <span className="text-sm text-ink-soft">
-          Part {index + 1}/{unit.lesson.sections.length}
+          Part {position + 1}/{visible.length}
         </span>
       </header>
       <div
         className="lesson-progress"
-        aria-label={`Part ${index + 1} of ${unit.lesson.sections.length}`}
+        aria-label={`Part ${position + 1} of ${visible.length}`}
       >
-        {unit.lesson.sections.map((_, i) => (
-          <span key={i} data-current={i === index} data-done={i < index} />
+        {visible.map((i, p) => (
+          <span key={i} data-current={i === index} data-done={p < position} />
         ))}
       </div>
       {section.activity && (
@@ -96,11 +105,11 @@ export function DailyLesson({
       <div className="lesson-actions">
         <Button
           variant="ghost"
-          disabled={(index === 0 && phase === "learn") || pending}
+          disabled={(position === 0 && phase === "learn") || pending}
           onClick={() => {
             if (phase === "practice") setPhase("learn");
             else {
-              setIndex(index - 1);
+              setIndex(visible[position - 1]);
               setPhase("learn");
             }
             window.scrollTo({ top: 0 });
@@ -119,13 +128,13 @@ export function DailyLesson({
             if (revisiting) {
               if (last) onBack();
               else {
-                setIndex(index + 1);
+                setIndex(visible[position + 1]);
                 setPhase("learn");
                 window.scrollTo({ top: 0 });
               }
             } else if (await onAdvance(index, last)) {
               if (!last) {
-                setIndex(index + 1);
+                setIndex(visible[position + 1]);
                 setPhase("learn");
               }
               window.scrollTo({ top: 0 });
@@ -147,7 +156,7 @@ export function DailyLesson({
         <p className="text-sm text-ink-soft">Choose an answer to continue.</p>
       )}
       <Link
-        href={`/learn/${unit.topic}`}
+        href={`/learn/${unit.topic}${unit.skillId ? `?skill=${encodeURIComponent(unit.skillId)}` : "?reference=1"}`}
         target="_blank"
         className="inline-block min-h-11 text-sm text-brand underline"
       >

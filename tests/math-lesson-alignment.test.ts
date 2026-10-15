@@ -1,20 +1,27 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { getLesson, getQuestions } from "../src/lib/act/content";
-import { DAILY_CURRICULUM } from "../src/lib/daily-curriculum";
+import { getLesson, getQuestions, getQuestion } from "../src/lib/act/content";
 import {
+  focusLesson,
+  getLearningSkill,
+  getQuestionTeaching,
+} from "../src/lib/learning-skills";
+import {
+  dailyScopes,
   makeDailyPlan,
   refreshDailyContent,
   selectDailyPlan,
+  type DailyPlan,
 } from "../src/lib/daily-plan";
-import { blockUnits, dailyStep, dailyReviewKey } from "../src/lib/daily-flow";
+import { blockUnits, dailyStep, dailyConcepts } from "../src/lib/daily-flow";
+import legacyFixtures from "./fixtures/focused-curriculum-legacy.json";
 
 const settings = {
   scores: { english: 34, reading: 33, math: 34, science: 27 },
   minutesPerDay: 75,
 };
 
-test("math unit titles describe both teaching and practice after a saved-content refresh", () => {
+test("math unit titles describe the exact taught method after a saved-content refresh", () => {
   const plan = makeDailyPlan(
     "titles",
     "2026-10-08",
@@ -30,180 +37,142 @@ test("math unit titles describe both teaching and practice after a saved-content
   );
   const math = plan.blocks.find((b) => b.subject === "math")!;
   const unit = blockUnits(math)[0];
-  assert.equal(unit.title, "Areas, triangles, and polygon angles");
-  unit.title = "Translate the diagram and protect units";
+  const skill = getLearningSkill(unit.topic, unit.skillId!)!;
+  assert.equal(unit.title, skill.title);
+  assert.equal(unit.lesson.title, skill.title);
+  unit.title = "An obsolete broad-topic title";
   math.title = unit.title;
-  const refreshed = refreshDailyContent(plan);
-  const updated = refreshed.blocks.find((b) => b.subject === "math")!;
-  assert.equal(
-    blockUnits(updated)[0].title,
-    "Areas, triangles, and polygon angles",
-  );
-  assert.equal(updated.title, blockUnits(updated)[0].title);
+  const updated = refreshDailyContent(plan).blocks.find(
+    (b) => b.subject === "math",
+  )!;
+  assert.equal(blockUnits(updated)[0].title, skill.title);
+  assert.equal(updated.title, skill.title);
 });
 
-test("daily math drills include the specific method their questions require", () => {
+test("daily math assignments teach their specific formula, conditions, and interpretation", () => {
   const requirements = [
-    ["math-trigonometry", "math-trigonometry-d6", /elevation/, /tan/i],
+    ["math-trigonometry-d6", /elevation/i, /tangent=opposite\/adjacent/],
     [
-      "math-statistics-probability",
       "math-statistics-probability-d14",
-      /exactly k successes/,
-      /\\binom nk/,
+      /exactly k\s*successes/i,
+      /C\(n, k\).*p\^k/,
     ],
     [
-      "math-geometry",
       "math-geometry-d6",
-      /perpendicular distance/,
-      /\|Ax_0\+By_0\+C\|/,
+      /perpendicular distance/i,
+      /\|Ax₀\+By₀\+C\|\/√\(A²\+B²\)/,
     ],
+    ["math-geometry-d1", /trapezoid/i, /A=\(b₁\+b₂\)h\/2/],
+    ["math-geometry-d3", /Heron/, /s=\(a\+b\+c\)\/2/],
+    ["math-geometry-d14", /interior angle/i, /180\(n−2\)\/n/],
+    ["math-geometry-d2", /closed.*cylinder/i, /2π\s*rh\+2πr²/],
+    ["math-geometry-d16", /concentric circles/i, /π\(R²−r²\)/],
+    ["math-algebra-d18", /distance inequalities/i, /−a<u<a/],
     [
-      "math-geometry",
-      "math-geometry-d1",
-      /trapezoid/,
-      /\\frac\{\(b_1\+b_2\)h\}\{2\}/,
-    ],
-    ["math-geometry", "math-geometry-d3", /Heron/, /s=\\frac\{a\+b\+c\}\{2\}/],
-    [
-      "math-geometry",
-      "math-geometry-d14",
-      /interior angle/,
-      /\\frac\{180\(n-2\)\}n/,
-    ],
-    [
-      "math-geometry",
-      "math-geometry-d2",
-      /closed cylinder/,
-      /2\\pi r\^2\+2\\pi rh/,
-    ],
-    [
-      "math-geometry",
-      "math-geometry-d16",
-      /concentric circles/,
-      /\\pi R\^2-\\pi r\^2/,
-    ],
-    ["math-algebra", "math-algebra-d18", /absolute-value inequality/, /-a<u<a/],
-    [
-      "math-algebra",
       "math-algebra-d14",
-      /common denominator/,
-      /\\frac\{a\+b\}\{b-a\}/,
+      /common denominator/i,
+      /reciprocal of the entire denominator/i,
     ],
+    ["math-functions-d6", /arithmetic sequence/i, /a_n=a₀\+nd/],
     [
-      "math-functions",
-      "math-functions-d6",
-      /arithmetic sequence/,
-      /a_n=a_0\+nd/,
-    ],
-    [
-      "math-functions",
       "math-functions-d5",
-      /argument.*positive/,
-      /sole valid root/,
+      /positivity.*original argument/i,
+      /allowed root.*fails the original arguments/i,
     ],
   ] as const;
-  for (const [topic, id, ...methods] of requirements) {
-    const bank = getQuestions(topic);
-    const index = bank.findIndex((q) => q.id === id);
-    assert(index >= 0, id);
-    const scopes = DAILY_CURRICULUM[topic].filter((s) =>
-      s.practice.includes(index),
+  for (const [id, ...methods] of requirements) {
+    const q = getQuestion(id)!;
+    const bank = getQuestions(q.topic);
+    const index = bank.findIndex((item) => item.id === id);
+    const scopes = dailyScopes("math").filter(
+      (s) => s.topic.slug === q.topic && s.scope.practice.includes(index),
     );
-    assert(scopes.length > 0, `${id} needs daily practice`);
-    for (const scope of scopes) {
-      const lesson = getLesson(topic);
-      const text = scope.sections
-        .flatMap((i) => [
-          ...lesson.sections[i].body,
-          ...(lesson.sections[i].examples ?? []).map((e) => e.text),
+    assert(scopes.length, `${id} must be reachable in Daily Study`);
+    for (const { scope } of scopes) {
+      const skill = getLearningSkill(q.topic, scope.skillId!)!;
+      const lesson = focusLesson(getLesson(q.topic), {
+        ...skill,
+        sections: scope.sections,
+      });
+      const text = lesson.sections
+        .flatMap((s) => [
+          s.heading,
+          ...s.body,
+          ...(s.examples ?? []).map((e) => e.text),
         ])
         .join(" ");
       for (const method of methods) assert.match(text, method, id);
-    }
-  }
-});
-
-test("returning after several days resumes saved math without replacing answers or concept positions", () => {
-  const plan = makeDailyPlan(
-    "resume",
-    "2026-10-08",
-    { ...settings, minutesPerDay: 90 },
-    0,
-    undefined,
-    [],
-    {},
-    {
-      testDate: "2026-10-17",
-      coveredUnits: [],
-    },
-  );
-  const lessons: string[] = [];
-  const answers: Record<string, number> = {};
-  for (const block of plan.blocks.slice(0, 2)) {
-    for (const unit of blockUnits(block)) {
-      lessons.push(
-        unit.id,
-        ...unit.lesson.sections.map((_, i) => `${unit.id}:concept:${i}`),
+      assert.deepEqual(
+        scope.sections,
+        getQuestionTeaching(q.topic, id)!.teachingSections,
+        id,
+      );
+      assert(
+        lesson.sections.some((s) => s.activity),
+        `${id} needs a separate formative task`,
       );
     }
-    lessons.push(dailyReviewKey(block));
-    block.questions.forEach((q) => {
-      answers[q.id] = q.answer;
-    });
-  }
-  const math = plan.blocks.find((b) => b.subject === "math")!;
-  const unit = blockUnits(math)[0];
-  lessons.push(`${unit.id}:concept:0`);
-  const selected = selectDailyPlan(plan, "resume", "2026-10-11", settings);
-  assert.strictEqual(selected, plan);
-  const refreshed = refreshDailyContent(selected, answers);
-  const step = dailyStep(refreshed, answers, lessons);
-  assert.equal(step.kind, "lesson");
-  assert(step.kind === "lesson");
-  assert.equal(step.block.subject, "math");
-  assert.equal(step.unit.id, unit.id);
-  assert.equal(
-    step.unit.lesson.sections.findIndex(
-      (_, i) => !lessons.includes(`${unit.id}:concept:${i}`),
-    ),
-    1,
-  );
-  assert.equal(refreshed.id, plan.id);
-  assert.deepEqual(refreshDailyContent(refreshed, answers), refreshed);
-
-  lessons.push(
-    unit.id,
-    ...step.unit.lesson.sections.map((_, i) => `${unit.id}:concept:${i}`),
-  );
-  const question = step.unit.questions[0];
-  answers[question.id] = question.answer;
-  const resumed = dailyStep(
-    refreshDailyContent(refreshed, answers),
-    answers,
-    lessons,
-  );
-  if (unit.questions.length > 1) {
-    assert.equal(resumed.kind, "drill");
-    assert(resumed.kind === "drill");
-    assert.notEqual(resumed.question.id, question.id);
-    assert.equal(resumed.block.subject, "math");
-  } else {
-    // Longer corrected teaching can leave room for one application in this unit.
-    assert.equal(resumed.kind, "lesson");
-    assert(resumed.kind === "lesson");
-    assert.notEqual(resumed.unit.id, unit.id);
   }
 });
 
-test("old trig and probability drills teach missing prerequisites without changing saved question IDs", () => {
-  for (const [topic, position, legacyId, requiredSection] of [
-    ["math-trigonometry", 12, "math-trigonometry-d6", 6],
-    ["math-statistics-probability", 18, "math-statistics-probability-d14", 5],
-  ] as const) {
+test("returning after several days preserves saved math answers and original concept keys while requiring the focused repair", () => {
+  const fixture = legacyFixtures.cases.find(
+    (f) => f.subject === "math" && f.partial,
+  )!;
+  const original = structuredClone(fixture.plan) as unknown as DailyPlan;
+  const math = original.blocks.find((b) => b.subject === "math")!;
+  original.blocks = [math];
+  const unit = blockUnits(math)[0];
+  const oldIndices = [...unit.sectionIndices!];
+  const answers = { ...(fixture.answers as unknown as Record<string, number>) };
+  const completed = [...fixture.lessons, unit.id];
+  const selected = selectDailyPlan(original, "resume", "2026-10-16", settings);
+  assert.strictEqual(selected, original);
+  const refreshed = refreshDailyContent(selected, answers);
+  const updated = blockUnits(refreshed.blocks[0])[0];
+  assert.equal(updated.id, unit.id);
+  assert.deepEqual(
+    updated.sectionIndices!.slice(0, oldIndices.length),
+    oldIndices,
+  );
+  for (const id of Object.keys(answers))
+    assert(refreshed.blocks[0].questions.some((q) => q.id === id));
+  const step = dailyStep(refreshed, answers, completed);
+  assert.equal(step.kind, "lesson");
+  assert(step.kind === "lesson");
+  assert.equal(step.unit.id, unit.id);
+  assert(
+    step.unit.requiredConceptIndices!.some(
+      (i) => !completed.includes(`${unit.id}:concept:${i}`),
+    ),
+  );
+  assert.equal(refreshed.id, original.id);
+  assert.deepEqual(refreshDailyContent(refreshed, answers), refreshed);
+  completed.push(
+    ...dailyConcepts(updated).map((i) => `${updated.id}:concept:${i}`),
+  );
+  const next = dailyStep(refreshed, answers, completed);
+  assert.equal(next.kind, "drill");
+  assert(next.kind === "drill");
+  assert.equal(next.unit.id, unit.id);
+  assert.equal(answers[next.question.id], undefined);
+  assert.equal(next.question.skillId, updated.skillId);
+});
+
+test("legacy trig and probability assignments gain their exact method without changing saved question IDs or prior concept positions", () => {
+  for (const id of [
+    "math-trigonometry-d6",
+    "math-statistics-probability-d14",
+  ]) {
+    const source = getQuestion(id)!;
+    const teaching = getQuestionTeaching(source.topic, id)!;
+    const position = dailyScopes("math").findIndex(
+      (s) => s.scope.skillId === teaching.skillId,
+    );
     const plan = makeDailyPlan(
       "old-math",
       "2026-10-08",
-      settings,
+      { ...settings, scores: { ...settings.scores, math: null } },
       0,
       undefined,
       [],
@@ -212,20 +181,31 @@ test("old trig and probability drills teach missing prerequisites without changi
     const block = plan.blocks.find((b) => b.subject === "math")!;
     plan.blocks = [block];
     const unit = blockUnits(block)[0];
-    const source = getQuestions(topic).find((q) => q.id === legacyId)!;
-    unit.questions = [{ ...source, subject: "math", phase: "drill" }];
-    unit.practiceIds = [legacyId];
+    block.units = [unit];
+    unit.id = `math:${source.topic}:scope:legacy`;
+    unit.skillId = undefined;
+    unit.sectionIndices = [0];
+    unit.lesson = {
+      ...getLesson(source.topic),
+      sections: [getLesson(source.topic).sections[0]],
+      check: [],
+    };
+    unit.questions = [{ ...source, phase: "drill" }];
+    unit.practiceIds = [id];
     block.questions = unit.questions;
     block.reviewQuestions = [];
-    const completed = [
-      unit.id,
-      ...unit.lesson.sections.map((_, i) => `${unit.id}:concept:${i}`),
-    ];
+    const completed = [unit.id, `${unit.id}:concept:0`];
     const refreshed = refreshDailyContent(plan);
     const repaired = blockUnits(refreshed.blocks[0])[0];
-    assert.equal(repaired.questions[0].id, legacyId);
-    assert(repaired.sectionIndices!.includes(requiredSection));
+    assert.equal(repaired.questions[0].id, id);
+    assert.deepEqual(repaired.sectionIndices!.slice(0, 1), [0]);
+    assert(repaired.sectionIndices!.includes(teaching.teachingSections[0]));
+    assert(repaired.requiredConceptIndices!.includes(1));
     assert.equal(dailyStep(refreshed, {}, completed).kind, "lesson");
+    completed.push(
+      ...dailyConcepts(repaired).map((i) => `${unit.id}:concept:${i}`),
+    );
+    assert.equal(dailyStep(refreshed, {}, completed).kind, "drill");
     assert.equal(refreshed.id, plan.id);
     assert.equal(refreshed.minutes, plan.minutes);
     assert.deepEqual(refreshDailyContent(refreshed), refreshed);

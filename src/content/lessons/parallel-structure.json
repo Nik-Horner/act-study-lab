@@ -8,7 +8,8 @@
       "body": [
         "Give list items the same kind of wording: hiking, swimming, and biking; or to run, to jump, and to swim.",
         "Compare the underlined item with the unchanged items. Keep an -ing pattern or a to + verb pattern, called an infinitive. Do not switch between them when the list needs matching forms.",
-        "A shared to can govern several verbs: to run, jump, and swim. Repeating to is also valid. Do not reject an option solely because it omits an optional repeated word."
+        "A shared to can govern several verbs: to run, jump, and swim. Repeating to is also valid. Do not reject an option solely because it omits an optional repeated word.",
+        "The same principle applies to finite verbs and relative clauses; a shared who can govern coordinated predicates."
       ],
       "examples": [
         {
@@ -20,9 +21,15 @@
           "text": "On weekends Theo enjoys hiking, swimming, and to bike.",
           "label": "Third item switches to an infinitive",
           "good": false
+        },
+        {
+          "text": "The guide checks the route, monitors the weather, and adjusts the schedule.",
+          "label": "All three finite verbs share guide as their subject.",
+          "good": true
         }
       ],
-      "tip": "Chant the forms as you read the list: '-ing, -ing, -ing' or 'to, to, to.' The item that breaks the chant is the error."
+      "tip": "Identify the grammatical role of each coordinated item, then match that role. A shared to, preposition, or relative pronoun may be omitted without breaking the construction.",
+      "teachingRevision": 3
     },
     {
       "heading": "Parallelism in comparisons",
@@ -90,13 +97,15 @@
         "Find a list, comparison, or paired connector. Use the unchanged items to identify the required form.",
         "Choose the matching construction, then reread the complete sentence. A phrase that sounds smooth alone can still fail the surrounding pattern."
       ],
-      "tip": "The non-underlined items are the answer key. The ACT can only change the underlined part, so the rest of the list dictates the form you need."
+      "tip": "Use the unchanged sentence to identify what the coordinated items must do, then insert the choice and check the whole construction. Do not judge only by repeated first words.",
+      "teachingRevision": 3
     },
     {
       "heading": "Advanced transfer: compare logical roles, not repeated words",
       "body": [
         "A word may govern a whole coordinated series: to collect, label, and store. Repeating to before each verb is also grammatical. An omitted optional word is not automatically a failure of parallelism.",
-        "In complex pairs, bracket the entire structures following not only/but also or either/or. Each must perform the same grammatical job, and a comparison must compare corresponding things rather than an object with an unrelated activity."
+        "In complex pairs, bracket the entire structures following not only/but also or either/or. Each must perform the same grammatical job, and a comparison must compare corresponding things rather than an object with an unrelated activity.",
+        "How asks about degree; whether asks yes or no. Preserve the intended kind of criterion, not just a similar-looking clause."
       ],
       "examples": [
         {
@@ -108,10 +117,15 @@
           "text": "The protocol requires staff not only to record the temperature but also an explanation of any sudden change.",
           "label": "The second half is a noun phrase where the first half establishes the staff’s required action.",
           "good": false
+        },
+        {
+          "text": "The audit compared how quickly the teams arrived, how reliably their radios worked, and how accurately their logs recorded each response.",
+          "label": "Each clause asks how well a task was performed; a whether-clause would change the last criterion to yes/no.",
+          "good": true
         }
       ],
       "tip": "Read beyond the first word of each option; shared words are allowed, mismatched grammatical jobs are not.",
-      "teachingRevision": 2
+      "teachingRevision": 3
     }
   ],
   "check": [
