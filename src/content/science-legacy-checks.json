@@ -1,0 +1,579 @@
+[
+  {
+    "id": "check-science-data-1",
+    "topic": "science-data-reading",
+    "subject": "science",
+    "category": "Data interpretation",
+    "difficulty": "medium",
+    "stem": "How much did Filter R reduce the suspended-solids concentration?",
+    "questionText": "How much did Filter R reduce the suspended-solids concentration?",
+    "choices": ["12 mg/L", "40 mg/L", "28 mg/L", "20 mg/L"],
+    "answer": 2,
+    "explanation": "R started at 40 mg/L and ended at 12 mg/L. The reduction is 40−12 = 28 mg/L.",
+    "passage": {
+      "id": "science-drill-reservoir",
+      "title": "Filtering reservoir water",
+      "context": "Researchers passed separate 1 L samples of reservoir water through three filters. They measured suspended solids before and after filtration. Each sample was collected at the same depth; values are means of three trials. Lower solids after filtration mean clearer water.",
+      "table": {
+        "columns": [
+          "Filter",
+          "Before (mg/L)",
+          "After (mg/L)",
+          "Flow rate (mL/min)"
+        ],
+        "rows": [
+          ["P", 40, 8, 120],
+          ["Q", 40, 4, 70],
+          ["R", 40, 12, 180]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-data-2",
+    "topic": "science-data-reading",
+    "subject": "science",
+    "category": "Data interpretation",
+    "difficulty": "medium",
+    "stem": "Which lamp produced the taller mean seedling on Day 6, and by how much?",
+    "questionText": "Which lamp produced the taller mean seedling on Day 6, and by how much?",
+    "choices": ["A, by 4 cm", "A, by 1 cm", "B, by 1 cm", "B, by 4 cm"],
+    "answer": 1,
+    "explanation": "On Day 6, A is 11 cm and B is 10 cm. A is taller by 11−10 = 1 cm.",
+    "passage": {
+      "id": "science-drill-seed-light",
+      "title": "Seedling growth under two lamps",
+      "context": "Seedlings of one species were grown under Lamp A or Lamp B. Both groups started at 2 cm, received the same water, and were measured on the same days. The graph shows mean height, not growth rate.",
+      "graph": {
+        "title": "Seedling height over time",
+        "xLabel": "Day",
+        "yLabel": "Height (cm)",
+        "series": [
+          {
+            "label": "Lamp A",
+            "points": [
+              [0, 2],
+              [2, 4],
+              [4, 7],
+              [6, 11]
+            ]
+          },
+          {
+            "label": "Lamp B",
+            "points": [
+              [0, 2],
+              [2, 5],
+              [4, 8],
+              [6, 10]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-data-3",
+    "topic": "science-data-reading",
+    "subject": "science",
+    "category": "Data interpretation",
+    "difficulty": "hard",
+    "stem": "If Stream B’s concentration rose to 20 mg/L while both incoming water flows and A’s concentration stayed the same, what mixed concentration is predicted in C?",
+    "questionText": "If Stream B’s concentration rose to 20 mg/L while both incoming water flows and A’s concentration stayed the same, what mixed concentration is predicted in C?",
+    "choices": ["8 mg/L", "12 mg/L", "10 mg/L", "16 mg/L"],
+    "answer": 0,
+    "explanation": "The predicted mass flow is 30×4+10×20 = 320 mg/s. Divide by the unchanged total 40 L/s to get 8 mg/L; an unweighted average of 4 and 20 would incorrectly give 12.",
+    "passage": {
+      "id": "science-drill-confluence",
+      "title": "Two streams merge",
+      "context": "Stream A and Stream B join to form C. Samples were taken simultaneously during steady flow. Assume the pollutant is dissolved, conserved during mixing, and evenly mixed in C. Pollutant mass flow in g/s equals concentration in mg/L multiplied by water flow in L/s, divided by 1,000.",
+      "table": {
+        "columns": [
+          "Stream",
+          "Water flow (L/s)",
+          "Pollutant concentration (mg/L)"
+        ],
+        "rows": [
+          ["A", 30, 4],
+          ["B", 10, 12],
+          ["C", 40, 6]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-trends-1",
+    "topic": "science-trends-interpolation",
+    "subject": "science",
+    "category": "Data interpretation",
+    "difficulty": "medium",
+    "stem": "Using straight-line interpolation, what was Container B’s temperature at 7.5 min?",
+    "questionText": "Using straight-line interpolation, what was Container B’s temperature at 7.5 min?",
+    "choices": ["48°C", "35°C", "40°C", "58°C"],
+    "answer": 0,
+    "explanation": "7.5 min is halfway between 5 and 10 min. B has 56°C and 40°C at those times, giving a midpoint of 48°C.",
+    "passage": {
+      "id": "science-drill-cooling",
+      "title": "Cooling insulated containers",
+      "context": "Two containers held identical 200 mL water samples initially at 80°C in a 20°C room. Container A had a foam sleeve; Container B had none. No water was added or removed. Points are measured temperatures.",
+      "graph": {
+        "title": "Water temperature during cooling",
+        "xLabel": "Time (min)",
+        "yLabel": "Temperature (°C)",
+        "series": [
+          {
+            "label": "A: foam sleeve",
+            "points": [
+              [0, 80],
+              [5, 68],
+              [10, 58],
+              [15, 50],
+              [20, 44]
+            ]
+          },
+          {
+            "label": "B: no sleeve",
+            "points": [
+              [0, 80],
+              [5, 56],
+              [10, 40],
+              [15, 30],
+              [20, 25]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-trends-2",
+    "topic": "science-trends-interpolation",
+    "subject": "science",
+    "category": "Data interpretation",
+    "difficulty": "medium",
+    "stem": "Across which tested interval did the enzyme’s initial rate decrease?",
+    "questionText": "Across which tested interval did the enzyme’s initial rate decrease?",
+    "choices": ["20–30°C", "40–50°C", "30–40°C", "10–20°C"],
+    "answer": 1,
+    "explanation": "The rate drops from 12 to 6 µmol/min between 40 and 50°C. The other listed intervals all show increases.",
+    "passage": {
+      "id": "science-drill-enzyme-temp",
+      "title": "Temperature and reaction rate",
+      "context": "Equal quantities of an enzyme and substrate were mixed at each temperature, and the initial reaction rate was measured. Each trial used fresh enzyme. High temperature can alter an enzyme’s shape.",
+      "graph": {
+        "title": "Initial rate at different temperatures",
+        "xLabel": "Temperature (°C)",
+        "yLabel": "Initial rate (µmol/min)",
+        "series": [
+          {
+            "label": "Enzyme X",
+            "points": [
+              [10, 2],
+              [20, 5],
+              [30, 9],
+              [40, 12],
+              [50, 6],
+              [60, 1]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-trends-3",
+    "topic": "science-trends-interpolation",
+    "subject": "science",
+    "category": "Data interpretation",
+    "difficulty": "hard",
+    "stem": "Which statement correctly distinguishes absolute pressure from the pressure added by the water at 8 m?",
+    "questionText": "Which statement correctly distinguishes absolute pressure from the pressure added by the water at 8 m?",
+    "choices": [
+      "Absolute pressure is 180 kPa; water adds 80 kPa above the 100 kPa surface value.",
+      "Both are 100 kPa.",
+      "Absolute pressure is 80 kPa; water adds 180 kPa.",
+      "Both are 180 kPa."
+    ],
+    "answer": 0,
+    "explanation": "The graph gives 180 kPa absolute pressure at 8 m and 100 kPa at the surface. The added water contribution over that depth is 180−100 = 80 kPa.",
+    "passage": {
+      "id": "science-drill-pressure-depth",
+      "title": "Pressure beneath a water surface",
+      "context": "A pressure sensor was lowered into a lake. The graph shows absolute pressure, which includes atmospheric pressure at the surface. Over the tested depths, water density and atmospheric pressure were approximately constant.",
+      "graph": {
+        "title": "Pressure beneath a water surface",
+        "xLabel": "Depth (m)",
+        "yLabel": "Absolute pressure (kPa)",
+        "series": [
+          {
+            "label": "Measured pressure",
+            "points": [
+              [0, 100],
+              [2, 120],
+              [4, 140],
+              [6, 160],
+              [8, 180]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-design-1",
+    "topic": "science-experimental-design",
+    "subject": "science",
+    "category": "Scientific investigation",
+    "difficulty": "easy",
+    "stem": "What was the dependent variable in the nitrogen experiment?",
+    "questionText": "What was the dependent variable in the nitrogen experiment?",
+    "choices": [
+      "Final dry mass",
+      "Daily nitrogen dose",
+      "Number of light hours",
+      "Daily water volume"
+    ],
+    "answer": 0,
+    "explanation": "Final dry mass is the measured response: 1.2, 1.8, and 1.9 g. Nitrogen dose is the deliberately changed factor.",
+    "passage": {
+      "id": "science-drill-plants-design",
+      "title": "Nitrogen and plant growth",
+      "context": "Thirty same-age seedlings from one seed lot were randomly divided into three groups of 10. Every group received 100 mL of water per day, 8 h of light, identical pots, and the same soil mass. Nitrogen dose differed; mean dry mass was measured after 14 days.",
+      "table": {
+        "columns": [
+          "Group",
+          "Nitrogen per day (mg)",
+          "Mean final dry mass (g)"
+        ],
+        "rows": [
+          ["A", 0, 1.2],
+          ["B", 5, 1.8],
+          ["C", 10, 1.9]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-design-2",
+    "topic": "science-experimental-design",
+    "subject": "science",
+    "category": "Scientific investigation",
+    "difficulty": "medium",
+    "stem": "Which condition supplies a baseline for whether adding any catalyst speeds the reaction?",
+    "questionText": "Which condition supplies a baseline for whether adding any catalyst speeds the reaction?",
+    "choices": [
+      "No catalyst",
+      "Large piece only",
+      "Trial 3 of every condition only",
+      "Crushed pieces only"
+    ],
+    "answer": 0,
+    "explanation": "The no-catalyst times (120, 124, 122 s) show the reaction’s baseline completion time without added catalyst, for comparison with either catalyst treatment.",
+    "passage": {
+      "id": "science-drill-catalyst-design",
+      "title": "A reusable catalyst",
+      "context": "Researchers reacted the same masses of reactants at 25°C. A catalyst was either absent, present as one large piece, or present as crushed pieces with the same total mass. The endpoint was the same total volume of product gas. Each condition was repeated three times.",
+      "table": {
+        "columns": [
+          "Condition",
+          "Trial 1 time (s)",
+          "Trial 2 time (s)",
+          "Trial 3 time (s)"
+        ],
+        "rows": [
+          ["No catalyst", 120, 124, 122],
+          ["Large piece", 80, 82, 78],
+          ["Crushed pieces", 40, 42, 38]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-design-3",
+    "topic": "science-experimental-design",
+    "subject": "science",
+    "category": "Scientific investigation",
+    "difficulty": "hard",
+    "stem": "What is the difference between the mean before-to-after output change in cleaned panels and the corresponding change in uncleaned panels?",
+    "questionText": "What is the difference between the mean before-to-after output change in cleaned panels and the corresponding change in uncleaned panels?",
+    "choices": ["92 W", "11 W", "12 W", "13 W"],
+    "answer": 3,
+    "explanation": "Cleaned change is 92−80 = +12 W; uncleaned change is 80−81 = −1 W. The difference in changes is 12−(−1) = 13 W, accounting for the small baseline/time change.",
+    "passage": {
+      "id": "science-drill-panels",
+      "title": "Cleaning solar panels",
+      "context": "Eight same-model panels were assigned randomly to cleaning or no cleaning. Each panel’s output was measured before treatment and 1 h afterward under a steady artificial lamp. The table gives group means; all lamps, angles, and electrical loads were identical. Researchers wanted the effect of cleaning, not the effect of changing sunlight.",
+      "table": {
+        "columns": ["Group", "Panels", "Mean before (W)", "Mean after (W)"],
+        "rows": [
+          ["Cleaned", 4, 80, 92],
+          ["Not cleaned", 4, 81, 80]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-views-1",
+    "topic": "science-conflicting-viewpoints",
+    "subject": "science",
+    "category": "Evaluation of models",
+    "difficulty": "medium",
+    "stem": "Which source supplies most methane in Scientist B’s explanation?",
+    "questionText": "Which source supplies most methane in Scientist B’s explanation?",
+    "choices": [
+      "Methane transported inside seeds",
+      "Methane manufactured by the collection tube",
+      "Methane already dissolved in water",
+      "Methane newly generated by microbes"
+    ],
+    "answer": 2,
+    "explanation": "B proposes that warming releases methane already dissolved in the water. B does not require living microbes to generate most of the collected gas.",
+    "passage": {
+      "id": "science-drill-bubble-views",
+      "title": "Gas bubbles from pond sediment",
+      "context": "Methane bubbles emerge from pond sediment. Scientist A proposes that living microbes generate most of the methane from organic matter. Scientist B proposes that most methane was already dissolved in the water and escapes when the water warms; B does not require living microbes. Both allow methane to be present in the bubbles. Researchers warmed equal sediment-water samples to 28°C. A validated sterilization procedure killed microbes without changing initial dissolved methane, organic-matter content, or water chemistry. One sterilized sample was then given its original number of living microbes again. The table shows mean gas collection rates after 24 h.",
+      "table": {
+        "columns": ["Treatment", "Gas collected (mL/h)"],
+        "rows": [
+          ["Untreated", 6],
+          ["Microbes removed", 0.3],
+          ["Microbes removed, then restored", 5.7]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-views-2",
+    "topic": "science-conflicting-viewpoints",
+    "subject": "science",
+    "category": "Evaluation of models",
+    "difficulty": "hard",
+    "stem": "Which observation would most directly document Scientist W’s proposed route to the island?",
+    "questionText": "Which observation would most directly document Scientist W’s proposed route to the island?",
+    "choices": [
+      "Seawater kills most tested seeds.",
+      "Birds live on the island.",
+      "Seeds remain viable in dried mud for 20 min.",
+      "Viable Plant X seeds are captured in airborne traps offshore along the route to the island."
+    ],
+    "answer": 3,
+    "explanation": "W specifically proposes viable seeds moving through air. Capturing viable airborne seeds along the route directly documents that transport; mud viability instead bears on B.",
+    "passage": {
+      "id": "science-drill-dispersal-views",
+      "title": "Seeds appearing on an island",
+      "context": "Plant X appeared on an offshore island. Scientist W proposes that wind carried its seeds: viable seeds must travel through air. Scientist B proposes that birds carried seeds in mud on their feet: viable seeds must remain attached long enough. Laboratory simulations measured the fraction of seeds still viable after the indicated transport treatment. Both scientists agree that germination requires viable seeds.",
+      "table": {
+        "columns": ["Treatment", "Seeds tested", "Viable afterward"],
+        "rows": [
+          ["Airborne 20 min", 100, 90],
+          ["Attached to dried mud 20 min", 100, 85],
+          ["Immersed in seawater 20 min", 100, 10]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-views-3",
+    "topic": "science-conflicting-viewpoints",
+    "subject": "science",
+    "category": "Evaluation of models",
+    "difficulty": "hard",
+    "stem": "What does the comparison of solids-removed and both-removed samples test most directly?",
+    "questionText": "What does the comparison of solids-removed and both-removed samples test most directly?",
+    "choices": [
+      "The effect of increasing ash concentration",
+      "The original plume’s total mass",
+      "The effect of changing sample-cell width",
+      "The effect of removing droplets when solids are already absent"
+    ],
+    "answer": 3,
+    "explanation": "With solids absent in both, removing droplets raises transmission from 75% to 95%. That isolates the droplet effect in an ash-free sample, a 20-percentage-point increase.",
+    "passage": {
+      "id": "science-drill-plume-views",
+      "title": "Why a volcanic plume looks opaque",
+      "context": "Scientist A proposes plume opacity comes mainly from solid ash particles. Scientist W proposes it comes mainly from condensed water droplets. A predicts removing solids greatly increases light transmission; W predicts removing liquid droplets greatly increases it. A device separates solids from droplets using methods validated not to remove the other component. Equal samples of one plume were measured in equal-width cells.",
+      "table": {
+        "columns": ["Sample treatment", "Light transmitted (%)"],
+        "rows": [
+          ["Neither component removed", 15],
+          ["Solids removed", 75],
+          ["Droplets removed", 25],
+          ["Both removed", 95]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-model-1",
+    "topic": "science-models-evidence",
+    "subject": "science",
+    "category": "Evaluation of models",
+    "difficulty": "medium",
+    "stem": "What is Model D’s predicted count at 4 h?",
+    "questionText": "What is Model D’s predicted count at 4 h?",
+    "choices": ["400", "1500", "1600", "800"],
+    "answer": 2,
+    "explanation": "The 3 h model count is 800. Doubling once more predicts 1,600 at 4 h; the observed 1,500 is different.",
+    "passage": {
+      "id": "science-drill-microbe-model",
+      "title": "A microbe growth model",
+      "context": "A culture started with 100 cells. Model D predicts doubling every hour for the first 4 h if nutrients remain sufficient. Cells were counted using the same method each hour. The table reports the observed counts; no prediction beyond 4 h is specified.",
+      "table": {
+        "columns": ["Time (h)", "Observed cells"],
+        "rows": [
+          [0, 100],
+          [1, 200],
+          [2, 400],
+          [3, 800],
+          [4, 1500]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-model-2",
+    "topic": "science-models-evidence",
+    "subject": "science",
+    "category": "Evaluation of models",
+    "difficulty": "medium",
+    "stem": "From 1 to 2 mg/L dye, by how many light units did transmission decrease?",
+    "questionText": "From 1 to 2 mg/L dye, by how many light units did transmission decrease?",
+    "choices": ["12.5", "50", "75", "25"],
+    "answer": 3,
+    "explanation": "Transmission drops from 50 units at 1 mg/L to 25 at 2 mg/L. The absolute decrease is 25 units, while the relative decrease is one-half.",
+    "passage": {
+      "id": "science-drill-absorption-model",
+      "title": "Light passing through a dye",
+      "context": "A detector measured transmitted light through equal-width cells containing different dye concentrations. All cells received 100 arbitrary light units. Model H predicts that each additional 1 mg/L of dye halves the transmitted light. Detector settings were unchanged.",
+      "graph": {
+        "title": "Transmitted light versus dye concentration",
+        "xLabel": "Dye concentration (mg/L)",
+        "yLabel": "Transmitted light (arbitrary units)",
+        "series": [
+          {
+            "label": "Measured",
+            "points": [
+              [0, 100],
+              [1, 50],
+              [2, 25],
+              [3, 12.5]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-model-3",
+    "topic": "science-models-evidence",
+    "subject": "science",
+    "category": "Evaluation of models",
+    "difficulty": "hard",
+    "stem": "At a new length of 9 m, how far apart are the two models’ predicted periods?",
+    "questionText": "At a new length of 9 m, how far apart are the two models’ predicted periods?",
+    "choices": ["18 s", "3 s", "12 s", "6 s"],
+    "answer": 2,
+    "explanation": "S predicts 2√9 = 6 s. D predicts 2×9 = 18 s. The prediction gap is 18−6 = 12 s; this is beyond the measured 4 m maximum but valid as a stated-model prediction.",
+    "passage": {
+      "id": "science-drill-pendulum",
+      "title": "A pendulum timing model",
+      "context": "Small-angle swings of pendulums were timed over 10 complete cycles and divided by 10. The same bob and location were used. Model S predicts period T = 2√L seconds when length L is in meters. Model D instead predicts T = 2L seconds. Ignore air resistance over these tests.",
+      "table": {
+        "columns": ["Length L (m)", "Measured period T (s)"],
+        "rows": [
+          [0.25, 1],
+          [1, 2],
+          [2.25, 3],
+          [4, 4]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-foundation-1",
+    "topic": "science-scientific-foundations",
+    "subject": "science",
+    "category": "Scientific knowledge",
+    "difficulty": "medium",
+    "stem": "The pH 7 solution has how much hydrogen-ion concentration compared with the pH 6 solution?",
+    "questionText": "The pH 7 solution has how much hydrogen-ion concentration compared with the pH 6 solution?",
+    "choices": [
+      "Twice as much",
+      "One-tenth as much",
+      "One-half as much",
+      "Ten times as much"
+    ],
+    "answer": 1,
+    "explanation": "One pH unit higher means tenfold lower hydrogen-ion concentration. Thus pH 7 has one-tenth the concentration at pH 6.",
+    "passage": {
+      "id": "science-drill-ph",
+      "title": "Acidity and an enzyme",
+      "context": "An enzyme converts a colorless substrate to a colored product. Equal enzyme and substrate amounts were tested at 25°C in solutions of different pH. For this question, lower pH means greater hydrogen-ion concentration; a difference of 1 pH unit corresponds to a factor of 10.",
+      "table": {
+        "columns": ["pH", "Product after 1 min (µmol)"],
+        "rows": [
+          [3, 1],
+          [4, 3],
+          [5, 7],
+          [6, 10],
+          [7, 8],
+          [8, 4]
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-foundation-2",
+    "topic": "science-scientific-foundations",
+    "subject": "science",
+    "category": "Scientific knowledge",
+    "difficulty": "medium",
+    "stem": "What current does the measured relationship predict at 5 V?",
+    "questionText": "What current does the measured relationship predict at 5 V?",
+    "choices": ["0.10 A", "0.25 A", "1.00 A", "0.20 A"],
+    "answer": 1,
+    "explanation": "The resistor is 20 Ω, as shown by 4 V/0.2 A or 6 V/0.3 A. I = V/R = 5/20 = 0.25 A, between the 4 V and 6 V measurements.",
+    "passage": {
+      "id": "science-drill-circuit",
+      "title": "A fixed resistor",
+      "context": "A resistor was connected to adjustable voltage. Its temperature was kept constant. For a resistor obeying Ohm’s law, voltage V = current I × resistance R, with V in volts, I in amperes, and R in ohms.",
+      "graph": {
+        "title": "Current through a resistor",
+        "xLabel": "Voltage (V)",
+        "yLabel": "Current (A)",
+        "series": [
+          {
+            "label": "Measured current",
+            "points": [
+              [0, 0],
+              [2, 0.1],
+              [4, 0.2],
+              [6, 0.3],
+              [8, 0.4]
+            ]
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "check-science-foundation-3",
+    "topic": "science-scientific-foundations",
+    "subject": "science",
+    "category": "Scientific knowledge",
+    "difficulty": "hard",
+    "stem": "After the stated reaction, how many oxygen atoms remain in the vessel?",
+    "questionText": "After the stated reaction, how many oxygen atoms remain in the vessel?",
+    "choices": ["0", "6", "3", "12"],
+    "answer": 1,
+    "explanation": "Three initial O₂ molecules contain six oxygen atoms. All become part of six H₂O molecules, with one oxygen atom each. No atoms leave the sealed vessel, so the total remains six.",
+    "passage": {
+      "id": "science-drill-molecule-balance",
+      "title": "Combining two gases",
+      "context": "A sealed vessel contains hydrogen and oxygen gases. Molecules react according to 2 H₂ + O₂ → 2 H₂O. Each H₂ has two hydrogen atoms, each O₂ has two oxygen atoms, and each H₂O has two hydrogen and one oxygen atom. Assume complete reaction of the limiting reactant and no material loss. Counts in the table represent individual molecules in a simplified model.",
+      "table": {
+        "columns": ["Initial H₂ molecules", "Initial O₂ molecules"],
+        "rows": [[8, 3]]
+      }
+    }
+  }
+]

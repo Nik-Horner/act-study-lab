@@ -12,6 +12,7 @@ import {
 import { Button } from "@/components/ui/Button";
 
 export interface AccountFormInitial {
+  ownerId: string;
   display_name: string | null;
   current_score: number | null;
   target_score: number | null;
@@ -27,6 +28,7 @@ export function AccountForm({
   variant: "onboarding" | "settings";
 }) {
   const router = useRouter();
+  const [ownerId] = useState(initial.ownerId);
   const [displayName, setDisplayName] = useState(initial.display_name ?? "");
   const [scores, setScores] = useState(
     Object.fromEntries(
@@ -91,6 +93,7 @@ export function AccountForm({
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
+          ownerId,
           display_name: displayName.trim() || null,
           current_score:
             scores.english.trim() === "" ? null : Number(scores.english),

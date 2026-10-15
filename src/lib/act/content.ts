@@ -2,14 +2,18 @@ import readingTopics from "@/content/reading-topics.json";
 import lessonActivities from "@/content/lesson-activities.json";
 import readingLessons from "@/content/reading-lessons.json";
 import readingQuestions from "@/content/reading-questions.json";
+import readingPractice from "@/content/reading-practice.json";
 import readingExams from "@/content/reading-exams.json";
 import mathTopics from "@/content/math-topics.json";
 import scienceTopics from "@/content/science-topics.json";
 import mathLessons from "@/content/math-lessons.json";
 import mathExtraLessons from "@/content/math-extra-lessons.json";
 import scienceLessons from "@/content/science-lessons.json";
+import scienceTeaching from "@/content/science-teaching-passages.json";
+import scienceLegacyChecks from "@/content/science-legacy-checks.json";
 import mathQuestions from "@/content/math-questions.json";
 import mathExtraQuestions from "@/content/math-extra-questions.json";
+import mathMethodQuestions from "@/content/math-method-questions.json";
 import scienceQuestions from "@/content/science-questions.json";
 import mathExams from "@/content/math-exams.json";
 import scienceExams from "@/content/science-exams.json";
@@ -26,11 +30,28 @@ const lessons = [
 const questions = [
   ...mathQuestions,
   ...mathExtraQuestions,
+  ...mathMethodQuestions,
   ...scienceQuestions,
   ...readingQuestions,
+  ...readingPractice,
 ] as Question[];
 const exams = [...mathExams, ...scienceExams, ...readingExams] as Exam[];
 const reserved = new Set(exams.flatMap((e) => e.questionIds));
+const activeReading = new Set(readingPractice.map((q) => q.id));
+const legacyReading = readingQuestions.filter((q) => !reserved.has(q.id));
+const readingReplacements = new Map(
+  legacyReading.map((q) => {
+    const oldPool = legacyReading.filter((item) => item.topic === q.topic);
+    const newPool = readingPractice.filter((item) => item.topic === q.topic);
+    return [
+      q.id,
+      newPool[oldPool.findIndex((item) => item.id === q.id)] as Question,
+    ];
+  }),
+);
+export function getPracticeReplacement(id: string) {
+  return readingReplacements.get(id);
+}
 export const SUBJECT_LABELS: Record<Subject, string> = {
   math: "Math",
   science: "Science",
@@ -56,9 +77,10 @@ export function getLesson(slug: string) {
         >
       )[slug]?.[index],
       evidence: (section.evidenceIds ?? []).map((id) => {
-        const passage = questions.find(
-          (q) => !reserved.has(q.id) && q.passage?.id === id,
-        )?.passage;
+        const passage =
+          scienceTeaching.find((p) => p.id === id) ??
+          questions.find((q) => !reserved.has(q.id) && q.passage?.id === id)
+            ?.passage;
         if (!passage) throw new Error(`Missing lesson evidence: ${id}`);
         return passage;
       }),
@@ -66,17 +88,39 @@ export function getLesson(slug: string) {
   };
 }
 export function getAllQuestions() {
-  return [...questions, ...lessons.flatMap((l) => l.check)];
+  return [
+    ...questions.map((q) =>
+      q.subject === "reading" && !reserved.has(q.id) && !activeReading.has(q.id)
+        ? {
+            ...q,
+            assessment: false,
+            replacementId: getPracticeReplacement(q.id)?.id,
+          }
+        : q,
+    ),
+    ...lessons
+      .flatMap((l) => l.check)
+      .map((q) => ({ ...q, assessment: false })),
+    ...scienceLegacyChecks.map((q, index) => ({
+      ...q,
+      assessment: false,
+      replacementId: scienceLessons.flatMap((l) => l.check)[index]?.id,
+    })),
+  ] as Question[];
 }
 export function getQuestion(id: string) {
   return (
     questions.find((q) => q.id === id) ??
-    lessons.flatMap((l) => l.check).find((q) => q.id === id)
+    lessons.flatMap((l) => l.check).find((q) => q.id === id) ??
+    (scienceLegacyChecks.find((q) => q.id === id) as Question | undefined)
   );
 }
 export function getQuestions(slug?: string) {
   return questions.filter(
-    (q) => !reserved.has(q.id) && (!slug || q.topic === slug),
+    (q) =>
+      !reserved.has(q.id) &&
+      (q.subject !== "reading" || activeReading.has(q.id)) &&
+      (!slug || q.topic === slug),
   );
 }
 export function getExams(subject?: Subject) {

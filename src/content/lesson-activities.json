@@ -13,43 +13,27 @@
     },
     {
       "prompt": "A triangle has sides 4 and 9. Which third side is possible?",
-      "choices": [
-        "5",
-        "10",
-        "13"
-      ],
+      "choices": ["5", "10", "13"],
       "answer": 1,
       "explanation": "The third side must be strictly between 9 − 4 = 5 and 9 + 4 = 13. Equality makes a flat, degenerate triangle."
     },
     {
       "prompt": "The length scale factor between two similar solids is 3. The smaller volume is 10. Predict the larger volume before calculating.",
-      "choices": [
-        "30",
-        "90",
-        "270"
-      ],
+      "choices": ["30", "90", "270"],
       "answer": 2,
       "explanation": "Lengths scale by 3, areas by 3², and volumes by 3³. The larger volume is 10 × 27 = 270.",
       "diagram": "similar-solids"
     },
     {
       "prompt": "An inscribed angle intercepts an 80° arc. What is the angle?",
-      "choices": [
-        "40°",
-        "80°",
-        "160°"
-      ],
+      "choices": ["40°", "80°", "160°"],
       "answer": 0,
       "explanation": "An inscribed angle is half its intercepted arc. A central angle intercepting the same arc would be 80°.",
       "diagram": "inscribed-angle"
     },
     {
       "prompt": "A segment has endpoints (−2, 3) and (4, 11). Which calculation gives its length?",
-      "choices": [
-        "\\(\\sqrt{6^2+8^2}\\)",
-        "\\(\\sqrt{2^2+11^2}\\)",
-        "6 + 8"
-      ],
+      "choices": ["\\(\\sqrt{6^2+8^2}\\)", "\\(\\sqrt{2^2+11^2}\\)", "6 + 8"],
       "answer": 0,
       "explanation": "Subtract corresponding coordinates first: Δx = 6 and Δy = 8. Distance is the hypotenuse of that reference triangle, so the length is 10."
     },
@@ -101,11 +85,7 @@
     },
     {
       "prompt": "\\(\\cos\\theta=-\\frac35\\) and θ is in Quadrant III. Choose sin θ.",
-      "choices": [
-        "\\(\\frac45\\)",
-        "\\(-\\frac45\\)",
-        "\\(-\\frac34\\)"
-      ],
+      "choices": ["\\(\\frac45\\)", "\\(-\\frac45\\)", "\\(-\\frac34\\)"],
       "answer": 1,
       "explanation": "The missing magnitude is \\(\\sqrt{1-\\frac9{25}}=\\frac45\\). Quadrant III makes sine negative. The sign needs the quadrant, not just a square root."
     },
@@ -141,11 +121,7 @@
     },
     {
       "prompt": "You stand 20 m from a vertical tower. The angle of elevation is 35°, and your eye level is 1.6 m. Which setup gives the tower height?",
-      "choices": [
-        "20 tan(35°) + 1.6",
-        "20 sin(35°) + 1.6",
-        "20/tan(35°)"
-      ],
+      "choices": ["20 tan(35°) + 1.6", "20 sin(35°) + 1.6", "20/tan(35°)"],
       "answer": 0,
       "explanation": "The ground distance is adjacent and the rise above your eyes is opposite. Rise = 20 tan(35°); then add eye height. Check degree mode."
     }
@@ -153,61 +129,37 @@
   "math-algebra": [
     {
       "prompt": "4(x − 2) = 2x + 10. Before solving, what is the left side after distribution?",
-      "choices": [
-        "4x − 2",
-        "4x − 8",
-        "4x + 8"
-      ],
+      "choices": ["4x − 2", "4x − 8", "4x + 8"],
       "answer": 1,
       "explanation": "Multiply both terms inside the parentheses by 4. Then 4x − 8 = 2x + 10 gives x = 9; verify in the original equation."
     },
     {
       "prompt": "x² = 25. A calculator returns 5. Is that a complete solution set?",
-      "choices": [
-        "Yes",
-        "No: include −5",
-        "No: include 0"
-      ],
+      "choices": ["Yes", "No: include −5", "No: include 0"],
       "answer": 1,
       "explanation": "Both 5 and −5 square to 25. A single displayed root is not proof that all branches were found."
     },
     {
       "prompt": "(x − 2)(x + 3) > 0. Which intervals work?",
-      "choices": [
-        "−3 < x < 2",
-        "x < −3 or x > 2",
-        "x ≥ 2"
-      ],
+      "choices": ["−3 < x < 2", "x < −3 or x > 2", "x ≥ 2"],
       "answer": 1,
       "explanation": "The factors have the same sign outside the two roots. Strict inequality excludes the roots."
     },
     {
       "prompt": "Which is the useful first rewrite of x² − 49?",
-      "choices": [
-        "(x − 7)²",
-        "(x − 7)(x + 7)",
-        "x(x − 49)"
-      ],
+      "choices": ["(x − 7)²", "(x − 7)(x + 7)", "x(x − 49)"],
       "answer": 1,
       "explanation": "Recognize a difference of squares: a² − b² = (a − b)(a + b). Squaring x − 7 would introduce a −14x term."
     },
     {
       "prompt": "(x² − 1)/(x − 1) = 3 simplifies to x + 1 = 3. What restriction survives cancellation?",
-      "choices": [
-        "x ≠ 1",
-        "x ≠ −1",
-        "No restriction survives"
-      ],
+      "choices": ["x ≠ 1", "x ≠ −1", "No restriction survives"],
       "answer": 0,
       "explanation": "The original denominator cannot be zero. Cancellation does not put the excluded input back into the domain."
     },
     {
       "prompt": "For which value of a does ax + 6 = 3x + 6 have infinitely many solutions?",
-      "choices": [
-        "0",
-        "3",
-        "6"
-      ],
+      "choices": ["0", "3", "6"],
       "answer": 1,
       "explanation": "The coefficients and constants must match on both sides. With a = 3, the equation is an identity."
     },
@@ -225,41 +177,25 @@
   "math-functions": [
     {
       "prompt": "f(x) = x² and g(x) = x + 3. What is f(g(2))?",
-      "choices": [
-        "7",
-        "25",
-        "11"
-      ],
+      "choices": ["7", "25", "11"],
       "answer": 1,
       "explanation": "Work from the inside out: g(2) = 5, then f(5) = 25. Function composition is not multiplication."
     },
     {
       "prompt": "f(x) = √(x − 2)/(x − 5). Which domain restrictions must both hold?",
-      "choices": [
-        "x ≥ 2 and x ≠ 5",
-        "x > 5 only",
-        "x ≠ 2 and x ≥ 5"
-      ],
+      "choices": ["x ≥ 2 and x ≠ 5", "x > 5 only", "x ≠ 2 and x ≥ 5"],
       "answer": 0,
       "explanation": "The radicand must be nonnegative, and the denominator must be nonzero. Their intersection is x ≥ 2 except x = 5."
     },
     {
       "prompt": "How does y = f(x − 4) + 2 move the graph of f?",
-      "choices": [
-        "Left 4, up 2",
-        "Right 4, up 2",
-        "Right 2, down 4"
-      ],
+      "choices": ["Left 4, up 2", "Right 4, up 2", "Right 2, down 4"],
       "answer": 1,
       "explanation": "The inside change x − 4 shifts inputs right by 4. The outside +2 shifts outputs up by 2."
     },
     {
       "prompt": "f(x) = x² with domain x ≥ 0. Which inverse respects that branch?",
-      "choices": [
-        "f⁻¹(x) = √x",
-        "f⁻¹(x) = ±√x",
-        "f⁻¹(x) = −√x"
-      ],
+      "choices": ["f⁻¹(x) = √x", "f⁻¹(x) = ±√x", "f⁻¹(x) = −√x"],
       "answer": 0,
       "explanation": "The original outputs come from nonnegative inputs, so the inverse must return the nonnegative square root."
     },
@@ -297,21 +233,13 @@
   "math-statistics-probability": [
     {
       "prompt": "Ten students average 80; twenty students average 95. Which setup gives the combined mean?",
-      "choices": [
-        "(80 + 95)/2",
-        "(10×80 + 20×95)/30",
-        "(10 + 20)/(80 + 95)"
-      ],
+      "choices": ["(80 + 95)/2", "(10×80 + 20×95)/30", "(10 + 20)/(80 + 95)"],
       "answer": 1,
       "explanation": "Weight by group counts. The total is 800 + 1900 = 2700; divide by 30 to get 90."
     },
     {
       "prompt": "The sorted data are 2, 3, 4, 5, 100. Which measure changes least if 100 becomes 1000?",
-      "choices": [
-        "Mean",
-        "Median",
-        "Range"
-      ],
+      "choices": ["Mean", "Median", "Range"],
       "answer": 1,
       "explanation": "The middle observation remains 4. The mean and range change substantially with the outlier."
     },
@@ -327,21 +255,13 @@
     },
     {
       "prompt": "Among 12 red cards, 3 are marked. You know a selected card is red. What is the probability it is marked?",
-      "choices": [
-        "3 divided by all cards",
-        "3/12",
-        "12/3"
-      ],
+      "choices": ["3 divided by all cards", "3/12", "12/3"],
       "answer": 1,
       "explanation": "Conditioning changes the eligible sample space to the 12 red cards. Of those, 3 are marked, so probability = 1/4."
     },
     {
       "prompt": "A and B are independent with probabilities 0.3 and 0.4. What is P(A or B)?",
-      "choices": [
-        "0.7",
-        "0.12",
-        "0.58"
-      ],
+      "choices": ["0.7", "0.12", "0.58"],
       "answer": 2,
       "explanation": "Add the two probabilities and subtract their overlap: 0.3 + 0.4 − (0.3×0.4) = 0.58. Independent events can still overlap."
     },
@@ -369,51 +289,31 @@
   "math-number-quantity": [
     {
       "prompt": "What is √((-5)²)?",
-      "choices": [
-        "−5",
-        "5",
-        "±5"
-      ],
+      "choices": ["−5", "5", "±5"],
       "answer": 1,
       "explanation": "The square-root symbol gives the principal, nonnegative root. \\(\\sqrt{x^2}=|x|\\), so the answer is 5."
     },
     {
       "prompt": "Can a 2×3 matrix multiply a 3×4 matrix, and what size is the result?",
-      "choices": [
-        "Yes: 2×4",
-        "Yes: 3×3",
-        "No"
-      ],
+      "choices": ["Yes: 2×4", "Yes: 3×3", "No"],
       "answer": 0,
       "explanation": "The inner dimensions match. The outer dimensions determine the product size: 2×4."
     },
     {
       "prompt": "A geometric sequence begins 3, 6, 12. Which expression is its nth term?",
-      "choices": [
-        "3 + 2(n − 1)",
-        "3×2^(n − 1)",
-        "3×2^n"
-      ],
+      "choices": ["3 + 2(n − 1)", "3×2^(n − 1)", "3×2^n"],
       "answer": 1,
       "explanation": "The ratio is 2, and the first term has exponent zero. Check n = 1 before accepting a formula."
     },
     {
       "prompt": "√(x − 4) = x − 6. Before squaring, which restriction is strongest?",
-      "choices": [
-        "x ≥ 4",
-        "x ≥ 6",
-        "x ≠ 6"
-      ],
+      "choices": ["x ≥ 4", "x ≥ 6", "x ≠ 6"],
       "answer": 1,
       "explanation": "The square root is nonnegative, so x − 6 must also be nonnegative. This includes the radicand restriction."
     },
     {
       "prompt": "To simplify 1/(2 + i), what should multiply numerator and denominator?",
-      "choices": [
-        "2 + i",
-        "2 − i",
-        "i"
-      ],
+      "choices": ["2 + i", "2 − i", "i"],
       "answer": 1,
       "explanation": "Use the complex conjugate. (2 + i)(2 − i) = 4 − i² = 5, giving (2 − i)/5."
     },
@@ -429,11 +329,7 @@
     },
     {
       "prompt": "Which value equals i^2026?",
-      "choices": [
-        "1",
-        "−1",
-        "i"
-      ],
+      "choices": ["1", "−1", "i"],
       "answer": 1,
       "explanation": "Powers repeat every 4. Since 2026 leaves remainder 2 on division by 4, i^2026 = i² = −1."
     }
@@ -451,41 +347,25 @@
     },
     {
       "prompt": "A trip covers equal distances at 30 mph and 60 mph. Is its average speed 45 mph?",
-      "choices": [
-        "Yes",
-        "No: 40 mph",
-        "No: 50 mph"
-      ],
+      "choices": ["Yes", "No: 40 mph", "No: 50 mph"],
       "answer": 1,
       "explanation": "Average speed is total distance divided by total time. For 60 miles each way, 120 miles/3 hours = 40 mph."
     },
     {
       "prompt": "Combine 2 L of 10% solution with 3 L of 20% solution. Which concentration is correct?",
-      "choices": [
-        "15%",
-        "16%",
-        "30%"
-      ],
+      "choices": ["15%", "16%", "30%"],
       "answer": 1,
       "explanation": "Solute totals are 0.2 + 0.6 = 0.8 L. Divide by the total 5 L: 16%. Weight by volumes."
     },
     {
       "prompt": "After a 25% discount, a jacket costs $60. How do you recover the original price?",
-      "choices": [
-        "$60×1.25",
-        "$60/0.75",
-        "$60/1.25"
-      ],
+      "choices": ["$60×1.25", "$60/0.75", "$60/1.25"],
       "answer": 1,
       "explanation": "The sale price is 75% of the original. Divide 60 by 0.75 to get $80."
     },
     {
       "prompt": "1 foot = 12 inches. How many square inches are in 2 square feet?",
-      "choices": [
-        "24",
-        "144",
-        "288"
-      ],
+      "choices": ["24", "144", "288"],
       "answer": 2,
       "explanation": "Area requires squaring the linear conversion: 2 × 12² = 288 square inches."
     },
@@ -513,41 +393,25 @@
   "math-modeling": [
     {
       "prompt": "A ride costs $4 plus $2 per mile. Which expression is the total cost for m miles?",
-      "choices": [
-        "4m + 2",
-        "4 + 2m",
-        "6m"
-      ],
+      "choices": ["4m + 2", "4 + 2m", "6m"],
       "answer": 1,
       "explanation": "The $4 fee occurs once. The $2 charge repeats per mile, so cost = 4 + 2m."
     },
     {
       "prompt": "A value increases by 8% each year. Which model uses the correct repeated change?",
-      "choices": [
-        "P + 0.08t",
-        "P(1.08)^t",
-        "P(0.08)^t"
-      ],
+      "choices": ["P + 0.08t", "P(1.08)^t", "P(0.08)^t"],
       "answer": 1,
       "explanation": "Each year multiplies the previous value by 1.08. The base includes the original 100% plus the 8% increase."
     },
     {
       "prompt": "A job pays $15/hour and you need at least $100. Hours must be whole numbers. What is the least number of hours?",
-      "choices": [
-        "6",
-        "7",
-        "6.67"
-      ],
+      "choices": ["6", "7", "6.67"],
       "answer": 1,
       "explanation": "15h ≥ 100 gives h ≥ 6.67, but whole-number feasibility requires rounding up to 7."
     },
     {
       "prompt": "Shipping costs $5 for up to 2 kg, then $2 for each additional kilogram or part of one. What is the cost for 2.2 kg?",
-      "choices": [
-        "$5.40",
-        "$7",
-        "$9"
-      ],
+      "choices": ["$5.40", "$7", "$9"],
       "answer": 1,
       "explanation": "A partial additional kilogram counts as one full increment. The piecewise rule gives $5 + $2, not a continuous per-kilogram charge."
     },
@@ -563,11 +427,7 @@
     },
     {
       "prompt": "A line passes through (2, 7) and (5, 16). Which model fits?",
-      "choices": [
-        "y = 3x + 1",
-        "y = 3x + 7",
-        "y = 9x − 11"
-      ],
+      "choices": ["y = 3x + 1", "y = 3x + 7", "y = 9x − 11"],
       "answer": 0,
       "explanation": "Slope = (16 − 7)/(5 − 2) = 3. Substituting (2,7) gives intercept 1. Check the second point too."
     },
@@ -584,1378 +444,455 @@
   ],
   "science-data-reading": [
     {
-      "prompt": "You need the filter with the smallest remaining solids. Which column decides?",
+      "prompt": "A thermometer table lists elapsed time and temperature. Which column answers “how warm at 4 min”?",
       "choices": [
-        "Flow rate",
-        "Remaining solids",
-        "Filter name"
-      ],
-      "answer": 1,
-      "explanation": "Match the requested quantity to its column and unit before comparing numbers.",
-      "evidence": {
-        "id": "lesson-filter-measurements",
-        "title": "Filter measurements",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Filter",
-            "Flow (mL/min)",
-            "Remaining solids (mg/L)"
-          ],
-          "rows": [
-            [
-              "P",
-              120,
-              8
-            ],
-            [
-              "Q",
-              70,
-              5
-            ],
-            [
-              "R",
-              150,
-              18
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "A sample starts at 40 mg/L and finishes at 8 mg/L. What fraction was removed?",
-      "choices": [
-        "8/40 = 20%",
-        "32/40 = 80%",
-        "40/8 = 500%"
-      ],
-      "answer": 1,
-      "explanation": "The question asks for removal, not what remains. Removed = 40 − 8 = 32; divide by the starting amount.",
-      "evidence": {
-        "id": "lesson-before-and-after",
-        "title": "Before and after",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Stage",
-            "Solids (mg/L)"
-          ],
-          "rows": [
-            [
-              "Before",
-              40
-            ],
-            [
-              "After",
-              8
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "Which filter satisfies BOTH at least 100 mL/min flow and at most 10 mg/L remaining solids?",
-      "choices": [
-        "P",
-        "Q",
-        "R"
+        "Temperature (°C)",
+        "Elapsed time (min)",
+        "Trial number",
+        "Sample volume (mL)"
       ],
       "answer": 0,
-      "explanation": "P passes both checks. Q has cleaner output but is too slow; R is fast but leaves too much.",
-      "evidence": {
-        "id": "lesson-two-simultaneous-limits",
-        "title": "Two simultaneous limits",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Filter",
-            "Flow (mL/min)",
-            "Remaining solids (mg/L)"
-          ],
-          "rows": [
-            [
-              "P",
-              120,
-              8
-            ],
-            [
-              "Q",
-              70,
-              5
-            ],
-            [
-              "R",
-              150,
-              18
-            ]
-          ]
-        }
-      }
+      "explanation": "The question asks for temperature at a specified time. Time selects the row; temperature is the requested output.",
+      "evidenceText": "Trial 1: at 4 min the sample is 32°C and has volume 50 mL."
     },
     {
-      "prompt": "Which site has the highest insect density?",
+      "prompt": "A sample falls from 50 to 20 mg/L. What percentage of its initial concentration was removed?",
+      "choices": ["30%", "40%", "60%", "150%"],
+      "answer": 2,
+      "explanation": "Removal is 50−20 = 30 mg/L. Divide by the initial 50, not the remaining 20: 30/50 = 60%.",
+      "evidenceText": "Concentration: initial 50 mg/L; final 20 mg/L; volume unchanged."
+    },
+    {
+      "prompt": "Which water sample meets BOTH temperature below 25°C and oxygen at least 6 mg/L?",
+      "choices": ["Sample N", "Sample O", "All three", "Sample M"],
+      "answer": 3,
+      "explanation": "M has 24°C and 6 mg/L and passes both. N fails the strict temperature limit; O fails the oxygen minimum.",
+      "evidenceText": "M: 24°C, 6 mg/L. N: 25°C, 8 mg/L. O: 22°C, 5 mg/L."
+    },
+    {
+      "prompt": "Which pool has the greater insect density?",
       "choices": [
-        "N",
-        "O",
-        "P"
+        "Pool U",
+        "Pool V",
+        "Equal densities",
+        "Cannot compare different volumes"
       ],
       "answer": 0,
-      "explanation": "Normalize by area: N = 48/10 = 4.8, O = 60/20 = 3, P = 40/25 = 1.6 insects/m². Raw counts rank a different quantity.",
-      "evidence": {
-        "id": "lesson-meadow-counts",
-        "title": "Meadow counts",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Site",
-            "Insects",
-            "Area (m²)"
-          ],
-          "rows": [
-            [
-              "N",
-              48,
-              10
-            ],
-            [
-              "O",
-              60,
-              20
-            ],
-            [
-              "P",
-              40,
-              25
-            ]
-          ]
-        }
-      }
+      "explanation": "U has 24/3 = 8 insects/L; V has 30/6 = 5 insects/L. Dividing by volume makes the samples comparable.",
+      "evidenceText": "U: 24 insects in 3 L. V: 30 insects in 6 L."
     },
     {
-      "prompt": "Between 0 and 5 min, the temperature falls from 80°C to 60°C. Which statement describes a change rather than a point?",
+      "prompt": "A population rises from 120 at hour 2 to 180 at hour 5. What is its average increase per hour?",
       "choices": [
-        "At 5 min, it is 60°C",
-        "It falls 20°C over 5 min",
-        "At 0 min, it is 80°C"
+        "60 organisms/h",
+        "20 organisms/h",
+        "30 organisms/h",
+        "36 organisms/h"
       ],
       "answer": 1,
-      "explanation": "A change compares two measurements. A slope would divide this −20°C change by 5 min to get −4°C/min.",
-      "evidence": {
-        "id": "lesson-two-readings",
-        "title": "Two readings",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Time (min)",
-            "Temperature (°C)"
-          ],
-          "rows": [
-            [
-              0,
-              80
-            ],
-            [
-              5,
-              60
-            ]
-          ]
-        }
-      }
+      "explanation": "Use change divided by elapsed time: (180−120)/(5−2) = 60/3 = 20 organisms/h.",
+      "evidenceText": "Population: hour 2 = 120; hour 5 = 180."
     },
     {
-      "prompt": "Stream A supplies 30 L/s at 4 mg/L; B supplies 10 L/s at 12 mg/L. What is the mixed concentration?",
-      "choices": [
-        "8 mg/L",
-        "6 mg/L",
-        "16 mg/L"
-      ],
-      "answer": 1,
-      "explanation": "Use flow-weighted concentration: (30×4 + 10×12)/(30+10) = 240/40 = 6. Both products use mass per second.",
-      "evidence": {
-        "id": "lesson-streams-at-the-junction",
-        "title": "Streams at the junction",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Stream",
-            "Flow (L/s)",
-            "Concentration (mg/L)"
-          ],
-          "rows": [
-            [
-              "A",
-              30,
-              4
-            ],
-            [
-              "B",
-              10,
-              12
-            ]
-          ]
-        }
-      }
+      "prompt": "A supplies 12 L/s at 2 mg/L and B supplies 4 L/s at 10 mg/L. What concentration follows complete mixing?",
+      "choices": ["6 mg/L", "8 mg/L", "4 mg/L", "12 mg/L"],
+      "answer": 2,
+      "explanation": "Mass flow is 12×2+4×10 = 64 mg/s. Water flow is 16 L/s. The flow-weighted concentration is 64/16 = 4 mg/L.",
+      "evidenceText": "The solute is conserved and both streams are completely mixed."
     },
     {
-      "prompt": "You chose the highest flow rate when the question asked for lowest solids. What should the next check target?",
-      "choices": [
-        "Reread every paragraph",
-        "Match the asked quantity and unit to the exact column",
-        "Memorize the filter names"
-      ],
-      "answer": 1,
-      "explanation": "Diagnose the actual error: wrong quantity. A brief column-and-unit check fixes this more directly than rereading everything.",
-      "evidence": {
-        "id": "lesson-quantity-check",
-        "title": "Quantity check",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Question asks for",
-            "You compared"
-          ],
-          "rows": [
-            [
-              "Lowest remaining solids",
-              "Highest flow"
-            ]
-          ]
-        }
-      }
+      "prompt": "A diluted sample measures 8 mg/L after a fivefold dilution. What is its original concentration?",
+      "choices": ["1.6 mg/L", "13 mg/L", "8 mg/L", "40 mg/L"],
+      "answer": 3,
+      "explanation": "Undo dilution by multiplying: 8×5 = 40 mg/L. Dividing again would dilute the result a second time.",
+      "evidenceText": "The dilution factor is original volume of diluted mixture divided by the original sample volume."
     }
   ],
   "science-trends-interpolation": [
     {
-      "prompt": "The cooling measurements use equal time steps. During which interval is cooling fastest?",
+      "prompt": "Which interval has the greater average cooling rate in magnitude?",
       "choices": [
-        "0–5 min",
-        "5–10 min",
-        "10–15 min"
-      ],
-      "answer": 0,
-      "explanation": "Compare changes over equal intervals: drops are 24, 16, and 10°C. The largest drop is in the first interval.",
-      "evidence": {
-        "id": "lesson-cooling-series",
-        "title": "Cooling series",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Time (min)",
-            "Temperature (°C)"
-          ],
-          "rows": [
-            [
-              0,
-              80
-            ],
-            [
-              5,
-              56
-            ],
-            [
-              10,
-              40
-            ],
-            [
-              15,
-              30
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "Using straight-line interpolation, estimate the temperature at 12.5 min.",
-      "choices": [
-        "50°C",
-        "54°C",
-        "58°C"
+        "2–8 min",
+        "0–2 min",
+        "They are equal",
+        "The final temperature decides"
       ],
       "answer": 1,
-      "explanation": "12.5 min is halfway between 10 and 15 min. The halfway temperature between 58 and 50 is 54°C.",
-      "evidence": {
-        "id": "lesson-neighboring-measurements",
-        "title": "Neighboring measurements",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Time (min)",
-            "Temperature (°C)"
-          ],
-          "rows": [
-            [
-              10,
-              58
-            ],
-            [
-              15,
-              50
-            ]
-          ]
-        }
-      }
+      "explanation": "The first drop is 16°C/2 min = 8°C/min; the second is 18°C/6 min = 3°C/min. Unequal intervals require division.",
+      "evidenceText": "At 0, 2, and 8 min, a sample is 70, 54, and 36°C."
     },
     {
-      "prompt": "Which claim is supported across the full measured range?",
-      "choices": [
-        "Enzyme rate always increases with temperature",
-        "Rate peaks at 40°C among the tested temperatures",
-        "Rate is zero above 60°C"
-      ],
-      "answer": 1,
-      "explanation": "The data rise and then fall. The tested maximum is 40°C; no data establish every untested temperature.",
-      "evidence": {
-        "id": "lesson-enzyme-response",
-        "title": "Enzyme response",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Temperature (°C)",
-            "Rate (µmol/min)"
-          ],
-          "rows": [
-            [
-              10,
-              2
-            ],
-            [
-              40,
-              12
-            ],
-            [
-              60,
-              1
-            ]
-          ]
-        }
-      }
+      "prompt": "Using straight-line interpolation, estimate the temperature at 7 min.",
+      "choices": ["30°C", "35°C", "45°C", "40°C"],
+      "answer": 3,
+      "explanation": "Seven minutes is halfway from 5 to 9 min, so use the midpoint of 46 and 34: (46+34)/2 = 40°C.",
+      "evidenceText": "A different sample is 46°C at 5 min and 34°C at 9 min."
     },
     {
-      "prompt": "From depth 2 m to 6 m, temperature falls from 18°C to 10°C. What is the average slope?",
+      "prompt": "A response is 4, 11, and 8 at doses 1, 3, and 5. Which claim is supported?",
       "choices": [
-        "−2°C/m",
-        "−8°C/m",
-        "2 m/°C"
+        "Dose 3 has the largest measured response",
+        "Dose 3 is the exact universal optimum",
+        "Response always increases with dose",
+        "Every dose above 5 gives zero"
       ],
       "answer": 0,
-      "explanation": "Slope = Δtemperature/Δdepth = (10−18)/(6−2) = −8/4 = −2°C per meter. Preserve the sign and units.",
-      "evidence": {
-        "id": "lesson-lake-profile",
-        "title": "Lake profile",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Depth (m)",
-            "Temperature (°C)"
-          ],
-          "rows": [
-            [
-              2,
-              18
-            ],
-            [
-              6,
-              10
-            ]
-          ]
-        }
-      }
+      "explanation": "Only the measured maximum is established. Untested doses and different conditions could give a larger response.",
+      "evidenceText": "All three doses are measured in the same units under the same conditions."
     },
     {
-      "prompt": "A stated model says distance = 2√time. At 6.25 min, should you average the nearest measured distances or use the model?",
-      "choices": [
-        "Use the stated model: 5 mm",
-        "Always average neighboring values",
-        "Use 2×6.25"
-      ],
-      "answer": 0,
-      "explanation": "When the question specifies the model, apply that rule. 2√6.25 = 5. Straight-line interpolation is a different assumption.",
-      "evidence": {
-        "id": "lesson-model-input",
-        "title": "Model input",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Rule",
-            "Requested time (min)"
-          ],
-          "rows": [
-            [
-              "Distance = 2√time",
-              6.25
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "The signal rises 0, 20, 50, 80, 95, 100 at equal intervals. What pattern appears late?",
-      "choices": [
-        "Accelerating growth",
-        "A plateau is approached",
-        "The signal decreases"
-      ],
+      "prompt": "For T = 18−3d, what is the temperature change per meter?",
+      "choices": ["18°C/m", "−3°C/m", "3 m/°C", "−18°C/m"],
       "answer": 1,
-      "explanation": "The late increments shrink from 30 to 15 to 5. The signal still rises, but more slowly; do not confuse leveling off with decreasing.",
-      "evidence": {
-        "id": "lesson-signal-measurements",
-        "title": "Signal measurements",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Step",
-            "Signal"
-          ],
-          "rows": [
-            [
-              0,
-              0
-            ],
-            [
-              1,
-              20
-            ],
-            [
-              2,
-              50
-            ],
-            [
-              3,
-              80
-            ],
-            [
-              4,
-              95
-            ],
-            [
-              5,
-              100
-            ]
-          ]
-        }
-      }
+      "explanation": "The coefficient of d is the slope: each additional meter lowers temperature by 3°C. The 18°C intercept is the value at zero depth.",
+      "evidenceText": "Temperature T is in °C and depth d is in meters."
     },
     {
-      "prompt": "Measurements cover 10°C through 60°C. Which proposed value is an extrapolation?",
-      "choices": [
-        "25°C",
-        "50°C",
-        "75°C"
-      ],
+      "prompt": "For x² = 9t, what distance is predicted at 16 min?",
+      "choices": ["4 mm", "36 mm", "12 mm", "144 mm"],
       "answer": 2,
-      "explanation": "75°C lies outside the tested interval. Predicting there assumes the observed pattern continues; it is less secure than interpolation.",
-      "evidence": {
-        "id": "lesson-tested-range",
-        "title": "Tested range",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Minimum (°C)",
-            "Maximum (°C)"
-          ],
-          "rows": [
-            [
-              10,
-              60
-            ]
-          ]
-        }
-      }
+      "explanation": "Substitute t = 16: x² = 144. The nonnegative distance is √144 = 12 mm; 144 is squared distance.",
+      "evidenceText": "The supplied model uses x in mm and t in minutes."
+    },
+    {
+      "prompt": "Which series has a turning point rather than only slowing growth?",
+      "choices": ["2, 7, 10, 11", "2, 4, 6, 8", "8, 6, 4, 2", "2, 7, 10, 6"],
+      "answer": 3,
+      "explanation": "The selected series rises to 10 and then falls to 6, so its direction reverses. Smaller positive increases alone do not create a turning point.",
+      "evidenceText": "All series have equal input spacing."
+    },
+    {
+      "prompt": "A model validated from 2 to 12 mg/L is used at 18 mg/L. What extra assumption is required?",
+      "choices": [
+        "The modeled relationship continues beyond the tested range",
+        "The estimate is an interpolation",
+        "The new value must equal the maximum observed output",
+        "No assumption is needed"
+      ],
+      "answer": 0,
+      "explanation": "Eighteen is outside 2–12, so this is extrapolation. The prediction depends on the relationship remaining valid there.",
+      "evidenceText": "Only the input concentration is changed; the model was tested from 2 to 12 mg/L."
     }
   ],
   "science-experimental-design": [
     {
-      "prompt": "Which variable is manipulated, and which is measured?",
+      "prompt": "To test the active drug dissolved in oil, what should the comparison group receive?",
       "choices": [
-        "Manipulated: nitrogen dose; measured: dry mass",
-        "Manipulated: dry mass; measured: dose",
-        "Both are controlled variables"
+        "No oil and no drug",
+        "Twice the oil without drug",
+        "The same oil without the drug",
+        "A different drug in water"
       ],
-      "answer": 0,
-      "explanation": "Treatment levels are the independent variable. The observed response is the dependent variable.",
-      "evidence": {
-        "id": "lesson-seedling-experiment",
-        "title": "Seedling experiment",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Dose (mg/day)",
-            "Dry mass (g)"
-          ],
-          "rows": [
-            [
-              0,
-              1.2
-            ],
-            [
-              5,
-              1.8
-            ],
-            [
-              10,
-              1.9
-            ]
-          ]
-        }
-      }
+      "answer": 2,
+      "explanation": "An oil-only control holds the carrier constant. Comparing against no oil changes both drug presence and carrier presence.",
+      "evidenceText": "The outcome is measured after equal times, with otherwise matched groups."
     },
     {
-      "prompt": "Flask L uses shaded water at 15°C; M uses center water at 25°C. M grows faster. Can temperature alone explain the difference?",
+      "prompt": "Heated pots receive more water than cool pots. Which change most directly isolates heating?",
       "choices": [
-        "Yes",
-        "No: water source also changed",
-        "No: growth can never be measured"
+        "Use the same water amount in both groups",
+        "Measure the pots more often",
+        "Add more heated pots only",
+        "Use a taller thermometer"
+      ],
+      "answer": 0,
+      "explanation": "Hold water constant while varying heating. Repetition and a different tool do not separate two factors that change together.",
+      "evidenceText": "All other conditions are already held constant."
+    },
+    {
+      "prompt": "To test whether stirring changes dissolving time, which pair is best?",
+      "choices": [
+        "Stirred hot water versus unstirred cold water",
+        "Equal masses and water temperatures; stirred versus unstirred",
+        "Stirred water with twice the solid",
+        "Two stirred cups at different temperatures"
       ],
       "answer": 1,
-      "explanation": "Two variables changed together. Use the same water source at both temperatures to isolate temperature.",
-      "evidence": {
-        "id": "lesson-two-factors-changed",
-        "title": "Two factors changed",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Flask",
-            "Water source",
-            "Temperature (°C)"
-          ],
-          "rows": [
-            [
-              "L",
-              "Shaded edge",
-              15
-            ],
-            [
-              "M",
-              "Center",
-              25
-            ]
-          ]
-        }
-      }
+      "explanation": "The clean comparison changes stirring while holding mass and temperature fixed. The other pairs mix causes or never vary stirring.",
+      "evidenceText": "Dissolving time is measured with the same endpoint in every cup."
     },
     {
-      "prompt": "To test whether catalyst surface area changes reaction time, which comparison is cleanest?",
+      "prompt": "Three independently treated trays each contain 12 seedlings. How many experimental units received treatment independently?",
+      "choices": ["12", "36", "3", "15"],
+      "answer": 2,
+      "explanation": "Treatment was assigned to trays, so the independent units are the three trays. More seedlings improve sampling within a tray but do not create more treatment assignments.",
+      "evidenceText": "One treatment is applied to an entire tray; individual seedlings are not assigned separate treatments."
+    },
+    {
+      "prompt": "The same animals always receive A before B. Which design change best tests for a simple order effect?",
       "choices": [
-        "Same mass, large versus crushed pieces",
-        "Different mass and different piece size",
-        "Same piece size at two temperatures"
+        "Give every animal A twice before B",
+        "Rename the treatment labels after scoring",
+        "Record more frames in the same fixed order",
+        "Assign some animals B before A"
+      ],
+      "answer": 3,
+      "explanation": "Balancing treatment order lets the study compare A→B with B→A. It tests an order effect, although persistent carryover may still need fresh groups.",
+      "evidenceText": "Both sequences use the same treatment durations and measurement method."
+    },
+    {
+      "prompt": "At 10°C a treatment adds 2 units; at 30°C it adds 8. Which conclusion is supported?",
+      "choices": [
+        "Its measured effect depends on temperature",
+        "Temperature has no role",
+        "The treatment adds 8 units at every temperature",
+        "The groups need no controls"
       ],
       "answer": 0,
-      "explanation": "Change surface area while holding catalyst mass and other settings constant. The other choices test different or mixed factors.",
-      "evidence": {
-        "id": "lesson-isolate-one-variable",
-        "title": "Isolate one variable",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Hold fixed",
-            "Change",
-            "Measure"
-          ],
-          "rows": [
-            [
-              "Catalyst mass",
-              "Piece size",
-              "Reaction time"
-            ]
-          ]
-        }
-      }
+      "explanation": "Compare treatment-minus-control effects at each temperature. A difference of 2 versus 8 shows context dependence; it does not establish an untested mechanism.",
+      "evidenceText": "Both effects are measured over the same duration against matched untreated groups."
     },
     {
-      "prompt": "Two panels each receive a treatment. Each is measured ten times. How many independently treated experimental units are there?",
+      "prompt": "A ruler marked only every 1 cm is used to compare lengths expected to differ by 0.2 cm. What is the most direct improvement?",
       "choices": [
-        "2",
-        "10",
-        "20"
-      ],
-      "answer": 0,
-      "explanation": "The panel receives the treatment, so it is the unit. Repeated readings improve measurement but do not create 20 independent panels.",
-      "evidence": {
-        "id": "lesson-units-versus-readings",
-        "title": "Units versus readings",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Treated panels",
-            "Readings per panel"
-          ],
-          "rows": [
-            [
-              2,
-              10
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "An observer knows which plants were treated and rates their health. Which change directly reduces observer bias?",
-      "choices": [
-        "Measure only the tallest plants",
-        "Hide treatment labels from the observer",
-        "Use fewer plants"
+        "Read the same coarse mark more times",
+        "Use a ruler with finer graduations",
+        "Increase every recorded value by 1 cm",
+        "Use fewer samples"
       ],
       "answer": 1,
-      "explanation": "Blinding keeps expected treatment effects from influencing subjective ratings. Random assignment addresses a different source of bias.",
-      "evidence": {
-        "id": "lesson-observation-setup",
-        "title": "Observation setup",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Observer knows",
-            "Observer measures"
-          ],
-          "rows": [
-            [
-              "Treatment labels",
-              "Plant health rating"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "Which pair isolates temperature at 20 mL water?",
-      "choices": [
-        "15°C/20 mL versus 30°C/20 mL",
-        "15°C/20 mL versus 30°C/50 mL",
-        "15°C/20 mL versus 15°C/50 mL"
-      ],
-      "answer": 0,
-      "explanation": "Hold water fixed while changing temperature. The second pair changes both factors; the third isolates water.",
-      "evidence": {
-        "id": "lesson-two-factor-design",
-        "title": "Two-factor design",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Temperature (°C)",
-            "Water (mL)"
-          ],
-          "rows": [
-            [
-              15,
-              20
-            ],
-            [
-              15,
-              50
-            ],
-            [
-              30,
-              20
-            ],
-            [
-              30,
-              50
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "A trial defines a stop as no wing movement for at least 0.5 s. What is this definition doing?",
-      "choices": [
-        "Specifying exactly how the response is measured",
-        "Proving the insect is permanently unable to fly",
-        "Defining the treatment dose"
-      ],
-      "answer": 0,
-      "explanation": "An operational definition makes observations repeatable. It does not establish a broader biological conclusion.",
-      "evidence": {
-        "id": "lesson-operational-definition",
-        "title": "Operational definition",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Response",
-            "Criterion"
-          ],
-          "rows": [
-            [
-              "Stop",
-              "No wing movement for at least 0.5 s"
-            ]
-          ]
-        }
-      }
+      "explanation": "The instrument must resolve a 0.2 cm difference. Repeating a coarse reading does not create finer measurement resolution.",
+      "evidenceText": "The study otherwise uses independent replicates and consistent measurement endpoints."
     }
   ],
   "science-conflicting-viewpoints": [
     {
-      "prompt": "A says microbes create new methane. B says warming releases dissolved methane. Which note best separates the claims?",
+      "prompt": "F proposes trapped air; G proposes newly formed oxygen. Which observation alone is shared and therefore weak for separating them?",
       "choices": [
-        "Both mention gas",
-        "A: new gas production; B: release of existing gas",
-        "A is right because it sounds biological"
+        "Gas is mostly oxygen absent initially",
+        "Bubbling persists after dissolved air is removed",
+        "Bubbling requires a light-driven reaction",
+        "Bubbles are visible"
+      ],
+      "answer": 3,
+      "explanation": "Both mechanisms can produce visible bubbles. Their chemical source, not the presence of bubbles, is the disagreement.",
+      "evidenceText": "Both accounts explicitly predict visible bubbles, but propose different gas sources."
+    },
+    {
+      "prompt": "An inhibitor lowers light output, but also blocks oxygen supply. Why is a chemical-only conclusion uncertain?",
+      "choices": [
+        "The inhibitor must have no effect",
+        "Oxygen supply changed along with the chemical process",
+        "The original hypothesis is automatically proved",
+        "The response cannot be measured numerically"
       ],
       "answer": 1,
-      "explanation": "Map cause → prediction for each account. Shared subject matter does not distinguish their mechanisms.",
-      "evidence": {
-        "id": "lesson-competing-explanations",
-        "title": "Competing explanations",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Account",
-            "Cause",
-            "Predicted mechanism"
-          ],
-          "rows": [
-            [
-              "A",
-              "Microbes",
-              "New methane produced"
-            ],
-            [
-              "B",
-              "Warming",
-              "Dissolved methane released"
-            ]
-          ]
-        }
-      }
+      "explanation": "The manipulation affects a competing cause as well as the proposed cause. A control that preserves oxygen delivery is needed to isolate the chemical effect.",
+      "evidenceText": "One hypothesis requires the inhibited chemical; the competing hypothesis requires oxygen delivery."
     },
     {
-      "prompt": "Temperature and dissolved methane are held constant. What do the observations favor?",
+      "prompt": "Rock fragments survive both river transport and glacier transport. What follows about a particular deposit?",
       "choices": [
-        "Microbes matter to gas production",
-        "Warming alone explains the change",
-        "Microbes prevent gas production"
+        "The river route is established",
+        "The glacier route is established",
+        "Both routes remain possible",
+        "Neither route can occur"
+      ],
+      "answer": 2,
+      "explanation": "Survival demonstrates that either process could deliver fragments. Evidence about the particular deposit is still required to choose its actual history.",
+      "evidenceText": "No transport traces or historical observations are supplied."
+    },
+    {
+      "prompt": "To test a humidity-driven explanation against a light-driven one, which comparison isolates humidity?",
+      "choices": [
+        "Different light and humidity",
+        "Same humidity, different light",
+        "Same light and humidity",
+        "Same light, different humidity"
+      ],
+      "answer": 3,
+      "explanation": "Hold light fixed and change humidity so that a response difference targets humidity. Changing both factors mixes the predictions.",
+      "evidenceText": "Other relevant conditions and measurement time remain constant."
+    },
+    {
+      "prompt": "Both models predict 6 at setting A but predict 9 and 15 at B. Which setting is more informative?",
+      "choices": [
+        "B",
+        "A",
+        "Either is equally separating",
+        "Neither can test a model"
       ],
       "answer": 0,
-      "explanation": "Removing and restoring microbes changes the rate while the competing factors stay fixed. That favors a microbial role without proving every detail.",
-      "evidence": {
-        "id": "lesson-microbe-manipulation",
-        "title": "Microbe manipulation",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Condition",
-            "Gas (mL/h)"
-          ],
-          "rows": [
-            [
-              "Present",
-              6
-            ],
-            [
-              "Removed",
-              0.3
-            ],
-            [
-              "Restored",
-              5.7
-            ]
-          ]
-        }
-      }
+      "explanation": "At B the predictions differ. At A a matching result supports both equally; more precision there does not create a prediction difference.",
+      "evidenceText": "The two settings are equally measurable and within both models’ stated ranges."
     },
     {
-      "prompt": "Seeds remain viable after travel in air and in dried mud. What conclusion follows?",
+      "prompt": "A model predicts a 0.4-unit signal; the detector only detects signals ≥1 unit. The signal is not detected. What follows?",
       "choices": [
-        "Both transport routes are possible",
-        "Air was the actual historical route",
-        "Mud was the actual historical route"
-      ],
-      "answer": 0,
-      "explanation": "Survival shows feasibility. It does not identify which route happened historically.",
-      "evidence": {
-        "id": "lesson-viability-after-transport",
-        "title": "Viability after transport",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Route",
-            "Viable seeds / 100"
-          ],
-          "rows": [
-            [
-              "Air",
-              90
-            ],
-            [
-              "Dried mud",
-              85
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "P predicts temperature-driven darkening; C predicts background-driven darkening. Which comparison isolates the background prediction?",
-      "choices": [
-        "Same temperature, different backgrounds",
-        "Different temperature and different backgrounds",
-        "Same background, different temperatures"
-      ],
-      "answer": 0,
-      "explanation": "Change only background to test its predicted effect. Separate the manipulated factor from competing explanations.",
-      "evidence": {
-        "id": "lesson-competing-predictions",
-        "title": "Competing predictions",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Account",
-            "Darkening follows"
-          ],
-          "rows": [
-            [
-              "P",
-              "Temperature"
-            ],
-            [
-              "C",
-              "Background"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "Magnetic cues point north and star cues point east. Which outcome favors the star-cue explanation?",
-      "choices": [
-        "Birds orient east",
-        "Birds orient north",
-        "Birds scatter randomly"
-      ],
-      "answer": 0,
-      "explanation": "Competing cues create different predictions. If both cues pointed north, a northward result would not distinguish the accounts.",
-      "evidence": {
-        "id": "lesson-cues-disagree",
-        "title": "Cues disagree",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Cue",
-            "Direction"
-          ],
-          "rows": [
-            [
-              "Magnetic",
-              "North"
-            ],
-            [
-              "Stars",
-              "East"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "A model requires temperature above −20°C. Reliable events occur at −28°C. What is the strongest warranted conclusion?",
-      "choices": [
-        "The stated threshold is challenged",
-        "Every alternative model is proven",
-        "The measurements must be ignored"
-      ],
-      "answer": 0,
-      "explanation": "An event outside a required condition contradicts that requirement, assuming the measurements and model conditions apply. It does not prove an alternative.",
-      "evidence": {
-        "id": "lesson-required-condition",
-        "title": "Required condition",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Model requirement",
-            "Observed temperature"
-          ],
-          "rows": [
-            [
-              "Above −20°C",
-              "−28°C"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "For a viewpoints question, what should you read for first?",
-      "choices": [
-        "Every unfamiliar scientific term",
-        "The shared phenomenon, then each proposed cause and prediction",
-        "The longest answer choice"
+        "The model is definitely false",
+        "The nondetection cannot resolve the prediction",
+        "The signal must be zero",
+        "The detector proves the alternative model"
       ],
       "answer": 1,
-      "explanation": "Read the competing accounts deliberately. A cause-and-prediction map lets you locate agreement, disagreement, and distinguishing tests.",
-      "evidence": {
-        "id": "lesson-viewpoint-map",
-        "title": "Viewpoint map",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Shared question",
-            "Account A",
-            "Account B"
-          ],
-          "rows": [
-            [
-              "What causes the phenomenon?",
-              "Cause → prediction",
-              "Cause → prediction"
-            ]
-          ]
-        }
-      }
+      "explanation": "The expected 0.4 is below the detection limit. Absence of a detectable signal does not distinguish zero from a subthreshold nonzero signal.",
+      "evidenceText": "The detector’s 1-unit threshold is reliable."
+    },
+    {
+      "prompt": "A model requires both dry soil and warmth. Germination occurs in warm wet soil. Which requirement is contradicted?",
+      "choices": [
+        "Warmth is necessary",
+        "Seeds exist",
+        "Dry soil is necessary",
+        "Every role for water is excluded"
+      ],
+      "answer": 2,
+      "explanation": "Warm wet soil violates the required dryness while preserving warmth. The observation targets the dryness requirement, not every other statement in the model.",
+      "evidenceText": "The germination observation and soil moisture measurement are reliable."
     }
   ],
   "science-models-evidence": [
     {
-      "prompt": "Model L says extension x = 2F. What does it predict at F = 3.5 N?",
-      "choices": [
-        "5.5 cm",
-        "7 cm",
-        "1.75 cm"
-      ],
-      "answer": 1,
-      "explanation": "Substitute the requested input into the stated rule: 2×3.5 = 7. Match model output units.",
-      "evidence": {
-        "id": "lesson-spring-model",
-        "title": "Spring model",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Rule",
-            "Force (N)"
-          ],
-          "rows": [
-            [
-              "x = 2F",
-              3.5
-            ]
-          ]
-        }
-      }
+      "prompt": "Model R predicts y = 4x+2. What is its prediction at x = 3?",
+      "choices": ["14", "12", "18", "9"],
+      "answer": 0,
+      "explanation": "Substitute into the complete expression: 4×3+2 = 14. Omitting the intercept gives 12, which is a different model.",
+      "evidenceText": "x and y are dimensionless measured quantities."
     },
     {
-      "prompt": "A culture doubles hourly from 100 cells. What does the model predict after 4 h?",
-      "choices": [
-        "500",
-        "800",
-        "1600"
-      ],
+      "prompt": "A substance retains one third each hour. Starting at 81 mg, how much remains after 3 h?",
+      "choices": ["27 mg", "9 mg", "3 mg", "78 mg"],
       "answer": 2,
-      "explanation": "Four doublings give 100×2⁴ = 1600. Do not replace multiplicative growth with adding 100 each hour.",
-      "evidence": {
-        "id": "lesson-doubling-model",
-        "title": "Doubling model",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Time (h)",
-            "Predicted cells"
-          ],
-          "rows": [
-            [
-              0,
-              100
-            ],
-            [
-              1,
-              200
-            ],
-            [
-              2,
-              400
-            ],
-            [
-              3,
-              800
-            ],
-            [
-              4,
-              "?"
-            ]
-          ]
-        }
-      }
+      "explanation": "Apply the factor three times: 81→27→9→3 mg. Subtracting 3 mg per hour would model a different process.",
+      "evidenceText": "The same one-hour retention factor applies in each interval."
     },
     {
-      "prompt": "A spring model applies only from 0 to 5 N. Which observation directly challenges it within that domain?",
+      "prompt": "A model applies at 10–30°C. Which observation tests its claim most directly?",
       "choices": [
-        "A mismatch at 3 N",
-        "Deformation at 8 N",
-        "A measurement at 0 N that matches"
+        "A mismatch at 50°C",
+        "An unmeasured prediction at 0°C",
+        "A result from a different material outside its scope",
+        "A reproducible mismatch at 22°C"
       ],
-      "answer": 0,
-      "explanation": "Test the model where it claims to apply. Behavior at 8 N may reveal a domain limit rather than contradict the stated rule.",
-      "evidence": {
-        "id": "lesson-model-boundary",
-        "title": "Model boundary",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Applies from",
-            "Applies through"
-          ],
-          "rows": [
-            [
-              "0 N",
-              "5 N"
-            ]
-          ]
-        }
-      }
+      "answer": 3,
+      "explanation": "Twenty-two degrees lies within the stated domain and holds the modeled material fixed. The other choices test an unsupported extension.",
+      "evidenceText": "All other model conditions are met for the 22°C trial."
     },
     {
-      "prompt": "The model is v = kr²/η. With r fixed, viscosity η quadruples. What happens to speed?",
+      "prompt": "For R = kL/A, length doubles and area quadruples. What happens to resistance R?",
       "choices": [
+        "It halves",
+        "It doubles",
         "It quadruples",
-        "It is divided by 4",
-        "It is divided by 16"
-      ],
-      "answer": 1,
-      "explanation": "Viscosity is in the denominator. Keep the unchanged factors fixed and apply the multiplicative change to that factor.",
-      "evidence": {
-        "id": "lesson-change-one-factor",
-        "title": "Change one factor",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Rule",
-            "Radius",
-            "Viscosity"
-          ],
-          "rows": [
-            [
-              "v = kr²/η",
-              "Fixed",
-              "×4"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "A detector records 420, then 220 counts/min. Background is 20 counts/min. What happens to the corrected signal?",
-      "choices": [
-        "It falls from 400 to 200: halves",
-        "It falls from 420 to 220: exactly halves",
-        "It falls from 440 to 240"
+        "It stays unchanged"
       ],
       "answer": 0,
-      "explanation": "Subtract the background before comparing the signal. Raw totals obscure the clean halving pattern.",
-      "evidence": {
-        "id": "lesson-background-correction",
-        "title": "Background correction",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Reading",
-            "Total (counts/min)",
-            "Background"
-          ],
-          "rows": [
-            [
-              "Earlier",
-              420,
-              20
-            ],
-            [
-              "Later",
-              220,
-              20
-            ]
-          ]
-        }
-      }
+      "explanation": "The length change gives ×2 and the area change gives ÷4. Together, 2/4 = 1/2, with k held constant.",
+      "evidenceText": "The same material and temperature keep k constant."
     },
     {
-      "prompt": "For q = 4C/(1+C), what does q approach as C becomes very large?",
+      "prompt": "Raw readings are 255 then 130 with constant background 5. What happens to the corrected signal?",
       "choices": [
-        "0",
-        "4",
-        "Infinity"
+        "It halves from 255 to 127.5",
+        "It halves from 250 to 125",
+        "It falls by 5",
+        "It doubles"
       ],
       "answer": 1,
-      "explanation": "Divide numerator and denominator by C: q = 4/(1+1/C). As 1/C tends to 0, q approaches 4 from below.",
-      "evidence": {
-        "id": "lesson-saturation-model",
-        "title": "Saturation model",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Concentration C",
-            "Predicted q"
-          ],
-          "rows": [
-            [
-              1,
-              2
-            ],
-            [
-              3,
-              3
-            ],
-            [
-              7,
-              3.5
-            ],
-            [
-              15,
-              3.75
-            ]
-          ]
-        }
-      }
+      "explanation": "Subtract the same background from each: 255−5 = 250; 130−5 = 125. The corrected signal halves even though raw totals do not exactly halve.",
+      "evidenceText": "The detector background remains 5 counts/min throughout."
     },
     {
-      "prompt": "Models A and B both predict 10 at input 1 but predict 20 and 30 at input 2. Which next test separates them better?",
+      "prompt": "For q = 8C/(3+C), what value is approached as positive C becomes very large?",
+      "choices": ["3", "11", "8", "No finite limit"],
+      "answer": 2,
+      "explanation": "Divide by C: q = 8/(3/C+1). The 3/C term approaches zero, so q approaches 8 from below.",
+      "evidenceText": "C is positive; the model is assumed applicable at large C for this question."
+    },
+    {
+      "prompt": "Model A fits Experiment 1 but contradicts reliable Experiment 2 under its own stated conditions. What is justified?",
       "choices": [
-        "Input 1 again",
-        "Input 2",
-        "Either: they are equally informative"
+        "Experiment 1 proves it universally",
+        "Experiment 2 must be discarded",
+        "Any competing model is automatically true",
+        "The model needs revision despite its first success"
       ],
-      "answer": 1,
-      "explanation": "Test where predictions disagree. Repeating input 1 can improve precision but does little to distinguish these models.",
-      "evidence": {
-        "id": "lesson-find-a-separating-test",
-        "title": "Find a separating test",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Input",
-            "Model A",
-            "Model B"
-          ],
-          "rows": [
-            [
-              1,
-              10,
-              10
-            ],
-            [
-              2,
-              20,
-              30
-            ]
-          ]
-        }
-      }
+      "answer": 3,
+      "explanation": "A valid model must address all relevant reliable evidence within its scope. Success on one dataset cannot erase an in-scope contradiction on another.",
+      "evidenceText": "Both experiments satisfy the model’s stated conditions and use adequate measurements."
     }
   ],
   "science-scientific-foundations": [
     {
-      "prompt": "A solution moves from pH 6 to pH 4. What happens to hydrogen-ion concentration?",
+      "prompt": "A solution changes from pH 5 to pH 6. What happens to hydrogen-ion concentration?",
       "choices": [
-        "It doubles",
-        "It increases 100-fold",
-        "It decreases 100-fold"
+        "It increases tenfold",
+        "It decreases tenfold",
+        "It decreases by one concentration unit",
+        "It doubles"
       ],
       "answer": 1,
-      "explanation": "Each one-unit drop in pH corresponds to ten times more hydrogen ions. Two units give 10² = 100 times.",
-      "evidence": {
-        "id": "lesson-two-acidity-readings",
-        "title": "Two acidity readings",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Before pH",
-            "After pH"
-          ],
-          "rows": [
-            [
-              6,
-              4
-            ]
-          ]
-        }
-      }
+      "explanation": "A one-unit rise in pH means one tenth the hydrogen-ion concentration. The logarithmic direction reverses the change in acidity.",
+      "evidenceText": "Assume the usual aqueous pH interpretation at the same temperature."
     },
     {
-      "prompt": "Gas forms inside a sealed vessel and pressure rises. What happens to total mass if nothing enters or leaves?",
+      "prompt": "An atom loses one electron without a nuclear change. What changes?",
       "choices": [
-        "It increases",
-        "It decreases",
-        "It stays the same"
+        "Its proton number",
+        "Its element becomes the next element",
+        "Its neutron number must decrease",
+        "Its charge, while its element stays the same"
+      ],
+      "answer": 3,
+      "explanation": "Electron loss makes the atom more positive. Element identity depends on proton number, which has not changed.",
+      "evidenceText": "The nucleus remains unchanged during this process."
+    },
+    {
+      "prompt": "A sample has mass 54 g and volume 9 cm³. What is its density?",
+      "choices": ["6 g/cm³", "486 g/cm³", "1/6 g/cm³", "45 g/cm³"],
+      "answer": 0,
+      "explanation": "Density is mass divided by volume: 54/9 = 6 g/cm³. The unit order confirms which value belongs in the numerator.",
+      "evidenceText": "The measured volume includes the entire sample."
+    },
+    {
+      "prompt": "Leaves use 4 units of oxygen per hour and show a net gain of 9 in light. With unchanged respiration, what is gross production?",
+      "choices": ["5", "13", "9", "36"],
+      "answer": 1,
+      "explanation": "Net production equals gross minus consumption. Add back the 4 consumed: gross = 9+4 = 13 units per hour.",
+      "evidenceText": "The comparison assumes equal time, sample amount, and respiration rate."
+    },
+    {
+      "prompt": "Equal heat is supplied to 100 g and 200 g of the same liquid, with no phase change or losses. Which warms more?",
+      "choices": [
+        "The 200 g sample, by twice as much",
+        "They warm equally",
+        "The 100 g sample, by twice as much",
+        "Neither can change temperature"
       ],
       "answer": 2,
-      "explanation": "Matter is conserved in the closed system. Gas formation changes state and pressure, not total mass.",
-      "evidence": {
-        "id": "lesson-closed-vessel",
-        "title": "Closed vessel",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Mass initially",
-            "Matter enters or leaves?",
-            "Observation"
-          ],
-          "rows": [
-            [
-              "250 g",
-              "No",
-              "Gas forms; pressure rises"
-            ]
-          ]
-        }
-      }
+      "explanation": "With Q and c fixed, ΔT = Q/(mc). Halving mass doubles the temperature rise under the stated assumptions.",
+      "evidenceText": "Both liquids begin at the same temperature and remain in the same phase."
     },
     {
-      "prompt": "A fixed resistor follows V = IR. At the same voltage, doubling resistance does what to current?",
+      "prompt": "If both strains double equally from counts 30 and 70, what happens to the first strain’s fraction?",
       "choices": [
-        "Doubles it",
-        "Halves it",
-        "Leaves it unchanged"
+        "It doubles to 60%",
+        "It falls to 15%",
+        "It becomes 50%",
+        "It stays 30%"
+      ],
+      "answer": 3,
+      "explanation": "Counts become 60 and 140. The fraction remains 60/200 = 30%; equal multiplication preserves proportions.",
+      "evidenceText": "No migration, mutation, or differential survival occurs in this interval."
+    },
+    {
+      "prompt": "A wave has frequency 5 Hz and wavelength 6 m. What is its speed?",
+      "choices": ["30 m/s", "1.2 m/s", "11 m/s", "5/6 m/s"],
+      "answer": 0,
+      "explanation": "Multiply frequency by wavelength: 5 cycles/s × 6 m/cycle = 30 m/s. The cycle unit cancels.",
+      "evidenceText": "The supplied relation is v = fλ."
+    },
+    {
+      "prompt": "Which process transports already loosened rock fragments downstream?",
+      "choices": [
+        "Condensation",
+        "Erosion",
+        "Earth’s rotation",
+        "Weathering alone"
       ],
       "answer": 1,
-      "explanation": "Rewrite I = V/R. With voltage fixed, current is inversely proportional to resistance.",
-      "evidence": {
-        "id": "lesson-ohm’s-law",
-        "title": "Ohm’s law",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Voltage",
-            "Resistance",
-            "Current rule"
-          ],
-          "rows": [
-            [
-              "Fixed",
-              "×2",
-              "I = V/R"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "Leaves consume 2 units of oxygen per hour in darkness and show a net gain of 5 in light. If respiration is unchanged, what is gross photosynthesis?",
-      "choices": [
-        "3",
-        "5",
-        "7"
-      ],
-      "answer": 2,
-      "explanation": "Net change = production − consumption. Add back the 2 consumed: gross production = 5 + 2 = 7.",
-      "evidence": {
-        "id": "lesson-net-oxygen",
-        "title": "Net oxygen",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Condition",
-            "Oxygen change per hour"
-          ],
-          "rows": [
-            [
-              "Dark",
-              -2
-            ],
-            [
-              "Light",
-              5
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "Heating continues while temperature stays at 0°C during melting. Where does the energy go?",
-      "choices": [
-        "Into the phase change",
-        "Nowhere: the heater stopped",
-        "Into increasing temperature"
-      ],
-      "answer": 0,
-      "explanation": "Energy changes solid to liquid during the plateau. Constant temperature does not mean no energy is entering.",
-      "evidence": {
-        "id": "lesson-heating-plateau",
-        "title": "Heating plateau",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Heater",
-            "Temperature",
-            "State"
-          ],
-          "rows": [
-            [
-              "On",
-              "0°C",
-              "Solid becoming liquid"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "A is dominant for purple flowers. In Aa × Aa, which fraction is predicted to be white (aa)?",
-      "choices": [
-        "1/4",
-        "1/2",
-        "3/4"
-      ],
-      "answer": 0,
-      "explanation": "The four equally likely allele combinations are AA, Aa, aA, aa. Only aa lacks a dominant A allele.",
-      "evidence": {
-        "id": "lesson-allele-combinations",
-        "title": "Allele combinations",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Parent 1 allele",
-            "Parent 2 allele",
-            "Offspring"
-          ],
-          "rows": [
-            [
-              "A",
-              "A",
-              "AA"
-            ],
-            [
-              "A",
-              "a",
-              "Aa"
-            ],
-            [
-              "a",
-              "A",
-              "aA"
-            ],
-            [
-              "a",
-              "a",
-              "aa"
-            ]
-          ]
-        }
-      }
-    },
-    {
-      "prompt": "A supplied relation says v = fλ. Wave speed is fixed and frequency doubles. What must happen to wavelength?",
-      "choices": [
-        "It doubles",
-        "It halves",
-        "It stays fixed"
-      ],
-      "answer": 1,
-      "explanation": "At fixed v, the product fλ stays constant. Doubling f requires halving λ; avoid importing assumptions about loudness or duration.",
-      "evidence": {
-        "id": "lesson-wave-relation",
-        "title": "Wave relation",
-        "context": "Use the displayed measurements.",
-        "table": {
-          "columns": [
-            "Rule",
-            "Speed",
-            "Frequency"
-          ],
-          "rows": [
-            [
-              "v = fλ",
-              "Fixed",
-              "×2"
-            ]
-          ]
-        }
-      }
+      "explanation": "Erosion moves sediment. Weathering creates smaller fragments in place; condensation changes water vapor to liquid.",
+      "evidenceText": "A flowing stream carries fragments from one location to another."
     }
   ],
   "reading-main-idea": [
@@ -2256,11 +1193,7 @@
     },
     {
       "prompt": "What does spare mean?",
-      "choices": [
-        "Minimal",
-        "Extra",
-        "Broken"
-      ],
+      "choices": ["Minimal", "Extra", "Broken"],
       "answer": 0,
       "explanation": "The contrast with ornate and the concrete example of two lines define the word’s local sense.",
       "evidenceText": "Unlike the ornate first design, the revision was spare, using only two lines."
@@ -2278,11 +1211,7 @@
     },
     {
       "prompt": "Replace guarded.",
-      "choices": [
-        "Cautious",
-        "Protected by a fence",
-        "Angry"
-      ],
+      "choices": ["Cautious", "Protected by a fence", "Angry"],
       "answer": 0,
       "explanation": "A cautious conclusion preserves the report’s limited certainty. The other senses break the paragraph’s claim.",
       "evidenceText": "The report’s guarded conclusion acknowledged both the improvement and the remaining uncertainty."
@@ -2346,11 +1275,7 @@
     },
     {
       "prompt": "Which tone fits?",
-      "choices": [
-        "Furious",
-        "Cautiously favorable",
-        "Completely indifferent"
-      ],
+      "choices": ["Furious", "Cautiously favorable", "Completely indifferent"],
       "answer": 1,
       "explanation": "The language combines approval with a qualification. Match the intensity and direction to both parts of the sentence.",
       "evidenceText": "The proposal offers useful relief, though its long-term costs remain uncertain."

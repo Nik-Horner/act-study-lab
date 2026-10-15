@@ -83,6 +83,7 @@ async function main() {
     const r = await call(
       "/api/profile",
       {
+        ownerId: owner.id,
         display_name: "Isolated ACT integration QA",
         current_score: 32,
         target_score: 36,
@@ -207,10 +208,14 @@ async function main() {
   assert(repeated.data);
   assert.equal(firstCheck.data.checked_at, repeated.data.checked_at);
   const eq = englishQuestions("commas")[0];
+  const englishAnswerId = randomUUID();
+  ids.push(englishAnswerId);
   const eng = await call("/api/drill/answer", {
+    ownerId: a.id,
+    answerId: englishAnswerId,
     topicSlug: "commas",
     questionId: eq.id,
-    correct: false,
+    chosen: (eq.answer + 1) % 4,
   });
   assert.equal(eng.response.status, 200);
   const english = await call("/api/exam/submit", {

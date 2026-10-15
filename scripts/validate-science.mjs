@@ -13,15 +13,20 @@ const read = (name) =>
 const topics = read("science-topics");
 const lessons = read("science-lessons");
 const questions = read("science-questions");
+const legacyChecks = read("science-legacy-checks");
 const exams = read("science-exams");
 const checks = lessons.flatMap((l) => l.check);
-const all = [...questions, ...checks];
+const all = [...questions, ...checks, ...legacyChecks];
 const byId = new Map(all.map((q) => [q.id, q]));
 assert.equal(topics.length, 6);
 assert.equal(lessons.length, 6);
-assert.equal(questions.length, 272);
+assert.equal(questions.length, 283);
 assert.equal(checks.length, 18);
-assert.equal(byId.size, 290, "All question and check IDs must be unique.");
+assert.equal(
+  byId.size,
+  319,
+  "Active and historical question IDs must be unique.",
+);
 const allowed = new Set(topics.map((t) => t.slug));
 const passages = new Map();
 for (const q of all) {
@@ -73,7 +78,12 @@ for (const t of topics) {
     questions.filter(
       (q) => q.topic === t.slug && !q.id.startsWith("science-exam"),
     ).length,
-    32,
+    {
+      "science-data-reading": 33,
+      "science-experimental-design": 35,
+      "science-models-evidence": 34,
+      "science-scientific-foundations": 37,
+    }[t.slug] ?? 32,
     t.slug,
   );
   const l = lessons.find((l) => l.slug === t.slug);
@@ -123,7 +133,7 @@ for (const [i, exam] of exams.entries()) {
 assert.equal(new Set(exams.flatMap((e) => e.questionIds)).size, 80);
 assert.equal(
   new Set(questions.map((q) => q.stem)).size,
-  272,
+  283,
   "Full-exam stems must not duplicate drill stems.",
 );
 const drillPassageIds = new Set(
@@ -136,7 +146,7 @@ const examPassageIds = new Set(
     .filter((q) => q.id.startsWith("science-exam"))
     .map((q) => q.passage.id),
 );
-assert.equal(drillPassageIds.size, 48);
+assert.equal(drillPassageIds.size, 58);
 assert.equal(examPassageIds.size, 14);
 for (const id of examPassageIds)
   assert(!drillPassageIds.has(id), `Exam passage reused in drills: ${id}`);
@@ -445,5 +455,5 @@ for (const l of lessons)
     `Worked examples: ${l.slug}`,
   );
 console.log(
-  "Science validation passed: 6 topics; 192 drills across 48 passages; 2 independent 40-question/40-minute sections across 14 new passages; 6 lessons with teaching methods, 7 sections, 6 worked examples, and 3 checks each. All 290 IDs, shared evidence, option keys, balanced exam answers, table/graph consistency, and quantitative deductions passed.",
+  "Science validation passed: 6 topics; 203 drills across 58 passages; 2 independent 40-question/40-minute sections; 43 teaching concepts and 18 independent checks; 18 historical checks retained. All 319 IDs, shared evidence, option keys, balanced exam answers, table/graph consistency, and quantitative deductions passed.",
 );

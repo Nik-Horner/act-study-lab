@@ -1,0 +1,568 @@
+[
+  {
+    "id": "science-teaching-data-reading-1",
+    "title": "Locate the quantity and unit",
+    "context": "Three air filters were tested under the same inlet dust concentration. The table separates outlet dust from airflow.",
+    "table": {
+      "columns": ["Vent", "Outlet dust (mg/m³)", "Airflow (m³/min)"],
+      "rows": [
+        ["X", 6, 80],
+        ["Y", 3, 45],
+        ["Z", 9, 120]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-data-reading-2",
+    "title": "Distinguish totals, changes, and fractions",
+    "context": "A treatment starts with 60 mg/L solute and finishes with 15 mg/L; water volume is unchanged.",
+    "table": {
+      "columns": ["Stage", "Solute (mg/L)"],
+      "rows": [
+        ["Initial", 60],
+        ["Final", 15]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-data-reading-3",
+    "title": "Check simultaneous constraints",
+    "context": "Use the same three air filters; the specification requires both sufficient airflow and sufficiently low outlet dust.",
+    "table": {
+      "columns": ["Vent", "Outlet dust (mg/m³)", "Airflow (m³/min)"],
+      "rows": [
+        ["X", 6, 80],
+        ["Y", 3, 45],
+        ["Z", 9, 120]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-data-reading-4",
+    "title": "Normalize unequal sample sizes",
+    "context": "Two differently sized quadrats were surveyed using the same counting method.",
+    "table": {
+      "columns": ["Quadrat", "Plant count", "Area (m²)"],
+      "rows": [
+        ["A", 36, 6],
+        ["B", 45, 15]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-data-reading-5",
+    "title": "Read points, changes, and slopes",
+    "context": "Two seedling groups are measured on the same days. These are heights, not growth rates.",
+    "table": {
+      "columns": ["Day", "Group U height (cm)", "Group V height (cm)"],
+      "rows": [
+        [0, 2, 2],
+        [2, 5, 7],
+        [5, 14, 12]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-data-reading-6",
+    "title": "Combine data with matched units and weights",
+    "context": "Two steady streams combine without pollutant gain or loss and mix uniformly.",
+    "table": {
+      "columns": ["Stream", "Flow (L/s)", "Concentration (mg/L)"],
+      "rows": [
+        ["A", 20, 3],
+        ["B", 5, 13]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-data-reading-7",
+    "title": "Link calibrations, dilution, and a new condition",
+    "context": "A sensor reports a linear signal of 3 units per mg/L for the diluted sample. Dilution factor = 4; original-stream water flow = 2 L/s.",
+    "table": {
+      "columns": ["Quantity", "Value"],
+      "rows": [
+        ["Diluted signal (units)", 18],
+        ["Signal per mg/L", 3],
+        ["Dilution factor", 4],
+        ["Flow (L/s)", 2]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-trends-interpolation-1",
+    "title": "Compare rates over the actual intervals",
+    "context": "A sealed vial cools in a room maintained below all listed vial temperatures.",
+    "table": {
+      "columns": ["Time (min)", "Temperature (°C)"],
+      "rows": [
+        [0, 72],
+        [3, 54],
+        [9, 42]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-trends-interpolation-2",
+    "title": "Interpolate with the nearest bounding values",
+    "context": "Assume the temperature varies linearly between the two measured points for this estimate.",
+    "table": {
+      "columns": ["Time (min)", "Temperature (°C)"],
+      "rows": [
+        [4, 44],
+        [10, 26]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-trends-interpolation-3",
+    "title": "Limit peaks and trends to tested conditions",
+    "context": "An enzyme is measured under identical conditions except for temperature.",
+    "table": {
+      "columns": ["Temperature (°C)", "Activity (units)"],
+      "rows": [
+        [15, 3],
+        [30, 9],
+        [45, 5]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-trends-interpolation-4",
+    "title": "Keep slope, intercept, and units separate",
+    "context": "A pressure model applies over the listed depth range.",
+    "table": {
+      "columns": ["Depth (m)", "Absolute pressure (kPa)"],
+      "rows": [
+        [0, 90],
+        [2, 114],
+        [4, 138]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-trends-interpolation-5",
+    "title": "Use nonlinear models when requested",
+    "context": "The model x = 3√t describes a spreading front during the tested interval.",
+    "table": {
+      "columns": ["Time (min)", "Distance (mm)"],
+      "rows": [
+        [1, 3],
+        [4, 6],
+        [9, 9]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-trends-interpolation-6",
+    "title": "Read turning points and limits separately",
+    "context": "Measurements were taken at equal exposure intervals below the detector limit of 100 units.",
+    "table": {
+      "columns": ["Exposure step", "Signal"],
+      "rows": [
+        [0, 0],
+        [1, 24],
+        [2, 40],
+        [3, 48],
+        [4, 51]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-trends-interpolation-7",
+    "title": "Carry new information through the whole model",
+    "context": "Daily growth is additive; a temporary treatment changes only Day 3.",
+    "table": {
+      "columns": [
+        "Day",
+        "Untreated increase (units)",
+        "Treated increase (units)"
+      ],
+      "rows": [
+        [1, 8, 8],
+        [2, 8, 8],
+        [3, 8, 4]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-experimental-design-1",
+    "title": "Name variables and controls precisely",
+    "context": "Separate matched plants receive one fertilizer dose each; all plants are measured on Day 12.",
+    "table": {
+      "columns": ["Dose (mg/day)", "Mean leaf area (cm²)"],
+      "rows": [
+        [0, 18],
+        [4, 25],
+        [8, 27]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-experimental-design-2",
+    "title": "Detect confounds and isolate the treatment",
+    "context": "The comparison is intended to test temperature, but the initial water source differs.",
+    "table": {
+      "columns": ["Flask", "Water source", "Temperature (°C)"],
+      "rows": [
+        ["A", "River", 18],
+        ["B", "Pond", 28]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-experimental-design-3",
+    "title": "Match the comparison to the hypothesis",
+    "context": "Time is recorded until 30 mL of gas has formed under identical reaction conditions.",
+    "table": {
+      "columns": ["Catalyst form", "Catalyst mass (g)", "Mean time (s)"],
+      "rows": [
+        ["Intact", 2, 96],
+        ["Powdered", 2, 48]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-experimental-design-4",
+    "title": "Count independent experimental units",
+    "context": "Salinity is assigned to whole tanks; fish within each tank share the same water.",
+    "table": {
+      "columns": ["Quantity", "Count"],
+      "rows": [
+        ["Independently treated tanks", 5],
+        ["Fish measured per tank", 6]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-experimental-design-5",
+    "title": "Separate randomization, blinding, and carryover",
+    "context": "A behavior trial assigns insects to one tone exposure and records each response.",
+    "table": {
+      "columns": ["Safeguard", "Direct purpose"],
+      "rows": [
+        ["Random assignment", "Balance starting differences on average"],
+        ["Blinded scoring", "Reduce expectation bias"],
+        ["Fresh insects", "Avoid prior-tone carryover"]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-experimental-design-6",
+    "title": "Use a two-factor comparison and test interactions",
+    "context": "A factorial study uses separate matched organisms at each combination of light and feeding.",
+    "table": {
+      "columns": ["Light", "Unfed growth (mm)", "Fed growth (mm)"],
+      "rows": [
+        ["Low", 2, 5],
+        ["High", 4, 11]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-experimental-design-7",
+    "title": "Check measurement definitions, precision, and accuracy",
+    "context": "A reference bath has accepted temperature 50.0°C; the same thermometer takes three readings.",
+    "table": {
+      "columns": ["Reading", "Temperature (°C)"],
+      "rows": [
+        [1, 52.1],
+        [2, 52.0],
+        [3, 52.1]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-conflicting-viewpoints-1",
+    "title": "Map each proposed cause to its prediction",
+    "context": "Two researchers explain the same pale appearance; the filter removes clay particles but does not remove dissolved salt.",
+    "table": {
+      "columns": [
+        "Viewpoint",
+        "Proposed cause",
+        "Prediction after filtering solids"
+      ],
+      "rows": [
+        ["D", "Suspended clay", "Water becomes clearer"],
+        ["E", "Dissolved salt alone", "Appearance stays similar"]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-conflicting-viewpoints-2",
+    "title": "Control the competing explanation",
+    "context": "Cloudiness is measured under matched lighting and constant salt concentration.",
+    "table": {
+      "columns": ["Condition", "Cloudiness (units)"],
+      "rows": [
+        ["Untreated", 90],
+        ["Clay removed", 15],
+        ["Clay restored", 86]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-conflicting-viewpoints-3",
+    "title": "Distinguish feasibility, necessity, and history",
+    "context": "The study tests survival during transport, not which route happened during the original colonization.",
+    "table": {
+      "columns": ["Route", "Spores tested", "Viable afterward"],
+      "rows": [
+        ["Wind", 80, 72],
+        ["Animal", 80, 68]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-conflicting-viewpoints-4",
+    "title": "Use the same condition for competing predictions",
+    "context": "Both viewpoints predict a higher color score under their proposed driving condition.",
+    "table": {
+      "columns": [
+        "Temperature (°C)",
+        "Low-salt color score",
+        "High-salt color score"
+      ],
+      "rows": [
+        [20, 4, 4],
+        [35, 9, 9]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-conflicting-viewpoints-5",
+    "title": "Choose tests where predictions diverge",
+    "context": "Organisms are tested in a chamber in which the two proposed cues can be positioned independently.",
+    "table": {
+      "columns": [
+        "Account",
+        "Driving cue",
+        "Prediction in separated-cue trial"
+      ],
+      "rows": [
+        ["H", "Heat", "West"],
+        ["J", "Moisture", "East"]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-conflicting-viewpoints-6",
+    "title": "Test required conditions and detection limits",
+    "context": "All relevant conditions other than salt meet the model’s stated conditions.",
+    "table": {
+      "columns": ["Trial", "Salt (mg/L)", "Event occurred"],
+      "rows": [
+        [1, 5, "Yes"],
+        [2, 5, "Yes"],
+        [3, 15, "Yes"]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-conflicting-viewpoints-7",
+    "title": "Test a complex claim one requirement at a time",
+    "context": "Matched growth trials independently vary light and iron.",
+    "table": {
+      "columns": ["Condition", "Iron present", "Growth"],
+      "rows": [
+        ["Light", "Yes", "Yes"],
+        ["Dark", "Yes", "Yes"],
+        ["Dark", "No", "No"]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-models-evidence-1",
+    "title": "Compute predictions from the exact rule",
+    "context": "The models describe extension x in cm for force F in N, within 0–4 N.",
+    "table": {
+      "columns": ["Force (N)", "L prediction (cm)", "M prediction (cm)"],
+      "rows": [
+        [1, 3, 5],
+        [2, 6, 6],
+        [4, 12, 8]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-models-evidence-2",
+    "title": "Separate additive and multiplicative change",
+    "context": "A model assumes unlimited resources over the measured 0–6 h interval.",
+    "table": {
+      "columns": ["Time (h)", "Predicted population"],
+      "rows": [
+        [0, 60],
+        [2, 180],
+        [4, 540],
+        [6, 1620]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-models-evidence-3",
+    "title": "Respect the model’s domain",
+    "context": "The model applies to one material and only the listed input interval.",
+    "table": {
+      "columns": ["Input", "Prediction", "Measured"],
+      "rows": [
+        [2, 8, 8],
+        [5, 20, 31],
+        [10, "Outside domain", 55]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-models-evidence-4",
+    "title": "Apply simultaneous factor changes with units",
+    "context": "The model applies over the proposed changes; k is constant.",
+    "table": {
+      "columns": ["Change", "Multiplier on u"],
+      "rows": [
+        ["a multiplied by 3", 9],
+        ["b divided by 2", 2],
+        ["Both changes", 18]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-models-evidence-5",
+    "title": "Correct the baseline before testing the pattern",
+    "context": "Measurements are equally spaced and the corrected signal halves each interval.",
+    "table": {
+      "columns": [
+        "Interval",
+        "Raw total (counts/min)",
+        "Background (counts/min)"
+      ],
+      "rows": [
+        [0, 310, 10],
+        [1, 160, 10],
+        [2, 85, 10]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-models-evidence-6",
+    "title": "Separate saturation from unlimited growth",
+    "context": "Both models apply for positive C in the proposed test range.",
+    "table": {
+      "columns": ["C", "S prediction", "L prediction"],
+      "rows": [
+        [1, 2, 3],
+        [2, 3, 6],
+        [4, 4, 12]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-models-evidence-7",
+    "title": "Combine evidence and choose an informative follow-up",
+    "context": "Independent matched groups are measured for the same duration at both light and nutrient levels.",
+    "table": {
+      "columns": ["Nutrients", "Low-light growth", "High-light growth"],
+      "rows": [
+        ["High", 4, 10],
+        ["Low", 3, 3]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-scientific-foundations-1",
+    "title": "Acidity, enzymes, and concentration",
+    "context": "The enzyme is tested at a constant temperature while solution pH is varied.",
+    "table": {
+      "columns": ["pH", "Product formed (units)"],
+      "rows": [
+        [5, 4],
+        [6, 9],
+        [8, 2]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-scientific-foundations-2",
+    "title": "Atoms, ions, reactions, and conserved matter",
+    "context": "The reaction occurs in a sealed vessel; all matter, including leftover gas, remains inside.",
+    "table": {
+      "columns": ["Stage", "H₂ molecules", "O₂ molecules", "H₂O molecules"],
+      "rows": [
+        ["Before", 4, 3, 0],
+        ["After", 0, 1, 4]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-scientific-foundations-3",
+    "title": "Force, density, and electrical relationships",
+    "context": "Both forces act along one horizontal line; other horizontal forces are negligible.",
+    "table": {
+      "columns": ["Quantity", "Value"],
+      "rows": [
+        ["Mass (kg)", 3],
+        ["Forward force (N)", 12],
+        ["Backward force (N)", 3]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-scientific-foundations-4",
+    "title": "Cells, photosynthesis, and net measurements",
+    "context": "Equal leaf samples are measured for one hour; assume respiration has the same rate in light and dark.",
+    "table": {
+      "columns": ["Condition", "Oxygen change (mg/L per h)"],
+      "rows": [
+        ["Dark", -3],
+        ["Light", 8]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-scientific-foundations-5",
+    "title": "Heat, phase changes, and energy",
+    "context": "Heater power is constant and losses are negligible for the comparison.",
+    "table": {
+      "columns": ["Time (min)", "Temperature (°C)", "State"],
+      "rows": [
+        [0, -12, "Solid"],
+        [3, 0, "Starts melting"],
+        [9, 0, "Finishes melting"]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-scientific-foundations-6",
+    "title": "Inheritance and population proportions",
+    "context": "The trait follows one-gene complete dominance and equal gamete probabilities.",
+    "table": {
+      "columns": ["Parent 1 allele", "Parent 2 allele", "Offspring"],
+      "rows": [
+        ["B", "b", "Bb"],
+        ["b", "b", "bb"]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-scientific-foundations-7",
+    "title": "Waves and supplied physical models",
+    "context": "Both waves travel through the same unchanged medium with speed 24 m/s.",
+    "table": {
+      "columns": ["Frequency (Hz)", "Wavelength (m)"],
+      "rows": [
+        [6, 4],
+        [12, 2]
+      ]
+    }
+  },
+  {
+    "id": "science-teaching-scientific-foundations-8",
+    "title": "Earth, space, and relative evidence",
+    "context": "The layers are undisturbed and upright before the stated fault forms.",
+    "table": {
+      "columns": ["Feature", "Observation"],
+      "rows": [
+        ["U", "Below V"],
+        ["V", "Above U"],
+        ["Fault", "Cuts U and V"]
+      ]
+    }
+  }
+]

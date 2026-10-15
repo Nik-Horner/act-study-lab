@@ -269,7 +269,7 @@
       "\\(3x^{4} - 2x^{2} + 7\\)"
     ],
     "answer": 3,
-    "explanation": "An even function satisfies \\(f(-x) = f(x)\\). The selected polynomial uses only even powers and a constant, so replacing x by \\(-x\\) leaves it unchanged. An odd-power term changes sign. The last option is odd, which is a different symmetry rule, and adding a constant to an odd function does not make it even."
+    "explanation": "An even function satisfies \\(f(-x)=f(x)\\). The final choice, \\(3x^4-2x^2+7\\), has only even powers and a constant, so each term is unchanged under x→−x. The third choice, \\(x^3-x\\), is odd: its entire output changes sign. The first and second choices are neither even nor odd; their mixed terms break both symmetry conditions."
   },
   {
     "id": "math-functions-d23",

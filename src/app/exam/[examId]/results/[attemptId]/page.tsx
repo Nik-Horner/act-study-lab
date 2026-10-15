@@ -69,19 +69,13 @@ export default async function ExamResultsPage({
       <section className="flex flex-wrap items-center gap-8 rounded-2xl border border-border bg-bg-soft p-6">
         <div className="text-center">
           <div className="text-5xl font-bold text-brand-dark">
-            {attempt.scale_score}
+            {attempt.raw_correct}/{attempt.raw_total}
           </div>
           <div className="text-xs uppercase tracking-wide text-ink-soft">
-            Estimated scale score
+            Practice raw score
           </div>
         </div>
         <div className="flex flex-1 flex-wrap gap-8 text-sm">
-          <div>
-            <div className="text-lg font-semibold">
-              {attempt.raw_correct}/{attempt.raw_total}
-            </div>
-            <div className="text-ink-soft">Correct</div>
-          </div>
           <div>
             <div className="text-lg font-semibold">
               {Math.round((attempt.raw_correct / attempt.raw_total) * 100)}%
@@ -104,6 +98,12 @@ export default async function ExamResultsPage({
           </div>
         </div>
       </section>
+
+      <p className="text-sm leading-relaxed text-ink-soft">
+        These original practice questions report raw accuracy. Use different
+        official timed forms and your daily score checks to verify progress
+        toward your ACT score goal.
+      </p>
 
       {exam.passages.map((passage) => (
         <section key={passage.id}>

@@ -26,6 +26,8 @@ export interface Passage {
   graph?: Graph;
 }
 export interface Question {
+  assessment?: boolean;
+  replacementId?: string;
   id: string;
   topic: string;
   subject: Subject;

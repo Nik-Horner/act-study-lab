@@ -314,23 +314,26 @@ assert.equal((await fetch(base + "/api/score-checks")).status, 401);
 const invalidScore = await fetch(base + "/api/score-checks", {
   method: "POST",
   headers: scoreHeaders,
-  body: JSON.stringify({ ...scoreInput, score: 37 }),
+  body: JSON.stringify({ ...scoreInput, ownerId: data.user.id, score: 37 }),
 });
 assert.equal(invalidScore.status, 400);
 for (const score of [34, 35]) {
-  const response = await fetch(base + "/api/score-checks", {
+  const response: Response = await fetch(base + "/api/score-checks", {
     method: "POST",
     headers: scoreHeaders,
-    body: JSON.stringify({ ...scoreInput, score }),
+    body: JSON.stringify({ ...scoreInput, ownerId: data.user.id, score }),
   });
   const payload = await response.json();
   assert.equal(response.status, 200, JSON.stringify(payload));
   assert.equal(payload.checks.length, 1);
   assert.equal(payload.checks[0].score, score);
 }
-const savedScores = await fetch(base + "/api/score-checks", {
-  headers: scoreHeaders,
-});
+const savedScores = await fetch(
+  base + `/api/score-checks?ownerId=${data.user.id}`,
+  {
+    headers: scoreHeaders,
+  },
+);
 assert.equal(savedScores.status, 200);
 assert.equal((await savedScores.json()).checks[0].score, 35);
 console.log(JSON.stringify({ scoreCheckpointSaveReloadCorrection: "passed" }));
@@ -339,6 +342,7 @@ const optionalScience = await fetch(base + "/api/profile", {
   method: "PATCH",
   headers: scoreHeaders,
   body: JSON.stringify({
+    ownerId: data.user.id,
     study_settings: { ...settings, includeScience: false },
   }),
 });
@@ -424,12 +428,15 @@ assert.equal(invalidJson.status, 400);
 console.log(
   JSON.stringify({ englishExamSubmitIdempotencyAndValidation: "passed" }),
 );
-const legacyExam = await submitEnglish({
-  examId: "exam-2",
-  answers: [{ number: 1, picked: 0 }],
-  durationSeconds: 30,
-});
-assert.equal(typeof legacyExam.attemptId, "string");
+const legacyExam = await submitEnglish(
+  {
+    examId: "exam-2",
+    answers: [{ number: 1, picked: 0 }],
+    durationSeconds: 30,
+  },
+  409,
+);
+assert.match(legacyExam.error, /Reload before continuing/);
 console.log(
-  JSON.stringify({ alreadyOpenLegacyEnglishExamCanStillSubmit: "passed" }),
+  JSON.stringify({ ownerlessLegacyEnglishExamRequiresReload: "passed" }),
 );

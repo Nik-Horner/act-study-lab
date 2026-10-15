@@ -21,6 +21,8 @@ import {
   useProgress,
   getTopicStats,
   subjectBaseline,
+  masteryRequirements,
+  practiceForMisses,
   recordAnswer,
   setPlanTaskComplete,
   type StudyState,
@@ -100,7 +102,12 @@ function Arrow({ back = false }: { back?: boolean }) {
   );
 }
 function topicStats(state: StudyState, slug: string) {
-  return getTopicStats(slug, getAllQuestions(), state.answers);
+  return getTopicStats(
+    slug,
+    getAllQuestions(),
+    state.answers,
+    state.profile.targetScore,
+  );
 }
 export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
   const { state, ready, update, storageError, userId } = useProgress();
@@ -156,6 +163,14 @@ export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
         >
           {state.profile.minutesPerDay} min/day · Edit plan
         </Link>
+        {subject === "math" && (
+          <Link
+            href="/learn/math-formulas"
+            className="text-sm text-brand underline"
+          >
+            Formulas and methods
+          </Link>
+        )}
       </div>
       <Card className="flex flex-wrap items-center justify-between gap-6 p-6 sm:p-7">
         <div className="max-w-lg">
@@ -380,9 +395,18 @@ export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
             How practice mastery works
           </summary>
           <p className="mt-2 max-w-2xl">
-            At least 6 distinct questions, 90% latest accuracy, and 2 hard
-            questions correct. Repeated questions measure retention; fresh
-            official practice is the readiness check.
+            For your target of {state.profile.targetScore ?? 36}: at least{" "}
+            {masteryRequirements(state.profile.targetScore ?? 36).questions}{" "}
+            independent questions,{" "}
+            {Math.round(
+              masteryRequirements(state.profile.targetScore ?? 36).accuracy *
+                100,
+            )}
+            % accuracy, and{" "}
+            {masteryRequirements(state.profile.targetScore ?? 36).hard} hard
+            questions correct at section pace. Worked examples, quick checks,
+            and corrected repeats do not supply fresh evidence. Use two
+            different official timed forms to check your score goal.
           </p>
         </details>
       </section>
@@ -523,6 +547,14 @@ export function LessonView({ slug }: { slug: string }) {
       </header>
       {(topic.subject === "math" || topic.subject === "science") && (
         <DesmosPanel subject={topic.subject} />
+      )}
+      {topic.subject === "math" && (
+        <Link
+          href={`/learn/math-formulas#${topic.slug}`}
+          className="inline-block min-h-11 text-sm text-brand underline"
+        >
+          Formulas, conditions, and worked methods for this topic
+        </Link>
       )}
       <details className="rounded-xl border border-border bg-bg-soft px-4 py-3 lg:hidden">
         <summary className="cursor-pointer text-sm font-semibold">
@@ -853,7 +885,7 @@ function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
           (t) => topicStats(state, t.slug).unresolvedIds,
         ),
       );
-      qs = all.filter((q) => q.subject === subject && ids.has(q.id));
+      qs = practiceForMisses(qs, all, ids);
     } else if (slug === "hard") {
       qs = qs.filter((q) => q.difficulty === "hard");
     } else if (slug === "weak") {
@@ -900,7 +932,7 @@ function DrillSession({ slug, subject }: { slug: string; subject: Subject }) {
           </h2>
           <p className="prose-study mt-2 text-sm text-ink-soft">
             {slug === "misses"
-              ? "Practice questions you last missed, including questions from completed timed sections."
+              ? "Review missed drill questions and solve fresh questions on skills missed in timed sections or older lessons. Original section answers remain in your results."
               : "Start with unseen questions. Mark your confidence, then check the reasoning before moving on."}
           </p>
           <div className="my-6 grid gap-4 border-y border-border py-5 sm:grid-cols-3">

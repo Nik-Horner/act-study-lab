@@ -90,6 +90,8 @@ test("all authored math in the curriculum parses without errors", () => {
     "math-questions",
     "math-extra-questions",
     "math-exams",
+    "math-reference",
+    "math-method-questions",
   ]) {
     inspect(
       JSON.parse(

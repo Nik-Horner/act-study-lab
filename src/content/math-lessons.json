@@ -39,7 +39,8 @@
         "heading": "Quadratics and inequalities",
         "body": [
           "Try writing the quadratic (an expression whose highest power is 2) as multiplied pieces, called factors. Otherwise use the quadratic formula or rewrite it as a squared expression. If you multiply or divide an inequality by a negative, reverse its sign.",
-          "Worked example: x² − 8x + 15 = (x − 3)(x − 5), so its zeros are 3 and 5. The product is negative between the zeros and positive outside. Thus x² − 8x + 15 < 0 has 3 < x < 5; strict inequalities exclude the zeros."
+          "Worked example: x² − 8x + 15 = (x − 3)(x − 5), so its zeros are 3 and 5. The product is negative between the zeros and positive outside. Thus x² − 8x + 15 < 0 has 3 < x < 5; strict inequalities exclude the zeros.",
+          "When factoring is awkward, use the quadratic formula: for \\(ax^2+bx+c=0\\), \\(x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}\\), with \\(a\\ne0\\). Discriminant \\(D=b^2-4ac\\) gives two real roots if positive, one repeated real root if zero, and no real roots if negative. Example: \\(x^2-4x-1=0\\) gives \\(x=2\\pm\\sqrt5\\). Completing the square gives the same roots: \\((x-2)^2=5\\)."
         ],
         "tip": "Test a point from each interval when the expression’s sign is uncertain.",
         "examples": [
@@ -48,14 +49,16 @@
             "text": "(x + y)² = x² + 2xy + y². Never drop the 2xy term.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 2
       },
       {
         "heading": "Recognize polynomial structure before calculating",
         "body": [
           "Look for a piece shared by every term, or a pattern such as \\(u^2-v^2=(u-v)(u+v)\\) or \\(u^2+2uv+v^2=(u+v)^2\\). You can also group terms to find a shared piece. The zeros, or roots, make the expression equal zero. For \\(ax^2+bx+c\\), their sum is \\(-b/a\\) and product is \\(c/a\\).",
           "Worked example: p(x) = x³ + 2x² − 9x − 18 groups as x²(x + 2) − 9(x + 2). Therefore p(x) = (x + 2)(x − 3)(x + 3), with zeros −2, 3, −3. Their sum is −2. For 5x² − 15x + 2, the roots’ sum is 15/5 = 3 and their product is 2/5 even though the individual roots are awkward.",
-          "If a zero is given, put it into the expression and set the result to zero to find a missing coefficient—the number multiplying a variable. With zeros r and s, start with \\(a(x-r)(x-s)\\), then use a point to find a; do not assume 1. Division by \\(x-r\\) leaves remainder \\(p(r)\\), often avoiding long division."
+          "If a zero is given, put it into the expression and set the result to zero to find a missing coefficient—the number multiplying a variable. With zeros r and s, start with \\(a(x-r)(x-s)\\), then use a point to find a; do not assume 1. Division by \\(x-r\\) leaves remainder \\(p(r)\\), often avoiding long division.",
+          "Sum and difference of cubes factor as \\(u^3\\pm v^3=(u\\pm v)(u^2\\mp uv+v^2)\\). For example, \\(x^3+8=(x+2)(x^2-2x+4)\\). To find a remainder on division by \\(x-r\\), calculate \\(P(r)\\): if \\(P(x)=x^3-2x+1\\), division by \\(x-3\\) leaves \\(27-6+1=22\\). A zero remainder proves the divisor is a factor."
         ],
         "tip": "Ask what information is actually requested before committing to the quadratic formula.",
         "examples": [
@@ -64,7 +67,8 @@
             "text": "Zeros −2 and 5 with p(0) = −20 give −10a = −20, so p(x) = 2(x + 2)(x − 5).",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 2
       },
       {
         "heading": "Rational and radical equations: protect the original statement",
@@ -531,7 +535,8 @@
         "heading": "Exponents, radicals, and complex numbers",
         "body": [
           "Use \\(a^{m/n}=(\\sqrt[n]{a})^m\\) when the result is a real number. Powers of i repeat every four because \\(i^2=-1\\). A complex number combines an ordinary number with a multiple of i. Multiply every term in one factor by every term in the other, then replace \\(i^2\\) with −1.",
-          "Worked example: \\(27^{2/3}=3^2=9\\). Also, (1 + 2i)(3 + i) = 3 + i + 6i + 2i² = 1 + 7i. The magnitude of a + bi is \\(\\sqrt{a^2+b^2}\\), which is a nonnegative real number."
+          "Worked example: \\(27^{2/3}=3^2=9\\). Also, (1 + 2i)(3 + i) = 3 + i + 6i + 2i² = 1 + 7i. The magnitude of a + bi is \\(\\sqrt{a^2+b^2}\\), which is a nonnegative real number.",
+          "For a positive base, use \\(a^ma^n=a^{m+n}\\), \\(a^m/a^n=a^{m-n}\\), and \\((a^m)^n=a^{mn}\\). A nonzero base has \\(a^0=1\\) and \\(a^{-n}=1/a^n\\). Integer exponents also permit negative bases; arbitrary real exponents need care with the real domain. Example: \\(\\frac{(2^3)^2}{2^4}=2^{6-4}=4\\). A minus sign outside a power is different from a negative base."
         ],
         "tip": "Do not confuse a complex square z² with a squared magnitude |z|².",
         "examples": [
@@ -540,28 +545,32 @@
             "text": "i⁰ = 1, i¹ = i, i² = −1, i³ = −i, then the cycle repeats.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 2
       },
       {
         "heading": "Vectors and matrices",
         "body": [
           "A vector lists movement in each direction. Add matching entries. Its magnitude, or length, is the square root of the sum of their squares. For a dot product, multiply matching entries and add. If two nonzero vectors have dot product zero, they meet at a right angle.",
-          "Worked example: (1, 5) + (−4, −1) = (−3, 4), with magnitude 5. Matrix multiplication uses row-by-column dot products: [[1, 3], [2, 0]] times [[4], [−1]] gives [[1], [8]]. A 2 × 2 times 2 × 1 product has shape 2 × 1."
+          "Worked example: (1, 5) + (−4, −1) = (−3, 4), with magnitude 5. Matrix multiplication uses row-by-column dot products: \\(\\begin{bmatrix}1 & 3\\\\2 & 0\\end{bmatrix}\\) times \\(\\begin{bmatrix}4\\\\-1\\end{bmatrix}\\) gives \\(\\begin{bmatrix}1\\\\8\\end{bmatrix}\\). A 2 × 2 times 2 × 1 product has shape 2 × 1.",
+          "Add or subtract matrices only when their dimensions match; multiply every entry for a scalar multiple. Example: \\(2\\begin{bmatrix}1&-2\\\\3&0\\end{bmatrix}+\\begin{bmatrix}4&1\\\\-1&5\\end{bmatrix}=\\begin{bmatrix}6&-3\\\\5&5\\end{bmatrix}\\). For two nonzero vectors, \\(\\mathbf u\\cdot\\mathbf v=|\\mathbf u||\\mathbf v|\\cos\\theta\\), so divide their dot product by both magnitudes to find the angle cosine."
         ],
         "tip": "Before multiplying matrices, check that the first matrix’s column count equals the second matrix’s row count.",
         "examples": [
           {
             "label": "Determinant",
-            "text": "For [[a, b], [c, d]], determinant = ad − bc. Keep parentheses around negative entries.",
+            "text": "For \\(\\begin{bmatrix}a & b\\\\c & d\\end{bmatrix}\\), determinant = ad − bc. Keep parentheses around negative entries.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 2
       },
       {
         "heading": "Sequences and scientific notation",
         "body": [
           "A sequence is an ordered list of numbers. Arithmetic sequences add the same number each step; geometric sequences multiply by the same number r. With first term \\(a_1\\), the n-th geometric term is \\(a_1r^{n-1}\\). The first n terms sum to \\(\\frac{a_1(1-r^n)}{1-r}\\) for \\(r\\ne1\\).",
-          "Worked example: the geometric sequence 2, 6, 18, 54 has ratio 3, fourth term 2(3³) = 54, and first-four sum 80. In scientific notation, \\(\\frac{2\\times10^6}{5\\times10^2}=0.4\\times10^4=4\\times10^3\\)."
+          "Worked example: the geometric sequence 2, 6, 18, 54 has ratio 3, fourth term 2(3³) = 54, and first-four sum 80. In scientific notation, \\(\\frac{2\\times10^6}{5\\times10^2}=0.4\\times10^4=4\\times10^3\\).",
+          "For an arithmetic sequence starting at index 1, \\(a_n=a_1+(n-1)d\\) and \\(S_n=\\frac{n(a_1+a_n)}2\\). First term 3 and difference 4 give \\(a_8=31\\) and \\(S_8=8(3+31)/2=136\\). For a geometric ratio r=1, all terms are a₁ and \\(S_n=na_1\\); the fraction with denominator 1−r is then unavailable."
         ],
         "tip": "Count terms carefully: the first term has exponent 0, not 1, when using \\(a_1r^{n-1}\\).",
         "examples": [
@@ -570,7 +579,8 @@
             "text": "A scientific-notation coefficient must be at least 1 and less than 10; changing it by a factor of 10 changes the exponent in the opposite direction.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 2
       },
       {
         "heading": "Radical signs and real-number restrictions",
@@ -608,14 +618,14 @@
         "heading": "Matrix structure and inverse checks",
         "body": [
           "A matrix is a grid of numbers. Keep the multiplication order. If A is \\(m\\times n\\) and B is \\(n\\times p\\), AB is \\(m\\times p\\). For each answer entry, multiply matching numbers from a row of A and a column of B, then add. BA may differ or not exist. If asked for one entry, calculate only that row-column sum.",
-          "Worked example: [[2, 1], [0, 3]] times [[1, 4], [2, −1]] has first row [2(1) + 1(2), 2(4) + 1(−1)] = [4, 7] and second row [0(1) + 3(2), 0(4) + 3(−1)] = [6, −3]. The result is [[4, 7], [6, −3]]. Entry-by-entry multiplication would give a different matrix.",
+          "Worked example: \\(\\begin{bmatrix}2 & 1\\\\0 & 3\\end{bmatrix}\\) times \\(\\begin{bmatrix}1 & 4\\\\2 & -1\\end{bmatrix}\\) has first row [2(1) + 1(2), 2(4) + 1(−1)] = [4, 7] and second row [0(1) + 3(2), 0(4) + 3(−1)] = [6, −3]. The result is \\(\\begin{bmatrix}4 & 7\\\\6 & -3\\end{bmatrix}\\). Entry-by-entry multiplication would give a different matrix.",
           "An inverse undoes a matrix multiplication. A 2 × 2 matrix has one only when \\(ad-bc\\ne0\\). Its inverse is \\(\\frac1{ad-bc}\\begin{bmatrix}d&-b\\\\-c&a\\end{bmatrix}\\). For \\(\\begin{bmatrix}1&2\\\\3&4\\end{bmatrix}\\), determinant −2 gives inverse \\(\\begin{bmatrix}-2&1\\\\\\frac32&-\\frac12\\end{bmatrix}\\). Multiply to check that you get the identity matrix: 1s on its diagonal, 0s elsewhere. A zero determinant means one row carries no new information."
         ],
         "tip": "Check dimensions first; then keep minus signs inside parentheses when finding a determinant.",
         "examples": [
           {
             "label": "Worked example",
-            "text": "For [[2, 3], [4, 6]], determinant = 12 − 12 = 0, so an inverse does not exist.",
+            "text": "For \\(\\begin{bmatrix}2 & 3\\\\4 & 6\\end{bmatrix}\\), determinant = 12 − 12 = 0, so an inverse does not exist.",
             "good": true
           }
         ]
@@ -625,7 +635,8 @@
         "body": [
           "A term is one number in a sequence; a sum adds several numbers. The first-n arithmetic sum is \\(\\frac{n(a_1+a_n)}2\\). Multiply by the geometric ratio once for each jump between terms; adding forever gives a finite sum only when \\(|r|<1\\). List a few terms to check indexing.",
           "Worked example: an arithmetic sequence with first term 8 and ninth term 40 has average term 24, so its first-nine sum is 9(24) = 216. For geometric terms 12, 6, 3, the fourth is 1.5 and the infinite sum is \\(\\frac{12}{1-\\frac12}=24\\). A finite third-term value and an infinite-sum value use different formulas and answer different requests.",
-          "A remainder is what is left after whole-number division. Write \\(N=dk+r\\). If \\(N=5k+2\\), then \\(3N+4=15k+10\\), with remainder zero on division by 5. In scientific notation, handle the powers of 10 first. Then adjust the front number to be at least 1 and less than 10. Label the result’s units or type: scalar, vector, matrix, or magnitude."
+          "A remainder is what is left after whole-number division. Write \\(N=dk+r\\). If \\(N=5k+2\\), then \\(3N+4=15k+10\\), with remainder zero on division by 5. In scientific notation, handle the powers of 10 first. Then adjust the front number to be at least 1 and less than 10. Label the result’s units or type: scalar, vector, matrix, or magnitude.",
+          "For positive integers, prime factorization gives the greatest common factor by taking the smaller power of each shared prime, and the least common multiple by taking the larger power of every prime. Also \\(\\gcd(a,b)\\operatorname{lcm}(a,b)=ab\\). For 60 and 84 the GCF is 12 and LCM is 420. These identities require integer inputs; do not apply them as formulas for arbitrary real numbers."
         ],
         "tip": "A quick scale check can reject a misplaced power of 10 or an impossible negative magnitude.",
         "examples": [
@@ -634,7 +645,8 @@
             "text": "\\(\\frac{8\\times10^4}{2\\times10^{-2}}=4\\times10^6\\); subtracting the negative denominator exponent increases the final exponent.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 2
       }
     ],
     "check": [
@@ -661,13 +673,13 @@
         "subject": "math",
         "category": "Number and quantity",
         "difficulty": "hard",
-        "stem": "A = [[1, 2], [0, −1]] and B = [[3, 4], [5, 6]].",
+        "stem": "A = \\(\\begin{bmatrix}1 & 2\\\\0 & -1\\end{bmatrix}\\) and B = \\(\\begin{bmatrix}3 & 4\\\\5 & 6\\end{bmatrix}\\).",
         "questionText": "What is AB?",
         "choices": [
-          "[[3, 10], [−4, 4]]",
-          "[[13, −5], [16, −6]]",
-          "[[13, 16], [−5, −6]]",
-          "[[3, 8], [0, −6]]"
+          "\\(\\begin{bmatrix}3 & 10\\\\-4 & 4\\end{bmatrix}\\)",
+          "\\(\\begin{bmatrix}13 & -5\\\\16 & -6\\end{bmatrix}\\)",
+          "\\(\\begin{bmatrix}13 & 16\\\\-5 & -6\\end{bmatrix}\\)",
+          "\\(\\begin{bmatrix}3 & 8\\\\0 & -6\\end{bmatrix}\\)"
         ],
         "answer": 2,
         "explanation": "Each entry is a row of A dotted with a column of B. The first row gives 1(3) + 2(5) = 13 and 1(4) + 2(6) = 16. The second gives −5 and −6. Entrywise multiplication or transposing the resulting matrix changes the product."
@@ -884,7 +896,8 @@
         "heading": "Linear versus exponential change",
         "body": [
           "Adding the same amount each step gives a straight-line, or linear, pattern. Multiplying by the same factor each step gives an exponential pattern, as with repeated percentage changes. In \\(P_0b^t\\), use \\(b=1+\\text{rate}\\) for growth and \\(b=1-\\text{rate}\\) for decay.",
-          "Worked example: 500 growing by 8% per year becomes 500(1.08)ᵗ. If a quantity changes from 120 at t = 1 to 960 at t = 4, dividing gives b³ = 8, so b = 2 and P₀ = 60. A doubling time of d units gives P(t) = P₀2ᵗ⁄ᵈ."
+          "Worked example: 500 growing by 8% per year becomes 500(1.08)ᵗ. If a quantity changes from 120 at t = 1 to 960 at t = 4, dividing gives b³ = 8, so b = 2 and P₀ = 60. A doubling time of d units gives P(t) = P₀2ᵗ⁄ᵈ.",
+          "Simple interest uses \\(A=P(1+rt)\\). Compounding n times per year uses \\(A=P(1+r/n)^{nt}\\), with annual decimal rate r and time t in years. A $500 balance at 6% compounded twice a year for 3 years is \\(500(1.03)^6\\), assuming no deposits or withdrawals. Half-life h gives \\(P(t)=P_0(1/2)^{t/h}\\), counting the number of half-lives."
         ],
         "tip": "The exponent counts periods. Make the time unit match the period named in the problem.",
         "examples": [
@@ -893,7 +906,8 @@
             "text": "The initial quantity occurs at t = 0, so P(0) = P₀ even if the first observation is made later.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 2
       },
       {
         "heading": "Optimize under limits",
@@ -947,7 +961,8 @@
         "body": [
           "For a stated straight-line pattern, divide the output change by the input change to get the rate. Put one known point into the equation to find the starting value. For an exponential pattern, divide outputs to find the growth factor across that time gap. Compare ratios only across equal gaps.",
           "Worked example: a linear cost is $38 at 4 hours and $62 at 7 hours. Rate is (62 − 38)/(7 − 4) = $8 per hour, and fixed charge is 38 − 8(4) = $6, so C(t) = 6 + 8t. For an exponential count of 50 at t = 1 and 400 at t = 4, the ratio is 8 across three periods, so b³ = 8, b = 2, and the initial count is 25.",
-          "Use units to understand the numbers in the formula. In \\(d(t)=7+3t\\), with hours and miles, 7 is initial miles and 3 is miles/hour. In \\(P(t)=800(0.9)^t\\), 0.9 means retaining 90%: a 10% decline. Use the pattern the question gives. Matching a few points alone does not prove the same pattern continues beyond them."
+          "Use units to understand the numbers in the formula. In \\(d(t)=7+3t\\), with hours and miles, 7 is initial miles and 3 is miles/hour. In \\(P(t)=800(0.9)^t\\), 0.9 means retaining 90%: a 10% decline. Use the pattern the question gives. Matching a few points alone does not prove the same pattern continues beyond them.",
+          "Judge fit with residuals: \\(\\text{observed}-\\text{predicted}\\). For a model \\(\\hat y=3x+2\\), x=4 predicts 14; an observation of 12 gives residual −2, meaning overprediction. A systematic pattern in residuals can expose a missing curve or change in rate. Matching a few observations does not justify a guaranteed future trend or extrapolation far outside the measured range."
         ],
         "tip": "Write the elapsed interval between observations before taking a root of their ratio.",
         "examples": [
@@ -956,7 +971,8 @@
             "text": "Values 12, 24, 48 at t = 0, 1, 2 suggest P(t) = 12 · 2ᵗ; values 12, 24, 36 instead have a constant difference.",
             "good": true
           }
-        ]
+        ],
+        "teachingRevision": 2
       },
       {
         "heading": "Prove feasibility and use the calculator deliberately",

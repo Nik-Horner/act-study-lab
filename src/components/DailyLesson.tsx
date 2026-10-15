@@ -153,6 +153,15 @@ export function DailyLesson({
       >
         See full lesson
       </Link>
+      {unit.topic.startsWith("math-") && (
+        <Link
+          href={`/learn/math-formulas#${unit.topic}`}
+          target="_blank"
+          className="ml-5 inline-block min-h-11 text-sm text-brand underline"
+        >
+          Formulas and worked methods
+        </Link>
+      )}
       {revisiting && !last && (
         <button
           className="min-h-11 text-sm text-brand underline"

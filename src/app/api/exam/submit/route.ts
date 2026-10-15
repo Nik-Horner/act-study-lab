@@ -40,13 +40,18 @@ export async function POST(request: Request) {
       { status: 400 },
     );
   }
-  // shortcut: an already-open legacy exam has no retry ID; accept it until that client reloads.
-  if (!("attemptId" in raw) && !("ownerId" in raw))
-    raw = { ...raw, attemptId: crypto.randomUUID(), ownerId: user.id };
+  if (!("ownerId" in raw) || raw.ownerId !== user.id)
+    return NextResponse.json(
+      {
+        error:
+          "The signed-in account changed or this exam is outdated. Reload before continuing.",
+      },
+      { status: 409 },
+    );
 
   let exam;
   try {
-    exam = getExam((raw as { examId: string }).examId);
+    exam = getExam((raw as Record<string, unknown>).examId as string);
   } catch {
     return NextResponse.json({ error: "Unknown exam" }, { status: 400 });
   }
@@ -55,14 +60,6 @@ export async function POST(request: Request) {
     return NextResponse.json(
       { error: "Invalid exam answers or timing" },
       { status: 400 },
-    );
-  if (body.ownerId !== user.id)
-    return NextResponse.json(
-      {
-        error:
-          "The signed-in account changed. Sign back into the original account before submitting.",
-      },
-      { status: 409 },
     );
   const previous = await supabase
     .from("exam_attempts")

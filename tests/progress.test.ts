@@ -42,24 +42,35 @@ const answer = (
   mode: "drill",
 });
 
-test("default profile uses the actual preparation target and round-trips", () => {
-  const initial = createDefaultState();
+test("loading profile contains no borrowed student scores and round-trips", () => {
+  const initial = createDefaultState(new Date("2026-10-17T12:00:00Z"));
   assert.equal(initial.profile.testDate, "2026-10-17");
-  assert.equal(initial.profile.mathBaseline, 34);
-  assert.equal(initial.profile.scienceBaseline, 27);
+  assert.equal(initial.profile.mathBaseline, null);
+  assert.equal(initial.profile.scienceBaseline, null);
   assert.equal(initial.profile.minutesPerDay, 75);
   assert.equal(initial.planStartDate, "2026-10-05");
   assert.deepEqual(initial.planCheckDates, {});
   assert.deepEqual(validateState(JSON.parse(JSON.stringify(initial))), initial);
-  createDefaultState().answers.push(answer("temporary", "q1"));
-  assert.deepEqual(createDefaultState().answers, []);
+  createDefaultState(new Date("2026-10-17T12:00:00Z")).answers.push(
+    answer("temporary", "q1"),
+  );
+  assert.deepEqual(
+    createDefaultState(new Date("2026-10-17T12:00:00Z")).answers,
+    [],
+  );
   initial.planCheckDates!["temporary"] = "2026-10-06";
-  assert.deepEqual(createDefaultState().planCheckDates, {});
+  assert.deepEqual(
+    createDefaultState(new Date("2026-10-17T12:00:00Z")).planCheckDates,
+    {},
+  );
 });
 
 test("legacy backups normalize scheduler metadata without losing study history", () => {
   const seeded = recordExam(
-    recordAnswer(createDefaultState(), answer("saved-drill", "q1")),
+    recordAnswer(
+      createDefaultState(new Date("2026-10-17T12:00:00Z")),
+      answer("saved-drill", "q1"),
+    ),
     {
       id: "saved-exam",
       examId: "math-1",
@@ -92,7 +103,7 @@ test("legacy backups normalize scheduler metadata without losing study history",
 });
 
 test("legacy start inference keeps earlier valid task dates and ignores impossible dates", () => {
-  const initial = createDefaultState();
+  const initial = createDefaultState(new Date("2026-10-17T12:00:00Z"));
   const legacy = {
     ...initial,
     planStartDate: undefined,
@@ -118,7 +129,7 @@ test("legacy start inference keeps earlier valid task dates and ignores impossib
 });
 
 test("scheduler metadata rejects malformed dates, maps and orphan task entries", () => {
-  const initial = createDefaultState();
+  const initial = createDefaultState(new Date("2026-10-17T12:00:00Z"));
   const id = "2026-10-05:science-diagnostic";
   const checked = { ...initial, planChecks: [id] };
   for (const planStartDate of [
@@ -175,7 +186,10 @@ test("scheduler metadata rejects malformed dates, maps and orphan task entries",
 });
 
 test("plan completion stores the actual day, stays immutable and preserves unrelated state", () => {
-  const initial = recordAnswer(createDefaultState(), answer("one", "q1"));
+  const initial = recordAnswer(
+    createDefaultState(new Date("2026-10-17T12:00:00Z")),
+    answer("one", "q1"),
+  );
   const id = "2026-10-05:science-diagnostic";
   const next = setPlanTaskComplete(initial, id, true, "2026-10-07");
   assert.deepEqual(initial.planChecks, []);
@@ -206,7 +220,7 @@ test("plan completion stores the actual day, stays immutable and preserves unrel
 test("legacy checked tasks remain idempotent without inventing a completion day", () => {
   const id = "2026-10-05:science-diagnostic";
   const legacy = {
-    ...createDefaultState(),
+    ...createDefaultState(new Date("2026-10-17T12:00:00Z")),
     planChecks: [id],
     planCheckDates: undefined,
   };
@@ -217,7 +231,7 @@ test("legacy checked tasks remain idempotent without inventing a completion day"
 });
 
 test("plan completion validates task IDs and calendar days before accepting metadata", () => {
-  const initial = createDefaultState();
+  const initial = createDefaultState(new Date("2026-10-17T12:00:00Z"));
   assert.throws(() => setPlanTaskComplete(initial, " ", true, "2026-10-07"));
   assert.throws(() =>
     setPlanTaskComplete(initial, "x".repeat(201), true, "2026-10-07"),
@@ -229,7 +243,7 @@ test("plan completion validates task IDs and calendar days before accepting meta
 });
 
 test("identifier-like object keys round-trip as data without changing object prototypes", () => {
-  const initial = createDefaultState();
+  const initial = createDefaultState(new Date("2026-10-17T12:00:00Z"));
   const next = setPlanTaskComplete(initial, "__proto__", true, "2026-10-07");
   const restored = validateState(JSON.parse(JSON.stringify(next)));
   assert.ok(restored);
@@ -246,7 +260,7 @@ test("identifier-like object keys round-trip as data without changing object pro
 });
 
 test("untrusted imports reject impossible dates, scores, choices, timing, and duplicate IDs", () => {
-  const initial = createDefaultState();
+  const initial = createDefaultState(new Date("2026-10-17T12:00:00Z"));
   for (const testDate of ["2026-02-30", "2026-13-01", "10/17/2026"]) {
     assert.equal(
       validateState({ ...initial, profile: { ...initial.profile, testDate } }),
@@ -303,7 +317,7 @@ test("untrusted imports reject impossible dates, scores, choices, timing, and du
 });
 
 test("answer recording is immutable and idempotent", () => {
-  const initial = createDefaultState();
+  const initial = createDefaultState(new Date("2026-10-17T12:00:00Z"));
   const next = recordAnswer(initial, answer("one", "q1"));
   assert.equal(initial.answers.length, 0);
   assert.equal(next.answers.length, 1);
@@ -356,7 +370,7 @@ test("mastery needs six distinct answers and two hard successes; a later miss re
 });
 
 test("exam recording commits all questions, counts skips as misses, and is idempotent", () => {
-  const initial = createDefaultState();
+  const initial = createDefaultState(new Date("2026-10-17T12:00:00Z"));
   const questions = [question("q1"), question("q2"), question("q3")];
   const attempt: ExamAttempt = {
     id: "exam-attempt",
@@ -378,8 +392,55 @@ test("exam recording commits all questions, counts skips as misses, and is idemp
   );
   assert.equal(recordExam(next, attempt, questions), next);
   const stats = getTopicStats("math-algebra", questions, next.answers);
-  assert.equal(stats.accuracy, 1 / 3);
-  assert.equal(stats.unique, 2);
+  assert.equal(
+    stats.accuracy,
+    null,
+    "section history is separate from fresh drill mastery",
+  );
+  assert.equal(stats.unique, 0);
   assert.deepEqual(stats.unresolvedIds, ["q2", "q3"]);
   assert.deepEqual(validateState(next), next);
+});
+
+test("higher goals require more independent, paced hard questions", () => {
+  const qs = Array.from({ length: 10 }, (_, i) =>
+    question(`goal${i}`, i < 3 ? "hard" : "medium"),
+  );
+  const records = qs.map((q, i) => answer(`g${i}`, q.id));
+  assert(getTopicStats("math-algebra", qs, records.slice(0, 6), 28).mastered);
+  assert(!getTopicStats("math-algebra", qs, records.slice(0, 6), 36).mastered);
+  assert(getTopicStats("math-algebra", qs, records, 36).mastered);
+  assert(
+    !getTopicStats(
+      "math-algebra",
+      qs,
+      records.map((a) => ({ ...a, elapsedMs: 120000 })),
+      36,
+    ).mastered,
+  );
+  assert(
+    !getTopicStats(
+      "math-algebra",
+      qs.map((q) => ({ ...q, assessment: false })),
+      records,
+      36,
+    ).mastered,
+  );
+});
+test("correcting an already exposed answer does not turn it into fresh mastery evidence", () => {
+  const qs = Array.from({ length: 10 }, (_, i) =>
+    question(`fresh${i}`, i < 3 ? "hard" : "medium"),
+  );
+  const records = qs.map((q, i) => answer(`f${i}`, q.id, i === 0 ? 0 : 1));
+  const corrected = answer("retry", "fresh0", 1, "2026-10-06T12:00:00Z");
+  const stats = getTopicStats("math-algebra", qs, [...records, corrected], 36);
+  assert.equal(stats.accuracy, 1);
+  assert.equal(stats.mastered, false);
+});
+test("loading defaults never borrow a particular student score or test calendar", () => {
+  const state = createDefaultState(new Date("2027-03-11T12:00:00Z"));
+  assert.equal(state.profile.testDate, "2027-03-11");
+  assert.equal(state.profile.mathBaseline, null);
+  assert.equal(state.profile.scienceBaseline, null);
+  assert.equal(state.planStartDate, "2027-02-27");
 });

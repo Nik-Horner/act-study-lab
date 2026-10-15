@@ -134,8 +134,7 @@ export default async function ExamIndexPage() {
         )}
         <p className="mt-3 text-xs leading-relaxed text-ink-faint">
           Results show raw accuracy. Original practice forms are not validated
-          predictors of an official ACT score. Existing English score estimates
-          remain available in their result pages.
+          predictors of an official ACT score.
         </p>
       </section>
     </div>

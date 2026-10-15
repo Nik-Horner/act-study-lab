@@ -5,7 +5,7 @@
     {
       "id": "p1",
       "title": "The Woman Who Mapped the Ocean Floor",
-      "html": "When Marie Tharp was a child, her family moved often, and she [[1|had attended]] nearly two dozen schools before she finished high school. Her father, a soil surveyor, took her along on his fieldwork, and she learned early how a careful map could turn scattered measurements into a picture of the land.\n\nIn the 1940s few universities trained women as scientists. [[2|Therefore,]] Tharp earned degrees in geology and mathematics, and in 1948 she joined a laboratory at Columbia University. There she was assigned to plot data that male researchers gathered at sea, [[3|because]] the institution did not allow women aboard the ships.\n\nDay after day, Tharp converted columns of [[4|depth soundings, into careful profiles]] of the Atlantic seafloor. As the profiles took shape, she noticed a deep notch running down the center of a vast underwater mountain range. [[5|]] The notch, she argued, was a rift valley where the ocean floor was splitting apart.\n\nHer supervisor [[6|dismissed the idea as \"girl talk\"]] and asked her to redo the work. Tharp checked her data again, the valley appeared every time. [[7|Eventually,]] the evidence became impossible to ignore, and her maps helped confirm the theory of plate tectonics, which reshaped how scientists understood the planet.\n\nTharp kept working at the lab for decades, [[8|drawing, painting, and she compiled]] the first complete map of the world's ocean floors. [[9|]] For most of her career, her name appeared in small print, if at all. Today, [[10|her]] maps hang in classrooms around the world, and her quiet persistence is finally recognized as a turning point in earth science.",
+      "html": "When Marie Tharp was a child, her family moved often, and she [[1|had attended]] nearly two dozen schools before she finished high school. Her father, a soil surveyor, took her along on his fieldwork, and she learned early how a careful map could turn scattered measurements into a picture of the land.\n\nIn the 1940s few universities trained women as scientists. [[2|Therefore,]] Tharp earned degrees in geology and mathematics, and in 1948 she joined a laboratory at Columbia University. There she was assigned to plot data that male researchers gathered at sea, [[3|because]] the institution did not allow women aboard the ships.\n\nDay after day, Tharp converted columns of [[4|depth soundings, into careful profiles]] of the Atlantic seafloor. As the profiles took shape, she noticed a deep notch running down the center of a vast underwater mountain range. [[5|]] The notch, she argued, was a rift valley where the ocean floor was splitting apart.\n\nHer supervisor [[6|dismissed the idea as \"girl talk\"]] and asked her to redo the work. Tharp checked her data [[7|again, the valley]] appeared every time. Eventually, the evidence became impossible to ignore, and her maps helped confirm the theory of plate tectonics, which reshaped how scientists understood the planet.\n\nTharp kept working at the lab for decades, [[8|drawing, painting, and she compiled]] the first complete map of the world's ocean floors. [[9|]] For most of her career, her name appeared in small print, if at all. Today, [[10|her]] maps hang in classrooms around the world, and her quiet persistence is finally recognized as a turning point in earth science.",
       "questions": [
         {
           "number": 1,
@@ -13,12 +13,7 @@
           "difficulty": "medium",
           "topic": "word-choice",
           "questionText": "Which choice is most precise and consistent with the sentence's matter-of-fact tone?",
-          "choices": [
-            "NO CHANGE",
-            "sat in on",
-            "attended",
-            "bounced through"
-          ],
+          "choices": ["NO CHANGE", "sat in on", "attended", "bounced through"],
           "answer": 2,
           "explanation": "The sentence reports a completed past action in plain, precise diction, so \"attended\" is the best fit. \"Had attended\" needlessly shifts to past perfect when both actions share one past time frame; \"bounced through\" is too casual, and \"sat in on\" wrongly implies brief visits rather than enrollment."
         },
@@ -43,12 +38,7 @@
           "difficulty": "easy",
           "topic": "transitions",
           "questionText": "Which transition most clearly shows the cause-and-effect relationship?",
-          "choices": [
-            "NO CHANGE",
-            "whether",
-            "until",
-            "although"
-          ],
+          "choices": ["NO CHANGE", "whether", "until", "although"],
           "answer": 0,
           "explanation": "She plotted others' data because she was barred from the ships, a causal relationship, so \"because\" is correct. \"Although\" signals contrast, \"whether\" sets up alternatives, and \"until\" signals time, none of which fits the cause given."
         },
@@ -102,7 +92,7 @@
           "category": "CSE",
           "difficulty": "hard",
           "topic": "sentence-structure",
-          "questionText": "Which choice corrects the comma splice in the preceding sentence (\"Tharp checked her data again, the valley appeared every time\")?",
+          "questionText": "Which choice correctly joins the two independent clauses?",
           "choices": [
             "NO CHANGE",
             "again the valley",
@@ -148,12 +138,7 @@
           "difficulty": "easy",
           "topic": "pronouns",
           "questionText": "Which choice is correct?",
-          "choices": [
-            "NO CHANGE",
-            "her's",
-            "their",
-            "hers"
-          ],
+          "choices": ["NO CHANGE", "her's", "their", "hers"],
           "answer": 0,
           "explanation": "The singular antecedent \"Tharp\" requires the possessive \"her\" before \"maps.\" \"Their\" is plural, \"her's\" is not a word, and \"hers\" is a standalone possessive that cannot modify a following noun."
         }
@@ -319,7 +304,7 @@
     {
       "id": "p3",
       "title": "The Library at Timbuktu",
-      "html": "For centuries the West African city of Timbuktu was [[21|known as a center]] of trade and learning. Caravans crossed the Sahara carrying salt, gold, and books, and scholars gathered there to study astronomy, medicine, law, and poetry. [[22|]]\n\nBy the 1500s, Timbuktu [[23|had become home to]] thousands of handwritten manuscripts. Wealthy families and scholars collected them, [[24|and they were]] passing the volumes down through generations like treasured heirlooms. [[25|]] The manuscripts covered an astonishing range of subjects, from mathematics to music.\n\nWhen the city's fortunes declined, many of these collections were hidden away in private homes. [[26|]] Families wrapped the fragile pages in cloth and stored them in trunks, [[27|protecting them]] from heat, insects, and theft. For generations, outsiders assumed the great library had vanished.\n\n[[28|]] In recent decades, researchers discovered that hundreds of thousands of manuscripts had survived. Local librarians, [[29|whom]] had guarded the texts in secret, slowly began to share them with the world.\n\nIn 2012, conflict in the region put the manuscripts at risk once more. Librarians and ordinary citizens smuggled the documents to safety, [[30|hiding them in metal boxes, packing them onto boats, and moving them]] hundreds of miles down the river. Their courage saved a written record that links the present to a brilliant, often overlooked past.",
+      "html": "For centuries the West African city of Timbuktu was [[21|known as a center]] of trade and learning. Caravans crossed the Sahara carrying salt, gold, and books, and scholars gathered there to study astronomy, medicine, law, and poetry. [[22|]]\n\nBy the 1500s, Timbuktu [[23|had become home to]] thousands of handwritten manuscripts. Wealthy families and scholars [[24|collected them, and they were passing]] the volumes down through generations like treasured heirlooms. [[25|]] The manuscripts covered an astonishing range of subjects, from mathematics to music.\n\nWhen the city's fortunes declined, many of these collections were hidden away in private homes. [[26|]] Families wrapped the fragile pages in cloth and stored them in trunks, [[27|protecting them]] from heat, insects, and theft. For generations, outsiders assumed the great library had vanished.\n\n[[28|]] In recent decades, researchers discovered that hundreds of thousands of manuscripts had survived. Local librarians, [[29|whom]] had guarded the texts in secret, slowly began to share them with the world.\n\nIn 2012, conflict in the region put the manuscripts at risk once more. Librarians and ordinary citizens smuggled the documents to safety, [[30|hiding them in metal boxes, packing them onto boats, and moving them]] hundreds of miles down the river. Their courage saved a written record that links the present to a brilliant, often overlooked past.",
       "questions": [
         {
           "number": 21,
@@ -357,12 +342,7 @@
           "difficulty": "medium",
           "topic": "word-choice",
           "questionText": "Which word is most precise in context?",
-          "choices": [
-            "NO CHANGE",
-            "had amassed",
-            "racked up",
-            "got hold of"
-          ],
+          "choices": ["NO CHANGE", "had amassed", "racked up", "got hold of"],
           "answer": 1,
           "explanation": "With the time anchor \"By the 1500s,\" the past perfect \"had amassed\" precisely conveys a large collection gathered over time and fits the formal tone. \"Had become home to\" is vague and wordy, \"got hold of\" is flat and imprecise, and \"racked up\" is too informal."
         },
@@ -374,12 +354,12 @@
           "questionText": "Which choice corrects the faulty construction?",
           "choices": [
             "NO CHANGE",
-            "and passed",
-            "passing",
-            "while they were"
+            "collected them and passed",
+            "collecting them and passed",
+            "collected them and passing"
           ],
           "answer": 1,
-          "explanation": "The verb \"collected\" needs a parallel past-tense partner, so \"and passed\" keeps the two actions consistent. \"And they were passing\" and \"while they were\" shift to past progressive, and \"passing\" alone leaves a dangling participle."
+          "explanation": "The same subject, families and scholars, performs both completed past actions: collected and passed. Joining those parallel verbs with and needs no comma. The other choices either mix verb forms or interrupt this simple parallel construction."
         },
         {
           "number": 25,
@@ -447,12 +427,7 @@
           "difficulty": "hard",
           "topic": "pronouns",
           "questionText": "Which choice is correct?",
-          "choices": [
-            "NO CHANGE",
-            "which",
-            "whose",
-            "who"
-          ],
+          "choices": ["NO CHANGE", "which", "whose", "who"],
           "answer": 3,
           "explanation": "The relative pronoun is the subject of \"had guarded,\" so the subjective \"who\" is correct. \"Whom\" is objective, \"which\" refers to things not people, and \"whose\" is possessive."
         },
@@ -476,7 +451,7 @@
     {
       "id": "p4",
       "title": "The Art of the Blacksmith",
-      "html": "Long before factories stamped out metal parts by the thousands, the blacksmith was one of the most [[31|important]] workers in any town. With a hammer, an anvil, and a blazing forge, a skilled smith could shape raw iron into tools, hinges, horseshoes, and [[32|making weapons]].\n\nThe work began at the forge, where coal or charcoal heated the iron until it glowed orange. [[33|]] Only then could the metal be shaped. [[34|Therefore,]] the smith worked quickly, hammering the softened iron against the anvil before it cooled and hardened again.\n\n[[35|]] Shaping metal required more than strength. A blacksmith had to read the color of the glowing iron to judge its temperature, [[36|since]] a piece heated too long would crumble, while one too cool would crack. This knowledge came only through years of [[37|practice, and patient observation]].\n\nBlacksmiths were also problem solvers. A farmer might arrive with a broken plow, a cook with a [[38|bent, pot, and a]] traveler with a lame horse. [[39|]] The smith repaired them all, often inventing solutions on the spot.\n\nToday, machines produce most metal goods, [[40|but the craft of the blacksmith has not disappeared completely]]. Artists and hobbyists still gather around glowing forges, drawn to the satisfying ring of hammer on hot iron and to a tradition thousands of years old.",
+      "html": "Long before factories stamped out metal parts by the thousands, the blacksmith was one of the most [[31|important]] workers in any town. With a hammer, an anvil, and a blazing forge, a skilled smith could shape raw iron into tools, hinges, horseshoes, and [[32|making weapons]].\n\nThe work began at the forge, where coal or charcoal heated the iron until it glowed orange. [[33|]] Only then could the metal be shaped. [[34|Therefore,]] the smith worked quickly, hammering the softened iron against the anvil before it cooled and hardened again.\n\n[[35|]] A blacksmith had to read the color of the glowing iron to judge its temperature, [[36|since]] a piece heated too long would crumble, while one too cool would crack. This knowledge came only through years of [[37|practice, and patient observation]].\n\nBlacksmiths were also problem solvers. A farmer might arrive with a broken plow, a cook with a [[38|bent, pot, and a]] traveler with a lame horse. [[39|]] The smith repaired them all, often inventing solutions on the spot.\n\nToday, machines produce most metal goods, [[40|but the craft of the blacksmith has not disappeared completely]]. Artists and hobbyists still gather around glowing forges, drawn to the satisfying ring of hammer on hot iron and to a tradition thousands of years old.",
       "questions": [
         {
           "number": 31,
@@ -484,12 +459,7 @@
           "difficulty": "easy",
           "topic": "word-choice",
           "questionText": "Which word is most precise and best fits the essay's tone?",
-          "choices": [
-            "NO CHANGE",
-            "indispensable",
-            "neat",
-            "okay"
-          ],
+          "choices": ["NO CHANGE", "indispensable", "neat", "okay"],
           "answer": 0,
           "explanation": "\"Important\" accurately describes the blacksmith's central role and matches the measured tone, so NO CHANGE is correct. \"Indispensable\" overstates the point beyond what the passage supports, while \"okay\" and \"neat\" are vague and too casual."
         },
@@ -529,12 +499,7 @@
           "difficulty": "medium",
           "topic": "transitions",
           "questionText": "Which transition best fits the relationship between the sentences?",
-          "choices": [
-            "NO CHANGE",
-            "However,",
-            "For example,",
-            "Instead,"
-          ],
+          "choices": ["NO CHANGE", "However,", "For example,", "Instead,"],
           "answer": 0,
           "explanation": "The iron must be shaped only while hot, so the smith works quickly as a result, making \"Therefore\" correct. \"However\" and \"Instead\" signal contrast, and \"For example\" signals illustration, none matching the cause-effect link."
         },
@@ -559,12 +524,7 @@
           "difficulty": "easy",
           "topic": "transitions",
           "questionText": "Which choice best shows the logical relationship?",
-          "choices": [
-            "NO CHANGE",
-            "although",
-            "unless",
-            "before"
-          ],
+          "choices": ["NO CHANGE", "although", "unless", "before"],
           "answer": 0,
           "explanation": "Reading the iron's color matters because overheated or cool metal fails, a causal link, so \"since\" is correct. \"Although\" signals contrast, \"unless\" sets a condition, and \"before\" signals time, none fitting the reason given."
         },
@@ -593,10 +553,10 @@
             "NO CHANGE",
             "bent pot, and a",
             "bent, pot and a,",
-            "bent pot and a"
+            "bent pot; and a"
           ],
           "answer": 1,
-          "explanation": "The items are \"a broken plow,\" \"a bent pot,\" and \"a lame horse,\" so the comma belongs after \"pot,\" not inside it: \"bent pot, and a.\" Putting a comma between \"bent\" and \"pot\" splits the adjective from its noun, and dropping the comma before \"and\" loses the needed serial break."
+          "explanation": "The sentence lists three parallel arrivals: a farmer with a plow, a cook with a pot, and a traveler with a horse. The keyed choice keeps the list punctuation consistent. Do not separate the adjective bent from its noun pot. A semicolon cannot separate this incomplete list item. A serial comma is not a universal requirement; the other offered choices contain specific punctuation errors."
         },
         {
           "number": 39,
@@ -641,12 +601,7 @@
           "difficulty": "easy",
           "topic": "sentence-structure",
           "questionText": "Which choice correctly joins the two parts of the sentence?",
-          "choices": [
-            "NO CHANGE",
-            "and it",
-            "but it,",
-            "but, it"
-          ],
+          "choices": ["NO CHANGE", "and it", "but it,", "but, it"],
           "answer": 0,
           "explanation": "The comma before \"but\" joins two independent clauses, and no comma should follow \"but,\" so \"but it\" is correct. Adding a comma after \"but\" or before \"it\" breaks the clause, and \"and\" wrongly drops the contrast between the dull look and the rich record."
         },
@@ -656,12 +611,7 @@
           "difficulty": "medium",
           "topic": "word-choice",
           "questionText": "Which word is most precise in context?",
-          "choices": [
-            "NO CHANGE",
-            "determine",
-            "imagine",
-            "guess"
-          ],
+          "choices": ["NO CHANGE", "determine", "imagine", "guess"],
           "answer": 1,
           "explanation": "Counting and studying the rings establishes the age from physical evidence, so \"determine\" is the precise word. \"Invent,\" \"guess,\" and \"imagine\" all wrongly suggest the age is made up rather than measured from the data."
         },
@@ -701,12 +651,7 @@
           "difficulty": "medium",
           "topic": "punctuation",
           "questionText": "Which choice is punctuated correctly?",
-          "choices": [
-            "NO CHANGE",
-            "fire, but, a",
-            "fire but a",
-            "fire; but a"
-          ],
+          "choices": ["NO CHANGE", "fire, but, a", "fire but a", "fire; but a"],
           "answer": 0,
           "explanation": "Two independent clauses joined by 'but' take a comma before it, so the original is correct: '...mark an old fire, but a sudden run of narrow rings might point to drought.' 'fire but a' drops the comma, 'fire; but a' wrongly pairs a semicolon with the FANBOYS 'but,' and 'fire, but, a' adds a stray comma after 'but.'"
         }
@@ -738,12 +683,7 @@
           "difficulty": "easy",
           "topic": "punctuation",
           "questionText": "Which choice is punctuated correctly?",
-          "choices": [
-            "NO CHANGE",
-            "but he,",
-            "but; he",
-            "but he"
-          ],
+          "choices": ["NO CHANGE", "but he,", "but; he", "but he"],
           "answer": 3,
           "explanation": "The comma already before \"but\" joins the clauses, and no comma should follow \"but,\" so \"but he\" is correct. A comma after \"but,\" a comma after \"he,\" or a semicolon all misplace punctuation around the conjunction."
         },

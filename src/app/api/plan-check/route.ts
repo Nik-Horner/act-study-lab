@@ -25,7 +25,7 @@ export async function POST(request: Request) {
   }
   if (!body || typeof body !== "object" || Array.isArray(body))
     return NextResponse.json({ error: "Invalid body" }, { status: 400 });
-  if (body?.ownerId !== undefined && body.ownerId !== user.id)
+  if (body.ownerId !== user.id)
     return NextResponse.json(
       { error: "The signed-in account changed. Reload before continuing." },
       { status: 409 },

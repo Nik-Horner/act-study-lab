@@ -555,7 +555,7 @@
       "\\(\\begin{bmatrix}6 \\\\ 14\\end{bmatrix}\\)",
       "\\(\\begin{bmatrix}8 \\\\ 2\\end{bmatrix}\\)",
       "\\(\\begin{bmatrix}10 \\\\ 10\\end{bmatrix}\\)",
-      "[[6, 14]]"
+      "\\(\\begin{bmatrix}6 & 14\\end{bmatrix}\\)"
     ],
     "answer": 0,
     "explanation": "Multiply each row of A by the column b: the first entry is \\(2(4) + 1(-2) = 6\\), and the second is \\(3(4) + (-1)(-2) = 14\\). \\(A 2 \\times  2\\) matrix times a \\(2 \\times  1\\) matrix produces a \\(2 \\times  1\\) column. Entry-by-entry multiplication and a row-shaped answer are traps."

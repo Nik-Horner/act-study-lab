@@ -3,7 +3,7 @@
 /* Turn "text [[underlined]] more" into HTML with the underlined span. */
 export function renderStem(stem: string): string {
   return escapeHTML(stem).replace(
-    /\[\[(.+?)\]\]/g,
+    /\[\[([^\[\]]+?)\]\]/g,
     '<span class="ul">$1</span>',
   );
 }

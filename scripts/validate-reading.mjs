@@ -10,14 +10,17 @@ const read = (name) =>
 const topics = read("reading-topics"),
   lessons = read("reading-lessons"),
   questions = read("reading-questions"),
+  practice = read("reading-practice"),
+  activities = read("lesson-activities"),
   exams = read("reading-exams");
 assert.equal(topics.length, 6);
 assert.equal(lessons.length, 6);
 assert.equal(exams.length, 2);
-const all = [...questions, ...lessons.flatMap((l) => l.check)],
+const all = [...questions, ...practice, ...lessons.flatMap((l) => l.check)],
   ids = new Set(all.map((q) => q.id)),
   heldout = new Set(exams.flatMap((e) => e.questionIds));
-assert.equal(ids.size, 234);
+assert.equal(ids.size, 378);
+assert.equal(practice.length, 144);
 assert.equal(questions.length, 216);
 assert.equal(heldout.size, 72);
 const oldIds = new Set(
@@ -126,6 +129,48 @@ assert(
     .some((q) => passageIds.has(q.passage.id)),
   "Held-out passages cannot appear in drills",
 );
+const normalize = (text) =>
+  text
+    .toLowerCase()
+    .replace(/[^\p{L}\p{N}]+/gu, " ")
+    .trim();
+const instruction = lessons
+  .flatMap((lesson) => [
+    ...lesson.sections.flatMap((section) =>
+      (section.examples ?? []).map((example) => example.text),
+    ),
+    ...lesson.check.map((q) => q.passage.context),
+    ...activities[lesson.slug].map((activity) => JSON.stringify(activity)),
+  ])
+  .map(normalize)
+  .join(" ");
+const priorPassages = new Set(
+  questions.map((q) => normalize(q.passage.context)),
+);
+const newPassages = new Map(practice.map((q) => [q.passage.id, q.passage]));
+assert.equal(newPassages.size, 24);
+for (const topic of topics) {
+  const pool = practice.filter((q) => q.topic === topic.slug);
+  assert.equal(
+    pool.length,
+    24,
+    `${topic.slug}: preserve daily scope pool positions`,
+  );
+  for (const difficulty of ["easy", "medium", "hard"])
+    assert.equal(pool.filter((q) => q.difficulty === difficulty).length, 8);
+}
+for (const [id, passage] of newPassages) {
+  const text = normalize(passage.context);
+  const words = text.split(" ");
+  assert(words.length >= 180, `${id}: practice needs a complete passage`);
+  assert(!priorPassages.has(text), `${id}: reused legacy or exam passage`);
+  assert.equal(practice.filter((q) => q.passage.id === id).length, 6);
+  for (let i = 0; i <= words.length - 18; i++)
+    assert(
+      !instruction.includes(words.slice(i, i + 18).join(" ")),
+      `${id}: practice excerpt exposed in teaching`,
+    );
+}
 console.log(
-  "Reading validated: 6 lessons with teaching methods and worked reasoning, 144 focused drills, 18 separate checks, 2 full 36-question/40-minute forms with 4 substantial passages each.",
+  "Reading validated: 6 lessons with teaching methods and worked reasoning, 144 independent focused drills on 24 new passages across three difficulties, 144 legacy practice records retained for history, 18 teaching checks, 2 full 36-question/40-minute forms with 4 substantial passages each.",
 );

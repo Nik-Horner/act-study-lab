@@ -14,8 +14,15 @@ export interface ChecklistItem {
   checked: boolean;
 }
 
-export function PlanChecklist({ items }: { items: ChecklistItem[] }) {
+export function PlanChecklist({
+  items,
+  ownerId: initialOwnerId,
+}: {
+  items: ChecklistItem[];
+  ownerId: string;
+}) {
   const router = useRouter();
+  const [ownerId] = useState(initialOwnerId);
   const [error, setError] = useState<string | null>(null);
   const [checkedMap, setCheckedMap] = useState<Record<string, boolean>>(
     () => ({}),
@@ -31,12 +38,15 @@ export function PlanChecklist({ items }: { items: ChecklistItem[] }) {
       const res = await fetch("/api/plan-check", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ itemKey: item.key, checked: next }),
+        body: JSON.stringify({ ownerId, itemKey: item.key, checked: next }),
       });
-      if (!res.ok) throw new Error("request failed");
+      if (!res.ok) {
+        const data = await res.json();
+        throw new Error(data.error ?? "Couldn’t save this task. Please retry.");
+      }
       router.refresh();
-    } catch {
-      setError("Couldn’t save this task. Please retry.");
+    } catch (error) {
+      setError((error as Error).message);
       setCheckedMap((m) => ({ ...m, [item.key]: !next })); // revert on failure
     } finally {
       setPending((p) => ({ ...p, [item.key]: false }));

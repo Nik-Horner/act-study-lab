@@ -10,6 +10,8 @@ import {
 } from "@/lib/content";
 import { createClient } from "@/lib/supabase/server";
 import { DrillClient, type PoolItem } from "./DrillClient";
+import { loadEnglishProgress } from "@/lib/english-progress-server";
+import { EnglishProgressError } from "@/components/EnglishProgressError";
 
 export default async function DrillPage({
   params,
@@ -37,21 +39,24 @@ export default async function DrillPage({
   } = await supabase.auth.getUser();
 
   const topic = getTopic(slug);
+  if (!topic && slug !== "weak" && slug !== "misses") notFound();
+  if (!user) return null;
+  let history;
+  try {
+    history = await loadEnglishProgress(supabase, user.id);
+  } catch {
+    return <EnglishProgressError href={`/drill/${slug}`} />;
+  }
 
   if (topic) {
     const questions = getQuestions(slug);
-    let initialProgress;
-    if (user) {
-      const { data } = await supabase
-        .from("topic_progress")
-        .select("*")
-        .eq("user_id", user.id)
-        .eq("topic_slug", slug)
-        .maybeSingle();
-      initialProgress = data ?? undefined;
-    }
+    const initialProgress = history.progress.find(
+      (row) => row.topic_slug === slug,
+    );
     return (
       <DrillClient
+        key={user.id}
+        ownerId={user.id}
         mode="topic"
         slug={slug}
         title={topic.title}
@@ -66,12 +71,8 @@ export default async function DrillPage({
     const titleBySlug = new Map(topics.map((t) => [t.slug, t.title]));
 
     let weakSlugs: string[] = [];
-    if (user) {
-      const { data: rows } = await supabase
-        .from("topic_progress")
-        .select("topic_slug, attempts, correct")
-        .eq("user_id", user.id);
-      weakSlugs = (rows ?? [])
+    {
+      weakSlugs = history.progress
         .filter((r) => titleBySlug.has(r.topic_slug) && r.attempts > 0)
         .map((r) => ({ slug: r.topic_slug, accuracy: r.correct / r.attempts }))
         .sort((a, b) => a.accuracy - b.accuracy)
@@ -89,22 +90,19 @@ export default async function DrillPage({
         question: q,
       })),
     );
-    return <DrillClient mode="weak" pool={pool} />;
+    return (
+      <DrillClient key={user.id} ownerId={user.id} mode="weak" pool={pool} />
+    );
   }
 
   if (slug === "misses") {
     const pool: PoolItem[] = [];
-    if (user) {
-      const { data: misses } = await supabase
-        .from("question_misses")
-        .select("question_id, topic_slug")
-        .eq("user_id", user.id);
-
+    {
       const topics = getTopics();
       const titleBySlug = new Map(topics.map((t) => [t.slug, t.title]));
       const questionCache = new Map<string, Question[]>();
 
-      for (const miss of misses ?? []) {
+      for (const miss of history.misses) {
         if (!titleBySlug.has(miss.topic_slug)) continue;
         let bank = questionCache.get(miss.topic_slug);
         if (!bank) {
@@ -121,7 +119,9 @@ export default async function DrillPage({
         }
       }
     }
-    return <DrillClient mode="misses" pool={pool} />;
+    return (
+      <DrillClient key={user.id} ownerId={user.id} mode="misses" pool={pool} />
+    );
   }
 
   notFound();

@@ -7,280 +7,189 @@
       {
         "heading": "Locate the quantity and unit",
         "body": [
-          "Find the quantity the question requests, then match its column or axis, unit, and condition. For a graph, identify the series in the legend before reading a value.",
-          "Filter Q’s 4 mg/L describes remaining solids; its 70 mL/min describes flow. Check what each fraction counts: percent germinated includes all starting seeds, while average root length may include only seedlings that germinated, or sprouted."
+          "Name the quantity requested, its unit, and the treatment or time. Match the table column or graph axis before comparing values. In a graph, use the legend to select the correct series.",
+          "A final amount, a change, and a rate answer different questions. Reading the largest number without its label can select the wrong quantity."
         ],
-        "tip": "Before choosing, say the answer with its unit.",
         "examples": [
           {
-            "label": "Choose the right column",
-            "text": "Filter Q: After = 4 mg/L; Flow = 70 mL/min. For lowest remaining solids, compare 4 with P’s 8 and R’s 12, so choose Q.",
+            "label": "Worked example",
+            "text": "For the lowest outlet dust, compare 6, 3, and 9 mg/m³: choose Vent Y. Its 45 m³/min airflow answers a different question.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-reservoir"
-        ]
+        "evidenceIds": ["science-teaching-data-reading-1"],
+        "teachingRevision": 2
       },
       {
         "heading": "Distinguish totals, changes, and fractions",
         "body": [
-          "Distinguish final amount, change, fraction, and rate. Filter P starts at 40 mg/L and ends at 8: removed = 32; fraction removed = 32/40 = 80%; fraction remaining = 20%.",
-          "Rate = change/time. A rise from 7 to 11 cm over 2 days is 2 cm/day. A fall from 70% to 40% is 30 percentage points, or a relative decrease of 30/70 ≈ 43%."
+          "Change = final − initial. Amount removed = initial − final. Fraction removed divides the removed amount by the initial amount; fraction remaining divides the final amount by the initial amount.",
+          "Percentage-point change subtracts percentages. Relative percent change divides that difference by the original percentage. A rate additionally divides a change by elapsed time."
         ],
         "examples": [
           {
-            "label": "Removed versus remaining",
-            "text": "Filter P: 40−8 = 32 mg/L removed. Removed fraction = 32/40 = 80%; remaining fraction = 8/40 = 20%.",
+            "label": "Worked example",
+            "text": "Water treatment changes concentration from 60 to 15 mg/L. Removed = 45 mg/L; removed fraction = 45/60 = 75%; remaining fraction = 25%.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-reservoir"
-        ]
+        "evidenceIds": ["science-teaching-data-reading-2"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Use both constraints in a comparison",
+        "heading": "Check simultaneous constraints",
         "body": [
-          "Turn each constraint into a separate check. “At least” and “at most” include equality. For flow ≥100 mL/min and solids ≤10 mg/L, P passes both; Q fails flow and R fails solids.",
-          "For a ratio, follow the requested unit. Current per area is mA/cm², so J gives 12/10 = 1.2 and L gives 20/20 = 1.0. Reversing the ratio changes the comparison."
-        ],
-        "tip": "On a digital question, identify the row and column before looking back at the options.",
-        "examples": [
-          {
-            "label": "Meet both limits",
-            "text": "Require flow ≥100 mL/min and remaining solids ≤10 mg/L. P passes (120, 8); Q fails flow (70); R fails solids (12).",
-            "good": true
-          }
-        ],
-        "evidenceIds": [
-          "science-drill-reservoir"
-        ]
-      },
-      {
-        "heading": "Counts and densities can reverse a ranking",
-        "body": [
-          "A count and a density can rank samples differently. Density = count/area: N gives 48/10 = 4.8, O gives 60/20 = 3.0, and P gives 40/25 = 1.6 insects/m².",
-          "O has the largest count; N has the greatest density. Divide by area when the question asks “per unit” or compares different-sized areas. If the areas are equal, counts and densities have the same ranking."
+          "Turn every requirement into a separate test. “At least” includes equality; “greater than” does not. Eliminate a candidate as soon as it fails a required condition.",
+          "Write ratios in the requested direction. Output per area means output/area. Reversing numerator and denominator changes both the units and the ranking."
         ],
         "examples": [
           {
-            "label": "Normalize unequal samples",
-            "text": "N: 48/10 = 4.8 insects/m². O: 60/20 = 3.0. P: 40/25 = 1.6. Highest count is O; highest density is N.",
+            "label": "Worked example",
+            "text": "Need airflow ≥70 m³/min and outlet dust ≤7 mg/m³. X passes both (80, 6); Y fails airflow; Z fails dust.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-transects"
-        ]
+        "evidenceIds": ["science-teaching-data-reading-3"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Read graph coordinates before describing a curve",
+        "heading": "Normalize unequal sample sizes",
         "body": [
-          "Read horizontal value → correct series → vertical value. A point is one measurement; a difference is a change; slope is change per horizontal unit.",
-          "Check the requested interval and numeric spacing. Lamp B leads on Day 4 but A leads on Day 6, so “B is always taller” fails. Use a table for exact values when supplied; do not treat unequal axis intervals as equal."
+          "Counts measure totals; densities measure counts per area or volume. Divide before ranking samples of unequal sizes. If every sample has the same size, counts and densities rank them alike.",
+          "A percentage needs its own denominator. Percent germinated uses all starting seeds; mean root length might include only seedlings that sprouted. Read the study definition."
         ],
         "examples": [
           {
-            "label": "Read a point and a change",
-            "text": "Lamp B is 8 cm on Day 4. Lamp A rises from 7 to 11 cm over Days 4–6: change = 4 cm; average rate = 4/2 = 2 cm/day.",
+            "label": "Worked example",
+            "text": "Quadrat A: 36/6 = 6 plants/m². B: 45/15 = 3 plants/m². B has the larger count, but A has the greater density.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-seed-light"
-        ]
+        "evidenceIds": ["science-teaching-data-reading-4"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Combine information only after matching conditions",
+        "heading": "Read points, changes, and slopes",
         "body": [
-          "For a mixture, weight each concentration by its flow: total pollutant flow/total water flow. Here, (30×4 + 10×12)/(30+10) = 6 mg/L, not the unweighted average of 8.",
-          "Across studies, match species, treatment, time, and other relevant conditions by their labels, not their row positions. Convert units before comparing: 1 g = 1,000 mg."
+          "Read horizontal input → correct series → vertical output. A point gives one measured value; a change compares two points; slope divides that change by the horizontal interval.",
+          "Use numerical axis labels, including unequal spacing. State whether a trend holds throughout the tested range or only within one interval; curves can cross."
         ],
         "examples": [
           {
-            "label": "Weight by water flow",
-            "text": "Incoming pollutant = 30×4 + 10×12 = 240 mg/s. Incoming water = 40 L/s. Mixed concentration = 240/40 = 6 mg/L, not the unweighted 8 mg/L.",
+            "label": "Worked example",
+            "text": "At 2 and 5 days, Group U measures 5 and 14 cm. Change = 9 cm; average growth = 9/3 = 3 cm/day.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-confluence"
-        ]
+        "evidenceIds": ["science-teaching-data-reading-5"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Audit a choice quickly and record the actual error",
+        "heading": "Combine data with matched units and weights",
         "body": [
-          "Before choosing, check row, column or series, unit, and denominator. Then confirm that you found the requested quantity: a 1.5°C rise from 20°C gives a final temperature of 21.5°C.",
-          "After a miss, name the failed step: locating evidence, calculating, or interpreting the request. Test that repair on a fresh comparison instead of repeating a remembered answer."
-        ]
+          "When streams mix, add pollutant mass flows and divide by total water flow. Weight concentration by flow rather than averaging concentrations equally.",
+          "Across presentations, match sample identity, treatment, time, and units. A calibration converts a measured signal to the requested quantity; a second correction, such as dilution, must be applied afterward."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "A supplies 20 L/s at 3 mg/L and B supplies 5 L/s at 13 mg/L. Mixed concentration = (20×3+5×13)/25 = 5 mg/L.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-data-reading-6"],
+        "teachingRevision": 2
+      },
+      {
+        "heading": "Link calibrations, dilution, and a new condition",
+        "body": [
+          "Break a complex problem into a chain: locate the signal → apply its calibration → undo dilution → compute the requested comparison. Keep the unit and sample label beside every intermediate value.",
+          "For dilution by factor d, original concentration = measured diluted concentration × d. A new flow rate changes total mass carried per time even when concentration stays fixed."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "A diluted sample has signal 18 units. The calibration gives concentration = signal/3 = 6 mg/L. A fourfold dilution means original = 24 mg/L; at 2 L/s, mass flow = 48 mg/s.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-data-reading-7"],
+        "teachingRevision": 2
       }
     ],
     "check": [
       {
-        "id": "check-science-data-1",
+        "id": "check-science-transfer-v2-data-reading-1",
         "topic": "science-data-reading",
         "subject": "science",
         "category": "Data interpretation",
         "difficulty": "medium",
-        "stem": "How much did Filter R reduce the suspended-solids concentration?",
-        "questionText": "How much did Filter R reduce the suspended-solids concentration?",
-        "choices": [
-          "12 mg/L",
-          "40 mg/L",
-          "28 mg/L",
-          "20 mg/L"
-        ],
-        "answer": 2,
-        "explanation": "R started at 40 mg/L and ended at 12 mg/L. The reduction is 40−12 = 28 mg/L.",
-        "passage": {
-          "id": "science-drill-reservoir",
-          "title": "Filtering reservoir water",
-          "context": "Researchers passed separate 1 L samples of reservoir water through three filters. They measured suspended solids before and after filtration. Each sample was collected at the same depth; values are means of three trials. Lower solids after filtration mean clearer water.",
-          "table": {
-            "columns": [
-              "Filter",
-              "Before (mg/L)",
-              "After (mg/L)",
-              "Flow rate (mL/min)"
-            ],
-            "rows": [
-              [
-                "P",
-                40,
-                8,
-                120
-              ],
-              [
-                "Q",
-                40,
-                4,
-                70
-              ],
-              [
-                "R",
-                40,
-                12,
-                180
-              ]
-            ]
-          }
-        }
-      },
-      {
-        "id": "check-science-data-2",
-        "topic": "science-data-reading",
-        "subject": "science",
-        "category": "Data interpretation",
-        "difficulty": "medium",
-        "stem": "Which lamp produced the taller mean seedling on Day 6, and by how much?",
-        "questionText": "Which lamp produced the taller mean seedling on Day 6, and by how much?",
-        "choices": [
-          "A, by 4 cm",
-          "A, by 1 cm",
-          "B, by 1 cm",
-          "B, by 4 cm"
-        ],
+        "stem": "Which mesh gives the lowest remaining particle concentration while passing at least 60 mL/min?",
+        "questionText": "Which mesh gives the lowest remaining particle concentration while passing at least 60 mL/min?",
+        "choices": ["Mesh A", "Mesh B", "Mesh C", "All meshes"],
         "answer": 1,
-        "explanation": "On Day 6, A is 11 cm and B is 10 cm. A is taller by 11−10 = 1 cm.",
+        "explanation": "B passes the minimum flow exactly and has 5 mg/L, lower than A’s 9. C has the cleanest output but fails the flow minimum.",
         "passage": {
-          "id": "science-drill-seed-light",
-          "title": "Seedling growth under two lamps",
-          "context": "Seedlings of one species were grown under Lamp A or Lamp B. Both groups started at 2 cm, received the same water, and were measured on the same days. The graph shows mean height, not growth rate.",
-          "graph": {
-            "title": "Seedling height over time",
-            "xLabel": "Day",
-            "yLabel": "Height (cm)",
-            "series": [
-              {
-                "label": "Lamp A",
-                "points": [
-                  [
-                    0,
-                    2
-                  ],
-                  [
-                    2,
-                    4
-                  ],
-                  [
-                    4,
-                    7
-                  ],
-                  [
-                    6,
-                    11
-                  ]
-                ]
-              },
-              {
-                "label": "Lamp B",
-                "points": [
-                  [
-                    0,
-                    2
-                  ],
-                  [
-                    2,
-                    5
-                  ],
-                  [
-                    4,
-                    8
-                  ],
-                  [
-                    6,
-                    10
-                  ]
-                ]
-              }
+          "id": "check-science-transfer-v2-data-reading-1-passage",
+          "title": "Independent check: Read the evidence before the choices",
+          "context": "Three new meshes are tested on equivalent samples. Both the flow minimum and output concentration matter.",
+          "table": {
+            "columns": ["Mesh", "After (mg/L)", "Flow (mL/min)"],
+            "rows": [
+              ["A", 9, 90],
+              ["B", 5, 60],
+              ["C", 2, 40]
             ]
           }
         }
       },
       {
-        "id": "check-science-data-3",
+        "id": "check-science-transfer-v2-data-reading-2",
+        "topic": "science-data-reading",
+        "subject": "science",
+        "category": "Data interpretation",
+        "difficulty": "medium",
+        "stem": "How many percentage points did survival decline from Trial 1 to Trial 2?",
+        "questionText": "How many percentage points did survival decline from Trial 1 to Trial 2?",
+        "choices": [
+          "25% relative decline",
+          "50 percentage points",
+          "75 percentage points",
+          "25 percentage points"
+        ],
+        "answer": 3,
+        "explanation": "Subtract percentages: 75−50 = 25 percentage points. The relative decrease would be 25/75, about 33%, which answers a different question.",
+        "passage": {
+          "id": "check-science-transfer-v2-data-reading-2-passage",
+          "title": "Independent check: Read the evidence before the choices",
+          "context": "Survival is a percentage of the starting population in each trial.",
+          "table": {
+            "columns": ["Trial", "Survival (%)"],
+            "rows": [
+              [1, 75],
+              [2, 50]
+            ]
+          }
+        }
+      },
+      {
+        "id": "check-science-transfer-v2-data-reading-3",
         "topic": "science-data-reading",
         "subject": "science",
         "category": "Data interpretation",
         "difficulty": "hard",
-        "stem": "If Stream B’s concentration rose to 20 mg/L while both incoming water flows and A’s concentration stayed the same, what mixed concentration is predicted in C?",
-        "questionText": "If Stream B’s concentration rose to 20 mg/L while both incoming water flows and A’s concentration stayed the same, what mixed concentration is predicted in C?",
-        "choices": [
-          "8 mg/L",
-          "12 mg/L",
-          "10 mg/L",
-          "16 mg/L"
-        ],
-        "answer": 0,
-        "explanation": "The predicted mass flow is 30×4+10×20 = 320 mg/s. Divide by the unchanged total 40 L/s to get 8 mg/L; an unweighted average of 4 and 20 would incorrectly give 12.",
+        "stem": "What original-sample concentration follows the stated calibration and dilution?",
+        "questionText": "What original-sample concentration follows the stated calibration and dilution?",
+        "choices": ["6 mg/L", "18 mg/L", "2 mg/L", "9 mg/L"],
+        "answer": 1,
+        "explanation": "Signal 24 corresponds to 6 mg/L in the diluted sample (4 units per mg/L). Undo the threefold dilution: 6×3 = 18 mg/L.",
         "passage": {
-          "id": "science-drill-confluence",
-          "title": "Two streams merge",
-          "context": "Stream A and Stream B join to form C. Samples were taken simultaneously during steady flow. Assume the pollutant is dissolved, conserved during mixing, and evenly mixed in C. Pollutant mass flow in g/s equals concentration in mg/L multiplied by water flow in L/s, divided by 1,000.",
+          "id": "check-science-transfer-v2-data-reading-3-passage",
+          "title": "Independent check: Read the evidence before the choices",
+          "context": "A calibrated sensor gives 4 signal units per mg/L. The sample was diluted threefold before measurement.",
           "table": {
-            "columns": [
-              "Stream",
-              "Water flow (L/s)",
-              "Pollutant concentration (mg/L)"
-            ],
-            "rows": [
-              [
-                "A",
-                30,
-                4
-              ],
-              [
-                "B",
-                10,
-                12
-              ],
-              [
-                "C",
-                40,
-                6
-              ]
-            ]
+            "columns": ["Sample", "Signal (units)", "Dilution factor"],
+            "rows": [["T", 24, 3]]
           }
         }
       }
@@ -292,304 +201,189 @@
     "intro": "Spot a pattern and estimate values between measurements.",
     "sections": [
       {
-        "heading": "Compare equal intervals",
+        "heading": "Compare rates over the actual intervals",
         "body": [
-          "At equal time intervals, compare successive changes. Container B’s 5-minute drops are 24, 16, 10, and 5°C: it cools throughout, but more slowly.",
-          "For unequal intervals, divide change by interval length. The first cooling rate is −24/5 = −4.8°C/min; the last is −5/5 = −1°C/min. Direction and rate are different features."
+          "For equal input intervals, compare successive output changes. For unequal intervals, divide each change by its interval length before comparing rates.",
+          "Direction and rate are separate. A temperature can keep falling while its cooling slows. Use the signed slope for direction and its magnitude for speed of change."
         ],
         "examples": [
           {
-            "label": "Direction versus rate",
-            "text": "Container B drops 24°C over the first 5 min and 5°C over the final 5 min. Average rates are −4.8 and −1°C/min: cooling continues but slows.",
+            "label": "Worked example",
+            "text": "A vial cools 72→54°C over 3 min and 54→42°C over the next 6 min. Rates are −6 and −2°C/min: cooling continues but slows.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-cooling"
-        ]
+        "evidenceIds": ["science-teaching-trends-interpolation-1"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Interpolate between neighboring measurements",
+        "heading": "Interpolate with the nearest bounding values",
         "body": [
-          "Interpolation means estimating between known measurements. Use the nearest point on each side. For a straight line, add the same fraction of the vertical change as you have traveled across the horizontal gap.",
-          "At 11 min, Container A is one-fifth of the way from (10,58) to (15,50): 58 + (1/5)(50−58) = 56.4°C. At the midpoint, 12.5 min, the estimate is 54°C. If an equation is supplied, use the requested model instead."
-        ],
-        "tip": "Use the nearest bounding points; do not average every value in the table.",
-        "examples": [
-          {
-            "label": "Non-midpoint interpolation",
-            "text": "At 11 min, A is one-fifth from 10 min (58°C) to 15 min (50°C). Estimate = 58−(1/5)×8 = 56.4°C.",
-            "good": true
-          }
-        ],
-        "evidenceIds": [
-          "science-drill-cooling"
-        ]
-      },
-      {
-        "heading": "Separate a peak from an unlimited rule",
-        "body": [
-          "Describe only the measured range. Enzyme rate rises to 12 µmol/min at 40°C, then falls: 40°C is the highest tested temperature response, not a proven universal optimum.",
-          "A flat stretch, or plateau, does not prove the value will stay there forever. Estimating beyond the measured range is extrapolation; it assumes the pattern continues."
+          "Interpolation estimates an output between measured inputs. For a straight segment, find the fraction of the horizontal gap traveled and apply that fraction to the vertical change.",
+          "Use the nearest bounding points rather than averaging every measurement. If the question supplies a different model, follow that model instead."
         ],
         "examples": [
           {
-            "label": "Peak with limited scope",
-            "text": "The enzyme’s highest tested rate is 12 µmol/min at 40°C; 50°C gives 6. This locates the tested maximum but does not prove the exact optimum is precisely 40°C.",
+            "label": "Worked example",
+            "text": "Between (4 min, 44°C) and (10 min, 26°C), 6 min is 2/6 of the gap. Estimate = 44+(2/6)(26−44) = 38°C.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-enzyme-temp"
-        ]
+        "evidenceIds": ["science-teaching-trends-interpolation-2"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Find the slope with its units",
+        "heading": "Limit peaks and trends to tested conditions",
         "body": [
-          "Slope = vertical change/horizontal change, with sign and units. A 7°C drop over 30 m is −7/30 ≈ −0.23°C/m; over 50 m it is −0.14°C/m. Compare magnitudes for the greatest decrease.",
-          "Keep the intercept: P = 100 + 10d starts at 100 kPa and rises 10 kPa/m. A nonzero intercept means doubling depth does not double absolute pressure."
+          "A tested maximum is the largest measured result, not necessarily the exact optimum. Measurements on either side of a peak can narrow the search without locating every untested point.",
+          "Beyond the observed range, a prediction is extrapolation. A plateau does not prove a permanent limit, and an increasing segment does not justify “always increases.”"
         ],
         "examples": [
           {
-            "label": "Slope and intercept",
-            "text": "Pressure rises 20 kPa per 2 m, so slope = 10 kPa/m. Surface pressure = 100 kPa. At 5 m, P = 100+10×5 = 150 kPa.",
+            "label": "Worked example",
+            "text": "Activity is 3, 9, and 5 units at 15, 30, and 45°C. The highest tested activity is at 30°C; the true optimum might lie nearby.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-pressure-depth"
-        ]
+        "evidenceIds": ["science-teaching-trends-interpolation-3"],
+        "teachingRevision": 2
       },
       {
-        "heading": "A model can differ from straight-line interpolation",
+        "heading": "Keep slope, intercept, and units separate",
         "body": [
-          "Read which method is requested. From 4 min to 9 min, the distance rises from 4 mm to 6 mm. Halfway through that time gap, at 6.5 min, a straight-line estimate gives 5 mm.",
-          "The supplied model x² = 4t instead gives 5 mm at 6.25 min. Under this model, doubling distance requires four times the time. An equation and a straight-line estimate are different assumptions."
+          "Slope is output change divided by input change. An intercept is the predicted output at input zero; a nonzero intercept prevents absolute outputs from being directly proportional to inputs.",
+          "When a question asks for an added amount, subtract the baseline before comparing ratios. An equation may describe a range rather than every possible condition."
         ],
         "examples": [
           {
-            "label": "Use the specified model",
-            "text": "Dye model: x² = 4t. At 6.25 min, x² = 25, so x = 5 mm. A straight-segment estimate gives 5 mm at a different time, 6.5 min.",
+            "label": "Worked example",
+            "text": "Pressure P = 90+12d kPa. At depth 3 m, total = 126 kPa and added pressure = 36 kPa. Doubling depth doubles the added pressure, not total pressure.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-diffusion"
-        ]
+        "evidenceIds": ["science-teaching-trends-interpolation-4"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Recognize saturation and turning points",
+        "heading": "Use nonlinear models when requested",
         "body": [
-          "Compare successive changes to detect a plateau or turning point. Signals 0, 20, 50, 80, 95, 100 keep rising, but late increments shrink to 15 and 5.",
-          "Do not assume a flat curve means the detector reached its limit; check instrument capacity. Read each variable separately: battery capacity can peak and fall while resistance keeps decreasing."
+          "A straight segment and a nonlinear equation are different assumptions. Substitute the requested input into the stated equation rather than silently replacing it with a line.",
+          "For a squared relationship, changing an input by a factor changes its square by that factor squared. Check whether the equation predicts distance, squared distance, or time."
         ],
         "examples": [
           {
-            "label": "Spot a turning point",
-            "text": "Capacity rises to 2.1 Ah at 40°C, then falls to 1.8 Ah at 60°C. “Always rises with temperature” fails on that last interval.",
+            "label": "Worked example",
+            "text": "If distance x = 3√t mm, then at t = 4 min, x = 6 mm. Doubling distance requires four times the time, not twice the time.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-exposure"
-        ]
+        "evidenceIds": ["science-teaching-trends-interpolation-5"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Use predictions as questions for the next experiment",
+        "heading": "Read turning points and limits separately",
         "body": [
-          "Interpolation estimates between measured inputs; extrapolation estimates beyond them. P = 100 + 10d predicts 300 kPa at 20 m only if the rule measured through 8 m continues to work.",
-          "After a miss, mark the measured range and any turning point. Recalculate with the nearest bounding values, using the method named in the question."
-        ]
+          "Compare successive changes to distinguish a plateau, a turning point, and a steady trend. A turning point reverses direction; a plateau has little further change.",
+          "Check whether an instrument saturates before explaining a flat signal as a biological limit. Different measured responses can have different peaks or directions."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "Signal 0, 24, 40, 48, 51 rises by 24, 16, 8, 3 units: it approaches a plateau. It has not started falling.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-trends-interpolation-6"],
+        "teachingRevision": 2
+      },
+      {
+        "heading": "Carry new information through the whole model",
+        "body": [
+          "For a new condition, identify which model quantity changes and which remains fixed. Recompute every dependent step instead of adjusting the final answer by intuition.",
+          "An extrapolation requires the old pattern to remain applicable. State that assumption and check whether new information changes the model, its domain, or merely an input."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "A model gives 8 units of growth per day for 3 days: 24 units. If only the final day has half the rate, total = 8+8+4 = 20, not half of 24.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-trends-interpolation-7"],
+        "teachingRevision": 2
       }
     ],
     "check": [
       {
-        "id": "check-science-trends-1",
+        "id": "check-science-transfer-v2-trends-interpolation-1",
         "topic": "science-trends-interpolation",
         "subject": "science",
         "category": "Data interpretation",
         "difficulty": "medium",
-        "stem": "Using straight-line interpolation, what was Container B’s temperature at 7.5 min?",
-        "questionText": "Using straight-line interpolation, what was Container B’s temperature at 7.5 min?",
-        "choices": [
-          "48°C",
-          "35°C",
-          "40°C",
-          "58°C"
-        ],
+        "stem": "Using a straight segment, estimate the output at 8 min.",
+        "questionText": "Using a straight segment, estimate the output at 8 min.",
+        "choices": ["22 units", "18 units", "24 units", "27 units"],
         "answer": 0,
-        "explanation": "7.5 min is halfway between 5 and 10 min. B has 56°C and 40°C at those times, giving a midpoint of 48°C.",
+        "explanation": "Eight minutes is 2/6 of the way from 6 to 12 min. Add (2/6)(30−18) = 4 to 18, giving 22.",
         "passage": {
-          "id": "science-drill-cooling",
-          "title": "Cooling insulated containers",
-          "context": "Two containers held identical 200 mL water samples initially at 80°C in a 20°C room. Container A had a foam sleeve; Container B had none. No water was added or removed. Points are measured temperatures.",
-          "graph": {
-            "title": "Water temperature during cooling",
-            "xLabel": "Time (min)",
-            "yLabel": "Temperature (°C)",
-            "series": [
-              {
-                "label": "A: foam sleeve",
-                "points": [
-                  [
-                    0,
-                    80
-                  ],
-                  [
-                    5,
-                    68
-                  ],
-                  [
-                    10,
-                    58
-                  ],
-                  [
-                    15,
-                    50
-                  ],
-                  [
-                    20,
-                    44
-                  ]
-                ]
-              },
-              {
-                "label": "B: no sleeve",
-                "points": [
-                  [
-                    0,
-                    80
-                  ],
-                  [
-                    5,
-                    56
-                  ],
-                  [
-                    10,
-                    40
-                  ],
-                  [
-                    15,
-                    30
-                  ],
-                  [
-                    20,
-                    25
-                  ]
-                ]
-              }
+          "id": "check-science-transfer-v2-trends-interpolation-1-passage",
+          "title": "Independent check: Describe the trend and stay inside the evidence",
+          "context": "Assume straight-line variation between the neighboring measurements.",
+          "table": {
+            "columns": ["Time (min)", "Output (units)"],
+            "rows": [
+              [6, 18],
+              [12, 30]
             ]
           }
         }
       },
       {
-        "id": "check-science-trends-2",
+        "id": "check-science-transfer-v2-trends-interpolation-2",
         "topic": "science-trends-interpolation",
         "subject": "science",
         "category": "Data interpretation",
         "difficulty": "medium",
-        "stem": "Across which tested interval did the enzyme’s initial rate decrease?",
-        "questionText": "Across which tested interval did the enzyme’s initial rate decrease?",
-        "choices": [
-          "20–30°C",
-          "40–50°C",
-          "30–40°C",
-          "10–20°C"
-        ],
-        "answer": 1,
-        "explanation": "The rate drops from 12 to 6 µmol/min between 40 and 50°C. The other listed intervals all show increases.",
+        "stem": "Over which interval was the average increase greatest per hour?",
+        "questionText": "Over which interval was the average increase greatest per hour?",
+        "choices": ["2–6 h", "6–7 h", "0–2 h", "All equal"],
+        "answer": 2,
+        "explanation": "Rates are (18−10)/2 = 4, (26−18)/4 = 2, and (29−26)/1 = 3 units/h. The first is greatest.",
         "passage": {
-          "id": "science-drill-enzyme-temp",
-          "title": "Temperature and reaction rate",
-          "context": "Equal quantities of an enzyme and substrate were mixed at each temperature, and the initial reaction rate was measured. Each trial used fresh enzyme. High temperature can alter an enzyme’s shape.",
-          "graph": {
-            "title": "Initial rate at different temperatures",
-            "xLabel": "Temperature (°C)",
-            "yLabel": "Initial rate (µmol/min)",
-            "series": [
-              {
-                "label": "Enzyme X",
-                "points": [
-                  [
-                    10,
-                    2
-                  ],
-                  [
-                    20,
-                    5
-                  ],
-                  [
-                    30,
-                    9
-                  ],
-                  [
-                    40,
-                    12
-                  ],
-                  [
-                    50,
-                    6
-                  ],
-                  [
-                    60,
-                    1
-                  ]
-                ]
-              }
+          "id": "check-science-transfer-v2-trends-interpolation-2-passage",
+          "title": "Independent check: Describe the trend and stay inside the evidence",
+          "context": "The time intervals are unequal.",
+          "table": {
+            "columns": ["Time (h)", "Output (units)"],
+            "rows": [
+              [0, 10],
+              [2, 18],
+              [6, 26],
+              [7, 29]
             ]
           }
         }
       },
       {
-        "id": "check-science-trends-3",
+        "id": "check-science-transfer-v2-trends-interpolation-3",
         "topic": "science-trends-interpolation",
         "subject": "science",
         "category": "Data interpretation",
         "difficulty": "hard",
-        "stem": "Which statement correctly distinguishes absolute pressure from the pressure added by the water at 8 m?",
-        "questionText": "Which statement correctly distinguishes absolute pressure from the pressure added by the water at 8 m?",
-        "choices": [
-          "Absolute pressure is 180 kPa; water adds 80 kPa above the 100 kPa surface value.",
-          "Both are 100 kPa.",
-          "Absolute pressure is 80 kPa; water adds 180 kPa.",
-          "Both are 180 kPa."
-        ],
+        "stem": "The model is z² = 16t. What z is predicted at 9 s?",
+        "questionText": "The model is z² = 16t. What z is predicted at 9 s?",
+        "choices": ["12 mm", "36 mm", "144 mm", "9 mm"],
         "answer": 0,
-        "explanation": "The graph gives 180 kPa absolute pressure at 8 m and 100 kPa at the surface. The added water contribution over that depth is 180−100 = 80 kPa.",
+        "explanation": "Substitution gives z² = 144 mm², so the nonnegative distance is 12 mm. The equation is nonlinear; z itself is not 16t.",
         "passage": {
-          "id": "science-drill-pressure-depth",
-          "title": "Pressure beneath a water surface",
-          "context": "A pressure sensor was lowered into a lake. The graph shows absolute pressure, which includes atmospheric pressure at the surface. Over the tested depths, water density and atmospheric pressure were approximately constant.",
-          "graph": {
-            "title": "Pressure beneath a water surface",
-            "xLabel": "Depth (m)",
-            "yLabel": "Absolute pressure (kPa)",
-            "series": [
-              {
-                "label": "Measured pressure",
-                "points": [
-                  [
-                    0,
-                    100
-                  ],
-                  [
-                    2,
-                    120
-                  ],
-                  [
-                    4,
-                    140
-                  ],
-                  [
-                    6,
-                    160
-                  ],
-                  [
-                    8,
-                    180
-                  ]
-                ]
-              }
+          "id": "check-science-transfer-v2-trends-interpolation-3-passage",
+          "title": "Independent check: Describe the trend and stay inside the evidence",
+          "context": "z is a nonnegative distance in mm; t is time in seconds. Use the stated model.",
+          "table": {
+            "columns": ["t (s)", "Measured z (mm)"],
+            "rows": [
+              [1, 4],
+              [4, 8]
             ]
           }
         }
@@ -602,253 +396,203 @@
     "intro": "Identify what an experiment changes, measures, and keeps the same.",
     "sections": [
       {
-        "heading": "Name variables precisely",
+        "heading": "Name variables and controls precisely",
         "body": [
-          "Name the changed factor and measured response with units: nitrogen dose (mg/day) → final dry mass (g). Water, light, soil, and measurement day are controlled variables when held fixed.",
-          "A control group gives a comparison. No added nitrogen provides a starting point; the soil may still contain nitrogen. A group given only the carrier liquid is a vehicle-only control: it helps test what the active ingredient changes."
+          "The independent variable is deliberately changed; the dependent variable is measured. Controlled variables are held fixed. A control group supplies the comparison needed for the stated question.",
+          "A zero-dose group can still contain naturally occurring material. A vehicle-only group receives the inactive carrier so that its effect is separated from the active ingredient."
         ],
         "examples": [
           {
-            "label": "Map the roles",
-            "text": "Nitrogen experiment: change dose (0, 5, 10 mg/day); measure final dry mass (1.2, 1.8, 1.9 g); keep water, light, soil, seed lot, and day fixed.",
+            "label": "Worked example",
+            "text": "Change fertilizer dose (0, 4, 8 mg/day); measure final leaf area (cm²); keep species, water, light, and duration fixed. The zero-dose group is the treatment baseline.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-plants-design"
-        ]
+        "evidenceIds": ["science-teaching-experimental-design-1"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Catch two factors changing together",
+        "heading": "Detect confounds and isolate the treatment",
         "body": [
-          "A confound is another important factor that changes along with the treatment. If algae flasks differ in both source water and temperature, you cannot tell which change caused the result.",
-          "Mix one water source, divide it among separate flasks, and assign temperatures by chance. Keep starting density, light, volume, and time the same. Random differences between samples are different from giving one treatment group an extra change."
+          "A confound is another relevant factor that changes alongside the treatment. A result from two simultaneous changes cannot identify either change as the sole cause.",
+          "Split one source material among separate units, assign treatments randomly, and keep other relevant conditions comparable. More repeats alone do not repair a built-in confound."
         ],
-        "tip": "Ask what besides the intended variable differs between the compared rows.",
         "examples": [
           {
-            "label": "Identify a confound",
-            "text": "Lake L = edge water at 15°C; M = center water at 25°C. Source and temperature both differ, so 240 versus 430 cells/mL cannot isolate temperature.",
+            "label": "Worked example",
+            "text": "Sample A grows at 18°C in river water; B at 28°C in pond water. Source and temperature both change. Test both temperatures using portions of the same mixed water source.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-lake-design"
-        ]
+        "evidenceIds": ["science-teaching-experimental-design-2"],
+        "teachingRevision": 2
       },
       {
         "heading": "Match the comparison to the hypothesis",
         "body": [
-          "Choose the comparison that changes the hypothesized factor. Equal catalyst masses in large versus crushed pieces test surface area; no catalyst versus a large piece tests adding that catalyst form.",
-          "Keep the finish line the same, such as time to collect a fixed gas volume. Repeating trials checks consistency. Assigning treatments by chance reduces starting differences. Hiding labels from the observer reduces expectation bias. None alone proves how the reaction works at the molecular level."
+          "Translate the hypothesis into the one factor that must differ between groups. Use the same response definition and endpoint so the results can be compared.",
+          "A no-treatment control asks whether adding a treatment matters; equal treatment amounts with different forms can isolate a property such as surface area."
         ],
         "examples": [
           {
-            "label": "Select the matched comparison",
-            "text": "Large versus crushed catalyst: same catalyst mass, different surface area, mean times 80 versus 40 s. That pair targets surface area.",
+            "label": "Worked example",
+            "text": "Equal 2 g catalyst portions are intact or powdered. Same solution and gas-volume endpoint: the comparison isolates surface area; adding a no-catalyst group tests a separate question.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-catalyst-design"
-        ]
+        "evidenceIds": ["science-teaching-experimental-design-3"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Experimental units and repetition",
+        "heading": "Count independent experimental units",
         "body": [
-          "Count separate objects or groups that receive the treatment. These are the experimental units. Four treated panels give four units; ten measurements of one panel still give only one unit.",
-          "Replication means repeating the test with separate units. It checks consistency but cannot fix two factors changing together. A mean is an average; if only averages are given, do not invent how spread out the results are or how likely a difference is due to chance."
+          "The experimental unit is the object or group independently assigned a treatment. Multiple readings of the same object are repeated measurements, not extra independent treatment units.",
+          "Replication estimates consistency across units. Random assignment reduces systematic starting differences; neither automatically removes an uncontrolled treatment difference."
         ],
         "examples": [
           {
-            "label": "Count independent units",
-            "text": "Solar panels: four cleaned and four uncleaned panels = four units per treatment. Before/after readings on each panel do not double the number of treated units.",
+            "label": "Worked example",
+            "text": "Five tanks each receive a salinity treatment. Six fish measured in each tank are subsamples: there are five independently treated tanks, not thirty independently treated fish.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-panels"
-        ]
+        "evidenceIds": ["science-teaching-experimental-design-4"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Random assignment, blinding, and carryover",
+        "heading": "Separate randomization, blinding, and carryover",
         "body": [
-          "Random assignment concerns which subjects receive treatment. Blinding concerns whether the observer knows treatment labels while measuring outcomes. They address different sources of bias.",
-          "Carryover means an earlier treatment affects a later test on the same subject. Fresh groups can avoid it; varying test order reduces fixed-order bias but may not remove every carryover effect."
+          "Random assignment decides which units receive treatments. Blinding hides treatment labels from the person measuring or judging outcomes. They address different sources of bias.",
+          "An earlier treatment can affect a later trial on the same unit. Use fresh independent groups or an adequate recovery period; varying order reduces fixed-order bias but may not erase carryover."
         ],
         "examples": [
           {
-            "label": "Distinguish two safeguards",
-            "text": "Random assignment decides which insects enter 15, 25, or 35°C. Blinding hides temperature labels during video scoring. One addresses starting differences; the other expectation bias.",
+            "label": "Worked example",
+            "text": "Randomly assign insects to tones, then score unlabeled videos. Randomization addresses initial group differences; blinding addresses expectations during scoring.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-insect-temperature"
-        ]
+        "evidenceIds": ["science-teaching-experimental-design-5"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Two-factor designs and matching settings",
+        "heading": "Use a two-factor comparison and test interactions",
         "body": [
-          "To test one factor, hold the other fixed. In the compost table, compare water amounts at one temperature or temperatures at one water amount.",
-          "An effect can depend on the other factor: extra water raises CO₂ by 30 mg at 15°C and 45 mg at 30°C. A useful follow-up adds a matched comparison, such as scratched versus intact coating at the same pH, metal, and immersion time."
+          "To estimate one factor’s effect, hold the other factor fixed. Then compare those effects across levels of the other factor to see whether the response depends on context.",
+          "A useful follow-up includes the missing matched conditions. Changing the duration, sample type, and treatment together creates a new confound instead of resolving the old one."
         ],
         "examples": [
           {
-            "label": "A factor effect depends on context",
-            "text": "Compost water effect: at 15°C, 60−30 = 30 mg extra CO₂; at 30°C, 100−55 = 45 mg. The water effect differs by 15 mg between tested temperatures.",
+            "label": "Worked example",
+            "text": "At low light, feeding raises growth 2→5 mm (effect +3). At high light, 4→11 mm (effect +7). The feeding effect is 4 mm larger at high light.",
             "good": true
           }
-        ]
+        ],
+        "evidenceIds": ["science-teaching-experimental-design-6"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Measure the response and limit the conclusion",
+        "heading": "Check measurement definitions, precision, and accuracy",
         "body": [
-          "An operational definition says exactly what counts as a result: “no wing movement for at least 0.5 s within 1 s after the tone.” Measuring dry sediment also needs the same drying and rainfall steps each time.",
-          "Limit the conclusion to the groups and conditions tested. Carbon dioxide (CO₂) can show that dead material is breaking down without telling the exact fraction lost. Fix the actual problem: two changing factors, inconsistent measurement, or too few separate test units."
+          "An operational definition specifies exactly how a response is measured. Precision means repeated values cluster together; accuracy means they are near an accepted reference. A tightly clustered offset can be precise yet inaccurate.",
+          "Repetition can reduce random uncertainty in a mean, but it does not remove a systematic calibration error. Test an accepted standard, correct the offset, and use an instrument fine enough to resolve the proposed difference."
         ],
-        "evidenceIds": [
-          "science-drill-erosion"
-        ]
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "A 50.0°C standard reads 52.1, 52.0, 52.1°C. The thermometer is precise but about 2.1°C high; averaging more readings does not fix that bias.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-experimental-design-7"],
+        "teachingRevision": 2
       }
     ],
     "check": [
       {
-        "id": "check-science-design-1",
-        "topic": "science-experimental-design",
-        "subject": "science",
-        "category": "Scientific investigation",
-        "difficulty": "easy",
-        "stem": "What was the dependent variable in the nitrogen experiment?",
-        "questionText": "What was the dependent variable in the nitrogen experiment?",
-        "choices": [
-          "Final dry mass",
-          "Daily nitrogen dose",
-          "Number of light hours",
-          "Daily water volume"
-        ],
-        "answer": 0,
-        "explanation": "Final dry mass is the measured response: 1.2, 1.8, and 1.9 g. Nitrogen dose is the deliberately changed factor.",
-        "passage": {
-          "id": "science-drill-plants-design",
-          "title": "Nitrogen and plant growth",
-          "context": "Thirty same-age seedlings from one seed lot were randomly divided into three groups of 10. Every group received 100 mL of water per day, 8 h of light, identical pots, and the same soil mass. Nitrogen dose differed; mean dry mass was measured after 14 days.",
-          "table": {
-            "columns": [
-              "Group",
-              "Nitrogen per day (mg)",
-              "Mean final dry mass (g)"
-            ],
-            "rows": [
-              [
-                "A",
-                0,
-                1.2
-              ],
-              [
-                "B",
-                5,
-                1.8
-              ],
-              [
-                "C",
-                10,
-                1.9
-              ]
-            ]
-          }
-        }
-      },
-      {
-        "id": "check-science-design-2",
+        "id": "check-science-transfer-v2-experimental-design-1",
         "topic": "science-experimental-design",
         "subject": "science",
         "category": "Scientific investigation",
         "difficulty": "medium",
-        "stem": "Which condition supplies a baseline for whether adding any catalyst speeds the reaction?",
-        "questionText": "Which condition supplies a baseline for whether adding any catalyst speeds the reaction?",
+        "stem": "Which variable is the measured response?",
+        "questionText": "Which variable is the measured response?",
         "choices": [
-          "No catalyst",
-          "Large piece only",
-          "Trial 3 of every condition only",
-          "Crushed pieces only"
+          "Tablet mass",
+          "Stirring setting",
+          "Water volume",
+          "Time until the tablet dissolves"
         ],
-        "answer": 0,
-        "explanation": "The no-catalyst times (120, 124, 122 s) show the reaction’s baseline completion time without added catalyst, for comparison with either catalyst treatment.",
+        "answer": 3,
+        "explanation": "The response is the observed dissolving time. Stirring is changed; mass and water volume are controlled.",
         "passage": {
-          "id": "science-drill-catalyst-design",
-          "title": "A reusable catalyst",
-          "context": "Researchers reacted the same masses of reactants at 25°C. A catalyst was either absent, present as one large piece, or present as crushed pieces with the same total mass. The endpoint was the same total volume of product gas. Each condition was repeated three times.",
+          "id": "check-science-transfer-v2-experimental-design-1-passage",
+          "title": "Independent check: Find what changed, what was measured, and what was controlled",
+          "context": "Equal-mass tablets are placed in equal water volumes at the same temperature; stirring is varied.",
           "table": {
-            "columns": [
-              "Condition",
-              "Trial 1 time (s)",
-              "Trial 2 time (s)",
-              "Trial 3 time (s)"
-            ],
+            "columns": ["Stirring setting", "Mean dissolving time (s)"],
             "rows": [
-              [
-                "No catalyst",
-                120,
-                124,
-                122
-              ],
-              [
-                "Large piece",
-                80,
-                82,
-                78
-              ],
-              [
-                "Crushed pieces",
-                40,
-                42,
-                38
-              ]
+              ["Low", 120],
+              ["High", 75]
             ]
           }
         }
       },
       {
-        "id": "check-science-design-3",
+        "id": "check-science-transfer-v2-experimental-design-2",
         "topic": "science-experimental-design",
         "subject": "science",
         "category": "Scientific investigation",
         "difficulty": "hard",
-        "stem": "What is the difference between the mean before-to-after output change in cleaned panels and the corresponding change in uncleaned panels?",
-        "questionText": "What is the difference between the mean before-to-after output change in cleaned panels and the corresponding change in uncleaned panels?",
+        "stem": "What is the clearest description of this balance?",
+        "questionText": "What is the clearest description of this balance?",
         "choices": [
-          "92 W",
-          "11 W",
-          "12 W",
-          "13 W"
+          "Accurate and precise",
+          "Precise but systematically low",
+          "Imprecise but centered on the standard",
+          "Averaging more readings removes its offset"
+        ],
+        "answer": 1,
+        "explanation": "The tightly clustered readings are about 0.8 g below the accepted 20.0 g value. That is a systematic error; averaging alone will not correct it.",
+        "passage": {
+          "id": "check-science-transfer-v2-experimental-design-2-passage",
+          "title": "Independent check: Find what changed, what was measured, and what was controlled",
+          "context": "A balance measures the same certified 20.0 g mass three times.",
+          "table": {
+            "columns": ["Trial", "Reading (g)"],
+            "rows": [
+              [1, 19.2],
+              [2, 19.1],
+              [3, 19.2]
+            ]
+          }
+        }
+      },
+      {
+        "id": "check-science-transfer-v2-experimental-design-3",
+        "topic": "science-experimental-design",
+        "subject": "science",
+        "category": "Scientific investigation",
+        "difficulty": "hard",
+        "stem": "Which conclusion follows about the additive’s effect?",
+        "questionText": "Which conclusion follows about the additive’s effect?",
+        "choices": [
+          "It adds 5 units at both temperatures",
+          "Temperature has no influence on the additive effect",
+          "The higher-temperature effect is 15 units",
+          "Its effect is 5 units greater at the higher temperature"
         ],
         "answer": 3,
-        "explanation": "Cleaned change is 92−80 = +12 W; uncleaned change is 80−81 = −1 W. The difference in changes is 12−(−1) = 13 W, accounting for the small baseline/time change.",
+        "explanation": "At 12°C the effect is 9−6 = 3; at 32°C it is 15−7 = 8. Compare effects: 8−3 = 5.",
         "passage": {
-          "id": "science-drill-panels",
-          "title": "Cleaning solar panels",
-          "context": "Eight same-model panels were assigned randomly to cleaning or no cleaning. Each panel’s output was measured before treatment and 1 h afterward under a steady artificial lamp. The table gives group means; all lamps, angles, and electrical loads were identical. Researchers wanted the effect of cleaning, not the effect of changing sunlight.",
+          "id": "check-science-transfer-v2-experimental-design-3-passage",
+          "title": "Independent check: Find what changed, what was measured, and what was controlled",
+          "context": "Independent groups are measured with and without additive at each temperature, with other settings matched.",
           "table": {
-            "columns": [
-              "Group",
-              "Panels",
-              "Mean before (W)",
-              "Mean after (W)"
-            ],
+            "columns": ["Temperature (°C)", "No additive", "Additive"],
             "rows": [
-              [
-                "Cleaned",
-                4,
-                80,
-                92
-              ],
-              [
-                "Not cleaned",
-                4,
-                81,
-                80
-              ]
+              [12, 6, 9],
+              [32, 7, 15]
             ]
           }
         }
@@ -861,247 +605,207 @@
     "intro": "Compare what each scientist claims and where they disagree.",
     "sections": [
       {
-        "heading": "Build a small cause-and-prediction map",
+        "heading": "Map each proposed cause to its prediction",
         "body": [
-          "For each account, map proposed cause → expected observation. A proposes microbes making new methane; B proposes warming releasing methane already dissolved in water.",
-          "Separate shared facts from disagreement. Both allow methane bubbles, so finding methane alone cannot distinguish them. Its source is the issue."
+          "Name the phenomenon being explained, then write cause → expected observation for each viewpoint. Keep reported facts separate from proposed mechanisms.",
+          "A shared prediction cannot distinguish the explanations. Look for a condition in which the predicted outcomes differ rather than merely a fact mentioned by one author."
         ],
         "examples": [
           {
-            "label": "Separate mechanism from shared fact",
-            "text": "Both scientists allow methane. A requires microbes to make most new methane; B releases methane already dissolved. Methane detection alone fits both.",
+            "label": "Worked example",
+            "text": "D says white lake water comes from suspended clay; E says it comes from dissolved salt. Both predict pale water. Filtering out solids should matter under D, not under E alone.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-bubble-views"
-        ]
+        "evidenceIds": ["science-teaching-conflicting-viewpoints-1"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Use distinguishing evidence",
+        "heading": "Control the competing explanation",
         "body": [
-          "Compare results under controlled conditions. Gas falls from 6 to 0.3 mL/h when microbes are removed and returns to 5.7 when restored. With other relevant factors fixed, this supports a microbial role.",
-          "If removal also changes dissolved methane, it changes a factor in the competing explanation. The comparison becomes less decisive. Supporting one account does not rule out every alternative."
-        ],
-        "tip": "A result that both scientists allow cannot decide between them on its own.",
-        "examples": [
-          {
-            "label": "Link removal and restoration",
-            "text": "Gas = 6 mL/h untreated, 0.3 with microbes removed, 5.7 after restoration. With dissolved methane and chemistry controlled, the linked changes support a microbial contribution.",
-            "good": true
-          }
-        ],
-        "evidenceIds": [
-          "science-drill-bubble-views"
-        ]
-      },
-      {
-        "heading": "Distinguish possible from actual",
-        "body": [
-          "Keep “can happen” separate from “did happen.” Viability after air and dried-mud transport shows both routes are possible, not which brought a plant to an island.",
-          "Surviving the trip is needed for seeds to grow afterward, but survival does not prove the trip happened. Check claims against the data: cooler freshwater holding 9.1 rather than 8.3 mg/L oxygen challenges a claim that cooling lowers the amount it can hold."
+          "A removal-and-restoration comparison is strongest when the manipulation leaves the competing cause unchanged. Otherwise the intervention may change both explanations at once.",
+          "A result can favor a causal contribution without proving every molecular detail or eliminating every alternative. State the supported link at the level actually tested."
         ],
         "examples": [
           {
-            "label": "Possible does not mean actual",
-            "text": "Airborne seeds: 90/100 viable. Mud-attached seeds: 85/100 viable. Both proposed routes preserve viability; these tests do not identify the historical island route.",
+            "label": "Worked example",
+            "text": "Removing clay reduces cloudiness 90→15 units; adding it back restores 86. With salt and temperature fixed, the linked changes favor a clay contribution.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-dispersal-views"
-        ]
+        "evidenceIds": ["science-teaching-conflicting-viewpoints-2"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Compare predictions in a controlled table",
+        "heading": "Distinguish feasibility, necessity, and history",
         "body": [
-          "Write each prediction, then hold the competing factor fixed. To test background-driven darkening, compare backgrounds at one temperature; to test temperature-driven darkening, compare temperatures at one background.",
-          "Equal scores across backgrounds but different scores across temperatures support the temperature prediction. These results alone do not show how the change happens inside the cells."
+          "Showing that a process can occur establishes feasibility; it does not show that it caused one historical event. A necessary condition must be met, but meeting it is not sufficient proof.",
+          "Choose evidence that documents the disputed event or eliminates a required condition. Avoid converting “possible” into “definitely happened.”"
         ],
         "examples": [
           {
-            "label": "Hold the other factor fixed",
-            "text": "At 30°C, both light and dark backgrounds give darkness score 3. This tests C’s background prediction without changing temperature, and shows no observed background effect.",
+            "label": "Worked example",
+            "text": "Spores survive both wind transport (72/80) and animal transport (68/80). Both routes are feasible; these survival trials do not reveal which colonized the valley.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-color-views"
-        ]
+        "evidenceIds": ["science-teaching-conflicting-viewpoints-3"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Find the observation that separates the explanations",
+        "heading": "Use the same condition for competing predictions",
         "body": [
-          "Choose a condition where predictions separate. When magnetic and star cues both point north, northward birds fit both accounts. Rotate only magnetic north east: M predicts east while S still predicts north.",
-          "For three viewpoints, compare the relevant pair. Shock-deformed quartz distinguishes impact under the supplied claims; declining fragment mass may fit both impact and steam explosion."
+          "Hold a competing factor fixed while testing the claimed factor. In a two-factor table, compare rows or columns that differ in only the relevant condition.",
+          "A model can be supported on the observed pattern while its internal mechanism remains untested. Distinguish a predicted relationship from an explanation of how it occurs."
         ],
         "examples": [
           {
-            "label": "Create separating predictions",
-            "text": "Magnetic north rotated east while star north stays north: M predicts east, S predicts north. Observed east favors M; rotating both east would not separate them.",
+            "label": "Worked example",
+            "text": "A pigment account predicts a salt effect; B predicts a temperature effect. At 20°C, low and high salt both give score 4; at 35°C both give 9. This pattern supports temperature dependence.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-navigation-views"
-        ]
+        "evidenceIds": ["science-teaching-conflicting-viewpoints-4"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Contradictions need reliable measurements and stated assumptions",
+        "heading": "Choose tests where predictions diverge",
         "body": [
-          "A reliable event at −28°C challenges a model that requires temperatures above −20°C. Target the stated requirement, not every idea related to the model.",
-          "“Not detected” is strong evidence only if the detector could find the amount the model requires. Otherwise the substance might be below the detection limit. Contradicting one model does not automatically prove another."
+          "Two explanations may agree under ordinary conditions. Change one cue or input while keeping the alternative cue fixed to create different predicted outcomes.",
+          "For three viewpoints, compare the pair named in the question first. Evidence that rejects one explanation may remain consistent with two others."
         ],
         "examples": [
           {
-            "label": "Use the model’s threshold",
-            "text": "L requires temperature above −20°C. New streaks at −28 and −30°C challenge that requirement. No water absorption is additional evidence because detection sensitivity is explicitly adequate.",
+            "label": "Worked example",
+            "text": "Account H predicts movement toward heat; J predicts movement toward moisture. Place heat west and moisture east: west favors H, east favors J. Putting both west would not separate them.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-plume-views"
-        ]
+        "evidenceIds": ["science-teaching-conflicting-viewpoints-5"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Read opposing views efficiently on screen",
+        "heading": "Test required conditions and detection limits",
         "body": [
-          "Name the event everyone is trying to explain. Then name each proposed cause and the result that would set it apart. Check limit words such as mainly, must, and can.",
-          "Sort evidence into shared, separating, or outside the tested range. Removing solids improves light transmission by 60 percentage points; removing droplets improves it by 10. Both matter, with a larger measured solid-removal effect."
-        ]
+          "A reliable observation outside a model’s required condition challenges that requirement when all other stated conditions apply. Rejecting one model does not itself prove another.",
+          "“Not detected” is decisive only if the method would detect the amount predicted. Compare the detection threshold with the model’s required signal before drawing a conclusion."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "A model requires at least 12 mg/L salt. Repeated events at 5 mg/L challenge that minimum. A nondetection below a 20 mg/L detector limit would not test the requirement adequately.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-conflicting-viewpoints-6"],
+        "teachingRevision": 2
+      },
+      {
+        "heading": "Test a complex claim one requirement at a time",
+        "body": [
+          "Split a compound explanation into its requirements, match each to evidence, and look for a contradiction. Shared evidence, separating evidence, and unmeasured conditions serve different roles.",
+          "When new information changes a background condition, carry it into each model’s prediction. Support requires the complete claim to fit, not just one convenient observation."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "K requires both sunlight and dissolved iron. Growth occurs in darkness with iron but not without iron. The dark growth challenges sunlight as necessary, while the iron comparison remains consistent with an iron role.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-conflicting-viewpoints-7"],
+        "teachingRevision": 2
       }
     ],
     "check": [
       {
-        "id": "check-science-views-1",
+        "id": "check-science-transfer-v2-conflicting-viewpoints-1",
         "topic": "science-conflicting-viewpoints",
         "subject": "science",
         "category": "Evaluation of models",
         "difficulty": "medium",
-        "stem": "Which source supplies most methane in Scientist B’s explanation?",
-        "questionText": "Which source supplies most methane in Scientist B’s explanation?",
+        "stem": "Which trial separates the temperature-only and light-only explanations most directly?",
+        "questionText": "Which trial separates the temperature-only and light-only explanations most directly?",
         "choices": [
-          "Methane transported inside seeds",
-          "Methane manufactured by the collection tube",
-          "Methane already dissolved in water",
-          "Methane newly generated by microbes"
+          "Warm and bright",
+          "Cool and dark",
+          "Warm and dark",
+          "Repeating the original warm-bright trial"
         ],
         "answer": 2,
-        "explanation": "B proposes that warming releases methane already dissolved in the water. B does not require living microbes to generate most of the collected gas.",
+        "explanation": "Warm-dark gives opposite predictions: the temperature-only account predicts growth; the light-only account predicts none. Warm-bright and cool-dark fit both.",
         "passage": {
-          "id": "science-drill-bubble-views",
-          "title": "Gas bubbles from pond sediment",
-          "context": "Methane bubbles emerge from pond sediment. Scientist A proposes that living microbes generate most of the methane from organic matter. Scientist B proposes that most methane was already dissolved in the water and escapes when the water warms; B does not require living microbes. Both allow methane to be present in the bubbles. Researchers warmed equal sediment-water samples to 28°C. A validated sterilization procedure killed microbes without changing initial dissolved methane, organic-matter content, or water chemistry. One sterilized sample was then given its original number of living microbes again. The table shows mean gas collection rates after 24 h.",
+          "id": "check-science-transfer-v2-conflicting-viewpoints-1-passage",
+          "title": "Independent check: Track each viewpoint’s testable prediction",
+          "context": "A temperature-only account predicts growth whenever warm. A light-only account predicts growth whenever bright.",
           "table": {
             "columns": [
-              "Treatment",
-              "Gas collected (mL/h)"
+              "Condition",
+              "Temperature-only prediction",
+              "Light-only prediction"
             ],
             "rows": [
-              [
-                "Untreated",
-                6
-              ],
-              [
-                "Microbes removed",
-                0.3
-              ],
-              [
-                "Microbes removed, then restored",
-                5.7
-              ]
+              ["Warm and bright", "Growth", "Growth"],
+              ["Warm and dark", "Growth", "None"],
+              ["Cool and dark", "None", "None"]
             ]
           }
         }
       },
       {
-        "id": "check-science-views-2",
+        "id": "check-science-transfer-v2-conflicting-viewpoints-2",
         "topic": "science-conflicting-viewpoints",
         "subject": "science",
         "category": "Evaluation of models",
-        "difficulty": "hard",
-        "stem": "Which observation would most directly document Scientist W’s proposed route to the island?",
-        "questionText": "Which observation would most directly document Scientist W’s proposed route to the island?",
+        "difficulty": "medium",
+        "stem": "Which result contradicts the claimed necessary condition?",
+        "questionText": "Which result contradicts the claimed necessary condition?",
         "choices": [
-          "Seawater kills most tested seeds.",
-          "Birds live on the island.",
-          "Seeds remain viable in dried mud for 20 min.",
-          "Viable Plant X seeds are captured in airborne traps offshore along the route to the island."
+          "An event in 4 mg/L salt",
+          "No event in 4 mg/L salt",
+          "An event in 14 mg/L salt",
+          "No event in 0 mg/L salt"
         ],
-        "answer": 3,
-        "explanation": "W specifically proposes viable seeds moving through air. Capturing viable airborne seeds along the route directly documents that transport; mud viability instead bears on B.",
+        "answer": 0,
+        "explanation": "The model says salt must be at least 10 mg/L. A reliable event at 4 violates that requirement under otherwise valid conditions.",
         "passage": {
-          "id": "science-drill-dispersal-views",
-          "title": "Seeds appearing on an island",
-          "context": "Plant X appeared on an offshore island. Scientist W proposes that wind carried its seeds: viable seeds must travel through air. Scientist B proposes that birds carried seeds in mud on their feet: viable seeds must remain attached long enough. Laboratory simulations measured the fraction of seeds still viable after the indicated transport treatment. Both scientists agree that germination requires viable seeds.",
+          "id": "check-science-transfer-v2-conflicting-viewpoints-2-passage",
+          "title": "Independent check: Track each viewpoint’s testable prediction",
+          "context": "A model requires salt ≥10 mg/L for an event. All other model conditions hold.",
           "table": {
-            "columns": [
-              "Treatment",
-              "Seeds tested",
-              "Viable afterward"
-            ],
+            "columns": ["Salt (mg/L)", "Event observed"],
             "rows": [
-              [
-                "Airborne 20 min",
-                100,
-                90
-              ],
-              [
-                "Attached to dried mud 20 min",
-                100,
-                85
-              ],
-              [
-                "Immersed in seawater 20 min",
-                100,
-                10
-              ]
+              [4, "Yes"],
+              [14, "Yes"]
             ]
           }
         }
       },
       {
-        "id": "check-science-views-3",
+        "id": "check-science-transfer-v2-conflicting-viewpoints-3",
         "topic": "science-conflicting-viewpoints",
         "subject": "science",
         "category": "Evaluation of models",
         "difficulty": "hard",
-        "stem": "What does the comparison of solids-removed and both-removed samples test most directly?",
-        "questionText": "What does the comparison of solids-removed and both-removed samples test most directly?",
+        "stem": "Does the nondetection contradict the model’s required 0.2 mg/L product?",
+        "questionText": "Does the nondetection contradict the model’s required 0.2 mg/L product?",
         "choices": [
-          "The effect of increasing ash concentration",
-          "The original plume’s total mass",
-          "The effect of changing sample-cell width",
-          "The effect of removing droplets when solids are already absent"
+          "Yes; nondetection proves zero product",
+          "Yes; every nondetection disproves every model",
+          "No; the detection limit is above the prediction",
+          "No; every model is untestable"
         ],
-        "answer": 3,
-        "explanation": "With solids absent in both, removing droplets raises transmission from 75% to 95%. That isolates the droplet effect in an ash-free sample, a 20-percentage-point increase.",
+        "answer": 2,
+        "explanation": "A detector that sees only ≥0.5 mg/L cannot distinguish the predicted 0.2 mg/L from zero. A sufficiently sensitive method is required.",
         "passage": {
-          "id": "science-drill-plume-views",
-          "title": "Why a volcanic plume looks opaque",
-          "context": "Scientist A proposes plume opacity comes mainly from solid ash particles. Scientist W proposes it comes mainly from condensed water droplets. A predicts removing solids greatly increases light transmission; W predicts removing liquid droplets greatly increases it. A device separates solids from droplets using methods validated not to remove the other component. Equal samples of one plume were measured in equal-width cells.",
+          "id": "check-science-transfer-v2-conflicting-viewpoints-3-passage",
+          "title": "Independent check: Track each viewpoint’s testable prediction",
+          "context": "The model predicts at least 0.2 mg/L product in this condition; no product is detected.",
           "table": {
-            "columns": [
-              "Sample treatment",
-              "Light transmitted (%)"
-            ],
+            "columns": ["Method", "Detection limit (mg/L)"],
             "rows": [
-              [
-                "Neither component removed",
-                15
-              ],
-              [
-                "Solids removed",
-                75
-              ],
-              [
-                "Droplets removed",
-                25
-              ],
-              [
-                "Both removed",
-                95
-              ]
+              ["Used method", 0.5],
+              ["Available finer method", 0.05]
             ]
           }
         }
@@ -1114,259 +818,203 @@
     "intro": "Check whether the evidence supports an explanation.",
     "sections": [
       {
-        "heading": "Test the actual rule",
+        "heading": "Compute predictions from the exact rule",
         "body": [
-          "A model is a rule used to predict a result. Test the exact rule: for x = 2F, forces of 3 and 3.5 N predict extensions of 6 and 7 cm. An increasing curve can still fail that rule.",
-          "One matching point is weak evidence. When models agree at one input, compare another: the pendulum models agree at 1 m but predict 4 s and 8 s at 4 m."
+          "A model is a specified rule, not merely a direction of change. Substitute the input and compare predicted with observed output under the same conditions and units.",
+          "One point where two models agree does not separate them. Use another input where their numerical predictions differ."
         ],
         "examples": [
           {
-            "label": "A general trend is weaker than a rule",
-            "text": "At 1 N, L predicts 2 cm and C predicts 4 cm; measured = 2. At 2 N both predict 4, so that single matching point does not distinguish them.",
+            "label": "Worked example",
+            "text": "L predicts x = 3F; M predicts x = F+4. At F = 2 both give 6 cm. At F = 4, L gives 12 and M gives 8, so that input separates them.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-spring-model"
-        ]
+        "evidenceIds": ["science-teaching-models-evidence-1"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Separate proportional, additive, and multiplicative changes",
+        "heading": "Separate additive and multiplicative change",
         "body": [
-          "Ask what stays the same. Linear change adds the same amount each step. Exponential growth multiplies by the same number each step. Direct proportion keeps the same ratio: output divided by input.",
-          "A culture doubling from 100 reaches 1,600 after four doublings, not 500. Transmission 100, 50, 25, 12.5 halves each step, so its absolute losses shrink. Equal percentage changes need not add equal amounts."
-        ],
-        "tip": "“Twice as much,” “2 more,” and “half as much” are different models.",
-        "examples": [
-          {
-            "label": "Compute repeated multiplication",
-            "text": "Doubling from 100 cells: after 1, 2, 3, 4 h predictions are 200, 400, 800, 1600. Observed 1500 at 4 h is 100 below the prediction.",
-            "good": true
-          }
-        ],
-        "evidenceIds": [
-          "science-drill-microbe-model"
-        ]
-      },
-      {
-        "heading": "Respect the domain and strength of the conclusion",
-        "body": [
-          "Test a model within the range and conditions where it claims to work. A 9 cm extension at 3 N challenges x = 2F within 0–5 N. A change at 8 N is outside that range.",
-          "Matching data support the model under tested conditions. They do not establish every material, temperature, nutrient level, or future interval."
+          "Linear change adds equal amounts over equal input steps. Exponential change multiplies by an equal factor; direct proportion also requires a constant output/input ratio and zero intercept.",
+          "Write intermediate steps to avoid counting growth intervals incorrectly. A constant percentage change need not give constant absolute differences."
         ],
         "examples": [
           {
-            "label": "Test within the stated domain",
-            "text": "L applies over 0–5 N. Repeated 9 cm at 3 N contradicts predicted 6. Deformation at 8 N concerns behavior outside the stated force range.",
+            "label": "Worked example",
+            "text": "A population starts at 60 and triples every two hours: 60→180→540→1620 after 6 h. This is three tripling intervals, not six.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-spring-model"
-        ]
+        "evidenceIds": ["science-teaching-models-evidence-2"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Use units and equations to keep predictions consistent",
+        "heading": "Respect the model’s domain",
         "body": [
-          "Use the change factors in v = kr²/η. Radius is the distance from center to edge: doubling it multiplies speed by four because it is squared. Viscosity describes resistance to flow: multiplying it by four divides speed by four. Doing both leaves speed unchanged.",
-          "Keep units consistent. A reciprocal means 1 divided by a number: in 1/f = 1/u + 1/v, u = v = 20 cm gives f = 10 cm. If 1/v equals zero, that does not mean v is zero."
+          "Test a claim within its stated input range and relevant conditions. A mismatch there challenges the model; a result outside that domain may instead reveal that the model cannot be extended.",
+          "Matching measured data supports the rule under tested conditions. It does not prove every material, time period, or untested environment."
         ],
         "examples": [
           {
-            "label": "Two factor changes can cancel",
-            "text": "For v ∝ r²/η, doubling radius gives ×4 and quadrupling viscosity gives ÷4. Together, predicted speed is unchanged if the other conditions remain fixed.",
+            "label": "Worked example",
+            "text": "A rule predicts 4x only for 1≤x≤6. At x = 5 it predicts 20, so a reliable 31 there challenges it. Behavior at x = 10 concerns an unstated extension.",
             "good": true
           }
-        ]
+        ],
+        "evidenceIds": ["science-teaching-models-evidence-3"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Correct for baseline before evaluating a pattern",
+        "heading": "Apply simultaneous factor changes with units",
         "body": [
-          "Identify whether the measurement is raw, corrected, net, or a change. Subtract a 20 counts/min background from totals 820, 420, 220, 120 to reveal sample rates 800, 400, 200, 100.",
-          "If a model predicts 50 sample counts/min, add the background to predict 70 total. Similarly, an increase of 9 mg from an initial 10 mg gives 19 mg final mass."
+          "Treat each changed factor separately, including exponents and denominator effects, then multiply the factors. Hold all unchanged quantities fixed.",
+          "Use units to identify the actual output. A reciprocal equation predicts the reciprocal first; a squared equation predicts a square before taking a root."
         ],
         "examples": [
           {
-            "label": "Subtract, predict, then restore baseline",
-            "text": "Decay: at 9 h total 120−background 20 = 100 sample counts/min. At 12 h, sample halves to 50. Restore background: total prediction = 70.",
+            "label": "Worked example",
+            "text": "For u = ka²/b, tripling a gives ×9; halving b gives ×2. Together u becomes 18 times as large if k stays fixed.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-decay"
-        ]
+        "evidenceIds": ["science-teaching-models-evidence-4"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Saturation models predict limits rather than unlimited growth",
+        "heading": "Correct the baseline before testing the pattern",
         "body": [
-          "For q = 4C/(1+C), q approaches 4 mg/g as positive C grows. At C = 9 it predicts 3.6, while q = 4C predicts 36: a high-concentration test separates them.",
-          "For positive C, this rule stays below 4, so a reliable result above 4 challenges it. Allow for rounding: 1.33 can match 1.333…. Do not claim a difference is unlikely to be chance without information about how much measurements vary."
+          "Identify raw totals versus the signal of interest. Subtract a background before comparing the corrected signal, and add it back if the question asks for a raw future reading.",
+          "Net biological change likewise combines gains and losses. A zero net change may hide equal nonzero production and consumption."
         ],
         "examples": [
           {
-            "label": "Separate saturating and linear models",
-            "text": "At C = 9, S gives q = 4×9/(1+9) = 3.6 mg/g; L gives 4×9 = 36. The much larger prediction gap makes this a separating model test.",
+            "label": "Worked example",
+            "text": "Totals 310, 160, 85 include a constant background of 10 counts/min. Corrected signals are 300, 150, 75. Next corrected signal is 37.5; predicted raw total is 47.5.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-adsorption"
-        ]
+        "evidenceIds": ["science-teaching-models-evidence-5"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Choose informative tests and cautious conclusions",
+        "heading": "Separate saturation from unlimited growth",
         "body": [
-          "Choose tests where competing predictions differ, using comparable conditions. Repeating the pendulum test at 1 m improves precision but does not separate models that agree there.",
-          "For a causal explanation, change the proposed cause and retain the comparison groups. Added nutrients can probe competition between mixed algae. Reduced growth alone supports an interaction; it does not show one species eats another."
+          "A saturating model approaches a limit while a proportional model grows without bound. Choose a valid input where their predictions differ enough to measure.",
+          "Account for rounding and measurement uncertainty when judging a mismatch. Do not invent statistical significance from means alone; a meaningful comparison needs appropriate information about variability."
         ],
-        "evidenceIds": [
-          "science-drill-pendulum"
-        ]
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "S predicts q = 6C/(2+C); L predicts q = 3C. At C = 4, S gives 4 and L gives 12. For positive C, S stays below its limit of 6.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-models-evidence-6"],
+        "teachingRevision": 2
+      },
+      {
+        "heading": "Combine evidence and choose an informative follow-up",
+        "body": [
+          "A model must fit all relevant observations under matched conditions. A second table can change the interpretation of the first, such as revealing a shared offset or a nutrient-dependent effect.",
+          "Choose a follow-up that separates explanations while preserving controls. Merely repeating an agreement point improves measurement consistency but may not test the disputed mechanism."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "Model A predicts extra light always increases growth. At high nutrients growth rises 4→10; at low nutrients it stays 3→3. The combined pattern challenges “always” and motivates a matched nutrient-by-light experiment.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-models-evidence-7"],
+        "teachingRevision": 2
       }
     ],
     "check": [
       {
-        "id": "check-science-model-1",
+        "id": "check-science-transfer-v2-models-evidence-1",
         "topic": "science-models-evidence",
         "subject": "science",
         "category": "Evaluation of models",
         "difficulty": "medium",
-        "stem": "What is Model D’s predicted count at 4 h?",
-        "questionText": "What is Model D’s predicted count at 4 h?",
+        "stem": "What raw detector reading should occur in the next equal interval?",
+        "questionText": "What raw detector reading should occur in the next equal interval?",
         "choices": [
-          "400",
-          "1500",
-          "1600",
-          "800"
+          "35 counts/min",
+          "47 counts/min",
+          "42 counts/min",
+          "70 counts/min"
         ],
-        "answer": 2,
-        "explanation": "The 3 h model count is 800. Doubling once more predicts 1,600 at 4 h; the observed 1,500 is different.",
+        "answer": 1,
+        "explanation": "Subtract background 12: corrected signals 280, 140, 70 halve. Next signal is 35; add background back: 35+12 = 47 counts/min.",
         "passage": {
-          "id": "science-drill-microbe-model",
-          "title": "A microbe growth model",
-          "context": "A culture started with 100 cells. Model D predicts doubling every hour for the first 4 h if nutrients remain sufficient. Cells were counted using the same method each hour. The table reports the observed counts; no prediction beyond 4 h is specified.",
+          "id": "check-science-transfer-v2-models-evidence-1-passage",
+          "title": "Independent check: Turn a model into a prediction you can check",
+          "context": "Background is constant at 12 counts/min; the corrected signal follows the pattern shown.",
           "table": {
-            "columns": [
-              "Time (h)",
-              "Observed cells"
-            ],
+            "columns": ["Interval", "Raw counts/min"],
             "rows": [
-              [
-                0,
-                100
-              ],
-              [
-                1,
-                200
-              ],
-              [
-                2,
-                400
-              ],
-              [
-                3,
-                800
-              ],
-              [
-                4,
-                1500
-              ]
+              [0, 292],
+              [1, 152],
+              [2, 82]
             ]
           }
         }
       },
       {
-        "id": "check-science-model-2",
-        "topic": "science-models-evidence",
-        "subject": "science",
-        "category": "Evaluation of models",
-        "difficulty": "medium",
-        "stem": "From 1 to 2 mg/L dye, by how many light units did transmission decrease?",
-        "questionText": "From 1 to 2 mg/L dye, by how many light units did transmission decrease?",
-        "choices": [
-          "12.5",
-          "50",
-          "75",
-          "25"
-        ],
-        "answer": 3,
-        "explanation": "Transmission drops from 50 units at 1 mg/L to 25 at 2 mg/L. The absolute decrease is 25 units, while the relative decrease is one-half.",
-        "passage": {
-          "id": "science-drill-absorption-model",
-          "title": "Light passing through a dye",
-          "context": "A detector measured transmitted light through equal-width cells containing different dye concentrations. All cells received 100 arbitrary light units. Model H predicts that each additional 1 mg/L of dye halves the transmitted light. Detector settings were unchanged.",
-          "graph": {
-            "title": "Transmitted light versus dye concentration",
-            "xLabel": "Dye concentration (mg/L)",
-            "yLabel": "Transmitted light (arbitrary units)",
-            "series": [
-              {
-                "label": "Measured",
-                "points": [
-                  [
-                    0,
-                    100
-                  ],
-                  [
-                    1,
-                    50
-                  ],
-                  [
-                    2,
-                    25
-                  ],
-                  [
-                    3,
-                    12.5
-                  ]
-                ]
-              }
-            ]
-          }
-        }
-      },
-      {
-        "id": "check-science-model-3",
+        "id": "check-science-transfer-v2-models-evidence-2",
         "topic": "science-models-evidence",
         "subject": "science",
         "category": "Evaluation of models",
         "difficulty": "hard",
-        "stem": "At a new length of 9 m, how far apart are the two models’ predicted periods?",
-        "questionText": "At a new length of 9 m, how far apart are the two models’ predicted periods?",
+        "stem": "For y = ka³/b, a doubles and b increases eightfold. What happens to y?",
+        "questionText": "For y = ka³/b, a doubles and b increases eightfold. What happens to y?",
         "choices": [
-          "18 s",
-          "3 s",
-          "12 s",
-          "6 s"
+          "It doubles",
+          "It increases eightfold",
+          "It is divided by four",
+          "It stays unchanged"
         ],
-        "answer": 2,
-        "explanation": "S predicts 2√9 = 6 s. D predicts 2×9 = 18 s. The prediction gap is 18−6 = 12 s; this is beyond the measured 4 m maximum but valid as a stated-model prediction.",
+        "answer": 3,
+        "explanation": "Doubling a multiplies a³ by 8. Increasing denominator b eightfold divides by 8; the factors cancel if k stays fixed.",
         "passage": {
-          "id": "science-drill-pendulum",
-          "title": "A pendulum timing model",
-          "context": "Small-angle swings of pendulums were timed over 10 complete cycles and divided by 10. The same bob and location were used. Model S predicts period T = 2√L seconds when length L is in meters. Model D instead predicts T = 2L seconds. Ignore air resistance over these tests.",
+          "id": "check-science-transfer-v2-models-evidence-2-passage",
+          "title": "Independent check: Turn a model into a prediction you can check",
+          "context": "The supplied equation applies throughout the changes; k is fixed.",
           "table": {
-            "columns": [
-              "Length L (m)",
-              "Measured period T (s)"
-            ],
+            "columns": ["Quantity", "Change factor"],
             "rows": [
-              [
-                0.25,
-                1
-              ],
-              [
-                1,
-                2
-              ],
-              [
-                2.25,
-                3
-              ],
-              [
-                4,
-                4
-              ]
+              ["a", 2],
+              ["b", 8]
+            ]
+          }
+        }
+      },
+      {
+        "id": "check-science-transfer-v2-models-evidence-3",
+        "topic": "science-models-evidence",
+        "subject": "science",
+        "category": "Evaluation of models",
+        "difficulty": "hard",
+        "stem": "Which model fits both sets of observations?",
+        "questionText": "Which model fits both sets of observations?",
+        "choices": [
+          "Light-always-increases-growth model",
+          "Nutrient-dependent light model",
+          "Neither model",
+          "Both models equally well"
+        ],
+        "answer": 1,
+        "explanation": "With nutrients, increasing light raises growth 5→12; without nutrients growth stays 2→2. That matches a nutrient-dependent response and contradicts “always increases.”",
+        "passage": {
+          "id": "check-science-transfer-v2-models-evidence-3-passage",
+          "title": "Independent check: Turn a model into a prediction you can check",
+          "context": "Model P predicts that more light always increases growth. Model Q predicts an increase only with sufficient nutrients. Other conditions are matched.",
+          "table": {
+            "columns": ["Nutrients", "Low-light growth", "High-light growth"],
+            "rows": [
+              ["Sufficient", 5, 12],
+              ["Low", 2, 2]
             ]
           }
         }
@@ -1379,258 +1027,219 @@
     "intro": "Use the science facts needed to understand a passage.",
     "sections": [
       {
-        "heading": "Acidity and enzyme behavior",
+        "heading": "Acidity, enzymes, and concentration",
         "body": [
-          "pH measures how acidic a solution is. Each one-unit drop means ten times more hydrogen ions, which are charged hydrogen particles. A drop from pH 6 to pH 4 gives 10² = 100 times the concentration.",
-          "Enzymes help chemical reactions happen. More acidity does not always make them work faster. This enzyme makes the most product among tested conditions at pH 6, with less at pH 3 and 8. Read its response separately from the acid level."
+          "At 25°C, pH 7 is neutral; lower pH is more acidic. Each one-unit decrease represents ten times the hydrogen-ion concentration. Do not read the scale as linear.",
+          "Enzymes catalyze reactions without being consumed overall. Activity depends on conditions such as pH and temperature; greater acidity does not necessarily mean greater activity."
         ],
         "examples": [
           {
-            "label": "A logarithmic concentration comparison",
-            "text": "pH 4 is two units below pH 6. Hydrogen-ion concentration is 10×10 = 100 times greater, even though enzyme product is lower at pH 4.",
+            "label": "Worked example",
+            "text": "A change from pH 8 to pH 5 means 10³ = 1000 times the hydrogen-ion concentration. The activity table must still be read separately to find the enzyme’s tested maximum.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-ph"
-        ]
+        "evidenceIds": ["science-teaching-scientific-foundations-1"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Closed systems conserve matter",
+        "heading": "Atoms, ions, reactions, and conserved matter",
         "body": [
-          "In a sealed system, total mass stays constant when matter changes form. Gas formation can raise pressure without adding mass; check whether anything can enter or leave.",
-          "Atoms are conserved, but molecule counts can change. Starting with 8 H₂ and 3 O₂, forming 6 H₂O leaves 2 H₂: 11 molecules become 8, while all 16 hydrogen and 6 oxygen atoms remain."
+          "Protons determine an element; isotopes differ in neutron number; gaining or losing electrons creates ions. A chemical reaction rearranges atoms rather than creating new elements.",
+          "In a closed system, total mass is conserved even if gas forms or pressure changes. Balance atom counts, including leftovers; molecule counts need not stay the same. If gas escapes an open vessel, the vessel’s measured mass can fall."
         ],
         "examples": [
           {
-            "label": "Count atoms, not just molecules",
-            "text": "8 H₂ + 3 O₂ → 6 H₂O + 2 leftover H₂. Hydrogen: 16 atoms before and 12+4 after. Oxygen: 6 atoms before and 6 after.",
+            "label": "Worked example",
+            "text": "4 H₂ and 3 O₂ can form 4 H₂O with 1 O₂ left. There are 8 hydrogen atoms and 6 oxygen atoms before and after, but the number of molecules changes.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-matter"
-        ]
+        "evidenceIds": ["science-teaching-scientific-foundations-2"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Relate simple physical quantities",
+        "heading": "Force, density, and electrical relationships",
         "body": [
-          "Choose the relevant relationship. V = IR gives R = 6/0.3 = 20 Ω; at fixed voltage, doubling resistance halves current. Density = mass/volume; floating depends on average density relative to the fluid.",
-          "Zero net force means zero acceleration, not necessarily zero velocity. Equal pulling and opposing forces let an already moving cart keep a constant velocity."
-        ],
-        "tip": "Use the provided equation and units; interpret the calculated quantity in context.",
-        "examples": [
-          {
-            "label": "Separate force from acceleration",
-            "text": "Trial 2 cart: net force = 5−1 = 4 N. At 2 kg, a = 2 m/s²; at 4 kg, a = 1 m/s². Same force does not imply same acceleration.",
-            "good": true
-          }
-        ],
-        "evidenceIds": [
-          "science-drill-circuit"
-        ]
-      },
-      {
-        "heading": "Net biological measurements combine opposing processes",
-        "body": [
-          "Net change means the result after gains and losses: production − consumption. Leaves make oxygen during photosynthesis and use oxygen during respiration. A net gain of 2.5 mg/L plus 1.5 used gives gross production, the total made, of 4.0 if respiration stays the same.",
-          "Zero net change can hide equal nonzero rates. Compare light, dark, and no-leaf controls. CO₂ release can indicate decomposition without specifying the exact remaining litter mass."
+          "Net force = mass × acceleration. Zero net force means zero acceleration, so an already moving object can continue at constant velocity. Average speed = distance/time; density = mass/volume.",
+          "For a fixed-temperature resistor, V = IR. At fixed voltage, more resistance means less current. Series resistances add; do not infer a rule for another circuit arrangement without its relationships."
         ],
         "examples": [
           {
-            "label": "Recover gross production from net",
-            "text": "Leaves gain 2.5 mg/L oxygen while consuming 1.5 by respiration. Gross photosynthetic production = net+consumption = 4.0 mg/L.",
+            "label": "Worked example",
+            "text": "A 3 kg cart has 12 N forward and 3 N backward: net = 9 N, so acceleration = 3 m/s². Force directions must be combined before division.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-leaf-oxygen"
-        ]
+        "evidenceIds": ["science-teaching-scientific-foundations-3"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Heat can change state without changing temperature",
+        "heading": "Cells, photosynthesis, and net measurements",
         "body": [
-          "During melting, supplied energy can change solid to liquid while temperature stays constant. A flat temperature segment does not mean the heater stopped.",
-          "For the same phase change and mass, doubling power halves the required time under comparable conditions. Within one phase, Q = mcΔT: equal energy causes a smaller temperature rise in more mass. A melting point alone does not uniquely identify a substance."
+          "Chloroplasts in plants perform photosynthesis, using light to build sugars from carbon dioxide and water and releasing oxygen. Cellular respiration uses fuel to release usable energy; plants also respire.",
+          "Net change = production − consumption. Add consumption back to recover gross production only when the stated assumptions allow it. Zero net output can conceal two active processes."
         ],
         "examples": [
           {
-            "label": "Energy at a temperature plateau",
-            "text": "Melting lasts from 2 to 6 min at constant heater power: 4 min. Double power supplies the same phase-change energy in about 2 min under the stated assumptions.",
+            "label": "Worked example",
+            "text": "Leaves consume 3 mg/L oxygen in darkness and gain 8 mg/L net in light. If respiration is unchanged, gross oxygen production in light = 8+3 = 11 mg/L.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-phase-change"
-        ]
+        "evidenceIds": ["science-teaching-scientific-foundations-4"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Basic inheritance connects genotype to a measured trait",
+        "heading": "Heat, phase changes, and energy",
         "body": [
-          "An allele is a version of a gene. Use the rule given: if one A is enough for purple flowers, AA and Aa look purple. This visible trait is the phenotype. Aa × Aa gives expected fractions 1/4 AA, 1/2 Aa, and 1/4 aa: 3/4 purple and 1/4 white.",
-          "Among 80 offspring, expect 20 white, but chance can change the actual count. If one strain survives more often, its share can grow without a new gene change. If both strains then double equally, their shares stay the same."
+          "Within one phase, Q = mcΔT: equal supplied heat produces a smaller temperature change in a larger mass of the same material. Heat is energy transfer; temperature is not total stored energy.",
+          "During melting or boiling, energy can change phase while temperature stays constant. For equal mass and phase change with comparable heat loss, doubling heater power approximately halves the required time."
         ],
         "examples": [
           {
-            "label": "Combine genotype categories",
-            "text": "Purple = AA (1/4) + Aa (1/2) = 3/4 expected. Among 80 offspring, expected purple = 60 and white = 20; random actual counts can vary.",
+            "label": "Worked example",
+            "text": "A solid melts from minute 3 to minute 9 at a fixed temperature: 6 min of phase change. Doubling the net heating power supplies the same required energy in about 3 min.",
             "good": true
           }
         ],
-        "evidenceIds": [
-          "science-drill-genetics"
-        ]
+        "evidenceIds": ["science-teaching-scientific-foundations-5"],
+        "teachingRevision": 2
       },
       {
-        "heading": "Apply supplied physics without importing unnecessary assumptions",
+        "heading": "Inheritance and population proportions",
         "body": [
-          "Frequency counts oscillations per second, not intensity or duration. In v = fλ, fixed wave speed and doubled frequency require half the wavelength.",
-          "Use the supplied equation. Two 20 Ω resistors placed one after another, or in series, give 40 Ω; 8 V then gives 0.2 A. To test temperature’s effect on water density, compare the same salinity (salt concentration), keeping that other factor fixed."
+          "Genes have variants called alleles. Genotype is the allele combination; phenotype is the expressed trait. Use the dominance rule stated in the problem rather than assuming every trait is simply dominant or recessive.",
+          "A Punnett square gives expected probabilities, not exact guaranteed offspring counts. Natural selection changes existing variant frequencies when survival or reproduction differs; it need not require a new mutation in each generation."
         ],
-        "evidenceIds": [
-          "science-drill-circuit"
-        ]
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "If B is dominant, Bb × bb yields 1/2 Bb and 1/2 bb. For 120 offspring, the expected recessive count is 60, while the actual count can vary by chance.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-scientific-foundations-6"],
+        "teachingRevision": 2
+      },
+      {
+        "heading": "Waves and supplied physical models",
+        "body": [
+          "Frequency counts cycles per second; wavelength is distance per cycle. In v = fλ, constant wave speed means doubling frequency halves wavelength. Frequency is not loudness or duration.",
+          "Use the supplied physical equation and units. A change in one input may be canceled by another; do not add assumptions about material, circuit layout, or speed that the scenario does not supply."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "A wave travels at 24 m/s with frequency 6 Hz: wavelength = 24/6 = 4 m. At 12 Hz with the same speed, wavelength becomes 2 m.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-scientific-foundations-7"],
+        "teachingRevision": 2
+      },
+      {
+        "heading": "Earth, space, and relative evidence",
+        "body": [
+          "Earth’s rotation produces the day-night cycle; its revolution around the Sun defines a year. Seasons mainly follow axial tilt and the resulting sunlight angle and day length, rather than annual distance alone.",
+          "In undisturbed sedimentary layers, lower layers are older; a feature cutting a rock formed later than that rock. Weathering breaks material down; erosion transports it. Evaporation moves liquid water into vapor, while condensation forms liquid droplets."
+        ],
+        "examples": [
+          {
+            "label": "Worked example",
+            "text": "Layer U lies below V and a fault cuts both. U formed before V; the fault formed after both. These relations give an order, not numerical ages.",
+            "good": true
+          }
+        ],
+        "evidenceIds": ["science-teaching-scientific-foundations-8"],
+        "teachingRevision": 2
       }
     ],
     "check": [
       {
-        "id": "check-science-foundation-1",
+        "id": "check-science-transfer-v2-scientific-foundations-1",
         "topic": "science-scientific-foundations",
         "subject": "science",
         "category": "Scientific knowledge",
         "difficulty": "medium",
-        "stem": "The pH 7 solution has how much hydrogen-ion concentration compared with the pH 6 solution?",
-        "questionText": "The pH 7 solution has how much hydrogen-ion concentration compared with the pH 6 solution?",
+        "stem": "How does hydrogen-ion concentration at pH 3 compare with pH 5?",
+        "questionText": "How does hydrogen-ion concentration at pH 3 compare with pH 5?",
         "choices": [
-          "Twice as much",
-          "One-tenth as much",
-          "One-half as much",
-          "Ten times as much"
+          "It is 100 times greater",
+          "It is 2 times greater",
+          "It is 100 times smaller",
+          "It is unchanged"
         ],
-        "answer": 1,
-        "explanation": "One pH unit higher means tenfold lower hydrogen-ion concentration. Thus pH 7 has one-tenth the concentration at pH 6.",
+        "answer": 0,
+        "explanation": "pH 3 is two units lower, so hydrogen-ion concentration is 10² = 100 times greater.",
         "passage": {
-          "id": "science-drill-ph",
-          "title": "Acidity and an enzyme",
-          "context": "An enzyme converts a colorless substrate to a colored product. Equal enzyme and substrate amounts were tested at 25°C in solutions of different pH. For this question, lower pH means greater hydrogen-ion concentration; a difference of 1 pH unit corresponds to a factor of 10.",
+          "id": "check-science-transfer-v2-scientific-foundations-1-passage",
+          "title": "Independent check: Use basic science to interpret the supplied experiment",
+          "context": "The two aqueous solutions are at the same temperature.",
           "table": {
-            "columns": [
-              "pH",
-              "Product after 1 min (µmol)"
-            ],
+            "columns": ["Solution", "pH"],
             "rows": [
-              [
-                3,
-                1
-              ],
-              [
-                4,
-                3
-              ],
-              [
-                5,
-                7
-              ],
-              [
-                6,
-                10
-              ],
-              [
-                7,
-                8
-              ],
-              [
-                8,
-                4
-              ]
+              ["A", 3],
+              ["B", 5]
             ]
           }
         }
       },
       {
-        "id": "check-science-foundation-2",
+        "id": "check-science-transfer-v2-scientific-foundations-2",
         "topic": "science-scientific-foundations",
         "subject": "science",
         "category": "Scientific knowledge",
         "difficulty": "medium",
-        "stem": "What current does the measured relationship predict at 5 V?",
-        "questionText": "What current does the measured relationship predict at 5 V?",
+        "stem": "Which is the correct age order, oldest to youngest?",
+        "questionText": "Which is the correct age order, oldest to youngest?",
         "choices": [
-          "0.10 A",
-          "0.25 A",
-          "1.00 A",
-          "0.20 A"
+          "Intrusion, C, D",
+          "D, C, intrusion",
+          "Layer C, layer D, intrusion",
+          "C, intrusion, D"
         ],
-        "answer": 1,
-        "explanation": "The resistor is 20 Ω, as shown by 4 V/0.2 A or 6 V/0.3 A. I = V/R = 5/20 = 0.25 A, between the 4 V and 6 V measurements.",
+        "answer": 2,
+        "explanation": "In undisturbed upright layers, lower C predates D. The intrusion cuts both, so it formed after both layers.",
         "passage": {
-          "id": "science-drill-circuit",
-          "title": "A fixed resistor",
-          "context": "A resistor was connected to adjustable voltage. Its temperature was kept constant. For a resistor obeying Ohm’s law, voltage V = current I × resistance R, with V in volts, I in amperes, and R in ohms.",
-          "graph": {
-            "title": "Current through a resistor",
-            "xLabel": "Voltage (V)",
-            "yLabel": "Current (A)",
-            "series": [
-              {
-                "label": "Measured current",
-                "points": [
-                  [
-                    0,
-                    0
-                  ],
-                  [
-                    2,
-                    0.1
-                  ],
-                  [
-                    4,
-                    0.2
-                  ],
-                  [
-                    6,
-                    0.3
-                  ],
-                  [
-                    8,
-                    0.4
-                  ]
-                ]
-              }
+          "id": "check-science-transfer-v2-scientific-foundations-2-passage",
+          "title": "Independent check: Use basic science to interpret the supplied experiment",
+          "context": "Upright sedimentary layer C lies below D. An igneous intrusion cuts both; there was no overturning.",
+          "table": {
+            "columns": ["Feature", "Relation"],
+            "rows": [
+              ["C", "Below D"],
+              ["D", "Above C"],
+              ["Intrusion", "Cuts C and D"]
             ]
           }
         }
       },
       {
-        "id": "check-science-foundation-3",
+        "id": "check-science-transfer-v2-scientific-foundations-3",
         "topic": "science-scientific-foundations",
         "subject": "science",
         "category": "Scientific knowledge",
-        "difficulty": "hard",
-        "stem": "After the stated reaction, how many oxygen atoms remain in the vessel?",
-        "questionText": "After the stated reaction, how many oxygen atoms remain in the vessel?",
+        "difficulty": "medium",
+        "stem": "What is gross oxygen production under the stated assumption?",
+        "questionText": "What is gross oxygen production under the stated assumption?",
         "choices": [
-          "0",
-          "6",
-          "3",
-          "12"
+          "10 mg/L per h",
+          "4 mg/L per h",
+          "7 mg/L per h",
+          "21 mg/L per h"
         ],
-        "answer": 1,
-        "explanation": "Three initial O₂ molecules contain six oxygen atoms. All become part of six H₂O molecules, with one oxygen atom each. No atoms leave the sealed vessel, so the total remains six.",
+        "answer": 0,
+        "explanation": "Net = gross−respiration. Unchanged respiration consumes 3 mg/L per h, so gross = 7+3 = 10.",
         "passage": {
-          "id": "science-drill-molecule-balance",
-          "title": "Combining two gases",
-          "context": "A sealed vessel contains hydrogen and oxygen gases. Molecules react according to 2 H₂ + O₂ → 2 H₂O. Each H₂ has two hydrogen atoms, each O₂ has two oxygen atoms, and each H₂O has two hydrogen and one oxygen atom. Assume complete reaction of the limiting reactant and no material loss. Counts in the table represent individual molecules in a simplified model.",
+          "id": "check-science-transfer-v2-scientific-foundations-3-passage",
+          "title": "Independent check: Use basic science to interpret the supplied experiment",
+          "context": "Equal leaf samples are measured for one hour; assume respiration is the same in darkness and light.",
           "table": {
-            "columns": [
-              "Initial H₂ molecules",
-              "Initial O₂ molecules"
-            ],
+            "columns": ["Condition", "Net oxygen change (mg/L per h)"],
             "rows": [
-              [
-                8,
-                3
-              ]
+              ["Dark", -3],
+              ["Light", 7]
             ]
           }
         }

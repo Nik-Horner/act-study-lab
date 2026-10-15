@@ -3,6 +3,8 @@
  * a question's prerequisites were taught in this particular daily lesson.
  * Full topic lessons remain available; later scopes continue the curriculum.
  */
+import mathMethods from "@/content/math-method-questions.json";
+
 export interface DailyScope {
   title?: string;
   sections: number[];
@@ -128,7 +130,7 @@ export const DAILY_CURRICULUM: Record<string, DailyScope[]> = {
     scope([0, 1], [0, 1, 7, 8, 9, 10, 11]),
     scope([2, 3], [2, 12, 13, 14, 15, 16, 17]),
     scope([4], [3, 4, 18, 19, 20, 21, 22]),
-    scope([5, 6], [28, 29, 30, 31]),
+    scope([5, 6], [28, 29, 30, 31, 32]),
   ],
   "science-trends-interpolation": [
     scope([0, 1], [0, 1, 2, 5]),
@@ -137,10 +139,10 @@ export const DAILY_CURRICULUM: Record<string, DailyScope[]> = {
     scope([1, 5, 6], [12, 13, 14, 15, 16, 27, 28, 29, 30, 31]),
   ],
   "science-experimental-design": [
-    scope([0, 1], [0, 1, 2, 3, 4]),
+    scope([0, 1], [0, 1, 2, 3, 4, 34]),
     scope([2, 3], [5, 6, 7, 8, 9, 10, 12, 13, 14, 15]),
-    scope([4, 5], [11, 18, 19]),
-    scope([6], [16, 17, 20, 21, 22]),
+    scope([4, 5], [11, 18, 19, 33]),
+    scope([6], [16, 17, 20, 21, 22, 32]),
   ],
   "science-conflicting-viewpoints": [
     scope([0, 1], [0, 1, 2, 3, 4]),
@@ -152,13 +154,14 @@ export const DAILY_CURRICULUM: Record<string, DailyScope[]> = {
     scope([0, 1], [0, 1, 2, 3, 4, 5, 6]),
     scope([2, 3], [17, 18, 19, 20, 21]),
     scope([4, 5], [12, 13, 14, 15, 16, 22, 23, 24, 25, 26]),
-    scope([0, 6], [7, 8, 9, 10, 11, 27, 28, 29, 30, 31]),
+    scope([0, 6], [7, 8, 9, 10, 11, 27, 28, 29, 30, 31, 32, 33]),
   ],
   "science-scientific-foundations": [
-    scope([0, 1], [0, 1, 2, 3, 4, 12, 13, 14, 15, 16]),
+    scope([0, 1], [0, 1, 2, 3, 4, 12, 13, 14, 15, 16, 35]),
     scope([2, 6], [5, 6, 24, 25]),
-    scope([3], [7, 8, 9, 10, 11]),
+    scope([3], [7, 8, 9, 10, 11, 36]),
     scope([4, 5], [17, 18, 19, 20, 21, 27, 28, 29, 30, 31]),
+    scope([7], [32, 33, 34], "Earth, space, water, and relative rock ages"),
   ],
 };
 for (const topic of [
@@ -174,4 +177,20 @@ for (const topic of [
     scope([2, 3], [8, 9, 10, 11, 12, 13, 14, 15]),
     scope([4, 5, 6], [16, 17, 18, 19, 20, 21, 22, 23]),
   ];
+}
+
+// Each new item's authored prerequisite indices extend the smallest matching scope.
+for (const topic of new Set(mathMethods.map((question) => question.topic))) {
+  const methods = mathMethods.filter((question) => question.topic === topic);
+  methods.forEach((question, index) => {
+    const scope = [...DAILY_CURRICULUM[topic]].sort(
+      (a, b) =>
+        question.lessonSections.filter((i) => !a.sections.includes(i)).length -
+        question.lessonSections.filter((i) => !b.sections.includes(i)).length,
+    )[0];
+    scope.sections = [
+      ...new Set([...scope.sections, ...question.lessonSections]),
+    ].sort((a, b) => a - b);
+    scope.practice.push(32 + index);
+  });
 }

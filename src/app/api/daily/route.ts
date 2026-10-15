@@ -378,6 +378,7 @@ function dailyResponse(
   if (ctx.error) return ctx.error;
   return Response.json(
     {
+      userId: ctx.user.id,
       plan: ctx.plan,
       saved: ctx.saved,
       answers: ctx.answers,
@@ -393,7 +394,13 @@ function dailyResponse(
         testDate: ctx.course.testDate,
       },
       ...(includeCoverage && {
-        coverage: dailyCoverage(ctx.plan, ctx.settings, ctx.course, ctx.today),
+        coverage: dailyCoverage(
+          ctx.plan,
+          ctx.settings,
+          ctx.course,
+          ctx.today,
+          ctx.saved,
+        ),
       }),
     },
     { headers: { "Cache-Control": "private, no-store" } },

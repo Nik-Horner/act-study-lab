@@ -752,7 +752,7 @@ const answerChecks = [
   },
   {
     id: "check-math-number-quantity-2",
-    correct: "[[13, 16], [−5, −6]]",
+    correct: "\\(\\begin{bmatrix}13 & 16\\\\-5 & -6\\end{bmatrix}\\)",
     calculate: () => [
       [1 * 3 + 2 * 5, 1 * 4 + 2 * 6],
       [0 * 3 + -1 * 5, 0 * 4 + -1 * 6],
