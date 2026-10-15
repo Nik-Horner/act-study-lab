@@ -39,6 +39,8 @@ The account's target and test date apply across subjects. Math + Science share o
 
 Publish each release to both the existing Vercel app and the GPT Site identified in `.openai/hosting.json`. Vercel builds native Next.js with `npm run build:next` through `vercel.json`; Sites uses `npm run build` for its Worker. Deploy the same application source to both and verify both production URLs. Keep the existing Supabase environment variables and domains.
 
+Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` must also be available during the Sites build, through the build environment or ignored `.env.local`. Runtime settings alone do not configure the browser bundle. The Vite configuration refuses a build when either value is missing.
+
 GitHub Actions runs `npm run check`. The current publication uses Sites and the project identity in `.openai/hosting.json`. Keep the existing Supabase environment variables and domain. The explicit `tests/live-account.ts` smoke test requires a local server and the real Supabase public configuration; it creates isolated QA accounts only when email auto-confirmation is enabled, verifies two-account RLS and all-subject compatibility, and writes ignored QA session files for subsequent UI verification. It is not run in CI or against an existing user's account.
 
 ## Daily visual lessons
