@@ -370,19 +370,28 @@ export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
                     {t.blurb}
                   </p>
                   <ProgressBar
-                    percent={Math.min(100, (s.unique / 6) * 100)}
+                    percent={Math.min(100, (s.practiced / 6) * 100)}
                     tone={s.mastered ? "good" : "brand"}
                     className="mt-4"
                   />
+                  <p className="mt-2 text-xs text-ink-soft">
+                    {s.practiced} questions practiced
+                    {s.practiced > s.unique &&
+                      " · Includes your prior lesson practice. New skills still need separate practice."}
+                  </p>
                   <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
                     <Badge
                       tone={
-                        s.mastered ? "good" : s.unique > 0 ? "brand" : "neutral"
+                        s.mastered
+                          ? "good"
+                          : s.practiced > 0
+                            ? "brand"
+                            : "neutral"
                       }
                     >
                       {s.mastered
                         ? "Mastered"
-                        : s.unique > 0
+                        : s.practiced > 0
                           ? "Practicing"
                           : "Not started"}
                     </Badge>
