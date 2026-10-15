@@ -369,6 +369,7 @@ export function recordExam(
 }
 
 export interface TopicStats {
+  practiced: number;
   attempted: number;
   correct: number;
   accuracy: number | null;
@@ -476,6 +477,9 @@ export function getTopicStats(
       }),
     );
   return {
+    practiced: [...latest.values()].filter(
+      (answer) => answer.mode === "drill" && answer.chosen !== null,
+    ).length,
     attempted: relevant.length,
     correct,
     accuracy,
