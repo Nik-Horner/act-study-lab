@@ -197,4 +197,9 @@ test("spatial science uses visible diagrams with the correct event and tilt rela
     createElement(ScienceDiagram, { kind: "sealed-fault" }),
   );
   assert.match(sealed, /C covers the old fault without being cut/);
+  const intrusion = renderToStaticMarkup(
+    createElement(ScienceDiagram, { kind: "rock-intrusion" }),
+  );
+  assert.match(intrusion, /Fault F crosses and cuts the intrusion/);
+  assert.doesNotMatch(intrusion, /formed first|F is last|M → intrusion → F/);
 });
