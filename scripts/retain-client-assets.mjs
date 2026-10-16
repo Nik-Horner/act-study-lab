@@ -20,6 +20,10 @@ export function rememberClientAssets(root = process.cwd()) {
   const client = join(root, "dist/client"),
     cache = join(root, ".hosting-cache/previous-client");
   const manifest = join(client, ".vite/manifest.json");
+  if (!existsSync(manifest) && existsSync(join(cache, "files.json")))
+    return JSON.parse(readFileSync(join(cache, "files.json"), "utf8")).filter(
+      safeAsset,
+    );
   const records = existsSync(manifest)
     ? Object.values(JSON.parse(readFileSync(manifest, "utf8")))
     : [];

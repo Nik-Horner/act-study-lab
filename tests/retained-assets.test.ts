@@ -40,6 +40,11 @@ test("a release retains previous page assets without replacing new files or carr
     write("_next/static/chunks/older.js", "older retained generation");
     assert.equal(rememberClientAssets(root).length, 3);
     rmSync(client, { recursive: true });
+    assert.equal(
+      rememberClientAssets(root).length,
+      3,
+      "an interrupted build must not erase the retained generation",
+    );
     write(
       ".vite/manifest.json",
       JSON.stringify({
