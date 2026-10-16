@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "vite build && node scripts/clean-hosting-build.mjs",
+    "build": "node scripts/retain-client-assets.mjs prepare && vite build && node scripts/retain-client-assets.mjs restore && node scripts/clean-hosting-build.mjs",
     "start": "next start",
     "lint": "eslint",
     "test": "tsx --test tests/*.test.ts",
