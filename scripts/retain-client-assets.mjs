@@ -27,15 +27,31 @@ export function rememberClientAssets(root = process.cwd()) {
   const records = existsSync(manifest)
     ? Object.values(JSON.parse(readFileSync(manifest, "utf8")))
     : [];
+  // Vinext emits layout CSS separately from Vite's client manifest.
+  const serverManifest = join(
+    root,
+    "dist/server/__vite_rsc_assets_manifest.js",
+  );
+  const serverResources = existsSync(serverManifest)
+    ? (JSON.parse(
+        readFileSync(serverManifest, "utf8")
+          .replace(/^export default\s+/, "")
+          .replace(/;\s*$/, ""),
+      ).serverResources ?? {})
+    : {};
+  const serverCss = Object.values(serverResources)
+    .flatMap((entry) => entry.css ?? [])
+    .map((name) => name.replace(/^\//, ""));
   const files = [
     ...new Set(
-      records
-        .flatMap((entry) => [
+      [
+        ...records.flatMap((entry) => [
           entry.file,
           ...(entry.css ?? []),
           ...(entry.assets ?? []),
-        ])
-        .filter(safeAsset),
+        ]),
+        ...serverCss,
+      ].filter(safeAsset),
     ),
   ];
   rmSync(cache, { recursive: true, force: true });

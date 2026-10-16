@@ -22,13 +22,19 @@ test("a release retains previous page assets without replacing new files or carr
     mkdirSync(dirname(join(client, name)), { recursive: true });
     writeFileSync(join(client, name), text);
   };
+  const writeServerCss = (name: string) => {
+    mkdirSync(join(root, "dist/server"), { recursive: true });
+    writeFileSync(
+      join(root, "dist/server/__vite_rsc_assets_manifest.js"),
+      `export default ${JSON.stringify({ serverResources: { layout: { css: [name] } } })}`,
+    );
+  };
   try {
     write(
       ".vite/manifest.json",
       JSON.stringify({
         entry: {
           file: "_next/static/chunks/old.js",
-          css: ["_next/static/css/old.css"],
           assets: ["../.env.local"],
         },
         shared: { file: "_next/static/chunks/shared.js" },
@@ -36,6 +42,7 @@ test("a release retains previous page assets without replacing new files or carr
     );
     write("_next/static/chunks/old.js", "old entry");
     write("_next/static/css/old.css", "old style");
+    writeServerCss("/_next/static/css/old.css");
     write("_next/static/chunks/shared.js", "old shared");
     write("_next/static/chunks/older.js", "older retained generation");
     assert.equal(rememberClientAssets(root).length, 3);
@@ -54,7 +61,14 @@ test("a release retains previous page assets without replacing new files or carr
     );
     write("_next/static/chunks/new.js", "new entry");
     write("_next/static/chunks/shared.js", "new shared");
+    write("_next/static/css/new.css", "new style");
+    writeServerCss("/_next/static/css/new.css");
     restoreClientAssets(root);
+    assert.equal(
+      readFileSync(join(client, "_next/static/css/old.css"), "utf8"),
+      "old style",
+      "layout CSS absent from Vite's manifest must survive publication",
+    );
     assert.equal(
       readFileSync(join(client, "_next/static/chunks/old.js"), "utf8"),
       "old entry",
@@ -68,6 +82,7 @@ test("a release retains previous page assets without replacing new files or carr
     assert.deepEqual(rememberClientAssets(root).sort(), [
       "_next/static/chunks/new.js",
       "_next/static/chunks/shared.js",
+      "_next/static/css/new.css",
     ]);
   } finally {
     rmSync(root, { recursive: true, force: true });
