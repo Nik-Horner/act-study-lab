@@ -104,7 +104,7 @@ export function ScienceDiagram({
   const sealed = kind === "sealed-fault";
   const intrusion = kind === "rock-intrusion";
   const label = intrusion
-    ? "Layer M formed first. A vertical intrusion cuts M. Fault F crosses and cuts the intrusion, so F is last."
+    ? "A vertical intrusion cuts Layer M. Fault F crosses and cuts the intrusion."
     : sealed
       ? "A lies below B. A fault cuts A and B but ends below an unbroken layer C. Order: A, B, fault movement, C."
       : "A lies below B. A vertical fault offsets and cuts both layers. Order: A, B, fault movement.";
@@ -198,7 +198,7 @@ export function ScienceDiagram({
       </svg>
       <figcaption className="mt-2 text-sm text-ink-soft">
         {intrusion
-          ? "Trace what cuts what: M → intrusion → F."
+          ? "Use what cuts what to work out the order."
           : sealed
             ? "C covers the old fault without being cut."
             : "Read bottom to top, then place the cutting event last."}
