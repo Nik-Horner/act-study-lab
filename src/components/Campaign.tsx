@@ -571,10 +571,10 @@ export function Campaign({
           <div
             role="group"
             aria-label="Answer choices"
-            className="campaign-choices"
+            className="answer-choices campaign-choices"
           >
             {question.choices.map((text, index) => (
-              <div key={index}>
+              <div key={index} className="answer-choice-row">
                 <button
                   className="choice"
                   aria-pressed={(feedback?.chosen ?? choice) === index}
@@ -582,6 +582,12 @@ export function Campaign({
                   data-correct={
                     feedback ? feedback.answer === index : undefined
                   }
+                  data-wrong={
+                    feedback
+                      ? feedback.chosen === index && feedback.answer !== index
+                      : undefined
+                  }
+                  data-eliminated={eliminated.includes(index)}
                   disabled={!!feedback || pending || !!error}
                   onClick={() => {
                     setChoice(index);
@@ -599,7 +605,7 @@ export function Campaign({
                 </button>
                 {!feedback && (
                   <button
-                    className="campaign-eliminate"
+                    className="answer-eliminate"
                     aria-label={`${eliminated.includes(index) ? "Restore" : "Eliminate"} choice ${"ABCD"[index]}`}
                     aria-pressed={eliminated.includes(index)}
                     disabled={pending || !!error}

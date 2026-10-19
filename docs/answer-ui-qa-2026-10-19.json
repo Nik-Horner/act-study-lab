@@ -1,0 +1,446 @@
+{
+  "date": "2026-10-19",
+  "repository": "https://github.com/Nik-Horner/act-study-lab",
+  "baseline": "ed62cb9a03f86fd4dab051d1fd948326a7a8c047",
+  "observedProblem": {
+    "productionEnglishChoiceTextWidth": 121,
+    "productionEnglishChoiceHeight": 291,
+    "cause": "Two-column answer grids inside the existing side-by-side question workspace."
+  },
+  "changes": [
+    "One full-width answer row per option across subject drills, English checks, timed sections, Play and guided lesson activities.",
+    "Aligned letter badges, predictable text wrapping, and separate 44px elimination controls.",
+    "Explicit selected/correct/wrong/eliminated states; removed CSS overrides that hid English feedback colors.",
+    "Compact active-practice headings; optional English milestone and planning notes follow the question."
+  ],
+  "browser": "Native Codex in-app browser",
+  "viewports": [
+    [
+      1366,
+      650
+    ],
+    [
+      1024,
+      600
+    ],
+    [
+      768,
+      600
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "verification": {
+    "screenFamilies": 19,
+    "screenViewportCombinations": 76,
+    "documentOverflowFailures": 0,
+    "clippedChoiceFailures": 0,
+    "undersizedEliminationControls": 0,
+    "guidedLessonCheckSizes": 4,
+    "referenceQuiz": "12 choices checked at phone width",
+    "interactionChecks": [
+      "English wrong-answer saving and feedback colors",
+      "Play select, eliminate, restore and save",
+      "dark-mode correct and wrong feedback",
+      "Daily opens and resumes the same concept after reload"
+    ],
+    "unitTests": 418,
+    "unitFailures": 0,
+    "lint": "passed",
+    "contentValidators": "passed",
+    "productionBuild": "passed",
+    "typescript": "passed",
+    "isolatedAccountSmoke": "passed"
+  },
+  "coverage": [
+    {
+      "screen": "english-drill",
+      "width": 1366,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-drill",
+      "width": 1366,
+      "choiceCount": 4
+    },
+    {
+      "screen": "reading-drill",
+      "width": 1366,
+      "choiceCount": 4
+    },
+    {
+      "screen": "science-drill",
+      "width": 1366,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-lesson",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "reading-lesson",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "science-lesson",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "english-lesson",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "course",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "settings",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "progress",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "formulas",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "formula-reference",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "play-map",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "play-mission",
+      "width": 1366,
+      "choiceCount": 4
+    },
+    {
+      "screen": "english-exam",
+      "width": 1366,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-exam",
+      "width": 1366,
+      "choiceCount": 4
+    },
+    {
+      "screen": "results",
+      "width": 1366,
+      "choiceCount": 140
+    },
+    {
+      "screen": "daily",
+      "width": 1366,
+      "choiceCount": 0
+    },
+    {
+      "screen": "english-drill",
+      "width": 1024,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-drill",
+      "width": 1024,
+      "choiceCount": 4
+    },
+    {
+      "screen": "reading-drill",
+      "width": 1024,
+      "choiceCount": 4
+    },
+    {
+      "screen": "science-drill",
+      "width": 1024,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-lesson",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "reading-lesson",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "science-lesson",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "english-lesson",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "course",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "settings",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "progress",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "formulas",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "formula-reference",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "play-map",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "play-mission",
+      "width": 1024,
+      "choiceCount": 4
+    },
+    {
+      "screen": "english-exam",
+      "width": 1024,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-exam",
+      "width": 1024,
+      "choiceCount": 4
+    },
+    {
+      "screen": "results",
+      "width": 1024,
+      "choiceCount": 140
+    },
+    {
+      "screen": "daily",
+      "width": 1024,
+      "choiceCount": 0
+    },
+    {
+      "screen": "english-drill",
+      "width": 768,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-drill",
+      "width": 768,
+      "choiceCount": 4
+    },
+    {
+      "screen": "reading-drill",
+      "width": 768,
+      "choiceCount": 4
+    },
+    {
+      "screen": "science-drill",
+      "width": 768,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-lesson",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "reading-lesson",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "science-lesson",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "english-lesson",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "course",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "settings",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "progress",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "formulas",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "formula-reference",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "play-map",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "play-mission",
+      "width": 768,
+      "choiceCount": 4
+    },
+    {
+      "screen": "english-exam",
+      "width": 768,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-exam",
+      "width": 768,
+      "choiceCount": 4
+    },
+    {
+      "screen": "results",
+      "width": 768,
+      "choiceCount": 140
+    },
+    {
+      "screen": "daily",
+      "width": 768,
+      "choiceCount": 0
+    },
+    {
+      "screen": "english-drill",
+      "width": 390,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-drill",
+      "width": 390,
+      "choiceCount": 4
+    },
+    {
+      "screen": "reading-drill",
+      "width": 390,
+      "choiceCount": 4
+    },
+    {
+      "screen": "science-drill",
+      "width": 390,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-lesson",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "reading-lesson",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "science-lesson",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "english-lesson",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "course",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "settings",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "progress",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "formulas",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "formula-reference",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "play-map",
+      "width": 390,
+      "choiceCount": 0
+    },
+    {
+      "screen": "play-mission",
+      "width": 390,
+      "choiceCount": 4
+    },
+    {
+      "screen": "english-exam",
+      "width": 390,
+      "choiceCount": 4
+    },
+    {
+      "screen": "math-exam",
+      "width": 390,
+      "choiceCount": 4
+    },
+    {
+      "screen": "results",
+      "width": 390,
+      "choiceCount": 140
+    },
+    {
+      "screen": "daily",
+      "width": 390,
+      "choiceCount": 0
+    }
+  ],
+  "limits": [
+    "Representative real screen states, not every question or possible saved history.",
+    "Browser viewport emulation is not physical Chromebook or touch-device testing.",
+    "Two initial QA selector mismatches were corrected against the actual UI; all final combinations passed.",
+    "A Daily reload readiness wait initially timed out, then the same saved concept appeared and was verified."
+  ],
+  "progressSafety": "UI markup and styling changes only; choice handlers, grading indices, question IDs, APIs, timers, plans and stored progress are unchanged."
+}

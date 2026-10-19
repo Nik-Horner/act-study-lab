@@ -33,13 +33,15 @@ function CheckCard({ q }: { q: CheckQuestion }) {
         />
       )}
       <p className="mb-3 text-sm text-ink-soft">{q.questionText}</p>
-      <div className="grid gap-2 sm:grid-cols-2">
+      <div className="answer-choices" role="group" aria-label="Answer choices">
         {q.choices.map((choice, i) => {
           const isCorrect = i === q.answer;
           const isPicked = i === picked;
           let tone = "border-border bg-bg-raised hover:bg-border";
-          if (answered && isCorrect) tone = "border-good bg-good-soft text-good";
-          else if (answered && isPicked) tone = "border-bad bg-bad-soft text-bad";
+          if (answered && isCorrect)
+            tone = "border-good bg-good-soft text-good";
+          else if (answered && isPicked)
+            tone = "border-bad bg-bad-soft text-bad";
           else if (answered) tone = "border-border bg-bg-raised opacity-60";
 
           return (
@@ -47,10 +49,14 @@ function CheckCard({ q }: { q: CheckQuestion }) {
               key={i}
               type="button"
               disabled={answered}
+              aria-pressed={isPicked}
+              data-selected={isPicked}
+              data-correct={answered && isCorrect}
+              data-wrong={answered && isPicked && !isCorrect}
               onClick={() => setPicked(i)}
-              className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-left text-sm transition-colors disabled:cursor-default ${tone}`}
+              className={`choice ${tone}`}
             >
-              <span className="font-semibold">{LETTERS[i]}</span>
+              <span className="answer-letter">{LETTERS[i]}</span>
               <span>{choice}</span>
             </button>
           );

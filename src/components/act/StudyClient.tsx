@@ -532,15 +532,24 @@ function DrillSession({
     <div
       className={`mx-auto space-y-6 ${subject !== "math" && queue ? "max-w-6xl" : "max-w-5xl"}`}
     >
-      <StudyPageHeader
-        title={queue ? "Independent practice" : title}
-        subject={subject}
-        description="Independent questions with saved answers, evidence, and method review after each response."
-        back={{
-          href: `/study/${subject}`,
-          label: `${SUBJECT_LABELS[subject]} study`,
-        }}
-      />
+      {queue ? (
+        <>
+          <Link className="study-breadcrumb" href={`/study/${subject}`}>
+            {SUBJECT_LABELS[subject]} study
+          </Link>
+          <h1 className="sr-only">Independent practice</h1>
+        </>
+      ) : (
+        <StudyPageHeader
+          title={title}
+          subject={subject}
+          description="Independent questions with saved answers, evidence, and method review after each response."
+          back={{
+            href: `/study/${subject}`,
+            label: `${SUBJECT_LABELS[subject]} study`,
+          }}
+        />
+      )}
       {queue ? (
         <PracticeSet
           key={subject + slug + setNumber}
