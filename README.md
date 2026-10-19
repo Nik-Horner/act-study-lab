@@ -1,70 +1,110 @@
+<div align="center">
+
 # ACT Study Lab
 
-English, Math, Reading, and Science on the existing English Lab website, with the same Supabase sign-in, accounts, database, and English history.
+### Four subjects. One daily study habit.
 
-## Daily study
+English, Math, Reading, and optional Science — with guided lessons, focused practice, and progress that follows your account.
 
-The dashboard has one primary action: Start daily lesson. English → Reading → Math → optional Science each teaches a category and gives practice with explanations. All four share the account's 60/75/90-minute daily budget, with more time allocated to sections below the saved target score. Answers, completed lessons, and an absolute daily deadline save to the existing account database. Reloading or switching devices does not restart the timer. Unfinished work resumes on the next day without doubling the workload; categories advance after completion. Extra practice preserves the full subject dashboards, libraries, and timed forms.
+[![Checks](https://github.com/Nik-Horner/act-study-lab/actions/workflows/check.yml/badge.svg)](https://github.com/Nik-Horner/act-study-lab/actions/workflows/check.yml)
+![Next.js](https://img.shields.io/badge/Next.js-16-111111?logo=nextdotjs)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-181818?logo=supabase)
 
-English's detailed plan uses the Chicago calendar, starts preparation at least 12 days before the test, and ends before test day while preserving existing manual completion keys.
+[What’s inside](#whats-inside) · [Run locally](#run-locally) · [Development](#development) · [Project notes](#project-notes)
+
+</div>
+
+![ACT Study Lab daily study dashboard](docs/screenshots/daily/desktop.png)
+
+## A clear next step, every day
+
+Set your test date, target scores, and daily study time. ACT Study Lab builds a guided session across your subjects: learn the method, work through an example, then try it yourself. Return to unfinished work without losing your place.
+
+## What’s inside
+
+- **Guided daily study.** Account-based plans use your goals, available time, and recorded weaknesses. Science is optional in daily study.
+- **Lessons that show the work.** Grammar explanations, typeset math, Reading evidence, Science tables and diagrams, and interactive prediction activities.
+- **Practice with feedback.** Topic drills explain answers and bring missed or uncertain skills back for review.
+- **Timed sections.** Two original practice forms per subject: English (50 questions / 35 minutes), Math (45 / 50), Reading (36 / 40), and Science (40 / 40).
+- **Formula recall.** An 80-card Math deck with topic filters and test-date pacing.
+- **Saved progress.** Lessons, answers, and completed results sync to your account. Active timed sections recover on the current device with their original deadline.
+- **Study on your screen.** Responsive layouts, keyboard controls, and light and dark themes.
+
+<p align="center">
+  <img src="docs/screenshots/daily/runner-desktop.png" alt="Daily lesson and practice runner" width="100%" />
+</p>
+
+<details>
+<summary><strong>See the mobile study view</strong></summary>
+<br />
+<p align="center">
+  <img src="docs/screenshots/daily/mobile.png" alt="Daily study dashboard on a mobile screen" width="320" />
+</p>
+</details>
 
 ## Run locally
 
-Create an ignored `.env.local` with the existing project's `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY`. Install with `npm ci`, then run `npm run dev`. `npm run check` runs lint, content audits, unit tests, and a production build.
+Use **Node.js 22** and npm, plus a Supabase project for authentication and saved progress.
 
-## Practice coverage
+```bash
+git clone https://github.com/Nik-Horner/act-study-lab.git
+cd act-study-lab
+npm ci
+```
 
-| Subject | Full digital practice            | Additional study material                  |
-| ------- | -------------------------------- | ------------------------------------------ |
-| English | Two 50-question, 35-minute forms | Existing 15-topic lesson and drill library |
-| Math    | Two 45-question, 50-minute forms | Eight lessons, 384 drills, 24 checks       |
-| Reading | Two 36-question, 40-minute forms | Six lessons, 292 drills, 18 checks         |
-| Science | Two 40-question, 40-minute forms | Six lessons, 216 drills, 18 checks         |
+Create `.env.local` in the project root:
 
-Reading forms have four nine-question units, including a literary narrative, informational passages, a paired-text unit, and a table. Three passages are approximately 750 words and the paired unit approximately 650, totaling about 2,900 words per form. Lessons include seven sections, six worked examples, and three independent checks. Timed questions and passages are held out of topic drill pools. The lab reports raw accuracy on original questions; it does not claim an official scaled-score prediction. English results also show raw accuracy; historical estimate fields remain stored for compatibility.
+```dotenv
+NEXT_PUBLIC_SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=YOUR_PUBLIC_ANON_KEY
+```
 
-Format references: [ACT enhanced test FAQ](https://www.act.org/content/act/en/products-and-services/the-act-educator/the-act-test/enhancements-k12/faqs.html), [2026 design framework](https://www.act.org/content/dam/act/unsecured/documents/R2519-Design-Framework-for-the-ACT-Enhancements-2026-02.pdf), and [official digital practice](https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/free-act-test-prep/act-online-test-sample-questions.html). This is independent original practice, not an ACT platform replica or endorsed product.
+For a **new Supabase project**, run the SQL files in [`supabase/migrations`](supabase/migrations) in filename order. They create the profile, progress, and exam tables with owner-only row-level security. Enable email/password authentication and allow `http://localhost:3000/auth/callback` in the Auth redirect URLs. If email confirmation is enabled, confirm your email before signing in.
 
-## Existing database compatibility
+Use the public anon key here; never put a service-role key in a `NEXT_PUBLIC_` variable. `.env.local` is ignored by Git. Existing installations should retain their database and apply only migrations they have not run.
 
-No schema migration or new service credentials are required. English continues using its existing topic progress, question misses, exam attempts, and plan checks. New drill events use `exam_attempts` with `practice:math`, `practice:reading`, or `practice:science`; full sections use subject-specific form IDs. Their JSON records are discriminated by `kind`, and the server validates questions, choices, timing, and ownership before grading. `scale_score = 0` is an internal unscaled marker, never displayed as an ACT score. Existing English IDs and stored historical values remain intact. The shared exam index filters to published full-section IDs, so individual practice events never become spurious exam history.
+```bash
+npm run dev
+```
 
-All reads and writes use the signed-in user's session and the existing owner-only RLS policies. Daily and new-subject answer retries are idempotent. Standalone English answers now append immutable, idempotent events; topic totals and misses combine those events with preserved legacy history without a counter-update race. Failed saves block advancement and explain recovery. Answer choices cannot be replaced after submission; a mistake's classification can be updated. Signed-out API requests return JSON 401 responses. Cloud hydration paginates history and surfaces failures rather than silently presenting incomplete progress.
+Open [localhost:3000](http://localhost:3000), create an account, and choose your study goals.
 
-An active timed section is saved on its current device with an absolute deadline and an account-scoped key; completed results sync to the account. Unsaved events are queued with a device recovery copy, retried on return, and shown with a visible save error. Blocked local storage does not prevent cloud progress loading. Pending work from another account is never displayed or sent as the current account's work.
+## Development
 
-The account's target and test date apply across subjects. Math + Science share one focused preparation plan; Reading has its own focus plan. All four previous section scores and daily 60/75/90-minute focus budgets are account preferences saved in Supabase Auth user metadata; the legacy English score remains in profiles for compatibility. Unfinished tasks retain IDs and completion dates, carry forward within the focus budget, and show overflow separately. The day before the test remains light.
+```bash
+npm run lint              # ESLint
+npm run validate:content  # Content and curriculum checks
+npm test                  # Unit and regression tests
+npm run build:next        # Native Next.js production build
+npm run check             # Lint, content checks, tests, and Worker build
+```
 
-## Verification and deployment
+The default `npm run build` targets the Vinext/Cloudflare Worker deployment and requires both public Supabase variables at build time. For native Next.js, use `npm run build:next`, then `npm start`. Vercel selects the native build through `vercel.json`.
 
-Publish each release to both the existing Vercel app and the GPT Site identified in `.openai/hosting.json`. Vercel builds native Next.js with `npm run build:next` through `vercel.json`; Sites uses `npm run build` for its Worker. Deploy the same application source to both and verify both production URLs. Keep the existing Supabase environment variables and domains.
+Live-account integration tests are separate from the default suite. See the [engineering notes](docs/engineering-notes.md) before running them.
 
-Both `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` must also be available during the Sites build, through the build environment or ignored `.env.local`. Runtime settings alone do not configure the browser bundle. The Vite configuration refuses a build when either value is missing.
+```text
+src/app/          Pages and API routes
+src/components/   Lessons, study runners, diagrams, and shared UI
+src/content/      Authored lessons, questions, activities, and exams
+src/lib/          Planning, grading, progress, and Supabase clients
+supabase/         Database migrations and access policies
+tests/            Unit, regression, and explicit integration tests
+docs/             Review notes and screenshots
+```
 
-Reuse the Sites release checkout: the build retains the preceding build's manifest-listed static assets and Vinext layout CSS so a page opened during deployment can still load its files. It keeps one prior generation and does not overwrite new files or restore old HTML/manifests. When moving to a fresh release checkout, seed `dist/client` and `dist/server/__vite_rsc_assets_manifest.js` from the currently published archive before building.
+## Project notes
 
-GitHub Actions runs `npm run check`. The current publication uses Sites and the project identity in `.openai/hosting.json`. Keep the existing Supabase environment variables and domain. The explicit `tests/live-account.ts` smoke test requires a local server and the real Supabase public configuration; it creates isolated QA accounts only when email auto-confirmation is enabled, verifies two-account RLS and all-subject compatibility, and writes ignored QA session files for subsequent UI verification. It is not run in CI or against an existing user's account.
+Built with Next.js, React, TypeScript, Tailwind CSS, Supabase, and KaTeX. Worker hosting uses Vinext, Vite, and Cloudflare.
 
-## Daily visual lessons
+- [Engineering and deployment notes](docs/engineering-notes.md)
+- [Design system](DESIGN.md)
+- [Quality review and known limits](docs/quality-repair-2026-10-14.md)
+- [Daily teaching review](docs/teaching-repair-2026-10-15.md)
 
-The daily runner uses 140 authored non-English prediction activities with immediate reasoning, experiment tables, geometry diagrams, Reading evidence excerpts, and an interactive unit circle. English keeps its original teaching in a concept-by-concept flow. The daily drill workbench retains the question banks, saved answers, keyboard controls, and pacing, with larger choices and more space for evidence.
+Practice questions are independently authored. Results report raw accuracy, not an official ACT scaled-score prediction or a score guarantee. Use official timed forms for independent score checks. ACT Study Lab is not affiliated with or endorsed by ACT.
 
-In Account, scores of 32+ automatically prioritize geometry and trigonometry for upcoming Math plans. Students can explicitly mark calculator-covered topics and flag a Science score that does not reflect a serious attempt. Existing unfinished plans carry forward without resetting progress. The current source and Sites configuration are maintained in this project folder.
+---
 
-Daily review also revisits correct answers that were slow or flagged uncertain. Historical answer IDs guide fresh-question selection, and unfinished sessions carry their answered weaknesses forward. Repeating a known answer does not clear an old weakness. The daily dashboard links official ACT forms for independent, timed score checks; lesson completion is not a scaled-score prediction.
-
-Daily teaching now shows the complete rules and worked examples before its interactive activity. Trig elevation and probability counting drills follow their required methods, and Math lessons include explicit formulas for the affected drill setups. Saved daily sessions reopen at their next unfinished concept or question; the dashboard names the saved subject and lesson. Run the isolated returning-student integration check explicitly with `node --env-file=.env.local --import tsx tests/live-daily-resume.ts` against a local server on port 3100 (`ACT_TEST_BASE` can override it). It creates a QA account only when confirmation emails are disabled and verifies answer, concept, timing, uncertainty, and deadline persistence without touching a student account.
-
-Account → Include Science in daily study controls future sessions. Existing saved work is not reset. Methods use short explanations and typeset math, with Learn → Try it navigation. See [the quality audit](docs/quality-audit-2026-10-12.md) for findings, fixes and verification limits.
-
-## Teaching and independent practice standard
-
-Every section teaches the rule, conditions and a worked example before application. Reading uses 144 separate assessment items on 24 new passages; lesson and activity passages stay outside that bank. Science uses separate teaching datasets, prediction tasks and quick checks, with 203 drills and 80 held-out exam questions. Math includes a 71-item formula/method reference, 32 new independent method questions and explicit prerequisite mapping.
-
-Daily questions respond to each subject baseline and the account target, date, budget, weaknesses and optional Science choice. Higher targets require more independent, paced, high-confidence hard-question evidence. Retrying a demonstrated or previously missed question does not turn it into new evidence. Formative/retired items remain in saved history; unanswered legacy Reading items migrate deterministically to the new pool. Coverage counts lessons, not a score guarantee. Two different official timed forms are the independent goal check.
-
-The repair ledger and verification limits are in `docs/quality-repair-2026-10-14.md`.
-
-The October 15 Daily teaching repair restores matching visual evidence to all 52 Science skills, simplifies all 24 Reading skills, adds short practical tips, and preserves English teaching and all 80 formula-recall cards. Reading learning time is recorded without a per-question speed penalty; full-section timing is unchanged. See `docs/teaching-repair-2026-10-15.md` for the review scope, study sources, account-preservation checks, and limits.
-
-The lesson-completeness follow-up repairs 28 weaker Science/Reading methods with 30 short worked variants and visible seasons/rock-order diagrams, and presents worked steps clearly for all 143 Math methods. Existing lesson positions, completed concept keys, answers and history are retained. New plans adjust lesson time around the complete formula packet to keep the estimated combined session within two hours; saved sessions keep their existing minutes and clock. The A teaching checklist, individual repairs and verification scope are in `docs/daily-lesson-completeness-2026-10-15.json`.
+<p align="center">Built by <a href="https://github.com/Nik-Horner">Nik Horner</a></p>
