@@ -215,3 +215,55 @@ test("review feedback maps the same saved answer to the same displayed text and 
   ).find((element) => element.type === AnswerFeedback)!;
   assert.equal(skipped.props.chosen, null);
 });
+
+test("full-width answer rows keep long text, canonical states, and elimination controls separate", () => {
+  const original = getExamQuestions("reading-1")[0];
+  const long =
+    "The result supports only the tested group because the experiment did not include participants from the other groups described in the question.";
+  const question = {
+    ...original,
+    choices: [long, ...original.choices.slice(1)],
+  };
+  const wrong = (question.answer + 1) % question.choices.length;
+  const rendered = elements(
+    QuestionView({
+      q: question,
+      chosen: wrong,
+      onChoose: () => {},
+      revealed: true,
+    }),
+  );
+  const buttons = rendered.filter(
+    (element) =>
+      element.type === "button" && element.props.className === "choice",
+  );
+  const order = displayChoiceOrder(question);
+  for (const [position, button] of buttons.entries()) {
+    const canonical = order[position];
+    assert.equal(button.props["data-correct"], canonical === question.answer);
+    assert.equal(button.props["data-wrong"], canonical === wrong);
+    assert.equal(button.props["aria-pressed"], canonical === wrong);
+    assert.equal(button.props.disabled, true);
+  }
+  const html = renderToStaticMarkup(
+    QuestionView({
+      q: question,
+      chosen: null,
+      onChoose: () => {},
+      onEliminate: () => {},
+    }),
+  );
+  assert(html.includes(long), "the entire answer text remains available");
+  assert.equal(
+    (html.match(/class="answer-choice-row"/g) ?? []).length,
+    question.choices.length,
+  );
+  assert.equal(
+    (html.match(/class="answer-eliminate"/g) ?? []).length,
+    question.choices.length,
+  );
+  assert(
+    !html.includes("sm:grid-cols-2"),
+    "answer text must not share a narrow two-column grid",
+  );
+});

@@ -298,7 +298,11 @@ export default function ExamClient({
             </button>
           </div>
           <p className="mt-4 text-sm font-medium">{current.questionText}</p>
-          <div className="mt-4 space-y-2">
+          <div
+            className="answer-choices mt-4"
+            role="group"
+            aria-label="Answer choices"
+          >
             {current.choices.map((choice, i) => (
               <button
                 key={i}
@@ -306,6 +310,7 @@ export default function ExamClient({
                 onClick={() => pick(i)}
                 disabled={locked}
                 aria-pressed={answers[current.number] === i}
+                data-selected={answers[current.number] === i}
                 className={`choice ${
                   answers[current.number] === i
                     ? "border-brand bg-brand-soft"

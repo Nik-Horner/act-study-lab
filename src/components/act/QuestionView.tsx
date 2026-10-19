@@ -319,18 +319,19 @@ export function QuestionView({
           </h2>
           {q.passage && <MathDiagram id={q.id} />}
           <div
-            className={q.passage ? "space-y-3" : "grid gap-3 sm:grid-cols-2"}
+            className="answer-choices"
             role="group"
             aria-label="Answer choices"
           >
             {choiceOrder.map((i, displayIndex) => (
-              <div key={i} className="flex items-stretch gap-2">
+              <div key={i} className="answer-choice-row">
                 <button
                   className="choice"
                   aria-pressed={chosen === i}
                   data-selected={chosen === i}
                   data-correct={revealed && i === q.answer}
                   data-wrong={revealed && chosen === i && i !== q.answer}
+                  data-eliminated={eliminated.includes(i)}
                   onClick={() => onChoose(chosen === i ? null : i)}
                   disabled={disabled || revealed || eliminated.includes(i)}
                 >
@@ -351,7 +352,7 @@ export function QuestionView({
                 </button>
                 {onEliminate && !revealed && (
                   <button
-                    className="min-h-11 min-w-11 rounded-lg border border-border px-2 py-3 text-sm hover:bg-bg-raised"
+                    className="answer-eliminate"
                     onClick={() => onEliminate(i)}
                     aria-label={`${eliminated.includes(i) ? "Restore" : "Eliminate"} choice ${letters[displayIndex]}`}
                     aria-pressed={eliminated.includes(i)}

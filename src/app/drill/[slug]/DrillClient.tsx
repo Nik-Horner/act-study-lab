@@ -19,7 +19,7 @@ import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { Card } from "@/components/ui/Card";
 import { StudyWorkspace } from "@/components/StudyWorkspace";
-import { StudyPageHeader } from "@/components/StudyPageHeader";
+import Link from "next/link";
 import { PracticeRecovery } from "@/components/PracticeRecovery";
 import {
   getLearningSkill,
@@ -331,74 +331,21 @@ export function DrillClient(props: DrillClientProps) {
   return (
     <div className="space-y-5">
       {!props.daily && (
-        <StudyPageHeader
-          title={props.mode === "topic" ? "Independent practice" : headerTitle}
-          subject="english"
-          description="Use the method independently, then follow the evidence behind each answer."
-          back={{ href: backHref, label: "English study" }}
-        />
+        <Link href={backHref} className="study-breadcrumb">
+          English study
+        </Link>
       )}
-      {props.mode === "topic" && !props.daily && (
-        <details className="practice-record-details">
-          <summary>Saved practice milestone</summary>
-          <p className="mb-1.5 text-sm text-ink-soft">
-            {status === "mastered" ? (
-              <>
-                <b className="text-good">Practice milestone reached</b> — best
-                streak {progress?.best_streak ?? 0}. Keep building independent
-                practice evidence.
-              </>
-            ) : (
-              <>
-                Streak {streak} ·{" "}
-                <b>{Math.max(0, MASTERY_STREAK - streak)} in a row</b> to reach
-                the practice milestone ({accuracyPct}% all-time)
-              </>
-            )}
-          </p>
-          <ProgressBar
-            percent={masteryProgress(progress) * 100}
-            tone={status === "mastered" ? "good" : "brand"}
-          />
-        </details>
-      )}
-      {!props.daily && props.mode !== "misses" && (
-        <p className="text-sm text-ink-soft">
-          {props.targetScore ? `Goal ${props.targetScore} · ` : ""}
-          {props.skillId
-            ? "Focused skill practice"
-            : {
-                foundation: "Foundation practice",
-                challenge: "Challenge practice",
-                balanced: "Mixed difficulty",
-              }[
-                englishDrillLevel(
-                  props.currentScore ?? null,
-                  props.targetScore ?? null,
-                )
-              ]}
-          {
-            " · New questions first. Previously answered questions are labeled for review."
-          }
-        </p>
-      )}
-      {props.mode === "weak" && (
-        <p className="text-sm text-ink-soft">{weakSubtitle}</p>
-      )}
-      {props.mode === "misses" && (
-        <p className="text-sm text-ink-soft">
-          <b>{missesLeft}</b> miss{missesLeft === 1 ? "" : "es"} left — answer
-          correctly to clear ({missesCleared}/{missTotal} cleared)
-        </p>
-      )}
-
       <StudyWorkspace
-        title={props.daily ? headerTitle : current.topicTitle}
+        title={
+          props.daily || props.mode !== "topic"
+            ? headerTitle
+            : current.topicTitle
+        }
         subject="english"
         mode="practice"
         current={idx + 1}
         total={order.length}
-        headingLevel={props.daily ? 1 : 2}
+        headingLevel={1}
         tools={
           <>
             <span>
@@ -437,7 +384,11 @@ export function DrillClient(props: DrillClientProps) {
             </p>
           </div>
           <div className="question-answer-panel">
-            <div className="grid gap-2 sm:grid-cols-2">
+            <div
+              className="answer-choices"
+              role="group"
+              aria-label="Answer choices"
+            >
               {current.question.choices.map((choice, i) => {
                 const isCorrect = i === current.question.answer;
                 const isPicked = i === picked;
@@ -455,6 +406,9 @@ export function DrillClient(props: DrillClientProps) {
                     type="button"
                     disabled={answered}
                     aria-pressed={isPicked}
+                    data-selected={isPicked}
+                    data-correct={answered && isCorrect}
+                    data-wrong={answered && isPicked && !isCorrect}
                     onClick={() => void submitAnswer(i)}
                     className={`choice ${tone}`}
                   >
@@ -519,6 +473,60 @@ export function DrillClient(props: DrillClientProps) {
           </div>
         )}
       </StudyWorkspace>
+      {props.mode === "topic" && !props.daily && (
+        <details className="practice-record-details">
+          <summary>Saved practice milestone</summary>
+          <p className="mb-1.5 text-sm text-ink-soft">
+            {status === "mastered" ? (
+              <>
+                <b className="text-good">Practice milestone reached</b> — best
+                streak {progress?.best_streak ?? 0}. Keep building independent
+                practice evidence.
+              </>
+            ) : (
+              <>
+                Streak {streak} ·{" "}
+                <b>{Math.max(0, MASTERY_STREAK - streak)} in a row</b> to reach
+                the practice milestone ({accuracyPct}% all-time)
+              </>
+            )}
+          </p>
+          <ProgressBar
+            percent={masteryProgress(progress) * 100}
+            tone={status === "mastered" ? "good" : "brand"}
+          />
+        </details>
+      )}
+      {!props.daily && props.mode !== "misses" && (
+        <p className="text-sm text-ink-soft">
+          {props.targetScore ? `Goal ${props.targetScore} · ` : ""}
+          {props.skillId
+            ? "Focused skill practice"
+            : {
+                foundation: "Foundation practice",
+                challenge: "Challenge practice",
+                balanced: "Mixed difficulty",
+              }[
+                englishDrillLevel(
+                  props.currentScore ?? null,
+                  props.targetScore ?? null,
+                )
+              ]}
+          {
+            " · New questions first. Previously answered questions are labeled for review."
+          }
+        </p>
+      )}
+      {props.mode === "weak" && (
+        <p className="text-sm text-ink-soft">{weakSubtitle}</p>
+      )}
+      {props.mode === "misses" && (
+        <p className="text-sm text-ink-soft">
+          <b>{missesLeft}</b> miss{missesLeft === 1 ? "" : "es"} left — answer
+          correctly to clear ({missesCleared}/{missTotal} cleared)
+        </p>
+      )}
+
       {!props.daily &&
         answered &&
         !saving &&
