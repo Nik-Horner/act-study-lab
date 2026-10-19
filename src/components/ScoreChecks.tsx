@@ -81,7 +81,7 @@ export function ScoreChecks({
       setChecks(data.checks);
       setLoaded(true);
       setMessage(
-        "Score saved. Saving the same section and form again corrects its entry.",
+        "Score saved. Your latest official, timed, first-attempt score guides future sessions. Your saved session stays intact.",
       );
     } catch (error) {
       setError((error as Error).message);
@@ -102,7 +102,9 @@ export function ScoreChecks({
       </summary>
       <p className="mt-2 text-sm leading-relaxed text-ink-soft">
         Take an official practice section you haven’t seen before. Use its time
-        limit and scoring key, then record your score here.
+        limit and scoring key, then record your score here. Your latest
+        qualifying score guides future sessions; other sections keep your
+        starting scores. Lessons and XP don’t count as ACT scores.
       </p>
       {loaded && (
         <ul className="mt-4 divide-y divide-border text-sm">

@@ -3,8 +3,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import type { Exam, ExamPassage } from "@/lib/content";
-import { parsePassage, type PassageSegment } from "@/lib/passage";
+import { parsePassage, groupParagraphs } from "@/lib/passage";
 import { Button } from "@/components/ui/Button";
+import { StudyWorkspace } from "@/components/StudyWorkspace";
 import { Card } from "@/components/ui/Card";
 import { fmtTime, LETTERS } from "@/lib/format";
 
@@ -57,6 +58,7 @@ export default function ExamClient({
   const [loadError, setLoadError] = useState<string | null>(null);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+  const [confirmSubmit, setConfirmSubmit] = useState(false);
   const submittedRef = useRef(false);
   const autoAttempted = useRef(false);
   const saveSession = useCallback(
@@ -213,12 +215,7 @@ export default function ExamClient({
       void submit();
       return;
     }
-    const unanswered = flat.filter((f) => answers[f.number] == null).length;
-    const msg =
-      unanswered > 0
-        ? `You have ${unanswered} unanswered question${unanswered === 1 ? "" : "s"}. Submit anyway?`
-        : "Submit your exam?";
-    if (window.confirm(msg)) void submit();
+    setConfirmSubmit(true);
   }
   if (!loaded) return <p role="status">Loading saved exam…</p>;
   if (!session)
@@ -240,7 +237,27 @@ export default function ExamClient({
   const answeredCount = Object.values(answers).filter((a) => a != null).length;
 
   return (
-    <div className="space-y-6">
+    <StudyWorkspace
+      title={exam.title}
+      subject="english"
+      mode="exam"
+      current={current.number}
+      total={flat.length}
+      headingLevel={1}
+      tools={
+        <>
+          <span>
+            {answeredCount}/{flat.length} answered · {flagged.size} flagged
+          </span>
+          <span
+            role="timer"
+            className={`pace-chip ${secondsLeft <= 300 ? "text-bad" : ""}`}
+          >
+            {fmtTime(secondsLeft)}
+          </span>
+        </>
+      }
+    >
       {storageError && (
         <p role="alert" className="rounded-xl bg-warn-soft p-4 text-sm">
           {storageError}
@@ -251,38 +268,17 @@ export default function ExamClient({
           {submitError}
         </p>
       )}
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <div>
-          <p className="text-xs font-semibold uppercase tracking-wide text-ink-soft">
-            {exam.title}
-          </p>
-          <p className="text-sm text-ink-soft">
-            Question {current.number} of {flat.length} · Passage{" "}
-            {current.passageIndex + 1} of {exam.passages.length}
-          </p>
-        </div>
-        <div
-          className={`rounded-full border px-4 py-1.5 text-sm font-bold ${
-            secondsLeft <= 300
-              ? "border-bad bg-bad-soft text-bad"
-              : "border-border bg-bg-soft text-ink"
-          }`}
-        >
-          {fmtTime(secondsLeft)}
-        </div>
-      </div>
-
-      <div className="grid gap-6 lg:grid-cols-[3fr_2fr]">
-        <Card className="p-6">
+      <div className="exam-two-pane">
+        <section className="exam-evidence">
           <h2 className="mb-4 font-semibold">{passage.title}</h2>
           <PassageView
             passage={passage}
             activeNumber={current.number}
             onSelect={selectQuestion}
           />
-        </Card>
+        </section>
 
-        <Card className="flex flex-col p-6">
+        <section className="exam-task">
           <div className="flex items-center justify-between">
             <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand text-xs font-bold text-white">
               {current.number}
@@ -310,13 +306,13 @@ export default function ExamClient({
                 onClick={() => pick(i)}
                 disabled={locked}
                 aria-pressed={answers[current.number] === i}
-                className={`flex w-full items-start gap-3 rounded-xl border px-3 py-2.5 text-left text-sm transition-colors ${
+                className={`choice ${
                   answers[current.number] === i
                     ? "border-brand bg-brand-soft"
                     : "border-border hover:bg-bg-raised"
                 }`}
               >
-                <span className="font-bold text-ink-soft">{LETTERS[i]}</span>
+                <span className="answer-letter">{LETTERS[i]}</span>
                 <span>{choice}</span>
               </button>
             ))}
@@ -328,24 +324,25 @@ export default function ExamClient({
               onClick={goPrev}
               disabled={currentIndex <= 0}
             >
-              ← Back
+              Previous
             </Button>
             <Button
               size="sm"
               onClick={goNext}
               disabled={currentIndex >= flat.length - 1}
             >
-              Next →
+              Next question
             </Button>
           </div>
-        </Card>
+        </section>
       </div>
 
-      <Card className="p-4">
+      <details className="workspace-question-nav" open>
+        <summary>Question navigator · answered and flagged</summary>
         <div className="mb-3 text-xs text-ink-soft">
           {answeredCount}/{flat.length} answered · {flagged.size} flagged
         </div>
-        <div className="grid grid-cols-10 gap-1.5">
+        <div className="grid grid-cols-5 gap-1.5 sm:grid-cols-10">
           {flat.map((f) => {
             const answered = answers[f.number] != null;
             const isFlagged = flagged.has(f.number);
@@ -354,6 +351,8 @@ export default function ExamClient({
               <button
                 key={f.number}
                 type="button"
+                aria-label={`Question ${f.number}, ${answered ? "answered" : "unanswered"}${isFlagged ? ", flagged" : ""}`}
+                aria-current={isCurrent ? "step" : undefined}
                 onClick={() => selectQuestion(f.number)}
                 className={`h-8 rounded-md text-xs font-semibold ${isCurrent ? "ring-2 ring-brand" : ""} ${
                   isFlagged
@@ -368,18 +367,44 @@ export default function ExamClient({
             );
           })}
         </div>
-      </Card>
+      </details>
 
+      {confirmSubmit && !submitting && (
+        <div
+          role="alert"
+          className="rounded-xl border border-border bg-brand-soft p-5"
+        >
+          <p className="font-semibold">Submit this exam?</p>
+          <p className="mt-2 text-sm text-ink-soft">
+            {flat.length - answeredCount} unanswered{" "}
+            {flat.length - answeredCount === 1 ? "question" : "questions"}. Your
+            answers will be saved as a completed attempt.
+          </p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            <Button
+              onClick={() => {
+                setConfirmSubmit(false);
+                void submit();
+              }}
+            >
+              Submit answers
+            </Button>
+            <Button variant="ghost" onClick={() => setConfirmSubmit(false)}>
+              Keep working
+            </Button>
+          </div>
+        </div>
+      )}
       <div className="flex justify-end">
         <Button onClick={handleSubmitClick} disabled={submitting}>
           {submitting
             ? "Submitting…"
             : submitError
               ? "Retry submission"
-              : "Submit exam"}
+              : "End section"}
         </Button>
       </div>
-    </div>
+    </StudyWorkspace>
   );
 }
 
@@ -428,23 +453,4 @@ function PassageView({
       ))}
     </div>
   );
-}
-
-/* Text segments carry raw \n\n paragraph breaks from the source; split them into
-   separate <p>-worthy groups while keeping inline blanks attached to their paragraph. */
-function groupParagraphs(segments: PassageSegment[]): PassageSegment[][] {
-  const paragraphs: PassageSegment[][] = [[]];
-  for (const seg of segments) {
-    if (seg.type === "text") {
-      const parts = seg.value.split(/\n\n+/);
-      parts.forEach((part, i) => {
-        if (i > 0) paragraphs.push([]);
-        if (part)
-          paragraphs[paragraphs.length - 1].push({ type: "text", value: part });
-      });
-    } else {
-      paragraphs[paragraphs.length - 1].push(seg);
-    }
-  }
-  return paragraphs.filter((p) => p.length > 0);
 }

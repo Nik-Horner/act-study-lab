@@ -1,5 +1,35 @@
 # ACT Study Lab
 
+<!-- impeccable:product-schema 1 -->
+
+## Current brief — realistic ACT campaign
+
+The user wants more than four puzzle types and a game grounded in official ACT practice formats. Extend the original approved Daily path and focused lesson world: `.impeccable/mocks/daily-path.png` and `lesson-first.png`. Keep Mona Sans, white/navy/cobalt, subject accents, tile mark, sidebar, default light, and saved dark preferences. Later Fieldwork/Chapters/Orbit directions remain rejected. No new world, comp, or approval choice is pending.
+
+The `/play` campaign is integrated into Today, Play navigation, the practice hub, lesson transfer, and Progress. Its frozen catalog has 204 missions, 929 questions, and 34 topic families: five new original English passages with 37 questions, plus 199 fixed-manifest missions containing 892 existing independent Math/Reading/Science questions. English includes passage edits, whole-passage decisions, claim/counterclaim work, placement, and NO CHANGE as both a correct and incorrect option. Full contexts and original choices remain intact. Timed-test questions and teaching-only checks stay outside the campaign.
+
+The loop is read the full context → choose/eliminate options → commit the answer → see feedback → advance through saved rounds → clear the mission. A first answer is immutable within its mission. One star rewards completion, two require at least 60% first-attempt accuracy, and three require at least 85%. Saved review/replay earns no extra stars. First attempt means within this mission; an existing-bank question may have appeared elsewhere. Campaign stars are separate from Daily XP, course coverage, independent-practice milestones, and ACT score claims. Optional ACT Desmos is available only for Math.
+
+Desktop shows white evidence and lilac choices side by side; phone tabs preserve access to the complete passage/evidence and current question. Connected circular mission nodes, actual earned stars, saved round markers, answer elimination, and a visible commit action supply the game progression. The campaign extends the existing visual system; no new screenshot match or learning-outcome claim is implied.
+
+Mission records use versioned, owner-isolated existing storage and a stable owner/mission identity, with revision checks, atomic compare-and-save, and idempotent retries. Completed first choices and stars cannot be replaced by a replay or stale tab. No database migration or old-bank question-ID edits are required. The English paragraph grouping helper was extracted unchanged from the exam renderer to retain inline markers and paragraph context.
+
+Existing course/Daily teaching, formula recall, exams, settings, and progress remain intact. The shared player still teaches one authored idea/example at a time with the actual source evidence. Daily retains test-date/goal/15–240-minute planning, saved checkpoints, and completion-based XP. New users supply unsaved planning values; explicit legacy preferences survive ordinary saves unless their owner chooses standard planning. Existing answers, grades, active Daily work, and earned credit remain authoritative.
+
+`docs/act-game-research.md` records the primary ACT sources and format boundaries; `src/content/campaign-english.json` contains the new original passages. Research informed contextual question formats, not a full official-test replica or proof of effectiveness. No official content was republished, and stars are not an official scale score. No Canvas artifacts.
+
+Status: version 31 is published; the campaign is not. The scoped campaign reviewer reviewed the 37 new English questions and 26 main captures, then the two correction captures. One ambiguous Library question 5 distractor changed from “Therefore” to “In other words,” with its answer key unchanged; the finding is resolved, no regression was identified, and the scoped disposition is SHIP. Current checks report 407 tests, TypeScript/ESLint/content checks, 1,044 HTTP route cases, campaign save/reload/concurrency/isolation exercises, and preserved historical rows. Packaging and Worker QA remain before publication. This review does not approve the entire app or clear the older 68.63% Daily comparison gate.
+
+## Historical product decisions
+
+The entries below record earlier releases and their constraints. The current brief above governs this follow-up; historical validation and deployment statements apply only to their named release.
+
+October 17 published baseline: the approved daily path and focused lesson direction shipped as Sites version 29, commit `3c9f7bca1d602a55107600371fb89e56b3c44edc`, deployment `appgdep_6ad3e913feac8191bfda83c3d8afe805`. The user subsequently asked for full integration into actual study pages. Their later correction reaffirmed these first mockups and clarified that generic settings meant removing their personal planning defaults.
+
+October 17 integration release: Sites version 30 was published and verified at commit `16d50f1f9cc5cbf082929dcfd68898f88cf4c3c4`, deployment `appgdep_6ad3f6c524c88191ab7f1f3690c905bd`. Its scoped review and QA remain evidence for that release; the approved-mockup implementation subsequently shipped in version 31.
+
+Published baseline for the campaign: version 31, commit `6cbd8aedd4ed23a9b6f274c5067d73bf7c244e5a`, shipped the approved-spec lesson/workspace changes after the user authorized release with the disclosed 68.63% comparison limitation. That gate was not forced or marked passed. The current campaign is a later, unpublished extension.
+
 A student preparing for the enhanced digital ACT can study English, Math, Reading, and Science from one website and one existing Supabase account. English Lab is the incumbent product; this work extends its routes, account model, and visual identity rather than replacing them.
 
 The immediate user is retaking the ACT on October 17, aiming for 36 in Math and Science, after a 34 Math. The latest reported scores are English 34, Reading 33, Math 34, and Science 27; the Science result came from a low-effort optional attempt and is not a representative baseline. The user now targets 36 in each section and relies on the daily lessons and drills. Available study time is approximately 60–90 minutes per day. Those are the user's goals, not defaults to assign to every account. Profiles supply each student's target and test date. New-subject baseline scores are unset unless actually supported by stored account data.

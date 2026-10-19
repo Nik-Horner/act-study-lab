@@ -16,9 +16,7 @@ export function Badge({
   className?: string;
 }) {
   return (
-    <span
-      className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide ${TONES[tone]} ${className}`}
-    >
+    <span className={`study-badge ${TONES[tone]} ${className}`}>
       {children}
     </span>
   );

@@ -1,0 +1,661 @@
+{
+  "scope": "Local authenticated browser QA with isolated test accounts",
+  "publicChecks": [
+    {
+      "path": "/",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Learn it.Try it.Make it stick.",
+      "width": 1280
+    },
+    {
+      "path": "/login",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Welcome back",
+      "width": 1280
+    },
+    {
+      "path": "/signup",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Create your account",
+      "width": 1280
+    },
+    {
+      "path": "/auth/auth-error",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "That link didn't work",
+      "width": 1280
+    },
+    {
+      "path": "/",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Learn it.Try it.Make it stick.",
+      "width": 390
+    },
+    {
+      "path": "/login",
+      "alerts": [],
+      "contentWidth": 390,
+      "heading": "Welcome back",
+      "width": 390
+    },
+    {
+      "path": "/signup",
+      "alerts": [],
+      "contentWidth": 390,
+      "heading": "Create your account",
+      "width": 390
+    },
+    {
+      "path": "/auth/auth-error",
+      "alerts": [],
+      "contentWidth": 390,
+      "heading": "That link didn't work",
+      "width": 390
+    }
+  ],
+  "authenticatedChecks": [
+    {
+      "path": "/dashboard",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Your next move.",
+      "width": 1280
+    },
+    {
+      "path": "/account",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Your study plan",
+      "width": 1280
+    },
+    {
+      "path": "/progress",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Look how far you\u2019ve come.",
+      "width": 1280
+    },
+    {
+      "path": "/practice",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Practice your way.",
+      "width": 1280
+    },
+    {
+      "path": "/learn?subject=english",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "english skill course",
+      "width": 1280
+    },
+    {
+      "path": "/learn?subject=math",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "math skill course",
+      "width": 1280
+    },
+    {
+      "path": "/learn?subject=reading",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "reading skill course",
+      "width": 1280
+    },
+    {
+      "path": "/learn?subject=science",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "science skill course",
+      "width": 1280
+    },
+    {
+      "path": "/math-formulas",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Math Formulas",
+      "width": 1280
+    },
+    {
+      "path": "/learn/math-formulas",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Math formulas and methods",
+      "width": 1280
+    },
+    {
+      "path": "/exam",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Digital practice sections",
+      "width": 1280
+    },
+    {
+      "path": "/study/english",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Your English goal: 36.",
+      "width": 1280
+    },
+    {
+      "path": "/study/math",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Close the gap to 36.",
+      "width": 1280
+    },
+    {
+      "path": "/study/reading",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Build the Reading score you came for.",
+      "width": 1280
+    },
+    {
+      "path": "/study/science",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Build the Science score you came for.",
+      "width": 1280
+    },
+    {
+      "path": "/learn/commas",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Commas",
+      "width": 1280
+    },
+    {
+      "path": "/learn/math-modeling",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Modeling",
+      "width": 1280
+    },
+    {
+      "path": "/learn/reading-inference",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Evidence-based inference",
+      "width": 1280
+    },
+    {
+      "path": "/learn/science-experimental-design",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Find what changed, what was measured, and what was controlled",
+      "width": 1280
+    },
+    {
+      "path": "/drill/commas",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Choose a Commas skill",
+      "width": 1280
+    },
+    {
+      "path": "/drill/math-modeling",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Choose a Modeling skill",
+      "width": 1280
+    },
+    {
+      "path": "/drill/reading-inference",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Choose a Evidence-based inference skill",
+      "width": 1280
+    },
+    {
+      "path": "/drill/science-experimental-design",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Choose a Experiments and controls skill",
+      "width": 1280
+    },
+    {
+      "path": "/dashboard",
+      "alerts": [],
+      "contentWidth": 390,
+      "heading": "Your daily lesson",
+      "width": 390
+    },
+    {
+      "path": "/account",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Your study plan",
+      "width": 390
+    },
+    {
+      "path": "/progress",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Look how far you\u2019ve come.",
+      "width": 390
+    },
+    {
+      "path": "/practice",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Practice your way.",
+      "width": 390
+    },
+    {
+      "path": "/learn?subject=english",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "english skill course",
+      "width": 390
+    },
+    {
+      "path": "/learn?subject=math",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "math skill course",
+      "width": 390
+    },
+    {
+      "path": "/learn?subject=reading",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "reading skill course",
+      "width": 390
+    },
+    {
+      "path": "/learn?subject=science",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "science skill course",
+      "width": 390
+    },
+    {
+      "path": "/math-formulas",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Math Formulas",
+      "width": 390
+    },
+    {
+      "path": "/learn/math-formulas",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Math formulas and methods",
+      "width": 390
+    },
+    {
+      "path": "/exam",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Digital practice sections",
+      "width": 390
+    },
+    {
+      "path": "/study/english",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Your English goal: 36.",
+      "width": 390
+    },
+    {
+      "path": "/study/math",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Close the gap to 36.",
+      "width": 390
+    },
+    {
+      "path": "/study/reading",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Build the Reading score you came for.",
+      "width": 390
+    },
+    {
+      "path": "/study/science",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Build the Science score you came for.",
+      "width": 390
+    },
+    {
+      "path": "/learn/commas",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Commas",
+      "width": 390
+    },
+    {
+      "path": "/learn/math-modeling",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Modeling",
+      "width": 390
+    },
+    {
+      "path": "/learn/reading-inference",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Evidence-based inference",
+      "width": 390
+    },
+    {
+      "path": "/learn/science-experimental-design",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Find what changed, what was measured, and what was controlled",
+      "width": 390
+    },
+    {
+      "path": "/drill/commas",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Choose a skill: Commas",
+      "width": 390
+    },
+    {
+      "path": "/drill/math-modeling",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Choose a skill: Modeling",
+      "width": 390
+    },
+    {
+      "path": "/drill/reading-inference",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Choose a skill: Evidence-based inference",
+      "width": 390
+    },
+    {
+      "path": "/drill/science-experimental-design",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Choose a skill: Experiments and controls",
+      "width": 390
+    },
+    {
+      "path": "/learn/sentence-structure?skill=dependent-boundary",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Attach dependent clauses without a fragment",
+      "width": 390
+    },
+    {
+      "path": "/drill/sentence-structure?skill=dependent-boundary",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Attach dependent clauses without a fragment \u2014 Drill",
+      "width": 390
+    },
+    {
+      "path": "/learn/math-modeling?skill=math-modeling-linear-models",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Separate a starting amount from a per-unit change",
+      "width": 390
+    },
+    {
+      "path": "/drill/math-modeling?skill=math-modeling-linear-models",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Separate a starting amount from a per-unit change",
+      "width": 390
+    },
+    {
+      "path": "/learn/reading-inference?skill=reading-inference-evidence-link",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Build one small link from the clue",
+      "width": 390
+    },
+    {
+      "path": "/drill/reading-inference?skill=reading-inference-evidence-link",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Build one small link from the clue",
+      "width": 390
+    },
+    {
+      "path": "/learn/science-experimental-design?skill=science-experimental-design-confounds",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Change one cause at a time",
+      "width": 390
+    },
+    {
+      "path": "/drill/science-experimental-design?skill=science-experimental-design-confounds",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Change one cause at a time",
+      "width": 390
+    },
+    {
+      "path": "/learn/sentence-structure?skill=dependent-boundary",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Attach dependent clauses without a fragment",
+      "width": 1280
+    },
+    {
+      "path": "/drill/sentence-structure?skill=dependent-boundary",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Attach dependent clauses without a fragment \u2014 Drill",
+      "width": 1280
+    },
+    {
+      "path": "/learn/math-modeling?skill=math-modeling-linear-models",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Separate a starting amount from a per-unit change",
+      "width": 1280
+    },
+    {
+      "path": "/drill/math-modeling?skill=math-modeling-linear-models",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Separate a starting amount from a per-unit change",
+      "width": 1280
+    },
+    {
+      "path": "/learn/reading-inference?skill=reading-inference-evidence-link",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Build one small link from the clue",
+      "width": 1280
+    },
+    {
+      "path": "/drill/reading-inference?skill=reading-inference-evidence-link",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Build one small link from the clue",
+      "width": 1280
+    },
+    {
+      "path": "/learn/science-experimental-design?skill=science-experimental-design-confounds",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Change one cause at a time",
+      "width": 1280
+    },
+    {
+      "path": "/drill/science-experimental-design?skill=science-experimental-design-confounds",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Change one cause at a time",
+      "width": 1280
+    },
+    {
+      "path": "/exam/exam-1",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "ACT English \u2014 Full Practice Exam 1",
+      "width": 390
+    },
+    {
+      "path": "/exam/exam-2",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "ACT English \u2014 Full Practice Exam 2",
+      "width": 390
+    },
+    {
+      "path": "/exam/math-1",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Math Full Practice Test 1",
+      "width": 390
+    },
+    {
+      "path": "/exam/math-2",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Math Full Practice Test 2",
+      "width": 390
+    },
+    {
+      "path": "/exam/reading-1",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Reading digital practice 1",
+      "width": 390
+    },
+    {
+      "path": "/exam/reading-2",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Reading digital practice 2",
+      "width": 390
+    },
+    {
+      "path": "/exam/science-1",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Digital ACT Science: full practice section 1",
+      "width": 390
+    },
+    {
+      "path": "/exam/science-2",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Digital ACT Science: full practice section 2",
+      "width": 390
+    },
+    {
+      "path": "/exam/exam-1/results/27462392-f500-4851-a220-2a9fa0d6379d",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "English results",
+      "width": 390
+    },
+    {
+      "path": "/exam/reading-1/results/03b0616f-3c3a-45e2-afab-9cf457470234",
+      "alerts": [],
+      "contentWidth": 379,
+      "heading": "Reading digital practice 1",
+      "width": 390
+    },
+    {
+      "path": "/exam/exam-1",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "ACT English \u2014 Full Practice Exam 1",
+      "width": 1280
+    },
+    {
+      "path": "/exam/exam-2",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "ACT English \u2014 Full Practice Exam 2",
+      "width": 1280
+    },
+    {
+      "path": "/exam/math-1",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Math Full Practice Test 1",
+      "width": 1280
+    },
+    {
+      "path": "/exam/math-2",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Math Full Practice Test 2",
+      "width": 1280
+    },
+    {
+      "path": "/exam/reading-1",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Reading digital practice 1",
+      "width": 1280
+    },
+    {
+      "path": "/exam/reading-2",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Reading digital practice 2",
+      "width": 1280
+    },
+    {
+      "path": "/exam/science-1",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Digital ACT Science: full practice section 1",
+      "width": 1280
+    },
+    {
+      "path": "/exam/science-2",
+      "alerts": [],
+      "contentWidth": 1280,
+      "heading": "Digital ACT Science: full practice section 2",
+      "width": 1280
+    },
+    {
+      "path": "/exam/exam-1/results/27462392-f500-4851-a220-2a9fa0d6379d",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "English results",
+      "width": 1280
+    },
+    {
+      "path": "/exam/reading-1/results/03b0616f-3c3a-45e2-afab-9cf457470234",
+      "alerts": [],
+      "contentWidth": 1269,
+      "heading": "Reading digital practice 1",
+      "width": 1280
+    }
+  ],
+  "verifiedInteractions": [
+    "Formula topic filter, reveal, and recall counter",
+    "Daily first checkpoint persisted through reload",
+    "Account minutes, optional Science, and native calendar date saved through reload",
+    "Active Daily checkpoint retained after account changes",
+    "Science wrong answer, evidence feedback, mistake cause, next question, and six-question set completion",
+    "Reading result show-only-misses filter",
+    "Math answer, flag, next position, and fixed timer persisted through reload",
+    "Embedded ACT Desmos accepted y=2x+1 and rendered one curve",
+    "Math submission opened its permanent result URL and survived reload",
+    "English inline confirmation cancellation, submission, permanent results URL and reload in Codex browser",
+    "Authenticated Daily wrong answer retained as 0/1 while supported recovery opened a distinct same-skill question; retry survived reload",
+    "Daily formula recall saved 1/27 and resumed the same next card after reload",
+    "Sign-out returned to login and direct dashboard access redirected to login",
+    "Corrected quoted sentence edit stays together in a single reasoning step",
+    "Loaded phone home and full-width skill catalog verified with no horizontal overflow"
+  ],
+  "pending": [
+    "Final built-design choice on small differences from the approved mockup",
+    "Source packaging and production publication"
+  ],
+  "blocker": null,
+  "browser": "Codex in-app browser",
+  "runtime": "Local built Cloudflare Worker for remaining authenticated checks; dev-only fixture for final visual comparison, then removed."
+}

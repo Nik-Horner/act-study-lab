@@ -1,89 +1,118 @@
 import { ButtonLink } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
+import { StudyIcon } from "@/components/StudyIcon";
+
 const subjects = [
-  [
-    "English",
-    "Grammar, punctuation, and rhetoric",
-    "50 questions · 35 minutes",
-  ],
-  [
-    "Math",
-    "Algebra, geometry, and precise problem solving",
-    "45 questions · 50 minutes",
-  ],
-  [
-    "Reading",
-    "Passages, evidence, and purposeful reading",
-    "36 questions · 40 minutes",
-  ],
-  [
-    "Science",
-    "Data, experiments, and competing explanations",
-    "40 questions · 40 minutes",
-  ],
-];
+  {
+    name: "english",
+    title: "Make the sentence work.",
+    detail: "See how clauses, punctuation, and word choices fit together.",
+  },
+  {
+    name: "math",
+    title: "See the problem differently.",
+    detail: "Connect equations, graphs, and geometry with worked steps.",
+  },
+  {
+    name: "reading",
+    title: "Find the clue that matters.",
+    detail: "Mark evidence and test what a passage actually supports.",
+  },
+  {
+    name: "science",
+    title: "Follow the evidence.",
+    detail: "Explore data, compare experiments, and change one variable.",
+  },
+] as const;
+
 export default function LandingPage() {
   return (
-    <div className="mx-auto max-w-5xl space-y-12">
-      <section className="pt-8 text-center sm:pt-16">
-        <h1 className="mx-auto mt-5 max-w-2xl text-4xl font-bold tracking-tight sm:text-5xl">
-          One place to study.
-          <br />
-          Every ACT subject.
-        </h1>
-        <p className="mx-auto mt-5 max-w-xl leading-relaxed text-ink-soft">
-          Learn the skills, practice with explanations, and rehearse full
-          enhanced digital ACT sections. English, Math, Reading, and Science
-          share one account, your test date, and your saved progress.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <ButtonLink href="/signup">Start studying</ButtonLink>
-          <ButtonLink href="/login" variant="ghost">
-            Log in
-          </ButtonLink>
+    <div className="landing-page">
+      <section className="landing-hero">
+        <div>
+          <h1>
+            Learn it.
+            <br />
+            Try it.
+            <br />
+            <span>Make it stick.</span>
+          </h1>
+          <p>
+            A daily ACT learning path built around your test date and the time
+            you have. Four subjects. One saved place.
+          </p>
+          <div className="landing-actions">
+            <ButtonLink href="/signup">
+              Build my study plan <StudyIcon name="arrow" size={20} />
+            </ButtonLink>
+            <ButtonLink href="/login" variant="ghost">
+              Continue learning
+            </ButtonLink>
+          </div>
         </div>
-        <p className="mt-4 text-sm text-ink-faint">
-          Already use English Lab? Your same sign-in and English progress work
-          here.
-        </p>
+        <div className="landing-path" aria-label="Your daily learning path">
+          <h2>One clear next step.</h2>
+          {subjects.map((subject, index) => (
+            <div key={subject.name} data-subject={subject.name}>
+              <span className="subject-symbol">
+                <StudyIcon name={subject.name} size={30} />
+              </span>
+              <div>
+                <strong>{subject.name}</strong>
+                <p>{subject.title}</p>
+              </div>
+              <span className="landing-step">{index + 1}</span>
+            </div>
+          ))}
+          <p>Learn → explore → practice → review</p>
+        </div>
       </section>
-      <section
-        aria-label="Study subjects"
-        className="grid gap-4 sm:grid-cols-2"
-      >
-        {subjects.map(([name, description, format]) => (
-          <Card key={name} className="p-6">
-            <h2 className="text-lg font-semibold">{name}</h2>
-            <p className="mt-2 text-sm text-ink-soft">{description}</p>
-            <p className="mt-4 text-xs font-medium text-brand-dark">{format}</p>
-          </Card>
-        ))}
+      <section className="landing-method">
+        <h2>
+          Less guessing.
+          <br />
+          More understanding.
+        </h2>
+        <div>
+          <p>
+            Work through visual examples, then put the idea to use. When an
+            answer goes wrong, slow down, follow the reasoning, and try a
+            smaller step before fresh practice.
+          </p>
+          <p>
+            Your finished lessons, saved answers, and unfinished sessions stay
+            with your account.
+          </p>
+        </div>
       </section>
-      <section className="grid gap-6 sm:grid-cols-3">
-        {[
-          [
-            "Learn with examples",
-            "Detailed lessons turn each skill into a repeatable process, with worked examples and quick checks.",
-          ],
-          [
-            "Practice with evidence",
-            "Review explanations, record why you missed an answer, and return to the skills that need attention.",
-          ],
-          [
-            "Rehearse the full section",
-            "Use a timed question navigator, flags, and answer review. Completed results stay with your account.",
-          ],
-        ].map(([title, body]) => (
-          <div key={title}>
-            <h2 className="font-semibold">{title}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-ink-soft">{body}</p>
+      <section className="landing-subjects" aria-label="What you will learn">
+        {subjects.map((subject) => (
+          <div key={subject.name} data-subject={subject.name}>
+            <StudyIcon name={subject.name} size={28} />
+            <h2>{subject.title}</h2>
+            <p>{subject.detail}</p>
           </div>
         ))}
       </section>
-      <p className="text-center text-xs leading-relaxed text-ink-faint">
-        Independent study material. Original practice results show accuracy, not
-        a guaranteed official ACT score. Science is optional on the enhanced
-        ACT; confirm your testing requirements.
+      <section className="landing-official">
+        <div>
+          <h2>Practice the real test, too.</h2>
+          <p>
+            Use our original lessons to build skills, then check your pacing
+            with ACT’s official free practice tests.
+          </p>
+        </div>
+        <a
+          href="https://www.act.org/content/act/en/products-and-services/the-act/test-preparation/free-act-test-prep.html"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Official ACT practice <StudyIcon name="arrow" size={20} />
+        </a>
+      </section>
+      <p className="landing-note">
+        Independent practice material. Not affiliated with ACT. Practice
+        accuracy is not an official score prediction. Science is optional on the
+        enhanced ACT.
       </p>
     </div>
   );

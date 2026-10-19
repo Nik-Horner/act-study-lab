@@ -1,3 +1,4 @@
+import { StudyIcon } from "./StudyIcon";
 import { explanationSteps } from "@/lib/answer-explanation";
 import { MathText } from "./MathText";
 export function AnswerFeedback({
@@ -17,10 +18,16 @@ export function AnswerFeedback({
     <section
       role="status"
       aria-label="Answer explanation"
-      className="mt-5 space-y-4 rounded-xl border border-border bg-bg-soft p-5"
+      data-correct={correct}
+      className="answer-feedback mt-5 space-y-4 rounded-xl border border-border bg-bg-soft p-5"
     >
       <div>
-        <h3 className={`font-semibold ${correct ? "text-good" : "text-bad"}`}>
+        <h3
+          className={`answer-feedback-title font-semibold ${correct ? "text-good" : "text-bad"}`}
+        >
+          {correct && (
+            <StudyIcon name="check" className="answer-success-mark" size={22} />
+          )}
           {correct ? "Correct" : chosen == null ? "Skipped" : "Let’s fix this"}
         </h3>
         {!correct && chosen != null && (

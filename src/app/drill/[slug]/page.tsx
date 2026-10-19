@@ -13,6 +13,7 @@ import { DrillClient, type PoolItem } from "./DrillClient";
 import { loadEnglishProgress } from "@/lib/english-progress-server";
 import { EnglishProgressError } from "@/components/EnglishProgressError";
 import { getLearningSkill, getLearningSkills } from "@/lib/learning-skills";
+import { StudyPageHeader } from "@/components/StudyPageHeader";
 import { SkillCatalog } from "@/components/SkillCatalog";
 import { englishDailyQuestions } from "@/lib/english-daily-content";
 
@@ -49,7 +50,12 @@ export default async function DrillPage({
   if (topic && !skill && getLearningSkills(slug).length)
     return (
       <div className="mx-auto max-w-5xl space-y-7">
-        <h1 className="text-3xl font-semibold">Choose a {topic.title} skill</h1>
+        <StudyPageHeader
+          title={`${topic.title} practice`}
+          subject="english"
+          description="Choose a focused method. Practice questions are separate from its lesson examples and guided check."
+          back={{ href: "/study/english", label: "English study" }}
+        />
         <SkillCatalog skills={getLearningSkills(slug)} drill />
       </div>
     );

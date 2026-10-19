@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { StudyPageHeader } from "@/components/StudyPageHeader";
 import Link from "next/link";
 import { FormulaCards } from "@/components/FormulaCards";
 import cards from "@/content/math-formula-cards.json";
@@ -12,15 +13,12 @@ export default function MathFormulasPage() {
   );
   return (
     <div className="mx-auto max-w-3xl space-y-8">
-      <header className="space-y-3">
-        <h1 className="text-3xl font-semibold tracking-tight sm:text-4xl">
-          Math Formulas
-        </h1>
-        <p className="text-ink-soft">
-          {cards.length} formula cards. Say or write each formula from memory,
-          then reveal it.
-        </p>
-      </header>
+      <StudyPageHeader
+        title="Formula recall"
+        subject="math"
+        description={`${cards.length} cards. Recall a formula before revealing it, then review its conditions and a worked example.`}
+        back={{ href: "/study/math", label: "Math study" }}
+      />
       <label className="flex flex-wrap items-center gap-3 text-sm font-medium">
         Practice topic
         <select

@@ -5,7 +5,7 @@ import cards from "@/content/math-formula-cards.json";
 import { reviewFormula, startFormulaReview } from "@/lib/formula-review";
 import { MathText } from "@/components/MathText";
 import { Button } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
+import { StudyWorkspace } from "./StudyWorkspace";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 
 export function FormulaCards({
@@ -65,79 +65,91 @@ export function FormulaCards({
           percent={deck.length ? (recalled / deck.length) * 100 : 100}
         />
       </div>
-      <Card className="space-y-6 p-6 sm:p-10">
-        <h2 ref={heading} tabIndex={-1} className="text-2xl font-semibold">
-          {card ? card.title : "Round complete"}
-        </h2>
-        {card ? (
-          <>
-            <p className="text-sm text-ink-soft">{card.category}</p>
-            <div
-              className="flex min-h-40 items-center justify-center border-y border-border py-6"
-              id="formula-answer"
-              ref={answer}
-              tabIndex={-1}
-            >
-              {review.revealed ? (
-                <div className="min-w-0 w-full space-y-5 text-center">
-                  <div className="overflow-x-auto py-2 text-xl sm:text-2xl">
-                    <MathText>{`\\[${card.formula}\\]`}</MathText>
+      <StudyWorkspace
+        subject="math"
+        mode="recall"
+        title={card ? card.title : "Round complete"}
+        current={card ? recalled + 1 : undefined}
+        total={deck.length}
+        tools={
+          <span>
+            {review.revealed ? "Compare, then rate" : "Recall before revealing"}
+          </span>
+        }
+      >
+        <div className="formula-workspace-body">
+          <h3 ref={heading} tabIndex={-1} className="formula-prompt-title">
+            {card
+              ? "Recall the formula before revealing it."
+              : "Review complete"}
+          </h3>
+          {card ? (
+            <>
+              <p className="text-sm text-ink-soft">{card.category}</p>
+              <div
+                className="formula-recall-stage"
+                data-revealed={review.revealed}
+                id="formula-answer"
+                ref={answer}
+                tabIndex={-1}
+              >
+                {review.revealed ? (
+                  <div className="min-w-0 w-full space-y-5 text-center">
+                    <div className="overflow-x-auto py-2 text-xl sm:text-2xl">
+                      <MathText>{`\\[${card.formula}\\]`}</MathText>
+                    </div>
+                    <p className="text-sm leading-relaxed text-ink-soft">
+                      <MathText>{card.note}</MathText>
+                    </p>
                   </div>
-                  <p className="text-sm leading-relaxed text-ink-soft">
-                    <MathText>{card.note}</MathText>
-                  </p>
-                </div>
-              ) : (
-                <p className="text-center text-ink-soft">
-                  What is the formula?
-                </p>
-              )}
-            </div>
-            {review.revealed ? (
-              <div className="flex flex-wrap gap-3">
-                <Button
-                  variant="ghost"
-                  disabled={saving}
-                  onClick={() => void next("again")}
-                >
-                  Review again
-                </Button>
-                <Button
-                  disabled={saving}
-                  onClick={() => void next("remembered")}
-                >
-                  {saving ? "Saving…" : "I recalled it"}
-                </Button>
+                ) : (
+                  <Button
+                    aria-controls="formula-answer"
+                    aria-expanded={false}
+                    onClick={() =>
+                      setReview((state) => reviewFormula(state, "reveal"))
+                    }
+                  >
+                    Reveal formula
+                  </Button>
+                )}
               </div>
-            ) : (
-              <Button
-                aria-controls="formula-answer"
-                aria-expanded={false}
-                onClick={() => {
-                  setReview((state) => reviewFormula(state, "reveal"));
-                }}
-              >
-                Reveal formula
-              </Button>
-            )}
-          </>
-        ) : (
-          <>
-            <p className="text-ink-soft">
-              {onRate
-                ? "Today’s formula review is saved."
-                : "You recalled every formula. Try another round to keep them fresh."}
-            </p>
-            {!onRate && (
-              <Button
-                onClick={() => setReview(startFormulaReview(deck.length))}
-              >
-                Practice again
-              </Button>
-            )}
-          </>
-        )}
-      </Card>
+              {review.revealed ? (
+                <div className="flex flex-wrap gap-3">
+                  <Button
+                    variant="ghost"
+                    disabled={saving}
+                    onClick={() => void next("again")}
+                  >
+                    Review again
+                  </Button>
+                  <Button
+                    disabled={saving}
+                    onClick={() => void next("remembered")}
+                  >
+                    {saving ? "Saving…" : "I recalled it"}
+                  </Button>
+                </div>
+              ) : null}
+            </>
+          ) : (
+            <>
+              <p className="text-ink-soft">
+                {onRate
+                  ? "Today’s formula review is saved."
+                  : "You recalled every formula. Try another round to keep them fresh."}
+              </p>
+              {!onRate && (
+                <Button
+                  onClick={() => setReview(startFormulaReview(deck.length))}
+                >
+                  Practice again
+                </Button>
+              )}
+            </>
+          )}
+        </div>
+      </StudyWorkspace>
       {error && (
         <p role="alert" className="text-sm text-bad">
           {error} Choose your rating again to retry.

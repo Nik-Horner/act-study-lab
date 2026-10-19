@@ -1,6 +1,7 @@
 import { readStudySettings } from "@/lib/account-settings";
 import { createClient } from "@/lib/supabase/server";
 import { AccountForm } from "@/components/AccountForm";
+import { LogoutButton } from "@/components/LogoutButton";
 
 export default async function AccountPage() {
   const supabase = await createClient();
@@ -35,7 +36,10 @@ export default async function AccountPage() {
 
   return (
     <div className="space-y-4">
-      <p className="text-center text-sm text-ink-faint">{user.email}</p>
+      <div className="account-identity">
+        <p className="break-all">{user.email}</p>
+        <LogoutButton />
+      </div>
       <AccountForm
         key={user.id}
         variant="settings"

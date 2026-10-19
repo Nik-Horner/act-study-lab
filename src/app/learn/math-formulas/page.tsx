@@ -1,3 +1,4 @@
+import { StudyPageHeader } from "@/components/StudyPageHeader";
 import Link from "next/link";
 import reference from "@/content/math-reference.json";
 import { MathText } from "@/components/MathText";
@@ -5,20 +6,12 @@ import { getTopic } from "@/lib/act/content";
 export default function MathFormulasPage() {
   return (
     <div className="mx-auto max-w-4xl space-y-8">
-      <header className="space-y-3">
-        <Link
-          href="/study/math"
-          className="inline-flex min-h-11 items-center text-sm text-brand underline"
-        >
-          Back to Math
-        </Link>
-        <h1 className="text-3xl font-semibold">Math formulas and methods</h1>
-        <p className="max-w-2xl leading-relaxed text-ink-soft">
-          Review each rule, its conditions, and a worked example. Then apply it
-          to a different problem in the linked lesson and drill. Covers
-          foundations through advanced ACT skills.
-        </p>
-      </header>
+      <StudyPageHeader
+        title="Formulas and methods"
+        subject="math"
+        description="Review the rule, its conditions, and a worked example. Then apply it to a different problem in the linked lesson and drill."
+        back={{ href: "/math-formulas", label: "Formula recall" }}
+      />
       <nav
         aria-label="Formula topics"
         className="flex flex-wrap gap-x-5 gap-y-2 border-y border-border py-4"

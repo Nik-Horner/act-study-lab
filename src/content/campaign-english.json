@@ -1,0 +1,518 @@
+[
+  {
+    "id": "tool-library",
+    "title": "A Library of Useful Things",
+    "html": "[1] On Saturday mornings, a former shop on Bell Street opens as a tool library. The shelves hold drills, clamps, and saws that residents can borrow for home projects. Many tools were donated[[1|, volunteers]] check each one before it returns to a shelf. Each of the volunteers [[2|have]] a different specialty, from repairing handles to sharpening blades. [A]\n\n[2] Lena and Marco designed a checkout sheet so borrowers could record [[3|their]] names beside a tool’s number. [B] When a tool returns, a volunteer compares its parts with a photograph attached to the case. [C] This system matters especially for kits with several small pieces. [D]\n\n[3] Borrowing a tool is [[4|free at no cost]], although residents are asked to return it clean. The shop has little room for additional shelves. [[5|Nevertheless,]] the organizers have found space for new equipment by building shallow drawers under the workbench. [[6|]]\n\n[4] The library lends more than equipment. During short demonstrations, volunteers show visitors how to grip a saw or choose a drill bit. Beginners can practice on scrap wood before taking a tool home. The organizers hope these demonstrations will [[8|help more residents complete projects confidently]].",
+    "questions": [
+      {
+        "number": 1,
+        "topic": "sentence-structure",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          "; volunteers",
+          " volunteers",
+          ", then volunteers"
+        ],
+        "answer": 1,
+        "explanation": "Both sides are complete clauses. A semicolon joins them. A comma alone, including a comma followed by then, cannot join these independent clauses."
+      },
+      {
+        "number": 2,
+        "topic": "verbs",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          "has",
+          "having",
+          "to have"
+        ],
+        "answer": 1,
+        "explanation": "Each is the singular subject. Of the volunteers is a modifying phrase, so the singular finite verb has agrees with each."
+      },
+      {
+        "number": 3,
+        "topic": "pronouns",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          "his or her",
+          "its",
+          "they’re"
+        ],
+        "answer": 0,
+        "explanation": "Their refers to the plural borrowers who record their own names. The other options are singular or mean they are."
+      },
+      {
+        "number": 4,
+        "topic": "redundancy",
+        "questionText": "Which choice is least redundant in context?",
+        "choices": [
+          "NO CHANGE",
+          "free without payment",
+          "free",
+          "at a cost of nothing and free"
+        ],
+        "answer": 2,
+        "explanation": "Free already means no payment is required. The shorter choice preserves the entire meaning without saying it twice."
+      },
+      {
+        "number": 5,
+        "topic": "transitions",
+        "questionText": "Which transition is most logical in context?",
+        "choices": [
+          "NO CHANGE",
+          "In other words,",
+          "For example,",
+          "Similarly,"
+        ],
+        "answer": 0,
+        "explanation": "Limited shelf space sets up a contrast with the organizers finding room for new equipment. Nevertheless expresses that contrast. The second sentence does not restate the first, illustrate the lack of shelf space, or present a parallel comparison."
+      },
+      {
+        "number": 6,
+        "topic": "add-delete",
+        "questionText": "The writer is considering adding: “The shop’s front door was painted blue last spring.” Should this sentence be added here?",
+        "choices": [
+          "Yes, because it explains how the drawers were built.",
+          "Yes, because it introduces the demonstrations in paragraph 4.",
+          "No, because it repeats the cost of borrowing.",
+          "No, because it distracts from the paragraph’s discussion of lending and storage."
+        ],
+        "answer": 3,
+        "explanation": "The paragraph explains access and storage. The door’s color does not develop either idea or connect to the demonstrations."
+      },
+      {
+        "number": 7,
+        "topic": "logical-placement",
+        "questionText": "The writer wants to add: “This routine makes missing pieces easy to spot.” Where would it fit best?",
+        "choices": [
+          "Point A in paragraph 1.",
+          "Point B in paragraph 2.",
+          "Point C in paragraph 2.",
+          "Point D in paragraph 2."
+        ],
+        "answer": 2,
+        "explanation": "The routine is the return-time comparison with a photograph. Put the new sentence directly after that description, at C, before the example of kits with many pieces."
+      },
+      {
+        "number": 8,
+        "topic": "which-choice",
+        "questionText": "The writer wants the ending to emphasize the practical benefit of the demonstrations. Which choice best accomplishes that goal?",
+        "choices": [
+          "NO CHANGE",
+          "remind visitors that Bell Street has several shops",
+          "describe the number of tools on each shelf",
+          "explain why the former shop closed"
+        ],
+        "answer": 0,
+        "explanation": "Confidence in completing a project is a practical benefit of learning tool use. The other choices shift to the street, inventory, or building history."
+      }
+    ]
+  },
+  {
+    "id": "night-sounds",
+    "title": "Listening to the Neighborhood",
+    "html": "[1] For a school radio feature, I recorded ordinary sounds after sunset. [[1|Walking along the canal, the recorder picked up a tapping sound.]] I stopped beside a railing and listened again. A loose metal sign was striking a post whenever the wind rose.\n\n[2] Our group spent the next week [[2|listening to recordings, comparing locations, and we checked our notes]]. We [[3|utilized]] a map to mark each recording site. [A] The [[4|students notebooks]] included the time, weather, and a brief description of every sound. This information helped us distinguish a recurring sound from a single unusual event.\n\n[3] The collection of recordings [[5|reveal]] details we had missed while making them. In one clip, a bicycle bell rings just before a train passes. In another, footsteps stop during a burst of rain and begin again a minute later. [B]\n\n[4] Nadia[[6|, our audio editor,]] arranged the clips for the feature. [C] We originally planned to identify every sound as soon as it played. Instead, we left a short silence before each explanation. [D] Listeners could make a prediction, then compare it with our notes.\n\n[5] By the end, the feature [[8|was totally awesome]]. Familiar places had become easier to notice because we were listening for details rather than treating all background sound as one continuous hum.",
+    "questions": [
+      {
+        "number": 1,
+        "topic": "modifiers",
+        "questionText": "Which choice corrects the opening description?",
+        "choices": [
+          "NO CHANGE",
+          "Walking along the canal, I heard a tapping sound through the recorder.",
+          "Walking along the canal, a tapping sound reached the recorder.",
+          "A tapping sound, walking along the canal, reached me."
+        ],
+        "answer": 1,
+        "explanation": "The introductory description must modify the person walking. I is that person; neither the recorder nor the sound is walking."
+      },
+      {
+        "number": 2,
+        "topic": "parallel-structure",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          "listening to recordings, comparing locations, and checking our notes",
+          "to listen to recordings, comparing locations, and notes were checked",
+          "listening to recordings, locations compared, and checking our notes"
+        ],
+        "answer": 1,
+        "explanation": "The three activities share the same grammatical form: listening, comparing, and checking."
+      },
+      {
+        "number": 3,
+        "topic": "word-choice",
+        "questionText": "Which choice is clearest and most direct in this context?",
+        "choices": [
+          "NO CHANGE",
+          "implemented",
+          "used",
+          "activated"
+        ],
+        "answer": 2,
+        "explanation": "Used states plainly what the students did with the map. Implemented and activated suggest carrying out a plan or switching something on."
+      },
+      {
+        "number": 4,
+        "topic": "punctuation",
+        "questionText": "The notebooks belong to several students. Which choice is correct?",
+        "choices": [
+          "NO CHANGE",
+          "student’s notebooks",
+          "students’ notebooks",
+          "students notebook’s"
+        ],
+        "answer": 2,
+        "explanation": "The plural noun students ends in s. Add an apostrophe after the s to show that several students own the notebooks."
+      },
+      {
+        "number": 5,
+        "topic": "verbs",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          "reveals",
+          "revealing",
+          "to reveal"
+        ],
+        "answer": 1,
+        "explanation": "Collection is the singular subject. Of recordings does not make it plural; reveals supplies the agreeing finite verb."
+      },
+      {
+        "number": 6,
+        "topic": "commas",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          ", our audio editor",
+          " our audio editor,",
+          "; our audio editor;"
+        ],
+        "answer": 0,
+        "explanation": "Our audio editor renames Nadia and is nonessential here. A pair of commas sets it off without separating the subject from its verb."
+      },
+      {
+        "number": 7,
+        "topic": "logical-placement",
+        "questionText": "The writer wants to add: “We wanted the audience to listen as actively as we had.” Where would it best explain the decision about the pauses?",
+        "choices": [
+          "Point A in paragraph 2.",
+          "Point B in paragraph 3.",
+          "Point C in paragraph 4.",
+          "Point D in paragraph 4."
+        ],
+        "answer": 3,
+        "explanation": "At D, the sentence follows the decision to leave silence and explains its purpose before describing listeners’ predictions."
+      },
+      {
+        "number": 8,
+        "topic": "word-choice",
+        "questionText": "Which choice best maintains the essay’s reflective tone and leads into the final sentence?",
+        "choices": [
+          "NO CHANGE",
+          "made us more attentive listeners",
+          "was, like, the coolest thing ever",
+          "proved nobody had heard a train before"
+        ],
+        "answer": 1,
+        "explanation": "The last sentence explains a change in how the group attends to familiar sounds. More attentive listeners introduces that reflection in an appropriate tone."
+      }
+    ]
+  },
+  {
+    "id": "observatory",
+    "title": "Opening the Small Observatory",
+    "html": "[1] A neighborhood observatory had been closed while its roof was repaired. Before welcoming visitors again, the volunteers needed one thing[[1|;]] a workable schedule. Their new schedule was shorter than [[2|the old museum]], which had offered public sessions on five nights each week.\n\n[2] The telescope remained in the original circular room. On clear evenings, [[3|its]] long white tube pointed through an opening in the roof. Although the stairway was narrow[[4|. The visitors]] could climb it safely in small groups.\n\n[3] [A] The volunteers tested several arrangements for the reopened sessions. [B] They decided to limit each session to twelve visitors. [C] That number allowed everyone to reach the eyepiece without crowding the platform. [D]\n\n[4] A guide greeted each group at the foot of the stairs and explained what would happen upstairs. Visitors could ask questions while waiting for their turn. The guide also described how to avoid touching the telescope. This introduction [[7|helped prepare the visitors in advance before they went upstairs]].\n\n[5] Once inside, visitors saw the instrument’s [[8|brass adjustment wheels and curved wooden supports]]. The old equipment still required careful handling, but the volunteers had made the experience easier for new observers to navigate.",
+    "questions": [
+      {
+        "number": 1,
+        "topic": "punctuation",
+        "questionText": "Which punctuation best introduces the item the volunteers needed?",
+        "choices": [
+          "NO CHANGE",
+          ":",
+          ".",
+          "no punctuation"
+        ],
+        "answer": 1,
+        "explanation": "The complete clause ends with one thing and introduces a specific explanation: a workable schedule. A colon can introduce that noun phrase. A semicolon needs a complete clause after it, and a period leaves the noun phrase as a fragment."
+      },
+      {
+        "number": 2,
+        "topic": "misc-grammar",
+        "questionText": "Which choice makes the comparison most logical?",
+        "choices": [
+          "NO CHANGE",
+          "the schedule of the old museum",
+          "visitors at the old museum",
+          "the old museum’s telescope"
+        ],
+        "answer": 1,
+        "explanation": "Compare a schedule with another schedule. Comparing the schedule itself with a museum, its visitors, or its telescope compares different kinds of things."
+      },
+      {
+        "number": 3,
+        "topic": "pronouns",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          "it’s",
+          "their",
+          "they’re"
+        ],
+        "answer": 0,
+        "explanation": "Its is the possessive referring to the singular telescope. It’s means it is; the plural forms do not agree with telescope."
+      },
+      {
+        "number": 4,
+        "topic": "sentence-structure",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          ", the visitors",
+          "; the visitors",
+          ", and the visitors"
+        ],
+        "answer": 1,
+        "explanation": "The although clause is dependent. A comma attaches it to the main clause the visitors could climb it safely. A period or semicolon strands the dependent clause; and does not supply the required connection."
+      },
+      {
+        "number": 5,
+        "topic": "logical-placement",
+        "questionText": "The writer wants to add: “For example, they first tried admitting groups of twenty.” Where would that specific trial fit best?",
+        "choices": [
+          "Point A in paragraph 3.",
+          "Point B in paragraph 3.",
+          "Point C in paragraph 3.",
+          "Point D in paragraph 3."
+        ],
+        "answer": 1,
+        "explanation": "At B, the example follows the general statement about testing arrangements and precedes the final decision to use groups of twelve."
+      },
+      {
+        "number": 6,
+        "topic": "add-delete",
+        "questionText": "If the sentence “That number allowed everyone to reach the eyepiece without crowding the platform” were deleted, the passage would primarily lose:",
+        "choices": [
+          "a reason for the twelve-visitor limit",
+          "the date the observatory was built",
+          "a comparison of different telescopes",
+          "evidence that the roof was still leaking"
+        ],
+        "answer": 0,
+        "explanation": "That sentence explains the practical reason for limiting the group. It supplies no construction date, telescope comparison, or roof-leak evidence."
+      },
+      {
+        "number": 7,
+        "topic": "redundancy",
+        "questionText": "Which choice is least redundant?",
+        "choices": [
+          "NO CHANGE",
+          "prepared the visitors",
+          "prepared the visitors in advance beforehand",
+          "helped prepare ahead of time in advance"
+        ],
+        "answer": 1,
+        "explanation": "Prepared already conveys getting ready before an event. The other choices repeat that timing without adding information."
+      },
+      {
+        "number": 8,
+        "topic": "which-choice",
+        "questionText": "The writer wants to give concrete visual details of the instrument. Which choice best accomplishes that goal?",
+        "choices": [
+          "NO CHANGE",
+          "rather interesting features",
+          "generally impressive qualities",
+          "overall importance to the neighborhood"
+        ],
+        "answer": 0,
+        "explanation": "Brass wheels and wooden supports name visible parts and materials. The other choices offer general judgments rather than observable details."
+      }
+    ]
+  },
+  {
+    "id": "lunchroom",
+    "title": "What the Lunchroom Labels Changed",
+    "html": "[1] A class investigated whether clearer labels would help students sort lunchroom waste. The class marked three collection bins[[1|, and students]] practiced distinguishing food scraps, recyclable containers, and other trash. The bins stayed in the same locations throughout the project.\n\n[2] During the first week, the class [[2|measures]] the material placed in the wrong bins. During the second, they added illustrated labels and repeated the measurements. They tried to count misplaced containers, record the totals, and [[3|weigh]] the misplaced food scraps. [A]\n\n[3] One [[4|teams]] job was to compare the two weeks. The cafeteria served the same menu on corresponding days. [B] The amount of material in the wrong bins was smaller during the week with illustrated labels. [[5|However,]] the students noted that a lunchtime reminder was also introduced during that week. [C]\n\n[4] The class could not separate the effect of the labels from the effect of the reminder. [D] A follow-up could use the illustrated labels without a reminder, with the remaining conditions unchanged. The students concluded that their observations suggested a useful next experiment rather than proving that labels alone caused the improvement. [[8|]]",
+    "questions": [
+      {
+        "number": 1,
+        "topic": "commas",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          ", students",
+          " and students",
+          ", then students"
+        ],
+        "answer": 0,
+        "explanation": "The two complete clauses are joined by the coordinating conjunction and, with a comma before it. The comma-only alternatives create a splice, and the option without a comma misses the clause boundary."
+      },
+      {
+        "number": 2,
+        "topic": "verbs",
+        "questionText": "Which choice best maintains the passage’s account of a completed investigation?",
+        "choices": [
+          "NO CHANGE",
+          "measured",
+          "will measure",
+          "measuring"
+        ],
+        "answer": 1,
+        "explanation": "The passage describes a project already completed. Measured maintains the past narration and supplies a complete finite verb."
+      },
+      {
+        "number": 3,
+        "topic": "parallel-structure",
+        "questionText": "Which choice makes the sentence most grammatically acceptable?",
+        "choices": [
+          "NO CHANGE",
+          "weighing",
+          "the weight of",
+          "they weighed"
+        ],
+        "answer": 0,
+        "explanation": "Count, record, and weigh are parallel verbs sharing to. The other choices break that grammatical series."
+      },
+      {
+        "number": 4,
+        "topic": "punctuation",
+        "questionText": "Which choice correctly shows that the job belonged to one team?",
+        "choices": [
+          "NO CHANGE",
+          "team’s",
+          "teams’",
+          "team"
+        ],
+        "answer": 1,
+        "explanation": "A singular team owns the job, so add apostrophe-s: team’s. Teams’ would indicate several teams."
+      },
+      {
+        "number": 5,
+        "topic": "transitions",
+        "questionText": "Which transition best connects the apparent improvement with the limitation that follows?",
+        "choices": [
+          "NO CHANGE",
+          "Consequently,",
+          "For example,",
+          "Likewise,"
+        ],
+        "answer": 0,
+        "explanation": "However introduces the caution: the apparent improvement cannot be attributed to labels alone because a second change happened. It is not a consequence or example of the smaller amount."
+      },
+      {
+        "number": 6,
+        "topic": "add-delete",
+        "questionText": "If the sentence about using the same menu were removed, the passage would lose a detail that:",
+        "choices": [
+          "shows that every student ate the same food",
+          "identifies a condition kept comparable between weeks",
+          "proves that the reminder caused the change",
+          "gives the amount of food wasted in grams"
+        ],
+        "answer": 1,
+        "explanation": "The same menu on corresponding days helps make the two periods comparable. It does not establish what every student ate or identify which treatment caused the change."
+      },
+      {
+        "number": 7,
+        "topic": "logical-placement",
+        "questionText": "Where would “Both changes might have influenced where students put their waste” best explain the investigation’s limitation?",
+        "choices": [
+          "Point A in paragraph 2.",
+          "Point B in paragraph 3.",
+          "Point C in paragraph 3.",
+          "Point D in paragraph 4."
+        ],
+        "answer": 2,
+        "explanation": "At C, the sentence immediately follows the introduction of the second change and explains why paragraph 4 says the effects cannot be separated."
+      },
+      {
+        "number": 8,
+        "topic": "which-choice",
+        "questionText": "Which concluding sentence best maintains the passage’s careful treatment of the evidence?",
+        "choices": [
+          "The results proved that reminders always work in every cafeteria.",
+          "The class therefore knew no more experiments were necessary.",
+          "Every type of label must have the same effect.",
+          "The next trial would help them test one explanation more directly."
+        ],
+        "answer": 3,
+        "explanation": "A next trial that separates the treatments follows the stated limitation. The other endings make universal or final claims unsupported by this project."
+      }
+    ]
+  },
+  {
+    "id": "evening-library",
+    "title": "Try One Later Library Night",
+    "html": "[1] Our neighborhood library should try staying open until nine on one weekday evening. It currently closes at six. A four-week pilot would test whether later hours serve people who cannot visit during the day, while giving staff a definite end date for evaluating the change. [[1|Everyone in the neighborhood needs this change.]]\n\n[2] A voluntary survey at the library asked eighty visitors about opening hours. Sixty preferred at least one later evening. That result does not represent every resident, but it identifies interest among the people who responded. [[2|The building has a brick exterior.]] Students leaving nearby after-school activities often pass the library after its doors have closed.\n\n[3] Some staff members point out that an evening shift would require additional paid hours or a change to existing schedules. Keeping the lights on also has a cost. [[4|However,]] a limited pilot could measure use before the library commits to a permanent expansion. The staff could record attendance and the extra operating cost on each pilot evening.\n\n[4] If the pilot attracts few visitors or strains staffing, the library could return to its earlier closing time. If it serves a useful number of visitors at a manageable cost, the results could support continuing it. [[5|]]",
+    "questions": [
+      {
+        "number": 1,
+        "topic": "which-choice",
+        "questionText": "Which revision best states a claim supported by the essay’s evidence?",
+        "choices": [
+          "NO CHANGE",
+          "A short trial could show whether later hours meet a local need.",
+          "All residents would use the library on every later evening.",
+          "No additional staff time would be needed."
+        ],
+        "answer": 1,
+        "explanation": "The essay proposes a limited pilot to investigate demand and cost. The survey supports investigating a possible need, not claims about every resident, certain usage, or zero staffing cost."
+      },
+      {
+        "number": 2,
+        "topic": "which-choice",
+        "questionText": "Given that all choices are accurate, which sentence would most strengthen the case for testing later hours?",
+        "choices": [
+          "NO CHANGE",
+          "The library opened more than thirty years ago.",
+          "The library’s history collection occupies two shelves.",
+          "Several evening bus routes stop outside the library after six."
+        ],
+        "answer": 3,
+        "explanation": "An evening transit connection makes later visits more practical and directly supports testing evening access. The building material, opening date, and collection size do not address access after six."
+      },
+      {
+        "number": 3,
+        "topic": "add-delete",
+        "questionText": "Should the writer delete the first two sentences of paragraph 3, which discuss staffing and operating costs?",
+        "choices": [
+          "Yes, because an argument should never mention concerns about its proposal.",
+          "Yes, because the sentences prove that no one wants later hours.",
+          "No, because they acknowledge a reasonable concern that the proposed pilot would investigate.",
+          "No, because they establish the exact cost of a permanent expansion."
+        ],
+        "answer": 2,
+        "explanation": "The sentences acknowledge a credible counterargument. The pilot’s attendance and cost records respond to that concern. No exact cost is supplied, and a cost concern does not establish a lack of demand."
+      },
+      {
+        "number": 4,
+        "topic": "transitions",
+        "questionText": "Which transition best connects the concern about costs with the proposal for a limited pilot?",
+        "choices": [
+          "NO CHANGE",
+          "For example,",
+          "Similarly,",
+          "Consequently, the cost is zero;"
+        ],
+        "answer": 0,
+        "explanation": "However marks the turn from a concern to a practical response: a pilot can gather evidence before a permanent commitment. The pilot is not an example of the listed costs or proof they disappear."
+      },
+      {
+        "number": 5,
+        "topic": "which-choice",
+        "questionText": "Which conclusion best reinforces the essay’s argument without overstating the available evidence?",
+        "choices": [
+          "The survey proves that every neighborhood needs longer hours.",
+          "Trying one later night would let a local decision rest on observed use and cost.",
+          "The library should promise permanent late hours before collecting any information.",
+          "The library’s brick exterior is its most important feature."
+        ],
+        "answer": 1,
+        "explanation": "The essay argues for a reversible trial that measures demand and operating cost. The supported conclusion calls for gathering that evidence, rather than claiming universal demand or committing in advance."
+      }
+    ]
+  }
+]

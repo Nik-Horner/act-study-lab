@@ -259,7 +259,12 @@ test("Daily English reuses identical visible prerequisites while retaining each 
       minutesPerDay: 75,
     },
     0,
-    undefined,
+    {
+      english: [
+        "english:sentence-structure:skill:independent-boundary",
+        "english:sentence-structure:skill:conjunctive-adverb",
+      ],
+    },
     ["daily-clauses-1"],
     {},
     { testDate: "2026-10-17", targetScore: 36, coveredUnits: [] },

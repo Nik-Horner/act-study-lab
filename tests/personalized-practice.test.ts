@@ -11,9 +11,9 @@ test("challenge selection follows subject baseline and actual goal without inven
   assert(practicePriority("hard", 34, 36) < practicePriority("easy", 34, 36));
   assert(practicePriority("easy", 19, 24) < practicePriority("hard", 19, 24));
   assert(practicePriority("medium", 27, 30) < practicePriority("hard", 27, 30));
-  assert.equal(
-    practicePriority("hard", null, 36),
-    practicePriority("easy", null, 36),
+  assert(
+    practicePriority("easy", null, 36) < practicePriority("hard", null, 36),
+    "An unknown score starts with support, without claiming a measured score.",
   );
 });
 test("different students retain their own dates, targets, baselines and Science choice", () => {

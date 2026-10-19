@@ -4,10 +4,11 @@ import { useEffect, useRef, useState } from "react";
 import type { DailyQuestion } from "@/lib/daily-plan";
 import type { Question } from "@/lib/act/types";
 import { answerPacing } from "@/lib/question-pacing";
-import { renderStem, fmtTime } from "@/lib/format";
+import { renderStem } from "@/lib/format";
 import { QuestionView } from "./act/QuestionView";
 import { displayChoiceOrder } from "@/lib/act/choice-order";
 import { useQuestionNavigation } from "./act/useQuestionNavigation";
+import { StudyWorkspace } from "./StudyWorkspace";
 import { Card } from "./ui/Card";
 import { Button } from "./ui/Button";
 export function DailyDrill({
@@ -43,7 +44,6 @@ export function DailyDrill({
     [failed, setFailed] = useState(false);
   const guard = useRef(false);
   const navigation = useQuestionNavigation(q as Question);
-  const target = answerPacing(0, q.subject).target;
   const elapsedMs = revealed
     ? savedTime
     : (selection?.elapsedMs ?? now - start);
@@ -102,37 +102,26 @@ export function DailyDrill({
   });
   const chosen = revealed ? (savedChoice ?? null) : (selection?.choice ?? null);
   return (
-    <div className="space-y-5">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h1 className="text-2xl font-semibold sm:text-3xl">
-            {title.replace(/^\d+\.\s*/, "")}
-          </h1>
+    <StudyWorkspace
+      title={title.replace(/^\d+\.\s*/, "")}
+      subject={q.subject}
+      mode="practice"
+      headingLevel={1}
+      tools={
+        <>
+          <span>
+            {count}/{total} answers saved
+          </span>
           <button
             onClick={onLesson}
             disabled={saving || failed}
-            className="mt-2 min-h-11 text-sm text-brand underline disabled:opacity-50"
+            className="min-h-11 text-brand underline"
           >
             Review the lesson
           </button>
-        </div>
-        <div className="flex flex-wrap items-center gap-4 text-sm">
-          <span
-            className={`rounded-full border border-border px-3 py-2 tabular-nums ${pace && !pace.onPace ? "text-warn" : "text-ink-soft"}`}
-          >
-            {elapsedMs === undefined
-              ? "Time unavailable"
-              : fmtTime(Math.floor(elapsedMs / 1000))}{" "}
-            {target === null ? "· learning time" : `· target ${target}s`}
-          </span>
-        </div>
-      </div>
-      <div className="daily-drill-status text-sm">
-        <span>
-          {q.phase === "review" ? "Review · " : ""}Question{" "}
-          {Math.min(count + (revealed ? 0 : 1), total)} of {total}
-        </span>
-      </div>
+        </>
+      }
+    >
       {q.subject === "english" ? (
         <Card className="p-6">
           <p
@@ -206,6 +195,6 @@ export function DailyDrill({
       <p className="text-xs text-ink-soft">
         A–D or 1–4 answers · Enter, N, or Space continues after feedback.
       </p>
-    </div>
+    </StudyWorkspace>
   );
 }

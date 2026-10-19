@@ -1,0 +1,352 @@
+{
+  "regions": [
+    {
+      "id": "sidebar",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 0,
+        "y": 0,
+        "w": 262,
+        "h": 1024
+      },
+      "note": "Persistent navigation rail with semantic links",
+      "container": true
+    },
+    {
+      "id": "logo",
+      "kind": "control",
+      "pixelBox": {
+        "x": 24,
+        "y": 27,
+        "w": 225,
+        "h": 51
+      },
+      "note": "Four geometric subject marks and brand link"
+    },
+    {
+      "id": "today-nav",
+      "kind": "control",
+      "pixelBox": {
+        "x": 15,
+        "y": 113,
+        "w": 236,
+        "h": 65
+      },
+      "note": "Selected Today link"
+    },
+    {
+      "id": "course-nav",
+      "kind": "control",
+      "pixelBox": {
+        "x": 37,
+        "y": 198,
+        "w": 174,
+        "h": 36
+      },
+      "note": "Course navigation link"
+    },
+    {
+      "id": "practice-nav",
+      "kind": "control",
+      "pixelBox": {
+        "x": 37,
+        "y": 269,
+        "w": 190,
+        "h": 38
+      },
+      "note": "Practice navigation link"
+    },
+    {
+      "id": "progress-nav",
+      "kind": "control",
+      "pixelBox": {
+        "x": 37,
+        "y": 340,
+        "w": 192,
+        "h": 38
+      },
+      "note": "Progress navigation link"
+    },
+    {
+      "id": "settings-nav",
+      "kind": "control",
+      "pixelBox": {
+        "x": 37,
+        "y": 941,
+        "w": 190,
+        "h": 43
+      },
+      "note": "Settings navigation link"
+    },
+    {
+      "id": "heading",
+      "kind": "text",
+      "pixelBox": {
+        "x": 291,
+        "y": 19,
+        "w": 635,
+        "h": 52
+      },
+      "note": "Your next move heading"
+    },
+    {
+      "id": "subtitle",
+      "kind": "text",
+      "pixelBox": {
+        "x": 293,
+        "y": 79,
+        "w": 590,
+        "h": 30
+      },
+      "note": "Short next step guidance"
+    },
+    {
+      "id": "earned-progress",
+      "kind": "text",
+      "pixelBox": {
+        "x": 1173,
+        "y": 32,
+        "w": 329,
+        "h": 34
+      },
+      "note": "Sample earned progress replaced by account evidence"
+    },
+    {
+      "id": "plan-strip",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 291,
+        "y": 125,
+        "w": 1223,
+        "h": 74
+      },
+      "note": "Test day and available study time strip",
+      "container": true
+    },
+    {
+      "id": "plan-date",
+      "kind": "text",
+      "pixelBox": {
+        "x": 319,
+        "y": 148,
+        "w": 314,
+        "h": 32
+      },
+      "note": "Personal test date with calendar icon"
+    },
+    {
+      "id": "plan-budget",
+      "kind": "text",
+      "pixelBox": {
+        "x": 676,
+        "y": 148,
+        "w": 252,
+        "h": 32
+      },
+      "note": "Personal daily time budget estimate"
+    },
+    {
+      "id": "edit-plan",
+      "kind": "control",
+      "pixelBox": {
+        "x": 1385,
+        "y": 145,
+        "w": 109,
+        "h": 38
+      },
+      "note": "Edit study plan link"
+    },
+    {
+      "id": "path-title",
+      "kind": "text",
+      "pixelBox": {
+        "x": 291,
+        "y": 228,
+        "w": 363,
+        "h": 40
+      },
+      "note": "Today's path heading"
+    },
+    {
+      "id": "english-stop",
+      "kind": "control",
+      "pixelBox": {
+        "x": 308,
+        "y": 296,
+        "w": 390,
+        "h": 98
+      },
+      "note": "Completed English stop and real lesson title"
+    },
+    {
+      "id": "math-stop",
+      "kind": "control",
+      "pixelBox": {
+        "x": 307,
+        "y": 456,
+        "w": 392,
+        "h": 116
+      },
+      "note": "Active Math stop and real lesson title"
+    },
+    {
+      "id": "reading-stop",
+      "kind": "control",
+      "pixelBox": {
+        "x": 307,
+        "y": 650,
+        "w": 395,
+        "h": 102
+      },
+      "note": "Reading stop and real lesson title"
+    },
+    {
+      "id": "science-stop",
+      "kind": "control",
+      "pixelBox": {
+        "x": 307,
+        "y": 809,
+        "w": 392,
+        "h": 109
+      },
+      "note": "Science stop and real lesson title"
+    },
+    {
+      "id": "path-connectors",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 330,
+        "y": 384,
+        "w": 62,
+        "h": 430
+      },
+      "note": "Functional lesson progression path",
+      "codeDrawn": true
+    },
+    {
+      "id": "next-surface",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 721,
+        "y": 212,
+        "w": 793,
+        "h": 738
+      },
+      "note": "Next lesson surface with children",
+      "container": true
+    },
+    {
+      "id": "lesson-label",
+      "kind": "text",
+      "pixelBox": {
+        "x": 756,
+        "y": 236,
+        "w": 512,
+        "h": 25
+      },
+      "note": "Current subject and saved lesson state"
+    },
+    {
+      "id": "lesson-title",
+      "kind": "text",
+      "pixelBox": {
+        "x": 756,
+        "y": 270,
+        "w": 696,
+        "h": 43
+      },
+      "note": "Actual next lesson title"
+    },
+    {
+      "id": "lesson-intro",
+      "kind": "text",
+      "pixelBox": {
+        "x": 756,
+        "y": 318,
+        "w": 699,
+        "h": 27
+      },
+      "note": "Short lesson teaching prompt"
+    },
+    {
+      "id": "lesson-graph",
+      "kind": "control",
+      "pixelBox": {
+        "x": 768,
+        "y": 354,
+        "w": 698,
+        "h": 360
+      },
+      "note": "Interactive data-driven graph, axes, labels and plotted points",
+      "codeDrawn": true
+    },
+    {
+      "id": "graph-stepper",
+      "kind": "control",
+      "pixelBox": {
+        "x": 987,
+        "y": 732,
+        "w": 264,
+        "h": 54
+      },
+      "note": "Keyboard and tap enabled stepper"
+    },
+    {
+      "id": "graph-equation",
+      "kind": "text",
+      "pixelBox": {
+        "x": 1037,
+        "y": 795,
+        "w": 204,
+        "h": 35
+      },
+      "note": "Mathematical relationship rendered as text",
+      "codeDrawn": true
+    },
+    {
+      "id": "continue",
+      "kind": "control",
+      "pixelBox": {
+        "x": 809,
+        "y": 841,
+        "w": 622,
+        "h": 66
+      },
+      "note": "Primary Continue lesson button"
+    },
+    {
+      "id": "saved-state",
+      "kind": "text",
+      "pixelBox": {
+        "x": 1013,
+        "y": 914,
+        "w": 219,
+        "h": 24
+      },
+      "note": "Saved place status"
+    },
+    {
+      "id": "credit-note",
+      "kind": "chrome",
+      "pixelBox": {
+        "x": 291,
+        "y": 962,
+        "w": 1223,
+        "h": 49
+      },
+      "note": "Earned completion credit summary",
+      "container": true
+    },
+    {
+      "id": "credit-text",
+      "kind": "text",
+      "pixelBox": {
+        "x": 320,
+        "y": 972,
+        "w": 674,
+        "h": 29
+      },
+      "note": "Earned completion statement from account history"
+    }
+  ]
+}

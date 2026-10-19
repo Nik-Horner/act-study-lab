@@ -1,0 +1,653 @@
+{
+  "browser": "Codex in-app browser",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 1000
+    },
+    {
+      "width": 390,
+      "height": 844
+    }
+  ],
+  "observations": [
+    {
+      "name": "course",
+      "path": "/learn",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "ACT course"
+    },
+    {
+      "name": "english-study",
+      "path": "/study/english",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "English study"
+    },
+    {
+      "name": "math-study",
+      "path": "/study/math",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "Math study"
+    },
+    {
+      "name": "reading-study",
+      "path": "/study/reading",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "Reading study"
+    },
+    {
+      "name": "science-study",
+      "path": "/study/science",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "Science study"
+    },
+    {
+      "name": "practice",
+      "path": "/practice",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "ACT practice"
+    },
+    {
+      "name": "progress",
+      "path": "/progress",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "Study progress"
+    },
+    {
+      "name": "exams",
+      "path": "/exam",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "Timed practice sections"
+    },
+    {
+      "name": "formulas",
+      "path": "/math-formulas",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "Formula recall"
+    },
+    {
+      "name": "formula-reference",
+      "path": "/learn/math-formulas",
+      "viewport": "desktop",
+      "error": false,
+      "overflow": false,
+      "title": "Formulas and methods"
+    },
+    {
+      "name": "course",
+      "path": "/learn",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "ACT course"
+    },
+    {
+      "name": "english-study",
+      "path": "/study/english",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "English study"
+    },
+    {
+      "name": "math-study",
+      "path": "/study/math",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "Math study"
+    },
+    {
+      "name": "reading-study",
+      "path": "/study/reading",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "Reading study"
+    },
+    {
+      "name": "science-study",
+      "path": "/study/science",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "Science study"
+    },
+    {
+      "name": "practice",
+      "path": "/practice",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "ACT practice"
+    },
+    {
+      "name": "progress",
+      "path": "/progress",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "Study progress"
+    },
+    {
+      "name": "exams",
+      "path": "/exam",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "Timed practice sections"
+    },
+    {
+      "name": "formulas",
+      "path": "/math-formulas",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "Formula recall"
+    },
+    {
+      "name": "formula-reference",
+      "path": "/learn/math-formulas",
+      "viewport": "mobile",
+      "error": false,
+      "overflow": false,
+      "title": "Formulas and methods"
+    },
+    {
+      "name": "english-check",
+      "path": "/learn/sentence-structure?skill=dependent-boundary",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Attach dependent clauses without a fragment"
+    },
+    {
+      "name": "math-check",
+      "path": "/learn/math-modeling?skill=math-modeling-linear-models",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Separate a starting amount from a per-unit change"
+    },
+    {
+      "name": "reading-check",
+      "path": "/learn/reading-inference?skill=reading-inference-evidence-link",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Build one small link from the clue"
+    },
+    {
+      "name": "science-check",
+      "path": "/learn/science-experimental-design?skill=science-experimental-design-confounds",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Change one cause at a time"
+    },
+    {
+      "name": "final-english",
+      "viewport": "desktop",
+      "footerPosition": "static",
+      "overflow": false
+    },
+    {
+      "name": "final-math",
+      "viewport": "desktop",
+      "footerPosition": "static",
+      "overflow": false
+    },
+    {
+      "name": "final-reading",
+      "viewport": "desktop",
+      "footerPosition": "static",
+      "overflow": false
+    },
+    {
+      "name": "final-science",
+      "viewport": "desktop",
+      "footerPosition": "static",
+      "overflow": false
+    },
+    {
+      "name": "final-english",
+      "viewport": "mobile",
+      "footerPosition": "static",
+      "overflow": false
+    },
+    {
+      "name": "final-math",
+      "viewport": "mobile",
+      "footerPosition": "static",
+      "overflow": false
+    },
+    {
+      "name": "final-reading",
+      "viewport": "mobile",
+      "footerPosition": "static",
+      "overflow": false
+    },
+    {
+      "name": "final-science",
+      "viewport": "mobile",
+      "footerPosition": "static",
+      "overflow": false
+    },
+    {
+      "path": "/exam/exam-1",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "ACT English \u2014 Full Practice Exam 1"
+    },
+    {
+      "path": "/exam/exam-2",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "ACT English \u2014 Full Practice Exam 2"
+    },
+    {
+      "path": "/exam/math-1",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "Math Full Practice Test 1"
+    },
+    {
+      "path": "/exam/math-2",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "Math Full Practice Test 2"
+    },
+    {
+      "path": "/exam/reading-1",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "Reading digital practice 1"
+    },
+    {
+      "path": "/exam/reading-2",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "Reading digital practice 2"
+    },
+    {
+      "path": "/exam/science-1",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "Digital ACT Science: full practice section 1"
+    },
+    {
+      "path": "/exam/science-2",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "Digital ACT Science: full practice section 2"
+    },
+    {
+      "path": "/exam/exam-1/results/9f942dad-ce2b-402e-bf55-09e1d400ef9a",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "English results"
+    },
+    {
+      "path": "/exam/reading-1/results/58e6c698-ca58-44e8-9918-6600c984588c",
+      "viewport": "desktop",
+      "overflow": false,
+      "title": "Reading digital practice 1 results"
+    },
+    {
+      "path": "/exam/exam-1",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "ACT English \u2014 Full Practice Exam 1"
+    },
+    {
+      "path": "/exam/exam-2",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "ACT English \u2014 Full Practice Exam 2"
+    },
+    {
+      "path": "/exam/math-1",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Math Full Practice Test 1"
+    },
+    {
+      "path": "/exam/math-2",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Math Full Practice Test 2"
+    },
+    {
+      "path": "/exam/reading-1",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Reading digital practice 1"
+    },
+    {
+      "path": "/exam/reading-2",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Reading digital practice 2"
+    },
+    {
+      "path": "/exam/science-1",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Digital ACT Science: full practice section 1"
+    },
+    {
+      "path": "/exam/science-2",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Digital ACT Science: full practice section 2"
+    },
+    {
+      "path": "/exam/exam-1/results/9f942dad-ce2b-402e-bf55-09e1d400ef9a",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "English results"
+    },
+    {
+      "path": "/exam/reading-1/results/58e6c698-ca58-44e8-9918-6600c984588c",
+      "viewport": "mobile",
+      "overflow": false,
+      "title": "Reading digital practice 1 results"
+    }
+  ],
+  "teachingCaptureProofs": [
+    {
+      "name": "english",
+      "label": "desktop",
+      "phase": "method",
+      "active": "1Understand",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "english",
+      "label": "desktop",
+      "phase": "example",
+      "active": "2Worked example",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "english",
+      "label": "desktop",
+      "phase": "check",
+      "active": "3Guided check",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "math",
+      "label": "desktop",
+      "phase": "method",
+      "active": "1Understand",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "math",
+      "label": "desktop",
+      "phase": "example",
+      "active": "2Worked example",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "math",
+      "label": "desktop",
+      "phase": "check",
+      "active": "3Guided check",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "reading",
+      "label": "desktop",
+      "phase": "method",
+      "active": "1Understand",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "reading",
+      "label": "desktop",
+      "phase": "example",
+      "active": "2Worked example",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "reading",
+      "label": "desktop",
+      "phase": "check",
+      "active": "3Guided check",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "science",
+      "label": "desktop",
+      "phase": "method",
+      "active": "1Understand",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "science",
+      "label": "desktop",
+      "phase": "example",
+      "active": "2Worked example",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "science",
+      "label": "desktop",
+      "phase": "check",
+      "active": "3Guided check",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "english",
+      "label": "mobile",
+      "phase": "method",
+      "active": "1Understand",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "english",
+      "label": "mobile",
+      "phase": "example",
+      "active": "2Worked example",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "english",
+      "label": "mobile",
+      "phase": "check",
+      "active": "3Guided check",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "math",
+      "label": "mobile",
+      "phase": "method",
+      "active": "1Understand",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "math",
+      "label": "mobile",
+      "phase": "example",
+      "active": "2Worked example",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "math",
+      "label": "mobile",
+      "phase": "check",
+      "active": "3Guided check",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "reading",
+      "label": "mobile",
+      "phase": "method",
+      "active": "1Understand",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "reading",
+      "label": "mobile",
+      "phase": "example",
+      "active": "2Worked example",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "reading",
+      "label": "mobile",
+      "phase": "check",
+      "active": "3Guided check",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "science",
+      "label": "mobile",
+      "phase": "method",
+      "active": "1Understand",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "science",
+      "label": "mobile",
+      "phase": "example",
+      "active": "2Worked example",
+      "overflow": false,
+      "top": 0
+    },
+    {
+      "name": "science",
+      "label": "mobile",
+      "phase": "check",
+      "active": "3Guided check",
+      "overflow": false,
+      "top": 0
+    }
+  ],
+  "screenshotFiles": [
+    ".impeccable/review/integration/verified-course-desktop.png",
+    ".impeccable/review/integration/verified-course-mobile.png",
+    ".impeccable/review/integration/verified-english-check-bottom-mobile.png",
+    ".impeccable/review/integration/verified-english-check-desktop.png",
+    ".impeccable/review/integration/verified-english-check-mobile.png",
+    ".impeccable/review/integration/verified-english-example-desktop.png",
+    ".impeccable/review/integration/verified-english-example-mobile.png",
+    ".impeccable/review/integration/verified-english-method-desktop.png",
+    ".impeccable/review/integration/verified-english-method-mobile.png",
+    ".impeccable/review/integration/verified-english-study-desktop.png",
+    ".impeccable/review/integration/verified-english-study-mobile.png",
+    ".impeccable/review/integration/verified-exam-exam-1-results-desktop.png",
+    ".impeccable/review/integration/verified-exam-exam-1-results-mobile.png",
+    ".impeccable/review/integration/verified-exam-exam-1-start-desktop.png",
+    ".impeccable/review/integration/verified-exam-exam-1-start-mobile.png",
+    ".impeccable/review/integration/verified-exam-exam-2-start-desktop.png",
+    ".impeccable/review/integration/verified-exam-exam-2-start-mobile.png",
+    ".impeccable/review/integration/verified-exam-math-1-start-desktop.png",
+    ".impeccable/review/integration/verified-exam-math-1-start-mobile.png",
+    ".impeccable/review/integration/verified-exam-math-2-start-desktop.png",
+    ".impeccable/review/integration/verified-exam-math-2-start-mobile.png",
+    ".impeccable/review/integration/verified-exam-reading-1-results-desktop.png",
+    ".impeccable/review/integration/verified-exam-reading-1-results-mobile.png",
+    ".impeccable/review/integration/verified-exam-reading-1-start-desktop.png",
+    ".impeccable/review/integration/verified-exam-reading-1-start-mobile.png",
+    ".impeccable/review/integration/verified-exam-reading-2-start-desktop.png",
+    ".impeccable/review/integration/verified-exam-reading-2-start-mobile.png",
+    ".impeccable/review/integration/verified-exam-science-1-start-desktop.png",
+    ".impeccable/review/integration/verified-exam-science-1-start-mobile.png",
+    ".impeccable/review/integration/verified-exam-science-2-start-desktop.png",
+    ".impeccable/review/integration/verified-exam-science-2-start-mobile.png",
+    ".impeccable/review/integration/verified-exams-desktop.png",
+    ".impeccable/review/integration/verified-exams-mobile.png",
+    ".impeccable/review/integration/verified-formula-reference-desktop.png",
+    ".impeccable/review/integration/verified-formula-reference-mobile.png",
+    ".impeccable/review/integration/verified-formulas-desktop.png",
+    ".impeccable/review/integration/verified-formulas-mobile.png",
+    ".impeccable/review/integration/verified-math-check-bottom-mobile.png",
+    ".impeccable/review/integration/verified-math-check-desktop.png",
+    ".impeccable/review/integration/verified-math-check-mobile.png",
+    ".impeccable/review/integration/verified-math-example-desktop.png",
+    ".impeccable/review/integration/verified-math-example-mobile.png",
+    ".impeccable/review/integration/verified-math-method-desktop.png",
+    ".impeccable/review/integration/verified-math-method-mobile.png",
+    ".impeccable/review/integration/verified-math-study-desktop.png",
+    ".impeccable/review/integration/verified-math-study-mobile.png",
+    ".impeccable/review/integration/verified-practice-desktop.png",
+    ".impeccable/review/integration/verified-practice-mobile.png",
+    ".impeccable/review/integration/verified-progress-desktop.png",
+    ".impeccable/review/integration/verified-progress-mobile.png",
+    ".impeccable/review/integration/verified-reading-check-bottom-mobile.png",
+    ".impeccable/review/integration/verified-reading-check-desktop.png",
+    ".impeccable/review/integration/verified-reading-check-mobile.png",
+    ".impeccable/review/integration/verified-reading-example-desktop.png",
+    ".impeccable/review/integration/verified-reading-example-mobile.png",
+    ".impeccable/review/integration/verified-reading-method-desktop.png",
+    ".impeccable/review/integration/verified-reading-method-mobile.png",
+    ".impeccable/review/integration/verified-reading-study-desktop.png",
+    ".impeccable/review/integration/verified-reading-study-mobile.png",
+    ".impeccable/review/integration/verified-science-check-bottom-mobile.png",
+    ".impeccable/review/integration/verified-science-check-desktop.png",
+    ".impeccable/review/integration/verified-science-check-mobile.png",
+    ".impeccable/review/integration/verified-science-example-desktop.png",
+    ".impeccable/review/integration/verified-science-example-mobile.png",
+    ".impeccable/review/integration/verified-science-method-desktop.png",
+    ".impeccable/review/integration/verified-science-method-mobile.png",
+    ".impeccable/review/integration/verified-science-study-desktop.png",
+    ".impeccable/review/integration/verified-science-study-mobile.png",
+    ".impeccable/review/integration/fix-science-example-desktop.png",
+    ".impeccable/review/integration/fix-science-example-light-bottom-mobile.png",
+    ".impeccable/review/integration/fix-science-example-light-desktop.png",
+    ".impeccable/review/integration/fix-science-example-light-mobile.png"
+  ],
+  "interactions": [
+    "All four subject skill paths: Understand -> Worked example -> Guided check",
+    "Math wrong guided choice -> worked reasoning -> smaller step -> independent practice handoff",
+    "Math scored miss -> matching supported lesson recovery, original choice retained",
+    "Course keyboard search returns six triangle skills; empty state on unmatched query",
+    "Daily concept checkpoint advances and resumes at Concept 2 of 3 after reload",
+    "All eight exam starts and two owned results on both viewports",
+    "Science source experiment table remains beside worked reasoning, desktop and mobile, both themes sampled"
+  ],
+  "limits": [
+    "Earlier final-* captures are superseded because fullPage timing artifacts mislabeled one stage. Only verified-* and fix-* files are final evidence.",
+    "No physical device, screen reader, load test or measured learning-outcome study.",
+    "All writes limited to newly created isolated QA accounts."
+  ]
+}

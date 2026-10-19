@@ -13,12 +13,14 @@ export function LessonSections({
   hideHeading = false,
   onPracticeComplete,
   showActivity = true,
+  mode = "all",
 }: {
   sections: Lesson["sections"];
   idPrefix?: string;
   hideHeading?: boolean;
   onPracticeComplete?: () => void;
   showActivity?: boolean;
+  mode?: "all" | "method" | "examples";
 }) {
   return (
     <div className="space-y-8">
@@ -30,6 +32,7 @@ export function LessonSections({
           id={`${idPrefix}-${i}`}
           onPracticeComplete={onPracticeComplete}
           showActivity={showActivity}
+          mode={mode}
         />
       ))}
     </div>
@@ -41,12 +44,14 @@ function LessonSection({
   hideHeading,
   onPracticeComplete,
   showActivity,
+  mode,
 }: {
   section: Lesson["sections"][number];
   id: string;
   hideHeading: boolean;
   onPracticeComplete?: () => void;
   showActivity: boolean;
+  mode: "all" | "method" | "examples";
 }) {
   const [recalling, setRecalling] = useState(false);
   const [note, setNote] = useState("");
@@ -89,7 +94,7 @@ function LessonSection({
           </div>
         ) : (
           <>
-            {!!section.evidence?.length && (
+            {mode !== "examples" && !!section.evidence?.length && (
               <div className="space-y-3">
                 {section.body.map((p, j) => (
                   <p key={j} className="leading-relaxed text-ink">
@@ -101,46 +106,52 @@ function LessonSection({
             <div
               className="lesson-method-grid"
               data-evidence={!!section.evidence?.length}
+              data-mode={mode}
             >
-              <div className="lesson-method-text">
-                {section.evidence?.length
-                  ? section.evidence.map((passage) => (
-                      <PassageView key={passage.id} passage={passage} />
-                    ))
-                  : section.body.map((p, j) => (
-                      <p key={j} className="leading-relaxed text-ink">
-                        <MathText>{p}</MathText>
-                      </p>
-                    ))}
-              </div>
-              <div className="lesson-method-examples">
-                {section.examples?.map((ex, j) => (
-                  <LessonExample
-                    key={j}
-                    example={ex}
-                    stepwise={section.skillId?.startsWith("math-")}
-                    classify={
-                      /^(Clauses and phrases|Sentence fragments)$/.test(
-                        section.heading,
-                      ) && !!section.examples?.some((item) => !item.good)
-                    }
-                  />
-                ))}
-                {section.tip && (
-                  <p className="rounded-xl border border-brand-soft bg-brand-soft px-4 py-3 text-sm leading-relaxed text-brand-dark">
-                    <strong>Tip · </strong>
-                    <MathText>{section.tip}</MathText>
-                  </p>
-                )}
-              </div>
+              {(mode !== "examples" || !!section.evidence?.length) && (
+                <div className="lesson-method-text">
+                  {section.evidence?.length
+                    ? section.evidence.map((passage) => (
+                        <PassageView key={passage.id} passage={passage} />
+                      ))
+                    : section.body.map((p, j) => (
+                        <p key={j} className="leading-relaxed text-ink">
+                          <MathText>{p}</MathText>
+                        </p>
+                      ))}
+                </div>
+              )}
+              {mode !== "method" && (
+                <div className="lesson-method-examples">
+                  {section.examples?.map((ex, j) => (
+                    <LessonExample
+                      key={j}
+                      example={ex}
+                      stepwise={section.skillId?.startsWith("math-")}
+                      classify={
+                        /^(Clauses and phrases|Sentence fragments)$/.test(
+                          section.heading,
+                        ) && !!section.examples?.some((item) => !item.good)
+                      }
+                    />
+                  ))}
+                </div>
+              )}
+              {mode !== "examples" && section.tip && (
+                <p className="rounded-xl border border-brand-soft bg-brand-soft px-4 py-3 text-sm leading-relaxed text-brand-dark">
+                  <strong>Tip · </strong>
+                  <MathText>{section.tip}</MathText>
+                </p>
+              )}
             </div>
-            {section.workedCases?.map((example, i) => (
-              <LessonExample
-                key={`case-${i}`}
-                example={example}
-                classify={false}
-              />
-            ))}
+            {mode !== "method" &&
+              section.workedCases?.map((example, i) => (
+                <LessonExample
+                  key={`case-${i}`}
+                  example={example}
+                  classify={false}
+                />
+              ))}
             {showActivity && (
               <Button
                 size="sm"

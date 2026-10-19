@@ -1,266 +1,505 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-07T00:46:09.689012+00:00",
+  "generatedAt": "2026-10-17",
   "title": "Design System: ACT Study Lab",
   "extensions": {
     "colorMeta": {
       "bg": {
+        "role": "neutral",
         "displayName": "Bg",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0070 268.55)", "oklch(26% 0.0070 268.55)", "oklch(38% 0.0070 268.55)", "oklch(49% 0.0070 268.55)", "oklch(61% 0.0070 268.55)", "oklch(72% 0.0070 268.55)", "oklch(84% 0.0070 268.55)", "oklch(95% 0.0070 268.55)"]
       },
       "bg-soft": {
+        "role": "neutral",
         "displayName": "Bg Soft",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0000 89.88)", "oklch(26% 0.0000 89.88)", "oklch(38% 0.0000 89.88)", "oklch(49% 0.0000 89.88)", "oklch(61% 0.0000 89.88)", "oklch(72% 0.0000 89.88)", "oklch(84% 0.0000 89.88)", "oklch(95% 0.0000 89.88)"]
       },
       "bg-raised": {
+        "role": "neutral",
         "displayName": "Bg Raised",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0144 264.50)", "oklch(26% 0.0144 264.50)", "oklch(38% 0.0144 264.50)", "oklch(49% 0.0144 264.50)", "oklch(61% 0.0144 264.50)", "oklch(72% 0.0144 264.50)", "oklch(84% 0.0144 264.50)", "oklch(95% 0.0144 264.50)"]
       },
       "ink": {
+        "role": "neutral",
         "displayName": "Ink",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0562 264.00)", "oklch(26% 0.0562 264.00)", "oklch(38% 0.0562 264.00)", "oklch(49% 0.0562 264.00)", "oklch(61% 0.0562 264.00)", "oklch(72% 0.0562 264.00)", "oklch(84% 0.0562 264.00)", "oklch(95% 0.0562 264.00)"]
       },
       "ink-soft": {
+        "role": "neutral",
         "displayName": "Ink Soft",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0505 257.96)", "oklch(26% 0.0505 257.96)", "oklch(38% 0.0505 257.96)", "oklch(49% 0.0505 257.96)", "oklch(61% 0.0505 257.96)", "oklch(72% 0.0505 257.96)", "oklch(84% 0.0505 257.96)", "oklch(95% 0.0505 257.96)"]
       },
       "ink-faint": {
+        "role": "neutral",
         "displayName": "Ink Faint",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0436 264.12)", "oklch(26% 0.0436 264.12)", "oklch(38% 0.0436 264.12)", "oklch(49% 0.0436 264.12)", "oklch(61% 0.0436 264.12)", "oklch(72% 0.0436 264.12)", "oklch(84% 0.0436 264.12)", "oklch(95% 0.0436 264.12)"]
       },
       "border": {
+        "role": "neutral",
         "displayName": "Border",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0209 261.77)", "oklch(26% 0.0209 261.77)", "oklch(38% 0.0209 261.77)", "oklch(49% 0.0209 261.77)", "oklch(61% 0.0209 261.77)", "oklch(72% 0.0209 261.77)", "oklch(84% 0.0209 261.77)", "oklch(95% 0.0209 261.77)"]
       },
       "brand": {
+        "role": "primary",
         "displayName": "Brand",
-        "role": "primary"
+        "tonalRamp": ["oklch(15% 0.2319 265.43)", "oklch(26% 0.2319 265.43)", "oklch(38% 0.2319 265.43)", "oklch(49% 0.2319 265.43)", "oklch(61% 0.2319 265.43)", "oklch(72% 0.2319 265.43)", "oklch(84% 0.2319 265.43)", "oklch(95% 0.2319 265.43)"]
       },
       "brand-dark": {
+        "role": "primary",
         "displayName": "Brand Dark",
-        "role": "primary"
+        "tonalRamp": ["oklch(15% 0.2072 265.42)", "oklch(26% 0.2072 265.42)", "oklch(38% 0.2072 265.42)", "oklch(49% 0.2072 265.42)", "oklch(61% 0.2072 265.42)", "oklch(72% 0.2072 265.42)", "oklch(84% 0.2072 265.42)", "oklch(95% 0.2072 265.42)"]
       },
       "brand-soft": {
+        "role": "primary",
         "displayName": "Brand Soft",
-        "role": "primary"
-      },
-      "accent": {
-        "displayName": "Accent",
-        "role": "secondary"
-      },
-      "accent-soft": {
-        "displayName": "Accent Soft",
-        "role": "secondary"
-      },
-      "good": {
-        "displayName": "Good",
-        "role": "secondary"
-      },
-      "good-soft": {
-        "displayName": "Good Soft",
-        "role": "secondary"
-      },
-      "warn": {
-        "displayName": "Warn",
-        "role": "secondary"
-      },
-      "warn-soft": {
-        "displayName": "Warn Soft",
-        "role": "secondary"
-      },
-      "bad": {
-        "displayName": "Bad",
-        "role": "secondary"
-      },
-      "bad-soft": {
-        "displayName": "Bad Soft",
-        "role": "secondary"
+        "tonalRamp": ["oklch(15% 0.0212 268.43)", "oklch(26% 0.0212 268.43)", "oklch(38% 0.0212 268.43)", "oklch(49% 0.0212 268.43)", "oklch(61% 0.0212 268.43)", "oklch(72% 0.0212 268.43)", "oklch(84% 0.0212 268.43)", "oklch(95% 0.0212 268.43)"]
       },
       "on-brand": {
+        "role": "primary",
         "displayName": "On Brand",
-        "role": "primary"
+        "tonalRamp": ["oklch(15% 0.0000 89.88)", "oklch(26% 0.0000 89.88)", "oklch(38% 0.0000 89.88)", "oklch(49% 0.0000 89.88)", "oklch(61% 0.0000 89.88)", "oklch(72% 0.0000 89.88)", "oklch(84% 0.0000 89.88)", "oklch(95% 0.0000 89.88)"]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Accent",
+        "tonalRamp": ["oklch(15% 0.1247 56.24)", "oklch(26% 0.1247 56.24)", "oklch(38% 0.1247 56.24)", "oklch(49% 0.1247 56.24)", "oklch(61% 0.1247 56.24)", "oklch(72% 0.1247 56.24)", "oklch(84% 0.1247 56.24)", "oklch(95% 0.1247 56.24)"]
+      },
+      "accent-soft": {
+        "role": "secondary",
+        "displayName": "Accent Soft",
+        "tonalRamp": ["oklch(15% 0.0271 72.81)", "oklch(26% 0.0271 72.81)", "oklch(38% 0.0271 72.81)", "oklch(49% 0.0271 72.81)", "oklch(61% 0.0271 72.81)", "oklch(72% 0.0271 72.81)", "oklch(84% 0.0271 72.81)", "oklch(95% 0.0271 72.81)"]
       },
       "data-accent": {
+        "role": "secondary",
         "displayName": "Data Accent",
-        "role": "secondary"
+        "tonalRamp": ["oklch(15% 0.1194 50.75)", "oklch(26% 0.1194 50.75)", "oklch(38% 0.1194 50.75)", "oklch(49% 0.1194 50.75)", "oklch(61% 0.1194 50.75)", "oklch(72% 0.1194 50.75)", "oklch(84% 0.1194 50.75)", "oklch(95% 0.1194 50.75)"]
+      },
+      "good": {
+        "role": "secondary",
+        "displayName": "Good",
+        "tonalRamp": ["oklch(15% 0.0951 154.82)", "oklch(26% 0.0951 154.82)", "oklch(38% 0.0951 154.82)", "oklch(49% 0.0951 154.82)", "oklch(61% 0.0951 154.82)", "oklch(72% 0.0951 154.82)", "oklch(84% 0.0951 154.82)", "oklch(95% 0.0951 154.82)"]
+      },
+      "good-soft": {
+        "role": "secondary",
+        "displayName": "Good Soft",
+        "tonalRamp": ["oklch(15% 0.0240 159.14)", "oklch(26% 0.0240 159.14)", "oklch(38% 0.0240 159.14)", "oklch(49% 0.0240 159.14)", "oklch(61% 0.0240 159.14)", "oklch(72% 0.0240 159.14)", "oklch(84% 0.0240 159.14)", "oklch(95% 0.0240 159.14)"]
+      },
+      "warn": {
+        "role": "secondary",
+        "displayName": "Warn",
+        "tonalRamp": ["oklch(15% 0.0904 81.46)", "oklch(26% 0.0904 81.46)", "oklch(38% 0.0904 81.46)", "oklch(49% 0.0904 81.46)", "oklch(61% 0.0904 81.46)", "oklch(72% 0.0904 81.46)", "oklch(84% 0.0904 81.46)", "oklch(95% 0.0904 81.46)"]
+      },
+      "warn-soft": {
+        "role": "secondary",
+        "displayName": "Warn Soft",
+        "tonalRamp": ["oklch(15% 0.0290 82.60)", "oklch(26% 0.0290 82.60)", "oklch(38% 0.0290 82.60)", "oklch(49% 0.0290 82.60)", "oklch(61% 0.0290 82.60)", "oklch(72% 0.0290 82.60)", "oklch(84% 0.0290 82.60)", "oklch(95% 0.0290 82.60)"]
+      },
+      "bad": {
+        "role": "secondary",
+        "displayName": "Bad",
+        "tonalRamp": ["oklch(15% 0.1474 27.37)", "oklch(26% 0.1474 27.37)", "oklch(38% 0.1474 27.37)", "oklch(49% 0.1474 27.37)", "oklch(61% 0.1474 27.37)", "oklch(72% 0.1474 27.37)", "oklch(84% 0.1474 27.37)", "oklch(95% 0.1474 27.37)"]
+      },
+      "bad-soft": {
+        "role": "secondary",
+        "displayName": "Bad Soft",
+        "tonalRamp": ["oklch(15% 0.0257 26.54)", "oklch(26% 0.0257 26.54)", "oklch(38% 0.0257 26.54)", "oklch(49% 0.0257 26.54)", "oklch(61% 0.0257 26.54)", "oklch(72% 0.0257 26.54)", "oklch(84% 0.0257 26.54)", "oklch(95% 0.0257 26.54)"]
+      },
+      "subject-english": {
+        "role": "secondary",
+        "displayName": "Subject English",
+        "tonalRamp": ["oklch(15% 0.1400 133.68)", "oklch(26% 0.1400 133.68)", "oklch(38% 0.1400 133.68)", "oklch(49% 0.1400 133.68)", "oklch(61% 0.1400 133.68)", "oklch(72% 0.1400 133.68)", "oklch(84% 0.1400 133.68)", "oklch(95% 0.1400 133.68)"]
+      },
+      "subject-english-soft": {
+        "role": "secondary",
+        "displayName": "Subject English Soft",
+        "tonalRamp": ["oklch(15% 0.1021 124.25)", "oklch(26% 0.1021 124.25)", "oklch(38% 0.1021 124.25)", "oklch(49% 0.1021 124.25)", "oklch(61% 0.1021 124.25)", "oklch(72% 0.1021 124.25)", "oklch(84% 0.1021 124.25)", "oklch(95% 0.1021 124.25)"]
+      },
+      "subject-math": {
+        "role": "secondary",
+        "displayName": "Subject Math",
+        "tonalRamp": ["oklch(15% 0.2319 265.43)", "oklch(26% 0.2319 265.43)", "oklch(38% 0.2319 265.43)", "oklch(49% 0.2319 265.43)", "oklch(61% 0.2319 265.43)", "oklch(72% 0.2319 265.43)", "oklch(84% 0.2319 265.43)", "oklch(95% 0.2319 265.43)"]
+      },
+      "subject-math-soft": {
+        "role": "secondary",
+        "displayName": "Subject Math Soft",
+        "tonalRamp": ["oklch(15% 0.0225 269.44)", "oklch(26% 0.0225 269.44)", "oklch(38% 0.0225 269.44)", "oklch(49% 0.0225 269.44)", "oklch(61% 0.0225 269.44)", "oklch(72% 0.0225 269.44)", "oklch(84% 0.0225 269.44)", "oklch(95% 0.0225 269.44)"]
+      },
+      "subject-reading": {
+        "role": "secondary",
+        "displayName": "Subject Reading",
+        "tonalRamp": ["oklch(15% 0.1838 296.84)", "oklch(26% 0.1838 296.84)", "oklch(38% 0.1838 296.84)", "oklch(49% 0.1838 296.84)", "oklch(61% 0.1838 296.84)", "oklch(72% 0.1838 296.84)", "oklch(84% 0.1838 296.84)", "oklch(95% 0.1838 296.84)"]
+      },
+      "subject-reading-soft": {
+        "role": "secondary",
+        "displayName": "Subject Reading Soft",
+        "tonalRamp": ["oklch(15% 0.0345 300.31)", "oklch(26% 0.0345 300.31)", "oklch(38% 0.0345 300.31)", "oklch(49% 0.0345 300.31)", "oklch(61% 0.0345 300.31)", "oklch(72% 0.0345 300.31)", "oklch(84% 0.0345 300.31)", "oklch(95% 0.0345 300.31)"]
+      },
+      "subject-science": {
+        "role": "secondary",
+        "displayName": "Subject Science",
+        "tonalRamp": ["oklch(15% 0.1478 32.77)", "oklch(26% 0.1478 32.77)", "oklch(38% 0.1478 32.77)", "oklch(49% 0.1478 32.77)", "oklch(61% 0.1478 32.77)", "oklch(72% 0.1478 32.77)", "oklch(84% 0.1478 32.77)", "oklch(95% 0.1478 32.77)"]
+      },
+      "subject-science-soft": {
+        "role": "secondary",
+        "displayName": "Subject Science Soft",
+        "tonalRamp": ["oklch(15% 0.0270 37.63)", "oklch(26% 0.0270 37.63)", "oklch(38% 0.0270 37.63)", "oklch(49% 0.0270 37.63)", "oklch(61% 0.0270 37.63)", "oklch(72% 0.0270 37.63)", "oklch(84% 0.0270 37.63)", "oklch(95% 0.0270 37.63)"]
       },
       "dark-bg": {
+        "role": "neutral",
         "displayName": "Dark Bg",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0362 262.46)", "oklch(26% 0.0362 262.46)", "oklch(38% 0.0362 262.46)", "oklch(49% 0.0362 262.46)", "oklch(61% 0.0362 262.46)", "oklch(72% 0.0362 262.46)", "oklch(84% 0.0362 262.46)", "oklch(95% 0.0362 262.46)"]
       },
       "dark-bg-soft": {
+        "role": "neutral",
         "displayName": "Dark Bg Soft",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0434 261.11)", "oklch(26% 0.0434 261.11)", "oklch(38% 0.0434 261.11)", "oklch(49% 0.0434 261.11)", "oklch(61% 0.0434 261.11)", "oklch(72% 0.0434 261.11)", "oklch(84% 0.0434 261.11)", "oklch(95% 0.0434 261.11)"]
       },
       "dark-bg-raised": {
+        "role": "neutral",
         "displayName": "Dark Bg Raised",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0518 259.78)", "oklch(26% 0.0518 259.78)", "oklch(38% 0.0518 259.78)", "oklch(49% 0.0518 259.78)", "oklch(61% 0.0518 259.78)", "oklch(72% 0.0518 259.78)", "oklch(84% 0.0518 259.78)", "oklch(95% 0.0518 259.78)"]
       },
       "dark-ink": {
+        "role": "neutral",
         "displayName": "Dark Ink",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0128 266.70)", "oklch(26% 0.0128 266.70)", "oklch(38% 0.0128 266.70)", "oklch(49% 0.0128 266.70)", "oklch(61% 0.0128 266.70)", "oklch(72% 0.0128 266.70)", "oklch(84% 0.0128 266.70)", "oklch(95% 0.0128 266.70)"]
       },
       "dark-ink-soft": {
+        "role": "neutral",
         "displayName": "Dark Ink Soft",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0402 261.50)", "oklch(26% 0.0402 261.50)", "oklch(38% 0.0402 261.50)", "oklch(49% 0.0402 261.50)", "oklch(61% 0.0402 261.50)", "oklch(72% 0.0402 261.50)", "oklch(84% 0.0402 261.50)", "oklch(95% 0.0402 261.50)"]
       },
       "dark-ink-faint": {
+        "role": "neutral",
         "displayName": "Dark Ink Faint",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0483 259.49)", "oklch(26% 0.0483 259.49)", "oklch(38% 0.0483 259.49)", "oklch(49% 0.0483 259.49)", "oklch(61% 0.0483 259.49)", "oklch(72% 0.0483 259.49)", "oklch(84% 0.0483 259.49)", "oklch(95% 0.0483 259.49)"]
       },
       "dark-border": {
+        "role": "neutral",
         "displayName": "Dark Border",
-        "role": "neutral"
+        "tonalRamp": ["oklch(15% 0.0537 257.94)", "oklch(26% 0.0537 257.94)", "oklch(38% 0.0537 257.94)", "oklch(49% 0.0537 257.94)", "oklch(61% 0.0537 257.94)", "oklch(72% 0.0537 257.94)", "oklch(84% 0.0537 257.94)", "oklch(95% 0.0537 257.94)"]
       },
       "dark-brand": {
+        "role": "primary",
         "displayName": "Dark Brand",
-        "role": "primary"
+        "tonalRamp": ["oklch(15% 0.1195 268.76)", "oklch(26% 0.1195 268.76)", "oklch(38% 0.1195 268.76)", "oklch(49% 0.1195 268.76)", "oklch(61% 0.1195 268.76)", "oklch(72% 0.1195 268.76)", "oklch(84% 0.1195 268.76)", "oklch(95% 0.1195 268.76)"]
       },
       "dark-brand-dark": {
+        "role": "primary",
         "displayName": "Dark Brand Dark",
-        "role": "primary"
+        "tonalRamp": ["oklch(15% 0.0732 271.99)", "oklch(26% 0.0732 271.99)", "oklch(38% 0.0732 271.99)", "oklch(49% 0.0732 271.99)", "oklch(61% 0.0732 271.99)", "oklch(72% 0.0732 271.99)", "oklch(84% 0.0732 271.99)", "oklch(95% 0.0732 271.99)"]
       },
       "dark-brand-soft": {
+        "role": "primary",
         "displayName": "Dark Brand Soft",
-        "role": "primary"
-      },
-      "dark-accent": {
-        "displayName": "Dark Accent",
-        "role": "secondary"
-      },
-      "dark-accent-soft": {
-        "displayName": "Dark Accent Soft",
-        "role": "secondary"
-      },
-      "dark-good": {
-        "displayName": "Dark Good",
-        "role": "secondary"
-      },
-      "dark-good-soft": {
-        "displayName": "Dark Good Soft",
-        "role": "secondary"
-      },
-      "dark-warn": {
-        "displayName": "Dark Warn",
-        "role": "secondary"
-      },
-      "dark-warn-soft": {
-        "displayName": "Dark Warn Soft",
-        "role": "secondary"
-      },
-      "dark-bad": {
-        "displayName": "Dark Bad",
-        "role": "secondary"
-      },
-      "dark-bad-soft": {
-        "displayName": "Dark Bad Soft",
-        "role": "secondary"
+        "tonalRamp": ["oklch(15% 0.0850 264.00)", "oklch(26% 0.0850 264.00)", "oklch(38% 0.0850 264.00)", "oklch(49% 0.0850 264.00)", "oklch(61% 0.0850 264.00)", "oklch(72% 0.0850 264.00)", "oklch(84% 0.0850 264.00)", "oklch(95% 0.0850 264.00)"]
       },
       "dark-on-brand": {
+        "role": "primary",
         "displayName": "Dark On Brand",
-        "role": "primary"
+        "tonalRamp": ["oklch(15% 0.0362 262.46)", "oklch(26% 0.0362 262.46)", "oklch(38% 0.0362 262.46)", "oklch(49% 0.0362 262.46)", "oklch(61% 0.0362 262.46)", "oklch(72% 0.0362 262.46)", "oklch(84% 0.0362 262.46)", "oklch(95% 0.0362 262.46)"]
+      },
+      "dark-accent": {
+        "role": "secondary",
+        "displayName": "Dark Accent",
+        "tonalRamp": ["oklch(15% 0.1240 58.38)", "oklch(26% 0.1240 58.38)", "oklch(38% 0.1240 58.38)", "oklch(49% 0.1240 58.38)", "oklch(61% 0.1240 58.38)", "oklch(72% 0.1240 58.38)", "oklch(84% 0.1240 58.38)", "oklch(95% 0.1240 58.38)"]
+      },
+      "dark-accent-soft": {
+        "role": "secondary",
+        "displayName": "Dark Accent Soft",
+        "tonalRamp": ["oklch(15% 0.0336 69.76)", "oklch(26% 0.0336 69.76)", "oklch(38% 0.0336 69.76)", "oklch(49% 0.0336 69.76)", "oklch(61% 0.0336 69.76)", "oklch(72% 0.0336 69.76)", "oklch(84% 0.0336 69.76)", "oklch(95% 0.0336 69.76)"]
       },
       "dark-data-accent": {
+        "role": "secondary",
         "displayName": "Dark Data Accent",
-        "role": "secondary"
+        "tonalRamp": ["oklch(15% 0.1240 58.38)", "oklch(26% 0.1240 58.38)", "oklch(38% 0.1240 58.38)", "oklch(49% 0.1240 58.38)", "oklch(61% 0.1240 58.38)", "oklch(72% 0.1240 58.38)", "oklch(84% 0.1240 58.38)", "oklch(95% 0.1240 58.38)"]
+      },
+      "dark-good": {
+        "role": "secondary",
+        "displayName": "Dark Good",
+        "tonalRamp": ["oklch(15% 0.1381 156.14)", "oklch(26% 0.1381 156.14)", "oklch(38% 0.1381 156.14)", "oklch(49% 0.1381 156.14)", "oklch(61% 0.1381 156.14)", "oklch(72% 0.1381 156.14)", "oklch(84% 0.1381 156.14)", "oklch(95% 0.1381 156.14)"]
+      },
+      "dark-good-soft": {
+        "role": "secondary",
+        "displayName": "Dark Good Soft",
+        "tonalRamp": ["oklch(15% 0.0444 153.00)", "oklch(26% 0.0444 153.00)", "oklch(38% 0.0444 153.00)", "oklch(49% 0.0444 153.00)", "oklch(61% 0.0444 153.00)", "oklch(72% 0.0444 153.00)", "oklch(84% 0.0444 153.00)", "oklch(95% 0.0444 153.00)"]
+      },
+      "dark-warn": {
+        "role": "secondary",
+        "displayName": "Dark Warn",
+        "tonalRamp": ["oklch(15% 0.1178 82.89)", "oklch(26% 0.1178 82.89)", "oklch(38% 0.1178 82.89)", "oklch(49% 0.1178 82.89)", "oklch(61% 0.1178 82.89)", "oklch(72% 0.1178 82.89)", "oklch(84% 0.1178 82.89)", "oklch(95% 0.1178 82.89)"]
+      },
+      "dark-warn-soft": {
+        "role": "secondary",
+        "displayName": "Dark Warn Soft",
+        "tonalRamp": ["oklch(15% 0.0423 86.15)", "oklch(26% 0.0423 86.15)", "oklch(38% 0.0423 86.15)", "oklch(49% 0.0423 86.15)", "oklch(61% 0.0423 86.15)", "oklch(72% 0.0423 86.15)", "oklch(84% 0.0423 86.15)", "oklch(95% 0.0423 86.15)"]
+      },
+      "dark-bad": {
+        "role": "secondary",
+        "displayName": "Dark Bad",
+        "tonalRamp": ["oklch(15% 0.1360 26.67)", "oklch(26% 0.1360 26.67)", "oklch(38% 0.1360 26.67)", "oklch(49% 0.1360 26.67)", "oklch(61% 0.1360 26.67)", "oklch(72% 0.1360 26.67)", "oklch(84% 0.1360 26.67)", "oklch(95% 0.1360 26.67)"]
+      },
+      "dark-bad-soft": {
+        "role": "secondary",
+        "displayName": "Dark Bad Soft",
+        "tonalRamp": ["oklch(15% 0.0445 26.87)", "oklch(26% 0.0445 26.87)", "oklch(38% 0.0445 26.87)", "oklch(49% 0.0445 26.87)", "oklch(61% 0.0445 26.87)", "oklch(72% 0.0445 26.87)", "oklch(84% 0.0445 26.87)", "oklch(95% 0.0445 26.87)"]
+      },
+      "dark-subject-english": {
+        "role": "secondary",
+        "displayName": "Dark Subject English",
+        "tonalRamp": ["oklch(15% 0.1114 129.39)", "oklch(26% 0.1114 129.39)", "oklch(38% 0.1114 129.39)", "oklch(49% 0.1114 129.39)", "oklch(61% 0.1114 129.39)", "oklch(72% 0.1114 129.39)", "oklch(84% 0.1114 129.39)", "oklch(95% 0.1114 129.39)"]
+      },
+      "dark-subject-english-soft": {
+        "role": "secondary",
+        "displayName": "Dark Subject English Soft",
+        "tonalRamp": ["oklch(15% 0.0517 145.25)", "oklch(26% 0.0517 145.25)", "oklch(38% 0.0517 145.25)", "oklch(49% 0.0517 145.25)", "oklch(61% 0.0517 145.25)", "oklch(72% 0.0517 145.25)", "oklch(84% 0.0517 145.25)", "oklch(95% 0.0517 145.25)"]
+      },
+      "dark-subject-math": {
+        "role": "secondary",
+        "displayName": "Dark Subject Math",
+        "tonalRamp": ["oklch(15% 0.0970 269.93)", "oklch(26% 0.0970 269.93)", "oklch(38% 0.0970 269.93)", "oklch(49% 0.0970 269.93)", "oklch(61% 0.0970 269.93)", "oklch(72% 0.0970 269.93)", "oklch(84% 0.0970 269.93)", "oklch(95% 0.0970 269.93)"]
+      },
+      "dark-subject-math-soft": {
+        "role": "secondary",
+        "displayName": "Dark Subject Math Soft",
+        "tonalRamp": ["oklch(15% 0.0850 264.00)", "oklch(26% 0.0850 264.00)", "oklch(38% 0.0850 264.00)", "oklch(49% 0.0850 264.00)", "oklch(61% 0.0850 264.00)", "oklch(72% 0.0850 264.00)", "oklch(84% 0.0850 264.00)", "oklch(95% 0.0850 264.00)"]
+      },
+      "dark-subject-reading": {
+        "role": "secondary",
+        "displayName": "Dark Subject Reading",
+        "tonalRamp": ["oklch(15% 0.1000 299.92)", "oklch(26% 0.1000 299.92)", "oklch(38% 0.1000 299.92)", "oklch(49% 0.1000 299.92)", "oklch(61% 0.1000 299.92)", "oklch(72% 0.1000 299.92)", "oklch(84% 0.1000 299.92)", "oklch(95% 0.1000 299.92)"]
+      },
+      "dark-subject-reading-soft": {
+        "role": "secondary",
+        "displayName": "Dark Subject Reading Soft",
+        "tonalRamp": ["oklch(15% 0.0581 286.74)", "oklch(26% 0.0581 286.74)", "oklch(38% 0.0581 286.74)", "oklch(49% 0.0581 286.74)", "oklch(61% 0.0581 286.74)", "oklch(72% 0.0581 286.74)", "oklch(84% 0.0581 286.74)", "oklch(95% 0.0581 286.74)"]
+      },
+      "dark-subject-science": {
+        "role": "secondary",
+        "displayName": "Dark Subject Science",
+        "tonalRamp": ["oklch(15% 0.0917 30.72)", "oklch(26% 0.0917 30.72)", "oklch(38% 0.0917 30.72)", "oklch(49% 0.0917 30.72)", "oklch(61% 0.0917 30.72)", "oklch(72% 0.0917 30.72)", "oklch(84% 0.0917 30.72)", "oklch(95% 0.0917 30.72)"]
+      },
+      "dark-subject-science-soft": {
+        "role": "secondary",
+        "displayName": "Dark Subject Science Soft",
+        "tonalRamp": ["oklch(15% 0.0417 21.80)", "oklch(26% 0.0417 21.80)", "oklch(38% 0.0417 21.80)", "oklch(49% 0.0417 21.80)", "oklch(61% 0.0417 21.80)", "oklch(72% 0.0417 21.80)", "oklch(84% 0.0417 21.80)", "oklch(95% 0.0417 21.80)"]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Public display",
+        "purpose": "Landing hero headline."
+      },
+      "headline": {
+        "displayName": "Shared page title",
+        "purpose": "StudyPageHeader across course, practice, tools, exams, and progress."
+      },
+      "lesson-title": {
+        "displayName": "Approved lesson title",
+        "purpose": "2.65rem/850 heading over the artifact and coach."
+      },
+      "body": {
+        "displayName": "Study body",
+        "purpose": "Mona Sans via the retained --font-geist-sans variable."
+      },
+      "daily-title": {
+        "displayName": "Daily title",
+        "purpose": "Neutral Daily study heading."
+      },
+      "coach-title": {
+        "displayName": "Coach title",
+        "purpose": "1.85rem/850 heading within the lilac teaching panel."
+      },
+      "campaign-title": {
+        "displayName": "Campaign headline",
+        "purpose": "Large 850-weight game-map heading in the existing Mona Sans hierarchy."
+      },
+      "mission-title": {
+        "displayName": "Mission title",
+        "purpose": "Names the active full-context question set."
       }
     },
     "shadows": [
       {
-        "name": "card-light",
-        "value": "0 1px 2px rgba(28, 27, 23, 0.04), 0 6px 20px -8px rgba(28, 27, 23, 0.12)",
-        "purpose": "Light card depth"
+        "name": "card-default",
+        "value": "0 2px 4px rgb(23 36 66 / 3%), 0 10px 24px -18px rgb(23 36 66 / 16%)",
+        "purpose": "Default card depth; existing explicit-theme overrides remain in source."
       },
       {
-        "name": "card-dark",
-        "value": "0 1px 2px rgba(0, 0, 0, 0.2), 0 6px 24px -8px rgba(0, 0, 0, 0.5)",
-        "purpose": "Dark card depth"
-      }
-    ],
-    "breakpoints": [
+        "name": "active-nav",
+        "value": "0 3px 6px -4px rgb(15 43 130 / 40%)",
+        "purpose": "Selected desktop destination."
+      },
       {
-        "name": "sm",
-        "value": "640px"
+        "name": "current-path",
+        "value": "0 6px 12px -7px rgb(40 86 237 / 40%)",
+        "purpose": "Current path node."
       }
     ],
     "motion": [
       {
-        "name": "choice-and-back-link",
-        "value": "160ms ease-out",
-        "purpose": "Answer/background and back-link transitions"
+        "name": "state-transition",
+        "value": "160ms",
+        "purpose": "Control and navigation state changes."
+      },
+      {
+        "name": "next-lesson-arrives",
+        "value": "280ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Next lesson entry when reduced motion is not requested."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "none",
+        "purpose": "Disable transitions and animations when requested."
       }
     ],
-    "evidenceNote": "Source extraction only. No synthetic tonal ramps: the source provides semantic theme pairs, not a tonal scale. Incumbent preservation is authorized; no new creative metaphor is assigned."
+    "breakpoints": [
+      {
+        "name": "phone-stack",
+        "value": "640px"
+      },
+      {
+        "name": "course-stack",
+        "value": "700px"
+      },
+      {
+        "name": "mobile-navigation",
+        "value": "900px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1150px"
+      },
+      {
+        "name": "wide-desktop",
+        "value": "1600px"
+      },
+      {
+        "name": "lesson-scene-stack",
+        "value": "900px"
+      },
+      {
+        "name": "lesson-compact-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "campaign-panes",
+        "value": "900px"
+      }
+    ]
   },
   "components": [
     {
       "name": "Primary button",
       "kind": "button",
-      "html": "<button class=\"ds-button-primary\">Continue</button>",
-      "css": ".ds-button-primary{font-family:var(--font-geist-sans),Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;border:0;border-radius:9999px;padding:.625rem 1.25rem;font-size:.875rem;font-weight:500;background:var(--color-brand);color:var(--color-on-brand);transition:color 150ms,background-color 150ms;}.ds-button-primary:hover{background:var(--color-brand-dark)}.ds-button-primary:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-button-primary:disabled{opacity:.5;pointer-events:none;}@media(min-width:640px){.ds-button-primary{min-height:0;}}@media(prefers-reduced-motion:reduce){.ds-button-primary{transition:none;}}"
+      "refersTo": "button-primary",
+      "html": "<button class=\"ds-primary\">Continue lesson</button>",
+      "css": ".ds-primary{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 20px;border:0;border-bottom:3px solid rgb(15 35 80 / 13%);border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;transition:background .16s,transform .16s;background:var(--color-brand);color:var(--color-on-brand);}.ds-primary:hover{background:var(--color-brand-dark);}.ds-primary:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-primary:active:not(:disabled){transform:translateY(1px);}.ds-primary:disabled{opacity:.5;pointer-events:none;}@media(prefers-reduced-motion:reduce){.ds-primary{transition:none;}}"
     },
     {
       "name": "Ghost button",
       "kind": "button",
-      "html": "<button class=\"ds-button-ghost\">Continue</button>",
-      "css": ".ds-button-ghost{font-family:var(--font-geist-sans),Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;border:0;border-radius:9999px;padding:.625rem 1.25rem;font-size:.875rem;font-weight:500;background:var(--color-bg-raised);color:var(--color-ink);transition:color 150ms,background-color 150ms;}.ds-button-ghost:hover{background:var(--color-border)}.ds-button-ghost:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-button-ghost:disabled{opacity:.5;pointer-events:none;}@media(min-width:640px){.ds-button-ghost{min-height:0;}}@media(prefers-reduced-motion:reduce){.ds-button-ghost{transition:none;}}"
+      "refersTo": "button-ghost",
+      "html": "<button class=\"ds-ghost\">Review method</button>",
+      "css": ".ds-ghost{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 20px;border:0;border-bottom:3px solid rgb(15 35 80 / 13%);border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;transition:background .16s,transform .16s;background:var(--color-bg-raised);color:var(--color-ink);}.ds-ghost:hover{background:var(--color-border);}.ds-ghost:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-ghost:active:not(:disabled){transform:translateY(1px);}.ds-ghost:disabled{opacity:.5;pointer-events:none;}@media(prefers-reduced-motion:reduce){.ds-ghost{transition:none;}}"
     },
     {
       "name": "Danger button",
       "kind": "button",
-      "html": "<button class=\"ds-button-danger\">Continue</button>",
-      "css": ".ds-button-danger{font-family:var(--font-geist-sans),Arial,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:44px;border:0;border-radius:9999px;padding:.625rem 1.25rem;font-size:.875rem;font-weight:500;background:var(--color-bad);color:var(--color-on-brand);transition:color 150ms,background-color 150ms;}.ds-button-danger:hover{opacity:.9}.ds-button-danger:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-button-danger:disabled{opacity:.5;pointer-events:none;}@media(min-width:640px){.ds-button-danger{min-height:0;}}@media(prefers-reduced-motion:reduce){.ds-button-danger{transition:none;}}"
+      "refersTo": "button-danger",
+      "html": "<button class=\"ds-danger\">Delete</button>",
+      "css": ".ds-danger{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:10px 20px;border:0;border-bottom:3px solid rgb(15 35 80 / 13%);border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;transition:background .16s,transform .16s;background:var(--color-bad);color:var(--color-on-brand);}.ds-danger:hover{opacity:.9;}.ds-danger:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-danger:active:not(:disabled){transform:translateY(1px);}.ds-danger:disabled{opacity:.5;pointer-events:none;}@media(prefers-reduced-motion:reduce){.ds-danger{transition:none;}}"
     },
     {
-      "name": "Account input",
+      "name": "Daily time field",
       "kind": "input",
-      "html": "<input class=\"ds-input\" aria-label=\"Name\" placeholder=\"Name\">",
-      "css": ".ds-input{font-family:var(--font-geist-sans),Arial,sans-serif;width:100%;border:1px solid var(--color-border);border-radius:.5rem;background:var(--color-bg);color:var(--color-ink);padding:.5rem .75rem;font-size:.875rem;outline:none;}.ds-input:focus{border-color:var(--color-brand);}"
+      "refersTo": "input",
+      "html": "<label class=\"ds-label\" for=\"ds-minutes\">Minutes available each day</label><input id=\"ds-minutes\" class=\"ds-input\" type=\"number\" min=\"15\" max=\"240\" step=\"1\" value=\"60\" aria-describedby=\"ds-time-help\"><p id=\"ds-time-help\" class=\"ds-help\">15\u2013240 minutes. Lesson times are estimates.</p>",
+      "css": ".ds-label{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:block;margin-bottom:4px;font-size:14px;font-weight:500;color:var(--color-ink);}.ds-input{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;min-height:44px;width:100%;padding:8px 12px;border:1px solid var(--color-border);border-radius:8px;background:var(--color-bg);color:var(--color-ink);font-size:16px;accent-color:var(--color-brand);}.ds-input:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}.ds-help{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;font-size:14px;color:var(--color-ink-soft);margin-top:8px;}"
+    },
+    {
+      "name": "Desktop navigation",
+      "kind": "nav",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#today\" aria-current=\"page\"><svg aria-hidden=\"true\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"m3 10 9-7 9 7v11h-6v-7H9v7H3z\"/></svg>Today</a><a href=\"#course\">Course</a><a href=\"#play\">Play</a><a href=\"#progress\">Progress</a></nav>",
+      "css": ".ds-nav{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:grid;gap:9px;}.ds-nav a{display:flex;align-items:center;gap:18px;min-height:58px;padding:12px 18px;border-radius:14px;color:var(--color-ink);font-weight:650;text-decoration:none;transition:background .16s,color .16s;}.ds-nav a:hover{background:var(--color-bg-raised);}.ds-nav a[aria-current]{background:var(--color-brand);color:var(--color-on-brand);box-shadow:0 3px 6px -4px rgb(15 43 130 / 40%);}.ds-nav a:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}@media(prefers-reduced-motion:reduce){.ds-nav a{transition:none;}}"
+    },
+    {
+      "name": "Existing status badge",
+      "kind": "chip",
+      "html": "<span class=\"ds-badge\">Saved</span>",
+      "description": "Retained status primitive; uppercase is not a pattern for new decorative headings.",
+      "css": ".ds-badge{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:inline-flex;border-radius:9999px;padding:2px 10px;background:var(--color-bg-raised);color:var(--color-ink-soft);font-size:12px;font-weight:600;letter-spacing:.025em;text-transform:uppercase;}"
     },
     {
       "name": "Card",
       "kind": "card",
       "refersTo": "card",
-      "html": "<div class=\"ds-card\">Study card</div>",
-      "css": ".ds-card{font-family:var(--font-geist-sans),Arial,sans-serif;border-radius:1rem;border:1px solid var(--color-border);background:var(--color-bg-soft);color:var(--color-ink);box-shadow:var(--shadow-card);}"
+      "html": "<div class=\"ds-card\"><p>Worked example</p></div>",
+      "description": "Card supplies surface, border, radius, and depth; its caller owns padding.",
+      "css": ".ds-card{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;border:1px solid var(--color-border);border-radius:16px;background:var(--color-bg-soft);color:var(--color-ink);box-shadow:var(--shadow-card);}.ds-card p{margin:20px;}"
     },
     {
-      "name": "Neutral badge",
-      "kind": "chip",
-      "html": "<span class=\"ds-badge\">Practice</span>",
-      "css": ".ds-badge{font-family:var(--font-geist-sans),Arial,sans-serif;display:inline-flex;border-radius:9999px;padding:.125rem .625rem;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.025em;background:var(--color-bg-raised);color:var(--color-ink-soft);}"
+      "name": "Answer choice",
+      "kind": "button",
+      "refersTo": "answer-choice",
+      "html": "<button class=\"ds-choice\" aria-pressed=\"false\"><span>A</span><span>The starting cost stays the same.</span></button>",
+      "css": ".ds-choice{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:flex;width:100%;gap:.85rem;align-items:flex-start;text-align:left;border:1px solid var(--color-border);min-height:58px;border-radius:12px;padding:.9rem 1rem;background:var(--color-bg-soft);color:var(--color-ink);cursor:pointer;}.ds-choice:hover:not(:disabled){border-color:var(--color-brand);}.ds-choice[aria-pressed=\"true\"]{background:var(--color-brand-soft);border-color:var(--color-brand);}.ds-choice[data-correct=\"true\"]{background:var(--color-good-soft);border-color:var(--color-good);}.ds-choice[data-wrong=\"true\"]{background:var(--color-bad-soft);border-color:var(--color-bad);}.ds-choice:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}"
     },
     {
-      "name": "Subject navigation",
+      "name": "Learning sequence",
       "kind": "nav",
-      "html": "<nav class=\"ds-nav\" aria-label=\"ACT subjects\"><a aria-current=\"page\" href=\"#english\">English</a><a href=\"#math\">Math</a><a href=\"#reading\">Reading</a><a href=\"#science\">Science</a></nav>",
-      "css": ".ds-nav{font-family:var(--font-geist-sans),Arial,sans-serif;display:flex;flex-wrap:wrap;gap:.25rem;border-radius:1rem;border:1px solid var(--color-border);background:var(--color-bg-raised);padding:.25rem;}.ds-nav a{display:flex;flex:1;min-height:44px;align-items:center;justify-content:center;border-radius:9999px;padding:0 1rem;font-size:.875rem;font-weight:600;color:var(--color-ink-soft);text-decoration:none;}.ds-nav a:hover{color:var(--color-ink);}.ds-nav a[aria-current]{background:var(--color-bg-soft);color:var(--color-brand);box-shadow:0 1px 3px 0 rgb(0 0 0 / .1),0 1px 2px -1px rgb(0 0 0 / .1);}.ds-nav a:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}@media(min-width:640px){.ds-nav{width:fit-content;border-radius:9999px;}.ds-nav a{flex:none;}}"
+      "refersTo": "learning-stage-current",
+      "description": "Learn / Explore / Practice in the approved lesson footer. Current state is real; checks require completed stages.",
+      "html": "<nav class=\"ds-sequence\" aria-label=\"Learning sequence\"><button aria-current=\"step\"><span>Learn</span><i aria-hidden=\"true\"></i></button><button disabled><span>Explore</span><i aria-hidden=\"true\"></i></button><button disabled><span>Practice</span><i aria-hidden=\"true\"></i></button></nav>",
+      "css": ".ds-sequence{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:flex;gap:.5rem;}.ds-sequence button{display:flex;align-items:center;gap:.5rem;min-height:44px;padding:.4rem .65rem;border:0;background:transparent;color:var(--color-ink-soft);font-size:.875rem;}.ds-sequence button[aria-current]{color:var(--color-brand);font-weight:750;}.ds-sequence i{width:24px;height:8px;border-radius:99px;background:var(--color-border);}.ds-sequence [aria-current] i{background:var(--color-brand);}.ds-sequence button:disabled{opacity:.7;cursor:default;}.ds-sequence button:focus-visible{outline:3px solid var(--color-brand);outline-offset:3px;}"
+    },
+    {
+      "name": "Approved lesson scene",
+      "kind": "custom",
+      "refersTo": "lesson-coach",
+      "description": "Actual authored source beside one teaching idea; stacks below 900px. Wide introductory explorations use 1.35rem coach padding.",
+      "html": "<div class=\"ds-scene\"><section class=\"ds-artifact\"><p>A bike rental costs $3 to start, plus $2 for each hour.</p><p class=\"ds-equation\">3 + 2 \u00d7 2 = 7</p></section><aside class=\"ds-coach\"><h2>First, a smaller step.</h2><p>Keep the $3 starting cost. Add $2 once.</p><p class=\"ds-equation\">$3 + $2 = $5</p><p>This example is unscored. Independent practice uses new questions.</p></aside></div>",
+      "css": ".ds-scene{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:14px;color:var(--color-ink);}.ds-artifact{min-width:0;background:var(--color-bg-soft);border:1px solid var(--color-border);border-radius:14px;padding:1.5rem;}.ds-coach{min-width:0;background:var(--subject-reading-soft);border-radius:14px;padding:1.75rem;}.ds-coach h2{font-size:1.85rem;font-weight:850;line-height:1.2;letter-spacing:-.035em;margin:0 0 .75rem;}.ds-coach p{font-size:1.1rem;line-height:1.65;}.ds-equation{font-size:2rem!important;font-weight:850;}@media(min-width:1100px){.ds-coach{padding:1.35rem;}}@media(max-width:900px){.ds-scene{grid-template-columns:1fr;}.ds-artifact,.ds-coach{padding:1.25rem;}}"
+    },
+    {
+      "name": "Campaign round marker",
+      "kind": "custom",
+      "description": "Round state comes from saved answers; current, correct, review, and next remain distinct.",
+      "html": "<div class=\"ds-rounds\" aria-label=\"Mission rounds\"><span aria-label=\"Round 1: current\" data-state=\"current\">1</span><span aria-label=\"Round 2: next\">2</span><span aria-label=\"Round 3: next\">3</span></div>",
+      "css": ".ds-rounds{font-family:var(--font-geist-sans),Arial,Helvetica,sans-serif;display:flex;flex-wrap:wrap;gap:.65rem;color:var(--color-ink);}.ds-rounds>span{display:flex;align-items:center;justify-content:center;min-width:40px;height:40px;border-radius:50%;border:2px solid var(--color-border);font-weight:750;}.ds-rounds [data-state=\"current\"]{border-color:var(--color-brand);background:var(--color-brand);color:var(--color-on-brand);box-shadow:0 0 0 4px var(--color-brand-soft);}.ds-rounds [data-state=\"correct\"]{background:var(--subject-english-soft);}.ds-rounds [data-state=\"review\"]{background:var(--subject-reading-soft);}@media(max-width:900px){.ds-rounds{gap:.45rem;}.ds-rounds>span{min-width:32px;height:32px;font-size:.8rem;}}"
     }
   ],
   "narrative": {
-    "overview": "The incumbent English Lab system is the visual authority. This document records implemented styles, not a new creative identity. Calm neutral surfaces, indigo actions, Geist type, pill controls, and understated cards carry across subjects.\n\nThe interface supports compact study sessions with a clear heading, next action, readable lesson content, and visible answer states. Preserve the existing account and lesson \u2192 drill \u2192 results flow when adding screens.",
+    "overview": "The first approved Daily path and focused lesson mockups are binding: `.impeccable/mocks/daily-path.png` and `.impeccable/mocks/lesson-first.png`. The user reaffirmed this exact world and rejected later alternatives. Mona Sans, white/cool-blue surfaces, navy text, cobalt actions, lime/lilac/coral subject roles, the tile mark, and the left navigation remain unchanged.\n\nThe lesson centers a large source artifact beside a lilac coach. One authored idea or example appears at a time; Learn / Explore / Practice progress and a strong next action sit below. The same world carries through drills, exams, formulas, account/auth screens, references, and saved results. Light is the default; an explicit saved dark preference remains valid. The campaign extends this same world with connected missions, earned stars, and full-context answer rounds; it does not replace the approved lesson direction.",
     "keyCharacteristics": [
-      "Quiet neutral surfaces and selective indigo emphasis.",
-      "Rounded controls and restrained card depth.",
-      "Readable passages and persistent digital-test controls.",
-      "Explicit light and dark theme support."
+      "The original approved composition, with no new visual-world choice.",
+      "A large authored learning artifact beside a focused lilac coach.",
+      "One idea/example at a time, then an unscored check and separate independent practice.",
+      "Real saved progress and student-supplied planning settings across phone and laptop."
     ],
     "rules": [
       {
         "name": "The Theme Rule",
-        "body": "Use the existing CSS custom properties. OS preference sets the default; an explicit data-theme attribute takes precedence. Dark-prefixed tokens document the matching overrides, not separate component color choices.",
+        "body": "Use the existing CSS custom properties. The app initializes light to match the approved comp and restores an explicitly saved dark choice before paint. Dark-prefixed tokens describe matching overrides, not a separate visual identity.",
+        "section": "colors"
+      },
+      {
+        "name": "The Evidence Rule",
+        "body": "A diagram, color, or highlight must help explain content or state. Keep the underlying text, data, and accessible control available.",
         "section": "colors"
       }
     ],
     "dos": [
-      "Do reuse the existing palette, Geist typography, rounded controls, and theme variables.",
-      "Do preserve readable passage measure, keyboard focus, and visible answer states.",
-      "Do keep component padding and layout appropriate to the existing study flow."
+      "Do implement the original approved mockups using Mona Sans, shared theme variables, ConceptTeaching, and common task workspaces.",
+      "Do show the current idea/example with its exact source evidence and distinguish guided support from independent evidence.",
+      "Do preserve saved progress and legacy preferences while requiring new students to supply their own planning values.",
+      "Do place concept actions after the evidence, keep content clear of mobile tabs, and honor reduced motion."
     ],
     "donts": [
-      "Don't replace the English Lab visual identity when extending subjects.",
-      "Don't hard-code light-theme colors into shared themed components.",
-      "Don't introduce a new decorative identity or Canvas artifact for this extension."
+      "Don't reopen the approved visual-world choice or apply the rejected Fieldwork/Chapters/Orbit directions.",
+      "Don't treat a guided check, supported correction, or lesson visit as fresh scored mastery.",
+      "Don't copy mockup progress or claim optimal learning, validated score gains, or official ACT affiliation.",
+      "Don't reintroduce the old cream/Geist extension-only identity or create Canvas artifacts."
     ]
   }
 }

@@ -10,14 +10,6 @@ export interface FormulaDay {
   daysLeft: number;
 }
 
-/** Keep a new lesson plus its complete formula packet within two hours. */
-export function lessonMinutesWithFormulas(
-  lessonMinutes: number,
-  formulaMinutes: number,
-) {
-  return Math.min(lessonMinutes, 120 - formulaMinutes);
-}
-
 export function formulaDay(
   keys: string[],
   today: string,

@@ -6,6 +6,16 @@ export const DESMOS_TOPICS = [
   "math-essential-skills",
   "math-modeling",
 ] as const;
+export const MIN_STUDY_MINUTES = 15;
+export const MAX_STUDY_MINUTES = 240;
+export function validStudyMinutes(value: unknown): value is number {
+  return (
+    typeof value === "number" &&
+    Number.isInteger(value) &&
+    value >= MIN_STUDY_MINUTES &&
+    value <= MAX_STUDY_MINUTES
+  );
+}
 export interface StudySettings {
   scores: Record<AccountSubject, number | null>;
   minutesPerDay: number;
@@ -13,6 +23,10 @@ export interface StudySettings {
   mathCoveredTopics?: string[];
   scienceScoreRepresentative?: boolean;
   includeScience?: boolean;
+}
+export function hasSavedStudyTime(metadata: Record<string, unknown> = {}) {
+  const raw = metadata.act_study_settings as Partial<StudySettings> | undefined;
+  return validStudyMinutes(raw?.minutesPerDay);
 }
 export function readStudySettings(
   metadata: Record<string, unknown> = {},
@@ -33,7 +47,7 @@ export function readStudySettings(
       reading: score(raw?.scores?.reading),
       science: score(raw?.scores?.science),
     },
-    minutesPerDay: [60, 75, 90].includes(raw?.minutesPerDay as number)
+    minutesPerDay: validStudyMinutes(raw?.minutesPerDay)
       ? raw!.minutesPerDay!
       : 75,
     ...(raw?.mathFocus === "all" || raw?.mathFocus === "geometry-trig"
@@ -64,7 +78,7 @@ export function validateStudySettings(value: unknown): StudySettings | null {
   if (
     !raw.scores ||
     typeof raw.scores !== "object" ||
-    ![60, 75, 90].includes(raw.minutesPerDay)
+    !validStudyMinutes(raw.minutesPerDay)
   )
     return null;
   for (const subject of SUBJECTS) {
@@ -123,9 +137,27 @@ export function validateStudySettings(value: unknown): StudySettings | null {
 }
 
 export function geometryFirst(settings: StudySettings) {
-  return settings.mathFocus
-    ? settings.mathFocus === "geometry-trig"
-    : (settings.scores.math ?? 0) >= 32;
+  return settings.mathFocus === "geometry-trig";
+}
+
+export function hasCustomStudyPreferences(settings: StudySettings) {
+  return (
+    geometryFirst(settings) ||
+    !!settings.mathCoveredTopics?.length ||
+    settings.scienceScoreRepresentative === false
+  );
+}
+
+/** Clear earlier overrides only when the student explicitly chooses standard planning. */
+export function standardStudyPreferences(
+  settings: StudySettings,
+): StudySettings {
+  return {
+    ...settings,
+    mathFocus: "all",
+    mathCoveredTopics: [],
+    scienceScoreRepresentative: true,
+  };
 }
 
 export function planningScores(
@@ -137,7 +169,7 @@ export function planningScores(
     settings.scores.math,
     settings.scores.reading,
   ].filter((score): score is number => score !== null);
-  // A low-effort Science result supplies no evidence of a larger knowledge gap.
+  // Preserve the treatment of a historical score explicitly excluded from planning.
   return {
     ...settings.scores,
     science: otherScores.length

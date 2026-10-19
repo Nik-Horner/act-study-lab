@@ -1,3 +1,4 @@
+import { startingDifficulty, difficultyPriority } from "./daily-difficulty";
 import { createHash } from "node:crypto";
 import {
   getTopics as englishTopics,
@@ -19,7 +20,11 @@ import { DAILY_CURRICULUM, type DailyScope } from "./daily-curriculum";
 import { QUESTION_TARGET_SECONDS } from "./question-pacing";
 export { dailyComplete } from "./daily-flow";
 import type { StudySettings, AccountSubject } from "./account-settings";
-import { geometryFirst, planningScores } from "./account-settings";
+import {
+  geometryFirst,
+  planningScores,
+  MAX_STUDY_MINUTES,
+} from "./account-settings";
 import {
   focusLesson,
   getLearningSkill,
@@ -28,6 +33,10 @@ import {
   hasTeaching,
 } from "./learning-skills";
 import { exposureRank, seenPassages } from "./act/question-exposure";
+import {
+  EXPLORATION_SKILLS,
+  isClauseRecognitionSection,
+} from "./lesson-interaction";
 export const DAILY_SUBJECTS: AccountSubject[] = [
   "english",
   "reading",
@@ -40,6 +49,7 @@ export function dailySubjects(includeScience = true) {
   );
 }
 export interface DailyQuestion {
+  retryOf?: string;
   skillId?: string;
   skillIds?: string[];
   teachingSections?: number[];
@@ -58,6 +68,7 @@ export interface DailyQuestion {
   reviewUnitId?: string;
 }
 export interface DailyUnit {
+  difficulty?: Question["difficulty"];
   skillId?: string;
   reportingCategory?: string;
   focusedConceptIndices?: number[];
@@ -87,6 +98,7 @@ export interface DailyBlock {
   questions: DailyQuestion[];
 }
 export interface DailyPlan {
+  retryRevision?: number;
   id: string;
   date: string;
   minutes: number;
@@ -103,6 +115,7 @@ export interface DailyPlan {
   course?: DailyCourse;
 }
 export interface DailyCourse {
+  practiceLevels?: Record<string, Question["difficulty"]>;
   coverageVersion?: number;
   completedSessions?: string[];
   testDate: string;
@@ -187,11 +200,11 @@ export function dailyScopes(subject: AccountSubject, settings?: StudySettings) {
               title: skill.title,
               skillId: skill.id,
               reportingCategory: skill.reportingCategory,
-              difficulty: practice.some((i) => bank[i].difficulty === "hard")
-                ? "hard"
+              difficulty: practice.some((i) => bank[i].difficulty === "easy")
+                ? "easy"
                 : practice.some((i) => bank[i].difficulty === "medium")
                   ? "medium"
-                  : "easy",
+                  : "hard",
             } as DailyScope,
             id: `${subject}:${topic.slug}:skill:${skill.id}`,
           },
@@ -236,12 +249,13 @@ export function dailyBudget(
 ) {
   const subjects = dailySubjects(includeScience);
   const weights = subjects.map((subject) =>
-    Math.max(1, targetScore - (scores[subject] ?? 28)),
+    Math.max(1, targetScore - (scores[subject] ?? targetScore - 4)),
   );
-  const available = minutes - subjects.length * 10,
+  const base = Math.min(10, Math.floor(minutes / subjects.length));
+  const available = minutes - subjects.length * base,
     total = weights.reduce((a, b) => a + b, 0);
   const allocations = weights.map(
-    (weight) => 10 + Math.floor((available * weight) / total),
+    (weight) => base + Math.floor((available * weight) / total),
   );
   let extra = minutes - allocations.reduce((a, b) => a + b, 0);
   for (let i = 0; extra > 0; i++, extra--) allocations[i % subjects.length]++;
@@ -267,7 +281,9 @@ export function makeDailyPlan(
   ];
   const seenIds = new Set(seenQuestions);
   const priorPassages = seenPassages(seenIds);
-  const curriculumPositions: DailyPlan["curriculumPositions"] = {};
+  const curriculumPositions: DailyPlan["curriculumPositions"] = {
+    ...positions,
+  };
   const counts: Partial<Record<AccountSubject, number>> = {};
   const pending: Partial<
     Record<AccountSubject, ReturnType<typeof dailyScopes>>
@@ -285,7 +301,8 @@ export function makeDailyPlan(
   const weights = subjects.map((s) =>
     Math.max(
       1,
-      (course?.targetScore ?? 36) - (planningScores(settings)[s] ?? 28),
+      (course?.targetScore ?? 36) -
+        (planningScores(settings)[s] ?? (course?.targetScore ?? 36) - 4),
     ),
   );
   const draft = subjects.map((subject) => {
@@ -333,15 +350,21 @@ export function makeDailyPlan(
             Number(preferred.some((scope) => scope.id === b.id)) -
               Number(preferred.some((scope) => scope.id === a.id)) ||
             (course
-              ? practicePriority(
+              ? difficultyPriority(
                   a.scope.difficulty ?? "medium",
-                  planningScores(settings)[subject],
-                  course?.targetScore ?? 36,
+                  course?.practiceLevels?.[a.id] ??
+                    startingDifficulty(
+                      planningScores(settings)[subject],
+                      course?.targetScore ?? 36,
+                    ),
                 ) -
-                practicePriority(
+                difficultyPriority(
                   b.scope.difficulty ?? "medium",
-                  planningScores(settings)[subject],
-                  course?.targetScore ?? 36,
+                  course?.practiceLevels?.[b.id] ??
+                    startingDifficulty(
+                      planningScores(settings)[subject],
+                      course?.targetScore ?? 36,
+                    ),
                 )
               : 0) ||
             (course &&
@@ -383,13 +406,31 @@ export function makeDailyPlan(
           : getLesson(topic.slug)
       ) as Lesson;
       const bank = banks.get(topic.slug)!;
+      const desired =
+        course?.practiceLevels?.[id] ??
+        startingDifficulty(
+          planningScores(settings)[subject],
+          course?.targetScore ?? 36,
+        );
       const pool = scope.practice.map((i) => bank[i]);
       if (pool.some((q) => !q))
         throw new Error(`Missing curriculum question for ${id}`);
+      const eligible = pool.filter(
+        (question) =>
+          difficultyRank(question.difficulty) <= difficultyRank(desired),
+      );
+      // A skill with no easier authored item starts at its easiest available item.
+      const available = eligible.length
+        ? eligible
+        : pool.filter(
+            (question) =>
+              difficultyRank(question.difficulty) ===
+              Math.min(...pool.map((item) => difficultyRank(item.difficulty))),
+          );
       const cycle = Math.floor((sequence * 2) / scopes.length);
       const rotated = Array.from(
-        { length: pool.length },
-        (_, i) => pool[(cycle + i) % pool.length],
+        { length: available.length },
+        (_, i) => available[(cycle + i) % available.length],
       )
         .filter((q) => !used.has(q.id))
         .sort(
@@ -398,16 +439,8 @@ export function makeDailyPlan(
               exposureRank(b as Question, seenIds, priorPassages) ||
             Number(!!a.passage && usedPassages.has(a.passage.id)) -
               Number(!!b.passage && usedPassages.has(b.passage.id)) ||
-            practicePriority(
-              a.difficulty,
-              planningScores(settings)[subject],
-              course?.targetScore ?? 36,
-            ) -
-              practicePriority(
-                b.difficulty,
-                planningScores(settings)[subject],
-                course?.targetScore ?? 36,
-              ),
+            difficultyPriority(a.difficulty, desired) -
+              difficultyPriority(b.difficulty, desired),
         );
       const q = rotated[0];
       if (!q) throw new Error(`Empty practice pool for ${id}`);
@@ -419,6 +452,7 @@ export function makeDailyPlan(
         ? focusLesson(full, { ...skill, sections: scope.sections })
         : sliceLesson(full, scope.sections, subject);
       return {
+        difficulty: desired,
         skillId: scope.skillId,
         reportingCategory: scope.reportingCategory,
         id:
@@ -438,7 +472,12 @@ export function makeDailyPlan(
               ? full.title
               : lesson.sections[0].heading),
         sectionIndices: scope.sections,
-        practiceIds: rotated.map((q) => q.id),
+        practiceIds: [
+          ...rotated,
+          ...pool.filter(
+            (question) => !rotated.some((item) => item.id === question.id),
+          ),
+        ].map((question) => question.id),
         lesson,
         questions: [
           {
@@ -530,6 +569,39 @@ export function makeDailyPlan(
       ...block.units!.flatMap((u) => u.questions),
       ...block.reviewQuestions,
     ];
+  }
+  if (
+    draft.reduce(
+      (sum, block) => sum + Math.ceil(estimateDailyBlock(block)),
+      0,
+    ) > settings.minutesPerDay
+  ) {
+    // Give larger gaps more short sessions, with at most three turns per subject.
+    const turns = weights.map((weight) => Math.min(3, Math.ceil(weight / 4)));
+    const cycle = turns.reduce((sum, weight) => sum + weight, 0);
+    const credits = turns.map(() => 0);
+    let first = 0;
+    for (let day = 0; day <= sequence % cycle; day++) {
+      turns.forEach((weight, index) => {
+        credits[index] += weight;
+      });
+      first = credits.indexOf(Math.max(...credits));
+      credits[first] -= cycle;
+    }
+    const offset = course ? first : sequence % draft.length;
+    const rotated = [...draft.slice(offset), ...draft.slice(0, offset)].sort(
+      (a, b) => Number(a.reviewOnly) - Number(b.reviewOnly),
+    );
+    let remaining = settings.minutesPerDay;
+    const selected = rotated.filter((block) => {
+      const minutes = Math.ceil(estimateDailyBlock(block));
+      if (minutes > remaining) return false;
+      remaining -= minutes;
+      return true;
+    });
+    if (!selected.length)
+      throw new Error("A complete lesson exceeds the daily budget");
+    draft.splice(0, draft.length, ...selected);
   }
   const addReview = (block: DailyBlock) => {
     const unit = weakUnits[block.subject]?.find(
@@ -659,14 +731,17 @@ export function makeDailyPlan(
   if (minimum.reduce((a, b) => a + b, 0) > settings.minutesPerDay)
     throw new Error("Curriculum exceeds the daily budget");
   const extra = settings.minutesPerDay - minimum.reduce((a, b) => a + b, 0);
-  const total = weights.reduce((a, b) => a + b, 0);
+  const selectedWeights = draft.map(
+    (block) => weights[subjects.indexOf(block.subject)],
+  );
+  const total = selectedWeights.reduce((a, b) => a + b, 0);
   const allocations = minimum.map(
-    (min, i) => min + Math.floor((extra * weights[i]) / total),
+    (min, i) => min + Math.floor((extra * selectedWeights[i]) / total),
   );
   let remainder =
     settings.minutesPerDay - allocations.reduce((a, b) => a + b, 0);
   for (let i = 0; remainder > 0; i++, remainder--)
-    allocations[i % subjects.length]++;
+    allocations[i % draft.length]++;
   draft.forEach((block, i) => {
     block.minutes = allocations[i];
     // More time buys more matched application, never another oversized lesson.
@@ -680,7 +755,18 @@ export function makeDailyPlan(
             .length <= 1
         )
           continue;
-        const id = unit.practiceIds!.find((id) => !used.has(id));
+        const id = unit.practiceIds!.find((id) => {
+          if (used.has(id)) return false;
+          const question =
+            block.subject === "english"
+              ? englishDailyQuestions(unit.topic).find((item) => item.id === id)
+              : getQuestion(id);
+          return (
+            question &&
+            difficultyRank(question.difficulty) <=
+              difficultyRank(unit.difficulty ?? "hard")
+          );
+        });
         const q =
           id &&
           (block.subject === "english"
@@ -726,25 +812,129 @@ export function makeDailyPlan(
       seenQuestions: undefined,
     },
     curriculumPositions,
-    nextCurriculumPositions: Object.fromEntries(
-      draft.map((b) => [
-        b.subject,
-        course
-          ? (() => {
-              const done = new Set([
-                ...covered,
-                ...blockUnits(b).map((unit) => unit.courseId ?? unit.id),
-              ]);
-              const scopes = dailyScopes(b.subject, settings);
-              const next = scopes.findIndex((scope) => !done.has(scope.id));
-              return next < 0 ? scopes.length : next;
-            })()
-          : Math.min(
-              dailyScopes(b.subject, settings).length,
-              (curriculumPositions[b.subject] ?? 0) + blockUnits(b).length,
-            ),
-      ]),
-    ),
+    nextCurriculumPositions: {
+      ...curriculumPositions,
+      ...Object.fromEntries(
+        draft.map((b) => [
+          b.subject,
+          course
+            ? (() => {
+                const done = new Set([
+                  ...covered,
+                  ...blockUnits(b).map((unit) => unit.courseId ?? unit.id),
+                ]);
+                const scopes = dailyScopes(b.subject, settings);
+                const next = scopes.findIndex((scope) => !done.has(scope.id));
+                return next < 0 ? scopes.length : next;
+              })()
+            : Math.min(
+                dailyScopes(b.subject, settings).length,
+                (curriculumPositions[b.subject] ?? 0) + blockUnits(b).length,
+              ),
+        ]),
+      ),
+    },
+  };
+}
+/** A recovery question is a new graded attempt; the saved miss stays unchanged. */
+export function addDailyRetry(
+  plan: DailyPlan,
+  answers: Record<string, number>,
+  questionId: string,
+  seenQuestions: string[] = [],
+) {
+  const block = plan.blocks.find((block) =>
+    block.questions.some((q) => q.id === questionId),
+  );
+  const original = block?.questions.find((q) => q.id === questionId);
+  if (
+    !block ||
+    !original ||
+    answers[questionId] === undefined ||
+    answers[questionId] === original.answer
+  )
+    throw new Error("Retry a saved incorrect answer from this lesson.");
+  const existing = block.questions.find((q) => q.retryOf === questionId);
+  if (existing)
+    return { plan, retryQuestionId: existing.id, retryUnavailable: false };
+  if (plan.complete)
+    throw new Error(
+      "This lesson is complete. Review the skill in your next session.",
+    );
+  const unit = [...blockUnits(block), ...(block.reviewUnits ?? [])].find(
+    (unit) =>
+      original.reviewUnitId
+        ? unit.id === original.reviewUnitId
+        : unit.questions.some((q) => q.id === questionId),
+  );
+  const skillId =
+    original.skillId ??
+    getQuestionTeaching(original.topic, original.id)?.skillId;
+  const bank =
+    block.subject === "english"
+      ? englishDailyQuestions(original.topic)
+      : getQuestions(original.topic);
+  const excluded = new Set([
+    ...seenQuestions,
+    ...(plan.previouslyAnsweredQuestions ?? []),
+    ...(plan.course?.seenQuestions ?? []),
+    ...(plan.course?.answeredQuestions ?? []),
+    ...Object.keys(answers),
+    ...plan.blocks
+      .flatMap((block) => [
+        ...block.questions,
+        ...(block.historicalQuestions ?? []),
+        ...blockUnits(block).flatMap((unit) => unit.questions),
+        ...(block.reviewUnits ?? []).flatMap((unit) => unit.questions),
+      ])
+      .map((q) => q.id),
+  ]);
+  const passages = seenPassages(excluded);
+  const candidate =
+    unit &&
+    skillId &&
+    bank.find(
+      (q) =>
+        !excluded.has(q.id) &&
+        getQuestionTeaching(original.topic, q.id)?.skillId === skillId &&
+        (!unit.practiceIds || unit.practiceIds.includes(q.id)) &&
+        (block.subject !== "reading" ||
+          !(q as Question).passage ||
+          !passages.has((q as Question).passage!.id)),
+    );
+  if (!candidate)
+    return { plan, retryQuestionId: null, retryUnavailable: true };
+  const retry: DailyQuestion = {
+    ...candidate,
+    subject: block.subject,
+    topic: original.topic,
+    skillId,
+    category: candidate.category ?? original.category,
+    difficulty: candidate.difficulty ?? original.difficulty,
+    phase: original.phase,
+    reviewUnitId: original.reviewUnitId,
+    retryOf: original.id,
+  };
+  const insertAfter = (questions: DailyQuestion[]) =>
+    questions.flatMap((q) => (q.id === original.id ? [q, retry] : [q]));
+  const updated = {
+    ...block,
+    units: blockUnits(block).map((unit) => ({
+      ...unit,
+      questions: insertAfter(unit.questions),
+    })),
+    reviewQuestions:
+      block.reviewQuestions && insertAfter(block.reviewQuestions),
+    questions: insertAfter(block.questions),
+  };
+  updated.estimatedMinutes = estimateDailyBlock(updated, answers);
+  return {
+    plan: {
+      ...plan,
+      blocks: plan.blocks.map((item) => (item === block ? updated : item)),
+    },
+    retryQuestionId: retry.id,
+    retryUnavailable: false,
   };
 }
 /** Forecast complete lesson/drill pairs, excluding test day, without changing progress. */
@@ -798,7 +988,10 @@ export function dailyCoverage(
   const finishDate = finish(settings.minutesPerDay);
   const requiredMinutes = finishDate
     ? settings.minutesPerDay
-    : ([75, 90].find(
+    : (Array.from(
+        { length: MAX_STUDY_MINUTES / 15 },
+        (_, i) => (i + 1) * 15,
+      ).find(
         (minutes) => minutes > settings.minutesPerDay && finish(minutes),
       ) ?? null);
   return {
@@ -830,11 +1023,10 @@ export function practicePriority(
   baseline: number | null,
   target: number,
 ) {
-  const rank = difficultyRank(difficulty);
-  if (baseline === null) return 0;
-  if (target >= 33 && baseline >= 28) return 2 - rank;
-  if (target <= 27 || baseline < 24) return rank;
-  return difficulty === "medium" ? 0 : difficulty === "hard" ? 1 : 2;
+  return difficultyPriority(
+    difficulty as Question["difficulty"],
+    startingDifficulty(baseline, target),
+  );
 }
 function englishScopes(topic: string): DailyScope[] {
   const full = englishLesson(topic) as Lesson;
@@ -908,6 +1100,7 @@ export function estimateDailyBlock(
   answers: Record<string, number> = {},
 ) {
   const unanswered = block.questions.filter((q) => answers[q.id] === undefined);
+  let exploration = 0;
   // Appended repair checkpoints can point at the same teaching section.
   const sections = blockUnits(block).flatMap((unit) => {
     const included = new Set<number>();
@@ -920,7 +1113,22 @@ export function estimateDailyBlock(
         included.add(source);
         return true;
       })
-      .map((index) => unit.lesson.sections[index]);
+      .map((index) => {
+        const section = unit.lesson.sections[index];
+        if (
+          isClauseRecognitionSection(
+            unit.topic,
+            unit.sectionIndices?.[index] ?? index,
+          )
+        )
+          exploration += 1.5;
+        if (
+          section.activity &&
+          EXPLORATION_SKILLS.some((skill) => skill === unit.skillId)
+        )
+          exploration += 1.5;
+        return section;
+      });
   });
   const teaching =
     sections.reduce(
@@ -977,6 +1185,7 @@ export function estimateDailyBlock(
   return (
     Math.round(
       (teaching +
+        exploration +
         interaction +
         reading +
         answering +
@@ -1502,7 +1711,12 @@ function fitRefreshedBudget(
   plan: DailyPlan,
   answers: Record<string, number>,
 ): DailyPlan {
-  if (plan.complete) return plan;
+  // Recovery adds optional time; never trim a saved retry or its original assignment.
+  if (
+    plan.complete ||
+    plan.blocks.some((block) => block.questions.some((q) => q.retryOf))
+  )
+    return plan;
   const blocks = plan.blocks.map((b) => ({
     ...b,
     units: blockUnits(b).map((u) => ({ ...u, questions: [...u.questions] })),

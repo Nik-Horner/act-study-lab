@@ -1,6 +1,30 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { explanationSteps } from "../src/lib/answer-explanation";
+test("quoted sentence edits stay in one worked step, including contractions", () => {
+  assert.deepEqual(
+    explanationSteps(
+      "'pianist. They were enthralled;' fixes both joins. The other choices leave a splice.",
+    ),
+    [
+      "'pianist. They were enthralled;' fixes both joins.",
+      "The other choices leave a splice.",
+    ],
+  );
+  assert.deepEqual(
+    explanationSteps(
+      "“It can’t wait. We must go.” supplies two complete thoughts. Check the boundary.",
+    ),
+    [
+      "“It can’t wait. We must go.” supplies two complete thoughts.",
+      "Check the boundary.",
+    ],
+  );
+  assert.deepEqual(
+    explanationSteps("The writer's claim is limited. Don't broaden it."),
+    ["The writer's claim is limited.", "Don't broaden it."],
+  );
+});
 test("corrections keep specific evidence and remove answer-key boilerplate", () => {
   assert.deepEqual(
     explanationSteps(

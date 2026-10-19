@@ -284,90 +284,111 @@ export function QuestionView({
       <section
         ref={questionRef}
         tabIndex={questionRef ? -1 : undefined}
-        className="min-w-0 scroll-mt-40"
+        className={
+          q.passage
+            ? "question-answer-panel min-w-0 scroll-mt-40"
+            : "question-problem-layout min-w-0 scroll-mt-40"
+        }
         aria-label="Current question"
       >
-        {q.stem && q.stem.trim() !== q.questionText.trim() && (
-          <p className="prose-study mb-4">
-            <MathText>{q.stem}</MathText>
-          </p>
-        )}
-        <h2 className="mb-5 whitespace-pre-line text-lg font-semibold">
-          <MathText>{q.questionText}</MathText>
-        </h2>
-        <MathDiagram id={q.id} />
-        <div
-          className={q.passage ? "space-y-3" : "grid gap-3 sm:grid-cols-2"}
-          role="group"
-          aria-label="Answer choices"
-        >
-          {choiceOrder.map((i, displayIndex) => (
-            <div key={i} className="flex items-stretch gap-2">
-              <button
-                className="choice"
-                aria-pressed={chosen === i}
-                data-selected={chosen === i}
-                data-correct={revealed && i === q.answer}
-                data-wrong={revealed && chosen === i && i !== q.answer}
-                onClick={() => onChoose(chosen === i ? null : i)}
-                disabled={disabled || revealed || eliminated.includes(i)}
-              >
-                <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-current/25 text-xs font-semibold">
-                  {letters[displayIndex]}
-                </span>
-                <span
-                  className={
-                    eliminated.includes(i) ? "line-through opacity-60" : ""
-                  }
-                >
-                  <MathText>{q.choices[i]}</MathText>
-                  {revealed && i === q.answer && (
-                    <span className="ml-2 font-semibold">(correct)</span>
-                  )}
-                  {revealed && chosen === i && i !== q.answer && (
-                    <span className="ml-2 font-semibold">(your answer)</span>
-                  )}
-                </span>
-              </button>
-              {onEliminate && !revealed && (
-                <button
-                  className="min-h-11 min-w-11 rounded-lg border border-border px-2 py-3 text-sm hover:bg-bg-raised"
-                  onClick={() => onEliminate(i)}
-                  aria-label={`${eliminated.includes(i) ? "Restore" : "Eliminate"} choice ${letters[displayIndex]}`}
-                  aria-pressed={eliminated.includes(i)}
-                >
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 16 16"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    aria-hidden="true"
-                  >
-                    <path d="m3 3 10 10M13 3 3 13" />
-                  </svg>
-                </button>
-              )}
+        {!q.passage && (
+          <div className="question-stimulus-panel">
+            <p className="question-source-label">The problem</p>
+            <div className="question-stimulus-copy">
+              <MathText>{q.stem || q.questionText}</MathText>
             </div>
-          ))}
-        </div>
-        {revealed && (
-          <AnswerFeedback
-            choices={choiceOrder.map((i) => q.choices[i])}
-            answer={choiceOrder.indexOf(q.answer)}
-            chosen={chosen === null ? null : choiceOrder.indexOf(chosen)}
-            explanation={q.explanation}
-          />
+            <MathDiagram id={q.id} />
+          </div>
         )}
-        {method && (
-          <Link
-            href={method.href}
-            target="_blank"
-            className="mt-4 inline-flex min-h-11 items-center text-sm text-brand underline"
+        <div
+          className={
+            q.passage ? "question-answer-content" : "question-answer-panel"
+          }
+        >
+          {q.passage && q.stem && q.stem.trim() !== q.questionText.trim() && (
+            <p className="prose-study mb-4">
+              <MathText>{q.stem}</MathText>
+            </p>
+          )}
+          <h2 className="mb-5 whitespace-pre-line text-lg font-semibold">
+            <MathText>
+              {q.passage || (q.stem && q.stem.trim() !== q.questionText.trim())
+                ? q.questionText
+                : "Choose the answer"}
+            </MathText>
+          </h2>
+          {q.passage && <MathDiagram id={q.id} />}
+          <div
+            className={q.passage ? "space-y-3" : "grid gap-3 sm:grid-cols-2"}
+            role="group"
+            aria-label="Answer choices"
           >
-            Review the method: {method.label}
-          </Link>
-        )}
+            {choiceOrder.map((i, displayIndex) => (
+              <div key={i} className="flex items-stretch gap-2">
+                <button
+                  className="choice"
+                  aria-pressed={chosen === i}
+                  data-selected={chosen === i}
+                  data-correct={revealed && i === q.answer}
+                  data-wrong={revealed && chosen === i && i !== q.answer}
+                  onClick={() => onChoose(chosen === i ? null : i)}
+                  disabled={disabled || revealed || eliminated.includes(i)}
+                >
+                  <span className="answer-letter">{letters[displayIndex]}</span>
+                  <span
+                    className={
+                      eliminated.includes(i) ? "line-through opacity-60" : ""
+                    }
+                  >
+                    <MathText>{q.choices[i]}</MathText>
+                    {revealed && i === q.answer && (
+                      <span className="ml-2 font-semibold">(correct)</span>
+                    )}
+                    {revealed && chosen === i && i !== q.answer && (
+                      <span className="ml-2 font-semibold">(your answer)</span>
+                    )}
+                  </span>
+                </button>
+                {onEliminate && !revealed && (
+                  <button
+                    className="min-h-11 min-w-11 rounded-lg border border-border px-2 py-3 text-sm hover:bg-bg-raised"
+                    onClick={() => onEliminate(i)}
+                    aria-label={`${eliminated.includes(i) ? "Restore" : "Eliminate"} choice ${letters[displayIndex]}`}
+                    aria-pressed={eliminated.includes(i)}
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 16 16"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      aria-hidden="true"
+                    >
+                      <path d="m3 3 10 10M13 3 3 13" />
+                    </svg>
+                  </button>
+                )}
+              </div>
+            ))}
+          </div>
+          {revealed && (
+            <AnswerFeedback
+              choices={choiceOrder.map((i) => q.choices[i])}
+              answer={choiceOrder.indexOf(q.answer)}
+              chosen={chosen === null ? null : choiceOrder.indexOf(chosen)}
+              explanation={q.explanation}
+            />
+          )}
+          {method && (
+            <Link
+              href={method.href}
+              target="_blank"
+              className="mt-4 inline-flex min-h-11 items-center text-sm text-brand underline"
+            >
+              Review the method: {method.label}
+            </Link>
+          )}
+        </div>
       </section>
     </div>
   );

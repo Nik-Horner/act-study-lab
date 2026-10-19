@@ -1,13 +1,11 @@
 "use client";
 import { useState } from "react";
-import { EnglishLessonSections } from "./EnglishLessonSections";
-import { QuickCheck } from "@/app/learn/[topic]/QuickCheck";
-import { Button } from "./ui/Button";
+import Link from "next/link";
 import type { DailyUnit } from "@/lib/daily-plan";
-import type { CheckQuestion } from "@/lib/content";
-import { LessonActivity } from "./LessonActivity";
 import { dailyConcepts } from "@/lib/daily-flow";
-import { reportingCategoryName } from "@/lib/learning-skills";
+import { ConceptTeaching } from "./ConceptTeaching";
+import { QuickCheck } from "@/app/learn/[topic]/QuickCheck";
+import type { CheckQuestion } from "@/lib/content";
 export function DailyEnglishLesson({
   unit,
   completed,
@@ -32,127 +30,73 @@ export function DailyEnglishLesson({
   );
   const position = visible.indexOf(index);
   const last = position === visible.length - 1;
-  const [phase, setPhase] = useState<"learn" | "practice">("learn");
-  const [checkedIndex, setCheckedIndex] = useState(-1);
-  const section = unit.lesson.sections[index];
-  const needsTry =
-    !!section.activity &&
-    !revisiting &&
-    checkedIndex !== index &&
-    !completed.includes(`${unit.id}:concept:${index}`);
   return (
-    <div className="space-y-6">
-      <header className="lesson-heading">
-        <h1 className="text-2xl font-semibold sm:text-3xl">{unit.title}</h1>
-        {unit.reportingCategory && (
-          <p className="mt-2 text-sm text-ink-soft">
-            {reportingCategoryName(unit.reportingCategory)}
-          </p>
-        )}
-        <span className="text-sm text-ink-soft">
-          Part {position + 1} of {visible.length}
-        </span>
-      </header>
-      <div
-        className="lesson-progress"
-        aria-label={`Part ${position + 1} of ${visible.length}`}
+    <div className="space-y-5">
+      <ConceptTeaching
+        key={`${unit.id}-${index}`}
+        title={unit.title}
+        difficulty={unit.difficulty}
+        section={unit.lesson.sections[index]}
+        subject={"english"}
+        topic={unit.topic}
+        skillId={unit.skillId}
+        sourceIndex={unit.sectionIndices?.[index] ?? index}
+        position={position}
+        total={visible.length}
+        pending={pending}
+        previouslyChecked={
+          revisiting || completed.includes(`${unit.id}:concept:${index}`)
+        }
+        onPrevious={
+          position > 0
+            ? () => {
+                setIndex(visible[position - 1]);
+                window.scrollTo({ top: 0 });
+              }
+            : undefined
+        }
+        nextLabel={
+          last
+            ? revisiting
+              ? "Back to drill"
+              : "Practice independently"
+            : "Next concept"
+        }
+        onContinue={async () => {
+          if (revisiting) {
+            if (last) onBack();
+            else setIndex(visible[position + 1]);
+          } else if (await onAdvance(index, last)) {
+            if (!last) setIndex(visible[position + 1]);
+          }
+          window.scrollTo({ top: 0 });
+        }}
       >
-        {visible.map((i, p) => (
-          <span key={i} data-current={i === index} data-done={p < position} />
-        ))}
-      </div>
-      {section.activity && (
-        <div
-          className="lesson-phase-nav"
-          role="group"
-          aria-label="Concept steps"
+        {last && unit.lesson.check.length > 0 && (
+          <section className="method-reminder">
+            <h2>Topic quick check</h2>
+            <QuickCheck checks={unit.lesson.check as CheckQuestion[]} />
+          </section>
+        )}
+      </ConceptTeaching>
+      <div className="lesson-reference-links">
+        <Link
+          href={`/learn/${unit.topic}${unit.skillId ? `?skill=${encodeURIComponent(unit.skillId)}` : "?reference=1"}`}
+          target="_blank"
         >
-          <button
-            type="button"
-            aria-pressed={phase === "learn"}
-            onClick={() => setPhase("learn")}
-          >
-            Learn
+          Open course lesson
+        </Link>
+        {unit.topic.startsWith("math-") && (
+          <Link href={`/learn/math-formulas#${unit.topic}`} target="_blank">
+            Formulas and methods
+          </Link>
+        )}
+        {revisiting && !last && (
+          <button className="min-h-11 text-brand underline" onClick={onBack}>
+            Back to drill
           </button>
-          <button
-            type="button"
-            aria-pressed={phase === "practice"}
-            onClick={() => setPhase("practice")}
-          >
-            Try it
-          </button>
-        </div>
-      )}
-      <div className="english-lesson-workbench" hidden={phase !== "learn"}>
-        <EnglishLessonSections
-          sections={[unit.lesson.sections[index]]}
-          hideHeading={visible.length === 1}
-        />
+        )}
       </div>
-      {section.activity && (
-        <div hidden={phase !== "practice"}>
-          <LessonActivity
-            key={`${unit.id}-${index}`}
-            activity={section.activity}
-            onComplete={() => setCheckedIndex(index)}
-          />
-        </div>
-      )}
-      {last && unit.lesson.check.length > 0 && (
-        <section className="space-y-3 border-t border-border pt-6">
-          <h2 className="text-xl font-semibold">Quick check</h2>
-          <QuickCheck checks={unit.lesson.check as CheckQuestion[]} />
-        </section>
-      )}
-      <div className="lesson-actions">
-        <Button
-          variant="ghost"
-          disabled={(position === 0 && phase === "learn") || pending}
-          onClick={() => {
-            if (phase === "practice") setPhase("learn");
-            else setIndex(visible[position - 1]);
-            window.scrollTo({ top: 0 });
-          }}
-        >
-          {phase === "practice" ? "Review method" : "Previous part"}
-        </Button>
-        <Button
-          disabled={pending || (phase === "practice" && needsTry)}
-          onClick={async () => {
-            if (phase === "learn" && section.activity) {
-              setPhase("practice");
-              window.scrollTo({ top: 0 });
-              return;
-            }
-            if (revisiting) {
-              if (last) onBack();
-              else {
-                setIndex(visible[position + 1]);
-                setPhase("learn");
-              }
-            } else if (await onAdvance(index, last)) {
-              if (!last) {
-                setIndex(visible[position + 1]);
-                setPhase("learn");
-              }
-            }
-            window.scrollTo({ top: 0 });
-          }}
-        >
-          {pending
-            ? "Saving…"
-            : phase === "learn" && section.activity
-              ? "Try it"
-              : last
-                ? revisiting
-                  ? "Back to drill"
-                  : "Start drill"
-                : "Next part"}
-        </Button>
-      </div>
-      {phase === "practice" && needsTry && (
-        <p className="text-sm text-ink-soft">Choose an answer to continue.</p>
-      )}
     </div>
   );
 }

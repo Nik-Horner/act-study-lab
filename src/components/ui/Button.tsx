@@ -5,7 +5,7 @@ type Variant = "primary" | "ghost" | "danger";
 type Size = "sm" | "md";
 
 const base =
-  "inline-flex min-h-11 items-center justify-center gap-2 rounded-full font-medium transition-colors disabled:opacity-50 disabled:pointer-events-none sm:min-h-0";
+  "study-button inline-flex min-h-11 items-center justify-center gap-2 rounded-xl font-semibold transition-colors disabled:opacity-50 disabled:pointer-events-none";
 
 const variants: Record<Variant, string> = {
   primary: "bg-brand text-white hover:bg-brand-dark",

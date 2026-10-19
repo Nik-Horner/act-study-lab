@@ -13,10 +13,14 @@ import {
   englishDrillLevel,
   englishDrillOrder,
 } from "@/lib/english-drill-order";
-import { ButtonLink } from "@/components/ui/Button";
+import { StudyIcon } from "@/components/StudyIcon";
+import { Button, ButtonLink } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { Card } from "@/components/ui/Card";
+import { StudyWorkspace } from "@/components/StudyWorkspace";
+import { StudyPageHeader } from "@/components/StudyPageHeader";
+import { PracticeRecovery } from "@/components/PracticeRecovery";
 import {
   getLearningSkill,
   getQuestionTeaching,
@@ -326,36 +330,17 @@ export function DrillClient(props: DrillClientProps) {
 
   return (
     <div className="space-y-5">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <ButtonLink
-            href={backHref}
-            variant="ghost"
-            size="sm"
-            className="mb-2"
-          >
-            ← Back
-          </ButtonLink>
-          <h1 className="text-2xl font-semibold text-ink">{headerTitle}</h1>
-        </div>
-        <div className="flex items-center gap-4">
-          <Stat
-            label="This session"
-            value={`${props.daily?.correct ?? sessionCorrect}/${props.daily?.count ?? sessionCount}`}
-          />
-          <Stat label="Streak" value={String(props.daily?.streak ?? streak)} />
-          <span
-            className={`rounded-full border border-border px-3 py-1 text-sm font-mono ${
-              elapsed > TARGET_SEC ? "text-warn" : "text-ink-soft"
-            }`}
-          >
-            {fmtTime(elapsed)}
-          </span>
-        </div>
-      </div>
-
+      {!props.daily && (
+        <StudyPageHeader
+          title={props.mode === "topic" ? "Independent practice" : headerTitle}
+          subject="english"
+          description="Use the method independently, then follow the evidence behind each answer."
+          back={{ href: backHref, label: "English study" }}
+        />
+      )}
       {props.mode === "topic" && !props.daily && (
-        <div>
+        <details className="practice-record-details">
+          <summary>Saved practice milestone</summary>
           <p className="mb-1.5 text-sm text-ink-soft">
             {status === "mastered" ? (
               <>
@@ -375,7 +360,7 @@ export function DrillClient(props: DrillClientProps) {
             percent={masteryProgress(progress) * 100}
             tone={status === "mastered" ? "good" : "brand"}
           />
-        </div>
+        </details>
       )}
       {!props.daily && props.mode !== "misses" && (
         <p className="text-sm text-ink-soft">
@@ -407,8 +392,22 @@ export function DrillClient(props: DrillClientProps) {
         </p>
       )}
 
-      <Card
-        className={props.daily ? "daily-english-question p-5 sm:p-8" : "p-6"}
+      <StudyWorkspace
+        title={props.daily ? headerTitle : current.topicTitle}
+        subject="english"
+        mode="practice"
+        current={idx + 1}
+        total={order.length}
+        headingLevel={props.daily ? 1 : 2}
+        tools={
+          <>
+            <span>
+              {props.daily?.correct ?? sessionCorrect}/
+              {props.daily?.count ?? sessionCount} correct
+            </span>
+            <span className="pace-chip">{fmtTime(elapsed)}</span>
+          </>
+        }
       >
         <div className="mb-3 flex flex-wrap gap-2">
           <Badge tone="neutral">{current.question.difficulty}</Badge>
@@ -423,69 +422,92 @@ export function DrillClient(props: DrillClientProps) {
             <Badge tone="brand">{current.topicTitle}</Badge>
           )}
         </div>
-        {current.question.stem && (
-          <div
-            className="mb-3 text-lg text-ink"
-            dangerouslySetInnerHTML={{
-              __html: renderStem(current.question.stem),
-            }}
-          />
-        )}
-        <p className="mb-4 text-sm text-ink-soft">
-          {current.question.questionText}
-        </p>
-
-        <div className="grid gap-2 sm:grid-cols-2">
-          {current.question.choices.map((choice, i) => {
-            const isCorrect = i === current.question.answer;
-            const isPicked = i === picked;
-            let tone = "border-border bg-bg-raised hover:bg-border";
-            if (answered && isCorrect)
-              tone = "border-good bg-good-soft text-good";
-            else if (answered && isPicked)
-              tone = "border-bad bg-bad-soft text-bad";
-            else if (answered) tone = "border-border bg-bg-raised opacity-60";
-
-            return (
-              <button
-                key={i}
-                type="button"
-                disabled={answered}
-                onClick={() => void submitAnswer(i)}
-                className={`flex items-center gap-2 rounded-xl border px-3 py-2 text-left text-sm transition-colors disabled:cursor-default ${tone}`}
-              >
-                <span className="font-semibold">{LETTERS[i]}</span>
-                <span>{choice}</span>
-              </button>
-            );
-          })}
-        </div>
-
-        {answered && !saving && !saveError && (
-          <div className="mt-4 space-y-2">
-            <p
-              className={`text-sm font-medium ${picked === current.question.answer ? "text-good" : "text-bad"}`}
-            >
-              {picked === current.question.answer ? "Correct ✓" : "Not quite"}
-            </p>
-            <p className="text-sm text-ink-soft">
-              {current.question.explanation}
-            </p>
-            {method && (
-              <ButtonLink href={skillHref(method)} variant="ghost" size="sm">
-                Review this method: {method.title}
-              </ButtonLink>
+        <div className="english-question-scene">
+          <div className="question-stimulus-panel">
+            {current.question.stem && (
+              <div
+                className="mb-3 text-lg text-ink"
+                dangerouslySetInnerHTML={{
+                  __html: renderStem(current.question.stem),
+                }}
+              />
             )}
-            <p
-              className={`text-xs ${answerSec <= TARGET_SEC ? "text-good" : "text-warn"}`}
-            >
-              {answerSec}s —{" "}
-              {answerSec <= TARGET_SEC ? "on pace" : "a little slow"} (target{" "}
-              {TARGET_SEC}s)
+            <p className="mb-4 text-sm text-ink-soft">
+              {current.question.questionText}
             </p>
           </div>
-        )}
+          <div className="question-answer-panel">
+            <div className="grid gap-2 sm:grid-cols-2">
+              {current.question.choices.map((choice, i) => {
+                const isCorrect = i === current.question.answer;
+                const isPicked = i === picked;
+                let tone = "border-border bg-bg-raised hover:bg-border";
+                if (answered && isCorrect)
+                  tone = "border-good bg-good-soft text-good";
+                else if (answered && isPicked)
+                  tone = "border-bad bg-bad-soft text-bad";
+                else if (answered)
+                  tone = "border-border bg-bg-raised opacity-60";
 
+                return (
+                  <button
+                    key={i}
+                    type="button"
+                    disabled={answered}
+                    aria-pressed={isPicked}
+                    onClick={() => void submitAnswer(i)}
+                    className={`choice ${tone}`}
+                  >
+                    <span className="answer-letter">{LETTERS[i]}</span>
+                    <span>{choice}</span>
+                  </button>
+                );
+              })}
+            </div>
+
+            {answered && !saving && !saveError && (
+              <div
+                className="answer-feedback mt-4 space-y-2"
+                data-correct={picked === current.question.answer}
+                role="status"
+              >
+                <p
+                  className={`answer-feedback-title text-sm font-medium ${picked === current.question.answer ? "text-good" : "text-bad"}`}
+                >
+                  {picked === current.question.answer && (
+                    <StudyIcon
+                      name="check"
+                      className="answer-success-mark"
+                      size={22}
+                    />
+                  )}
+                  {picked === current.question.answer
+                    ? "Correct"
+                    : "Review this answer"}
+                </p>
+                <p className="text-sm text-ink-soft">
+                  {current.question.explanation}
+                </p>
+                {method && (
+                  <ButtonLink
+                    href={skillHref(method)}
+                    variant="ghost"
+                    size="sm"
+                  >
+                    Review this method: {method.title}
+                  </ButtonLink>
+                )}
+                <p
+                  className={`text-xs ${answerSec <= TARGET_SEC ? "text-good" : "text-warn"}`}
+                >
+                  {answerSec}s —{" "}
+                  {answerSec <= TARGET_SEC ? "on pace" : "a little slow"}{" "}
+                  (target {TARGET_SEC}s)
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
         {justMastered && (
           <div className="mt-4 rounded-xl border border-good bg-good-soft px-4 py-3 text-sm text-good">
             <p className="font-semibold">Practice milestone reached</p>
@@ -496,7 +518,18 @@ export function DrillClient(props: DrillClientProps) {
             </p>
           </div>
         )}
-      </Card>
+      </StudyWorkspace>
+      {!props.daily &&
+        answered &&
+        !saving &&
+        !saveError &&
+        picked !== current.question.answer && (
+          <PracticeRecovery
+            key={current.question.id}
+            topic={current.topicSlug}
+            questionId={current.question.id}
+          />
+        )}
 
       {saving && (
         <p role="status" className="text-center text-sm text-ink-soft">
@@ -556,28 +589,13 @@ export function DrillClient(props: DrillClientProps) {
       )}
       {answered && !saving && !saveError && (
         <div className="flex justify-center">
-          <button
-            type="button"
-            onClick={goNext}
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-brand px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-brand-dark"
-          >
-            Next question →
-          </button>
+          <Button onClick={goNext}>Next question</Button>
         </div>
       )}
 
       <p className="text-center text-xs text-ink-faint">
         Keys: <b>A–D</b> answer · <b>Enter</b> next question
       </p>
-    </div>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="text-center">
-      <div className="text-lg font-semibold text-ink">{value}</div>
-      <div className="text-xs text-ink-faint">{label}</div>
     </div>
   );
 }
@@ -592,7 +610,7 @@ function EmptyState({
   if (mode === "misses") {
     return (
       <Card className="p-10 text-center">
-        <div className="text-4xl">🎉</div>
+        <StudyIcon name="check" size={32} />
         <h2 className="mt-2 text-xl font-semibold text-ink">
           All misses cleared!
         </h2>

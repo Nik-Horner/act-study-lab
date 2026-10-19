@@ -2,11 +2,14 @@
 
 import { useState, type FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import { Card } from "@/components/ui/Card";
+import { StudyPageHeader } from "./StudyPageHeader";
 import {
   SUBJECTS,
-  DESMOS_TOPICS,
-  geometryFirst,
+  hasCustomStudyPreferences,
+  standardStudyPreferences,
+  validStudyMinutes,
+  MIN_STUDY_MINUTES,
+  MAX_STUDY_MINUTES,
   type StudySettings,
 } from "@/lib/account-settings";
 import { Button } from "@/components/ui/Button";
@@ -18,6 +21,7 @@ export interface AccountFormInitial {
   target_score: number | null;
   test_date: string | null;
   study_settings: StudySettings;
+  study_time_set?: boolean;
 }
 
 export function AccountForm({
@@ -38,16 +42,12 @@ export function AccountForm({
       ]),
     ),
   );
-  const [minutes, setMinutes] = useState(initial.study_settings.minutesPerDay);
-  const [mathFocus, setMathFocus] = useState(
-    initial.study_settings.mathFocus ?? "auto",
+  const [minutes, setMinutes] = useState(
+    variant === "onboarding" && initial.study_time_set === false
+      ? ""
+      : String(initial.study_settings.minutesPerDay),
   );
-  const [coveredTopics, setCoveredTopics] = useState(
-    initial.study_settings.mathCoveredTopics ?? [],
-  );
-  const [scienceRepresentative, setScienceRepresentative] = useState(
-    initial.study_settings.scienceScoreRepresentative !== false,
-  );
+  const [useStandardPlanning, setUseStandardPlanning] = useState(false);
   const [includeScience, setIncludeScience] = useState(
     initial.study_settings.includeScience !== false,
   );
@@ -64,6 +64,13 @@ export function AccountForm({
     setError(null);
     setSaved(false);
 
+    const dailyMinutes = Number(minutes);
+    if (!validStudyMinutes(dailyMinutes)) {
+      setError(
+        `Daily study time must be a whole number from ${MIN_STUDY_MINUTES} to ${MAX_STUDY_MINUTES} minutes.`,
+      );
+      return;
+    }
     const target = Number(targetScore);
     if (!Number.isInteger(target) || target < 1 || target > 36) {
       setError("Target score must be a whole number from 1 to 36.");
@@ -87,6 +94,17 @@ export function AccountForm({
       return;
     }
 
+    const updatedSettings: StudySettings = {
+      ...initial.study_settings,
+      scores: Object.fromEntries(
+        SUBJECTS.map((subject) => [
+          subject,
+          scores[subject].trim() === "" ? null : Number(scores[subject]),
+        ]),
+      ) as StudySettings["scores"],
+      minutesPerDay: dailyMinutes,
+      includeScience,
+    };
     setLoading(true);
     try {
       const res = await fetch("/api/profile", {
@@ -97,19 +115,9 @@ export function AccountForm({
           display_name: displayName.trim() || null,
           current_score:
             scores.english.trim() === "" ? null : Number(scores.english),
-          study_settings: {
-            scores: Object.fromEntries(
-              SUBJECTS.map((subject) => [
-                subject,
-                scores[subject].trim() === "" ? null : Number(scores[subject]),
-              ]),
-            ),
-            minutesPerDay: minutes,
-            ...(mathFocus === "auto" ? {} : { mathFocus }),
-            mathCoveredTopics: coveredTopics,
-            scienceScoreRepresentative: scienceRepresentative,
-            includeScience,
-          },
+          study_settings: useStandardPlanning
+            ? standardStudyPreferences(updatedSettings)
+            : updatedSettings,
           target_score: target,
           test_date: testDate,
         }),
@@ -136,24 +144,112 @@ export function AccountForm({
   }
 
   return (
-    <div className="mx-auto max-w-xl">
-      <Card className="p-5 sm:p-8">
-        <h1 className="text-xl font-semibold">
-          {variant === "onboarding" ? "Set up your account" : "Account"}
-        </h1>
-        <p className="mt-1 text-sm text-ink-soft">
-          {variant === "onboarding"
-            ? "Set your goal and test date for the digital ACT. Add any previous section scores to personalize your dashboards."
-            : "Manage your English, Math, Reading, and Science preparation. These settings follow your account across devices."}
-        </p>
+    <div className="settings-workspace">
+      <StudyPageHeader
+        title={
+          variant === "onboarding" ? "Set up daily study" : "Study settings"
+        }
+        description={
+          variant === "onboarding"
+            ? "Choose a schedule and goal. Start from the full ACT course, then build on saved practice."
+            : "Manage the schedule, subjects, and starting scores used for future sessions."
+        }
+      />
+      <div className="settings-layout">
+        <aside className="settings-index">
+          <nav aria-label="Settings sections">
+            <a href="#study-schedule">Study schedule</a>
+            <a href="#daily-subjects">Subjects</a>
+            <a href="#starting-scores">Starting scores</a>
+            <a href="#profile-name">Profile</a>
+          </nav>
+          <div className="settings-save-note">
+            <strong>Saved work stays saved.</strong>
+            <p>
+              Changing the plan updates the next session. An unfinished lesson
+              stays ready to resume.
+            </p>
+          </div>
+        </aside>
+        <form onSubmit={handleSubmit} className="settings-editor">
+          <fieldset
+            id="study-schedule"
+            className="grid min-w-0 gap-5 border-b border-border pb-7 sm:grid-cols-2"
+          >
+            <legend className="mb-4 text-lg font-bold">Study schedule</legend>
+            <div>
+              <label
+                className="mb-1 block text-sm font-medium"
+                htmlFor="testDate"
+              >
+                Test date
+              </label>
+              <input
+                id="testDate"
+                type="date"
+                required
+                value={testDate}
+                onChange={(e) => setTestDate(e.target.value)}
+                className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-base focus:border-brand"
+              />
+            </div>
+            <div>
+              <label
+                className="mb-1 block text-sm font-medium"
+                htmlFor="studyMinutes"
+              >
+                Minutes available each day
+              </label>
+              <input
+                id="studyMinutes"
+                type="number"
+                inputMode="numeric"
+                min={MIN_STUDY_MINUTES}
+                max={MAX_STUDY_MINUTES}
+                step={1}
+                required
+                value={minutes}
+                onChange={(e) => setMinutes(e.target.value)}
+                aria-describedby="study-time-help"
+                className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-base"
+              />
+              <p id="study-time-help" className="mt-2 text-sm text-ink-soft">
+                {MIN_STUDY_MINUTES}–{MAX_STUDY_MINUTES} minutes. Lesson times
+                are estimates; you can take the time you need.
+              </p>
+            </div>
+            <div>
+              <label
+                className="mb-1 block text-sm font-medium"
+                htmlFor="targetScore"
+              >
+                Target score per section
+              </label>
+              <input
+                id="targetScore"
+                type="number"
+                min={1}
+                max={36}
+                required
+                value={targetScore}
+                onChange={(e) => setTargetScore(e.target.value)}
+                className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-base focus:border-brand"
+              />
+            </div>
+            <p className="text-sm leading-relaxed text-ink-soft sm:col-span-2">
+              Short days give larger score gaps more practice and keep other
+              subjects in rotation. Your test date guides how much new work
+              fits. Changes start with your next session; unfinished lessons
+              stay ready to resume. Formula review is optional extra practice.
+            </p>
+          </fieldset>
 
-        <form onSubmit={handleSubmit} className="mt-6 space-y-4">
           <fieldset
             id="daily-subjects"
             className="min-w-0 scroll-mt-5 space-y-2 border-b border-border pb-5"
           >
             <legend className="mb-2 text-sm font-semibold">
-              Daily subjects
+              Subjects to study
             </legend>
             <p className="text-sm text-ink-soft">
               English, Math, and Reading are included.
@@ -177,7 +273,7 @@ export function AccountForm({
               intact. Science history and extra practice remain available.
             </p>
           </fieldset>
-          <div>
+          <div id="profile-name">
             <label
               className="mb-1 block text-sm font-medium"
               htmlFor="displayName"
@@ -190,16 +286,18 @@ export function AccountForm({
               value={displayName}
               onChange={(e) => setDisplayName(e.target.value)}
               placeholder="Optional"
-              className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
+              className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-base focus:border-brand"
             />
           </div>
-          <fieldset>
+          <fieldset id="starting-scores">
             <legend className="text-sm font-semibold">
-              Previous section scores
+              Recent section scores (optional)
             </legend>
             <p className="mt-1 text-sm text-ink-soft">
-              Optional · Enter scores from 1 to 36. Leave a section blank if you
-              haven’t taken it.
+              Enter a recent ACT or practice score from 1 to 36. Leave a section
+              blank if you haven’t taken it or don’t want to use an older score.
+              Scores guide practice difficulty; they do not mark lessons
+              complete.
             </p>
             <div className="mt-3 grid grid-cols-2 gap-4">
               {SUBJECTS.map((subject) => (
@@ -221,157 +319,81 @@ export function AccountForm({
                       setScores({ ...scores, [subject]: e.target.value })
                     }
                     placeholder="Not taken"
-                    className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
+                    className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-base focus:border-brand"
                   />
                 </div>
               ))}
             </div>
           </fieldset>
 
-          <div>
-            <label
-              className="mb-1 block text-sm font-medium"
-              htmlFor="targetScore"
-            >
-              Target score for each section
-            </label>
-            <input
-              id="targetScore"
-              type="number"
-              min={1}
-              max={36}
-              required
-              value={targetScore}
-              onChange={(e) => setTargetScore(e.target.value)}
-              className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
-            />
-          </div>
-          <div>
-            <label
-              className="mb-1 block text-sm font-medium"
-              htmlFor="studyMinutes"
-            >
-              Daily study time
-            </label>
-            <select
-              id="studyMinutes"
-              value={minutes}
-              onChange={(e) => setMinutes(Number(e.target.value))}
-              className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm"
-            >
-              {[60, 75, 90].map((n) => (
-                <option key={n} value={n}>
-                  {n} minutes
-                </option>
-              ))}
-            </select>
-            <p className="mt-1 text-sm text-ink-soft">
-              Lessons share this time. Formula review is extra and can wait
-              until after lessons. New plans adjust lesson time to keep the full
-              session within two hours. Unfinished work carries forward.
+          <section
+            className="border-t border-border pt-5 space-y-2"
+            aria-labelledby="planning-method-title"
+          >
+            <h2 id="planning-method-title" className="text-base font-semibold">
+              How the plan works
+            </h2>
+            <p className="text-sm leading-relaxed text-ink-soft">
+              Daily study covers the full curriculum in English, Math, and
+              Reading, plus Science when selected. Starting scores and recorded
+              timed official score checks guide difficulty and subject time.
+              Saved mistakes guide review, and new lessons continue from the
+              last saved place.
             </p>
-          </div>
-          <div>
-            <label
-              className="mb-1 block text-sm font-medium"
-              htmlFor="testDate"
-            >
-              Test date
-            </label>
-            <input
-              id="testDate"
-              type="date"
-              required
-              value={testDate}
-              onChange={(e) => setTestDate(e.target.value)}
-              className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm outline-none focus:border-brand"
-            />
-          </div>
-          <details className="border-t border-border pt-2">
-            <summary className="min-h-11 cursor-pointer py-3 text-sm font-semibold">
-              More study preferences
-            </summary>
-            <fieldset className="space-y-3 pt-4">
-              <legend className="text-sm font-semibold">
-                Focus your review
-              </legend>
-              <label htmlFor="mathFocus" className="block text-sm font-medium">
-                Math priorities
-              </label>
-              <select
-                id="mathFocus"
-                value={mathFocus}
-                onChange={(e) => setMathFocus(e.target.value)}
-                className="min-h-11 w-full rounded-lg border border-border bg-bg px-3 py-2 text-sm"
-              >
-                <option value="auto">
-                  Use my score · geometry and trig first at 32+
-                </option>
-                <option value="geometry-trig">Geometry and trig first</option>
-                <option value="all">All math topics in order</option>
-              </select>
-              <p className="text-sm text-ink-soft">
-                {geometryFirst({
-                  ...initial.study_settings,
-                  scores: {
-                    ...initial.study_settings.scores,
-                    math: scores.math ? Number(scores.math) : null,
-                  },
-                  mathFocus:
-                    mathFocus === "auto"
-                      ? undefined
-                      : (mathFocus as StudySettings["mathFocus"]),
-                })
-                  ? "Prioritize diagrams, circle rules, similarity, exact trig, and choosing the right setup."
-                  : "Work through every topic, with missed concepts returning for review."}
+          </section>
+          {hasCustomStudyPreferences(initial.study_settings) && (
+            <details className="border-t border-border pt-2">
+              <summary className="min-h-11 cursor-pointer py-3 text-sm font-semibold">
+                Previously saved plan preferences
+              </summary>
+              <p className="text-sm leading-relaxed text-ink-soft">
+                These earlier choices still apply to this account. Keeping them
+                preserves the current plan preferences. Standard planning
+                includes the full course and uses all entered scores.
               </p>
-              <p className="text-sm font-medium">Already covered with Desmos</p>
-              <p className="text-sm text-ink-soft">
-                Check only topics you can reliably set up and solve. These leave
-                upcoming daily plans; lessons, extra drills, and full tests stay
-                available.
-              </p>
-              {DESMOS_TOPICS.map((topic) => (
-                <label
-                  key={topic}
-                  className="flex min-h-11 items-center gap-3 text-sm"
-                >
-                  <input
-                    type="checkbox"
-                    checked={coveredTopics.includes(topic)}
-                    onChange={(e) =>
-                      setCoveredTopics(
-                        e.target.checked
-                          ? [...coveredTopics, topic]
-                          : coveredTopics.filter((item) => item !== topic),
+              <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-ink-soft">
+                {initial.study_settings.mathFocus === "geometry-trig" && (
+                  <li>Geometry and trigonometry are prioritized in Math.</li>
+                )}
+                {!!initial.study_settings.mathCoveredTopics?.length && (
+                  <li>
+                    Excluded from upcoming Math lessons:{" "}
+                    {initial.study_settings.mathCoveredTopics
+                      .map(
+                        (topic) =>
+                          ({
+                            "math-algebra": "Algebra",
+                            "math-functions": "Functions",
+                            "math-essential-skills": "Essential skills",
+                            "math-modeling": "Modeling",
+                          })[topic] ?? topic,
                       )
-                    }
-                  />
-                  {
-                    {
-                      "math-algebra": "Algebra",
-                      "math-functions": "Functions",
-                      "math-essential-skills": "Ratios, units, and rates",
-                      "math-modeling": "Word problems and modeling",
-                    }[topic]
-                  }
-                </label>
-              ))}
-              <label className="flex min-h-11 items-center gap-3 text-sm">
+                      .join(", ")}
+                    . These exclusions are separate from completed lessons.
+                  </li>
+                )}
+                {initial.study_settings.scienceScoreRepresentative ===
+                  false && (
+                  <li>The saved Science score is excluded from planning.</li>
+                )}
+              </ul>
+              <label className="mt-4 flex min-h-11 items-center gap-3 text-sm font-medium">
                 <input
                   type="checkbox"
-                  checked={scienceRepresentative}
-                  onChange={(e) => setScienceRepresentative(e.target.checked)}
+                  checked={useStandardPlanning}
+                  onChange={(event) =>
+                    setUseStandardPlanning(event.target.checked)
+                  }
+                  className="h-5 w-5 shrink-0"
                 />
-                My Science score reflects a serious attempt
+                Use standard planning after saving
               </label>
-              <p className="text-sm text-ink-soft">
-                If unchecked, keep the score on record but don’t use it to
-                assign extra remedial work. Start with evidence, test strategy,
-                and your actual practice mistakes.
+              <p className="text-sm leading-relaxed text-ink-soft">
+                This changes future lesson selection. It does not erase answers,
+                completed lessons, scores, or the active session.
               </p>
-            </fieldset>
-          </details>
+            </details>
+          )}
           {error && (
             <p role="alert" className="text-sm text-bad">
               {error}
@@ -379,18 +401,19 @@ export function AccountForm({
           )}
           {saved && !error && (
             <p role="status" className="text-sm text-good">
-              Saved. Subject changes apply to your next daily session.
+              Saved. Your next session will use this plan. Existing progress is
+              kept.
             </p>
           )}
           <Button type="submit" disabled={loading} className="w-full">
             {loading
               ? "Saving…"
               : variant === "onboarding"
-                ? "Start my plan"
+                ? "Start daily study"
                 : "Save changes"}
           </Button>
         </form>
-      </Card>
+      </div>
     </div>
   );
 }

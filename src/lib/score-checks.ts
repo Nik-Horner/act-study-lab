@@ -1,4 +1,8 @@
-import { SUBJECTS, type AccountSubject } from "./account-settings";
+import {
+  SUBJECTS,
+  type AccountSubject,
+  type StudySettings,
+} from "./account-settings";
 import { dailyDate } from "./daily-date";
 
 export const SCORE_CHECK_EXAM_ID = "readiness:score";
@@ -144,4 +148,35 @@ export function scoreCheckEvidence(
       ];
     }),
   ) as Record<AccountSubject, { checks: ScoreCheck[]; targetHits: number }>;
+}
+
+/** The latest eligible score remains the baseline; recency gates readiness, not learning. */
+export function scoreCheckPlanning(
+  settings: StudySettings,
+  checks: ScoreCheck[],
+  today = dailyDate(),
+): StudySettings {
+  const eligible = checks
+    .filter(
+      (check) =>
+        check.official &&
+        check.timed &&
+        check.firstAttempt &&
+        check.date <= today,
+    )
+    .sort(
+      (a, b) =>
+        b.date.localeCompare(a.date) ||
+        b.recordedAt.localeCompare(a.recordedAt),
+    );
+  return {
+    ...settings,
+    scores: Object.fromEntries(
+      SUBJECTS.map((subject) => [
+        subject,
+        eligible.find((check) => check.subject === subject)?.score ??
+          settings.scores[subject],
+      ]),
+    ) as StudySettings["scores"],
+  };
 }

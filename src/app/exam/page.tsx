@@ -1,7 +1,7 @@
+import { StudyPageHeader } from "@/components/StudyPageHeader";
 import Link from "next/link";
 import { Badge } from "@/components/ui/Badge";
-import { ButtonLink } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
+import { StudyIcon } from "@/components/StudyIcon";
 import { getExam as getEnglishExam, type ExamId } from "@/lib/content";
 import { getExams, SUBJECT_LABELS } from "@/lib/act/content";
 import { createClient } from "@/lib/supabase/server";
@@ -51,14 +51,11 @@ export default async function ExamIndexPage() {
     : { data: null, error: null };
   return (
     <div className="mx-auto max-w-5xl space-y-10">
-      <div>
-        <h1 className="text-2xl font-bold">Digital practice sections</h1>
-        <p className="mt-2 max-w-2xl text-ink-soft">
-          Practice each enhanced ACT subject at its full section length.
-          Original training questions, saved results, and explanations after you
-          finish.
-        </p>
-      </div>
+      <StudyPageHeader
+        title="Timed practice sections"
+        description="Rehearse the enhanced ACT at full section length. Original questions, saved results, and explanations after submission."
+        back={{ href: "/practice", label: "All practice" }}
+      />
       {sections.map((section) => (
         <section
           key={section.label}
@@ -75,22 +72,23 @@ export default async function ExamIndexPage() {
               {section.exams[0].total} questions · {section.minutes} minutes
             </span>
           </div>
-          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+          <div className="exam-form-list">
             {section.exams.map((exam) => (
-              <Card key={exam.id} className="flex flex-col justify-between p-6">
+              <Link
+                key={exam.id}
+                href={`/exam/${exam.id}`}
+                className="exam-form-row"
+              >
                 <div>
-                  <h3 className="font-semibold">{exam.title}</h3>
-                  <p className="mt-2 text-sm text-ink-soft">
+                  <h3>{exam.title}</h3>
+                  <p>
                     {exam.total} questions · {section.minutes} minutes
                   </p>
                 </div>
-                <ButtonLink
-                  href={`/exam/${exam.id}`}
-                  className="mt-5 self-start"
-                >
-                  Start section
-                </ButtonLink>
-              </Card>
+                <span>
+                  Start section <StudyIcon name="arrow" size={18} />
+                </span>
+              </Link>
             ))}
           </div>
         </section>

@@ -1,4 +1,14 @@
 import { DailyStudy } from "@/components/DailyStudy";
-export default function DailyPage() {
-  return <DailyStudy runner />;
+export default async function DailyPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ view?: string | string[] }>;
+}) {
+  const { view } = await searchParams;
+  return (
+    <DailyStudy
+      runner
+      initialView={view === "formulas" ? "formulas" : "lesson"}
+    />
+  );
 }

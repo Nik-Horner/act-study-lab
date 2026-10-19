@@ -1,5 +1,5 @@
 import { createClient } from "@/lib/supabase/server";
-import { readStudySettings } from "@/lib/account-settings";
+import { readStudySettings, hasSavedStudyTime } from "@/lib/account-settings";
 import { AccountForm } from "@/components/AccountForm";
 import { DailyStudy } from "@/components/DailyStudy";
 export default async function DashboardPage() {
@@ -29,6 +29,7 @@ export default async function DashboardPage() {
             user.user_metadata,
             profile?.current_score ?? null,
           ),
+          study_time_set: hasSavedStudyTime(user.user_metadata),
         }}
       />
     );

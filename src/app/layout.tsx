@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Mona_Sans, Geist_Mono } from "next/font/google";
 import { TopNav } from "@/components/TopNav";
 import "katex/dist/katex.min.css";
 import "./globals.css";
+import "./workspaces.css";
+import "./campaign.css";
 
-const geistSans = Geist({
+const geistSans = Mona_Sans({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
@@ -26,17 +28,20 @@ const THEME_INIT_SCRIPT = `
 (function () {
   try {
     var stored = localStorage.getItem("theme");
-    if (stored === "light" || stored === "dark") {
-      document.documentElement.setAttribute("data-theme", stored);
-    }
+    document.documentElement.setAttribute("data-theme", stored === "dark" ? "dark" : "light");
   } catch (e) {}
 })();
 `;
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="en"
+      data-theme="light"
       // data-theme is set by the inline script below, outside of React's
       // render — suppress the (expected, harmless) attribute mismatch warning.
       suppressHydrationWarning
@@ -46,20 +51,16 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
       </head>
       <body className="min-h-full flex flex-col">
+        <a href="#main-content" className="skip-link">
+          Skip to content
+        </a>
         <TopNav />
-        <main className="mx-auto w-full max-w-6xl flex-1 px-5 py-8">
+        <main id="main-content" className="site-main" tabIndex={-1}>
           {children}
         </main>
-        <footer className="border-t border-border py-6 text-center text-xs text-ink-faint">
-          Built by{" "}
-          <a
-            href="https://github.com/Nik-Horner"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex min-h-11 items-center hover:text-ink-soft"
-          >
-            Nik Horner
-          </a>
+        <footer className="site-footer">
+          <span>ACT Study Lab</span>
+          <span>Lessons · Practice · Review</span>
         </footer>
       </body>
     </html>

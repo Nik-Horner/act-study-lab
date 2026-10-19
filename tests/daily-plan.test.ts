@@ -113,7 +113,7 @@ test("larger-budget coverage preserves an already saved session on the final stu
   );
   assert.equal(
     dailyCoverage(saved, original, course, saved.date, false).requiredMinutes,
-    90,
+    105,
   );
 });
 test("Reading skills have distinct titles and explicitly matched Daily teaching", () => {

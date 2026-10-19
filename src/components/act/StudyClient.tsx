@@ -1,8 +1,10 @@
 "use client";
 import { DesmosPanel } from "./DesmosPanel";
 import { QuestionPacing } from "../QuestionPacing";
-import { LessonSections } from "../LessonSections";
-import { MathText } from "../MathText";
+import { TopicReference } from "../TopicReference";
+import { SessionIntro } from "../SessionIntro";
+import { StudyWorkspace } from "../StudyWorkspace";
+import { PracticeRecovery } from "../PracticeRecovery";
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
@@ -20,17 +22,12 @@ import type { Subject, Question } from "@/lib/act/types";
 import {
   useProgress,
   getTopicStats,
-  subjectBaseline,
-  masteryRequirements,
   recordAnswer,
-  setPlanTaskComplete,
   type StudyState,
   type AnswerRecord,
   retryPending,
 } from "@/lib/act/progress";
-import { buildStudyPlan, localDate } from "@/lib/act/plan";
-import { daysUntil } from "@/lib/format";
-import { practiceStage, selectPracticeSet } from "@/lib/act/practice-queue";
+import { selectPracticeSet } from "@/lib/act/practice-queue";
 import { practiceForMisses } from "@/lib/act/question-method";
 import { getLearningSkill, getLearningSkills } from "@/lib/learning-skills";
 import { SkillCatalog } from "../SkillCatalog";
@@ -39,8 +36,8 @@ import { seenPassages } from "@/lib/act/question-exposure";
 import { Card } from "../ui/Card";
 import { Button, ButtonLink } from "../ui/Button";
 import { Badge } from "../ui/Badge";
-import { ProgressBar } from "../ui/ProgressBar";
-import { SubjectNav } from "../SubjectNav";
+import { SubjectOverview } from "../SubjectOverview";
+import { StudyPageHeader } from "../StudyPageHeader";
 import { QuestionView } from "./QuestionView";
 import { useQuestionNavigation } from "./useQuestionNavigation";
 function Loading() {
@@ -115,417 +112,33 @@ function topicStats(state: StudyState, slug: string) {
   );
 }
 export function Dashboard({ subjectOverride }: { subjectOverride?: Subject }) {
-  const { state, ready, update, storageError, userId } = useProgress();
+  const { state, ready, storageError, userId } = useProgress();
   const searchSubject = useSearchParams().get("subject");
   const subject = asSubject(subjectOverride ?? searchSubject ?? undefined);
-  const [currentDate, setCurrentDate] = useState(() => localDate(new Date()));
-  useEffect(() => {
-    const refreshDate = () => setCurrentDate(localDate(new Date()));
-    const interval = window.setInterval(refreshDate, 30_000);
-    window.addEventListener("focus", refreshDate);
-    document.addEventListener("visibilitychange", refreshDate);
-    return () => {
-      window.clearInterval(interval);
-      window.removeEventListener("focus", refreshDate);
-      document.removeEventListener("visibilitychange", refreshDate);
-    };
-  }, []);
   if (!ready) return <Loading />;
   if (!userId) return <AccountUnavailable error={storageError} />;
-  const topics = getTopics(subject),
-    stats = topics.map((t) => topicStats(state, t.slug)),
-    mastered = stats.filter((s) => s.mastered).length;
-  const misses = stats.flatMap((s) => s.unresolvedIds).length;
-  const { days: plan, deferred } = buildStudyPlan(
-    state.profile.testDate,
-    state.profile.minutesPerDay,
-    {
-      startDate: state.planStartDate,
-      completedTaskIds: state.planChecks,
-      completionDates: state.planCheckDates,
-    },
-    new Date(`${currentDate}T12:00:00`),
-    subject === "reading" ? "reading" : "math-science",
-  );
-  const today = plan.find((d) => d.isToday);
-  function markTask(id: string, complete: boolean) {
-    const date = localDate(new Date());
-    setCurrentDate(date);
-    update((current) => setPlanTaskComplete(current, id, complete, date));
-  }
-  const baseline = subjectBaseline(state.profile, subject);
-  const testDate = new Date(
-    state.profile.testDate + "T12:00:00",
-  ).toLocaleDateString("en-US", { month: "long", day: "numeric" });
+  const topics = getTopics(subject).map((topic) => {
+    const stats = topicStats(state, topic.slug);
+    return {
+      ...topic,
+      attempts: stats.practiced,
+      accuracy: stats.accuracy,
+      milestone: stats.mastered,
+    };
+  });
   return (
-    <div className="mx-auto max-w-5xl space-y-8">
+    <>
       <StorageNotice error={storageError} />
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <SubjectNav subject={subject} />
-        <Link
-          href="/account"
-          className="text-sm text-ink-soft transition-colors hover:text-brand"
-        >
-          {state.profile.minutesPerDay} min/day · Edit plan
-        </Link>
-        {subject === "math" && (
-          <Link
-            href="/learn/math-formulas"
-            className="text-sm text-brand underline"
-          >
-            Formulas and methods
-          </Link>
-        )}
-      </div>
-      <Card className="flex flex-wrap items-center justify-between gap-6 p-6 sm:p-7">
-        <div className="max-w-lg">
-          <h1 className="text-2xl font-bold tracking-tight">
-            {subject === "math"
-              ? `Close the gap${baseline === null ? "" : ` from ${baseline}`} to ${state.profile.targetScore ?? 36}.`
-              : `Build the ${SUBJECT_LABELS[subject]} score you came for.`}
-          </h1>
-          <p className="mt-2 text-sm leading-relaxed text-ink-soft">
-            {subject === "math"
-              ? "Target the hard questions, protect your pacing, and catch avoidable mistakes."
-              : subject === "reading"
-                ? "Read for structure, prove each answer, and keep your passage pacing steady."
-                : "Read the data precisely, test the evidence, and practice deciding under time pressure."}
-          </p>
-        </div>
-        <dl className="grid w-full grid-cols-3 gap-5 border-t border-border pt-5 study-data sm:w-auto sm:min-w-64 sm:border-t-0 sm:pt-0">
-          <div>
-            <dt className="text-xs text-ink-soft">Days to {testDate}</dt>
-            <dd className="mt-1 text-3xl font-bold text-brand">
-              {daysUntil(state.profile.testDate)}
-            </dd>
-          </div>
-          <div>
-            <dt className="text-xs text-ink-soft">Previous score</dt>
-            <dd className="mt-1 text-3xl font-bold text-ink-soft">
-              {baseline ?? "—"}
-            </dd>
-          </div>
-          <div>
-            <dt className="text-xs text-ink-soft">Target score</dt>
-            <dd className="mt-1 text-3xl font-bold">
-              {state.profile.targetScore ?? 36}
-            </dd>
-          </div>
-        </dl>
-      </Card>
-      <Card className="flex flex-wrap items-center gap-5 p-5 sm:p-6">
-        <div className="min-w-32">
-          <p className="text-xl font-bold study-data">
-            {mastered}/{topics.length}
-          </p>
-          <p className="text-xs text-ink-soft">Topics mastered in practice</p>
-        </div>
-        <ProgressBar
-          percent={(mastered / topics.length) * 100}
-          tone="good"
-          className="min-w-28 flex-1"
-        />
-        <div className="flex w-full flex-wrap gap-2 lg:w-auto">
-          <ButtonLink size="sm" href={`/learn?subject=${subject}`}>
-            Browse {SUBJECT_LABELS[subject]} skill course
-          </ButtonLink>
-          <ButtonLink
-            size="sm"
-            variant="ghost"
-            href={`/drill/mixed?subject=${subject}`}
-          >
-            Mixed diagnostic
-          </ButtonLink>
-          <ButtonLink
-            size="sm"
-            href={`/drill/misses?subject=${subject}`}
-            variant="ghost"
-          >
-            Review misses{misses > 0 ? ` (${misses})` : ""}
-          </ButtonLink>
-          <ButtonLink
-            size="sm"
-            href={`/drill/weak?subject=${subject}`}
-            variant="ghost"
-          >
-            Drill weak topics
-          </ButtonLink>
-          <ButtonLink size="sm" href="/exam" variant="ghost">
-            Timed sections
-          </ButtonLink>
-        </div>
-      </Card>
-      <section>
-        <div className="mb-3 flex items-baseline justify-between gap-3">
-          <h2 className="section-label">
-            {today ? `Today · ${today.label}` : "Your next step"}
-          </h2>
-          {today && (
-            <span className="text-xs text-ink-soft">
-              {
-                today.items.filter((i) => state.planChecks.includes(i.id))
-                  .length
-              }
-              /{today.items.length} complete
-            </span>
-          )}
-        </div>
-        {today && (
-          <p className="mb-3 text-sm text-ink-soft">
-            Unfinished work carries forward within your daily limit of{" "}
-            {state.profile.minutesPerDay} minutes. Mark tasks complete when you
-            finish them.
-          </p>
-        )}
-        {today ? (
-          <Card className="divide-y divide-border px-5 sm:px-6">
-            {today.items.map((item) => {
-              const checked = state.planChecks.includes(item.id);
-              return (
-                <div key={item.id} className="flex items-center gap-3 py-2">
-                  <label className="flex min-h-11 min-w-11 shrink-0 cursor-pointer items-center justify-center rounded-lg hover:bg-bg-raised">
-                    <input
-                      id={item.id}
-                      type="checkbox"
-                      checked={checked}
-                      aria-label={`Mark complete: ${item.title}`}
-                      className="h-4 w-4 shrink-0"
-                      onChange={(event) =>
-                        markTask(item.id, event.target.checked)
-                      }
-                    />
-                  </label>
-                  <Link
-                    href={item.href}
-                    className={`group flex min-w-0 flex-1 items-center justify-between gap-3 text-sm ${checked ? "text-ink-soft" : "text-ink"}`}
-                  >
-                    <span
-                      className={
-                        checked ? "line-through" : "group-hover:text-brand"
-                      }
-                    >
-                      {item.title}
-                      {item.id.slice(0, 10) < today.date && (
-                        <span className="mt-1 block text-xs text-ink-soft">
-                          Carried forward from{" "}
-                          {new Date(
-                            `${item.id.slice(0, 10)}T12:00:00`,
-                          ).toLocaleDateString("en-US", {
-                            month: "short",
-                            day: "numeric",
-                          })}
-                        </span>
-                      )}
-                    </span>
-                    <span className="flex shrink-0 items-center gap-3 text-ink-soft">
-                      <span className="study-data text-xs">
-                        {item.minutes} min
-                      </span>
-                      <Arrow />
-                    </span>
-                  </Link>
-                </div>
-              );
-            })}
-            {today.items.length === 0 && (
-              <p className="py-5 text-sm text-ink-soft">
-                Today’s work is complete. Your next session is in the full plan
-                below.
-              </p>
-            )}
-          </Card>
-        ) : (
-          <Card className="p-6 text-sm text-ink-soft">
-            <p>
-              {daysUntil(state.profile.testDate) === 0
-                ? "Test day: use the familiar tools, read axes and units, and leave time to check flagged questions."
-                : "Open a mixed set to identify what needs work, then review every miss."}
-            </p>
-          </Card>
-        )}
-      </section>
-      <section>
-        <div className="mb-3 flex items-baseline justify-between gap-3">
-          <h2 className="section-label">{SUBJECT_LABELS[subject]} topics</h2>
-          <span className="text-xs text-ink-soft">
-            {getLearningSkills(undefined, subject).length} skills ·{" "}
-            {getQuestions().filter((q) => q.subject === subject).length}{" "}
-            practice questions
-          </span>
-        </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {topics.map((t, i) => {
-            const s = stats[i];
-            return (
-              <Link
-                key={t.slug}
-                href={`/learn/${t.slug}`}
-                className="group rounded-2xl"
-              >
-                <Card className="flex h-full flex-col p-4 transition-colors group-hover:border-brand">
-                  <h3 className="text-sm font-semibold">
-                    {t.num}. {t.title}
-                  </h3>
-                  <p className="mt-1 min-h-9 text-xs leading-relaxed text-ink-soft">
-                    {t.blurb}
-                  </p>
-                  <ProgressBar
-                    percent={Math.min(100, (s.practiced / 6) * 100)}
-                    tone={s.mastered ? "good" : "brand"}
-                    className="mt-4"
-                  />
-                  <p className="mt-2 text-xs text-ink-soft">
-                    {s.practiced} questions practiced
-                    {s.practiced > s.unique &&
-                      " · Includes your prior lesson practice. New skills still need separate practice."}
-                  </p>
-                  <div className="mt-3 flex flex-wrap items-center justify-between gap-2">
-                    <Badge
-                      tone={
-                        s.mastered
-                          ? "good"
-                          : s.practiced > 0
-                            ? "brand"
-                            : "neutral"
-                      }
-                    >
-                      {s.mastered
-                        ? "Mastered"
-                        : s.practiced > 0
-                          ? "Practicing"
-                          : "Not started"}
-                    </Badge>
-                    <span className="text-xs text-ink-soft study-data">
-                      {s.accuracy === null ? (
-                        <Arrow />
-                      ) : (
-                        `${Math.round(s.accuracy * 100)}% accuracy`
-                      )}
-                    </span>
-                  </div>
-                </Card>
-              </Link>
-            );
-          })}
-        </div>
-        <details className="mt-4 text-xs leading-relaxed text-ink-soft">
-          <summary className="w-fit cursor-pointer hover:text-ink">
-            How practice mastery works
-          </summary>
-          <p className="mt-2 max-w-2xl">
-            For your target of {state.profile.targetScore ?? 36}: at least{" "}
-            {masteryRequirements(state.profile.targetScore ?? 36).questions}{" "}
-            independent questions,{" "}
-            {Math.round(
-              masteryRequirements(state.profile.targetScore ?? 36).accuracy *
-                100,
-            )}
-            % accuracy, and{" "}
-            {masteryRequirements(state.profile.targetScore ?? 36).hard} hard
-            questions correct
-            {subject === "reading"
-              ? ". Reading speed is checked in timed sections."
-              : " at section pace."}{" "}
-            Worked examples, quick checks, and corrected repeats do not supply
-            fresh evidence. Use two different official timed forms to check your
-            score goal.
-          </p>
-        </details>
-      </section>
-      <details className="rounded-2xl border border-border bg-bg-soft shadow-[var(--shadow-card)]">
-        <summary className="cursor-pointer px-5 py-4 font-semibold sm:px-6">
-          {subject === "reading" ? "Reading" : "Math + Science"} plan to{" "}
-          {testDate}
-          <span className="ml-3 text-xs font-normal text-ink-soft">
-            {plan.length} study days
-          </span>
-        </summary>
-        <div className="divide-y divide-border border-t border-border">
-          {plan.map((day) => (
-            <div
-              className={`flex flex-wrap gap-3 px-5 py-4 sm:px-6 ${day.isToday ? "bg-brand-soft" : ""}`}
-              key={day.date}
-            >
-              <div className="w-full shrink-0 sm:w-28">
-                <h3 className="text-sm font-semibold">
-                  {day.label}
-                  {day.isToday ? " · Today" : ""}
-                </h3>
-                <p className="mt-1 text-xs text-ink-soft">
-                  {day.items.reduce((n, i) => n + i.minutes, 0)} min
-                </p>
-              </div>
-              <div className="flex-1 space-y-2">
-                {day.items.map((item) => (
-                  <Link
-                    href={item.href}
-                    className="block text-sm text-ink-soft hover:text-brand hover:underline"
-                    key={item.id}
-                  >
-                    {item.title}
-                  </Link>
-                ))}
-              </div>
-              <span className="text-xs text-ink-soft">
-                {
-                  day.items.filter((i) => state.planChecks.includes(i.id))
-                    .length
-                }
-                /{day.items.length} done
-              </span>
-            </div>
-          ))}
-        </div>
-      </details>
-      {deferred.length > 0 && (
-        <details className="rounded-2xl border border-border bg-bg-soft shadow-[var(--shadow-card)]">
-          <summary className="cursor-pointer px-5 py-4 font-semibold sm:px-6">
-            Remaining work beyond available time
-            <span className="ml-3 text-xs font-normal text-ink-soft">
-              {
-                deferred.filter((item) => !state.planChecks.includes(item.id))
-                  .length
-              }{" "}
-              unfinished tasks
-            </span>
-          </summary>
-          <div className="border-t border-border px-5 py-4 sm:px-6">
-            <p className="mb-3 text-sm leading-relaxed text-ink-soft">
-              These tasks cannot currently fit before {testDate} at{" "}
-              {state.profile.minutesPerDay} minutes per day. Your test date
-              stays fixed and the day before stays light. They remain here if
-              you choose to do extra work.
-            </p>
-            <div className="divide-y divide-border">
-              {deferred.map((item) => (
-                <div key={item.id} className="flex items-center gap-3 py-2">
-                  <label className="flex min-h-11 min-w-11 shrink-0 cursor-pointer items-center justify-center rounded-lg hover:bg-bg-raised">
-                    <input
-                      type="checkbox"
-                      checked={state.planChecks.includes(item.id)}
-                      aria-label={`Mark complete: ${item.title}`}
-                      className="h-4 w-4"
-                      onChange={(event) =>
-                        markTask(item.id, event.target.checked)
-                      }
-                    />
-                  </label>
-                  <Link
-                    href={item.href}
-                    className={`min-w-0 flex-1 text-sm hover:text-brand ${state.planChecks.includes(item.id) ? "text-ink-soft line-through" : "text-ink"}`}
-                  >
-                    {item.title}
-                  </Link>
-                  <span className="shrink-0 text-xs text-ink-soft study-data">
-                    {item.minutes} min
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </details>
-      )}
-    </div>
+      <SubjectOverview
+        subject={subject}
+        topics={topics}
+        skillCount={getLearningSkills(undefined, subject).length}
+        questions={
+          getQuestions().filter((question) => question.subject === subject)
+            .length
+        }
+      />
+    </>
   );
 }
 export function LessonView({
@@ -544,18 +157,16 @@ export function LessonView({
   if (skill) return <SkillLesson skill={skill} full={full} />;
   if (skills.length && !reference)
     return (
-      <div className="mx-auto max-w-5xl space-y-7">
-        <Link
-          href={`/learn?subject=${topic.subject}`}
-          className="inline-flex min-h-11 items-center text-sm text-brand underline"
-        >
-          All {SUBJECT_LABELS[topic.subject]} skills by ACT category
-        </Link>
-        <h1 className="text-3xl font-semibold">{full.title}</h1>
-        <p className="text-ink-soft">
-          Choose a specific method. Learn it, try a different example, then
-          drill the same skill.
-        </p>
+      <div className="course-workspace" data-subject={topic.subject}>
+        <StudyPageHeader
+          title={full.title}
+          subject={topic.subject}
+          description="Choose a focused method. Each skill uses the same sequence: understand, worked example, guided check, and independent practice."
+          back={{
+            href: `/learn?subject=${topic.subject}`,
+            label: `${SUBJECT_LABELS[topic.subject]} course`,
+          }}
+        />
         <SkillCatalog skills={skills} />
         <ButtonLink variant="ghost" href={`/learn/${slug}?reference=1`}>
           Read the complete topic reference
@@ -566,109 +177,17 @@ export function LessonView({
     ...full,
     sections: full.sections.filter((section) => !section.skillId),
   };
-  const contents = (
-    <>
-      {lesson.sections.map((s, i) => (
-        <a
-          href={`#lesson-section-${i}`}
-          key={i}
-          className="flex min-h-11 items-center gap-3 rounded-lg px-3 py-2 text-sm leading-snug text-ink-soft hover:bg-bg-raised hover:text-ink"
-        >
-          <span className="study-data text-xs text-ink-faint">{i + 1}</span>
-          <span>{s.heading.replace(/^\d+\.\s*/, "")}</span>
-        </a>
-      ))}
-      <a
-        href="#lesson-check"
-        className="mt-2 flex min-h-11 items-center rounded-lg px-3 py-2 text-sm font-semibold text-brand hover:bg-brand-soft"
-      >
-        Quick check · 3 questions
-      </a>
-    </>
-  );
   return (
-    <div className="mx-auto max-w-5xl space-y-8">
-      <Link href={`/study/${topic.subject}`} className="back-link">
-        <Arrow back />
-        Back to {SUBJECT_LABELS[topic.subject]}
-      </Link>
-      <header className="max-w-3xl">
-        <h1 className="text-3xl font-bold tracking-tight">{lesson.title}</h1>
-        <div className="mt-3 flex flex-wrap gap-2">
-          <Badge tone="brand">{topic.category}</Badge>
-          <Badge>{SUBJECT_LABELS[topic.subject]}</Badge>
-        </div>
-        <p className="prose-study mt-3 text-ink-soft">
-          <MathText>{lesson.intro}</MathText>
-        </p>
-      </header>
-      {(topic.subject === "math" || topic.subject === "science") && (
-        <DesmosPanel subject={topic.subject} />
-      )}
-      {topic.subject === "math" && (
-        <Link
-          href={`/learn/math-formulas#${topic.slug}`}
-          className="inline-block min-h-11 text-sm text-brand underline"
-        >
-          Formulas, conditions, and worked methods for this topic
-        </Link>
-      )}
-      <details className="rounded-xl border border-border bg-bg-soft px-4 py-3 lg:hidden">
-        <summary className="cursor-pointer text-sm font-semibold">
-          In this lesson
-        </summary>
-        <nav aria-label="Lesson contents" className="mt-3">
-          {contents}
-        </nav>
-      </details>
-      <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_14rem]">
-        <article className="min-w-0 space-y-10">
-          <LessonSections sections={lesson.sections} />
-        </article>
-        <aside className="hidden lg:block">
-          <div className="sticky top-8 border-l border-border pl-5">
-            <h2 className="mb-3 px-3 text-sm font-semibold">In this lesson</h2>
-            <nav aria-label="Lesson contents">{contents}</nav>
-            <ButtonLink
-              href={`/drill/${slug}`}
-              className="mt-5 w-full"
-              size="sm"
-            >
-              Drill this topic
-            </ButtonLink>
-          </div>
-        </aside>
-      </div>
-      <section
-        id="lesson-check"
-        className="scroll-mt-8 border-t border-border pt-8"
-      >
-        <h2 className="mb-2 text-xl font-semibold">Quick check</h2>
-        <p className="mb-5 text-sm text-ink-soft">
-          Apply the lesson, then read the reasoning behind each answer.
-        </p>
-        <PracticeSet
-          key={slug}
-          initialQuestions={lesson.check}
-          title="Lesson check"
-        />
-      </section>
-      <Card className="flex flex-wrap items-center justify-between gap-4 p-6">
-        <div>
-          <h2 className="font-semibold">Ready to drill?</h2>
-          <p className="mt-1 text-sm text-ink-soft">
-            Practice {topic.title} with {getQuestions(slug).length} questions
-            and immediate explanations.
-          </p>
-        </div>
-        <ButtonLink href={`/drill/${slug}`}>
-          Drill this topic
-          <Arrow />
-        </ButtonLink>
-      </Card>
-    </div>
+    <TopicReference subject={topic.subject} lesson={lesson}>
+      <PracticeSet
+        key={slug}
+        initialQuestions={lesson.check}
+        title="Lesson check"
+      />
+    </TopicReference>
   );
 }
+
 function PracticeSet({
   initialQuestions,
   title,
@@ -798,28 +317,22 @@ function PracticeSet({
     if (choice === q.answer) setCorrect((n) => n + 1);
   }
   return (
-    <Card
-      className={`p-5 sm:p-7 ${initialQuestions[index].passage ? "" : "mx-auto max-w-3xl"}`}
+    <StudyWorkspace
+      subject={q.subject}
+      mode="practice"
+      title={title}
+      current={index + 1}
+      total={initialQuestions.length}
+      tools={
+        <>
+          <Badge tone="neutral">{q.difficulty}</Badge>
+          <span>
+            {correct} correct · {sessionRecords.length} answered
+          </span>
+        </>
+      }
     >
       <StorageNotice error={storageError} />
-      <div className="mb-5 border-b border-border pb-5">
-        <div className="flex flex-wrap items-center justify-between gap-3">
-          <p className="text-sm font-semibold">
-            {title} · Question {index + 1}/{initialQuestions.length}
-          </p>
-          <Badge tone="neutral">{q.difficulty}</Badge>
-        </div>
-        <div className="mt-2 flex flex-wrap justify-between gap-2 text-xs text-ink-soft">
-          <span>{getTopic(q.topic)?.title}</span>
-          <span className="study-data">
-            {correct} correct · {sessionRecords.length} reviewed
-          </span>
-        </div>
-        <ProgressBar
-          percent={(sessionRecords.length / initialQuestions.length) * 100}
-          className="mt-4"
-        />
-      </div>
       {(q.subject === "math" || q.subject === "science") && (
         <div className="mb-5">
           <DesmosPanel subject={q.subject} />
@@ -855,6 +368,13 @@ function PracticeSet({
         }}
         revealed={revealed}
       />
+      {revealed && chosen !== q.answer && (
+        <PracticeRecovery
+          key={`${q.id}-recovery`}
+          topic={q.topic}
+          questionId={q.id}
+        />
+      )}
       {!revealed ? (
         <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-border pt-5">
           <label className="text-sm">
@@ -930,7 +450,7 @@ function PracticeSet({
           </Button>
         </div>
       )}
-    </Card>
+    </StudyWorkspace>
   );
 }
 export function DrillView({ slug }: { slug: string }) {
@@ -966,7 +486,15 @@ function DrillSession({
   if (topic && !skill && getLearningSkills(slug).length)
     return (
       <div className="mx-auto max-w-5xl space-y-7">
-        <h1 className="text-3xl font-semibold">Choose a {topic.title} skill</h1>
+        <StudyPageHeader
+          title={`${topic.title} practice`}
+          subject={subject}
+          description="Choose the method to practice. Each set links back to the same focused lesson and worked examples."
+          back={{
+            href: `/study/${subject}`,
+            label: `${SUBJECT_LABELS[subject]} study`,
+          }}
+        />
         <SkillCatalog skills={getLearningSkills(slug)} drill />
       </div>
     );
@@ -1004,17 +532,15 @@ function DrillSession({
     <div
       className={`mx-auto space-y-6 ${subject !== "math" && queue ? "max-w-6xl" : "max-w-5xl"}`}
     >
-      <Link href={`/study/${subject}`} className="back-link">
-        <Arrow back />
-        Back to {SUBJECT_LABELS[subject]}
-      </Link>
-      <header>
-        <h1 className="text-2xl font-bold tracking-tight">{title}</h1>
-        <p className="mt-2 text-sm text-ink-soft">
-          {SUBJECT_LABELS[subject]} · Original practice · Progress saved to your
-          account
-        </p>
-      </header>
+      <StudyPageHeader
+        title={queue ? "Independent practice" : title}
+        subject={subject}
+        description="Independent questions with saved answers, evidence, and method review after each response."
+        back={{
+          href: `/study/${subject}`,
+          label: `${SUBJECT_LABELS[subject]} study`,
+        }}
+      />
       {queue ? (
         <PracticeSet
           key={subject + slug + setNumber}
@@ -1023,66 +549,39 @@ function DrillSession({
           onAnotherSet={start}
         />
       ) : (
-        <Card className="max-w-3xl p-6 sm:p-8">
-          <h2 className="text-lg font-semibold">
-            {slug === "misses"
-              ? "Turn each miss into a corrected habit."
-              : "Work one question at a time."}
-          </h2>
-          <p className="prose-study mt-2 text-sm text-ink-soft">
-            {slug === "misses"
-              ? "Review missed drill questions and solve fresh questions on skills missed in timed sections or older lessons. Original section answers remain in your results."
+        <SessionIntro
+          subject={subject}
+          title={
+            slug === "misses"
+              ? "Repair a missed method"
+              : "Apply the method independently"
+          }
+          description={
+            slug === "misses"
+              ? "Review saved misses, check the reasoning, and use fresh matched questions where the bank allows."
               : skill
-                ? "Practice the method from this lesson on separate questions. New questions and new Reading passages come first."
-                : `${practiceStage(
-                    getQuestions(topic?.slug).filter(
-                      (q) => q.subject === subject,
-                    ),
-                    state,
-                    subject,
-                  )} practice for your target of ${state.profile.targetScore ?? 36}. New questions come first; difficulty adjusts to your baseline and recent independent work.`}
-          </p>
-          <div className="my-6 grid gap-4 border-y border-border py-5 sm:grid-cols-3">
-            <div>
-              <p className="text-sm font-semibold">
-                {topic
-                  ? `Up to 12 questions · ${skill ? skill.questionIds.length : getQuestions(slug).length} available`
-                  : slug === "misses"
-                    ? "Your missed questions"
-                    : "12 focused questions"}
-              </p>
-              <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                {topic ? topic.title : title}
-              </p>
-            </div>
-            <div>
-              <p className="text-sm font-semibold">Immediate explanations</p>
-              <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                Review the evidence after each answer
-              </p>
-            </div>
-            <div>
-              <p className="text-sm font-semibold">Confidence & timing</p>
-              <p className="mt-1 text-xs leading-relaxed text-ink-soft">
-                Find the habits behind your misses
-              </p>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-center gap-3">
-            <Button onClick={start}>
-              Start set
-              <Arrow />
-            </Button>
-            {topic && (
-              <ButtonLink
-                href={`/learn/${topic.slug}${skill ? `?skill=${encodeURIComponent(skill.id)}` : ""}`}
-                variant="ghost"
-              >
-                Review the lesson
-              </ButtonLink>
-            )}
-          </div>
-        </Card>
+                ? "The example and guided check stay in the lesson. This set uses separate questions so the method has to transfer."
+                : "Work across this subject with unseen questions first. Starting difficulty follows saved scores and independent practice."
+          }
+          questions={
+            topic
+              ? `Up to 12 · ${skill ? skill.questionIds.length : getQuestions(slug).length} available`
+              : "Up to 12 focused questions"
+          }
+          timing="At your pace · feedback after each answer"
+        >
+          <Button onClick={start}>
+            Start set <Arrow />
+          </Button>
+          {topic && (
+            <ButtonLink
+              href={`/learn/${topic.slug}${skill ? `?skill=${encodeURIComponent(skill.id)}` : ""}`}
+              variant="ghost"
+            >
+              Review the lesson
+            </ButtonLink>
+          )}
+        </SessionIntro>
       )}
     </div>
   );

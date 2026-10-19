@@ -109,7 +109,8 @@ test("focus settings are account-safe, backward compatible, and reject arbitrary
     readStudySettings({ act_study_settings: settings }, 34),
     settings,
   );
-  assert(geometryFirst(settings));
+  assert(!geometryFirst(settings));
+  assert(geometryFirst({ ...settings, mathFocus: "geometry-trig" }));
   assert(!geometryFirst({ ...settings, mathFocus: "all" }));
   for (const patch of [
     { mathFocus: "bogus" },

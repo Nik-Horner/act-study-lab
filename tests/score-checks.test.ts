@@ -4,6 +4,7 @@ import {
   readScoreCheck,
   scoreCheckEvidence,
   scoreCheckId,
+  scoreCheckPlanning,
   validateScoreCheck,
   type ScoreCheck,
 } from "../src/lib/score-checks";
@@ -106,4 +107,46 @@ test("duplicate forms cannot manufacture two hits and recency includes the last 
   assert.equal(evidence.targetHits, 1);
   assert.equal(evidence.checks[0].score, 34);
   assert.equal(evidence.checks[1].formName, "B");
+});
+
+test("planning uses latest qualifying section evidence without changing stored starting scores", () => {
+  const settings = {
+    scores: { english: 22, math: 18, reading: null, science: 24 },
+    minutesPerDay: 30,
+    includeScience: false,
+    mathFocus: "all" as const,
+  };
+  const before = structuredClone(settings);
+  const planned = scoreCheckPlanning(
+    settings,
+    [
+      check({ score: 31, date: "2026-10-10" }),
+      check({ score: 27, date: "2026-10-11", formName: "newer lower score" }),
+      check({ score: 36, timed: false, formName: "untimed" }),
+      check({ subject: "english", score: 36, firstAttempt: false }),
+      check({ subject: "reading", score: 26 }),
+      check({ subject: "science", score: 36, date: "2026-09-12" }),
+    ],
+    today,
+  );
+  assert.deepEqual(planned.scores, {
+    english: 22,
+    math: 27,
+    reading: 26,
+    science: 36,
+  });
+  assert.equal(planned.minutesPerDay, 30);
+  assert.equal(planned.includeScience, false);
+  assert.deepEqual(settings, before);
+  assert.deepEqual(scoreCheckPlanning(settings, [], today), settings);
+});
+
+test("planning retains an improved measured baseline after the readiness window", () => {
+  const settings = {
+    scores: { english: null, math: 18, reading: null, science: null },
+    minutesPerDay: 30,
+  };
+  const measured = check({ score: 30, date: "2026-09-01" });
+  assert.equal(scoreCheckEvidence([measured], 30, today).math.targetHits, 0);
+  assert.equal(scoreCheckPlanning(settings, [measured], today).scores.math, 30);
 });

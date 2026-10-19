@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import vm from "node:vm";
 import { transpileModule, ScriptTarget } from "typescript";
-
+import DailyPage from "../src/app/daily/page";
 const source = readFileSync(
   new URL("../src/components/DailyStudy.tsx", import.meta.url),
   "utf8",
@@ -16,12 +16,19 @@ const load = source.slice(
   source.indexOf("  async function load("),
   source.indexOf("  useEffect(() => {"),
 );
+const open = source.slice(
+  source.indexOf("  async function openDaily("),
+  source.indexOf("  const step ="),
+);
 const script = transpileModule(
-  `${choice}\n${load}\nglobalThis.choose = chooseFormulaReview; globalThis.reload = load;`,
+  `${choice}\n${load}\n${open}\nglobalThis.choose = chooseFormulaReview; globalThis.reload = load; globalThis.open = openDaily;`,
   { compilerOptions: { target: ScriptTarget.ES2022 } },
 ).outputText;
-
-function learner(storage = new Map<string, string>(), unavailable = false) {
+function learner({
+  view,
+  runner = true,
+  failedSave = false,
+}: { view?: string; runner?: boolean; failedSave?: boolean } = {}) {
   const data = {
     userId: "student-a",
     today: "2026-10-15",
@@ -34,24 +41,25 @@ function learner(storage = new Map<string, string>(), unavailable = false) {
       recalled: 12,
     },
   };
-  const requests: string[] = [];
-  let later = false;
-  let resumed = false;
+  const requests: string[] = [],
+    routes: string[] = [],
+    actions: string[] = [];
+  let later = false,
+    resumed = false;
   const context = vm.createContext({
     data,
-    runner: true,
+    runner,
+    initialView: view,
+    pending: false,
     localStorage: {
-      getItem(key: string) {
-        if (unavailable) throw new Error("Storage unavailable");
-        return storage.get(key) ?? null;
+      getItem() {
+        throw new Error("Storage unavailable");
       },
-      setItem(key: string, value: string) {
-        if (unavailable) throw new Error("Storage unavailable");
-        storage.set(key, value);
+      setItem() {
+        throw new Error("Storage unavailable");
       },
-      removeItem(key: string) {
-        if (unavailable) throw new Error("Storage unavailable");
-        storage.delete(key);
+      removeItem() {
+        throw new Error("Storage unavailable");
       },
     },
     setFormulasLater(value: boolean) {
@@ -67,15 +75,22 @@ function learner(storage = new Map<string, string>(), unavailable = false) {
       resumed = value;
     },
     router: {
-      replace() {
-        assert.fail("A saved learner must not be redirected");
+      push(url: string) {
+        routes.push(url);
       },
+      replace(url: string) {
+        routes.push(url);
+      },
+    },
+    action: async (body: { action: string }) => {
+      actions.push(body.action);
+      return failedSave ? null : data;
     },
     fetch: async (url: string, init?: RequestInit) => {
       assert.equal(
         init?.method,
         undefined,
-        "navigation must not save a rating or complete work",
+        "loading the selected view must not write answers or ratings",
       );
       requests.push(url);
       return Response.json(data);
@@ -85,67 +100,67 @@ function learner(storage = new Map<string, string>(), unavailable = false) {
   return {
     context,
     data,
-    storage,
     requests,
+    routes,
+    actions,
     later: () => later,
     resumed: () => resumed,
   };
 }
-
-test("continuing lessons preserves formula ratings, answers, and unfinished work across reload", async () => {
-  const first = learner();
-  const before = structuredClone(first.data);
-  first.context.choose(true);
-  assert(first.later());
-  assert.deepEqual(first.data, before);
-  assert.deepEqual(first.requests, []);
-
-  const returned = learner(first.storage);
+test("home lesson choice survives a new runner mount with browser storage unavailable", async () => {
+  const home = learner({ runner: false });
+  const before = structuredClone(home.data);
+  await home.context.open("lesson");
+  assert.deepEqual(home.routes, ["/daily?view=lesson"]);
+  assert.deepEqual(home.actions, ["start"]);
+  const view = new URL(home.routes[0], "https://study.test").searchParams.get(
+    "view",
+  )!;
+  const page = await DailyPage({ searchParams: Promise.resolve({ view }) });
+  const mounted = learner({ view: page.props.initialView });
+  await mounted.context.reload();
+  assert(mounted.later(), "new mount must open lessons, not pending formulas");
+  assert(mounted.resumed());
+  assert.deepEqual(mounted.data, before);
+  assert.deepEqual(mounted.requests, ["/api/daily"]);
+});
+test("explicit formula choice survives a new runner mount without changing recall data", async () => {
+  const home = learner({ runner: false });
+  const before = structuredClone(home.data);
+  await home.context.open("formulas");
+  assert.deepEqual(home.routes, ["/daily?view=formulas"]);
+  const page = await DailyPage({
+    searchParams: Promise.resolve({ view: "formulas" }),
+  });
+  const mounted = learner({ view: page.props.initialView });
+  await mounted.context.reload();
+  assert.equal(mounted.later(), false);
+  assert.deepEqual(mounted.data, before);
+  mounted.context.choose(true);
+  assert.deepEqual(mounted.routes, ["/daily?view=lesson"]);
+  const returned = learner({ view: "lesson" });
   await returned.context.reload();
-  assert(
-    returned.later(),
-    "the same student can resume lessons without another formula gate",
-  );
-  assert(returned.resumed());
-  assert.deepEqual(returned.data, before);
-  assert.deepEqual(returned.requests, ["/api/daily"]);
-
-  returned.context.choose(false);
-  assert.equal(
-    returned.later(),
-    false,
-    "explicit review reopens the remaining formulas",
-  );
+  assert(returned.later());
   assert.deepEqual(returned.data.formulas.remaining, ["distance"]);
-  assert.equal(returned.storage.size, 0);
 });
-
-test("formula deferral belongs to this student and this study day", async () => {
-  const first = learner();
-  first.context.choose(true);
-  for (const patch of [{ userId: "student-b" }, { today: "2026-10-16" }]) {
-    const other = learner(first.storage);
-    Object.assign(other.data, patch);
-    await other.context.reload();
-    assert.equal(other.later(), false);
-  }
+test("completed lessons open their saved answers while formulas remain an optional choice", async () => {
+  const home = learner({ runner: false });
+  home.data.plan.complete = true;
+  const before = structuredClone(home.data);
+  await home.context.open("lesson");
+  assert.deepEqual(home.routes, ["/daily?view=lesson"]);
+  assert.deepEqual(home.actions, [], "reviewing completion needs no write");
+  await home.context.open("formulas");
+  assert.equal(home.routes.at(-1), "/daily?view=formulas");
+  assert.deepEqual(home.data, before);
 });
-
-test("finished lessons can reopen pending formulas without undoing completion", () => {
-  const state = learner();
-  state.data.plan.complete = true;
-  const before = structuredClone(state.data);
-  state.context.choose(true);
-  state.context.choose(false);
-  assert.equal(state.later(), false);
-  assert.deepEqual(state.data, before);
-  assert.deepEqual(state.requests, []);
-});
-
-test("unavailable browser storage does not prevent continuing lessons", () => {
-  const state = learner(new Map(), true);
-  const before = structuredClone(state.data);
-  assert.doesNotThrow(() => state.context.choose(true));
-  assert(state.later());
-  assert.deepEqual(state.data, before);
+test("direct visits default to lessons and failed starts do not navigate away", async () => {
+  const direct = learner();
+  await direct.context.reload();
+  assert(direct.later());
+  const home = learner({ runner: false, failedSave: true });
+  await home.context.open("lesson");
+  assert.deepEqual(home.routes, []);
+  assert.deepEqual(home.actions, ["start"]);
+  assert.deepEqual(home.data.answers, { "saved-question": 2 });
 });

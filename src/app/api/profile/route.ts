@@ -59,7 +59,7 @@ export async function PATCH(request: Request) {
     return NextResponse.json(
       {
         error:
-          "Section scores must be blank or whole numbers from 1 to 36, and study time must be 60, 75, or 90 minutes.",
+          "Section scores must be blank or whole numbers from 1 to 36, and study time must be a whole number from 15 to 240 minutes.",
       },
       { status: 400 },
     );

@@ -1,7 +1,7 @@
+import { loadScoreChecks } from "@/lib/score-checks-server";
 import { createClient } from "@/lib/supabase/server";
 import {
   SCORE_CHECK_EXAM_ID,
-  readScoreCheck,
   scoreCheckId,
   validateScoreCheck,
   type ScoreCheck,
@@ -11,34 +11,13 @@ async function history(
   db: Awaited<ReturnType<typeof createClient>>,
   userId: string,
 ) {
-  const checks: ScoreCheck[] = [];
-  for (let offset = 0; offset < 10_000; offset += 500) {
-    const { data, error } = await db
-      .from("exam_attempts")
-      .select("answers")
-      .eq("user_id", userId)
-      .eq("exam_id", SCORE_CHECK_EXAM_ID)
-      .order("completed_at", { ascending: false })
-      .order("id")
-      .range(offset, offset + 499);
-    if (error)
-      return Response.json(
-        { error: "Your score checks could not load. Retry." },
-        { status: 503 },
-      );
-    for (const row of data ?? []) {
-      const check = readScoreCheck(row.answers);
-      if (check) checks.push(check);
-    }
-    if (!data || data.length < 500)
-      return Response.json(
-        { checks },
-        { headers: { "Cache-Control": "private, no-store" } },
-      );
-  }
-  return Response.json(
-    { error: "Your score history is too large to load. Contact support." },
-    { status: 413 },
+  const result = await loadScoreChecks(db, userId);
+  return (
+    result.error ??
+    Response.json(
+      { checks: result.checks },
+      { headers: { "Cache-Control": "private, no-store" } },
+    )
   );
 }
 

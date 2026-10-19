@@ -1,11 +1,12 @@
 import { getExams as getActExams } from "@/lib/act/content";
 import { ExamRunner } from "@/components/act/ExamRunner";
+import { StudyPageHeader } from "@/components/StudyPageHeader";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { ButtonLink } from "@/components/ui/Button";
-import { Card } from "@/components/ui/Card";
 import { getExam } from "@/lib/content";
-import { LETTERS } from "@/lib/format";
+import { ResultSummary } from "@/components/ResultSummary";
+import { EnglishAnswerReview } from "@/components/EnglishAnswerReview";
 import { parsePassage } from "@/lib/passage";
 import { createClient } from "@/lib/supabase/server";
 
@@ -66,95 +67,53 @@ export default async function ExamResultsPage({
 
   return (
     <div className="space-y-8">
-      <section className="flex flex-wrap items-center gap-8 rounded-2xl border border-border bg-bg-soft p-6">
-        <div className="text-center">
-          <div className="text-5xl font-bold text-brand-dark">
-            {attempt.raw_correct}/{attempt.raw_total}
-          </div>
-          <div className="text-xs uppercase tracking-wide text-ink-soft">
-            Practice raw score
-          </div>
-        </div>
-        <div className="flex flex-1 flex-wrap gap-8 text-sm">
-          <div>
-            <div className="text-lg font-semibold">
-              {Math.round((attempt.raw_correct / attempt.raw_total) * 100)}%
-            </div>
-            <div className="text-ink-soft">Accuracy</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold">
-              {new Date(attempt.completed_at).toLocaleDateString(undefined, {
-                year: "numeric",
-                month: "short",
-                day: "numeric",
-              })}
-            </div>
-            <div className="text-ink-soft">Date</div>
-          </div>
-          <div>
-            <div className="text-lg font-semibold">{exam.title}</div>
-            <div className="text-ink-soft">Exam</div>
-          </div>
-        </div>
-      </section>
-
-      <p className="text-sm leading-relaxed text-ink-soft">
-        These original practice questions report raw accuracy. Use different
-        official timed forms and your daily score checks to verify progress
-        toward your ACT score goal.
+      <StudyPageHeader
+        title="English results"
+        subject="english"
+        description="Review the evidence behind each answer, then return to the matching course lesson when a method needs work."
+        back={{ href: "/exam", label: "Timed sections" }}
+      />
+      <ResultSummary
+        correct={attempt.raw_correct}
+        total={attempt.raw_total}
+        seconds={attempt.duration_seconds}
+        unanswered={
+          [...answersByNumber.values()].filter(
+            (answer) => answer.picked === null,
+          ).length
+        }
+      />
+      <p className="study-caption">
+        {exam.title} ·{" "}
+        {new Date(attempt.completed_at).toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+          year: "numeric",
+        })}
       </p>
-
-      {exam.passages.map((passage) => (
-        <section key={passage.id}>
-          <h2 className="mb-3 text-lg font-semibold">{passage.title}</h2>
-          <div className="space-y-3">
-            {passage.questions.map((q) => {
-              const a = answersByNumber.get(q.number);
-              if (!a) return null;
-              const choices = choicesByNumber.get(q.number) ?? [];
-              const underline = underlineByNumber.get(q.number) ?? "";
-              return (
-                <Card key={q.number} className="p-4">
-                  <div className="flex items-start gap-3">
-                    <span
-                      className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-bold text-white ${
-                        a.correct ? "bg-good" : "bg-bad"
-                      }`}
-                    >
-                      {q.number}
-                    </span>
-                    <div className="flex-1 space-y-2">
-                      {underline ? (
-                        <p className="text-sm text-ink-soft">
-                          Underlined: <span className="ul">{underline}</span>
-                        </p>
-                      ) : null}
-                      <p className="text-sm font-medium">
-                        {questionTextByNumber.get(q.number)}
-                      </p>
-                      <p
-                        className={`text-sm ${a.correct ? "text-good" : "text-bad"}`}
-                      >
-                        Your answer:{" "}
-                        {a.picked === null
-                          ? "blank"
-                          : `${LETTERS[a.picked]}. ${choices[a.picked]}`}
-                      </p>
-                      {!a.correct && (
-                        <p className="text-sm text-good">
-                          Correct: {LETTERS[a.answer]}. {choices[a.answer]}
-                        </p>
-                      )}
-                      <p className="text-sm text-ink-soft">{a.explanation}</p>
-                    </div>
-                  </div>
-                </Card>
-              );
-            })}
-          </div>
-        </section>
-      ))}
+      <EnglishAnswerReview
+        items={exam.passages.flatMap((passage) =>
+          passage.questions.flatMap((q) => {
+            const answer = answersByNumber.get(q.number);
+            return answer
+              ? [
+                  {
+                    number: q.number,
+                    topic: answer.topic,
+                    prompt: questionTextByNumber.get(q.number) ?? "",
+                    underline: underlineByNumber.get(q.number) ?? "",
+                    choices: choicesByNumber.get(q.number) ?? [],
+                    picked: answer.picked,
+                    answer: answer.answer,
+                    correct: answer.correct,
+                    explanation: answer.explanation,
+                    passage: passage.title,
+                  },
+                ]
+              : [];
+          }),
+        )}
+      />
 
       <div className="flex gap-3">
         <ButtonLink href={`/exam/${exam.id}`}>Retake this exam</ButtonLink>

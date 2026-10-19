@@ -48,6 +48,7 @@ supabase/.temp
 
 # Local visual review evidence
 /.impeccable/review/
+/.impeccable/build/
 /dist/
 .vinext/
 .wrangler/

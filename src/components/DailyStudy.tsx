@@ -1,9 +1,12 @@
 "use client";
+import { learningRewards } from "@/lib/learning-rewards";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { ProgressBar } from "./ui/ProgressBar";
 import { Card } from "./ui/Card";
 import { Button } from "./ui/Button";
+import { StudyIcon } from "./StudyIcon";
 import { AnswerFeedback } from "./AnswerFeedback";
 import { DailyEnglishLesson } from "./DailyEnglishLesson";
 import { EnglishLessonSections } from "./EnglishLessonSections";
@@ -11,6 +14,7 @@ import { DrillClient as EnglishDrill } from "@/app/drill/[slug]/DrillClient";
 import type { Question as EnglishQuestion } from "@/lib/content";
 import { DailyLesson } from "./DailyLesson";
 import { DailyDrill } from "./DailyDrill";
+import { LessonActivity } from "./LessonActivity";
 import { LessonSections } from "./LessonSections";
 import { answerPacing } from "@/lib/question-pacing";
 import { type DailyPlan, type DailyQuestion } from "@/lib/daily-plan";
@@ -25,11 +29,11 @@ import {
   dailyFocus,
   dailyConcepts,
 } from "@/lib/daily-flow";
-import { ScoreChecks } from "./ScoreChecks";
+import { DailyPath } from "./DailyPath";
 import { dailyDate } from "@/lib/daily-date";
 import { FormulaCards } from "./FormulaCards";
 import type { FormulaDay } from "@/lib/formula-schedule";
-interface DailyState {
+export interface DailyState {
   userId: string;
   plan: DailyPlan;
   saved: boolean;
@@ -41,6 +45,9 @@ interface DailyState {
   today: string;
   error?: string;
   minutes: number;
+  availableMinutes?: number;
+  retryQuestionId?: string;
+  retryUnavailable?: true;
   includeScience?: boolean;
   formulas?: FormulaDay;
   goal?: { targetScore: number; testDate: string };
@@ -55,15 +62,22 @@ interface DailyState {
   };
 }
 const label = (s: string) => s[0].toUpperCase() + s.slice(1);
-export function DailyStudy({ runner = false }: { runner?: boolean }) {
+export function DailyStudy({
+  runner = false,
+  initialView,
+}: {
+  runner?: boolean;
+  initialView?: "lesson" | "formulas";
+}) {
   const router = useRouter();
   const [data, setData] = useState<DailyState | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [pending, setPending] = useState(false);
   const [review, setReview] = useState<DailyQuestion | null>(null);
-  const [now, setNow] = useState(Date.now);
   const [started, setStarted] = useState(false);
-  const [formulasLater, setFormulasLater] = useState(false);
+  const [formulasLater, setFormulasLater] = useState(
+    initialView !== "formulas",
+  );
   const [revisitLesson, setRevisitLesson] = useState(false);
   const [history, setHistory] = useState(false);
   const [uncertainQuestions, setUncertainQuestions] = useState<string[]>([]);
@@ -76,13 +90,10 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     setFormulasLater(later);
     setReview(null);
     setRevisitLesson(false);
-    try {
-      const key = `act-study-formulas-later:${data.userId}:${data.today}`;
-      if (later) localStorage.setItem(key, "1");
-      else localStorage.removeItem(key);
-    } catch {
-      // The choice still works for this visit when browser storage is unavailable.
-    }
+    if (runner)
+      router.replace(`/daily?view=${later ? "lesson" : "formulas"}`, {
+        scroll: false,
+      });
   }
   async function load() {
     try {
@@ -94,15 +105,7 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       }
       if (!r.ok)
         throw new Error(d.error ?? "Couldn’t load your daily lesson. Retry.");
-      try {
-        setFormulasLater(
-          localStorage.getItem(
-            `act-study-formulas-later:${d.userId}:${d.today}`,
-          ) === "1",
-        );
-      } catch {
-        setFormulasLater(false);
-      }
+      setFormulasLater(initialView !== "formulas");
       setError(null);
       setData((previous) => ({ ...previous, ...d }));
       if (
@@ -117,12 +120,10 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
   }
   useEffect(() => {
     const initialLoad = setTimeout(() => void load(), 0);
-    const timer = setInterval(() => setNow(Date.now()), 1000);
     return () => {
       clearTimeout(initialLoad);
-      clearInterval(timer);
     };
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [initialView]); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     if (!data?.today) return;
     const checkDay = () => {
@@ -168,7 +169,9 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         });
         const clock = await start.json();
         if (!start.ok)
-          throw new Error(clock.error ?? "Couldn’t start today’s study timer.");
+          throw new Error(
+            clock.error ?? "Couldn’t start today’s lesson. Retry.",
+          );
         setData(clock);
       }
       const r = await fetch("/api/daily", {
@@ -195,6 +198,16 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       setPending(false);
     }
   }
+  async function openDaily(view: "lesson" | "formulas", newSession = false) {
+    if (!data || pending) return;
+    chooseFormulaReview(view === "lesson");
+    if (data.plan.complete && view === "lesson") {
+      if (!runner) router.push("/daily?view=lesson");
+      return;
+    }
+    const result = await action({ action: newSession ? "next" : "start" });
+    if (result && !runner) router.push(`/daily?view=${view}`);
+  }
   const step = data ? dailyStep(data.plan, data.answers, data.lessons) : null;
   const screenKey = `${started}:${formulasLater}:${revisitLesson}:${review ? "drill" : step?.kind}:${review?.id ?? (step && "question" in step ? step.question?.id : step && "unit" in step ? step.unit?.id : "")}`;
   useEffect(() => {
@@ -220,8 +233,8 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       </div>
     );
   const { plan, answers, lessons } = data;
+  const rewards = learningRewards(data.coverage?.completedSessions ?? 0);
   const formulaPending = (data.formulas?.remaining.length ?? 0) > 0;
-  const targetScore = data.goal?.targetScore ?? plan.course?.targetScore;
   const testDate = data.goal?.testDate ?? plan.course?.testDate;
   const focus = dailyFocus(
     plan,
@@ -238,23 +251,8 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     ...(b.historicalQuestions ?? []),
   ]);
   const count = all.filter((q) => answers[q.id] !== undefined).length;
-  const remaining =
-    data.deadline === null
-      ? (data.minutes + (data.formulas?.minutes ?? 0)) * 60
-      : Math.max(
-          0,
-          Math.ceil(
-            (data.deadline + (data.formulas?.minutes ?? 0) * 60000 - now) /
-              1000,
-          ),
-        );
   const block = step && "block" in step ? step.block : undefined;
-  const resumeTitle =
-    step && "unit" in step && step.unit
-      ? step.unit.title.replace(/^\d+\.\s*/, "")
-      : "Final review";
   const q = step?.kind === "drill" ? step.question : undefined;
-  const time = `${Math.floor(remaining / 60)}:${String(remaining % 60).padStart(2, "0")}`;
   const errorView = error && (
     <p
       role="alert"
@@ -263,200 +261,16 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
       {error}
     </p>
   );
-  if (plan.date < data.today && !plan.complete && !started)
+  if (!runner || (!started && !plan.complete))
     return (
-      <div className="mx-auto max-w-2xl space-y-4">
-        <Card className="p-6 sm:p-8">
-          <h1 className="text-2xl font-semibold">
-            Continue where you left off
-          </h1>
-          <p className="mt-3 text-ink-soft">
-            {block && `${label(block.subject)} · ${resumeTitle}`}
-          </p>
-          <p className="mt-2 text-sm text-ink-soft">
-            {count} saved answers · session started {plan.date}
-          </p>
-          <div className="mt-6 flex flex-col gap-3">
-            <Button
-              disabled={pending}
-              onClick={() => {
-                if (runner) void action({ action: "start" });
-                else router.push("/daily");
-              }}
-            >
-              Resume saved session
-            </Button>
-            <details>
-              <summary className="min-h-11 cursor-pointer py-3 text-sm text-ink-soft underline">
-                Choose new lessons instead
-              </summary>
-              <p className="mb-3 text-sm text-ink-soft">
-                This starts a different session. Your previous answers stay in
-                history; unfinished lessons return later.
-              </p>
-              <Button
-                variant="ghost"
-                disabled={pending}
-                onClick={async () => {
-                  const result = await action({ action: "next" });
-                  if (result && !runner) router.push("/daily");
-                }}
-              >
-                Start today’s lesson
-              </Button>
-            </details>
-          </div>
-          <p className="mt-4 text-xs text-ink-soft">
-            Resume opens your next unfinished concept or question. Today’s{" "}
-            {data.minutes}-minute timer is a goal; you can keep studying after
-            it ends.
-          </p>
-        </Card>
-        {errorView}
-      </div>
-    );
-  if (!runner)
-    return (
-      <div className="mx-auto max-w-2xl space-y-6">
-        <Card className="p-6 sm:p-8">
-          <h1 className="text-2xl font-semibold">
-            {targetScore ? `Your path to ${targetScore}` : "Daily study"}
-          </h1>
-          <p className="mt-2 text-sm text-ink-soft">
-            {data.minutes} min lessons
-            {data.formulas
-              ? ` + ~${data.formulas.minutes} min formulas`
-              : " a day"}{" "}
-            ·{" "}
-            {testDate
-              ? `Test date: ${new Date(`${testDate}T12:00:00`).toLocaleDateString("en-US", { month: "short", day: "numeric" })}`
-              : `${plan.blocks.length} subjects`}
-          </p>
-          {data.coverage && (
-            <p className="mt-2 text-sm text-ink-soft">
-              {data.coverage.completedSessions} Daily sessions completed ·{" "}
-              {data.coverage.covered}/{data.coverage.total} focused skills
-              covered ·{" "}
-              {data.coverage.onTrack
-                ? `First pass planned by ${data.coverage.finishDate}`
-                : data.coverage.requiredMinutes
-                  ? `Set ${data.coverage.requiredMinutes} min/day to finish before ${data.coverage.testDate}`
-                  : `The remaining lessons don’t fit before ${data.coverage.testDate}. Focus on weak skills and timed practice.`}
-            </p>
-          )}
-          {data.formulas && (
-            <p className="mt-2 text-sm text-ink-soft">
-              {data.formulas.recalled}/{data.formulas.total} formulas recalled
-              on two days
-              {data.formulas.daysLeft < 2 &&
-              data.formulas.recalled < data.formulas.total
-                ? " · Keep reviewing; fewer than two study days remain."
-                : ` · Goal: all ${data.formulas.total} by test day.`}
-            </p>
-          )}
-          <div className="mt-6">
-            {plan.complete && !formulaPending ? (
-              <>
-                <p className="font-semibold text-good">
-                  Today’s lesson is complete.
-                </p>
-                <p className="mt-2 text-sm text-ink-soft">
-                  You answered {count} questions. Come back tomorrow for the
-                  next categories.
-                </p>
-                <Link
-                  href="/daily"
-                  className="mt-4 inline-block text-sm text-brand underline"
-                >
-                  Review today’s answers
-                </Link>
-              </>
-            ) : (
-              <Link
-                href="/daily"
-                onClick={
-                  plan.complete && formulaPending
-                    ? () => chooseFormulaReview(false)
-                    : undefined
-                }
-                className="inline-flex min-h-12 w-full items-center justify-center rounded-full bg-brand px-6 font-semibold text-white hover:bg-brand-dark"
-              >
-                {plan.complete && formulaPending
-                  ? "Finish daily formulas"
-                  : data.saved
-                    ? "Continue daily lesson"
-                    : "Start daily lesson"}
-              </Link>
-            )}
-          </div>
-          <ol className="mt-7 divide-y divide-border">
-            {plan.blocks.map((b) => (
-              <li
-                key={b.subject}
-                className="flex items-center justify-between gap-4 py-3"
-              >
-                <div>
-                  <p className="text-sm font-semibold">{label(b.subject)}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-ink-soft">
-                    {blockUnits(b)
-                      .map((unit) => unit.title.replace(/^\d+\.\s*/, ""))
-                      .join(" · ")}
-                  </p>
-                  <p className="mt-1 text-xs text-ink-soft">
-                    {b.questions.length} practice questions
-                    {focus?.[b.subject]?.length
-                      ? ` · ${focus[b.subject]!.length} skills to revisit`
-                      : ""}
-                  </p>
-                </div>
-                <span className="shrink-0 text-sm text-ink-soft">
-                  {plan.complete || lessons.includes(dailyReviewKey(b))
-                    ? "Done"
-                    : `~${b.minutes} min`}
-                </span>
-              </li>
-            ))}
-            {data.formulas && (
-              <li className="flex items-center justify-between gap-4 py-3">
-                <div>
-                  <p className="text-sm font-semibold">Math Formulas</p>
-                  <p className="mt-1 text-sm text-ink-soft">
-                    {data.formulas.ids.length - data.formulas.remaining.length}/
-                    {data.formulas.ids.length} cards recalled today
-                  </p>
-                </div>
-                <span className="shrink-0 text-sm text-ink-soft">
-                  {formulaPending ? `~${data.formulas.minutes} min` : "Done"}
-                </span>
-              </li>
-            )}
-          </ol>
-          <p className="mt-4 text-xs text-ink-soft">
-            Wrong, slow, and uncertain answers return for review. New questions
-            take priority over questions you’ve already answered.
-          </p>
-          {targetScore && (
-            <ScoreChecks
-              ownerId={data.userId}
-              targetScore={targetScore}
-              today={data.today}
-              includeScience={data.includeScience !== false}
-            />
-          )}
-        </Card>
-        {errorView}
-        <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-3 text-sm">
-          <Link
-            href="/account#daily-subjects"
-            className="text-ink-soft underline"
-          >
-            Change daily subjects, time, or scores
-          </Link>
-          <Link href="/practice" className="text-ink-soft underline">
-            Extra practice
-          </Link>
-        </div>
-      </div>
+      <DailyPath
+        data={data}
+        pending={pending}
+        error={error}
+        onContinue={() => void openDaily("lesson")}
+        onFormulas={() => void openDaily("formulas")}
+        onNewSession={() => void openDaily("lesson", true)}
+      />
     );
   if (started && formulaPending && data.formulas && !review && !formulasLater)
     return (
@@ -464,13 +278,21 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         <header className="space-y-3">
           <h1 className="text-3xl font-semibold">Daily formulas</h1>
           <p className="text-ink-soft">
-            {plan.complete
-              ? "Recall these formulas to finish today."
-              : "Recall these formulas, then continue your lessons."}
+            Optional recall practice. Your lesson progress stays saved.
           </p>
           <p className="text-sm text-ink-soft">
             {data.formulas.recalled}/{data.formulas.total} recalled on two days
-            · Goal: {data.formulas.total} by {testDate}
+            · Goal: {data.formulas.total}
+            {testDate && (
+              <>
+                {" "}
+                by{" "}
+                {new Date(`${testDate}T12:00:00`).toLocaleDateString("en-US", {
+                  month: "short",
+                  day: "numeric",
+                })}
+              </>
+            )}
           </p>
           <Button variant="ghost" onClick={() => chooseFormulaReview(true)}>
             {plan.complete ? "Review today’s lessons" : "Continue to lessons"}
@@ -522,7 +344,33 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     return (
       <div className="mx-auto max-w-3xl space-y-5">
         <Card className="p-6 sm:p-8">
-          <h1 className="text-2xl font-semibold">Daily lesson complete</h1>
+          <h1 className="text-2xl font-semibold">Daily mission complete</h1>
+          {data.coverage && (
+            <div className="daily-completion-reward">
+              <p className="daily-mission-reward">
+                <StudyIcon name="star" />
+                Session reward: <strong>100 XP</strong> · Level {rewards.level}
+              </p>
+              <div
+                className="daily-reward-progress"
+                role="progressbar"
+                aria-label={`Progress toward level ${rewards.level + 1}`}
+                aria-valuemin={0}
+                aria-valuemax={5}
+                aria-valuenow={5 - rewards.sessionsToNextLevel}
+              >
+                <ProgressBar
+                  percent={(5 - rewards.sessionsToNextLevel) * 20}
+                  tone="good"
+                />
+              </div>
+              <p className="text-sm text-ink-soft">
+                {rewards.sessionsToNextLevel} Daily{" "}
+                {rewards.sessionsToNextLevel === 1 ? "session" : "sessions"} to
+                Level {rewards.level + 1}
+              </p>
+            </div>
+          )}
           <p className="mt-3 text-ink-soft">
             {count} of {all.length} questions answered ·{" "}
             {all.filter((q) => answers[q.id] === q.answer).length} correct
@@ -594,59 +442,6 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         {errorView}
       </div>
     );
-  if (!started)
-    return (
-      <div className="mx-auto max-w-2xl">
-        <Card className="p-8">
-          <h1 className="text-2xl font-semibold">Daily study</h1>
-          <p className="mt-2 text-sm text-ink-soft">
-            {data.minutes} min lessons
-            {data.formulas
-              ? ` + ~${data.formulas.minutes} min formulas`
-              : ""} ·{" "}
-            {plan.blocks.map((block) => label(block.subject)).join(", ")}
-          </p>
-          <ol className="mt-5 divide-y divide-border">
-            {plan.blocks.map((b) => (
-              <li
-                key={b.subject}
-                className="flex items-center justify-between gap-4 py-3"
-              >
-                <div>
-                  <p className="font-semibold">{label(b.subject)}</p>
-                  <p className="mt-1 text-sm text-ink-soft">
-                    {blockUnits(b).length}{" "}
-                    {b.reviewOnly
-                      ? "skills to review"
-                      : `focused lesson${blockUnits(b).length === 1 ? "" : "s"}`}{" "}
-                    · {b.questions.length} questions · recap
-                  </p>
-                </div>
-                <span className="text-sm text-ink-soft">~{b.minutes} min</span>
-              </li>
-            ))}
-          </ol>
-          {data.formulas && (
-            <p className="mt-4 text-sm text-ink-soft">
-              {data.formulas.ids.length} formula flashcards are ready. Review
-              them before or after your lessons.
-            </p>
-          )}
-          <Button
-            className="mt-6 w-full"
-            disabled={pending}
-            onClick={() => void action({ action: "start" })}
-          >
-            {pending
-              ? "Starting…"
-              : data.saved
-                ? "Continue lesson"
-                : "Begin lesson"}
-          </Button>
-          {errorView}
-        </Card>
-      </div>
-    );
   const current = review ?? q;
   const currentBlock = plan.blocks.find(
     (b) => b.subject === (review?.subject ?? block?.subject),
@@ -683,33 +478,64 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
     setRevisitLesson(false);
     window.scrollTo({ top: 0, behavior: "auto" });
   }
+  async function retryMiss(
+    question: DailyQuestion,
+  ): Promise<"opened" | "unavailable" | "failed"> {
+    const result = await action({ action: "retry", questionId: question.id });
+    if (!result) return "failed";
+    if (result.retryUnavailable) return "unavailable";
+    const next = dailyStep(result.plan, result.answers, result.lessons);
+    if (
+      next.kind !== "drill" ||
+      next.question.id !== result.retryQuestionId ||
+      next.question.id === question.id
+    ) {
+      setError("Couldn’t open a fresh question. Retry before continuing.");
+      return "failed";
+    }
+    nextQuestion();
+    return "opened";
+  }
   const LessonComponent =
     currentBlock?.subject === "english" ? DailyEnglishLesson : DailyLesson;
   const showLesson =
     currentUnit && (revisitLesson || (!review && step?.kind === "lesson"));
   return (
-    <div className="daily-workbench mx-auto max-w-6xl space-y-6">
-      {formulaPending && (
-        <div className="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-border bg-bg-soft px-4 py-3">
-          <p className="text-sm text-ink-soft">
-            {data.formulas!.remaining.length} formula cards still to review
-          </p>
+    <div className="daily-workbench space-y-6">
+      <header className="daily-runner-header">
+        <Link href="/dashboard">
+          <StudyIcon name="arrow" />
+          Today’s path
+        </Link>
+        <p>
+          {testDate && (
+            <>
+              <StudyIcon name="calendar" />
+              Test day ·{" "}
+              {new Date(`${testDate}T12:00:00`).toLocaleDateString("en-US", {
+                month: "short",
+                day: "numeric",
+              })}
+              <span aria-hidden="true"> · </span>
+            </>
+          )}
+          <span>~{data.minutes} min planned</span>
+        </p>
+        {formulaPending && (
           <Button
             size="sm"
             variant="ghost"
             disabled={pending}
             onClick={() => chooseFormulaReview(false)}
           >
-            Review formulas
+            Formulas · optional
           </Button>
-        </div>
-      )}
+        )}
+      </header>
       <ol
         className="daily-subject-rail"
         aria-label="Daily subjects"
-        style={{
-          gridTemplateColumns: `repeat(${plan.blocks.length}, minmax(0, 1fr))`,
-        }}
+        data-count={plan.blocks.length}
       >
         {plan.blocks.map((item) => (
           <li
@@ -719,6 +545,11 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             }
             data-done={lessons.includes(dailyReviewKey(item))}
           >
+            <StudyIcon
+              name={
+                lessons.includes(dailyReviewKey(item)) ? "check" : item.subject
+              }
+            />
             {label(item.subject)}
             {lessons.includes(dailyReviewKey(item)) && (
               <span className="sr-only"> complete</span>
@@ -726,19 +557,18 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
           </li>
         ))}
       </ol>
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <p className="text-sm font-semibold">
-          {label(currentBlock?.subject ?? "english")} ·{" "}
-          {currentBlock?.reviewOnly ||
-          current?.phase === "review" ||
-          step?.kind === "review"
-            ? "Review"
-            : `Lesson ${currentUnit ? blockUnits(currentBlock!).findIndex((u) => u.id === currentUnit.id) + 1 : 1}/${currentBlock ? blockUnits(currentBlock).length : 2}`}
-        </p>
-        <p className="tabular-nums text-sm text-ink-soft">
-          {remaining > 0 ? `${time} left` : "Goal reached · keep going"}
-        </p>
-      </div>
+      {!showLesson && (
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <p className="text-sm font-semibold">
+            {label(currentBlock?.subject ?? "english")} ·{" "}
+            {currentBlock?.reviewOnly ||
+            current?.phase === "review" ||
+            step?.kind === "review"
+              ? "Review"
+              : `Lesson ${currentUnit ? blockUnits(currentBlock!).findIndex((u) => u.id === currentUnit.id) + 1 : 1}/${currentBlock ? blockUnits(currentBlock).length : 2}`}
+          </p>
+        </div>
+      )}
       {errorView}
       {current &&
         !showLesson &&
@@ -880,6 +710,15 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
             }));
           }}
         />
+      ) : review && current && answers[current.id] !== current.answer ? (
+        <DailyMissRecovery
+          key={current.id}
+          question={current}
+          chosen={answers[current.id]}
+          pending={pending}
+          onRetry={() => retryMiss(current)}
+          onNext={nextQuestion}
+        />
       ) : current && currentBlock?.subject === "english" ? (
         <EnglishDrill
           key={current.id}
@@ -944,9 +783,71 @@ export function DailyStudy({ runner = false }: { runner?: boolean }) {
         <p>Saving your completed lesson…</p>
       )}
       <p className="text-xs text-ink-soft">
-        Progress saves automatically. Unfinished work carries forward.
+        Go at your pace. Progress saves automatically; unfinished work carries
+        forward.
       </p>
     </div>
+  );
+}
+
+export function DailyMissRecovery({
+  question,
+  chosen,
+  pending,
+  onRetry,
+  onNext,
+}: {
+  question: DailyQuestion;
+  chosen: number;
+  pending: boolean;
+  onRetry: () => Promise<"opened" | "unavailable" | "failed">;
+  onNext: () => void;
+}) {
+  const [ready, setReady] = useState(false);
+  const [unavailable, setUnavailable] = useState(false);
+  return (
+    <section
+      className="lesson-player recovery-player"
+      aria-label="Review a saved answer"
+    >
+      <h1 className="text-2xl font-semibold">Let’s work through this one.</h1>
+      <p className="text-sm text-ink-soft">
+        Your first answer is saved. This step is practice.
+      </p>
+      <LessonActivity
+        activity={{
+          prompt: question.questionText || question.stem,
+          choices: question.choices,
+          answer: question.answer,
+          explanation: question.explanation,
+          evidence: question.passage,
+          evidenceText: question.stem,
+          ...(question.subject === "math" ? { diagram: question.id } : {}),
+        }}
+        initialWrongChoice={chosen}
+        onComplete={() => setReady(true)}
+      />
+      {unavailable && (
+        <p role="status" className="text-sm text-ink-soft">
+          No fresh question is available for this skill; it will return in
+          review.
+        </p>
+      )}
+      <Button
+        disabled={!ready || pending}
+        onClick={async () => {
+          if (!ready || pending) return;
+          if (unavailable) onNext();
+          else if ((await onRetry()) === "unavailable") setUnavailable(true);
+        }}
+      >
+        {pending
+          ? "Finding a fresh question…"
+          : unavailable
+            ? "Continue to the next step"
+            : "Try a fresh question"}
+      </Button>
+    </section>
   );
 }
 

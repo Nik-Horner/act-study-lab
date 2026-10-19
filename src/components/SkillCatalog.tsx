@@ -29,7 +29,7 @@ export function SkillCatalog({
               .map((skill) => (
                 <li
                   key={`${skill.topic}:${skill.id}`}
-                  className="flex flex-wrap items-center justify-between gap-x-5 gap-y-1 py-2"
+                  className="flex flex-col items-stretch gap-1 py-3 sm:flex-row sm:items-center sm:justify-between sm:gap-x-5"
                 >
                   <Link
                     href={skillHref(skill, drill)}
@@ -37,7 +37,7 @@ export function SkillCatalog({
                   >
                     {skill.title}
                   </Link>
-                  <div className="flex flex-wrap items-center gap-3 text-sm text-ink-soft">
+                  <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 text-sm text-ink-soft sm:justify-start">
                     <span>
                       {skill.questionIds.length} drill question
                       {skill.questionIds.length === 1 ? "" : "s"}

@@ -1,171 +1,190 @@
 "use client";
+
 import { useId, useState } from "react";
-import type { Lesson } from "@/lib/act/types";
-import { PassageView } from "./act/QuestionView";
-import { MathDiagram } from "./act/MathDiagram";
+import { StudyIcon } from "./StudyIcon";
 import { Button } from "./ui/Button";
 import { MathText } from "./MathText";
+import { LessonVisual } from "./LessonVisual";
+import { explanationSteps } from "@/lib/answer-explanation";
+import {
+  chooseActivityAnswer,
+  type ActivityState,
+  type LessonActivityContent,
+} from "@/lib/lesson-interaction";
 
-type Activity = NonNullable<Lesson["sections"][number]["activity"]>;
 export function LessonActivity({
   activity,
   onComplete,
+  initialWrongChoice,
 }: {
-  activity: Activity;
+  activity: LessonActivityContent;
   onComplete?: () => void;
+  initialWrongChoice?: number;
 }) {
-  const [choice, setChoice] = useState<number | null>(null);
+  const initialMiss =
+    initialWrongChoice !== undefined &&
+    Number.isInteger(initialWrongChoice) &&
+    initialWrongChoice !== activity.answer &&
+    initialWrongChoice >= 0 &&
+    initialWrongChoice < activity.choices.length;
+  const [state, setState] = useState<ActivityState>({
+    phase: initialMiss ? "explain" : "try",
+    choice: initialMiss ? initialWrongChoice! : null,
+    recovering: initialMiss,
+  });
+  const [missedChoice, setMissedChoice] = useState<number | null>(
+    initialMiss ? initialWrongChoice! : null,
+  );
   const feedbackId = useId();
-  const correct = choice === activity.answer;
+  const supported = state.phase === "step";
+  const answered = state.choice !== null;
+  const choices = activity.choices
+    .map((text, index) => ({ text, index }))
+    .filter(
+      ({ index }) =>
+        !supported || index === activity.answer || index === missedChoice,
+    );
+  const hasEvidence = !!(
+    activity.evidence ||
+    activity.evidenceText ||
+    activity.diagram
+  );
+  const steps = explanationSteps(activity.explanation);
+
+  function choose(index: number) {
+    const next = chooseActivityAnswer(state, index, activity.answer);
+    setState(next);
+    if (next.phase === "explain") setMissedChoice(index);
+    if (next.phase === "ready") onComplete?.();
+  }
+
   return (
-    <div className="lesson-lab">
-      {(activity.evidence || activity.evidenceText || activity.diagram) && (
-        <div className="lesson-lab-evidence">
-          {activity.evidence && <PassageView passage={activity.evidence} />}
-          {activity.evidenceText && (
-            <blockquote className="text-xl leading-relaxed text-ink">
-              <MathText>{activity.evidenceText}</MathText>
-            </blockquote>
-          )}
-          {activity.diagram === "unit-circle" ? (
-            <UnitCircle />
+    <div className="lesson-workspace lesson-lab" data-phase={state.phase}>
+      <div className="lesson-workspace-teaching lesson-lab-evidence">
+        <LessonVisual activity={activity} />
+        {state.recovering && (
+          <section className="lesson-reasoning" aria-label="Worked reasoning">
+            <h3>Follow the idea.</h3>
+            <ol>
+              {steps.map((step, index) => (
+                <li key={index}>
+                  <span className="lesson-step-number" aria-hidden="true">
+                    {index + 1}
+                  </span>
+                  <MathText>{step}</MathText>
+                </li>
+              ))}
+            </ol>
+            <div className="lesson-reasoning-result">
+              <span>That leads to</span>
+              <strong>
+                <MathText>{activity.choices[activity.answer]}</MathText>
+              </strong>
+            </div>
+          </section>
+        )}
+      </div>
+      <div className="lesson-workspace-practice lesson-lab-task">
+        <h3 className="lesson-task-title">
+          {state.phase === "explain" ? (
+            "Let’s build it together."
+          ) : supported ? (
+            "First, a smaller step."
+          ) : state.phase === "ready" ? (
+            "Challenge cleared."
+          ) : hasEvidence ? (
+            <MathText>{activity.prompt}</MathText>
           ) : (
-            activity.diagram && <MathDiagram id={activity.diagram} />
+            "What do you think?"
           )}
-        </div>
-      )}
-      <div className="lesson-lab-task">
-        <h3 className="text-xl font-semibold leading-snug sm:text-2xl">
-          <MathText>{activity.prompt}</MathText>
         </h3>
-        <div
-          role="group"
-          aria-label="Answer choices"
-          className="mt-6 space-y-3"
-        >
-          {activity.choices.map((text, i) => (
-            <button
-              key={text}
-              className="choice"
-              aria-pressed={choice === i}
-              aria-describedby={choice !== null ? feedbackId : undefined}
-              data-selected={choice === i}
-              data-correct={choice !== null && i === activity.answer}
-              data-wrong={choice === i && !correct}
-              disabled={choice !== null}
-              onClick={() => {
-                setChoice(i);
-                onComplete?.();
-              }}
-            >
-              <span className="lesson-choice-letter">
-                {String.fromCharCode(65 + i)}
-              </span>
-              <span>
-                <MathText>{text}</MathText>
-                {choice !== null && i === activity.answer && (
-                  <strong className="block text-sm">Correct answer</strong>
-                )}
-                {choice === i && !correct && (
-                  <span className="block text-sm">Your answer</span>
-                )}
-              </span>
-            </button>
-          ))}
-        </div>
-        {choice !== null && (
+        {(state.phase === "explain" || supported) && (
+          <p className="lesson-task-intro">
+            {supported
+              ? "Use the worked reasoning. Which of these two answers follows?"
+              : "Compare your choice with the worked steps, then try a smaller choice."}
+          </p>
+        )}
+        {state.phase !== "ready" && state.phase !== "explain" && (
           <div
-            id={feedbackId}
-            role="status"
-            className="mt-6 border-t border-border pt-5"
+            role="group"
+            aria-label={
+              supported ? "Supported answer choices" : "Answer choices"
+            }
+            className="lesson-activity-choices"
           >
-            <h4
-              className={`text-lg font-semibold ${correct ? "text-good" : "text-bad"}`}
-            >
-              {correct ? "You’ve got the idea" : "Here’s the missing step"}
-            </h4>
-            <p className="mt-3 text-base leading-relaxed">
-              <MathText>{activity.explanation}</MathText>
+            {choices.map(({ text, index }, position) => (
+              <button
+                type="button"
+                key={index}
+                className="choice"
+                aria-pressed={state.choice === index}
+                aria-describedby={answered ? feedbackId : undefined}
+                data-selected={state.choice === index}
+                data-wrong={state.choice === index && index !== activity.answer}
+                disabled={state.phase === "step" && state.choice === index}
+                onClick={() => choose(index)}
+              >
+                <span className="lesson-choice-letter">
+                  {String.fromCharCode(65 + position)}
+                </span>
+                <span>
+                  <MathText>{text}</MathText>
+                </span>
+              </button>
+            ))}
+          </div>
+        )}
+        {state.phase === "explain" && (
+          <div className="lesson-recovery">
+            <p className="lesson-recovery-choice">
+              <span>Your choice</span>
+              <MathText>{activity.choices[state.choice!]}</MathText>
             </p>
             <Button
-              variant="ghost"
-              size="sm"
-              className="mt-4"
-              onClick={() => setChoice(null)}
+              onClick={() =>
+                setState({ ...state, phase: "step", choice: null })
+              }
             >
-              Try again
+              Try the smaller step
             </Button>
           </div>
         )}
-      </div>
-    </div>
-  );
-}
-function UnitCircle() {
-  const [angle, setAngle] = useState(150);
-  const radians = (angle * Math.PI) / 180;
-  const x = 150 + 100 * Math.cos(radians),
-    y = 140 - 100 * Math.sin(radians);
-  return (
-    <div>
-      <svg
-        viewBox="0 0 300 280"
-        className="w-full"
-        role="img"
-        aria-label={`Unit circle at ${angle} degrees. Cosine, the horizontal coordinate, is ${Math.cos(radians) > 0 ? "positive" : "negative"}. Sine, the vertical coordinate, is ${Math.sin(radians) > 0 ? "positive" : "negative"}.`}
-      >
-        <circle
-          cx="150"
-          cy="140"
-          r="100"
-          fill="none"
-          stroke="var(--color-ink-soft)"
-          strokeWidth="2"
-        />
-        <path
-          d="M20 140H280M150 10V270"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1"
-        />
-        <path
-          d={`M150 140L${x} ${y}L${x} 140Z`}
-          fill="var(--color-brand-soft)"
-          stroke="var(--color-brand)"
-          strokeWidth="2"
-        />
-        <circle cx={x} cy={y} r="6" fill="var(--color-brand)" />
-        <text x="267" y="161" fontSize="14" fill="currentColor">
-          cos θ
-        </text>
-        <text x="160" y="20" fontSize="14" fill="currentColor">
-          sin θ
-        </text>
-        <text x="160" y="130" fontSize="16" fill="currentColor">
-          {angle}°
-        </text>
-      </svg>
-      <div
-        className="flex flex-wrap justify-center gap-2"
-        role="group"
-        aria-label="Explore unit-circle quadrants"
-      >
-        {[30, 150, 210, 330].map((value) => (
-          <Button
-            key={value}
-            size="sm"
-            variant="ghost"
-            aria-pressed={angle === value}
-            onClick={() => setAngle(value)}
+        {supported && answered && (
+          <p id={feedbackId} role="status" className="lesson-feedback">
+            Look at the last worked step. Choose the result it supports.
+          </p>
+        )}
+        {state.phase === "ready" && (
+          <div
+            id={feedbackId}
+            role="status"
+            className="answer-feedback lesson-feedback lesson-feedback-success"
+            data-correct="true"
           >
-            {value}°
-          </Button>
-        ))}
+            <div className="answer-feedback-title">
+              <StudyIcon
+                name="check"
+                className="answer-success-mark"
+                size={22}
+              />
+              <strong>
+                <MathText>{activity.choices[activity.answer]}</MathText>
+              </strong>
+            </div>
+            {!state.recovering && (
+              <p>
+                <MathText>{activity.explanation}</MathText>
+              </p>
+            )}
+            <p>
+              {state.recovering
+                ? "You rebuilt the answer. Continue to apply the method independently."
+                : "Continue when you’re ready to use this idea."}
+            </p>
+          </div>
+        )}
       </div>
-      <p className="mt-4 text-center text-sm text-ink-soft">
-        Move the angle. Watch the signs of the horizontal and vertical
-        coordinates.
-      </p>
     </div>
   );
 }

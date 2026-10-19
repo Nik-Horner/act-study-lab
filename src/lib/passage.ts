@@ -28,3 +28,20 @@ export function parsePassage(html: string): PassageSegment[] {
 
   return segments;
 }
+
+/** Keep inline question markers attached to their original prose paragraphs. */
+export function groupParagraphs(
+  segments: PassageSegment[],
+): PassageSegment[][] {
+  const paragraphs: PassageSegment[][] = [[]];
+  for (const seg of segments) {
+    if (seg.type === "text") {
+      seg.value.split(/\n\n+/).forEach((part, i) => {
+        if (i > 0) paragraphs.push([]);
+        if (part)
+          paragraphs[paragraphs.length - 1].push({ type: "text", value: part });
+      });
+    } else paragraphs[paragraphs.length - 1].push(seg);
+  }
+  return paragraphs.filter((p) => p.length > 0);
+}

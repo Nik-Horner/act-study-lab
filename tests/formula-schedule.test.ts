@@ -1,11 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import cards from "../src/content/math-formula-cards.json";
-import {
-  formulaDay,
-  validFormulaPacket,
-  lessonMinutesWithFormulas,
-} from "../src/lib/formula-schedule";
+import { formulaDay, validFormulaPacket } from "../src/lib/formula-schedule";
 import {
   makeDailyPlan,
   estimateDailyBlock,
@@ -18,20 +14,14 @@ const date = (offset: number) =>
     .slice(0, 10);
 const recall = (id: string, day: string) => `formula:${id}:recall:${day}`;
 
-test("new Daily sessions fit the full formula packet within two hours without replacing active progress", () => {
+test("optional formula packets retain their work without shrinking custom daily lesson budgets", () => {
   const formulas = formulaDay([], "2026-10-15", "2026-10-17");
   assert.equal(
     formulas.ids.length,
     cards.length,
     "keep all formulas available",
   );
-  for (const requested of [60, 75, 90]) {
-    const minutesPerDay = lessonMinutesWithFormulas(
-      requested,
-      formulas.minutes,
-    );
-    assert(minutesPerDay + formulas.minutes <= 120);
-    assert.equal(minutesPerDay, requested === 90 ? 80 : requested);
+  for (const minutesPerDay of [15, 23, 60, 75, 90, 120, 240]) {
     const settings = {
       minutesPerDay,
       scores: { english: 34, math: 34, reading: 33, science: 28 },
@@ -60,7 +50,6 @@ test("new Daily sessions fit the full formula packet within two hours without re
     );
     assert.deepEqual(plan, before);
   }
-  assert.equal(lessonMinutesWithFormulas(90, 0), 90);
 });
 
 test("daily scheduling can reach every twice-recalled formula before test day across short and long horizons", () => {

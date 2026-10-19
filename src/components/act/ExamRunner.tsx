@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect, useCallback, useRef } from "react";
-import { useSearchParams } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   getExam,
@@ -21,6 +21,10 @@ import { useQuestionNavigation } from "./useQuestionNavigation";
 import { DesmosPanel } from "./DesmosPanel";
 import { Button, ButtonLink } from "../ui/Button";
 import { Card } from "../ui/Card";
+import { ResultSummary, ReviewFilter } from "../ResultSummary";
+import { SessionIntro } from "../SessionIntro";
+import { StudyWorkspace } from "../StudyWorkspace";
+import { StudyPageHeader } from "../StudyPageHeader";
 import { Badge } from "../ui/Badge";
 export function ExamRunner({
   examId,
@@ -33,6 +37,7 @@ export function ExamRunner({
     questions = getExamQuestions(examId);
   const { state, ready, update, storageError, userId } = useProgress(),
     params = useSearchParams();
+  const router = useRouter();
   const key = `act-study-active:${userId ?? "signed-out"}:${examId}`;
   const [session, setSession] = useState<ExamSession | null>(null),
     [loadedOwner, setLoadedOwner] = useState<string | null>(null),
@@ -148,6 +153,7 @@ export function ExamRunner({
     setCompletedId(session.id);
     setSession(null);
     setConfirmEnd(false);
+    router.replace(`/exam/${examId}/results/${session.id}`);
   }, [
     session,
     userId,
@@ -158,6 +164,7 @@ export function ExamRunner({
     state,
     questions,
     key,
+    router,
   ]);
   useEffect(() => {
     if (
@@ -234,72 +241,44 @@ export function ExamRunner({
   if (!session)
     return (
       <div className="space-y-7">
-        <Link
-          href="/exam"
-          className="text-sm text-ink-soft underline underline-offset-4 transition-colors hover:text-ink"
+        <StudyPageHeader
+          title={exam.title}
+          subject={exam.subject}
+          description="Timed digital practice. Review answers after submission, then return to focused lessons for the methods that need work."
+          back={{ href: "/exam", label: "Timed sections" }}
+        />
+        <SessionIntro
+          subject={exam.subject}
+          title="Prepare for a timed section"
+          description={
+            <>
+              <p>{exam.description}</p>
+              <p>
+                Move between questions, flag answers, and eliminate options. The
+                timer keeps running if this page is closed or reloaded.
+                Explanations appear after submission.
+              </p>
+              <p>
+                When time expires, saved answers are submitted automatically.
+              </p>
+            </>
+          }
+          questions={`${questions.length} original questions`}
+          timing={`${exam.minutes} minutes · fixed section timer`}
         >
-          Back to digital practice
-        </Link>
-        <div className="max-w-3xl">
-          <h1 className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            {exam.title}
-          </h1>
-          <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-ink-soft">
-            <Badge className="normal-case tracking-normal">
-              {SUBJECT_LABELS[exam.subject]}
-            </Badge>
-            <span>Timed digital practice</span>
-          </div>
-        </div>
-        <Card className="overflow-hidden">
-          <dl className="grid grid-cols-3 divide-x divide-border border-b border-border bg-bg-raised/50">
-            <div className="px-4 py-5 sm:px-7">
-              <dt className="text-xs font-medium text-ink-soft">Questions</dt>
-              <dd className="study-data mt-1 text-2xl font-semibold">
-                {questions.length}
-              </dd>
-            </div>
-            <div className="px-4 py-5 sm:px-7">
-              <dt className="text-xs font-medium text-ink-soft">Minutes</dt>
-              <dd className="study-data mt-1 text-2xl font-semibold">
-                {exam.minutes}
-              </dd>
-            </div>
-            <div className="px-4 py-5 sm:px-7">
-              <dt className="text-xs font-medium text-ink-soft">
-                Answer choices
-              </dt>
-              <dd className="study-data mt-1 text-2xl font-semibold">4</dd>
-            </div>
-          </dl>
-          <div className="space-y-5 p-5 sm:p-7">
-            <p className="prose-study text-sm leading-relaxed">
-              {exam.description} Answer all questions; there is no penalty for
-              guessing. You can move backward, flag questions, and eliminate
-              options. The timer keeps running if you leave or reload. When time
-              expires, your saved answers are submitted automatically.
+          {state.attempts.some((a) => a.examId === examId) && (
+            <p className="text-sm text-warn">
+              This form has been seen before. Use a fresh official form to
+              assess readiness.
             </p>
-            <p className="max-w-3xl border-t border-border pt-4 text-sm leading-relaxed text-ink-soft">
-              Original training questions. No explanations appear until you
-              submit. This is a practice interface; rehearse the exact test-day
-              software with official ACT practice.
+          )}
+          {error && (
+            <p role="alert" className="text-sm text-bad">
+              {error}
             </p>
-            {state.attempts.some((a) => a.examId === examId) && (
-              <p className="rounded-xl bg-warn-soft p-4 text-sm text-warn">
-                You have already seen this section. Use fresh official practice
-                to assess readiness.
-              </p>
-            )}
-            {error && (
-              <p role="alert" className="rounded-xl bg-warn-soft p-4 text-sm">
-                {error}
-              </p>
-            )}
-            <Button onClick={start} className="max-sm:w-full">
-              Begin timed section
-            </Button>
-          </div>
-        </Card>
+          )}
+          <Button onClick={start}>Begin timed section</Button>
+        </SessionIntro>
       </div>
     );
   const q = questions[session.index],
@@ -340,7 +319,43 @@ export function ExamRunner({
     });
   }
   return (
-    <div className="space-y-5">
+    <StudyWorkspace
+      title={`${SUBJECT_LABELS[exam.subject]} timed section`}
+      subject={exam.subject}
+      mode="exam"
+      current={session.index + 1}
+      total={questions.length}
+      headingLevel={1}
+      tools={
+        <>
+          <span className="workspace-save-state">
+            {answered}/{questions.length} answered · {session.flags.length}{" "}
+            flagged
+          </span>
+          <span
+            role="timer"
+            className={`pace-chip ${remaining <= 300 ? "text-bad" : ""}`}
+          >
+            {hideTime ? "Timer hidden" : fmtTime(remaining)}
+          </span>
+          <Button
+            variant="ghost"
+            size="sm"
+            onClick={() => setHideTime((v) => !v)}
+          >
+            {hideTime ? "Show timer" : "Hide timer"}
+          </Button>
+          <Button
+            size="sm"
+            variant="ghost"
+            disabled={session.finishedAt !== null}
+            onClick={() => setConfirmEnd(true)}
+          >
+            End section
+          </Button>
+        </>
+      }
+    >
       {(error || storageError) && (
         <div role="alert" className="rounded-xl bg-warn-soft p-4 text-sm">
           {error ?? storageError}{" "}
@@ -355,39 +370,6 @@ export function ExamRunner({
           </button>
         </div>
       )}
-      <div className="sticky top-0 z-10 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-border bg-bg-soft/95 p-4 shadow-[var(--shadow-card)] backdrop-blur">
-        <div className="min-w-0">
-          <h1 className="font-semibold">
-            {SUBJECT_LABELS[exam.subject]} digital section
-          </h1>
-          <p className="study-data mt-1 text-xs text-ink-soft">
-            Answered {answered}/{questions.length} · {session.flags.length}{" "}
-            flagged
-          </p>
-        </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <span
-            role="timer"
-            className={`study-data inline-flex min-h-10 items-center rounded-full border px-4 text-base font-semibold ${remaining <= 300 ? "border-bad bg-bad-soft text-bad" : "border-border bg-bg-raised text-ink"}`}
-          >
-            {hideTime ? "Timer hidden" : fmtTime(remaining)}
-          </span>
-          <button
-            className="min-h-10 px-1 text-xs text-ink-soft underline underline-offset-4 hover:text-ink"
-            onClick={() => setHideTime((v) => !v)}
-          >
-            {hideTime ? "Show timer" : "Hide timer"}
-          </button>
-        </div>
-        <Button
-          size="sm"
-          variant="ghost"
-          disabled={session.finishedAt !== null}
-          onClick={() => setConfirmEnd(true)}
-        >
-          End section
-        </Button>
-      </div>
       {session.finishedAt !== null && (
         <p role="status" className="rounded-xl bg-warn-soft p-4 text-sm">
           This section has ended. Answers are locked while your submission
@@ -413,7 +395,7 @@ export function ExamRunner({
           </div>
         </Card>
       )}
-      <Card className="flex flex-wrap items-center gap-3 p-4">
+      <div className="workspace-question-tools">
         <p className="mr-auto text-sm font-semibold">
           Question {session.index + 1} of {questions.length}
         </p>
@@ -456,13 +438,13 @@ export function ExamRunner({
             {showCalculator ? "Close calculator" : "Calculator"}
           </Button>
         )}
-      </Card>
+      </div>
       {exam.subject === "math" && (
         <div hidden={!showCalculator} className="mb-5">
           <DesmosPanel subject="math" initiallyOpen />
         </div>
       )}
-      <Card className="p-5 sm:p-7">
+      <div className="workspace-question-stage">
         <QuestionView
           {...navigation}
           q={q}
@@ -473,7 +455,7 @@ export function ExamRunner({
           disabled={session.finishedAt !== null}
           zoom={zoom}
         />
-      </Card>
+      </div>
       <div className="flex flex-wrap justify-between gap-3">
         <Button
           variant="ghost"
@@ -498,10 +480,10 @@ export function ExamRunner({
           </Button>
         )}
       </div>
-      <Card className="p-4 sm:p-5">
+      <div className="workspace-question-nav">
         <details open>
           <summary className="cursor-pointer text-sm font-semibold">
-            Question index · Filled = answered · F = flagged
+            Question navigator · answered and flagged
           </summary>
           <nav
             aria-label="Question index"
@@ -526,8 +508,8 @@ export function ExamRunner({
             })}
           </nav>
         </details>
-      </Card>
-    </div>
+      </div>
+    </StudyWorkspace>
   );
 }
 function Results({
@@ -552,48 +534,19 @@ function Results({
           </Link>
         </p>
       )}
-      <Link href="/exam" className="back-link">
-        Back to digital practice
-      </Link>
-      <h1 className="text-2xl font-semibold leading-tight tracking-tight sm:text-3xl">
-        {exam.title}
-      </h1>
-      <Card className="overflow-hidden">
-        <div className="flex flex-wrap items-baseline justify-between gap-3 border-b border-border px-5 py-5 sm:px-6">
-          <h2 className="text-base font-semibold">Section results</h2>
-          <p className="study-data text-2xl font-semibold">
-            {correct}/{qs.length}
-            <span className="ml-2 text-sm font-medium text-ink-soft">
-              correct
-            </span>
-          </p>
-        </div>
-        <dl className="grid grid-cols-3 divide-x divide-border bg-bg-raised/50">
-          <div className="px-4 py-4 sm:px-6">
-            <dt className="text-xs font-medium text-ink-soft">Accuracy</dt>
-            <dd className="study-data mt-1 text-xl font-semibold sm:text-2xl">
-              {Math.round((correct / qs.length) * 100)}%
-            </dd>
-          </div>
-          <div className="px-4 py-4 sm:px-6">
-            <dt className="text-xs font-medium text-ink-soft">Time elapsed</dt>
-            <dd className="study-data mt-1 text-xl font-semibold sm:text-2xl">
-              {fmtTime(attempt.elapsedSeconds)}
-            </dd>
-          </div>
-          <div className="px-4 py-4 sm:px-6">
-            <dt className="text-xs font-medium text-ink-soft">Unanswered</dt>
-            <dd className="study-data mt-1 text-xl font-semibold sm:text-2xl">
-              {qs.filter((q) => attempt.answers[q.id] == null).length}
-            </dd>
-          </div>
-        </dl>
-        <p className="border-t border-border px-5 py-4 text-sm leading-relaxed text-ink-soft sm:px-6">
-          Practice raw score. ACT scaled scores require a form-specific official
-          conversion; these original questions do not predict a 36.
-        </p>
-      </Card>
-      <Card className="divide-y divide-border">
+      <StudyPageHeader
+        title={`${exam.title} results`}
+        subject={exam.subject}
+        description="Review missed answers against the evidence. Use the matching course lesson before trying independent questions again."
+        back={{ href: "/exam", label: "Timed sections" }}
+      />
+      <ResultSummary
+        correct={correct}
+        total={qs.length}
+        seconds={attempt.elapsedSeconds}
+        unanswered={qs.filter((q) => attempt.answers[q.id] == null).length}
+      />
+      <Card className="result-topic-ledger">
         {topics.map((slug) => {
           const group = qs.filter((q) => q.topic === slug),
             right = group.filter(
@@ -620,19 +573,12 @@ function Results({
       <section>
         <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
           <h2 className="text-xl font-semibold">Answer review</h2>
-          <label className="text-sm">
-            <input
-              type="checkbox"
-              checked={onlyMisses}
-              onChange={(e) => setOnlyMisses(e.target.checked)}
-            />{" "}
-            Show only misses
-          </label>
+          <ReviewFilter onlyMisses={onlyMisses} onChange={setOnlyMisses} />
         </div>
         {qs
           .filter((q) => !onlyMisses || attempt.answers[q.id] !== q.answer)
           .map((q) => (
-            <Card className="mb-5 p-5" key={q.id}>
+            <Card className="answer-review-item" key={q.id}>
               <p className="mb-4 text-sm font-semibold">
                 Question {qs.indexOf(q) + 1} · {getTopic(q.topic)?.title}
               </p>
