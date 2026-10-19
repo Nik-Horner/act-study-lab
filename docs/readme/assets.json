@@ -1,0 +1,11 @@
+{
+  "capturedOn": "2026-10-18",
+  "source": "https://act-study-lab.nikhorner.chatgpt.site",
+  "deployedSourceCommit": "e368997e051b7ae4347a06eb7af5106c0b54377b",
+  "images": {
+    "app-desktop.jpg": "Unmodified screenshot of the public hosted landing page.",
+    "visual-lesson.jpg": "Unmodified screenshot of the hosted Math modeling lesson, using an isolated synthetic QA account.",
+    "course.jpg": "Unmodified screenshot of the hosted course catalog, using the same isolated synthetic QA account.",
+    "open-app.svg": "Repository-authored link graphic using the existing app blue."
+  }
+}

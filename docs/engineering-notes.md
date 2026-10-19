@@ -1,4 +1,6 @@
-# ACT Study Lab
+# Engineering notes
+
+> Historical implementation and release notes from before the October 17–18 redesign. For the current app, see the [README](../README.md); for development, see [CONTRIBUTING](../CONTRIBUTING.md). Current redesign verification is recorded in [course integration](qa-course-integration.md), [personalized plans](qa-personalized-plan.md), and [adaptive lessons](qa-adaptive-lessons.md). Older coverage counts and interface descriptions below describe their release, not the current product.
 
 English, Math, Reading, and Science on the existing English Lab website, with the same Supabase sign-in, accounts, database, and English history.
 
