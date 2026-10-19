@@ -52,7 +52,7 @@ export function DesmosPanel({
           <iframe
             src={`${ACT_DESMOS_URL}?embed`}
             title="Desmos ACT graphing calculator"
-            className="h-[480px] w-full sm:h-[520px]"
+            className="desmos-frame"
             onLoad={() => setReady(true)}
             referrerPolicy="no-referrer"
             allow="clipboard-write"

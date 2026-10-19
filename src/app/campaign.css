@@ -424,6 +424,8 @@
   gap: 0.5rem;
 }
 .campaign-choices .choice {
+  flex: 1;
+  min-width: 0;
   width: 100%;
   min-height: 62px;
   border: 1px solid var(--color-border);
@@ -659,4 +661,30 @@
 .campaign-star-rules p {
   max-width: 70ch;
   line-height: 1.7;
+}
+
+@container study-page (max-width: 900px) {
+  .campaign-heading,
+  .campaign-map-intro {
+    flex-wrap: wrap;
+  }
+  .campaign-board {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .campaign-evidence {
+    max-height: none;
+    overflow: visible;
+  }
+}
+@container study-page (max-width: 680px) {
+  .campaign-subjects {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .campaign-earned {
+    min-width: 0;
+  }
+  .campaign-topic-filter select {
+    min-width: 0;
+    width: 100%;
+  }
 }
