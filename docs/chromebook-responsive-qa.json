@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-19",
+  "repository": "https://github.com/Nik-Horner/act-study-lab",
+  "githubBaseline": "ffabc614979406f323f9f9b8f8e0bf143a3f444a",
+  "siteBaseline": {
+    "version": 36,
+    "source": "e368997e051b7ae4347a06eb7af5106c0b54377b",
+    "matchingApplicationFiles": 207
+  },
+  "scope": [
+    "landing and auth",
+    "Daily path and lesson player",
+    "course and topic reference",
+    "all-subject practice and drills",
+    "timed sections and saved results",
+    "Play map and missions",
+    "formula recall and reference",
+    "progress",
+    "settings and onboarding",
+    "calculator"
+  ],
+  "repairs": [
+    "Use available content width after the sidebar for lesson, question, exam, settings, reference, progress, and campaign layouts.",
+    "Wrap lesson stage controls and next/back actions rather than forcing the row wider than the task.",
+    "Wrap workspace tools, answer text, and narrow public navigation; preserve ordinary phone toolbar sizing.",
+    "Keep short-screen sidebar settings and sign-out reachable with scrolling and compact spacing.",
+    "Scale lesson diagrams and the Desmos panel to available screen height without changing student state.",
+    "Keep calculator targets at least 44px on touch-capable computers."
+  ],
+  "verification": {
+    "unitTests": 417,
+    "unitFailures": 0,
+    "authenticatedRouteRenderCases": 1044,
+    "routeFailures": 0,
+    "typescript": "passed after regenerating stale local Next route types",
+    "eslint": "passed",
+    "contentValidators": "passed",
+    "sitesBuild": "passed",
+    "isolatedAccountSmoke": "passed",
+    "priorNonPlanQaRowsUnchanged": 6,
+    "historicalFixturesUnchanged": 3
+  },
+  "limits": [
+    "Fresh interactive browser, viewport, and screenshot QA is unavailable while the host Mac is locked.",
+    "No physical Chromebook, touch gestures, or cross-browser checks were performed.",
+    "Prior historical screenshots were excluded as evidence for this change."
+  ],
+  "stateSafety": "Only CSS and CSS class hooks change. No API, schema, curriculum, grading, preference, timer, or progress code changes."
+}

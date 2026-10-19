@@ -256,7 +256,7 @@ export function QuestionView({
       tabIndex={evidenceRef ? -1 : undefined}
       role={evidenceRef ? "region" : undefined}
       aria-label={evidenceRef ? "Current question and evidence" : undefined}
-      className={`scroll-mt-40 ${q.passage ? "grid min-w-0 gap-6 lg:grid-cols-2" : "min-w-0"}`}
+      className={`scroll-mt-40 ${q.passage ? "question-evidence-layout grid min-w-0 gap-6 lg:grid-cols-2" : "min-w-0"}`}
       style={{ zoom }}
     >
       {q.passage && (

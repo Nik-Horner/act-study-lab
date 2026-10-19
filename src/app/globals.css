@@ -665,6 +665,7 @@ button:disabled {
 }
 .site-main {
   flex: 1;
+  container: study-page / inline-size;
   width: 100%;
   max-width: 1320px;
   margin: 0 auto;
@@ -729,6 +730,7 @@ body:has(.study-sidebar) .site-footer {
   z-index: 30;
   display: flex;
   flex-direction: column;
+  overflow-y: auto;
 }
 .study-sidebar .study-brand {
   padding: 0 7px;
@@ -787,6 +789,7 @@ body:has(.study-sidebar) .site-footer {
 }
 .public-header {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
